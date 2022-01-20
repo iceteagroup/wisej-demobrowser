@@ -1,0 +1,64 @@
+{
+	"Title": "Dashboards",
+	"Description": "Wisej is a great platform for building dashboard-style applications. The extensive library of controls offers many different controls to display user data.",
+	"Documentation": [
+		{
+			"DashboardMain": [
+				{
+					"Title": "DataGridView",
+					"Link": "https://docs.wisej.com/docs/controls/lists/datagridview",
+					"Label": "Control",
+					"IconSource": "resource.wx/Wisej.Ext.VisualStudioIcons/DataGrid.svg"
+				},
+				{
+					"Title": "JustGage",
+					"Link": "https://docs.wisej.com/extensions/extensions/justgage",
+					"Label": "Control",
+					"IconSource": "Icons\\justgage2.png"
+				},
+				{
+					"Title": "ChartJS",
+					"Link": "https://docs.wisej.com/extensions/extensions/chartjs",
+					"Label": "Control",
+					"IconSource": "Icons\\chartJS.png"
+				},
+				{
+					"Title": "TableLayoutPanel",
+					"Link": "https://docs.wisej.com/docs/controls/containers/tablelayoutpanel",
+					"Label": "Control",
+					"IconSource": "resource.wx/Wisej.Ext.VisualStudioIcons/TableLayoutPanel.svg"
+				},
+				{
+					"Title": "FlowLayoutPanel",
+					"Link": "https://docs.wisej.com/docs/controls/containers/flowlayoutpanel",
+					"Label": "Control",
+					"IconSource": "resource.wx/Wisej.Ext.VisualStudioIcons/FlowLayoutPanel.svg"
+				},
+				{
+					"Title": "Panel",
+					"Link": "https://docs.wisej.com/docs/controls/containers/panel",
+					"Label": "Control",
+					"IconSource": "resource.wx/Wisej.Ext.VisualStudioIcons/Panel.svg"
+				},
+				{
+					"Title": "Custom Control",
+					"Link": "https://docs.wisej.com/docs/controls/containers/usercontrol",
+					"Label": "Control",
+					"IconSource": "resource.wx/Wisej.Ext.VisualStudioIcons/UserControl.svg"
+				},
+				{
+					"Title": "Data Binding",
+					"Link": "https://docs.wisej.com/docs/controls/general/data-binding",
+					"Label": "Concept",
+					"IconSource": "resource.wx/Wisej.Ext.VisualStudioIcons/TwoWayDataBinding.svg"
+				},
+				{
+					"Title": "Simple Binding",
+					"Link": "https://docs.wisej.com/docs/controls/general/data-binding",
+					"Label": "Concept",
+					"IconSource": "resource.wx/Wisej.Ext.VisualStudioIcons/MemoryArray.svg"
+				}
+			]
+		}
+	]
+}

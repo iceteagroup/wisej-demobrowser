@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{26A0A8F4-D7CD-43C9-B2A9-BAEA5D4A85D2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Wisej.DemoBrowser.ComboBox</RootNamespace>
+    <AssemblyName>Wisej.DemoBrowser.ComboBox</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="Microsoft.CSharp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Features.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Features.Designer.cs">
+      <DependentUpon>Features.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\InvoicePreview.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\InvoicePreview.Designer.cs">
+      <DependentUpon>InvoicePreview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Data\InvoiceData.cs" />
+    <Compile Include="Data\SavedCard.cs" />
+    <Compile Include="Labels.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Labels.Designer.cs">
+      <DependentUpon>Labels.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="DataBinding.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DataBinding.Designer.cs">
+      <DependentUpon>DataBinding.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SimpleBinding.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SimpleBinding.Designer.cs">
+      <DependentUpon>SimpleBinding.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Features.resx">
+      <DependentUpon>Features.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DataBinding.resx">
+      <DependentUpon>DataBinding.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Labels.resx">
+      <DependentUpon>Labels.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SimpleBinding.resx">
+      <DependentUpon>SimpleBinding.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\InvoicePreview.resx">
+      <DependentUpon>InvoicePreview.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\wisej.png" />
+    <Content Include="Images\wisejlogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Wisej-2">
+      <Version>2.5.*-*</Version>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Wisej.DemoBrowser.Common\Wisej.DemoBrowser.Common.csproj">
+      <Project>{1F0B2E9E-6624-4DB8-810F-48A7BC531A29}</Project>
+      <Name>Wisej.DemoBrowser.Common</Name>
+      <Private>False</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

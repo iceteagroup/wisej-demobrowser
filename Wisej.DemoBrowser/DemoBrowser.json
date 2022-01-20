@@ -1,0 +1,702 @@
+{
+	"Editors": {
+		//"Overview": {
+		//  "imageSource": "",
+		//  "description-en": ""
+		//},
+		"TextBox": {
+			"Features": {
+				"sourceUrl": "https://github.com/",
+				"assembly": "Features, Wisej.DemoBrowser.TextBox.dll",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/TextBox.svg",
+				"docsUrl": "https://docs.wisej.com/docs/controls/editors/textbox",
+				"description-en": "The <b>Wisej.Web.TextBox</b> control allows the user to enter unformatted text in an application.<br>Usually a TextBox control accepts a single line of text. You can use the Multiline property to allow the control to display and accept text on more than one line.",
+				"description-de": "Das <b>Wisej.Web.TextBox</b>-Steuerelement ermöglicht dem Benutzer, unformatierten Text in eine Anwendung einzugeben.<br>Normalerweise akzeptiert ein TextBox-Steuerelement eine einzelne Textzeile. Sie können die Multiline-Eigenschaft verwenden, um zuzulassen, dass das Steuerelement Text in mehr als einer Zeile anzeigt und akzeptiert.",
+				"description-it": "Il controllo <b>Wisej.Web.TextBox</b> consente all'utente di immettere testo non formattato in un'applicazione.<br>Di solito un controllo TextBox accetta una singola riga di testo. È possibile utilizzare la proprietà Multiline per consentire al controllo di visualizzare e accettare testo su più righe.",
+				"description-es": "El control <b>Wisej.Web.TextBox</b> permite al usuario ingresar texto sin formato en una aplicación. <br> Por lo general, un control TextBox acepta una sola línea de texto. Puede utilizar la propiedad Multiline para permitir que el control muestre y acepte texto en más de una línea."
+			},
+			"Labels": {
+				"sourceUrl": "https://github.com/",
+				"assembly": "Labels, Wisej.DemoBrowser.TextBox.dll",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/TextBox.svg",
+				"docsUrl": "https://docs.wisej.com/docs/controls/editors/textbox#label",
+				"description-en": "The <b>Wisej.Web.TextBox</b> control supports the inline Label property. This allows an application to set a label in relation to a TextBox control without having to create an additional Label control."
+			},
+			"Input Types": {
+				"sourceUrl": "https://github.com/",
+				"assembly": "InputTypes, Wisej.DemoBrowser.TextBox.dll",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/TextBox.svg",
+				"docsUrl": "https://docs.wisej.com/docs/controls/editors/textbox",
+				"description-en": "Input types can be used to specify the type of content that should be entered into the field. Some input types use native browser components to assist in editing.",
+				"description-fr": "Les types d’entrée peuvent être utilisés pour spécifier le type de contenu à entrer dans le champ. Certains types d’entrée utilisent des composants de navigateur natifs pour faciliter l’édition."
+			}
+		},
+		"MaskedTextBox": {
+			"Features": {
+				"sourceUrl": "https://github.com/",
+				"assembly": "Features, Wisej.DemoBrowser.MaskedTextBox.dll",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/MaskedTextBox.svg",
+				"docsUrl": "https://docs.wisej.com/docs/controls/editors/textbox/maskedtextbox",
+				"description-en": "The <b>Wisej.Web.MaskedTextBox</b> class is an enhanced TextBox control that supports a declarative syntax for accepting or rejecting user input.",
+				"description-fr": "La classe <b>Wisej.Web.MaskedTextBox</b> est un contrôle TextBox amélioré qui prend en charge une syntaxe déclarative permettant d’accepter ou de rejeter des entrées utilisateur."
+			}
+		},
+		"ComboBox": {
+			"Features": {
+				"sourceUrl": "https://github.com/",
+				"assembly": "Features, Wisej.DemoBrowser.ComboBox.dll",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/ComboBox.svg",
+				"docsUrl": "https://docs.wisej.com/docs/controls/lists/combobox",
+				"description-en": "The <b>Wisej.Web.ComboBox</b> control displays a text box combined with a ListBox, which enables the user to select items from the list or enter a new value. Objects in the drop down list can be of any type, the list will show a string representation of each item.",
+				"description-de": "Das <b>Wisej.Web.ComboBox</b>-Steuerelement zeigt ein mit einer ListBox kombiniertes Textfeld an, das es dem Benutzer ermöglicht, Elemente aus der Liste auszuwählen oder einen neuen Wert einzugeben. Objekte in der Dropdown-Liste können jeden Typs sein. Die Liste zeigt eine Zeichenfolgendarstellung jedes Elements.",
+				"description-it": "Il controllo Wisej.Web.ComboBox visualizza una casella di testo combinata con un ListBox, che consente all'utente di selezionare elementi dall'elenco o di immettere un nuovo valore. Gli oggetti nell'elenco a discesa possono essere di qualsiasi tipo, l'elenco mostrerà una rappresentazione di stringa di ciascun elemento."
+			},
+			"Labels": {
+				"sourceUrl": "https://github.com/",
+				"assembly": "Labels, Wisej.DemoBrowser.ComboBox.dll",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/ComboBox.svg",
+				"docsUrl": "https://docs.wisej.com/docs/controls/lists/combobox#label",
+				"description-en": "The <b>Wisej.Web.ComboBox</b> control supports the inline Label property. This allows an application to set a label in relation to a ComboBox control without having to create an additional Label control."
+			},
+			//"Data Binding": {
+			//  "sourceUrl": "https://github.com/",
+			//  "assembly": "DataBinding, Wisej.DemoBrowser.ComboBox.dll",
+			//  "docsUrl": "https://docs.wisej.com/docs/controls/general/data-binding",
+			//  "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/TwoWayDataBinding.svg",
+			//  "description-en": ""
+			//},
+			"Simple Binding": {
+				"sourceUrl": "https://github.com/",
+				"assembly": "SimpleBinding, Wisej.DemoBrowser.ComboBox.dll",
+				"docsUrl": "https://docs.wisej.com/docs/controls/general/data-binding",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/TwoWayDataBinding.svg",
+				"description-en": "You can use Wisej to display your data however you want. This demo demonstrates how you can present data with just a simple array.",
+				"description-fr": "Vous pouvez utiliser Wisej pour afficher vos propre donnée comme vous le souhaitez. Cette démonstration montre comment vous pouvez présenter votre donnée avec un simple tableau"
+			}
+		},
+		"ListBox": {
+			"Features": {
+				"sourceUrl": "https://github.com/",
+				"assembly": "Features, Wisej.DemoBrowser.ListBox.dll",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/ListBox.svg",
+				"docsUrl": "https://docs.wisej.com/docs/controls/lists/listbox",
+				"description-en": "The <b>Wisej.Web.ListBox</b> control displays a list of strings or data-bound values, allowing the user to select one or multiple options.",
+				"description-fr": "Le contrôl <b>Wisej.Web.ListBox</b> affiche une liste des chaîne de charactéres ou bien des valeurs lié aux donnée, permettant à l’utilisateur de sélectionner une ou plusieurs options."
+			}
+		},
+		"CheckedListBox": {
+			"Features": {
+				"sourceUrl": "https://github.com/",
+				"assembly": "Features, Wisej.DemoBrowser.CheckedListBox.dll",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/ListBox.svg",
+				"docsUrl": "https://docs.wisej.com/docs/controls/lists/listbox/checkedlistbox",
+				"description-en": "The <b>Wisej.Web.CheckedListBox</b> is based upon the ListBox control but includes a checkbox on the left side of each list item.",
+				"description-fr": "Le contrôle <b>Wisej.Web.CheckedListBox</b> est basé sur le contrôle ListBox mais inclut une case à cocher sur le côté gauche de chaque élément de liste."
+			}
+		},
+		"TreeView": {
+			"Features": {
+				"sourceUrl": "https://github.com/",
+				"assembly": "Features, Wisej.DemoBrowser.TreeView.dll",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/TreeView.svg",
+				"docsUrl": "https://docs.wisej.com/docs/controls/lists/treeview",
+				"description-en": "The <b>Wisej.Web.TreeView</b> displays a hierarchical collection of labeled items, each represented by a TreeNode."
+			},
+			"Selection Modes": {
+				"sourceUrl": "https://github.com/",
+				"assembly": "SelectionModes, Wisej.DemoBrowser.TreeView.dll",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/TreeView.svg",
+				"docsUrl": "https://docs.wisej.com/docs/controls/lists/treeview",
+				"description-en": "The <b>Wisej.Web.TreeView</b> displays a hierarchical collection of labeled items, each represented by a TreeNode."
+			}
+		},
+		"DateTimePicker": {
+			"Features": {
+				"sourceUrl": "https://github.com/",
+				"assembly": "Features, Wisej.DemoBrowser.DateTimePicker.dll",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/DatePicker.svg",
+				"docsUrl": "https://docs.wisej.com/docs/controls/editors/datetimepicker",
+				"description-en": "The <b>Wisej.Web.DateTimePicker</b> control is used to allow the user to select a date and time, and to display that date and time in the specified format. The DateTimePicker control makes it easy to work with dates and times because it handles a lot of the data validation automatically."
+			},
+			"Labels": {
+				"sourceUrl": "https://github.com/",
+				"assembly": "Labels, Wisej.DemoBrowser.DateTimePicker.dll",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/DatePicker.svg",
+				"docsUrl": "https://docs.wisej.com/docs/controls/general/labels",
+				"description-en": "The <b>Wisej.Web.DateTimePicker</b> control supports the inline Label property. This allows an application to set a label in relation to a DateTimePicker control without having to create an additional Label control."
+			}
+		},
+		"MonthCalendar": {
+			"Features": {
+				"sourceUrl": "https://github.com/",
+				"assembly": "Features, Wisej.DemoBrowser.MonthCalendar.dll",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/Calendar.svg",
+				"docsUrl": "https://docs.wisej.com/docs/controls/editors/monthcalendar",
+				"description-en": "The <b>Wisej.Web.MonthCalendar</b> is a control that enables the user to select a date using a visual monthly calendar display."
+			}
+		},
+		"NumericUpDown": {
+			"Features": {
+				"sourceUrl": "https://github.com/",
+				"assembly": "Features, Wisej.DemoBrowser.NumericUpDown.dll",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/NumericListBox.svg",
+				"docsUrl": "https://docs.wisej.com/docs/controls/editors/numericupdown",
+				"description-en": "The <b>Wisej.Web.NumericUpDown</b> control contains a single numeric value that can be incremented or decremented by clicking the up or down buttons of the control. The user can also enter in a value, unless the ReadOnly property is set to true."
+			}
+		},
+		"DomainUpDown": {
+			"Features": {
+				"sourceUrl": "https://github.com/",
+				"assembly": "Features, Wisej.DemoBrowser.DomainUpDown.dll",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/DomainUpDownScroll.svg",
+				"docsUrl": "https://docs.wisej.com/docs/controls/editors/domainupdown",
+				"description-en": "The <b>Wisej.Web.DomainUpDown</b> control displays a single string value that is selected from an Object collection by clicking the up or down buttons of the control."
+			},
+			"Labels": {
+				"sourceUrl": "https://github.com/",
+				"assembly": "Labels, Wisej.DemoBrowser.DomainUpDown.dll",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/DomainUpDownScroll.svg",
+				"docsUrl": "https://docs.wisej.com/docs/controls/general/labels",
+				"description-en": "The <b>Wisej.Web.DomainUpDown</b> control supports the inline Label property. This allows an application to set a label in relation to a DomainUpDown control without having to create an additional Label control."
+			}
+		},
+		"Upload": {
+			"Features": {
+				"sourceUrl": "https://github.com/",
+				"assembly": "Features, Wisej.DemoBrowser.Upload.dll",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/Upload.svg",
+				"docsUrl": "https://docs.wisej.com/docs/controls/content/upload",
+				"description-en": "The <b>Wisej.Web.Upload</b> control allows users to select files from their local machine and upload them to the server. The files are available in the Uploaded event as a HttpFileCollection."
+			}
+		}
+	},
+	"Miscellaneous": {
+		"Video": {
+			"Features": {
+				"sourceUrl": "https://github.com/",
+				"assembly": "Features, Wisej.DemoBrowser.Video.dll",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/PlayVideo.svg",
+				"docsUrl": "https://docs.wisej.com/docs/controls/media/video",
+				"description-en": "The <b>Wisej.Web.Video</b> control allows users to play media from a given video file.",
+				"description-fr": "Le contrôle <b>Wisej.Web.Video</b> permet aux utilisateurs de lire des médias à partir d’un fichier vidéo donné."
+			}
+		},
+		"Audio": {
+			"Features": {
+				"sourceUrl": "https://github.com/",
+				"assembly": "Features, Wisej.DemoBrowser.Audio.dll",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/Audio.svg",
+				"docsUrl": "https://docs.wisej.com/docs/controls/media/audio",
+				"description-en": "The <b>Wisej.Web.Audio</b> control allows users to play aduio from a given media file.",
+				"description-fr": "Le contrôle <b>Wisej.Web.Audio</b> permet aux utilisateurs de lire des médias à partir d'un fichier audio donné.'" 
+			}
+		},
+		"Line": {
+			"Features": {
+				"sourceUrl": "https://github.com/",
+				"assembly": "Features, Wisej.DemoBrowser.Line.dll",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/EditLine.svg",
+				"docsUrl": "https://docs.wisej.com/docs/controls/content/line",
+				"description-en": "The <b>Wisej.Web.Line</b> control enables you to draw lines on a form or container at design time or run time.",
+				"description-fr": "Le contrôle <b>Wisej.Web.Line</b> vous permet de dessiner des lignes sur un form ou un conteneur au moment du design ou de l’exécution."
+			}
+		},
+		"Timer": {}
+	},
+	"Containers": {
+		// TODO: "Page": {},
+		// TODO: "Form": {},
+		"Desktop": {},
+		"Panel": {
+			"Features": {
+				"sourceUrl": "https://github.com/",
+				"assembly": "Features, Wisej.DemoBrowser.Panel.dll",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/Panel.svg",
+				"docsUrl": "https://docs.wisej.com/docs/controls/containers/panel",
+				"description-en": "The <b>Wisej.Web.Panel</b> control represents a collapsible panel with an optional header that contains a group of controls.",
+				"description-fr": "Le contrôle <b>Wisej.Web.Panel</b> représente un panneau réductible avec un en-tête facultatif qui contient un groupe de contrôles."
+			}
+		},
+		"GroupBox": {
+			"Features": {
+				"sourceUrl": "https://github.com/",
+				"assembly": "Features, Wisej.DemoBrowser.GroupBox.dll",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/GroupBox.svg",
+				"docsUrl": "https://docs.wisej.com/docs/controls/containers/groupbox",
+				"description-en": "The <b>Wisej.Web.GroupBox</b> control displays a frame around a group of controls with or without a caption. Use a GroupBox to logically group a collection of controls on a form. The GroupBox is a container control that can be used to define groups of controls."
+			}
+		},
+		"TabControl": {
+			"Features": {
+				"sourceUrl": "https://github.com/",
+				"assembly": "Features, Wisej.DemoBrowser.TabControl.dll",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/Tab.svg",
+				"docsUrl": "https://docs.wisej.com/docs/controls/containers/tabcontrol",
+				"description-en": "The <b>Wisej.Web.TabControl</b> control contains tab pages, which are represented by TabPage objects that you add through the TabPages property. The order of tab pages in this collection reflects the order the tabs appear in the control."
+			}
+		},
+		"SplitContainer": {
+			"Features": {
+				"sourceUrl": "https://github.com/",
+				"assembly": "Features, Wisej.DemoBrowser.SplitContainer.dll",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/SplitterControl.svg",
+				"docsUrl": "https://docs.wisej.com/docs/controls/containers/splitcontainer",
+				"description-en": "The <b>Wisej.Web.SplitContainer</b> control consists of a movable bar that divides a container's display area into two resizable panels."
+			}
+		},
+		"FlexLayoutPanel": {
+			"Features": {
+				"sourceUrl": "https://github.com/",
+				"assembly": "Features, Wisej.DemoBrowser.FlexLayoutPanel.dll",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/Panel.svg",
+				"docsUrl": "https://docs.wisej.com/docs/controls/containers/flexlayoutpanel",
+				"description-en": "The <b>Wisej.Web.FlexLayoutPanel</b> control can arrange its child controls using the layout engine specified in the LayoutStyle property. When the value is set to Default, the child controls are arranged using the default layout engine, using their location, dock style and anchor properties."
+			}
+		},
+		"FlowLayoutPanel": {
+			"Features": {
+				"sourceUrl": "https://github.com/",
+				"assembly": "Features, Wisej.DemoBrowser.FlowLayoutPanel.dll",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/Panel.svg",
+				"docsUrl": "https://docs.wisej.com/docs/controls/containers/flowlayoutpanel",
+				"description-en": "The <b>Wisej.Web.FlowLayoutPanel</b> control represents a panel that dynamically arranges its child controls.",
+				"description-fr": "Le contrôle <b>Wisej.Web.FlowLayoutPanel</b> représente un panneau qui organise dynamiquement ses contrôles enfants."
+			}
+		},
+		"TableLayoutPanel": {
+			"Features": {
+				"sourceUrl": "https://github.com/",
+				"assembly": "Features, Wisej.DemoBrowser.TableLayoutPanel.dll",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/TableLayoutPanel.svg",
+				"docsUrl": "https://docs.wisej.com/docs/controls/containers/tablelayoutpanel",
+				"description-en": "The <b>Wisej.Web.FlowLayoutPanel</b> control represents a panel that dynamically lays out its contents in a grid composed of rows and columns.",
+				"description-fr": "Le contrôle <b>Wisej.Web.TableLayoutPanel.dll</b> représente un panneau qui présente dynamiquement son contenu dans une grille composée de lignes et de colonnes."
+			}
+		},
+		"PdfViewer": {
+			"Features": {
+				"sourceUrl": "https://github.com/",
+				"assembly": "Features, Wisej.DemoBrowser.PdfViewer.dll",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/WindowsForm.svg",
+				"docsUrl": "https://docs.wisej.com/docs/controls/content/pdfviewer",
+				"description-en": "The <b>Wisej.Web.PDFViewer</b> control is used to display pdf documents in the browser. There are multiple viewer types available to display the documents based on the type of browser used.",
+			}
+		},
+		"IFramePanel": {
+			"Features": {
+				"sourceUrl": "https://github.com/",
+				"assembly": "Features, Wisej.DemoBrowser.iFramePanel.dll",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/IFrame.svg",
+				"docsUrl": "https://docs.wisej.com/docs/controls/content/iframepanel",
+				"description-en": "The <b>Wisej.Web.IFramePanel</b> control can be used to show embedded web pages. "
+			} 
+		},
+		"AspNetPanel": {
+			"Features": {
+				"sourceUrl": "https://github.com/",
+				"assembly": "Features, Wisej.DemoBrowser.AspNetPanel.dll",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/AspxFile.svg",
+				"docsUrl": "https://docs.wisej.com/docs/controls/content/aspnetpanel",
+				"description-en": "To use the <b>Wisej.Web.AspNetPanel</b> control, simply set the PageSource property to the location of an existing .aspx document in the project."
+			}
+		},
+		"UserControl": {
+			"Features": {
+				"sourceUrl": "https://github.com/",
+				"assembly": "Features, Wisej.DemoBrowser.UserControl.dll",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/UserControl.svg",
+				"docsUrl": "https://docs.wisej.com/docs/controls/containers/usercontrol",
+				"description-en": "The <b>Wisej.DemoBrowser.UserControl</b> gives you the ability to create controls that can be used in multiple places within an application or organization."
+			}
+		},
+		"Widget": {
+			"Features": {
+				"sourceUrl": "https://github.com/",
+				"assembly": "Features, Wisej.DemoBrowser.Widget.dll",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/JsApplication.svg",
+				"docsUrl": "https://docs.wisej.com/docs/controls/content/widget",
+				"description-en": "The <b>Wisej.Web.Widget</b> control is the key to integrating the rest of the JavaScript world into a Wisej application. The Widget control allows developers to load custom JavaScript and CSS libraries into their Wisej application at runtime to utilize and containerize custom controls."
+			}
+		}
+	},
+	"Tools and Menus": {
+		"MenuBar": {
+			"Features": {
+				"sourceUrl": "https://github.com/",
+				"assembly": "Features, Wisej.DemoBrowser.MenuBar.dll",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/DropdownMenu.svg",
+				"docsUrl": "https://docs.wisej.com/docs/controls/menus/menubar",
+				"description-en": "The <b>Wisej.Web.MenuBar</b> component represents a menu structure for containers. The menu is composed of MenuItem objects that represent the individual menu commands in the menu structure. Each MenuItem can be a command for your application or a parent menu for other submenu items.",
+			}
+		},
+		// TODO: "MainMenu": {},
+		"ContextMenu": {
+			"Features": {
+				"sourceUrl": "https://github.com/",
+				"assembly": "Features, Wisej.DemoBrowser.ContextMenu.dll",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/ContextMenu.svg",
+				"docsUrl": "https://docs.wisej.com/docs/controls/menus/contextmenu",
+				"description-en": "The <b>Wisej.Web.ContextMenu</b> component represents shortcut menus that can be displayed when the user clicks the right mouse button over a control or area of the form."
+			}
+		},
+		"ToolBar": {
+			"Features": {
+				"sourceUrl": "https://github.com/",
+				"assembly": "Features, Wisej.DemoBrowser.ToolBar.dll",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/ToolBar.svg",
+				"docsUrl": "https://docs.wisej.com/docs/controls/containers/toolbar",
+				"description-en": "The <b>Wisej.Web.ToolBar</b> control is used on forms as a control bar that displays a row of drop-down menus and bitmapped buttons that activate commands."
+			}
+		},
+		"Embedded Tools": {},
+		"StatusBar": {
+			"Features": {
+				"sourceUrl": "https://github.com/",
+				"assembly": "Features, Wisej.DemoBrowser.StatusBar.dll",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/StatusStrip.svg",
+				"docsUrl": "https://docs.wisej.com/docs/controls/containers/statusbar",
+				"description-en": "The <b>Wisej.Web.StatusBar</b> displays information to the user about the object being viewed, the object's components, or the object's operation."
+			}
+		},
+		"RibbonBar": {},
+		"ScrollBars": {
+			"Features": {
+				"sourceUrl": "https://github.com/",
+				"assembly": "Features, Wisej.DemoBrowser.ScrollBars.dll",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/ScrollBar.svg",
+				"docsUrl": "https://docs.wisej.com/docs/controls/content/scrollbars",
+				"description-en": "The <b>Wisej.Web.VScrollBar</b> and <b>Wisej.Web.HScrollBar</b> controls implement the basic functionality of a scroll bar control. You can use this control to implement scrolling in containers that do not provide their own scroll bars such as a PictureBox or for user input of numeric data."
+			}
+		},
+		"TrackBar": {
+			"Features": {
+				"sourceUrl": "https://github.com/",
+				"assembly": "Features, Wisej.DemoBrowser.TrackBar.dll",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/Slider.svg",
+				"docsUrl": "https://docs.wisej.com/docs/controls/editors/trackbar",
+				"description-en": "The <b>Wisej.Web.TrackBar</b> is a scrollable control similar to the ScrollBar control. You can configure ranges through which the value of the Value property of a track bar scrolls by setting the Minimum property to specify the lower end of the range and the Maximum property to specify the upper end of the range."
+			}
+		}
+	},
+	"Extenders": {
+		"ToolTip": {},
+		"JavaScript": {},
+		"StyleSheet": {},
+		"HelpTip": {
+			"Features": {
+				"sourceUrl": "https://github.com/",
+				"assembly": "Features, Wisej.DemoBrowser.HelpTip.dll",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/StatusHelp.svg",
+				"docsUrl": "https://docs.wisej.com/api/wisej.web/extenders/wisej.web.helptip",
+				"description-en": "The <b>Wisej.Web.HelpTip</b> component represents a small rectangular pop-up window that displays a brief help text next to a control when it gets activated (focused)."
+			}
+		},
+		"Animation": {},
+		"Rotation": {
+			"Features": {
+				"sourceUrl": "https://github.com/",
+				"assembly": "Features, Wisej.DemoBrowser.Rotation.dll",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/Rotate.svg",
+				"docsUrl": "https://docs.wisej.com/docs/controls/extenders/rotation",
+				"description-en": "The <b>Wisej.Web.Rotation</b> component adds rotation capabilities along the X,Y,Z axis to Wisej controls."
+			},
+			"Web Developer Awakens": {
+				"sourceUrl": "https://github.com/",
+				"assembly": "WebDeveloperAwakens, Wisej.DemoBrowser.Rotation.dll",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/Rotate.svg",
+				"docsUrl": "https://docs.wisej.com/docs/controls/extenders/rotation",
+				"description-en": "The <b>Wisej.Web.Rotation</b> component adds rotation capabilities along the X,Y,Z axis to Wisej controls."
+			}
+		},
+		"ErrorProvider": {}
+	},
+	"Content": {
+		"Label": {
+			"Features": {
+				"sourceUrl": "https://github.com/",
+				"assembly": "Features, Wisej.DemoBrowser.Label.dll",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/Label.svg",
+				"docsUrl": "https://docs.wisej.com/docs/controls/content/label",
+				"description-en": "The <b>Wisej.Web.Label</b> control is typically used to provide descriptive text for a control. For example, you can use a Label to add descriptive text for a TextBox control to inform the user about the type of data expected in the control.",
+				"description-fr": "Le contrôle <b>Wisej.Web.Label</b> est généralement utilisé pour fournir un texte descriptif pour un contrôle. Par exemple, vous pouvez utiliser une étiquette pour ajouter un texte descriptif pour un contrôle TextBox afin d'informer l'utilisateur du type de données attendu dans le contrôle."
+			}
+		},
+		"HtmlPanel": {
+			"Features": {
+				"sourceUrl": "https://github.com/",
+				"assembly": "Features, Wisej.DemoBrowser.HtmlPanel.dll",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/HtmlFile.svg",
+				"docsUrl": "https://docs.wisej.com/docs/controls/content/htmlpanel",
+				"description-en": "The <b>Wisej.Web.HtmlPanel</b> control can be used to embed full HTML documents within a Wisej application.",
+				"description-fr": "Le contrôle <b>Wisej.Web.HtmlPanel</b> peut être utilisé pour intégrer des documents HTML dans une application Wisej."
+			}
+		},
+		"LinkLabel": {
+			"Features": {
+				"sourceUrl": "https://github.com/",
+				"assembly": "Features, Wisej.DemoBrowser.LinkLabel.dll",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/HyperLink.svg",
+				"docsUrl": "https://docs.wisej.com/docs/controls/content/linklabel",
+				"description-en": "The <b>Wisej.Web.LinkLabel</b> control is similar to a Label control with the exception that it can display a hyperlink. Multiple hyperlinks can be specified in the text of the control. Each hyperlink can perform a different task within an application.",
+				"description-fr": "Le contrôle <b>Wisej.Web.LinkLabel</b> est similaire à un contrôle Label, à l’exception du fait qu’il peut afficher un lien hypertexte. Plusieurs liens hypertexte peuvent être spécifiés dans le texte du contrôle. Chaque lien hypertexte peut effectuer une tâche différente au sein d’une application."
+			}
+		},
+		"PictureBox": {
+			"Features": {
+				"sourceUrl": "https://github.com/",
+				"assembly": "Features, Wisej.DemoBrowser.PictureBox.dll",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/PictureAndText.svg",
+				"docsUrl": "https://docs.wisej.com/docs/controls/content/PictureBox",
+				"description-en": "The <b>Wisej.Web.PictureBox</b> is used to display graphics from a bitmap, metafile, icon, JPEG, GIF, or PNG file.",
+				"description-fr": "Le contrôle <Wisej.Web.PictureBox</b> peut être utilisé pour afficher des graphiques à partir d'un fichier bitmap, metafile, icon, JPEG, GIF ou bien PNG"
+			}
+		}
+	},
+	"Buttons": {
+		"Button": {
+			"Features": {
+				"sourceUrl": "https://github.com/",
+				"assembly": "Features, Wisej.DemoBrowser.Button.dll",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/Button.svg",
+				"docsUrl": "https://docs.wisej.com/docs/controls/buttons/button",
+				"description-en": "The <b>Wisej.Web.Button</b> control defines a clickable element on the screen. Inside a Button you can put text, images, or a combination of the two.",
+				"description-fr": "Le champ <b>Wisej.Web.Button</b> définit un élément cliquable à l'écran. À l'intérieur d'un bouton, vous pouvez mettre du texte, des images ou une combinaison des deux."
+			}
+		},
+		"SplitButton": {
+			"Features": {
+				"sourceUrl": "https://github.com/",
+				"assembly": "Features, Wisej.DemoBrowser.SplitButton.dll",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/SplitButton.svg",
+				"docsUrl": "https://docs.wisej.com/docs/controls/buttons/splitbutton",
+				"description-en": "<b>Wisej.Web.SplitButton</b> is a composite control with which the user can select a default value bound to a primary button, or select from a list of mutually exclusive values displayed in a drop-down list bound to a secondary button.",
+				"description-fr": "<b>Wisej.Web.SplitButton</b> est un contrôle composite avec lequel l'utilisateur peut sélectionner une valeur par défaut liée à un bouton principal, ou sélectionner dans une liste de valeurs mutuellement exclusives affichées dans une liste déroulante liée à un bouton secondaire."
+			}
+		},
+		"CheckBox": {
+			"Features": {
+				"sourceUrl": "https://github.com/",
+				"assembly": "Features, Wisej.DemoBrowser.CheckBox.dll",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/CheckBox.svg",
+				"docsUrl": "https://docs.wisej.com/docs/controls/buttons/checkbox",
+				"description-en": "The <b>Wisej.Web.CheckBox</b> control gives the user an option, such as true/false or yes/no. The CheckBox control can display an image or text or both.",
+				"description-fr": "Le contrôle <b>Wisej.Web.CheckBox</b> donne à l'utilisateur une option, telle que vrai/faux ou oui/non. Le contrôle CheckBox peut afficher une image ou du texte ou les deux."
+			}
+		},
+		"RadioButton": {
+			"Features": {
+				"sourceUrl": "https://github.com/",
+				"assembly": "Features, Wisej.DemoBrowser.RadioButton.dll",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/RadioButton.svg",
+				"docsUrl": "https://docs.wisej.com/docs/controls/buttons/radiobutton",
+				"description-en": "The <b>Wisej.Web.RadioButton</b> control enables the user to select a single option from a group of choices when paired with other RadioButton controls.",
+				"description-fr": "Le contrôle <b>Wisej.Web.RadioButton</b> permet à l'utilisateur de sélectionner une seule option parmi un groupe de choix lorsqu'il est associé à d'autres contrôles RadioButton."
+			}
+		}
+	},
+	"Grids": {
+		"PropertyGrid": {
+			"Features": {
+				"sourceUrl": "https://github.com/",
+				"assembly": "Features, Wisej.DemoBrowser.PropertyGrid.dll",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/PropertySnippet.svg",
+				"docsUrl": "https://docs.wisej.com/docs/controls/grids/propertygrid",
+				"description-en": "The <b>Wisej.Web.PropertyGrid</b> control enables the user to edit object properties on the fly.",
+				"description-fr": "à faire"
+			}
+		},
+		"DataGridView": {
+			"Features": {
+				"sourceUrl": "https://github.com/",
+				"assembly": "Features, Wisej.DemoBrowser.DataGridView.dll",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/DataGrid.svg",
+				"docsUrl": "https://docs.wisej.com/docs/controls/grids/datagridview",
+				"description-en": "The <b>Wisej.Web.DataGridView</b> control provides a customizable table for displaying data. The DataGridView class allows customization of cells, rows, columns, and borders through the use of properties such as DefaultCellStyle, ColumnHeadersDefaultCellStyle, CellBorderStyle, and GridColor.",
+				"description-fr": "à faire"
+			},
+			"Summary Rows": {
+				"sourceUrl": "https://github.com/",
+				"assembly": "SummaryRows, Wisej.DemoBrowser.DataGridView.dll",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/DataGridView.svg",
+				"docsUrl": "https://docs.wisej.com/docs/controls/grids/datagridview",
+				"description-en": "TODO",
+				"description-fr": "à faire"
+			}
+		},
+		"ListView": {
+			"Features": {
+				"sourceUrl": "https://github.com/",
+				"assembly": "Features, Wisej.DemoBrowser.ListView.dll",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/ListView.svg",
+				"docsUrl": "https://docs.wisej.com/docs/controls/lists/listview",
+				"description-en": "The <b>Wisej.Web.ListView</b> is a control used to display a list of items through one of four predefined views."
+			},
+			"Appearances": {
+				"sourceUrl": "https://github.com/",
+				"assembly": "Appearances, Wisej.DemoBrowser.ListView.dll",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/ListView.svg",
+				"docsUrl": "https://docs.wisej.com/docs/controls/lists/listview",
+				"description-en": "The <b>Wisej.Web.ListView</b> is a control used to display a list of items through one of four predefined views."
+			},
+			"Selection Modes": {
+				"sourceUrl": "https://github.com/",
+				"assembly": "SelectionModes, Wisej.DemoBrowser.ListView.dll",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/ListView.svg",
+				"docsUrl": "https://docs.wisej.com/docs/controls/lists/listview",
+				"description-en": "The <b>Wisej.Web.ListView</b> is a control used to display a list of items through one of four predefined views."
+			}
+		},
+		"FullCalendar": {
+			"Features": {
+				"sourceUrl": "https://github.com/",
+				"assembly": "Features, Wisej.DemoBrowser.FullCalendar.dll",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/Calendar.svg",
+				"docsUrl": "https://docs.wisej.com/extensions/extensions/fullcalendar",
+				"description-en": "The <b>Wisej.Web.Ext.FullCalendar</b> extension is an amazing full-size drag-n-drop event calendar. Supports multiple views, flexible events, custom styles, integrates with Google Calendars, and it’s completely integrated with Wisej."
+			},
+			"Appearances": {
+				"sourceUrl": "https://github.com/",
+				"assembly": "Appearances, Wisej.DemoBrowser.FullCalendar.dll",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/Calendar.svg",
+				"docsUrl": "https://docs.wisej.com/extensions/extensions/fullcalendar",
+				"description-en": "The <b>Wisej.Web.Ext.FullCalendar</b> extension is an amazing full-size drag-n-drop event calendar. Supports multiple views, flexible events, custom styles, integrates with Google Calendars, and it’s completely integrated with Wisej."
+			}
+		},
+		"DataRepeater": {
+			"Features": {
+				"sourceUrl": "https://github.com/",
+				"assembly": "Features, Wisej.DemoBrowser.DataRepeater.dll",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/DataRepeater.svg",
+				"docsUrl": "https://docs.wisej.com/docs/controls/grids/datarepeater",
+				"description-en": "The <b>Wisej.Web.DataRepeater</b> control functions as a scrollable container for controls that display repeated data, for example, rows in a database table."
+			}
+		}
+	},
+	"Notifications": {
+		"MessageBox": {
+			"Features": {
+				"sourceUrl": "https://github.com/",
+				"assembly": "Features, Wisej.DemoBrowser.MessageBox.dll",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/Message.svg",
+				"docsUrl": "https://docs.wisej.com/docs/controls/notifications/messagebox",
+				"description-en": "The <b>Wisej.Web.MessageBox</b> control displays a modal message box, also known as a dialog box, that can contain text, buttons, and symbols that inform and instruct the user."
+			}
+		},
+		"AlertBox": {
+			"Features": {
+				"sourceUrl": "https://github.com/",
+				"assembly": "Features, Wisej.DemoBrowser.AlertBox.dll",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/Alert.svg",
+				"docsUrl": "https://docs.wisej.com/docs/controls/notifications/alertbox",
+				"description-en": "The <b>Wisej.Web.AlertBox</b> Displays an alert box that can contain an icon and text that inform and instruct the user. Alert boxes are not modal and can disappear automatically."
+			}
+		},
+		"ProgressBar": {
+			"Features": {
+				"sourceUrl": "https://github.com/",
+				"assembly": "Features, Wisej.DemoBrowser.ProgressBar.dll",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/ProgressBar.svg",
+				"docsUrl": "https://docs.wisej.com/docs/controls/content/progressbar",
+				"description-en": "The <b>Wisej.Web.ProgressBar</b> is used to visual indicate the progress of lengthy operations."
+			}
+		},
+		"Toast": {
+			"Features": {
+				"sourceUrl": "https://github.com/",
+				"assembly": "Features, Wisej.DemoBrowser.Toast.dll",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/Alert.svg",
+				"docsUrl": "https://docs.wisej.com/docs/controls/notifications/toast",
+				"description-en": "Unlike the MessageBox and AlertBox, which are static classes, the <b>Wisej.Web.Toast</b> control is a component that you create and can hold on to in your application. You can reuse it and you can update the content while the Toast is visible."
+			}
+		}
+	},
+	"Extensions": {
+		"TinyMCE": {},
+		"CKEditor": {},
+		"TinyEditor": {},
+		"Barcode": {},
+		"CoolClock": {},
+		"Notification": {},
+		"Geolocation": {},
+		"Translation": {},
+		"BubbleNotifications": {},
+		"Amazon S3": {},
+		"Google Drive": {},
+		"Microsoft OneDrive": {},
+		"jSequence": {},
+		"Premium": {
+			"Features": {
+				"sourceUrl": "https://github.com/",
+				"assembly": "Features, Wisej.DemoBrowser.Premium.dll",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/PictureAndText.svg",
+				"docsUrl": "https://docs.wisej.com/extensions/icon-packs/bootstrapicons",
+				"description-en": "Wisej Professional and Enterprise licenses include access to premium extensions. Control libraries from the following vendors have been wrapped in Wisej to provide developers a seamless integration of any type of control."
+			}
+		}
+	},
+	"Icon Packs": {
+		"Bootstrap Icons": {
+			"Features": {
+				"sourceUrl": "https://github.com/",
+				"assembly": "Features, Wisej.DemoBrowser.BootstrapIcons.dll",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/PictureAndText.svg",
+				"docsUrl": "https://docs.wisej.com/extensions/icon-packs/bootstrapicons",
+				"description-en": "Free, high quality, open source icon library with over 1,500 icons. Include them anyway you like—SVGs, SVG sprite, or web fonts. Use them with or without Bootstrap in any project."
+			}
+		},
+		"Elegant Icons": {
+			"Features": {
+				"sourceUrl": "https://github.com/",
+				"assembly": "Features, Wisej.DemoBrowser.ElegantIcons.dll",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/PictureAndText.svg",
+				"docsUrl": "https://docs.wisej.com/extensions/icon-packs/eleganticons-iconpack",
+				"description-en": "The complete <b>Elegant Icons</b> icon pack from Elegant Themes."
+			}
+		},
+		"FontAwsome": {
+			"Features": {
+				"sourceUrl": "https://github.com/",
+				"assembly": "Features, Wisej.DemoBrowser.FontAwsome.dll",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/PictureAndText.svg",
+				"docsUrl": "https://docs.wisej.com/extensions/icon-packs/materialdesign-iconpack",
+				"description-en": "The complete set of 600+ icons in <b>Font Awesome</b>."
+			}
+		},
+		"Material Design": {
+			"Features": {
+				"sourceUrl": "https://github.com/",
+				"assembly": "Features, Wisej.DemoBrowser.MaterialDesign.dll",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/PictureAndText.svg",
+				"docsUrl": "https://docs.wisej.com/extensions/icon-packs/materialdesign-iconpack",
+				"description-en": "<b>Material design system icons</b> are simple, modern, friendly, and sometimes quirky. Each icon is created using our design guidelines to depict in simple and minimal forms the universal concepts used commonly throughout a UI."
+			}
+		},
+		"ModernUI": {
+			"Features": {
+				"sourceUrl": "https://github.com/",
+				"assembly": "Features, Wisej.DemoBrowser.ModernUi.dll",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/PictureAndText.svg",
+				"docsUrl": "https://docs.wisej.com/extensions/icon-packs/materialdesign-iconpack",
+				"description-en": "The complete set of <b>ModernUI icons</b>, featuring 1200+ icons for you to choose from." 
+			}
+		},
+		"Vaadin": {
+			"Features": {
+				"sourceUrl": "https://github.com/",
+				"assembly": "Features, Wisej.DemoBrowser.VaadinIcons.dll",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/PictureAndText.svg",
+				"docsUrl": "https://docs.wisej.com/extensions/icon-packs/materialdesign-iconpack",
+				"description-en": "<b>Vaadin Icons</b> is a set of 600+ icons designed for web applications. Free to use, anywhere!"
+			}
+		},
+		"Visual Studio Icons": {
+			"Features": {
+				"sourceUrl": "https://github.com/",
+				"assembly": "Features, Wisej.DemoBrowser.VisualStudioIcons.dll",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/PictureAndText.svg",
+				"docsUrl": "https://docs.wisej.com/extensions/icon-packs/materialdesign-iconpack",
+				"description-en": "The <b>Visual Studio Icon Library</b> contains application 4600+ icons that appear in Microsoft Visual Studio, Microsoft Windows, the Office system and other Microsoft software."
+			}
+		}
+	}
+}

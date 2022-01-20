@@ -1,0 +1,62 @@
+{
+	"Title": "DataGridView",
+	"Description": "The DataGridView control provides a customizable table for displaying data.\nThe DataGridView class allows customization of cells, rows, columns, and borders through the use of properties such as DefaultCellStyle, ColumnHeadersDefaultCellStyle,CellBorderStyle, and GridColor.",
+	"Documentation": [
+		{
+			"DGVDataBinding": [
+				{
+					"Title": "Data Binding",
+					"Link": "https://docs.wisej.com/docs/controls/general/data-binding",
+					"Label": "Concept",
+					"IconSource": "resource.wx/Wisej.Ext.VisualStudioIcons/TwoWayDataBinding.svg"
+				},
+				{
+					"Title": "Simple Binding",
+					"Link": "https://docs.wisej.com/docs/controls/general/data-binding",
+					"Label": "Concept",
+					"IconSource": "resource.wx/Wisej.Ext.VisualStudioIcons/MemoryArray.svg"
+				},
+				{
+					"Title": "Json File",
+					"Link": "",
+					"Label": "Concept",
+					"IconSource": "resource.wx/Wisej.Ext.VisualStudioIcons/JSONScript.svg"
+				},
+				{
+					"Title": "DataGridView",
+					"Link": "https://docs.wisej.com/docs/controls/lists/datagridview",
+					"Label": "Control",
+					"IconSource": "resource.wx/Wisej.Ext.VisualStudioIcons/DataGrid.svg"
+				}
+			],
+			"JsonFile": [
+				{
+					"Title": "Json File",
+					"Link": "",
+					"Label": "Concept",
+					"IconSource": "resource.wx/Wisej.Ext.VisualStudioIcons/JSONScript.svg"
+				},
+				{
+					"Title": "DataGridView",
+					"Link": "https://docs.wisej.com/docs/controls/lists/datagridview",
+					"Label": "Control",
+					"IconSource": "resource.wx/Wisej.Ext.VisualStudioIcons/DataGrid.svg"
+				}
+			],
+			"DGVSimpleBinding": [
+				{
+					"Title": "Simple Binding",
+					"Link": "https://docs.wisej.com/docs/controls/general/data-binding",
+					"Label": "Concept",
+					"IconSource": "resource.wx/Wisej.Ext.VisualStudioIcons/MemoryArray.svg"
+				},
+				{
+					"Title": "DataGridView",
+					"Link": "https://docs.wisej.com/docs/controls/lists/datagridview",
+					"Label": "Control",
+					"IconSource": "resource.wx/Wisej.Ext.VisualStudioIcons/DataGrid.svg"
+				}
+			]
+		}
+	]
+}
