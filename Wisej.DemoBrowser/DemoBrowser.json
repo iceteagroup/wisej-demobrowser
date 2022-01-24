@@ -6,7 +6,7 @@
 		//},
 		"TextBox": {
 			"Features": {
-				"sourceUrl": "https://github.com/",
+				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/blob/main/Demos/Editors/Wisej.DemoBrowser.TextBox/Features.cs",
 				"assembly": "Features, Wisej.DemoBrowser.TextBox.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/TextBox.svg",
 				"docsUrl": "https://docs.wisej.com/docs/controls/editors/textbox",
@@ -16,14 +16,14 @@
 				"description-es": "El control <b>Wisej.Web.TextBox</b> permite al usuario ingresar texto sin formato en una aplicación. <br> Por lo general, un control TextBox acepta una sola línea de texto. Puede utilizar la propiedad Multiline para permitir que el control muestre y acepte texto en más de una línea."
 			},
 			"Labels": {
-				"sourceUrl": "https://github.com/",
+				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/blob/main/Demos/Editors/Wisej.DemoBrowser.TextBox/Labels.Designer.cs",
 				"assembly": "Labels, Wisej.DemoBrowser.TextBox.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/TextBox.svg",
 				"docsUrl": "https://docs.wisej.com/docs/controls/editors/textbox#label",
 				"description-en": "The <b>Wisej.Web.TextBox</b> control supports the inline Label property. This allows an application to set a label in relation to a TextBox control without having to create an additional Label control."
 			},
 			"Input Types": {
-				"sourceUrl": "https://github.com/",
+				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/blob/main/Demos/Editors/Wisej.DemoBrowser.TextBox/InputTypes.Designer.cs",
 				"assembly": "InputTypes, Wisej.DemoBrowser.TextBox.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/TextBox.svg",
 				"docsUrl": "https://docs.wisej.com/docs/controls/editors/textbox",
@@ -33,7 +33,7 @@
 		},
 		"MaskedTextBox": {
 			"Features": {
-				"sourceUrl": "https://github.com/",
+				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/blob/main/Demos/Editors/Wisej.DemoBrowser.MaskedTextBox/Features.Designer.cs",
 				"assembly": "Features, Wisej.DemoBrowser.MaskedTextBox.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/MaskedTextBox.svg",
 				"docsUrl": "https://docs.wisej.com/docs/controls/editors/textbox/maskedtextbox",
@@ -43,7 +43,7 @@
 		},
 		"ComboBox": {
 			"Features": {
-				"sourceUrl": "https://github.com/",
+				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/blob/main/Demos/Editors/Wisej.DemoBrowser.ComboBox/Features.Designer.cs",
 				"assembly": "Features, Wisej.DemoBrowser.ComboBox.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/ComboBox.svg",
 				"docsUrl": "https://docs.wisej.com/docs/controls/lists/combobox",
@@ -52,7 +52,7 @@
 				"description-it": "Il controllo Wisej.Web.ComboBox visualizza una casella di testo combinata con un ListBox, che consente all'utente di selezionare elementi dall'elenco o di immettere un nuovo valore. Gli oggetti nell'elenco a discesa possono essere di qualsiasi tipo, l'elenco mostrerà una rappresentazione di stringa di ciascun elemento."
 			},
 			"Labels": {
-				"sourceUrl": "https://github.com/",
+				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/blob/main/Demos/Editors/Wisej.DemoBrowser.ComboBox/Labels.Designer.cs",
 				"assembly": "Labels, Wisej.DemoBrowser.ComboBox.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/ComboBox.svg",
 				"docsUrl": "https://docs.wisej.com/docs/controls/lists/combobox#label",
@@ -66,7 +66,7 @@
 			//  "description-en": ""
 			//},
 			"Simple Binding": {
-				"sourceUrl": "https://github.com/",
+				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/blob/main/Demos/Editors/Wisej.DemoBrowser.ComboBox/SimpleBinding.cs",
 				"assembly": "SimpleBinding, Wisej.DemoBrowser.ComboBox.dll",
 				"docsUrl": "https://docs.wisej.com/docs/controls/general/data-binding",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/TwoWayDataBinding.svg",
@@ -76,7 +76,7 @@
 		},
 		"ListBox": {
 			"Features": {
-				"sourceUrl": "https://github.com/",
+				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/blob/main/Demos/Editors/Wisej.DemoBrowser.ListBox/Features.Designer.cs",
 				"assembly": "Features, Wisej.DemoBrowser.ListBox.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/ListBox.svg",
 				"docsUrl": "https://docs.wisej.com/docs/controls/lists/listbox",
@@ -86,7 +86,7 @@
 		},
 		"CheckedListBox": {
 			"Features": {
-				"sourceUrl": "https://github.com/",
+				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/blob/main/Demos/Editors/Wisej.DemoBrowser.CheckedListBox/Features.Designer.cs",
 				"assembly": "Features, Wisej.DemoBrowser.CheckedListBox.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/ListBox.svg",
 				"docsUrl": "https://docs.wisej.com/docs/controls/lists/listbox/checkedlistbox",
@@ -96,14 +96,14 @@
 		},
 		"TreeView": {
 			"Features": {
-				"sourceUrl": "https://github.com/",
+				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/blob/main/Demos/Editors/Wisej.DemoBrowser.TreeView/Features.Designer.cs",
 				"assembly": "Features, Wisej.DemoBrowser.TreeView.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/TreeView.svg",
 				"docsUrl": "https://docs.wisej.com/docs/controls/lists/treeview",
 				"description-en": "The <b>Wisej.Web.TreeView</b> displays a hierarchical collection of labeled items, each represented by a TreeNode."
 			},
 			"Selection Modes": {
-				"sourceUrl": "https://github.com/",
+				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/blob/main/Demos/Editors/Wisej.DemoBrowser.TreeView/SelectionModes.Designer.cs",
 				"assembly": "SelectionModes, Wisej.DemoBrowser.TreeView.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/TreeView.svg",
 				"docsUrl": "https://docs.wisej.com/docs/controls/lists/treeview",
@@ -112,14 +112,14 @@
 		},
 		"DateTimePicker": {
 			"Features": {
-				"sourceUrl": "https://github.com/",
+				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/blob/main/Demos/Editors/Wisej.DemoBrowser.DateTimePicker/Features.Designer.cs",
 				"assembly": "Features, Wisej.DemoBrowser.DateTimePicker.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/DatePicker.svg",
 				"docsUrl": "https://docs.wisej.com/docs/controls/editors/datetimepicker",
 				"description-en": "The <b>Wisej.Web.DateTimePicker</b> control is used to allow the user to select a date and time, and to display that date and time in the specified format. The DateTimePicker control makes it easy to work with dates and times because it handles a lot of the data validation automatically."
 			},
 			"Labels": {
-				"sourceUrl": "https://github.com/",
+				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/blob/main/Demos/Editors/Wisej.DemoBrowser.DateTimePicker/Labels.Designer.cs",
 				"assembly": "Labels, Wisej.DemoBrowser.DateTimePicker.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/DatePicker.svg",
 				"docsUrl": "https://docs.wisej.com/docs/controls/general/labels",
@@ -128,7 +128,7 @@
 		},
 		"MonthCalendar": {
 			"Features": {
-				"sourceUrl": "https://github.com/",
+				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/blob/main/Demos/Editors/Wisej.DemoBrowser.MonthCalendar/Features.Designer.cs",
 				"assembly": "Features, Wisej.DemoBrowser.MonthCalendar.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/Calendar.svg",
 				"docsUrl": "https://docs.wisej.com/docs/controls/editors/monthcalendar",
@@ -137,7 +137,7 @@
 		},
 		"NumericUpDown": {
 			"Features": {
-				"sourceUrl": "https://github.com/",
+				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/blob/main/Demos/Editors/Wisej.DemoBrowser.NumericUpDown/Features.Designer.cs",
 				"assembly": "Features, Wisej.DemoBrowser.NumericUpDown.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/NumericListBox.svg",
 				"docsUrl": "https://docs.wisej.com/docs/controls/editors/numericupdown",
@@ -146,14 +146,14 @@
 		},
 		"DomainUpDown": {
 			"Features": {
-				"sourceUrl": "https://github.com/",
+				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/blob/main/Demos/Editors/Wisej.DemoBrowser.DomainUpDown/Features.Designer.cs",
 				"assembly": "Features, Wisej.DemoBrowser.DomainUpDown.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/DomainUpDownScroll.svg",
 				"docsUrl": "https://docs.wisej.com/docs/controls/editors/domainupdown",
 				"description-en": "The <b>Wisej.Web.DomainUpDown</b> control displays a single string value that is selected from an Object collection by clicking the up or down buttons of the control."
 			},
 			"Labels": {
-				"sourceUrl": "https://github.com/",
+				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/blob/main/Demos/Editors/Wisej.DemoBrowser.DomainUpDown/Labels.Designer.cs",
 				"assembly": "Labels, Wisej.DemoBrowser.DomainUpDown.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/DomainUpDownScroll.svg",
 				"docsUrl": "https://docs.wisej.com/docs/controls/general/labels",
@@ -162,7 +162,7 @@
 		},
 		"Upload": {
 			"Features": {
-				"sourceUrl": "https://github.com/",
+				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/blob/main/Demos/Editors/Wisej.DemoBrowser.Upload/Features.cs",
 				"assembly": "Features, Wisej.DemoBrowser.Upload.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/Upload.svg",
 				"docsUrl": "https://docs.wisej.com/docs/controls/content/upload",
