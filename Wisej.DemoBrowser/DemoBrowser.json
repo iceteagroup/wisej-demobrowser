@@ -173,7 +173,7 @@
 	"Miscellaneous": {
 		"Video": {
 			"Features": {
-				"sourceUrl": "https://github.com/",
+				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/blob/main/Demos/Miscellaneous/Wisej.DemoBrowser.Video/Features.Designer.cs",
 				"assembly": "Features, Wisej.DemoBrowser.Video.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/PlayVideo.svg",
 				"docsUrl": "https://docs.wisej.com/docs/controls/media/video",
@@ -183,7 +183,7 @@
 		},
 		"Audio": {
 			"Features": {
-				"sourceUrl": "https://github.com/",
+				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/blob/main/Demos/Miscellaneous/Wisej.DemoBrowser.Audio/Features.Designer.cs",
 				"assembly": "Features, Wisej.DemoBrowser.Audio.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/Audio.svg",
 				"docsUrl": "https://docs.wisej.com/docs/controls/media/audio",
@@ -193,7 +193,7 @@
 		},
 		"Line": {
 			"Features": {
-				"sourceUrl": "https://github.com/",
+				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/blob/main/Demos/Miscellaneous/Wisej.DemoBrowser.Line/Features.Designer.cs",
 				"assembly": "Features, Wisej.DemoBrowser.Line.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/EditLine.svg",
 				"docsUrl": "https://docs.wisej.com/docs/controls/content/line",
