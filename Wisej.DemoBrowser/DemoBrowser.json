@@ -384,7 +384,7 @@
 		"StyleSheet": {},
 		"HelpTip": {
 			"Features": {
-				"sourceUrl": "https://github.com/",
+				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/blob/main/Demos/Extenders/Wisej.DemoBrowser.HelpTip/Features.cs",
 				"assembly": "Features, Wisej.DemoBrowser.HelpTip.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/StatusHelp.svg",
 				"docsUrl": "https://docs.wisej.com/api/wisej.web/extenders/wisej.web.helptip",
@@ -394,14 +394,14 @@
 		"Animation": {},
 		"Rotation": {
 			"Features": {
-				"sourceUrl": "https://github.com/",
+				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/blob/main/Demos/Extenders/Wisej.DemoBrowser.Rotation/Features.cs",
 				"assembly": "Features, Wisej.DemoBrowser.Rotation.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/Rotate.svg",
 				"docsUrl": "https://docs.wisej.com/docs/controls/extenders/rotation",
 				"description-en": "The <b>Wisej.Web.Rotation</b> component adds rotation capabilities along the X,Y,Z axis to Wisej controls."
 			},
 			"Web Developer Awakens": {
-				"sourceUrl": "https://github.com/",
+				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/blob/main/Demos/Extenders/Wisej.DemoBrowser.Rotation/WebDeveloperAwakens.Designer.cs",
 				"assembly": "WebDeveloperAwakens, Wisej.DemoBrowser.Rotation.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/Rotate.svg",
 				"docsUrl": "https://docs.wisej.com/docs/controls/extenders/rotation",
