@@ -497,7 +497,7 @@
 	"Grids": {
 		"PropertyGrid": {
 			"Features": {
-				"sourceUrl": "https://github.com/",
+				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/blob/main/Demos/Grids/Wisej.DemoBrowser.PropertyGrid/Features.cs",
 				"assembly": "Features, Wisej.DemoBrowser.PropertyGrid.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/PropertySnippet.svg",
 				"docsUrl": "https://docs.wisej.com/docs/controls/grids/propertygrid",
@@ -507,7 +507,7 @@
 		},
 		"DataGridView": {
 			"Features": {
-				"sourceUrl": "https://github.com/",
+				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/blob/main/Demos/Grids/Wisej.DemoBrowser.DataGridView/Features.cs",
 				"assembly": "Features, Wisej.DemoBrowser.DataGridView.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/DataGrid.svg",
 				"docsUrl": "https://docs.wisej.com/docs/controls/grids/datagridview",
@@ -515,7 +515,7 @@
 				"description-fr": "à faire"
 			},
 			"Summary Rows": {
-				"sourceUrl": "https://github.com/",
+				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/blob/main/Demos/Grids/Wisej.DemoBrowser.DataGridView/SummaryRows.cs",
 				"assembly": "SummaryRows, Wisej.DemoBrowser.DataGridView.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/DataGridView.svg",
 				"docsUrl": "https://docs.wisej.com/docs/controls/grids/datagridview",
@@ -525,21 +525,21 @@
 		},
 		"ListView": {
 			"Features": {
-				"sourceUrl": "https://github.com/",
+				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/blob/main/Demos/Grids/Wisej.DemoBrowser.ListView/Features.cs",
 				"assembly": "Features, Wisej.DemoBrowser.ListView.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/ListView.svg",
 				"docsUrl": "https://docs.wisej.com/docs/controls/lists/listview",
 				"description-en": "The <b>Wisej.Web.ListView</b> is a control used to display a list of items through one of four predefined views."
 			},
 			"Appearances": {
-				"sourceUrl": "https://github.com/",
+				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/blob/main/Demos/Grids/Wisej.DemoBrowser.ListView/Appearances.cs",
 				"assembly": "Appearances, Wisej.DemoBrowser.ListView.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/ListView.svg",
 				"docsUrl": "https://docs.wisej.com/docs/controls/lists/listview",
 				"description-en": "The <b>Wisej.Web.ListView</b> is a control used to display a list of items through one of four predefined views."
 			},
 			"Selection Modes": {
-				"sourceUrl": "https://github.com/",
+				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/blob/main/Demos/Grids/Wisej.DemoBrowser.ListView/SelectionModes.Designer.cs",
 				"assembly": "SelectionModes, Wisej.DemoBrowser.ListView.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/ListView.svg",
 				"docsUrl": "https://docs.wisej.com/docs/controls/lists/listview",
@@ -548,14 +548,14 @@
 		},
 		"FullCalendar": {
 			"Features": {
-				"sourceUrl": "https://github.com/",
+				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/blob/main/Demos/Grids/Wisej.DemoBrowser.FullCalendar/Features.cs",
 				"assembly": "Features, Wisej.DemoBrowser.FullCalendar.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/Calendar.svg",
 				"docsUrl": "https://docs.wisej.com/extensions/extensions/fullcalendar",
 				"description-en": "The <b>Wisej.Web.Ext.FullCalendar</b> extension is an amazing full-size drag-n-drop event calendar. Supports multiple views, flexible events, custom styles, integrates with Google Calendars, and it’s completely integrated with Wisej."
 			},
 			"Appearances": {
-				"sourceUrl": "https://github.com/",
+				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/blob/main/Demos/Grids/Wisej.DemoBrowser.FullCalendar/Appearances.cs",
 				"assembly": "Appearances, Wisej.DemoBrowser.FullCalendar.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/Calendar.svg",
 				"docsUrl": "https://docs.wisej.com/extensions/extensions/fullcalendar",
@@ -564,7 +564,7 @@
 		},
 		"DataRepeater": {
 			"Features": {
-				"sourceUrl": "https://github.com/",
+				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/blob/main/Demos/Grids/Wisej.DemoBrowser.DataRepeater/Features.cs",
 				"assembly": "Features, Wisej.DemoBrowser.DataRepeater.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/DataRepeater.svg",
 				"docsUrl": "https://docs.wisej.com/docs/controls/grids/datarepeater",
