@@ -455,7 +455,7 @@
 	"Buttons": {
 		"Button": {
 			"Features": {
-				"sourceUrl": "https://github.com/",
+				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/blob/main/Demos/Buttons/Wisej.DemoBrowser.Button/Features.Designer.cs",
 				"assembly": "Features, Wisej.DemoBrowser.Button.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/Button.svg",
 				"docsUrl": "https://docs.wisej.com/docs/controls/buttons/button",
@@ -465,7 +465,7 @@
 		},
 		"SplitButton": {
 			"Features": {
-				"sourceUrl": "https://github.com/",
+				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/blob/main/Demos/Buttons/Wisej.DemoBrowser.SplitButton/Features.Designer.cs",
 				"assembly": "Features, Wisej.DemoBrowser.SplitButton.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/SplitButton.svg",
 				"docsUrl": "https://docs.wisej.com/docs/controls/buttons/splitbutton",
@@ -475,7 +475,7 @@
 		},
 		"CheckBox": {
 			"Features": {
-				"sourceUrl": "https://github.com/",
+				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/blob/main/Demos/Buttons/Wisej.DemoBrowser.CheckBox/Features.Designer.cs",
 				"assembly": "Features, Wisej.DemoBrowser.CheckBox.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/CheckBox.svg",
 				"docsUrl": "https://docs.wisej.com/docs/controls/buttons/checkbox",
@@ -485,7 +485,7 @@
 		},
 		"RadioButton": {
 			"Features": {
-				"sourceUrl": "https://github.com/",
+				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/blob/main/Demos/Buttons/Wisej.DemoBrowser.RadioButton/Features.Designer.cs",
 				"assembly": "Features, Wisej.DemoBrowser.RadioButton.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/RadioButton.svg",
 				"docsUrl": "https://docs.wisej.com/docs/controls/buttons/radiobutton",
