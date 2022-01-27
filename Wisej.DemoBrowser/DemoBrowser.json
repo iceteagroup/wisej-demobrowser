@@ -575,7 +575,7 @@
 	"Notifications": {
 		"MessageBox": {
 			"Features": {
-				"sourceUrl": "https://github.com/",
+				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/blob/main/Demos/Notifications/Wisej.DemoBrowser.MessageBox/Features.cs",
 				"assembly": "Features, Wisej.DemoBrowser.MessageBox.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/Message.svg",
 				"docsUrl": "https://docs.wisej.com/docs/controls/notifications/messagebox",
@@ -584,7 +584,7 @@
 		},
 		"AlertBox": {
 			"Features": {
-				"sourceUrl": "https://github.com/",
+				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/blob/main/Demos/Notifications/Wisej.DemoBrowser.AlertBox/Features.cs",
 				"assembly": "Features, Wisej.DemoBrowser.AlertBox.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/Alert.svg",
 				"docsUrl": "https://docs.wisej.com/docs/controls/notifications/alertbox",
@@ -593,7 +593,7 @@
 		},
 		"ProgressBar": {
 			"Features": {
-				"sourceUrl": "https://github.com/",
+				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/blob/main/Demos/Notifications/Wisej.DemoBrowser.ProgressBar/Features.cs",
 				"assembly": "Features, Wisej.DemoBrowser.ProgressBar.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/ProgressBar.svg",
 				"docsUrl": "https://docs.wisej.com/docs/controls/content/progressbar",
@@ -602,7 +602,7 @@
 		},
 		"Toast": {
 			"Features": {
-				"sourceUrl": "https://github.com/",
+				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/blob/main/Demos/Notifications/Wisej.DemoBrowser.Toast/Features.cs",
 				"assembly": "Features, Wisej.DemoBrowser.Toast.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/Alert.svg",
 				"docsUrl": "https://docs.wisej.com/docs/controls/notifications/toast",
@@ -637,7 +637,7 @@
 	"Icon Packs": {
 		"Bootstrap Icons": {
 			"Features": {
-				"sourceUrl": "https://github.com/",
+				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/blob/main/Demos/IconPacks/Wisej.DemoBrowser.BootstrapIcons/Features.cs",
 				"assembly": "Features, Wisej.DemoBrowser.BootstrapIcons.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/PictureAndText.svg",
 				"docsUrl": "https://docs.wisej.com/extensions/icon-packs/bootstrapicons",
@@ -646,7 +646,7 @@
 		},
 		"Elegant Icons": {
 			"Features": {
-				"sourceUrl": "https://github.com/",
+				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/blob/main/Demos/IconPacks/Wisej.DemoBrowser.ElegantIcons/Features.cs",
 				"assembly": "Features, Wisej.DemoBrowser.ElegantIcons.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/PictureAndText.svg",
 				"docsUrl": "https://docs.wisej.com/extensions/icon-packs/eleganticons-iconpack",
@@ -655,7 +655,7 @@
 		},
 		"FontAwsome": {
 			"Features": {
-				"sourceUrl": "https://github.com/",
+				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/blob/main/Demos/IconPacks/Wisej.DemoBrowser.FontAwsome/Features.cs",
 				"assembly": "Features, Wisej.DemoBrowser.FontAwsome.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/PictureAndText.svg",
 				"docsUrl": "https://docs.wisej.com/extensions/icon-packs/materialdesign-iconpack",
@@ -664,7 +664,7 @@
 		},
 		"Material Design": {
 			"Features": {
-				"sourceUrl": "https://github.com/",
+				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/blob/main/Demos/IconPacks/Wisej.DemoBrowser.MaterialDesign/Features.cs",
 				"assembly": "Features, Wisej.DemoBrowser.MaterialDesign.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/PictureAndText.svg",
 				"docsUrl": "https://docs.wisej.com/extensions/icon-packs/materialdesign-iconpack",
@@ -673,7 +673,7 @@
 		},
 		"ModernUI": {
 			"Features": {
-				"sourceUrl": "https://github.com/",
+				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/blob/main/Demos/IconPacks/Wisej.DemoBrowser.ModernUI/Features.cs",
 				"assembly": "Features, Wisej.DemoBrowser.ModernUi.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/PictureAndText.svg",
 				"docsUrl": "https://docs.wisej.com/extensions/icon-packs/materialdesign-iconpack",
@@ -682,7 +682,7 @@
 		},
 		"Vaadin": {
 			"Features": {
-				"sourceUrl": "https://github.com/",
+				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/blob/main/Demos/IconPacks/Wisej.DemoBrowser.VaadinIcons/Features.cs",
 				"assembly": "Features, Wisej.DemoBrowser.VaadinIcons.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/PictureAndText.svg",
 				"docsUrl": "https://docs.wisej.com/extensions/icon-packs/materialdesign-iconpack",
@@ -691,7 +691,7 @@
 		},
 		"Visual Studio Icons": {
 			"Features": {
-				"sourceUrl": "https://github.com/",
+				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/blob/main/Demos/IconPacks/Wisej.DemoBrowser.VisualStudioIcons/Features.cs",
 				"assembly": "Features, Wisej.DemoBrowser.VisualStudioIcons.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/PictureAndText.svg",
 				"docsUrl": "https://docs.wisej.com/extensions/icon-packs/materialdesign-iconpack",
