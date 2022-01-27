@@ -413,7 +413,7 @@
 	"Content": {
 		"Label": {
 			"Features": {
-				"sourceUrl": "https://github.com/",
+				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/blob/main/Demos/Content/Wisej.DemoBrowser.Label/Features.Designer.cs",
 				"assembly": "Features, Wisej.DemoBrowser.Label.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/Label.svg",
 				"docsUrl": "https://docs.wisej.com/docs/controls/content/label",
@@ -423,7 +423,7 @@
 		},
 		"HtmlPanel": {
 			"Features": {
-				"sourceUrl": "https://github.com/",
+				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/blob/main/Demos/Content/Wisej.DemoBrowser.HtmlPanel/Features.cs",
 				"assembly": "Features, Wisej.DemoBrowser.HtmlPanel.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/HtmlFile.svg",
 				"docsUrl": "https://docs.wisej.com/docs/controls/content/htmlpanel",
@@ -433,7 +433,7 @@
 		},
 		"LinkLabel": {
 			"Features": {
-				"sourceUrl": "https://github.com/",
+				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/blob/main/Demos/Content/Wisej.DemoBrowser.LinkLabel/Features.cs",
 				"assembly": "Features, Wisej.DemoBrowser.LinkLabel.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/HyperLink.svg",
 				"docsUrl": "https://docs.wisej.com/docs/controls/content/linklabel",
@@ -443,7 +443,7 @@
 		},
 		"PictureBox": {
 			"Features": {
-				"sourceUrl": "https://github.com/",
+				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/blob/main/Demos/Content/Wisej.DemoBrowser.PictureBox/Features.Designer.cs",
 				"assembly": "Features, Wisej.DemoBrowser.PictureBox.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/PictureAndText.svg",
 				"docsUrl": "https://docs.wisej.com/docs/controls/content/PictureBox",
