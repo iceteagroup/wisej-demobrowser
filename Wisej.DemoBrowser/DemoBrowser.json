@@ -332,7 +332,7 @@
 		// TODO: "MainMenu": {},
 		"ContextMenu": {
 			"Features": {
-				"sourceUrl": "https://github.com/",
+				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/blob/main/Demos/ToolsAndMenus/Wisej.DemoBrowser.ContextMenu/Features.Designer.cs",
 				"assembly": "Features, Wisej.DemoBrowser.ContextMenu.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/ContextMenu.svg",
 				"docsUrl": "https://docs.wisej.com/docs/controls/menus/contextmenu",
@@ -341,7 +341,7 @@
 		},
 		"ToolBar": {
 			"Features": {
-				"sourceUrl": "https://github.com/",
+				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/blob/main/Demos/ToolsAndMenus/Wisej.DemoBrowser.ToolBar/Features.Designer.cs",
 				"assembly": "Features, Wisej.DemoBrowser.ToolBar.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/ToolBar.svg",
 				"docsUrl": "https://docs.wisej.com/docs/controls/containers/toolbar",
@@ -351,7 +351,7 @@
 		"Embedded Tools": {},
 		"StatusBar": {
 			"Features": {
-				"sourceUrl": "https://github.com/",
+				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/blob/main/Demos/ToolsAndMenus/Wisej.DemoBrowser.StatusBar/Features.Designer.cs",
 				"assembly": "Features, Wisej.DemoBrowser.StatusBar.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/StatusStrip.svg",
 				"docsUrl": "https://docs.wisej.com/docs/controls/containers/statusbar",
@@ -361,7 +361,7 @@
 		"RibbonBar": {},
 		"ScrollBars": {
 			"Features": {
-				"sourceUrl": "https://github.com/",
+				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/blob/main/Demos/ToolsAndMenus/Wisej.DemoBrowser.ScrollBars/Features.Designer.cs",
 				"assembly": "Features, Wisej.DemoBrowser.ScrollBars.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/ScrollBar.svg",
 				"docsUrl": "https://docs.wisej.com/docs/controls/content/scrollbars",
@@ -370,7 +370,7 @@
 		},
 		"TrackBar": {
 			"Features": {
-				"sourceUrl": "https://github.com/",
+				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/blob/main/Demos/ToolsAndMenus/Wisej.DemoBrowser.TrackBar/Features.Designer.cs",
 				"assembly": "Features, Wisej.DemoBrowser.TrackBar.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/Slider.svg",
 				"docsUrl": "https://docs.wisej.com/docs/controls/editors/trackbar",
