@@ -2,6 +2,7 @@
 using System.Threading;
 using Wisej.DemoBrowser.Common;
 using Wisej.Web;
+using Wisej.Web.Ext.Notification;
 
 namespace Wisej.DemoBrowser.Notification
 {
@@ -12,7 +13,7 @@ namespace Wisej.DemoBrowser.Notification
 			InitializeComponent();
 		}
 
-		private void notification1_Click(object sender, Web.Ext.Notification.NotificationClickEventArgs e)
+		private void notification1_Click(object sender, NotificationClickEventArgs e)
 		{
 			AlertBox.Show($"Clicked {e.Title}");
 		}
