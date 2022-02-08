@@ -546,22 +546,6 @@
 				"description-en": "The <b>Wisej.Web.ListView</b> is a control used to display a list of items through one of four predefined views."
 			}
 		},
-		"FullCalendar": {
-			"Features": {
-				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos",
-				"assembly": "Features, Wisej.DemoBrowser.FullCalendar.dll",
-				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/Calendar.svg",
-				"docsUrl": "https://docs.wisej.com/extensions/extensions/fullcalendar",
-				"description-en": "The <b>Wisej.Web.Ext.FullCalendar</b> extension is an amazing full-size drag-n-drop event calendar. Supports multiple views, flexible events, custom styles, integrates with Google Calendars, and it’s completely integrated with Wisej."
-			},
-			"Appearances": {
-				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos",
-				"assembly": "Appearances, Wisej.DemoBrowser.FullCalendar.dll",
-				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/Calendar.svg",
-				"docsUrl": "https://docs.wisej.com/extensions/extensions/fullcalendar",
-				"description-en": "The <b>Wisej.Web.Ext.FullCalendar</b> extension is an amazing full-size drag-n-drop event calendar. Supports multiple views, flexible events, custom styles, integrates with Google Calendars, and it’s completely integrated with Wisej."
-			}
-		},
 		"DataRepeater": {
 			"Features": {
 				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos",
@@ -617,7 +601,7 @@
 				"assembly": "Features, Wisej.DemoBrowser.AceEditor.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/HtmlTagEnd.svg",
 				"docsUrl": "https://docs.wisej.com/extensions/extensions/aceeditor/api/wisej.web.ext.aceeditor.aceeditor",
-				"description-en": "The <b>Wisej.Web.Ext.AceEditor.AceEditor</b> control is an embeddable code editor written in JavaScript. It matches the features and performance of native editors such as Sublime, Vim and TextMate. Ace is maintained as the primary editor for Cloud9 IDE and is the successor of the Mozilla Skywriter (Bespin) project."
+				"description-en": "The <b>Wisej.Web.Ext.AceEditor</b> control is an embeddable code editor written in JavaScript. It matches the features and performance of native editors such as Sublime, Vim and TextMate. Ace is maintained as the primary editor for Cloud9 IDE and is the successor of the Mozilla Skywriter (Bespin) project."
 			}
 		},
 		"BingWallpaper": {
@@ -626,7 +610,7 @@
 				"assembly": "Features, Wisej.DemoBrowser.BingWallpaper.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/DynamicImage.svg",
 				"docsUrl": "https://docs.wisej.com/extensions/extensions/bingwallpaper",
-				"description-en": "The <b>Wisej.Web.Ext.BingWallpaper.BingWallpaper</b> extender component enhances the Desktop control by adding Bing’s daily stunning wallpaper images. You can set the rotation interval, fade duration and number of images."
+				"description-en": "The <b>Wisej.Web.Ext.BingWallpaper</b> extender component enhances the Desktop control by adding Bing’s daily stunning wallpaper images. You can set the rotation interval, fade duration and number of images."
 			}
 		},
 		"Camera": {
@@ -635,7 +619,7 @@
 				"assembly": "Features, Wisej.DemoBrowser.Camera.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/CameraOutline.svg",
 				"docsUrl": "https://docs.wisej.com/extensions/extensions/camera",
-				"description-en": "The <b>Wisej.Web.Ext.Camera.Camera</b> control makes it possible to take pictures with the device's camera and upload them to the server."
+				"description-en": "The <b>Wisej.Web.Ext.Camera</b> control makes it possible to take pictures with the device's camera and upload them to the server."
 			}
 		},
 		"TinyMCE": {
@@ -644,7 +628,7 @@
 				"assembly": "Features, Wisej.DemoBrowser.TinyMCE.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/HtmlTagEnd.svg",
 				"docsUrl": "https://docs.wisej.com/extensions/extensions/geolocation/api/wisej.ext.geolocation.geolocation",
-				"description-en": "The <b>Wisej.Web.Ext.TinyMCE.TinyMCE</b> control (Tiny Moxiecode Content Editor) is a platform-independent, browser-based WYSIWYG editor control, written in JavaScript and released as open-source software under the LGPL by Ephox."
+				"description-en": "The <b>Wisej.Web.Ext.TinyMCE</b> control (Tiny Moxiecode Content Editor) is a platform-independent, browser-based WYSIWYG editor control, written in JavaScript and released as open-source software under the LGPL by Ephox."
 			}
 		},
 		"CKEditor": {
@@ -653,7 +637,16 @@
 				"assembly": "Features, Wisej.DemoBrowser.CKEditor.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/HtmlTagEnd.svg",
 				"docsUrl": "https://docs.wisej.com/extensions/extensions/ckeditor/api/wisej.web.ext.ckeditor.ckeditor",
-				"description-en": "The <b>Wisej.Web.Ext.CKEditor.CKEditor</b> control (formerly FCKeditor) is an open source WYSIWYG text editor designed to bring common word processor features directly to web pages, simplifying their content creation."
+				"description-en": "The <b>Wisej.Web.Ext.CKEditor</b> control (formerly FCKeditor) is an open source WYSIWYG text editor designed to bring common word processor features directly to web pages, simplifying their content creation."
+			}
+		},
+		"CountUp": {
+			"Features": {
+				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos",
+				"assembly": "Features, Wisej.DemoBrowser.CountUp.dll",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/Counter.svg",
+				"docsUrl": "https://docs.wisej.com/extensions/extensions/countup",
+				"description-en": "The <b>Wisej.Web.Ext.CountUp</b> control uses the excellent CountUp.js widget that can be used to quickly create animations that display numerical data in a more interesting way."
 			}
 		},
 		"TinyEditor": {
@@ -662,7 +655,7 @@
 				"assembly": "Features, Wisej.DemoBrowser.TinyEditor.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/HtmlTagEnd.svg",
 				"docsUrl": "https://docs.wisej.com/extensions/extensions/tinyeditor/api/wisej.web.ext.tinyeditor.tinyeditor",
-				"description-en": "The <b>Wisej.Web.Ext.TinyEditor.TinyEditor</b> control is a simple JavaScript WYSIWYG editor that is both lightweight (8KB) and standalone from: https://github.com/jessegreathouse/TinyEditor."
+				"description-en": "The <b>Wisej.Web.Ext.TinyEditor</b> control is a simple JavaScript WYSIWYG editor that is both lightweight (8KB) and standalone from: https://github.com/jessegreathouse/TinyEditor."
 			}
 		},
 		"Barcode": {
@@ -671,10 +664,34 @@
 				"assembly": "Features, Wisej.DemoBrowser.Barcode.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/CameraOutline.svg",
 				"docsUrl": "https://docs.wisej.com/extensions/extensions/barcode",
-				"description-en": "The <b>Wisej.Web.Ext.Barcode.Barcode</b> control uses ZXing.Net to generate Barcodes on the server and render them on the client. Supports: UPC-A, EAN-8, EAN-13, Code 39, Code 128, ITF, Codabar, Plessey, MSI, QR Code, PDF-417, Aztec, Data Matrix."
+				"description-en": "The <b>Wisej.Web.Ext.Barcode</b> control uses ZXing.Net to generate Barcodes on the server and render them on the client. Supports: UPC-A, EAN-8, EAN-13, Code 39, Code 128, ITF, Codabar, Plessey, MSI, QR Code, PDF-417, Aztec, Data Matrix."
 			}
 		},
-		"CoolClock": {},
+		"CoolClock": {
+			"Features": {
+				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos",
+				"assembly": "Features, Wisej.DemoBrowser.CoolClock.dll",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/Time.svg",
+				"docsUrl": "https://docs.wisej.com/extensions/extensions/coolclock",
+				"description-en": "The <b>Wisej.Web.Ext.CoolClock</b> control renders amazing analog clocks as Real-Time widgets. Supports several skins, logarithmic scale, and several properties to configure the tick delay or hide the second’s hand."
+			}
+		},
+		"FullCalendar": {
+			"Features": {
+				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos",
+				"assembly": "Features, Wisej.DemoBrowser.FullCalendar.dll",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/Calendar.svg",
+				"docsUrl": "https://docs.wisej.com/extensions/extensions/fullcalendar",
+				"description-en": "The <b>Wisej.Web.Ext.FullCalendar</b> extension is an amazing full-size drag-n-drop event calendar. Supports multiple views, flexible events, custom styles, integrates with Google Calendars, and it’s completely integrated with Wisej."
+			},
+			"Appearances": {
+				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos",
+				"assembly": "Appearances, Wisej.DemoBrowser.FullCalendar.dll",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/Calendar.svg",
+				"docsUrl": "https://docs.wisej.com/extensions/extensions/fullcalendar",
+				"description-en": "The <b>Wisej.Web.Ext.FullCalendar</b> extension is an amazing full-size drag-n-drop event calendar. Supports multiple views, flexible events, custom styles, integrates with Google Calendars, and it’s completely integrated with Wisej."
+			}
+		},
 		"Notification": {},
 		"Geolocation": {
 			"Features": {
@@ -682,7 +699,7 @@
 				"assembly": "Features, Wisej.DemoBrowser.Geolocation.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/GeoLocation.svg",
 				"docsUrl": "https://docs.wisej.com/extensions/extensions/geolocation/api/wisej.ext.geolocation.geolocation",
-				"description-en": "The <b>Wisej.Ext.Geolocation.Geolocation</b> component represents an object able to programmatically obtain the position of the device."
+				"description-en": "The <b>Wisej.Ext.Geolocation</b> component represents an object able to programmatically obtain the position of the device."
 			}
 		},
 		"ProgressCircle": {
@@ -691,7 +708,7 @@
 				"assembly": "Features, Wisej.DemoBrowser.ProgressCircle.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/ProgressBar.svg",
 				"docsUrl": "https://docs.wisej.com/extensions/extensions/progresscircle",
-				"description-en": "The <b>Wisej.Web.Ext.ProgressCircle.ProgressCircle</b> control is entirely implemented on the server side as a derived class of Wisej.Web.Canvas. It draws on a HTML5 canvas element on the client directly from the server in real time. The component lets you set value, line style and thickness, fill color, font, etc."
+				"description-en": "The <b>Wisej.Web.Ext.ProgressCircle</b> control is entirely implemented on the server side as a derived class of Wisej.Web.Canvas. It draws on a HTML5 canvas element on the client directly from the server in real time. The component lets you set value, line style and thickness, fill color, font, etc."
 			}
 		},
 		"Translation": {},
