@@ -38,7 +38,7 @@
 			// camera1
 			// 
 			this.camera1.Anchor = Wisej.Web.AnchorStyles.None;
-			this.camera1.Location = new System.Drawing.Point(389, 23);
+			this.camera1.Location = new System.Drawing.Point(540, 23);
 			this.camera1.Name = "camera1";
 			this.camera1.Size = new System.Drawing.Size(645, 428);
 			this.camera1.TabIndex = 0;
@@ -50,7 +50,7 @@
 			this.checkBoxVideo.Appearance = Wisej.Web.Appearance.Switch;
 			this.checkBoxVideo.AutoSize = false;
 			this.checkBoxVideo.Checked = true;
-			this.checkBoxVideo.Location = new System.Drawing.Point(47, 155);
+			this.checkBoxVideo.Location = new System.Drawing.Point(238, 155);
 			this.checkBoxVideo.Name = "checkBoxVideo";
 			this.checkBoxVideo.Size = new System.Drawing.Size(200, 35);
 			this.checkBoxVideo.TabIndex = 1;
@@ -62,7 +62,7 @@
 			this.checkBoxAudio.Anchor = Wisej.Web.AnchorStyles.None;
 			this.checkBoxAudio.Appearance = Wisej.Web.Appearance.Switch;
 			this.checkBoxAudio.AutoSize = false;
-			this.checkBoxAudio.Location = new System.Drawing.Point(47, 75);
+			this.checkBoxAudio.Location = new System.Drawing.Point(238, 75);
 			this.checkBoxAudio.Name = "checkBoxAudio";
 			this.checkBoxAudio.Size = new System.Drawing.Size(200, 35);
 			this.checkBoxAudio.TabIndex = 2;
@@ -80,7 +80,7 @@
             "Left",
             "Right"});
 			this.comboBoxFacingMode.LabelText = "Facing Mode";
-			this.comboBoxFacingMode.Location = new System.Drawing.Point(47, 235);
+			this.comboBoxFacingMode.Location = new System.Drawing.Point(238, 235);
 			this.comboBoxFacingMode.Name = "comboBoxFacingMode";
 			this.comboBoxFacingMode.Size = new System.Drawing.Size(200, 60);
 			this.comboBoxFacingMode.TabIndex = 3;
@@ -93,12 +93,12 @@
 			this.comboBoxObjectFit.DropDownStyle = Wisej.Web.ComboBoxStyle.DropDownList;
 			this.comboBoxObjectFit.Items.AddRange(new object[] {
             "Fill",
-            "Container",
+            "Contain",
             "Cover",
             "ScaleDown",
             "None"});
 			this.comboBoxObjectFit.LabelText = "Object Fit";
-			this.comboBoxObjectFit.Location = new System.Drawing.Point(47, 340);
+			this.comboBoxObjectFit.Location = new System.Drawing.Point(238, 340);
 			this.comboBoxObjectFit.Name = "comboBoxObjectFit";
 			this.comboBoxObjectFit.Size = new System.Drawing.Size(200, 60);
 			this.comboBoxObjectFit.TabIndex = 4;

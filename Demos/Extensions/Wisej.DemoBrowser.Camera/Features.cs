@@ -30,7 +30,7 @@ namespace Wisej.DemoBrowser.Camera
 
 		private void comboBoxObjectFit_SelectedIndexChanged(object sender, EventArgs e)
 		{
-			var fit = (string)this.comboBoxFacingMode.SelectedItem;
+			var fit = (string)this.comboBoxObjectFit.SelectedItem;
 			this.camera1.ObjectFit = (ObjectFit)Enum.Parse(typeof(ObjectFit), fit);
 		}
 	}

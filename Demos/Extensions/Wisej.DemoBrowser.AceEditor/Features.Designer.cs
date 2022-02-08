@@ -40,7 +40,7 @@
 			// aceEditor1
 			// 
 			this.aceEditor1.Anchor = Wisej.Web.AnchorStyles.None;
-			this.aceEditor1.Location = new System.Drawing.Point(292, 3);
+			this.aceEditor1.Location = new System.Drawing.Point(413, 3);
 			this.aceEditor1.Name = "aceEditor1";
 			this.aceEditor1.Size = new System.Drawing.Size(839, 468);
 			this.aceEditor1.TabIndex = 0;
@@ -52,7 +52,7 @@
 			this.checkBoxIndent.Appearance = Wisej.Web.Appearance.Switch;
 			this.checkBoxIndent.AutoSize = false;
 			this.checkBoxIndent.Checked = true;
-			this.checkBoxIndent.Location = new System.Drawing.Point(50, 20);
+			this.checkBoxIndent.Location = new System.Drawing.Point(171, 20);
 			this.checkBoxIndent.Name = "checkBoxIndent";
 			this.checkBoxIndent.Size = new System.Drawing.Size(200, 35);
 			this.checkBoxIndent.TabIndex = 1;
@@ -65,7 +65,7 @@
 			this.checkBoxGutter.Appearance = Wisej.Web.Appearance.Switch;
 			this.checkBoxGutter.AutoSize = false;
 			this.checkBoxGutter.Checked = true;
-			this.checkBoxGutter.Location = new System.Drawing.Point(50, 89);
+			this.checkBoxGutter.Location = new System.Drawing.Point(171, 89);
 			this.checkBoxGutter.Name = "checkBoxGutter";
 			this.checkBoxGutter.Size = new System.Drawing.Size(200, 35);
 			this.checkBoxGutter.TabIndex = 2;
@@ -78,7 +78,7 @@
 			this.checkBoxLineNumbers.Appearance = Wisej.Web.Appearance.Switch;
 			this.checkBoxLineNumbers.AutoSize = false;
 			this.checkBoxLineNumbers.Checked = true;
-			this.checkBoxLineNumbers.Location = new System.Drawing.Point(50, 158);
+			this.checkBoxLineNumbers.Location = new System.Drawing.Point(171, 158);
 			this.checkBoxLineNumbers.Name = "checkBoxLineNumbers";
 			this.checkBoxLineNumbers.Size = new System.Drawing.Size(200, 35);
 			this.checkBoxLineNumbers.TabIndex = 3;
@@ -96,7 +96,7 @@
             "JavaScript",
             "CSharp"});
 			this.comboBoxLanguage.LabelText = "Language";
-			this.comboBoxLanguage.Location = new System.Drawing.Point(50, 296);
+			this.comboBoxLanguage.Location = new System.Drawing.Point(171, 296);
 			this.comboBoxLanguage.Name = "comboBoxLanguage";
 			this.comboBoxLanguage.Size = new System.Drawing.Size(200, 60);
 			this.comboBoxLanguage.TabIndex = 4;
@@ -108,7 +108,7 @@
 			this.checkBoxPrintMargin.Appearance = Wisej.Web.Appearance.Switch;
 			this.checkBoxPrintMargin.AutoSize = false;
 			this.checkBoxPrintMargin.Checked = true;
-			this.checkBoxPrintMargin.Location = new System.Drawing.Point(50, 227);
+			this.checkBoxPrintMargin.Location = new System.Drawing.Point(171, 227);
 			this.checkBoxPrintMargin.Name = "checkBoxPrintMargin";
 			this.checkBoxPrintMargin.Size = new System.Drawing.Size(200, 35);
 			this.checkBoxPrintMargin.TabIndex = 5;
@@ -162,7 +162,7 @@
             "vibrant_ink",
             "xcode"});
 			this.comboBoxTheme.LabelText = "Theme";
-			this.comboBoxTheme.Location = new System.Drawing.Point(50, 390);
+			this.comboBoxTheme.Location = new System.Drawing.Point(171, 390);
 			this.comboBoxTheme.Name = "comboBoxTheme";
 			this.comboBoxTheme.Size = new System.Drawing.Size(200, 60);
 			this.comboBoxTheme.TabIndex = 6;
