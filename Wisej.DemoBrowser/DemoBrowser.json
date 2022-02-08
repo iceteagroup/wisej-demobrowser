@@ -705,7 +705,7 @@
 			"Features": {
 				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos",
 				"assembly": "Features, Wisej.DemoBrowser.NavigationBar.dll",
-				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/SidePanel.svg",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/AppForOfficeTaskPane.svg",
 				"docsUrl": "https://docs.wisej.com/extensions/extensions/navigationbar",
 				"description-en": "The <b>Wisej.Web.Ext.NavigationBar</b> is a responsive vertical navigation bar that displays an application header with logo, child items, and a user panel with gravatar and other user information."
 			}
