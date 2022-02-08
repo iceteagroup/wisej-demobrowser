@@ -174,6 +174,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wisej.DemoBrowser.FullCalen
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wisej.DemoBrowser.CountUp", "Demos\Extensions\Wisej.DemoBrowser.CountUp\Wisej.DemoBrowser.CountUp.csproj", "{DFEA437D-D816-4C14-9BDC-3D5D215C6EDB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wisej.DemoBrowser.jQueryKnob", "Demos\Extensions\Wisej.DemoBrowser.jQueryKnob\Wisej.DemoBrowser.jQueryKnob.csproj", "{6F387B69-349F-4276-B29C-BE9603BCC1F1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wisej.DemoBrowser.NavigationBar", "Demos\Extensions\Wisej.DemoBrowser.NavigationBar\Wisej.DemoBrowser.NavigationBar.csproj", "{28E64D09-2602-47B4-AED8-D98762F7B30A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -468,6 +472,14 @@ Global
 		{DFEA437D-D816-4C14-9BDC-3D5D215C6EDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DFEA437D-D816-4C14-9BDC-3D5D215C6EDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DFEA437D-D816-4C14-9BDC-3D5D215C6EDB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F387B69-349F-4276-B29C-BE9603BCC1F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F387B69-349F-4276-B29C-BE9603BCC1F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F387B69-349F-4276-B29C-BE9603BCC1F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F387B69-349F-4276-B29C-BE9603BCC1F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28E64D09-2602-47B4-AED8-D98762F7B30A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28E64D09-2602-47B4-AED8-D98762F7B30A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28E64D09-2602-47B4-AED8-D98762F7B30A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28E64D09-2602-47B4-AED8-D98762F7B30A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -554,6 +566,8 @@ Global
 		{9B7A51AB-F085-40C6-8DFC-B9F30437C032} = {C51A27C9-479B-478F-8158-62189CA32E59}
 		{6858E617-49EF-4172-B04A-A4E409566F67} = {C51A27C9-479B-478F-8158-62189CA32E59}
 		{DFEA437D-D816-4C14-9BDC-3D5D215C6EDB} = {C51A27C9-479B-478F-8158-62189CA32E59}
+		{6F387B69-349F-4276-B29C-BE9603BCC1F1} = {C51A27C9-479B-478F-8158-62189CA32E59}
+		{28E64D09-2602-47B4-AED8-D98762F7B30A} = {C51A27C9-479B-478F-8158-62189CA32E59}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7FE19C61-811C-4966-BC10-2A1D53829B5A}

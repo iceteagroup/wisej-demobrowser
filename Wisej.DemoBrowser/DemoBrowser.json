@@ -692,6 +692,24 @@
 				"description-en": "The <b>Wisej.Web.Ext.FullCalendar</b> extension is an amazing full-size drag-n-drop event calendar. Supports multiple views, flexible events, custom styles, integrates with Google Calendars, and it’s completely integrated with Wisej."
 			}
 		},
+		"jQueryKnob": {
+			"Features": {
+				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos",
+				"assembly": "Features, Wisej.DemoBrowser.jQueryKnob.dll",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/ProgressBar.svg",
+				"docsUrl": "https://docs.wisej.com/extensions/extensions/jqueryknob",
+				"description-en": "The <b>Wisej.Web.Ext.jQueryKnob.Knob</b> control uses the amazing jQueryKnob widget to create a Wisej Real Time dial control that allows the user to rotate the dial to change its value or to type the value in the middle editor. The component allows you to set the value, range, line style, colors and more."
+			}
+		},
+		"NavigationBar": {
+			"Features": {
+				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos",
+				"assembly": "Features, Wisej.DemoBrowser.NavigationBar.dll",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/SidePanel.svg",
+				"docsUrl": "https://docs.wisej.com/extensions/extensions/navigationbar",
+				"description-en": "The <b>Wisej.Web.Ext.NavigationBar</b> is a responsive vertical navigation bar that displays an application header with logo, child items, and a user panel with gravatar and other user information."
+			}
+		},
 		"Notification": {},
 		"Geolocation": {
 			"Features": {
