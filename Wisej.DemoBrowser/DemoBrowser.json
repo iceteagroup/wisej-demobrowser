@@ -6,7 +6,7 @@
 		//},
 		"TextBox": {
 			"Features": {
-				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/blob/main/Demos/Editors/Wisej.DemoBrowser.TextBox/Features.cs",
+				"sourceUrl": "https://github.com/",
 				"assembly": "Features, Wisej.DemoBrowser.TextBox.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/TextBox.svg",
 				"docsUrl": "https://docs.wisej.com/docs/controls/editors/textbox",
@@ -16,14 +16,14 @@
 				"description-es": "El control <b>Wisej.Web.TextBox</b> permite al usuario ingresar texto sin formato en una aplicación. <br> Por lo general, un control TextBox acepta una sola línea de texto. Puede utilizar la propiedad Multiline para permitir que el control muestre y acepte texto en más de una línea."
 			},
 			"Labels": {
-				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/blob/main/Demos/Editors/Wisej.DemoBrowser.TextBox/Labels.Designer.cs",
+				"sourceUrl": "https://github.com/",
 				"assembly": "Labels, Wisej.DemoBrowser.TextBox.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/TextBox.svg",
 				"docsUrl": "https://docs.wisej.com/docs/controls/editors/textbox#label",
 				"description-en": "The <b>Wisej.Web.TextBox</b> control supports the inline Label property. This allows an application to set a label in relation to a TextBox control without having to create an additional Label control."
 			},
 			"Input Types": {
-				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/blob/main/Demos/Editors/Wisej.DemoBrowser.TextBox/InputTypes.Designer.cs",
+				"sourceUrl": "https://github.com/",
 				"assembly": "InputTypes, Wisej.DemoBrowser.TextBox.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/TextBox.svg",
 				"docsUrl": "https://docs.wisej.com/docs/controls/editors/textbox",
@@ -33,7 +33,7 @@
 		},
 		"MaskedTextBox": {
 			"Features": {
-				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/blob/main/Demos/Editors/Wisej.DemoBrowser.MaskedTextBox/Features.Designer.cs",
+				"sourceUrl": "https://github.com/",
 				"assembly": "Features, Wisej.DemoBrowser.MaskedTextBox.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/MaskedTextBox.svg",
 				"docsUrl": "https://docs.wisej.com/docs/controls/editors/textbox/maskedtextbox",
@@ -43,7 +43,7 @@
 		},
 		"ComboBox": {
 			"Features": {
-				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/blob/main/Demos/Editors/Wisej.DemoBrowser.ComboBox/Features.Designer.cs",
+				"sourceUrl": "https://github.com/",
 				"assembly": "Features, Wisej.DemoBrowser.ComboBox.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/ComboBox.svg",
 				"docsUrl": "https://docs.wisej.com/docs/controls/lists/combobox",
@@ -52,7 +52,7 @@
 				"description-it": "Il controllo Wisej.Web.ComboBox visualizza una casella di testo combinata con un ListBox, che consente all'utente di selezionare elementi dall'elenco o di immettere un nuovo valore. Gli oggetti nell'elenco a discesa possono essere di qualsiasi tipo, l'elenco mostrerà una rappresentazione di stringa di ciascun elemento."
 			},
 			"Labels": {
-				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/blob/main/Demos/Editors/Wisej.DemoBrowser.ComboBox/Labels.Designer.cs",
+				"sourceUrl": "https://github.com/",
 				"assembly": "Labels, Wisej.DemoBrowser.ComboBox.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/ComboBox.svg",
 				"docsUrl": "https://docs.wisej.com/docs/controls/lists/combobox#label",
@@ -66,7 +66,7 @@
 			//  "description-en": ""
 			//},
 			"Simple Binding": {
-				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/blob/main/Demos/Editors/Wisej.DemoBrowser.ComboBox/SimpleBinding.cs",
+				"sourceUrl": "https://github.com/",
 				"assembly": "SimpleBinding, Wisej.DemoBrowser.ComboBox.dll",
 				"docsUrl": "https://docs.wisej.com/docs/controls/general/data-binding",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/TwoWayDataBinding.svg",
@@ -76,7 +76,7 @@
 		},
 		"ListBox": {
 			"Features": {
-				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/blob/main/Demos/Editors/Wisej.DemoBrowser.ListBox/Features.Designer.cs",
+				"sourceUrl": "https://github.com/",
 				"assembly": "Features, Wisej.DemoBrowser.ListBox.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/ListBox.svg",
 				"docsUrl": "https://docs.wisej.com/docs/controls/lists/listbox",
@@ -86,7 +86,7 @@
 		},
 		"CheckedListBox": {
 			"Features": {
-				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/blob/main/Demos/Editors/Wisej.DemoBrowser.CheckedListBox/Features.Designer.cs",
+				"sourceUrl": "https://github.com/",
 				"assembly": "Features, Wisej.DemoBrowser.CheckedListBox.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/ListBox.svg",
 				"docsUrl": "https://docs.wisej.com/docs/controls/lists/listbox/checkedlistbox",
@@ -96,14 +96,14 @@
 		},
 		"TreeView": {
 			"Features": {
-				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/blob/main/Demos/Editors/Wisej.DemoBrowser.TreeView/Features.Designer.cs",
+				"sourceUrl": "https://github.com/",
 				"assembly": "Features, Wisej.DemoBrowser.TreeView.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/TreeView.svg",
 				"docsUrl": "https://docs.wisej.com/docs/controls/lists/treeview",
 				"description-en": "The <b>Wisej.Web.TreeView</b> displays a hierarchical collection of labeled items, each represented by a TreeNode."
 			},
 			"Selection Modes": {
-				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/blob/main/Demos/Editors/Wisej.DemoBrowser.TreeView/SelectionModes.Designer.cs",
+				"sourceUrl": "https://github.com/",
 				"assembly": "SelectionModes, Wisej.DemoBrowser.TreeView.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/TreeView.svg",
 				"docsUrl": "https://docs.wisej.com/docs/controls/lists/treeview",
@@ -112,14 +112,14 @@
 		},
 		"DateTimePicker": {
 			"Features": {
-				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/blob/main/Demos/Editors/Wisej.DemoBrowser.DateTimePicker/Features.Designer.cs",
+				"sourceUrl": "https://github.com/",
 				"assembly": "Features, Wisej.DemoBrowser.DateTimePicker.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/DatePicker.svg",
 				"docsUrl": "https://docs.wisej.com/docs/controls/editors/datetimepicker",
 				"description-en": "The <b>Wisej.Web.DateTimePicker</b> control is used to allow the user to select a date and time, and to display that date and time in the specified format. The DateTimePicker control makes it easy to work with dates and times because it handles a lot of the data validation automatically."
 			},
 			"Labels": {
-				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/blob/main/Demos/Editors/Wisej.DemoBrowser.DateTimePicker/Labels.Designer.cs",
+				"sourceUrl": "https://github.com/",
 				"assembly": "Labels, Wisej.DemoBrowser.DateTimePicker.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/DatePicker.svg",
 				"docsUrl": "https://docs.wisej.com/docs/controls/general/labels",
@@ -128,7 +128,7 @@
 		},
 		"MonthCalendar": {
 			"Features": {
-				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/blob/main/Demos/Editors/Wisej.DemoBrowser.MonthCalendar/Features.Designer.cs",
+				"sourceUrl": "https://github.com/",
 				"assembly": "Features, Wisej.DemoBrowser.MonthCalendar.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/Calendar.svg",
 				"docsUrl": "https://docs.wisej.com/docs/controls/editors/monthcalendar",
@@ -137,7 +137,7 @@
 		},
 		"NumericUpDown": {
 			"Features": {
-				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/blob/main/Demos/Editors/Wisej.DemoBrowser.NumericUpDown/Features.Designer.cs",
+				"sourceUrl": "https://github.com/",
 				"assembly": "Features, Wisej.DemoBrowser.NumericUpDown.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/NumericListBox.svg",
 				"docsUrl": "https://docs.wisej.com/docs/controls/editors/numericupdown",
@@ -146,14 +146,14 @@
 		},
 		"DomainUpDown": {
 			"Features": {
-				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/blob/main/Demos/Editors/Wisej.DemoBrowser.DomainUpDown/Features.Designer.cs",
+				"sourceUrl": "https://github.com/",
 				"assembly": "Features, Wisej.DemoBrowser.DomainUpDown.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/DomainUpDownScroll.svg",
 				"docsUrl": "https://docs.wisej.com/docs/controls/editors/domainupdown",
 				"description-en": "The <b>Wisej.Web.DomainUpDown</b> control displays a single string value that is selected from an Object collection by clicking the up or down buttons of the control."
 			},
 			"Labels": {
-				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/blob/main/Demos/Editors/Wisej.DemoBrowser.DomainUpDown/Labels.Designer.cs",
+				"sourceUrl": "https://github.com/",
 				"assembly": "Labels, Wisej.DemoBrowser.DomainUpDown.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/DomainUpDownScroll.svg",
 				"docsUrl": "https://docs.wisej.com/docs/controls/general/labels",
@@ -162,7 +162,7 @@
 		},
 		"Upload": {
 			"Features": {
-				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/blob/main/Demos/Editors/Wisej.DemoBrowser.Upload/Features.cs",
+				"sourceUrl": "https://github.com/",
 				"assembly": "Features, Wisej.DemoBrowser.Upload.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/Upload.svg",
 				"docsUrl": "https://docs.wisej.com/docs/controls/content/upload",
@@ -173,7 +173,7 @@
 	"Miscellaneous": {
 		"Video": {
 			"Features": {
-				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/blob/main/Demos/Miscellaneous/Wisej.DemoBrowser.Video/Features.Designer.cs",
+				"sourceUrl": "https://github.com/",
 				"assembly": "Features, Wisej.DemoBrowser.Video.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/PlayVideo.svg",
 				"docsUrl": "https://docs.wisej.com/docs/controls/media/video",
@@ -183,7 +183,7 @@
 		},
 		"Audio": {
 			"Features": {
-				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/blob/main/Demos/Miscellaneous/Wisej.DemoBrowser.Audio/Features.Designer.cs",
+				"sourceUrl": "https://github.com/",
 				"assembly": "Features, Wisej.DemoBrowser.Audio.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/Audio.svg",
 				"docsUrl": "https://docs.wisej.com/docs/controls/media/audio",
@@ -193,7 +193,7 @@
 		},
 		"Line": {
 			"Features": {
-				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/blob/main/Demos/Miscellaneous/Wisej.DemoBrowser.Line/Features.Designer.cs",
+				"sourceUrl": "https://github.com/",
 				"assembly": "Features, Wisej.DemoBrowser.Line.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/EditLine.svg",
 				"docsUrl": "https://docs.wisej.com/docs/controls/content/line",
@@ -209,7 +209,7 @@
 		"Desktop": {},
 		"Panel": {
 			"Features": {
-				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/blob/main/Demos/Containers/Wisej.DemoBrowser.Panel/Features.Designer.cs",
+				"sourceUrl": "https://github.com/",
 				"assembly": "Features, Wisej.DemoBrowser.Panel.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/Panel.svg",
 				"docsUrl": "https://docs.wisej.com/docs/controls/containers/panel",
@@ -219,7 +219,7 @@
 		},
 		"GroupBox": {
 			"Features": {
-				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/blob/main/Demos/Containers/Wisej.DemoBrowser.GroupBox/Features.Designer.cs",
+				"sourceUrl": "https://github.com/",
 				"assembly": "Features, Wisej.DemoBrowser.GroupBox.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/GroupBox.svg",
 				"docsUrl": "https://docs.wisej.com/docs/controls/containers/groupbox",
@@ -228,7 +228,7 @@
 		},
 		"TabControl": {
 			"Features": {
-				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/blob/main/Demos/Containers/Wisej.DemoBrowser.TabControl/Features.Designer.cs",
+				"sourceUrl": "https://github.com/",
 				"assembly": "Features, Wisej.DemoBrowser.TabControl.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/Tab.svg",
 				"docsUrl": "https://docs.wisej.com/docs/controls/containers/tabcontrol",
@@ -237,7 +237,7 @@
 		},
 		"SplitContainer": {
 			"Features": {
-				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/blob/main/Demos/Containers/Wisej.DemoBrowser.SplitContainer/Features.Designer.cs",
+				"sourceUrl": "https://github.com/",
 				"assembly": "Features, Wisej.DemoBrowser.SplitContainer.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/SplitterControl.svg",
 				"docsUrl": "https://docs.wisej.com/docs/controls/containers/splitcontainer",
@@ -246,7 +246,7 @@
 		},
 		"FlexLayoutPanel": {
 			"Features": {
-				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/blob/main/Demos/Containers/Wisej.DemoBrowser.FlexLayoutPanel/Features.Designer.cs",
+				"sourceUrl": "https://github.com/",
 				"assembly": "Features, Wisej.DemoBrowser.FlexLayoutPanel.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/Panel.svg",
 				"docsUrl": "https://docs.wisej.com/docs/controls/containers/flexlayoutpanel",
@@ -255,7 +255,7 @@
 		},
 		"FlowLayoutPanel": {
 			"Features": {
-				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/blob/main/Demos/Containers/Wisej.DemoBrowser.FlowLayoutPanel/Features.Designer.cs",
+				"sourceUrl": "https://github.com/",
 				"assembly": "Features, Wisej.DemoBrowser.FlowLayoutPanel.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/Panel.svg",
 				"docsUrl": "https://docs.wisej.com/docs/controls/containers/flowlayoutpanel",
@@ -265,7 +265,7 @@
 		},
 		"TableLayoutPanel": {
 			"Features": {
-				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/blob/main/Demos/Containers/Wisej.DemoBrowser.TableLayoutPanel/Features.Designer.cs",
+				"sourceUrl": "https://github.com/",
 				"assembly": "Features, Wisej.DemoBrowser.TableLayoutPanel.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/TableLayoutPanel.svg",
 				"docsUrl": "https://docs.wisej.com/docs/controls/containers/tablelayoutpanel",
@@ -275,7 +275,7 @@
 		},
 		"PdfViewer": {
 			"Features": {
-				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/blob/main/Demos/Containers/Wisej.DemoBrowser.PdfViewer/Features.Designer.cs",
+				"sourceUrl": "https://github.com/",
 				"assembly": "Features, Wisej.DemoBrowser.PdfViewer.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/WindowsForm.svg",
 				"docsUrl": "https://docs.wisej.com/docs/controls/content/pdfviewer",
@@ -284,7 +284,7 @@
 		},
 		"IFramePanel": {
 			"Features": {
-				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/blob/main/Demos/Containers/Wisej.DemoBrowser.iFramePanel/Features.Designer.cs",
+				"sourceUrl": "https://github.com/",
 				"assembly": "Features, Wisej.DemoBrowser.iFramePanel.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/IFrame.svg",
 				"docsUrl": "https://docs.wisej.com/docs/controls/content/iframepanel",
@@ -293,7 +293,7 @@
 		},
 		"AspNetPanel": {
 			"Features": {
-				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/blob/main/Demos/Containers/Wisej.DemoBrowser.AspNetPanel/Features.designer.cs",
+				"sourceUrl": "https://github.com/",
 				"assembly": "Features, Wisej.DemoBrowser.AspNetPanel.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/AspxFile.svg",
 				"docsUrl": "https://docs.wisej.com/docs/controls/content/aspnetpanel",
@@ -302,7 +302,7 @@
 		},
 		"UserControl": {
 			"Features": {
-				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/blob/main/Demos/Containers/Wisej.DemoBrowser.UserControl/Features.Designer.cs",
+				"sourceUrl": "https://github.com/",
 				"assembly": "Features, Wisej.DemoBrowser.UserControl.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/UserControl.svg",
 				"docsUrl": "https://docs.wisej.com/docs/controls/containers/usercontrol",
@@ -311,7 +311,7 @@
 		},
 		"Widget": {
 			"Features": {
-				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/blob/main/Demos/Containers/Wisej.DemoBrowser.Widget/Features.designer.cs",
+				"sourceUrl": "https://github.com/",
 				"assembly": "Features, Wisej.DemoBrowser.Widget.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/JsApplication.svg",
 				"docsUrl": "https://docs.wisej.com/docs/controls/content/widget",
@@ -332,7 +332,7 @@
 		// TODO: "MainMenu": {},
 		"ContextMenu": {
 			"Features": {
-				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/blob/main/Demos/ToolsAndMenus/Wisej.DemoBrowser.ContextMenu/Features.Designer.cs",
+				"sourceUrl": "https://github.com/",
 				"assembly": "Features, Wisej.DemoBrowser.ContextMenu.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/ContextMenu.svg",
 				"docsUrl": "https://docs.wisej.com/docs/controls/menus/contextmenu",
@@ -341,7 +341,7 @@
 		},
 		"ToolBar": {
 			"Features": {
-				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/blob/main/Demos/ToolsAndMenus/Wisej.DemoBrowser.ToolBar/Features.Designer.cs",
+				"sourceUrl": "https://github.com/",
 				"assembly": "Features, Wisej.DemoBrowser.ToolBar.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/ToolBar.svg",
 				"docsUrl": "https://docs.wisej.com/docs/controls/containers/toolbar",
@@ -351,7 +351,7 @@
 		"Embedded Tools": {},
 		"StatusBar": {
 			"Features": {
-				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/blob/main/Demos/ToolsAndMenus/Wisej.DemoBrowser.StatusBar/Features.Designer.cs",
+				"sourceUrl": "https://github.com/",
 				"assembly": "Features, Wisej.DemoBrowser.StatusBar.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/StatusStrip.svg",
 				"docsUrl": "https://docs.wisej.com/docs/controls/containers/statusbar",
@@ -361,7 +361,7 @@
 		"RibbonBar": {},
 		"ScrollBars": {
 			"Features": {
-				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/blob/main/Demos/ToolsAndMenus/Wisej.DemoBrowser.ScrollBars/Features.Designer.cs",
+				"sourceUrl": "https://github.com/",
 				"assembly": "Features, Wisej.DemoBrowser.ScrollBars.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/ScrollBar.svg",
 				"docsUrl": "https://docs.wisej.com/docs/controls/content/scrollbars",
@@ -370,7 +370,7 @@
 		},
 		"TrackBar": {
 			"Features": {
-				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/blob/main/Demos/ToolsAndMenus/Wisej.DemoBrowser.TrackBar/Features.Designer.cs",
+				"sourceUrl": "https://github.com/",
 				"assembly": "Features, Wisej.DemoBrowser.TrackBar.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/Slider.svg",
 				"docsUrl": "https://docs.wisej.com/docs/controls/editors/trackbar",
@@ -384,7 +384,7 @@
 		"StyleSheet": {},
 		"HelpTip": {
 			"Features": {
-				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/blob/main/Demos/Extenders/Wisej.DemoBrowser.HelpTip/Features.cs",
+				"sourceUrl": "https://github.com/",
 				"assembly": "Features, Wisej.DemoBrowser.HelpTip.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/StatusHelp.svg",
 				"docsUrl": "https://docs.wisej.com/api/wisej.web/extenders/wisej.web.helptip",
@@ -394,14 +394,14 @@
 		"Animation": {},
 		"Rotation": {
 			"Features": {
-				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/blob/main/Demos/Extenders/Wisej.DemoBrowser.Rotation/Features.cs",
+				"sourceUrl": "https://github.com/",
 				"assembly": "Features, Wisej.DemoBrowser.Rotation.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/Rotate.svg",
 				"docsUrl": "https://docs.wisej.com/docs/controls/extenders/rotation",
 				"description-en": "The <b>Wisej.Web.Rotation</b> component adds rotation capabilities along the X,Y,Z axis to Wisej controls."
 			},
 			"Web Developer Awakens": {
-				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/blob/main/Demos/Extenders/Wisej.DemoBrowser.Rotation/WebDeveloperAwakens.Designer.cs",
+				"sourceUrl": "https://github.com/",
 				"assembly": "WebDeveloperAwakens, Wisej.DemoBrowser.Rotation.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/Rotate.svg",
 				"docsUrl": "https://docs.wisej.com/docs/controls/extenders/rotation",
@@ -413,7 +413,7 @@
 	"Content": {
 		"Label": {
 			"Features": {
-				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/blob/main/Demos/Content/Wisej.DemoBrowser.Label/Features.Designer.cs",
+				"sourceUrl": "https://github.com/",
 				"assembly": "Features, Wisej.DemoBrowser.Label.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/Label.svg",
 				"docsUrl": "https://docs.wisej.com/docs/controls/content/label",
@@ -423,7 +423,7 @@
 		},
 		"HtmlPanel": {
 			"Features": {
-				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/blob/main/Demos/Content/Wisej.DemoBrowser.HtmlPanel/Features.cs",
+				"sourceUrl": "https://github.com/",
 				"assembly": "Features, Wisej.DemoBrowser.HtmlPanel.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/HtmlFile.svg",
 				"docsUrl": "https://docs.wisej.com/docs/controls/content/htmlpanel",
@@ -433,7 +433,7 @@
 		},
 		"LinkLabel": {
 			"Features": {
-				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/blob/main/Demos/Content/Wisej.DemoBrowser.LinkLabel/Features.cs",
+				"sourceUrl": "https://github.com/",
 				"assembly": "Features, Wisej.DemoBrowser.LinkLabel.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/HyperLink.svg",
 				"docsUrl": "https://docs.wisej.com/docs/controls/content/linklabel",
@@ -443,7 +443,7 @@
 		},
 		"PictureBox": {
 			"Features": {
-				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/blob/main/Demos/Content/Wisej.DemoBrowser.PictureBox/Features.Designer.cs",
+				"sourceUrl": "https://github.com/",
 				"assembly": "Features, Wisej.DemoBrowser.PictureBox.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/PictureAndText.svg",
 				"docsUrl": "https://docs.wisej.com/docs/controls/content/PictureBox",
@@ -455,7 +455,7 @@
 	"Buttons": {
 		"Button": {
 			"Features": {
-				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/blob/main/Demos/Buttons/Wisej.DemoBrowser.Button/Features.Designer.cs",
+				"sourceUrl": "https://github.com/",
 				"assembly": "Features, Wisej.DemoBrowser.Button.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/Button.svg",
 				"docsUrl": "https://docs.wisej.com/docs/controls/buttons/button",
@@ -465,7 +465,7 @@
 		},
 		"SplitButton": {
 			"Features": {
-				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/blob/main/Demos/Buttons/Wisej.DemoBrowser.SplitButton/Features.Designer.cs",
+				"sourceUrl": "https://github.com/",
 				"assembly": "Features, Wisej.DemoBrowser.SplitButton.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/SplitButton.svg",
 				"docsUrl": "https://docs.wisej.com/docs/controls/buttons/splitbutton",
@@ -475,7 +475,7 @@
 		},
 		"CheckBox": {
 			"Features": {
-				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/blob/main/Demos/Buttons/Wisej.DemoBrowser.CheckBox/Features.Designer.cs",
+				"sourceUrl": "https://github.com/",
 				"assembly": "Features, Wisej.DemoBrowser.CheckBox.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/CheckBox.svg",
 				"docsUrl": "https://docs.wisej.com/docs/controls/buttons/checkbox",
@@ -485,7 +485,7 @@
 		},
 		"RadioButton": {
 			"Features": {
-				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/blob/main/Demos/Buttons/Wisej.DemoBrowser.RadioButton/Features.Designer.cs",
+				"sourceUrl": "https://github.com/",
 				"assembly": "Features, Wisej.DemoBrowser.RadioButton.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/RadioButton.svg",
 				"docsUrl": "https://docs.wisej.com/docs/controls/buttons/radiobutton",
@@ -497,7 +497,7 @@
 	"Grids": {
 		"PropertyGrid": {
 			"Features": {
-				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/blob/main/Demos/Grids/Wisej.DemoBrowser.PropertyGrid/Features.cs",
+				"sourceUrl": "https://github.com/",
 				"assembly": "Features, Wisej.DemoBrowser.PropertyGrid.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/PropertySnippet.svg",
 				"docsUrl": "https://docs.wisej.com/docs/controls/grids/propertygrid",
@@ -507,7 +507,7 @@
 		},
 		"DataGridView": {
 			"Features": {
-				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/blob/main/Demos/Grids/Wisej.DemoBrowser.DataGridView/Features.cs",
+				"sourceUrl": "https://github.com/",
 				"assembly": "Features, Wisej.DemoBrowser.DataGridView.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/DataGrid.svg",
 				"docsUrl": "https://docs.wisej.com/docs/controls/grids/datagridview",
@@ -515,7 +515,7 @@
 				"description-fr": "à faire"
 			},
 			"Summary Rows": {
-				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/blob/main/Demos/Grids/Wisej.DemoBrowser.DataGridView/SummaryRows.cs",
+				"sourceUrl": "https://github.com/",
 				"assembly": "SummaryRows, Wisej.DemoBrowser.DataGridView.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/DataGridView.svg",
 				"docsUrl": "https://docs.wisej.com/docs/controls/grids/datagridview",
@@ -525,21 +525,21 @@
 		},
 		"ListView": {
 			"Features": {
-				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/blob/main/Demos/Grids/Wisej.DemoBrowser.ListView/Features.cs",
+				"sourceUrl": "https://github.com/",
 				"assembly": "Features, Wisej.DemoBrowser.ListView.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/ListView.svg",
 				"docsUrl": "https://docs.wisej.com/docs/controls/lists/listview",
 				"description-en": "The <b>Wisej.Web.ListView</b> is a control used to display a list of items through one of four predefined views."
 			},
 			"Appearances": {
-				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/blob/main/Demos/Grids/Wisej.DemoBrowser.ListView/Appearances.cs",
+				"sourceUrl": "https://github.com/",
 				"assembly": "Appearances, Wisej.DemoBrowser.ListView.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/ListView.svg",
 				"docsUrl": "https://docs.wisej.com/docs/controls/lists/listview",
 				"description-en": "The <b>Wisej.Web.ListView</b> is a control used to display a list of items through one of four predefined views."
 			},
 			"Selection Modes": {
-				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/blob/main/Demos/Grids/Wisej.DemoBrowser.ListView/SelectionModes.Designer.cs",
+				"sourceUrl": "https://github.com/",
 				"assembly": "SelectionModes, Wisej.DemoBrowser.ListView.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/ListView.svg",
 				"docsUrl": "https://docs.wisej.com/docs/controls/lists/listview",
@@ -548,14 +548,14 @@
 		},
 		"FullCalendar": {
 			"Features": {
-				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/blob/main/Demos/Grids/Wisej.DemoBrowser.FullCalendar/Features.cs",
+				"sourceUrl": "https://github.com/",
 				"assembly": "Features, Wisej.DemoBrowser.FullCalendar.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/Calendar.svg",
 				"docsUrl": "https://docs.wisej.com/extensions/extensions/fullcalendar",
 				"description-en": "The <b>Wisej.Web.Ext.FullCalendar</b> extension is an amazing full-size drag-n-drop event calendar. Supports multiple views, flexible events, custom styles, integrates with Google Calendars, and it’s completely integrated with Wisej."
 			},
 			"Appearances": {
-				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/blob/main/Demos/Grids/Wisej.DemoBrowser.FullCalendar/Appearances.cs",
+				"sourceUrl": "https://github.com/",
 				"assembly": "Appearances, Wisej.DemoBrowser.FullCalendar.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/Calendar.svg",
 				"docsUrl": "https://docs.wisej.com/extensions/extensions/fullcalendar",
@@ -564,7 +564,7 @@
 		},
 		"DataRepeater": {
 			"Features": {
-				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/blob/main/Demos/Grids/Wisej.DemoBrowser.DataRepeater/Features.cs",
+				"sourceUrl": "https://github.com/",
 				"assembly": "Features, Wisej.DemoBrowser.DataRepeater.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/DataRepeater.svg",
 				"docsUrl": "https://docs.wisej.com/docs/controls/grids/datarepeater",
@@ -575,7 +575,7 @@
 	"Notifications": {
 		"MessageBox": {
 			"Features": {
-				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/blob/main/Demos/Notifications/Wisej.DemoBrowser.MessageBox/Features.cs",
+				"sourceUrl": "https://github.com/",
 				"assembly": "Features, Wisej.DemoBrowser.MessageBox.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/Message.svg",
 				"docsUrl": "https://docs.wisej.com/docs/controls/notifications/messagebox",
@@ -584,7 +584,7 @@
 		},
 		"AlertBox": {
 			"Features": {
-				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/blob/main/Demos/Notifications/Wisej.DemoBrowser.AlertBox/Features.cs",
+				"sourceUrl": "https://github.com/",
 				"assembly": "Features, Wisej.DemoBrowser.AlertBox.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/Alert.svg",
 				"docsUrl": "https://docs.wisej.com/docs/controls/notifications/alertbox",
@@ -593,7 +593,7 @@
 		},
 		"ProgressBar": {
 			"Features": {
-				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/blob/main/Demos/Notifications/Wisej.DemoBrowser.ProgressBar/Features.cs",
+				"sourceUrl": "https://github.com/",
 				"assembly": "Features, Wisej.DemoBrowser.ProgressBar.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/ProgressBar.svg",
 				"docsUrl": "https://docs.wisej.com/docs/controls/content/progressbar",
@@ -602,7 +602,7 @@
 		},
 		"Toast": {
 			"Features": {
-				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/blob/main/Demos/Notifications/Wisej.DemoBrowser.Toast/Features.cs",
+				"sourceUrl": "https://github.com/",
 				"assembly": "Features, Wisej.DemoBrowser.Toast.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/Alert.svg",
 				"docsUrl": "https://docs.wisej.com/docs/controls/notifications/toast",
@@ -611,13 +611,64 @@
 		}
 	},
 	"Extensions": {
-		"TinyMCE": {},
+		"AceEditor": {
+			"Features": {
+				"sourceUrl": "https://github.com/",
+				"assembly": "Features, Wisej.DemoBrowser.AceEditor.dll",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/HtmlTagEnd.svg",
+				"docsUrl": "https://docs.wisej.com/extensions/extensions/aceeditor/api/wisej.web.ext.aceeditor.aceeditor",
+				"description-en": "The <b>Wisej.Web.Ext.AceEditor.AceEditor</b> control is an embeddable code editor written in JavaScript. It matches the features and performance of native editors such as Sublime, Vim and TextMate. Ace is maintained as the primary editor for Cloud9 IDE and is the successor of the Mozilla Skywriter (Bespin) project."
+			}
+		},
+		"BingWallpaper": {
+			"Features": {
+				"sourceUrl": "https://github.com/",
+				"assembly": "Features, Wisej.DemoBrowser.BingWallpaper.dll",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/DynamicImage.svg",
+				"docsUrl": "https://docs.wisej.com/extensions/extensions/bingwallpaper",
+				"description-en": "The <b>Wisej.Web.Ext.BingWallpaper.BingWallpaper</b> extender component enhances the Desktop control by adding Bing’s daily stunning wallpaper images. You can set the rotation interval, fade duration and number of images."
+			}
+		},
+		"Camera": {
+			"Features": {
+				"sourceUrl": "https://github.com/",
+				"assembly": "Features, Wisej.DemoBrowser.Camera.dll",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/Camera.svg",
+				"docsUrl": "https://docs.wisej.com/extensions/extensions/camera",
+				"description-en": "The <b>Wisej.Web.Ext.Camera.Camera</b> control makes it possible to take pictures with the device's camera and upload them to the server."
+			}
+		},
+		"TinyMCE": {
+			"Features": {
+				"sourceUrl": "https://github.com/",
+				"assembly": "Features, Wisej.DemoBrowser.TinyMCE.dll",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/HtmlTagEnd.svg",
+				"docsUrl": "https://docs.wisej.com/extensions/extensions/geolocation/api/wisej.ext.geolocation.geolocation",
+				"description-en": "The <b>Wisej.Web.Ext.TinyMCE.TinyMCE</b> control (Tiny Moxiecode Content Editor) is a platform-independent, browser-based WYSIWYG editor control, written in JavaScript and released as open-source software under the LGPL by Ephox."
+			}
+		},
 		"CKEditor": {},
-		"TinyEditor": {},
+		"TinyEditor": {
+			"Features": {
+				"sourceUrl": "https://github.com/",
+				"assembly": "Features, Wisej.DemoBrowser.TinyEditor.dll",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/HtmlTagEnd.svg",
+				"docsUrl": "https://docs.wisej.com/extensions/extensions/tinyeditor/api/wisej.web.ext.tinyeditor.tinyeditor",
+				"description-en": "The <b>Wisej.Web.Ext.TinyEditor.TinyEditor</b> control is a simple JavaScript WYSIWYG editor that is both lightweight (8KB) and standalone from: https://github.com/jessegreathouse/TinyEditor."
+			}
+		},
 		"Barcode": {},
 		"CoolClock": {},
 		"Notification": {},
-		"Geolocation": {},
+		"Geolocation": {
+			"Features": {
+				"sourceUrl": "https://github.com/",
+				"assembly": "Features, Wisej.DemoBrowser.Geolocation.dll",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/GeoLocation.svg",
+				"docsUrl": "https://docs.wisej.com/extensions/extensions/geolocation/api/wisej.ext.geolocation.geolocation",
+				"description-en": "The <b>Wisej.Ext.Geolocation.Geolocation</b> component represents an object able to programmatically obtain the position of the device."
+			}
+		},
 		"Translation": {},
 		"BubbleNotifications": {},
 		"Amazon S3": {},
@@ -637,7 +688,7 @@
 	"Icon Packs": {
 		"Bootstrap Icons": {
 			"Features": {
-				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/blob/main/Demos/IconPacks/Wisej.DemoBrowser.BootstrapIcons/Features.cs",
+				"sourceUrl": "https://github.com/",
 				"assembly": "Features, Wisej.DemoBrowser.BootstrapIcons.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/PictureAndText.svg",
 				"docsUrl": "https://docs.wisej.com/extensions/icon-packs/bootstrapicons",
@@ -646,7 +697,7 @@
 		},
 		"Elegant Icons": {
 			"Features": {
-				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/blob/main/Demos/IconPacks/Wisej.DemoBrowser.ElegantIcons/Features.cs",
+				"sourceUrl": "https://github.com/",
 				"assembly": "Features, Wisej.DemoBrowser.ElegantIcons.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/PictureAndText.svg",
 				"docsUrl": "https://docs.wisej.com/extensions/icon-packs/eleganticons-iconpack",
@@ -655,7 +706,7 @@
 		},
 		"FontAwsome": {
 			"Features": {
-				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/blob/main/Demos/IconPacks/Wisej.DemoBrowser.FontAwsome/Features.cs",
+				"sourceUrl": "https://github.com/",
 				"assembly": "Features, Wisej.DemoBrowser.FontAwsome.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/PictureAndText.svg",
 				"docsUrl": "https://docs.wisej.com/extensions/icon-packs/materialdesign-iconpack",
@@ -664,7 +715,7 @@
 		},
 		"Material Design": {
 			"Features": {
-				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/blob/main/Demos/IconPacks/Wisej.DemoBrowser.MaterialDesign/Features.cs",
+				"sourceUrl": "https://github.com/",
 				"assembly": "Features, Wisej.DemoBrowser.MaterialDesign.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/PictureAndText.svg",
 				"docsUrl": "https://docs.wisej.com/extensions/icon-packs/materialdesign-iconpack",
@@ -673,7 +724,7 @@
 		},
 		"ModernUI": {
 			"Features": {
-				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/blob/main/Demos/IconPacks/Wisej.DemoBrowser.ModernUI/Features.cs",
+				"sourceUrl": "https://github.com/",
 				"assembly": "Features, Wisej.DemoBrowser.ModernUi.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/PictureAndText.svg",
 				"docsUrl": "https://docs.wisej.com/extensions/icon-packs/materialdesign-iconpack",
@@ -682,7 +733,7 @@
 		},
 		"Vaadin": {
 			"Features": {
-				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/blob/main/Demos/IconPacks/Wisej.DemoBrowser.VaadinIcons/Features.cs",
+				"sourceUrl": "https://github.com/",
 				"assembly": "Features, Wisej.DemoBrowser.VaadinIcons.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/PictureAndText.svg",
 				"docsUrl": "https://docs.wisej.com/extensions/icon-packs/materialdesign-iconpack",
@@ -691,7 +742,7 @@
 		},
 		"Visual Studio Icons": {
 			"Features": {
-				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/blob/main/Demos/IconPacks/Wisej.DemoBrowser.VisualStudioIcons/Features.cs",
+				"sourceUrl": "https://github.com/",
 				"assembly": "Features, Wisej.DemoBrowser.VisualStudioIcons.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/PictureAndText.svg",
 				"docsUrl": "https://docs.wisej.com/extensions/icon-packs/materialdesign-iconpack",
