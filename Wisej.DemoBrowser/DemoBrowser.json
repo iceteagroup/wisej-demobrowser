@@ -728,6 +728,22 @@
 				"description-en": "The <b>Wisej.Ext.Geolocation</b> component represents an object able to programmatically obtain the position of the device."
 			}
 		},
+		"GoogleMaps": {
+			"Features": {
+				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos",
+				"assembly": "Features, Wisej.DemoBrowser.GoogleMaps.dll",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/GeoLocation.svg",
+				"docsUrl": "https://docs.wisej.com/extensions/extensions/googlemaps",
+				"description-en": "The <b>Wisej.Web.Ext.GoogleMaps</b> extension lets you control Google Maps as a fully integrated server control. The control fires events back to the server and the server can affect any visual aspect of the map."
+			},
+			"HeatMap": {
+				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos",
+				"assembly": "HeatMap, Wisej.DemoBrowser.GoogleMaps.dll",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/GeoLocation.svg",
+				"docsUrl": "https://docs.wisej.com/extensions/extensions/googlemaps",
+				"description-en": "The <b>Wisej.Web.Ext.GoogleMaps</b> extension lets you control Google Maps as a fully integrated server control. The control fires events back to the server and the server can affect any visual aspect of the map."
+			}
+		},
 		"ProgressCircle": {
 			"Features": {
 				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos",
