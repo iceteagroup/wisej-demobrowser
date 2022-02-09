@@ -741,7 +741,7 @@
 				"assembly": "HeatMap, Wisej.DemoBrowser.GoogleMaps.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/GeoLocation.svg",
 				"docsUrl": "https://docs.wisej.com/extensions/extensions/googlemaps",
-				"description-en": "The <b>Wisej.Web.Ext.GoogleMaps</b> extension lets you control Google Maps as a fully integrated server control. The control fires events back to the server and the server can affect any visual aspect of the map."
+				"description-en": "A heatmap is a visualization used to depict the intensity of data at geographical points. When the Heatmap Layer is enabled, a colored overlay will appear on top of the map. By default, areas of higher intensity will be colored red, and areas of lower intensity will appear green."
 			}
 		},
 		"ProgressCircle": {
