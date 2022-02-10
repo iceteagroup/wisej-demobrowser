@@ -37,6 +37,12 @@
     <Reference Include="System.Windows.Forms" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Tilt.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Tilt.Designer.cs">
+      <DependentUpon>Tilt.cs</DependentUpon>
+    </Compile>
     <Compile Include="HeatMap.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -67,6 +73,9 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Tilt.resx">
+      <DependentUpon>Tilt.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="HeatMap.resx">
       <DependentUpon>HeatMap.cs</DependentUpon>
     </EmbeddedResource>
