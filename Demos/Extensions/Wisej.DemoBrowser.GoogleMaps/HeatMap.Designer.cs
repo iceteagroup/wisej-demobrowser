@@ -28,33 +28,20 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.googleMap1 = new Wisej.Web.Ext.GoogleMaps.GoogleMap();
 			this.SuspendLayout();
 			// 
 			// googleMap1
 			// 
-			this.googleMap1.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
-            | Wisej.Web.AnchorStyles.Left) 
-            | Wisej.Web.AnchorStyles.Right)));
-			this.googleMap1.Location = new System.Drawing.Point(325, 29);
-			this.googleMap1.Name = "googleMap1";
 			this.googleMap1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"zoom\":13,\"center\":{\"Lng\":-122.433523,\"Lat\":37.774546}}")));
-			this.googleMap1.Size = new System.Drawing.Size(772, 417);
-			this.googleMap1.TabIndex = 0;
-			this.googleMap1.Text = "googleMap1";
+			this.googleMap1.Appear += new System.EventHandler(this.googleMap1_Appear);
 			// 
 			// HeatMap
 			// 
-			this.Controls.Add(this.googleMap1);
 			this.Name = "HeatMap";
-			this.Load += new System.EventHandler(this.HeatMap_Load);
-			this.Appear += new System.EventHandler(this.HeatMap_Appear);
 			this.ResumeLayout(false);
 
 		}
 
 		#endregion
-
-		private Web.Ext.GoogleMaps.GoogleMap googleMap1;
 	}
 }

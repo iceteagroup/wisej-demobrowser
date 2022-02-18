@@ -7,7 +7,7 @@ using static Wisej.Web.Widget;
 
 namespace Wisej.DemoBrowser.GoogleMaps
 {
-	public partial class Tilt : DemoView
+	public partial class Tilt : GoogleMapBase
 	{
 		public Tilt()
 		{
@@ -19,7 +19,6 @@ namespace Wisej.DemoBrowser.GoogleMaps
 			var api = File.ReadAllText(Application.MapPath("GoogleMapsAPIKey.txt"));
 
 			this.googleMap1.ApiKey = api;
-			GoogleMap.Version = "beta";
 		}
 
 		private void buttonLeft_Click(object sender, EventArgs e)

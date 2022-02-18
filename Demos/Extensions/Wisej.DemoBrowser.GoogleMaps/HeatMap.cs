@@ -1,34 +1,26 @@
 ﻿using System;
 using System.IO;
-using Wisej.DemoBrowser.Common;
 using Wisej.Web;
 using Wisej.Web.Ext.GoogleMaps;
-using static Wisej.Web.Widget;
 
 namespace Wisej.DemoBrowser.GoogleMaps
 {
-	public partial class HeatMap : DemoView
+	public partial class HeatMap : GoogleMapBase
 	{
 		public HeatMap()
 		{
 			InitializeComponent();
 		}
 
-		private void HeatMap_Load(object sender, EventArgs e)
+		private void googleMap1_Appear(object sender, EventArgs e)
 		{
-			var api = File.ReadAllText(Application.MapPath("GoogleMapsAPIKey.txt"));
-
-			this.googleMap1.ApiKey = api;
-
-			// add the visualization library.
-			this.googleMap1.Packages.Add(new Package()
-			{
-				Name = "Visualization",
-				Source = $"https://maps.googleapis.com/maps/api/js?key={api}&libraries=visualization"
-			});
+			ProcessMapInit();
 		}
 
-		private void HeatMap_Appear(object sender, EventArgs e)
+		/// <summary>
+		/// Initializes the heatmap.
+		/// </summary>
+		public void ProcessMapInit()
 		{
 			this.googleMap1.Eval($@"
 				var heatmap = new google.maps.visualization.HeatmapLayer({{ data: {GetData().ToJavaScriptArray()}}});

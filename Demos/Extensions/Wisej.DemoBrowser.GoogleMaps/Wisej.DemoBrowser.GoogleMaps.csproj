@@ -37,6 +37,12 @@
     <Reference Include="System.Windows.Forms" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GoogleMapBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GoogleMapBase.Designer.cs">
+      <DependentUpon>GoogleMapBase.cs</DependentUpon>
+    </Compile>
     <Compile Include="Tilt.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -73,6 +79,9 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="GoogleMapBase.resx">
+      <DependentUpon>GoogleMapBase.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Tilt.resx">
       <DependentUpon>Tilt.cs</DependentUpon>
     </EmbeddedResource>
