@@ -37,6 +37,12 @@
     <Reference Include="System.Windows.Forms" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Geometry.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Geometry.Designer.cs">
+      <DependentUpon>Geometry.cs</DependentUpon>
+    </Compile>
     <Compile Include="GoogleMapBase.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -79,6 +85,9 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Geometry.resx">
+      <DependentUpon>Geometry.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GoogleMapBase.resx">
       <DependentUpon>GoogleMapBase.cs</DependentUpon>
     </EmbeddedResource>

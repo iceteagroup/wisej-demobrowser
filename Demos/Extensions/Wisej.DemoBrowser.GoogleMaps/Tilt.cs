@@ -1,9 +1,6 @@
 ﻿using System;
 using System.IO;
-using Wisej.DemoBrowser.Common;
 using Wisej.Web;
-using Wisej.Web.Ext.GoogleMaps;
-using static Wisej.Web.Widget;
 
 namespace Wisej.DemoBrowser.GoogleMaps
 {

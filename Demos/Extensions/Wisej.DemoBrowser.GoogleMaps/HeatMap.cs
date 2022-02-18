@@ -1,6 +1,4 @@
 ﻿using System;
-using System.IO;
-using Wisej.Web;
 using Wisej.Web.Ext.GoogleMaps;
 
 namespace Wisej.DemoBrowser.GoogleMaps
@@ -14,16 +12,16 @@ namespace Wisej.DemoBrowser.GoogleMaps
 
 		private void googleMap1_Appear(object sender, EventArgs e)
 		{
-			ProcessMapInit();
+			LoadMapData(GetData());
 		}
 
 		/// <summary>
 		/// Initializes the heatmap.
 		/// </summary>
-		public void ProcessMapInit()
+		public void LoadMapData(LatLng[] data)
 		{
 			this.googleMap1.Eval($@"
-				var heatmap = new google.maps.visualization.HeatmapLayer({{ data: {GetData().ToJavaScriptArray()}}});
+				var heatmap = new google.maps.visualization.HeatmapLayer({{ data: {data.ToJavaScriptArray()}}});
 				heatmap.setMap(this.widget);
 			");
 		}

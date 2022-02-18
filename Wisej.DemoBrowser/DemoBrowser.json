@@ -749,6 +749,13 @@
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/GeoLocation.svg",
 				"docsUrl": "https://docs.wisej.com/extensions/extensions/googlemaps",
 				"description-en": "With WebGL Overlay View you can add content to your maps using WebGL directly, or popular Graphics libraries like Three.js. WebGL Overlay View provides direct access to the same WebGL rendering context Google Maps Platform uses to render the vector basemap."
+			},
+			"Geometry": {
+				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos",
+				"assembly": "Geometry, Wisej.DemoBrowser.GoogleMaps.dll",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/Pencil.svg",
+				"docsUrl": "https://docs.wisej.com/extensions/extensions/googlemaps",
+				"description-en": "The Maps JavaScript API geometry library provides utility functions for the computation of geometric data on the surface of the Earth."
 			}
 		},
 		"ProgressCircle": {

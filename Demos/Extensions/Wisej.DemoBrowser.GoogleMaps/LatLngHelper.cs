@@ -24,5 +24,19 @@ namespace Wisej.DemoBrowser.GoogleMaps
 		{
 			return $"[{string.Join(", ", latLngs.Select((latLng) => latLng.ToJavaScriptString()).ToArray())}]";
 		}
+
+		/// <summary>
+		/// Overrides the default ToJSON() functionality.
+		/// </summary>
+		/// <param name="latLng"></param>
+		/// <returns></returns>
+		public static object ToJSON(this LatLng latLng)
+		{
+			return new
+			{
+				lat = latLng.Lat,
+				lng = latLng.Lng,
+			};
+		}
 	}
 }

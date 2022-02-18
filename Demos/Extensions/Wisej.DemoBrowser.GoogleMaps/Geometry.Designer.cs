@@ -1,6 +1,6 @@
 ﻿namespace Wisej.DemoBrowser.GoogleMaps
 {
-	partial class GoogleMapBase
+	partial class Geometry
 	{
 		/// <summary> 
 		/// Required designer variable.
@@ -28,32 +28,21 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.googleMap1 = new Wisej.Web.Ext.GoogleMaps.GoogleMap();
 			this.SuspendLayout();
 			// 
 			// googleMap1
 			// 
-			this.googleMap1.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
-            | Wisej.Web.AnchorStyles.Left) 
-            | Wisej.Web.AnchorStyles.Right)));
-			this.googleMap1.Location = new System.Drawing.Point(325, 29);
-			this.googleMap1.Name = "googleMap1";
-			this.googleMap1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"zoom\":4,\"center\":{\"lat\":0,\"lng\":0}}")));
-			this.googleMap1.Size = new System.Drawing.Size(772, 417);
-			this.googleMap1.TabIndex = 0;
-			this.googleMap1.Text = "googleMap1";
+			this.googleMap1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"zoom\":4,\"center\":{\"lat\":34,\"lng\":-40.605}}")));
+			this.googleMap1.Appear += new System.EventHandler(this.googleMap1_Appear);
 			// 
-			// GoogleMapBase
+			// Drawing
 			// 
-			this.Controls.Add(this.googleMap1);
-			this.Name = "GoogleMapBase";
-			this.Load += new System.EventHandler(this.GoogleMapBase_Load);
+			this.Name = "Drawing";
+			this.Load += new System.EventHandler(this.Geometry_Load);
 			this.ResumeLayout(false);
 
 		}
 
 		#endregion
-
-		public Web.Ext.GoogleMaps.GoogleMap googleMap1;
 	}
 }
