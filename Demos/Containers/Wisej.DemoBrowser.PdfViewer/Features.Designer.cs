@@ -28,24 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pdfViewer1 = new Wisej.Web.PdfViewer();
-            this.SuspendLayout();
-            // 
-            // pdfViewer1
-            // 
-            this.pdfViewer1.Dock = Wisej.Web.DockStyle.Fill;
-            this.pdfViewer1.Location = new System.Drawing.Point(0, 0);
-            this.pdfViewer1.Name = "pdfViewer1";
-            this.pdfViewer1.Size = new System.Drawing.Size(1422, 474);
-            this.pdfViewer1.TabIndex = 0;
-            this.pdfViewer1.ViewerType = Wisej.Web.PdfViewerType.Mozilla;
-            // 
-            // Features
-            // 
-            this.Controls.Add(this.pdfViewer1);
-            this.Name = "Features";
-            this.Load += new System.EventHandler(this.Features_Load);
-            this.ResumeLayout(false);
+			this.pdfViewer1 = new Wisej.Web.PdfViewer();
+			this.SuspendLayout();
+			// 
+			// pdfViewer1
+			// 
+			this.pdfViewer1.Dock = Wisej.Web.DockStyle.Fill;
+			this.pdfViewer1.Location = new System.Drawing.Point(16, 16);
+			this.pdfViewer1.Name = "pdfViewer1";
+			this.pdfViewer1.Size = new System.Drawing.Size(1390, 442);
+			this.pdfViewer1.TabIndex = 0;
+			this.pdfViewer1.ViewerType = Wisej.Web.PdfViewerType.Mozilla;
+			// 
+			// Features
+			// 
+			this.Controls.Add(this.pdfViewer1);
+			this.Name = "Features";
+			this.Padding = new Wisej.Web.Padding(16);
+			this.Load += new System.EventHandler(this.Features_Load);
+			this.ResumeLayout(false);
 
         }
 

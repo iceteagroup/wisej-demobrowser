@@ -4,11 +4,11 @@ using Wisej.Web;
 
 namespace Wisej.DemoBrowser.TabControl
 {
-    public partial class Features : DemoView
-    {
-        public Features()
-        {
-            InitializeComponent();
-        }
-    }
+	public partial class Features : DemoView
+	{
+		public Features()
+		{
+			InitializeComponent();
+		}
+	}
 }

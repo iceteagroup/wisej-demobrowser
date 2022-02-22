@@ -28,25 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.iFramePanel1 = new Wisej.Web.IFramePanel();
-            this.SuspendLayout();
-            // 
-            // iFramePanel1
-            // 
-            this.iFramePanel1.Dock = Wisej.Web.DockStyle.Fill;
-            this.iFramePanel1.Location = new System.Drawing.Point(8, 8);
-            this.iFramePanel1.Name = "iFramePanel1";
-            this.iFramePanel1.Size = new System.Drawing.Size(1406, 458);
-            this.iFramePanel1.TabIndex = 0;
-            this.iFramePanel1.Text = "iFramePanel1";
-            this.iFramePanel1.Url = "http://wisej.com";
-            // 
-            // Features
-            // 
-            this.Controls.Add(this.iFramePanel1);
-            this.Name = "Features";
-            this.Padding = new Wisej.Web.Padding(8);
-            this.ResumeLayout(false);
+			this.iFramePanel1 = new Wisej.Web.IFramePanel();
+			this.SuspendLayout();
+			// 
+			// iFramePanel1
+			// 
+			this.iFramePanel1.Dock = Wisej.Web.DockStyle.Fill;
+			this.iFramePanel1.Location = new System.Drawing.Point(16, 16);
+			this.iFramePanel1.Name = "iFramePanel1";
+			this.iFramePanel1.Size = new System.Drawing.Size(1390, 442);
+			this.iFramePanel1.TabIndex = 0;
+			this.iFramePanel1.Text = "iFramePanel1";
+			this.iFramePanel1.Url = "http://demo.wisej.com/CodeProject";
+			// 
+			// Features
+			// 
+			this.Controls.Add(this.iFramePanel1);
+			this.Name = "Features";
+			this.Padding = new Wisej.Web.Padding(16);
+			this.ResumeLayout(false);
 
         }
 

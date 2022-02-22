@@ -35,11 +35,11 @@
 			// 
 			this.videoDefault.Anchor = Wisej.Web.AnchorStyles.None;
 			this.videoDefault.AutoPlay = true;
-			this.videoDefault.Location = new System.Drawing.Point(301, 13);
+			this.videoDefault.Location = new System.Drawing.Point(344, 22);
 			this.videoDefault.Muted = true;
 			this.videoDefault.Name = "videoDefault";
 			this.videoDefault.ObjectFit = Wisej.Web.ObjectFit.Cover;
-			this.videoDefault.Size = new System.Drawing.Size(820, 595);
+			this.videoDefault.Size = new System.Drawing.Size(735, 430);
 			this.videoDefault.SourceURL = "https://file-examples-com.github.io/uploads/2017/04/file_example_MP4_1920_18MG.mp" +
     "4";
 			this.videoDefault.TabIndex = 0;
@@ -51,7 +51,7 @@
 			// Features
 			// 
 			this.Controls.Add(this.videoDefault);
-			this.MinimumSize = new System.Drawing.Size(845, 621);
+			this.MinimumSize = new System.Drawing.Size(748, 443);
 			this.Name = "Features";
 			this.ResumeLayout(false);
 

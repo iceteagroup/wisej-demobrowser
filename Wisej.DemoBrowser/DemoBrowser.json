@@ -233,6 +233,13 @@
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/Tab.svg",
 				"docsUrl": "https://docs.wisej.com/docs/controls/containers/tabcontrol",
 				"description-en": "The <b>Wisej.Web.TabControl</b> control contains tab pages, which are represented by TabPage objects that you add through the TabPages property. The order of tab pages in this collection reflects the order the tabs appear in the control."
+			},
+			"Layout": {
+				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos",
+				"assembly": "Layout, Wisej.DemoBrowser.TabControl.dll",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/Tab.svg",
+				"docsUrl": "https://docs.wisej.com/docs/controls/containers/tabcontrol",
+				"description-en": "The <b>Wisej.Web.TabControl</b> control contains tab pages, which are represented by TabPage objects that you add through the TabPages property. The order of tab pages in this collection reflects the order the tabs appear in the control."
 			}
 		},
 		"SplitContainer": {

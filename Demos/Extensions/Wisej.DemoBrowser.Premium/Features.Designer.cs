@@ -92,7 +92,7 @@
 			this.flowLayoutPanel1.Controls.Add(this.panel5);
 			this.flowLayoutPanel1.Location = new System.Drawing.Point(37, 134);
 			this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-			this.flowLayoutPanel1.Size = new System.Drawing.Size(1349, 206);
+			this.flowLayoutPanel1.Size = new System.Drawing.Size(1349, 319);
 			this.flowLayoutPanel1.TabIndex = 2;
 			this.flowLayoutPanel1.TabStop = true;
 			// 
@@ -103,7 +103,6 @@
 			this.panel1.Controls.Add(this.buttonKendo);
 			this.panel1.CssStyle = "border-radius: 10px;\r\nbox-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, " +
     "0.24) 0px 1px 2px;";
-			this.flowLayoutPanel1.SetFillWeight(this.panel1, 1);
 			this.panel1.Location = new System.Drawing.Point(8, 8);
 			this.panel1.Margin = new Wisej.Web.Padding(8);
 			this.panel1.Name = "panel1";
@@ -118,11 +117,10 @@
 			this.panel2.Controls.Add(this.buttonDevExtreme);
 			this.panel2.CssStyle = "border-radius: 10px;\r\nbox-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, " +
     "0.24) 0px 1px 2px;";
-			this.flowLayoutPanel1.SetFillWeight(this.panel2, 1);
 			this.panel2.Location = new System.Drawing.Point(277, 8);
 			this.panel2.Margin = new Wisej.Web.Padding(8);
 			this.panel2.Name = "panel2";
-			this.panel2.Size = new System.Drawing.Size(254, 191);
+			this.panel2.Size = new System.Drawing.Size(253, 191);
 			this.panel2.TabIndex = 4;
 			this.panel2.TabStop = true;
 			// 
@@ -134,7 +132,7 @@
 			this.pictureBox2.ImageSource = "resource.wx/Wisej.DemoBrowser.Premium/devextreme.png";
 			this.pictureBox2.Location = new System.Drawing.Point(16, 17);
 			this.pictureBox2.Name = "pictureBox2";
-			this.pictureBox2.Size = new System.Drawing.Size(222, 114);
+			this.pictureBox2.Size = new System.Drawing.Size(221, 114);
 			this.pictureBox2.SizeMode = Wisej.Web.PictureBoxSizeMode.Zoom;
 			// 
 			// buttonDevExtreme
@@ -144,7 +142,7 @@
 			this.buttonDevExtreme.Font = new System.Drawing.Font("@defaultBold", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
 			this.buttonDevExtreme.Location = new System.Drawing.Point(16, 137);
 			this.buttonDevExtreme.Name = "buttonDevExtreme";
-			this.buttonDevExtreme.Size = new System.Drawing.Size(222, 37);
+			this.buttonDevExtreme.Size = new System.Drawing.Size(221, 37);
 			this.buttonDevExtreme.TabIndex = 2;
 			this.buttonDevExtreme.Text = "DevExtreme";
 			this.buttonDevExtreme.Click += new System.EventHandler(this.buttonDevExtreme_Click);
@@ -156,11 +154,11 @@
 			this.panel3.Controls.Add(this.buttonEJ1);
 			this.panel3.CssStyle = "border-radius: 10px;\r\nbox-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, " +
     "0.24) 0px 1px 2px;";
-			this.flowLayoutPanel1.SetFillWeight(this.panel3, 1);
-			this.panel3.Location = new System.Drawing.Point(547, 8);
+			this.panel3.Location = new System.Drawing.Point(546, 8);
 			this.panel3.Margin = new Wisej.Web.Padding(8);
+			this.panel3.MaximumSize = new System.Drawing.Size(253, 191);
 			this.panel3.Name = "panel3";
-			this.panel3.Size = new System.Drawing.Size(254, 191);
+			this.panel3.Size = new System.Drawing.Size(253, 191);
 			this.panel3.TabIndex = 5;
 			this.panel3.TabStop = true;
 			// 
@@ -172,7 +170,7 @@
 			this.pictureBox3.ImageSource = "resource.wx/Wisej.DemoBrowser.Premium/syncfusion.png";
 			this.pictureBox3.Location = new System.Drawing.Point(16, 17);
 			this.pictureBox3.Name = "pictureBox3";
-			this.pictureBox3.Size = new System.Drawing.Size(222, 114);
+			this.pictureBox3.Size = new System.Drawing.Size(221, 114);
 			this.pictureBox3.SizeMode = Wisej.Web.PictureBoxSizeMode.Zoom;
 			// 
 			// buttonEJ1
@@ -182,7 +180,7 @@
 			this.buttonEJ1.Font = new System.Drawing.Font("@defaultBold", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
 			this.buttonEJ1.Location = new System.Drawing.Point(16, 137);
 			this.buttonEJ1.Name = "buttonEJ1";
-			this.buttonEJ1.Size = new System.Drawing.Size(222, 37);
+			this.buttonEJ1.Size = new System.Drawing.Size(221, 37);
 			this.buttonEJ1.TabIndex = 2;
 			this.buttonEJ1.Text = "Syncfusion EJ1";
 			this.buttonEJ1.Click += new System.EventHandler(this.buttonEJ1_Click);
@@ -194,11 +192,10 @@
 			this.panel4.Controls.Add(this.buttonEJ2);
 			this.panel4.CssStyle = "border-radius: 10px;\r\nbox-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, " +
     "0.24) 0px 1px 2px;";
-			this.flowLayoutPanel1.SetFillWeight(this.panel4, 1);
-			this.panel4.Location = new System.Drawing.Point(817, 8);
+			this.panel4.Location = new System.Drawing.Point(815, 8);
 			this.panel4.Margin = new Wisej.Web.Padding(8);
 			this.panel4.Name = "panel4";
-			this.panel4.Size = new System.Drawing.Size(254, 191);
+			this.panel4.Size = new System.Drawing.Size(257, 191);
 			this.panel4.TabIndex = 6;
 			this.panel4.TabStop = true;
 			// 
@@ -210,7 +207,7 @@
 			this.pictureBox4.ImageSource = "resource.wx/Wisej.DemoBrowser.Premium/syncfusion.png";
 			this.pictureBox4.Location = new System.Drawing.Point(16, 17);
 			this.pictureBox4.Name = "pictureBox4";
-			this.pictureBox4.Size = new System.Drawing.Size(222, 114);
+			this.pictureBox4.Size = new System.Drawing.Size(225, 114);
 			this.pictureBox4.SizeMode = Wisej.Web.PictureBoxSizeMode.Zoom;
 			// 
 			// buttonEJ2
@@ -220,7 +217,7 @@
 			this.buttonEJ2.Font = new System.Drawing.Font("@defaultBold", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
 			this.buttonEJ2.Location = new System.Drawing.Point(16, 137);
 			this.buttonEJ2.Name = "buttonEJ2";
-			this.buttonEJ2.Size = new System.Drawing.Size(222, 37);
+			this.buttonEJ2.Size = new System.Drawing.Size(225, 37);
 			this.buttonEJ2.TabIndex = 2;
 			this.buttonEJ2.Text = "Syncfusion EJ2";
 			this.buttonEJ2.Click += new System.EventHandler(this.buttonEJ2_Click);
@@ -232,11 +229,10 @@
 			this.panel5.Controls.Add(this.buttonIgniteUI);
 			this.panel5.CssStyle = "border-radius: 10px;\r\nbox-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, " +
     "0.24) 0px 1px 2px;";
-			this.flowLayoutPanel1.SetFillWeight(this.panel5, 1);
-			this.panel5.Location = new System.Drawing.Point(1087, 8);
+			this.panel5.Location = new System.Drawing.Point(1088, 8);
 			this.panel5.Margin = new Wisej.Web.Padding(8);
 			this.panel5.Name = "panel5";
-			this.panel5.Size = new System.Drawing.Size(254, 191);
+			this.panel5.Size = new System.Drawing.Size(253, 191);
 			this.panel5.TabIndex = 7;
 			this.panel5.TabStop = true;
 			// 
@@ -248,7 +244,7 @@
 			this.pictureBox5.ImageSource = "resource.wx/Wisej.DemoBrowser.Premium/infragistics.png";
 			this.pictureBox5.Location = new System.Drawing.Point(16, 17);
 			this.pictureBox5.Name = "pictureBox5";
-			this.pictureBox5.Size = new System.Drawing.Size(222, 114);
+			this.pictureBox5.Size = new System.Drawing.Size(221, 114);
 			this.pictureBox5.SizeMode = Wisej.Web.PictureBoxSizeMode.Zoom;
 			// 
 			// buttonIgniteUI
@@ -258,7 +254,7 @@
 			this.buttonIgniteUI.Font = new System.Drawing.Font("@defaultBold", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
 			this.buttonIgniteUI.Location = new System.Drawing.Point(16, 137);
 			this.buttonIgniteUI.Name = "buttonIgniteUI";
-			this.buttonIgniteUI.Size = new System.Drawing.Size(222, 37);
+			this.buttonIgniteUI.Size = new System.Drawing.Size(221, 37);
 			this.buttonIgniteUI.TabIndex = 2;
 			this.buttonIgniteUI.Text = "Infragistics IgniteUI";
 			this.buttonIgniteUI.Click += new System.EventHandler(this.buttonIgniteUI_Click);
