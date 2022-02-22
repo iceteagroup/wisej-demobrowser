@@ -31,29 +31,29 @@
 			this.buttonKendo = new Wisej.Web.Button();
 			this.pictureBox1 = new Wisej.Web.PictureBox();
 			this.flowLayoutPanel1 = new Wisej.Web.FlowLayoutPanel();
-			this.panel1 = new Wisej.Web.Panel();
-			this.panel2 = new Wisej.Web.Panel();
+			this.panelKendo = new Wisej.Web.Panel();
+			this.panelDevExtreme = new Wisej.Web.Panel();
 			this.pictureBox2 = new Wisej.Web.PictureBox();
 			this.buttonDevExtreme = new Wisej.Web.Button();
-			this.panel3 = new Wisej.Web.Panel();
+			this.panelEJ1 = new Wisej.Web.Panel();
 			this.pictureBox3 = new Wisej.Web.PictureBox();
 			this.buttonEJ1 = new Wisej.Web.Button();
-			this.panel4 = new Wisej.Web.Panel();
+			this.panelEJ2 = new Wisej.Web.Panel();
 			this.pictureBox4 = new Wisej.Web.PictureBox();
 			this.buttonEJ2 = new Wisej.Web.Button();
-			this.panel5 = new Wisej.Web.Panel();
+			this.panelIgnite = new Wisej.Web.Panel();
 			this.pictureBox5 = new Wisej.Web.PictureBox();
 			this.buttonIgniteUI = new Wisej.Web.Button();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
 			this.flowLayoutPanel1.SuspendLayout();
-			this.panel1.SuspendLayout();
-			this.panel2.SuspendLayout();
+			this.panelKendo.SuspendLayout();
+			this.panelDevExtreme.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-			this.panel3.SuspendLayout();
+			this.panelEJ1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-			this.panel4.SuspendLayout();
+			this.panelEJ2.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-			this.panel5.SuspendLayout();
+			this.panelIgnite.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
 			this.SuspendLayout();
 			// 
@@ -61,19 +61,21 @@
 			// 
 			this.buttonKendo.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Bottom | Wisej.Web.AnchorStyles.Left) 
             | Wisej.Web.AnchorStyles.Right)));
+			this.buttonKendo.Anonymous = true;
+			this.buttonKendo.BackColor = System.Drawing.Color.Transparent;
 			this.buttonKendo.Font = new System.Drawing.Font("@defaultBold", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
 			this.buttonKendo.Location = new System.Drawing.Point(16, 136);
 			this.buttonKendo.Name = "buttonKendo";
 			this.buttonKendo.Size = new System.Drawing.Size(222, 37);
 			this.buttonKendo.TabIndex = 0;
 			this.buttonKendo.Text = "Telerik KendoUI";
-			this.buttonKendo.Click += new System.EventHandler(this.buttonKendo_Click);
 			// 
 			// pictureBox1
 			// 
 			this.pictureBox1.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
             | Wisej.Web.AnchorStyles.Left) 
             | Wisej.Web.AnchorStyles.Right)));
+			this.pictureBox1.Anonymous = true;
 			this.pictureBox1.ImageSource = "resource.wx/Wisej.DemoBrowser.Premium/kendoui.png";
 			this.pictureBox1.Location = new System.Drawing.Point(16, 16);
 			this.pictureBox1.Name = "pictureBox1";
@@ -82,53 +84,57 @@
 			// 
 			// flowLayoutPanel1
 			// 
-			this.flowLayoutPanel1.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
-            | Wisej.Web.AnchorStyles.Left) 
-            | Wisej.Web.AnchorStyles.Right)));
-			this.flowLayoutPanel1.Controls.Add(this.panel1);
-			this.flowLayoutPanel1.Controls.Add(this.panel2);
-			this.flowLayoutPanel1.Controls.Add(this.panel3);
-			this.flowLayoutPanel1.Controls.Add(this.panel4);
-			this.flowLayoutPanel1.Controls.Add(this.panel5);
-			this.flowLayoutPanel1.Location = new System.Drawing.Point(37, 134);
+			this.flowLayoutPanel1.AutoScroll = true;
+			this.flowLayoutPanel1.Controls.Add(this.panelKendo);
+			this.flowLayoutPanel1.Controls.Add(this.panelDevExtreme);
+			this.flowLayoutPanel1.Controls.Add(this.panelEJ1);
+			this.flowLayoutPanel1.Controls.Add(this.panelEJ2);
+			this.flowLayoutPanel1.Controls.Add(this.panelIgnite);
+			this.flowLayoutPanel1.Dock = Wisej.Web.DockStyle.Fill;
+			this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 16);
 			this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-			this.flowLayoutPanel1.Size = new System.Drawing.Size(1349, 319);
+			this.flowLayoutPanel1.Size = new System.Drawing.Size(1390, 442);
 			this.flowLayoutPanel1.TabIndex = 2;
 			this.flowLayoutPanel1.TabStop = true;
 			// 
-			// panel1
+			// panelKendo
 			// 
-			this.panel1.BackColor = System.Drawing.Color.White;
-			this.panel1.Controls.Add(this.pictureBox1);
-			this.panel1.Controls.Add(this.buttonKendo);
-			this.panel1.CssStyle = "border-radius: 10px;\r\nbox-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, " +
-    "0.24) 0px 1px 2px;";
-			this.panel1.Location = new System.Drawing.Point(8, 8);
-			this.panel1.Margin = new Wisej.Web.Padding(8);
-			this.panel1.Name = "panel1";
-			this.panel1.Size = new System.Drawing.Size(253, 191);
-			this.panel1.TabIndex = 3;
-			this.panel1.TabStop = true;
+			this.panelKendo.BackColor = System.Drawing.Color.White;
+			this.panelKendo.Controls.Add(this.pictureBox1);
+			this.panelKendo.Controls.Add(this.buttonKendo);
+			this.panelKendo.CssStyle = "border-radius: 10px;\r\nbox-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, " +
+    "0, 0.06) 0px 1px 2px 0px;";
+			this.panelKendo.Cursor = Wisej.Web.Cursors.Hand;
+			this.panelKendo.Location = new System.Drawing.Point(8, 8);
+			this.panelKendo.Margin = new Wisej.Web.Padding(8);
+			this.panelKendo.Name = "panelKendo";
+			this.panelKendo.Size = new System.Drawing.Size(253, 191);
+			this.panelKendo.TabIndex = 3;
+			this.panelKendo.TabStop = true;
+			this.panelKendo.Click += new System.EventHandler(this.panelKendo_Click);
 			// 
-			// panel2
+			// panelDevExtreme
 			// 
-			this.panel2.BackColor = System.Drawing.Color.White;
-			this.panel2.Controls.Add(this.pictureBox2);
-			this.panel2.Controls.Add(this.buttonDevExtreme);
-			this.panel2.CssStyle = "border-radius: 10px;\r\nbox-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, " +
-    "0.24) 0px 1px 2px;";
-			this.panel2.Location = new System.Drawing.Point(277, 8);
-			this.panel2.Margin = new Wisej.Web.Padding(8);
-			this.panel2.Name = "panel2";
-			this.panel2.Size = new System.Drawing.Size(253, 191);
-			this.panel2.TabIndex = 4;
-			this.panel2.TabStop = true;
+			this.panelDevExtreme.BackColor = System.Drawing.Color.White;
+			this.panelDevExtreme.Controls.Add(this.pictureBox2);
+			this.panelDevExtreme.Controls.Add(this.buttonDevExtreme);
+			this.panelDevExtreme.CssStyle = "border-radius: 10px;\r\nbox-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, " +
+    "0, 0.06) 0px 1px 2px 0px;";
+			this.panelDevExtreme.Cursor = Wisej.Web.Cursors.Hand;
+			this.panelDevExtreme.Location = new System.Drawing.Point(277, 8);
+			this.panelDevExtreme.Margin = new Wisej.Web.Padding(8);
+			this.panelDevExtreme.Name = "panelDevExtreme";
+			this.panelDevExtreme.Size = new System.Drawing.Size(253, 191);
+			this.panelDevExtreme.TabIndex = 4;
+			this.panelDevExtreme.TabStop = true;
+			this.panelDevExtreme.Click += new System.EventHandler(this.panelDevExtreme_Click);
 			// 
 			// pictureBox2
 			// 
 			this.pictureBox2.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
             | Wisej.Web.AnchorStyles.Left) 
             | Wisej.Web.AnchorStyles.Right)));
+			this.pictureBox2.Anonymous = true;
 			this.pictureBox2.ImageSource = "resource.wx/Wisej.DemoBrowser.Premium/devextreme.png";
 			this.pictureBox2.Location = new System.Drawing.Point(16, 17);
 			this.pictureBox2.Name = "pictureBox2";
@@ -139,34 +145,38 @@
 			// 
 			this.buttonDevExtreme.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Bottom | Wisej.Web.AnchorStyles.Left) 
             | Wisej.Web.AnchorStyles.Right)));
+			this.buttonDevExtreme.Anonymous = true;
+			this.buttonDevExtreme.BackColor = System.Drawing.Color.Transparent;
 			this.buttonDevExtreme.Font = new System.Drawing.Font("@defaultBold", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
 			this.buttonDevExtreme.Location = new System.Drawing.Point(16, 137);
 			this.buttonDevExtreme.Name = "buttonDevExtreme";
 			this.buttonDevExtreme.Size = new System.Drawing.Size(221, 37);
 			this.buttonDevExtreme.TabIndex = 2;
 			this.buttonDevExtreme.Text = "DevExtreme";
-			this.buttonDevExtreme.Click += new System.EventHandler(this.buttonDevExtreme_Click);
 			// 
-			// panel3
+			// panelEJ1
 			// 
-			this.panel3.BackColor = System.Drawing.Color.White;
-			this.panel3.Controls.Add(this.pictureBox3);
-			this.panel3.Controls.Add(this.buttonEJ1);
-			this.panel3.CssStyle = "border-radius: 10px;\r\nbox-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, " +
-    "0.24) 0px 1px 2px;";
-			this.panel3.Location = new System.Drawing.Point(546, 8);
-			this.panel3.Margin = new Wisej.Web.Padding(8);
-			this.panel3.MaximumSize = new System.Drawing.Size(253, 191);
-			this.panel3.Name = "panel3";
-			this.panel3.Size = new System.Drawing.Size(253, 191);
-			this.panel3.TabIndex = 5;
-			this.panel3.TabStop = true;
+			this.panelEJ1.BackColor = System.Drawing.Color.White;
+			this.panelEJ1.Controls.Add(this.pictureBox3);
+			this.panelEJ1.Controls.Add(this.buttonEJ1);
+			this.panelEJ1.CssStyle = "border-radius: 10px;\r\nbox-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, " +
+    "0, 0.06) 0px 1px 2px 0px;";
+			this.panelEJ1.Cursor = Wisej.Web.Cursors.Hand;
+			this.panelEJ1.Location = new System.Drawing.Point(546, 8);
+			this.panelEJ1.Margin = new Wisej.Web.Padding(8);
+			this.panelEJ1.MaximumSize = new System.Drawing.Size(253, 191);
+			this.panelEJ1.Name = "panelEJ1";
+			this.panelEJ1.Size = new System.Drawing.Size(253, 191);
+			this.panelEJ1.TabIndex = 5;
+			this.panelEJ1.TabStop = true;
+			this.panelEJ1.Click += new System.EventHandler(this.panelEJ1_Click);
 			// 
 			// pictureBox3
 			// 
 			this.pictureBox3.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
             | Wisej.Web.AnchorStyles.Left) 
             | Wisej.Web.AnchorStyles.Right)));
+			this.pictureBox3.Anonymous = true;
 			this.pictureBox3.ImageSource = "resource.wx/Wisej.DemoBrowser.Premium/syncfusion.png";
 			this.pictureBox3.Location = new System.Drawing.Point(16, 17);
 			this.pictureBox3.Name = "pictureBox3";
@@ -177,33 +187,37 @@
 			// 
 			this.buttonEJ1.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Bottom | Wisej.Web.AnchorStyles.Left) 
             | Wisej.Web.AnchorStyles.Right)));
+			this.buttonEJ1.Anonymous = true;
+			this.buttonEJ1.BackColor = System.Drawing.Color.Transparent;
 			this.buttonEJ1.Font = new System.Drawing.Font("@defaultBold", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
 			this.buttonEJ1.Location = new System.Drawing.Point(16, 137);
 			this.buttonEJ1.Name = "buttonEJ1";
 			this.buttonEJ1.Size = new System.Drawing.Size(221, 37);
 			this.buttonEJ1.TabIndex = 2;
 			this.buttonEJ1.Text = "Syncfusion EJ1";
-			this.buttonEJ1.Click += new System.EventHandler(this.buttonEJ1_Click);
 			// 
-			// panel4
+			// panelEJ2
 			// 
-			this.panel4.BackColor = System.Drawing.Color.White;
-			this.panel4.Controls.Add(this.pictureBox4);
-			this.panel4.Controls.Add(this.buttonEJ2);
-			this.panel4.CssStyle = "border-radius: 10px;\r\nbox-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, " +
-    "0.24) 0px 1px 2px;";
-			this.panel4.Location = new System.Drawing.Point(815, 8);
-			this.panel4.Margin = new Wisej.Web.Padding(8);
-			this.panel4.Name = "panel4";
-			this.panel4.Size = new System.Drawing.Size(257, 191);
-			this.panel4.TabIndex = 6;
-			this.panel4.TabStop = true;
+			this.panelEJ2.BackColor = System.Drawing.Color.White;
+			this.panelEJ2.Controls.Add(this.pictureBox4);
+			this.panelEJ2.Controls.Add(this.buttonEJ2);
+			this.panelEJ2.CssStyle = "border-radius: 10px;\r\nbox-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, " +
+    "0, 0.06) 0px 1px 2px 0px;";
+			this.panelEJ2.Cursor = Wisej.Web.Cursors.Hand;
+			this.panelEJ2.Location = new System.Drawing.Point(815, 8);
+			this.panelEJ2.Margin = new Wisej.Web.Padding(8);
+			this.panelEJ2.Name = "panelEJ2";
+			this.panelEJ2.Size = new System.Drawing.Size(257, 191);
+			this.panelEJ2.TabIndex = 6;
+			this.panelEJ2.TabStop = true;
+			this.panelEJ2.Click += new System.EventHandler(this.panelEJ2_Click);
 			// 
 			// pictureBox4
 			// 
 			this.pictureBox4.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
             | Wisej.Web.AnchorStyles.Left) 
             | Wisej.Web.AnchorStyles.Right)));
+			this.pictureBox4.Anonymous = true;
 			this.pictureBox4.ImageSource = "resource.wx/Wisej.DemoBrowser.Premium/syncfusion.png";
 			this.pictureBox4.Location = new System.Drawing.Point(16, 17);
 			this.pictureBox4.Name = "pictureBox4";
@@ -214,33 +228,37 @@
 			// 
 			this.buttonEJ2.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Bottom | Wisej.Web.AnchorStyles.Left) 
             | Wisej.Web.AnchorStyles.Right)));
+			this.buttonEJ2.Anonymous = true;
+			this.buttonEJ2.BackColor = System.Drawing.Color.Transparent;
 			this.buttonEJ2.Font = new System.Drawing.Font("@defaultBold", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
 			this.buttonEJ2.Location = new System.Drawing.Point(16, 137);
 			this.buttonEJ2.Name = "buttonEJ2";
 			this.buttonEJ2.Size = new System.Drawing.Size(225, 37);
 			this.buttonEJ2.TabIndex = 2;
 			this.buttonEJ2.Text = "Syncfusion EJ2";
-			this.buttonEJ2.Click += new System.EventHandler(this.buttonEJ2_Click);
 			// 
-			// panel5
+			// panelIgnite
 			// 
-			this.panel5.BackColor = System.Drawing.Color.White;
-			this.panel5.Controls.Add(this.pictureBox5);
-			this.panel5.Controls.Add(this.buttonIgniteUI);
-			this.panel5.CssStyle = "border-radius: 10px;\r\nbox-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, " +
-    "0.24) 0px 1px 2px;";
-			this.panel5.Location = new System.Drawing.Point(1088, 8);
-			this.panel5.Margin = new Wisej.Web.Padding(8);
-			this.panel5.Name = "panel5";
-			this.panel5.Size = new System.Drawing.Size(253, 191);
-			this.panel5.TabIndex = 7;
-			this.panel5.TabStop = true;
+			this.panelIgnite.BackColor = System.Drawing.Color.White;
+			this.panelIgnite.Controls.Add(this.pictureBox5);
+			this.panelIgnite.Controls.Add(this.buttonIgniteUI);
+			this.panelIgnite.CssStyle = "border-radius: 10px;\r\nbox-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, " +
+    "0, 0.06) 0px 1px 2px 0px;";
+			this.panelIgnite.Cursor = Wisej.Web.Cursors.Hand;
+			this.panelIgnite.Location = new System.Drawing.Point(1088, 8);
+			this.panelIgnite.Margin = new Wisej.Web.Padding(8);
+			this.panelIgnite.Name = "panelIgnite";
+			this.panelIgnite.Size = new System.Drawing.Size(253, 191);
+			this.panelIgnite.TabIndex = 7;
+			this.panelIgnite.TabStop = true;
+			this.panelIgnite.Click += new System.EventHandler(this.panelIgnite_Click);
 			// 
 			// pictureBox5
 			// 
 			this.pictureBox5.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
             | Wisej.Web.AnchorStyles.Left) 
             | Wisej.Web.AnchorStyles.Right)));
+			this.pictureBox5.Anonymous = true;
 			this.pictureBox5.ImageSource = "resource.wx/Wisej.DemoBrowser.Premium/infragistics.png";
 			this.pictureBox5.Location = new System.Drawing.Point(16, 17);
 			this.pictureBox5.Name = "pictureBox5";
@@ -251,28 +269,30 @@
 			// 
 			this.buttonIgniteUI.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Bottom | Wisej.Web.AnchorStyles.Left) 
             | Wisej.Web.AnchorStyles.Right)));
+			this.buttonIgniteUI.Anonymous = true;
+			this.buttonIgniteUI.BackColor = System.Drawing.Color.Transparent;
 			this.buttonIgniteUI.Font = new System.Drawing.Font("@defaultBold", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
 			this.buttonIgniteUI.Location = new System.Drawing.Point(16, 137);
 			this.buttonIgniteUI.Name = "buttonIgniteUI";
 			this.buttonIgniteUI.Size = new System.Drawing.Size(221, 37);
 			this.buttonIgniteUI.TabIndex = 2;
 			this.buttonIgniteUI.Text = "Infragistics IgniteUI";
-			this.buttonIgniteUI.Click += new System.EventHandler(this.buttonIgniteUI_Click);
 			// 
 			// Features
 			// 
 			this.Controls.Add(this.flowLayoutPanel1);
 			this.Name = "Features";
+			this.Padding = new Wisej.Web.Padding(16);
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
 			this.flowLayoutPanel1.ResumeLayout(false);
-			this.panel1.ResumeLayout(false);
-			this.panel2.ResumeLayout(false);
+			this.panelKendo.ResumeLayout(false);
+			this.panelDevExtreme.ResumeLayout(false);
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-			this.panel3.ResumeLayout(false);
+			this.panelEJ1.ResumeLayout(false);
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-			this.panel4.ResumeLayout(false);
+			this.panelEJ2.ResumeLayout(false);
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-			this.panel5.ResumeLayout(false);
+			this.panelIgnite.ResumeLayout(false);
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
 			this.ResumeLayout(false);
 
@@ -283,11 +303,11 @@
 		private Web.Button buttonKendo;
 		private Web.PictureBox pictureBox1;
 		private Web.FlowLayoutPanel flowLayoutPanel1;
-		private Web.Panel panel1;
-		private Web.Panel panel2;
-		private Web.Panel panel3;
-		private Web.Panel panel4;
-		private Web.Panel panel5;
+		private Web.Panel panelKendo;
+		private Web.Panel panelDevExtreme;
+		private Web.Panel panelEJ1;
+		private Web.Panel panelEJ2;
+		private Web.Panel panelIgnite;
 		private Web.PictureBox pictureBox2;
 		private Web.Button buttonDevExtreme;
 		private Web.PictureBox pictureBox3;

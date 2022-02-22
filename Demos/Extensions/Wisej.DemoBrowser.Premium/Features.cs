@@ -13,27 +13,27 @@ namespace Wisej.DemoBrowser.Premium
 			InitializeComponent();
 		}
 
-		private void buttonKendo_Click(object sender, EventArgs e)
-		{
-			Application.Navigate($"{BASE_URL}Kendo");
-		}
-
-		private void buttonDevExtreme_Click(object sender, EventArgs e)
+		private void panelDevExtreme_Click(object sender, EventArgs e)
 		{
 			Application.Navigate($"{BASE_URL}DevExtreme");
 		}
 
-		private void buttonEJ1_Click(object sender, EventArgs e)
+		private void panelKendo_Click(object sender, EventArgs e)
+		{
+			Application.Navigate($"{BASE_URL}Kendo");
+		}
+
+		private void panelEJ1_Click(object sender, EventArgs e)
 		{
 			Application.Navigate($"{BASE_URL}Syncfusion");
 		}
 
-		private void buttonEJ2_Click(object sender, EventArgs e)
+		private void panelEJ2_Click(object sender, EventArgs e)
 		{
 			Application.Navigate($"{BASE_URL}Syncfusion2");
 		}
 
-		private void buttonIgniteUI_Click(object sender, EventArgs e)
+		private void panelIgnite_Click(object sender, EventArgs e)
 		{
 			Application.Navigate($"{BASE_URL}Ignite");
 		}

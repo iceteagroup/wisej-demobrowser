@@ -38,7 +38,6 @@
 			this.pdfViewer1.Name = "pdfViewer1";
 			this.pdfViewer1.Size = new System.Drawing.Size(1390, 442);
 			this.pdfViewer1.TabIndex = 0;
-			this.pdfViewer1.ViewerType = Wisej.Web.PdfViewerType.Mozilla;
 			// 
 			// Features
 			// 

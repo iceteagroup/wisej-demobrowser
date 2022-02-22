@@ -298,15 +298,15 @@
 				"description-en": "The <b>Wisej.Web.IFramePanel</b> control can be used to show embedded web pages. "
 			} 
 		},
-		"AspNetPanel": {
-			"Features": {
-				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos",
-				"assembly": "Features, Wisej.DemoBrowser.AspNetPanel.dll",
-				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/AspxFile.svg",
-				"docsUrl": "https://docs.wisej.com/docs/controls/content/aspnetpanel",
-				"description-en": "To use the <b>Wisej.Web.AspNetPanel</b> control, simply set the PageSource property to the location of an existing .aspx document in the project."
-			}
-		},
+		//"AspNetPanel": {
+		//	"Features": {
+		//		"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos",
+		//		"assembly": "Features, Wisej.DemoBrowser.AspNetPanel.dll",
+		//		"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/AspxFile.svg",
+		//		"docsUrl": "https://docs.wisej.com/docs/controls/content/aspnetpanel",
+		//		"description-en": "To use the <b>Wisej.Web.AspNetPanel</b> control, simply set the PageSource property to the location of an existing .aspx document in the project."
+		//	}
+		//},
 		"UserControl": {
 			"Features": {
 				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos",
