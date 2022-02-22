@@ -36,9 +36,11 @@ namespace Wisej.DemoBrowser.GoogleMaps
 		/// <param name="geodesic"></param>
 		private void AddPolyline(Color strokeColor, double strokeOpacity, int strokeWeight, bool geodesic)
 		{
+			var path = new[] { latLng1.ToJSON(), latLng2.ToJSON() };
+
 			var configuration = new
 			{
-				path = new[] { latLng1.ToJSON(), latLng2.ToJSON() },
+				path,
 				strokeColor,
 				strokeOpacity,
 				strokeWeight,
@@ -46,9 +48,13 @@ namespace Wisej.DemoBrowser.GoogleMaps
 			};
 
 			this.googleMap1.Eval($@"
-				debugger;
+				var map = this.widget;
 				var poly = new google.maps.Polyline({configuration.ToJSON()});
-				poly.setMap(this.widget);
+				poly.setMap(map);
+
+				var bounds = new google.maps.LatLngBounds({path[0].ToJSON()});
+				bounds.extend({path[1].ToJSON()});
+				map.fitBounds(bounds);
 			");
 		}
 	}
