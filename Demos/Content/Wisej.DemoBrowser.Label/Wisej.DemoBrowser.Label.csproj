@@ -37,6 +37,12 @@
     <Reference Include="System.Windows.Forms" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Alignment.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Alignment.Designer.cs">
+      <DependentUpon>Alignment.cs</DependentUpon>
+    </Compile>
     <Compile Include="Features.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -57,6 +63,9 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Alignment.resx">
+      <DependentUpon>Alignment.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Features.resx">
       <DependentUpon>Features.cs</DependentUpon>
     </EmbeddedResource>

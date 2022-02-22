@@ -20,7 +20,7 @@
 				"assembly": "Labels, Wisej.DemoBrowser.TextBox.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/TextBox.svg",
 				"docsUrl": "https://docs.wisej.com/docs/controls/editors/textbox#label",
-				"description-en": "The <b>Wisej.Web.TextBox</b> control supports the inline Label property. This allows an application to set a label in relation to a TextBox control without having to create an additional Label control."
+				"description-en": "The <b>Wisej.Web.TextBox</b> control supports the inline Label property.flabel This allows an application to set a label in relation to a TextBox control without having to create an additional Label control."
 			},
 			"Input Types": {
 				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos",
@@ -422,6 +422,14 @@
 			"Features": {
 				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos",
 				"assembly": "Features, Wisej.DemoBrowser.Label.dll",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/Label.svg",
+				"docsUrl": "https://docs.wisej.com/docs/controls/content/label",
+				"description-en": "The <b>Wisej.Web.Label</b> control is typically used to provide descriptive text for a control. For example, you can use a Label to add descriptive text for a TextBox control to inform the user about the type of data expected in the control.",
+				"description-fr": "Le contrôle <b>Wisej.Web.Label</b> est généralement utilisé pour fournir un texte descriptif pour un contrôle. Par exemple, vous pouvez utiliser une étiquette pour ajouter un texte descriptif pour un contrôle TextBox afin d'informer l'utilisateur du type de données attendu dans le contrôle."
+			},
+			"Alignment": {
+				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos",
+				"assembly": "Alignment, Wisej.DemoBrowser.Label.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/Label.svg",
 				"docsUrl": "https://docs.wisej.com/docs/controls/content/label",
 				"description-en": "The <b>Wisej.Web.Label</b> control is typically used to provide descriptive text for a control. For example, you can use a Label to add descriptive text for a TextBox control to inform the user about the type of data expected in the control.",

@@ -61,9 +61,8 @@
       <DependentUpon>Features.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
-    <EmbeddedResource Include="Images\wisej.bmp" />
+    <EmbeddedResource Include="Images\wisej.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

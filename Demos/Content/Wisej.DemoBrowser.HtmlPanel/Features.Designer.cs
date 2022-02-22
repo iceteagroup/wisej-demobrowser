@@ -108,7 +108,7 @@
 			this.Controls.Add(this.aceEditorSource);
 			this.Controls.Add(this.label1);
 			this.Controls.Add(this.htmlPanelPreview);
-			this.MinimumSize = new System.Drawing.Size(1422, 474);
+			this.MinimumSize = new System.Drawing.Size(1335, 422);
 			this.Name = "Features";
 			this.Padding = new Wisej.Web.Padding(5);
 			this.Load += new System.EventHandler(this.Features_Load);
