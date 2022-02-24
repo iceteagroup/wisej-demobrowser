@@ -200,13 +200,9 @@
 				"description-en": "The <b>Wisej.Web.Line</b> control enables you to draw lines on a form or container at design time or run time.",
 				"description-fr": "Le contrôle <b>Wisej.Web.Line</b> vous permet de dessiner des lignes sur un form ou un conteneur au moment du design ou de l’exécution."
 			}
-		},
-		"Timer": {}
+		}
 	},
 	"Containers": {
-		// TODO: "Page": {},
-		// TODO: "Form": {},
-		"Desktop": {},
 		"Panel": {
 			"Features": {
 				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos",
@@ -645,6 +641,7 @@
 		//		"description-en": "The <b>Wisej.Web.Ext.Camera</b> control makes it possible to take pictures with the device's camera and upload them to the server."
 		//	}
 		//},
+		"ChartJS": {},
 		"CKEditor": {
 			"Features": {
 				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos",
@@ -654,6 +651,7 @@
 				"description-en": "The <b>Wisej.Web.Ext.CKEditor</b> control (formerly FCKeditor) is an open source WYSIWYG text editor designed to bring common word processor features directly to web pages, simplifying their content creation."
 			}
 		},
+		"ColumnFilter": {},
 		"CoolClock": {
 			"Features": {
 				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos",
@@ -727,6 +725,8 @@
 				"description-en": "The Maps JavaScript API geometry library provides utility functions for the computation of geometric data on the surface of the Earth."
 			}
 		},
+		"Html2Canvas": {},
+		"JustGage": {},
 		"jQueryKnob": {
 			"Features": {
 				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos",
@@ -755,6 +755,8 @@
 				"description-en": "The <b>Wisej.Ext.Notification</b> component adds desktop notifications to Wisej applications. With this component your web apps can pop notifications on the user’s desktop even when the browser is minimized."
 			}
 		},
+		"OfficeViewer": {},
+		"Pannellum": {},
 		"Premium": {
 			"Features": {
 				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos",
@@ -773,6 +775,8 @@
 				"description-en": "The <b>Wisej.Web.Ext.ProgressCircle</b> control is entirely implemented on the server side as a derived class of Wisej.Web.Canvas. It draws on a HTML5 canvas element on the client directly from the server in real time. The component lets you set value, line style and thickness, fill color, font, etc."
 			}
 		},
+		"RibbonBar": {},
+		"Speech": {},
 		"TinyEditor": {
 			"Features": {
 				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos",
@@ -791,6 +795,7 @@
 				"description-en": "The <b>Wisej.Web.Ext.TinyMCE</b> control (Tiny Moxiecode Content Editor) is a platform-independent, browser-based WYSIWYG editor control, written in JavaScript and released as open-source software under the LGPL by Ephox."
 			}
 		},
+		"TourPanel": {},
 		"Translation": {}
 	},
 	"Icon Packs": {
