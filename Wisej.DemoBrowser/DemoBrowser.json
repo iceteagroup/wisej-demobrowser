@@ -307,24 +307,24 @@
 		//		"description-en": "To use the <b>Wisej.Web.AspNetPanel</b> control, simply set the PageSource property to the location of an existing .aspx document in the project."
 		//	}
 		//},
-		"UserControl": {
-			"Features": {
-				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos",
-				"assembly": "Features, Wisej.DemoBrowser.UserControl.dll",
-				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/UserControl.svg",
-				"docsUrl": "https://docs.wisej.com/docs/controls/containers/usercontrol",
-				"description-en": "The <b>Wisej.DemoBrowser.UserControl</b> gives you the ability to create controls that can be used in multiple places within an application or organization."
-			}
-		},
-		"Widget": {
-			"Features": {
-				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos",
-				"assembly": "Features, Wisej.DemoBrowser.Widget.dll",
-				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/JsApplication.svg",
-				"docsUrl": "https://docs.wisej.com/docs/controls/content/widget",
-				"description-en": "The <b>Wisej.Web.Widget</b> control is the key to integrating the rest of the JavaScript world into a Wisej application. The Widget control allows developers to load custom JavaScript and CSS libraries into their Wisej application at runtime to utilize and containerize custom controls."
-			}
-		}
+		//"UserControl": {
+		//	"Features": {
+		//		"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos",
+		//		"assembly": "Features, Wisej.DemoBrowser.UserControl.dll",
+		//		"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/UserControl.svg",
+		//		"docsUrl": "https://docs.wisej.com/docs/controls/containers/usercontrol",
+		//		"description-en": "The <b>Wisej.DemoBrowser.UserControl</b> gives you the ability to create controls that can be used in multiple places within an application or organization."
+		//	}
+		//},
+		//"Widget": {
+		//	"Features": {
+		//		"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos",
+		//		"assembly": "Features, Wisej.DemoBrowser.Widget.dll",
+		//		"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/JsApplication.svg",
+		//		"docsUrl": "https://docs.wisej.com/docs/controls/content/widget",
+		//		"description-en": "The <b>Wisej.Web.Widget</b> control is the key to integrating the rest of the JavaScript world into a Wisej application. The Widget control allows developers to load custom JavaScript and CSS libraries into their Wisej application at runtime to utilize and containerize custom controls."
+		//	}
+		//}
 	},
 	"Tools and Menus": {
 		"MenuBar": {
@@ -365,7 +365,6 @@
 				"description-en": "The <b>Wisej.Web.StatusBar</b> displays information to the user about the object being viewed, the object's components, or the object's operation."
 			}
 		},
-		"RibbonBar": {},
 		"ScrollBars": {
 			"Features": {
 				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos",
@@ -387,8 +386,6 @@
 	},
 	"Extenders": {
 		"ToolTip": {},
-		"JavaScript": {},
-		"StyleSheet": {},
 		"HelpTip": {
 			"Features": {
 				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos",
@@ -619,60 +616,6 @@
 				"description-en": "The <b>Wisej.Web.Ext.AceEditor</b> control is an embeddable code editor written in JavaScript. It matches the features and performance of native editors such as Sublime, Vim and TextMate. Ace is maintained as the primary editor for Cloud9 IDE and is the successor of the Mozilla Skywriter (Bespin) project."
 			}
 		},
-		"BingWallpaper": {
-			"Features": {
-				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos",
-				"assembly": "Features, Wisej.DemoBrowser.BingWallpaper.dll",
-				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/DynamicImage.svg",
-				"docsUrl": "https://docs.wisej.com/extensions/extensions/bingwallpaper",
-				"description-en": "The <b>Wisej.Web.Ext.BingWallpaper</b> extender component enhances the Desktop control by adding Bing’s daily stunning wallpaper images. You can set the rotation interval, fade duration and number of images."
-			}
-		},
-		"Camera": {
-			"Features": {
-				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos",
-				"assembly": "Features, Wisej.DemoBrowser.Camera.dll",
-				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/CameraOutline.svg",
-				"docsUrl": "https://docs.wisej.com/extensions/extensions/camera",
-				"description-en": "The <b>Wisej.Web.Ext.Camera</b> control makes it possible to take pictures with the device's camera and upload them to the server."
-			}
-		},
-		"TinyMCE": {
-			"Features": {
-				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos",
-				"assembly": "Features, Wisej.DemoBrowser.TinyMCE.dll",
-				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/HtmlTagEnd.svg",
-				"docsUrl": "https://docs.wisej.com/extensions/extensions/geolocation/api/wisej.ext.geolocation.geolocation",
-				"description-en": "The <b>Wisej.Web.Ext.TinyMCE</b> control (Tiny Moxiecode Content Editor) is a platform-independent, browser-based WYSIWYG editor control, written in JavaScript and released as open-source software under the LGPL by Ephox."
-			}
-		},
-		"CKEditor": {
-			"Features": {
-				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos",
-				"assembly": "Features, Wisej.DemoBrowser.CKEditor.dll",
-				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/HtmlTagEnd.svg",
-				"docsUrl": "https://docs.wisej.com/extensions/extensions/ckeditor/api/wisej.web.ext.ckeditor.ckeditor",
-				"description-en": "The <b>Wisej.Web.Ext.CKEditor</b> control (formerly FCKeditor) is an open source WYSIWYG text editor designed to bring common word processor features directly to web pages, simplifying their content creation."
-			}
-		},
-		"CountUp": {
-			"Features": {
-				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos",
-				"assembly": "Features, Wisej.DemoBrowser.CountUp.dll",
-				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/Counter.svg",
-				"docsUrl": "https://docs.wisej.com/extensions/extensions/countup",
-				"description-en": "The <b>Wisej.Web.Ext.CountUp</b> control uses the excellent CountUp.js widget that can be used to quickly create animations that display numerical data in a more interesting way."
-			}
-		},
-		"TinyEditor": {
-			"Features": {
-				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos",
-				"assembly": "Features, Wisej.DemoBrowser.TinyEditor.dll",
-				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/HtmlTagEnd.svg",
-				"docsUrl": "https://docs.wisej.com/extensions/extensions/tinyeditor/api/wisej.web.ext.tinyeditor.tinyeditor",
-				"description-en": "The <b>Wisej.Web.Ext.TinyEditor</b> control is a simple JavaScript WYSIWYG editor that is both lightweight (8KB) and standalone from: https://github.com/jessegreathouse/TinyEditor."
-			}
-		},
 		"Barcode": {
 			"Features": {
 				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos",
@@ -682,6 +625,35 @@
 				"description-en": "The <b>Wisej.Web.Ext.Barcode</b> control uses ZXing.Net to generate Barcodes on the server and render them on the client. Supports: UPC-A, EAN-8, EAN-13, Code 39, Code 128, ITF, Codabar, Plessey, MSI, QR Code, PDF-417, Aztec, Data Matrix."
 			}
 		},
+		"BingWallpaper": {
+			"Features": {
+				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos",
+				"assembly": "Features, Wisej.DemoBrowser.BingWallpaper.dll",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/DynamicImage.svg",
+				"docsUrl": "https://docs.wisej.com/extensions/extensions/bingwallpaper",
+				"description-en": "The <b>Wisej.Web.Ext.BingWallpaper</b> extender component enhances the Desktop control by adding Bing’s daily stunning wallpaper images. You can set the rotation interval, fade duration and number of images."
+			}
+		},
+		"Bubbles": {},
+		// requires HTTPS.
+		//"Camera": {
+		//	"Features": {
+		//		"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos",
+		//		"assembly": "Features, Wisej.DemoBrowser.Camera.dll",
+		//		"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/CameraOutline.svg",
+		//		"docsUrl": "https://docs.wisej.com/extensions/extensions/camera",
+		//		"description-en": "The <b>Wisej.Web.Ext.Camera</b> control makes it possible to take pictures with the device's camera and upload them to the server."
+		//	}
+		//},
+		"CKEditor": {
+			"Features": {
+				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos",
+				"assembly": "Features, Wisej.DemoBrowser.CKEditor.dll",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/HtmlTagEnd.svg",
+				"docsUrl": "https://docs.wisej.com/extensions/extensions/ckeditor/api/wisej.web.ext.ckeditor.ckeditor",
+				"description-en": "The <b>Wisej.Web.Ext.CKEditor</b> control (formerly FCKeditor) is an open source WYSIWYG text editor designed to bring common word processor features directly to web pages, simplifying their content creation."
+			}
+		},
 		"CoolClock": {
 			"Features": {
 				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos",
@@ -689,6 +661,15 @@
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/Time.svg",
 				"docsUrl": "https://docs.wisej.com/extensions/extensions/coolclock",
 				"description-en": "The <b>Wisej.Web.Ext.CoolClock</b> control renders amazing analog clocks as Real-Time widgets. Supports several skins, logarithmic scale, and several properties to configure the tick delay or hide the second’s hand."
+			}
+		},
+		"CountUp": {
+			"Features": {
+				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos",
+				"assembly": "Features, Wisej.DemoBrowser.CountUp.dll",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/Counter.svg",
+				"docsUrl": "https://docs.wisej.com/extensions/extensions/countup",
+				"description-en": "The <b>Wisej.Web.Ext.CountUp</b> control uses the excellent CountUp.js widget that can be used to quickly create animations that display numerical data in a more interesting way."
 			}
 		},
 		"FullCalendar": {
@@ -705,33 +686,6 @@
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/Calendar.svg",
 				"docsUrl": "https://docs.wisej.com/extensions/extensions/fullcalendar",
 				"description-en": "The <b>Wisej.Web.Ext.FullCalendar</b> extension is an amazing full-size drag-n-drop event calendar. Supports multiple views, flexible events, custom styles, integrates with Google Calendars, and it’s completely integrated with Wisej."
-			}
-		},
-		"jQueryKnob": {
-			"Features": {
-				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos",
-				"assembly": "Features, Wisej.DemoBrowser.jQueryKnob.dll",
-				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/ProgressBar.svg",
-				"docsUrl": "https://docs.wisej.com/extensions/extensions/jqueryknob",
-				"description-en": "The <b>Wisej.Web.Ext.jQueryKnob.Knob</b> control uses the amazing jQueryKnob widget to create a Wisej Real Time dial control that allows the user to rotate the dial to change its value or to type the value in the middle editor. The component allows you to set the value, range, line style, colors and more."
-			}
-		},
-		"NavigationBar": {
-			"Features": {
-				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos",
-				"assembly": "Features, Wisej.DemoBrowser.NavigationBar.dll",
-				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/AppForOfficeTaskPane.svg",
-				"docsUrl": "https://docs.wisej.com/extensions/extensions/navigationbar",
-				"description-en": "The <b>Wisej.Web.Ext.NavigationBar</b> is a responsive vertical navigation bar that displays an application header with logo, child items, and a user panel with gravatar and other user information."
-			}
-		},
-		"Notification": {
-			"Features": {
-				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos",
-				"assembly": "Features, Wisej.DemoBrowser.Notification.dll",
-				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/PushNotification.svg",
-				"docsUrl": "https://docs.wisej.com/extensions/extensions/notification",
-				"description-en": "The <b>Wisej.Ext.Notification</b> component adds desktop notifications to Wisej applications. With this component your web apps can pop notifications on the user’s desktop even when the browser is minimized."
 			}
 		},
 		"Geolocation": {
@@ -773,6 +727,43 @@
 				"description-en": "The Maps JavaScript API geometry library provides utility functions for the computation of geometric data on the surface of the Earth."
 			}
 		},
+		"jQueryKnob": {
+			"Features": {
+				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos",
+				"assembly": "Features, Wisej.DemoBrowser.jQueryKnob.dll",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/ProgressBar.svg",
+				"docsUrl": "https://docs.wisej.com/extensions/extensions/jqueryknob",
+				"description-en": "The <b>Wisej.Web.Ext.jQueryKnob.Knob</b> control uses the amazing jQueryKnob widget to create a Wisej Real Time dial control that allows the user to rotate the dial to change its value or to type the value in the middle editor. The component allows you to set the value, range, line style, colors and more."
+			}
+		},
+		"jSequence": {},
+		"NavigationBar": {
+			"Features": {
+				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos",
+				"assembly": "Features, Wisej.DemoBrowser.NavigationBar.dll",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/AppForOfficeTaskPane.svg",
+				"docsUrl": "https://docs.wisej.com/extensions/extensions/navigationbar",
+				"description-en": "The <b>Wisej.Web.Ext.NavigationBar</b> is a responsive vertical navigation bar that displays an application header with logo, child items, and a user panel with gravatar and other user information."
+			}
+		},
+		"Notification": {
+			"Features": {
+				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos",
+				"assembly": "Features, Wisej.DemoBrowser.Notification.dll",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/PushNotification.svg",
+				"docsUrl": "https://docs.wisej.com/extensions/extensions/notification",
+				"description-en": "The <b>Wisej.Ext.Notification</b> component adds desktop notifications to Wisej applications. With this component your web apps can pop notifications on the user’s desktop even when the browser is minimized."
+			}
+		},
+		"Premium": {
+			"Features": {
+				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos",
+				"assembly": "Features, Wisej.DemoBrowser.Premium.dll",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/PictureAndText.svg",
+				"docsUrl": "https://docs.wisej.com/extensions/icon-packs/bootstrapicons",
+				"description-en": "Wisej Professional and Enterprise licenses include access to premium extensions. Control libraries from the following vendors have been wrapped in Wisej to provide developers a seamless integration of any type of control."
+			}
+		},
 		"ProgressCircle": {
 			"Features": {
 				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos",
@@ -782,21 +773,25 @@
 				"description-en": "The <b>Wisej.Web.Ext.ProgressCircle</b> control is entirely implemented on the server side as a derived class of Wisej.Web.Canvas. It draws on a HTML5 canvas element on the client directly from the server in real time. The component lets you set value, line style and thickness, fill color, font, etc."
 			}
 		},
-		"Translation": {},
-		"BubbleNotifications": {},
-		"Amazon S3": {},
-		"Google Drive": {},
-		"Microsoft OneDrive": {},
-		"jSequence": {},
-		"Premium": {
+		"TinyEditor": {
 			"Features": {
 				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos",
-				"assembly": "Features, Wisej.DemoBrowser.Premium.dll",
-				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/PictureAndText.svg",
-				"docsUrl": "https://docs.wisej.com/extensions/icon-packs/bootstrapicons",
-				"description-en": "Wisej Professional and Enterprise licenses include access to premium extensions. Control libraries from the following vendors have been wrapped in Wisej to provide developers a seamless integration of any type of control."
+				"assembly": "Features, Wisej.DemoBrowser.TinyEditor.dll",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/HtmlTagEnd.svg",
+				"docsUrl": "https://docs.wisej.com/extensions/extensions/tinyeditor/api/wisej.web.ext.tinyeditor.tinyeditor",
+				"description-en": "The <b>Wisej.Web.Ext.TinyEditor</b> control is a simple JavaScript WYSIWYG editor that is both lightweight (8KB) and standalone from: https://github.com/jessegreathouse/TinyEditor."
 			}
-		}
+		},
+		"TinyMCE": {
+			"Features": {
+				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos",
+				"assembly": "Features, Wisej.DemoBrowser.TinyMCE.dll",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/HtmlTagEnd.svg",
+				"docsUrl": "https://docs.wisej.com/extensions/extensions/geolocation/api/wisej.ext.geolocation.geolocation",
+				"description-en": "The <b>Wisej.Web.Ext.TinyMCE</b> control (Tiny Moxiecode Content Editor) is a platform-independent, browser-based WYSIWYG editor control, written in JavaScript and released as open-source software under the LGPL by Ephox."
+			}
+		},
+		"Translation": {}
 	},
 	"Icon Packs": {
 		"Bootstrap Icons": {

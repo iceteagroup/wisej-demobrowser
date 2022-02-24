@@ -58,7 +58,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\wisej.bmp" />
     <EmbeddedResource Include="Images\book.png" />
     <Content Include="Images\collapse icon.png" />
     <EmbeddedResource Include="Images\combo.png" />
