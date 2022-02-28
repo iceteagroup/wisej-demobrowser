@@ -416,7 +416,15 @@
 				"description-en": "The <b>Wisej.Web.Rotation</b> component adds rotation capabilities along the X,Y,Z axis to Wisej controls."
 			}
 		},
-		"ErrorProvider": {}
+		"ErrorProvider": {
+			"Features": {
+				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos",
+				"assembly": "Features, Wisej.DemoBrowser.ErrorProvider.dll",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/StatusCriticalError.svg",
+				"docsUrl": "https://docs.wisej.com/docs/controls/extenders/errorprovider",
+				"description-en": "The <b>Wisej.Web.ErrorProvider</b> component provides a user interface for indicating that a control on a form has an error associated with it."
+			}
+		}
 	},
 	"Content": {
 		"Label": {
