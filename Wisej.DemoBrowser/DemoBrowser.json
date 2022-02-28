@@ -391,7 +391,15 @@
 				"description-en": "The <b>Wisej.Web.HelpTip</b> component represents a small rectangular pop-up window that displays a brief help text next to a control when it gets activated (focused)."
 			}
 		},
-		"Animation": {},
+		"Animation": {
+			"Features": {
+				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos",
+				"assembly": "Features, Wisej.DemoBrowser.Animation.dll",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/Animation.svg",
+				"docsUrl": "https://docs.wisej.com/docs/controls/extenders/animation",
+				"description-en": "The <b>Wisej.Web.Animation</b> component provides support for animating controls or windows using predefined animations definitions or custom animations in response to certain events."
+			}
+		},
 		"Rotation": {
 			"Features": {
 				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos",

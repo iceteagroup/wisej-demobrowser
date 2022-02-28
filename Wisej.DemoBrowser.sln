@@ -182,6 +182,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wisej.DemoBrowser.Notificat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wisej.DemoBrowser.GoogleMaps", "Demos\Extensions\Wisej.DemoBrowser.GoogleMaps\Wisej.DemoBrowser.GoogleMaps.csproj", "{37E52095-BB4E-4DEB-A5B4-B7546D113FC8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wisej.DemoBrowser.Animation", "Demos\Extenders\Wisej.DemoBrowser.Animation\Wisej.DemoBrowser.Animation.csproj", "{B5225083-8DE7-4F3E-9E77-AEE33C3676A8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -492,6 +494,10 @@ Global
 		{37E52095-BB4E-4DEB-A5B4-B7546D113FC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{37E52095-BB4E-4DEB-A5B4-B7546D113FC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{37E52095-BB4E-4DEB-A5B4-B7546D113FC8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5225083-8DE7-4F3E-9E77-AEE33C3676A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5225083-8DE7-4F3E-9E77-AEE33C3676A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5225083-8DE7-4F3E-9E77-AEE33C3676A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5225083-8DE7-4F3E-9E77-AEE33C3676A8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -582,6 +588,7 @@ Global
 		{28E64D09-2602-47B4-AED8-D98762F7B30A} = {C51A27C9-479B-478F-8158-62189CA32E59}
 		{FC74624D-F548-4590-9B80-DF3B875FD2D3} = {C51A27C9-479B-478F-8158-62189CA32E59}
 		{37E52095-BB4E-4DEB-A5B4-B7546D113FC8} = {C51A27C9-479B-478F-8158-62189CA32E59}
+		{B5225083-8DE7-4F3E-9E77-AEE33C3676A8} = {72C4514F-D281-46A8-9B9D-DC28E3AE470F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7FE19C61-811C-4966-BC10-2A1D53829B5A}
