@@ -188,6 +188,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wisej.DemoBrowser.ErrorProv
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wisej.DemoBrowser.jSequence", "Demos\Extensions\Wisej.DemoBrowser.jSequence\Wisej.DemoBrowser.jSequence.csproj", "{9B550D24-C109-40B3-AFD0-7318B63833A4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wisej.DemoBrowser.JustGage", "Demos\Extensions\Wisej.DemoBrowser.JustGage\Wisej.DemoBrowser.JustGage.csproj", "{A3B264AE-23ED-40FA-92C5-85C4CBC17B73}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -510,6 +512,10 @@ Global
 		{9B550D24-C109-40B3-AFD0-7318B63833A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9B550D24-C109-40B3-AFD0-7318B63833A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9B550D24-C109-40B3-AFD0-7318B63833A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3B264AE-23ED-40FA-92C5-85C4CBC17B73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3B264AE-23ED-40FA-92C5-85C4CBC17B73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3B264AE-23ED-40FA-92C5-85C4CBC17B73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3B264AE-23ED-40FA-92C5-85C4CBC17B73}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -603,6 +609,7 @@ Global
 		{B5225083-8DE7-4F3E-9E77-AEE33C3676A8} = {72C4514F-D281-46A8-9B9D-DC28E3AE470F}
 		{F8618041-35DF-4D06-872D-4498AAE89558} = {72C4514F-D281-46A8-9B9D-DC28E3AE470F}
 		{9B550D24-C109-40B3-AFD0-7318B63833A4} = {C51A27C9-479B-478F-8158-62189CA32E59}
+		{A3B264AE-23ED-40FA-92C5-85C4CBC17B73} = {C51A27C9-479B-478F-8158-62189CA32E59}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7FE19C61-811C-4966-BC10-2A1D53829B5A}
