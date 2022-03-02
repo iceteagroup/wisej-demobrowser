@@ -752,7 +752,15 @@
 				"description-en": "The <b>Wisej.Web.Ext.jQueryKnob.Knob</b> control uses the amazing jQueryKnob widget to create a Wisej Real Time dial control that allows the user to rotate the dial to change its value or to type the value in the middle editor. The component allows you to set the value, range, line style, colors and more."
 			}
 		},
-		"jSequence": {},
+		"jSequence": {
+			"Features": {
+				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos",
+				"assembly": "Features, Wisej.DemoBrowser.jSequence.dll",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/ShowDiagramPane.svg",
+				"docsUrl": "https://docs.wisej.com/extensions/extensions/jsequence",
+				"description-en": "The <b>Wisej.Web.Ext.jSequence</b> control uses the jSequence widget to turn text into UML sequence diagram."
+			}
+		},
 		"NavigationBar": {
 			"Features": {
 				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos",

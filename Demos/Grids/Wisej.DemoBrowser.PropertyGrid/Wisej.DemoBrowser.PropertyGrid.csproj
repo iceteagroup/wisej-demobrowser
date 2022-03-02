@@ -43,11 +43,24 @@
     <Compile Include="Features.Designer.cs">
       <DependentUpon>Features.cs</DependentUpon>
     </Compile>
+    <Compile Include="Person.cs" />
+    <Compile Include="PersonCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PersonCard.Designer.cs">
+      <DependentUpon>PersonCard.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="Bogus">
+      <Version>34.0.1</Version>
+    </PackageReference>
     <PackageReference Include="Wisej-2">
       <Version>2.5.*-*</Version>
+    </PackageReference>
+    <PackageReference Include="Wisej-2-Barcode">
+      <Version>2.5.26</Version>
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
@@ -60,6 +73,12 @@
     <EmbeddedResource Include="Features.resx">
       <DependentUpon>Features.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PersonCard.resx">
+      <DependentUpon>PersonCard.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="wisej.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

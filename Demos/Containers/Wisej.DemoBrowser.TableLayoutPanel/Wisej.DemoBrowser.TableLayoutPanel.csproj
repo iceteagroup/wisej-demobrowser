@@ -37,17 +37,20 @@
     <Reference Include="Microsoft.CSharp" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Features.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Features.Designer.cs">
       <DependentUpon>Features.cs</DependentUpon>
     </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Wisej-2">
       <Version>2.5.*-*</Version>
+    </PackageReference>
+    <PackageReference Include="Wisej-2-ChartJS3">
+      <Version>2.5.26</Version>
     </PackageReference>
   </ItemGroup>
   <ItemGroup>

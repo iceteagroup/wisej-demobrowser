@@ -13,57 +13,29 @@ namespace Wisej.DemoBrowser.PropertyGrid
 
         private void Features_Load(object sender, EventArgs e)
         {
-
-        }
-
-        private void txtDemo_Enter(object sender, EventArgs e)
-        {
-            propertyGrid1.SelectedObject = txtDemo;
-        }
-
-        private void numericUpDown1_Enter(object sender, EventArgs e)
-        {
-            propertyGrid1.SelectedObject = numericUpDown1;
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            propertyGrid1.SelectedObject = button1;
-        }
-
-        private void checkBox1_Enter(object sender, EventArgs e)
-        {
-            propertyGrid1.SelectedObject = checkBox1;
-        }
-
-        private void radioButton1_Enter(object sender, EventArgs e)
-        {
-            propertyGrid1.SelectedObject = radioButton1;
-        }
-
-        private void dateTimePicker1_Enter(object sender, EventArgs e)
-        {
-            propertyGrid1.SelectedObject = dateTimePicker1;
-        }
-
-        private void timeUpDown1_Enter(object sender, EventArgs e)
-        {
-            propertyGrid1.SelectedObject = timeUpDown1;
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-            propertyGrid1.SelectedObject = label1;
-        }
-
-        private void monthCalendar1_Enter(object sender, EventArgs e)
-        {
-            propertyGrid1.SelectedObject = monthCalendar1;
+            this.propertyGrid1.SelectedObject = personCard1.Person;
         }
 
         private void propertyGrid1_SelectedObjectsChanged(object sender, EventArgs e)
         {
             AlertBox.Show($"Selected object is {propertyGrid1.SelectedObject.GetType()}");
+        }
+
+        private void propertyGrid1_SelectedGridItemBeginEdit(object sender, SelectedGridItemBeginEditEventArgs e)
+        {
+
+            if (e.GridItem.Value.GetType() == typeof(System.Drawing.Color))
+            {
+                using (ColorDialog dlg = new ColorDialog())
+                {
+                    dlg.Color = (System.Drawing.Color)e.GridItem.Value;
+                    if (dlg.ShowDialog() == DialogResult.OK)
+                    {
+                        e.GridItem.Value = dlg.Color;
+                    }
+                }
+            }
+
         }
     }
 }
