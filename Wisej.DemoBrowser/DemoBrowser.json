@@ -746,9 +746,9 @@
 			"Features": {
 				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos",
 				"assembly": "Features, Wisej.DemoBrowser.JustGage.dll",
-				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/Gage.svg",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/Gauge.svg",
 				"docsUrl": "https://docs.wisej.com/extensions/extensions/JustGage",
-				"description-en": "The <b>Wisej.Web.Ext.JustGage</b>"
+				"description-en": "The <b>Wisej.Web.Ext.JustGage</b> //TODO: Alaa"
 			}
 		},
 		"jQueryKnob": {

@@ -48,9 +48,9 @@
             // propertyGrid1
             // 
             this.propertyGrid1.Dock = Wisej.Web.DockStyle.Fill;
-            this.propertyGrid1.Location = new System.Drawing.Point(3, 18);
+            this.propertyGrid1.Location = new System.Drawing.Point(3, 25);
             this.propertyGrid1.Name = "propertyGrid1";
-            this.propertyGrid1.Size = new System.Drawing.Size(374, 443);
+            this.propertyGrid1.Size = new System.Drawing.Size(374, 436);
             this.propertyGrid1.TabIndex = 0;
             // 
             // 
@@ -61,9 +61,9 @@
             // personCard1
             // 
             this.personCard1.Anchor = Wisej.Web.AnchorStyles.None;
-            this.personCard1.Location = new System.Drawing.Point(873, 100);
+            this.personCard1.Location = new System.Drawing.Point(826, 100);
             this.personCard1.Name = "personCard1";
-            this.personCard1.Size = new System.Drawing.Size(541, 274);
+            this.personCard1.Size = new System.Drawing.Size(588, 274);
             this.personCard1.TabIndex = 1;
             // 
             // Features
