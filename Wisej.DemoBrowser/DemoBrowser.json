@@ -646,7 +646,15 @@
 				"description-en": "The <b>Wisej.Web.Ext.BingWallpaper</b> extender component enhances the Desktop control by adding Bing’s daily stunning wallpaper images. You can set the rotation interval, fade duration and number of images."
 			}
 		},
-		"Bubbles": {},
+		"Bubbles": {
+			"Features": {
+				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos",
+				"assembly": "Features, Wisej.DemoBrowser.Bubbles.dll",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/BubbleChart.svg",
+				"docsUrl": "https://docs.wisej.com/extensions/extensions/bubbles",
+				"description-en": "The <b>Wisej.Web.Ext.BingWallpaper</b> extender component enhances the Desktop control by adding Bing’s daily stunning wallpaper images. You can set the rotation interval, fade duration and number of images."
+			}
+		},
 		// requires HTTPS.
 		//"Camera": {
 		//	"Features": {
