@@ -795,7 +795,15 @@
 				"description-en": "The <b>Wisej.Ext.Notification</b> component adds desktop notifications to Wisej applications. With this component your web apps can pop notifications on the user’s desktop even when the browser is minimized."
 			}
 		},
-		"OfficeViewer": {},
+		"OfficeViewer": {
+			"Features": {
+				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos",
+				"assembly": "Features, Wisej.DemoBrowser.OfficeViewer.dll",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/AppForOfficeTaskPane.svg",
+				"docsUrl": "https://docs.wisej.com/extensions/extensions/officeviewer",
+				"description-en": "The <b>Wisej.Web.Ext.OfficeViewer</b> extension control uses Microsoft’s Office 365 Live Viewers to show Word, Excel or PowerPoint documents embedded in a Wisej application. You can view a file or a stream."
+			}
+		},
 		"Pannellum": {},
 		"Premium": {
 			"Features": {
