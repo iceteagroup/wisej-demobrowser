@@ -60,7 +60,7 @@
             this.justGage.Dock = Wisej.Web.DockStyle.Fill;
             this.justGage.HumanFriendly = true;
             this.justGage.Name = "justGage";
-            this.justGage.Size = new System.Drawing.Size(586, 390);
+            this.justGage.Size = new System.Drawing.Size(586, 415);
             this.justGage.TabIndex = 1;
             this.justGage.Text = "JustGage";
             this.justGage.Value = 50F;
@@ -69,7 +69,7 @@
             // 
             this.nudMaxVal.Anchor = Wisej.Web.AnchorStyles.None;
             this.nudMaxVal.LabelText = "Max Value";
-            this.nudMaxVal.Location = new System.Drawing.Point(308, 219);
+            this.nudMaxVal.Location = new System.Drawing.Point(393, 219);
             this.nudMaxVal.Maximum = new decimal(new int[] {
             9999999,
             0,
@@ -84,7 +84,7 @@
             // 
             this.nudMinVal.Anchor = Wisej.Web.AnchorStyles.None;
             this.nudMinVal.LabelText = "Min Value";
-            this.nudMinVal.Location = new System.Drawing.Point(139, 219);
+            this.nudMinVal.Location = new System.Drawing.Point(224, 219);
             this.nudMinVal.Maximum = new decimal(new int[] {
             9999999,
             0,
@@ -99,7 +99,7 @@
             // 
             this.chkGradient.Anchor = Wisej.Web.AnchorStyles.None;
             this.chkGradient.Appearance = Wisej.Web.Appearance.Switch;
-            this.chkGradient.Location = new System.Drawing.Point(324, 421);
+            this.chkGradient.Location = new System.Drawing.Point(409, 421);
             this.chkGradient.Name = "chkGradient";
             this.chkGradient.Size = new System.Drawing.Size(102, 24);
             this.chkGradient.TabIndex = 12;
@@ -110,7 +110,7 @@
             // 
             this.txtLabel.Anchor = Wisej.Web.AnchorStyles.None;
             this.txtLabel.LabelText = "Label ";
-            this.txtLabel.Location = new System.Drawing.Point(304, 93);
+            this.txtLabel.Location = new System.Drawing.Point(389, 93);
             this.txtLabel.Name = "txtLabel";
             this.txtLabel.Size = new System.Drawing.Size(130, 42);
             this.txtLabel.TabIndex = 5;
@@ -120,7 +120,7 @@
             // 
             this.chkHumanFriendly.Anchor = Wisej.Web.AnchorStyles.None;
             this.chkHumanFriendly.Appearance = Wisej.Web.Appearance.Switch;
-            this.chkHumanFriendly.Location = new System.Drawing.Point(139, 331);
+            this.chkHumanFriendly.Location = new System.Drawing.Point(224, 331);
             this.chkHumanFriendly.Name = "chkHumanFriendly";
             this.chkHumanFriendly.Size = new System.Drawing.Size(140, 24);
             this.chkHumanFriendly.TabIndex = 6;
@@ -131,7 +131,7 @@
             // 
             this.chkShowPointer.Anchor = Wisej.Web.AnchorStyles.None;
             this.chkShowPointer.Appearance = Wisej.Web.Appearance.Switch;
-            this.chkShowPointer.Location = new System.Drawing.Point(139, 421);
+            this.chkShowPointer.Location = new System.Drawing.Point(224, 421);
             this.chkShowPointer.Name = "chkShowPointer";
             this.chkShowPointer.Size = new System.Drawing.Size(128, 24);
             this.chkShowPointer.TabIndex = 11;
@@ -141,7 +141,7 @@
             // btnValueColor
             // 
             this.btnValueColor.Anchor = Wisej.Web.AnchorStyles.None;
-            this.btnValueColor.Location = new System.Drawing.Point(296, 278);
+            this.btnValueColor.Location = new System.Drawing.Point(381, 278);
             this.btnValueColor.Name = "btnValueColor";
             this.btnValueColor.Size = new System.Drawing.Size(150, 35);
             this.btnValueColor.TabIndex = 4;
@@ -152,7 +152,7 @@
             // 
             this.chkDonut.Anchor = Wisej.Web.AnchorStyles.None;
             this.chkDonut.Appearance = Wisej.Web.Appearance.Switch;
-            this.chkDonut.Location = new System.Drawing.Point(139, 391);
+            this.chkDonut.Location = new System.Drawing.Point(224, 391);
             this.chkDonut.Name = "chkDonut";
             this.chkDonut.Size = new System.Drawing.Size(87, 24);
             this.chkDonut.TabIndex = 7;
@@ -162,7 +162,7 @@
             // btnLabelColor
             // 
             this.btnLabelColor.Anchor = Wisej.Web.AnchorStyles.None;
-            this.btnLabelColor.Location = new System.Drawing.Point(127, 278);
+            this.btnLabelColor.Location = new System.Drawing.Point(212, 278);
             this.btnLabelColor.Name = "btnLabelColor";
             this.btnLabelColor.Size = new System.Drawing.Size(150, 35);
             this.btnLabelColor.TabIndex = 3;
@@ -173,7 +173,7 @@
             // 
             this.chkShowValue.Anchor = Wisej.Web.AnchorStyles.None;
             this.chkShowValue.Appearance = Wisej.Web.Appearance.Switch;
-            this.chkShowValue.Location = new System.Drawing.Point(324, 391);
+            this.chkShowValue.Location = new System.Drawing.Point(409, 391);
             this.chkShowValue.Name = "chkShowValue";
             this.chkShowValue.Size = new System.Drawing.Size(120, 24);
             this.chkShowValue.TabIndex = 10;
@@ -184,7 +184,7 @@
             // 
             this.txtTitle.Anchor = Wisej.Web.AnchorStyles.None;
             this.txtTitle.LabelText = "Title";
-            this.txtTitle.Location = new System.Drawing.Point(139, 156);
+            this.txtTitle.Location = new System.Drawing.Point(224, 156);
             this.txtTitle.Name = "txtTitle";
             this.txtTitle.Size = new System.Drawing.Size(295, 42);
             this.txtTitle.TabIndex = 2;
@@ -194,7 +194,7 @@
             // 
             this.chkFormatNumber.Anchor = Wisej.Web.AnchorStyles.None;
             this.chkFormatNumber.Appearance = Wisej.Web.Appearance.Switch;
-            this.chkFormatNumber.Location = new System.Drawing.Point(324, 331);
+            this.chkFormatNumber.Location = new System.Drawing.Point(409, 331);
             this.chkFormatNumber.Name = "chkFormatNumber";
             this.chkFormatNumber.Size = new System.Drawing.Size(141, 24);
             this.chkFormatNumber.TabIndex = 8;
@@ -205,7 +205,7 @@
             // 
             this.nudDecimals.Anchor = Wisej.Web.AnchorStyles.None;
             this.nudDecimals.LabelText = "Decimals";
-            this.nudDecimals.Location = new System.Drawing.Point(139, 93);
+            this.nudDecimals.Location = new System.Drawing.Point(224, 93);
             this.nudDecimals.Maximum = new decimal(new int[] {
             10,
             0,
@@ -220,7 +220,7 @@
             // 
             this.chkShowMinMax.Anchor = Wisej.Web.AnchorStyles.None;
             this.chkShowMinMax.Appearance = Wisej.Web.Appearance.Switch;
-            this.chkShowMinMax.Location = new System.Drawing.Point(139, 361);
+            this.chkShowMinMax.Location = new System.Drawing.Point(224, 361);
             this.chkShowMinMax.Name = "chkShowMinMax";
             this.chkShowMinMax.Size = new System.Drawing.Size(179, 24);
             this.chkShowMinMax.TabIndex = 9;
@@ -231,7 +231,7 @@
             // 
             this.nudValue.Anchor = Wisej.Web.AnchorStyles.None;
             this.nudValue.LabelText = "Value";
-            this.nudValue.Location = new System.Drawing.Point(139, 30);
+            this.nudValue.Location = new System.Drawing.Point(224, 30);
             this.nudValue.Maximum = new decimal(new int[] {
             9999999,
             0,
@@ -244,11 +244,12 @@
             // 
             // panel1
             // 
+            this.panel1.Anchor = Wisej.Web.AnchorStyles.None;
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(this.justGage);
-            this.panel1.Location = new System.Drawing.Point(698, 42);
+            this.panel1.Location = new System.Drawing.Point(624, 30);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(586, 390);
+            this.panel1.Size = new System.Drawing.Size(586, 415);
             this.panel1.TabIndex = 15;
             // 
             // Features
@@ -269,6 +270,7 @@
             this.Controls.Add(this.chkDonut);
             this.Controls.Add(this.chkShowValue);
             this.Controls.Add(this.btnLabelColor);
+            this.MinimumSize = new System.Drawing.Size(978, 340);
             this.Name = "Features";
             this.Load += new System.EventHandler(this.Features_Load);
             ((System.ComponentModel.ISupportInitialize)(this.nudMaxVal)).EndInit();
