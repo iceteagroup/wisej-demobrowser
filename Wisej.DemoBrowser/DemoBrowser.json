@@ -525,7 +525,7 @@
 				"assembly": "Features, Wisej.DemoBrowser.PropertyGrid.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/PropertySnippet.svg",
 				"docsUrl": "https://docs.wisej.com/docs/controls/grids/propertygrid",
-				"description-en": "The <b>Wisej.Web.PropertyGrid</b> control enables the user to edit object properties on the fly.",
+				"description-en": "The <b>Wisej.Web.PropertyGrid</b> provides a user interface for browsing the properties of an object.",
 				"description-fr": "à faire"
 			}
 		},
