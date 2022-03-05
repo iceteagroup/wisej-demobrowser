@@ -57,7 +57,7 @@
       <Version>2.5.*-*</Version>
     </PackageReference>
     <PackageReference Include="Wisej-2-OfficeViewer">
-      <Version>2.5.29</Version>
+      <Version>2.5.*-*</Version>
     </PackageReference>
   </ItemGroup>
   <ItemGroup>

@@ -60,7 +60,7 @@
       <Version>2.5.*-*</Version>
     </PackageReference>
     <PackageReference Include="Wisej-2-Barcode">
-      <Version>2.5.26</Version>
+      <Version>2.5.*-*</Version>
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
