@@ -63,7 +63,7 @@
             this.justGage.Size = new System.Drawing.Size(586, 390);
             this.justGage.TabIndex = 1;
             this.justGage.Text = "JustGage";
-            this.justGage.Value = 300F;
+            this.justGage.Value = 50F;
             // 
             // nudMaxVal
             // 
@@ -141,9 +141,9 @@
             // btnValueColor
             // 
             this.btnValueColor.Anchor = Wisej.Web.AnchorStyles.None;
-            this.btnValueColor.Location = new System.Drawing.Point(304, 291);
+            this.btnValueColor.Location = new System.Drawing.Point(296, 278);
             this.btnValueColor.Name = "btnValueColor";
-            this.btnValueColor.Size = new System.Drawing.Size(137, 23);
+            this.btnValueColor.Size = new System.Drawing.Size(150, 35);
             this.btnValueColor.TabIndex = 4;
             this.btnValueColor.Text = "Value color";
             this.btnValueColor.Click += new System.EventHandler(this.btnValueColor_Click);
@@ -162,9 +162,9 @@
             // btnLabelColor
             // 
             this.btnLabelColor.Anchor = Wisej.Web.AnchorStyles.None;
-            this.btnLabelColor.Location = new System.Drawing.Point(139, 291);
+            this.btnLabelColor.Location = new System.Drawing.Point(127, 278);
             this.btnLabelColor.Name = "btnLabelColor";
-            this.btnLabelColor.Size = new System.Drawing.Size(137, 23);
+            this.btnLabelColor.Size = new System.Drawing.Size(150, 35);
             this.btnLabelColor.TabIndex = 3;
             this.btnLabelColor.Text = "Label color";
             this.btnLabelColor.Click += new System.EventHandler(this.btnLabelColor_Click);

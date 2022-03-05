@@ -268,7 +268,7 @@
 		},
 		"TableLayoutPanel": {
 			"Features": {
-				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos",
+				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Containers/Wisej.DemoBrowser.TableLayoutPanel",
 				"assembly": "Features, Wisej.DemoBrowser.TableLayoutPanel.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/TableLayoutPanel.svg",
 				"docsUrl": "https://docs.wisej.com/docs/controls/containers/tablelayoutpanel",
@@ -521,7 +521,7 @@
 	"Grids": {
 		"PropertyGrid": {
 			"Features": {
-				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos",
+				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Grids/Wisej.DemoBrowser.PropertyGrid",
 				"assembly": "Features, Wisej.DemoBrowser.PropertyGrid.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/PropertySnippet.svg",
 				"docsUrl": "https://docs.wisej.com/docs/controls/grids/propertygrid",
@@ -648,11 +648,11 @@
 		},
 		"Bubbles": {
 			"Features": {
-				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos",
+				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Extensions/Wisej.DemoBrowser.Bubbles",
 				"assembly": "Features, Wisej.DemoBrowser.Bubbles.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/BubbleChart.svg",
 				"docsUrl": "https://docs.wisej.com/extensions/extensions/bubbles",
-				"description-en": "The <b>Wisej.Web.Ext.BingWallpaper</b> extender component enhances the Desktop control by adding Bing’s daily stunning wallpaper images. You can set the rotation interval, fade duration and number of images."
+				"description-en": "The <b>Wisej.Web.Ext.Bubbles</b> extender component enhances all Wisej components by providing additional properties and a useful bubble notification functionality. Every widget can display a popup animated and themed bubble when a value changes."
 			}
 		},
 		// requires HTTPS.
@@ -752,11 +752,11 @@
 		"Html2Canvas": {},
 		"JustGage": {
 			"Features": {
-				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos",
+				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Extensions/Wisej.DemoBrowser.JustGage",
 				"assembly": "Features, Wisej.DemoBrowser.JustGage.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/Gauge.svg",
-				"docsUrl": "https://docs.wisej.com/extensions/extensions/JustGage",
-				"description-en": "The <b>Wisej.Web.Ext.JustGage</b> //TODO: Alaa"
+				"docsUrl": "https://docs.wisej.com/extensions/extensions/justgage",
+				"description-en": "The <b>Wisej.Web.Ext.JustGage</b> extension component uses the cool JustGage widget to render animated, nice and clean gauges. It is based on Raphaël library for vector drawing, so it’s completely resolution independent and self-adjusting."
 			}
 		},
 		"jQueryKnob": {
@@ -770,7 +770,7 @@
 		},
 		"jSequence": {
 			"Features": {
-				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos",
+				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Extensions/Wisej.DemoBrowser.jSequence",
 				"assembly": "Features, Wisej.DemoBrowser.jSequence.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/ShowDiagramPane.svg",
 				"docsUrl": "https://docs.wisej.com/extensions/extensions/jsequence",
@@ -797,7 +797,7 @@
 		},
 		"OfficeViewer": {
 			"Features": {
-				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos",
+				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Extensions/Wisej.DemoBrowser.OfficeViewer",
 				"assembly": "Features, Wisej.DemoBrowser.OfficeViewer.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/AppForOfficeTaskPane.svg",
 				"docsUrl": "https://docs.wisej.com/extensions/extensions/officeviewer",

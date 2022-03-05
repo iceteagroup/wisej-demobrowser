@@ -29,86 +29,38 @@
         private void InitializeComponent()
         {
             this.sequence = new Wisej.Web.Ext.jSequence.Sequence();
-            this.flowLayoutPanel1 = new Wisej.Web.FlowLayoutPanel();
-            this.btnExample1 = new Wisej.Web.Button();
-            this.btnExample2 = new Wisej.Web.Button();
-            this.btnExample3 = new Wisej.Web.Button();
-            this.btnExample4 = new Wisej.Web.Button();
             this.cmbThemes = new Wisej.Web.ComboBox();
             this.txtUml = new Wisej.Web.TextBox();
             this.btnUpdate = new Wisej.Web.Button();
-            this.flowLayoutPanel1.SuspendLayout();
+            this.navigationBar = new Wisej.Web.Ext.NavigationBar.NavigationBar();
+            this.navItem1 = new Wisej.Web.Ext.NavigationBar.NavigationBarItem();
+            this.navItem2 = new Wisej.Web.Ext.NavigationBar.NavigationBarItem();
+            this.navItem3 = new Wisej.Web.Ext.NavigationBar.NavigationBarItem();
+            this.navItem4 = new Wisej.Web.Ext.NavigationBar.NavigationBarItem();
             this.SuspendLayout();
             // 
             // sequence
             // 
-            this.sequence.Dock = Wisej.Web.DockStyle.Left;
+            this.sequence.Anchor = Wisej.Web.AnchorStyles.None;
+            this.sequence.Location = new System.Drawing.Point(680, 44);
             this.sequence.Name = "sequence";
-            this.sequence.Size = new System.Drawing.Size(982, 474);
+            this.sequence.Size = new System.Drawing.Size(550, 364);
             this.sequence.TabIndex = 3;
             this.sequence.Text = "sequence4";
-            this.sequence.UML = "Andrew->Alex: Says Hello\r\nNote right of Alex: China thinks\\nabout it\r\nAlex-->Andr" +
-    "ew: How are you?\r\nAndrew->>Alex: I am good thanks!";
-            // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.Controls.Add(this.btnExample1);
-            this.flowLayoutPanel1.Controls.Add(this.btnExample2);
-            this.flowLayoutPanel1.Controls.Add(this.btnExample3);
-            this.flowLayoutPanel1.Controls.Add(this.btnExample4);
-            this.flowLayoutPanel1.Dock = Wisej.Web.DockStyle.Top;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(982, 0);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(440, 41);
-            this.flowLayoutPanel1.TabIndex = 4;
-            // 
-            // btnExample1
-            // 
-            this.btnExample1.Location = new System.Drawing.Point(3, 3);
-            this.btnExample1.Name = "btnExample1";
-            this.btnExample1.Size = new System.Drawing.Size(100, 32);
-            this.btnExample1.TabIndex = 0;
-            this.btnExample1.Text = "Example 1";
-            this.btnExample1.Click += new System.EventHandler(this.btnExample1_Click);
-            // 
-            // btnExample2
-            // 
-            this.btnExample2.Location = new System.Drawing.Point(109, 3);
-            this.btnExample2.Name = "btnExample2";
-            this.btnExample2.Size = new System.Drawing.Size(100, 32);
-            this.btnExample2.TabIndex = 1;
-            this.btnExample2.Text = "Example 2";
-            this.btnExample2.Click += new System.EventHandler(this.btnExample2_Click);
-            // 
-            // btnExample3
-            // 
-            this.btnExample3.Location = new System.Drawing.Point(215, 3);
-            this.btnExample3.Name = "btnExample3";
-            this.btnExample3.Size = new System.Drawing.Size(100, 32);
-            this.btnExample3.TabIndex = 2;
-            this.btnExample3.Text = "Example 3";
-            this.btnExample3.Click += new System.EventHandler(this.btnExample3_Click);
-            // 
-            // btnExample4
-            // 
-            this.btnExample4.Location = new System.Drawing.Point(321, 3);
-            this.btnExample4.Name = "btnExample4";
-            this.btnExample4.Size = new System.Drawing.Size(100, 32);
-            this.btnExample4.TabIndex = 3;
-            this.btnExample4.Text = "Example 4";
-            this.btnExample4.Click += new System.EventHandler(this.btnExample4_Click);
+            this.sequence.UML = "Andrew->Alex: Says Hello\r\nNote right of Alex: Alex thinks about it\r\nAlex-->Andrew" +
+    ": How are you?\r\nAndrew->>Alex: I am good thanks!";
             // 
             // cmbThemes
             // 
-            this.cmbThemes.Dock = Wisej.Web.DockStyle.Top;
+            this.cmbThemes.Anchor = Wisej.Web.AnchorStyles.None;
             this.cmbThemes.DropDownStyle = Wisej.Web.ComboBoxStyle.DropDownList;
             this.cmbThemes.Items.AddRange(new object[] {
             "Simple",
             "Hand"});
             this.cmbThemes.LabelText = "Themes";
-            this.cmbThemes.Location = new System.Drawing.Point(982, 41);
+            this.cmbThemes.Location = new System.Drawing.Point(192, 56);
             this.cmbThemes.Name = "cmbThemes";
-            this.cmbThemes.Size = new System.Drawing.Size(440, 42);
+            this.cmbThemes.Size = new System.Drawing.Size(437, 49);
             this.cmbThemes.TabIndex = 5;
             this.cmbThemes.SelectedIndexChanged += new System.EventHandler(this.cmbThemes_SelectedIndexChanged);
             // 
@@ -116,32 +68,80 @@
             // 
             this.txtUml.Anchor = Wisej.Web.AnchorStyles.None;
             this.txtUml.LabelText = "UML ";
-            this.txtUml.Location = new System.Drawing.Point(993, 110);
+            this.txtUml.Location = new System.Drawing.Point(192, 134);
             this.txtUml.Multiline = true;
             this.txtUml.Name = "txtUml";
-            this.txtUml.Size = new System.Drawing.Size(410, 323);
+            this.txtUml.Size = new System.Drawing.Size(437, 207);
             this.txtUml.TabIndex = 6;
             // 
             // btnUpdate
             // 
             this.btnUpdate.Anchor = Wisej.Web.AnchorStyles.None;
-            this.btnUpdate.Location = new System.Drawing.Point(1121, 439);
+            this.btnUpdate.Location = new System.Drawing.Point(335, 362);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(176, 24);
+            this.btnUpdate.Size = new System.Drawing.Size(150, 35);
             this.btnUpdate.TabIndex = 7;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
+            // navigationBar
+            // 
+            this.navigationBar.BackColor = System.Drawing.Color.FromName("@controlLight");
+            this.navigationBar.CompactView = true;
+            this.navigationBar.Dock = Wisej.Web.DockStyle.Left;
+            this.navigationBar.ItemHeight = 50;
+            this.navigationBar.Items.AddRange(new Wisej.Web.Ext.NavigationBar.NavigationBarItem[] {
+            this.navItem1,
+            this.navItem2,
+            this.navItem3,
+            this.navItem4});
+            this.navigationBar.Name = "navigationBar";
+            this.navigationBar.ShowUser = false;
+            this.navigationBar.Size = new System.Drawing.Size(70, 474);
+            this.navigationBar.TabIndex = 8;
+            // 
+            // navItem1
+            // 
+            this.navItem1.BackColor = System.Drawing.Color.Transparent;
+            this.navItem1.Icon = "resource.wx/Wisej.DemoBrowser.jSequence/1.png";
+            this.navItem1.Name = "NavigationBarItem";
+            this.navItem1.Text = "Example 1";
+            this.navItem1.Click += new System.EventHandler(this.navItem1_Click);
+            // 
+            // navItem2
+            // 
+            this.navItem2.BackColor = System.Drawing.Color.Transparent;
+            this.navItem2.Icon = "resource.wx/Wisej.DemoBrowser.jSequence/2.png";
+            this.navItem2.Name = "NavigationBarItem";
+            this.navItem2.Text = "Example 2";
+            this.navItem2.Click += new System.EventHandler(this.navItem2_Click);
+            // 
+            // navItem3
+            // 
+            this.navItem3.BackColor = System.Drawing.Color.Transparent;
+            this.navItem3.Icon = "resource.wx/Wisej.DemoBrowser.jSequence/3.png";
+            this.navItem3.Name = "NavigationBarItem";
+            this.navItem3.Text = "Example 3";
+            this.navItem3.Click += new System.EventHandler(this.navItem3_Click);
+            // 
+            // navItem4
+            // 
+            this.navItem4.BackColor = System.Drawing.Color.Transparent;
+            this.navItem4.Icon = "resource.wx/Wisej.DemoBrowser.jSequence/4.png";
+            this.navItem4.Name = "NavigationBarItem";
+            this.navItem4.Text = "Example 4";
+            this.navItem4.Click += new System.EventHandler(this.navItem4_Click);
+            // 
             // Features
             // 
+            this.Controls.Add(this.navigationBar);
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.txtUml);
             this.Controls.Add(this.cmbThemes);
-            this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.sequence);
+            this.MinimumSize = new System.Drawing.Size(978, 340);
             this.Name = "Features";
             this.Load += new System.EventHandler(this.Features_Load);
-            this.flowLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -149,13 +149,13 @@
 
         #endregion
         private Web.Ext.jSequence.Sequence sequence;
-        private Web.FlowLayoutPanel flowLayoutPanel1;
-        private Web.Button btnExample1;
-        private Web.Button btnExample2;
-        private Web.Button btnExample3;
-        private Web.Button btnExample4;
         private Web.ComboBox cmbThemes;
         private Web.TextBox txtUml;
         private Web.Button btnUpdate;
+        private Web.Ext.NavigationBar.NavigationBar navigationBar;
+        private Web.Ext.NavigationBar.NavigationBarItem navItem1;
+        private Web.Ext.NavigationBar.NavigationBarItem navItem2;
+        private Web.Ext.NavigationBar.NavigationBarItem navItem3;
+        private Web.Ext.NavigationBar.NavigationBarItem navItem4;
     }
 }

@@ -37,7 +37,6 @@
     <Reference Include="System.Windows.Forms" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Employee.cs" />
     <Compile Include="Features.cs">
       <SubType>UserControl</SubType>
     </Compile>

@@ -13,15 +13,37 @@ namespace Wisej.DemoBrowser.PropertyGrid
 {
 	public class Person
 	{
+		[Category("Card holder Properties")]
+		[Description("The card holder unique identifier")]
 		public Guid Id { get; set; }
+
+		[Category("Card holder Properties")]
+		[Description("The card holder first name")]
 		public string FirstName { get; set; }
+
+		[Category("Card holder Properties")]
+		[Description("The card holder last name")]
 		public string LastName { get; set; }
+
+		[Category("Card holder Properties")]
+		[Description("The card holder address")]
 		public string Address { get; set; }
+
+		[Category("Card holder Properties")]
+		[Description("The card holder gender")]
 		public GenderType Gender { get; set; }
 
+
+		[Category("Card holder Properties")]
+		[Description("The card holder Favorite color")]
 		public Color FavoriteColor { get; set; }
+
+		[Category("Card holder Properties")]
+		[Description("The card holder Date of birth")]
 		public DateTime Dob { get; set; }
 
+		[Category("Card holder Properties")]
+		[Description("Is the card holder a VIP?")]
 		public bool IsVIP
 		{
 			get => _isVip;

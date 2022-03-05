@@ -9,7 +9,7 @@ namespace Wisej.DemoBrowser.Bubbles
 {
     public partial class Features : DemoView
     {
-        private List<Employee> data = Employee.GetEmployees();
+       
         public Features()
         {
             InitializeComponent();
@@ -17,9 +17,6 @@ namespace Wisej.DemoBrowser.Bubbles
 
         private void Features_Load(object sender, EventArgs e)
         {
-            var data = Employee.GetEmployees();
-            dataGridView1.DataSource = data;
-            CalculateAverageLeads();
 
             this.cmbBubblesAlignment.DataSource = Enum.GetNames(typeof(System.Drawing.ContentAlignment));
 
@@ -27,31 +24,37 @@ namespace Wisej.DemoBrowser.Bubbles
 
             this.cmbBubblesAlignment.SelectedIndex = 0;
             this.cmbBubbleStyle.SelectedIndex = 0;
-        }
 
-        void CalculateAverageLeads()
-        {
-            int avg = (int)dataGridView1.Rows.Average(r=>(int)r.Cells["Sales"].Value);
-            bubbleNotification1.SetBubbleValue(dataGridView1,avg);
-        }
-
-        private void dataGridView1_CellValueChanged(object sender, DataGridViewCellEventArgs e)
-        {
-            CalculateAverageLeads();
+            bubbleNotification1.SetBubbleValue(textBox, textBox.Text.Length);
+            bubbleNotification2.SetBubbleValue(button, button.Text.Length);
         }
 
         private void cmbBubblesAlignment_SelectedIndexChanged(object sender, EventArgs e)
         {
             System.Drawing.ContentAlignment option;
             Enum.TryParse<System.Drawing.ContentAlignment>(cmbBubblesAlignment.SelectedValue.ToString(), out option);
+
             bubbleNotification1.Alignment = option;
+            bubbleNotification2.Alignment = option;
         }
 
         private void cmbBubbleStyle_SelectedIndexChanged(object sender, EventArgs e)
         {
             BubbleStyle option;
             Enum.TryParse<BubbleStyle>(cmbBubbleStyle.SelectedValue.ToString(), out option);
-            bubbleNotification1.SetBubbleStyle(dataGridView1, option);
+
+            bubbleNotification1.SetBubbleStyle(textBox, option);
+            bubbleNotification2.SetBubbleStyle(button, option);
+        }
+
+        private void textBox_TextChanged(object sender, EventArgs e)
+        {
+            bubbleNotification1.SetBubbleValue(textBox,textBox.Text.Length);
+        }
+
+        private void bubbleNotification_Click(object sender, BubbleEventArgs e)
+        {
+            AlertBox.Show("Bubble clicked");
         }
     }
 }

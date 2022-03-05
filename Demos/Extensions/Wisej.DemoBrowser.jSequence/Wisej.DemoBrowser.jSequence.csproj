@@ -59,11 +59,21 @@
     <PackageReference Include="Wisej-2-jSequence">
       <Version>2.5.*-*</Version>
     </PackageReference>
+    <PackageReference Include="Wisej-2-NavigationBar">
+      <Version>2.5.*-*</Version>
+    </PackageReference>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Features.resx">
       <DependentUpon>Features.cs</DependentUpon>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="Images\1.png" />
+    <EmbeddedResource Include="Images\2.png" />
+    <EmbeddedResource Include="Images\3.png" />
+    <EmbeddedResource Include="Images\4.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
