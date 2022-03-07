@@ -61,6 +61,7 @@
             // 
             // btnCaptureChart
             // 
+            this.btnCaptureChart.CharacterCasing = Wisej.Web.CharacterCasing.Capitalize;
             this.flowLayoutPanel1.SetFillWeight(this.btnCaptureChart, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.btnCaptureChart, true);
             this.btnCaptureChart.Location = new System.Drawing.Point(3, 3);
@@ -72,6 +73,7 @@
             // 
             // btnHtmlPanel
             // 
+            this.btnHtmlPanel.CharacterCasing = Wisej.Web.CharacterCasing.Capitalize;
             this.flowLayoutPanel1.SetFillWeight(this.btnHtmlPanel, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.btnHtmlPanel, true);
             this.btnHtmlPanel.Location = new System.Drawing.Point(3, 67);
@@ -83,6 +85,7 @@
             // 
             // btnCapturePicBox
             // 
+            this.btnCapturePicBox.CharacterCasing = Wisej.Web.CharacterCasing.Capitalize;
             this.flowLayoutPanel1.SetFillWeight(this.btnCapturePicBox, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.btnCapturePicBox, true);
             this.btnCapturePicBox.Location = new System.Drawing.Point(3, 131);
@@ -94,6 +97,7 @@
             // 
             // btnCapturePanel
             // 
+            this.btnCapturePanel.CharacterCasing = Wisej.Web.CharacterCasing.Capitalize;
             this.flowLayoutPanel1.SetFillWeight(this.btnCapturePanel, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.btnCapturePanel, true);
             this.btnCapturePanel.Location = new System.Drawing.Point(3, 195);
@@ -105,6 +109,7 @@
             // 
             // btnCaptureDemo
             // 
+            this.btnCaptureDemo.CharacterCasing = Wisej.Web.CharacterCasing.Capitalize;
             this.flowLayoutPanel1.SetFillWeight(this.btnCaptureDemo, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.btnCaptureDemo, true);
             this.btnCaptureDemo.Location = new System.Drawing.Point(3, 259);
@@ -116,6 +121,7 @@
             // 
             // btnCaptureWindow
             // 
+            this.btnCaptureWindow.CharacterCasing = Wisej.Web.CharacterCasing.Capitalize;
             this.flowLayoutPanel1.SetFillWeight(this.btnCaptureWindow, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.btnCaptureWindow, true);
             this.btnCaptureWindow.Location = new System.Drawing.Point(3, 323);
@@ -142,7 +148,7 @@
             // 
             // pictureBox
             // 
-            this.pictureBox.ImageSource = "resource.wx/Wisej.DemoBrowser.Html2Canvas/wisej.png";
+            this.pictureBox.ImageSource = "resource.wx/Wisej.DemoBrowser.Html2Canvas/dummy-logo.png";
             this.pictureBox.Location = new System.Drawing.Point(10, 252);
             this.pictureBox.Name = "pictureBox";
             this.pictureBox.Size = new System.Drawing.Size(213, 125);

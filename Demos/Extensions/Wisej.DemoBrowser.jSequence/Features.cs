@@ -73,15 +73,15 @@ Note right of A: By listing the participants\n you can change their order";
 			var button = (Button)sender;
 			switch (button.Text)
 			{
-				case "Title":
+				case "Diagram with a title":
 					LoadTitle();
 					break;
 
-				case "Comment":
+				case "Diagram with comments":
 					LoadComment();
 					break;
 
-				case "Participant":
+				case "Participants showcase":
 					LoadParticipant();
 					break;
 
@@ -101,7 +101,7 @@ Note right of A: By listing the participants\n you can change their order";
 		
 		private void SelectButton(Button button)
 		{
-			button.ForeColor = Color.Blue;
+			button.ForeColor = Color.FromArgb(0,56,160);
 		}
 
 		private void UnselectButton(Button button)

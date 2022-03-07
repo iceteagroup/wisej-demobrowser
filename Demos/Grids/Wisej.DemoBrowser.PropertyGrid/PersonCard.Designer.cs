@@ -54,6 +54,7 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.pbVip);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = Wisej.Web.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(5, 5);
@@ -88,7 +89,6 @@
             this.panel2.Anchor = Wisej.Web.AnchorStyles.None;
             this.panel2.BackColor = System.Drawing.Color.White;
             this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.pbVip);
             this.panel2.Controls.Add(this.lblDob);
             this.panel2.Controls.Add(this.lblDobTxt);
             this.panel2.Controls.Add(this.pnlFavColor);
@@ -110,19 +110,20 @@
             this.label2.Anchor = Wisej.Web.AnchorStyles.None;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("@defaultBold", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.label2.Location = new System.Drawing.Point(218, 157);
+            this.label2.Location = new System.Drawing.Point(3, 163);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(95, 15);
             this.label2.TabIndex = 19;
             this.label2.Text = "Favorite color: ";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // pbVip
             // 
             this.pbVip.Anchor = Wisej.Web.AnchorStyles.None;
             this.pbVip.ImageSource = "resource.wx/Wisej.DemoBrowser.PropertyGrid/wisej.png";
-            this.pbVip.Location = new System.Drawing.Point(295, 3);
+            this.pbVip.Location = new System.Drawing.Point(535, 6);
             this.pbVip.Name = "pbVip";
-            this.pbVip.Size = new System.Drawing.Size(72, 66);
+            this.pbVip.Size = new System.Drawing.Size(37, 32);
             this.pbVip.SizeMode = Wisej.Web.PictureBoxSizeMode.Zoom;
             // 
             // lblDob
@@ -150,10 +151,11 @@
             // pnlFavColor
             // 
             this.pnlFavColor.Anchor = Wisej.Web.AnchorStyles.None;
-            this.pnlFavColor.Location = new System.Drawing.Point(340, 151);
+            this.pnlFavColor.Location = new System.Drawing.Point(120, 157);
             this.pnlFavColor.Name = "pnlFavColor";
             this.pnlFavColor.Size = new System.Drawing.Size(27, 27);
             this.pnlFavColor.TabIndex = 16;
+            this.pnlFavColor.PanelCollapsed += new System.EventHandler(this.pnlFavColor_PanelCollapsed);
             // 
             // lblFirstName
             // 

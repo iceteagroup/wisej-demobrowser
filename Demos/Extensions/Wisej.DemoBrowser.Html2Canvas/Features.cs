@@ -43,11 +43,7 @@ namespace Wisej.DemoBrowser.Html2Canvas
         {
             Web.Ext.Html2Canvas.Html2Canvas.Screenshot(control, (image) =>
             {
-                using (var preview = new frmPreview())
-                {
-                    preview.pbResult.Image = image;
-                    preview.ShowDialog();
-                }
+                Application.Download(image,$"html2canvas-demo-{DateTime.UtcNow}.jpg");
             });
         }
 
@@ -55,12 +51,7 @@ namespace Wisej.DemoBrowser.Html2Canvas
         {
             Web.Ext.Html2Canvas.Html2Canvas.Screenshot((image) =>
             {
-                using (var preview = new frmPreview())
-                {
-                    preview.pbResult.Image = image;
-                    preview.WindowState = FormWindowState.Maximized;
-                    preview.ShowDialog();
-                }
+                Application.Download(image,$"html2canvas-demo-{DateTime.UtcNow}.jpg");
             });
         }
 

@@ -13,37 +13,37 @@ namespace Wisej.DemoBrowser.PropertyGrid
 {
 	public class Person
 	{
-		[Category("Card holder Properties")]
-		[Description("The card holder unique identifier")]
+		[Category("Cardholder Properties")]
+		[Description("The Cardholder unique identifier.")]
 		public Guid Id { get; set; }
 
-		[Category("Card holder Properties")]
-		[Description("The card holder first name")]
+		[Category("Cardholder Properties")]
+		[Description("The Cardholder first name.")]
 		public string FirstName { get; set; }
 
-		[Category("Card holder Properties")]
-		[Description("The card holder last name")]
+		[Category("Cardholder Properties")]
+		[Description("The Cardholder last name.")]
 		public string LastName { get; set; }
 
-		[Category("Card holder Properties")]
-		[Description("The card holder address")]
+		[Category("Cardholder Properties")]
+		[Description("The Cardholder address.")]
 		public string Address { get; set; }
 
-		[Category("Card holder Properties")]
-		[Description("The card holder gender")]
+		[Category("Cardholder Properties")]
+		[Description("The Cardholder gender.")]
 		public GenderType Gender { get; set; }
 
 
-		[Category("Card holder Properties")]
-		[Description("The card holder Favorite color")]
+		[Category("Cardholder Properties")]
+		[Description("The Cardholder Favorite color.")]
 		public Color FavoriteColor { get; set; }
 
-		[Category("Card holder Properties")]
-		[Description("The card holder Date of birth")]
+		[Category("Cardholder Properties")]
+		[Description("The Cardholder Date of birth.")]
 		public DateTime Dob { get; set; }
 
-		[Category("Card holder Properties")]
-		[Description("Is the card holder a VIP?")]
+		[Category("Cardholder Properties")]
+		[Description("Is the Cardholder a VIP?")]
 		public bool IsVIP
 		{
 			get => _isVip;
