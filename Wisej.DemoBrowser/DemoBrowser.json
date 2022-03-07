@@ -931,7 +931,15 @@
 					"The <b>Wisej.Web.Ext.OfficeViewer</b> extension control uses Microsoft’s Office 365 Live Viewers to show Word, Excel or PowerPoint documents embedded in a Wisej application. You can view a file or a stream."
 			}
 		},
-		"Pannellum": {},
+		"Pannellum": {
+			"Features": {
+				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Extensions/Wisej.DemoBrowser.Pannellum",
+				"assembly": "Features, Wisej.DemoBrowser.Pannellum.dll",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/ImageSlideshow.svg",
+				"docsUrl": "https://docs.wisej.com/extensions/pannellum",
+				"description-en": "The <b>Wisej.Web.Ext.Pannellum</b> extension component uses the Pannellum library. Pannellum is a lightweight, free, and open source panorama viewer for the web."
+			}
+		},
 		"Premium": {
 			"Features": {
 				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos",

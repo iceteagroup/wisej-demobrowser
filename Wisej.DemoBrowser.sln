@@ -198,6 +198,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wisej.DemoBrowser.Html2Canv
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wisej.DemoBrowser.Speech", "Demos\Extensions\Wisej.DemoBrowser.Speech\Wisej.DemoBrowser.Speech.csproj", "{55AA5696-9B5C-4C20-82B3-6B263D6C32F4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wisej.DemoBrowser.Pannellum", "Demos\Extensions\Wisej.DemoBrowser.Pannellum\Wisej.DemoBrowser.Pannellum.csproj", "{2792EAEB-FA42-4D4D-8124-0544E5F7824D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -540,6 +542,10 @@ Global
 		{55AA5696-9B5C-4C20-82B3-6B263D6C32F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{55AA5696-9B5C-4C20-82B3-6B263D6C32F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{55AA5696-9B5C-4C20-82B3-6B263D6C32F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2792EAEB-FA42-4D4D-8124-0544E5F7824D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2792EAEB-FA42-4D4D-8124-0544E5F7824D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2792EAEB-FA42-4D4D-8124-0544E5F7824D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2792EAEB-FA42-4D4D-8124-0544E5F7824D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -638,6 +644,7 @@ Global
 		{8C7539A6-15D3-4DC0-82E9-6C71901A6464} = {C51A27C9-479B-478F-8158-62189CA32E59}
 		{22A73A18-38EB-4E50-ABE3-BBFED2705EB7} = {C51A27C9-479B-478F-8158-62189CA32E59}
 		{55AA5696-9B5C-4C20-82B3-6B263D6C32F4} = {C51A27C9-479B-478F-8158-62189CA32E59}
+		{2792EAEB-FA42-4D4D-8124-0544E5F7824D} = {C51A27C9-479B-478F-8158-62189CA32E59}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7FE19C61-811C-4966-BC10-2A1D53829B5A}
