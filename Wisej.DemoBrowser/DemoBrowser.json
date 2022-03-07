@@ -147,7 +147,7 @@
 				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos",
 				"assembly": "Labels, Wisej.DemoBrowser.NumericUpDown.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/NumericListBox.svg",
-				"docsUrl": "https://docs.wisej.com/docs/controls/editors/numericupdown",
+				"docsUrl": "https://docs.wisej.com/docs/controls/editors/numericupdown#label",
 				"description-en": "The <b>Wisej.Web.NumericUpDown</b> control contains a single numeric value that can be incremented or decremented by clicking the up or down buttons of the control. The user can also enter in a value, unless the ReadOnly property is set to true."
 			}
 		},
@@ -756,7 +756,15 @@
 				"description-en": "The Maps JavaScript API geometry library provides utility functions for the computation of geometric data on the surface of the Earth."
 			}
 		},
-		"Html2Canvas": {},
+		"Html2Canvas": {
+			"Features": {
+				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Extensions/Wisej.DemoBrowser.Html2Canvas",
+				"assembly": "Features, Wisej.DemoBrowser.Html2Canvas.dll",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/CaptureFrame.svg",
+				"docsUrl": "https://docs.wisej.com/extensions/extensions/html2canvas",
+				"description-en": "The <b>Wisej.Web.Ext.Html2Canvas</b> extension component uses the Html2Canvas library. This Wisej component can take a screenshot of a specific control or the entire browser and send the image back to the server."
+			}
+		},
 		"JustGage": {
 			"Features": {
 				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Extensions/Wisej.DemoBrowser.JustGage",
