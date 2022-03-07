@@ -142,6 +142,13 @@
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/NumericListBox.svg",
 				"docsUrl": "https://docs.wisej.com/docs/controls/editors/numericupdown",
 				"description-en": "The <b>Wisej.Web.NumericUpDown</b> control contains a single numeric value that can be incremented or decremented by clicking the up or down buttons of the control. The user can also enter in a value, unless the ReadOnly property is set to true."
+			},
+			"Labels": {
+				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos",
+				"assembly": "Labels, Wisej.DemoBrowser.NumericUpDown.dll",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/NumericListBox.svg",
+				"docsUrl": "https://docs.wisej.com/docs/controls/editors/numericupdown",
+				"description-en": "The <b>Wisej.Web.NumericUpDown</b> control contains a single numeric value that can be incremented or decremented by clicking the up or down buttons of the control. The user can also enter in a value, unless the ReadOnly property is set to true."
 			}
 		},
 		"DomainUpDown": {

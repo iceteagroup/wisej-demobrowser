@@ -43,6 +43,12 @@
     <Compile Include="Features.Designer.cs">
       <DependentUpon>Features.cs</DependentUpon>
     </Compile>
+    <Compile Include="Labels.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Labels.Designer.cs">
+      <DependentUpon>Labels.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -59,6 +65,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Features.resx">
       <DependentUpon>Features.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Labels.resx">
+      <DependentUpon>Labels.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
