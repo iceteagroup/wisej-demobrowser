@@ -763,7 +763,15 @@
 		//		"description-en": "The <b>Wisej.Web.Ext.Camera</b> control makes it possible to take pictures with the device's camera and upload them to the server."
 		//	}
 		//},
-		"ChartJS": {},
+		"ChartJS": {
+			"Features": {
+				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Extensions/Wisej.DemoBrowser.ChartJS",
+				"assembly": "Features, Wisej.DemoBrowser.ChartJS.dll",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/Report.svg",
+				"docsUrl": "https://docs.wisej.com/extensions/extensions/chartjs",
+				"description-en": "The <b>Wisej.Web.Ext.ChartJS</b> extension component uses the excellent ChartJS widget to render amazing charts in real time."
+			}
+		},
 		"CKEditor": {
 			"Features": {
 				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos",
