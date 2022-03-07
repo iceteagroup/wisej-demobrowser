@@ -70,7 +70,6 @@
             // 
             // speechRecognition
             // 
-            this.speechRecognition.Enabled = true;
             this.speechRecognition.Language = "en";
             this.speechRecognition.Result += new Wisej.Web.Ext.Speech.SpeechRecognitionEventHandler(this.speechRecognition_Result);
             this.speechRecognition.SpeechStart += new System.EventHandler(this.speechRecognition_SpeechStart);
