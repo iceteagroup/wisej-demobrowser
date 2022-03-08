@@ -38,6 +38,7 @@ namespace Wisej.DemoBrowser.JustGage
 		private void nudDecimals_ValueChanged(object sender, EventArgs e)
 		{
 			justGage.Decimals = (int)nudDecimals.Value;
+			nudValue.DecimalPlaces = (int)nudDecimals.Value;
 		}
 
 		private void txtLabel_TextChanged(object sender, EventArgs e)
