@@ -44,7 +44,7 @@
             // cmbBubblesAlignment
             // 
             this.cmbBubblesAlignment.LabelText = "Alignment";
-            this.cmbBubblesAlignment.Location = new System.Drawing.Point(302, 188);
+            this.cmbBubblesAlignment.Location = new System.Drawing.Point(324, 192);
             this.cmbBubblesAlignment.Name = "cmbBubblesAlignment";
             this.cmbBubblesAlignment.Size = new System.Drawing.Size(272, 42);
             this.cmbBubblesAlignment.TabIndex = 1;
@@ -53,7 +53,7 @@
             // cmbBubbleStyle
             // 
             this.cmbBubbleStyle.LabelText = "Style";
-            this.cmbBubbleStyle.Location = new System.Drawing.Point(302, 271);
+            this.cmbBubbleStyle.Location = new System.Drawing.Point(324, 275);
             this.cmbBubbleStyle.Name = "cmbBubbleStyle";
             this.cmbBubbleStyle.Size = new System.Drawing.Size(272, 42);
             this.cmbBubbleStyle.TabIndex = 2;
@@ -61,7 +61,7 @@
             // 
             // textBox
             // 
-            this.textBox.Location = new System.Drawing.Point(684, 155);
+            this.textBox.Location = new System.Drawing.Point(662, 163);
             this.textBox.Multiline = true;
             this.textBox.Name = "textBox";
             this.textBox.Size = new System.Drawing.Size(437, 207);
@@ -72,7 +72,7 @@
             // 
             // button
             // 
-            this.button.Location = new System.Drawing.Point(834, 112);
+            this.button.Location = new System.Drawing.Point(812, 104);
             this.button.Name = "button";
             this.button.Size = new System.Drawing.Size(137, 37);
             this.button.TabIndex = 4;

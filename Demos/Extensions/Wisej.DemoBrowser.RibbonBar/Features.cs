@@ -1,4 +1,6 @@
 ﻿using System;
+using System.CodeDom;
+using System.Drawing;
 using System.IO;
 using Wisej.DemoBrowser.Common;
 using Wisej.Web;
@@ -24,17 +26,42 @@ namespace Wisej.DemoBrowser.RibbonBar
         private void RibbonBar_MenuButtonItemClick(object sender, RibbonBarMenuItemEventArgs e)
         {
             var button = e.Item;
-            AlertBox.Show(button.ToString() + " => " + e.Item.ToString());
+            AlertBox.Show($"Menu: {button.Text} Clicked, Menu Item: {e.MenuItem.Text}");
         }
 
         private void ribbonBar_ItemClick(object sender, Web.Ext.RibbonBar.RibbonBarItemEventArgs e)
         {
-            AlertBox.Show(e.Item.ToString(), showProgressBar: true);
+            if (e.Item.GetType() == typeof(RibbonBarItemCheckBox))
+            {
+                string checkStatus = ((RibbonBarItemCheckBox) e.Item).Checked ? "Checked" : "Unchecked";
+                AlertBox.Show($"Checkbox: {e.Item.Text} {checkStatus} ", showProgressBar: true);
+
+                return;
+            }
+
+            if (e.Item.GetType() == typeof(RibbonBarItemButton))
+            {
+
+                object imgSource = Application.Theme.Images[e.Item.ImageSource];
+                if (imgSource == null) imgSource = e.Item.ImageSource;
+
+                string img = $"<img src='{imgSource}' width='32px' height='32px'> ";
+                AlertBox.Show($"Button: {img}{e.Item.Text} Clicked ", showProgressBar: true, allowHtml:true);
+
+                return;
+            }
+
+            if (e.Item.GetType() == typeof(RibbonBarItemTextBox))
+            {
+                AlertBox.Show($"Button: {e.Item.Text} Clicked And Entered", showProgressBar: true);
+                return;
+            }
+
         }
 
         private void ribbonBar_GroupClick(object sender, RibbonBarGroupEventArgs e)
         {
-            AlertBox.Show(e.Group.ToString(), showProgressBar: true);
+            AlertBox.Show($"Group: {e.Group.Text} clicked", showProgressBar: true);
         }
 
         private void ribbonBar_AppButtonClick(object sender, EventArgs e)
@@ -44,7 +71,18 @@ namespace Wisej.DemoBrowser.RibbonBar
 
         private void ribbonBar_ToolClick(object sender, ToolClickEventArgs e)
         {
-            AlertBox.Show("Tool Click: " + e.Tool.Name);
+            AlertBox.Show("Tool Click: " + e.Tool.ToolTipText);
         }
-	}
+
+        private void ribbonBarItemComboBox1_ValueChanged(object sender, EventArgs e)
+        {
+            RibbonBarItemComboBox comboBox = (RibbonBarItemComboBox) sender;
+            AlertBox.Show($"ComboBox Selected Value: {comboBox.Value}");
+        }
+
+        private void ribbonBarItemTextBox1_Click(object sender, EventArgs e)
+        {
+            AlertBox.Show($"ComboBox Selected Value:");
+        }
+    }
 }

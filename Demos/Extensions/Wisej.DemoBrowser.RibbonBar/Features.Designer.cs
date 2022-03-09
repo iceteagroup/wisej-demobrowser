@@ -77,14 +77,14 @@ namespace Wisej.DemoBrowser.RibbonBar
             // 
             // 
             this.ribbonBar.AppButton.ImageSource = "icon-preview?color=#3FBEBF";
-            this.ribbonBar.AppButton.Text = "FIle";
+            this.ribbonBar.AppButton.Text = "File";
             this.ribbonBar.AppButton.Visible = true;
             this.ribbonBar.BackColor = System.Drawing.Color.White;
             this.ribbonBar.Name = "ribbonBar";
             this.ribbonBar.Pages.Add(this.ribbonBarPage1);
             this.ribbonBar.Pages.Add(this.ribbonBarPage2);
             this.ribbonBar.Pages.Add(this.ribbonBarPage3);
-            this.ribbonBar.Size = new System.Drawing.Size(1422, 145);
+            this.ribbonBar.Size = new System.Drawing.Size(1422, 157);
             componentTool1.ImageSource = "messagebox-question?color=#3600FF";
             componentTool1.Name = "Help";
             componentTool1.Position = Wisej.Web.LeftRightAlignment.Left;
@@ -145,14 +145,14 @@ namespace Wisej.DemoBrowser.RibbonBar
             this.ribbonBarItemButton4.ImageSource = "ribbon-cut";
             this.ribbonBarItemButton4.Name = "ribbonBarItemButton4";
             this.ribbonBarItemButton4.Orientation = Wisej.Web.Orientation.Horizontal;
-            this.ribbonBarItemButton4.Text = "Cut";
+            this.ribbonBarItemButton4.Text = "Cut Special";
             // 
             // ribbonBarItemButton5
             // 
             this.ribbonBarItemButton5.ImageSource = "ribbon-copy";
             this.ribbonBarItemButton5.Name = "ribbonBarItemButton5";
             this.ribbonBarItemButton5.Orientation = Wisej.Web.Orientation.Horizontal;
-            this.ribbonBarItemButton5.Text = "Copy special...";
+            this.ribbonBarItemButton5.Text = "Copy Special";
             // 
             // ribbonBarItemButton6
             // 
@@ -162,7 +162,7 @@ namespace Wisej.DemoBrowser.RibbonBar
             this.menuItem2});
             this.ribbonBarItemButton6.Name = "ribbonBarItemButton6";
             this.ribbonBarItemButton6.Orientation = Wisej.Web.Orientation.Horizontal;
-            this.ribbonBarItemButton6.Text = "Paste special";
+            this.ribbonBarItemButton6.Text = "Paste Special";
             // 
             // menuItem1
             // 
@@ -223,7 +223,7 @@ namespace Wisej.DemoBrowser.RibbonBar
             // ribbonBarItemCheckBox2
             // 
             this.ribbonBarItemCheckBox2.Name = "ribbonBarItemCheckBox2";
-            this.ribbonBarItemCheckBox2.Text = "Save to cloud";
+            this.ribbonBarItemCheckBox2.Text = "Save To Cloud";
             // 
             // ribbonBarPage2
             // 
@@ -244,6 +244,7 @@ namespace Wisej.DemoBrowser.RibbonBar
             this.ribbonBarItemTextBox1.ImageSource = "icon-settings?color=#3FBF47";
             this.ribbonBarItemTextBox1.Name = "ribbonBarItemTextBox1";
             this.ribbonBarItemTextBox1.Text = "Profile Name";
+            this.ribbonBarItemTextBox1.Click += new System.EventHandler(this.ribbonBarItemTextBox1_Click);
             // 
             // ribbonBarItemTextBox2
             // 
@@ -256,6 +257,7 @@ namespace Wisej.DemoBrowser.RibbonBar
             this.ribbonBarItemComboBox1.ImageSource = "menu-overflow?color=#DF00FF";
             this.ribbonBarItemComboBox1.Name = "ribbonBarItemComboBox1";
             this.ribbonBarItemComboBox1.Text = "User Level";
+            this.ribbonBarItemComboBox1.ValueChanged += new System.EventHandler(this.ribbonBarItemComboBox1_ValueChanged);
             // 
             // ribbonBarPage3
             // 
@@ -397,6 +399,6 @@ namespace Wisej.DemoBrowser.RibbonBar
 		private RibbonBarItemButton ribbonBarItemButton19;
 		private RibbonBarItemButton ribbonBarItemButton20;
 		private RibbonBarItemButton ribbonBarItemButton21;
-		#endregion
-	}
+        #endregion
+    }
 }

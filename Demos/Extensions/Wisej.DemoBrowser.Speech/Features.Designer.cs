@@ -38,8 +38,9 @@
             // 
             // textBox1
             // 
+            this.textBox1.Anchor = Wisej.Web.AnchorStyles.None;
             this.textBox1.LabelText = "Text to speech";
-            this.textBox1.Location = new System.Drawing.Point(455, 134);
+            this.textBox1.Location = new System.Drawing.Point(424, 134);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(437, 207);
@@ -47,25 +48,29 @@
             // 
             // btnPlay
             // 
-            this.btnPlay.Display = Wisej.Web.Display.Icon;
+            this.btnPlay.Anchor = Wisej.Web.AnchorStyles.None;
+            this.btnPlay.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnPlay.ImageSource = "resource.wx/Wisej.DemoBrowser.Speech/play.png";
-            this.btnPlay.Location = new System.Drawing.Point(927, 300);
+            this.btnPlay.Location = new System.Drawing.Point(896, 300);
             this.btnPlay.Name = "btnPlay";
-            this.btnPlay.Size = new System.Drawing.Size(40, 40);
+            this.btnPlay.Size = new System.Drawing.Size(102, 40);
             this.btnPlay.TabIndex = 1;
             this.btnPlay.Text = "Play";
+            this.btnPlay.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnPlay.Click += new System.EventHandler(this.btnPlay_Click);
             // 
             // btnStop
             // 
-            this.btnStop.Display = Wisej.Web.Display.Icon;
+            this.btnStop.Anchor = Wisej.Web.AnchorStyles.None;
             this.btnStop.Enabled = false;
+            this.btnStop.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnStop.ImageSource = "resource.wx/Wisej.DemoBrowser.Speech/stop.png";
-            this.btnStop.Location = new System.Drawing.Point(927, 228);
+            this.btnStop.Location = new System.Drawing.Point(896, 228);
             this.btnStop.Name = "btnStop";
-            this.btnStop.Size = new System.Drawing.Size(40, 40);
+            this.btnStop.Size = new System.Drawing.Size(102, 40);
             this.btnStop.TabIndex = 2;
             this.btnStop.Text = "Stop";
+            this.btnStop.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnStop.Click += new System.EventHandler(this.btnStop_Click);
             // 
             // speechRecognition
@@ -77,13 +82,15 @@
             // 
             // btnRecord
             // 
-            this.btnRecord.Display = Wisej.Web.Display.Icon;
+            this.btnRecord.Anchor = Wisej.Web.AnchorStyles.None;
+            this.btnRecord.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnRecord.ImageSource = "resource.wx/Wisej.DemoBrowser.Speech/record.png";
-            this.btnRecord.Location = new System.Drawing.Point(927, 156);
+            this.btnRecord.Location = new System.Drawing.Point(896, 156);
             this.btnRecord.Name = "btnRecord";
-            this.btnRecord.Size = new System.Drawing.Size(40, 40);
+            this.btnRecord.Size = new System.Drawing.Size(102, 40);
             this.btnRecord.TabIndex = 3;
             this.btnRecord.Text = "Record";
+            this.btnRecord.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnRecord.Click += new System.EventHandler(this.btnRecord_Click);
             // 
             // Features
@@ -92,6 +99,7 @@
             this.Controls.Add(this.btnStop);
             this.Controls.Add(this.btnPlay);
             this.Controls.Add(this.textBox1);
+            this.MinimumSize = new System.Drawing.Size(914, 474);
             this.Name = "Features";
             this.ResumeLayout(false);
             this.PerformLayout();

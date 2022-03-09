@@ -144,7 +144,7 @@ namespace Wisej.DemoBrowser.ChartJS
 			AlertBox.Show(
 				"<br>" + ((Control)sender).Text + ":</b> " + e.Values[0],
 				MessageBoxIcon.Information,
-				alignment: ContentAlignment.MiddleRight);
+				alignment: ContentAlignment.BottomRight);
 		}
 	}
 }

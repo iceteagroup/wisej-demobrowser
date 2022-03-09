@@ -24,19 +24,9 @@ namespace Wisej.DemoBrowser.Html2Canvas
             PreviewCapture(htmlPanel);
         }
 
-        private void btnCapturePicBox_Click(object sender, EventArgs e)
-        {
-            PreviewCapture(pictureBox);
-        }
-
         private void btnCapturePanel_Click(object sender, EventArgs e)
         {
             PreviewCapture(pnlDemo);
-        }
-
-        private void btnCaptureDemo_Click(object sender, EventArgs e)
-        {
-            PreviewCapture(this);
         }
 
         void PreviewCapture(Control control)

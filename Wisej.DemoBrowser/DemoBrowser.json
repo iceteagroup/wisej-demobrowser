@@ -161,7 +161,7 @@
 		},
 		"NumericUpDown": {
 			"Features": {
-				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos",
+				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Editors/Wisej.DemoBrowser.NumericUpDown",
 				"assembly": "Features, Wisej.DemoBrowser.NumericUpDown.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/NumericListBox.svg",
 				"docsUrl": "https://docs.wisej.com/docs/controls/editors/numericupdown",

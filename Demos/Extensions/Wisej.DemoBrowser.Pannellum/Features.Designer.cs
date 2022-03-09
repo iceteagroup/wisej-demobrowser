@@ -153,6 +153,8 @@
             this.pannellum.Dock = Wisej.Web.DockStyle.Fill;
             this.pannellum.Location = new System.Drawing.Point(40, 0);
             this.pannellum.Name = "pannellum";
+            this.pannellum.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"type\":\"equirectangular\",\"autoLoad\":true,\"panorama\":\"https://pannellum.org/image" +
+        "s/alma.jpg\"}")));
             this.pannellum.Size = new System.Drawing.Size(1382, 474);
             this.pannellum.TabIndex = 10;
             this.pannellum.Text = "pannellum1";
