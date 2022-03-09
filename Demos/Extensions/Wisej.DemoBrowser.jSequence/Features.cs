@@ -74,11 +74,11 @@ Note right of A: By listing the participants\n you can change their order";
 			var button = (Button)sender;
 			switch (button.Text)
 			{
-				case "Diagram with a title":
+				case "Title Showcase":
 					LoadTitle();
 					break;
 
-				case "Diagram with comments":
+				case "Comments showcase":
 					LoadComment();
 					break;
 

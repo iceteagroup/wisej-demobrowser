@@ -64,7 +64,7 @@
             this.cmbThemes.LabelText = "Themes";
             this.cmbThemes.Location = new System.Drawing.Point(19, 175);
             this.cmbThemes.Name = "cmbThemes";
-            this.cmbThemes.Size = new System.Drawing.Size(218, 42);
+            this.cmbThemes.Size = new System.Drawing.Size(218, 51);
             this.cmbThemes.TabIndex = 5;
             this.cmbThemes.SelectedIndexChanged += new System.EventHandler(this.cmbThemes_SelectedIndexChanged);
             // 
@@ -74,7 +74,7 @@
             this.flowLayoutPanelExamples.SetFillWeight(this.txtUml, 1);
             this.flowLayoutPanelExamples.SetFlowBreak(this.txtUml, true);
             this.txtUml.LabelText = "UML ";
-            this.txtUml.Location = new System.Drawing.Point(19, 223);
+            this.txtUml.Location = new System.Drawing.Point(19, 232);
             this.txtUml.Multiline = true;
             this.txtUml.Name = "txtUml";
             this.txtUml.Size = new System.Drawing.Size(218, 158);
@@ -85,7 +85,7 @@
             this.btnUpdate.Anchor = Wisej.Web.AnchorStyles.None;
             this.flowLayoutPanelExamples.SetFillWeight(this.btnUpdate, 1);
             this.flowLayoutPanelExamples.SetFlowBreak(this.btnUpdate, true);
-            this.btnUpdate.Location = new System.Drawing.Point(19, 387);
+            this.btnUpdate.Location = new System.Drawing.Point(19, 396);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(218, 35);
             this.btnUpdate.TabIndex = 7;
