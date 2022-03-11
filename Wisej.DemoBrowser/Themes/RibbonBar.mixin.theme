@@ -533,10 +533,24 @@
 					}
 				},
 				"textbox": {
-					"inherit": "textbox"
+					"inherit": "textbox",
+					"states": {
+						"focused": {
+							"styles": {
+								"shadowColor": "transparent"
+							}
+						}
+					}
 				},
 				"combobox": {
-					"inherit": "combobox"
+					"inherit": "combobox",
+					"states": {
+						"focused": {
+							"styles": {
+								"shadowColor": "transparent"
+							}
+						}
+					}
 				},
 				"icon": {
 					"inherit": "icon-dark",
