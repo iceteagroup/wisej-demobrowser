@@ -53,5 +53,12 @@ namespace Wisej.DemoBrowser.ChartJS
 		{
 			AlertBox.Show($"{((Control)sender).Text}: {e.SelectedValue}");
 		}
+
+		private void buttonRemove_Click(object sender, EventArgs e)
+		{
+			var dataSetCount = this.chartJS1.DataSets.Count;
+			if (dataSetCount > 0)
+				this.chartJS1.DataSets.RemoveAt(dataSetCount - 1);	
+		}
 	}
 }

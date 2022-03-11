@@ -32,6 +32,7 @@
 			Wisej.Web.Ext.ChartJS.OptionsAxisGridLines optionsAxisGridLines1 = new Wisej.Web.Ext.ChartJS.OptionsAxisGridLines();
 			this.chartJS1 = new Wisej.Web.Ext.ChartJS.ChartJS();
 			this.buttonAdd = new Wisej.Web.Button();
+			this.button1 = new Wisej.Web.Button();
 			this.SuspendLayout();
 			// 
 			// chartJS1
@@ -64,15 +65,26 @@
 			// buttonAdd
 			// 
 			this.buttonAdd.Anchor = Wisej.Web.AnchorStyles.Left;
-			this.buttonAdd.Location = new System.Drawing.Point(163, 219);
+			this.buttonAdd.Location = new System.Drawing.Point(163, 197);
 			this.buttonAdd.Name = "buttonAdd";
 			this.buttonAdd.Size = new System.Drawing.Size(168, 37);
 			this.buttonAdd.TabIndex = 1;
 			this.buttonAdd.Text = "Add DataSet";
 			this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
 			// 
+			// button1
+			// 
+			this.button1.Anchor = Wisej.Web.AnchorStyles.Left;
+			this.button1.Location = new System.Drawing.Point(163, 240);
+			this.button1.Name = "button1";
+			this.button1.Size = new System.Drawing.Size(168, 37);
+			this.button1.TabIndex = 2;
+			this.button1.Text = "Remove DataSet";
+			this.button1.Click += new System.EventHandler(this.buttonRemove_Click);
+			// 
 			// Scatter
 			// 
+			this.Controls.Add(this.button1);
 			this.Controls.Add(this.buttonAdd);
 			this.Controls.Add(this.chartJS1);
 			this.Name = "Scatter";
@@ -85,5 +97,6 @@
 
 		private Web.Ext.ChartJS.ChartJS chartJS1;
 		private Web.Button buttonAdd;
+		private Web.Button button1;
 	}
 }
