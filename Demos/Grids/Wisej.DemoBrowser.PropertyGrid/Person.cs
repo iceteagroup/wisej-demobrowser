@@ -36,6 +36,7 @@ namespace Wisej.DemoBrowser.PropertyGrid
 
 		[Category("Cardholder Properties")]
 		[Description("The Cardholder Favorite color.")]
+		[Editor(typeof(ColorPicker), typeof(UITypeEditor))]
 		public Color FavoriteColor { get; set; }
 
 		[Category("Cardholder Properties")]

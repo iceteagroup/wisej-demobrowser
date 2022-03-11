@@ -43,7 +43,7 @@
             // 
             // 
             this.propertyGrid1.ToolBar.Enabled = true;
-            this.propertyGrid1.SelectedGridItemBeginEdit += new Wisej.Web.SelectedGridItemBeginEditEventHandler(this.propertyGrid1_SelectedGridItemBeginEdit);
+            this.propertyGrid1.SelectedObjectsChanged += new System.EventHandler(this.propertyGrid1_SelectedObjectsChanged);
             // 
             // personCard1
             // 

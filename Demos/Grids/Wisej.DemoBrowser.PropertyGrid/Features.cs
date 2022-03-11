@@ -20,22 +20,5 @@ namespace Wisej.DemoBrowser.PropertyGrid
         {
             AlertBox.Show($"Selected object is {propertyGrid1.SelectedObject.GetType()}");
         }
-
-        private void propertyGrid1_SelectedGridItemBeginEdit(object sender, SelectedGridItemBeginEditEventArgs e)
-        {
-
-            if (e.GridItem.Value.GetType() == typeof(System.Drawing.Color))
-            {
-                using (ColorDialog dlg = new ColorDialog())
-                {
-                    dlg.Color = (System.Drawing.Color)e.GridItem.Value;
-                    if (dlg.ShowDialog() == DialogResult.OK)
-                    {
-                        e.GridItem.Value = dlg.Color;
-                    }
-                }
-            }
-
-        }
     }
 }
