@@ -319,7 +319,7 @@
 			"Features": {
 				"sourceUrl":
 					"https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Containers/Wisej.DemoBrowser.TableLayoutPanel",
-				"assembly": "Features2, Wisej.DemoBrowser.TableLayoutPanel.dll",
+				"assembly": "Features, Wisej.DemoBrowser.TableLayoutPanel.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/TableLayoutPanel.svg",
 				"docsUrl": "https://docs.wisej.com/docs/controls/containers/tablelayoutpanel",
 				"description-en":

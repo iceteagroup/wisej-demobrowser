@@ -235,6 +235,7 @@
             this.panel8.Dock = Wisej.Web.DockStyle.Fill;
             this.panel8.Location = new System.Drawing.Point(1242, 121);
             this.panel8.Name = "panel8";
+            this.panel8.Padding = new Wisej.Web.Padding(8);
             this.tableLayoutPanel1.SetRowSpan(this.panel8, 3);
             this.panel8.Size = new System.Drawing.Size(177, 171);
             this.panel8.TabIndex = 15;
@@ -245,9 +246,9 @@
             this.label10.Dock = Wisej.Web.DockStyle.Fill;
             this.label10.Font = new System.Drawing.Font("@defaultBold", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.label10.ForeColor = System.Drawing.Color.FromArgb(32, 32, 32);
-            this.label10.Location = new System.Drawing.Point(0, 100);
+            this.label10.Location = new System.Drawing.Point(8, 108);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(177, 71);
+            this.label10.Size = new System.Drawing.Size(161, 55);
             this.label10.TabIndex = 6;
             this.label10.Text = "Lead to Opp. Ratio";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -258,10 +259,10 @@
             this.knob2.Dock = Wisej.Web.DockStyle.Top;
             this.knob2.ForeColor = System.Drawing.Color.FromArgb(0, 145, 213);
             this.knob2.LineCapStyle = Wisej.Web.Ext.jQueryKnob.LineCapType.Round;
+            this.knob2.Location = new System.Drawing.Point(8, 8);
             this.knob2.Name = "knob2";
-            this.knob2.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"bgColor\":\"#FFF\",\"max\":30}")));
             this.knob2.ReadOnly = true;
-            this.knob2.Size = new System.Drawing.Size(177, 100);
+            this.knob2.Size = new System.Drawing.Size(161, 100);
             this.knob2.TabIndex = 0;
             this.knob2.Text = "knob2";
             this.knob2.Value = 25;
@@ -274,6 +275,7 @@
             this.panel7.Dock = Wisej.Web.DockStyle.Fill;
             this.panel7.Location = new System.Drawing.Point(1065, 121);
             this.panel7.Name = "panel7";
+            this.panel7.Padding = new Wisej.Web.Padding(8);
             this.tableLayoutPanel1.SetRowSpan(this.panel7, 3);
             this.panel7.Size = new System.Drawing.Size(171, 171);
             this.panel7.TabIndex = 14;
@@ -284,9 +286,9 @@
             this.label2.Dock = Wisej.Web.DockStyle.Fill;
             this.label2.Font = new System.Drawing.Font("@defaultBold", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.label2.ForeColor = System.Drawing.Color.FromArgb(32, 32, 32);
-            this.label2.Location = new System.Drawing.Point(0, 100);
+            this.label2.Location = new System.Drawing.Point(8, 108);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(171, 71);
+            this.label2.Size = new System.Drawing.Size(155, 55);
             this.label2.TabIndex = 6;
             this.label2.Text = "Opp. To Win Ratio";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -296,9 +298,10 @@
             this.knob1.Dock = Wisej.Web.DockStyle.Top;
             this.knob1.ForeColor = System.Drawing.Color.FromArgb(0, 145, 213);
             this.knob1.LineCapStyle = Wisej.Web.Ext.jQueryKnob.LineCapType.Round;
+            this.knob1.Location = new System.Drawing.Point(8, 8);
             this.knob1.Name = "knob1";
             this.knob1.ReadOnly = true;
-            this.knob1.Size = new System.Drawing.Size(171, 100);
+            this.knob1.Size = new System.Drawing.Size(155, 100);
             this.knob1.TabIndex = 0;
             this.knob1.Text = "knob1";
             this.knob1.Value = 44;
