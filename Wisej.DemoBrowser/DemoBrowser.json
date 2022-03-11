@@ -770,6 +770,13 @@
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/Report.svg",
 				"docsUrl": "https://docs.wisej.com/extensions/extensions/chartjs",
 				"description-en": "The <b>Wisej.Web.Ext.ChartJS</b> extension component uses the excellent ChartJS widget to render amazing charts in real time."
+			},
+			"Scatter": {
+				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Extensions/Wisej.DemoBrowser.ChartJS",
+				"assembly": "Scatter, Wisej.DemoBrowser.ChartJS.dll",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/Report.svg",
+				"docsUrl": "https://docs.wisej.com/extensions/extensions/chartjs",
+				"description-en": "Scatter charts are based on basic line charts with the x axis changed to a linear axis. To use a scatter chart, data must be passed as objects containing X and Y properties."
 			}
 		},
 		"CKEditor": {

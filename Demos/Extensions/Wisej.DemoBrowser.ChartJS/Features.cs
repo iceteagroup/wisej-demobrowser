@@ -139,12 +139,9 @@ namespace Wisej.DemoBrowser.ChartJS
 			CreateColors(dataSet);
 		}
 
-		private void chartJS_ChartClick(object sender, Wisej.Web.Ext.ChartJS.ChartClickEventArgs e)
+		private void chartJS_ChartClick(object sender, ChartClickEventArgs e)
 		{
-			AlertBox.Show(
-				"<br>" + ((Control)sender).Text + ":</b> " + e.Values[0],
-				MessageBoxIcon.Information,
-				alignment: ContentAlignment.BottomRight);
+			AlertBox.Show($"{((Control)sender).Text}: {e.Values[0]}");
 		}
 	}
 }
