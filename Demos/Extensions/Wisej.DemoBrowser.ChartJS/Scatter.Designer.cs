@@ -87,6 +87,7 @@
 			this.Controls.Add(this.button1);
 			this.Controls.Add(this.buttonAdd);
 			this.Controls.Add(this.chartJS1);
+			this.MinimumSize = new System.Drawing.Size(1422, 474);
 			this.Name = "Scatter";
 			this.Load += new System.EventHandler(this.Scatter_Load);
 			this.ResumeLayout(false);
