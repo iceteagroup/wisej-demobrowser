@@ -17,6 +17,8 @@ namespace Wisej.DemoBrowser.jSequence
 		{
 			txtUml.Text = sequence.UML;
 			cmbThemes.SelectedIndex = 1;
+
+			_selectedButton = btnDefault;
 			SelectButton(btnDefault);
 		}
 

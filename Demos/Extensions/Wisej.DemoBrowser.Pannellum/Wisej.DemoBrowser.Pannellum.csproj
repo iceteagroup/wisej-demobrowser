@@ -37,6 +37,30 @@
     <Reference Include="System.Windows.Forms" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Multires.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Multires.Designer.cs">
+      <DependentUpon>Multires.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CubeMap.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CubeMap.Designer.cs">
+      <DependentUpon>CubeMap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HotSpots.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HotSpots.Designer.cs">
+      <DependentUpon>HotSpots.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AutoRotate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AutoRotate.Designer.cs">
+      <DependentUpon>AutoRotate.cs</DependentUpon>
+    </Compile>
     <Compile Include="Features.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -60,6 +84,18 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Multires.resx">
+      <DependentUpon>Multires.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CubeMap.resx">
+      <DependentUpon>CubeMap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HotSpots.resx">
+      <DependentUpon>HotSpots.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AutoRotate.resx">
+      <DependentUpon>AutoRotate.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Features.resx">
       <DependentUpon>Features.cs</DependentUpon>
     </EmbeddedResource>

@@ -100,8 +100,8 @@
 							"states": {
 								"default": {
 									"styles": {
-										"color": "window",
-										"width": 1
+										"color": "controlDark",
+										"width": [1, 0, 1, 0]
 									},
 									"properties": {
 										"marginTop": -1

@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Drawing;
-using System.Windows.Forms;
 using Wisej.DemoBrowser.Common;
 using Wisej.Web;
 using Wisej.Web.Ext.ChartJS3;
@@ -13,8 +12,6 @@ namespace Wisej.DemoBrowser.TableLayoutPanel
         {
             InitializeComponent();
         }
-
-
 
         private void FillBarChart()
         {
@@ -37,35 +34,9 @@ namespace Wisej.DemoBrowser.TableLayoutPanel
             }
 
             bds.Data = obj;
-            bds.BackgroundColor = new[] { System.Drawing.Color.FromArgb(39, 38, 64) };
+            bds.BackgroundColor = new[] { System.Drawing.Color.FromArgb(28, 78, 128) };
             chartJS31.DataSets.Add(bds);
 
-        }
-
-        private void FillLeadToOppRatioChart()
-        {
-            PieDataSet pds = new PieDataSet();
-            pds.Label = "Lead to Opp. Ratio";
-
-            object[] x = new object[2];
-            x[0] = 22;
-            x[1] = 100;
-            pds.Data = x;
-            pds.BackgroundColor = new Color[] { Color.FromArgb(0, 100, 102), Color.FromName("@controlText") };
-            chartJS32.DataSets.Add(pds);
-        }
-
-        private void FillLeadToOppRatioChart2()
-        {
-            PieDataSet pds = new PieDataSet();
-            pds.Label = "Lead to Opp. Ratio";
-
-            object[] x = new object[2];
-            x[0] = 43;
-            x[1] = 100;
-            pds.Data = x;
-            pds.BackgroundColor = new Color[] { Color.FromArgb(0, 100, 102), Color.FromName("@controlText") };
-            chartJS33.DataSets.Add(pds);
         }
 
         private void FillManagersCharts(ChartJS3 chart)
@@ -90,14 +61,12 @@ namespace Wisej.DemoBrowser.TableLayoutPanel
             }
 
             bds.Data = obj;
-            bds.BackgroundColor = Color.FromArgb(0, 100, 102);
+            bds.BackgroundColor = Color.FromArgb(234, 106, 71);
             chart.DataSets.Add(bds);
         }
-        private void Features2_Load(object sender, EventArgs e)
+        private void Features_Load(object sender, EventArgs e)
         {
             FillBarChart();
-            FillLeadToOppRatioChart();
-            FillLeadToOppRatioChart2();
             FillManagersCharts(chartJS34);
             FillManagersCharts(chartJS35);
         }

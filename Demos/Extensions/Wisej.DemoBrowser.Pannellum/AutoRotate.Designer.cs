@@ -1,6 +1,6 @@
 ﻿namespace Wisej.DemoBrowser.Pannellum
 {
-    partial class Features
+    partial class AutoRotate
     {
         /// <summary> 
         /// Required designer variable.
@@ -35,17 +35,16 @@
             // 
             this.pannellum.Dock = Wisej.Web.DockStyle.Fill;
             this.pannellum.Name = "pannellum";
-            this.pannellum.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"type\":\"equirectangular\",\"autoLoad\":true,\"panorama\":\"https://pannellum.org/image" +
-        "s/alma.jpg\"}")));
+            this.pannellum.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"type\":\"equirectangular\",\"autoLoad\":true,\"autoRotate\":-2,\"panorama\":\"https://pan" +
+        "nellum.org/images/alma.jpg\"}")));
             this.pannellum.Size = new System.Drawing.Size(1422, 474);
             this.pannellum.TabIndex = 10;
             this.pannellum.Text = "pannellum1";
-            this.pannellum.WidgetEvent += new Wisej.Web.WidgetEventHandler(this.pannellum_WidgetEvent);
             // 
-            // Features
+            // AutoRotate
             // 
             this.Controls.Add(this.pannellum);
-            this.Name = "Features";
+            this.Name = "AutoRotate";
             this.ResumeLayout(false);
 
         }

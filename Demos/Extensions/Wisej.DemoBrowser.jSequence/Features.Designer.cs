@@ -64,7 +64,7 @@
             this.cmbThemes.LabelText = "Themes";
             this.cmbThemes.Location = new System.Drawing.Point(19, 175);
             this.cmbThemes.Name = "cmbThemes";
-            this.cmbThemes.Size = new System.Drawing.Size(218, 51);
+            this.cmbThemes.Size = new System.Drawing.Size(218, 53);
             this.cmbThemes.TabIndex = 5;
             this.cmbThemes.SelectedIndexChanged += new System.EventHandler(this.cmbThemes_SelectedIndexChanged);
             // 
@@ -74,7 +74,7 @@
             this.flowLayoutPanelExamples.SetFillWeight(this.txtUml, 1);
             this.flowLayoutPanelExamples.SetFlowBreak(this.txtUml, true);
             this.txtUml.LabelText = "UML ";
-            this.txtUml.Location = new System.Drawing.Point(19, 232);
+            this.txtUml.Location = new System.Drawing.Point(19, 234);
             this.txtUml.Multiline = true;
             this.txtUml.Name = "txtUml";
             this.txtUml.Size = new System.Drawing.Size(218, 158);
@@ -85,7 +85,7 @@
             this.btnUpdate.Anchor = Wisej.Web.AnchorStyles.None;
             this.flowLayoutPanelExamples.SetFillWeight(this.btnUpdate, 1);
             this.flowLayoutPanelExamples.SetFlowBreak(this.btnUpdate, true);
-            this.btnUpdate.Location = new System.Drawing.Point(19, 396);
+            this.btnUpdate.Location = new System.Drawing.Point(19, 398);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(218, 35);
             this.btnUpdate.TabIndex = 7;
@@ -97,6 +97,7 @@
             this.flowLayoutPanelExamples.AppearanceKey = "panel-demo";
             this.flowLayoutPanelExamples.AutoShow = Wisej.Web.PanelAutoShowMode.OnPointerOver;
             this.flowLayoutPanelExamples.BorderStyle = Wisej.Web.BorderStyle.Solid;
+            this.flowLayoutPanelExamples.Collapsed = true;
             this.flowLayoutPanelExamples.CollapseSide = Wisej.Web.HeaderPosition.Left;
             this.flowLayoutPanelExamples.Controls.Add(this.btnDefault);
             this.flowLayoutPanelExamples.Controls.Add(this.btnTitle);
@@ -112,8 +113,9 @@
             this.flowLayoutPanelExamples.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanelExamples.Name = "flowLayoutPanelExamples";
             this.flowLayoutPanelExamples.Padding = new Wisej.Web.Padding(16, 0, 0, 0);
+            this.flowLayoutPanelExamples.RestoreBounds = new System.Drawing.Rectangle(0, 0, 280, 474);
             this.flowLayoutPanelExamples.ShowHeader = true;
-            this.flowLayoutPanelExamples.Size = new System.Drawing.Size(280, 474);
+            this.flowLayoutPanelExamples.Size = new System.Drawing.Size(40, 474);
             this.flowLayoutPanelExamples.TabIndex = 8;
             this.flowLayoutPanelExamples.Text = "Configuration";
             // 

@@ -66,7 +66,8 @@ namespace Wisej.DemoBrowser.RibbonBar
 
         private void ribbonBar_AppButtonClick(object sender, EventArgs e)
         {
-            AlertBox.Show("App Button Clicked");
+            RibbonBarAppButton appButton = (RibbonBarAppButton)sender;
+            AlertBox.Show($"{appButton.Text} Clicked");
         }
 
         private void ribbonBar_ToolClick(object sender, ToolClickEventArgs e)

@@ -5,12 +5,13 @@ using Wisej.Web;
 
 namespace Wisej.DemoBrowser.Pannellum
 {
-    public partial class Features : DemoView
+    public partial class HotSpots : DemoView
     {
-        public Features()
+        public HotSpots()
         {
             InitializeComponent();
         }
+
         private void pannellum_WidgetEvent(object sender, WidgetEventArgs e)
         {
             if (e.Type == "hotspot")

@@ -119,7 +119,7 @@
             this.flowLayoutPanelExamples.ShowHeader = true;
             this.flowLayoutPanelExamples.Size = new System.Drawing.Size(40, 474);
             this.flowLayoutPanelExamples.TabIndex = 9;
-            this.flowLayoutPanelExamples.Text = "Examples";
+            this.flowLayoutPanelExamples.Text = "Screenshot";
             // 
             // btnCaptureChart
             // 

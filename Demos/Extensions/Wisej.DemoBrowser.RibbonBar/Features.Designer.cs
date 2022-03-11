@@ -84,12 +84,14 @@ namespace Wisej.DemoBrowser.RibbonBar
             this.ribbonBar.Pages.Add(this.ribbonBarPage1);
             this.ribbonBar.Pages.Add(this.ribbonBarPage2);
             this.ribbonBar.Pages.Add(this.ribbonBarPage3);
-            this.ribbonBar.Size = new System.Drawing.Size(1422, 157);
+            this.ribbonBar.Size = new System.Drawing.Size(1422, 211);
             componentTool1.ImageSource = "messagebox-question?color=#3600FF";
             componentTool1.Name = "Help";
             componentTool1.Position = Wisej.Web.LeftRightAlignment.Left;
+            componentTool1.ToolTipText = "Help";
             componentTool2.ImageSource = "icon-settings?color=#FF1700";
             componentTool2.Name = "Settings";
+            componentTool2.ToolTipText = "Settings";
             this.ribbonBar.Tools.AddRange(new Wisej.Web.ComponentTool[] {
             componentTool1,
             componentTool2});
@@ -241,6 +243,7 @@ namespace Wisej.DemoBrowser.RibbonBar
             // 
             // ribbonBarItemTextBox1
             // 
+            this.ribbonBarItemTextBox1.FieldWidth = 200;
             this.ribbonBarItemTextBox1.ImageSource = "icon-settings?color=#3FBF47";
             this.ribbonBarItemTextBox1.Name = "ribbonBarItemTextBox1";
             this.ribbonBarItemTextBox1.Text = "Profile Name";
@@ -248,12 +251,14 @@ namespace Wisej.DemoBrowser.RibbonBar
             // 
             // ribbonBarItemTextBox2
             // 
+            this.ribbonBarItemTextBox2.FieldWidth = 200;
             this.ribbonBarItemTextBox2.ImageSource = "icon-settings?color=#3FBF47";
             this.ribbonBarItemTextBox2.Name = "ribbonBarItemTextBox2";
             this.ribbonBarItemTextBox2.Text = "Unique ID";
             // 
             // ribbonBarItemComboBox1
             // 
+            this.ribbonBarItemComboBox1.FieldWidth = 200;
             this.ribbonBarItemComboBox1.ImageSource = "menu-overflow?color=#DF00FF";
             this.ribbonBarItemComboBox1.Name = "ribbonBarItemComboBox1";
             this.ribbonBarItemComboBox1.Text = "User Level";

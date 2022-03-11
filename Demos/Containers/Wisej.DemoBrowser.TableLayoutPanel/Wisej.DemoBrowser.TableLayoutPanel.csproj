@@ -52,6 +52,9 @@
     <PackageReference Include="Wisej-2-ChartJS3">
       <Version>2.5.*-*</Version>
     </PackageReference>
+    <PackageReference Include="Wisej-2-jQueryKnob">
+      <Version>2.5.29</Version>
+    </PackageReference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\..\Wisej.DemoBrowser.Common\Wisej.DemoBrowser.Common.csproj">

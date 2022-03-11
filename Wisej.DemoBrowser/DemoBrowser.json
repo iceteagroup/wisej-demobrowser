@@ -319,7 +319,7 @@
 			"Features": {
 				"sourceUrl":
 					"https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Containers/Wisej.DemoBrowser.TableLayoutPanel",
-				"assembly": "Features, Wisej.DemoBrowser.TableLayoutPanel.dll",
+				"assembly": "Features2, Wisej.DemoBrowser.TableLayoutPanel.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/TableLayoutPanel.svg",
 				"docsUrl": "https://docs.wisej.com/docs/controls/containers/tablelayoutpanel",
 				"description-en":
@@ -946,6 +946,34 @@
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/ImageSlideshow.svg",
 				"docsUrl": "https://docs.wisej.com/extensions/pannellum",
 				"description-en": "The <b>Wisej.Web.Ext.Pannellum</b> extension component uses the Pannellum library. Pannellum is a lightweight, free, and open source panorama viewer for the web."
+			},
+			"Auto Rotate": {
+				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Extensions/Wisej.DemoBrowser.Pannellum",
+				"assembly": "AutoRotate, Wisej.DemoBrowser.Pannellum.dll",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/ImageSlideshow.svg",
+				"docsUrl": "https://docs.wisej.com/extensions/pannellum",
+				"description-en": "Once the panorama has been loaded, make it rotate automatically."
+			},
+			"Cube Map": {
+				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Extensions/Wisej.DemoBrowser.Pannellum",
+				"assembly": "CubeMap, Wisej.DemoBrowser.Pannellum.dll",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/ImageSlideshow.svg",
+				"docsUrl": "https://docs.wisej.com/extensions/pannellum",
+				"description-en": "Show a panoramic of a cube map"
+			},
+			"Hot Spots": {
+				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Extensions/Wisej.DemoBrowser.Pannellum",
+				"assembly": "HotSpots, Wisej.DemoBrowser.Pannellum.dll",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/ImageSlideshow.svg",
+				"docsUrl": "https://docs.wisej.com/extensions/pannellum",
+				"description-en": "Hot spots can be used to display additional information on the panorama."
+			},
+			"Multiresolution": {
+				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Extensions/Wisej.DemoBrowser.Pannellum",
+				"assembly": "Multires, Wisej.DemoBrowser.Pannellum.dll",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/ImageSlideshow.svg",
+				"docsUrl": "https://docs.wisej.com/extensions/pannellum",
+				"description-en": "You can display a high resolution panoramas with the <b>Multiresolution</b> feature"
 			}
 		},
 		"Premium": {
