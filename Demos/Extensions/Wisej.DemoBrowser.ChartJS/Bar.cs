@@ -15,7 +15,7 @@ namespace Wisej.DemoBrowser.ChartJS
 			InitializeComponent();
 		}
 
-		private void Scatter_Load(object sender, EventArgs e)
+		private void Bar_Load(object sender, EventArgs e)
 		{
 			AddDataSet();
 		}
@@ -54,5 +54,7 @@ namespace Wisej.DemoBrowser.ChartJS
 			if (dataSetCount > 0)
 				chartJS1.DataSets.RemoveAt(dataSetCount - 1);
 		}
-	}
+
+        
+    }
 }

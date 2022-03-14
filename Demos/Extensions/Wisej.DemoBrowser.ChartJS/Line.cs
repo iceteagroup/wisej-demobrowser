@@ -15,7 +15,7 @@ namespace Wisej.DemoBrowser.ChartJS
 			InitializeComponent();
 		}
 
-		private void Scatter_Load(object sender, EventArgs e)
+		private void Line_Load(object sender, EventArgs e)
 		{
 			AddDataSet();
 		}

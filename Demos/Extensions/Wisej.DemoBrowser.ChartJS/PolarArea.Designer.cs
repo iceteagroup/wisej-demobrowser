@@ -40,7 +40,7 @@
             this.buttonAdd.Name = "buttonAdd";
             this.buttonAdd.Size = new System.Drawing.Size(168, 37);
             this.buttonAdd.TabIndex = 1;
-            this.buttonAdd.Text = "Add DataSet";
+            this.buttonAdd.Text = "Add Data";
             this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
             // 
             // button1
@@ -50,7 +50,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(168, 37);
             this.button1.TabIndex = 2;
-            this.button1.Text = "Remove DataSet";
+            this.button1.Text = "Remove Data";
             this.button1.Click += new System.EventHandler(this.buttonRemove_Click);
             // 
             // chartJS1
@@ -58,7 +58,10 @@
             this.chartJS1.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
             | Wisej.Web.AnchorStyles.Left) 
             | Wisej.Web.AnchorStyles.Right)));
+            this.chartJS1.AppearanceKey = "chartjs";
             this.chartJS1.ChartType = Wisej.Web.Ext.ChartJS.ChartType.PolarArea;
+            this.chartJS1.Labels = new string[] {
+        "Value 1"};
             this.chartJS1.Location = new System.Drawing.Point(409, 43);
             this.chartJS1.Name = "chartJS1";
             this.chartJS1.Options.DataLabel.BackgroundColor = System.Drawing.Color.Empty;
@@ -70,7 +73,7 @@
             this.chartJS1.Options.DataLabel.TextStrokeColor = System.Drawing.Color.Empty;
             this.chartJS1.Size = new System.Drawing.Size(604, 389);
             this.chartJS1.TabIndex = 3;
-            this.chartJS1.Text = "chartJS1";
+            this.chartJS1.Text = "Polar Area Chart";
             this.chartJS1.ChartClick += new Wisej.Web.Ext.ChartJS.ChartClickEventHandler(this.chartJS1_ChartClick);
             // 
             // PolarArea
@@ -80,7 +83,7 @@
             this.Controls.Add(this.buttonAdd);
             this.MinimumSize = new System.Drawing.Size(1422, 474);
             this.Name = "PolarArea";
-            this.Load += new System.EventHandler(this.Scatter_Load);
+            this.Load += new System.EventHandler(this.PolarArea_Load);
             this.ResumeLayout(false);
 
         }

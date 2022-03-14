@@ -80,7 +80,7 @@
             this.Controls.Add(this.chartJS1);
             this.MinimumSize = new System.Drawing.Size(1422, 474);
             this.Name = "Doughnut";
-            this.Load += new System.EventHandler(this.Scatter_Load);
+            this.Load += new System.EventHandler(this.Doughnut_Load);
             this.ResumeLayout(false);
 
 		}

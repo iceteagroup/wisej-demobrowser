@@ -80,7 +80,7 @@
             this.Controls.Add(this.buttonAdd);
             this.MinimumSize = new System.Drawing.Size(1422, 474);
             this.Name = "Radar";
-            this.Load += new System.EventHandler(this.Scatter_Load);
+            this.Load += new System.EventHandler(this.Radar_Load);
             this.ResumeLayout(false);
 
         }

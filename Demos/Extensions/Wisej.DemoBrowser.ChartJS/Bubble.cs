@@ -15,29 +15,29 @@ namespace Wisej.DemoBrowser.ChartJS
 			InitializeComponent();
 		}
 
-		private void Scatter_Load(object sender, EventArgs e)
+		private void Bubble_Load(object sender, EventArgs e)
 		{
 			AddDataSet();
 		}
 
 		private void AddDataSet()
 		{
-			this.chartJS1.DataSets.Add(new DataSet()
+			chartJS1.DataSets.Add(new DataSet()
 			{
-				Label = $"Bubble Data Set {this.chartJS1.DataSets.Count + 1}",
+				Label = $"Bubble Data Set {chartJS1.DataSets.Count + 1}",
 				Data = new[]
 				{
-					new { r = rand.Next(50) ,x = rand.Next(100), y = rand.Next(100) },
-					new {  r = rand.Next(50) ,x = rand.Next(100), y = rand.Next(100) },
-					new { r = rand.Next(50) , x = rand.Next(100), y = rand.Next(100) },
-					new { r = rand.Next(50) , x = rand.Next(100), y = rand.Next(100) },
-					new {  r = rand.Next(50) ,x = rand.Next(100), y = rand.Next(100) },
-					new { r = rand.Next(50) , x = rand.Next(100), y = rand.Next(100) },
-					new { r = rand.Next(50) ,x = rand.Next(100), y = rand.Next(100) },
-					new { r = rand.Next(50) , x = rand.Next(100), y = rand.Next(100) },
-					new { r = rand.Next(50) , x = rand.Next(100), y = rand.Next(100) },
-					new {  r = rand.Next(50) ,x = rand.Next(100), y = rand.Next(100) },
-					new {  r = rand.Next(50) ,x = rand.Next(100), y = rand.Next(100) },
+					new {x = rand.Next(100), y = rand.Next(100)},
+					new {x = rand.Next(100), y = rand.Next(100)},
+					new {x = rand.Next(100), y = rand.Next(100)},
+					new {x = rand.Next(100), y = rand.Next(100)},
+					new {x = rand.Next(100), y = rand.Next(100)},
+					new {x = rand.Next(100), y = rand.Next(100)},
+					new {x = rand.Next(100), y = rand.Next(100)},
+					new {x = rand.Next(100), y = rand.Next(100)},
+					new {x = rand.Next(100), y = rand.Next(100)},
+					new {x = rand.Next(100), y = rand.Next(100)},
+					new {x = rand.Next(100), y = rand.Next(100)}
 				},
 				BackgroundColor = Color.FromArgb(rand.Next(255), rand.Next(255), rand.Next(255))
 			});
@@ -50,14 +50,14 @@ namespace Wisej.DemoBrowser.ChartJS
 
 		private void chartJS1_ChartClick(object sender, ChartClickEventArgs e)
 		{
-			AlertBox.Show($"{((Control)sender).Text}: {e.SelectedValue}");
+			AlertBox.Show($"{((Control) sender).Text}: {e.SelectedValue}");
 		}
 
 		private void buttonRemove_Click(object sender, EventArgs e)
 		{
-			var dataSetCount = this.chartJS1.DataSets.Count;
+			var dataSetCount = chartJS1.DataSets.Count;
 			if (dataSetCount > 0)
-				this.chartJS1.DataSets.RemoveAt(dataSetCount - 1);	
+				chartJS1.DataSets.RemoveAt(dataSetCount - 1);
 		}
 	}
 }

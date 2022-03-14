@@ -15,7 +15,7 @@ namespace Wisej.DemoBrowser.ChartJS
 			InitializeComponent();
 		}
 
-		private void Scatter_Load(object sender, EventArgs e)
+		private void Radar_Load(object sender, EventArgs e)
 		{
 			AddDataSet();
 
@@ -23,7 +23,7 @@ namespace Wisej.DemoBrowser.ChartJS
 			string[] labels = new string[12];
 			for (int i = 0; i < 12; i++)
 			{
-				labels[i] = $"Value {i}";
+				labels[i] = $"Value {i+1}";
 			}
 
 			this.chartJS1.Labels = labels;
@@ -36,7 +36,7 @@ namespace Wisej.DemoBrowser.ChartJS
 			{
 				Label = $"Radar Data Set {this.chartJS1.DataSets.Count + 1}",
 				Data = GenerateData() ,
-				BackgroundColor = Color.FromArgb(rand.Next(255), rand.Next(255), rand.Next(255))
+				BackgroundColor = Color.FromArgb(50,rand.Next(255), rand.Next(255), rand.Next(255))
 			});
 		}
 
