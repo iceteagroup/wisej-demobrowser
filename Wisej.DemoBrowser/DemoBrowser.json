@@ -407,7 +407,15 @@
 					"The <b>Wisej.Web.ToolBar</b> control is used on forms as a control bar that displays a row of drop-down menus and bitmapped buttons that activate commands."
 			}
 		},
-		"Embedded Tools": {},
+		"Embedded Tools": {
+			"Features": {
+				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/ToolsAndMenus/Wisej.DemoBrowser.EmbeddedTools",
+				"assembly": "Features, Wisej.DemoBrowser.EmbeddedTools.dll",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/ToolstripAlignment.svg",
+				"docsUrl": "https://docs.wisej.com/docs/controls/containers/statusbar",
+				"description-en": "Tool buttons can be placed to the left or right of the target control, be enabled or disabled, auto-hide when the control loses focus, be always hidden, toggled on or off, and have their own tooltip."
+			}
+		},
 		"StatusBar": {
 			"Features": {
 				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos",
