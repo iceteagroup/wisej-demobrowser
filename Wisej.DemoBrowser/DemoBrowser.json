@@ -807,7 +807,7 @@
 				"docsUrl": "https://docs.wisej.com/extensions/extensions/chartjs",
 				"description-en": "A radar chart is a visual representation of several data points and their fluctuation. They're frequently used to compare the points of two or more data sets."
 			},
-			"PolarArea": {
+			"Polar Area": {
 				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Extensions/Wisej.DemoBrowser.ChartJS",
 				"assembly": "PolarArea, Wisej.DemoBrowser.ChartJS.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/Report.svg",
