@@ -37,6 +37,42 @@
     <Reference Include="Microsoft.CSharp" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Line.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Line.Designer.cs">
+      <DependentUpon>Line.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Bar.Designer.cs">
+      <DependentUpon>Bar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Radar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Radar.Designer.cs">
+      <DependentUpon>Radar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PolarArea.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PolarArea.Designer.cs">
+      <DependentUpon>PolarArea.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pie.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pie.Designer.cs">
+      <DependentUpon>Pie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Doughnut.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Doughnut.Designer.cs">
+      <DependentUpon>Doughnut.cs</DependentUpon>
+    </Compile>
     <Compile Include="Features.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -44,6 +80,12 @@
       <DependentUpon>Features.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Bubble.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Bubble.Designer.cs">
+      <DependentUpon>Bubble.cs</DependentUpon>
+    </Compile>
     <Compile Include="Scatter.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -66,8 +108,29 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Line.resx">
+      <DependentUpon>Line.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bar.resx">
+      <DependentUpon>Bar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Radar.resx">
+      <DependentUpon>Radar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PolarArea.resx">
+      <DependentUpon>PolarArea.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pie.resx">
+      <DependentUpon>Pie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Doughnut.resx">
+      <DependentUpon>Doughnut.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Features.resx">
       <DependentUpon>Features.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bubble.resx">
+      <DependentUpon>Bubble.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Scatter.resx">
       <DependentUpon>Scatter.cs</DependentUpon>

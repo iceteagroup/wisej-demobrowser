@@ -78,5 +78,8 @@
     <Content Include="Images\Clear-3.png" />
     <Content Include="Images\Material-3.png" />
   </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Themes\RibbonBar.mixin.theme" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

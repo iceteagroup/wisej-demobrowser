@@ -50,7 +50,6 @@
     <EmbeddedResource Include="Themes\DemoBrowser.mixin.theme" />
     <Content Include="DemoBrowser.json" />
     <EmbeddedResource Include="Themes\IconsListView.mixin.theme" />
-    <EmbeddedResource Include="Themes\RibbonBar.mixin.theme" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
