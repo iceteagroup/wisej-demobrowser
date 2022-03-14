@@ -280,7 +280,7 @@ namespace Wisej.DemoBrowser
 
 		private void buttonContact_Click(object sender, EventArgs e)
 		{
-			Application.Navigate("https://www.wisej.com/contact", "_blank");
+			Application.Navigate("https://www.wisej.com/contact-us", "_blank");
 		}
 
 		private void buttonFreeTrial_Click(object sender, EventArgs e)
