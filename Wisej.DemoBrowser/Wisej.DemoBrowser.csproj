@@ -47,8 +47,8 @@
     <Content Include="Default.html" />
     <Content Include="Default.json" />
     <Content Include="favicon.ico" />
-    <EmbeddedResource Include="Themes\DemoBrowser.mixin.theme" />
     <Content Include="DemoBrowser.json" />
+    <EmbeddedResource Include="Themes\DemoBrowser.mixin.theme" />
     <EmbeddedResource Include="Themes\IconsListView.mixin.theme" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
