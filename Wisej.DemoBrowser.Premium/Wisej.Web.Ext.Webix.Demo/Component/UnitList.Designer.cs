@@ -28,26 +28,33 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UnitList));
-			this.unitList1 = new Wisej.Web.Ext.Webix.UnitList();
-			this.SuspendLayout();
-			// 
-			// unitList1
-			// 
-			this.unitList1.Anchor = Wisej.Web.AnchorStyles.None;
-			this.unitList1.Location = new System.Drawing.Point(515, 38);
-			this.unitList1.Name = "unitList1";
-			this.unitList1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("unitList1.Options"))));
-			this.unitList1.Size = new System.Drawing.Size(500, 400);
-			this.unitList1.TabIndex = 11;
-			this.unitList1.Text = "unitList1";
-			// 
-			// UnitList
-			// 
-			this.Controls.Add(this.unitList1);
-			this.Name = "UnitList";
-			this.Controls.SetChildIndex(this.unitList1, 0);
-			this.ResumeLayout(false);
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UnitList));
+            this.unitList1 = new Wisej.Web.Ext.Webix.UnitList();
+            this.groupBox1.SuspendLayout();
+            this.panel.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // panel
+            // 
+            this.panel.Controls.Add(this.unitList1);
+            // 
+            // unitList1
+            // 
+            this.unitList1.Anchor = Wisej.Web.AnchorStyles.None;
+            this.unitList1.Location = new System.Drawing.Point(294, 79);
+            this.unitList1.Name = "unitList1";
+            this.unitList1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("unitList1.Options"))));
+            this.unitList1.Size = new System.Drawing.Size(500, 400);
+            this.unitList1.TabIndex = 11;
+            this.unitList1.Text = "unitList1";
+            // 
+            // UnitList
+            // 
+            this.Name = "UnitList";
+            this.groupBox1.ResumeLayout(false);
+            this.panel.ResumeLayout(false);
+            this.ResumeLayout(false);
+            this.PerformLayout();
 
 		}
 

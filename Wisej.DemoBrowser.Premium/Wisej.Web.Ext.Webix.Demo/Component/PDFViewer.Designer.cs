@@ -28,26 +28,31 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.pdfViewer1 = new Wisej.Web.Ext.Webix.PDFViewer();
-			this.SuspendLayout();
-			// 
-			// pdfViewer1
-			// 
-			this.pdfViewer1.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
-            | Wisej.Web.AnchorStyles.Left) 
-            | Wisej.Web.AnchorStyles.Right)));
-			this.pdfViewer1.Location = new System.Drawing.Point(415, 38);
-			this.pdfViewer1.Name = "pdfViewer1";
-			this.pdfViewer1.Size = new System.Drawing.Size(700, 400);
-			this.pdfViewer1.TabIndex = 0;
-			this.pdfViewer1.Text = "pdfViewer1";
-			// 
-			// PDFViewer
-			// 
-			this.Controls.Add(this.pdfViewer1);
-			this.Name = "PDFViewer";
-			this.Controls.SetChildIndex(this.pdfViewer1, 0);
-			this.ResumeLayout(false);
+            this.pdfViewer1 = new Wisej.Web.Ext.Webix.PDFViewer();
+            this.groupBox1.SuspendLayout();
+            this.panel.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // panel
+            // 
+            this.panel.Controls.Add(this.pdfViewer1);
+            // 
+            // pdfViewer1
+            // 
+            this.pdfViewer1.Dock = Wisej.Web.DockStyle.Fill;
+            this.pdfViewer1.Location = new System.Drawing.Point(8, 8);
+            this.pdfViewer1.Name = "pdfViewer1";
+            this.pdfViewer1.Size = new System.Drawing.Size(1073, 542);
+            this.pdfViewer1.TabIndex = 0;
+            this.pdfViewer1.Text = "pdfViewer1";
+            // 
+            // PDFViewer
+            // 
+            this.Name = "PDFViewer";
+            this.groupBox1.ResumeLayout(false);
+            this.panel.ResumeLayout(false);
+            this.ResumeLayout(false);
+            this.PerformLayout();
 
 		}
 

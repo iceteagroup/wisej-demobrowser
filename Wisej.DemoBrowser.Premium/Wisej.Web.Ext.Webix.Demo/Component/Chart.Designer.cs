@@ -28,26 +28,33 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Chart));
-			this.chart1 = new Wisej.Web.Ext.Webix.Chart();
-			this.SuspendLayout();
-			// 
-			// chart1
-			// 
-			this.chart1.Anchor = Wisej.Web.AnchorStyles.None;
-			this.chart1.Location = new System.Drawing.Point(515, 38);
-			this.chart1.Name = "chart1";
-			this.chart1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("chart1.Options"))));
-			this.chart1.Size = new System.Drawing.Size(500, 400);
-			this.chart1.TabIndex = 0;
-			this.chart1.Text = "chart1";
-			// 
-			// Chart
-			// 
-			this.Controls.Add(this.chart1);
-			this.Name = "Chart";
-			this.Controls.SetChildIndex(this.chart1, 0);
-			this.ResumeLayout(false);
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Chart));
+            this.chart1 = new Wisej.Web.Ext.Webix.Chart();
+            this.groupBox1.SuspendLayout();
+            this.panel.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // panel
+            // 
+            this.panel.Controls.Add(this.chart1);
+            // 
+            // chart1
+            // 
+            this.chart1.Anchor = Wisej.Web.AnchorStyles.None;
+            this.chart1.Location = new System.Drawing.Point(294, 79);
+            this.chart1.Name = "chart1";
+            this.chart1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("chart1.Options"))));
+            this.chart1.Size = new System.Drawing.Size(500, 400);
+            this.chart1.TabIndex = 0;
+            this.chart1.Text = "chart1";
+            // 
+            // Chart
+            // 
+            this.Name = "Chart";
+            this.groupBox1.ResumeLayout(false);
+            this.panel.ResumeLayout(false);
+            this.ResumeLayout(false);
+            this.PerformLayout();
 
 		}
 

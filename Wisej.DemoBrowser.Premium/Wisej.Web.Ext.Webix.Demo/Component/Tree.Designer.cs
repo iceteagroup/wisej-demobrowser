@@ -28,26 +28,33 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Tree));
-			this.tree1 = new Wisej.Web.Ext.Webix.Tree();
-			this.SuspendLayout();
-			// 
-			// tree1
-			// 
-			this.tree1.Anchor = Wisej.Web.AnchorStyles.None;
-			this.tree1.Location = new System.Drawing.Point(639, 121);
-			this.tree1.Name = "tree1";
-			this.tree1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("tree1.Options"))));
-			this.tree1.Size = new System.Drawing.Size(253, 235);
-			this.tree1.TabIndex = 0;
-			this.tree1.Text = "tree1";
-			// 
-			// Tree
-			// 
-			this.Controls.Add(this.tree1);
-			this.Name = "Tree";
-			this.Controls.SetChildIndex(this.tree1, 0);
-			this.ResumeLayout(false);
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Tree));
+            this.tree1 = new Wisej.Web.Ext.Webix.Tree();
+            this.panel.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // panel
+            // 
+            this.panel.Controls.Add(this.tree1);
+            // 
+            // tree1
+            // 
+            this.tree1.Anchor = Wisej.Web.AnchorStyles.None;
+            this.tree1.Location = new System.Drawing.Point(418, 162);
+            this.tree1.Name = "tree1";
+            this.tree1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("tree1.Options"))));
+            this.tree1.Size = new System.Drawing.Size(253, 235);
+            this.tree1.TabIndex = 0;
+            this.tree1.Text = "tree1";
+            // 
+            // Tree
+            // 
+            this.Name = "Tree";
+            this.panel.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
+            this.ResumeLayout(false);
+            this.PerformLayout();
 
 		}
 

@@ -8,13 +8,17 @@
 // style a new component.
 //
 {
-	//"name": "Webix",
+	//"name": "EJ2",
 
 	"colors": {
-		"webixPurple": "#733A86"
+		"combo-background-demo": "#F1F4F5",
+		"webix-purple": "#7F3695",
+		"highlightText-demo": "#0038A0",
+		"hotTrack-demo": "#DEE1E2",
+		"panel-background-demo": "#F3F5F5"
 	},
 
-	"fonts": {
+"fonts": {
 		"default": {
 			"size": 16,
 			"family": [ "Open Sans" ],
@@ -35,8 +39,8 @@
 				}
 			]
 		},
-		"windowTitle": {
-			"size": 36,
+		"menuDemo": {
+			"size": 20,
 			"family": [ "Open Sans Condensed" ],
 			"sources": [
 				{
@@ -56,49 +60,165 @@
 		}
 	},
 
-	//"images":
-	//{
-	//},
+	"images": {
+		"combo-arrow-demo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACZSURBVEhLYxgFo2AUjIJRMOgBI5TGCbwDYqcDqQwIj2iwH4hdt25Y/BfCxQRMUBofyALiGRAmUQBkqQ8+S0GAGUrjBLdvXGJQ09DfBmSKA7EJWBA3gFn6DcLFDQhaDAJEWk60pSBAlMUgQMBykiwFAaItBgEclpNsKQiQZDEIoFn+GYhJtpRiAMxqBLPjKBgFo2AUDBfAwAAAlbk0WgB5Ds4AAAAASUVORK5CYII="
+	},
 
 	"appearances": {
-		"panel": {
+		"combobox-demo": {
+			"inherit": "combobox",
+			"states": {
+				"default": {
+					"styles": {
+						"radius": [ 0, 0, 0, 0 ]
+					},
+					"properties": {
+						"padding": [ 0, 0, 0, 14 ],
+						"backgroundColor": "combo-background-demo",
+						"font": "default"
+					}
+				}
+			},
+			"components": {
+				"button": {
+					"states": {
+						"default": {
+							"properties": {
+								"icon": "combo-arrow-demo",
+								"width": 30
+							}
+						},
+						"hovered": {
+							"styles": {
+								"backgroundColor": "hotTrack-demo"
+							}
+						}
+					},
+					"components": {
+						"icon": {
+							"states": {
+								"default": {
+									"properties": {
+										"height": 30,
+										"width": 30
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		},
+		"listitem": {
+			"inherit": "listitem",
+			"states": {
+				"default": {
+					"properties": {
+						"font": "default"
+					}
+				},
+				"hovered": {
+					"properties": {
+						"backgroundColor": "transparent"
+					}
+				},
+				"selected": {
+					"properties": {
+						"font": "defaultBold",
+						"textColor": "webix-purple",
+						"backgroundColor": "transparent"
+					}
+				}
+			}
+		},
+		"panel-demo": {
 			"inherit": "panel",
+			"states": {
+				"default": {
+					"styles": {
+						"radius": "0"
+					},
+					"properties": {
+						"textColor": "white"
+					}
+				}
+			},
 			"components": {
 				"pane": {
 					"inherit": "scrollarea"
 				},
 				"captionbar": {
-					"text": "CaptionBar",
 					"states": {
 						"default": {
 							"styles": {
 								"radius": 0,
-								"backgroundColor": "activeCaption"
-							},
-							"properties": {
-								"textColor": "activeCaptionText"
+								"backgroundColor": "webix-purple"
 							}
-						},
-						"horizontal": {
+						}
+					}
+				},
+				"close-button": {
+					"states": {
+						"default": {
 							"properties": {
-								"height": 28
+								"icon": "icon-left",
+								"cursor": "pointer",
+								"opacity": 0.5,
+								"alignX": "center",
+								"alignY": "middle",
+								"margin": [ 0, 10, 0, 10 ],
+								"width": 24,
+								"height": 24
 							},
 							"styles": {
-								"radius": 0
 							}
 						},
 						"vertical": {
 							"properties": {
-								"width": 28
+								"margin": [ 10, 0, 10, 0 ]
 							},
 							"styles": {
-								"radius": 0
+							}
+						},
+						"collapsed": {
+							"properties": {
+								"icon": "icon-down"
+							},
+							"styles": {
+							}
+						},
+						"hovered": {
+							"properties": {
+								"opacity": 1
+							},
+							"styles": {
+							}
+						}
+					},
+					"components": {
+						"icon": {
+							"inherit": "icon-light",
+							"states": {
+								"default": {
+									"properties": {
+										"width": 24,
+										"height": 24
+									},
+									"styles": {
+									}
+								}
 							}
 						}
 					}
 				},
 				"title": {
+					"inherit": "panel/title",
 					"states": {
+						"horizontal": {
+							"properties": {
+								"padding": [ 0, 0, 0, 45 ]
+							}
+						},
 						"barLeft": {
 							"properties": {
 								"margin": [ 10, 0, 20, 0 ]

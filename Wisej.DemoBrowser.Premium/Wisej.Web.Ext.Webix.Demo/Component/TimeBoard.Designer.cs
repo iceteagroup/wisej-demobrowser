@@ -28,24 +28,31 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.timeBoard1 = new Wisej.Web.Ext.Webix.TimeBoard();
-			this.SuspendLayout();
-			// 
-			// timeBoard1
-			// 
-			this.timeBoard1.Anchor = Wisej.Web.AnchorStyles.None;
-			this.timeBoard1.Location = new System.Drawing.Point(515, 147);
-			this.timeBoard1.Name = "timeBoard1";
-			this.timeBoard1.Size = new System.Drawing.Size(500, 183);
-			this.timeBoard1.TabIndex = 11;
-			this.timeBoard1.Text = "timeBoard1";
-			// 
-			// TimeBoard
-			// 
-			this.Controls.Add(this.timeBoard1);
-			this.Name = "TimeBoard";
-			this.Controls.SetChildIndex(this.timeBoard1, 0);
-			this.ResumeLayout(false);
+            this.timeBoard1 = new Wisej.Web.Ext.Webix.TimeBoard();
+            this.panel.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // panel
+            // 
+            this.panel.Controls.Add(this.timeBoard1);
+            // 
+            // timeBoard1
+            // 
+            this.timeBoard1.Anchor = Wisej.Web.AnchorStyles.None;
+            this.timeBoard1.Location = new System.Drawing.Point(294, 188);
+            this.timeBoard1.Name = "timeBoard1";
+            this.timeBoard1.Size = new System.Drawing.Size(500, 183);
+            this.timeBoard1.TabIndex = 11;
+            this.timeBoard1.Text = "timeBoard1";
+            // 
+            // TimeBoard
+            // 
+            this.Name = "TimeBoard";
+            this.panel.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
+            this.ResumeLayout(false);
+            this.PerformLayout();
 
 		}
 

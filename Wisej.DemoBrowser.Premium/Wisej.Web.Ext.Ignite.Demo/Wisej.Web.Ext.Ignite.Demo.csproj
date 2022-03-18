@@ -354,9 +354,8 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
     <Reference Include="System.Windows.Forms" />
-    <Reference Include="Wisej.Web.Ext.Ignite, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\Wisej\Extensions\Premium\2.5\Wisej.Web.Ext.Ignite\Wisej.Web.Ext.Ignite\bin\Debug\Wisej.Web.Ext.Ignite.dll</HintPath>
+    <Reference Include="Wisej.Web.Ext.Ignite">
+      <HintPath>..\..\..\..\..\..\Wisej\Extensions\Premium\2.5\bin\Wisej.Web.Ext.Ignite.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

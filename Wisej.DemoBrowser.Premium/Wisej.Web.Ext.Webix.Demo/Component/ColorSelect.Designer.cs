@@ -28,24 +28,31 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.colorSelect1 = new Wisej.Web.Ext.Webix.ColorSelect();
-			this.SuspendLayout();
-			// 
-			// colorSelect1
-			// 
-			this.colorSelect1.Anchor = Wisej.Web.AnchorStyles.None;
-			this.colorSelect1.Location = new System.Drawing.Point(515, 38);
-			this.colorSelect1.Name = "colorSelect1";
-			this.colorSelect1.Size = new System.Drawing.Size(500, 400);
-			this.colorSelect1.TabIndex = 0;
-			this.colorSelect1.Text = "colorSelect1";
-			// 
-			// ColorSelect
-			// 
-			this.Controls.Add(this.colorSelect1);
-			this.Name = "ColorSelect";
-			this.Controls.SetChildIndex(this.colorSelect1, 0);
-			this.ResumeLayout(false);
+            this.colorSelect1 = new Wisej.Web.Ext.Webix.ColorSelect();
+            this.groupBox1.SuspendLayout();
+            this.panel.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // panel
+            // 
+            this.panel.Controls.Add(this.colorSelect1);
+            // 
+            // colorSelect1
+            // 
+            this.colorSelect1.Anchor = Wisej.Web.AnchorStyles.None;
+            this.colorSelect1.Location = new System.Drawing.Point(294, 79);
+            this.colorSelect1.Name = "colorSelect1";
+            this.colorSelect1.Size = new System.Drawing.Size(500, 400);
+            this.colorSelect1.TabIndex = 0;
+            this.colorSelect1.Text = "colorSelect1";
+            // 
+            // ColorSelect
+            // 
+            this.Name = "ColorSelect";
+            this.groupBox1.ResumeLayout(false);
+            this.panel.ResumeLayout(false);
+            this.ResumeLayout(false);
+            this.PerformLayout();
 
 		}
 

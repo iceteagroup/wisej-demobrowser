@@ -28,26 +28,33 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GeoChart));
-			this.geoChart1 = new Wisej.Web.Ext.Webix.GeoChart();
-			this.SuspendLayout();
-			// 
-			// geoChart1
-			// 
-			this.geoChart1.Anchor = Wisej.Web.AnchorStyles.None;
-			this.geoChart1.Location = new System.Drawing.Point(515, 38);
-			this.geoChart1.Name = "geoChart1";
-			this.geoChart1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("geoChart1.Options"))));
-			this.geoChart1.Size = new System.Drawing.Size(500, 400);
-			this.geoChart1.TabIndex = 0;
-			this.geoChart1.Text = "geoChart1";
-			// 
-			// GeoChart
-			// 
-			this.Controls.Add(this.geoChart1);
-			this.Name = "GeoChart";
-			this.Controls.SetChildIndex(this.geoChart1, 0);
-			this.ResumeLayout(false);
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GeoChart));
+            this.geoChart1 = new Wisej.Web.Ext.Webix.GeoChart();
+            this.groupBox1.SuspendLayout();
+            this.panel.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // panel
+            // 
+            this.panel.Controls.Add(this.geoChart1);
+            // 
+            // geoChart1
+            // 
+            this.geoChart1.Anchor = Wisej.Web.AnchorStyles.None;
+            this.geoChart1.Location = new System.Drawing.Point(294, 79);
+            this.geoChart1.Name = "geoChart1";
+            this.geoChart1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("geoChart1.Options"))));
+            this.geoChart1.Size = new System.Drawing.Size(500, 400);
+            this.geoChart1.TabIndex = 0;
+            this.geoChart1.Text = "geoChart1";
+            // 
+            // GeoChart
+            // 
+            this.Name = "GeoChart";
+            this.groupBox1.ResumeLayout(false);
+            this.panel.ResumeLayout(false);
+            this.ResumeLayout(false);
+            this.PerformLayout();
 
 		}
 

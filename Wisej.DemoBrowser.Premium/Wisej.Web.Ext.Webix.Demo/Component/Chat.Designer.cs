@@ -28,32 +28,34 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.chat1 = new Wisej.Web.Ext.Webix.Chat();
-			this.SuspendLayout();
-			// 
-			// flowLayoutPanelExamples
-			// 
-			this.flowLayoutPanelExamples.Enabled = false;
-			// 
-			// chat1
-			// 
-			this.chat1.Dock = Wisej.Web.DockStyle.Fill;
-			this.chat1.Enabled = false;
-			this.chat1.Location = new System.Drawing.Point(42, 0);
-			this.chat1.Name = "chat1";
-			this.chat1.Size = new System.Drawing.Size(1488, 477);
-			this.chat1.TabIndex = 11;
-			this.chat1.Text = "chat1";
-			this.chat1.WebRequest += new Wisej.Web.WebRequestHandler(this.chat1_WebRequest);
-			// 
-			// Chat
-			// 
-			this.Controls.Add(this.chat1);
-			this.Name = "Chat";
-			this.Load += new System.EventHandler(this.Chat_Load);
-			this.Controls.SetChildIndex(this.flowLayoutPanelExamples, 0);
-			this.Controls.SetChildIndex(this.chat1, 0);
-			this.ResumeLayout(false);
+            this.chat1 = new Wisej.Web.Ext.Webix.Chat();
+            this.groupBox1.SuspendLayout();
+            this.panel.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // panel
+            // 
+            this.panel.Controls.Add(this.chat1);
+            // 
+            // chat1
+            // 
+            this.chat1.Dock = Wisej.Web.DockStyle.Fill;
+            this.chat1.Enabled = false;
+            this.chat1.Location = new System.Drawing.Point(8, 8);
+            this.chat1.Name = "chat1";
+            this.chat1.Size = new System.Drawing.Size(1073, 542);
+            this.chat1.TabIndex = 11;
+            this.chat1.Text = "chat1";
+            this.chat1.WebRequest += new Wisej.Web.WebRequestHandler(this.chat1_WebRequest);
+            // 
+            // Chat
+            // 
+            this.Name = "Chat";
+            this.Load += new System.EventHandler(this.Chat_Load);
+            this.groupBox1.ResumeLayout(false);
+            this.panel.ResumeLayout(false);
+            this.ResumeLayout(false);
+            this.PerformLayout();
 
 		}
 

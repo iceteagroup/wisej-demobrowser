@@ -28,24 +28,31 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.dashboard1 = new Wisej.Web.Ext.Webix.Dashboard();
-			this.SuspendLayout();
-			// 
-			// dashboard1
-			// 
-			this.dashboard1.Anchor = Wisej.Web.AnchorStyles.None;
-			this.dashboard1.Location = new System.Drawing.Point(515, 38);
-			this.dashboard1.Name = "dashboard1";
-			this.dashboard1.Size = new System.Drawing.Size(500, 400);
-			this.dashboard1.TabIndex = 0;
-			this.dashboard1.Text = "dashboard1";
-			// 
-			// Dashboard
-			// 
-			this.Controls.Add(this.dashboard1);
-			this.Name = "Dashboard";
-			this.Controls.SetChildIndex(this.dashboard1, 0);
-			this.ResumeLayout(false);
+            this.dashboard1 = new Wisej.Web.Ext.Webix.Dashboard();
+            this.groupBox1.SuspendLayout();
+            this.panel.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // panel
+            // 
+            this.panel.Controls.Add(this.dashboard1);
+            // 
+            // dashboard1
+            // 
+            this.dashboard1.Anchor = Wisej.Web.AnchorStyles.None;
+            this.dashboard1.Location = new System.Drawing.Point(294, 79);
+            this.dashboard1.Name = "dashboard1";
+            this.dashboard1.Size = new System.Drawing.Size(500, 400);
+            this.dashboard1.TabIndex = 0;
+            this.dashboard1.Text = "dashboard1";
+            // 
+            // Dashboard
+            // 
+            this.Name = "Dashboard";
+            this.groupBox1.ResumeLayout(false);
+            this.panel.ResumeLayout(false);
+            this.ResumeLayout(false);
+            this.PerformLayout();
 
 		}
 

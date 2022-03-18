@@ -28,24 +28,31 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.filter1 = new Wisej.Web.Ext.Webix.Filter();
-			this.SuspendLayout();
-			// 
-			// filter1
-			// 
-			this.filter1.Anchor = Wisej.Web.AnchorStyles.None;
-			this.filter1.Location = new System.Drawing.Point(515, 38);
-			this.filter1.Name = "filter1";
-			this.filter1.Size = new System.Drawing.Size(500, 400);
-			this.filter1.TabIndex = 0;
-			this.filter1.Text = "filter1";
-			// 
-			// Filter
-			// 
-			this.Controls.Add(this.filter1);
-			this.Name = "Filter";
-			this.Controls.SetChildIndex(this.filter1, 0);
-			this.ResumeLayout(false);
+            this.filter1 = new Wisej.Web.Ext.Webix.Filter();
+            this.groupBox1.SuspendLayout();
+            this.panel.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // panel
+            // 
+            this.panel.Controls.Add(this.filter1);
+            // 
+            // filter1
+            // 
+            this.filter1.Anchor = Wisej.Web.AnchorStyles.None;
+            this.filter1.Location = new System.Drawing.Point(294, 79);
+            this.filter1.Name = "filter1";
+            this.filter1.Size = new System.Drawing.Size(500, 400);
+            this.filter1.TabIndex = 0;
+            this.filter1.Text = "filter1";
+            // 
+            // Filter
+            // 
+            this.Name = "Filter";
+            this.groupBox1.ResumeLayout(false);
+            this.panel.ResumeLayout(false);
+            this.ResumeLayout(false);
+            this.PerformLayout();
 
 		}
 

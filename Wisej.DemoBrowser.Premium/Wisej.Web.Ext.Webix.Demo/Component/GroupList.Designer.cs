@@ -28,26 +28,33 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GroupList));
-			this.groupList1 = new Wisej.Web.Ext.Webix.GroupList();
-			this.SuspendLayout();
-			// 
-			// groupList1
-			// 
-			this.groupList1.Anchor = Wisej.Web.AnchorStyles.None;
-			this.groupList1.Location = new System.Drawing.Point(515, 38);
-			this.groupList1.Name = "groupList1";
-			this.groupList1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("groupList1.Options"))));
-			this.groupList1.Size = new System.Drawing.Size(500, 400);
-			this.groupList1.TabIndex = 0;
-			this.groupList1.Text = "groupList1";
-			// 
-			// GroupList
-			// 
-			this.Controls.Add(this.groupList1);
-			this.Name = "GroupList";
-			this.Controls.SetChildIndex(this.groupList1, 0);
-			this.ResumeLayout(false);
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GroupList));
+            this.groupList1 = new Wisej.Web.Ext.Webix.GroupList();
+            this.groupBox1.SuspendLayout();
+            this.panel.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // panel
+            // 
+            this.panel.Controls.Add(this.groupList1);
+            // 
+            // groupList1
+            // 
+            this.groupList1.Anchor = Wisej.Web.AnchorStyles.None;
+            this.groupList1.Location = new System.Drawing.Point(294, 79);
+            this.groupList1.Name = "groupList1";
+            this.groupList1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("groupList1.Options"))));
+            this.groupList1.Size = new System.Drawing.Size(500, 400);
+            this.groupList1.TabIndex = 0;
+            this.groupList1.Text = "groupList1";
+            // 
+            // GroupList
+            // 
+            this.Name = "GroupList";
+            this.groupBox1.ResumeLayout(false);
+            this.panel.ResumeLayout(false);
+            this.ResumeLayout(false);
+            this.PerformLayout();
 
 		}
 

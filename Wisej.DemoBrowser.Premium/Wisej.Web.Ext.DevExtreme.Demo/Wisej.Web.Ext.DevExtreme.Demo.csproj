@@ -497,9 +497,8 @@
     <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
-    <Reference Include="Wisej.Web.Ext.DevExtreme, Version=2.0.0.0, Culture=neutral, PublicKeyToken=653fbd0440795259, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\Wisej\Extensions\Premium\2.5\Wisej.Web.Ext.DevExtreme\Wisej.Web.Ext.DevExtreme\bin\Debug\Wisej.Web.Ext.DevExtreme.dll</HintPath>
+    <Reference Include="Wisej.Web.Ext.DevExtreme">
+      <HintPath>..\..\..\..\..\..\Wisej\Extensions\Premium\2.5\bin\Wisej.Web.Ext.DevExtreme.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

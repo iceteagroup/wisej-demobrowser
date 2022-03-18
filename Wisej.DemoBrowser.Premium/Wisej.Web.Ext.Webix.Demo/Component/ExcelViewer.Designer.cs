@@ -28,24 +28,33 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.excelViewer1 = new Wisej.Web.Ext.Webix.ExcelViewer();
-			this.SuspendLayout();
-			// 
-			// excelViewer1
-			// 
-			this.excelViewer1.Anchor = Wisej.Web.AnchorStyles.None;
-			this.excelViewer1.Location = new System.Drawing.Point(515, 38);
-			this.excelViewer1.Name = "excelViewer1";
-			this.excelViewer1.Size = new System.Drawing.Size(500, 400);
-			this.excelViewer1.TabIndex = 0;
-			this.excelViewer1.Text = "excelViewer1";
-			// 
-			// ExcelViewer
-			// 
-			this.Controls.Add(this.excelViewer1);
-			this.Name = "ExcelViewer";
-			this.Controls.SetChildIndex(this.excelViewer1, 0);
-			this.ResumeLayout(false);
+            this.excelViewer1 = new Wisej.Web.Ext.Webix.ExcelViewer();
+            this.groupBox1.SuspendLayout();
+            this.panel.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // panel
+            // 
+            this.panel.Controls.Add(this.excelViewer1);
+            // 
+            // excelViewer1
+            // 
+            this.excelViewer1.Dock = Wisej.Web.DockStyle.Fill;
+            this.excelViewer1.Location = new System.Drawing.Point(8, 8);
+            this.excelViewer1.Name = "excelViewer1";
+            this.excelViewer1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"url\":\"binary->https://docs.webix.com/samples/60_pro/10_viewers/files/data.xlsx\"" +
+        "}")));
+            this.excelViewer1.Size = new System.Drawing.Size(1073, 542);
+            this.excelViewer1.TabIndex = 0;
+            this.excelViewer1.Text = "excelViewer1";
+            // 
+            // ExcelViewer
+            // 
+            this.Name = "ExcelViewer";
+            this.groupBox1.ResumeLayout(false);
+            this.panel.ResumeLayout(false);
+            this.ResumeLayout(false);
+            this.PerformLayout();
 
 		}
 

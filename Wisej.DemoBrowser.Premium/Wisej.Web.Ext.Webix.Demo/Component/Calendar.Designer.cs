@@ -28,24 +28,31 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.calendar1 = new Wisej.Web.Ext.Webix.Calendar();
-			this.SuspendLayout();
-			// 
-			// calendar1
-			// 
-			this.calendar1.Anchor = Wisej.Web.AnchorStyles.None;
-			this.calendar1.Location = new System.Drawing.Point(515, 38);
-			this.calendar1.Name = "calendar1";
-			this.calendar1.Size = new System.Drawing.Size(500, 400);
-			this.calendar1.TabIndex = 0;
-			this.calendar1.Text = "calendar1";
-			// 
-			// Calendar
-			// 
-			this.Controls.Add(this.calendar1);
-			this.Name = "Calendar";
-			this.Controls.SetChildIndex(this.calendar1, 0);
-			this.ResumeLayout(false);
+            this.calendar1 = new Wisej.Web.Ext.Webix.Calendar();
+            this.groupBox1.SuspendLayout();
+            this.panel.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // panel
+            // 
+            this.panel.Controls.Add(this.calendar1);
+            // 
+            // calendar1
+            // 
+            this.calendar1.Anchor = Wisej.Web.AnchorStyles.None;
+            this.calendar1.Location = new System.Drawing.Point(294, 79);
+            this.calendar1.Name = "calendar1";
+            this.calendar1.Size = new System.Drawing.Size(500, 400);
+            this.calendar1.TabIndex = 0;
+            this.calendar1.Text = "calendar1";
+            // 
+            // Calendar
+            // 
+            this.Name = "Calendar";
+            this.groupBox1.ResumeLayout(false);
+            this.panel.ResumeLayout(false);
+            this.ResumeLayout(false);
+            this.PerformLayout();
 
 		}
 

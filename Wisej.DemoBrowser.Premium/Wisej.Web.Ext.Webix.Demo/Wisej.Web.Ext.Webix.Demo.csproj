@@ -46,6 +46,9 @@
     <Content Include="Default.html" />
     <Content Include="Default.json" />
     <Content Include="favicon.ico" />
+    <Content Include="Images\Icon Buy.png" />
+    <Content Include="Images\Icon Contact.png" />
+    <Content Include="Images\Icon Free Trial.png" />
     <Content Include="Images\logo-wisej-white.png" />
     <Content Include="Images\Webix.png" />
     <EmbeddedResource Include="Component\Chat.resx">
@@ -78,6 +81,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Images\wisej.png" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -254,10 +258,12 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
     <Reference Include="System.Windows.Forms" />
-    <PackageReference Include="Wisej-2" Version="2.5.*" />
-    <Reference Include="Wisej.Web.Ext.Webix, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="Wisej.Framework, Version=2.0.0.0, Culture=neutral, PublicKeyToken=17bef35e11b84171, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\Wisej\Extensions\Premium\2.5\Wisej.Web.Ext.Webix\Wisej.Web.Ext.Webix\bin\Debug\Wisej.Web.Ext.Webix.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\Wisej\Development\2.5\bin\Wisej.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="Wisej.Web.Ext.Webix">
+      <HintPath>..\..\..\..\..\..\Wisej\Extensions\Premium\2.5\bin\Wisej.Web.Ext.Webix.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

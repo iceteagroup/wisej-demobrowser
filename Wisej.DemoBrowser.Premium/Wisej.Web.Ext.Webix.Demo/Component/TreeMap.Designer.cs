@@ -28,26 +28,33 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TreeMap));
-			this.treeMap1 = new Wisej.Web.Ext.Webix.TreeMap();
-			this.SuspendLayout();
-			// 
-			// treeMap1
-			// 
-			this.treeMap1.Anchor = Wisej.Web.AnchorStyles.None;
-			this.treeMap1.Location = new System.Drawing.Point(515, 38);
-			this.treeMap1.Name = "treeMap1";
-			this.treeMap1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("treeMap1.Options"))));
-			this.treeMap1.Size = new System.Drawing.Size(500, 400);
-			this.treeMap1.TabIndex = 11;
-			this.treeMap1.Text = "treeMap1";
-			// 
-			// TreeMap
-			// 
-			this.Controls.Add(this.treeMap1);
-			this.Name = "TreeMap";
-			this.Controls.SetChildIndex(this.treeMap1, 0);
-			this.ResumeLayout(false);
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TreeMap));
+            this.treeMap1 = new Wisej.Web.Ext.Webix.TreeMap();
+            this.groupBox1.SuspendLayout();
+            this.panel.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // panel
+            // 
+            this.panel.Controls.Add(this.treeMap1);
+            // 
+            // treeMap1
+            // 
+            this.treeMap1.Anchor = Wisej.Web.AnchorStyles.None;
+            this.treeMap1.Location = new System.Drawing.Point(294, 79);
+            this.treeMap1.Name = "treeMap1";
+            this.treeMap1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("treeMap1.Options"))));
+            this.treeMap1.Size = new System.Drawing.Size(500, 400);
+            this.treeMap1.TabIndex = 11;
+            this.treeMap1.Text = "treeMap1";
+            // 
+            // TreeMap
+            // 
+            this.Name = "TreeMap";
+            this.groupBox1.ResumeLayout(false);
+            this.panel.ResumeLayout(false);
+            this.ResumeLayout(false);
+            this.PerformLayout();
 
 		}
 

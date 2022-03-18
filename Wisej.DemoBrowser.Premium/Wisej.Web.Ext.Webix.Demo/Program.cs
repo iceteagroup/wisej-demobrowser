@@ -10,6 +10,7 @@ namespace Wisej.Web.Ext.Webix.Demo
 		/// </summary>
 		static void Main()
 		{
+			wxBase.Theme = "material";
 			Application.MainPage = new MainView();
 		}
 

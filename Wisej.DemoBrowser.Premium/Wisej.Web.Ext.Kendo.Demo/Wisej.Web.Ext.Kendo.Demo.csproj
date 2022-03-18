@@ -464,9 +464,8 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
     <Reference Include="System.Windows.Forms" />
-    <Reference Include="Wisej.Web.Ext.Kendo, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\Wisej\Extensions\Premium\2.5\Wisej.Web.Ext.Kendo\Wisej.Web.Ext.Kendo\bin\Debug\Wisej.Web.Ext.Kendo.dll</HintPath>
+    <Reference Include="Wisej.Web.Ext.Kendo">
+      <HintPath>..\..\..\..\..\..\Wisej\Extensions\Premium\2.5\bin\Wisej.Web.Ext.Kendo.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

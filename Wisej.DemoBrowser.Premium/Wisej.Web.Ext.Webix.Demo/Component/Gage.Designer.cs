@@ -28,24 +28,31 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.gage1 = new Wisej.Web.Ext.Webix.Gage();
-			this.SuspendLayout();
-			// 
-			// gage1
-			// 
-			this.gage1.Anchor = Wisej.Web.AnchorStyles.None;
-			this.gage1.Location = new System.Drawing.Point(515, 38);
-			this.gage1.Name = "gage1";
-			this.gage1.Size = new System.Drawing.Size(500, 400);
-			this.gage1.TabIndex = 0;
-			this.gage1.Text = "gage1";
-			// 
-			// Gage
-			// 
-			this.Controls.Add(this.gage1);
-			this.Name = "Gage";
-			this.Controls.SetChildIndex(this.gage1, 0);
-			this.ResumeLayout(false);
+            this.gage1 = new Wisej.Web.Ext.Webix.Gage();
+            this.groupBox1.SuspendLayout();
+            this.panel.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // panel
+            // 
+            this.panel.Controls.Add(this.gage1);
+            // 
+            // gage1
+            // 
+            this.gage1.Anchor = Wisej.Web.AnchorStyles.None;
+            this.gage1.Location = new System.Drawing.Point(294, 79);
+            this.gage1.Name = "gage1";
+            this.gage1.Size = new System.Drawing.Size(500, 400);
+            this.gage1.TabIndex = 0;
+            this.gage1.Text = "gage1";
+            // 
+            // Gage
+            // 
+            this.Name = "Gage";
+            this.groupBox1.ResumeLayout(false);
+            this.panel.ResumeLayout(false);
+            this.ResumeLayout(false);
+            this.PerformLayout();
 
 		}
 

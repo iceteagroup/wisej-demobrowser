@@ -28,25 +28,32 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.barcode1 = new Wisej.Web.Ext.Webix.Barcode();
-			this.SuspendLayout();
-			// 
-			// barcode1
-			// 
-			this.barcode1.Anchor = Wisej.Web.AnchorStyles.None;
-			this.barcode1.Location = new System.Drawing.Point(515, 38);
-			this.barcode1.Name = "barcode1";
-			this.barcode1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"id\":\"barcode\",\"type\":\"ean13\",\"value\":\"123456789012\"}")));
-			this.barcode1.Size = new System.Drawing.Size(500, 400);
-			this.barcode1.TabIndex = 0;
-			this.barcode1.Text = "barcode1";
-			// 
-			// Barcode
-			// 
-			this.Controls.Add(this.barcode1);
-			this.Name = "Barcode";
-			this.Controls.SetChildIndex(this.barcode1, 0);
-			this.ResumeLayout(false);
+            this.barcode1 = new Wisej.Web.Ext.Webix.Barcode();
+            this.groupBox1.SuspendLayout();
+            this.panel.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // panel
+            // 
+            this.panel.Controls.Add(this.barcode1);
+            // 
+            // barcode1
+            // 
+            this.barcode1.Anchor = Wisej.Web.AnchorStyles.None;
+            this.barcode1.Location = new System.Drawing.Point(294, 79);
+            this.barcode1.Name = "barcode1";
+            this.barcode1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"id\":\"barcode\",\"type\":\"ean13\",\"value\":\"123456789012\"}")));
+            this.barcode1.Size = new System.Drawing.Size(500, 400);
+            this.barcode1.TabIndex = 0;
+            this.barcode1.Text = "barcode1";
+            // 
+            // Barcode
+            // 
+            this.Name = "Barcode";
+            this.groupBox1.ResumeLayout(false);
+            this.panel.ResumeLayout(false);
+            this.ResumeLayout(false);
+            this.PerformLayout();
 
 		}
 

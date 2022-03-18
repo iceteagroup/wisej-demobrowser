@@ -28,26 +28,33 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TreeTable));
-			this.treeTable1 = new Wisej.Web.Ext.Webix.TreeTable();
-			this.SuspendLayout();
-			// 
-			// treeTable1
-			// 
-			this.treeTable1.Anchor = Wisej.Web.AnchorStyles.None;
-			this.treeTable1.Location = new System.Drawing.Point(465, 38);
-			this.treeTable1.Name = "treeTable1";
-			this.treeTable1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("treeTable1.Options"))));
-			this.treeTable1.Size = new System.Drawing.Size(600, 400);
-			this.treeTable1.TabIndex = 11;
-			this.treeTable1.Text = "treeTable1";
-			// 
-			// TreeTable
-			// 
-			this.Controls.Add(this.treeTable1);
-			this.Name = "TreeTable";
-			this.Controls.SetChildIndex(this.treeTable1, 0);
-			this.ResumeLayout(false);
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TreeTable));
+            this.treeTable1 = new Wisej.Web.Ext.Webix.TreeTable();
+            this.groupBox1.SuspendLayout();
+            this.panel.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // panel
+            // 
+            this.panel.Controls.Add(this.treeTable1);
+            // 
+            // treeTable1
+            // 
+            this.treeTable1.Anchor = Wisej.Web.AnchorStyles.None;
+            this.treeTable1.Location = new System.Drawing.Point(244, 79);
+            this.treeTable1.Name = "treeTable1";
+            this.treeTable1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("treeTable1.Options"))));
+            this.treeTable1.Size = new System.Drawing.Size(600, 400);
+            this.treeTable1.TabIndex = 11;
+            this.treeTable1.Text = "treeTable1";
+            // 
+            // TreeTable
+            // 
+            this.Name = "TreeTable";
+            this.groupBox1.ResumeLayout(false);
+            this.panel.ResumeLayout(false);
+            this.ResumeLayout(false);
+            this.PerformLayout();
 
 		}
 
