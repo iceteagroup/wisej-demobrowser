@@ -1,54 +1,76 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <title>Wisej.Web.Ext.Ignite.Demo</title>
+    <title>Wisej IgniteUI Integration</title>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=Edge;IE=11" />
-    <script src="wisej.wx"></script>
+    <meta property="og:title" content="Wisej IgniteUI Integration - Full Control Suite" />
+    <meta property="og:site_name" content="demo.wisej.com/demos" />
+    <meta property="og:type" content="website" />
 
-    <!-- Splash Screen -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+
+    <link rel="icon" href="https://wisej.com/wp-content/uploads/2017/06/Wisej-Logo-64x64.png" sizes="32x32" />
+    <link rel="icon" href="https://wisej.com/wp-content/uploads/2017/06/Wisej-Logo-64x64.png" sizes="192x192" />
+
+    <script src="wisej.wx"></script>
     <style>
         #splash {
             position: absolute;
-            background: url("Images/logo-wisej-white.png");
-            background-position: center center;
-            background-size: 175px 175px;
+            background: url("Images/splash.png");
+            background-position: center top;
             background-repeat: no-repeat;
-            background-color: #0B5DAB;
+            background-size: 100%;
             width: 100%;
             height: 100%;
             overflow: hidden;
             opacity: 0;
+            z-index: 5;
+            transition: opacity 2s;
+        }
+
+        #strike {
+            position: absolute;
+            background-position: right top;
+            background-size: 65% auto;
+            background-repeat: no-repeat;
+            background-color: #E6E6E6;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            opacity: 1;
             transition: opacity 2s;
         }
 
         #loading {
-            color: white;
-            font-family: Arial, Helvetica, sans-serif;
+            color: black;
+            font-family: 'Open Sans', Helvetica, sans-serif;
             font-weight: 300;
             font-size: 18px;
-            letter-spacing: 5px;
+            letter-spacing: 20px;
             text-align: center;
-            width: 250px;
+            width: 617px;
             position: absolute;
-            bottom: calc(16% + 30px);
-            margin-left: 50%;
-            left: -125px;
+            bottom: calc(16% + 50px);
+            margin-left: 155px;
+            left: 0px;
         }
 
         #loading-bar {
-            background-color: #6095C7;
-            width: 250px;
-            height: 13px;
-            margin-left: 50%;
-            left: -125px;
+            background-color: #FFFFFF;
+            width: 617px;
+            height: 28px;
+            margin-left: 155px;
+            left: 0px;
             border-radius: 13px;
             position: absolute;
             bottom: 16%;
         }
 
         #loading-progress {
-            background-color: #C4E5FF;
+            background-color: #0099FF;
             height: 100%;
             border-radius: 13px;
             width: 10px;
@@ -58,14 +80,15 @@
     </style>
 </head>
 <body style="padding: 0px; margin: 0px">
+    <div id="empty"></div>
     <div id="splash">
         <div id="loading">LOADING</div>
         <div id="loading-bar">
             <div id="loading-progress"></div>
         </div>
     </div>
+    <div id="strike"></div>
     <script>
-
         var splash = document.getElementById("splash");
         var loadingProgress = document.getElementById("loading-progress");
         splash.style.opacity = 1;
@@ -79,9 +102,13 @@
         }, 1);
 
         Wisej.onLoad = function () {
-            var splash = document.getElementById("splash");
-            splash.parentNode.removeChild(splash);
+            document.getElementById("splash").remove();
+            document.getElementById("strike").remove();
         }
     </script>
+
+    <div id="template" style="display:none">
+        Hello, World
+    </div>
 </body>
 </html>

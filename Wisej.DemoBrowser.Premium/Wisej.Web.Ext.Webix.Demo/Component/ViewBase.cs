@@ -12,7 +12,7 @@ namespace Wisej.Web.Ext.Webix.Demo.Component
 
         private void link_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-			Application.Navigate(((LinkLabel)sender).Text, "_blank");
+			Application.Navigate(e.Link, "_blank");
         }
     }
 }

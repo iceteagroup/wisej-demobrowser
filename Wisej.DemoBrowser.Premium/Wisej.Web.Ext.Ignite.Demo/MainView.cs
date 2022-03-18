@@ -1,6 +1,7 @@
 ﻿
 using System;
 using System.Collections;
+using System.Globalization;
 using System.Linq;
 using Wisej.Core;
 using Wisej.Web.Ext.Ignite.Demo.Component;
@@ -17,17 +18,17 @@ namespace Wisej.Web.Ext.Ignite.Demo
 		private void MainView_Load(object sender, EventArgs e)
 		{
 			var hash = Application.Hash;
-			this.listBox1.DataSource = PopulateTestList();
+			this.listBoxDemos.DataSource = PopulateTestList();
 
 			Application.HashChanged += this.Application_HashChanged;
 
 			if (hash != "")
-				this.listBox1.SelectedIndex = this.listBox1.FindString(hash);
+				this.listBoxDemos.SelectedIndex = this.listBoxDemos.FindString(hash);
 		}
 
 		private void Application_HashChanged(object sender, HashChangedEventArgs e)
 		{
-			this.listBox1.SelectedIndex = this.listBox1.FindString(e.Hash);
+			this.listBoxDemos.SelectedIndex = this.listBoxDemos.FindString(e.Hash);
 		}
 
 		private IList PopulateTestList()
@@ -39,25 +40,19 @@ namespace Wisej.Web.Ext.Ignite.Demo
 				.ToList();
 		}
 
-		private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+		private void listBoxDemos_SelectedIndexChanged(object sender, EventArgs e)
 		{
 			var list = (ListBox)sender;
 			var type = (Type)((dynamic)list.SelectedItem).Type;
 			var testPanel = (TestBase)Activator.CreateInstance(type);
 
-			var container = this.panel2;
+			var container = this.panelDemo;
 			container.Controls.Clear(true);
 			testPanel.Dock = DockStyle.Fill;
 			testPanel.Parent = container;
 
-			container.Text = type.Name;
+			this.labelDemo.Text = type.Name;
 			Application.Hash = type.Name;
-		}
-
-		private void comboBoxTheme_SelectedIndexChanged(object sender, EventArgs e)
-		{
-			igBase.Theme = this.comboBoxTheme.Text;
-			Application.Reload();
 		}
 
 		[WebMethod]
@@ -66,9 +61,55 @@ namespace Wisej.Web.Ext.Ignite.Demo
 			AlertBox.Show(info.ToJSON());
 		}
 
-		private void comboBoxCulture_SelectedIndexChanged(object sender, EventArgs e)
-		{
-			igBase.Culture = new System.Globalization.CultureInfo(this.comboBoxCulture.Text);
+        private void comboBoxWisejTheme_SelectedIndexChanged(object sender, EventArgs e)
+        {
+			Application.LoadTheme(this.comboBoxWisejTheme.Text);
+        }
+
+        private void comboBoxLanguage_SelectedIndexChanged(object sender, EventArgs e)
+        {
+			igBase.Culture = new CultureInfo(this.comboBoxLanguage.Text);
+        }
+
+        private void comboBoxIgniteTheme_SelectedIndexChanged(object sender, EventArgs e)
+        {
+			igBase.Theme = this.comboBoxIgniteTheme.Text;
+			Application.Reload();
+        }
+
+        private void buttonDocs_Click(object sender, EventArgs e)
+        {
+			Application.Navigate("https://docs.wisej.com/", "_blank");
 		}
-	}
+
+        private void buttonAPI_Click(object sender, EventArgs e)
+        {
+			Application.Navigate("https://docs.wisej.com/api", "_blank");
+		}
+
+        private void buttonSupport_Click(object sender, EventArgs e)
+        {
+			Application.Navigate("https://www.wisej.com/support", "_blank");
+		}
+
+        private void buttonMWW_Click(object sender, EventArgs e)
+        {
+			Application.Navigate("http://www.madewithwisej.com", "_blank");
+		}
+
+        private void buttonContact_Click(object sender, EventArgs e)
+        {
+			Application.Navigate("https://www.wisej.com/contact-us", "_blank");
+		}
+
+        private void buttonFreeTrial_Click(object sender, EventArgs e)
+        {
+			Application.Navigate("https://wisej.com/products/", "_blank");
+		}
+
+        private void buttonBuy_Click(object sender, EventArgs e)
+        {
+			Application.Navigate("https://wisej.com/products/", "_blank");
+		}
+    }
 }

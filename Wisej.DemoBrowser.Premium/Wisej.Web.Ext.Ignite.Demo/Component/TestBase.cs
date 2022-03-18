@@ -10,7 +10,7 @@ namespace Wisej.Web.Ext.Ignite.Demo.Component
 			InitializeComponent();
 		}
 
-		private void linkDocs_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+		private void link_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
 		{
 			Application.Navigate(e.Link, "Ignite UI");
 		}

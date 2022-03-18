@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wisej.Web.Ext.Syncfusion.De
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wisej.Web.Ext.Syncfusion2.Demo", "Wisej.DemoBrowser.Premium\Wisej.Web.Ext.Syncfusion2.Demo\Wisej.Web.Ext.Syncfusion2.Demo.csproj", "{DEC13805-573D-4D51-8C2B-3BD57E67B633}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wisej.Web.Ext.Webix.Demo", "Wisej.DemoBrowser.Premium\Wisej.Web.Ext.Webix.Demo\Wisej.Web.Ext.Webix.Demo.csproj", "{15AF76F2-FF14-49D2-BB7D-94B4AE2E7957}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{DEC13805-573D-4D51-8C2B-3BD57E67B633}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DEC13805-573D-4D51-8C2B-3BD57E67B633}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DEC13805-573D-4D51-8C2B-3BD57E67B633}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15AF76F2-FF14-49D2-BB7D-94B4AE2E7957}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15AF76F2-FF14-49D2-BB7D-94B4AE2E7957}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15AF76F2-FF14-49D2-BB7D-94B4AE2E7957}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15AF76F2-FF14-49D2-BB7D-94B4AE2E7957}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -110,6 +110,7 @@
     <Content Include="favicon.ico" />
     <Content Include="Data\Sparkline\data.json" />
     <Content Include="Data\Spreadsheet\statistic.xlsx" />
+    <EmbeddedResource Include="Themes\Ignite.mixin.theme" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -128,8 +129,12 @@
     <EmbeddedResource Include="Images\Grid\7.jpg" />
     <EmbeddedResource Include="Images\Grid\8.jpg" />
     <EmbeddedResource Include="Images\Grid\9.jpg" />
+    <Content Include="Images\Icon Buy.png" />
+    <Content Include="Images\Icon Contact.png" />
+    <Content Include="Images\Icon Free Trial.png" />
     <Content Include="Images\ignite.png" />
     <Content Include="Images\Rating\Avengers.jpg" />
+    <Content Include="Images\splash.png" />
     <Content Include="Images\Tree\bin_empty.png" />
     <Content Include="Images\Tree\book.png" />
     <Content Include="Images\Tree\coins.png" />
@@ -141,6 +146,7 @@
     <Content Include="Images\Tree\door_in.png" />
     <Content Include="Images\Tree\music.png" />
     <Content Include="Images\Tree\up.png" />
+    <Content Include="Images\wisej.png" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -344,9 +350,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Themes\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
@@ -354,6 +358,9 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
     <Reference Include="System.Windows.Forms" />
+    <Reference Include="Wisej.Framework">
+      <HintPath>..\..\..\..\..\..\Wisej\Development\2.5\bin\Wisej.Framework.dll</HintPath>
+    </Reference>
     <Reference Include="Wisej.Web.Ext.Ignite">
       <HintPath>..\..\..\..\..\..\Wisej\Extensions\Premium\2.5\bin\Wisej.Web.Ext.Ignite.dll</HintPath>
     </Reference>
@@ -402,14 +409,6 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
-  </ItemGroup>
-  <ItemGroup>
-    <PackageReference Include="Wisej-2">
-      <Version>2.5.*</Version>
-    </PackageReference>
-    <PackageReference Include="Wisej-2-MaterialDesign">
-      <Version>2.5.20</Version>
-    </PackageReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

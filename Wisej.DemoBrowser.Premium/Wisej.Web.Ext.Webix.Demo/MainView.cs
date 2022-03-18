@@ -50,7 +50,7 @@ namespace Wisej.Web.Ext.Webix.Demo
 			testPanel.Dock = DockStyle.Fill;
 			testPanel.Parent = container;
 
-			container.Text = type.Name;
+			this.labelDemo.Text = type.Name;
 			Application.Hash = type.Name;
 		}
 

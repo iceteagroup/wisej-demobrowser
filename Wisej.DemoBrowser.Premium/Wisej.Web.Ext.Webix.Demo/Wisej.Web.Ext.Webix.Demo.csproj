@@ -50,6 +50,7 @@
     <Content Include="Images\Icon Contact.png" />
     <Content Include="Images\Icon Free Trial.png" />
     <Content Include="Images\logo-wisej-white.png" />
+    <Content Include="Images\splash.png" />
     <Content Include="Images\Webix.png" />
     <EmbeddedResource Include="Component\Chat.resx">
       <DependentUpon>Chat.cs</DependentUpon>
