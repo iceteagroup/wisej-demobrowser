@@ -1,0 +1,622 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Wisej.Web.Ext.Syncfusion2.Demo</RootNamespace>
+    <AssemblyName>Wisej.Web.Ext.Syncfusion2.Demo</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+    <Use64BitIISExpress />
+    <ProjectGuid>{DEC13805-573D-4D51-8C2B-3BD57E67B633}</ProjectGuid>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="Default.html" />
+    <Content Include="Default.json" />
+    <Content Include="favicon.ico" />
+    <Content Include="Data\PdfViewer\Wisej.pdf" />
+    <Content Include="Data\Maps\WorldMap_Countries.json" />
+    <Content Include="Data\Maps\North America.json" />
+    <Content Include="Data\Maps\Europe.json" />
+    <Content Include="Images\cluster.svg" />
+    <Content Include="Images\Icon Buy.png" />
+    <Content Include="Images\Icon Contact.png" />
+    <Content Include="Images\Icon Free Trial.png" />
+    <Content Include="Images\splash.png" />
+    <Content Include="Images\wisej.png" />
+    <Content Include="Libs\Syncfusion.Compression.Base.dll" />
+    <Content Include="Libs\Syncfusion.DocIO.Base.dll" />
+    <Content Include="Libs\Syncfusion.EJ2.dll" />
+    <Content Include="Libs\Syncfusion.EJ2.DocumentEditor.dll" />
+    <Content Include="Libs\Syncfusion.EJ2.PdfViewer.dll" />
+    <Content Include="Libs\Syncfusion.EJ2.Spreadsheet.dll" />
+    <Content Include="Libs\Syncfusion.Licensing.dll" />
+    <Content Include="Libs\Syncfusion.OfficeChart.Base.dll" />
+    <Content Include="Libs\Syncfusion.Pdf.Base.dll" />
+    <Content Include="Libs\Syncfusion.XlsIO.Base.dll" />
+    <Content Include="Data\DocumentEditor\CodeProject1.docx" />
+    <Content Include="Data\DocumentEditor\CodeProject2.docx" />
+    <Content Include="Data\PdfViewer\Annotations.pdf" />
+    <Content Include="Data\Spreadsheet\tornado_chart.xlsx" />
+    <Content Include="Data\Spreadsheet\area_chart.xlsx" />
+    <Content Include="Data\Spreadsheet\bar_chart.xlsx" />
+    <Content Include="Data\Spreadsheet\column_chart.xlsx" />
+    <Content Include="Data\Spreadsheet\line_chart.xlsx" />
+    <Content Include="Data\DocumentEditor\Sample1.docx" />
+    <EmbeddedResource Include="Component\Signature.resx">
+      <DependentUpon>Signature.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data\CustomLocalization\ca-gregorian.js" />
+    <EmbeddedResource Include="Data\CustomLocalization\numbers.js" />
+    <EmbeddedResource Include="Data\CustomLocalization\pt.js" />
+    <Content Include="Data\Schedule\data.json" />
+    <EmbeddedResource Include="Themes\EJ2.mixin.theme" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\logo-wisej-white.png" />
+    <Content Include="Images\syncfusion.png" />
+    <EmbeddedResource Include="Data\CustomLocalization\timeZoneNames.js" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Component\AccumulationChart.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Component\AccumulationChart.Designer.cs">
+      <DependentUpon>AccumulationChart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\BulletChart.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Component\BulletChart.Designer.cs">
+      <DependentUpon>BulletChart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\Calendar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Component\Calendar.Designer.cs">
+      <DependentUpon>Calendar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\Chart.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Component\Chart.Designer.cs">
+      <DependentUpon>Chart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\ChipList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Component\ChipList.Designer.cs">
+      <DependentUpon>ChipList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\CircularGauge.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Component\CircularGauge.Designer.cs">
+      <DependentUpon>CircularGauge.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\ColorPicker.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Component\ColorPicker.Designer.cs">
+      <DependentUpon>ColorPicker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\DatePicker.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Component\DatePicker.Designer.cs">
+      <DependentUpon>DatePicker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\DateRangePicker.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Component\DateRangePicker.Designer.cs">
+      <DependentUpon>DateRangePicker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\DateTimePicker.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Component\DateTimePicker.Designer.cs">
+      <DependentUpon>DateTimePicker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\Diagram.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Component\Diagram.Designer.cs">
+      <DependentUpon>Diagram.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\DocumentEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Component\DocumentEditor.Designer.cs">
+      <DependentUpon>DocumentEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\DropDownList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Component\DropDownList.Designer.cs">
+      <DependentUpon>DropDownList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\DropDownTree.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Component\DropDownTree.Designer.cs">
+      <DependentUpon>DropDownTree.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\FileManager.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Component\FileManager.Designer.cs">
+      <DependentUpon>FileManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\Gantt.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Component\Gantt.Designer.cs">
+      <DependentUpon>Gantt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\Grid.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Component\Grid.Designer.cs">
+      <DependentUpon>Grid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\HeatMap.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Component\HeatMap.Designer.cs">
+      <DependentUpon>HeatMap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\Kanban.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Component\Kanban.Designer.cs">
+      <DependentUpon>Kanban.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\LinearGauge.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Component\LinearGauge.Designer.cs">
+      <DependentUpon>LinearGauge.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\ListBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Component\ListBox.Designer.cs">
+      <DependentUpon>ListBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\ListView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Component\ListView.Designer.cs">
+      <DependentUpon>ListView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\Maps.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Component\Maps.Designer.cs">
+      <DependentUpon>Maps.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\Menu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Component\Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\MultiSelect.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Component\MultiSelect.Designer.cs">
+      <DependentUpon>MultiSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\PDFViewer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Component\PDFViewer.Designer.cs">
+      <DependentUpon>PDFViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\PivotView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Component\PivotView.Designer.cs">
+      <DependentUpon>PivotView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\ProgressBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Component\ProgressBar.Designer.cs">
+      <DependentUpon>ProgressBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\ProgressButton.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Component\ProgressButton.Designer.cs">
+      <DependentUpon>ProgressButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\QueryBuilder.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Component\QueryBuilder.Designer.cs">
+      <DependentUpon>QueryBuilder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\RangeNavigator.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Component\RangeNavigator.Designer.cs">
+      <DependentUpon>RangeNavigator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\RichTextEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Component\RichTextEditor.Designer.cs">
+      <DependentUpon>RichTextEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\Schedule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Component\Schedule.Designer.cs">
+      <DependentUpon>Schedule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\Signature.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Component\Signature.Designer.cs">
+      <DependentUpon>Signature.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\Slider.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Component\Slider.Designer.cs">
+      <DependentUpon>Slider.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\SmithChart.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Component\SmithChart.Designer.cs">
+      <DependentUpon>SmithChart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\Sparkline.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Component\Sparkline.Designer.cs">
+      <DependentUpon>Sparkline.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\SplitButton.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Component\SplitButton.Designer.cs">
+      <DependentUpon>SplitButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\Spreadsheet.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Component\Spreadsheet.Designer.cs">
+      <DependentUpon>Spreadsheet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\TestBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Component\TimePicker.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Component\TimePicker.Designer.cs">
+      <DependentUpon>TimePicker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\Toolbar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Component\Toolbar.Designer.cs">
+      <DependentUpon>Toolbar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\TreeGrid.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Component\TreeGrid.Designer.cs">
+      <DependentUpon>TreeGrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\TreeMap.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Component\TreeMap.Designer.cs">
+      <DependentUpon>TreeMap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\TreeView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Component\TreeView.Designer.cs">
+      <DependentUpon>TreeView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\Uploader.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Component\Uploader.Designer.cs">
+      <DependentUpon>Uploader.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainView.Designer.cs">
+      <DependentUpon>MainView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Syncfusion.DocIO.Base, Version=19.3450.0.43, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Libs\Syncfusion.DocIO.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.EJ2, Version=19.3400.0.43, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Libs\Syncfusion.EJ2.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.EJ2.DocumentEditor, Version=19.3450.0.43, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Libs\Syncfusion.EJ2.DocumentEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.EJ2.PdfViewer, Version=19.3450.0.43, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Libs\Syncfusion.EJ2.PdfViewer.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.EJ2.Spreadsheet, Version=19.3500.0.43, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Libs\Syncfusion.EJ2.Spreadsheet.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Licensing, Version=19.3450.0.43, Culture=neutral, PublicKeyToken=632609b4d040f6b4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Libs\Syncfusion.Licensing.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.OfficeChart.Base, Version=19.3460.0.43, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Libs\Syncfusion.OfficeChart.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Pdf.Base, Version=19.3450.0.43, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Libs\Syncfusion.Pdf.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.XlsIO.Base, Version=19.3450.0.43, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Libs\Syncfusion.XlsIO.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Syncfusion.Compression.Base">
+      <HintPath>..\Libs\Syncfusion.Compression.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Wisej.Web.Ext.Syncfusion2, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Wisej\Extensions\Premium\2.5\Wisej.Web.Ext.Syncfusion2\Wisej.Web.Ext.Syncfusion2\bin\Debug\Wisej.Web.Ext.Syncfusion2.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Component\AccumulationChart.resx">
+      <DependentUpon>AccumulationChart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\BulletChart.resx">
+      <DependentUpon>BulletChart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\Calendar.resx">
+      <DependentUpon>Calendar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\Chart.resx">
+      <DependentUpon>Chart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\ChipList.resx">
+      <DependentUpon>ChipList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\CircularGauge.resx">
+      <DependentUpon>CircularGauge.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\ColorPicker.resx">
+      <DependentUpon>ColorPicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\DatePicker.resx">
+      <DependentUpon>DatePicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\DateRangePicker.resx">
+      <DependentUpon>DateRangePicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\DateTimePicker.resx">
+      <DependentUpon>DateTimePicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\Diagram.resx">
+      <DependentUpon>Diagram.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\DocumentEditor.resx">
+      <DependentUpon>DocumentEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\DropDownList.resx">
+      <DependentUpon>DropDownList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\DropDownTree.resx">
+      <DependentUpon>DropDownTree.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\FileManager.resx">
+      <DependentUpon>FileManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\Gantt.resx">
+      <DependentUpon>Gantt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\Grid.resx">
+      <DependentUpon>Grid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\HeatMap.resx">
+      <DependentUpon>HeatMap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\Kanban.resx">
+      <DependentUpon>Kanban.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\LinearGauge.resx">
+      <DependentUpon>LinearGauge.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\ListBox.resx">
+      <DependentUpon>ListBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\ListView.resx">
+      <DependentUpon>ListView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\Maps.resx">
+      <DependentUpon>Maps.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\MultiSelect.resx">
+      <DependentUpon>MultiSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\PDFViewer.resx">
+      <DependentUpon>PDFViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\PivotView.resx">
+      <DependentUpon>PivotView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\ProgressBar.resx">
+      <DependentUpon>ProgressBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\ProgressButton.resx">
+      <DependentUpon>ProgressButton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\QueryBuilder.resx">
+      <DependentUpon>QueryBuilder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\RangeNavigator.resx">
+      <DependentUpon>RangeNavigator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\RichTextEditor.resx">
+      <DependentUpon>RichTextEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\Schedule.resx">
+      <DependentUpon>Schedule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\Slider.resx">
+      <DependentUpon>Slider.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\SmithChart.resx">
+      <DependentUpon>SmithChart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\Sparkline.resx">
+      <DependentUpon>Sparkline.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\SplitButton.resx">
+      <DependentUpon>SplitButton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\Spreadsheet.resx">
+      <DependentUpon>Spreadsheet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\TestBase.resx">
+      <DependentUpon>TestBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\TimePicker.resx">
+      <DependentUpon>TimePicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\Toolbar.resx">
+      <DependentUpon>Toolbar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\TreeGrid.resx">
+      <DependentUpon>TreeGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\TreeMap.resx">
+      <DependentUpon>TreeMap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\TreeView.resx">
+      <DependentUpon>TreeView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\Uploader.resx">
+      <DependentUpon>Uploader.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainView.resx">
+      <DependentUpon>MainView.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNet.Mvc">
+      <Version>5.0.0</Version>
+    </PackageReference>
+    <PackageReference Include="Newtonsoft.Json">
+      <Version>13.0.1</Version>
+    </PackageReference>
+    <PackageReference Include="Wisej-2">
+      <Version>2.5.*-*</Version>
+    </PackageReference>
+    <PackageReference Include="Wisej-2-MaterialDesign">
+      <Version>2.5.*-*</Version>
+    </PackageReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:32405/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

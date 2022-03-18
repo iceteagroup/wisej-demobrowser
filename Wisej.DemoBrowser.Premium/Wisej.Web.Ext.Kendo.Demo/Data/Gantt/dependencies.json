@@ -1,0 +1,142 @@
+{
+	"dependencies": [
+		{
+			"ID": 528,
+			"PredecessorID": 18,
+			"SuccessorID": 19,
+			"Type": 1
+		},
+		{
+			"ID": 533,
+			"PredecessorID": 22,
+			"SuccessorID": 23,
+			"Type": 1
+		},
+		{
+			"ID": 534,
+			"PredecessorID": 23,
+			"SuccessorID": 24,
+			"Type": 1
+		},
+		{
+			"ID": 535,
+			"PredecessorID": 24,
+			"SuccessorID": 26,
+			"Type": 1
+		},
+		{
+			"ID": 536,
+			"PredecessorID": 26,
+			"SuccessorID": 27,
+			"Type": 1
+		},
+		{
+			"ID": 537,
+			"PredecessorID": 26,
+			"SuccessorID": 28,
+			"Type": 1
+		},
+		{
+			"ID": 538,
+			"PredecessorID": 27,
+			"SuccessorID": 29,
+			"Type": 1
+		},
+		{
+			"ID": 539,
+			"PredecessorID": 28,
+			"SuccessorID": 29,
+			"Type": 0
+		},
+		{
+			"ID": 540,
+			"PredecessorID": 29,
+			"SuccessorID": 32,
+			"Type": 1
+		},
+		{
+			"ID": 541,
+			"PredecessorID": 29,
+			"SuccessorID": 33,
+			"Type": 1
+		},
+		{
+			"ID": 543,
+			"PredecessorID": 29,
+			"SuccessorID": 36,
+			"Type": 1
+		},
+		{
+			"ID": 544,
+			"PredecessorID": 34,
+			"SuccessorID": 35,
+			"Type": 1
+		},
+		{
+			"ID": 545,
+			"PredecessorID": 32,
+			"SuccessorID": 33,
+			"Type": 0
+		},
+		{
+			"ID": 546,
+			"PredecessorID": 33,
+			"SuccessorID": 17,
+			"Type": 1
+		},
+		{
+			"ID": 547,
+			"PredecessorID": 35,
+			"SuccessorID": 17,
+			"Type": 1
+		},
+		{
+			"ID": 548,
+			"PredecessorID": 38,
+			"SuccessorID": 17,
+			"Type": 1
+		},
+		{
+			"ID": 549,
+			"PredecessorID": 36,
+			"SuccessorID": 37,
+			"Type": 1
+		},
+		{
+			"ID": 550,
+			"PredecessorID": 37,
+			"SuccessorID": 38,
+			"Type": 1
+		},
+		{
+			"ID": 551,
+			"PredecessorID": 13,
+			"SuccessorID": 29,
+			"Type": 0
+		},
+		{
+			"ID": 553,
+			"PredecessorID": 18,
+			"SuccessorID": 20,
+			"Type": 1
+		},
+		{
+			"ID": 554,
+			"PredecessorID": 20,
+			"SuccessorID": 39,
+			"Type": 1
+		},
+		{
+			"ID": 555,
+			"PredecessorID": 19,
+			"SuccessorID": 39,
+			"Type": 1
+		},
+		{
+			"ID": 556,
+			"PredecessorID": 39,
+			"SuccessorID": 22,
+			"Type": 1
+		}
+	]
+}

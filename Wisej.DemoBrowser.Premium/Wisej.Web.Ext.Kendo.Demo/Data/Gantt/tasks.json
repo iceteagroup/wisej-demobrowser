@@ -1,0 +1,290 @@
+{
+	"data": [
+		{
+			"ID": 7,
+			"Title": "Software validation, research and implementation",
+			"ParentID": null,
+			"OrderID": 0,
+			"Start": "\/Date(1401667200000)\/",
+			"End": "\/Date(1405123200000)\/",
+			"PercentComplete": 0.43,
+			"Summary": true,
+			"Expanded": true
+		},
+		{
+			"ID": 11,
+			"Title": "Research",
+			"ParentID": 7,
+			"OrderID": 1,
+			"Start": "\/Date(1401667200000)\/",
+			"End": "\/Date(1402099200000)\/",
+			"PercentComplete": 0.43,
+			"Summary": true,
+			"Expanded": true
+		},
+		{
+			"ID": 12,
+			"Title": "Design",
+			"ParentID": 7,
+			"OrderID": 2,
+			"Start": "\/Date(1402272000000)\/",
+			"End": "\/Date(1402704000000)\/",
+			"PercentComplete": 0.60,
+			"Summary": true,
+			"Expanded": true
+		},
+		{
+			"ID": 13,
+			"Title": "Implementation",
+			"ParentID": 7,
+			"OrderID": 3,
+			"Start": "\/Date(1402444800000)\/",
+			"End": "\/Date(1404259200000)\/",
+			"PercentComplete": 0.77,
+			"Summary": true,
+			"Expanded": true
+		},
+		{
+			"ID": 14,
+			"Title": "Testing",
+			"ParentID": 7,
+			"OrderID": 4,
+			"Start": "\/Date(1404086400000)\/",
+			"End": "\/Date(1404518400000)\/",
+			"PercentComplete": 0.52,
+			"Summary": true,
+			"Expanded": true
+		},
+		{
+			"ID": 17,
+			"Title": "Release",
+			"ParentID": 7,
+			"OrderID": 7,
+			"Start": "\/Date(1405123200000)\/",
+			"End": "\/Date(1405123200000)\/",
+			"PercentComplete": 0.00,
+			"Summary": false,
+			"Expanded": true
+		},
+		{
+			"ID": 18,
+			"Title": "Project Kickoff",
+			"ParentID": 7,
+			"OrderID": 0,
+			"Start": "\/Date(1401667200000)\/",
+			"End": "\/Date(1401667200000)\/",
+			"PercentComplete": 0.23,
+			"Summary": false,
+			"Expanded": true
+		},
+		{
+			"ID": 19,
+			"Title": "Validation with Customers",
+			"ParentID": 11,
+			"OrderID": 0,
+			"Start": "\/Date(1401667200000)\/",
+			"End": "\/Date(1401840000000)\/",
+			"PercentComplete": 0.25,
+			"Summary": false,
+			"Expanded": true
+		},
+		{
+			"ID": 20,
+			"Title": "Market Research",
+			"ParentID": 11,
+			"OrderID": 1,
+			"Start": "\/Date(1401667200000)\/",
+			"End": "\/Date(1401840000000)\/",
+			"PercentComplete": 0.82,
+			"Summary": false,
+			"Expanded": true
+		},
+		{
+			"ID": 22,
+			"Title": "UI Design",
+			"ParentID": 12,
+			"OrderID": 0,
+			"Start": "\/Date(1402272000000)\/",
+			"End": "\/Date(1402444800000)\/",
+			"PercentComplete": 0.56,
+			"Summary": false,
+			"Expanded": true
+		},
+		{
+			"ID": 23,
+			"Title": "HTML Prototype",
+			"ParentID": 12,
+			"OrderID": 1,
+			"Start": "\/Date(1402444800000)\/",
+			"End": "\/Date(1402704000000)\/",
+			"PercentComplete": 0.64,
+			"Summary": false,
+			"Expanded": true
+		},
+		{
+			"ID": 24,
+			"Title": "Prototype",
+			"ParentID": 13,
+			"OrderID": 0,
+			"Start": "\/Date(1402444800000)\/",
+			"End": "\/Date(1402963200000)\/",
+			"PercentComplete": 0.77,
+			"Summary": false,
+			"Expanded": true
+		},
+		{
+			"ID": 26,
+			"Title": "Architecture",
+			"ParentID": 13,
+			"OrderID": 1,
+			"Start": "\/Date(1402963200000)\/",
+			"End": "\/Date(1403049600000)\/",
+			"PercentComplete": 0.82,
+			"Summary": false,
+			"Expanded": true
+		},
+		{
+			"ID": 27,
+			"Title": "Data Layer",
+			"ParentID": 13,
+			"OrderID": 2,
+			"Start": "\/Date(1403049600000)\/",
+			"End": "\/Date(1403568000000)\/",
+			"PercentComplete": 1.00,
+			"Summary": false,
+			"Expanded": true
+		},
+		{
+			"ID": 28,
+			"Title": "Unit Tests",
+			"ParentID": 13,
+			"OrderID": 4,
+			"Start": "\/Date(1403049600000)\/",
+			"End": "\/Date(1403827200000)\/",
+			"PercentComplete": 0.68,
+			"Summary": false,
+			"Expanded": true
+		},
+		{
+			"ID": 29,
+			"Title": "UI and Interaction",
+			"ParentID": 13,
+			"OrderID": 3,
+			"Start": "\/Date(1403827200000)\/",
+			"End": "\/Date(1404259200000)\/",
+			"PercentComplete": 0.60,
+			"Summary": false,
+			"Expanded": true
+		},
+		{
+			"ID": 30,
+			"Title": "Documentation",
+			"ParentID": 7,
+			"OrderID": 5,
+			"Start": "\/Date(1403481600000)\/",
+			"End": "\/Date(1404518400000)\/",
+			"PercentComplete": 0.14,
+			"Summary": true,
+			"Expanded": true
+		},
+		{
+			"ID": 31,
+			"Title": "Demos",
+			"ParentID": 7,
+			"OrderID": 6,
+			"Start": "\/Date(1404086400000)\/",
+			"End": "\/Date(1405123200000)\/",
+			"PercentComplete": 0.82,
+			"Summary": true,
+			"Expanded": false
+		},
+		{
+			"ID": 32,
+			"Title": "Integration Testing",
+			"ParentID": 14,
+			"OrderID": 0,
+			"Start": "\/Date(1404086400000)\/",
+			"End": "\/Date(1404518400000)\/",
+			"PercentComplete": 0.94,
+			"Summary": false,
+			"Expanded": true
+		},
+		{
+			"ID": 33,
+			"Title": "Load Testing",
+			"ParentID": 14,
+			"OrderID": 1,
+			"Start": "\/Date(1404086400000)\/",
+			"End": "\/Date(1404518400000)\/",
+			"PercentComplete": 0.10,
+			"Summary": false,
+			"Expanded": true
+		},
+		{
+			"ID": 34,
+			"Title": "Structure",
+			"ParentID": 30,
+			"OrderID": 0,
+			"Start": "\/Date(1403481600000)\/",
+			"End": "\/Date(1403740800000)\/",
+			"PercentComplete": 0.28,
+			"Summary": false,
+			"Expanded": true
+		},
+		{
+			"ID": 35,
+			"Title": "Articles",
+			"ParentID": 30,
+			"OrderID": 1,
+			"Start": "\/Date(1403740800000)\/",
+			"End": "\/Date(1404518400000)\/",
+			"PercentComplete": 0.00,
+			"Summary": false,
+			"Expanded": true
+		},
+		{
+			"ID": 36,
+			"Title": "Structure",
+			"ParentID": 31,
+			"OrderID": 0,
+			"Start": "\/Date(1404086400000)\/",
+			"End": "\/Date(1404259200000)\/",
+			"PercentComplete": 0.94,
+			"Summary": false,
+			"Expanded": true
+		},
+		{
+			"ID": 37,
+			"Title": "Design",
+			"ParentID": 31,
+			"OrderID": 1,
+			"Start": "\/Date(1404259200000)\/",
+			"End": "\/Date(1404518400000)\/",
+			"PercentComplete": 0.80,
+			"Summary": false,
+			"Expanded": true
+		},
+		{
+			"ID": 38,
+			"Title": "Demos",
+			"ParentID": 31,
+			"OrderID": 2,
+			"Start": "\/Date(1404345600000)\/",
+			"End": "\/Date(1405123200000)\/",
+			"PercentComplete": 0.72,
+			"Summary": false,
+			"Expanded": true
+		},
+		{
+			"ID": 39,
+			"Title": "Functional and Technical Specification",
+			"ParentID": 11,
+			"OrderID": 2,
+			"Start": "\/Date(1401840000000)\/",
+			"End": "\/Date(1402099200000)\/",
+			"PercentComplete": 0.23,
+			"Summary": false,
+			"Expanded": true
+		}
+	]
+}

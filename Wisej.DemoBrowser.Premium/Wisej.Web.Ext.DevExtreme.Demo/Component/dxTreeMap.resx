@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="dxTreeMap1.Options" xml:space="preserve">
+    <value>{"title":"The Most Populated Cities by Continents","idField":"id","parentField":"parentId","dataSource":[{"id":"1","name":"Africa"},{"id":"1_1","parentId":"1","value":21324000,"name":"Lagos","country":"Nigeria"},{"id":"1_2","parentId":"1","value":9735000,"name":"Kinshasa","country":"Democratic Republic of the Congo"},{"id":"1_3","parentId":"1","value":9278441,"name":"Cairo","country":"Egypt"},{"id":"2","name":"Asia"},{"id":"2_1","parentId":"2","value":24256800,"name":"Shanghai","country":"China"},{"id":"2_2","parentId":"2","value":23500000,"name":"Karachi","country":"Pakistan"},{"id":"2_3","parentId":"2","value":21516000,"name":"Beijing","country":"China"},{"id":"2_4","parentId":"2","value":16787941,"name":"Delhi","country":"India"},{"id":"2_5","parentId":"2","value":15200000,"name":"Tianjin","country":"China"},{"id":"3","name":"Australia"},{"id":"3_1","parentId":"3","value":4840600,"name":"Sydney","country":"Austraila"},{"id":"3_2","parentId":"3","value":4440000,"name":"Melbourne","country":"Austraila"},{"id":"4","name":"Europe"},{"id":"4_1","parentId":"4","value":14160467,"name":"Istanbul","country":"Turkey"},{"id":"4_2","parentId":"4","value":12197596,"name":"Moscow","country":"Russia"},{"id":"4_3","parentId":"4","value":8538689,"name":"London","country":"United Kingdom"},{"id":"4_4","parentId":"4","value":5191690,"name":"Saint Petersburg","country":"Russia"},{"id":"4_5","parentId":"4","value":4470800,"name":"Ankara","country":"Turkey"},{"id":"4_6","parentId":"4","value":3517424,"name":"Berlin","country":"Germany"},{"id":"5","name":"North America"},{"id":"5_1","parentId":"5","value":8874724,"name":"Mexico City","country":"Mexico"},{"id":"5_2","parentId":"5","value":8550405,"name":"New York City","country":"United States"},{"id":"5_3","parentId":"5","value":3884307,"name":"Los Angeles","country":"United States"},{"id":"5_4","parentId":"5","value":2808503,"name":"Toronto","country":"Canada"},{"id":"6","name":"South America"},{"id":"6_1","parentId":"6","value":11895893,"name":"São Paulo","country":"Brazil"},{"id":"6_2","parentId":"6","value":8693387,"name":"Lima","country":"Peru"},{"id":"6_3","parentId":"6","value":7776845,"name":"Bogotá","country":"Colombia"},{"id":"6_4","parentId":"6","value":6429923,"name":"Rio de Janeiro","country":"Brazil"}]}</value>
+  </data>
+  <metadata name="$this.RulerSnapLines" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0
+        dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EHAQAAAAABAAAAAQAAAAQU
+        U3lzdGVtLkRyYXdpbmcuUG9pbnQCAAAABf3///8UU3lzdGVtLkRyYXdpbmcuUG9pbnQCAAAAAXgBeQAA
+        CAgCAAAAAAAAANQAAAAL
+</value>
+  </metadata>
+</root>

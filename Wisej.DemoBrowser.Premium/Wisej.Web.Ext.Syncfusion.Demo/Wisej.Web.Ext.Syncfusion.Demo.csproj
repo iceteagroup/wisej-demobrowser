@@ -1,0 +1,670 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Wisej.Web.Ext.Syncfusion.Demo</RootNamespace>
+    <AssemblyName>Wisej.Web.Ext.Syncfusion.Demo</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+    <Use64BitIISExpress>true</Use64BitIISExpress>
+    <ProjectGuid>{D36DDFDB-AC1B-4E75-96F9-4113A54F9D5C}</ProjectGuid>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Wisej.Web.Ext.Syncfusion.Demo.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="Default.html" />
+    <Content Include="Default.json" />
+    <Content Include="favicon.ico" />
+    <EmbeddedResource Include="Component\ejAutocomplete.resx">
+      <DependentUpon>ejAutocomplete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\ejBulletGraph.resx">
+      <DependentUpon>ejBulletGraph.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\ejChart.resx">
+      <DependentUpon>ejChart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\ejCheckBox.resx">
+      <DependentUpon>ejCheckBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\ejCircularGauge.resx">
+      <DependentUpon>ejCircularGauge.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\ejColorPicker.resx">
+      <DependentUpon>ejColorPicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\ejComboBox.resx">
+      <DependentUpon>ejComboBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\ejDatePicker.resx">
+      <DependentUpon>ejDatePicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\ejDateRangePicker.resx">
+      <DependentUpon>ejDateRangePicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\ejDateTimePicker.resx">
+      <DependentUpon>ejDateTimePicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\ejDiagram.resx">
+      <DependentUpon>ejDiagram.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\ejDigitalGauge.resx">
+      <DependentUpon>ejDigitalGauge.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\ejDropDownList.resx">
+      <DependentUpon>ejDropDownList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\ejDropDownTree.resx">
+      <DependentUpon>ejDropDownTree.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\ejFileExplorer.resx">
+      <DependentUpon>ejFileExplorer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\ejGantt.resx">
+      <DependentUpon>ejGantt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\ejGrid.resx">
+      <DependentUpon>ejGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\ejHeatMap.resx">
+      <DependentUpon>ejHeatMap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\ejKanban.resx">
+      <DependentUpon>ejKanban.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\ejLinearGauge.resx">
+      <DependentUpon>ejLinearGauge.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\ejListBox.resx">
+      <DependentUpon>ejListBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\ejListView.resx">
+      <DependentUpon>ejListView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\ejMaskEdit.resx">
+      <DependentUpon>ejMaskEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\ejMediaPlayer.resx">
+      <DependentUpon>ejMediaPlayer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\ejPager.resx">
+      <DependentUpon>ejPager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\ejPdfViewer.resx">
+      <DependentUpon>ejPdfViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\ejPivotChart.resx">
+      <DependentUpon>ejPivotChart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\ejPivotClient.resx">
+      <DependentUpon>ejPivotClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\ejPivotGrid.resx">
+      <DependentUpon>ejPivotGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\ejPivotTreeMap.resx">
+      <DependentUpon>ejPivotTreeMap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\ejRating.resx">
+      <DependentUpon>ejRating.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\ejRecurrenceEditor.resx">
+      <DependentUpon>ejRecurrenceEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\ejRotator.resx">
+      <DependentUpon>ejRotator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\ejSchedule.resx">
+      <DependentUpon>ejSchedule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\ejSignature.resx">
+      <DependentUpon>ejSignature.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\ejSlider.resx">
+      <DependentUpon>ejSlider.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\ejSparkline.resx">
+      <DependentUpon>ejSparkline.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\ejSpreadsheet.resx">
+      <DependentUpon>ejSpreadsheet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\ejSunburstChart.resx">
+      <DependentUpon>ejSunburstChart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\ejSymbolPalette.resx">
+      <DependentUpon>ejSymbolPalette.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\ejTagCloud.resx">
+      <DependentUpon>ejTagCloud.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\ejTextBox.resx">
+      <DependentUpon>ejTextBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\ejTile.resx">
+      <DependentUpon>ejTile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\ejTimePicker.resx">
+      <DependentUpon>ejTimePicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\ejToolbar.resx">
+      <DependentUpon>ejToolbar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\ejTreeGrid.resx">
+      <DependentUpon>ejTreeGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\ejTreeMap.resx">
+      <DependentUpon>ejTreeMap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\ejTreeView.resx">
+      <DependentUpon>ejTreeView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <Content Include="Data\OrganizationalChart.json" />
+    <Content Include="Data\Sample.xlsx" />
+    <Content Include="Data\Wisej-Datasheet-V2.3.pdf" />
+    <Content Include="Images\Icon Buy.png" />
+    <Content Include="Images\Icon Contact.png" />
+    <Content Include="Images\Icon Free Trial.png" />
+    <Content Include="Images\splash.png" />
+    <Content Include="Images\wisej.png" />
+    <EmbeddedResource Include="Themes\EJ1.mixin.theme" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\bird.jpg" />
+    <Content Include="Images\card.jpg" />
+    <Content Include="Images\Kanban\1.png" />
+    <Content Include="Images\Kanban\2.png" />
+    <Content Include="Images\Kanban\3.png" />
+    <Content Include="Images\Kanban\4.png" />
+    <Content Include="Images\Kanban\5.png" />
+    <Content Include="Images\Kanban\6.png" />
+    <Content Include="Images\Kanban\7.png" />
+    <Content Include="Images\Kanban\8.png" />
+    <Content Include="Images\Kanban\9.png" />
+    <Content Include="Images\logo-wisej-white.png" />
+    <Content Include="Images\MediaPlayer\hqdefault.jpg" />
+    <Content Include="Images\MediaPlayer\mqdefault.jpg" />
+    <Content Include="Images\mos.png" />
+    <Content Include="Images\mu.jpg" />
+    <Content Include="Images\nature.jpg" />
+    <Content Include="Images\night.jpg" />
+    <Content Include="Images\OrgChart\Clayton.png" />
+    <Content Include="Images\OrgChart\eric.png" />
+    <Content Include="Images\OrgChart\image51.png" />
+    <Content Include="Images\OrgChart\image53.png" />
+    <Content Include="Images\OrgChart\image55.png" />
+    <Content Include="Images\OrgChart\image56.png" />
+    <Content Include="Images\OrgChart\image57.png" />
+    <Content Include="Images\OrgChart\Jenny.png" />
+    <Content Include="Images\OrgChart\John.png" />
+    <Content Include="Images\OrgChart\Maria.png" />
+    <Content Include="Images\OrgChart\Paul.png" />
+    <Content Include="Images\OrgChart\Robin.png" />
+    <Content Include="Images\OrgChart\Thomas.png" />
+    <Content Include="Images\sculpture.jpg" />
+    <Content Include="Images\seaview.jpg" />
+    <Content Include="Images\snowfall.jpg" />
+    <Content Include="Images\syncfusion.png" />
+    <Content Include="Images\Tile\alerts.png" />
+    <Content Include="Images\Tile\bing.png" />
+    <Content Include="Images\Tile\camera.png" />
+    <Content Include="Images\Tile\favs.png" />
+    <Content Include="Images\Tile\games.png" />
+    <Content Include="Images\Tile\map.png" />
+    <Content Include="Images\Tile\messages.png" />
+    <Content Include="Images\Tile\music.png" />
+    <Content Include="Images\Tile\people_1.png" />
+    <Content Include="Images\Tile\people_2.png" />
+    <Content Include="Images\Tile\pictures.png" />
+    <Content Include="Images\Tile\sports.png" />
+    <Content Include="Images\Tile\weather.png" />
+    <Content Include="Images\wwz.jpg" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Component\ejAutocomplete.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Component\ejAutocomplete.Designer.cs">
+      <DependentUpon>ejAutocomplete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\ejBarcode.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Component\ejBarcode.Designer.cs">
+      <DependentUpon>ejBarcode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\ejBulletGraph.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Component\ejBulletGraph.Designer.cs">
+      <DependentUpon>ejBulletGraph.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\ejChart.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Component\ejChart.Designer.cs">
+      <DependentUpon>ejChart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\ejCheckBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Component\ejCheckBox.Designer.cs">
+      <DependentUpon>ejCheckBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\ejCircularGauge.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Component\ejCircularGauge.Designer.cs">
+      <DependentUpon>ejCircularGauge.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\ejColorPicker.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Component\ejColorPicker.Designer.cs">
+      <DependentUpon>ejColorPicker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\ejComboBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Component\ejComboBox.Designer.cs">
+      <DependentUpon>ejComboBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\ejDatePicker.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Component\ejDatePicker.Designer.cs">
+      <DependentUpon>ejDatePicker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\ejDateRangePicker.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Component\ejDateRangePicker.Designer.cs">
+      <DependentUpon>ejDateRangePicker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\ejDateTimePicker.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Component\ejDateTimePicker.Designer.cs">
+      <DependentUpon>ejDateTimePicker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\ejDiagram.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Component\ejDiagram.Designer.cs">
+      <DependentUpon>ejDiagram.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\ejDigitalGauge.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Component\ejDigitalGauge.Designer.cs">
+      <DependentUpon>ejDigitalGauge.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\ejDropDownList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Component\ejDropDownList.Designer.cs">
+      <DependentUpon>ejDropDownList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\ejDropDownTree.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Component\ejDropDownTree.Designer.cs">
+      <DependentUpon>ejDropDownTree.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\ejFileExplorer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Component\ejFileExplorer.Designer.cs">
+      <DependentUpon>ejFileExplorer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\ejGantt.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Component\ejGantt.Designer.cs">
+      <DependentUpon>ejGantt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\ejGrid.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Component\ejGrid.Designer.cs">
+      <DependentUpon>ejGrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\ejHeatMap.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Component\ejHeatMap.Designer.cs">
+      <DependentUpon>ejHeatMap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\ejKanban.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Component\ejKanban.Designer.cs">
+      <DependentUpon>ejKanban.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\ejLinearGauge.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Component\ejLinearGauge.Designer.cs">
+      <DependentUpon>ejLinearGauge.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\ejListBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Component\ejListBox.Designer.cs">
+      <DependentUpon>ejListBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\ejListView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Component\ejListView.Designer.cs">
+      <DependentUpon>ejListView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\ejMaskEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Component\ejMaskEdit.Designer.cs">
+      <DependentUpon>ejMaskEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\ejMediaPlayer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Component\ejMediaPlayer.Designer.cs">
+      <DependentUpon>ejMediaPlayer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\ejPager.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Component\ejPager.Designer.cs">
+      <DependentUpon>ejPager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\ejPdfViewer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Component\ejPdfViewer.Designer.cs">
+      <DependentUpon>ejPdfViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\ejPivotChart.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Component\ejPivotChart.Designer.cs">
+      <DependentUpon>ejPivotChart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\ejPivotClient.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Component\ejPivotClient.Designer.cs">
+      <DependentUpon>ejPivotClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\ejPivotGrid.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Component\ejPivotGrid.Designer.cs">
+      <DependentUpon>ejPivotGrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\ejPivotTreeMap.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Component\ejPivotTreeMap.Designer.cs">
+      <DependentUpon>ejPivotTreeMap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\ejRating.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Component\ejRating.Designer.cs">
+      <DependentUpon>ejRating.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\ejRecurrenceEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Component\ejRecurrenceEditor.Designer.cs">
+      <DependentUpon>ejRecurrenceEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\ejRotator.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Component\ejRotator.Designer.cs">
+      <DependentUpon>ejRotator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\ejSchedule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Component\ejSchedule.Designer.cs">
+      <DependentUpon>ejSchedule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\ejSignature.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Component\ejSignature.Designer.cs">
+      <DependentUpon>ejSignature.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\ejSlider.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Component\ejSlider.Designer.cs">
+      <DependentUpon>ejSlider.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\ejSparkline.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Component\ejSparkline.Designer.cs">
+      <DependentUpon>ejSparkline.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\ejSpreadsheet.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Component\ejSpreadsheet.Designer.cs">
+      <DependentUpon>ejSpreadsheet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\ejSunburstChart.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Component\ejSunburstChart.Designer.cs">
+      <DependentUpon>ejSunburstChart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\ejSymbolPalette.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Component\ejSymbolPalette.Designer.cs">
+      <DependentUpon>ejSymbolPalette.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\ejTagCloud.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Component\ejTagCloud.Designer.cs">
+      <DependentUpon>ejTagCloud.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\ejTextBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Component\ejTextBox.Designer.cs">
+      <DependentUpon>ejTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\ejTile.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Component\ejTile.Designer.cs">
+      <DependentUpon>ejTile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\ejTimePicker.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Component\ejTimePicker.Designer.cs">
+      <DependentUpon>ejTimePicker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\ejToolbar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Component\ejToolbar.Designer.cs">
+      <DependentUpon>ejToolbar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\ejTreeMap.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Component\ejTreeMap.Designer.cs">
+      <DependentUpon>ejTreeMap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\ejTreeView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Component\ejTreeView.Designer.cs">
+      <DependentUpon>ejTreeView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\TestBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Component\ejTreeGrid.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Component\ejTreeGrid.Designer.cs">
+      <DependentUpon>ejTreeGrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainView.Designer.cs">
+      <DependentUpon>MainView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Wisej-2">
+      <Version>2.5.*</Version>
+    </PackageReference>
+    <PackageReference Include="Wisej-2-MaterialDesign">
+      <Version>2.5.*</Version>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Libs\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.DocIO.Base, Version=17.3460.0.26, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Libs\Syncfusion.DocIO.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.EJ, Version=17.3460.0.26, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Libs\Syncfusion.EJ.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.EJ.Export, Version=17.3460.0.26, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Libs\Syncfusion.EJ.Export.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.EJ.PdfViewer">
+      <HintPath>Libs\Syncfusion.EJ.PdfViewer.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Pdf.Base">
+      <HintPath>Libs\Syncfusion.Pdf.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.XlsIO.Base, Version=17.3460.0.26, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Libs\Syncfusion.XlsIO.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="Wisej.Web.Ext.Syncfusion, Version=2.0.0.0, Culture=neutral, PublicKeyToken=653fbd0440795259, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Wisej\Extensions\Premium\2.5\Wisej.Web.Ext.Syncfusion\Wisej.Web.Ext.Syncfusion\bin\Debug\Wisej.Web.Ext.Syncfusion.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Component\ejBarcode.resx">
+      <DependentUpon>ejBarcode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\TestBase.resx">
+      <DependentUpon>TestBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainView.resx">
+      <DependentUpon>MainView.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>65193</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:65193/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ejSymbolPalette1.Options" xml:space="preserve">
+    <value>{"palettes":[{"name":"Flow Shapes","expanded":true,"addInfo":{"source":"Images/SymbolPalette/flow.PNG"},"items":[{"name":"Process","width":44,"height":40,"offsetX":20,"offsetY":20,"fillColor":"white","borderWidth":1,"type":"flow","shape":"process"},{"name":"Decision","width":44,"height":40,"offsetX":20,"offsetY":20,"fillColor":"white","borderWidth":1,"type":"flow","shape":"decision"},{"name":"Sort","width":44,"height":40,"offsetX":20,"offsetY":20,"fillColor":"white","borderWidth":1,"type":"flow","shape":"sort"},{"name":"Document","width":44,"height":40,"offsetX":20,"offsetY":15,"fillColor":"white","borderWidth":1,"type":"flow","shape":"document"},{"name":"MultiDocument","width":43,"height":40,"offsetX":20,"offsetY":15,"fillColor":"white","borderWidth":1,"type":"flow","shape":"multidocument"}]},{"name":"Connectors","expanded":true,"addInfo":{"source":"Images/SymbolPalette/connector.PNG"},"items":[{"name":"Link1","segments":[{"type":"orthogonal"}],"sourcePoint":{"x":0,"y":0},"targetPoint":{"x":40,"y":40},"targetDecorator":{"shape":"arrow"},"paletteItem":{"height":45,"width":57,"enableScale":false}},{"name":"link2","segments":[{"type":"orthogonal"}],"sourcePoint":{"x":0,"y":0},"targetPoint":{"x":40,"y":40},"targetDecorator":{"shape":"none"},"paletteItem":{"height":45,"width":57,"enableScale":false}},{"name":"Link3","segments":[{"type":"straight"}],"sourcePoint":{"x":0,"y":0},"targetPoint":{"x":40,"y":40},"targetDecorator":{"shape":"arrow"},"paletteItem":{"height":45,"width":57,"enableScale":false}},{"name":"Link4","segments":[{"type":"straight"}],"sourcePoint":{"x":0,"y":0},"targetPoint":{"x":40,"y":40},"targetDecorator":{"shape":"none"},"paletteItem":{"height":45,"width":57,"enableScale":false}}]},{"name":"Basic Shapes","expanded":true,"addInfo":{"source":"Images/SymbolPalette/basic.PNG"},"items":[{"name":"Rectangle","width":80,"height":160,"paletteItem":{"enableScale":false,"margin":{"left":4,"right":4,"top":12,"bottom":10}},"fillColor":"white","borderWidth":1,"type":"basic","shape":"rectangle"},{"name":"Rectangle","width":70,"height":70,"fillColor":"white","borderWidth":1.5,"type":"basic","shape":"rectangle"},{"name":"Ellipse","width":70,"height":70,"fillColor":"white","borderWidth":1.5,"type":"basic","shape":"ellipse"},{"name":"Hexagon","width":70,"height":70,"fillColor":"white","borderWidth":1.5,"type":"basic","shape":"polygon","points":[{"x":25,"y":0},{"x":75,"y":0},{"x":100,"y":50},{"x":75,"y":100},{"x":25,"y":100},{"x":0,"y":50}]},{"name":"Triangle","width":70,"height":70,"fillColor":"white","borderWidth":1.5,"type":"basic","shape":"polygon","points":[{"x":50,"y":0},{"x":100,"y":100},{"x":0,"y":100}]}]}]}</value>
+  </data>
+  <data name="widgetTemplate1.Template" xml:space="preserve">
+    <value>&lt;svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="225px" height="28px" viewBox="0 -5 225 28"&gt;
+            &lt;g visibility="visible" class="node-svg-template"&gt;
+                &lt;image width="20px" height="20px" opacity="1" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{:addInfo.source}}"&gt;&lt;/image&gt;
+                &lt;text x="40" y="18" font-size="14"&gt;
+                    &lt;tspan&gt;{{:name}}&lt;/tspan&gt;
+                &lt;/text&gt;
+            &lt;/g&gt;
+        &lt;/svg&gt;</value>
+  </data>
+  <metadata name="$this.RulerSnapLines" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0
+        dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EHAQAAAAABAAAAAAAAAAQU
+        U3lzdGVtLkRyYXdpbmcuUG9pbnQCAAAACw==
+</value>
+  </metadata>
+</root>

@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ejSchedule1.Options" xml:space="preserve">
+    <value>{"currentDate":"2017-05-05","contextMenuSettings":{"enable":true,"menuItems":{"appointment":[{"id":"open","text":"Open Appointment"},{"id":"delete","text":"Delete Appointment"},{"id":"customMenu3","text":"Menu Item 3"},{"id":"customMenu4","text":"Menu Item 4"},{"id":"categorize","text":"Categorize"}],"cells":[{"id":"new","text":"New Appointment"},{"id":"recurrence","text":"New Recurring Appointment"},{"id":"today","text":"Today"},{"id":"gotodate","text":"Go to date"},{"id":"settings","text":"Settings"},{"id":"view","text":"View","parentId":"settings"},{"id":"timemode","text":"TimeMode","parentId":"settings"},{"id":"view_Day","text":"Day","parentId":"view"},{"id":"view_Week","text":"Week","parentId":"view"},{"id":"view_Workweek","text":"Workweek","parentId":"view"},{"id":"view_Month","text":"Month","parentId":"view"},{"id":"timemode_Hour12","text":"12 Hours","parentId":"timemode"},{"id":"timemode_Hour24","text":"24 Hours","parentId":"timemode"},{"id":"workhours","text":"Work Hours","parentId":"settings"},{"id":"customMenu1","text":"Menu Item 1"},{"id":"customMenu2","text":"Menu Item 2"}]}},"categorizeSettings":{"enable":true,"allowMultiple":true,"dataSource":[{"text":"Blue Category","id":1,"color":"#43b496","fontColor":"#ffffff"},{"text":"Green Category","id":2,"color":"#7f993e","fontColor":"#ffffff"},{"text":"Orange Category","id":3,"color":"#cc8638","fontColor":"#ffffff"},{"text":"Purple Category","id":4,"color":"#ab54a0","fontColor":"#ffffff"},{"text":"Red Category","id":5,"color":"#dd654e","fontColor":"#ffffff"},{"text":"Yellow Category","id":6,"color":"#d0af2b","fontColor":"#ffffff"}],"text":"text","id":"id","color":"color","fontColor":"fontColor"},"appointmentSettings":{"dataSource":[{"id":1,"subject":"Maintenance","startTime":"2017-04-30 02:30:00","endTime":"2017-04-10 04:00:00","description":"","allDay":false,"recurrence":false,"eventType":"Maintenance","roomId":1,"ownerId":1},{"id":2,"subject":"Technology Book Stall","startTime":"2017-05-05 12:30:00","endTime":"2017-05-05 16:00:00","description":"","allDay":false,"recurrence":false,"eventType":"Public Event","roomId":1,"ownerId":1},{"id":3,"subject":"Technology Book Stall","startTime":"2017-05-15 12:30:00","endTime":"2017-05-15 16:00:00","description":"","allDay":false,"recurrence":false,"eventType":"Public Event","roomId":1,"ownerId":1},{"id":4,"subject":"Technology Book Stall","startTime":"2017-05-10 12:30:00","endTime":"2017-05-10 16:00:00","description":"","allDay":false,"recurrence":false,"eventType":"Public Event","roomId":1,"ownerId":2},{"id":5,"subject":"Annual Conference","startTime":"2017-05-05 17:30:00","endTime":"2017-05-10 21:00:00","description":"","allDay":false,"recurrence":false,"eventType":"Commercial Event","roomId":1,"ownerId":1},{"id":6,"subject":"Annual Conference","startTime":"2017-05-15 17:30:00","endTime":"2017-05-15 21:30:00","description":"","allDay":false,"recurrence":false,"eventType":"Commercial Event","roomId":1,"ownerId":1},{"id":7,"subject":"Annual Conference","startTime":"2017-05-10 17:30:00","endTime":"2017-05-10 21:00:00","description":"","allDay":false,"recurrence":false,"eventType":"Commercial Event","roomId":1,"ownerId":2},{"id":8,"subject":"IMI Meeting","startTime":"2017-05-05 15:30:00","endTime":"2017-05-05 18:30:00","description":"International Management Institute","allDay":false,"recurrence":false,"eventType":"Commercial Event","roomId":2,"ownerId":3},{"id":9,"subject":"George Birthday Celebration","startTime":"2017-05-05 16:00:00","endTime":"2017-05-05 19:00:00","description":"4th Year Celebration","allDay":false,"recurrence":false,"eventType":"Family Event","roomId":1,"ownerId":2},{"id":10,"subject":"John Wedding Aniversary","startTime":"2017-05-02 17:00:00","endTime":"2017-05-02 20:00:00","description":"1st Year Celebration","allDay":false,"recurrence":false,"eventType":"Family Event","roomId":2,"ownerId":3}],"id":"id","subject":"subject","startTime":"startTime","endTime":"endTime","description":"description","allDay":"allDay","recurrence":"recurrence","recurrenceRule":"recurrenceRule","categorize":"categorize"}}</value>
+  </data>
+  <metadata name="$this.RulerSnapLines" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0
+        dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EHAQAAAAABAAAAAQAAAAQU
+        U3lzdGVtLkRyYXdpbmcuUG9pbnQCAAAABf3///8UU3lzdGVtLkRyYXdpbmcuUG9pbnQCAAAAAXgBeQAA
+        CAgCAAAAAAAAANQAAAAL
+</value>
+  </metadata>
+</root>

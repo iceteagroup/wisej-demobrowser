@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="widgetFunction1.Source" xml:space="preserve">
+    <value>var sumAggregator = function (propertyName) {
+    return function (items, cellMetadata) {
+        var sum = 0;
+        $.each(items, function (index, item) {
+            sum += item[propertyName];
+        });
+        return sum;
+    };
+};
+var saleValueCalculator = function (items, cellMetadata) {
+    var sum = 0;
+    $.each(items, function (index, item) {
+        sum += item.UnitPrice * item.UnitsSold;
+    });
+    return (Math.round(sum * 10) / 10).toFixed(2);
+};
+
+var dataOptions = {
+                    flatDataOptions: {
+                        dataSource:
+                        [{ "ProductCategory": "Clothing", "UnitPrice": 12.81, "SellerName": "Stanley Brooker", "Country": "Bulgaria", "City": "Plovdiv", "Date": "01/01/2012", "UnitsSold": 282 },
+                        { "ProductCategory": "Clothing", "UnitPrice": 49.57, "SellerName": "Elisa Longbottom", "Country": "US", "City": "New York", "Date": "01/05/2013", "UnitsSold": 296 },
+                        { "ProductCategory": "Bikes", "UnitPrice": 3.56, "SellerName": "Lydia Burson", "Country": "Uruguay", "City": "Ciudad de la Costa", "Date": "01/06/2011", "UnitsSold": 68 },
+                        { "ProductCategory": "Accessories", "UnitPrice": 85.58, "SellerName": "David Haley", "Country": "UK", "City": "London", "Date": "04/07/2012", "UnitsSold": 293 },
+                        { "ProductCategory": "Components", "UnitPrice": 18.13, "SellerName": "John Smith", "Country": "Japan", "City": "Yokohama", "Date": "12/08/2012", "UnitsSold": 240 },
+                        { "ProductCategory": "Clothing", "UnitPrice": 68.33, "SellerName": "Larry Lieb", "Country": "Uruguay", "City": "Ciudad de la Costa", "Date": "05/12/2011", "UnitsSold": 456 },
+                        { "ProductCategory": "Components", "UnitPrice": 16.05, "SellerName": "Walter Pang", "Country": "Bulgaria", "City": "Sofia", "Date": "02/19/2013", "UnitsSold": 492 }],
+                        metadata: {
+                            cube: {
+                                name: "Sales",
+                                caption: "Sales",
+                                measuresDimension: {
+                                    caption: "Measures",
+                                    measures: [ //for each measure, name and aggregator are required
+                                        { caption: "Units Sold", name: "UnitsSold", aggregator: sumAggregator('UnitsSold') },
+                                        { caption: "Unit Price", name: "UnitPrice", aggregator: sumAggregator('UnitPrice') },
+                                        { caption: "Sale Value", name: "SaleValue", aggregator: saleValueCalculator }]
+                                },
+                                dimensions: [ // for each dimension
+                                    {
+                                        caption: "Date", name: "Date", /*displayFolder: "Folder1\\Folder2",*/ hierarchies: [
+                                            $.ig.OlapUtilities.prototype.getDateHierarchy(
+                                                "Date", // the source property name
+                                                ["year", "quarter", "month", "date"], // the date parts for which levels will be generated (optional)
+                                                "Dates", // The name for the hierarchy (optional)
+                                                "Date", // The caption for the hierarchy (optional)
+                                                ["Year", "Quarter", "Month", "Day"], // the captions for the levels (optional)
+                                                "All Periods") // the root level caption (optional)
+                                        ]
+                                    },
+                                    {
+                                        caption: "Location", name: "Location", hierarchies: [{
+                                            caption: "Location", name: "Location", levels: [
+                                                {
+                                                    name: "AllLocations", caption: "All Locations",
+                                                    memberProvider: function (item) { return "All Locations"; }
+                                                },
+                                                {
+                                                    name: "Country", caption: "Country",
+                                                    memberProvider: function (item) { return item.Country; }
+                                                },
+                                                {
+                                                    name: "City", caption: "City",
+                                                    memberProvider: function (item) { return item.City; }
+                                                }]
+                                        }]
+                                    },
+                                    {
+                                        caption: "Product", name: "Product", hierarchies: [{
+                                            caption: "Product", name: "Product", levels: [
+                                                {
+                                                    name: "AllProducts", caption: "All Products",
+                                                    memberProvider: function (item) { return "All Products"; }
+                                                },
+                                                {
+                                                    name: "ProductCategory", caption: "Category",
+                                                    memberProvider: function (item) { return item.ProductCategory; }
+                                                }]
+                                        }]
+                                    },
+                                    {
+                                        caption: "Seller", name: "Seller", hierarchies: [{
+                                            caption: "Seller", name: "Seller", levels: [
+                                                {
+                                                    name: "AllSellers", caption: "All Sellers",
+                                                    memberProvider: function (item) { return "All Sellers"; }
+                                                },
+                                                {
+                                                    name: "SellerName", caption: "Seller",
+                                                    memberProvider: function (item) { return item.SellerName; }
+                                                }]
+                                        }]
+                                    }]
+                            }
+                        }
+                    },
+                    // Preload hiearhies for the rows, columns, filters and measures
+                    rows: "[Date].[Dates]",
+                    columns: "[Product].[Product]",
+                    measures: "[Measures].[UnitsSold]"//,[Measures].[UnitPrice]"
+                };
+    
+    this.widget.option("dataSourceOptions", dataOptions);</value>
+  </data>
+  <metadata name="$this.RulerSnapLines" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0
+        dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EHAQAAAAABAAAAAQAAAAQU
+        U3lzdGVtLkRyYXdpbmcuUG9pbnQCAAAABf3///8UU3lzdGVtLkRyYXdpbmcuUG9pbnQCAAAAAXgBeQAA
+        CAgCAAAAAAAAANUAAAAL
+</value>
+  </metadata>
+</root>

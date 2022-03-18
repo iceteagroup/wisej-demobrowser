@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="dxSparkline9.Options" xml:space="preserve">
+    <value>{"dataSource":[{"month":1,"2010":1115,"2011":1358,"2012":1661},{"month":2,"2010":1099,"2011":1375,"2012":1742},{"month":3,"2010":1114,"2011":1423,"2012":1677},{"month":4,"2010":1150,"2011":1486,"2012":1650},{"month":5,"2010":1205,"2011":1511,"2012":1589},{"month":6,"2010":1235,"2011":1529,"2012":1602},{"month":7,"2010":1193,"2011":1573,"2012":1593},{"month":8,"2010":1220,"2011":1765,"2012":1634},{"month":9,"2010":1272,"2011":1771,"2012":1750},{"month":10,"2010":1345,"2011":1672,"2012":1745},{"month":11,"2010":1370,"2011":1741,"2012":1720},{"month":12,"2010":1392,"2011":1643,"2012":1684}],"argumentField":"month","valueField":"2012","type":"spline","lineWidth":3,"lineColor":"#9ab57e","minColor":"#6babac","maxColor":"#ebdd8f","showMinMax":true,"showFirstLast":false,"tooltip":{"format":"currency"}}</value>
+  </data>
+  <data name="dxSparkline8.Options" xml:space="preserve">
+    <value>{"dataSource":[{"month":1,"2010":77,"2011":93,"2012":107},{"month":2,"2010":72,"2011":101,"2012":112},{"month":3,"2010":79,"2011":115,"2012":123},{"month":4,"2010":82,"2011":116,"2012":123},{"month":5,"2010":86,"2011":124,"2012":116},{"month":6,"2010":73,"2011":115,"2012":102},{"month":7,"2010":73,"2011":110,"2012":94},{"month":8,"2010":77,"2011":117,"2012":105},{"month":9,"2010":76,"2011":113,"2012":113},{"month":10,"2010":81,"2011":103,"2012":111},{"month":11,"2010":83,"2011":110,"2012":107},{"month":12,"2010":89,"2011":109,"2012":110}],"argumentField":"month","valueField":"2012","type":"line","showMinMax":true,"tooltip":{"format":"currency"}}</value>
+  </data>
+  <data name="dxSparkline1.Options" xml:space="preserve">
+    <value>{"dataSource":[{"month":1,"2010":77,"2011":93,"2012":107},{"month":2,"2010":72,"2011":101,"2012":112},{"month":3,"2010":79,"2011":115,"2012":123},{"month":4,"2010":82,"2011":116,"2012":123},{"month":5,"2010":86,"2011":124,"2012":116},{"month":6,"2010":73,"2011":115,"2012":102},{"month":7,"2010":73,"2011":110,"2012":94},{"month":8,"2010":77,"2011":117,"2012":105},{"month":9,"2010":76,"2011":113,"2012":113},{"month":10,"2010":81,"2011":103,"2012":111},{"month":11,"2010":83,"2011":110,"2012":107},{"month":12,"2010":89,"2011":109,"2012":110}],"argumentField":"month","valueField":"2010","type":"line","showMinMax":true,"tooltip":{"format":"currency"}}</value>
+  </data>
+  <data name="dxSparkline2.Options" xml:space="preserve">
+    <value>{"dataSource":[{"month":1,"2010":77,"2011":93,"2012":107},{"month":2,"2010":72,"2011":101,"2012":112},{"month":3,"2010":79,"2011":115,"2012":123},{"month":4,"2010":82,"2011":116,"2012":123},{"month":5,"2010":86,"2011":124,"2012":116},{"month":6,"2010":73,"2011":115,"2012":102},{"month":7,"2010":73,"2011":110,"2012":94},{"month":8,"2010":77,"2011":117,"2012":105},{"month":9,"2010":76,"2011":113,"2012":113},{"month":10,"2010":81,"2011":103,"2012":111},{"month":11,"2010":83,"2011":110,"2012":107},{"month":12,"2010":89,"2011":109,"2012":110}],"argumentField":"month","valueField":"2011","type":"line","showMinMax":true,"tooltip":{"format":"currency"}}</value>
+  </data>
+  <data name="dxSparkline3.Options" xml:space="preserve">
+    <value>{"dataSource":[{"month":1,"2010":17,"2011":30,"2012":27},{"month":2,"2010":28,"2011":28,"2012":33},{"month":3,"2010":34,"2011":34,"2012":35},{"month":4,"2010":37,"2011":37,"2012":32},{"month":5,"2010":47,"2011":47,"2012":30},{"month":6,"2010":37,"2011":37,"2012":28},{"month":7,"2010":34,"2011":34,"2012":27},{"month":8,"2010":40,"2011":40,"2012":27},{"month":9,"2010":41,"2011":41,"2012":31},{"month":10,"2010":30,"2011":30,"2012":34},{"month":11,"2010":34,"2011":34,"2012":31},{"month":12,"2010":32,"2011":32,"2012":33}],"argumentField":"month","valueField":"2012","lineColor":"#e8c267","firstLastColor":"#e55253","pointSize":6,"pointSymbol":"square","pointColor":"#ebdd8f","type":"stepline","tooltip":{"format":"currency"}}</value>
+  </data>
+  <data name="dxSparkline4.Options" xml:space="preserve">
+    <value>{"dataSource":[{"month":1,"2010":1115,"2011":1358,"2012":1661},{"month":2,"2010":1099,"2011":1375,"2012":1742},{"month":3,"2010":1114,"2011":1423,"2012":1677},{"month":4,"2010":1150,"2011":1486,"2012":1650},{"month":5,"2010":1205,"2011":1511,"2012":1589},{"month":6,"2010":1235,"2011":1529,"2012":1602},{"month":7,"2010":1193,"2011":1573,"2012":1593},{"month":8,"2010":1220,"2011":1765,"2012":1634},{"month":9,"2010":1272,"2011":1771,"2012":1750},{"month":10,"2010":1345,"2011":1672,"2012":1745},{"month":11,"2010":1370,"2011":1741,"2012":1720},{"month":12,"2010":1392,"2011":1643,"2012":1684}],"argumentField":"month","valueField":"2010","type":"spline","lineWidth":3,"lineColor":"#9ab57e","minColor":"#6babac","maxColor":"#ebdd8f","showMinMax":true,"showFirstLast":false,"tooltip":{"format":"currency"}}</value>
+  </data>
+  <data name="dxSparkline6.Options" xml:space="preserve">
+    <value>{"dataSource":[{"month":1,"2010":1115,"2011":1358,"2012":1661},{"month":2,"2010":1099,"2011":1375,"2012":1742},{"month":3,"2010":1114,"2011":1423,"2012":1677},{"month":4,"2010":1150,"2011":1486,"2012":1650},{"month":5,"2010":1205,"2011":1511,"2012":1589},{"month":6,"2010":1235,"2011":1529,"2012":1602},{"month":7,"2010":1193,"2011":1573,"2012":1593},{"month":8,"2010":1220,"2011":1765,"2012":1634},{"month":9,"2010":1272,"2011":1771,"2012":1750},{"month":10,"2010":1345,"2011":1672,"2012":1745},{"month":11,"2010":1370,"2011":1741,"2012":1720},{"month":12,"2010":1392,"2011":1643,"2012":1684}],"argumentField":"month","valueField":"2011","type":"spline","lineWidth":3,"lineColor":"#9ab57e","minColor":"#6babac","maxColor":"#ebdd8f","showMinMax":true,"showFirstLast":false,"tooltip":{"format":"currency"}}</value>
+  </data>
+  <data name="dxSparkline7.Options" xml:space="preserve">
+    <value>{"dataSource":[{"month":1,"2010":17,"2011":30,"2012":27},{"month":2,"2010":28,"2011":28,"2012":33},{"month":3,"2010":34,"2011":34,"2012":35},{"month":4,"2010":37,"2011":37,"2012":32},{"month":5,"2010":47,"2011":47,"2012":30},{"month":6,"2010":37,"2011":37,"2012":28},{"month":7,"2010":34,"2011":34,"2012":27},{"month":8,"2010":40,"2011":40,"2012":27},{"month":9,"2010":41,"2011":41,"2012":31},{"month":10,"2010":30,"2011":30,"2012":34},{"month":11,"2010":34,"2011":34,"2012":31},{"month":12,"2010":32,"2011":32,"2012":33}],"argumentField":"month","valueField":"2010","lineColor":"#e8c267","firstLastColor":"#e55253","pointSize":6,"pointSymbol":"square","pointColor":"#ebdd8f","type":"stepline","tooltip":{"format":"currency"}}</value>
+  </data>
+  <data name="dxSparkline5.Options" xml:space="preserve">
+    <value>{"dataSource":[{"month":1,"2010":17,"2011":30,"2012":27},{"month":2,"2010":28,"2011":28,"2012":33},{"month":3,"2010":34,"2011":34,"2012":35},{"month":4,"2010":37,"2011":37,"2012":32},{"month":5,"2010":47,"2011":47,"2012":30},{"month":6,"2010":37,"2011":37,"2012":28},{"month":7,"2010":34,"2011":34,"2012":27},{"month":8,"2010":40,"2011":40,"2012":27},{"month":9,"2010":41,"2011":41,"2012":31},{"month":10,"2010":30,"2011":30,"2012":34},{"month":11,"2010":34,"2011":34,"2012":31},{"month":12,"2010":32,"2011":32,"2012":33}],"argumentField":"month","valueField":"2011","lineColor":"#e8c267","firstLastColor":"#e55253","pointSize":6,"pointSymbol":"square","pointColor":"#ebdd8f","type":"stepline","tooltip":{"format":"currency"}}</value>
+  </data>
+  <metadata name="$this.RulerSnapLines" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0
+        dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EHAQAAAAABAAAAAAAAAAQU
+        U3lzdGVtLkRyYXdpbmcuUG9pbnQCAAAACw==
+</value>
+  </metadata>
+</root>

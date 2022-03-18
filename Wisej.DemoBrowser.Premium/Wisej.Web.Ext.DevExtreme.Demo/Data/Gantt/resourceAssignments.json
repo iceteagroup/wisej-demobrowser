@@ -1,0 +1,322 @@
+[
+  {
+    "id": 0,
+    "taskId": 3,
+    "resourceId": 1
+  },
+  {
+    "id": 1,
+    "taskId": 4,
+    "resourceId": 1
+  },
+  {
+    "id": 2,
+    "taskId": 5,
+    "resourceId": 2
+  },
+  {
+    "id": 3,
+    "taskId": 6,
+    "resourceId": 2
+  },
+  {
+    "id": 4,
+    "taskId": 9,
+    "resourceId": 3
+  },
+  {
+    "id": 5,
+    "taskId": 10,
+    "resourceId": 3
+  },
+  {
+    "id": 6,
+    "taskId": 11,
+    "resourceId": 2
+  },
+  {
+    "id": 7,
+    "taskId": 12,
+    "resourceId": 2
+  },
+  {
+    "id": 8,
+    "taskId": 12,
+    "resourceId": 3
+  },
+  {
+    "id": 9,
+    "taskId": 13,
+    "resourceId": 3
+  },
+  {
+    "id": 10,
+    "taskId": 14,
+    "resourceId": 2
+  },
+  {
+    "id": 11,
+    "taskId": 15,
+    "resourceId": 1
+  },
+  {
+    "id": 12,
+    "taskId": 15,
+    "resourceId": 2
+  },
+  {
+    "id": 13,
+    "taskId": 16,
+    "resourceId": 2
+  },
+  {
+    "id": 14,
+    "taskId": 19,
+    "resourceId": 3
+  },
+  {
+    "id": 15,
+    "taskId": 20,
+    "resourceId": 3
+  },
+  {
+    "id": 16,
+    "taskId": 21,
+    "resourceId": 3
+  },
+  {
+    "id": 17,
+    "taskId": 22,
+    "resourceId": 1
+  },
+  {
+    "id": 18,
+    "taskId": 23,
+    "resourceId": 1
+  },
+  {
+    "id": 19,
+    "taskId": 24,
+    "resourceId": 1
+  },
+  {
+    "id": 20,
+    "taskId": 24,
+    "resourceId": 2
+  },
+  {
+    "id": 21,
+    "taskId": 27,
+    "resourceId": 4
+  },
+  {
+    "id": 22,
+    "taskId": 28,
+    "resourceId": 4
+  },
+  {
+    "id": 23,
+    "taskId": 29,
+    "resourceId": 4
+  },
+  {
+    "id": 24,
+    "taskId": 30,
+    "resourceId": 4
+  },
+  {
+    "id": 25,
+    "taskId": 31,
+    "resourceId": 4
+  },
+  {
+    "id": 26,
+    "taskId": 34,
+    "resourceId": 5
+  },
+  {
+    "id": 27,
+    "taskId": 35,
+    "resourceId": 5
+  },
+  {
+    "id": 28,
+    "taskId": 37,
+    "resourceId": 5
+  },
+  {
+    "id": 29,
+    "taskId": 38,
+    "resourceId": 5
+  },
+  {
+    "id": 30,
+    "taskId": 39,
+    "resourceId": 5
+  },
+  {
+    "id": 31,
+    "taskId": 40,
+    "resourceId": 5
+  },
+  {
+    "id": 32,
+    "taskId": 41,
+    "resourceId": 5
+  },
+  {
+    "id": 33,
+    "taskId": 44,
+    "resourceId": 5
+  },
+  {
+    "id": 34,
+    "taskId": 45,
+    "resourceId": 5
+  },
+  {
+    "id": 35,
+    "taskId": 46,
+    "resourceId": 5
+  },
+  {
+    "id": 36,
+    "taskId": 47,
+    "resourceId": 5
+  },
+  {
+    "id": 37,
+    "taskId": 50,
+    "resourceId": 6
+  },
+  {
+    "id": 38,
+    "taskId": 51,
+    "resourceId": 6
+  },
+  {
+    "id": 39,
+    "taskId": 52,
+    "resourceId": 6
+  },
+  {
+    "id": 40,
+    "taskId": 53,
+    "resourceId": 6
+  },
+  {
+    "id": 41,
+    "taskId": 54,
+    "resourceId": 6
+  },
+  {
+    "id": 42,
+    "taskId": 55,
+    "resourceId": 6
+  },
+  {
+    "id": 43,
+    "taskId": 56,
+    "resourceId": 6
+  },
+  {
+    "id": 44,
+    "taskId": 59,
+    "resourceId": 7
+  },
+  {
+    "id": 45,
+    "taskId": 60,
+    "resourceId": 7
+  },
+  {
+    "id": 46,
+    "taskId": 61,
+    "resourceId": 7
+  },
+  {
+    "id": 47,
+    "taskId": 62,
+    "resourceId": 7
+  },
+  {
+    "id": 48,
+    "taskId": 63,
+    "resourceId": 7
+  },
+  {
+    "id": 49,
+    "taskId": 64,
+    "resourceId": 7
+  },
+  {
+    "id": 50,
+    "taskId": 65,
+    "resourceId": 7
+  },
+  {
+    "id": 51,
+    "taskId": 66,
+    "resourceId": 7
+  },
+  {
+    "id": 52,
+    "taskId": 69,
+    "resourceId": 2
+  },
+  {
+    "id": 53,
+    "taskId": 71,
+    "resourceId": 8
+  },
+  {
+    "id": 54,
+    "taskId": 72,
+    "resourceId": 8
+  },
+  {
+    "id": 55,
+    "taskId": 73,
+    "resourceId": 8
+  },
+  {
+    "id": 56,
+    "taskId": 76,
+    "resourceId": 8
+  },
+  {
+    "id": 57,
+    "taskId": 77,
+    "resourceId": 8
+  },
+  {
+    "id": 58,
+    "taskId": 78,
+    "resourceId": 8
+  },
+  {
+    "id": 59,
+    "taskId": 79,
+    "resourceId": 8
+  },
+  {
+    "id": 60,
+    "taskId": 80,
+    "resourceId": 8
+  },
+  {
+    "id": 61,
+    "taskId": 83,
+    "resourceId": 2
+  },
+  {
+    "id": 62,
+    "taskId": 84,
+    "resourceId": 2
+  },
+  {
+    "id": 63,
+    "taskId": 85,
+    "resourceId": 2
+  }
+]
