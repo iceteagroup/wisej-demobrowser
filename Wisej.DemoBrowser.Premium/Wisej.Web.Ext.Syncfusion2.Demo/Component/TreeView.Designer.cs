@@ -53,7 +53,7 @@
             this.groupBox1.Controls.Add(this.checkBoxShowCheckbox);
             this.groupBox1.Controls.Add(this.checkBoxDragAndDrop);
             this.groupBox1.Controls.Add(this.comboBoxExpandOn);
-            this.groupBox1.Size = new System.Drawing.Size(250, 295);
+            this.groupBox1.Size = new System.Drawing.Size(250, 369);
             this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
             this.groupBox1.Controls.SetChildIndex(this.comboBoxExpandOn, 0);
             this.groupBox1.Controls.SetChildIndex(this.checkBoxDragAndDrop, 0);
@@ -62,7 +62,7 @@
             // 
             // buttonUpdate
             // 
-            this.buttonUpdate.Location = new System.Drawing.Point(28, 214);
+            this.buttonUpdate.Location = new System.Drawing.Point(28, 288);
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
             // panel
@@ -92,35 +92,36 @@
             "DblClick",
             "None"});
             this.comboBoxExpandOn.LabelText = "Expand on";
-            this.comboBoxExpandOn.Location = new System.Drawing.Point(18, 112);
+            this.comboBoxExpandOn.Location = new System.Drawing.Point(27, 147);
             this.comboBoxExpandOn.Name = "comboBoxExpandOn";
-            this.comboBoxExpandOn.Size = new System.Drawing.Size(214, 42);
+            this.comboBoxExpandOn.Size = new System.Drawing.Size(196, 46);
             this.comboBoxExpandOn.TabIndex = 1;
             // 
             // checkBoxDragAndDrop
             // 
             this.checkBoxDragAndDrop.Appearance = Wisej.Web.Appearance.Switch;
-            this.checkBoxDragAndDrop.Location = new System.Drawing.Point(18, 25);
+            this.checkBoxDragAndDrop.AutoSize = false;
+            this.checkBoxDragAndDrop.Location = new System.Drawing.Point(27, 40);
             this.checkBoxDragAndDrop.Name = "checkBoxDragAndDrop";
-            this.checkBoxDragAndDrop.Size = new System.Drawing.Size(168, 24);
+            this.checkBoxDragAndDrop.Size = new System.Drawing.Size(195, 24);
             this.checkBoxDragAndDrop.TabIndex = 2;
             this.checkBoxDragAndDrop.Text = "Allow drag and drop";
             // 
             // checkBoxShowCheckbox
             // 
             this.checkBoxShowCheckbox.Appearance = Wisej.Web.Appearance.Switch;
-            this.checkBoxShowCheckbox.Location = new System.Drawing.Point(18, 83);
+            this.checkBoxShowCheckbox.Location = new System.Drawing.Point(28, 106);
             this.checkBoxShowCheckbox.Name = "checkBoxShowCheckbox";
-            this.checkBoxShowCheckbox.Size = new System.Drawing.Size(144, 24);
+            this.checkBoxShowCheckbox.Size = new System.Drawing.Size(164, 24);
             this.checkBoxShowCheckbox.TabIndex = 3;
             this.checkBoxShowCheckbox.Text = "Show checkbox";
             // 
             // checkBoxEditing
             // 
             this.checkBoxEditing.Appearance = Wisej.Web.Appearance.Switch;
-            this.checkBoxEditing.Location = new System.Drawing.Point(18, 54);
+            this.checkBoxEditing.Location = new System.Drawing.Point(27, 73);
             this.checkBoxEditing.Name = "checkBoxEditing";
-            this.checkBoxEditing.Size = new System.Drawing.Size(123, 24);
+            this.checkBoxEditing.Size = new System.Drawing.Size(139, 24);
             this.checkBoxEditing.TabIndex = 4;
             this.checkBoxEditing.Text = "Allow edting";
             // 

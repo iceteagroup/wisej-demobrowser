@@ -52,6 +52,7 @@
             this.groupBox1.Controls.Add(this.comboBoxPosition);
             this.groupBox1.Controls.Add(this.checkBoxHeader);
             this.groupBox1.Controls.Add(this.checkBoxShowCheckBox);
+            this.groupBox1.Size = new System.Drawing.Size(250, 408);
             this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
             this.groupBox1.Controls.SetChildIndex(this.checkBoxShowCheckBox, 0);
             this.groupBox1.Controls.SetChildIndex(this.checkBoxHeader, 0);
@@ -60,6 +61,7 @@
             // 
             // buttonUpdate
             // 
+            this.buttonUpdate.Location = new System.Drawing.Point(28, 327);
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
             // panel
@@ -83,9 +85,9 @@
             // checkBoxShowCheckBox
             // 
             this.checkBoxShowCheckBox.Appearance = Wisej.Web.Appearance.Switch;
-            this.checkBoxShowCheckBox.Location = new System.Drawing.Point(25, 33);
+            this.checkBoxShowCheckBox.Location = new System.Drawing.Point(25, 46);
             this.checkBoxShowCheckBox.Name = "checkBoxShowCheckBox";
-            this.checkBoxShowCheckBox.Size = new System.Drawing.Size(144, 24);
+            this.checkBoxShowCheckBox.Size = new System.Drawing.Size(164, 24);
             this.checkBoxShowCheckBox.TabIndex = 2;
             this.checkBoxShowCheckBox.Text = "Show checkbox";
             this.checkBoxShowCheckBox.CheckedChanged += new System.EventHandler(this.checkBoxShowCheckBox_CheckedChanged);
@@ -93,9 +95,9 @@
             // checkBoxHeader
             // 
             this.checkBoxHeader.Appearance = Wisej.Web.Appearance.Switch;
-            this.checkBoxHeader.Location = new System.Drawing.Point(25, 61);
+            this.checkBoxHeader.Location = new System.Drawing.Point(25, 83);
             this.checkBoxHeader.Name = "checkBoxHeader";
-            this.checkBoxHeader.Size = new System.Drawing.Size(129, 24);
+            this.checkBoxHeader.Size = new System.Drawing.Size(147, 24);
             this.checkBoxHeader.TabIndex = 3;
             this.checkBoxHeader.Text = "Show header";
             // 
@@ -107,9 +109,9 @@
             "Left",
             "Right"});
             this.comboBoxPosition.LabelText = "CheckBox position";
-            this.comboBoxPosition.Location = new System.Drawing.Point(23, 90);
+            this.comboBoxPosition.Location = new System.Drawing.Point(23, 119);
             this.comboBoxPosition.Name = "comboBoxPosition";
-            this.comboBoxPosition.Size = new System.Drawing.Size(200, 42);
+            this.comboBoxPosition.Size = new System.Drawing.Size(200, 46);
             this.comboBoxPosition.TabIndex = 4;
             // 
             // comboBoxSortOrder
@@ -120,9 +122,9 @@
             "Ascending",
             "Descending"});
             this.comboBoxSortOrder.LabelText = "Sort order";
-            this.comboBoxSortOrder.Location = new System.Drawing.Point(23, 148);
+            this.comboBoxSortOrder.Location = new System.Drawing.Point(23, 183);
             this.comboBoxSortOrder.Name = "comboBoxSortOrder";
-            this.comboBoxSortOrder.Size = new System.Drawing.Size(200, 42);
+            this.comboBoxSortOrder.Size = new System.Drawing.Size(200, 46);
             this.comboBoxSortOrder.TabIndex = 5;
             // 
             // ListView

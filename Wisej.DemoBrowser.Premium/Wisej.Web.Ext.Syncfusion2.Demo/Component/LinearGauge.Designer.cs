@@ -97,7 +97,7 @@
             this.numericUpDown1.Label.Size = 50;
             this.numericUpDown1.Label.SizeType = Wisej.Web.SizeType.Percent;
             this.numericUpDown1.LabelText = "Value";
-            this.numericUpDown1.Location = new System.Drawing.Point(9, 83);
+            this.numericUpDown1.Location = new System.Drawing.Point(9, 98);
             this.numericUpDown1.Name = "numericUpDown1";
             this.numericUpDown1.Size = new System.Drawing.Size(230, 60);
             this.numericUpDown1.TabIndex = 1;
@@ -109,7 +109,7 @@
             this.numericUpDownMajorTick.Label.Size = 50;
             this.numericUpDownMajorTick.Label.SizeType = Wisej.Web.SizeType.Percent;
             this.numericUpDownMajorTick.LabelText = "Major tick";
-            this.numericUpDownMajorTick.Location = new System.Drawing.Point(9, 18);
+            this.numericUpDownMajorTick.Location = new System.Drawing.Point(9, 26);
             this.numericUpDownMajorTick.Minimum = new decimal(new int[] {
             1,
             0,
@@ -131,7 +131,7 @@
             this.numericUpDownMinorType.Label.Size = 50;
             this.numericUpDownMinorType.Label.SizeType = Wisej.Web.SizeType.Percent;
             this.numericUpDownMinorType.LabelText = "Minor tick";
-            this.numericUpDownMinorType.Location = new System.Drawing.Point(129, 18);
+            this.numericUpDownMinorType.Location = new System.Drawing.Point(129, 26);
             this.numericUpDownMinorType.Minimum = new decimal(new int[] {
             1,
             0,
@@ -153,9 +153,9 @@
             "Vertical",
             "Horizontal"});
             this.comboBoxOrientation.LabelText = "Orientation";
-            this.comboBoxOrientation.Location = new System.Drawing.Point(9, 155);
+            this.comboBoxOrientation.Location = new System.Drawing.Point(9, 175);
             this.comboBoxOrientation.Name = "comboBoxOrientation";
-            this.comboBoxOrientation.Size = new System.Drawing.Size(112, 53);
+            this.comboBoxOrientation.Size = new System.Drawing.Size(112, 46);
             this.comboBoxOrientation.TabIndex = 5;
             // 
             // comboBoxContainerType
@@ -165,9 +165,9 @@
             "Normal",
             "RoundedRectangle"});
             this.comboBoxContainerType.LabelText = "Container type";
-            this.comboBoxContainerType.Location = new System.Drawing.Point(127, 155);
+            this.comboBoxContainerType.Location = new System.Drawing.Point(127, 175);
             this.comboBoxContainerType.Name = "comboBoxContainerType";
-            this.comboBoxContainerType.Size = new System.Drawing.Size(112, 53);
+            this.comboBoxContainerType.Size = new System.Drawing.Size(112, 46);
             this.comboBoxContainerType.TabIndex = 6;
             // 
             // LinearGauge

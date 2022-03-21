@@ -84,9 +84,9 @@
             this.groupBox2.Controls.Add(this.checkBoxValueTypeIcon);
             this.groupBox2.Controls.Add(this.checkBoxSortIcon);
             this.groupBox2.Controls.Add(this.checkBoxFilterIcon);
-            this.groupBox2.Location = new System.Drawing.Point(7, 17);
+            this.groupBox2.Location = new System.Drawing.Point(7, 27);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(237, 144);
+            this.groupBox2.Size = new System.Drawing.Size(237, 196);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.Text = "Grouping bar";
             // 
@@ -94,9 +94,9 @@
             // 
             this.checkBoxRemoveIcon.Appearance = Wisej.Web.Appearance.Switch;
             this.checkBoxRemoveIcon.Checked = true;
-            this.checkBoxRemoveIcon.Location = new System.Drawing.Point(6, 112);
+            this.checkBoxRemoveIcon.Location = new System.Drawing.Point(6, 137);
             this.checkBoxRemoveIcon.Name = "checkBoxRemoveIcon";
-            this.checkBoxRemoveIcon.Size = new System.Drawing.Size(159, 24);
+            this.checkBoxRemoveIcon.Size = new System.Drawing.Size(184, 24);
             this.checkBoxRemoveIcon.TabIndex = 3;
             this.checkBoxRemoveIcon.Text = "Show remove icon";
             // 
@@ -104,9 +104,9 @@
             // 
             this.checkBoxValueTypeIcon.Appearance = Wisej.Web.Appearance.Switch;
             this.checkBoxValueTypeIcon.Checked = true;
-            this.checkBoxValueTypeIcon.Location = new System.Drawing.Point(7, 83);
+            this.checkBoxValueTypeIcon.Location = new System.Drawing.Point(7, 102);
             this.checkBoxValueTypeIcon.Name = "checkBoxValueTypeIcon";
-            this.checkBoxValueTypeIcon.Size = new System.Drawing.Size(175, 24);
+            this.checkBoxValueTypeIcon.Size = new System.Drawing.Size(203, 24);
             this.checkBoxValueTypeIcon.TabIndex = 2;
             this.checkBoxValueTypeIcon.Text = "Show value type icon";
             // 
@@ -114,9 +114,9 @@
             // 
             this.checkBoxSortIcon.Appearance = Wisej.Web.Appearance.Switch;
             this.checkBoxSortIcon.Checked = true;
-            this.checkBoxSortIcon.Location = new System.Drawing.Point(7, 54);
+            this.checkBoxSortIcon.Location = new System.Drawing.Point(7, 66);
             this.checkBoxSortIcon.Name = "checkBoxSortIcon";
-            this.checkBoxSortIcon.Size = new System.Drawing.Size(138, 24);
+            this.checkBoxSortIcon.Size = new System.Drawing.Size(157, 24);
             this.checkBoxSortIcon.TabIndex = 1;
             this.checkBoxSortIcon.Text = "Show sort icon";
             // 
@@ -124,9 +124,9 @@
             // 
             this.checkBoxFilterIcon.Appearance = Wisej.Web.Appearance.Switch;
             this.checkBoxFilterIcon.Checked = true;
-            this.checkBoxFilterIcon.Location = new System.Drawing.Point(7, 25);
+            this.checkBoxFilterIcon.Location = new System.Drawing.Point(7, 29);
             this.checkBoxFilterIcon.Name = "checkBoxFilterIcon";
-            this.checkBoxFilterIcon.Size = new System.Drawing.Size(141, 24);
+            this.checkBoxFilterIcon.Size = new System.Drawing.Size(161, 24);
             this.checkBoxFilterIcon.TabIndex = 0;
             this.checkBoxFilterIcon.Text = "Show filter icon";
             // 

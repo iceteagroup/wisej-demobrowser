@@ -83,25 +83,25 @@
             this.checkBoxMultiple.Appearance = Wisej.Web.Appearance.Switch;
             this.checkBoxMultiple.Location = new System.Drawing.Point(14, 29);
             this.checkBoxMultiple.Name = "checkBoxMultiple";
-            this.checkBoxMultiple.Size = new System.Drawing.Size(97, 24);
+            this.checkBoxMultiple.Size = new System.Drawing.Size(108, 24);
             this.checkBoxMultiple.TabIndex = 1;
             this.checkBoxMultiple.Text = "Multiple";
             // 
             // checkBoxSequentiallUpload
             // 
             this.checkBoxSequentiallUpload.Appearance = Wisej.Web.Appearance.Switch;
-            this.checkBoxSequentiallUpload.Location = new System.Drawing.Point(14, 58);
+            this.checkBoxSequentiallUpload.Location = new System.Drawing.Point(14, 65);
             this.checkBoxSequentiallUpload.Name = "checkBoxSequentiallUpload";
-            this.checkBoxSequentiallUpload.Size = new System.Drawing.Size(157, 24);
+            this.checkBoxSequentiallUpload.Size = new System.Drawing.Size(181, 24);
             this.checkBoxSequentiallUpload.TabIndex = 2;
             this.checkBoxSequentiallUpload.Text = "Sequential upload";
             // 
             // tagTextBoxAllowedExtensions
             // 
             this.tagTextBoxAllowedExtensions.LabelText = "Allowed extensions";
-            this.tagTextBoxAllowedExtensions.Location = new System.Drawing.Point(14, 88);
+            this.tagTextBoxAllowedExtensions.Location = new System.Drawing.Point(14, 103);
             this.tagTextBoxAllowedExtensions.Name = "tagTextBoxAllowedExtensions";
-            this.tagTextBoxAllowedExtensions.Size = new System.Drawing.Size(219, 48);
+            this.tagTextBoxAllowedExtensions.Size = new System.Drawing.Size(219, 52);
             this.tagTextBoxAllowedExtensions.TabIndex = 3;
             this.tagTextBoxAllowedExtensions.Text = ".jpg,.png";
             // 

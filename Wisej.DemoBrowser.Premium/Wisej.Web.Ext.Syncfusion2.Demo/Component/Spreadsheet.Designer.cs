@@ -54,7 +54,7 @@
             this.groupBox1.Controls.Add(this.checkBoxFormularBar);
             this.groupBox1.Controls.Add(this.comboBox1);
             this.groupBox1.Controls.Add(this.button1);
-            this.groupBox1.Size = new System.Drawing.Size(250, 429);
+            this.groupBox1.Size = new System.Drawing.Size(286, 551);
             this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
             this.groupBox1.Controls.SetChildIndex(this.button1, 0);
             this.groupBox1.Controls.SetChildIndex(this.comboBox1, 0);
@@ -64,7 +64,8 @@
             // 
             // buttonUpdate
             // 
-            this.buttonUpdate.Location = new System.Drawing.Point(28, 348);
+            this.buttonUpdate.Location = new System.Drawing.Point(28, 470);
+            this.buttonUpdate.Size = new System.Drawing.Size(231, 52);
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
             // panel
@@ -91,7 +92,7 @@
             // 
             this.button1.Location = new System.Drawing.Point(28, 38);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(195, 27);
+            this.button1.Size = new System.Drawing.Size(231, 27);
             this.button1.TabIndex = 1;
             this.button1.Text = "Hide Headers";
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -103,35 +104,36 @@
             this.comboBox1.Label.Size = 50;
             this.comboBox1.Label.SizeType = Wisej.Web.SizeType.Percent;
             this.comboBox1.LabelText = "Data Source";
-            this.comboBox1.Location = new System.Drawing.Point(28, 71);
+            this.comboBox1.Location = new System.Drawing.Point(28, 78);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(195, 47);
+            this.comboBox1.Size = new System.Drawing.Size(231, 47);
             this.comboBox1.TabIndex = 3;
             // 
             // checkBoxFormularBar
             // 
             this.checkBoxFormularBar.Appearance = Wisej.Web.Appearance.Switch;
-            this.checkBoxFormularBar.Location = new System.Drawing.Point(28, 125);
+            this.checkBoxFormularBar.AutoSize = false;
+            this.checkBoxFormularBar.Location = new System.Drawing.Point(28, 138);
             this.checkBoxFormularBar.Name = "checkBoxFormularBar";
-            this.checkBoxFormularBar.Size = new System.Drawing.Size(159, 24);
+            this.checkBoxFormularBar.Size = new System.Drawing.Size(231, 24);
             this.checkBoxFormularBar.TabIndex = 4;
             this.checkBoxFormularBar.Text = "Show formular bar";
             // 
             // checkBoxRibbon
             // 
             this.checkBoxRibbon.Appearance = Wisej.Web.Appearance.Switch;
-            this.checkBoxRibbon.Location = new System.Drawing.Point(28, 154);
+            this.checkBoxRibbon.Location = new System.Drawing.Point(28, 177);
             this.checkBoxRibbon.Name = "checkBoxRibbon";
-            this.checkBoxRibbon.Size = new System.Drawing.Size(125, 24);
+            this.checkBoxRibbon.Size = new System.Drawing.Size(141, 24);
             this.checkBoxRibbon.TabIndex = 5;
             this.checkBoxRibbon.Text = "Show ribbon";
             // 
             // numericUpDownActiveSheetIndex
             // 
             this.numericUpDownActiveSheetIndex.LabelText = "Active sheet index";
-            this.numericUpDownActiveSheetIndex.Location = new System.Drawing.Point(28, 184);
+            this.numericUpDownActiveSheetIndex.Location = new System.Drawing.Point(28, 216);
             this.numericUpDownActiveSheetIndex.Name = "numericUpDownActiveSheetIndex";
-            this.numericUpDownActiveSheetIndex.Size = new System.Drawing.Size(195, 42);
+            this.numericUpDownActiveSheetIndex.Size = new System.Drawing.Size(231, 46);
             this.numericUpDownActiveSheetIndex.TabIndex = 6;
             // 
             // Spreadsheet

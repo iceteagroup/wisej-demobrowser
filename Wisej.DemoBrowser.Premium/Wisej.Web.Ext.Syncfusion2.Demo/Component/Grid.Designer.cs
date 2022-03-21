@@ -54,6 +54,7 @@
             this.groupBox1.Controls.Add(this.checkBoxResizing);
             this.groupBox1.Controls.Add(this.checkBoxReordering);
             this.groupBox1.Controls.Add(this.checkBoxGrouping);
+            this.groupBox1.Size = new System.Drawing.Size(250, 426);
             this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
             this.groupBox1.Controls.SetChildIndex(this.checkBoxGrouping, 0);
             this.groupBox1.Controls.SetChildIndex(this.checkBoxReordering, 0);
@@ -63,6 +64,7 @@
             // 
             // buttonUpdate
             // 
+            this.buttonUpdate.Location = new System.Drawing.Point(28, 345);
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
             // panel
@@ -86,36 +88,36 @@
             // checkBoxGrouping
             // 
             this.checkBoxGrouping.Appearance = Wisej.Web.Appearance.Switch;
-            this.checkBoxGrouping.Location = new System.Drawing.Point(16, 22);
+            this.checkBoxGrouping.Location = new System.Drawing.Point(20, 32);
             this.checkBoxGrouping.Name = "checkBoxGrouping";
-            this.checkBoxGrouping.Size = new System.Drawing.Size(138, 24);
+            this.checkBoxGrouping.Size = new System.Drawing.Size(158, 24);
             this.checkBoxGrouping.TabIndex = 1;
             this.checkBoxGrouping.Text = "Allow grouping";
             // 
             // checkBoxReordering
             // 
             this.checkBoxReordering.Appearance = Wisej.Web.Appearance.Switch;
-            this.checkBoxReordering.Location = new System.Drawing.Point(16, 50);
+            this.checkBoxReordering.Location = new System.Drawing.Point(20, 67);
             this.checkBoxReordering.Name = "checkBoxReordering";
-            this.checkBoxReordering.Size = new System.Drawing.Size(146, 24);
+            this.checkBoxReordering.Size = new System.Drawing.Size(168, 24);
             this.checkBoxReordering.TabIndex = 2;
             this.checkBoxReordering.Text = "Allow reordering";
             // 
             // checkBoxResizing
             // 
             this.checkBoxResizing.Appearance = Wisej.Web.Appearance.Switch;
-            this.checkBoxResizing.Location = new System.Drawing.Point(16, 80);
+            this.checkBoxResizing.Location = new System.Drawing.Point(20, 102);
             this.checkBoxResizing.Name = "checkBoxResizing";
-            this.checkBoxResizing.Size = new System.Drawing.Size(132, 24);
+            this.checkBoxResizing.Size = new System.Drawing.Size(150, 24);
             this.checkBoxResizing.TabIndex = 3;
             this.checkBoxResizing.Text = "Allow resizing";
             // 
             // checkBoxFiltering
             // 
             this.checkBoxFiltering.Appearance = Wisej.Web.Appearance.Switch;
-            this.checkBoxFiltering.Location = new System.Drawing.Point(16, 109);
+            this.checkBoxFiltering.Location = new System.Drawing.Point(20, 137);
             this.checkBoxFiltering.Name = "checkBoxFiltering";
-            this.checkBoxFiltering.Size = new System.Drawing.Size(129, 24);
+            this.checkBoxFiltering.Size = new System.Drawing.Size(147, 24);
             this.checkBoxFiltering.TabIndex = 4;
             this.checkBoxFiltering.Text = "Allow filtering";
             // 
@@ -129,9 +131,9 @@
             "Horizontal",
             "Vertical"});
             this.comboBoxGridLine.LabelText = "Grid line type";
-            this.comboBoxGridLine.Location = new System.Drawing.Point(20, 139);
+            this.comboBoxGridLine.Location = new System.Drawing.Point(20, 177);
             this.comboBoxGridLine.Name = "comboBoxGridLine";
-            this.comboBoxGridLine.Size = new System.Drawing.Size(208, 42);
+            this.comboBoxGridLine.Size = new System.Drawing.Size(208, 46);
             this.comboBoxGridLine.TabIndex = 5;
             // 
             // Grid

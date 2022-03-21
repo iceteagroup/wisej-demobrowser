@@ -75,7 +75,7 @@
             this.comboBoxNode.LabelText = "Node";
             this.comboBoxNode.Location = new System.Drawing.Point(28, 38);
             this.comboBoxNode.Name = "comboBoxNode";
-            this.comboBoxNode.Size = new System.Drawing.Size(196, 53);
+            this.comboBoxNode.Size = new System.Drawing.Size(196, 46);
             this.comboBoxNode.TabIndex = 2;
             // 
             // tagTextBoxSubNodeDataSource
@@ -86,7 +86,7 @@
             this.tagTextBoxSubNodeDataSource.MaxTagCount = 10;
             this.tagTextBoxSubNodeDataSource.Multiline = true;
             this.tagTextBoxSubNodeDataSource.Name = "tagTextBoxSubNodeDataSource";
-            this.tagTextBoxSubNodeDataSource.Size = new System.Drawing.Size(196, 212);
+            this.tagTextBoxSubNodeDataSource.Size = new System.Drawing.Size(196, 98);
             this.tagTextBoxSubNodeDataSource.TabIndex = 3;
             // 
             // dropDownTree1

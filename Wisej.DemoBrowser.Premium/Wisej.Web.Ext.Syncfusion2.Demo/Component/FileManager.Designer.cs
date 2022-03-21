@@ -55,6 +55,7 @@
             this.groupBox1.Controls.Add(this.checkBoxFileExtension);
             this.groupBox1.Controls.Add(this.checkBoxThumbnail);
             this.groupBox1.Controls.Add(this.checkBoxHiddenItem);
+            this.groupBox1.Size = new System.Drawing.Size(339, 363);
             this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
             this.groupBox1.Controls.SetChildIndex(this.checkBoxHiddenItem, 0);
             this.groupBox1.Controls.SetChildIndex(this.checkBoxThumbnail, 0);
@@ -64,11 +65,15 @@
             // 
             // buttonUpdate
             // 
+            this.buttonUpdate.Location = new System.Drawing.Point(28, 282);
+            this.buttonUpdate.Size = new System.Drawing.Size(284, 52);
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
             // panel
             // 
             this.panel.Controls.Add(this.fileManager1);
+            this.panel.Location = new System.Drawing.Point(415, 151);
+            this.panel.Size = new System.Drawing.Size(1043, 560);
             // 
             // linkDemo
             // 
@@ -80,7 +85,7 @@
             this.fileManager1.Location = new System.Drawing.Point(8, 8);
             this.fileManager1.Name = "fileManager1";
             this.fileManager1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("fileManager1.Options"))));
-            this.fileManager1.Size = new System.Drawing.Size(1073, 542);
+            this.fileManager1.Size = new System.Drawing.Size(1025, 542);
             this.fileManager1.TabIndex = 0;
             this.fileManager1.Text = "fileManager1";
             this.fileManager1.WebRequest += new Wisej.Web.WebRequestHandler(this.fileManager1_WebRequest);
@@ -90,34 +95,35 @@
             this.checkBoxHiddenItem.Appearance = Wisej.Web.Appearance.Switch;
             this.checkBoxHiddenItem.Location = new System.Drawing.Point(11, 39);
             this.checkBoxHiddenItem.Name = "checkBoxHiddenItem";
-            this.checkBoxHiddenItem.Size = new System.Drawing.Size(156, 24);
+            this.checkBoxHiddenItem.Size = new System.Drawing.Size(179, 24);
             this.checkBoxHiddenItem.TabIndex = 1;
             this.checkBoxHiddenItem.Text = "Show hidden item";
             // 
             // checkBoxThumbnail
             // 
             this.checkBoxThumbnail.Appearance = Wisej.Web.Appearance.Switch;
-            this.checkBoxThumbnail.Location = new System.Drawing.Point(11, 67);
+            this.checkBoxThumbnail.Location = new System.Drawing.Point(11, 80);
             this.checkBoxThumbnail.Name = "checkBoxThumbnail";
-            this.checkBoxThumbnail.Size = new System.Drawing.Size(145, 24);
+            this.checkBoxThumbnail.Size = new System.Drawing.Size(166, 24);
             this.checkBoxThumbnail.TabIndex = 2;
             this.checkBoxThumbnail.Text = "Show thumbnail";
             // 
             // checkBoxFileExtension
             // 
             this.checkBoxFileExtension.Appearance = Wisej.Web.Appearance.Switch;
-            this.checkBoxFileExtension.Location = new System.Drawing.Point(11, 95);
+            this.checkBoxFileExtension.Location = new System.Drawing.Point(11, 119);
             this.checkBoxFileExtension.Name = "checkBoxFileExtension";
-            this.checkBoxFileExtension.Size = new System.Drawing.Size(165, 24);
+            this.checkBoxFileExtension.Size = new System.Drawing.Size(190, 24);
             this.checkBoxFileExtension.TabIndex = 3;
             this.checkBoxFileExtension.Text = "Show file extension";
             // 
             // checkBoxMultipleSelection
             // 
             this.checkBoxMultipleSelection.Appearance = Wisej.Web.Appearance.Switch;
-            this.checkBoxMultipleSelection.Location = new System.Drawing.Point(11, 121);
+            this.checkBoxMultipleSelection.AutoSize = false;
+            this.checkBoxMultipleSelection.Location = new System.Drawing.Point(11, 155);
             this.checkBoxMultipleSelection.Name = "checkBoxMultipleSelection";
-            this.checkBoxMultipleSelection.Size = new System.Drawing.Size(187, 24);
+            this.checkBoxMultipleSelection.Size = new System.Drawing.Size(250, 34);
             this.checkBoxMultipleSelection.TabIndex = 4;
             this.checkBoxMultipleSelection.Text = "Allow multiple selection";
             // 
@@ -127,9 +133,9 @@
             "LargeIcons",
             "Details"});
             this.comboBoxView.LabelText = "View";
-            this.comboBoxView.Location = new System.Drawing.Point(16, 149);
+            this.comboBoxView.Location = new System.Drawing.Point(16, 208);
             this.comboBoxView.Name = "comboBoxView";
-            this.comboBoxView.Size = new System.Drawing.Size(215, 42);
+            this.comboBoxView.Size = new System.Drawing.Size(301, 46);
             this.comboBoxView.TabIndex = 5;
             // 
             // FileManager

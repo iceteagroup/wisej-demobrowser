@@ -105,7 +105,7 @@
             this.textBoxTitle.LabelText = "Title";
             this.textBoxTitle.Location = new System.Drawing.Point(6, 24);
             this.textBoxTitle.Name = "textBoxTitle";
-            this.textBoxTitle.Size = new System.Drawing.Size(238, 53);
+            this.textBoxTitle.Size = new System.Drawing.Size(238, 46);
             this.textBoxTitle.TabIndex = 1;
             // 
             // textBoxSubTitle
@@ -113,7 +113,7 @@
             this.textBoxSubTitle.LabelText = "SubTitle";
             this.textBoxSubTitle.Location = new System.Drawing.Point(6, 88);
             this.textBoxSubTitle.Name = "textBoxSubTitle";
-            this.textBoxSubTitle.Size = new System.Drawing.Size(238, 53);
+            this.textBoxSubTitle.Size = new System.Drawing.Size(238, 46);
             this.textBoxSubTitle.TabIndex = 2;
             // 
             // trackBarPieAngle
@@ -134,7 +134,7 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(8, 154);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(59, 18);
+            this.label4.Size = new System.Drawing.Size(73, 19);
             this.label4.TabIndex = 6;
             this.label4.Text = "Pie Angle";
             // 
@@ -148,7 +148,7 @@
             0,
             0});
             this.numericUpDownExplodeRadius.Name = "numericUpDownExplodeRadius";
-            this.numericUpDownExplodeRadius.Size = new System.Drawing.Size(111, 53);
+            this.numericUpDownExplodeRadius.Size = new System.Drawing.Size(111, 64);
             this.numericUpDownExplodeRadius.TabIndex = 11;
             // 
             // textBoxNumOuterRadius
@@ -161,7 +161,7 @@
             this.textBoxNumOuterRadius.LabelText = "Outer radius";
             this.textBoxNumOuterRadius.Location = new System.Drawing.Point(7, 238);
             this.textBoxNumOuterRadius.Name = "textBoxNumOuterRadius";
-            this.textBoxNumOuterRadius.Size = new System.Drawing.Size(100, 53);
+            this.textBoxNumOuterRadius.Size = new System.Drawing.Size(100, 46);
             this.textBoxNumOuterRadius.TabIndex = 12;
             // 
             // trackBarExplodeIndex
@@ -180,7 +180,7 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(6, 302);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(84, 18);
+            this.label5.Size = new System.Drawing.Size(105, 19);
             this.label5.TabIndex = 14;
             this.label5.Text = "Explode index";
             // 

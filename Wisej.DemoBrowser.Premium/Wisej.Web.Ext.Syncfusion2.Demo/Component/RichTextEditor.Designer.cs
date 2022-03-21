@@ -52,6 +52,7 @@
             this.groupBox1.Controls.Add(this.checkBox2);
             this.groupBox1.Controls.Add(this.checkBox1);
             this.groupBox1.Controls.Add(this.button1);
+            this.groupBox1.Size = new System.Drawing.Size(286, 393);
             this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
             this.groupBox1.Controls.SetChildIndex(this.button1, 0);
             this.groupBox1.Controls.SetChildIndex(this.checkBox1, 0);
@@ -60,7 +61,8 @@
             // 
             // buttonUpdate
             // 
-            this.buttonUpdate.Location = new System.Drawing.Point(28, 233);
+            this.buttonUpdate.Location = new System.Drawing.Point(28, 311);
+            this.buttonUpdate.Size = new System.Drawing.Size(231, 52);
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
             // panel
@@ -116,7 +118,7 @@
             this.checkBox3.Checked = true;
             this.checkBox3.Location = new System.Drawing.Point(28, 183);
             this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(195, 35);
+            this.checkBox3.Size = new System.Drawing.Size(231, 35);
             this.checkBox3.TabIndex = 4;
             this.checkBox3.Text = "Enable HTML Sanitizer";
             // 

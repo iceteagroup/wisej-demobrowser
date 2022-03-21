@@ -79,7 +79,7 @@
             this.checkBoxGroupingSeparator.Appearance = Wisej.Web.Appearance.Switch;
             this.checkBoxGroupingSeparator.Location = new System.Drawing.Point(13, 36);
             this.checkBoxGroupingSeparator.Name = "checkBoxGroupingSeparator";
-            this.checkBoxGroupingSeparator.Size = new System.Drawing.Size(191, 24);
+            this.checkBoxGroupingSeparator.Size = new System.Drawing.Size(226, 24);
             this.checkBoxGroupingSeparator.TabIndex = 1;
             this.checkBoxGroupingSeparator.Text = "Use Grouping Separator";
             // 
@@ -94,9 +94,9 @@
             "BottomRightTopLeft",
             "BottomLeftTopRight"});
             this.comboBoxRenderDirection.LabelText = "Render direction";
-            this.comboBoxRenderDirection.Location = new System.Drawing.Point(11, 65);
+            this.comboBoxRenderDirection.Location = new System.Drawing.Point(11, 75);
             this.comboBoxRenderDirection.Name = "comboBoxRenderDirection";
-            this.comboBoxRenderDirection.Size = new System.Drawing.Size(226, 53);
+            this.comboBoxRenderDirection.Size = new System.Drawing.Size(226, 46);
             this.comboBoxRenderDirection.TabIndex = 2;
             // 
             // TreeMap

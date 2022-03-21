@@ -102,16 +102,16 @@
             this.groupBox2.Controls.Add(this.numericUpDownAnimationDelay);
             this.groupBox2.Location = new System.Drawing.Point(7, 19);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(237, 172);
+            this.groupBox2.Size = new System.Drawing.Size(237, 182);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.Text = "Animation";
             // 
             // checkBoxAnimationEnable
             // 
             this.checkBoxAnimationEnable.Checked = true;
-            this.checkBoxAnimationEnable.Location = new System.Drawing.Point(6, 27);
+            this.checkBoxAnimationEnable.Location = new System.Drawing.Point(6, 31);
             this.checkBoxAnimationEnable.Name = "checkBoxAnimationEnable";
-            this.checkBoxAnimationEnable.Size = new System.Drawing.Size(73, 22);
+            this.checkBoxAnimationEnable.Size = new System.Drawing.Size(82, 26);
             this.checkBoxAnimationEnable.TabIndex = 3;
             this.checkBoxAnimationEnable.Text = "Enable";
             this.checkBoxAnimationEnable.CheckedChanged += new System.EventHandler(this.checkBoxAnimationEnable_CheckedChanged);
@@ -124,14 +124,14 @@
             0,
             0});
             this.numericUpDownAnimationDuration.LabelText = "Duration";
-            this.numericUpDownAnimationDuration.Location = new System.Drawing.Point(6, 111);
+            this.numericUpDownAnimationDuration.Location = new System.Drawing.Point(6, 122);
             this.numericUpDownAnimationDuration.Maximum = new decimal(new int[] {
             10000,
             0,
             0,
             0});
             this.numericUpDownAnimationDuration.Name = "numericUpDownAnimationDuration";
-            this.numericUpDownAnimationDuration.Size = new System.Drawing.Size(225, 42);
+            this.numericUpDownAnimationDuration.Size = new System.Drawing.Size(225, 46);
             this.numericUpDownAnimationDuration.TabIndex = 2;
             this.numericUpDownAnimationDuration.Value = new decimal(new int[] {
             2000,
@@ -142,45 +142,46 @@
             // numericUpDownAnimationDelay
             // 
             this.numericUpDownAnimationDelay.LabelText = "Delay";
-            this.numericUpDownAnimationDelay.Location = new System.Drawing.Point(6, 52);
+            this.numericUpDownAnimationDelay.Location = new System.Drawing.Point(6, 63);
             this.numericUpDownAnimationDelay.Name = "numericUpDownAnimationDelay";
-            this.numericUpDownAnimationDelay.Size = new System.Drawing.Size(225, 42);
+            this.numericUpDownAnimationDelay.Size = new System.Drawing.Size(225, 46);
             this.numericUpDownAnimationDelay.TabIndex = 1;
             // 
             // checkBoxPieProgress
             // 
             this.checkBoxPieProgress.Appearance = Wisej.Web.Appearance.Switch;
-            this.checkBoxPieProgress.Location = new System.Drawing.Point(12, 197);
+            this.checkBoxPieProgress.Location = new System.Drawing.Point(12, 215);
             this.checkBoxPieProgress.Name = "checkBoxPieProgress";
-            this.checkBoxPieProgress.Size = new System.Drawing.Size(168, 24);
+            this.checkBoxPieProgress.Size = new System.Drawing.Size(195, 24);
             this.checkBoxPieProgress.TabIndex = 4;
             this.checkBoxPieProgress.Text = "Enable pie progress";
             // 
             // checkBoxProcessSegment
             // 
             this.checkBoxProcessSegment.Appearance = Wisej.Web.Appearance.Switch;
-            this.checkBoxProcessSegment.Location = new System.Drawing.Point(12, 226);
+            this.checkBoxProcessSegment.Location = new System.Drawing.Point(12, 250);
             this.checkBoxProcessSegment.Name = "checkBoxProcessSegment";
-            this.checkBoxProcessSegment.Size = new System.Drawing.Size(196, 24);
+            this.checkBoxProcessSegment.Size = new System.Drawing.Size(228, 24);
             this.checkBoxProcessSegment.TabIndex = 5;
             this.checkBoxProcessSegment.Text = "Enable process segment";
             // 
             // checkBoxIsIndeterminate
             // 
-            this.checkBoxIsIndeterminate.Anchor = Wisej.Web.AnchorStyles.Left;
+            this.checkBoxIsIndeterminate.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Left | Wisej.Web.AnchorStyles.Right)));
             this.checkBoxIsIndeterminate.Appearance = Wisej.Web.Appearance.Switch;
-            this.checkBoxIsIndeterminate.Location = new System.Drawing.Point(12, 255);
+            this.checkBoxIsIndeterminate.AutoSize = false;
+            this.checkBoxIsIndeterminate.Location = new System.Drawing.Point(12, 285);
             this.checkBoxIsIndeterminate.Name = "checkBoxIsIndeterminate";
-            this.checkBoxIsIndeterminate.Size = new System.Drawing.Size(145, 24);
+            this.checkBoxIsIndeterminate.Size = new System.Drawing.Size(211, 24);
             this.checkBoxIsIndeterminate.TabIndex = 6;
             this.checkBoxIsIndeterminate.Text = "Is indeterminate";
             // 
             // checkBoxIsStriped
             // 
             this.checkBoxIsStriped.Appearance = Wisej.Web.Appearance.Switch;
-            this.checkBoxIsStriped.Location = new System.Drawing.Point(13, 284);
+            this.checkBoxIsStriped.Location = new System.Drawing.Point(13, 319);
             this.checkBoxIsStriped.Name = "checkBoxIsStriped";
-            this.checkBoxIsStriped.Size = new System.Drawing.Size(105, 24);
+            this.checkBoxIsStriped.Size = new System.Drawing.Size(117, 24);
             this.checkBoxIsStriped.TabIndex = 7;
             this.checkBoxIsStriped.Text = "Is striped";
             // 
@@ -191,9 +192,9 @@
             "Linear",
             "Circular"});
             this.comboBoxType.LabelText = "Type";
-            this.comboBoxType.Location = new System.Drawing.Point(10, 308);
+            this.comboBoxType.Location = new System.Drawing.Point(10, 354);
             this.comboBoxType.Name = "comboBoxType";
-            this.comboBoxType.Size = new System.Drawing.Size(231, 42);
+            this.comboBoxType.Size = new System.Drawing.Size(231, 46);
             this.comboBoxType.TabIndex = 9;
             // 
             // ProgressBar

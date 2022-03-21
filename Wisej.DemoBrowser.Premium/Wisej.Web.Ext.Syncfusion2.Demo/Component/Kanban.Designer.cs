@@ -84,36 +84,36 @@
             // 
             this.checkBoxDragAndDrop.Appearance = Wisej.Web.Appearance.Switch;
             this.checkBoxDragAndDrop.Checked = true;
-            this.checkBoxDragAndDrop.Location = new System.Drawing.Point(23, 30);
+            this.checkBoxDragAndDrop.Location = new System.Drawing.Point(23, 34);
             this.checkBoxDragAndDrop.Name = "checkBoxDragAndDrop";
-            this.checkBoxDragAndDrop.Size = new System.Drawing.Size(170, 24);
+            this.checkBoxDragAndDrop.Size = new System.Drawing.Size(197, 24);
             this.checkBoxDragAndDrop.TabIndex = 8;
             this.checkBoxDragAndDrop.Text = "Allow drag-and-drop";
             // 
             // checkBoxKeyboard
             // 
             this.checkBoxKeyboard.Appearance = Wisej.Web.Appearance.Switch;
-            this.checkBoxKeyboard.Location = new System.Drawing.Point(22, 58);
+            this.checkBoxKeyboard.Location = new System.Drawing.Point(22, 70);
             this.checkBoxKeyboard.Name = "checkBoxKeyboard";
-            this.checkBoxKeyboard.Size = new System.Drawing.Size(141, 24);
+            this.checkBoxKeyboard.Size = new System.Drawing.Size(161, 24);
             this.checkBoxKeyboard.TabIndex = 9;
             this.checkBoxKeyboard.Text = "Allow keyboard";
             // 
             // checkBoxColumnToggle
             // 
             this.checkBoxColumnToggle.Appearance = Wisej.Web.Appearance.Switch;
-            this.checkBoxColumnToggle.Location = new System.Drawing.Point(23, 85);
+            this.checkBoxColumnToggle.Location = new System.Drawing.Point(23, 104);
             this.checkBoxColumnToggle.Name = "checkBoxColumnToggle";
-            this.checkBoxColumnToggle.Size = new System.Drawing.Size(175, 24);
+            this.checkBoxColumnToggle.Size = new System.Drawing.Size(203, 24);
             this.checkBoxColumnToggle.TabIndex = 10;
             this.checkBoxColumnToggle.Text = "Allow columns toggle";
             // 
             // checkBoxEmptyColumn
             // 
             this.checkBoxEmptyColumn.Appearance = Wisej.Web.Appearance.Switch;
-            this.checkBoxEmptyColumn.Location = new System.Drawing.Point(22, 113);
+            this.checkBoxEmptyColumn.Location = new System.Drawing.Point(22, 138);
             this.checkBoxEmptyColumn.Name = "checkBoxEmptyColumn";
-            this.checkBoxEmptyColumn.Size = new System.Drawing.Size(170, 24);
+            this.checkBoxEmptyColumn.Size = new System.Drawing.Size(196, 24);
             this.checkBoxEmptyColumn.TabIndex = 11;
             this.checkBoxEmptyColumn.Text = "Show empty column";
             // 

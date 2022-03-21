@@ -82,9 +82,9 @@
             // 
             this.checkBoxMarkerVisible.Appearance = Wisej.Web.Appearance.Switch;
             this.checkBoxMarkerVisible.Checked = true;
-            this.checkBoxMarkerVisible.Location = new System.Drawing.Point(19, 28);
+            this.checkBoxMarkerVisible.Location = new System.Drawing.Point(19, 34);
             this.checkBoxMarkerVisible.Name = "checkBoxMarkerVisible";
-            this.checkBoxMarkerVisible.Size = new System.Drawing.Size(135, 24);
+            this.checkBoxMarkerVisible.Size = new System.Drawing.Size(154, 24);
             this.checkBoxMarkerVisible.TabIndex = 1;
             this.checkBoxMarkerVisible.Text = "Marker Visible";
             this.checkBoxMarkerVisible.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
@@ -95,18 +95,18 @@
             "Circle",
             "Rectangle"});
             this.comboBoxShaprType.LabelText = "Shape Type";
-            this.comboBoxShaprType.Location = new System.Drawing.Point(19, 86);
+            this.comboBoxShaprType.Location = new System.Drawing.Point(19, 108);
             this.comboBoxShaprType.Name = "comboBoxShaprType";
-            this.comboBoxShaprType.Size = new System.Drawing.Size(215, 42);
+            this.comboBoxShaprType.Size = new System.Drawing.Size(215, 46);
             this.comboBoxShaprType.TabIndex = 2;
             // 
             // checkBoxLegendVisibility
             // 
             this.checkBoxLegendVisibility.Appearance = Wisej.Web.Appearance.Switch;
             this.checkBoxLegendVisibility.Checked = true;
-            this.checkBoxLegendVisibility.Location = new System.Drawing.Point(19, 59);
+            this.checkBoxLegendVisibility.Location = new System.Drawing.Point(19, 71);
             this.checkBoxLegendVisibility.Name = "checkBoxLegendVisibility";
-            this.checkBoxLegendVisibility.Size = new System.Drawing.Size(144, 24);
+            this.checkBoxLegendVisibility.Size = new System.Drawing.Size(166, 24);
             this.checkBoxLegendVisibility.TabIndex = 3;
             this.checkBoxLegendVisibility.Text = "Legend visibility";
             // 

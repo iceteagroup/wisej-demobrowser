@@ -82,27 +82,27 @@
             this.checkBoxResizing.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
             | Wisej.Web.AnchorStyles.Left)));
             this.checkBoxResizing.Appearance = Wisej.Web.Appearance.Switch;
-            this.checkBoxResizing.Location = new System.Drawing.Point(28, 86);
+            this.checkBoxResizing.Location = new System.Drawing.Point(28, 104);
             this.checkBoxResizing.Name = "checkBoxResizing";
-            this.checkBoxResizing.Size = new System.Drawing.Size(132, 24);
+            this.checkBoxResizing.Size = new System.Drawing.Size(150, 24);
             this.checkBoxResizing.TabIndex = 6;
             this.checkBoxResizing.Text = "Allow resizing";
             // 
             // checkBoxReordering
             // 
             this.checkBoxReordering.Appearance = Wisej.Web.Appearance.Switch;
-            this.checkBoxReordering.Location = new System.Drawing.Point(28, 56);
+            this.checkBoxReordering.Location = new System.Drawing.Point(28, 69);
             this.checkBoxReordering.Name = "checkBoxReordering";
-            this.checkBoxReordering.Size = new System.Drawing.Size(146, 24);
+            this.checkBoxReordering.Size = new System.Drawing.Size(168, 24);
             this.checkBoxReordering.TabIndex = 5;
             this.checkBoxReordering.Text = "Allow reordering";
             // 
             // checkBoxDragAndDrop
             // 
             this.checkBoxDragAndDrop.Appearance = Wisej.Web.Appearance.Switch;
-            this.checkBoxDragAndDrop.Location = new System.Drawing.Point(28, 27);
+            this.checkBoxDragAndDrop.Location = new System.Drawing.Point(28, 33);
             this.checkBoxDragAndDrop.Name = "checkBoxDragAndDrop";
-            this.checkBoxDragAndDrop.Size = new System.Drawing.Size(170, 24);
+            this.checkBoxDragAndDrop.Size = new System.Drawing.Size(197, 24);
             this.checkBoxDragAndDrop.TabIndex = 9;
             this.checkBoxDragAndDrop.Text = "Allow drag-and-drop";
             // 

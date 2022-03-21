@@ -76,7 +76,7 @@
             this.tagTextBoxDataSource.MaxTagCount = 10;
             this.tagTextBoxDataSource.Multiline = true;
             this.tagTextBoxDataSource.Name = "tagTextBoxDataSource";
-            this.tagTextBoxDataSource.Size = new System.Drawing.Size(216, 216);
+            this.tagTextBoxDataSource.Size = new System.Drawing.Size(216, 141);
             this.tagTextBoxDataSource.TabIndex = 1;
             this.tagTextBoxDataSource.Text = "data1,data2\r\n";
             // 
@@ -85,7 +85,7 @@
             this.checkBoxSearchable.Appearance = Wisej.Web.Appearance.Switch;
             this.checkBoxSearchable.Location = new System.Drawing.Point(15, 29);
             this.checkBoxSearchable.Name = "checkBoxSearchable";
-            this.checkBoxSearchable.Size = new System.Drawing.Size(118, 24);
+            this.checkBoxSearchable.Size = new System.Drawing.Size(134, 24);
             this.checkBoxSearchable.TabIndex = 2;
             this.checkBoxSearchable.Text = "Searchable";
             // 
@@ -99,7 +99,7 @@
             this.comboBoxSortOrder.LabelText = "Sort order";
             this.comboBoxSortOrder.Location = new System.Drawing.Point(15, 90);
             this.comboBoxSortOrder.Name = "comboBoxSortOrder";
-            this.comboBoxSortOrder.Size = new System.Drawing.Size(216, 42);
+            this.comboBoxSortOrder.Size = new System.Drawing.Size(216, 46);
             this.comboBoxSortOrder.TabIndex = 3;
             // 
             // dropDownList1

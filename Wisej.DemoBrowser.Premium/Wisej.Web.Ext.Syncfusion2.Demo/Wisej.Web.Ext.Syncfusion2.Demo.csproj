@@ -428,12 +428,11 @@
     <Reference Include="Syncfusion.Compression.Base">
       <HintPath>..\Libs\Syncfusion.Compression.Base.dll</HintPath>
     </Reference>
-    <Reference Include="Wisej.Framework, Version=2.0.0.0, Culture=neutral, PublicKeyToken=17bef35e11b84171, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\Wisej\Development\2.5\bin\Wisej.Framework.dll</HintPath>
+    <Reference Include="Wisej.Framework">
+      <HintPath>..\..\..\..\..\..\Documents\IceTeaGroup\Developpement\2.5\Wisej\Wisej.Framework\bin\Debug\Wisej.Framework.dll</HintPath>
     </Reference>
     <Reference Include="Wisej.Web.Ext.Syncfusion2">
-      <HintPath>..\..\..\..\..\..\Wisej\Extensions\Premium\2.5\bin\Wisej.Web.Ext.Syncfusion2.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\Documents\IceTeaGroup\WorkOnExtension\Premium\2.5\Wisej.Web.Ext.Syncfusion2\bin\Debug\Wisej.Web.Ext.Syncfusion2.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

@@ -52,6 +52,7 @@
             this.groupBox1.Controls.Add(this.comboBoxFilterType);
             this.groupBox1.Controls.Add(this.checkBoxFiltering);
             this.groupBox1.Controls.Add(this.checkBoxDragAndDrop);
+            this.groupBox1.Size = new System.Drawing.Size(250, 351);
             this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
             this.groupBox1.Controls.SetChildIndex(this.checkBoxDragAndDrop, 0);
             this.groupBox1.Controls.SetChildIndex(this.checkBoxFiltering, 0);
@@ -60,6 +61,7 @@
             // 
             // buttonUpdate
             // 
+            this.buttonUpdate.Location = new System.Drawing.Point(28, 270);
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
             // panel
@@ -85,16 +87,16 @@
             this.checkBoxDragAndDrop.Appearance = Wisej.Web.Appearance.Switch;
             this.checkBoxDragAndDrop.Location = new System.Drawing.Point(17, 30);
             this.checkBoxDragAndDrop.Name = "checkBoxDragAndDrop";
-            this.checkBoxDragAndDrop.Size = new System.Drawing.Size(170, 24);
+            this.checkBoxDragAndDrop.Size = new System.Drawing.Size(197, 24);
             this.checkBoxDragAndDrop.TabIndex = 1;
             this.checkBoxDragAndDrop.Text = "Allow drag-and-drop";
             // 
             // checkBoxFiltering
             // 
             this.checkBoxFiltering.Appearance = Wisej.Web.Appearance.Switch;
-            this.checkBoxFiltering.Location = new System.Drawing.Point(17, 57);
+            this.checkBoxFiltering.Location = new System.Drawing.Point(17, 74);
             this.checkBoxFiltering.Name = "checkBoxFiltering";
-            this.checkBoxFiltering.Size = new System.Drawing.Size(129, 24);
+            this.checkBoxFiltering.Size = new System.Drawing.Size(147, 24);
             this.checkBoxFiltering.TabIndex = 2;
             this.checkBoxFiltering.Text = "Allow filtering";
             this.checkBoxFiltering.CheckedChanged += new System.EventHandler(this.checkBoxFiltering_CheckedChanged);
@@ -108,9 +110,9 @@
             "EndsWith",
             "Contains"});
             this.comboBoxFilterType.LabelText = "Filter type";
-            this.comboBoxFilterType.Location = new System.Drawing.Point(20, 87);
+            this.comboBoxFilterType.Location = new System.Drawing.Point(20, 112);
             this.comboBoxFilterType.Name = "comboBoxFilterType";
-            this.comboBoxFilterType.Size = new System.Drawing.Size(203, 42);
+            this.comboBoxFilterType.Size = new System.Drawing.Size(203, 46);
             this.comboBoxFilterType.TabIndex = 3;
             // 
             // comboBoxSortOrder
@@ -121,9 +123,9 @@
             "Ascending",
             "Descending"});
             this.comboBoxSortOrder.LabelText = "Sort order";
-            this.comboBoxSortOrder.Location = new System.Drawing.Point(22, 145);
+            this.comboBoxSortOrder.Location = new System.Drawing.Point(20, 179);
             this.comboBoxSortOrder.Name = "comboBoxSortOrder";
-            this.comboBoxSortOrder.Size = new System.Drawing.Size(203, 42);
+            this.comboBoxSortOrder.Size = new System.Drawing.Size(203, 46);
             this.comboBoxSortOrder.TabIndex = 4;
             // 
             // ListBox
