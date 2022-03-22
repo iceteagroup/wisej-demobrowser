@@ -40,11 +40,11 @@
             // 
             // geoChart1
             // 
-            this.geoChart1.Anchor = Wisej.Web.AnchorStyles.None;
-            this.geoChart1.Location = new System.Drawing.Point(294, 79);
+            this.geoChart1.Dock = Wisej.Web.DockStyle.Fill;
+            this.geoChart1.Location = new System.Drawing.Point(8, 8);
             this.geoChart1.Name = "geoChart1";
             this.geoChart1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("geoChart1.Options"))));
-            this.geoChart1.Size = new System.Drawing.Size(500, 400);
+            this.geoChart1.Size = new System.Drawing.Size(1073, 542);
             this.geoChart1.TabIndex = 0;
             this.geoChart1.Text = "geoChart1";
             // 

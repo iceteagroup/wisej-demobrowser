@@ -42,15 +42,15 @@
             this.excelViewer1.Dock = Wisej.Web.DockStyle.Fill;
             this.excelViewer1.Location = new System.Drawing.Point(8, 8);
             this.excelViewer1.Name = "excelViewer1";
-            this.excelViewer1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"url\":\"binary->https://docs.webix.com/samples/60_pro/10_viewers/files/data.xlsx\"" +
-        "}")));
             this.excelViewer1.Size = new System.Drawing.Size(1073, 542);
             this.excelViewer1.TabIndex = 0;
             this.excelViewer1.Text = "excelViewer1";
+            this.excelViewer1.WebRequest += new Wisej.Web.WebRequestHandler(this.excelViewer1_WebRequest);
             // 
             // ExcelViewer
             // 
             this.Name = "ExcelViewer";
+            this.Load += new System.EventHandler(this.ExcelViewer_Load);
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
             this.ResumeLayout(false);

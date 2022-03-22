@@ -40,11 +40,11 @@
             // 
             // treeTable1
             // 
-            this.treeTable1.Anchor = Wisej.Web.AnchorStyles.None;
-            this.treeTable1.Location = new System.Drawing.Point(244, 79);
+            this.treeTable1.Dock = Wisej.Web.DockStyle.Fill;
+            this.treeTable1.Location = new System.Drawing.Point(8, 8);
             this.treeTable1.Name = "treeTable1";
             this.treeTable1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("treeTable1.Options"))));
-            this.treeTable1.Size = new System.Drawing.Size(600, 400);
+            this.treeTable1.Size = new System.Drawing.Size(1073, 542);
             this.treeTable1.TabIndex = 11;
             this.treeTable1.Text = "treeTable1";
             // 

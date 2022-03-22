@@ -28,6 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard));
             this.dashboard1 = new Wisej.Web.Ext.Webix.Dashboard();
             this.groupBox1.SuspendLayout();
             this.panel.SuspendLayout();
@@ -39,10 +40,11 @@
             // 
             // dashboard1
             // 
-            this.dashboard1.Anchor = Wisej.Web.AnchorStyles.None;
-            this.dashboard1.Location = new System.Drawing.Point(294, 79);
+            this.dashboard1.Dock = Wisej.Web.DockStyle.Fill;
+            this.dashboard1.Location = new System.Drawing.Point(8, 8);
             this.dashboard1.Name = "dashboard1";
-            this.dashboard1.Size = new System.Drawing.Size(500, 400);
+            this.dashboard1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("dashboard1.Options"))));
+            this.dashboard1.Size = new System.Drawing.Size(1073, 542);
             this.dashboard1.TabIndex = 0;
             this.dashboard1.Text = "dashboard1";
             // 
