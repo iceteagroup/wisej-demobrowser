@@ -59,6 +59,7 @@
             | Wisej.Web.AnchorStyles.Left) 
             | Wisej.Web.AnchorStyles.Right)));
             this.chartJS1.ChartType = Wisej.Web.Ext.ChartJS.ChartType.Radar;
+            this.chartJS1.Font = new System.Drawing.Font("default", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.chartJS1.Location = new System.Drawing.Point(409, 43);
             this.chartJS1.Name = "chartJS1";
             this.chartJS1.Options.DataLabel.BackgroundColor = System.Drawing.Color.Empty;
