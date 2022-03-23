@@ -9,8 +9,8 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
 		{
 			InitializeComponent();
 
-			this.dxToolbar1.Instance.itemClick += new WidgetEventHandler(dxToolbar1_WidgetEvent);
-			this.dxToolbar1.Instance.valueChanged += new WidgetEventHandler(dxToolbar1_WidgetEvent);
+			this.dxToolbar1.Instance.onItemClick += new WidgetEventHandler(dxToolbar1_WidgetEvent);
+			this.dxToolbar1.Instance.onValueChanged += new WidgetEventHandler(dxToolbar1_WidgetEvent);
 		}
 
 		private void dxToolbar1_WidgetEvent(object sender, WidgetEventArgs e)

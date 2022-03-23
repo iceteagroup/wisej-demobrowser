@@ -9,7 +9,7 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
 		{
 			InitializeComponent();
 
-			this.dxForm1.Instance.fieldDataChanged += new WidgetEventHandler(dxForm1_WidgetEvent);
+			this.dxForm1.Instance.onFieldDataChanged += new WidgetEventHandler(dxForm1_WidgetEvent);
 		}
 
 		private void dxForm1_WidgetEvent(object sender, WidgetEventArgs e)

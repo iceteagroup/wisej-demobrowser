@@ -10,7 +10,7 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
 		{
 			InitializeComponent();
 
-			this.dxDataGrid1.Instance.cellClick += new WidgetEventHandler(dxDataGrid1_WidgetEvent);
+			this.dxDataGrid1.Instance.onCellClick += new WidgetEventHandler(dxDataGrid1_WidgetEvent);
 		}
 
 		private void dxDataGrid1_WidgetEvent(object sender, WidgetEventArgs e)

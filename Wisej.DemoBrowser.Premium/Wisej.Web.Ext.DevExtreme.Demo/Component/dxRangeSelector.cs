@@ -11,7 +11,7 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
 		{
 			InitializeComponent();
 
-			this.dxRangeSelector1.Instance.valueChanged += new WidgetEventHandler(dxRangeSelector1_WidgetEvent);
+			this.dxRangeSelector1.Instance.onValueChanged += new WidgetEventHandler(dxRangeSelector1_WidgetEvent);
 
 			this.dxRangeSelector1.Options.scale = new { startValue = 15000, endValue = 150000, minorTickInterval = 500, tickInterval = 15000, label = new { format = "currency" } };
 			this.dxRangeSelector1.Options.slideMarker = new { format = "currency" };

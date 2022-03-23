@@ -10,12 +10,8 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
 		{
 			InitializeComponent();
 
-			this.dxDropDownBox1.Value = "3";
-
-			//this.dxDropDownBox1.Options.dataSource = Wisej.Core.WisejSerializer.Parse(File.ReadAllText(Application.MapPath("Data/DropDownBox/customers.json")));
-
-			this.dxDropDownBox1.Instance.input += new WidgetEventHandler(dxDropDownBox1_WidgetEvent);
-			this.dxDropDownBox1.Instance.valueChanged += new WidgetEventHandler(dxDropDownBox1_WidgetEvent);
+			this.dxDropDownBox1.Instance.onInput += new WidgetEventHandler(dxDropDownBox1_WidgetEvent);
+			this.dxDropDownBox1.Instance.onValueChanged += new WidgetEventHandler(dxDropDownBox1_WidgetEvent);
 		}
 
 		private void dxDropDownBox1_WidgetEvent(object sender, WidgetEventArgs e)

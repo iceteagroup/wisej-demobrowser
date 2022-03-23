@@ -9,7 +9,7 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
 		{
 			InitializeComponent();
 
-			this.dxDiagram1.Instance.itemClick += new WidgetEventHandler(dxDiagram1_WidgetEvent);
+			this.dxDiagram1.Instance.onItemClick += new WidgetEventHandler(dxDiagram1_WidgetEvent);
 		}
 
 		private void dxDiagram1_WidgetEvent(object sender, WidgetEventArgs e)

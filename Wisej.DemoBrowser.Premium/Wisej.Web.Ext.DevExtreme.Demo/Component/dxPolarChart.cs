@@ -11,8 +11,8 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
 		{
 			InitializeComponent();
 
-			this.dxPolarChart1.Instance.pointClick += new WidgetEventHandler(dxPolarChart1_WidgetEvent);
-			this.dxPolarChart1.Instance.seriesSelectionChanged += new WidgetEventHandler(dxPolarChart1_WidgetEvent);
+			this.dxPolarChart1.Instance.onPointClick += new WidgetEventHandler(dxPolarChart1_WidgetEvent);
+			this.dxPolarChart1.Instance.onSeriesSelectionChanged += new WidgetEventHandler(dxPolarChart1_WidgetEvent);
 		}
 
 		private void dxPolarChart1_WidgetEvent(object sender, WidgetEventArgs e)

@@ -8,8 +8,8 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
 		{
 			InitializeComponent();
 
-			this.dxTreeView1.Instance.itemClick += new WidgetEventHandler(dxTreeView1_WidgetEvent);
-			this.dxTreeView1.Instance.selectionChanged += new WidgetEventHandler(dxTreeView1_WidgetEvent);
+			this.dxTreeView1.Instance.onItemClick += new WidgetEventHandler(dxTreeView1_WidgetEvent);
+			this.dxTreeView1.Instance.onSelectionChanged += new WidgetEventHandler(dxTreeView1_WidgetEvent);
 		}
 
 		private void dxTreeView1_WidgetEvent(object sender, WidgetEventArgs e)

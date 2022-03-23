@@ -1,0 +1,119 @@
+﻿{
+  //
+  // Specifies which set of packages to use from the "sources" map below.
+  //
+  "source": "cdn",
+
+  //
+  // Specifies the default theme. Used when the Theme property of the widget is not set.
+  //
+  "theme": "material.blue.light",
+
+  //
+  // Widget packages.
+  //
+  "sources": {
+    "cdn": {
+      "root": "https://cdn3.devexpress.com/jslib/20.2.10",
+      "packages": {
+        "jquery.js": "https://code.jquery.com/jquery-3.5.1.min.js",
+        "jszip.js": "https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.5/jszip.min.js",
+        "dx-quill.js": "%root%/js/dx-quill.min.js",
+        "dx-diagram.js": "%root%/js/dx-diagram.min.js",
+        "dx-gantt.js": "%root%/js/dx-gantt.min.js",
+        "dx.all.js": "%root%/js/dx.all.js",
+        "dx.aspnet.data.js": "%root%/js/dx.aspnet.data.js",
+        "dx.common.css": "%root%/css/dx.common.css",
+        "dx.diagram.css": "%root%/css/dx-diagram.min.css",
+        "dx.gantt.css": "%root%/css/dx-gantt.min.css",
+        "dx.theme.css": "%root%/css/dx.%theme%.css",
+        "dx.messages.cs.js": "%root%/js/localization/dx.messages.cs.js",
+        "dx.messages.de.js": "%root%/js/localization/dx.messages.de.js",
+        "dx.messages.el.js": "%root%/js/localization/dx.messages.el.js",
+        "dx.messages.en.js": "%root%/js/localization/dx.messages.en.js",
+        "dx.messages.es.js": "%root%/js/localization/dx.messages.es.js",
+        "dx.messages.fi.js": "%root%/js/localization/dx.messages.fi.js",
+        "dx.messages.fr.js": "%root%/js/localization/dx.messages.fr.js",
+        "dx.messages.hu.js": "%root%/js/localization/dx.messages.hu.js",
+        "dx.messages.it.js": "%root%/js/localization/dx.messages.it.js",
+        "dx.messages.ja.js": "%root%/js/localization/dx.messages.ja.js",
+        "dx.messages.nl.js": "%root%/js/localization/dx.messages.nl.js",
+        "dx.messages.pt.js": "%root%/js/localization/dx.messages.pt.js",
+        "dx.messages.ru.js": "%root%/js/localization/dx.messages.ru.js",
+        "dx.messages.sl.js": "%root%/js/localization/dx.messages.sl.js",
+        "dx.messages.sv.js": "%root%/js/localization/dx.messages.sv.js",
+        "dx.messages.tr.js": "%root%/js/localization/dx.messages.tr.js",
+        "dx.messages.vi.js": "%root%/js/localization/dx.messages.vi.js",
+        "dx.messages.zh.js": "%root%/js/localization/dx.messages.zh.js"
+      }
+    },
+    "local": {
+      "root": "DevExtreme",
+      "packages": {
+        "jquery.js": "%root%/js/jquery.min.js",
+        "jszip.js": "%root%/js/jszip.min.js",
+        "dx-quill.js": "%root%/js/dx-quill.min.js",
+        "dx-diagram.js": "%root%/js/dx-diagram.min.js",
+        "dx-gantt.js": "%root%/js/dx-gantt.min.js",
+        "dx.all.js": "%root%/js/dx.all.js",
+        "dx.aspnet.data.js": "%root%/js/aspnet/dx.aspnet.data.js",
+        "dx.common.css": "%root%/css/dx.common.css",
+        "dx.diagram.css": "%root%/css/dx-diagram.min.css",
+        "dx.gantt.css": "%root%/css/dx-gantt.min.css",
+        "dx.theme.css": "%root%/css/dx.%theme%.css",
+        "dx.messages.cs.js": "%root%/js/localization/dx.messages.cs.js",
+        "dx.messages.de.js": "%root%/js/localization/dx.messages.de.js",
+        "dx.messages.el.js": "%root%/js/localization/dx.messages.el.js",
+        "dx.messages.en.js": "%root%/js/localization/dx.messages.en.js",
+        "dx.messages.es.js": "%root%/js/localization/dx.messages.es.js",
+        "dx.messages.fi.js": "%root%/js/localization/dx.messages.fi.js",
+        "dx.messages.fr.js": "%root%/js/localization/dx.messages.fr.js",
+        "dx.messages.hu.js": "%root%/js/localization/dx.messages.hu.js",
+        "dx.messages.it.js": "%root%/js/localization/dx.messages.it.js",
+        "dx.messages.ja.js": "%root%/js/localization/dx.messages.ja.js",
+        "dx.messages.nl.js": "%root%/js/localization/dx.messages.nl.js",
+        "dx.messages.pt.js": "%root%/js/localization/dx.messages.pt.js",
+        "dx.messages.ru.js": "%root%/js/localization/dx.messages.ru.js",
+        "dx.messages.sl.js": "%root%/js/localization/dx.messages.sl.js",
+        "dx.messages.sv.js": "%root%/js/localization/dx.messages.sv.js",
+        "dx.messages.tr.js": "%root%/js/localization/dx.messages.tr.js",
+        "dx.messages.vi.js": "%root%/js/localization/dx.messages.vi.js",
+        "dx.messages.zh.js": "%root%/js/localization/dx.messages.zh.js"
+      }
+    },
+    "embedded": {
+      "root": "resource.wx",
+      "packages": {
+        "dx-quill.js": "%root%/dx-quill.min.js",
+        "jquery.js": "%root%/jquery.min.js",
+        "jszip.js": "%root%/jszip.min.js",
+        "dx-diagram.js": "%root%/dx-diagram.min.js",
+        "dx-gantt.js": "%root%/dx-gantt.min.js",
+        "dx.all.js": "%root%/dx.all.js",
+        "dx.aspnet.data.js": "%root%/dx.aspnet.data.js",
+        "dx.common.css": "%root%/dx.common.css",
+        "dx.diagram.css": "%root%/dx-diagram.min.css",
+        "dx.gantt.css": "%root%/dx-gantt.min.css",
+        "dx.theme.css": "%root%/css/dx.%theme%.css",
+        "dx.messages.cs.js": "%root%/js/localization/dx.messages_cs.js",
+        "dx.messages.de.js": "%root%/js/localization/dx.messages_de.js",
+        "dx.messages.el.js": "%root%/js/localization/dx.messages_el.js",
+        "dx.messages.en.js": "%root%/js/localization/dx.messages_en.js",
+        "dx.messages.es.js": "%root%/js/localization/dx.messages_es.js",
+        "dx.messages.fi.js": "%root%/js/localization/dx.messages_fi.js",
+        "dx.messages.fr.js": "%root%/js/localization/dx.messages_fr.js",
+        "dx.messages.hu.js": "%root%/js/localization/dx.messages_hu.js",
+        "dx.messages.it.js": "%root%/js/localization/dx.messages_it.js",
+        "dx.messages.ja.js": "%root%/js/localization/dx.messages_ja.js",
+        "dx.messages.nl.js": "%root%/js/localization/dx.messages_nl.js",
+        "dx.messages.pt.js": "%root%/js/localization/dx.messages_pt.js",
+        "dx.messages.ru.js": "%root%/js/localization/dx.messages_ru.js",
+        "dx.messages.sl.js": "%root%/js/localization/dx.messages_sl.js",
+        "dx.messages.sv.js": "%root%/js/localization/dx.messages_sv.js",
+        "dx.messages.tr.js": "%root%/js/localization/dx.messages_tr.js",
+        "dx.messages.vi.js": "%root%/js/localization/dx.messages_vi.js",
+        "dx.messages.zh.js": "%root%/js/localization/dx.messages_zh.js"
+      }
+    }
+  }
+}

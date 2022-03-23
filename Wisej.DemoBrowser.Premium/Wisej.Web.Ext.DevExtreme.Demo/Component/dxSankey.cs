@@ -11,8 +11,8 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
 		{
 			InitializeComponent();
 
-			this.dxSankey1.Instance.linkClick += new WidgetEventHandler(dxSankey1_WidgetEvent);
-			this.dxSankey1.Instance.nodeClick += new WidgetEventHandler(dxSankey1_WidgetEvent);
+			this.dxSankey1.Instance.onLinkClick += new WidgetEventHandler(dxSankey1_WidgetEvent);
+			this.dxSankey1.Instance.onNodeClick += new WidgetEventHandler(dxSankey1_WidgetEvent);
 		}
 
 		private void dxSankey1_WidgetEvent(object sender, WidgetEventArgs e)

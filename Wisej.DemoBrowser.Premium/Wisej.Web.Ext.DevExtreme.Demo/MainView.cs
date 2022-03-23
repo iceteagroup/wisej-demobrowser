@@ -25,22 +25,6 @@ namespace Wisej.Web.Ext.DevExtreme.Demo
 
 			if (hash != "")
 				this.listBoxDemos.SelectedIndex = this.listBoxDemos.FindString(hash);
-
-			AddCustomLocales();
-		}
-
-		/// <summary>
-		/// Loads custom locales for the dx widgets.
-		/// </summary>
-		private void AddCustomLocales()
-		{
-			var resources = Directory.GetFiles(Application.MapPath("Data/CustomLocalization"))
-				.Select(f => new Package
-				{
-					Name = Path.GetFileName(f),
-					Source = $"./Data/CustomLocalization/{Path.GetFileName(f)}"
-				});
-			dxBase.Locales = resources.ToArray();
 		}
 
 		private void Application_HashChanged(object sender, HashChangedEventArgs e)

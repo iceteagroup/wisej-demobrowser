@@ -98,16 +98,13 @@
 			// dxRangeSelector1
 			// 
 			this.dxRangeSelector1.Anchor = Wisej.Web.AnchorStyles.None;
-			this.dxRangeSelector1.EndValue = "80000";
 			this.dxRangeSelector1.Location = new System.Drawing.Point(114, 252);
 			this.dxRangeSelector1.Name = "dxRangeSelector1";
 			this.dxRangeSelector1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"value\":{\"startValue\":\"40000\",\"endValue\":\"80000\"},\"title\":\"Select House Price Ra" +
         "nge\"}")));
 			this.dxRangeSelector1.Size = new System.Drawing.Size(859, 121);
-			this.dxRangeSelector1.StartValue = "40000";
 			this.dxRangeSelector1.TabIndex = 0;
 			this.dxRangeSelector1.Text = "dxRangeSelector1";
-			this.dxRangeSelector1.Title = "Select House Price Range";
 			// 
 			// checkBox1
 			// 
