@@ -404,7 +404,15 @@
 		}
 	},
 	"Extenders": {
-		"ToolTip": {},
+		"ToolTip": {
+			"Features": {
+				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Extenders/Wisej.DemoBrowser.Tooltip",
+				"assembly": "Features, Wisej.DemoBrowser.ToolTip.dll",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/ToolTip.svg",
+				"docsUrl": "https://docs.wisej.com/api/wisej.web/extenders/wisej.web.tooltip",
+				"description-en": "The <b>Wisej.Web.ToolTip</b> component represents a small rectangular pop-up window that displays a brief description of a control's purpose when the user rests the pointer on the control."
+			}
+		},
 		"HelpTip": {
 			"Features": {
 				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Extenders/Wisej.DemoBrowser.HelpTip",
