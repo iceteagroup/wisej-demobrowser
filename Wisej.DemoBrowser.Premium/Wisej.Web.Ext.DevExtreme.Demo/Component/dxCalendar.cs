@@ -8,7 +8,7 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
 		{
 			InitializeComponent();
 
-			this.dxCalendar1.Instance.valueChanged += new WidgetEventHandler(dxCalendar1_WidgetEvent);
+			this.dxCalendar1.Instance.onValueChanged += new WidgetEventHandler(dxCalendar1_WidgetEvent);
 		}
 
 		private void dxCalendar1_WidgetEvent(object sender, WidgetEventArgs e)

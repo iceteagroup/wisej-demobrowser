@@ -9,9 +9,7 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
 		{
 			InitializeComponent();
 
-			this.dxSwitch1.Checked = true;
-
-			this.dxSwitch1.Instance.valueChanged += new WidgetEventHandler(dxSwitch1_WidgetEvent);
+			this.dxSwitch1.Instance.onValueChanged += new WidgetEventHandler(dxSwitch1_WidgetEvent);
 		}
 
 		private void dxSwitch1_WidgetEvent(object sender, WidgetEventArgs e)

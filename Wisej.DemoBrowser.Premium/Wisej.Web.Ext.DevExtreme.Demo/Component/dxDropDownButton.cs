@@ -8,7 +8,7 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
 		public dxDropDownButton()
 		{
 			InitializeComponent();
-			this.dxDropDownButton1.Instance.buttonClick += new WidgetEventHandler(dxDropDownButton1_WidgetEvent);
+			this.dxDropDownButton1.Instance.onButtonClick += new WidgetEventHandler(dxDropDownButton1_WidgetEvent);
 		}
 
 		private void dxDropDownButton1_WidgetEvent(object sender, WidgetEventArgs e)

@@ -9,7 +9,7 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
 		{
 			InitializeComponent();
 
-			this.dxGallery1.Instance.itemClick += new WidgetEventHandler(dxGallery1_WidgetEvent);
+			this.dxGallery1.Instance.onItemClick += new WidgetEventHandler(dxGallery1_WidgetEvent);
 		}
 
 		private void dxGallery1_WidgetEvent(object sender, WidgetEventArgs e)

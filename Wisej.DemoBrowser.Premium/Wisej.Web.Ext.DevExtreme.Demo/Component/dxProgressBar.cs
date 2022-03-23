@@ -8,8 +8,6 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
 		public dxProgressBar()
 		{
 			InitializeComponent();
-
-			this.dxProgressBar1.Value = 40;
 		}
 
 		private void dxProgressBar1_WidgetEvent(object sender, WidgetEventArgs e)

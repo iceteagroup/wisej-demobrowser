@@ -9,7 +9,7 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
 		{
 			InitializeComponent();
 
-			this.dxFilterBuilder1.Instance.editorPrepared += new WidgetEventHandler(dxFilterBuilder1_WidgetEvent);
+			this.dxFilterBuilder1.Instance.onEditorPrepared += new WidgetEventHandler(dxFilterBuilder1_WidgetEvent);
 		}
 
 		private void dxFilterBuilder1_WidgetEvent(object sender, WidgetEventArgs e)

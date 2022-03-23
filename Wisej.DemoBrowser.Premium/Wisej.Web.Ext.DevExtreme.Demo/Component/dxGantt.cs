@@ -15,7 +15,7 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
 			this.dxGantt1.Options.resources.dataSource = Wisej.Core.WisejSerializer.Parse(File.ReadAllText(Application.MapPath("Data/Gantt/resources.json")));
 			this.dxGantt1.Options.resourceAssignments.dataSource = Wisej.Core.WisejSerializer.Parse(File.ReadAllText(Application.MapPath("Data/Gantt/resourceAssignments.json")));
 
-			this.dxGantt1.Instance.selectionChanged += new WidgetEventHandler(dxGantt1_WidgetEvent);
+			this.dxGantt1.Instance.onSelectionChanged += new WidgetEventHandler(dxGantt1_WidgetEvent);
 		}
 
 		private void dxGantt1_WidgetEvent(object sender, WidgetEventArgs e)

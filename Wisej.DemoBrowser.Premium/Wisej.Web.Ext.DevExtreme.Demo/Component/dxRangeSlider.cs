@@ -9,7 +9,7 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
 		{
 			InitializeComponent();
 
-			this.dxRangeSlider1.Instance.valueChanged += new WidgetEventHandler(dxRangeSlider1_WidgetEvent);
+			this.dxRangeSlider1.Instance.onValueChanged += new WidgetEventHandler(dxRangeSlider1_WidgetEvent);
 		}
 
 		private void dxRangeSlider1_WidgetEvent(object sender, WidgetEventArgs e)

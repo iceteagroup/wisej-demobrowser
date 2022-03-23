@@ -10,37 +10,41 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
 		{
 			InitializeComponent();
 
-			UpdateDataSource("Contacts");
+			UpdateDataSource(0);
 
 			labelName.DataBindings.Add("Text", this.dataRepeater1.DataSource, "name");
 			labelCategory.DataBindings.Add("Text", this.dataRepeater1.DataSource, "category");
 			pictureBox1.DataBindings.Add("ImageSource", this.dataRepeater1.DataSource, "image");
 			linkLabelEmail.DataBindings.Add("Text", this.dataRepeater1.DataSource, "email");
 
-			this.dxNavBar1.Instance.itemClick += new WidgetEventHandler(dxNavBar1_WidgetEvent);
+			this.dxNavBar1.Instance.onItemClick += new WidgetEventHandler(dxNavBar1_WidgetEvent);
 		}
 
 		private void dxNavBar1_WidgetEvent(object sender, WidgetEventArgs e)
 		{
-			AlertBox.Show($"{e.Data.text} was clicked!");
+			AlertBox.Show(
+							$"<b>{e.Type}</b><br/>{JSON.Stringify(e.Data)}",
+							MessageBoxIcon.Information);
 
-			UpdateDataSource(e.Data.text);
+			Application.Play(MessageBoxIcon.Information);
+
+			UpdateDataSource(e.Data.itemIndex);
 		}
 
-		private void UpdateDataSource(string type) 
+		private void UpdateDataSource(int type) 
 		{
 			switch (type)
 			{
 
-				case "Contacts":
+				case 0:
 					this.dataRepeater1.DataSource = GetAll();
 					break;
 
-				case "Missed":
+				case 1:
 					this.dataRepeater1.DataSource = GetMissed();
 					break;
 
-				case "Favorites":
+				case 2:
 					this.dataRepeater1.DataSource = GetFavorites();
 					break;
 

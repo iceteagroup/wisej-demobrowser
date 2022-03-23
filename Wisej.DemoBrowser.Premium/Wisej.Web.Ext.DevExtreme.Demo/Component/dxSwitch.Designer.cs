@@ -28,43 +28,43 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.dxSwitch1 = new Wisej.Web.Ext.DevExtreme.dxSwitch();
-			this.groupBox1.SuspendLayout();
-			this.panel.SuspendLayout();
-			this.SuspendLayout();
-			// 
-			// linkDocs
-			// 
-			this.linkDocs.Text = "https://js.devexpress.com/Documentation/Guide/Widgets/Switch/Overview/";
-			// 
-			// linkAPI
-			// 
-			this.linkAPI.Text = "https://js.devexpress.com/Documentation/ApiReference/UI_Widgets/dxSwitch/";
-			// 
-			// panel
-			// 
-			this.panel.Controls.Add(this.dxSwitch1);
-			// 
-			// linkDemo
-			// 
-			this.linkDemo.Text = "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Switch/Overview/jQuery/Light/" +
+            this.dxSwitch1 = new Wisej.Web.Ext.DevExtreme.dxSwitch();
+            this.groupBox1.SuspendLayout();
+            this.panel.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // linkDocs
+            // 
+            this.linkDocs.Text = "https://js.devexpress.com/Documentation/Guide/Widgets/Switch/Overview/";
+            // 
+            // linkDemo
+            // 
+            this.linkDemo.Text = "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Switch/Overview/jQuery/Light/" +
     "";
-			// 
-			// dxSwitch1
-			// 
-			this.dxSwitch1.Anchor = Wisej.Web.AnchorStyles.None;
-			this.dxSwitch1.Location = new System.Drawing.Point(513, 262);
-			this.dxSwitch1.Name = "dxSwitch1";
-			this.dxSwitch1.Size = new System.Drawing.Size(63, 35);
-			this.dxSwitch1.TabIndex = 0;
-			// 
-			// dxSwitch
-			// 
-			this.Name = "dxSwitch";
-			this.groupBox1.ResumeLayout(false);
-			this.panel.ResumeLayout(false);
-			this.ResumeLayout(false);
-			this.PerformLayout();
+            // 
+            // linkAPI
+            // 
+            this.linkAPI.Text = "https://js.devexpress.com/Documentation/ApiReference/UI_Widgets/dxSwitch/";
+            // 
+            // panel
+            // 
+            this.panel.Controls.Add(this.dxSwitch1);
+            // 
+            // dxSwitch1
+            // 
+            this.dxSwitch1.Anchor = Wisej.Web.AnchorStyles.None;
+            this.dxSwitch1.Location = new System.Drawing.Point(513, 262);
+            this.dxSwitch1.Name = "dxSwitch1";
+            this.dxSwitch1.Size = new System.Drawing.Size(63, 35);
+            this.dxSwitch1.TabIndex = 0;
+            // 
+            // dxSwitch
+            // 
+            this.Name = "dxSwitch";
+            this.groupBox1.ResumeLayout(false);
+            this.panel.ResumeLayout(false);
+            this.ResumeLayout(false);
+            this.PerformLayout();
 
 		}
 

@@ -147,7 +147,6 @@
 			this.dxCircularGauge1.Size = new System.Drawing.Size(926, 500);
 			this.dxCircularGauge1.TabIndex = 0;
 			this.dxCircularGauge1.Text = "dxCircularGauge1";
-			this.dxCircularGauge1.Value = 100;
 			// 
 			// label4
 			// 

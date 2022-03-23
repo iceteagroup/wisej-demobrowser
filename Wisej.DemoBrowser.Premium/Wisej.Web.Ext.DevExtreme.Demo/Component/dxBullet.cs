@@ -20,10 +20,5 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
 
 			this.dxBullet1.Update();
 		}
-
-		private void panel_PanelCollapsed(object sender, EventArgs e)
-		{
-
-		}
 	}
 }

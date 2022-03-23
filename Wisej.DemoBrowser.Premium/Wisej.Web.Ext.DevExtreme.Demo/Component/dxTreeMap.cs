@@ -9,7 +9,7 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
 		{
 			InitializeComponent();
 
-			this.dxTreeMap1.Instance.click += new WidgetEventHandler(dxTreeMap1_WidgetEvent);
+			this.dxTreeMap1.Instance.onClick += new WidgetEventHandler(dxTreeMap1_WidgetEvent);
 		}
 
 		private void dxTreeMap1_WidgetEvent(object sender, WidgetEventArgs e)

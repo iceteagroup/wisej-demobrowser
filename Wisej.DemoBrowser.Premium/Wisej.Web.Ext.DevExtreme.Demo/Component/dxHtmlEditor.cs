@@ -9,7 +9,7 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
 		{
 			InitializeComponent();
 
-			this.dxHtmlEditor1.Instance.valueChanged += new WidgetEventHandler(dxHtmlEditor1_WidgetEvent);
+			this.dxHtmlEditor1.Instance.onValueChanged += new WidgetEventHandler(dxHtmlEditor1_WidgetEvent);
 		}
 
 		private void dxHtmlEditor1_WidgetEvent(object sender, WidgetEventArgs e)

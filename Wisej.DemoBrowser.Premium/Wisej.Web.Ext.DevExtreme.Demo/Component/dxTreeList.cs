@@ -9,7 +9,7 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
 		{
 			InitializeComponent();
 
-			this.dxTreeList1.Instance.cellClick += new WidgetEventHandler(dxTreeList1_WidgetEvent);
+			this.dxTreeList1.Instance.onCellClick += new WidgetEventHandler(dxTreeList1_WidgetEvent);
 		}
 
 		private void dxTreeList1_WidgetEvent(object sender, WidgetEventArgs e)
