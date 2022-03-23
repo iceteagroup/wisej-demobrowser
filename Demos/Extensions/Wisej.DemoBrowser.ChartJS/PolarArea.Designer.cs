@@ -59,6 +59,7 @@
             | Wisej.Web.AnchorStyles.Left) 
             | Wisej.Web.AnchorStyles.Right)));
             this.chartJS1.AppearanceKey = "chartjs";
+            this.chartJS1.BackColor = System.Drawing.Color.White;
             this.chartJS1.ChartType = Wisej.Web.Ext.ChartJS.ChartType.PolarArea;
             this.chartJS1.Labels = new string[] {
         "Value 1"};

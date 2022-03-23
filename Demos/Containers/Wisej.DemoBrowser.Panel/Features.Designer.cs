@@ -187,6 +187,7 @@
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel3);
+            this.MinimumSize = new System.Drawing.Size(940, 400);
             this.Name = "Features";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

@@ -43,7 +43,6 @@
             // 
             // 
             this.propertyGrid1.ToolBar.Enabled = true;
-            this.propertyGrid1.SelectedObjectsChanged += new System.EventHandler(this.propertyGrid1_SelectedObjectsChanged);
             // 
             // personCard1
             // 
