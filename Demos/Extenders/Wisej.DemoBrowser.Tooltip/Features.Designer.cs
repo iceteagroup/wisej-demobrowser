@@ -32,8 +32,8 @@
             this.toolTipDefault = new Wisej.Web.ToolTip(this.components);
             this.button1 = new Wisej.Web.Button();
             this.toolTipIcon = new Wisej.Web.ToolTip(this.components);
-            this.button2 = new Wisej.Web.Button();
             this.comboBoxIcon = new Wisej.Web.ComboBox();
+            this.button2 = new Wisej.Web.Button();
             this.progressBar1 = new Wisej.Web.ProgressBar();
             this.comboBoxAlignment = new Wisej.Web.ComboBox();
             this.textBox1 = new Wisej.Web.TextBox();
@@ -61,6 +61,17 @@
             // 
             this.toolTipIcon.Alignment = Wisej.Web.Placement.LeftTop;
             // 
+            // comboBoxIcon
+            // 
+            this.comboBoxIcon.Anchor = Wisej.Web.AnchorStyles.None;
+            this.comboBoxIcon.Location = new System.Drawing.Point(1011, 292);
+            this.comboBoxIcon.Name = "comboBoxIcon";
+            this.comboBoxIcon.Size = new System.Drawing.Size(200, 30);
+            this.comboBoxIcon.TabIndex = 13;
+            this.toolTipIcon.SetToolTip(this.comboBoxIcon, "ToolTip Icon");
+            this.comboBoxIcon.Watermark = "ToolTip Icon";
+            this.comboBoxIcon.SelectedIndexChanged += new System.EventHandler(this.comboBoxIcon_SelectedIndexChanged);
+            // 
             // button2
             // 
             this.button2.Anchor = Wisej.Web.AnchorStyles.None;
@@ -70,16 +81,6 @@
             this.button2.TabIndex = 14;
             this.button2.Text = "HTML";
             this.toolTipHtml.SetToolTip(this.button2, "<b>Hello,</b> <i>World!</i>");
-            // 
-            // comboBoxIcon
-            // 
-            this.comboBoxIcon.Anchor = Wisej.Web.AnchorStyles.None;
-            this.comboBoxIcon.Location = new System.Drawing.Point(1011, 292);
-            this.comboBoxIcon.Name = "comboBoxIcon";
-            this.comboBoxIcon.Size = new System.Drawing.Size(200, 30);
-            this.comboBoxIcon.TabIndex = 13;
-            this.comboBoxIcon.Watermark = "ToolTip Icon";
-            this.comboBoxIcon.SelectedIndexChanged += new System.EventHandler(this.comboBoxIcon_SelectedIndexChanged);
             // 
             // progressBar1
             // 
@@ -100,6 +101,7 @@
             this.comboBoxAlignment.Name = "comboBoxAlignment";
             this.comboBoxAlignment.Size = new System.Drawing.Size(200, 30);
             this.comboBoxAlignment.TabIndex = 11;
+            this.toolTipAlignment.SetToolTip(this.comboBoxAlignment, "ToolTip Alignment");
             this.comboBoxAlignment.Watermark = "ToolTip Alignment";
             this.comboBoxAlignment.SelectedIndexChanged += new System.EventHandler(this.comboBoxAlignment_SelectedIndexChanged);
             // 
@@ -137,7 +139,6 @@
             this.toolTipAlignment.Alignment = Wisej.Web.Placement.LeftTop;
             this.toolTipAlignment.AllowHtml = true;
             this.toolTipAlignment.AutoPopDelay = 3000;
-            this.toolTipAlignment.ForeColor = System.Drawing.SystemColors.HotTrack;
             // 
             // Features
             // 
