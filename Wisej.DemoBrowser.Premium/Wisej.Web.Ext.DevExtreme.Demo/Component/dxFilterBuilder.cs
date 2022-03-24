@@ -20,5 +20,5 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
 
 			Application.Play(MessageBoxIcon.Information);
 		}
-	}
+    }
 }
