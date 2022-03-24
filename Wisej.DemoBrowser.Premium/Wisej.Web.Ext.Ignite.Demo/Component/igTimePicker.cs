@@ -9,7 +9,7 @@ namespace Wisej.Web.Ext.Ignite.Demo.Component
 		{
 			InitializeComponent();
 
-			this.igTimePicker1.Instance.valueChanged += new WidgetEventHandler(igTimePicker_WidgetEvent);
+			this.igTimePicker1.Instance.onValueChanged += new WidgetEventHandler(igTimePicker_WidgetEvent);
 		}
 
 		private void igTimePicker_WidgetEvent(object sender, WidgetEventArgs e)

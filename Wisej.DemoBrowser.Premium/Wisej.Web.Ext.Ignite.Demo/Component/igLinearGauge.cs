@@ -9,7 +9,7 @@ namespace Wisej.Web.Ext.Ignite.Demo.Component
 		{
 			InitializeComponent();
 
-			this.igLinearGauge1.Instance.valueChanged += new WidgetEventHandler(igLinearGauge_WidgetEvent);
+			this.igLinearGauge1.Instance.onValueChanged += new WidgetEventHandler(igLinearGauge_WidgetEvent);
 		}
 
 		private void igLinearGauge_WidgetEvent(object sender, WidgetEventArgs e)

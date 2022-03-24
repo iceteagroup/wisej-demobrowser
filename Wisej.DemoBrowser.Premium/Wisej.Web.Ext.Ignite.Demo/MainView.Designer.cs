@@ -212,9 +212,9 @@
             this.labelNavigationDemo.ForeColor = System.Drawing.Color.FromName("@highlightText-demo");
             this.labelNavigationDemo.Location = new System.Drawing.Point(340, 3);
             this.labelNavigationDemo.Name = "labelNavigationDemo";
-            this.labelNavigationDemo.Size = new System.Drawing.Size(54, 22);
+            this.labelNavigationDemo.Size = new System.Drawing.Size(68, 22);
             this.labelNavigationDemo.TabIndex = 9;
-            this.labelNavigationDemo.Text = "Webix";
+            this.labelNavigationDemo.Text = "IgniteUI";
             // 
             // labelDemo
             // 
@@ -481,10 +481,10 @@
             this.panelComponents.Name = "panelComponents";
             this.panelComponents.Padding = new Wisej.Web.Padding(47, 16, 16, 16);
             this.panelComponents.ShowHeader = true;
-            this.panelComponents.Size = new System.Drawing.Size(341, 835);
+            this.panelComponents.Size = new System.Drawing.Size(341, 818);
             this.panelComponents.TabIndex = 26;
             this.panelComponents.TabStop = true;
-            this.panelComponents.Text = "Webix Components";
+            this.panelComponents.Text = "IgniteUI Components";
             // 
             // listBoxDemos
             // 
@@ -497,7 +497,7 @@
             this.listBoxDemos.ItemHeight = 35;
             this.listBoxDemos.Location = new System.Drawing.Point(47, 16);
             this.listBoxDemos.Name = "listBoxDemos";
-            this.listBoxDemos.Size = new System.Drawing.Size(278, 763);
+            this.listBoxDemos.Size = new System.Drawing.Size(278, 746);
             this.listBoxDemos.TabIndex = 0;
             this.listBoxDemos.ValueMember = "Name";
             this.listBoxDemos.SelectedIndexChanged += new System.EventHandler(this.listBoxDemos_SelectedIndexChanged);
@@ -510,7 +510,7 @@
             this.panelDemo.Location = new System.Drawing.Point(341, 263);
             this.panelDemo.Name = "panelDemo";
             this.panelDemo.ShowCloseButton = false;
-            this.panelDemo.Size = new System.Drawing.Size(1262, 648);
+            this.panelDemo.Size = new System.Drawing.Size(1262, 631);
             this.panelDemo.TabIndex = 27;
             this.panelDemo.TabStop = true;
             this.panelDemo.Text = "Test";
@@ -524,7 +524,7 @@
             this.Controls.Add(this.panelComponents);
             this.Controls.Add(this.flexLayoutPanelMenu);
             this.Name = "MainView";
-            this.Size = new System.Drawing.Size(1603, 911);
+            this.Size = new System.Drawing.Size(1603, 894);
             this.Text = "IgniteUI Integration Tests";
             this.Load += new System.EventHandler(this.MainView_Load);
             this.panelInfo.ResumeLayout(false);

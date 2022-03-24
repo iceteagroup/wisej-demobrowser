@@ -8,8 +8,8 @@ namespace Wisej.Web.Ext.Ignite.Demo.Component
 		{
 			InitializeComponent();
 
-			this.igTreeGrid1.Instance.cellClick += new WidgetEventHandler(igTree_WidgetEvent);
-			this.igTreeGrid1.Instance.cellRightClick += new WidgetEventHandler(igTree_WidgetEvent);
+			this.igTreeGrid1.Instance.onCellClick += new WidgetEventHandler(igTree_WidgetEvent);
+			this.igTreeGrid1.Instance.onCellRightClick += new WidgetEventHandler(igTree_WidgetEvent);
 		}
 
 		private void buttonLoad_Uploaded(object sender, UploadedEventArgs e)

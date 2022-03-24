@@ -9,8 +9,7 @@ namespace Wisej.Web.Ext.Ignite.Demo.Component
 		{
 			InitializeComponent();
 
-			this.igRating1.Instance.hoverChange += new WidgetEventHandler(igRating_WidgetEvent);
-			this.igRating1.Instance.valueChange += new WidgetEventHandler(igRating_WidgetEvent);
+			this.igRating1.Instance.onValueChange += new WidgetEventHandler(igRating_WidgetEvent);
 		}
 
 		private void igRating_WidgetEvent(object sender, WidgetEventArgs e)

@@ -9,9 +9,9 @@ namespace Wisej.Web.Ext.Ignite.Demo.Component
 		{
 			InitializeComponent();
 
-			this.igHierarchicalGrid1.Instance.cellClick += new WidgetEventHandler(igHierarchicalGrid_WidgetEvent); 
-			this.igHierarchicalGrid1.Instance.rowCollapsed += new WidgetEventHandler(igHierarchicalGrid_WidgetEvent);
-			this.igHierarchicalGrid1.Instance.cellRightClick += new WidgetEventHandler(igHierarchicalGrid_WidgetEvent);
+			this.igHierarchicalGrid1.Instance.onCellClick += new WidgetEventHandler(igHierarchicalGrid_WidgetEvent); 
+			this.igHierarchicalGrid1.Instance.onRowCollapsed += new WidgetEventHandler(igHierarchicalGrid_WidgetEvent);
+			this.igHierarchicalGrid1.Instance.onCellRightClick += new WidgetEventHandler(igHierarchicalGrid_WidgetEvent);
 		}
 
 		private void igHierarchicalGrid_WidgetEvent(object sender, WidgetEventArgs e)

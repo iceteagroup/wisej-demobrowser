@@ -11,7 +11,7 @@ namespace Wisej.Web.Ext.Ignite.Demo.Component
 		{
 			InitializeComponent();
 
-			this.igFinancialChart1.Instance.seriesPointerUp += new WidgetEventHandler(igFinancialChart_WidgetEvent);
+			this.igFinancialChart1.Instance.onSeriesPointerUp += new WidgetEventHandler(igFinancialChart_WidgetEvent);
 		}
 
 		private void igFinancialChart_Load(object sender, EventArgs e)

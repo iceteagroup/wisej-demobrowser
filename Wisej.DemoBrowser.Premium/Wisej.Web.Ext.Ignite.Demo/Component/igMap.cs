@@ -10,7 +10,7 @@ namespace Wisej.Web.Ext.Ignite.Demo.Component
 		{
 			InitializeComponent();
 
-			this.igMap1.Instance.seriesMouseLeftButtonUp += new WidgetEventHandler(igMap_WidgetEvent);
+			this.igMap1.Instance.onSeriesMouseLeftButtonUp += new WidgetEventHandler(igMap_WidgetEvent);
 		}
 
 		private void igMap_WidgetEvent(object sender, WidgetEventArgs e)

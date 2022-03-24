@@ -95,5 +95,5 @@
 
 		private Ignite.igColorPicker igColorPicker1;
 		private Label label4;
-	}
+    }
 }
