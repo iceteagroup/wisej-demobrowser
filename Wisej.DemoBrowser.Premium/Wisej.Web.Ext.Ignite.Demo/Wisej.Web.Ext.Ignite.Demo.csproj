@@ -353,7 +353,10 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Wisej-2">
-      <Version>2.5.31-test.1</Version>
+      <Version>2.5.*-*</Version>
+    </PackageReference>
+    <PackageReference Include="Wisej-2-MaterialDesign">
+      <Version>2.5.29</Version>
     </PackageReference>
   </ItemGroup>
   <ItemGroup>

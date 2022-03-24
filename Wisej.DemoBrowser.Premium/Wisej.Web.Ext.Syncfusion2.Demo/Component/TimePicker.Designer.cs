@@ -35,6 +35,7 @@
             this.checkBoxOpenOnFocus = new Wisej.Web.CheckBox();
             this.groupBox1.SuspendLayout();
             this.panel.SuspendLayout();
+            this.flowLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownFrom)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownTo)).BeginInit();
             this.SuspendLayout();
@@ -48,27 +49,20 @@
             // 
             this.linkAPI.Text = "https://ej2.syncfusion.com/javascript/documentation/api/timepicker/";
             // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.checkBoxOpenOnFocus);
-            this.groupBox1.Controls.Add(this.numericUpDownTo);
-            this.groupBox1.Controls.Add(this.numericUpDownFrom);
-            this.groupBox1.Controls.Add(this.comboBoxHourFormat);
-            this.groupBox1.Size = new System.Drawing.Size(250, 348);
-            this.groupBox1.Controls.SetChildIndex(this.comboBoxHourFormat, 0);
-            this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
-            this.groupBox1.Controls.SetChildIndex(this.numericUpDownFrom, 0);
-            this.groupBox1.Controls.SetChildIndex(this.numericUpDownTo, 0);
-            this.groupBox1.Controls.SetChildIndex(this.checkBoxOpenOnFocus, 0);
-            // 
             // buttonUpdate
             // 
-            this.buttonUpdate.Location = new System.Drawing.Point(28, 267);
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
             // panel
             // 
             this.panel.Controls.Add(this.timePicker1);
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Controls.Add(this.checkBoxOpenOnFocus);
+            this.flowLayoutPanel1.Controls.Add(this.numericUpDownFrom);
+            this.flowLayoutPanel1.Controls.Add(this.numericUpDownTo);
+            this.flowLayoutPanel1.Controls.Add(this.comboBoxHourFormat);
             // 
             // linkDemo
             // 
@@ -77,35 +71,41 @@
             // timePicker1
             // 
             this.timePicker1.Anchor = Wisej.Web.AnchorStyles.None;
-            this.timePicker1.Location = new System.Drawing.Point(51, 139);
+            this.timePicker1.Location = new System.Drawing.Point(369, 259);
             this.timePicker1.Name = "timePicker1";
-            this.timePicker1.Size = new System.Drawing.Size(350, 35);
+            this.timePicker1.Size = new System.Drawing.Size(350, 40);
             this.timePicker1.TabIndex = 0;
             this.timePicker1.Text = "timePicker1";
             // 
             // comboBoxHourFormat
             // 
             this.comboBoxHourFormat.DropDownStyle = Wisej.Web.ComboBoxStyle.DropDownList;
+            this.flowLayoutPanel1.SetFillWeight(this.comboBoxHourFormat, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.comboBoxHourFormat, true);
             this.comboBoxHourFormat.Items.AddRange(new object[] {
             "hh:mm a",
             "HH:mm"});
             this.comboBoxHourFormat.LabelText = "Hour Format";
-            this.comboBoxHourFormat.Location = new System.Drawing.Point(26, 157);
+            this.comboBoxHourFormat.Location = new System.Drawing.Point(3, 198);
+            this.comboBoxHourFormat.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.comboBoxHourFormat.Name = "comboBoxHourFormat";
-            this.comboBoxHourFormat.Size = new System.Drawing.Size(198, 42);
+            this.comboBoxHourFormat.Size = new System.Drawing.Size(212, 57);
             this.comboBoxHourFormat.TabIndex = 14;
             // 
             // numericUpDownFrom
             // 
+            this.flowLayoutPanel1.SetFillWeight(this.numericUpDownFrom, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.numericUpDownFrom, true);
             this.numericUpDownFrom.LabelText = "From (Hours)";
-            this.numericUpDownFrom.Location = new System.Drawing.Point(26, 27);
+            this.numericUpDownFrom.Location = new System.Drawing.Point(3, 46);
+            this.numericUpDownFrom.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.numericUpDownFrom.Maximum = new decimal(new int[] {
             23,
             0,
             0,
             0});
             this.numericUpDownFrom.Name = "numericUpDownFrom";
-            this.numericUpDownFrom.Size = new System.Drawing.Size(197, 42);
+            this.numericUpDownFrom.Size = new System.Drawing.Size(212, 57);
             this.numericUpDownFrom.TabIndex = 15;
             this.numericUpDownFrom.Value = new decimal(new int[] {
             1,
@@ -115,23 +115,28 @@
             // 
             // numericUpDownTo
             // 
+            this.flowLayoutPanel1.SetFillWeight(this.numericUpDownTo, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.numericUpDownTo, true);
             this.numericUpDownTo.LabelText = "To";
-            this.numericUpDownTo.Location = new System.Drawing.Point(26, 93);
+            this.numericUpDownTo.Location = new System.Drawing.Point(3, 122);
+            this.numericUpDownTo.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.numericUpDownTo.Maximum = new decimal(new int[] {
             23,
             0,
             0,
             0});
             this.numericUpDownTo.Name = "numericUpDownTo";
-            this.numericUpDownTo.Size = new System.Drawing.Size(197, 42);
+            this.numericUpDownTo.Size = new System.Drawing.Size(212, 57);
             this.numericUpDownTo.TabIndex = 17;
             // 
             // checkBoxOpenOnFocus
             // 
             this.checkBoxOpenOnFocus.Appearance = Wisej.Web.Appearance.Switch;
-            this.checkBoxOpenOnFocus.Location = new System.Drawing.Point(28, 218);
+            this.flowLayoutPanel1.SetFillWeight(this.checkBoxOpenOnFocus, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.checkBoxOpenOnFocus, true);
+            this.checkBoxOpenOnFocus.Location = new System.Drawing.Point(3, 3);
             this.checkBoxOpenOnFocus.Name = "checkBoxOpenOnFocus";
-            this.checkBoxOpenOnFocus.Size = new System.Drawing.Size(137, 24);
+            this.checkBoxOpenOnFocus.Size = new System.Drawing.Size(212, 24);
             this.checkBoxOpenOnFocus.TabIndex = 18;
             this.checkBoxOpenOnFocus.Text = "Open on focus";
             // 
@@ -139,8 +144,9 @@
             // 
             this.Name = "TimePicker";
             this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.panel.ResumeLayout(false);
+            this.flowLayoutPanel1.ResumeLayout(false);
+            this.flowLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownFrom)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownTo)).EndInit();
             this.ResumeLayout(false);

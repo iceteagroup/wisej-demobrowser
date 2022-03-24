@@ -31,9 +31,19 @@
             this.calendar1 = new Wisej.Web.Ext.Syncfusion2.Calendar();
             this.dateTimePickerStart = new Wisej.Web.DateTimePicker();
             this.dateTimePickerEnd = new Wisej.Web.DateTimePicker();
-            this.groupBox1.SuspendLayout();
+            this.flowLayoutPanel1.SuspendLayout();
             this.panel.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Controls.Add(this.dateTimePickerStart);
+            this.flowLayoutPanel1.Controls.Add(this.dateTimePickerEnd);
+            // 
+            // panel
+            // 
+            this.panel.Controls.Add(this.calendar1);
             // 
             // linkDocs
             // 
@@ -44,22 +54,9 @@
             // 
             this.linkAPI.Text = "https://ej2.syncfusion.com/javascript/documentation/api/calendar/overview/";
             // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.dateTimePickerEnd);
-            this.groupBox1.Controls.Add(this.dateTimePickerStart);
-            this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
-            this.groupBox1.Controls.SetChildIndex(this.dateTimePickerStart, 0);
-            this.groupBox1.Controls.SetChildIndex(this.dateTimePickerEnd, 0);
-            // 
             // buttonUpdate
             // 
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
-            // 
-            // panel
-            // 
-            this.panel.Controls.Add(this.calendar1);
-            this.panel.Size = new System.Drawing.Size(509, 384);
             // 
             // linkDemo
             // 
@@ -68,7 +65,7 @@
             // calendar1
             // 
             this.calendar1.Anchor = Wisej.Web.AnchorStyles.None;
-            this.calendar1.Location = new System.Drawing.Point(83, 32);
+            this.calendar1.Location = new System.Drawing.Point(374, 120);
             this.calendar1.Name = "calendar1";
             this.calendar1.Size = new System.Drawing.Size(341, 318);
             this.calendar1.TabIndex = 0;
@@ -76,29 +73,34 @@
             // 
             // dateTimePickerStart
             // 
+            this.flowLayoutPanel1.SetFillWeight(this.dateTimePickerStart, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.dateTimePickerStart, true);
             this.dateTimePickerStart.LabelText = "Start Date";
-            this.dateTimePickerStart.Location = new System.Drawing.Point(23, 44);
+            this.dateTimePickerStart.Location = new System.Drawing.Point(3, 3);
             this.dateTimePickerStart.Name = "dateTimePickerStart";
-            this.dateTimePickerStart.Size = new System.Drawing.Size(200, 53);
+            this.dateTimePickerStart.Size = new System.Drawing.Size(212, 57);
             this.dateTimePickerStart.TabIndex = 1;
             this.dateTimePickerStart.Value = new System.DateTime(2022, 1, 17, 20, 36, 40, 363);
             // 
             // dateTimePickerEnd
             // 
+            this.flowLayoutPanel1.SetFillWeight(this.dateTimePickerEnd, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.dateTimePickerEnd, true);
             this.dateTimePickerEnd.LabelText = "End Date";
-            this.dateTimePickerEnd.Location = new System.Drawing.Point(23, 125);
+            this.dateTimePickerEnd.Location = new System.Drawing.Point(3, 79);
+            this.dateTimePickerEnd.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.dateTimePickerEnd.Name = "dateTimePickerEnd";
-            this.dateTimePickerEnd.Size = new System.Drawing.Size(200, 53);
+            this.dateTimePickerEnd.Size = new System.Drawing.Size(212, 57);
             this.dateTimePickerEnd.TabIndex = 2;
             this.dateTimePickerEnd.Value = new System.DateTime(2022, 1, 17, 20, 36, 40, 363);
             // 
             // Calendar
             // 
             this.Name = "Calendar";
-            this.Size = new System.Drawing.Size(918, 574);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.flowLayoutPanel1.ResumeLayout(false);
+            this.flowLayoutPanel1.PerformLayout();
             this.panel.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 

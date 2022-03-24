@@ -9,7 +9,7 @@ namespace Wisej.Web.Ext.Syncfusion2.Demo.Component
 		{
 			InitializeComponent();
 
-			this.slider1.Instance.change += new WidgetEventHandler(slider1_change);
+			this.slider1.Instance.onChange += new WidgetEventHandler(slider1_change);
 		}
 
         private void slider1_change(object sender, WidgetEventArgs e)

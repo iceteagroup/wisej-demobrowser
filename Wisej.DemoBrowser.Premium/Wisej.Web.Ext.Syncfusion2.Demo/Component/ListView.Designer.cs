@@ -34,9 +34,17 @@
             this.checkBoxHeader = new Wisej.Web.CheckBox();
             this.comboBoxPosition = new Wisej.Web.ComboBox();
             this.comboBoxSortOrder = new Wisej.Web.ComboBox();
+            this.flowLayoutPanel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.panel.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Controls.Add(this.checkBoxShowCheckBox);
+            this.flowLayoutPanel1.Controls.Add(this.checkBoxHeader);
+            this.flowLayoutPanel1.Controls.Add(this.comboBoxPosition);
+            this.flowLayoutPanel1.Controls.Add(this.comboBoxSortOrder);
             // 
             // linkDocs
             // 
@@ -45,18 +53,6 @@
             // linkAPI
             // 
             this.linkAPI.Text = "https://ej2.syncfusion.com/javascript/documentation/api/list-view/";
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.comboBoxSortOrder);
-            this.groupBox1.Controls.Add(this.comboBoxPosition);
-            this.groupBox1.Controls.Add(this.checkBoxHeader);
-            this.groupBox1.Controls.Add(this.checkBoxShowCheckBox);
-            this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
-            this.groupBox1.Controls.SetChildIndex(this.checkBoxShowCheckBox, 0);
-            this.groupBox1.Controls.SetChildIndex(this.checkBoxHeader, 0);
-            this.groupBox1.Controls.SetChildIndex(this.comboBoxPosition, 0);
-            this.groupBox1.Controls.SetChildIndex(this.comboBoxSortOrder, 0);
             // 
             // buttonUpdate
             // 
@@ -83,53 +79,65 @@
             // checkBoxShowCheckBox
             // 
             this.checkBoxShowCheckBox.Appearance = Wisej.Web.Appearance.Switch;
-            this.checkBoxShowCheckBox.Location = new System.Drawing.Point(25, 33);
+            this.flowLayoutPanel1.SetFillWeight(this.checkBoxShowCheckBox, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.checkBoxShowCheckBox, true);
+            this.checkBoxShowCheckBox.Location = new System.Drawing.Point(3, 3);
             this.checkBoxShowCheckBox.Name = "checkBoxShowCheckBox";
-            this.checkBoxShowCheckBox.Size = new System.Drawing.Size(144, 24);
+            this.checkBoxShowCheckBox.Size = new System.Drawing.Size(212, 24);
             this.checkBoxShowCheckBox.TabIndex = 2;
-            this.checkBoxShowCheckBox.Text = "Show checkbox";
+            this.checkBoxShowCheckBox.Text = "Show Checkbox";
             this.checkBoxShowCheckBox.CheckedChanged += new System.EventHandler(this.checkBoxShowCheckBox_CheckedChanged);
             // 
             // checkBoxHeader
             // 
             this.checkBoxHeader.Appearance = Wisej.Web.Appearance.Switch;
-            this.checkBoxHeader.Location = new System.Drawing.Point(25, 61);
+            this.flowLayoutPanel1.SetFillWeight(this.checkBoxHeader, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.checkBoxHeader, true);
+            this.checkBoxHeader.Location = new System.Drawing.Point(3, 46);
+            this.checkBoxHeader.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBoxHeader.Name = "checkBoxHeader";
-            this.checkBoxHeader.Size = new System.Drawing.Size(129, 24);
+            this.checkBoxHeader.Size = new System.Drawing.Size(212, 24);
             this.checkBoxHeader.TabIndex = 3;
-            this.checkBoxHeader.Text = "Show header";
+            this.checkBoxHeader.Text = "Show Header";
             // 
             // comboBoxPosition
             // 
             this.comboBoxPosition.DropDownStyle = Wisej.Web.ComboBoxStyle.DropDownList;
             this.comboBoxPosition.Enabled = false;
+            this.flowLayoutPanel1.SetFillWeight(this.comboBoxPosition, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.comboBoxPosition, true);
             this.comboBoxPosition.Items.AddRange(new object[] {
             "Left",
             "Right"});
-            this.comboBoxPosition.LabelText = "CheckBox position";
-            this.comboBoxPosition.Location = new System.Drawing.Point(23, 90);
+            this.comboBoxPosition.LabelText = "CheckBox Position";
+            this.comboBoxPosition.Location = new System.Drawing.Point(3, 89);
+            this.comboBoxPosition.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.comboBoxPosition.Name = "comboBoxPosition";
-            this.comboBoxPosition.Size = new System.Drawing.Size(200, 42);
+            this.comboBoxPosition.Size = new System.Drawing.Size(212, 57);
             this.comboBoxPosition.TabIndex = 4;
             // 
             // comboBoxSortOrder
             // 
             this.comboBoxSortOrder.DropDownStyle = Wisej.Web.ComboBoxStyle.DropDownList;
+            this.flowLayoutPanel1.SetFillWeight(this.comboBoxSortOrder, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.comboBoxSortOrder, true);
             this.comboBoxSortOrder.Items.AddRange(new object[] {
             "None",
             "Ascending",
             "Descending"});
-            this.comboBoxSortOrder.LabelText = "Sort order";
-            this.comboBoxSortOrder.Location = new System.Drawing.Point(23, 148);
+            this.comboBoxSortOrder.LabelText = "Sort Order";
+            this.comboBoxSortOrder.Location = new System.Drawing.Point(3, 165);
+            this.comboBoxSortOrder.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.comboBoxSortOrder.Name = "comboBoxSortOrder";
-            this.comboBoxSortOrder.Size = new System.Drawing.Size(200, 42);
+            this.comboBoxSortOrder.Size = new System.Drawing.Size(212, 57);
             this.comboBoxSortOrder.TabIndex = 5;
             // 
             // ListView
             // 
             this.Name = "ListView";
+            this.flowLayoutPanel1.ResumeLayout(false);
+            this.flowLayoutPanel1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.panel.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -10,7 +10,7 @@ namespace Wisej.Web.Ext.Syncfusion2.Demo.Component
 		{
 			InitializeComponent();
 
-			this.colorPicker1.Instance.change += new WidgetEventHandler(colorPicker1_WidgetEvent);
+			this.colorPicker1.Instance.onChange += new WidgetEventHandler(colorPicker1_WidgetEvent);
 		}
 
 		private async void colorPicker1_WidgetEvent(object sender, WidgetEventArgs e)

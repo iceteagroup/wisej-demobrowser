@@ -22,9 +22,9 @@ namespace Wisej.Web.Ext.Syncfusion2.Demo.Component
 		{
 			InitializeComponent();
 
-			this.fileManager1.Instance.menuClick += new WidgetEventHandler(fileManager1_WidgetEvent);
-			this.fileManager1.Instance.fileSelect += new WidgetEventHandler(fileManager1_WidgetEvent);
-			this.fileManager1.Instance.toolbarClick += new WidgetEventHandler(fileManager1_WidgetEvent);
+			this.fileManager1.Instance.onMenuClick += new WidgetEventHandler(fileManager1_WidgetEvent);
+			this.fileManager1.Instance.onFileSelect += new WidgetEventHandler(fileManager1_WidgetEvent);
+			this.fileManager1.Instance.onToolbarClick += new WidgetEventHandler(fileManager1_WidgetEvent);
 		}
 
 		private void FileManager_Load(object sender, EventArgs e)

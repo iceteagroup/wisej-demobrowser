@@ -9,7 +9,7 @@ namespace Wisej.Web.Ext.Syncfusion2.Demo.Component
 		{
 			InitializeComponent();
 
-			this.menu1.Instance.select += new WidgetEventHandler(menu1_WidgetEvent);
+			this.menu1.Instance.onSelect += new WidgetEventHandler(menu1_WidgetEvent);
 		}
 		 private void buttonUpdate_Click(object sender, EventArgs e)
         {

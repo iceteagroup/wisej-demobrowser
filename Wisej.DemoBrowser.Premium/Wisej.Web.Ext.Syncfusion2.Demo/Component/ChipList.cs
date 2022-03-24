@@ -9,8 +9,8 @@ namespace Wisej.Web.Ext.Syncfusion2.Demo.Component
 		{
 			InitializeComponent();
 
-			this.chipList1.Instance.click += new WidgetEventHandler(chipList1_WidgetEvent);
-			this.chipList1.Instance.delete += new WidgetEventHandler(chipList1_WidgetEvent);
+			this.chipList1.Instance.onClick += new WidgetEventHandler(chipList1_WidgetEvent);
+			this.chipList1.Instance.onDelete += new WidgetEventHandler(chipList1_WidgetEvent);
 		}
 
 		private void ChipList_Load(object sender, EventArgs e)

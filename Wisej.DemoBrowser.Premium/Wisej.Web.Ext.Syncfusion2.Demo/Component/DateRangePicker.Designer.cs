@@ -34,6 +34,7 @@
             this.dateTimePickerStart = new Wisej.Web.DateTimePicker();
             this.groupBox1.SuspendLayout();
             this.panel.SuspendLayout();
+            this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // linkDocs
@@ -45,25 +46,19 @@
             // 
             this.linkAPI.Text = "https://ej2.syncfusion.com/javascript/documentation/api/daterangepicker/";
             // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.comboBoxFormat);
-            this.groupBox1.Controls.Add(this.dateTimePickerEnd);
-            this.groupBox1.Controls.Add(this.dateTimePickerStart);
-            this.groupBox1.Size = new System.Drawing.Size(250, 441);
-            this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
-            this.groupBox1.Controls.SetChildIndex(this.dateTimePickerStart, 0);
-            this.groupBox1.Controls.SetChildIndex(this.dateTimePickerEnd, 0);
-            this.groupBox1.Controls.SetChildIndex(this.comboBoxFormat, 0);
-            // 
             // buttonUpdate
             // 
-            this.buttonUpdate.Location = new System.Drawing.Point(28, 358);
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
             // panel
             // 
             this.panel.Controls.Add(this.dateRangePicker1);
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Controls.Add(this.dateTimePickerStart);
+            this.flowLayoutPanel1.Controls.Add(this.dateTimePickerEnd);
+            this.flowLayoutPanel1.Controls.Add(this.comboBoxFormat);
             // 
             // linkDemo
             // 
@@ -72,41 +67,49 @@
             // dateRangePicker1
             // 
             this.dateRangePicker1.Anchor = Wisej.Web.AnchorStyles.None;
-            this.dateRangePicker1.Location = new System.Drawing.Point(369, 262);
+            this.dateRangePicker1.Location = new System.Drawing.Point(369, 259);
             this.dateRangePicker1.Name = "dateRangePicker1";
             this.dateRangePicker1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"format\":\"dd\'/\'MMM\'/\'yy hh:mm a\"}")));
-            this.dateRangePicker1.Size = new System.Drawing.Size(350, 35);
+            this.dateRangePicker1.Size = new System.Drawing.Size(350, 40);
             this.dateRangePicker1.TabIndex = 0;
             this.dateRangePicker1.Text = "dateRangePicker1";
             // 
             // comboBoxFormat
             // 
             this.comboBoxFormat.DropDownStyle = Wisej.Web.ComboBoxStyle.DropDownList;
+            this.flowLayoutPanel1.SetFillWeight(this.comboBoxFormat, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.comboBoxFormat, true);
             this.comboBoxFormat.Items.AddRange(new object[] {
             "dd\\\'\\/\\\'MMM\\\'\\/\\\'yy hh:mm a",
             "yyyy\\\'\\/\\\'MM\\\'\\/\\\'dd HH:mm",
             "dd\\\'\\/\\\'MMMM\\\'\\/\\\'yyyy"});
-            this.comboBoxFormat.LabelText = "Date format";
-            this.comboBoxFormat.Location = new System.Drawing.Point(26, 252);
+            this.comboBoxFormat.LabelText = "Date Format";
+            this.comboBoxFormat.Location = new System.Drawing.Point(3, 155);
+            this.comboBoxFormat.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.comboBoxFormat.Name = "comboBoxFormat";
-            this.comboBoxFormat.Size = new System.Drawing.Size(198, 53);
+            this.comboBoxFormat.Size = new System.Drawing.Size(212, 57);
             this.comboBoxFormat.TabIndex = 8;
             // 
             // dateTimePickerEnd
             // 
-            this.dateTimePickerEnd.LabelText = "End date";
-            this.dateTimePickerEnd.Location = new System.Drawing.Point(25, 146);
+            this.flowLayoutPanel1.SetFillWeight(this.dateTimePickerEnd, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.dateTimePickerEnd, true);
+            this.dateTimePickerEnd.LabelText = "End Date";
+            this.dateTimePickerEnd.Location = new System.Drawing.Point(3, 79);
+            this.dateTimePickerEnd.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.dateTimePickerEnd.Name = "dateTimePickerEnd";
-            this.dateTimePickerEnd.Size = new System.Drawing.Size(200, 53);
+            this.dateTimePickerEnd.Size = new System.Drawing.Size(212, 57);
             this.dateTimePickerEnd.TabIndex = 7;
             this.dateTimePickerEnd.Value = new System.DateTime(2022, 1, 17, 20, 36, 40, 363);
             // 
             // dateTimePickerStart
             // 
-            this.dateTimePickerStart.LabelText = "Start date";
-            this.dateTimePickerStart.Location = new System.Drawing.Point(25, 40);
+            this.flowLayoutPanel1.SetFillWeight(this.dateTimePickerStart, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.dateTimePickerStart, true);
+            this.dateTimePickerStart.LabelText = "Start Date";
+            this.dateTimePickerStart.Location = new System.Drawing.Point(3, 3);
             this.dateTimePickerStart.Name = "dateTimePickerStart";
-            this.dateTimePickerStart.Size = new System.Drawing.Size(200, 53);
+            this.dateTimePickerStart.Size = new System.Drawing.Size(212, 57);
             this.dateTimePickerStart.TabIndex = 6;
             this.dateTimePickerStart.Value = new System.DateTime(2022, 1, 17, 20, 36, 40, 363);
             // 
@@ -114,8 +117,9 @@
             // 
             this.Name = "DateRangePicker";
             this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.panel.ResumeLayout(false);
+            this.flowLayoutPanel1.ResumeLayout(false);
+            this.flowLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 

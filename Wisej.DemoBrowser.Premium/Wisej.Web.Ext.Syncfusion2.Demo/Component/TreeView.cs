@@ -9,7 +9,7 @@ namespace Wisej.Web.Ext.Syncfusion2.Demo.Component
 		{
 			InitializeComponent();
 
-			this.treeView1.Instance.nodeClicked += new WidgetEventHandler(treeView1_WidgetEvent);
+			this.treeView1.Instance.onNodeClicked += new WidgetEventHandler(treeView1_WidgetEvent);
 		}
 
 		private void treeView1_WidgetEvent(object sender, WidgetEventArgs e)

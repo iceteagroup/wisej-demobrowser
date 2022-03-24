@@ -9,8 +9,8 @@ namespace Wisej.Web.Ext.Syncfusion2.Demo.Component
 		{
 			InitializeComponent();
 
-			this.splitButton1.Instance.click += new WidgetEventHandler(splitButton1_WidgetEvent);
-			this.splitButton1.Instance.select += new WidgetEventHandler(splitButton1_WidgetEvent);
+			this.splitButton1.Instance.onClick += new WidgetEventHandler(splitButton1_WidgetEvent);
+			this.splitButton1.Instance.onSelect += new WidgetEventHandler(splitButton1_WidgetEvent);
 		}
 
 		private void splitButton1_WidgetEvent(object sender, WidgetEventArgs e)

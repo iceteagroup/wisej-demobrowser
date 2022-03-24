@@ -9,8 +9,8 @@ namespace Wisej.Web.Ext.Syncfusion2.Demo.Component
 		{
 			InitializeComponent();
 
-			this.calendar1.Instance.change += new WidgetEventHandler(calendar1_WidgetEvent);
-			this.calendar1.Instance.navigated += new WidgetEventHandler(calendar1_WidgetEvent);
+			this.calendar1.Instance.onChange += new WidgetEventHandler(calendar1_WidgetEvent);
+			this.calendar1.Instance.onNavigated += new WidgetEventHandler(calendar1_WidgetEvent);
 		}
 
 		private void calendar1_WidgetEvent(object sender, WidgetEventArgs e)

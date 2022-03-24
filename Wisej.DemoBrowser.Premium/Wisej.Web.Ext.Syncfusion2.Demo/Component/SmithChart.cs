@@ -8,9 +8,6 @@ namespace Wisej.Web.Ext.Syncfusion2.Demo.Component
 		public SmithChart()
 		{
 			InitializeComponent();
-
-            this.smithChart1.Instance.tooltipRender += new WidgetEventHandler(smithChart1_tooltipRender);
-
         }
 
         private void smithChart1_tooltipRender(object sender, WidgetEventArgs e)

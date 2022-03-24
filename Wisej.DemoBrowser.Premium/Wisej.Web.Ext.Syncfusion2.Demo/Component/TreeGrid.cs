@@ -9,7 +9,7 @@ namespace Wisej.Web.Ext.Syncfusion2.Demo.Component
 		{
 			InitializeComponent();
 
-			this.treeGrid1.Instance.rowSelected += new WidgetEventHandler(treeGrid1_rowSelected);
+			this.treeGrid1.Instance.onRowSelected += new WidgetEventHandler(treeGrid1_rowSelected);
 		}
 
 		private void treeGrid1_rowSelected(object sender, WidgetEventArgs e)

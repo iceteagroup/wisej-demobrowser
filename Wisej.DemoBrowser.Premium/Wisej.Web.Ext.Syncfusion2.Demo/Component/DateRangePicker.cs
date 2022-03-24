@@ -9,9 +9,9 @@ namespace Wisej.Web.Ext.Syncfusion2.Demo.Component
 		{
 			InitializeComponent();
 
-			this.dateRangePicker1.Instance.change += new WidgetEventHandler(dateRangePicker1_WidgetEvent);
-			this.dateRangePicker1.Instance.select += new WidgetEventHandler(dateRangePicker1_WidgetEvent);
-			this.dateRangePicker1.Instance.navigated += new WidgetEventHandler(dateRangePicker1_WidgetEvent);
+			this.dateRangePicker1.Instance.onChange += new WidgetEventHandler(dateRangePicker1_WidgetEvent);
+			this.dateRangePicker1.Instance.onSelect += new WidgetEventHandler(dateRangePicker1_WidgetEvent);
+			this.dateRangePicker1.Instance.onNavigated += new WidgetEventHandler(dateRangePicker1_WidgetEvent);
 		}
 
 		private void dateRangePicker1_WidgetEvent(object sender, WidgetEventArgs e)

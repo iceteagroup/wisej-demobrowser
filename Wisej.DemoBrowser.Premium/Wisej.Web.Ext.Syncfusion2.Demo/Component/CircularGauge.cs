@@ -9,8 +9,8 @@ namespace Wisej.Web.Ext.Syncfusion2.Demo.Component
 		{
 			InitializeComponent();
 
-			this.circularGauge1.Instance.dragStart += new WidgetEventHandler(circularGauge1_WidgetEvent);
-			this.circularGauge1.Instance.dragEnd += new WidgetEventHandler(circularGauge1_WidgetEvent);
+			this.circularGauge1.Instance.onDragStart += new WidgetEventHandler(circularGauge1_WidgetEvent);
+			this.circularGauge1.Instance.onDragEnd += new WidgetEventHandler(circularGauge1_WidgetEvent);
 		}
 
 		private void circularGauge1_WidgetEvent(object sender, WidgetEventArgs e)

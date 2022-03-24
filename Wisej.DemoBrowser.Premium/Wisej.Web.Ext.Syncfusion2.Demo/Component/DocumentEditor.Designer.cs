@@ -34,6 +34,7 @@
             this.comboBoxDataSource = new Wisej.Web.ComboBox();
             this.groupBox1.SuspendLayout();
             this.panel.SuspendLayout();
+            this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // linkDocs
@@ -46,14 +47,6 @@
             this.linkAPI.Text = "https://ej2.syncfusion.com/javascript/documentation/api/document-editor-container" +
     "";
             // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.comboBoxDataSource);
-            this.groupBox1.Controls.Add(this.buttonSave);
-            this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
-            this.groupBox1.Controls.SetChildIndex(this.buttonSave, 0);
-            this.groupBox1.Controls.SetChildIndex(this.comboBoxDataSource, 0);
-            // 
             // buttonUpdate
             // 
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
@@ -61,6 +54,11 @@
             // panel
             // 
             this.panel.Controls.Add(this.documentEditor1);
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Controls.Add(this.comboBoxDataSource);
+            this.flowLayoutPanel1.Controls.Add(this.buttonSave);
             // 
             // linkDemo
             // 
@@ -80,9 +78,12 @@
             // 
             // buttonSave
             // 
-            this.buttonSave.Location = new System.Drawing.Point(28, 186);
+            this.flowLayoutPanel1.SetFillWeight(this.buttonSave, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.buttonSave, true);
+            this.buttonSave.Location = new System.Drawing.Point(3, 82);
+            this.buttonSave.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.buttonSave.Name = "buttonSave";
-            this.buttonSave.Size = new System.Drawing.Size(195, 27);
+            this.buttonSave.Size = new System.Drawing.Size(212, 40);
             this.buttonSave.TabIndex = 2;
             this.buttonSave.Text = "Save Document";
             this.buttonSave.Click += new System.EventHandler(this.buttonSave_Click);
@@ -91,12 +92,14 @@
             // 
             this.comboBoxDataSource.AutoSize = false;
             this.comboBoxDataSource.DropDownStyle = Wisej.Web.ComboBoxStyle.DropDownList;
+            this.flowLayoutPanel1.SetFillWeight(this.comboBoxDataSource, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.comboBoxDataSource, true);
             this.comboBoxDataSource.Label.Size = 50;
             this.comboBoxDataSource.Label.SizeType = Wisej.Web.SizeType.Percent;
             this.comboBoxDataSource.LabelText = "Data Source";
-            this.comboBoxDataSource.Location = new System.Drawing.Point(28, 39);
+            this.comboBoxDataSource.Location = new System.Drawing.Point(3, 3);
             this.comboBoxDataSource.Name = "comboBoxDataSource";
-            this.comboBoxDataSource.Size = new System.Drawing.Size(195, 47);
+            this.comboBoxDataSource.Size = new System.Drawing.Size(212, 60);
             this.comboBoxDataSource.TabIndex = 4;
             // 
             // DocumentEditor
@@ -105,6 +108,7 @@
             this.Load += new System.EventHandler(this.DocumentEditor_Load);
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
+            this.flowLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 

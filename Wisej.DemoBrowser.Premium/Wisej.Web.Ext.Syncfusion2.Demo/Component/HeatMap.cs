@@ -11,7 +11,7 @@ namespace Wisej.Web.Ext.Syncfusion2.Demo.Component
 		{
 			InitializeComponent();
 
-            this.heatMap1.Instance.cellClick += new WidgetEventHandler(heatMap1_WidgetEvent);
+            this.heatMap1.Instance.onCellClick += new WidgetEventHandler(heatMap1_WidgetEvent);
 
         }
 

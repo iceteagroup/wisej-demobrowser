@@ -35,6 +35,7 @@
             this.checkBoxDragAndDrop = new Wisej.Web.CheckBox();
             this.groupBox1.SuspendLayout();
             this.panel.SuspendLayout();
+            this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // linkDocs
@@ -45,16 +46,6 @@
             // 
             this.linkAPI.Text = "https://ej2.syncfusion.com/javascript/documentation/api/treegrid/";
             // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.checkBoxDragAndDrop);
-            this.groupBox1.Controls.Add(this.checkBoxResizing);
-            this.groupBox1.Controls.Add(this.checkBoxReordering);
-            this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
-            this.groupBox1.Controls.SetChildIndex(this.checkBoxReordering, 0);
-            this.groupBox1.Controls.SetChildIndex(this.checkBoxResizing, 0);
-            this.groupBox1.Controls.SetChildIndex(this.checkBoxDragAndDrop, 0);
-            // 
             // buttonUpdate
             // 
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
@@ -62,6 +53,12 @@
             // panel
             // 
             this.panel.Controls.Add(this.treeGrid1);
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Controls.Add(this.checkBoxDragAndDrop);
+            this.flowLayoutPanel1.Controls.Add(this.checkBoxReordering);
+            this.flowLayoutPanel1.Controls.Add(this.checkBoxResizing);
             // 
             // linkDemo
             // 
@@ -82,36 +79,45 @@
             this.checkBoxResizing.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
             | Wisej.Web.AnchorStyles.Left)));
             this.checkBoxResizing.Appearance = Wisej.Web.Appearance.Switch;
-            this.checkBoxResizing.Location = new System.Drawing.Point(28, 86);
+            this.flowLayoutPanel1.SetFillWeight(this.checkBoxResizing, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.checkBoxResizing, true);
+            this.checkBoxResizing.Location = new System.Drawing.Point(3, 89);
+            this.checkBoxResizing.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBoxResizing.Name = "checkBoxResizing";
-            this.checkBoxResizing.Size = new System.Drawing.Size(132, 24);
+            this.checkBoxResizing.Size = new System.Drawing.Size(212, 24);
             this.checkBoxResizing.TabIndex = 6;
-            this.checkBoxResizing.Text = "Allow resizing";
+            this.checkBoxResizing.Text = "Allow Resizing";
             // 
             // checkBoxReordering
             // 
             this.checkBoxReordering.Appearance = Wisej.Web.Appearance.Switch;
-            this.checkBoxReordering.Location = new System.Drawing.Point(28, 56);
+            this.flowLayoutPanel1.SetFillWeight(this.checkBoxReordering, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.checkBoxReordering, true);
+            this.checkBoxReordering.Location = new System.Drawing.Point(3, 46);
+            this.checkBoxReordering.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBoxReordering.Name = "checkBoxReordering";
-            this.checkBoxReordering.Size = new System.Drawing.Size(146, 24);
+            this.checkBoxReordering.Size = new System.Drawing.Size(212, 24);
             this.checkBoxReordering.TabIndex = 5;
-            this.checkBoxReordering.Text = "Allow reordering";
+            this.checkBoxReordering.Text = "Allow Reordering";
             // 
             // checkBoxDragAndDrop
             // 
             this.checkBoxDragAndDrop.Appearance = Wisej.Web.Appearance.Switch;
-            this.checkBoxDragAndDrop.Location = new System.Drawing.Point(28, 27);
+            this.flowLayoutPanel1.SetFillWeight(this.checkBoxDragAndDrop, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.checkBoxDragAndDrop, true);
+            this.checkBoxDragAndDrop.Location = new System.Drawing.Point(3, 3);
             this.checkBoxDragAndDrop.Name = "checkBoxDragAndDrop";
-            this.checkBoxDragAndDrop.Size = new System.Drawing.Size(170, 24);
+            this.checkBoxDragAndDrop.Size = new System.Drawing.Size(212, 24);
             this.checkBoxDragAndDrop.TabIndex = 9;
-            this.checkBoxDragAndDrop.Text = "Allow drag-and-drop";
+            this.checkBoxDragAndDrop.Text = "Allow Drag-and-Drop";
             // 
             // TreeGrid
             // 
             this.Name = "TreeGrid";
             this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.panel.ResumeLayout(false);
+            this.flowLayoutPanel1.ResumeLayout(false);
+            this.flowLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -36,6 +36,7 @@
             this.checkBoxEditing = new Wisej.Web.CheckBox();
             this.groupBox1.SuspendLayout();
             this.panel.SuspendLayout();
+            this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // linkDocs
@@ -47,27 +48,20 @@
             // 
             this.linkAPI.Text = "https://ej2.syncfusion.com/javascript/documentation/api/treeview/";
             // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.checkBoxEditing);
-            this.groupBox1.Controls.Add(this.checkBoxShowCheckbox);
-            this.groupBox1.Controls.Add(this.checkBoxDragAndDrop);
-            this.groupBox1.Controls.Add(this.comboBoxExpandOn);
-            this.groupBox1.Size = new System.Drawing.Size(250, 295);
-            this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
-            this.groupBox1.Controls.SetChildIndex(this.comboBoxExpandOn, 0);
-            this.groupBox1.Controls.SetChildIndex(this.checkBoxDragAndDrop, 0);
-            this.groupBox1.Controls.SetChildIndex(this.checkBoxShowCheckbox, 0);
-            this.groupBox1.Controls.SetChildIndex(this.checkBoxEditing, 0);
-            // 
             // buttonUpdate
             // 
-            this.buttonUpdate.Location = new System.Drawing.Point(28, 214);
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
             // panel
             // 
             this.panel.Controls.Add(this.treeView1);
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Controls.Add(this.checkBoxDragAndDrop);
+            this.flowLayoutPanel1.Controls.Add(this.checkBoxShowCheckbox);
+            this.flowLayoutPanel1.Controls.Add(this.checkBoxEditing);
+            this.flowLayoutPanel1.Controls.Add(this.comboBoxExpandOn);
             // 
             // linkDemo
             // 
@@ -75,61 +69,73 @@
             // 
             // treeView1
             // 
-            this.treeView1.Dock = Wisej.Web.DockStyle.Fill;
-            this.treeView1.Location = new System.Drawing.Point(8, 8);
+            this.treeView1.BorderStyle = Wisej.Web.BorderStyle.Solid;
+            this.treeView1.Location = new System.Drawing.Point(394, 134);
             this.treeView1.Name = "treeView1";
             this.treeView1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("treeView1.Options"))));
-            this.treeView1.Size = new System.Drawing.Size(1073, 542);
+            this.treeView1.Size = new System.Drawing.Size(300, 290);
             this.treeView1.TabIndex = 0;
             this.treeView1.Text = "treeView1";
             // 
             // comboBoxExpandOn
             // 
             this.comboBoxExpandOn.DropDownStyle = Wisej.Web.ComboBoxStyle.DropDownList;
+            this.flowLayoutPanel1.SetFillWeight(this.comboBoxExpandOn, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.comboBoxExpandOn, true);
             this.comboBoxExpandOn.Items.AddRange(new object[] {
             "Auto",
             "Click",
             "DblClick",
             "None"});
             this.comboBoxExpandOn.LabelText = "Expand on";
-            this.comboBoxExpandOn.Location = new System.Drawing.Point(18, 112);
+            this.comboBoxExpandOn.Location = new System.Drawing.Point(3, 132);
+            this.comboBoxExpandOn.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.comboBoxExpandOn.Name = "comboBoxExpandOn";
-            this.comboBoxExpandOn.Size = new System.Drawing.Size(214, 42);
+            this.comboBoxExpandOn.Size = new System.Drawing.Size(212, 57);
             this.comboBoxExpandOn.TabIndex = 1;
             // 
             // checkBoxDragAndDrop
             // 
             this.checkBoxDragAndDrop.Appearance = Wisej.Web.Appearance.Switch;
-            this.checkBoxDragAndDrop.Location = new System.Drawing.Point(18, 25);
+            this.flowLayoutPanel1.SetFillWeight(this.checkBoxDragAndDrop, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.checkBoxDragAndDrop, true);
+            this.checkBoxDragAndDrop.Location = new System.Drawing.Point(3, 3);
             this.checkBoxDragAndDrop.Name = "checkBoxDragAndDrop";
-            this.checkBoxDragAndDrop.Size = new System.Drawing.Size(168, 24);
+            this.checkBoxDragAndDrop.Size = new System.Drawing.Size(212, 24);
             this.checkBoxDragAndDrop.TabIndex = 2;
-            this.checkBoxDragAndDrop.Text = "Allow drag and drop";
+            this.checkBoxDragAndDrop.Text = "Allow Drag-and-Drop";
             // 
             // checkBoxShowCheckbox
             // 
             this.checkBoxShowCheckbox.Appearance = Wisej.Web.Appearance.Switch;
-            this.checkBoxShowCheckbox.Location = new System.Drawing.Point(18, 83);
+            this.flowLayoutPanel1.SetFillWeight(this.checkBoxShowCheckbox, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.checkBoxShowCheckbox, true);
+            this.checkBoxShowCheckbox.Location = new System.Drawing.Point(3, 46);
+            this.checkBoxShowCheckbox.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBoxShowCheckbox.Name = "checkBoxShowCheckbox";
-            this.checkBoxShowCheckbox.Size = new System.Drawing.Size(144, 24);
+            this.checkBoxShowCheckbox.Size = new System.Drawing.Size(212, 24);
             this.checkBoxShowCheckbox.TabIndex = 3;
-            this.checkBoxShowCheckbox.Text = "Show checkbox";
+            this.checkBoxShowCheckbox.Text = "Show Checkbox";
             // 
             // checkBoxEditing
             // 
             this.checkBoxEditing.Appearance = Wisej.Web.Appearance.Switch;
-            this.checkBoxEditing.Location = new System.Drawing.Point(18, 54);
+            this.flowLayoutPanel1.SetFillWeight(this.checkBoxEditing, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.checkBoxEditing, true);
+            this.checkBoxEditing.Location = new System.Drawing.Point(3, 89);
+            this.checkBoxEditing.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBoxEditing.Name = "checkBoxEditing";
-            this.checkBoxEditing.Size = new System.Drawing.Size(123, 24);
+            this.checkBoxEditing.Size = new System.Drawing.Size(212, 24);
             this.checkBoxEditing.TabIndex = 4;
-            this.checkBoxEditing.Text = "Allow edting";
+            this.checkBoxEditing.Text = "Allow Editing";
             // 
             // TreeView
             // 
             this.Name = "TreeView";
             this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.panel.ResumeLayout(false);
+            this.flowLayoutPanel1.ResumeLayout(false);
+            this.flowLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 

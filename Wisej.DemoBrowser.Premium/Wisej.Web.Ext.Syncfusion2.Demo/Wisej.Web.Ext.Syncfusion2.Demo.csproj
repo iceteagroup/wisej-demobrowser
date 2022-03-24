@@ -89,6 +89,7 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+    <Content Include="Wisej.Web.Ext.Syncfusion2.json" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Images\logo-wisej-white.png" />
@@ -428,10 +429,6 @@
     <Reference Include="Syncfusion.Compression.Base">
       <HintPath>..\Libs\Syncfusion.Compression.Base.dll</HintPath>
     </Reference>
-    <Reference Include="Wisej.Framework, Version=2.0.0.0, Culture=neutral, PublicKeyToken=17bef35e11b84171, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\Wisej\Development\2.5\bin\Wisej.Framework.dll</HintPath>
-    </Reference>
     <Reference Include="Wisej.Web.Ext.Syncfusion2">
       <HintPath>..\..\..\..\..\..\Wisej\Extensions\Premium\2.5\bin\Wisej.Web.Ext.Syncfusion2.dll</HintPath>
     </Reference>
@@ -582,6 +579,12 @@
     </PackageReference>
     <PackageReference Include="Newtonsoft.Json">
       <Version>13.0.1</Version>
+    </PackageReference>
+    <PackageReference Include="Wisej-2">
+      <Version>2.5.*-*</Version>
+    </PackageReference>
+    <PackageReference Include="Wisej-2-MaterialDesign">
+      <Version>2.5.*-*</Version>
     </PackageReference>
   </ItemGroup>
   <PropertyGroup>

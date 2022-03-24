@@ -8,7 +8,7 @@ namespace Wisej.Web.Ext.Syncfusion2.Demo.Component
 		{
 			InitializeComponent();
 
-			this.toolbar1.Instance.clicked += new WidgetEventHandler(toolbar1_WidgetEvent);
+			this.toolbar1.Instance.onClicked += new WidgetEventHandler(toolbar1_WidgetEvent);
 		}
 
 		private void toolbar1_WidgetEvent(object sender, WidgetEventArgs e)

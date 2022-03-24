@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="documentEditor1.Options" xml:space="preserve">
-    <value>{"toolbarItems":[{"id":"save","prefixIcon":"e-save","text":"Save"},"Open","Undo","Redo","Separator","Image","Table","Hyperlink","Bookmark","Comments","TableOfContents","Separator","Header","Footer","PageSetup","PageNumber","Break","Separator","Find","Separator","LocalClipboard","RestrictEditing"]}</value>
+    <value>{"toolbarItems":[{"id":"save","prefixIcon":"e-save","text":"Save"},"Open","Undo","Redo","Separator","Image","Table","Hyperlink","Bookmark","Comments","TableOfContents","Separator","Header","Footer","PageSetup","PageNumber","Break","Separator","Find","Separator","LocalClipboard","RestrictEditing"],"value":"documentEditor1"}</value>
   </data>
   <metadata name="$this.RulerSnapLines" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>

@@ -34,6 +34,7 @@
             this.tagTextBoxAllowedExtensions = new Wisej.Web.TagTextBox();
             this.groupBox1.SuspendLayout();
             this.panel.SuspendLayout();
+            this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // linkDocs
@@ -45,16 +46,6 @@
             // 
             this.linkAPI.Text = "https://ej2.syncfusion.com/javascript/documentation/api/uploader/";
             // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.tagTextBoxAllowedExtensions);
-            this.groupBox1.Controls.Add(this.checkBoxSequentiallUpload);
-            this.groupBox1.Controls.Add(this.checkBoxMultiple);
-            this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
-            this.groupBox1.Controls.SetChildIndex(this.checkBoxMultiple, 0);
-            this.groupBox1.Controls.SetChildIndex(this.checkBoxSequentiallUpload, 0);
-            this.groupBox1.Controls.SetChildIndex(this.tagTextBoxAllowedExtensions, 0);
-            // 
             // buttonUpdate
             // 
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
@@ -62,6 +53,12 @@
             // panel
             // 
             this.panel.Controls.Add(this.uploader1);
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Controls.Add(this.checkBoxMultiple);
+            this.flowLayoutPanel1.Controls.Add(this.checkBoxSequentiallUpload);
+            this.flowLayoutPanel1.Controls.Add(this.tagTextBoxAllowedExtensions);
             // 
             // linkDemo
             // 
@@ -71,7 +68,7 @@
             // uploader1
             // 
             this.uploader1.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom)));
-            this.uploader1.Location = new System.Drawing.Point(39, 84);
+            this.uploader1.Location = new System.Drawing.Point(357, 207);
             this.uploader1.Name = "uploader1";
             this.uploader1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"allowedExtensions\":\".jpg,.png\"}")));
             this.uploader1.Size = new System.Drawing.Size(374, 145);
@@ -81,27 +78,36 @@
             // checkBoxMultiple
             // 
             this.checkBoxMultiple.Appearance = Wisej.Web.Appearance.Switch;
-            this.checkBoxMultiple.Location = new System.Drawing.Point(14, 29);
+            this.flowLayoutPanel1.SetFillWeight(this.checkBoxMultiple, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.checkBoxMultiple, true);
+            this.checkBoxMultiple.Location = new System.Drawing.Point(3, 3);
             this.checkBoxMultiple.Name = "checkBoxMultiple";
-            this.checkBoxMultiple.Size = new System.Drawing.Size(97, 24);
+            this.checkBoxMultiple.Size = new System.Drawing.Size(212, 24);
             this.checkBoxMultiple.TabIndex = 1;
-            this.checkBoxMultiple.Text = "Multiple";
+            this.checkBoxMultiple.Text = "Multiple Files";
             // 
             // checkBoxSequentiallUpload
             // 
             this.checkBoxSequentiallUpload.Appearance = Wisej.Web.Appearance.Switch;
-            this.checkBoxSequentiallUpload.Location = new System.Drawing.Point(14, 58);
+            this.flowLayoutPanel1.SetFillWeight(this.checkBoxSequentiallUpload, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.checkBoxSequentiallUpload, true);
+            this.checkBoxSequentiallUpload.Location = new System.Drawing.Point(3, 46);
+            this.checkBoxSequentiallUpload.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBoxSequentiallUpload.Name = "checkBoxSequentiallUpload";
-            this.checkBoxSequentiallUpload.Size = new System.Drawing.Size(157, 24);
+            this.checkBoxSequentiallUpload.Size = new System.Drawing.Size(212, 24);
             this.checkBoxSequentiallUpload.TabIndex = 2;
-            this.checkBoxSequentiallUpload.Text = "Sequential upload";
+            this.checkBoxSequentiallUpload.Text = "Sequential Upload";
             // 
             // tagTextBoxAllowedExtensions
             // 
-            this.tagTextBoxAllowedExtensions.LabelText = "Allowed extensions";
-            this.tagTextBoxAllowedExtensions.Location = new System.Drawing.Point(14, 88);
+            this.tagTextBoxAllowedExtensions.AutoSize = false;
+            this.flowLayoutPanel1.SetFillWeight(this.tagTextBoxAllowedExtensions, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.tagTextBoxAllowedExtensions, true);
+            this.tagTextBoxAllowedExtensions.LabelText = "Allowed Extensions";
+            this.tagTextBoxAllowedExtensions.Location = new System.Drawing.Point(3, 89);
+            this.tagTextBoxAllowedExtensions.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.tagTextBoxAllowedExtensions.Name = "tagTextBoxAllowedExtensions";
-            this.tagTextBoxAllowedExtensions.Size = new System.Drawing.Size(219, 48);
+            this.tagTextBoxAllowedExtensions.Size = new System.Drawing.Size(212, 132);
             this.tagTextBoxAllowedExtensions.TabIndex = 3;
             this.tagTextBoxAllowedExtensions.Text = ".jpg,.png";
             // 
@@ -109,8 +115,9 @@
             // 
             this.Name = "Uploader";
             this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.panel.ResumeLayout(false);
+            this.flowLayoutPanel1.ResumeLayout(false);
+            this.flowLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 

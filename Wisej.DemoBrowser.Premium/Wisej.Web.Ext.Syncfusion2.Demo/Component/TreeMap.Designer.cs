@@ -34,6 +34,7 @@
             this.comboBoxRenderDirection = new Wisej.Web.ComboBox();
             this.groupBox1.SuspendLayout();
             this.panel.SuspendLayout();
+            this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // linkDocs
@@ -44,14 +45,6 @@
             // 
             this.linkAPI.Text = "https://ej2.syncfusion.com/javascript/documentation/api/treemap/";
             // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.comboBoxRenderDirection);
-            this.groupBox1.Controls.Add(this.checkBoxGroupingSeparator);
-            this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
-            this.groupBox1.Controls.SetChildIndex(this.checkBoxGroupingSeparator, 0);
-            this.groupBox1.Controls.SetChildIndex(this.comboBoxRenderDirection, 0);
-            // 
             // buttonUpdate
             // 
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
@@ -59,6 +52,11 @@
             // panel
             // 
             this.panel.Controls.Add(this.treeMap1);
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Controls.Add(this.checkBoxGroupingSeparator);
+            this.flowLayoutPanel1.Controls.Add(this.comboBoxRenderDirection);
             // 
             // linkDemo
             // 
@@ -77,34 +75,40 @@
             // checkBoxGroupingSeparator
             // 
             this.checkBoxGroupingSeparator.Appearance = Wisej.Web.Appearance.Switch;
-            this.checkBoxGroupingSeparator.Location = new System.Drawing.Point(13, 36);
+            this.flowLayoutPanel1.SetFillWeight(this.checkBoxGroupingSeparator, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.checkBoxGroupingSeparator, true);
+            this.checkBoxGroupingSeparator.Location = new System.Drawing.Point(3, 3);
             this.checkBoxGroupingSeparator.Name = "checkBoxGroupingSeparator";
-            this.checkBoxGroupingSeparator.Size = new System.Drawing.Size(191, 24);
+            this.checkBoxGroupingSeparator.Size = new System.Drawing.Size(212, 24);
             this.checkBoxGroupingSeparator.TabIndex = 1;
-            this.checkBoxGroupingSeparator.Text = "Use Grouping Separator";
+            this.checkBoxGroupingSeparator.Text = "Use Group Separator";
             // 
             // comboBoxRenderDirection
             // 
             this.comboBoxRenderDirection.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Left) 
             | Wisej.Web.AnchorStyles.Right)));
             this.comboBoxRenderDirection.DropDownStyle = Wisej.Web.ComboBoxStyle.DropDownList;
+            this.flowLayoutPanel1.SetFillWeight(this.comboBoxRenderDirection, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.comboBoxRenderDirection, true);
             this.comboBoxRenderDirection.Items.AddRange(new object[] {
             "TopLeftBottomRight",
             "TopRightBottomLeft",
             "BottomRightTopLeft",
             "BottomLeftTopRight"});
             this.comboBoxRenderDirection.LabelText = "Render direction";
-            this.comboBoxRenderDirection.Location = new System.Drawing.Point(11, 65);
+            this.comboBoxRenderDirection.Location = new System.Drawing.Point(3, 46);
+            this.comboBoxRenderDirection.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.comboBoxRenderDirection.Name = "comboBoxRenderDirection";
-            this.comboBoxRenderDirection.Size = new System.Drawing.Size(226, 53);
+            this.comboBoxRenderDirection.Size = new System.Drawing.Size(212, 57);
             this.comboBoxRenderDirection.TabIndex = 2;
             // 
             // TreeMap
             // 
             this.Name = "TreeMap";
             this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.panel.ResumeLayout(false);
+            this.flowLayoutPanel1.ResumeLayout(false);
+            this.flowLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 

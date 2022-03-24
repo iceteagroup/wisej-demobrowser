@@ -9,8 +9,8 @@ namespace Wisej.Web.Ext.Syncfusion2.Demo.Component
 		{
 			InitializeComponent();
 
-			this.multiSelect1.Instance.select += new WidgetEventHandler(multiSelect1_select);
-			this.multiSelect1.Instance.removed += new WidgetEventHandler(multiSelect1_removed);
+			this.multiSelect1.Instance.onSelect += new WidgetEventHandler(multiSelect1_select);
+			this.multiSelect1.Instance.onRemoved += new WidgetEventHandler(multiSelect1_removed);
 		}
 
         private void multiSelect1_removed(object sender, WidgetEventArgs e)

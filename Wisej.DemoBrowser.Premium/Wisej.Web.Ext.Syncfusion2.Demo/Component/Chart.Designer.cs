@@ -33,6 +33,7 @@
             this.comboBoxChartType = new Wisej.Web.ComboBox();
             this.groupBox1.SuspendLayout();
             this.panel.SuspendLayout();
+            this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // linkDocs
@@ -43,12 +44,6 @@
             // 
             this.linkAPI.Text = "https://ej2.syncfusion.com/javascript/documentation/api/chart/overview/";
             // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.comboBoxChartType);
-            this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
-            this.groupBox1.Controls.SetChildIndex(this.comboBoxChartType, 0);
-            // 
             // buttonUpdate
             // 
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
@@ -56,6 +51,10 @@
             // panel
             // 
             this.panel.Controls.Add(this.chart1);
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Controls.Add(this.comboBoxChartType);
             // 
             // linkDemo
             // 
@@ -74,22 +73,25 @@
             // comboBoxChartType
             // 
             this.comboBoxChartType.DropDownStyle = Wisej.Web.ComboBoxStyle.DropDownList;
+            this.flowLayoutPanel1.SetFillWeight(this.comboBoxChartType, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.comboBoxChartType, true);
             this.comboBoxChartType.Items.AddRange(new object[] {
             "Line",
             "Spline",
             "StepLine"});
             this.comboBoxChartType.LabelText = "Chart Type";
-            this.comboBoxChartType.Location = new System.Drawing.Point(23, 57);
+            this.comboBoxChartType.Location = new System.Drawing.Point(3, 3);
             this.comboBoxChartType.Name = "comboBoxChartType";
-            this.comboBoxChartType.Size = new System.Drawing.Size(205, 53);
+            this.comboBoxChartType.Size = new System.Drawing.Size(212, 57);
             this.comboBoxChartType.TabIndex = 1;
             // 
             // Chart
             // 
             this.Name = "Chart";
             this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.panel.ResumeLayout(false);
+            this.flowLayoutPanel1.ResumeLayout(false);
+            this.flowLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 

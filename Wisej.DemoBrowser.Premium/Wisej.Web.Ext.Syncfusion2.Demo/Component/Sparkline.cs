@@ -11,8 +11,7 @@ namespace Wisej.Web.Ext.Syncfusion2.Demo.Component
 		}
 
         private void buttonUpdate_Click(object sender, EventArgs e)
-        {
-
+		{
 			this.sparkline1.Options.type = this.comboBox1.Text;
 			this.sparkline1.Update();
         }

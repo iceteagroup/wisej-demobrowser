@@ -9,7 +9,7 @@ namespace Wisej.Web.Ext.Syncfusion2.Demo.Component
 		{
 			InitializeComponent();
 
-			this.timePicker1.Instance.change += new WidgetEventHandler(timePicker1_WidgetEvent);
+			this.timePicker1.Instance.onChange += new WidgetEventHandler(timePicker1_WidgetEvent);
 		}
 
 		private void timePicker1_WidgetEvent(object sender, WidgetEventArgs e)
