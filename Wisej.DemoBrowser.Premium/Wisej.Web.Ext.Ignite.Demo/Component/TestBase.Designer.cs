@@ -110,7 +110,7 @@
             this.linkDemo.ImageSource = "resource.wx/Wisej.Ext.MaterialDesign/link-button.svg";
             this.linkDemo.Location = new System.Drawing.Point(101, 93);
             this.linkDemo.Name = "linkDemo";
-            this.linkDemo.Size = new System.Drawing.Size(456, 24);
+            this.linkDemo.Size = new System.Drawing.Size(1077, 24);
             this.linkDemo.TabIndex = 10;
             this.linkDemo.Text = "https://www.igniteui.com/";
             this.linkDemo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -127,7 +127,7 @@
             this.linkAPI.ImageSource = "resource.wx/Wisej.Ext.MaterialDesign/link-button.svg";
             this.linkAPI.Location = new System.Drawing.Point(101, 63);
             this.linkAPI.Name = "linkAPI";
-            this.linkAPI.Size = new System.Drawing.Size(456, 24);
+            this.linkAPI.Size = new System.Drawing.Size(1077, 24);
             this.linkAPI.TabIndex = 9;
             this.linkAPI.Text = "http://www.igniteui.com/help/api";
             this.linkAPI.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -140,7 +140,7 @@
             this.linkDocs.ImageSource = "resource.wx/Wisej.Ext.MaterialDesign/link-button.svg";
             this.linkDocs.Location = new System.Drawing.Point(101, 33);
             this.linkDocs.Name = "linkDocs";
-            this.linkDocs.Size = new System.Drawing.Size(456, 24);
+            this.linkDocs.Size = new System.Drawing.Size(1077, 24);
             this.linkDocs.TabIndex = 8;
             this.linkDocs.Text = "https://www.igniteui.com/";
             this.linkDocs.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;

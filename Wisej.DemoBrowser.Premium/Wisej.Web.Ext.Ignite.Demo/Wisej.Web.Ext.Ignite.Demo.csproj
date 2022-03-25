@@ -352,12 +352,12 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Wisej-2">
-      <Version>2.5.*-*</Version>
-    </PackageReference>
-    <PackageReference Include="Wisej-2-MaterialDesign">
-      <Version>2.5.29</Version>
-    </PackageReference>
+	  <PackageReference Include="Wisej-2">
+		  <Version>2.5.*-*</Version>
+	  </PackageReference>
+	  <PackageReference Include="Wisej-2-MaterialDesign">
+		  <Version>2.5.*-*</Version>
+	  </PackageReference>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
@@ -371,9 +371,6 @@
     </Reference>
     <Reference Include="Wisej.Web.Ext.Ignite">
       <HintPath>..\..\..\..\..\..\Wisej\Extensions\Premium\2.5\bin\Wisej.Web.Ext.Ignite.dll</HintPath>
-    </Reference>
-    <Reference Include="Wisej.Web.Ext.Kendo">
-      <HintPath>..\..\..\..\..\..\Wisej\Extensions\Premium\2.5\bin\Wisej.Web.Ext.Kendo.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -420,12 +417,6 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Wisej.Web.Ext.Kendo.Demo\Wisej.Web.Ext.Kendo.Demo.csproj">
-      <Project>{8C552CA9-4468-491A-AB7E-0B2BF8711536}</Project>
-      <Name>Wisej.Web.Ext.Kendo.Demo</Name>
-    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

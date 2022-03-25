@@ -31,19 +31,10 @@
             this.calendar1 = new Wisej.Web.Ext.Syncfusion2.Calendar();
             this.dateTimePickerStart = new Wisej.Web.DateTimePicker();
             this.dateTimePickerEnd = new Wisej.Web.DateTimePicker();
-            this.flowLayoutPanel1.SuspendLayout();
-            this.panel.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            this.panel.SuspendLayout();
+            this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.Controls.Add(this.dateTimePickerStart);
-            this.flowLayoutPanel1.Controls.Add(this.dateTimePickerEnd);
-            // 
-            // panel
-            // 
-            this.panel.Controls.Add(this.calendar1);
             // 
             // linkDocs
             // 
@@ -57,6 +48,15 @@
             // buttonUpdate
             // 
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
+            // 
+            // panel
+            // 
+            this.panel.Controls.Add(this.calendar1);
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Controls.Add(this.dateTimePickerStart);
+            this.flowLayoutPanel1.Controls.Add(this.dateTimePickerEnd);
             // 
             // linkDemo
             // 
@@ -97,10 +97,10 @@
             // Calendar
             // 
             this.Name = "Calendar";
+            this.groupBox1.ResumeLayout(false);
+            this.panel.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
-            this.panel.ResumeLayout(false);
-            this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 

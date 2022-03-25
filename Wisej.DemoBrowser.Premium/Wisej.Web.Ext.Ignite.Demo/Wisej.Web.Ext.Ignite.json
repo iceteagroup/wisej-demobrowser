@@ -22,7 +22,8 @@
         "jquery-ui.js": "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js",
         "infragistics.core.js": "%root%/js/infragistics.core.js",
         "infragistics.lob.js": "%root%/js/infragistics.lob.js",
-        "infragistics.dv.js": "%root%/js/infragistics.dv.js"
+        "infragistics.dv.js": "%root%/js/infragistics.dv.js",
+        "infragistics-locale.js": "%root%/js/i18n/infragistics-%locale%.js"
       }
     },
     "local": {
@@ -34,7 +35,8 @@
         "jquery-ui.js": "%root/js/jquery-ui.min.js",
         "infragistics.core.js": "%root%/js/infragistics.core.js",
         "infragistics.lob.js": "%root%/js/infragistics.lob.js",
-        "infragistics.dv.js": "%root%/js/infragistics.dv.js"
+        "infragistics.dv.js": "%root%/js/infragistics.dv.js",
+        "infragistics-locale.js": "%root%/js/i18n/infragistics-%locale%.js"
       }
     },
     "embedded": {
@@ -46,7 +48,8 @@
         "jquery-ui.js": "%root/js/jquery-ui.min.js",
         "infragistics.core.js": "%root%/js/infragistics.core.js",
         "infragistics.lob.js": "%root%/js/infragistics.lob.js",
-        "infragistics.dv.js": "%root%/js/infragistics.dv.js"
+        "infragistics.dv.js": "%root%/js/infragistics.dv.js",
+        "infragistics-locale.js": "%root%/js/i18n/infragistics-%locale%.js"
       }
     }
   }

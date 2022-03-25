@@ -9,7 +9,7 @@ namespace Wisej.Web.Ext.Webix.Demo.Component
 		{
 			InitializeComponent();
 
-			this.dataTable1.Instance.itemClick += new WidgetEventHandler(dataTable1_WidgetEvent);
+			this.dataTable1.Instance.onItemClick += new WidgetEventHandler(dataTable1_WidgetEvent);
 		}
 
 		private void dataTable1_WidgetEvent(object sender, WidgetEventArgs e)

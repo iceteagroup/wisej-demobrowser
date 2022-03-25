@@ -577,12 +577,12 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Wisej-2">
-      <Version>2.5.*</Version>
-    </PackageReference>
-    <PackageReference Include="Wisej-2-MaterialDesign">
-      <Version>2.5.*</Version>
-    </PackageReference>
+	<PackageReference Include="Wisej-2">
+		<Version>2.5.*-*</Version>
+	</PackageReference>
+	<PackageReference Include="Wisej-2-MaterialDesign">
+		<Version>2.5.*-*</Version>
+	</PackageReference>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />

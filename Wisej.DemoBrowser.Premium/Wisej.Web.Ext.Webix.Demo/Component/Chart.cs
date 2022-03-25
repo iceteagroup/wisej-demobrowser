@@ -8,6 +8,8 @@ namespace Wisej.Web.Ext.Webix.Demo.Component
 		public Chart()
 		{
 			InitializeComponent();
+
+			this.chart1.Instance.onItemClick += new WidgetEventHandler(chart1_WidgetEvent);
 		}
 
 		private void chart1_WidgetEvent(object sender, WidgetEventArgs e)

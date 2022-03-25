@@ -69,6 +69,7 @@ namespace Wisej.Web.Ext.Ignite.Demo
         private void comboBoxLanguage_SelectedIndexChanged(object sender, EventArgs e)
         {
 			igBase.Culture = new CultureInfo(this.comboBoxLanguage.Text);
+			Application.Reload();
         }
 
         private void comboBoxIgniteTheme_SelectedIndexChanged(object sender, EventArgs e)
