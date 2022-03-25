@@ -14,7 +14,7 @@
   //
   "sources": {
     "cdn": {
-      "root": "http://cdn-na.infragistics.com/igniteui/2021.2/latest",
+      "root": "http://cdn-na.infragistics.com/igniteui/latest",
       "packages": {
         "infragistics.theme.css": "%root%/css/themes/%theme%/infragistics.theme.css",
         "infragistics.css": "%root%/css/structure/infragistics.css",

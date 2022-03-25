@@ -42,29 +42,18 @@
             this.numericUpDown2 = new Wisej.Web.NumericUpDown();
             this.groupBox1.SuspendLayout();
             this.panel.SuspendLayout();
+            this.flowLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.numericUpDown2);
-            this.groupBox1.Controls.Add(this.numericUpDown1);
-            this.groupBox1.Controls.Add(this.checkBox3);
-            this.groupBox1.Controls.Add(this.checkBox2);
-            this.groupBox1.Controls.Add(this.comboBox1);
-            this.groupBox1.Size = new System.Drawing.Size(250, 464);
             this.groupBox1.TabIndex = 3;
-            this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
-            this.groupBox1.Controls.SetChildIndex(this.comboBox1, 0);
-            this.groupBox1.Controls.SetChildIndex(this.checkBox2, 0);
-            this.groupBox1.Controls.SetChildIndex(this.checkBox3, 0);
-            this.groupBox1.Controls.SetChildIndex(this.numericUpDown1, 0);
-            this.groupBox1.Controls.SetChildIndex(this.numericUpDown2, 0);
             // 
             // buttonUpdate
             // 
-            this.buttonUpdate.Location = new System.Drawing.Point(28, 380);
+            this.buttonUpdate.Location = new System.Drawing.Point(16, 476);
             this.buttonUpdate.TabIndex = 5;
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
@@ -91,6 +80,15 @@
             this.linkDocs.TabIndex = 4;
             this.linkDocs.Text = "http://www.igniteui.com/help/igfunnelchart-overview";
             // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Controls.Add(this.checkBox2);
+            this.flowLayoutPanel1.Controls.Add(this.checkBox3);
+            this.flowLayoutPanel1.Controls.Add(this.numericUpDown1);
+            this.flowLayoutPanel1.Controls.Add(this.numericUpDown2);
+            this.flowLayoutPanel1.Controls.Add(this.comboBox1);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 490);
+            // 
             // label4
             // 
             this.label4.Anchor = Wisej.Web.AnchorStyles.None;
@@ -115,13 +113,16 @@
             // 
             // comboBox1
             // 
+            this.flowLayoutPanel1.SetFillWeight(this.comboBox1, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.comboBox1, true);
             this.comboBox1.Items.AddRange(new object[] {
             "uniform",
             "weighted"});
             this.comboBox1.LabelText = "Funnel Slice Display";
-            this.comboBox1.Location = new System.Drawing.Point(28, 310);
+            this.comboBox1.Location = new System.Drawing.Point(3, 269);
+            this.comboBox1.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(195, 57);
+            this.comboBox1.Size = new System.Drawing.Size(212, 57);
             this.comboBox1.TabIndex = 4;
             this.comboBox1.Text = "uniform";
             // 
@@ -130,9 +131,11 @@
             this.checkBox2.Appearance = Wisej.Web.Appearance.Switch;
             this.checkBox2.AutoSize = false;
             this.checkBox2.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.checkBox2.Location = new System.Drawing.Point(28, 36);
+            this.flowLayoutPanel1.SetFillWeight(this.checkBox2, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.checkBox2, true);
+            this.checkBox2.Location = new System.Drawing.Point(3, 3);
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(195, 38);
+            this.checkBox2.Size = new System.Drawing.Size(212, 38);
             this.checkBox2.TabIndex = 0;
             this.checkBox2.Text = "Use Bezier Curve";
             // 
@@ -170,23 +173,29 @@
             this.checkBox3.Appearance = Wisej.Web.Appearance.Switch;
             this.checkBox3.AutoSize = false;
             this.checkBox3.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.checkBox3.Location = new System.Drawing.Point(28, 103);
+            this.flowLayoutPanel1.SetFillWeight(this.checkBox3, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.checkBox3, true);
+            this.checkBox3.Location = new System.Drawing.Point(3, 60);
+            this.checkBox3.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(195, 38);
+            this.checkBox3.Size = new System.Drawing.Size(212, 38);
             this.checkBox3.TabIndex = 1;
             this.checkBox3.Text = "Inverted";
             // 
             // numericUpDown1
             // 
+            this.flowLayoutPanel1.SetFillWeight(this.numericUpDown1, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.numericUpDown1, true);
             this.numericUpDown1.LabelText = "Transition Duration";
-            this.numericUpDown1.Location = new System.Drawing.Point(28, 170);
+            this.numericUpDown1.Location = new System.Drawing.Point(3, 117);
+            this.numericUpDown1.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.numericUpDown1.Maximum = new decimal(new int[] {
             10000,
             0,
             0,
             0});
             this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(195, 57);
+            this.numericUpDown1.Size = new System.Drawing.Size(212, 57);
             this.numericUpDown1.TabIndex = 2;
             this.numericUpDown1.Value = new decimal(new int[] {
             250,
@@ -197,20 +206,23 @@
             // numericUpDown2
             // 
             this.numericUpDown2.DecimalPlaces = 2;
+            this.flowLayoutPanel1.SetFillWeight(this.numericUpDown2, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.numericUpDown2, true);
             this.numericUpDown2.Increment = new decimal(new int[] {
             1,
             0,
             0,
             131072});
             this.numericUpDown2.LabelText = "Bottom Edge Width";
-            this.numericUpDown2.Location = new System.Drawing.Point(28, 240);
+            this.numericUpDown2.Location = new System.Drawing.Point(3, 193);
+            this.numericUpDown2.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.numericUpDown2.Maximum = new decimal(new int[] {
             1,
             0,
             0,
             0});
             this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(195, 57);
+            this.numericUpDown2.Size = new System.Drawing.Size(212, 57);
             this.numericUpDown2.TabIndex = 3;
             this.numericUpDown2.Value = new decimal(new int[] {
             35,
@@ -222,9 +234,10 @@
             // 
             this.Name = "igFunnelChart";
             this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.panel.ResumeLayout(false);
             this.panel.PerformLayout();
+            this.flowLayoutPanel1.ResumeLayout(false);
+            this.flowLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
             this.ResumeLayout(false);

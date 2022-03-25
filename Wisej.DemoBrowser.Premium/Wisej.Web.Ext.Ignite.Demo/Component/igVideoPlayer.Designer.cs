@@ -36,37 +36,24 @@
             this.checkBox3 = new Wisej.Web.CheckBox();
             this.checkBox4 = new Wisej.Web.CheckBox();
             this.igVideoPlayer1 = new Wisej.Web.Ext.Ignite.igVideoPlayer();
-            this.panel.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            this.panel.SuspendLayout();
+            this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.TabIndex = 3;
+            // 
+            // buttonUpdate
+            // 
+            this.buttonUpdate.Location = new System.Drawing.Point(16, 476);
+            this.buttonUpdate.TabIndex = 6;
             // 
             // panel
             // 
             this.panel.Controls.Add(this.igVideoPlayer1);
             this.panel.TabIndex = 7;
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.checkBox4);
-            this.groupBox1.Controls.Add(this.checkBox3);
-            this.groupBox1.Controls.Add(this.checkBox2);
-            this.groupBox1.Controls.Add(this.checkBox1);
-            this.groupBox1.Controls.Add(this.button2);
-            this.groupBox1.Controls.Add(this.button1);
-            this.groupBox1.Size = new System.Drawing.Size(250, 409);
-            this.groupBox1.TabIndex = 3;
-            this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
-            this.groupBox1.Controls.SetChildIndex(this.button1, 0);
-            this.groupBox1.Controls.SetChildIndex(this.button2, 0);
-            this.groupBox1.Controls.SetChildIndex(this.checkBox1, 0);
-            this.groupBox1.Controls.SetChildIndex(this.checkBox2, 0);
-            this.groupBox1.Controls.SetChildIndex(this.checkBox3, 0);
-            this.groupBox1.Controls.SetChildIndex(this.checkBox4, 0);
-            // 
-            // buttonUpdate
-            // 
-            this.buttonUpdate.Location = new System.Drawing.Point(28, 320);
-            this.buttonUpdate.TabIndex = 6;
             // 
             // linkDemo
             // 
@@ -83,20 +70,34 @@
             this.linkDocs.TabIndex = 4;
             this.linkDocs.Text = "http://www.igniteui.com/help/igvideoplayer-overview";
             // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Controls.Add(this.checkBox1);
+            this.flowLayoutPanel1.Controls.Add(this.checkBox2);
+            this.flowLayoutPanel1.Controls.Add(this.checkBox3);
+            this.flowLayoutPanel1.Controls.Add(this.checkBox4);
+            this.flowLayoutPanel1.Controls.Add(this.button1);
+            this.flowLayoutPanel1.Controls.Add(this.button2);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 490);
+            // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(28, 240);
+            this.flowLayoutPanel1.SetFillWeight(this.button1, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.button1, true);
+            this.button1.Location = new System.Drawing.Point(3, 179);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(195, 27);
+            this.button1.Size = new System.Drawing.Size(212, 40);
             this.button1.TabIndex = 4;
             this.button1.Text = "Play";
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(28, 280);
+            this.flowLayoutPanel1.SetFillWeight(this.button2, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.button2, true);
+            this.button2.Location = new System.Drawing.Point(3, 225);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(195, 27);
+            this.button2.Size = new System.Drawing.Size(212, 40);
             this.button2.TabIndex = 5;
             this.button2.Text = "Pause";
             this.button2.Click += new System.EventHandler(this.button2_Click);
@@ -107,9 +108,11 @@
             this.checkBox1.AutoSize = false;
             this.checkBox1.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.checkBox1.Checked = true;
-            this.checkBox1.Location = new System.Drawing.Point(28, 36);
+            this.flowLayoutPanel1.SetFillWeight(this.checkBox1, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.checkBox1, true);
+            this.checkBox1.Location = new System.Drawing.Point(3, 3);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(195, 38);
+            this.checkBox1.Size = new System.Drawing.Size(212, 38);
             this.checkBox1.TabIndex = 0;
             this.checkBox1.Text = "Auto Hide";
             // 
@@ -118,9 +121,11 @@
             this.checkBox2.Appearance = Wisej.Web.Appearance.Switch;
             this.checkBox2.AutoSize = false;
             this.checkBox2.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.checkBox2.Location = new System.Drawing.Point(28, 87);
+            this.flowLayoutPanel1.SetFillWeight(this.checkBox2, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.checkBox2, true);
+            this.checkBox2.Location = new System.Drawing.Point(3, 47);
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(195, 38);
+            this.checkBox2.Size = new System.Drawing.Size(212, 38);
             this.checkBox2.TabIndex = 1;
             this.checkBox2.Text = "AutoPlay";
             // 
@@ -129,9 +134,11 @@
             this.checkBox3.Appearance = Wisej.Web.Appearance.Switch;
             this.checkBox3.AutoSize = false;
             this.checkBox3.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.checkBox3.Location = new System.Drawing.Point(28, 138);
+            this.flowLayoutPanel1.SetFillWeight(this.checkBox3, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.checkBox3, true);
+            this.checkBox3.Location = new System.Drawing.Point(3, 91);
             this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(195, 38);
+            this.checkBox3.Size = new System.Drawing.Size(212, 38);
             this.checkBox3.TabIndex = 2;
             this.checkBox3.Text = "Browser Controls";
             // 
@@ -141,9 +148,11 @@
             this.checkBox4.AutoSize = false;
             this.checkBox4.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.checkBox4.Checked = true;
-            this.checkBox4.Location = new System.Drawing.Point(28, 189);
+            this.flowLayoutPanel1.SetFillWeight(this.checkBox4, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.checkBox4, true);
+            this.checkBox4.Location = new System.Drawing.Point(3, 135);
             this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(195, 38);
+            this.checkBox4.Size = new System.Drawing.Size(212, 38);
             this.checkBox4.TabIndex = 3;
             this.checkBox4.Text = "Show Seek Time";
             // 
@@ -163,8 +172,9 @@
             // igVideoPlayer
             // 
             this.Name = "igVideoPlayer";
-            this.panel.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
+            this.panel.ResumeLayout(false);
+            this.flowLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -36,16 +36,14 @@
             this.label5 = new Wisej.Web.Label();
             this.groupBox1.SuspendLayout();
             this.panel.SuspendLayout();
+            this.flowLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.numericUpDown1);
             this.groupBox1.TabIndex = 3;
-            this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
-            this.groupBox1.Controls.SetChildIndex(this.numericUpDown1, 0);
             // 
             // buttonUpdate
             // 
@@ -75,6 +73,10 @@
             this.linkDocs.TabIndex = 4;
             this.linkDocs.Text = "http://www.igniteui.com/help/igrating-igrating";
             // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Controls.Add(this.numericUpDown1);
+            // 
             // igRating1
             // 
             this.igRating1.Anchor = Wisej.Web.AnchorStyles.None;
@@ -88,20 +90,22 @@
             // numericUpDown1
             // 
             this.numericUpDown1.DecimalPlaces = 2;
+            this.flowLayoutPanel1.SetFillWeight(this.numericUpDown1, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.numericUpDown1, true);
             this.numericUpDown1.Increment = new decimal(new int[] {
             1,
             0,
             0,
             131072});
             this.numericUpDown1.LabelText = "Set Value";
-            this.numericUpDown1.Location = new System.Drawing.Point(28, 115);
+            this.numericUpDown1.Location = new System.Drawing.Point(3, 3);
             this.numericUpDown1.Maximum = new decimal(new int[] {
             1,
             0,
             0,
             0});
             this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(195, 57);
+            this.numericUpDown1.Size = new System.Drawing.Size(212, 57);
             this.numericUpDown1.TabIndex = 0;
             this.numericUpDown1.Value = new decimal(new int[] {
             1,
@@ -143,8 +147,9 @@
             // 
             this.Name = "igRating";
             this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.panel.ResumeLayout(false);
+            this.flowLayoutPanel1.ResumeLayout(false);
+            this.flowLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

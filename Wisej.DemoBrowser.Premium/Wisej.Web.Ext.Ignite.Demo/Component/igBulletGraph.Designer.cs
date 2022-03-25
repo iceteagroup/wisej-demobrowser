@@ -48,6 +48,7 @@
             this.numericUpDown4 = new Wisej.Web.NumericUpDown();
             this.groupBox1.SuspendLayout();
             this.panel.SuspendLayout();
+            this.flowLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
@@ -56,23 +57,10 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.numericUpDown4);
-            this.groupBox1.Controls.Add(this.numericUpDown3);
-            this.groupBox1.Controls.Add(this.numericUpDown2);
-            this.groupBox1.Controls.Add(this.label8);
-            this.groupBox1.Controls.Add(this.numericUpDown1);
-            this.groupBox1.Size = new System.Drawing.Size(250, 433);
             this.groupBox1.TabIndex = 3;
-            this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
-            this.groupBox1.Controls.SetChildIndex(this.numericUpDown1, 0);
-            this.groupBox1.Controls.SetChildIndex(this.label8, 0);
-            this.groupBox1.Controls.SetChildIndex(this.numericUpDown2, 0);
-            this.groupBox1.Controls.SetChildIndex(this.numericUpDown3, 0);
-            this.groupBox1.Controls.SetChildIndex(this.numericUpDown4, 0);
             // 
             // buttonUpdate
             // 
-            this.buttonUpdate.Location = new System.Drawing.Point(28, 350);
             this.buttonUpdate.TabIndex = 5;
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
@@ -102,6 +90,14 @@
             // 
             this.linkDocs.TabIndex = 4;
             this.linkDocs.Text = "http://www.igniteui.com/help/igbulletgraph-overview";
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Controls.Add(this.label8);
+            this.flowLayoutPanel1.Controls.Add(this.numericUpDown1);
+            this.flowLayoutPanel1.Controls.Add(this.numericUpDown2);
+            this.flowLayoutPanel1.Controls.Add(this.numericUpDown3);
+            this.flowLayoutPanel1.Controls.Add(this.numericUpDown4);
             // 
             // igBulletGraph1
             // 
@@ -211,38 +207,46 @@
             // 
             // numericUpDown1
             // 
+            this.flowLayoutPanel1.SetFillWeight(this.numericUpDown1, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.numericUpDown1, true);
             this.numericUpDown1.LabelText = "Minimum Value";
-            this.numericUpDown1.Location = new System.Drawing.Point(28, 78);
+            this.numericUpDown1.Location = new System.Drawing.Point(3, 66);
+            this.numericUpDown1.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.numericUpDown1.Maximum = new decimal(new int[] {
             10000,
             0,
             0,
             0});
             this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(195, 57);
+            this.numericUpDown1.Size = new System.Drawing.Size(212, 57);
             this.numericUpDown1.TabIndex = 1;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(17, 36);
+            this.flowLayoutPanel1.SetFillWeight(this.label8, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.label8, true);
+            this.label8.Location = new System.Drawing.Point(3, 3);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(278, 22);
+            this.label8.Size = new System.Drawing.Size(212, 44);
             this.label8.TabIndex = 0;
             this.label8.Text = "Note: Changes only affect top widget";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // numericUpDown2
             // 
+            this.flowLayoutPanel1.SetFillWeight(this.numericUpDown2, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.numericUpDown2, true);
             this.numericUpDown2.LabelText = "Maximum Value";
-            this.numericUpDown2.Location = new System.Drawing.Point(28, 146);
+            this.numericUpDown2.Location = new System.Drawing.Point(3, 142);
+            this.numericUpDown2.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.numericUpDown2.Maximum = new decimal(new int[] {
             10000,
             0,
             0,
             0});
             this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(195, 57);
+            this.numericUpDown2.Size = new System.Drawing.Size(212, 57);
             this.numericUpDown2.TabIndex = 2;
             this.numericUpDown2.Value = new decimal(new int[] {
             10000,
@@ -253,20 +257,23 @@
             // numericUpDown3
             // 
             this.numericUpDown3.DecimalPlaces = 2;
+            this.flowLayoutPanel1.SetFillWeight(this.numericUpDown3, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.numericUpDown3, true);
             this.numericUpDown3.Increment = new decimal(new int[] {
             1,
             0,
             0,
             131072});
             this.numericUpDown3.LabelText = "Value Inner Extent";
-            this.numericUpDown3.Location = new System.Drawing.Point(28, 214);
+            this.numericUpDown3.Location = new System.Drawing.Point(3, 218);
+            this.numericUpDown3.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.numericUpDown3.Maximum = new decimal(new int[] {
             1,
             0,
             0,
             0});
             this.numericUpDown3.Name = "numericUpDown3";
-            this.numericUpDown3.Size = new System.Drawing.Size(195, 57);
+            this.numericUpDown3.Size = new System.Drawing.Size(212, 57);
             this.numericUpDown3.TabIndex = 3;
             this.numericUpDown3.Value = new decimal(new int[] {
             5,
@@ -277,20 +284,23 @@
             // numericUpDown4
             // 
             this.numericUpDown4.DecimalPlaces = 2;
+            this.flowLayoutPanel1.SetFillWeight(this.numericUpDown4, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.numericUpDown4, true);
             this.numericUpDown4.Increment = new decimal(new int[] {
             1,
             0,
             0,
             131072});
             this.numericUpDown4.LabelText = "Value Outer Extent";
-            this.numericUpDown4.Location = new System.Drawing.Point(28, 282);
+            this.numericUpDown4.Location = new System.Drawing.Point(3, 294);
+            this.numericUpDown4.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.numericUpDown4.Maximum = new decimal(new int[] {
             1,
             0,
             0,
             0});
             this.numericUpDown4.Name = "numericUpDown4";
-            this.numericUpDown4.Size = new System.Drawing.Size(195, 57);
+            this.numericUpDown4.Size = new System.Drawing.Size(212, 57);
             this.numericUpDown4.TabIndex = 4;
             this.numericUpDown4.Value = new decimal(new int[] {
             65,
@@ -302,9 +312,10 @@
             // 
             this.Name = "igBulletGraph";
             this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.panel.ResumeLayout(false);
             this.panel.PerformLayout();
+            this.flowLayoutPanel1.ResumeLayout(false);
+            this.flowLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();

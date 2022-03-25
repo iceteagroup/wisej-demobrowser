@@ -36,6 +36,7 @@
             this.numericUpDown3 = new Wisej.Web.NumericUpDown();
             this.groupBox1.SuspendLayout();
             this.panel.SuspendLayout();
+            this.flowLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
@@ -43,19 +44,10 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.numericUpDown3);
-            this.groupBox1.Controls.Add(this.numericUpDown2);
-            this.groupBox1.Controls.Add(this.numericUpDown1);
-            this.groupBox1.Size = new System.Drawing.Size(250, 387);
             this.groupBox1.TabIndex = 3;
-            this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
-            this.groupBox1.Controls.SetChildIndex(this.numericUpDown1, 0);
-            this.groupBox1.Controls.SetChildIndex(this.numericUpDown2, 0);
-            this.groupBox1.Controls.SetChildIndex(this.numericUpDown3, 0);
             // 
             // buttonUpdate
             // 
-            this.buttonUpdate.Location = new System.Drawing.Point(28, 304);
             this.buttonUpdate.TabIndex = 3;
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
@@ -79,6 +71,12 @@
             // 
             this.linkDocs.TabIndex = 4;
             this.linkDocs.Text = "https://www.igniteui.com/help/igzoombar-landingpage";
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Controls.Add(this.numericUpDown1);
+            this.flowLayoutPanel1.Controls.Add(this.numericUpDown2);
+            this.flowLayoutPanel1.Controls.Add(this.numericUpDown3);
             // 
             // igDataChart1
             // 
@@ -105,10 +103,12 @@
             // 
             // numericUpDown1
             // 
+            this.flowLayoutPanel1.SetFillWeight(this.numericUpDown1, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.numericUpDown1, true);
             this.numericUpDown1.LabelText = "Zoom Window Move Distance";
-            this.numericUpDown1.Location = new System.Drawing.Point(28, 37);
+            this.numericUpDown1.Location = new System.Drawing.Point(3, 3);
             this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(195, 79);
+            this.numericUpDown1.Size = new System.Drawing.Size(212, 79);
             this.numericUpDown1.TabIndex = 0;
             this.numericUpDown1.Value = new decimal(new int[] {
             10,
@@ -118,10 +118,13 @@
             // 
             // numericUpDown2
             // 
+            this.flowLayoutPanel1.SetFillWeight(this.numericUpDown2, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.numericUpDown2, true);
             this.numericUpDown2.LabelText = "Zoom Window Min Width";
-            this.numericUpDown2.Location = new System.Drawing.Point(28, 126);
+            this.numericUpDown2.Location = new System.Drawing.Point(3, 101);
+            this.numericUpDown2.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(195, 57);
+            this.numericUpDown2.Size = new System.Drawing.Size(212, 57);
             this.numericUpDown2.TabIndex = 1;
             this.numericUpDown2.Value = new decimal(new int[] {
             5,
@@ -131,15 +134,18 @@
             // 
             // numericUpDown3
             // 
+            this.flowLayoutPanel1.SetFillWeight(this.numericUpDown3, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.numericUpDown3, true);
             this.numericUpDown3.LabelText = "Window Pan Duration";
-            this.numericUpDown3.Location = new System.Drawing.Point(28, 215);
+            this.numericUpDown3.Location = new System.Drawing.Point(3, 177);
+            this.numericUpDown3.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.numericUpDown3.Maximum = new decimal(new int[] {
             10000,
             0,
             0,
             0});
             this.numericUpDown3.Name = "numericUpDown3";
-            this.numericUpDown3.Size = new System.Drawing.Size(195, 57);
+            this.numericUpDown3.Size = new System.Drawing.Size(212, 57);
             this.numericUpDown3.TabIndex = 2;
             this.numericUpDown3.Value = new decimal(new int[] {
             500,
@@ -151,8 +157,9 @@
             // 
             this.Name = "igZoombar";
             this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.panel.ResumeLayout(false);
+            this.flowLayoutPanel1.ResumeLayout(false);
+            this.flowLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();

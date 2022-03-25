@@ -28,7 +28,6 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-            Wisej.Web.Ext.Ignite.igBase.WidgetEventHandler widgetEventHandler1 = new Wisej.Web.Ext.Ignite.igBase.WidgetEventHandler();
             this.label4 = new Wisej.Web.Label();
             this.igColorPicker1 = new Wisej.Web.Ext.Ignite.igColorPicker();
             this.groupBox1.SuspendLayout();
@@ -81,10 +80,6 @@
             this.igColorPicker1.Size = new System.Drawing.Size(201, 159);
             this.igColorPicker1.TabIndex = 0;
             this.igColorPicker1.Text = "igColorPicker1";
-            widgetEventHandler1.Name = "colorSelected";
-            widgetEventHandler1.Source = "debugger;";
-            this.igColorPicker1.WidgetEvents = new Wisej.Web.Ext.Ignite.igBase.WidgetEventHandler[] {
-        widgetEventHandler1};
             // 
             // igColorPicker
             // 

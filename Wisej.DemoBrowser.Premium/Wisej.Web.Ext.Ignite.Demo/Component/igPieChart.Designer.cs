@@ -29,7 +29,7 @@
 		private void InitializeComponent()
 		{
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(igPieChart));
-            Wisej.Web.Ext.Ignite.igBase.WidgetFunction widgetFunction1 = new Wisej.Web.Ext.Ignite.igBase.WidgetFunction();
+            Wisej.Web.Ext.Ignite.igBase.WidgetFunction widgetFunction2 = new Wisej.Web.Ext.Ignite.igBase.WidgetFunction();
             this.igPieChart1 = new Wisej.Web.Ext.Ignite.igPieChart();
             this.groupBox2 = new Wisej.Web.GroupBox();
             this.button1 = new Wisej.Web.Button();
@@ -41,6 +41,7 @@
             this.comboBox1 = new Wisej.Web.ComboBox();
             this.groupBox1.SuspendLayout();
             this.panel.SuspendLayout();
+            this.flowLayoutPanel1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
@@ -48,23 +49,10 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.comboBox1);
-            this.groupBox1.Controls.Add(this.numericUpDown2);
-            this.groupBox1.Controls.Add(this.checkBox2);
-            this.groupBox1.Controls.Add(this.checkBox1);
-            this.groupBox1.Controls.Add(this.groupBox2);
-            this.groupBox1.Size = new System.Drawing.Size(250, 563);
             this.groupBox1.TabIndex = 3;
-            this.groupBox1.Controls.SetChildIndex(this.groupBox2, 0);
-            this.groupBox1.Controls.SetChildIndex(this.checkBox1, 0);
-            this.groupBox1.Controls.SetChildIndex(this.checkBox2, 0);
-            this.groupBox1.Controls.SetChildIndex(this.numericUpDown2, 0);
-            this.groupBox1.Controls.SetChildIndex(this.comboBox1, 0);
-            this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
             // 
             // buttonUpdate
             // 
-            this.buttonUpdate.Location = new System.Drawing.Point(27, 485);
             this.buttonUpdate.TabIndex = 6;
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
@@ -88,6 +76,14 @@
             this.linkDocs.TabIndex = 4;
             this.linkDocs.Text = "http://www.igniteui.com/help/igpiechart";
             // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Controls.Add(this.checkBox1);
+            this.flowLayoutPanel1.Controls.Add(this.checkBox2);
+            this.flowLayoutPanel1.Controls.Add(this.numericUpDown2);
+            this.flowLayoutPanel1.Controls.Add(this.comboBox1);
+            this.flowLayoutPanel1.Controls.Add(this.groupBox2);
+            // 
             // igPieChart1
             // 
             this.igPieChart1.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
@@ -99,19 +95,22 @@
             this.igPieChart1.Size = new System.Drawing.Size(1053, 522);
             this.igPieChart1.TabIndex = 0;
             this.igPieChart1.Text = "igPieChart1";
-            widgetFunction1.Name = "AddItem";
-            widgetFunction1.Source = "this.Instance.addItem({\r\n    Label: \"Test\",\r\n    Budget: 50\r\n});";
+            widgetFunction2.Name = "AddItem";
+            widgetFunction2.Source = "this.Instance.addItem({\r\n    Label: \"Test\",\r\n    Budget: 50\r\n});";
             this.igPieChart1.WidgetFunctions = new Wisej.Web.Ext.Ignite.igBase.WidgetFunction[] {
-        widgetFunction1};
+        widgetFunction2};
             // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.button1);
             this.groupBox2.Controls.Add(this.numericUpDown1);
             this.groupBox2.Controls.Add(this.textBox1);
-            this.groupBox2.Location = new System.Drawing.Point(28, 289);
+            this.flowLayoutPanel1.SetFillWeight(this.groupBox2, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.groupBox2, true);
+            this.groupBox2.Location = new System.Drawing.Point(3, 253);
+            this.groupBox2.Margin = new Wisej.Web.Padding(3, 12, 3, 3);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(195, 182);
+            this.groupBox2.Size = new System.Drawing.Size(212, 182);
             this.groupBox2.TabIndex = 5;
             this.groupBox2.Text = "Add Item";
             // 
@@ -146,9 +145,12 @@
             this.checkBox2.AutoSize = false;
             this.checkBox2.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.checkBox2.Checked = true;
-            this.checkBox2.Location = new System.Drawing.Point(27, 96);
+            this.flowLayoutPanel1.SetFillWeight(this.checkBox2, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.checkBox2, true);
+            this.checkBox2.Location = new System.Drawing.Point(3, 56);
+            this.checkBox2.Margin = new Wisej.Web.Padding(3, 12, 3, 3);
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(195, 38);
+            this.checkBox2.Size = new System.Drawing.Size(212, 38);
             this.checkBox2.TabIndex = 1;
             this.checkBox2.Text = "Allow Slice Selection";
             // 
@@ -158,29 +160,34 @@
             this.checkBox1.AutoSize = false;
             this.checkBox1.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.checkBox1.Checked = true;
-            this.checkBox1.Location = new System.Drawing.Point(27, 38);
+            this.flowLayoutPanel1.SetFillWeight(this.checkBox1, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.checkBox1, true);
+            this.checkBox1.Location = new System.Drawing.Point(3, 3);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(195, 38);
+            this.checkBox1.Size = new System.Drawing.Size(212, 38);
             this.checkBox1.TabIndex = 0;
             this.checkBox1.Text = "Slice Explosion";
             // 
             // numericUpDown2
             // 
             this.numericUpDown2.DecimalPlaces = 2;
+            this.flowLayoutPanel1.SetFillWeight(this.numericUpDown2, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.numericUpDown2, true);
             this.numericUpDown2.Increment = new decimal(new int[] {
             1,
             0,
             0,
             131072});
             this.numericUpDown2.LabelText = "Exploded Radius";
-            this.numericUpDown2.Location = new System.Drawing.Point(28, 154);
+            this.numericUpDown2.Location = new System.Drawing.Point(3, 109);
+            this.numericUpDown2.Margin = new Wisej.Web.Padding(3, 12, 3, 3);
             this.numericUpDown2.Maximum = new decimal(new int[] {
             1,
             0,
             0,
             0});
             this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(195, 57);
+            this.numericUpDown2.Size = new System.Drawing.Size(212, 57);
             this.numericUpDown2.TabIndex = 2;
             this.numericUpDown2.Value = new decimal(new int[] {
             2,
@@ -191,14 +198,17 @@
             // comboBox1
             // 
             this.comboBox1.DropDownStyle = Wisej.Web.ComboBoxStyle.DropDownList;
+            this.flowLayoutPanel1.SetFillWeight(this.comboBox1, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.comboBox1, true);
             this.comboBox1.Items.AddRange(new object[] {
             "single",
             "multiple",
             "manual"});
             this.comboBox1.LabelText = "Selection Mode";
-            this.comboBox1.Location = new System.Drawing.Point(28, 215);
+            this.comboBox1.Location = new System.Drawing.Point(3, 181);
+            this.comboBox1.Margin = new Wisej.Web.Padding(3, 12, 3, 3);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(195, 57);
+            this.comboBox1.Size = new System.Drawing.Size(212, 57);
             this.comboBox1.TabIndex = 3;
             this.comboBox1.Text = "single";
             // 
@@ -206,8 +216,9 @@
             // 
             this.Name = "igPieChart";
             this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.panel.ResumeLayout(false);
+            this.flowLayoutPanel1.ResumeLayout(false);
+            this.flowLayoutPanel1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();

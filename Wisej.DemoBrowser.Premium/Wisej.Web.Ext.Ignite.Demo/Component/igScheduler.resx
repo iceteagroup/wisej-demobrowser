@@ -120,7 +120,7 @@
   <data name="igScheduler1.Options" xml:space="preserve">
     <value>{"agendaViewSettings":{},"views":["monthView","agendaView"],"resources":[{"id":1,"displayName":"Trina Friesen"},{"id":2,"displayName":"Mack Koch"},{"id":3,"displayName":"Burney O'Kon"},{"id":4,"displayName":"Dawson Rohan"},{"id":5,"displayName":"Cain Schmidt"},{"id":6,"displayName":"Jesenia Rogahn"},{"id":7,"displayName":"Tod Heller"},{"id":8,"displayName":"Rhonda Cormier"},{"id":9,"displayName":"Hayden Lockman"},{"id":10,"displayName":"Tierra Witting"},{"id":11,"displayName":"Roderic Considine"}]}</value>
   </data>
-  <data name="widgetFunction1.Source" xml:space="preserve">
+  <data name="widgetFunction2.Source" xml:space="preserve">
     <value>var today = new Date(),
     currentYear = today.getFullYear(),
     currentMonth = today.getMonth(),

@@ -35,25 +35,15 @@
             this.checkBox3 = new Wisej.Web.CheckBox();
             this.groupBox1.SuspendLayout();
             this.panel.SuspendLayout();
+            this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.checkBox3);
-            this.groupBox1.Controls.Add(this.checkBox2);
-            this.groupBox1.Controls.Add(this.checkBox1);
-            this.groupBox1.Controls.Add(this.comboBox1);
-            this.groupBox1.Size = new System.Drawing.Size(250, 424);
             this.groupBox1.TabIndex = 3;
-            this.groupBox1.Controls.SetChildIndex(this.comboBox1, 0);
-            this.groupBox1.Controls.SetChildIndex(this.checkBox1, 0);
-            this.groupBox1.Controls.SetChildIndex(this.checkBox2, 0);
-            this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
-            this.groupBox1.Controls.SetChildIndex(this.checkBox3, 0);
             // 
             // buttonUpdate
             // 
-            this.buttonUpdate.Location = new System.Drawing.Point(28, 343);
             this.buttonUpdate.TabIndex = 4;
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
@@ -77,6 +67,13 @@
             this.linkDocs.TabIndex = 4;
             this.linkDocs.Text = "http://www.igniteui.com/help/igeditors-landingpage";
             // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Controls.Add(this.checkBox1);
+            this.flowLayoutPanel1.Controls.Add(this.checkBox2);
+            this.flowLayoutPanel1.Controls.Add(this.checkBox3);
+            this.flowLayoutPanel1.Controls.Add(this.comboBox1);
+            // 
             // igTimePicker1
             // 
             this.igTimePicker1.Anchor = Wisej.Web.AnchorStyles.None;
@@ -89,14 +86,17 @@
             // 
             // comboBox1
             // 
+            this.flowLayoutPanel1.SetFillWeight(this.comboBox1, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.comboBox1, true);
             this.comboBox1.Items.AddRange(new object[] {
             "dropdown",
             "clear",
             "spin"});
             this.comboBox1.LabelText = "Button Type";
-            this.comboBox1.Location = new System.Drawing.Point(28, 264);
+            this.comboBox1.Location = new System.Drawing.Point(3, 194);
+            this.comboBox1.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(195, 57);
+            this.comboBox1.Size = new System.Drawing.Size(212, 57);
             this.comboBox1.TabIndex = 3;
             this.comboBox1.Text = "dropdown";
             // 
@@ -105,20 +105,25 @@
             this.checkBox1.Appearance = Wisej.Web.Appearance.Switch;
             this.checkBox1.AutoSize = false;
             this.checkBox1.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.checkBox1.Location = new System.Drawing.Point(28, 36);
+            this.flowLayoutPanel1.SetFillWeight(this.checkBox1, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.checkBox1, true);
+            this.checkBox1.Location = new System.Drawing.Point(3, 3);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(195, 38);
+            this.checkBox1.Size = new System.Drawing.Size(212, 48);
             this.checkBox1.TabIndex = 0;
-            this.checkBox1.Text = "Is Limited to List Values";
+            this.checkBox1.Text = "Limit to List Values";
             // 
             // checkBox2
             // 
             this.checkBox2.Appearance = Wisej.Web.Appearance.Switch;
             this.checkBox2.AutoSize = false;
             this.checkBox2.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.checkBox2.Location = new System.Drawing.Point(28, 112);
+            this.flowLayoutPanel1.SetFillWeight(this.checkBox2, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.checkBox2, true);
+            this.checkBox2.Location = new System.Drawing.Point(3, 70);
+            this.checkBox2.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(195, 38);
+            this.checkBox2.Size = new System.Drawing.Size(212, 38);
             this.checkBox2.TabIndex = 1;
             this.checkBox2.Text = "Read Only";
             // 
@@ -127,9 +132,12 @@
             this.checkBox3.Appearance = Wisej.Web.Appearance.Switch;
             this.checkBox3.AutoSize = false;
             this.checkBox3.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.checkBox3.Location = new System.Drawing.Point(28, 188);
+            this.flowLayoutPanel1.SetFillWeight(this.checkBox3, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.checkBox3, true);
+            this.checkBox3.Location = new System.Drawing.Point(3, 127);
+            this.checkBox3.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(195, 38);
+            this.checkBox3.Size = new System.Drawing.Size(212, 48);
             this.checkBox3.TabIndex = 2;
             this.checkBox3.Text = "Prevent Submit on Enter";
             // 
@@ -137,8 +145,9 @@
             // 
             this.Name = "igTimePicker";
             this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.panel.ResumeLayout(false);
+            this.flowLayoutPanel1.ResumeLayout(false);
+            this.flowLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 

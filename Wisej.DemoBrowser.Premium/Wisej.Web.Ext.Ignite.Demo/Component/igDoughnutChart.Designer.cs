@@ -29,7 +29,7 @@
 		private void InitializeComponent()
 		{
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(igDoughnutChart));
-            Wisej.Web.Ext.Ignite.igBase.WidgetFunction widgetFunction1 = new Wisej.Web.Ext.Ignite.igBase.WidgetFunction();
+            Wisej.Web.Ext.Ignite.igBase.WidgetFunction widgetFunction2 = new Wisej.Web.Ext.Ignite.igBase.WidgetFunction();
             this.igDoughnutChart1 = new Wisej.Web.Ext.Ignite.igDoughnutChart();
             this.buttonLoad = new Wisej.Web.Upload();
             this.buttonExportData = new Wisej.Web.Button();
@@ -42,6 +42,7 @@
             this.numericUpDown2 = new Wisej.Web.NumericUpDown();
             this.groupBox1.SuspendLayout();
             this.panel.SuspendLayout();
+            this.flowLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
@@ -49,25 +50,12 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.numericUpDown2);
-            this.groupBox1.Controls.Add(this.checkBox2);
-            this.groupBox1.Controls.Add(this.checkBox1);
-            this.groupBox1.Controls.Add(this.groupBox2);
-            this.groupBox1.Controls.Add(this.buttonLoad);
-            this.groupBox1.Controls.Add(this.buttonExportData);
             this.groupBox1.Size = new System.Drawing.Size(250, 566);
             this.groupBox1.TabIndex = 3;
-            this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
-            this.groupBox1.Controls.SetChildIndex(this.buttonExportData, 0);
-            this.groupBox1.Controls.SetChildIndex(this.buttonLoad, 0);
-            this.groupBox1.Controls.SetChildIndex(this.groupBox2, 0);
-            this.groupBox1.Controls.SetChildIndex(this.checkBox1, 0);
-            this.groupBox1.Controls.SetChildIndex(this.checkBox2, 0);
-            this.groupBox1.Controls.SetChildIndex(this.numericUpDown2, 0);
             // 
             // buttonUpdate
             // 
-            this.buttonUpdate.Location = new System.Drawing.Point(28, 483);
+            this.buttonUpdate.Location = new System.Drawing.Point(16, 498);
             this.buttonUpdate.TabIndex = 6;
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
@@ -91,29 +79,41 @@
             this.linkDocs.TabIndex = 4;
             this.linkDocs.Text = "http://www.igniteui.com/help/igdoughnutchart-overview";
             // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Controls.Add(this.checkBox1);
+            this.flowLayoutPanel1.Controls.Add(this.checkBox2);
+            this.flowLayoutPanel1.Controls.Add(this.numericUpDown2);
+            this.flowLayoutPanel1.Controls.Add(this.groupBox2);
+            this.flowLayoutPanel1.Controls.Add(this.buttonLoad);
+            this.flowLayoutPanel1.Controls.Add(this.buttonExportData);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 444);
+            // 
             // igDoughnutChart1
             // 
             this.igDoughnutChart1.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
             | Wisej.Web.AnchorStyles.Left) 
             | Wisej.Web.AnchorStyles.Right)));
             this.igDoughnutChart1.Location = new System.Drawing.Point(23, 19);
+            this.igDoughnutChart1.Margin = new Wisej.Web.Padding(3, 8, 3, 3);
             this.igDoughnutChart1.Name = "igDoughnutChart1";
             this.igDoughnutChart1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("igDoughnutChart1.Options"))));
             this.igDoughnutChart1.Size = new System.Drawing.Size(1043, 519);
             this.igDoughnutChart1.TabIndex = 0;
             this.igDoughnutChart1.Text = "igDoughnutChart1";
-            widgetFunction1.Name = "formatLabel";
-            widgetFunction1.Source = "var context = arguments[0];\r\n\r\nreturn context.itemLabel + \" (\" + context.item.pop" +
+            widgetFunction2.Name = "formatLabel";
+            widgetFunction2.Source = "var context = arguments[0];\r\n\r\nreturn context.itemLabel + \" (\" + context.item.pop" +
     "1990 + \")\";\r\n        ";
             this.igDoughnutChart1.WidgetFunctions = new Wisej.Web.Ext.Ignite.igBase.WidgetFunction[] {
-        widgetFunction1};
+        widgetFunction2};
             // 
             // buttonLoad
             // 
             this.buttonLoad.AllowedFileTypes = ".json";
             this.buttonLoad.HideValue = true;
             this.buttonLoad.ImageSource = "icon-file";
-            this.buttonLoad.Location = new System.Drawing.Point(28, 421);
+            this.buttonLoad.Location = new System.Drawing.Point(3, 381);
+            this.buttonLoad.Margin = new Wisej.Web.Padding(3, 8, 3, 3);
             this.buttonLoad.Name = "buttonLoad";
             this.buttonLoad.Size = new System.Drawing.Size(42, 42);
             this.buttonLoad.TabIndex = 4;
@@ -123,7 +123,8 @@
             // 
             this.buttonExportData.Display = Wisej.Web.Display.Icon;
             this.buttonExportData.ImageSource = "icon-save";
-            this.buttonExportData.Location = new System.Drawing.Point(76, 421);
+            this.buttonExportData.Location = new System.Drawing.Point(51, 381);
+            this.buttonExportData.Margin = new Wisej.Web.Padding(3, 8, 3, 3);
             this.buttonExportData.Name = "buttonExportData";
             this.buttonExportData.Size = new System.Drawing.Size(42, 42);
             this.buttonExportData.TabIndex = 5;
@@ -161,9 +162,12 @@
             this.groupBox2.Controls.Add(this.button1);
             this.groupBox2.Controls.Add(this.numericUpDown1);
             this.groupBox2.Controls.Add(this.textBox1);
-            this.groupBox2.Location = new System.Drawing.Point(19, 214);
+            this.flowLayoutPanel1.SetFillWeight(this.groupBox2, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.groupBox2, true);
+            this.groupBox2.Location = new System.Drawing.Point(3, 183);
+            this.groupBox2.Margin = new Wisej.Web.Padding(3, 8, 3, 3);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(213, 187);
+            this.groupBox2.Size = new System.Drawing.Size(212, 187);
             this.groupBox2.TabIndex = 3;
             this.groupBox2.Text = "Add a new Country";
             // 
@@ -182,9 +186,11 @@
             this.checkBox1.AutoSize = false;
             this.checkBox1.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.checkBox1.Checked = true;
-            this.checkBox1.Location = new System.Drawing.Point(29, 37);
+            this.flowLayoutPanel1.SetFillWeight(this.checkBox1, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.checkBox1, true);
+            this.checkBox1.Location = new System.Drawing.Point(3, 3);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(194, 38);
+            this.checkBox1.Size = new System.Drawing.Size(212, 52);
             this.checkBox1.TabIndex = 0;
             this.checkBox1.Text = "Allow Slice Explosion";
             // 
@@ -194,18 +200,24 @@
             this.checkBox2.AutoSize = false;
             this.checkBox2.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.checkBox2.Checked = true;
-            this.checkBox2.Location = new System.Drawing.Point(28, 95);
+            this.flowLayoutPanel1.SetFillWeight(this.checkBox2, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.checkBox2, true);
+            this.checkBox2.Location = new System.Drawing.Point(3, 66);
+            this.checkBox2.Margin = new Wisej.Web.Padding(3, 8, 3, 3);
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(194, 38);
+            this.checkBox2.Size = new System.Drawing.Size(212, 38);
             this.checkBox2.TabIndex = 1;
             this.checkBox2.Text = "Allow Slice Selection";
             // 
             // numericUpDown2
             // 
+            this.flowLayoutPanel1.SetFillWeight(this.numericUpDown2, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.numericUpDown2, true);
             this.numericUpDown2.LabelText = "Inner Extent";
-            this.numericUpDown2.Location = new System.Drawing.Point(29, 153);
+            this.numericUpDown2.Location = new System.Drawing.Point(3, 115);
+            this.numericUpDown2.Margin = new Wisej.Web.Padding(3, 8, 3, 3);
             this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(194, 57);
+            this.numericUpDown2.Size = new System.Drawing.Size(212, 57);
             this.numericUpDown2.TabIndex = 2;
             this.numericUpDown2.Value = new decimal(new int[] {
             40,
@@ -217,8 +229,9 @@
             // 
             this.Name = "igDoughnutChart";
             this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.panel.ResumeLayout(false);
+            this.flowLayoutPanel1.ResumeLayout(false);
+            this.flowLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();

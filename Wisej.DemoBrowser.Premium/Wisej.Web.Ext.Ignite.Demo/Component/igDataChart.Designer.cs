@@ -40,26 +40,17 @@
             this.groupBox2 = new Wisej.Web.GroupBox();
             this.groupBox1.SuspendLayout();
             this.panel.SuspendLayout();
+            this.flowLayoutPanel1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.groupBox2);
-            this.groupBox1.Controls.Add(this.comboBox2);
-            this.groupBox1.Controls.Add(this.buttonLoad);
-            this.groupBox1.Controls.Add(this.buttonExportImage);
-            this.groupBox1.Size = new System.Drawing.Size(250, 500);
             this.groupBox1.TabIndex = 3;
-            this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
-            this.groupBox1.Controls.SetChildIndex(this.buttonExportImage, 0);
-            this.groupBox1.Controls.SetChildIndex(this.buttonLoad, 0);
-            this.groupBox1.Controls.SetChildIndex(this.comboBox2, 0);
-            this.groupBox1.Controls.SetChildIndex(this.groupBox2, 0);
             // 
             // buttonUpdate
             // 
-            this.buttonUpdate.Location = new System.Drawing.Point(28, 417);
+            this.buttonUpdate.Location = new System.Drawing.Point(16, 476);
             this.buttonUpdate.TabIndex = 4;
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
@@ -83,6 +74,14 @@
             this.linkDocs.TabIndex = 4;
             this.linkDocs.Text = "http://www.igniteui.com/help/igdatachart-landing-page";
             // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Controls.Add(this.comboBox2);
+            this.flowLayoutPanel1.Controls.Add(this.groupBox2);
+            this.flowLayoutPanel1.Controls.Add(this.buttonLoad);
+            this.flowLayoutPanel1.Controls.Add(this.buttonExportImage);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 490);
+            // 
             // igDataChart1
             // 
             this.igDataChart1.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
@@ -100,7 +99,7 @@
             this.textBox1.LabelText = "Title";
             this.textBox1.Location = new System.Drawing.Point(6, 33);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(183, 57);
+            this.textBox1.Size = new System.Drawing.Size(200, 57);
             this.textBox1.TabIndex = 0;
             // 
             // textBox2
@@ -108,7 +107,7 @@
             this.textBox2.LabelText = "Subtitle";
             this.textBox2.Location = new System.Drawing.Point(7, 92);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(182, 57);
+            this.textBox2.Size = new System.Drawing.Size(199, 57);
             this.textBox2.TabIndex = 1;
             // 
             // comboBox1
@@ -126,7 +125,7 @@
             this.comboBox1.LabelText = "Title Color";
             this.comboBox1.Location = new System.Drawing.Point(6, 150);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(183, 57);
+            this.comboBox1.Size = new System.Drawing.Size(200, 57);
             this.comboBox1.TabIndex = 2;
             this.comboBox1.Text = "black";
             // 
@@ -135,7 +134,8 @@
             this.buttonLoad.AllowedFileTypes = ".json";
             this.buttonLoad.HideValue = true;
             this.buttonLoad.ImageSource = "icon-file";
-            this.buttonLoad.Location = new System.Drawing.Point(28, 359);
+            this.buttonLoad.Location = new System.Drawing.Point(3, 348);
+            this.buttonLoad.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.buttonLoad.Name = "buttonLoad";
             this.buttonLoad.Size = new System.Drawing.Size(42, 42);
             this.buttonLoad.TabIndex = 2;
@@ -145,7 +145,8 @@
             // 
             this.buttonExportImage.Display = Wisej.Web.Display.Icon;
             this.buttonExportImage.ImageSource = "resource.wx/Wisej.Ext.MaterialDesign/google-drive-image.svg";
-            this.buttonExportImage.Location = new System.Drawing.Point(76, 359);
+            this.buttonExportImage.Location = new System.Drawing.Point(51, 348);
+            this.buttonExportImage.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.buttonExportImage.Name = "buttonExportImage";
             this.buttonExportImage.Size = new System.Drawing.Size(42, 42);
             this.buttonExportImage.TabIndex = 3;
@@ -155,7 +156,7 @@
             // 
             this.button1.Location = new System.Drawing.Point(7, 211);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(182, 27);
+            this.button1.Size = new System.Drawing.Size(199, 27);
             this.button1.TabIndex = 3;
             this.button1.Text = "Add";
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -163,15 +164,17 @@
             // comboBox2
             // 
             this.comboBox2.DropDownStyle = Wisej.Web.ComboBoxStyle.DropDownList;
+            this.flowLayoutPanel1.SetFillWeight(this.comboBox2, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.comboBox2, true);
             this.comboBox2.Items.AddRange(new object[] {
             "Pop1995",
             "Pop2005",
             "Pop2015",
             "Pop2025"});
             this.comboBox2.LabelText = "Population Year";
-            this.comboBox2.Location = new System.Drawing.Point(28, 36);
+            this.comboBox2.Location = new System.Drawing.Point(3, 3);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(195, 57);
+            this.comboBox2.Size = new System.Drawing.Size(212, 57);
             this.comboBox2.TabIndex = 0;
             this.comboBox2.Text = "Pop2015";
             // 
@@ -181,9 +184,12 @@
             this.groupBox2.Controls.Add(this.comboBox1);
             this.groupBox2.Controls.Add(this.textBox2);
             this.groupBox2.Controls.Add(this.textBox1);
-            this.groupBox2.Location = new System.Drawing.Point(28, 93);
+            this.flowLayoutPanel1.SetFillWeight(this.groupBox2, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.groupBox2, true);
+            this.groupBox2.Location = new System.Drawing.Point(3, 79);
+            this.groupBox2.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(195, 250);
+            this.groupBox2.Size = new System.Drawing.Size(212, 250);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.Text = "Add New Item";
             // 
@@ -191,8 +197,9 @@
             // 
             this.Name = "igDataChart";
             this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.panel.ResumeLayout(false);
+            this.flowLayoutPanel1.ResumeLayout(false);
+            this.flowLayoutPanel1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
