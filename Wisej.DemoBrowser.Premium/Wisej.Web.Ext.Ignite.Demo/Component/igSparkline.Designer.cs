@@ -43,12 +43,10 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Size = new System.Drawing.Size(250, 487);
             this.groupBox1.TabIndex = 3;
             // 
             // buttonUpdate
             // 
-            this.buttonUpdate.Location = new System.Drawing.Point(16, 403);
             this.buttonUpdate.TabIndex = 6;
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
@@ -80,7 +78,6 @@
             this.flowLayoutPanel1.Controls.Add(this.button1);
             this.flowLayoutPanel1.Controls.Add(this.buttonLoad);
             this.flowLayoutPanel1.Controls.Add(this.buttonSave);
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 417);
             // 
             // igSparkline1
             // 

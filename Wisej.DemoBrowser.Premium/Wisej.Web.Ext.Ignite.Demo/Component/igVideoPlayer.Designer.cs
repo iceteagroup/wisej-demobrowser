@@ -47,7 +47,6 @@
             // 
             // buttonUpdate
             // 
-            this.buttonUpdate.Location = new System.Drawing.Point(16, 476);
             this.buttonUpdate.TabIndex = 6;
             // 
             // panel
@@ -78,13 +77,13 @@
             this.flowLayoutPanel1.Controls.Add(this.checkBox4);
             this.flowLayoutPanel1.Controls.Add(this.button1);
             this.flowLayoutPanel1.Controls.Add(this.button2);
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 490);
             // 
             // button1
             // 
             this.flowLayoutPanel1.SetFillWeight(this.button1, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.button1, true);
-            this.button1.Location = new System.Drawing.Point(3, 179);
+            this.button1.Location = new System.Drawing.Point(3, 231);
+            this.button1.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(212, 40);
             this.button1.TabIndex = 4;
@@ -95,7 +94,8 @@
             // 
             this.flowLayoutPanel1.SetFillWeight(this.button2, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.button2, true);
-            this.button2.Location = new System.Drawing.Point(3, 225);
+            this.button2.Location = new System.Drawing.Point(3, 290);
+            this.button2.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(212, 40);
             this.button2.TabIndex = 5;
@@ -123,7 +123,8 @@
             this.checkBox2.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.flowLayoutPanel1.SetFillWeight(this.checkBox2, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.checkBox2, true);
-            this.checkBox2.Location = new System.Drawing.Point(3, 47);
+            this.checkBox2.Location = new System.Drawing.Point(3, 60);
+            this.checkBox2.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.Size = new System.Drawing.Size(212, 38);
             this.checkBox2.TabIndex = 1;
@@ -136,7 +137,8 @@
             this.checkBox3.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.flowLayoutPanel1.SetFillWeight(this.checkBox3, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.checkBox3, true);
-            this.checkBox3.Location = new System.Drawing.Point(3, 91);
+            this.checkBox3.Location = new System.Drawing.Point(3, 117);
+            this.checkBox3.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBox3.Name = "checkBox3";
             this.checkBox3.Size = new System.Drawing.Size(212, 38);
             this.checkBox3.TabIndex = 2;
@@ -150,7 +152,8 @@
             this.checkBox4.Checked = true;
             this.flowLayoutPanel1.SetFillWeight(this.checkBox4, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.checkBox4, true);
-            this.checkBox4.Location = new System.Drawing.Point(3, 135);
+            this.checkBox4.Location = new System.Drawing.Point(3, 174);
+            this.checkBox4.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBox4.Name = "checkBox4";
             this.checkBox4.Size = new System.Drawing.Size(212, 38);
             this.checkBox4.TabIndex = 3;

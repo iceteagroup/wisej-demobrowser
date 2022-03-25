@@ -29,7 +29,7 @@
 		private void InitializeComponent()
 		{
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(igDoughnutChart));
-            Wisej.Web.Ext.Ignite.igBase.WidgetFunction widgetFunction2 = new Wisej.Web.Ext.Ignite.igBase.WidgetFunction();
+            Wisej.Web.Ext.Ignite.igBase.WidgetFunction widgetFunction1 = new Wisej.Web.Ext.Ignite.igBase.WidgetFunction();
             this.igDoughnutChart1 = new Wisej.Web.Ext.Ignite.igDoughnutChart();
             this.buttonLoad = new Wisej.Web.Upload();
             this.buttonExportData = new Wisej.Web.Button();
@@ -50,12 +50,10 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Size = new System.Drawing.Size(250, 566);
             this.groupBox1.TabIndex = 3;
             // 
             // buttonUpdate
             // 
-            this.buttonUpdate.Location = new System.Drawing.Point(16, 498);
             this.buttonUpdate.TabIndex = 6;
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
@@ -87,7 +85,6 @@
             this.flowLayoutPanel1.Controls.Add(this.groupBox2);
             this.flowLayoutPanel1.Controls.Add(this.buttonLoad);
             this.flowLayoutPanel1.Controls.Add(this.buttonExportData);
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 444);
             // 
             // igDoughnutChart1
             // 
@@ -101,11 +98,11 @@
             this.igDoughnutChart1.Size = new System.Drawing.Size(1043, 519);
             this.igDoughnutChart1.TabIndex = 0;
             this.igDoughnutChart1.Text = "igDoughnutChart1";
-            widgetFunction2.Name = "formatLabel";
-            widgetFunction2.Source = "var context = arguments[0];\r\n\r\nreturn context.itemLabel + \" (\" + context.item.pop" +
+            widgetFunction1.Name = "formatLabel";
+            widgetFunction1.Source = "var context = arguments[0];\r\n\r\nreturn context.itemLabel + \" (\" + context.item.pop" +
     "1990 + \")\";\r\n        ";
             this.igDoughnutChart1.WidgetFunctions = new Wisej.Web.Ext.Ignite.igBase.WidgetFunction[] {
-        widgetFunction2};
+        widgetFunction1};
             // 
             // buttonLoad
             // 
