@@ -8,6 +8,8 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
 		public dxTileView()
 		{
 			InitializeComponent();
+
+			this.dxTileView1.Instance.onItemClick += new WidgetEventHandler(dxTileView1_WidgetEvent);
 		}
 
 		private void dxTileView1_WidgetEvent(object sender, WidgetEventArgs e)

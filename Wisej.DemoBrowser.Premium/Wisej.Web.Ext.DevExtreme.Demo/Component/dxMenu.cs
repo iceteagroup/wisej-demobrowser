@@ -8,6 +8,8 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
 		public dxMenu()
 		{
 			InitializeComponent();
+
+			this.dxMenu1.Instance.onItemClick += new WidgetEventHandler(dxMenu1_WidgetEvent);
 		}
 
 		private void dxMenu1_WidgetEvent(object sender, WidgetEventArgs e)

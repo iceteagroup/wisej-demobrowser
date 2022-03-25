@@ -23,6 +23,8 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
         private Label label2;
         private Label label1;
         protected Panel panel;
+        protected FlowLayoutPanel flowLayoutPanel1;
+        private Spacer spacer1;
         private System.ComponentModel.IContainer components;
 
 		private void InitializeComponent()
@@ -31,6 +33,8 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
             this.linkDocs = new Wisej.Web.LinkLabel();
             this.imageList1 = new Wisej.Web.ImageList(this.components);
             this.groupBox1 = new Wisej.Web.GroupBox();
+            this.flowLayoutPanel1 = new Wisej.Web.FlowLayoutPanel();
+            this.spacer1 = new Wisej.Web.Spacer();
             this.buttonUpdate = new Wisej.Web.Button();
             this.linkDemo = new Wisej.Web.LinkLabel();
             this.linkAPI = new Wisej.Web.LinkLabel();
@@ -59,20 +63,37 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.flowLayoutPanel1);
+            this.groupBox1.Controls.Add(this.spacer1);
             this.groupBox1.Controls.Add(this.buttonUpdate);
             this.groupBox1.Location = new System.Drawing.Point(51, 166);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(250, 315);
+            this.groupBox1.Padding = new Wisej.Web.Padding(16);
+            this.groupBox1.Size = new System.Drawing.Size(250, 560);
             this.groupBox1.TabIndex = 11;
             this.groupBox1.Text = "Properties";
             // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Dock = Wisej.Web.DockStyle.Fill;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 38);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 438);
+            this.flowLayoutPanel1.TabIndex = 2;
+            // 
+            // spacer1
+            // 
+            this.spacer1.Dock = Wisej.Web.DockStyle.Bottom;
+            this.spacer1.Location = new System.Drawing.Point(16, 476);
+            this.spacer1.Name = "spacer1";
+            this.spacer1.Size = new System.Drawing.Size(218, 16);
+            // 
             // buttonUpdate
             // 
-            this.buttonUpdate.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Bottom | Wisej.Web.AnchorStyles.Left) 
-            | Wisej.Web.AnchorStyles.Right)));
-            this.buttonUpdate.Location = new System.Drawing.Point(28, 234);
+            this.buttonUpdate.Dock = Wisej.Web.DockStyle.Bottom;
+            this.buttonUpdate.Location = new System.Drawing.Point(16, 492);
             this.buttonUpdate.Name = "buttonUpdate";
-            this.buttonUpdate.Size = new System.Drawing.Size(195, 52);
+            this.buttonUpdate.Size = new System.Drawing.Size(218, 52);
             this.buttonUpdate.TabIndex = 0;
             this.buttonUpdate.Text = "Update";
             // 

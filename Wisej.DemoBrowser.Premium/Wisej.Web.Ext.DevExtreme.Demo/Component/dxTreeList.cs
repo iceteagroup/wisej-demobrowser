@@ -26,7 +26,6 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
 			this.dxTreeList1.Options.allowColumnReordering = this.checkBox1.Checked;
 			this.dxTreeList1.Options.allowColumnResizing = this.checkBox2.Checked;
 			this.dxTreeList1.Options.autoExpandAll = this.checkBox3.Checked;
-			this.dxTreeList1.Options.autoNavigateToFocusedRow = this.checkBox4.Checked;
 			this.dxTreeList1.Options.columnChooser = new
 			{
 				enabled = this.checkBox5.Checked,

@@ -89,9 +89,6 @@
     <EmbeddedResource Include="Component\dxDiagram.resx">
       <DependentUpon>dxDiagram.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Component\dxDropDownBox.resx">
-      <DependentUpon>dxDropDownBox.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Component\dxDropDownButton.resx">
       <DependentUpon>dxDropDownButton.cs</DependentUpon>
     </EmbeddedResource>
@@ -170,9 +167,6 @@
     <EmbeddedResource Include="Component\dxTileView.resx">
       <DependentUpon>dxTileView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Component\dxToolbar.resx">
-      <DependentUpon>dxToolbar.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Component\dxTreeList.resx">
       <DependentUpon>dxTreeList.cs</DependentUpon>
     </EmbeddedResource>
@@ -199,7 +193,7 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
-    <Content Include="Wisej.Web.Ext.DevExtreme.json" />
+    <EmbeddedResource Include="Wisej.Web.Ext.DevExtreme.json" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Images\devextreme.png" />
@@ -278,12 +272,6 @@
     </Compile>
     <Compile Include="Component\dxDiagram.Designer.cs">
       <DependentUpon>dxDiagram.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Component\dxDropDownBox.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Component\dxDropDownBox.Designer.cs">
-      <DependentUpon>dxDropDownBox.cs</DependentUpon>
     </Compile>
     <Compile Include="Component\dxDropDownButton.cs">
       <SubType>UserControl</SubType>
@@ -440,12 +428,6 @@
     </Compile>
     <Compile Include="Component\dxTileView.Designer.cs">
       <DependentUpon>dxTileView.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Component\dxToolbar.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Component\dxToolbar.Designer.cs">
-      <DependentUpon>dxToolbar.cs</DependentUpon>
     </Compile>
     <Compile Include="Component\dxTreeList.cs">
       <SubType>UserControl</SubType>

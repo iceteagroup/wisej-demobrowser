@@ -31,7 +31,6 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
 			this.dxRangeSelector1.Options.behavior = new
 			{
 				allowSlidersSwap = this.checkBox1.Checked,
-				animationEnabled = this.checkBox2.Checked,
 				manualRangeSelectionEnabled = this.checkBox3.Checked,
 				moveSelectedRangeByClick = this.checkBox4.Checked,
 				snapToTicks = this.checkBox5.Checked
