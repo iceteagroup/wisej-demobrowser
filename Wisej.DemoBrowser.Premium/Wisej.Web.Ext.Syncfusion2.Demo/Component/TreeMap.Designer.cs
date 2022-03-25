@@ -71,6 +71,7 @@
             this.treeMap1.Size = new System.Drawing.Size(1073, 542);
             this.treeMap1.TabIndex = 0;
             this.treeMap1.Text = "treeMap1";
+            this.treeMap1.WidgetEvents = new Wisej.Web.Ext.Syncfusion2.ej2Base.WidgetEventHandler[0];
             // 
             // checkBoxGroupingSeparator
             // 

@@ -31,10 +31,11 @@
             this.uploader1 = new Wisej.Web.Ext.Syncfusion2.Uploader();
             this.checkBoxMultiple = new Wisej.Web.CheckBox();
             this.checkBoxSequentiallUpload = new Wisej.Web.CheckBox();
-            this.tagTextBoxAllowedExtensions = new Wisej.Web.TagTextBox();
+            this.pictureBox1 = new Wisej.Web.PictureBox();
             this.groupBox1.SuspendLayout();
             this.panel.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // linkDocs
@@ -52,13 +53,15 @@
             // 
             // panel
             // 
+            this.panel.Controls.Add(this.pictureBox1);
             this.panel.Controls.Add(this.uploader1);
             // 
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.Controls.Add(this.checkBoxMultiple);
             this.flowLayoutPanel1.Controls.Add(this.checkBoxSequentiallUpload);
-            this.flowLayoutPanel1.Controls.Add(this.tagTextBoxAllowedExtensions);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 45);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 441);
             // 
             // linkDemo
             // 
@@ -68,12 +71,12 @@
             // uploader1
             // 
             this.uploader1.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom)));
-            this.uploader1.Location = new System.Drawing.Point(357, 207);
+            this.uploader1.Location = new System.Drawing.Point(303, 333);
             this.uploader1.Name = "uploader1";
-            this.uploader1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"allowedExtensions\":\".jpg,.png\"}")));
-            this.uploader1.Size = new System.Drawing.Size(374, 145);
+            this.uploader1.Size = new System.Drawing.Size(482, 177);
             this.uploader1.TabIndex = 0;
             this.uploader1.Text = "uploader1";
+            this.uploader1.WebRequest += new Wisej.Web.WebRequestHandler(this.uploader1_WebRequest);
             // 
             // checkBoxMultiple
             // 
@@ -98,26 +101,24 @@
             this.checkBoxSequentiallUpload.TabIndex = 2;
             this.checkBoxSequentiallUpload.Text = "Sequential Upload";
             // 
-            // tagTextBoxAllowedExtensions
+            // pictureBox1
             // 
-            this.tagTextBoxAllowedExtensions.AutoSize = false;
-            this.flowLayoutPanel1.SetFillWeight(this.tagTextBoxAllowedExtensions, 1);
-            this.flowLayoutPanel1.SetFlowBreak(this.tagTextBoxAllowedExtensions, true);
-            this.tagTextBoxAllowedExtensions.LabelText = "Allowed Extensions";
-            this.tagTextBoxAllowedExtensions.Location = new System.Drawing.Point(3, 89);
-            this.tagTextBoxAllowedExtensions.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
-            this.tagTextBoxAllowedExtensions.Name = "tagTextBoxAllowedExtensions";
-            this.tagTextBoxAllowedExtensions.Size = new System.Drawing.Size(212, 132);
-            this.tagTextBoxAllowedExtensions.TabIndex = 3;
-            this.tagTextBoxAllowedExtensions.Text = ".jpg,.png";
+            this.pictureBox1.Anchor = Wisej.Web.AnchorStyles.Top;
+            this.pictureBox1.BorderStyle = Wisej.Web.BorderStyle.Dashed;
+            this.pictureBox1.Location = new System.Drawing.Point(303, 49);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(482, 262);
+            this.pictureBox1.SizeMode = Wisej.Web.PictureBoxSizeMode.Zoom;
             // 
             // Uploader
             // 
             this.Name = "Uploader";
+            this.Load += new System.EventHandler(this.Uploader_Load);
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -126,8 +127,8 @@
 		#endregion
 
 		private Syncfusion2.Uploader uploader1;
-        private TagTextBox tagTextBoxAllowedExtensions;
         private CheckBox checkBoxSequentiallUpload;
         private CheckBox checkBoxMultiple;
+        private PictureBox pictureBox1;
     }
 }

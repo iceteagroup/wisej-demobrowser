@@ -85,11 +85,6 @@ namespace Wisej.Web.Ext.Syncfusion2.Demo.Component
 			}
 		}
 
-		/// <summary>
-		/// Process widget events.
-		/// </summary>
-		/// <param name="sender"></param>
-		/// <param name="e"></param>
 		private void documentEditor1_WidgetEvent(object sender, WidgetEventArgs e)
 		{
 			AlertBox.Show(
