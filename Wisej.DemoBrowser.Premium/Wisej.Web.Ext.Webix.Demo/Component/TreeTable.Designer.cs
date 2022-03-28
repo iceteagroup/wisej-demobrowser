@@ -51,6 +51,7 @@
             // TreeTable
             // 
             this.Name = "TreeTable";
+            this.Load += new System.EventHandler(this.TreeTable_Load);
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
             this.ResumeLayout(false);

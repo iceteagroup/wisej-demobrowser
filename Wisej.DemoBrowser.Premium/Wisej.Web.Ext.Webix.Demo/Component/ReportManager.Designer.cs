@@ -50,6 +50,7 @@
             // ReportManager
             // 
             this.Name = "ReportManager";
+            this.Load += new System.EventHandler(this.ReportManager_Load);
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
             this.ResumeLayout(false);

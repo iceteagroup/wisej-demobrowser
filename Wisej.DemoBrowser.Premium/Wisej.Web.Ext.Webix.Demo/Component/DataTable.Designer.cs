@@ -51,6 +51,7 @@
             // DataTable
             // 
             this.Name = "DataTable";
+            this.Load += new System.EventHandler(this.DataTable_Load);
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
             this.ResumeLayout(false);

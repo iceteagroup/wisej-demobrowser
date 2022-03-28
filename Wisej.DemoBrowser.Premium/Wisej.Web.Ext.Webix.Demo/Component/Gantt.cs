@@ -9,5 +9,10 @@ namespace Wisej.Web.Ext.Webix.Demo.Component
         {
             InitializeComponent();
         }
+
+        private void Gantt_Load(object sender, EventArgs e)
+        {
+            this.gantt1.Options.url = "https://docs.webix.com/gantt-backend/";
+        }
     }
 }

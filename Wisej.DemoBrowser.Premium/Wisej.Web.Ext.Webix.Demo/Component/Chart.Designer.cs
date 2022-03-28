@@ -51,6 +51,7 @@
             // Chart
             // 
             this.Name = "Chart";
+            this.Load += new System.EventHandler(this.Chart_Load);
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
             this.ResumeLayout(false);

@@ -51,6 +51,7 @@
             // Query
             // 
             this.Name = "Query";
+            this.Load += new System.EventHandler(this.Query_Load);
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
             this.ResumeLayout(false);

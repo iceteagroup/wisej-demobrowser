@@ -9,5 +9,10 @@ namespace Wisej.Web.Ext.Webix.Demo.Component
         {
             InitializeComponent();
         }
+
+        private void ReportManager_Load(object sender, EventArgs e)
+        {
+            this.reportManager1.Options.url = "https://docs.webix.com/reports-backend/";
+        }
     }
 }

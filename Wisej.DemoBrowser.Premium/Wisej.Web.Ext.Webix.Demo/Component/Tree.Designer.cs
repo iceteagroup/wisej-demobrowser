@@ -30,8 +30,8 @@
 		{
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Tree));
             this.tree1 = new Wisej.Web.Ext.Webix.Tree();
-            this.panel.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            this.panel.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel
@@ -51,8 +51,9 @@
             // Tree
             // 
             this.Name = "Tree";
-            this.panel.ResumeLayout(false);
+            this.Load += new System.EventHandler(this.Tree_Load);
             this.groupBox1.ResumeLayout(false);
+            this.panel.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 

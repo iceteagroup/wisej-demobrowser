@@ -51,6 +51,7 @@
             // Diagram
             // 
             this.Name = "Diagram";
+            this.Load += new System.EventHandler(this.Diagram_Load);
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
             this.ResumeLayout(false);

@@ -50,6 +50,7 @@
             // DocumentManager
             // 
             this.Name = "DocumentManager";
+            this.Load += new System.EventHandler(this.DocumentManager_Load);
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
             this.ResumeLayout(false);

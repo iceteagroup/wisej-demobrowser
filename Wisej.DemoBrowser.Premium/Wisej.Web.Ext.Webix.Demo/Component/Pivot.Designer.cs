@@ -51,6 +51,7 @@
             // Pivot
             // 
             this.Name = "Pivot";
+            this.Load += new System.EventHandler(this.Pivot_Load);
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
             this.ResumeLayout(false);

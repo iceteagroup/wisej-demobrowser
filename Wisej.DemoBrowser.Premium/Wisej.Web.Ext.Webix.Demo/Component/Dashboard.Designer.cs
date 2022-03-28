@@ -51,6 +51,7 @@
             // Dashboard
             // 
             this.Name = "Dashboard";
+            this.Load += new System.EventHandler(this.Dashboard_Load);
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
             this.ResumeLayout(false);
