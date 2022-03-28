@@ -12,7 +12,7 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 		{
 			InitializeComponent();
 
-			this.kendoCaptcha1.Instance.change += new WidgetEventHandler(kendoCaptcha1_WidgetEvent);
+			this.kendoCaptcha1.Instance.onChange += new WidgetEventHandler(kendoCaptcha1_WidgetEvent);
 		}
 
 		/// <summary>

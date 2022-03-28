@@ -20,7 +20,8 @@
         "jquery.easing.js": "%root%/js/assets/external/jquery.easing.1.3.min.js",
         "jsrender.js": "%root%/js/assets/external/jsrender.min.js",
         "ej.web.all.js": "%root%/19.3.0.43/js/web/ej.web.all.min.js",
-        "ej.web.all.css": "%root%/19.3.0.43/js/web/%theme%/ej.web.all.min.css"
+        "ej.web.all.css": "%root%/19.3.0.43/js/web/%theme%/ej.web.all.min.css",
+        "ej.culture.js": "%root%/js/assets/i18n/ej.culture.%culture%.min.js"
       }
     },
     "local": {
@@ -30,7 +31,8 @@
         "jquery.easing.js": "%root%/js/assets/external/jquery.easing.1.3.min.js",
         "jsrender.js": "%root%/js/assets/external/jsrender.min.js",
         "ej.web.all.js": "%root%/19.3.0.43/js/web/ej.web.all.min.js",
-        "ej.web.all.css": "%root%/19.3.0.43/js/web/%theme%/ej.web.all.min.css"
+        "ej.web.all.css": "%root%/19.3.0.43/js/web/%theme%/ej.web.all.min.css",
+        "ej.culture.js": "%root%/js/assets/i18n/ej.culture.%culture%.min.js"
       }
     },
     "embedded": {
@@ -40,7 +42,8 @@
         "jquery.easing.js": "%root%/js/assets/external/jquery.easing.1.3.min.js",
         "jsrender.js": "%root%/js/assets/external/jsrender.min.js",
         "ej.web.all.js": "%root%/19.3.0.43/js/web/ej.web.all.min.js",
-        "ej.web.all.css": "%root%/19.3.0.43/js/web/%theme%/ej.web.all.min.css"
+        "ej.web.all.css": "%root%/19.3.0.43/js/web/%theme%/ej.web.all.min.css",
+        "ej.culture.js": "%root%/js/assets/i18n/ej.culture.%culture%.min.js"
       }
     }
   }

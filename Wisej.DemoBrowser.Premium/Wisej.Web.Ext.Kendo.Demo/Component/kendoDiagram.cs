@@ -11,7 +11,7 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 		{
 			InitializeComponent();
 
-			this.kendoDiagram1.Instance.click += new WidgetEventHandler(kendoDiagram1_WidgetEvent);
+			this.kendoDiagram1.Instance.onClick += new WidgetEventHandler(kendoDiagram1_WidgetEvent);
 		}
 
 		private void kendoDiagram1_WidgetEvent(object sender, WidgetEventArgs e)

@@ -9,10 +9,10 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 		{
 			InitializeComponent();
 
-			this.kendoWizard1.Instance.done += new WidgetEventHandler(kendoWizard1_WidgetEvent);
-			this.kendoWizard1.Instance.select += new WidgetEventHandler(kendoWizard1_WidgetEvent);
-			this.kendoWizard1.Instance.activate += new WidgetEventHandler(kendoWizard1_WidgetEvent);
-			this.kendoWizard1.Instance.formValidateFailed += new WidgetEventHandler(kendoWizard1_WidgetEvent);
+			this.kendoWizard1.Instance.onDone += new WidgetEventHandler(kendoWizard1_WidgetEvent);
+			this.kendoWizard1.Instance.onSelect += new WidgetEventHandler(kendoWizard1_WidgetEvent);
+			this.kendoWizard1.Instance.onActivate += new WidgetEventHandler(kendoWizard1_WidgetEvent);
+			this.kendoWizard1.Instance.onFormValidateFailed += new WidgetEventHandler(kendoWizard1_WidgetEvent);
 		}
 
 		private void kendoWizard1_WidgetEvent(object sender, WidgetEventArgs e)

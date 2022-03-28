@@ -9,8 +9,8 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 		{
 			InitializeComponent();
 
-			this.kendoCalendar1.Instance.change += new WidgetEventHandler(kendoCalendar1_WidgetEvent);
-			this.kendoCalendar1.Instance.navigate += new WidgetEventHandler(kendoCalendar1_WidgetEvent);
+			this.kendoCalendar1.Instance.onChange += new WidgetEventHandler(kendoCalendar1_WidgetEvent);
+			this.kendoCalendar1.Instance.onNavigate += new WidgetEventHandler(kendoCalendar1_WidgetEvent);
 		}
 
 		private void kendoCalendar1_WidgetEvent(object sender, WidgetEventArgs e)

@@ -11,6 +11,9 @@ namespace Wisej.Web.Ext.Syncfusion.Demo.Component
 		public ejKanban()
 		{
 			InitializeComponent();
+
+			this.ejKanban1.Instance.onCardDrop += new WidgetEventHandler(ejKanban1_WidgetEvent);
+			this.ejKanban1.Instance.onCardClick += new WidgetEventHandler(ejKanban1_WidgetEvent);
 		}
 
 		private void buttonUpdate_Click(object sender, EventArgs e)
@@ -50,6 +53,15 @@ namespace Wisej.Web.Ext.Syncfusion.Demo.Component
 			var visibleNames = await this.ejKanban1.Instance.getVisibleColumnNamesAsync();
 
 			AlertBox.Show(Wisej.Core.WisejSerializer.Serialize(visibleNames));
+		}
+
+		private void ejKanban1_WidgetEvent(object sender, WidgetEventArgs e)
+		{
+			AlertBox.Show(
+				$"<b>{e.Type}</b><br/>{JSON.Stringify(e.Data)}",
+				MessageBoxIcon.Information);
+
+			Application.Play(MessageBoxIcon.Information);
 		}
 	}
 }

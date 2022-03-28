@@ -10,7 +10,6 @@ namespace Wisej.Web.Ext.Syncfusion.Demo.Component
 			InitializeComponent();
 
 			this.ejDropDownTree1.Instance.onChange += new WidgetEventHandler(ejDropDownTree1_WidgetEvent);
-			this.ejDropDownTree1.Instance.onSelect += new WidgetEventHandler(ejDropDownTree1_WidgetEvent);
 			this.ejDropDownTree1.Instance.onCheckChange += new WidgetEventHandler(ejDropDownTree1_WidgetEvent);
 		}
 

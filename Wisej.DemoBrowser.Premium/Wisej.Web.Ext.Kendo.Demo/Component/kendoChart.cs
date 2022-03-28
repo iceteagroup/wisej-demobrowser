@@ -12,9 +12,9 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 		{
 			InitializeComponent();
 
-			this.kendoChart1.Instance.legendItemClick += new WidgetEventHandler(kendoChart1_WidgetEvent);
-			this.kendoChart1.Instance.seriesClick += new WidgetEventHandler(kendoChart1_WidgetEvent);
-			this.kendoChart1.Instance.select += new WidgetEventHandler(kendoChart1_WidgetEvent);
+			this.kendoChart1.Instance.onLegendItemClick += new WidgetEventHandler(kendoChart1_WidgetEvent);
+			this.kendoChart1.Instance.onSeriesClick += new WidgetEventHandler(kendoChart1_WidgetEvent);
+			this.kendoChart1.Instance.onSelect += new WidgetEventHandler(kendoChart1_WidgetEvent);
 		}
 
 		private void kendoChart1_WidgetEvent(object sender, WidgetEventArgs e)

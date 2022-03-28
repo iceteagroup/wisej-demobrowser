@@ -9,9 +9,9 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 		{
 			InitializeComponent();
 
-			this.kendoSparkline1.Instance.seriesClick += new WidgetEventHandler(kendoSparkline1_WidgetEvent);
-			this.kendoSparkline1.Instance.plotAreaClick += new WidgetEventHandler(kendoSparkline1_WidgetEvent);
-			this.kendoSparkline1.Instance.axisLabelClick += new WidgetEventHandler(kendoSparkline1_WidgetEvent);
+			this.kendoSparkline1.Instance.onSeriesClick += new WidgetEventHandler(kendoSparkline1_WidgetEvent);
+			this.kendoSparkline1.Instance.onPlotAreaClick += new WidgetEventHandler(kendoSparkline1_WidgetEvent);
+			this.kendoSparkline1.Instance.onAxisLabelClick += new WidgetEventHandler(kendoSparkline1_WidgetEvent);
 		}
 
 		private void kendoSparkline1_WidgetEvent(object sender, WidgetEventArgs e)

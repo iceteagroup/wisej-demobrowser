@@ -10,7 +10,7 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 		{
 			InitializeComponent();
 
-			this.kendoStockChart1.Instance.plotAreaClick += new WidgetEventHandler(kendoStockChart1_WidgetEvent);
+			this.kendoStockChart1.Instance.onPlotAreaClick += new WidgetEventHandler(kendoStockChart1_WidgetEvent);
 		}
 
 		private void kendoStockChart_Load(object sender, EventArgs e)

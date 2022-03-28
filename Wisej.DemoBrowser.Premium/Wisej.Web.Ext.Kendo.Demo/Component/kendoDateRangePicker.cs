@@ -9,7 +9,7 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 		{
 			InitializeComponent();
 
-			this.kendoDateRangePicker1.Instance.change += new WidgetEventHandler(kendoDateRangePicker1_WidgetEvent);
+			this.kendoDateRangePicker1.Instance.onChange += new WidgetEventHandler(kendoDateRangePicker1_WidgetEvent);
 		}
 
 		private void kendoDateRangePicker1_WidgetEvent(object sender, WidgetEventArgs e)

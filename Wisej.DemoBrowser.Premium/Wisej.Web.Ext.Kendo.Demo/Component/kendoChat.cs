@@ -11,12 +11,12 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 		{
 			InitializeComponent();
 
-			this.kendoChat1.Instance.typingStart += new WidgetEventHandler(kendoChat1_WidgetEvent);
-			this.kendoChat1.Instance.actionClick += new WidgetEventHandler(kendoChat1_actionClick);
-			this.kendoChat1.Instance.typingEnd += new WidgetEventHandler(kendoChat1_WidgetEvent);
-			this.kendoChat1.Instance.toolClick += new WidgetEventHandler(kendoChat1_WidgetEvent);
-			this.kendoChat1.Instance.sendMessage += new WidgetEventHandler(kendoChat1_sendMessage);
-			this.kendoChat1.Instance.post += new WidgetEventHandler(kendoChat1_WidgetEvent);
+			this.kendoChat1.Instance.onTypingStart += new WidgetEventHandler(kendoChat1_WidgetEvent);
+			this.kendoChat1.Instance.onActionClick += new WidgetEventHandler(kendoChat1_actionClick);
+			this.kendoChat1.Instance.onTypingEnd += new WidgetEventHandler(kendoChat1_WidgetEvent);
+			this.kendoChat1.Instance.onToolClick += new WidgetEventHandler(kendoChat1_WidgetEvent);
+			this.kendoChat1.Instance.onSendMessage += new WidgetEventHandler(kendoChat1_sendMessage);
+			this.kendoChat1.Instance.onPost += new WidgetEventHandler(kendoChat1_WidgetEvent);
 		}
 
 		private void kendoChat1_WidgetEvent(object sender, WidgetEventArgs e)
@@ -30,7 +30,7 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 
 		private void kendoChat1_sendMessage(object sender, WidgetEventArgs e)
 		{
-			var response = $"{e.Data} is a great choice!";
+			var response = $"{e.Data.text} is a great choice!";
 			
 			Application.StartTask(() => {
 

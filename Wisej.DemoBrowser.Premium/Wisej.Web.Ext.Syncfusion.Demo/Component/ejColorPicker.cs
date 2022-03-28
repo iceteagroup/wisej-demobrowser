@@ -8,6 +8,8 @@ namespace Wisej.Web.Ext.Syncfusion.Demo.Component
 		public ejColorPicker()
 		{
 			InitializeComponent();
+
+			this.ejColorPicker1.Instance.onChange += new WidgetEventHandler(ejColorPicker1_WidgetEvent);
 		}
 
 		private void ejColorPicker1_WidgetEvent(object sender, WidgetEventArgs e)

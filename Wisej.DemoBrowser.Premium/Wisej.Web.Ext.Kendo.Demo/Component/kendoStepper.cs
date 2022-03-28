@@ -9,7 +9,7 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 		{
 			InitializeComponent();
 
-			this.kendoStepper1.Instance.select += new WidgetEventHandler(kendoStepper1_WidgetEvent);
+			this.kendoStepper1.Instance.onSelect += new WidgetEventHandler(kendoStepper1_WidgetEvent);
 		}
 
 		private void kendoStepper1_WidgetEvent(object sender, WidgetEventArgs e)

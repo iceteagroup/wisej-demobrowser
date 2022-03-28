@@ -9,7 +9,7 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 		{
 			InitializeComponent();
 
-			this.kendoDropDownListColor.Instance.change += new WidgetEventHandler(kendoDropDownListColor_WidgetEvent);
+			this.kendoDropDownListColor.Instance.onChange += new WidgetEventHandler(kendoDropDownListColor_WidgetEvent);
 		}
 
 		private void kendoDropDownList_Load(object sender, EventArgs e)
@@ -43,10 +43,10 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 			this.kendoDropDownListSize.Options.value = "Small";
 		}
 
-		private void kendoDropDownListColor_WidgetEvent(object sender, WidgetEventArgs e)
+		private async void kendoDropDownListColor_WidgetEvent(object sender, WidgetEventArgs e)
 		{
-			if (!String.IsNullOrEmpty(e.Data))
-				this.pictureBox1.Image = Image.FromFile(Application.MapPath($"Images/DropDownList/{e.Data}"));
+			var value = await this.kendoDropDownListColor.Instance.valueAsync();
+			this.pictureBox1.Image = Image.FromFile(Application.MapPath($"Images/DropDownList/{value}"));
 		}
 	}
 }

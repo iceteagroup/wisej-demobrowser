@@ -14,7 +14,7 @@ namespace Wisej.Web.Ext.Syncfusion.Demo.Component
 
 		private void buttonAddNewItem_Click(object sender, EventArgs e)
 		{
-			this.ejListView1.Instance.addItem(new { text = "My New Item" }, 0, "");
+			this.ejListView1.Instance.addItem(new { text = this.textBoxAddNewItem.Text }, 0, "");
 
 			this.ejListView1.Update();
 		}
@@ -40,6 +40,15 @@ namespace Wisej.Web.Ext.Syncfusion.Demo.Component
 			this.ejListView1.Options.enableGroupList = this.checkBox3.Checked;
 
 			this.ejListView1.Update();
+		}
+
+		private void ejListView1_WidgetEvent(object sender, WidgetEventArgs e)
+		{
+			AlertBox.Show(
+				$"<b>{e.Type}</b><br/>{JSON.Stringify(e.Data)}",
+				MessageBoxIcon.Information);
+
+			Application.Play(MessageBoxIcon.Information);
 		}
 	}
 }

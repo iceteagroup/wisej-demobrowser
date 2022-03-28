@@ -9,9 +9,9 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 		{
 			InitializeComponent();
 
-			this.kendoTreeView1.Instance.change += new WidgetEventHandler(kendoTreeView1_WidgetEvent);
-			this.kendoTreeView1.Instance.check += new WidgetEventHandler(kendoTreeView1_WidgetEvent);
-			this.kendoTreeView1.Instance.select += new WidgetEventHandler(kendoTreeView1_WidgetEvent);
+			this.kendoTreeView1.Instance.onChange += new WidgetEventHandler(kendoTreeView1_WidgetEvent);
+			this.kendoTreeView1.Instance.onCheck += new WidgetEventHandler(kendoTreeView1_WidgetEvent);
+			this.kendoTreeView1.Instance.onSelect += new WidgetEventHandler(kendoTreeView1_WidgetEvent);
 
 		}
 

@@ -10,8 +10,8 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 		{
 			InitializeComponent();
 
-			this.kendoSpreadsheet1.Instance.select += new WidgetEventHandler(kendoSpreadsheet1_WidgetEvent);
-			this.kendoSpreadsheet1.Instance.change += new WidgetEventHandler(kendoSpreadsheet1_WidgetEvent);
+			this.kendoSpreadsheet1.Instance.onSelect += new WidgetEventHandler(kendoSpreadsheet1_WidgetEvent);
+			this.kendoSpreadsheet1.Instance.onChange += new WidgetEventHandler(kendoSpreadsheet1_WidgetEvent);
 		}
 
 		private void kendoSpreadsheet1_WidgetEvent(object sender, WidgetEventArgs e)

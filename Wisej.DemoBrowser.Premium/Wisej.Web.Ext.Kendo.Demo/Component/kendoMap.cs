@@ -9,8 +9,8 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 		{
 			InitializeComponent();
 
-			this.kendoMap1.Instance.click += new WidgetEventHandler(kendoMap1_WidgetEvent);
-			this.kendoMap1.Instance.markerClick += new WidgetEventHandler(kendoMap1_WidgetEvent);
+			this.kendoMap1.Instance.onClick += new WidgetEventHandler(kendoMap1_WidgetEvent);
+			this.kendoMap1.Instance.onMarkerClick += new WidgetEventHandler(kendoMap1_WidgetEvent);
 		}
 
 		private void buttonUpdate_Click(object sender, EventArgs e)

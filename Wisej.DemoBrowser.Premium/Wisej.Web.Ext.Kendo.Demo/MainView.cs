@@ -64,24 +64,8 @@ namespace Wisej.Web.Ext.Kendo.Demo
 
 		private void comboBoxLanguage_SelectedIndexChanged(object sender, EventArgs e)
 		{
-			if (this.comboBoxLanguage.Text == "zh-CN")
-				LoadCustomLocales();
-
 			kendoBase.Culture = new CultureInfo(this.comboBoxLanguage.Text);
-		}
-
-		/// <summary>
-		/// Loads the zh-CN localization files.
-		/// </summary>
-		private void LoadCustomLocales()
-		{
-			var resources = Directory.GetFiles(Application.MapPath("Data/CustomLocalization"))
-				.Select(f => new Package
-				{
-					Name = Path.GetFileName(f),
-					Source = $"./Data/CustomLocalization/{Path.GetFileName(f)}"
-				});
-			kendoBase.Locales = resources.ToArray();
+			Application.Reload();
 		}
 
         private void comboBoxWisejTheme_SelectedIndexChanged(object sender, EventArgs e)

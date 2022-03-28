@@ -12,7 +12,7 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 		{
 			InitializeComponent();
 
-			this.kendoPivotGrid1.Instance.expandMember += new WidgetEventHandler(kendoPivotGrid1_WidgetEvent);
+			this.kendoPivotGrid1.Instance.onExpandMember += new WidgetEventHandler(kendoPivotGrid1_WidgetEvent);
 		}
 
 		private void kendoPivotGrid1_WidgetEvent(object sender, WidgetEventArgs e)

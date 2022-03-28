@@ -90,7 +90,6 @@
             this.ejDropDownList1.Size = new System.Drawing.Size(300, 30);
             this.ejDropDownList1.TabIndex = 0;
             this.ejDropDownList1.Text = "ejDropDownList1";
-            this.ejDropDownList1.WidgetEvent += new Wisej.Web.WidgetEventHandler(this.ejDropDownList_WidgetEvent);
             // 
             // checkBox1
             // 
@@ -157,7 +156,6 @@
             this.ejDropDownList2.Size = new System.Drawing.Size(300, 30);
             this.ejDropDownList2.TabIndex = 1;
             this.ejDropDownList2.Text = "ejDropDownList2";
-            this.ejDropDownList2.WidgetEvent += new Wisej.Web.WidgetEventHandler(this.ejDropDownList_WidgetEvent);
             // 
             // checkBox5
             // 

@@ -9,7 +9,7 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 		{
 			InitializeComponent();
 
-			this.kendoMultiColumnComboBox1.Instance.select += new WidgetEventHandler(kendoMultiColumnComboBox1_WidgetEvent);
+			this.kendoMultiColumnComboBox1.Instance.onSelect += new WidgetEventHandler(kendoMultiColumnComboBox1_WidgetEvent);
 		}
 
 		private void kendoMultiColumnComboBox1_WidgetEvent(object sender, WidgetEventArgs e)
