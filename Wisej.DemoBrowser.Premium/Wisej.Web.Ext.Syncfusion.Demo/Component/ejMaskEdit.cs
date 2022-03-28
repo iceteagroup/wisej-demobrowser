@@ -9,8 +9,8 @@ namespace Wisej.Web.Ext.Syncfusion.Demo.Component
 		{
 			InitializeComponent();
 
-			this.ejMaskEdit1.Instance.change += new WidgetEventHandler(ejMaskEdit1_WidgetEvent);
-			this.ejMaskEdit1.Instance.keyPress += new WidgetEventHandler(ejMaskEdit1_WidgetEvent);
+			this.ejMaskEdit1.Instance.onChange += new WidgetEventHandler(ejMaskEdit1_WidgetEvent);
+			this.ejMaskEdit1.Instance.onKeyPress += new WidgetEventHandler(ejMaskEdit1_WidgetEvent);
 		}
 
 		private void buttonUpdate_Click(object sender, EventArgs e)

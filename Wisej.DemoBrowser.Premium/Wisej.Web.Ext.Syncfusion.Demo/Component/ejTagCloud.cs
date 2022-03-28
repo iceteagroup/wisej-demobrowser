@@ -9,7 +9,7 @@ namespace Wisej.Web.Ext.Syncfusion.Demo.Component
 		{
 			InitializeComponent();
 
-			this.ejTagCloud1.Instance.click += new WidgetEventHandler(ejTagCloud1_WidgetEvent);
+			this.ejTagCloud1.Instance.onClick += new WidgetEventHandler(ejTagCloud1_WidgetEvent);
 		}
 
 		private void buttonUpdate_Click(object sender, EventArgs e)

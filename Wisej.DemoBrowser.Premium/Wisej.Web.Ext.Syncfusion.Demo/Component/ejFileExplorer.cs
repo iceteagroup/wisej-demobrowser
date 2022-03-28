@@ -14,11 +14,21 @@ namespace Wisej.Web.Ext.Syncfusion.Demo.Component
 		{
 			InitializeComponent();
 		}
+		private void ejFileExplorer_Load(object sender, EventArgs e)
+		{
+			this.ejFileExplorer1.Options = new
+			{
+				showFooter = true,
+				showToolbar = true,
+				layout = "tile",
+				path = Application.MapPath("Data")
+			};
+		}
 
 		private void ejFileExplorer1_WebRequest(object sender, WebRequestEventArgs e)
 		{
 			try
-            {
+			{
 				var helper = new FileExplorerOperations();
 
 				if (e.Request.HttpMethod == "POST")
@@ -50,9 +60,9 @@ namespace Wisej.Web.Ext.Syncfusion.Demo.Component
 				}
 			} 
 			catch
-            {
+			{
 				AlertBox.Show("Feature not implemented.", MessageBoxIcon.Error);
-            }
+			}
 		}
 
 		private void buttonUpdate_Click(object sender, EventArgs e)
@@ -67,16 +77,5 @@ namespace Wisej.Web.Ext.Syncfusion.Demo.Component
 
 			this.ejFileExplorer1.Update();
 		}
-
-        private void ejFileExplorer_Load(object sender, EventArgs e)
-        {
-			this.ejFileExplorer1.Options = new
-			{
-				showFooter = true,
-				showToolbar = true,
-				layout = "tile",
-				path = Application.MapPath("Data")
-			};
-		}
-    }
+	}
 }

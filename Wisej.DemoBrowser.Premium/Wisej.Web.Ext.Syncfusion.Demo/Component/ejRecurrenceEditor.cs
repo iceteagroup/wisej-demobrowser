@@ -9,10 +9,7 @@ namespace Wisej.Web.Ext.Syncfusion.Demo.Component
 		{
 			InitializeComponent();
 
-			this.ejRecurrenceEditor1.Instance.change += new WidgetEventHandler(ejRecurrenceEditor1_WidgetEvent);
-
-			//this.dateTimePicker1.Value = this.dateTimePicker1.MaxDate;
-			//this.dateTimePicker2.Value = this.dateTimePicker2.MinDate;
+			this.ejRecurrenceEditor1.Instance.onChange += new WidgetEventHandler(ejRecurrenceEditor1_WidgetEvent);
 		}
 
 		private void ejRecurrenceEditor1_WidgetEvent(object sender, WidgetEventArgs e)

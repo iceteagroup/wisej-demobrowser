@@ -71,7 +71,7 @@
             this.panelComponents.SuspendLayout();
             this.SuspendLayout();
             // 
-            // flowLayoutPanel1
+            // flowLayoutPanelProperties
             // 
             this.flowLayoutPanel1.Controls.Add(this.labelNavigationWisejDemos);
             this.flowLayoutPanel1.Controls.Add(this.labelNavigationSeparator1);
@@ -81,7 +81,7 @@
             this.flowLayoutPanel1.Controls.Add(this.labelSeparator);
             this.flowLayoutPanel1.Controls.Add(this.labelNavigationDemo);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(58, 12);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Name = "flowLayoutPanelProperties";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(626, 30);
             this.flowLayoutPanel1.TabIndex = 16;
             this.flowLayoutPanel1.TabStop = true;

@@ -9,11 +9,11 @@ namespace Wisej.Web.Ext.Syncfusion.Demo.Component
 		{
 			InitializeComponent();
 
-			this.ejSchedule1.Instance.cellClick += new WidgetEventHandler(ejSchedule1_WidgetEvent);
-			this.ejSchedule1.Instance.menuItemClick += new WidgetEventHandler(ejSchedule1_WidgetEvent);
-			this.ejSchedule1.Instance.cellDoubleClick += new WidgetEventHandler(ejSchedule1_WidgetEvent);
-			this.ejSchedule1.Instance.appointmentClicked += new WidgetEventHandler(ejSchedule1_WidgetEvent);
-			this.ejSchedule1.Instance.appointmentChanged += new WidgetEventHandler(ejSchedule1_WidgetEvent);
+			this.ejSchedule1.Instance.onCellClick += new WidgetEventHandler(ejSchedule1_WidgetEvent);
+			this.ejSchedule1.Instance.onMenuItemClick += new WidgetEventHandler(ejSchedule1_WidgetEvent);
+			this.ejSchedule1.Instance.onCellDoubleClick += new WidgetEventHandler(ejSchedule1_WidgetEvent);
+			this.ejSchedule1.Instance.onAppointmentClicked += new WidgetEventHandler(ejSchedule1_WidgetEvent);
+			this.ejSchedule1.Instance.onAppointmentChanged += new WidgetEventHandler(ejSchedule1_WidgetEvent);
 		}
 
 		private void ejSchedule1_WidgetEvent(object sender, WidgetEventArgs e)
@@ -179,5 +179,5 @@ namespace Wisej.Web.Ext.Syncfusion.Demo.Component
 				}
 			};
 		}
-	}
+    }
 }

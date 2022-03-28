@@ -42,6 +42,7 @@
             this.label6 = new Wisej.Web.Label();
             this.groupBox1.SuspendLayout();
             this.panel.SuspendLayout();
+            this.flowLayoutPanelProperties.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -50,26 +51,8 @@
             this.linkDocs.TabIndex = 4;
             this.linkDocs.Text = "https://help.syncfusion.com/js/numerictextbox/overview";
             // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.numericUpDown1);
-            this.groupBox1.Controls.Add(this.checkBox4);
-            this.groupBox1.Controls.Add(this.checkBox3);
-            this.groupBox1.Controls.Add(this.checkBox2);
-            this.groupBox1.Controls.Add(this.checkBox1);
-            this.groupBox1.Size = new System.Drawing.Size(250, 550);
-            this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
-            this.groupBox1.Controls.SetChildIndex(this.checkBox1, 0);
-            this.groupBox1.Controls.SetChildIndex(this.checkBox2, 0);
-            this.groupBox1.Controls.SetChildIndex(this.checkBox3, 0);
-            this.groupBox1.Controls.SetChildIndex(this.checkBox4, 0);
-            this.groupBox1.Controls.SetChildIndex(this.numericUpDown1, 0);
-            this.groupBox1.Controls.SetChildIndex(this.label6, 0);
-            // 
             // buttonUpdate
             // 
-            this.buttonUpdate.Location = new System.Drawing.Point(28, 455);
             this.buttonUpdate.TabIndex = 6;
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
@@ -93,6 +76,15 @@
             this.panel.Controls.Add(this.label5);
             this.panel.Controls.Add(this.ejNumericTextbox1);
             this.panel.TabIndex = 7;
+            // 
+            // flowLayoutPanelProperties
+            // 
+            this.flowLayoutPanelProperties.Controls.Add(this.label6);
+            this.flowLayoutPanelProperties.Controls.Add(this.checkBox1);
+            this.flowLayoutPanelProperties.Controls.Add(this.checkBox2);
+            this.flowLayoutPanelProperties.Controls.Add(this.checkBox3);
+            this.flowLayoutPanelProperties.Controls.Add(this.checkBox4);
+            this.flowLayoutPanelProperties.Controls.Add(this.numericUpDown1);
             // 
             // ejNumericTextbox1
             // 
@@ -160,9 +152,12 @@
             this.checkBox1.Appearance = Wisej.Web.Appearance.Switch;
             this.checkBox1.AutoSize = false;
             this.checkBox1.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.checkBox1.Location = new System.Drawing.Point(28, 129);
+            this.flowLayoutPanelProperties.SetFillWeight(this.checkBox1, 1);
+            this.flowLayoutPanelProperties.SetFlowBreak(this.checkBox1, true);
+            this.checkBox1.Location = new System.Drawing.Point(3, 89);
+            this.checkBox1.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(195, 47);
+            this.checkBox1.Size = new System.Drawing.Size(212, 47);
             this.checkBox1.TabIndex = 1;
             this.checkBox1.Text = "Show Rounded Corner";
             // 
@@ -171,9 +166,12 @@
             this.checkBox2.Appearance = Wisej.Web.Appearance.Switch;
             this.checkBox2.AutoSize = false;
             this.checkBox2.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.checkBox2.Location = new System.Drawing.Point(28, 197);
+            this.flowLayoutPanelProperties.SetFillWeight(this.checkBox2, 1);
+            this.flowLayoutPanelProperties.SetFlowBreak(this.checkBox2, true);
+            this.checkBox2.Location = new System.Drawing.Point(3, 155);
+            this.checkBox2.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(195, 38);
+            this.checkBox2.Size = new System.Drawing.Size(212, 38);
             this.checkBox2.TabIndex = 2;
             this.checkBox2.Text = "Enable Strict Mode";
             // 
@@ -182,9 +180,12 @@
             this.checkBox3.Appearance = Wisej.Web.Appearance.Switch;
             this.checkBox3.AutoSize = false;
             this.checkBox3.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.checkBox3.Location = new System.Drawing.Point(28, 256);
+            this.flowLayoutPanelProperties.SetFillWeight(this.checkBox3, 1);
+            this.flowLayoutPanelProperties.SetFlowBreak(this.checkBox3, true);
+            this.checkBox3.Location = new System.Drawing.Point(3, 212);
+            this.checkBox3.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(195, 38);
+            this.checkBox3.Size = new System.Drawing.Size(212, 38);
             this.checkBox3.TabIndex = 3;
             this.checkBox3.Text = "Show Spin Button";
             // 
@@ -193,33 +194,41 @@
             this.checkBox4.Appearance = Wisej.Web.Appearance.Switch;
             this.checkBox4.AutoSize = false;
             this.checkBox4.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.checkBox4.Location = new System.Drawing.Point(28, 315);
+            this.flowLayoutPanelProperties.SetFillWeight(this.checkBox4, 1);
+            this.flowLayoutPanelProperties.SetFlowBreak(this.checkBox4, true);
+            this.checkBox4.Location = new System.Drawing.Point(3, 269);
+            this.checkBox4.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(195, 38);
+            this.checkBox4.Size = new System.Drawing.Size(212, 38);
             this.checkBox4.TabIndex = 4;
             this.checkBox4.Text = "Validate on Type";
             // 
             // numericUpDown1
             // 
             this.numericUpDown1.AutoSize = false;
+            this.flowLayoutPanelProperties.SetFillWeight(this.numericUpDown1, 1);
+            this.flowLayoutPanelProperties.SetFlowBreak(this.numericUpDown1, true);
             this.numericUpDown1.Label.Size = 50;
             this.numericUpDown1.Label.SizeType = Wisej.Web.SizeType.Percent;
             this.numericUpDown1.LabelText = "Decimal Places";
-            this.numericUpDown1.Location = new System.Drawing.Point(28, 374);
+            this.numericUpDown1.Location = new System.Drawing.Point(3, 326);
+            this.numericUpDown1.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.numericUpDown1.Maximum = new decimal(new int[] {
             50,
             0,
             0,
             0});
             this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(195, 60);
+            this.numericUpDown1.Size = new System.Drawing.Size(212, 60);
             this.numericUpDown1.TabIndex = 5;
             // 
             // label6
             // 
-            this.label6.Location = new System.Drawing.Point(28, 41);
+            this.flowLayoutPanelProperties.SetFillWeight(this.label6, 1);
+            this.flowLayoutPanelProperties.SetFlowBreak(this.label6, true);
+            this.label6.Location = new System.Drawing.Point(3, 3);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(195, 67);
+            this.label6.Size = new System.Drawing.Size(212, 67);
             this.label6.TabIndex = 0;
             this.label6.Text = "Note: Property changes affect the \"Kilometers\" TextBox.";
             // 
@@ -229,6 +238,7 @@
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
             this.panel.PerformLayout();
+            this.flowLayoutPanelProperties.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

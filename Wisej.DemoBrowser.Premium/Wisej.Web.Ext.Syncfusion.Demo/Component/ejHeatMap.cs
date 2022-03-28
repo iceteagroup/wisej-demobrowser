@@ -9,7 +9,7 @@ namespace Wisej.Web.Ext.Syncfusion.Demo.Component
 		{
 			InitializeComponent();
 
-			this.ejHeatMap1.Instance.cellSelected += new WidgetEventHandler(ejHeatMap1_WidgetEvent);
+			this.ejHeatMap1.Instance.onCellSelected += new WidgetEventHandler(ejHeatMap1_WidgetEvent);
 		}
 
 		private void ejHeatMap1_Appear(object sender, EventArgs e)

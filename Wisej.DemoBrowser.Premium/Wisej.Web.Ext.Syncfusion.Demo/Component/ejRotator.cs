@@ -10,7 +10,7 @@ namespace Wisej.Web.Ext.Syncfusion.Demo.Component
 		{
 			InitializeComponent();
 
-			this.ejRotator1.Instance.pagerClick += new WidgetEventHandler(this.ejRotator1_pagerClick);
+			this.ejRotator1.Instance.onPagerClick += new WidgetEventHandler(this.ejRotator1_pagerClick);
 		}
 
 		private void buttonUpdate_Click(object sender, EventArgs e)

@@ -9,8 +9,8 @@ namespace Wisej.Web.Ext.Syncfusion.Demo.Component
 		{
 			InitializeComponent();
 
-			this.ejPager1.Instance.click += new WidgetEventHandler(ejPager1_WidgetEvent);
-			this.ejPager1.Instance.change += new WidgetEventHandler(ejPager1_WidgetEvent);
+			this.ejPager1.Instance.onClick += new WidgetEventHandler(ejPager1_WidgetEvent);
+			this.ejPager1.Instance.onChange += new WidgetEventHandler(ejPager1_WidgetEvent);
 		}
 
 		private void ejPager1_WidgetEvent(object sender, WidgetEventArgs e)

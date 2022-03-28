@@ -8,8 +8,8 @@ namespace Wisej.Web.Ext.Syncfusion.Demo.Component
 		{
 			InitializeComponent();
 
-			ejBulletGraph1.Instance.click += new WidgetEventHandler(ejBulletGraph1_WidgetEvent);
-			ejBulletGraph1.Instance.rightClick += new WidgetEventHandler(ejBulletGraph1_WidgetEvent);
+			ejBulletGraph1.Instance.onClick += new WidgetEventHandler(ejBulletGraph1_WidgetEvent);
+			ejBulletGraph1.Instance.onRightClick += new WidgetEventHandler(ejBulletGraph1_WidgetEvent);
 		}
 
 		private void buttonUpdate_Click(object sender, EventArgs e)

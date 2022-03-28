@@ -9,9 +9,9 @@ namespace Wisej.Web.Ext.Syncfusion.Demo.Component
 		{
 			InitializeComponent();
 
-			this.ejLinearGauge1.Instance.mouseClick += new WidgetEventHandler(ejLinearGauge1_WidgetEvent);
-			this.ejLinearGauge1.Instance.rightClick += new WidgetEventHandler(ejLinearGauge1_WidgetEvent);
-			this.ejLinearGauge1.Instance.doubleClick += new WidgetEventHandler(ejLinearGauge1_WidgetEvent);
+			this.ejLinearGauge1.Instance.onMouseClick += new WidgetEventHandler(ejLinearGauge1_WidgetEvent);
+			this.ejLinearGauge1.Instance.onRightClick += new WidgetEventHandler(ejLinearGauge1_WidgetEvent);
+			this.ejLinearGauge1.Instance.onDoubleClick += new WidgetEventHandler(ejLinearGauge1_WidgetEvent);
 		}
 
 		private void buttonUpdate_Click(object sender, EventArgs e)

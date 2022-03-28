@@ -34,6 +34,7 @@
             this.checkBox3 = new Wisej.Web.CheckBox();
             this.groupBox1.SuspendLayout();
             this.panel.SuspendLayout();
+            this.flowLayoutPanelProperties.SuspendLayout();
             this.SuspendLayout();
             // 
             // linkDocs
@@ -41,20 +42,8 @@
             this.linkDocs.TabIndex = 4;
             this.linkDocs.Text = "https://help.syncfusion.com/js/sparkline/overview";
             // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.checkBox3);
-            this.groupBox1.Controls.Add(this.checkBox2);
-            this.groupBox1.Controls.Add(this.comboBox1);
-            this.groupBox1.Size = new System.Drawing.Size(250, 370);
-            this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
-            this.groupBox1.Controls.SetChildIndex(this.comboBox1, 0);
-            this.groupBox1.Controls.SetChildIndex(this.checkBox2, 0);
-            this.groupBox1.Controls.SetChildIndex(this.checkBox3, 0);
-            // 
             // buttonUpdate
             // 
-            this.buttonUpdate.Location = new System.Drawing.Point(28, 284);
             this.buttonUpdate.TabIndex = 3;
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
@@ -75,6 +64,12 @@
             this.panel.Controls.Add(this.ejSparkline1);
             this.panel.TabIndex = 7;
             // 
+            // flowLayoutPanelProperties
+            // 
+            this.flowLayoutPanelProperties.Controls.Add(this.checkBox2);
+            this.flowLayoutPanelProperties.Controls.Add(this.checkBox3);
+            this.flowLayoutPanelProperties.Controls.Add(this.comboBox1);
+            // 
             // ejSparkline1
             // 
             this.ejSparkline1.Dock = Wisej.Web.DockStyle.Fill;
@@ -91,6 +86,8 @@
             // 
             this.comboBox1.AutoSize = false;
             this.comboBox1.DropDownStyle = Wisej.Web.ComboBoxStyle.DropDownList;
+            this.flowLayoutPanelProperties.SetFillWeight(this.comboBox1, 1);
+            this.flowLayoutPanelProperties.SetFlowBreak(this.comboBox1, true);
             this.comboBox1.Items.AddRange(new object[] {
             "Line",
             "WinLoss",
@@ -99,9 +96,10 @@
             this.comboBox1.Label.Size = 50;
             this.comboBox1.Label.SizeType = Wisej.Web.SizeType.Percent;
             this.comboBox1.LabelText = "Chart Type";
-            this.comboBox1.Location = new System.Drawing.Point(28, 186);
+            this.comboBox1.Location = new System.Drawing.Point(3, 117);
+            this.comboBox1.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(195, 60);
+            this.comboBox1.Size = new System.Drawing.Size(212, 60);
             this.comboBox1.TabIndex = 2;
             this.comboBox1.Text = "Line";
             // 
@@ -110,9 +108,11 @@
             this.checkBox2.Appearance = Wisej.Web.Appearance.Switch;
             this.checkBox2.AutoSize = false;
             this.checkBox2.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.checkBox2.Location = new System.Drawing.Point(28, 34);
+            this.flowLayoutPanelProperties.SetFillWeight(this.checkBox2, 1);
+            this.flowLayoutPanelProperties.SetFlowBreak(this.checkBox2, true);
+            this.checkBox2.Location = new System.Drawing.Point(3, 3);
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(195, 38);
+            this.checkBox2.Size = new System.Drawing.Size(212, 38);
             this.checkBox2.TabIndex = 0;
             this.checkBox2.Text = "Marker Visible";
             // 
@@ -121,9 +121,12 @@
             this.checkBox3.Appearance = Wisej.Web.Appearance.Switch;
             this.checkBox3.AutoSize = false;
             this.checkBox3.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.checkBox3.Location = new System.Drawing.Point(28, 110);
+            this.flowLayoutPanelProperties.SetFillWeight(this.checkBox3, 1);
+            this.flowLayoutPanelProperties.SetFlowBreak(this.checkBox3, true);
+            this.checkBox3.Location = new System.Drawing.Point(3, 60);
+            this.checkBox3.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(195, 38);
+            this.checkBox3.Size = new System.Drawing.Size(212, 38);
             this.checkBox3.TabIndex = 1;
             this.checkBox3.Text = "Axis Line Visible";
             // 
@@ -132,6 +135,7 @@
             this.Name = "ejSparkline";
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
+            this.flowLayoutPanelProperties.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 

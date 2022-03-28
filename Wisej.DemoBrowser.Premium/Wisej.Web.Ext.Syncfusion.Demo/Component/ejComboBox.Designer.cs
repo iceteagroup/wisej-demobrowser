@@ -34,20 +34,13 @@
             this.checkBoxShowClearButton = new Wisej.Web.CheckBox();
             this.groupBox1.SuspendLayout();
             this.panel.SuspendLayout();
+            this.flowLayoutPanelProperties.SuspendLayout();
             this.SuspendLayout();
             // 
             // linkDocs
             // 
             this.linkDocs.TabIndex = 4;
             this.linkDocs.Text = "https://help.syncfusion.com/js/combobox/overview";
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.checkBoxShowClearButton);
-            this.groupBox1.Controls.Add(this.checkBoxAutofill);
-            this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
-            this.groupBox1.Controls.SetChildIndex(this.checkBoxAutofill, 0);
-            this.groupBox1.Controls.SetChildIndex(this.checkBoxShowClearButton, 0);
             // 
             // buttonUpdate
             // 
@@ -70,6 +63,11 @@
             this.panel.Controls.Add(this.ejComboBox1);
             this.panel.TabIndex = 7;
             // 
+            // flowLayoutPanelProperties
+            // 
+            this.flowLayoutPanelProperties.Controls.Add(this.checkBoxAutofill);
+            this.flowLayoutPanelProperties.Controls.Add(this.checkBoxShowClearButton);
+            // 
             // ejComboBox1
             // 
             this.ejComboBox1.Anchor = Wisej.Web.AnchorStyles.None;
@@ -86,9 +84,11 @@
             this.checkBoxAutofill.AutoSize = false;
             this.checkBoxAutofill.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.checkBoxAutofill.Checked = true;
-            this.checkBoxAutofill.Location = new System.Drawing.Point(28, 36);
+            this.flowLayoutPanelProperties.SetFillWeight(this.checkBoxAutofill, 1);
+            this.flowLayoutPanelProperties.SetFlowBreak(this.checkBoxAutofill, true);
+            this.checkBoxAutofill.Location = new System.Drawing.Point(3, 3);
             this.checkBoxAutofill.Name = "checkBoxAutofill";
-            this.checkBoxAutofill.Size = new System.Drawing.Size(195, 38);
+            this.checkBoxAutofill.Size = new System.Drawing.Size(212, 38);
             this.checkBoxAutofill.TabIndex = 0;
             this.checkBoxAutofill.Text = "Autofill";
             // 
@@ -98,9 +98,12 @@
             this.checkBoxShowClearButton.AutoSize = false;
             this.checkBoxShowClearButton.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.checkBoxShowClearButton.Checked = true;
-            this.checkBoxShowClearButton.Location = new System.Drawing.Point(28, 135);
+            this.flowLayoutPanelProperties.SetFillWeight(this.checkBoxShowClearButton, 1);
+            this.flowLayoutPanelProperties.SetFlowBreak(this.checkBoxShowClearButton, true);
+            this.checkBoxShowClearButton.Location = new System.Drawing.Point(3, 60);
+            this.checkBoxShowClearButton.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBoxShowClearButton.Name = "checkBoxShowClearButton";
-            this.checkBoxShowClearButton.Size = new System.Drawing.Size(195, 38);
+            this.checkBoxShowClearButton.Size = new System.Drawing.Size(212, 38);
             this.checkBoxShowClearButton.TabIndex = 1;
             this.checkBoxShowClearButton.Text = "Show Clear Button";
             // 
@@ -109,6 +112,7 @@
             this.Name = "ejComboBox";
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
+            this.flowLayoutPanelProperties.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 

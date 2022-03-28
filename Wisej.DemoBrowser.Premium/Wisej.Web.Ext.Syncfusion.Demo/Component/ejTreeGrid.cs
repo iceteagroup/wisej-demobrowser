@@ -9,8 +9,8 @@ namespace Wisej.Web.Ext.Syncfusion.Demo
 		{
 			InitializeComponent();
 
-			this.ejTreeGrid1.Instance.recordClick += new WidgetEventHandler(ejTreeGrid1_WidgetEvent);
-			this.ejTreeGrid1.Instance.cellSelected += new WidgetEventHandler(ejTreeGrid1_WidgetEvent);
+			this.ejTreeGrid1.Instance.onRecordClick += new WidgetEventHandler(ejTreeGrid1_WidgetEvent);
+			this.ejTreeGrid1.Instance.onCellSelected += new WidgetEventHandler(ejTreeGrid1_WidgetEvent);
 		}
 
 		private void ejTreeGrid1_WidgetEvent(object sender, WidgetEventArgs e)

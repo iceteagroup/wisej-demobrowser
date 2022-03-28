@@ -11,8 +11,8 @@ namespace Wisej.Web.Ext.Syncfusion.Demo.Component
 		{
 			InitializeComponent();
 
-			this.ejPivotGrid1.Instance.cellEdit += new WidgetEventHandler(ejPivotGrid1_WidgetEvent);
-			this.ejPivotGrid1.Instance.cellClick += new WidgetEventHandler(ejPivotGrid1_WidgetEvent);
+			this.ejPivotGrid1.Instance.onCellEdit += new WidgetEventHandler(ejPivotGrid1_WidgetEvent);
+			this.ejPivotGrid1.Instance.onCellClick += new WidgetEventHandler(ejPivotGrid1_WidgetEvent);
 		}
 
 		private void buttonUpdate_Click(object sender, EventArgs e)

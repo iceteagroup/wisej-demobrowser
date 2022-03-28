@@ -9,10 +9,10 @@ namespace Wisej.Web.Ext.Syncfusion.Demo.Component
 		{
 			InitializeComponent();
 
-			this.ejDateRangePicker1.Instance.open += new WidgetEventHandler(ejDateRangePicker1_WidgetEvent);
-			this.ejDateRangePicker1.Instance.close += new WidgetEventHandler(ejDateRangePicker1_WidgetEvent);
-			this.ejDateRangePicker1.Instance.select += new WidgetEventHandler(ejDateRangePicker1_WidgetEvent);
-			this.ejDateRangePicker1.Instance.change += new WidgetEventHandler(ejDateRangePicker1_WidgetEvent);
+			this.ejDateRangePicker1.Instance.onOpen += new WidgetEventHandler(ejDateRangePicker1_WidgetEvent);
+			this.ejDateRangePicker1.Instance.onClose += new WidgetEventHandler(ejDateRangePicker1_WidgetEvent);
+			this.ejDateRangePicker1.Instance.onSelect += new WidgetEventHandler(ejDateRangePicker1_WidgetEvent);
+			this.ejDateRangePicker1.Instance.onChange += new WidgetEventHandler(ejDateRangePicker1_WidgetEvent);
 		}
 
 		private void buttonUpdate_Click(object sender, EventArgs e)

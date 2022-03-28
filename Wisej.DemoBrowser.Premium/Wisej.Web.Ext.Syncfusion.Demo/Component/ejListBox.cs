@@ -11,8 +11,8 @@ namespace Wisej.Web.Ext.Syncfusion.Demo.Component
 		{
 			InitializeComponent();
 
-			this.ejListBox1.Instance.select += new WidgetEventHandler(ejListBox1_WidgetEvent);
-			this.ejListBox1.Instance.unselect += new WidgetEventHandler(ejListBox1_WidgetEvent);
+			this.ejListBox1.Instance.onSelect += new WidgetEventHandler(ejListBox1_WidgetEvent);
+			this.ejListBox1.Instance.onUnselect += new WidgetEventHandler(ejListBox1_WidgetEvent);
 		}
 
 		private void buttonLoad_Uploaded(object sender, UploadedEventArgs e)

@@ -9,8 +9,8 @@ namespace Wisej.Web.Ext.Syncfusion.Demo.Component
 		{
 			InitializeComponent();
 
-			this.ejSunburstChart1.Instance.click += new WidgetEventHandler(ejSunburstChart1_WidgetEvent);
-			this.ejSunburstChart1.Instance.legendItemClick += new WidgetEventHandler(ejSunburstChart1_WidgetEvent);
+			this.ejSunburstChart1.Instance.onClick += new WidgetEventHandler(ejSunburstChart1_WidgetEvent);
+			this.ejSunburstChart1.Instance.onLegendItemClick += new WidgetEventHandler(ejSunburstChart1_WidgetEvent);
 		}
 
 		private void ejSunburstChart1_WidgetEvent(object sender, WidgetEventArgs e)

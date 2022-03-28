@@ -9,13 +9,12 @@ namespace Wisej.Web.Ext.Syncfusion.Demo.Component
 		{
 			InitializeComponent();
 
-			ejTile1.Instance.mouseDown += new WidgetEventHandler(ejTile_WidgetEvent);
-			ejTile2.Instance.mouseDown += new WidgetEventHandler(ejTile_WidgetEvent);
-			ejTile3.Instance.mouseDown += new WidgetEventHandler(ejTile_WidgetEvent);
-			ejTile4.Instance.mouseDown += new WidgetEventHandler(ejTile_WidgetEvent);
-			ejTile5.Instance.mouseDown += new WidgetEventHandler(ejTile_WidgetEvent);
-			ejTile6.Instance.mouseDown += new WidgetEventHandler(ejTile_WidgetEvent);
-
+			this.ejTile1.Instance.onMouseDown += new WidgetEventHandler(ejTile_WidgetEvent);
+			this.ejTile2.Instance.onMouseDown += new WidgetEventHandler(ejTile_WidgetEvent);
+			this.ejTile3.Instance.onMouseDown += new WidgetEventHandler(ejTile_WidgetEvent);
+			this.ejTile4.Instance.onMouseDown += new WidgetEventHandler(ejTile_WidgetEvent);
+			this.ejTile5.Instance.onMouseDown += new WidgetEventHandler(ejTile_WidgetEvent);
+			this.ejTile6.Instance.onMouseDown += new WidgetEventHandler(ejTile_WidgetEvent);
 		}
 
 		private void buttonUpdate_Click(object sender, EventArgs e)
@@ -37,8 +36,6 @@ namespace Wisej.Web.Ext.Syncfusion.Demo.Component
 			this.ejTile6.Options.liveTile.enabled = this.checkBox1.Checked;
 			this.ejTile1.Update();
 			this.ejTile6.Update();
-
-
 		}
 
 		private void ejTile_WidgetEvent(object sender, WidgetEventArgs e)

@@ -36,28 +36,15 @@
             this.buttonSave = new Wisej.Web.Button();
             this.groupBox1.SuspendLayout();
             this.panel.SuspendLayout();
+            this.flowLayoutPanelProperties.SuspendLayout();
             this.SuspendLayout();
             // 
             // linkDocs
             // 
             this.linkDocs.Text = "https://help.syncfusion.com/js/chart/overview";
             // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.buttonSave);
-            this.groupBox1.Controls.Add(this.buttonPrint);
-            this.groupBox1.Controls.Add(this.textBoxTitle);
-            this.groupBox1.Controls.Add(this.comboBoxLegendAlignment);
-            this.groupBox1.Size = new System.Drawing.Size(250, 382);
-            this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
-            this.groupBox1.Controls.SetChildIndex(this.comboBoxLegendAlignment, 0);
-            this.groupBox1.Controls.SetChildIndex(this.textBoxTitle, 0);
-            this.groupBox1.Controls.SetChildIndex(this.buttonPrint, 0);
-            this.groupBox1.Controls.SetChildIndex(this.buttonSave, 0);
-            // 
             // buttonUpdate
             // 
-            this.buttonUpdate.Location = new System.Drawing.Point(28, 301);
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
             // linkDemo
@@ -71,6 +58,13 @@
             // panel
             // 
             this.panel.Controls.Add(this.ejChart1);
+            // 
+            // flowLayoutPanelProperties
+            // 
+            this.flowLayoutPanelProperties.Controls.Add(this.comboBoxLegendAlignment);
+            this.flowLayoutPanelProperties.Controls.Add(this.textBoxTitle);
+            this.flowLayoutPanelProperties.Controls.Add(this.buttonPrint);
+            this.flowLayoutPanelProperties.Controls.Add(this.buttonSave);
             // 
             // ejChart1
             // 
@@ -86,6 +80,8 @@
             // 
             this.comboBoxLegendAlignment.AutoSize = false;
             this.comboBoxLegendAlignment.DropDownStyle = Wisej.Web.ComboBoxStyle.DropDownList;
+            this.flowLayoutPanelProperties.SetFillWeight(this.comboBoxLegendAlignment, 1);
+            this.flowLayoutPanelProperties.SetFlowBreak(this.comboBoxLegendAlignment, true);
             this.comboBoxLegendAlignment.Items.AddRange(new object[] {
             "Center",
             "Near",
@@ -93,21 +89,24 @@
             this.comboBoxLegendAlignment.Label.Size = 50;
             this.comboBoxLegendAlignment.Label.SizeType = Wisej.Web.SizeType.Percent;
             this.comboBoxLegendAlignment.LabelText = "Legend Alignment";
-            this.comboBoxLegendAlignment.Location = new System.Drawing.Point(25, 44);
+            this.comboBoxLegendAlignment.Location = new System.Drawing.Point(3, 3);
             this.comboBoxLegendAlignment.Name = "comboBoxLegendAlignment";
-            this.comboBoxLegendAlignment.Size = new System.Drawing.Size(195, 60);
+            this.comboBoxLegendAlignment.Size = new System.Drawing.Size(212, 60);
             this.comboBoxLegendAlignment.TabIndex = 3;
             this.comboBoxLegendAlignment.Text = "Center";
             // 
             // textBoxTitle
             // 
             this.textBoxTitle.AutoSize = false;
+            this.flowLayoutPanelProperties.SetFillWeight(this.textBoxTitle, 1);
+            this.flowLayoutPanelProperties.SetFlowBreak(this.textBoxTitle, true);
             this.textBoxTitle.Label.Size = 50;
             this.textBoxTitle.Label.SizeType = Wisej.Web.SizeType.Percent;
             this.textBoxTitle.LabelText = "Chart Title";
-            this.textBoxTitle.Location = new System.Drawing.Point(25, 124);
+            this.textBoxTitle.Location = new System.Drawing.Point(3, 82);
+            this.textBoxTitle.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.textBoxTitle.Name = "textBoxTitle";
-            this.textBoxTitle.Size = new System.Drawing.Size(195, 60);
+            this.textBoxTitle.Size = new System.Drawing.Size(212, 60);
             this.textBoxTitle.TabIndex = 4;
             this.textBoxTitle.Text = "Efficiency of oil-fired power production";
             // 
@@ -115,7 +114,8 @@
             // 
             this.buttonPrint.Display = Wisej.Web.Display.Icon;
             this.buttonPrint.ImageSource = "icon-print";
-            this.buttonPrint.Location = new System.Drawing.Point(28, 219);
+            this.buttonPrint.Location = new System.Drawing.Point(3, 161);
+            this.buttonPrint.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.buttonPrint.Name = "buttonPrint";
             this.buttonPrint.Size = new System.Drawing.Size(42, 42);
             this.buttonPrint.TabIndex = 9;
@@ -125,7 +125,8 @@
             // 
             this.buttonSave.Display = Wisej.Web.Display.Icon;
             this.buttonSave.ImageSource = "icon-save";
-            this.buttonSave.Location = new System.Drawing.Point(76, 219);
+            this.buttonSave.Location = new System.Drawing.Point(51, 161);
+            this.buttonSave.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.buttonSave.Name = "buttonSave";
             this.buttonSave.Size = new System.Drawing.Size(42, 42);
             this.buttonSave.TabIndex = 10;
@@ -136,6 +137,7 @@
             this.Name = "ejChart";
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
+            this.flowLayoutPanelProperties.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 

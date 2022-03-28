@@ -11,11 +11,11 @@ namespace Wisej.Web.Ext.Syncfusion.Demo.Component
 		{
 			InitializeComponent();
 
-			this.ejGrid1.Instance.cellSave += new WidgetEventHandler(ejGrid1_WidgetEvent);
-			this.ejGrid1.Instance.batchSave += new WidgetEventHandler(ejGrid1_WidgetEvent);
-			this.ejGrid1.Instance.rowSelected += new WidgetEventHandler(ejGrid1_WidgetEvent);
-			this.ejGrid1.Instance.cellSelected += new WidgetEventHandler(ejGrid1_WidgetEvent);
-			this.ejGrid1.Instance.toolbarClick += new WidgetEventHandler(ejGrid1_WidgetEvent);
+			this.ejGrid1.Instance.onCellSave += new WidgetEventHandler(ejGrid1_WidgetEvent);
+			this.ejGrid1.Instance.onBatchSave += new WidgetEventHandler(ejGrid1_WidgetEvent);
+			this.ejGrid1.Instance.onRowSelected += new WidgetEventHandler(ejGrid1_WidgetEvent);
+			this.ejGrid1.Instance.onCellSelected += new WidgetEventHandler(ejGrid1_WidgetEvent);
+			this.ejGrid1.Instance.onToolbarClick += new WidgetEventHandler(ejGrid1_WidgetEvent);
 		}
 
 		private void buttonLoad_Uploaded(object sender, UploadedEventArgs e)

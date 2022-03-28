@@ -39,6 +39,7 @@
             this.comboBox2 = new Wisej.Web.ComboBox();
             this.groupBox1.SuspendLayout();
             this.panel.SuspendLayout();
+            this.flowLayoutPanelProperties.SuspendLayout();
             this.SuspendLayout();
             // 
             // linkDocs
@@ -46,22 +47,8 @@
             this.linkDocs.TabIndex = 4;
             this.linkDocs.Text = "https://help.syncfusion.com/js/treemap/overview";
             // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.comboBox2);
-            this.groupBox1.Controls.Add(this.comboBox1);
-            this.groupBox1.Controls.Add(this.checkBox3);
-            this.groupBox1.Controls.Add(this.checkBox2);
-            this.groupBox1.Size = new System.Drawing.Size(250, 433);
-            this.groupBox1.Controls.SetChildIndex(this.checkBox2, 0);
-            this.groupBox1.Controls.SetChildIndex(this.checkBox3, 0);
-            this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
-            this.groupBox1.Controls.SetChildIndex(this.comboBox1, 0);
-            this.groupBox1.Controls.SetChildIndex(this.comboBox2, 0);
-            // 
             // buttonUpdate
             // 
-            this.buttonUpdate.Location = new System.Drawing.Point(28, 347);
             this.buttonUpdate.TabIndex = 4;
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
@@ -79,6 +66,13 @@
             // 
             this.panel.Controls.Add(this.ejTreeMap1);
             this.panel.TabIndex = 7;
+            // 
+            // flowLayoutPanelProperties
+            // 
+            this.flowLayoutPanelProperties.Controls.Add(this.checkBox2);
+            this.flowLayoutPanelProperties.Controls.Add(this.checkBox3);
+            this.flowLayoutPanelProperties.Controls.Add(this.comboBox1);
+            this.flowLayoutPanelProperties.Controls.Add(this.comboBox2);
             // 
             // ejTreeMap1
             // 
@@ -112,9 +106,11 @@
             this.checkBox2.AutoSize = false;
             this.checkBox2.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.checkBox2.Checked = true;
-            this.checkBox2.Location = new System.Drawing.Point(28, 36);
+            this.flowLayoutPanelProperties.SetFillWeight(this.checkBox2, 1);
+            this.flowLayoutPanelProperties.SetFlowBreak(this.checkBox2, true);
+            this.checkBox2.Location = new System.Drawing.Point(3, 3);
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(195, 30);
+            this.checkBox2.Size = new System.Drawing.Size(212, 30);
             this.checkBox2.TabIndex = 0;
             this.checkBox2.Text = "Enable Gradient";
             // 
@@ -123,9 +119,12 @@
             this.checkBox3.Appearance = Wisej.Web.Appearance.Switch;
             this.checkBox3.AutoSize = false;
             this.checkBox3.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.checkBox3.Location = new System.Drawing.Point(28, 95);
+            this.flowLayoutPanelProperties.SetFillWeight(this.checkBox3, 1);
+            this.flowLayoutPanelProperties.SetFlowBreak(this.checkBox3, true);
+            this.checkBox3.Location = new System.Drawing.Point(3, 52);
+            this.checkBox3.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(195, 45);
+            this.checkBox3.Size = new System.Drawing.Size(212, 45);
             this.checkBox3.TabIndex = 1;
             this.checkBox3.Text = "Highlight on Selection";
             // 
@@ -133,6 +132,8 @@
             // 
             this.comboBox1.AutoSize = false;
             this.comboBox1.DropDownStyle = Wisej.Web.ComboBoxStyle.DropDownList;
+            this.flowLayoutPanelProperties.SetFillWeight(this.comboBox1, 1);
+            this.flowLayoutPanelProperties.SetFlowBreak(this.comboBox1, true);
             this.comboBox1.Items.AddRange(new object[] {
             "squarified",
             "sliceanddicehorizontal",
@@ -141,9 +142,10 @@
             this.comboBox1.Label.Size = 50;
             this.comboBox1.Label.SizeType = Wisej.Web.SizeType.Percent;
             this.comboBox1.LabelText = "Items Layout Mode";
-            this.comboBox1.Location = new System.Drawing.Point(28, 169);
+            this.comboBox1.Location = new System.Drawing.Point(3, 116);
+            this.comboBox1.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(195, 60);
+            this.comboBox1.Size = new System.Drawing.Size(212, 60);
             this.comboBox1.TabIndex = 2;
             this.comboBox1.Text = "Squarified";
             // 
@@ -151,15 +153,18 @@
             // 
             this.comboBox2.AutoSize = false;
             this.comboBox2.DropDownStyle = Wisej.Web.ComboBoxStyle.DropDownList;
+            this.flowLayoutPanelProperties.SetFillWeight(this.comboBox2, 1);
+            this.flowLayoutPanelProperties.SetFlowBreak(this.comboBox2, true);
             this.comboBox2.Items.AddRange(new object[] {
             "default",
             "multiple"});
             this.comboBox2.Label.Size = 50;
             this.comboBox2.Label.SizeType = Wisej.Web.SizeType.Percent;
             this.comboBox2.LabelText = "Group Selection Mode";
-            this.comboBox2.Location = new System.Drawing.Point(28, 258);
+            this.comboBox2.Location = new System.Drawing.Point(3, 195);
+            this.comboBox2.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(195, 60);
+            this.comboBox2.Size = new System.Drawing.Size(212, 60);
             this.comboBox2.TabIndex = 3;
             this.comboBox2.Text = "default";
             // 
@@ -168,6 +173,7 @@
             this.Name = "ejTreeMap";
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
+            this.flowLayoutPanelProperties.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -37,6 +37,7 @@
             this.checkBox1 = new Wisej.Web.CheckBox();
             this.groupBox1.SuspendLayout();
             this.panel.SuspendLayout();
+            this.flowLayoutPanelProperties.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownVal)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCompMeasureVal)).BeginInit();
             this.SuspendLayout();
@@ -46,22 +47,8 @@
             this.linkDocs.TabIndex = 4;
             this.linkDocs.Text = "https://help.syncfusion.com/js/bulletgraph/overview";
             // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.checkBox1);
-            this.groupBox1.Controls.Add(this.comboBox1);
-            this.groupBox1.Controls.Add(this.numericUpDownCompMeasureVal);
-            this.groupBox1.Controls.Add(this.numericUpDownVal);
-            this.groupBox1.Size = new System.Drawing.Size(250, 482);
-            this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
-            this.groupBox1.Controls.SetChildIndex(this.numericUpDownVal, 0);
-            this.groupBox1.Controls.SetChildIndex(this.numericUpDownCompMeasureVal, 0);
-            this.groupBox1.Controls.SetChildIndex(this.comboBox1, 0);
-            this.groupBox1.Controls.SetChildIndex(this.checkBox1, 0);
-            // 
             // buttonUpdate
             // 
-            this.buttonUpdate.Location = new System.Drawing.Point(28, 398);
             this.buttonUpdate.TabIndex = 4;
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
@@ -82,6 +69,13 @@
             this.panel.Controls.Add(this.ejBulletGraph2);
             this.panel.Controls.Add(this.ejBulletGraph1);
             this.panel.TabIndex = 7;
+            // 
+            // flowLayoutPanelProperties
+            // 
+            this.flowLayoutPanelProperties.Controls.Add(this.checkBox1);
+            this.flowLayoutPanelProperties.Controls.Add(this.numericUpDownVal);
+            this.flowLayoutPanelProperties.Controls.Add(this.numericUpDownCompMeasureVal);
+            this.flowLayoutPanelProperties.Controls.Add(this.comboBox1);
             // 
             // ejBulletGraph1
             // 
@@ -106,17 +100,20 @@
             // numericUpDownVal
             // 
             this.numericUpDownVal.AutoSize = false;
+            this.flowLayoutPanelProperties.SetFillWeight(this.numericUpDownVal, 1);
+            this.flowLayoutPanelProperties.SetFlowBreak(this.numericUpDownVal, true);
             this.numericUpDownVal.Label.Size = 50;
             this.numericUpDownVal.Label.SizeType = Wisej.Web.SizeType.Percent;
             this.numericUpDownVal.LabelText = "Revenue Value";
-            this.numericUpDownVal.Location = new System.Drawing.Point(28, 93);
+            this.numericUpDownVal.Location = new System.Drawing.Point(3, 48);
+            this.numericUpDownVal.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.numericUpDownVal.Maximum = new decimal(new int[] {
             10,
             0,
             0,
             0});
             this.numericUpDownVal.Name = "numericUpDownVal";
-            this.numericUpDownVal.Size = new System.Drawing.Size(195, 60);
+            this.numericUpDownVal.Size = new System.Drawing.Size(212, 60);
             this.numericUpDownVal.TabIndex = 1;
             this.numericUpDownVal.Value = new decimal(new int[] {
             8,
@@ -127,17 +124,20 @@
             // numericUpDownCompMeasureVal
             // 
             this.numericUpDownCompMeasureVal.AutoSize = false;
+            this.flowLayoutPanelProperties.SetFillWeight(this.numericUpDownCompMeasureVal, 1);
+            this.flowLayoutPanelProperties.SetFlowBreak(this.numericUpDownCompMeasureVal, true);
             this.numericUpDownCompMeasureVal.Label.Size = 60;
             this.numericUpDownCompMeasureVal.Label.SizeType = Wisej.Web.SizeType.Percent;
             this.numericUpDownCompMeasureVal.LabelText = "Revenue Comparative Value";
-            this.numericUpDownCompMeasureVal.Location = new System.Drawing.Point(28, 184);
+            this.numericUpDownCompMeasureVal.Location = new System.Drawing.Point(3, 127);
+            this.numericUpDownCompMeasureVal.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.numericUpDownCompMeasureVal.Maximum = new decimal(new int[] {
             10,
             0,
             0,
             0});
             this.numericUpDownCompMeasureVal.Name = "numericUpDownCompMeasureVal";
-            this.numericUpDownCompMeasureVal.Size = new System.Drawing.Size(195, 92);
+            this.numericUpDownCompMeasureVal.Size = new System.Drawing.Size(212, 92);
             this.numericUpDownCompMeasureVal.TabIndex = 2;
             this.numericUpDownCompMeasureVal.Value = new decimal(new int[] {
             5,
@@ -149,15 +149,18 @@
             // 
             this.comboBox1.AutoSize = false;
             this.comboBox1.DropDownStyle = Wisej.Web.ComboBoxStyle.DropDownList;
+            this.flowLayoutPanelProperties.SetFillWeight(this.comboBox1, 1);
+            this.flowLayoutPanelProperties.SetFlowBreak(this.comboBox1, true);
             this.comboBox1.Items.AddRange(new object[] {
             "Forward",
             "Backward"});
             this.comboBox1.Label.Size = 50;
             this.comboBox1.Label.SizeType = Wisej.Web.SizeType.Percent;
             this.comboBox1.LabelText = "Flow Direction";
-            this.comboBox1.Location = new System.Drawing.Point(28, 307);
+            this.comboBox1.Location = new System.Drawing.Point(3, 238);
+            this.comboBox1.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(195, 60);
+            this.comboBox1.Size = new System.Drawing.Size(212, 60);
             this.comboBox1.TabIndex = 3;
             // 
             // checkBox1
@@ -166,9 +169,11 @@
             this.checkBox1.AutoSize = false;
             this.checkBox1.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.checkBox1.Checked = true;
-            this.checkBox1.Location = new System.Drawing.Point(28, 36);
+            this.flowLayoutPanelProperties.SetFillWeight(this.checkBox1, 1);
+            this.flowLayoutPanelProperties.SetFlowBreak(this.checkBox1, true);
+            this.checkBox1.Location = new System.Drawing.Point(3, 3);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(195, 26);
+            this.checkBox1.Size = new System.Drawing.Size(212, 26);
             this.checkBox1.TabIndex = 0;
             this.checkBox1.Text = "Apply Range Stroke";
             // 
@@ -177,6 +182,7 @@
             this.Name = "ejBulletGraph";
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
+            this.flowLayoutPanelProperties.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownVal)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCompMeasureVal)).EndInit();
             this.ResumeLayout(false);

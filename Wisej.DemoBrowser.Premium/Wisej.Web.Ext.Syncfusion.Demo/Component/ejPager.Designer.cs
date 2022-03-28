@@ -35,6 +35,7 @@
             this.numericSelectedPage = new Wisej.Web.NumericUpDown();
             this.groupBox1.SuspendLayout();
             this.panel.SuspendLayout();
+            this.flowLayoutPanelProperties.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericSelectedPage)).BeginInit();
             this.SuspendLayout();
             // 
@@ -43,17 +44,8 @@
             this.linkDocs.TabIndex = 4;
             this.linkDocs.Text = "https://help.syncfusion.com/js/pager/overview";
             // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.numericSelectedPage);
-            this.groupBox1.Controls.Add(this.buttonGoToFirstPage);
-            this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
-            this.groupBox1.Controls.SetChildIndex(this.buttonGoToFirstPage, 0);
-            this.groupBox1.Controls.SetChildIndex(this.numericSelectedPage, 0);
-            // 
             // buttonUpdate
             // 
-            this.buttonUpdate.Location = new System.Drawing.Point(28, 233);
             this.buttonUpdate.TabIndex = 2;
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
@@ -73,6 +65,11 @@
             this.panel.Controls.Add(this.ejRotator1);
             this.panel.Controls.Add(this.ejPager1);
             this.panel.TabIndex = 7;
+            // 
+            // flowLayoutPanelProperties
+            // 
+            this.flowLayoutPanelProperties.Controls.Add(this.numericSelectedPage);
+            this.flowLayoutPanelProperties.Controls.Add(this.buttonGoToFirstPage);
             // 
             // ejPager1
             // 
@@ -97,9 +94,12 @@
             // 
             // buttonGoToFirstPage
             // 
-            this.buttonGoToFirstPage.Location = new System.Drawing.Point(28, 150);
+            this.flowLayoutPanelProperties.SetFillWeight(this.buttonGoToFirstPage, 1);
+            this.flowLayoutPanelProperties.SetFlowBreak(this.buttonGoToFirstPage, true);
+            this.buttonGoToFirstPage.Location = new System.Drawing.Point(3, 82);
+            this.buttonGoToFirstPage.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.buttonGoToFirstPage.Name = "buttonGoToFirstPage";
-            this.buttonGoToFirstPage.Size = new System.Drawing.Size(195, 30);
+            this.buttonGoToFirstPage.Size = new System.Drawing.Size(212, 40);
             this.buttonGoToFirstPage.TabIndex = 1;
             this.buttonGoToFirstPage.Text = "Go To First Page";
             this.buttonGoToFirstPage.Click += new System.EventHandler(this.buttonGoToFirstPage_Click);
@@ -107,17 +107,19 @@
             // numericSelectedPage
             // 
             this.numericSelectedPage.AutoSize = false;
+            this.flowLayoutPanelProperties.SetFillWeight(this.numericSelectedPage, 1);
+            this.flowLayoutPanelProperties.SetFlowBreak(this.numericSelectedPage, true);
             this.numericSelectedPage.Label.Size = 50;
             this.numericSelectedPage.Label.SizeType = Wisej.Web.SizeType.Percent;
             this.numericSelectedPage.LabelText = "Selected Page";
-            this.numericSelectedPage.Location = new System.Drawing.Point(28, 37);
+            this.numericSelectedPage.Location = new System.Drawing.Point(3, 3);
             this.numericSelectedPage.Maximum = new decimal(new int[] {
             6,
             0,
             0,
             0});
             this.numericSelectedPage.Name = "numericSelectedPage";
-            this.numericSelectedPage.Size = new System.Drawing.Size(195, 60);
+            this.numericSelectedPage.Size = new System.Drawing.Size(212, 60);
             this.numericSelectedPage.TabIndex = 0;
             this.numericSelectedPage.Value = new decimal(new int[] {
             1,
@@ -130,6 +132,7 @@
             this.Name = "ejPager";
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
+            this.flowLayoutPanelProperties.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.numericSelectedPage)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

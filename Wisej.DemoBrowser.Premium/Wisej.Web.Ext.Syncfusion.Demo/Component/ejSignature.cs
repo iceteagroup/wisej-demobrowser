@@ -12,7 +12,7 @@ namespace Wisej.Web.Ext.Syncfusion.Demo.Component
 		{
 			InitializeComponent();
 
-			this.ejSignature1.Instance.change += new WidgetEventHandler(ejSignature1_WidgetEvent);
+			this.ejSignature1.Instance.onChange += new WidgetEventHandler(ejSignature1_WidgetEvent);
 		}
 
 		private void ejSignature1_WidgetEvent(object sender, WidgetEventArgs e)

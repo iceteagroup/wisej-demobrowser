@@ -39,6 +39,7 @@
             this.checkBox6 = new Wisej.Web.CheckBox();
             this.groupBox1.SuspendLayout();
             this.panel.SuspendLayout();
+            this.flowLayoutPanelProperties.SuspendLayout();
             this.SuspendLayout();
             // 
             // linkDocs
@@ -46,28 +47,8 @@
             this.linkDocs.TabIndex = 4;
             this.linkDocs.Text = "https://help.syncfusion.com/js/treeview/overview";
             // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.checkBox6);
-            this.groupBox1.Controls.Add(this.checkBox5);
-            this.groupBox1.Controls.Add(this.checkBox4);
-            this.groupBox1.Controls.Add(this.checkBox3);
-            this.groupBox1.Controls.Add(this.checkBox2);
-            this.groupBox1.Controls.Add(this.buttonGetCheckedNodes);
-            this.groupBox1.Controls.Add(this.checkBox1);
-            this.groupBox1.Size = new System.Drawing.Size(250, 509);
-            this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
-            this.groupBox1.Controls.SetChildIndex(this.checkBox1, 0);
-            this.groupBox1.Controls.SetChildIndex(this.buttonGetCheckedNodes, 0);
-            this.groupBox1.Controls.SetChildIndex(this.checkBox2, 0);
-            this.groupBox1.Controls.SetChildIndex(this.checkBox3, 0);
-            this.groupBox1.Controls.SetChildIndex(this.checkBox4, 0);
-            this.groupBox1.Controls.SetChildIndex(this.checkBox5, 0);
-            this.groupBox1.Controls.SetChildIndex(this.checkBox6, 0);
-            // 
             // buttonUpdate
             // 
-            this.buttonUpdate.Location = new System.Drawing.Point(28, 418);
             this.buttonUpdate.TabIndex = 7;
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
@@ -87,6 +68,16 @@
             this.panel.Controls.Add(this.ejTreeView1);
             this.panel.TabIndex = 7;
             // 
+            // flowLayoutPanelProperties
+            // 
+            this.flowLayoutPanelProperties.Controls.Add(this.checkBox1);
+            this.flowLayoutPanelProperties.Controls.Add(this.checkBox2);
+            this.flowLayoutPanelProperties.Controls.Add(this.checkBox3);
+            this.flowLayoutPanelProperties.Controls.Add(this.checkBox4);
+            this.flowLayoutPanelProperties.Controls.Add(this.checkBox5);
+            this.flowLayoutPanelProperties.Controls.Add(this.checkBox6);
+            this.flowLayoutPanelProperties.Controls.Add(this.buttonGetCheckedNodes);
+            // 
             // ejTreeView1
             // 
             this.ejTreeView1.Anchor = Wisej.Web.AnchorStyles.None;
@@ -104,17 +95,22 @@
             this.checkBox1.AutoSize = false;
             this.checkBox1.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.checkBox1.Checked = true;
-            this.checkBox1.Location = new System.Drawing.Point(28, 36);
+            this.flowLayoutPanelProperties.SetFillWeight(this.checkBox1, 1);
+            this.flowLayoutPanelProperties.SetFlowBreak(this.checkBox1, true);
+            this.checkBox1.Location = new System.Drawing.Point(3, 3);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(195, 31);
+            this.checkBox1.Size = new System.Drawing.Size(212, 31);
             this.checkBox1.TabIndex = 0;
             this.checkBox1.Text = "Auto Check";
             // 
             // buttonGetCheckedNodes
             // 
-            this.buttonGetCheckedNodes.Location = new System.Drawing.Point(28, 372);
+            this.flowLayoutPanelProperties.SetFillWeight(this.buttonGetCheckedNodes, 1);
+            this.flowLayoutPanelProperties.SetFlowBreak(this.buttonGetCheckedNodes, true);
+            this.buttonGetCheckedNodes.Location = new System.Drawing.Point(3, 357);
+            this.buttonGetCheckedNodes.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.buttonGetCheckedNodes.Name = "buttonGetCheckedNodes";
-            this.buttonGetCheckedNodes.Size = new System.Drawing.Size(195, 30);
+            this.buttonGetCheckedNodes.Size = new System.Drawing.Size(212, 30);
             this.buttonGetCheckedNodes.TabIndex = 6;
             this.buttonGetCheckedNodes.Text = "Get Checked Nodes";
             this.buttonGetCheckedNodes.Click += new System.EventHandler(this.buttonGetCheckedNodes_Click);
@@ -124,9 +120,12 @@
             this.checkBox2.Appearance = Wisej.Web.Appearance.Switch;
             this.checkBox2.AutoSize = false;
             this.checkBox2.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.checkBox2.Location = new System.Drawing.Point(28, 83);
+            this.flowLayoutPanelProperties.SetFillWeight(this.checkBox2, 1);
+            this.flowLayoutPanelProperties.SetFlowBreak(this.checkBox2, true);
+            this.checkBox2.Location = new System.Drawing.Point(3, 53);
+            this.checkBox2.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(195, 31);
+            this.checkBox2.Size = new System.Drawing.Size(212, 31);
             this.checkBox2.TabIndex = 1;
             this.checkBox2.Text = "Show Checkbox";
             // 
@@ -135,9 +134,12 @@
             this.checkBox3.Appearance = Wisej.Web.Appearance.Switch;
             this.checkBox3.AutoSize = false;
             this.checkBox3.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.checkBox3.Location = new System.Drawing.Point(28, 130);
+            this.flowLayoutPanelProperties.SetFillWeight(this.checkBox3, 1);
+            this.flowLayoutPanelProperties.SetFlowBreak(this.checkBox3, true);
+            this.checkBox3.Location = new System.Drawing.Point(3, 103);
+            this.checkBox3.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(195, 49);
+            this.checkBox3.Size = new System.Drawing.Size(212, 49);
             this.checkBox3.TabIndex = 2;
             this.checkBox3.Text = "Allow Drag and Drop";
             // 
@@ -146,9 +148,12 @@
             this.checkBox4.Appearance = Wisej.Web.Appearance.Switch;
             this.checkBox4.AutoSize = false;
             this.checkBox4.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.checkBox4.Location = new System.Drawing.Point(28, 195);
+            this.flowLayoutPanelProperties.SetFillWeight(this.checkBox4, 1);
+            this.flowLayoutPanelProperties.SetFlowBreak(this.checkBox4, true);
+            this.checkBox4.Location = new System.Drawing.Point(3, 171);
+            this.checkBox4.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(195, 31);
+            this.checkBox4.Size = new System.Drawing.Size(212, 31);
             this.checkBox4.TabIndex = 3;
             this.checkBox4.Text = "Allow Editing";
             // 
@@ -157,9 +162,12 @@
             this.checkBox5.Appearance = Wisej.Web.Appearance.Switch;
             this.checkBox5.AutoSize = false;
             this.checkBox5.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.checkBox5.Location = new System.Drawing.Point(28, 242);
+            this.flowLayoutPanelProperties.SetFillWeight(this.checkBox5, 1);
+            this.flowLayoutPanelProperties.SetFlowBreak(this.checkBox5, true);
+            this.checkBox5.Location = new System.Drawing.Point(3, 221);
+            this.checkBox5.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(195, 49);
+            this.checkBox5.Size = new System.Drawing.Size(212, 49);
             this.checkBox5.TabIndex = 4;
             this.checkBox5.Text = "Allow Keyboard Navigation";
             // 
@@ -168,9 +176,12 @@
             this.checkBox6.Appearance = Wisej.Web.Appearance.Switch;
             this.checkBox6.AutoSize = false;
             this.checkBox6.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.checkBox6.Location = new System.Drawing.Point(28, 307);
+            this.flowLayoutPanelProperties.SetFillWeight(this.checkBox6, 1);
+            this.flowLayoutPanelProperties.SetFlowBreak(this.checkBox6, true);
+            this.checkBox6.Location = new System.Drawing.Point(3, 289);
+            this.checkBox6.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(195, 49);
+            this.checkBox6.Size = new System.Drawing.Size(212, 49);
             this.checkBox6.TabIndex = 5;
             this.checkBox6.Text = "Allow Multi Selection";
             // 
@@ -179,6 +190,7 @@
             this.Name = "ejTreeView";
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
+            this.flowLayoutPanelProperties.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 

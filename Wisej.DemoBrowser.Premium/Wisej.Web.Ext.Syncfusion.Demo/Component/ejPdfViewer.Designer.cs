@@ -39,6 +39,7 @@
             this.checkBox4 = new Wisej.Web.CheckBox();
             this.groupBox1.SuspendLayout();
             this.panel.SuspendLayout();
+            this.flowLayoutPanelProperties.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
             this.flexLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -48,26 +49,8 @@
             this.linkDocs.TabIndex = 4;
             this.linkDocs.Text = "https://help.syncfusion.com/js/pdfviewer/overview";
             // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.checkBox4);
-            this.groupBox1.Controls.Add(this.checkBox3);
-            this.groupBox1.Controls.Add(this.flexLayoutPanel1);
-            this.groupBox1.Controls.Add(this.buttonLoad);
-            this.groupBox1.Controls.Add(this.checkBox2);
-            this.groupBox1.Controls.Add(this.checkBox1);
-            this.groupBox1.Size = new System.Drawing.Size(250, 488);
-            this.groupBox1.Controls.SetChildIndex(this.checkBox1, 0);
-            this.groupBox1.Controls.SetChildIndex(this.checkBox2, 0);
-            this.groupBox1.Controls.SetChildIndex(this.buttonLoad, 0);
-            this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
-            this.groupBox1.Controls.SetChildIndex(this.flexLayoutPanel1, 0);
-            this.groupBox1.Controls.SetChildIndex(this.checkBox3, 0);
-            this.groupBox1.Controls.SetChildIndex(this.checkBox4, 0);
-            // 
             // buttonUpdate
             // 
-            this.buttonUpdate.Location = new System.Drawing.Point(28, 397);
             this.buttonUpdate.TabIndex = 6;
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
@@ -85,6 +68,15 @@
             // 
             this.panel.Controls.Add(this.ejPdfViewer1);
             this.panel.TabIndex = 7;
+            // 
+            // flowLayoutPanelProperties
+            // 
+            this.flowLayoutPanelProperties.Controls.Add(this.checkBox1);
+            this.flowLayoutPanelProperties.Controls.Add(this.checkBox2);
+            this.flowLayoutPanelProperties.Controls.Add(this.checkBox3);
+            this.flowLayoutPanelProperties.Controls.Add(this.checkBox4);
+            this.flowLayoutPanelProperties.Controls.Add(this.flexLayoutPanel1);
+            this.flowLayoutPanelProperties.Controls.Add(this.buttonLoad);
             // 
             // ejPdfViewer1
             // 
@@ -104,9 +96,11 @@
             this.checkBox1.AutoSize = false;
             this.checkBox1.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.checkBox1.Checked = true;
-            this.checkBox1.Location = new System.Drawing.Point(28, 36);
+            this.flowLayoutPanelProperties.SetFillWeight(this.checkBox1, 1);
+            this.flowLayoutPanelProperties.SetFlowBreak(this.checkBox1, true);
+            this.checkBox1.Location = new System.Drawing.Point(3, 3);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(195, 31);
+            this.checkBox1.Size = new System.Drawing.Size(212, 31);
             this.checkBox1.TabIndex = 0;
             this.checkBox1.Text = "Enable Markup";
             // 
@@ -115,9 +109,12 @@
             this.checkBox2.Appearance = Wisej.Web.Appearance.Switch;
             this.checkBox2.AutoSize = false;
             this.checkBox2.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.checkBox2.Location = new System.Drawing.Point(28, 85);
+            this.flowLayoutPanelProperties.SetFillWeight(this.checkBox2, 1);
+            this.flowLayoutPanelProperties.SetFlowBreak(this.checkBox2, true);
+            this.checkBox2.Location = new System.Drawing.Point(3, 53);
+            this.checkBox2.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(195, 31);
+            this.checkBox2.Size = new System.Drawing.Size(212, 31);
             this.checkBox2.TabIndex = 1;
             this.checkBox2.Text = "Enable Signature";
             // 
@@ -144,9 +141,11 @@
             // buttonLoad
             // 
             this.buttonLoad.AllowedFileTypes = ".pdf";
+            this.flowLayoutPanelProperties.SetFlowBreak(this.buttonLoad, true);
             this.buttonLoad.HideValue = true;
             this.buttonLoad.ImageSource = "icon-file";
-            this.buttonLoad.Location = new System.Drawing.Point(28, 337);
+            this.buttonLoad.Location = new System.Drawing.Point(3, 309);
+            this.buttonLoad.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.buttonLoad.Name = "buttonLoad";
             this.buttonLoad.Size = new System.Drawing.Size(42, 42);
             this.buttonLoad.TabIndex = 5;
@@ -156,9 +155,12 @@
             // 
             this.flexLayoutPanel1.Controls.Add(this.label4);
             this.flexLayoutPanel1.Controls.Add(this.trackBar1);
-            this.flexLayoutPanel1.Location = new System.Drawing.Point(22, 247);
+            this.flowLayoutPanelProperties.SetFillWeight(this.flexLayoutPanel1, 1);
+            this.flowLayoutPanelProperties.SetFlowBreak(this.flexLayoutPanel1, true);
+            this.flexLayoutPanel1.Location = new System.Drawing.Point(3, 218);
+            this.flexLayoutPanel1.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.flexLayoutPanel1.Name = "flexLayoutPanel1";
-            this.flexLayoutPanel1.Size = new System.Drawing.Size(207, 72);
+            this.flexLayoutPanel1.Size = new System.Drawing.Size(212, 72);
             this.flexLayoutPanel1.TabIndex = 4;
             this.flexLayoutPanel1.TabStop = true;
             // 
@@ -168,9 +170,12 @@
             this.checkBox3.AutoSize = false;
             this.checkBox3.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.checkBox3.Checked = true;
-            this.checkBox3.Location = new System.Drawing.Point(28, 134);
+            this.flowLayoutPanelProperties.SetFillWeight(this.checkBox3, 1);
+            this.flowLayoutPanelProperties.SetFlowBreak(this.checkBox3, true);
+            this.checkBox3.Location = new System.Drawing.Point(3, 103);
+            this.checkBox3.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(195, 46);
+            this.checkBox3.Size = new System.Drawing.Size(212, 46);
             this.checkBox3.TabIndex = 2;
             this.checkBox3.Text = "Enable Text Selection";
             // 
@@ -180,9 +185,12 @@
             this.checkBox4.AutoSize = false;
             this.checkBox4.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.checkBox4.Checked = true;
-            this.checkBox4.Location = new System.Drawing.Point(28, 198);
+            this.flowLayoutPanelProperties.SetFillWeight(this.checkBox4, 1);
+            this.flowLayoutPanelProperties.SetFlowBreak(this.checkBox4, true);
+            this.checkBox4.Location = new System.Drawing.Point(3, 168);
+            this.checkBox4.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(195, 31);
+            this.checkBox4.Size = new System.Drawing.Size(212, 31);
             this.checkBox4.TabIndex = 3;
             this.checkBox4.Text = "Enable Hyperlink";
             // 
@@ -192,6 +200,7 @@
             this.Load += new System.EventHandler(this.ejPdfViewer_Load);
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
+            this.flowLayoutPanelProperties.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
             this.flexLayoutPanel1.ResumeLayout(false);
             this.flexLayoutPanel1.PerformLayout();

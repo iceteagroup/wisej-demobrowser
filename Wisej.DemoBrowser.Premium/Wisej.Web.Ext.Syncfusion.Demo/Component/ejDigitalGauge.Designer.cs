@@ -38,6 +38,7 @@
             this.panel2 = new Wisej.Web.Panel();
             this.groupBox1.SuspendLayout();
             this.panel.SuspendLayout();
+            this.flowLayoutPanelProperties.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarSegmentSpacing)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarCharSpacing)).BeginInit();
             this.panel1.SuspendLayout();
@@ -49,20 +50,9 @@
             this.linkDocs.TabIndex = 4;
             this.linkDocs.Text = "https://help.syncfusion.com/js/digitalgauge/ove";
             // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.panel2);
-            this.groupBox1.Controls.Add(this.panel1);
-            this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Size = new System.Drawing.Size(250, 437);
-            this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
-            this.groupBox1.Controls.SetChildIndex(this.textBox1, 0);
-            this.groupBox1.Controls.SetChildIndex(this.panel1, 0);
-            this.groupBox1.Controls.SetChildIndex(this.panel2, 0);
-            // 
             // buttonUpdate
             // 
-            this.buttonUpdate.Location = new System.Drawing.Point(28, 356);
+            this.buttonUpdate.Location = new System.Drawing.Point(16, 472);
             this.buttonUpdate.TabIndex = 3;
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
@@ -83,6 +73,12 @@
             this.panel.Controls.Add(this.ejDigitalGauge1);
             this.panel.TabIndex = 7;
             // 
+            // flowLayoutPanelProperties
+            // 
+            this.flowLayoutPanelProperties.Controls.Add(this.textBox1);
+            this.flowLayoutPanelProperties.Controls.Add(this.panel1);
+            this.flowLayoutPanelProperties.Controls.Add(this.panel2);
+            // 
             // ejDigitalGauge1
             // 
             this.ejDigitalGauge1.Dock = Wisej.Web.DockStyle.Fill;
@@ -98,12 +94,14 @@
             // textBox1
             // 
             this.textBox1.AutoSize = false;
+            this.flowLayoutPanelProperties.SetFillWeight(this.textBox1, 1);
+            this.flowLayoutPanelProperties.SetFlowBreak(this.textBox1, true);
             this.textBox1.Label.Size = 50;
             this.textBox1.Label.SizeType = Wisej.Web.SizeType.Percent;
             this.textBox1.LabelText = "Text";
-            this.textBox1.Location = new System.Drawing.Point(28, 36);
+            this.textBox1.Location = new System.Drawing.Point(3, 3);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(195, 60);
+            this.textBox1.Size = new System.Drawing.Size(212, 60);
             this.textBox1.TabIndex = 0;
             this.textBox1.Text = "123456789";
             // 
@@ -148,9 +146,12 @@
             // 
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.trackBarSegmentSpacing);
-            this.panel1.Location = new System.Drawing.Point(24, 140);
+            this.flowLayoutPanelProperties.SetFillWeight(this.panel1, 1);
+            this.flowLayoutPanelProperties.SetFlowBreak(this.panel1, true);
+            this.panel1.Location = new System.Drawing.Point(3, 82);
+            this.panel1.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(203, 64);
+            this.panel1.Size = new System.Drawing.Size(212, 64);
             this.panel1.TabIndex = 1;
             this.panel1.TabStop = true;
             // 
@@ -158,9 +159,12 @@
             // 
             this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.trackBarCharSpacing);
-            this.panel2.Location = new System.Drawing.Point(24, 248);
+            this.flowLayoutPanelProperties.SetFillWeight(this.panel2, 1);
+            this.flowLayoutPanelProperties.SetFlowBreak(this.panel2, true);
+            this.panel2.Location = new System.Drawing.Point(3, 165);
+            this.panel2.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(203, 64);
+            this.panel2.Size = new System.Drawing.Size(212, 64);
             this.panel2.TabIndex = 2;
             this.panel2.TabStop = true;
             // 
@@ -169,6 +173,7 @@
             this.Name = "ejDigitalGauge";
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
+            this.flowLayoutPanelProperties.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.trackBarSegmentSpacing)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarCharSpacing)).EndInit();
             this.panel1.ResumeLayout(false);

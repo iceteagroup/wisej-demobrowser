@@ -37,6 +37,7 @@
             this.buttonSave = new Wisej.Web.Button();
             this.groupBox1.SuspendLayout();
             this.panel.SuspendLayout();
+            this.flowLayoutPanelProperties.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownVal)).BeginInit();
             this.SuspendLayout();
             // 
@@ -45,24 +46,8 @@
             this.linkDocs.TabIndex = 4;
             this.linkDocs.Text = "https://help.syncfusion.com/js/lineargauge/overview";
             // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.buttonSave);
-            this.groupBox1.Controls.Add(this.checkBox1);
-            this.groupBox1.Controls.Add(this.comboBoxLabelPosition);
-            this.groupBox1.Controls.Add(this.comboBoxOrientation);
-            this.groupBox1.Controls.Add(this.numericUpDownVal);
-            this.groupBox1.Size = new System.Drawing.Size(250, 541);
-            this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
-            this.groupBox1.Controls.SetChildIndex(this.numericUpDownVal, 0);
-            this.groupBox1.Controls.SetChildIndex(this.comboBoxOrientation, 0);
-            this.groupBox1.Controls.SetChildIndex(this.comboBoxLabelPosition, 0);
-            this.groupBox1.Controls.SetChildIndex(this.checkBox1, 0);
-            this.groupBox1.Controls.SetChildIndex(this.buttonSave, 0);
-            // 
             // buttonUpdate
             // 
-            this.buttonUpdate.Location = new System.Drawing.Point(28, 457);
             this.buttonUpdate.TabIndex = 5;
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
@@ -83,6 +68,14 @@
             this.panel.Controls.Add(this.ejLinearGauge1);
             this.panel.TabIndex = 7;
             // 
+            // flowLayoutPanelProperties
+            // 
+            this.flowLayoutPanelProperties.Controls.Add(this.checkBox1);
+            this.flowLayoutPanelProperties.Controls.Add(this.numericUpDownVal);
+            this.flowLayoutPanelProperties.Controls.Add(this.comboBoxOrientation);
+            this.flowLayoutPanelProperties.Controls.Add(this.comboBoxLabelPosition);
+            this.flowLayoutPanelProperties.Controls.Add(this.buttonSave);
+            // 
             // ejLinearGauge1
             // 
             this.ejLinearGauge1.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
@@ -98,12 +91,15 @@
             // numericUpDownVal
             // 
             this.numericUpDownVal.AutoSize = false;
+            this.flowLayoutPanelProperties.SetFillWeight(this.numericUpDownVal, 1);
+            this.flowLayoutPanelProperties.SetFlowBreak(this.numericUpDownVal, true);
             this.numericUpDownVal.Label.Size = 50;
             this.numericUpDownVal.Label.SizeType = Wisej.Web.SizeType.Percent;
             this.numericUpDownVal.LabelText = "Value";
-            this.numericUpDownVal.Location = new System.Drawing.Point(28, 111);
+            this.numericUpDownVal.Location = new System.Drawing.Point(3, 72);
+            this.numericUpDownVal.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.numericUpDownVal.Name = "numericUpDownVal";
-            this.numericUpDownVal.Size = new System.Drawing.Size(195, 60);
+            this.numericUpDownVal.Size = new System.Drawing.Size(212, 60);
             this.numericUpDownVal.TabIndex = 1;
             this.numericUpDownVal.Value = new decimal(new int[] {
             50,
@@ -115,15 +111,18 @@
             // 
             this.comboBoxOrientation.AutoSize = false;
             this.comboBoxOrientation.DropDownStyle = Wisej.Web.ComboBoxStyle.DropDownList;
+            this.flowLayoutPanelProperties.SetFillWeight(this.comboBoxOrientation, 1);
+            this.flowLayoutPanelProperties.SetFlowBreak(this.comboBoxOrientation, true);
             this.comboBoxOrientation.Items.AddRange(new object[] {
             "Vertical",
             "Horizontal"});
             this.comboBoxOrientation.Label.Size = 50;
             this.comboBoxOrientation.Label.SizeType = Wisej.Web.SizeType.Percent;
             this.comboBoxOrientation.LabelText = "Orientation";
-            this.comboBoxOrientation.Location = new System.Drawing.Point(28, 196);
+            this.comboBoxOrientation.Location = new System.Drawing.Point(3, 151);
+            this.comboBoxOrientation.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.comboBoxOrientation.Name = "comboBoxOrientation";
-            this.comboBoxOrientation.Size = new System.Drawing.Size(195, 60);
+            this.comboBoxOrientation.Size = new System.Drawing.Size(212, 60);
             this.comboBoxOrientation.TabIndex = 2;
             this.comboBoxOrientation.Text = "Vertical";
             // 
@@ -131,6 +130,8 @@
             // 
             this.comboBoxLabelPosition.AutoSize = false;
             this.comboBoxLabelPosition.DropDownStyle = Wisej.Web.ComboBoxStyle.DropDownList;
+            this.flowLayoutPanelProperties.SetFillWeight(this.comboBoxLabelPosition, 1);
+            this.flowLayoutPanelProperties.SetFlowBreak(this.comboBoxLabelPosition, true);
             this.comboBoxLabelPosition.Items.AddRange(new object[] {
             "Left",
             "Right",
@@ -139,9 +140,10 @@
             this.comboBoxLabelPosition.Label.Size = 60;
             this.comboBoxLabelPosition.Label.SizeType = Wisej.Web.SizeType.Percent;
             this.comboBoxLabelPosition.LabelText = "Outer Custom Label Position";
-            this.comboBoxLabelPosition.Location = new System.Drawing.Point(28, 281);
+            this.comboBoxLabelPosition.Location = new System.Drawing.Point(3, 230);
+            this.comboBoxLabelPosition.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.comboBoxLabelPosition.Name = "comboBoxLabelPosition";
-            this.comboBoxLabelPosition.Size = new System.Drawing.Size(195, 84);
+            this.comboBoxLabelPosition.Size = new System.Drawing.Size(212, 84);
             this.comboBoxLabelPosition.TabIndex = 3;
             this.comboBoxLabelPosition.Text = "Bottom";
             // 
@@ -151,17 +153,20 @@
             this.checkBox1.AutoSize = false;
             this.checkBox1.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.checkBox1.Checked = true;
-            this.checkBox1.Location = new System.Drawing.Point(28, 36);
+            this.flowLayoutPanelProperties.SetFillWeight(this.checkBox1, 1);
+            this.flowLayoutPanelProperties.SetFlowBreak(this.checkBox1, true);
+            this.checkBox1.Location = new System.Drawing.Point(3, 3);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(195, 50);
+            this.checkBox1.Size = new System.Drawing.Size(212, 50);
             this.checkBox1.TabIndex = 0;
-            this.checkBox1.Text = "Enable Marker Point Animation";
+            this.checkBox1.Text = "Marker Point Animation";
             // 
             // buttonSave
             // 
             this.buttonSave.Display = Wisej.Web.Display.Icon;
             this.buttonSave.ImageSource = "icon-save";
-            this.buttonSave.Location = new System.Drawing.Point(28, 390);
+            this.buttonSave.Location = new System.Drawing.Point(3, 333);
+            this.buttonSave.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.buttonSave.Name = "buttonSave";
             this.buttonSave.Size = new System.Drawing.Size(42, 42);
             this.buttonSave.TabIndex = 4;
@@ -172,6 +177,7 @@
             this.Name = "ejLinearGauge";
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
+            this.flowLayoutPanelProperties.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownVal)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

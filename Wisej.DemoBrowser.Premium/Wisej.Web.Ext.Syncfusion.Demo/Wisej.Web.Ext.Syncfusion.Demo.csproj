@@ -211,6 +211,7 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+    <Content Include="Wisej.Web.Ext.Syncfusion.json" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Images\bird.jpg" />
@@ -577,12 +578,12 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-	<PackageReference Include="Wisej-2">
-		<Version>2.5.*-*</Version>
-	</PackageReference>
-	<PackageReference Include="Wisej-2-MaterialDesign">
-		<Version>2.5.*-*</Version>
-	</PackageReference>
+    <PackageReference Include="Wisej-2">
+      <Version>2.5.*-*</Version>
+    </PackageReference>
+    <PackageReference Include="Wisej-2-MaterialDesign">
+      <Version>2.5.*-*</Version>
+    </PackageReference>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />

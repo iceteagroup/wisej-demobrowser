@@ -37,6 +37,7 @@
             this.checkBox6 = new Wisej.Web.CheckBox();
             this.groupBox1.SuspendLayout();
             this.panel.SuspendLayout();
+            this.flowLayoutPanelProperties.SuspendLayout();
             this.SuspendLayout();
             // 
             // linkDocs
@@ -44,26 +45,8 @@
             this.linkDocs.TabIndex = 4;
             this.linkDocs.Text = "https://help.syncfusion.com/js/datepicker/overview";
             // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.checkBox6);
-            this.groupBox1.Controls.Add(this.checkBox5);
-            this.groupBox1.Controls.Add(this.checkBox4);
-            this.groupBox1.Controls.Add(this.checkBox3);
-            this.groupBox1.Controls.Add(this.checkBox2);
-            this.groupBox1.Controls.Add(this.checkBox1);
-            this.groupBox1.Size = new System.Drawing.Size(250, 494);
-            this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
-            this.groupBox1.Controls.SetChildIndex(this.checkBox1, 0);
-            this.groupBox1.Controls.SetChildIndex(this.checkBox2, 0);
-            this.groupBox1.Controls.SetChildIndex(this.checkBox3, 0);
-            this.groupBox1.Controls.SetChildIndex(this.checkBox4, 0);
-            this.groupBox1.Controls.SetChildIndex(this.checkBox5, 0);
-            this.groupBox1.Controls.SetChildIndex(this.checkBox6, 0);
-            // 
             // buttonUpdate
             // 
-            this.buttonUpdate.Location = new System.Drawing.Point(28, 406);
             this.buttonUpdate.TabIndex = 6;
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
@@ -84,6 +67,15 @@
             this.panel.Controls.Add(this.ejDatePicker1);
             this.panel.TabIndex = 7;
             // 
+            // flowLayoutPanelProperties
+            // 
+            this.flowLayoutPanelProperties.Controls.Add(this.checkBox1);
+            this.flowLayoutPanelProperties.Controls.Add(this.checkBox2);
+            this.flowLayoutPanelProperties.Controls.Add(this.checkBox3);
+            this.flowLayoutPanelProperties.Controls.Add(this.checkBox4);
+            this.flowLayoutPanelProperties.Controls.Add(this.checkBox5);
+            this.flowLayoutPanelProperties.Controls.Add(this.checkBox6);
+            // 
             // ejDatePicker1
             // 
             this.ejDatePicker1.Anchor = Wisej.Web.AnchorStyles.None;
@@ -100,9 +92,11 @@
             this.checkBox1.AutoSize = false;
             this.checkBox1.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.checkBox1.Checked = true;
-            this.checkBox1.Location = new System.Drawing.Point(28, 36);
+            this.flowLayoutPanelProperties.SetFillWeight(this.checkBox1, 1);
+            this.flowLayoutPanelProperties.SetFlowBreak(this.checkBox1, true);
+            this.checkBox1.Location = new System.Drawing.Point(3, 3);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(195, 38);
+            this.checkBox1.Size = new System.Drawing.Size(212, 38);
             this.checkBox1.TabIndex = 0;
             this.checkBox1.Text = "Strict Mode";
             // 
@@ -112,9 +106,12 @@
             this.checkBox2.AutoSize = false;
             this.checkBox2.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.checkBox2.Checked = true;
-            this.checkBox2.Location = new System.Drawing.Point(28, 96);
+            this.flowLayoutPanelProperties.SetFillWeight(this.checkBox2, 1);
+            this.flowLayoutPanelProperties.SetFlowBreak(this.checkBox2, true);
+            this.checkBox2.Location = new System.Drawing.Point(3, 60);
+            this.checkBox2.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(195, 38);
+            this.checkBox2.Size = new System.Drawing.Size(212, 38);
             this.checkBox2.TabIndex = 1;
             this.checkBox2.Text = "Show Other Months";
             // 
@@ -124,9 +121,12 @@
             this.checkBox3.AutoSize = false;
             this.checkBox3.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.checkBox3.Checked = true;
-            this.checkBox3.Location = new System.Drawing.Point(28, 156);
+            this.flowLayoutPanelProperties.SetFillWeight(this.checkBox3, 1);
+            this.flowLayoutPanelProperties.SetFlowBreak(this.checkBox3, true);
+            this.checkBox3.Location = new System.Drawing.Point(3, 117);
+            this.checkBox3.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(195, 38);
+            this.checkBox3.Size = new System.Drawing.Size(212, 38);
             this.checkBox3.TabIndex = 2;
             this.checkBox3.Text = "Allow Drill Down";
             // 
@@ -135,9 +135,12 @@
             this.checkBox4.Appearance = Wisej.Web.Appearance.Switch;
             this.checkBox4.AutoSize = false;
             this.checkBox4.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.checkBox4.Location = new System.Drawing.Point(28, 216);
+            this.flowLayoutPanelProperties.SetFillWeight(this.checkBox4, 1);
+            this.flowLayoutPanelProperties.SetFlowBreak(this.checkBox4, true);
+            this.checkBox4.Location = new System.Drawing.Point(3, 174);
+            this.checkBox4.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(195, 38);
+            this.checkBox4.Size = new System.Drawing.Size(212, 38);
             this.checkBox4.TabIndex = 3;
             this.checkBox4.Text = "Display Inline";
             // 
@@ -147,9 +150,12 @@
             this.checkBox5.AutoSize = false;
             this.checkBox5.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.checkBox5.Checked = true;
-            this.checkBox5.Location = new System.Drawing.Point(28, 276);
+            this.flowLayoutPanelProperties.SetFillWeight(this.checkBox5, 1);
+            this.flowLayoutPanelProperties.SetFlowBreak(this.checkBox5, true);
+            this.checkBox5.Location = new System.Drawing.Point(3, 231);
+            this.checkBox5.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(195, 48);
+            this.checkBox5.Size = new System.Drawing.Size(212, 48);
             this.checkBox5.TabIndex = 4;
             this.checkBox5.Text = "Show Disabled Range";
             // 
@@ -159,9 +165,12 @@
             this.checkBox6.AutoSize = false;
             this.checkBox6.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.checkBox6.Checked = true;
-            this.checkBox6.Location = new System.Drawing.Point(28, 346);
+            this.flowLayoutPanelProperties.SetFillWeight(this.checkBox6, 1);
+            this.flowLayoutPanelProperties.SetFlowBreak(this.checkBox6, true);
+            this.checkBox6.Location = new System.Drawing.Point(3, 298);
+            this.checkBox6.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(195, 38);
+            this.checkBox6.Size = new System.Drawing.Size(212, 38);
             this.checkBox6.TabIndex = 5;
             this.checkBox6.Text = "Show Footer";
             // 
@@ -170,6 +179,7 @@
             this.Name = "ejDatePicker";
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
+            this.flowLayoutPanelProperties.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 

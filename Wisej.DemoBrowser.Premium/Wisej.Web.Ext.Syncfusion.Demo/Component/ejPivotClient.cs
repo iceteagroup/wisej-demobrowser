@@ -13,11 +13,11 @@ namespace Wisej.Web.Ext.Syncfusion.Demo.Component
 		{
 			InitializeComponent();
 
-			this.ejPivotClient1.Instance.cellEdit += new WidgetEventHandler(ejPivotClient1_WidgetEvent);
-			this.ejPivotClient1.Instance.saveReport += new WidgetEventHandler(ejPivotClient1_WidgetEvent);
-			this.ejPivotClient1.Instance.beforeExport += new WidgetEventHandler(ejPivotClient1_WidgetEvent);
-			this.ejPivotClient1.Instance.cellSelection += new WidgetEventHandler(ejPivotClient1_WidgetEvent);
-			this.ejPivotClient1.Instance.cellDoubleClick += new WidgetEventHandler(ejPivotClient1_WidgetEvent);
+			this.ejPivotClient1.Instance.onCellEdit += new WidgetEventHandler(ejPivotClient1_WidgetEvent);
+			this.ejPivotClient1.Instance.onSaveReport += new WidgetEventHandler(ejPivotClient1_WidgetEvent);
+			this.ejPivotClient1.Instance.onAfterExport += new WidgetEventHandler(ejPivotClient1_WidgetEvent);
+			this.ejPivotClient1.Instance.onCellSelection += new WidgetEventHandler(ejPivotClient1_WidgetEvent);
+			this.ejPivotClient1.Instance.onCellDoubleClick += new WidgetEventHandler(ejPivotClient1_WidgetEvent);
 		}
 
 		private void ejPivotClient1_WidgetEvent(object sender, WidgetEventArgs e)

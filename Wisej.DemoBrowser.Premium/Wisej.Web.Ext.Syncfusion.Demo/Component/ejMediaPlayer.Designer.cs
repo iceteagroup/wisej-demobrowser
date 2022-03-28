@@ -40,6 +40,7 @@
             this.comboBoxRenderMode = new Wisej.Web.ComboBox();
             this.groupBox1.SuspendLayout();
             this.panel.SuspendLayout();
+            this.flowLayoutPanelProperties.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -48,18 +49,8 @@
             this.linkDocs.TabIndex = 4;
             this.linkDocs.Text = "https://help.syncfusion.com/js/mediaplayer/overview";
             // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.comboBoxRenderMode);
-            this.groupBox1.Controls.Add(this.flowLayoutPanel1);
-            this.groupBox1.Size = new System.Drawing.Size(250, 364);
-            this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
-            this.groupBox1.Controls.SetChildIndex(this.flowLayoutPanel1, 0);
-            this.groupBox1.Controls.SetChildIndex(this.comboBoxRenderMode, 0);
-            // 
             // buttonUpdate
             // 
-            this.buttonUpdate.Location = new System.Drawing.Point(28, 283);
             this.buttonUpdate.TabIndex = 2;
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
@@ -79,6 +70,11 @@
             // 
             this.panel.Controls.Add(this.ejMediaPlayer1);
             this.panel.TabIndex = 7;
+            // 
+            // flowLayoutPanelProperties
+            // 
+            this.flowLayoutPanelProperties.Controls.Add(this.flowLayoutPanel1);
+            this.flowLayoutPanelProperties.Controls.Add(this.comboBoxRenderMode);
             // 
             // ejMediaPlayer1
             // 
@@ -101,70 +97,78 @@
             this.flowLayoutPanel1.Controls.Add(this.buttonNext);
             this.flowLayoutPanel1.Controls.Add(this.buttonReset);
             this.flowLayoutPanel1.Controls.Add(this.buttonMute);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(53, 56);
+            this.flowLayoutPanelProperties.SetFillWeight(this.flowLayoutPanel1, 1);
+            this.flowLayoutPanelProperties.SetFlowBreak(this.flowLayoutPanel1, true);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(3, 3);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(144, 96);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(212, 96);
             this.flowLayoutPanel1.TabIndex = 0;
             this.flowLayoutPanel1.TabStop = true;
             // 
             // buttonPlay
             // 
             this.buttonPlay.Display = Wisej.Web.Display.Icon;
+            this.flowLayoutPanel1.SetFillWeight(this.buttonPlay, 1);
             this.buttonPlay.ImageSource = "resource.wx/Wisej.Ext.MaterialDesign/play-arrow.svg";
             this.buttonPlay.Location = new System.Drawing.Point(3, 3);
             this.buttonPlay.Name = "buttonPlay";
-            this.buttonPlay.Size = new System.Drawing.Size(42, 42);
+            this.buttonPlay.Size = new System.Drawing.Size(64, 42);
             this.buttonPlay.TabIndex = 0;
             this.buttonPlay.Click += new System.EventHandler(this.buttonPlay_Click);
             // 
             // buttonPause
             // 
             this.buttonPause.Display = Wisej.Web.Display.Icon;
+            this.flowLayoutPanel1.SetFillWeight(this.buttonPause, 1);
             this.buttonPause.ImageSource = "resource.wx/Wisej.Ext.MaterialDesign/pause-button.svg";
-            this.buttonPause.Location = new System.Drawing.Point(51, 3);
+            this.buttonPause.Location = new System.Drawing.Point(73, 3);
             this.buttonPause.Name = "buttonPause";
-            this.buttonPause.Size = new System.Drawing.Size(42, 42);
+            this.buttonPause.Size = new System.Drawing.Size(65, 42);
             this.buttonPause.TabIndex = 2;
             this.buttonPause.Click += new System.EventHandler(this.buttonPause_Click);
             // 
             // buttonFullScreen
             // 
             this.buttonFullScreen.Display = Wisej.Web.Display.Icon;
+            this.flowLayoutPanel1.SetFillWeight(this.buttonFullScreen, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.buttonFullScreen, true);
             this.buttonFullScreen.ImageSource = "resource.wx/Wisej.Ext.MaterialDesign/show-more-button.svg";
-            this.buttonFullScreen.Location = new System.Drawing.Point(99, 3);
+            this.buttonFullScreen.Location = new System.Drawing.Point(144, 3);
             this.buttonFullScreen.Name = "buttonFullScreen";
-            this.buttonFullScreen.Size = new System.Drawing.Size(42, 42);
+            this.buttonFullScreen.Size = new System.Drawing.Size(65, 42);
             this.buttonFullScreen.TabIndex = 4;
             this.buttonFullScreen.Click += new System.EventHandler(this.buttonFullScreen_Click);
             // 
             // buttonNext
             // 
             this.buttonNext.Display = Wisej.Web.Display.Icon;
+            this.flowLayoutPanel1.SetFillWeight(this.buttonNext, 1);
             this.buttonNext.ImageSource = "resource.wx/Wisej.Ext.MaterialDesign/play-next-button.svg";
             this.buttonNext.Location = new System.Drawing.Point(3, 51);
             this.buttonNext.Name = "buttonNext";
-            this.buttonNext.Size = new System.Drawing.Size(42, 42);
+            this.buttonNext.Size = new System.Drawing.Size(64, 42);
             this.buttonNext.TabIndex = 1;
             this.buttonNext.Click += new System.EventHandler(this.buttonNext_Click);
             // 
             // buttonReset
             // 
             this.buttonReset.Display = Wisej.Web.Display.Icon;
+            this.flowLayoutPanel1.SetFillWeight(this.buttonReset, 1);
             this.buttonReset.ImageSource = "resource.wx/Wisej.Ext.MaterialDesign/back-arrow.svg";
-            this.buttonReset.Location = new System.Drawing.Point(51, 51);
+            this.buttonReset.Location = new System.Drawing.Point(73, 51);
             this.buttonReset.Name = "buttonReset";
-            this.buttonReset.Size = new System.Drawing.Size(42, 42);
+            this.buttonReset.Size = new System.Drawing.Size(65, 42);
             this.buttonReset.TabIndex = 3;
             this.buttonReset.Click += new System.EventHandler(this.buttonReset_Click);
             // 
             // buttonMute
             // 
             this.buttonMute.Display = Wisej.Web.Display.Icon;
+            this.flowLayoutPanel1.SetFillWeight(this.buttonMute, 1);
             this.buttonMute.ImageSource = "resource.wx/Wisej.Ext.MaterialDesign/volume-muted.svg";
-            this.buttonMute.Location = new System.Drawing.Point(99, 51);
+            this.buttonMute.Location = new System.Drawing.Point(144, 51);
             this.buttonMute.Name = "buttonMute";
-            this.buttonMute.Size = new System.Drawing.Size(42, 42);
+            this.buttonMute.Size = new System.Drawing.Size(65, 42);
             this.buttonMute.TabIndex = 5;
             this.buttonMute.Click += new System.EventHandler(this.buttonMute_Click);
             // 
@@ -172,6 +176,8 @@
             // 
             this.comboBoxRenderMode.AutoSize = false;
             this.comboBoxRenderMode.DropDownStyle = Wisej.Web.ComboBoxStyle.DropDownList;
+            this.flowLayoutPanelProperties.SetFillWeight(this.comboBoxRenderMode, 1);
+            this.flowLayoutPanelProperties.SetFlowBreak(this.comboBoxRenderMode, true);
             this.comboBoxRenderMode.Items.AddRange(new object[] {
             "Basic",
             "Advanced",
@@ -179,9 +185,10 @@
             this.comboBoxRenderMode.Label.Size = 50;
             this.comboBoxRenderMode.Label.SizeType = Wisej.Web.SizeType.Percent;
             this.comboBoxRenderMode.LabelText = "Render Mode";
-            this.comboBoxRenderMode.Location = new System.Drawing.Point(28, 187);
+            this.comboBoxRenderMode.Location = new System.Drawing.Point(3, 118);
+            this.comboBoxRenderMode.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.comboBoxRenderMode.Name = "comboBoxRenderMode";
-            this.comboBoxRenderMode.Size = new System.Drawing.Size(195, 60);
+            this.comboBoxRenderMode.Size = new System.Drawing.Size(212, 60);
             this.comboBoxRenderMode.TabIndex = 1;
             this.comboBoxRenderMode.Text = "Basic";
             // 
@@ -189,8 +196,9 @@
             // 
             this.Name = "ejMediaPlayer";
             this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.panel.ResumeLayout(false);
+            this.flowLayoutPanelProperties.ResumeLayout(false);
+            this.flowLayoutPanelProperties.PerformLayout();
             this.flowLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();

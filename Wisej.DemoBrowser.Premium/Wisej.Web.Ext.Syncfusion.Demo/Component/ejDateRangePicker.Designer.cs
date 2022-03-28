@@ -35,6 +35,7 @@
             this.checkBox2 = new Wisej.Web.CheckBox();
             this.groupBox1.SuspendLayout();
             this.panel.SuspendLayout();
+            this.flowLayoutPanelProperties.SuspendLayout();
             this.SuspendLayout();
             // 
             // linkDocs
@@ -42,22 +43,8 @@
             this.linkDocs.TabIndex = 4;
             this.linkDocs.Text = "https://help.syncfusion.com/js/daterangepicker/overview";
             // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.checkBox2);
-            this.groupBox1.Controls.Add(this.checkBox1);
-            this.groupBox1.Controls.Add(this.textBoxEndDay);
-            this.groupBox1.Controls.Add(this.textBoxStartDay);
-            this.groupBox1.Size = new System.Drawing.Size(250, 509);
-            this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
-            this.groupBox1.Controls.SetChildIndex(this.textBoxStartDay, 0);
-            this.groupBox1.Controls.SetChildIndex(this.textBoxEndDay, 0);
-            this.groupBox1.Controls.SetChildIndex(this.checkBox1, 0);
-            this.groupBox1.Controls.SetChildIndex(this.checkBox2, 0);
-            // 
             // buttonUpdate
             // 
-            this.buttonUpdate.Location = new System.Drawing.Point(28, 426);
             this.buttonUpdate.TabIndex = 4;
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
@@ -78,6 +65,13 @@
             this.panel.Controls.Add(this.ejDateRangePicker1);
             this.panel.TabIndex = 7;
             // 
+            // flowLayoutPanelProperties
+            // 
+            this.flowLayoutPanelProperties.Controls.Add(this.checkBox1);
+            this.flowLayoutPanelProperties.Controls.Add(this.checkBox2);
+            this.flowLayoutPanelProperties.Controls.Add(this.textBoxStartDay);
+            this.flowLayoutPanelProperties.Controls.Add(this.textBoxEndDay);
+            // 
             // ejDateRangePicker1
             // 
             this.ejDateRangePicker1.Anchor = Wisej.Web.AnchorStyles.None;
@@ -91,13 +85,16 @@
             // textBoxStartDay
             // 
             this.textBoxStartDay.AutoSize = false;
+            this.flowLayoutPanelProperties.SetFillWeight(this.textBoxStartDay, 1);
+            this.flowLayoutPanelProperties.SetFlowBreak(this.textBoxStartDay, true);
             this.textBoxStartDay.InputType.Type = Wisej.Web.TextBoxType.Date;
             this.textBoxStartDay.Label.Size = 50;
             this.textBoxStartDay.Label.SizeType = Wisej.Web.SizeType.Percent;
             this.textBoxStartDay.LabelText = "Start Date";
-            this.textBoxStartDay.Location = new System.Drawing.Point(28, 202);
+            this.textBoxStartDay.Location = new System.Drawing.Point(3, 103);
+            this.textBoxStartDay.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.textBoxStartDay.Name = "textBoxStartDay";
-            this.textBoxStartDay.Size = new System.Drawing.Size(195, 60);
+            this.textBoxStartDay.Size = new System.Drawing.Size(212, 60);
             this.textBoxStartDay.TabIndex = 2;
             this.textBoxStartDay.Text = "2020-01-01";
             this.textBoxStartDay.Watermark = "Select date...";
@@ -105,13 +102,16 @@
             // textBoxEndDay
             // 
             this.textBoxEndDay.AutoSize = false;
+            this.flowLayoutPanelProperties.SetFillWeight(this.textBoxEndDay, 1);
+            this.flowLayoutPanelProperties.SetFlowBreak(this.textBoxEndDay, true);
             this.textBoxEndDay.InputType.Type = Wisej.Web.TextBoxType.Date;
             this.textBoxEndDay.Label.Size = 50;
             this.textBoxEndDay.Label.SizeType = Wisej.Web.SizeType.Percent;
             this.textBoxEndDay.LabelText = "End Date";
-            this.textBoxEndDay.Location = new System.Drawing.Point(28, 314);
+            this.textBoxEndDay.Location = new System.Drawing.Point(3, 182);
+            this.textBoxEndDay.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.textBoxEndDay.Name = "textBoxEndDay";
-            this.textBoxEndDay.Size = new System.Drawing.Size(195, 60);
+            this.textBoxEndDay.Size = new System.Drawing.Size(212, 60);
             this.textBoxEndDay.TabIndex = 3;
             this.textBoxEndDay.Text = "2020-01-15";
             this.textBoxEndDay.Watermark = "Select date...";
@@ -122,9 +122,11 @@
             this.checkBox1.AutoSize = false;
             this.checkBox1.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.checkBox1.Checked = true;
-            this.checkBox1.Location = new System.Drawing.Point(28, 36);
+            this.flowLayoutPanelProperties.SetFillWeight(this.checkBox1, 1);
+            this.flowLayoutPanelProperties.SetFlowBreak(this.checkBox1, true);
+            this.checkBox1.Location = new System.Drawing.Point(3, 3);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(195, 31);
+            this.checkBox1.Size = new System.Drawing.Size(212, 31);
             this.checkBox1.TabIndex = 0;
             this.checkBox1.Text = "Allow Edit";
             // 
@@ -133,9 +135,12 @@
             this.checkBox2.Appearance = Wisej.Web.Appearance.Switch;
             this.checkBox2.AutoSize = false;
             this.checkBox2.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.checkBox2.Location = new System.Drawing.Point(28, 119);
+            this.flowLayoutPanelProperties.SetFillWeight(this.checkBox2, 1);
+            this.flowLayoutPanelProperties.SetFlowBreak(this.checkBox2, true);
+            this.checkBox2.Location = new System.Drawing.Point(3, 53);
+            this.checkBox2.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(195, 31);
+            this.checkBox2.Size = new System.Drawing.Size(212, 31);
             this.checkBox2.TabIndex = 1;
             this.checkBox2.Text = "Enable Time Picker";
             // 
@@ -144,6 +149,7 @@
             this.Name = "ejDateRangePicker";
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
+            this.flowLayoutPanelProperties.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
