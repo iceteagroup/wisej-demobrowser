@@ -34,19 +34,12 @@
             this.checkBoxShowcheckboxes = new Wisej.Web.CheckBox();
             this.panel.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            this.flowLayoutPanelProperties.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel
             // 
             this.panel.Controls.Add(this.kendoTreeView1);
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.checkBoxShowcheckboxes);
-            this.groupBox1.Controls.Add(this.checkBoxAllowDragAndDrop);
-            this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
-            this.groupBox1.Controls.SetChildIndex(this.checkBoxAllowDragAndDrop, 0);
-            this.groupBox1.Controls.SetChildIndex(this.checkBoxShowcheckboxes, 0);
             // 
             // buttonUpdate
             // 
@@ -64,6 +57,11 @@
             // 
             this.linkDocs.Text = "https://docs.telerik.com/kendo-ui/controls/navigation/treeview/overview";
             // 
+            // flowLayoutPanelProperties
+            // 
+            this.flowLayoutPanelProperties.Controls.Add(this.checkBoxAllowDragAndDrop);
+            this.flowLayoutPanelProperties.Controls.Add(this.checkBoxShowcheckboxes);
+            // 
             // kendoTreeView1
             // 
             this.kendoTreeView1.Location = new System.Drawing.Point(51, 31);
@@ -75,17 +73,22 @@
             // 
             // checkBoxAllowDragAndDrop
             // 
-            this.checkBoxAllowDragAndDrop.Location = new System.Drawing.Point(28, 32);
+            this.flowLayoutPanelProperties.SetFillWeight(this.checkBoxAllowDragAndDrop, 1);
+            this.flowLayoutPanelProperties.SetFlowBreak(this.checkBoxAllowDragAndDrop, true);
+            this.checkBoxAllowDragAndDrop.Location = new System.Drawing.Point(3, 3);
             this.checkBoxAllowDragAndDrop.Name = "checkBoxAllowDragAndDrop";
-            this.checkBoxAllowDragAndDrop.Size = new System.Drawing.Size(150, 22);
+            this.checkBoxAllowDragAndDrop.Size = new System.Drawing.Size(212, 27);
             this.checkBoxAllowDragAndDrop.TabIndex = 1;
             this.checkBoxAllowDragAndDrop.Text = "Allow drag-and-drop";
             // 
             // checkBoxShowcheckboxes
             // 
-            this.checkBoxShowcheckboxes.Location = new System.Drawing.Point(28, 60);
+            this.flowLayoutPanelProperties.SetFillWeight(this.checkBoxShowcheckboxes, 1);
+            this.flowLayoutPanelProperties.SetFlowBreak(this.checkBoxShowcheckboxes, true);
+            this.checkBoxShowcheckboxes.Location = new System.Drawing.Point(3, 49);
+            this.checkBoxShowcheckboxes.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBoxShowcheckboxes.Name = "checkBoxShowcheckboxes";
-            this.checkBoxShowcheckboxes.Size = new System.Drawing.Size(124, 22);
+            this.checkBoxShowcheckboxes.Size = new System.Drawing.Size(212, 27);
             this.checkBoxShowcheckboxes.TabIndex = 2;
             this.checkBoxShowcheckboxes.Text = "Show checkbox";
             // 
@@ -94,7 +97,8 @@
             this.Name = "kendoTreeView";
             this.panel.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.flowLayoutPanelProperties.ResumeLayout(false);
+            this.flowLayoutPanelProperties.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 

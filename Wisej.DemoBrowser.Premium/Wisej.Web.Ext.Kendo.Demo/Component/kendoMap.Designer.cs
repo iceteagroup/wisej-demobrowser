@@ -38,6 +38,7 @@
             this.kendoMap1 = new Wisej.Web.Ext.Kendo.kendoMap();
             this.panel.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            this.flowLayoutPanelProperties.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
@@ -47,26 +48,8 @@
             // 
             this.panel.Controls.Add(this.kendoMap1);
             // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.numericUpDown3);
-            this.groupBox1.Controls.Add(this.numericUpDown2);
-            this.groupBox1.Controls.Add(this.numericUpDown1);
-            this.groupBox1.Controls.Add(this.checkBox3);
-            this.groupBox1.Controls.Add(this.checkBox2);
-            this.groupBox1.Controls.Add(this.checkBox1);
-            this.groupBox1.Size = new System.Drawing.Size(250, 514);
-            this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
-            this.groupBox1.Controls.SetChildIndex(this.checkBox1, 0);
-            this.groupBox1.Controls.SetChildIndex(this.checkBox2, 0);
-            this.groupBox1.Controls.SetChildIndex(this.checkBox3, 0);
-            this.groupBox1.Controls.SetChildIndex(this.numericUpDown1, 0);
-            this.groupBox1.Controls.SetChildIndex(this.numericUpDown2, 0);
-            this.groupBox1.Controls.SetChildIndex(this.numericUpDown3, 0);
-            // 
             // buttonUpdate
             // 
-            this.buttonUpdate.Location = new System.Drawing.Point(28, 431);
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
             // linkDemo
@@ -81,16 +64,26 @@
             // 
             this.linkDocs.Text = "https://docs.telerik.com/kendo-ui/controls/diagrams-and-maps/map/overview";
             // 
+            // flowLayoutPanelProperties
+            // 
+            this.flowLayoutPanelProperties.Controls.Add(this.checkBox1);
+            this.flowLayoutPanelProperties.Controls.Add(this.checkBox2);
+            this.flowLayoutPanelProperties.Controls.Add(this.checkBox3);
+            this.flowLayoutPanelProperties.Controls.Add(this.numericUpDown1);
+            this.flowLayoutPanelProperties.Controls.Add(this.numericUpDown2);
+            this.flowLayoutPanelProperties.Controls.Add(this.numericUpDown3);
+            // 
             // checkBox1
             // 
             this.checkBox1.Appearance = Wisej.Web.Appearance.Switch;
             this.checkBox1.AutoSize = false;
             this.checkBox1.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.checkBox1.Checked = true;
-            this.checkBox1.CheckState = Wisej.Web.CheckState.Checked;
-            this.checkBox1.Location = new System.Drawing.Point(28, 29);
+            this.flowLayoutPanelProperties.SetFillWeight(this.checkBox1, 1);
+            this.flowLayoutPanelProperties.SetFlowBreak(this.checkBox1, true);
+            this.checkBox1.Location = new System.Drawing.Point(3, 3);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(195, 38);
+            this.checkBox1.Size = new System.Drawing.Size(212, 38);
             this.checkBox1.TabIndex = 6;
             this.checkBox1.Text = "Pannable";
             // 
@@ -100,10 +93,12 @@
             this.checkBox2.AutoSize = false;
             this.checkBox2.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.checkBox2.Checked = true;
-            this.checkBox2.CheckState = Wisej.Web.CheckState.Checked;
-            this.checkBox2.Location = new System.Drawing.Point(28, 85);
+            this.flowLayoutPanelProperties.SetFillWeight(this.checkBox2, 1);
+            this.flowLayoutPanelProperties.SetFlowBreak(this.checkBox2, true);
+            this.checkBox2.Location = new System.Drawing.Point(3, 60);
+            this.checkBox2.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(195, 38);
+            this.checkBox2.Size = new System.Drawing.Size(212, 38);
             this.checkBox2.TabIndex = 7;
             this.checkBox2.Text = "Wrap Around";
             // 
@@ -113,20 +108,25 @@
             this.checkBox3.AutoSize = false;
             this.checkBox3.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.checkBox3.Checked = true;
-            this.checkBox3.CheckState = Wisej.Web.CheckState.Checked;
-            this.checkBox3.Location = new System.Drawing.Point(28, 141);
+            this.flowLayoutPanelProperties.SetFillWeight(this.checkBox3, 1);
+            this.flowLayoutPanelProperties.SetFlowBreak(this.checkBox3, true);
+            this.checkBox3.Location = new System.Drawing.Point(3, 117);
+            this.checkBox3.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(195, 38);
+            this.checkBox3.Size = new System.Drawing.Size(212, 38);
             this.checkBox3.TabIndex = 8;
             this.checkBox3.Text = "Zoomable";
             // 
             // numericUpDown1
             // 
             this.numericUpDown1.AutoSize = false;
+            this.flowLayoutPanelProperties.SetFillWeight(this.numericUpDown1, 1);
+            this.flowLayoutPanelProperties.SetFlowBreak(this.numericUpDown1, true);
             this.numericUpDown1.Label.Size = 50;
             this.numericUpDown1.Label.SizeType = Wisej.Web.SizeType.Percent;
             this.numericUpDown1.LabelText = "Min Zoom";
-            this.numericUpDown1.Location = new System.Drawing.Point(28, 197);
+            this.numericUpDown1.Location = new System.Drawing.Point(3, 174);
+            this.numericUpDown1.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.numericUpDown1.Maximum = new decimal(new int[] {
             19,
             0,
@@ -138,7 +138,7 @@
             0,
             0});
             this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(195, 60);
+            this.numericUpDown1.Size = new System.Drawing.Size(212, 60);
             this.numericUpDown1.TabIndex = 11;
             this.numericUpDown1.Value = new decimal(new int[] {
             1,
@@ -149,10 +149,13 @@
             // numericUpDown2
             // 
             this.numericUpDown2.AutoSize = false;
+            this.flowLayoutPanelProperties.SetFillWeight(this.numericUpDown2, 1);
+            this.flowLayoutPanelProperties.SetFlowBreak(this.numericUpDown2, true);
             this.numericUpDown2.Label.Size = 50;
             this.numericUpDown2.Label.SizeType = Wisej.Web.SizeType.Percent;
             this.numericUpDown2.LabelText = "Max Zoom";
-            this.numericUpDown2.Location = new System.Drawing.Point(28, 275);
+            this.numericUpDown2.Location = new System.Drawing.Point(3, 253);
+            this.numericUpDown2.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.numericUpDown2.Maximum = new decimal(new int[] {
             19,
             0,
@@ -164,7 +167,7 @@
             0,
             0});
             this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(195, 60);
+            this.numericUpDown2.Size = new System.Drawing.Size(212, 60);
             this.numericUpDown2.TabIndex = 12;
             this.numericUpDown2.Value = new decimal(new int[] {
             19,
@@ -175,10 +178,13 @@
             // numericUpDown3
             // 
             this.numericUpDown3.AutoSize = false;
+            this.flowLayoutPanelProperties.SetFillWeight(this.numericUpDown3, 1);
+            this.flowLayoutPanelProperties.SetFlowBreak(this.numericUpDown3, true);
             this.numericUpDown3.Label.Size = 50;
             this.numericUpDown3.Label.SizeType = Wisej.Web.SizeType.Percent;
             this.numericUpDown3.LabelText = "Zoom";
-            this.numericUpDown3.Location = new System.Drawing.Point(28, 353);
+            this.numericUpDown3.Location = new System.Drawing.Point(3, 332);
+            this.numericUpDown3.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.numericUpDown3.Maximum = new decimal(new int[] {
             19,
             0,
@@ -190,7 +196,7 @@
             0,
             0});
             this.numericUpDown3.Name = "numericUpDown3";
-            this.numericUpDown3.Size = new System.Drawing.Size(195, 60);
+            this.numericUpDown3.Size = new System.Drawing.Size(212, 60);
             this.numericUpDown3.TabIndex = 13;
             this.numericUpDown3.Value = new decimal(new int[] {
             10,
@@ -215,6 +221,7 @@
             this.Name = "kendoMap";
             this.panel.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
+            this.flowLayoutPanelProperties.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();

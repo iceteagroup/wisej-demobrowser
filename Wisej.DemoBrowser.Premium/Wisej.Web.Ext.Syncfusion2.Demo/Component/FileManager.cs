@@ -1,9 +1,11 @@
 ﻿using Newtonsoft.Json;
 using Syncfusion.EJ2.FileManager.Base;
 using Syncfusion.EJ2.FileManager.PhysicalFileProvider;
+using Syncfusion.EJ2.Linq;
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
@@ -56,7 +58,9 @@ namespace Wisej.Web.Ext.Syncfusion2.Demo.Component
 					e.Response.Status = status;
 					e.Response.StatusDescription = status;
 					e.Response.StatusCode = (int)HttpStatusCode.BadRequest;
-					// Actual Implementation: ProcessUploadOperation(data.action, data.path, e.Request.Files.Cast<HttpPostedFileBase>().ToList(), e.Response);
+
+					var files = e.Request.Files.AllKeys.Select(item => new HttpPostedFileWrapper(e.Request.Files[item])).ToList<HttpPostedFileBase>();
+					ProcessUploadOperation(e.Request.Form["action"], e.Request.Form["path"], files, e.Response);
 					break;
 
 				case "Download":

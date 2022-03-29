@@ -36,6 +36,7 @@
             this.comboBox1 = new Wisej.Web.ComboBox();
             this.panel.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            this.flowLayoutPanelProperties.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
@@ -45,24 +46,8 @@
             // 
             this.panel.Controls.Add(this.kendoRating1);
             // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.comboBox1);
-            this.groupBox1.Controls.Add(this.checkBox1);
-            this.groupBox1.Controls.Add(this.numericUpDown3);
-            this.groupBox1.Controls.Add(this.numericUpDown2);
-            this.groupBox1.Controls.Add(this.numericUpDown1);
-            this.groupBox1.Size = new System.Drawing.Size(250, 457);
-            this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
-            this.groupBox1.Controls.SetChildIndex(this.numericUpDown1, 0);
-            this.groupBox1.Controls.SetChildIndex(this.numericUpDown2, 0);
-            this.groupBox1.Controls.SetChildIndex(this.numericUpDown3, 0);
-            this.groupBox1.Controls.SetChildIndex(this.checkBox1, 0);
-            this.groupBox1.Controls.SetChildIndex(this.comboBox1, 0);
-            // 
             // buttonUpdate
             // 
-            this.buttonUpdate.Location = new System.Drawing.Point(28, 376);
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
             // linkDemo
@@ -76,6 +61,14 @@
             // linkDocs
             // 
             this.linkDocs.Text = "https://docs.telerik.com/kendo-ui/controls/editors/rating/overview";
+            // 
+            // flowLayoutPanelProperties
+            // 
+            this.flowLayoutPanelProperties.Controls.Add(this.checkBox1);
+            this.flowLayoutPanelProperties.Controls.Add(this.comboBox1);
+            this.flowLayoutPanelProperties.Controls.Add(this.numericUpDown1);
+            this.flowLayoutPanelProperties.Controls.Add(this.numericUpDown2);
+            this.flowLayoutPanelProperties.Controls.Add(this.numericUpDown3);
             // 
             // kendoRating1
             // 
@@ -91,6 +84,8 @@
             // 
             this.numericUpDown1.AutoSize = false;
             this.numericUpDown1.DecimalPlaces = 1;
+            this.flowLayoutPanelProperties.SetFillWeight(this.numericUpDown1, 1);
+            this.flowLayoutPanelProperties.SetFlowBreak(this.numericUpDown1, true);
             this.numericUpDown1.Increment = new decimal(new int[] {
             5,
             0,
@@ -99,14 +94,15 @@
             this.numericUpDown1.Label.Size = 50;
             this.numericUpDown1.Label.SizeType = Wisej.Web.SizeType.Percent;
             this.numericUpDown1.LabelText = "Value";
-            this.numericUpDown1.Location = new System.Drawing.Point(28, 149);
+            this.numericUpDown1.Location = new System.Drawing.Point(3, 139);
+            this.numericUpDown1.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.numericUpDown1.Maximum = new decimal(new int[] {
             5,
             0,
             0,
             0});
             this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(195, 60);
+            this.numericUpDown1.Size = new System.Drawing.Size(212, 60);
             this.numericUpDown1.TabIndex = 3;
             this.numericUpDown1.Value = new decimal(new int[] {
             3,
@@ -117,33 +113,39 @@
             // numericUpDown2
             // 
             this.numericUpDown2.AutoSize = false;
+            this.flowLayoutPanelProperties.SetFillWeight(this.numericUpDown2, 1);
+            this.flowLayoutPanelProperties.SetFlowBreak(this.numericUpDown2, true);
             this.numericUpDown2.Label.Size = 50;
             this.numericUpDown2.Label.SizeType = Wisej.Web.SizeType.Percent;
             this.numericUpDown2.LabelText = "Min";
-            this.numericUpDown2.Location = new System.Drawing.Point(28, 215);
+            this.numericUpDown2.Location = new System.Drawing.Point(3, 218);
+            this.numericUpDown2.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.numericUpDown2.Maximum = new decimal(new int[] {
             5,
             0,
             0,
             0});
             this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(195, 60);
+            this.numericUpDown2.Size = new System.Drawing.Size(212, 60);
             this.numericUpDown2.TabIndex = 4;
             // 
             // numericUpDown3
             // 
             this.numericUpDown3.AutoSize = false;
+            this.flowLayoutPanelProperties.SetFillWeight(this.numericUpDown3, 1);
+            this.flowLayoutPanelProperties.SetFlowBreak(this.numericUpDown3, true);
             this.numericUpDown3.Label.Size = 50;
             this.numericUpDown3.Label.SizeType = Wisej.Web.SizeType.Percent;
             this.numericUpDown3.LabelText = "Max";
-            this.numericUpDown3.Location = new System.Drawing.Point(28, 281);
+            this.numericUpDown3.Location = new System.Drawing.Point(3, 297);
+            this.numericUpDown3.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.numericUpDown3.Maximum = new decimal(new int[] {
             10,
             0,
             0,
             0});
             this.numericUpDown3.Name = "numericUpDown3";
-            this.numericUpDown3.Size = new System.Drawing.Size(195, 60);
+            this.numericUpDown3.Size = new System.Drawing.Size(212, 60);
             this.numericUpDown3.TabIndex = 5;
             this.numericUpDown3.Value = new decimal(new int[] {
             5,
@@ -156,9 +158,11 @@
             this.checkBox1.Appearance = Wisej.Web.Appearance.Switch;
             this.checkBox1.AutoSize = false;
             this.checkBox1.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.checkBox1.Location = new System.Drawing.Point(28, 29);
+            this.flowLayoutPanelProperties.SetFillWeight(this.checkBox1, 1);
+            this.flowLayoutPanelProperties.SetFlowBreak(this.checkBox1, true);
+            this.checkBox1.Location = new System.Drawing.Point(3, 3);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(195, 38);
+            this.checkBox1.Size = new System.Drawing.Size(212, 38);
             this.checkBox1.TabIndex = 6;
             this.checkBox1.Text = "Select Value on Focus";
             // 
@@ -166,15 +170,18 @@
             // 
             this.comboBox1.AutoSize = false;
             this.comboBox1.DropDownStyle = Wisej.Web.ComboBoxStyle.DropDownList;
+            this.flowLayoutPanelProperties.SetFillWeight(this.comboBox1, 1);
+            this.flowLayoutPanelProperties.SetFlowBreak(this.comboBox1, true);
             this.comboBox1.Items.AddRange(new object[] {
             "item",
             "half"});
             this.comboBox1.Label.Size = 50;
             this.comboBox1.Label.SizeType = Wisej.Web.SizeType.Percent;
             this.comboBox1.LabelText = "Type";
-            this.comboBox1.Location = new System.Drawing.Point(28, 73);
+            this.comboBox1.Location = new System.Drawing.Point(3, 60);
+            this.comboBox1.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(195, 60);
+            this.comboBox1.Size = new System.Drawing.Size(212, 60);
             this.comboBox1.TabIndex = 7;
             this.comboBox1.Text = "item";
             // 
@@ -183,6 +190,7 @@
             this.Name = "kendoRating";
             this.panel.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
+            this.flowLayoutPanelProperties.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();

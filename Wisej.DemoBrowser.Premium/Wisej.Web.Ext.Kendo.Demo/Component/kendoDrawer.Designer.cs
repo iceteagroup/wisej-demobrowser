@@ -47,6 +47,7 @@
             this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
             this.groupBox1.Controls.SetChildIndex(this.buttonShow, 0);
             this.groupBox1.Controls.SetChildIndex(this.buttonHide, 0);
+            this.groupBox1.Controls.SetChildIndex(this.flowLayoutPanelProperties, 0);
             // 
             // linkDemo
             // 
