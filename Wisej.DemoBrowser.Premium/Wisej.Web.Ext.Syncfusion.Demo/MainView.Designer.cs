@@ -283,7 +283,7 @@
             this.panelInfo.Location = new System.Drawing.Point(341, 76);
             this.panelInfo.MinimumSize = new System.Drawing.Size(1401, 187);
             this.panelInfo.Name = "panelInfo";
-            this.panelInfo.Size = new System.Drawing.Size(1401, 187);
+            this.panelInfo.Size = new System.Drawing.Size(1553, 187);
             this.panelInfo.TabIndex = 24;
             // 
             // comboBoxLanguage
@@ -294,19 +294,18 @@
             this.comboBoxLanguage.DropDownStyle = Wisej.Web.ComboBoxStyle.DropDownList;
             this.comboBoxLanguage.Focusable = false;
             this.comboBoxLanguage.Items.AddRange(new object[] {
-            "AE",
-            "EN",
-            "DE",
-            "IT",
-            "ES",
-            "FR",
-            "VN",
-            "CN"});
-            this.comboBoxLanguage.Location = new System.Drawing.Point(578, 75);
+            "ar-AE",
+            "en-US",
+            "de-DE",
+            "it-IT",
+            "es-ES",
+            "fr-FR",
+            "zh-CN"});
+            this.comboBoxLanguage.Location = new System.Drawing.Point(730, 75);
             this.comboBoxLanguage.Name = "comboBoxLanguage";
             this.comboBoxLanguage.Size = new System.Drawing.Size(290, 40);
             this.comboBoxLanguage.TabIndex = 21;
-            this.comboBoxLanguage.Text = "EN";
+            this.comboBoxLanguage.Text = "en-US";
             this.comboBoxLanguage.SelectedIndexChanged += new System.EventHandler(this.comboBoxLanguage_SelectedIndexChanged);
             // 
             // comboBoxEJ1Theme
@@ -330,7 +329,7 @@
             "gradient-saffron",
             "gradient-saffron-dark",
             "bootstrap-theme"});
-            this.comboBoxEJ1Theme.Location = new System.Drawing.Point(925, 75);
+            this.comboBoxEJ1Theme.Location = new System.Drawing.Point(1077, 75);
             this.comboBoxEJ1Theme.Name = "comboBoxEJ1Theme";
             this.comboBoxEJ1Theme.Size = new System.Drawing.Size(290, 40);
             this.comboBoxEJ1Theme.TabIndex = 1;
@@ -341,7 +340,7 @@
             // lineSeparator
             // 
             this.lineSeparator.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Right)));
-            this.lineSeparator.Location = new System.Drawing.Point(888, 75);
+            this.lineSeparator.Location = new System.Drawing.Point(1040, 75);
             this.lineSeparator.Name = "lineSeparator";
             this.lineSeparator.Orientation = Wisej.Web.Orientation.Vertical;
             this.lineSeparator.Size = new System.Drawing.Size(17, 40);
@@ -380,7 +379,7 @@
             this.rightPanel.Controls.Add(this.buttonFreeTrial);
             this.rightPanel.Controls.Add(this.buttonContact);
             this.rightPanel.Controls.Add(this.lineMenuDivider2);
-            this.rightPanel.Location = new System.Drawing.Point(783, 3);
+            this.rightPanel.Location = new System.Drawing.Point(1074, 3);
             this.rightPanel.Name = "rightPanel";
             this.rightPanel.Size = new System.Drawing.Size(817, 70);
             this.rightPanel.TabIndex = 30;
@@ -462,7 +461,7 @@
             this.menuSlideBar.MinimumSize = new System.Drawing.Size(220, 0);
             this.menuSlideBar.Name = "menuSlideBar";
             this.menuSlideBar.ScrollStep = 50;
-            this.menuSlideBar.Size = new System.Drawing.Size(545, 70);
+            this.menuSlideBar.Size = new System.Drawing.Size(836, 70);
             this.menuSlideBar.Spacing = 20;
             this.menuSlideBar.TabIndex = 7;
             // 
@@ -477,7 +476,7 @@
             this.flexLayoutPanelMenu.LayoutStyle = Wisej.Web.FlexLayoutStyle.Horizontal;
             this.flexLayoutPanelMenu.Location = new System.Drawing.Point(0, 0);
             this.flexLayoutPanelMenu.Name = "flexLayoutPanelMenu";
-            this.flexLayoutPanelMenu.Size = new System.Drawing.Size(1603, 76);
+            this.flexLayoutPanelMenu.Size = new System.Drawing.Size(1894, 76);
             this.flexLayoutPanelMenu.TabIndex = 21;
             this.flexLayoutPanelMenu.TabStop = true;
             // 
@@ -524,7 +523,7 @@
             this.panelDemo.Location = new System.Drawing.Point(341, 263);
             this.panelDemo.Name = "panelDemo";
             this.panelDemo.ShowCloseButton = false;
-            this.panelDemo.Size = new System.Drawing.Size(1262, 631);
+            this.panelDemo.Size = new System.Drawing.Size(1553, 631);
             this.panelDemo.TabIndex = 23;
             this.panelDemo.TabStop = true;
             this.panelDemo.Text = "Test";
@@ -538,7 +537,7 @@
             this.Controls.Add(this.panelComponents);
             this.Controls.Add(this.flexLayoutPanelMenu);
             this.Name = "MainView";
-            this.Size = new System.Drawing.Size(1603, 894);
+            this.Size = new System.Drawing.Size(1894, 894);
             this.Load += new System.EventHandler(this.MainView_Load);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
