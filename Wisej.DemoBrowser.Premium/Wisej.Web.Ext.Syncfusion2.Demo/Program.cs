@@ -10,7 +10,6 @@ namespace Wisej.Web.Ext.Syncfusion2.Demo
 		/// </summary>
 		static void Main()
 		{
-			ej2Base.Theme = "bootstrap5";
 			Application.MainPage = new MainView();
 		}
 

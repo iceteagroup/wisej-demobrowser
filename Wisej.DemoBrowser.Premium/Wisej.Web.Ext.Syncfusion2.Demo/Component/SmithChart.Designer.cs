@@ -35,6 +35,7 @@
             this.checkBoxLegendVisibility = new Wisej.Web.CheckBox();
             this.groupBox1.SuspendLayout();
             this.panel.SuspendLayout();
+            this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // linkDocs
@@ -46,16 +47,6 @@
             // 
             this.linkAPI.Text = "https://ej2.syncfusion.com/javascript/documentation/api/smithchart/";
             // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.checkBoxLegendVisibility);
-            this.groupBox1.Controls.Add(this.comboBoxShaprType);
-            this.groupBox1.Controls.Add(this.checkBoxMarkerVisible);
-            this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
-            this.groupBox1.Controls.SetChildIndex(this.checkBoxMarkerVisible, 0);
-            this.groupBox1.Controls.SetChildIndex(this.comboBoxShaprType, 0);
-            this.groupBox1.Controls.SetChildIndex(this.checkBoxLegendVisibility, 0);
-            // 
             // buttonUpdate
             // 
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
@@ -63,6 +54,12 @@
             // panel
             // 
             this.panel.Controls.Add(this.smithChart1);
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Controls.Add(this.checkBoxMarkerVisible);
+            this.flowLayoutPanel1.Controls.Add(this.checkBoxLegendVisibility);
+            this.flowLayoutPanel1.Controls.Add(this.comboBoxShaprType);
             // 
             // linkDemo
             // 
@@ -82,40 +79,49 @@
             // 
             this.checkBoxMarkerVisible.Appearance = Wisej.Web.Appearance.Switch;
             this.checkBoxMarkerVisible.Checked = true;
-            this.checkBoxMarkerVisible.Location = new System.Drawing.Point(19, 34);
+            this.flowLayoutPanel1.SetFillWeight(this.checkBoxMarkerVisible, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.checkBoxMarkerVisible, true);
+            this.checkBoxMarkerVisible.Location = new System.Drawing.Point(3, 3);
             this.checkBoxMarkerVisible.Name = "checkBoxMarkerVisible";
-            this.checkBoxMarkerVisible.Size = new System.Drawing.Size(154, 24);
+            this.checkBoxMarkerVisible.Size = new System.Drawing.Size(212, 24);
             this.checkBoxMarkerVisible.TabIndex = 1;
             this.checkBoxMarkerVisible.Text = "Marker Visible";
             this.checkBoxMarkerVisible.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // comboBoxShaprType
             // 
+            this.flowLayoutPanel1.SetFillWeight(this.comboBoxShaprType, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.comboBoxShaprType, true);
             this.comboBoxShaprType.Items.AddRange(new object[] {
             "Circle",
             "Rectangle"});
             this.comboBoxShaprType.LabelText = "Shape Type";
-            this.comboBoxShaprType.Location = new System.Drawing.Point(19, 108);
+            this.comboBoxShaprType.Location = new System.Drawing.Point(3, 89);
+            this.comboBoxShaprType.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.comboBoxShaprType.Name = "comboBoxShaprType";
-            this.comboBoxShaprType.Size = new System.Drawing.Size(215, 46);
+            this.comboBoxShaprType.Size = new System.Drawing.Size(212, 57);
             this.comboBoxShaprType.TabIndex = 2;
             // 
             // checkBoxLegendVisibility
             // 
             this.checkBoxLegendVisibility.Appearance = Wisej.Web.Appearance.Switch;
             this.checkBoxLegendVisibility.Checked = true;
-            this.checkBoxLegendVisibility.Location = new System.Drawing.Point(19, 71);
+            this.flowLayoutPanel1.SetFillWeight(this.checkBoxLegendVisibility, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.checkBoxLegendVisibility, true);
+            this.checkBoxLegendVisibility.Location = new System.Drawing.Point(3, 46);
+            this.checkBoxLegendVisibility.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBoxLegendVisibility.Name = "checkBoxLegendVisibility";
-            this.checkBoxLegendVisibility.Size = new System.Drawing.Size(166, 24);
+            this.checkBoxLegendVisibility.Size = new System.Drawing.Size(212, 24);
             this.checkBoxLegendVisibility.TabIndex = 3;
-            this.checkBoxLegendVisibility.Text = "Legend visibility";
+            this.checkBoxLegendVisibility.Text = "Legend Visibility";
             // 
             // SmithChart
             // 
             this.Name = "SmithChart";
             this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.panel.ResumeLayout(false);
+            this.flowLayoutPanel1.ResumeLayout(false);
+            this.flowLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 

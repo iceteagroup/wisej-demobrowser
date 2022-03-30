@@ -9,6 +9,8 @@ namespace Wisej.Web.Ext.Syncfusion2.Demo.Component
 		public DropDownTree()
 		{
 			InitializeComponent();
+
+            this.dropDownTree1.Instance.onChange += new WidgetEventHandler(dropDownTree1_WidgetEvent);
 		}
 
         private void buttonUpdate_Click(object sender, EventArgs e)
@@ -27,6 +29,15 @@ namespace Wisej.Web.Ext.Syncfusion2.Demo.Component
                 this.dropDownTree1.Options.fields.dataSource[comboBoxNode.SelectedIndex].subChild = subNodes.ToArray();
 
             this.dropDownTree1.Update();
+        }
+
+        private void dropDownTree1_WidgetEvent(object sender, WidgetEventArgs e)
+        {
+            AlertBox.Show(
+                $"<b>{e.Type}</b><br/>{JSON.Stringify(e.Data)}",
+                MessageBoxIcon.Information);
+
+            Application.Play(MessageBoxIcon.Information);
         }
     }
 }

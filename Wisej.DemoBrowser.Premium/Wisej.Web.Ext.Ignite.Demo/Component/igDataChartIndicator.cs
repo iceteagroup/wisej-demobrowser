@@ -9,8 +9,7 @@ namespace Wisej.Web.Ext.Ignite.Demo.Component
 		{
 			InitializeComponent();
 
-			this.igDataChart1.Instance.gridAreaRectChanged += new WidgetEventHandler(igDataChart_WidgetEvent);
-			this.igDataChart1.Instance.seriesMouseLeftButtonUp += new WidgetEventHandler(igDataChart_WidgetEvent);
+			this.igDataChart1.Instance.onAxisRangeChanged += new WidgetEventHandler(igDataChart_WidgetEvent);
 		}
 
 		private void igDataChart_WidgetEvent(object sender, WidgetEventArgs e)

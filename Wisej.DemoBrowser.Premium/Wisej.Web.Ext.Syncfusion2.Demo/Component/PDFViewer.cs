@@ -17,7 +17,7 @@ namespace Wisej.Web.Ext.Syncfusion2.Demo.Component
 		{
 			InitializeComponent();
 
-			this.pdfViewer1.Instance.hyperlinkClick += new WidgetEventHandler(pdfViewer1_WidgetEvent);
+			this.pdfViewer1.Instance.onHyperlinkClick += new WidgetEventHandler(pdfViewer1_WidgetEvent);
 		}
 
 		private void pdfViewer1_Appear(object sender, EventArgs e)

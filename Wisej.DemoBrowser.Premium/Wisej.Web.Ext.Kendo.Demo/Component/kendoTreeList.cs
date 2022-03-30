@@ -12,8 +12,8 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 		{
 			InitializeComponent();
 
-			this.kendoTreeList1.Instance.change += new WidgetEventHandler(kendoTreeList1_WidgetEvent);
-			this.kendoTreeList1.Instance.columnShow += new WidgetEventHandler(kendoTreeList1_WidgetEvent);
+			this.kendoTreeList1.Instance.onChange += new WidgetEventHandler(kendoTreeList1_WidgetEvent);
+			this.kendoTreeList1.Instance.onColumnShow += new WidgetEventHandler(kendoTreeList1_WidgetEvent);
 		}
 
 		private void kendoTreeList1_WidgetEvent(object sender, WidgetEventArgs e)

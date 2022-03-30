@@ -9,7 +9,7 @@ namespace Wisej.Web.Ext.Syncfusion2.Demo.Component
 		{
 			InitializeComponent();
 
-			this.bulletChart1.Instance.bulletChartMouseClick += new WidgetEventHandler(bulletChart1_WidgetEvent);
+			this.bulletChart1.Instance.onBulletChartMouseClick += new WidgetEventHandler(bulletChart1_WidgetEvent);
 		}
 
 		private void bulletChart1_WidgetEvent(object sender, WidgetEventArgs e)

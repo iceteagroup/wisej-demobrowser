@@ -9,9 +9,9 @@ namespace Wisej.Web.Ext.Syncfusion.Demo.Component
 		{
 			InitializeComponent();
 
-			this.ejMaskEdit1.Instance.change += new WidgetEventHandler(ejTextbox_WidgetEvent);
-			this.ejNumericTextbox1.Instance.change += new WidgetEventHandler(ejTextbox_WidgetEvent);
-			this.ejPercentageTextbox1.Instance.change += new WidgetEventHandler(ejTextbox_WidgetEvent);
+			this.ejMaskEdit1.Instance.onChange += new WidgetEventHandler(ejTextbox_WidgetEvent);
+			this.ejNumericTextbox1.Instance.onChange += new WidgetEventHandler(ejTextbox_WidgetEvent);
+			this.ejPercentageTextbox1.Instance.onChange += new WidgetEventHandler(ejTextbox_WidgetEvent);
 		}
 
 		private void ejTextbox_WidgetEvent(object sender, WidgetEventArgs e)

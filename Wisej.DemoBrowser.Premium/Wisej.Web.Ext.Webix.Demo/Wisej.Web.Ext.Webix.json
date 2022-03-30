@@ -1,0 +1,115 @@
+﻿{
+  //
+  // Specifies which set of packages to use from the "sources" map below.
+  //
+  "source": "cdn",
+
+  //
+  // Specifies the default theme. Used when the Theme property of the widget is not set.
+  //
+  "theme": "webix",
+
+  //
+  // Widget packages.
+  //
+  "sources": {
+    "cdn": {
+      "root": "http://cdn.webix.com",
+      "packages": {
+        "webix.js": "%root%/edge/webix.js",
+        "theme.css": "%root%/edge/skins/%theme%.css",
+        // pro.
+        "chat.js": "%root%/pro/edge/chat/chat.js",
+        "chat.css": "%root%/pro/edge/chat/chat.css",
+        "filemanager.js": "%root%/pro/edge/filemanager/filemanager.js",
+        "filemanager.css": "%root%/pro/edge/filemanager/filemanager.css",
+        "docmanager.js": "%root%/pro/edge/docmanager/docmanager.js",
+        "docmanager.css": "%root%/pro/edge/docmanager/docmanager.css",
+        "diagram.js": "%root%/pro/edge/diagram/diagram.js",
+        "diagram.css": "%root%/pro/edge/diagram/diagram.css",
+        "kanban.js": "%root%/pro/edge/kanban/kanban.js",
+        "kanban.css": "%root%/pro/edge/kanban/kanban.css",
+        "pivot.js": "%root%/pro/edge/pivot/pivot.js",
+        "pivot.css": "%root%/pro/edge/pivot/pivot.css",
+        "reports.js": "%root%/pro/edge/reports/reports.js",
+        "reports.css": "%root%/pro/edge/reports/reports.css",
+        "spreadsheet.js": "%root%/pro/edge/spreadsheet/spreadsheet.js",
+        "spreadsheet.css": "%root%/pro/edge/spreadsheet/spreadsheet.css",
+        "scheduler.js": "%root%/pro/edge/scheduler/scheduler.js",
+        "scheduler.css": "%root%/pro/edge/scheduler/scheduler.css",
+        "gantt.js": "%root%/pro/edge/gantt/gantt.js",
+        "gantt.css": "%root%/pro/edge/gantt/gantt.css",
+        "query.js": "%root%/pro/edge/query/query.js",
+        "query.css": "%root%/pro/edge/query/query.css",
+        "usermanager.js": "%root%/pro/edge/usermanager/usermanager.js",
+        "usermanager.css": "%root%/pro/edge/usermanager/usermanager.css",
+        "hint.js": "%root%/components/hint/hint.js",
+        "hint.css": "%root%/components/hint/hint.css"
+      }
+    },
+    "local": {
+      "root": "Webix",
+      "packages": {
+        "webix.js": "%root%/webix.js",
+        "theme.css": "%root%/skins/%theme%.css",
+        // pro.
+        "chat.js": "%root%/chat/codebase/chat.js",
+        "chat.css": "%root%/chat/codebase/chat.css",
+        "filemanager.js": "%root%/filemanager/codebase/filemanager.js",
+        "filemanager.css": "%root%/filemanager/codebase/filemanager.css",
+        "docmanager.js": "%root%/docmanager/codebase/docmanager.js",
+        "docmanager.css": "%root%/docmanager/codebase/docmanager.css",
+        "diagram.js": "%root%/diagram/codebase/diagram.js",
+        "diagram.css": "%root%/diagram/codebase/diagram.css",
+        "kanban.js": "%root%/kanban/codebase/kanban.js",
+        "kanban.css": "%root%/kanban/codebase/kanban.css",
+        "pivot.js": "%root%/pivot/codebase/pivot.js",
+        "pivot.css": "%root%/pivot/codebase/pivot.css",
+        "reports.js": "%root%/reports/codebase/reports.js",
+        "reports.css": "%root%/reports/codebase/reports.css",
+        "spreadsheet.js": "%root%/spreadsheet/codebase/spreadsheet.js",
+        "spreadsheet.css": "%root%/spreadsheet/codebase/spreadsheet.css",
+        "scheduler.js": "%root%/scheduler/codebase/scheduler.js",
+        "scheduler.css": "%root%/scheduler/codebase/scheduler.css",
+        "gantt.js": "%root%/gantt/codebase/gantt.js",
+        "gantt.css": "%root%/gantt/codebase/gantt.css",
+        "query.js": "%root%/query/codebase/query.js",
+        "query.css": "%root%/query/codebase/query.css",
+        "usermanager.js": "%root%/usermanager/codebase/usermanager.js",
+        "usermanager.css": "%root%/usermanager/codebase/usermanager.css"
+      }
+    },
+    "embedded": {
+      "root": "resource.wx",
+      "packages": {
+        "webix.js": "%root%/webix.js",
+        "theme.css": "%root%/skins/%theme%.css",
+        // pro.
+        "chat.js": "%root%/chat/codebase/chat.js",
+        "chat.css": "%root%/chat/codebase/chat.css",
+        "filemanager.js": "%root%/filemanager/codebase/filemanager.js",
+        "filemanager.css": "%root%/filemanager/codebase/filemanager.css",
+        "docmanager.js": "%root%/docmanager/codebase/docmanager.js",
+        "docmanager.css": "%root%/docmanager/codebase/docmanager.css",
+        "diagram.js": "%root%/diagram/codebase/diagram.js",
+        "diagram.css": "%root%/diagram/codebase/diagram.css",
+        "kanban.js": "%root%/kanban/codebase/kanban.js",
+        "kanban.css": "%root%/kanban/codebase/kanban.css",
+        "pivot.js": "%root%/pivot/codebase/pivot.js",
+        "pivot.css": "%root%/pivot/codebase/pivot.css",
+        "reports.js": "%root%/reports/codebase/reports.js",
+        "reports.css": "%root%/reports/codebase/reports.css",
+        "spreadsheet.js": "%root%/spreadsheet/codebase/spreadsheet.js",
+        "spreadsheet.css": "%root%/spreadsheet/codebase/spreadsheet.css",
+        "scheduler.js": "%root%/scheduler/codebase/scheduler.js",
+        "scheduler.css": "%root%/scheduler/codebase/scheduler.css",
+        "gantt.js": "%root%/gantt/codebase/gantt.js",
+        "gantt.css": "%root%/gantt/codebase/gantt.css",
+        "query.js": "%root%/query/codebase/query.js",
+        "query.css": "%root%/query/codebase/query.css",
+        "usermanager.js": "%root%/usermanager/codebase/usermanager.js",
+        "usermanager.css": "%root%/usermanager/codebase/usermanager.css"
+      }
+    }
+  }
+}

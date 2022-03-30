@@ -33,6 +33,7 @@
             this.dropDownTree1 = new Wisej.Web.Ext.Syncfusion2.DropDownTree();
             this.groupBox1.SuspendLayout();
             this.panel.SuspendLayout();
+            this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // linkDocs
@@ -44,22 +45,18 @@
             // 
             this.linkAPI.Text = "https://ej2.syncfusion.com/javascript/documentation/api/drop-down-tree/";
             // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.tagTextBoxSubNodeDataSource);
-            this.groupBox1.Controls.Add(this.comboBoxNode);
-            this.groupBox1.Controls.SetChildIndex(this.comboBoxNode, 0);
-            this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
-            this.groupBox1.Controls.SetChildIndex(this.tagTextBoxSubNodeDataSource, 0);
-            // 
             // buttonUpdate
             // 
-            this.buttonUpdate.Location = new System.Drawing.Point(28, 224);
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
             // panel
             // 
             this.panel.Controls.Add(this.dropDownTree1);
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Controls.Add(this.comboBoxNode);
+            this.flowLayoutPanel1.Controls.Add(this.tagTextBoxSubNodeDataSource);
             // 
             // linkDemo
             // 
@@ -68,36 +65,42 @@
             // comboBoxNode
             // 
             this.comboBoxNode.DropDownStyle = Wisej.Web.ComboBoxStyle.DropDownList;
+            this.flowLayoutPanel1.SetFillWeight(this.comboBoxNode, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.comboBoxNode, true);
             this.comboBoxNode.Items.AddRange(new object[] {
             "Boot",
             "FileManager",
             "System32"});
             this.comboBoxNode.LabelText = "Node";
-            this.comboBoxNode.Location = new System.Drawing.Point(28, 38);
+            this.comboBoxNode.Location = new System.Drawing.Point(3, 3);
             this.comboBoxNode.Name = "comboBoxNode";
-            this.comboBoxNode.Size = new System.Drawing.Size(196, 46);
+            this.comboBoxNode.Size = new System.Drawing.Size(212, 57);
             this.comboBoxNode.TabIndex = 2;
             // 
             // tagTextBoxSubNodeDataSource
             // 
-            this.tagTextBoxSubNodeDataSource.LabelText = "Sub node data source";
-            this.tagTextBoxSubNodeDataSource.Location = new System.Drawing.Point(28, 109);
+            this.tagTextBoxSubNodeDataSource.AutoSize = false;
+            this.flowLayoutPanel1.SetFillWeight(this.tagTextBoxSubNodeDataSource, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.tagTextBoxSubNodeDataSource, true);
+            this.tagTextBoxSubNodeDataSource.LabelText = "Sub-Node Items";
+            this.tagTextBoxSubNodeDataSource.Location = new System.Drawing.Point(3, 79);
+            this.tagTextBoxSubNodeDataSource.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.tagTextBoxSubNodeDataSource.MaxLength = 10;
             this.tagTextBoxSubNodeDataSource.MaxTagCount = 10;
             this.tagTextBoxSubNodeDataSource.Multiline = true;
             this.tagTextBoxSubNodeDataSource.Name = "tagTextBoxSubNodeDataSource";
-            this.tagTextBoxSubNodeDataSource.Size = new System.Drawing.Size(196, 98);
+            this.tagTextBoxSubNodeDataSource.Size = new System.Drawing.Size(212, 142);
             this.tagTextBoxSubNodeDataSource.TabIndex = 3;
             // 
             // dropDownTree1
             // 
             this.dropDownTree1.Anchor = Wisej.Web.AnchorStyles.None;
-            this.dropDownTree1.Location = new System.Drawing.Point(369, 262);
+            this.dropDownTree1.Location = new System.Drawing.Point(369, 259);
             this.dropDownTree1.Name = "dropDownTree1";
             this.dropDownTree1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"fields\":{\"dataSource\":[{\"id\":\"1\",\"name\":\"Boot\"},{\"id\":\"2\",\"name\":\"FileManager\"}" +
         ",{\"id\":\"3\",\"name\":\"System32\"}],\"value\":\"id\",\"text\":\"name\",\"child\":\"subChild\",\"ex" +
         "panded\":\"expanded\"}}")));
-            this.dropDownTree1.Size = new System.Drawing.Size(350, 35);
+            this.dropDownTree1.Size = new System.Drawing.Size(350, 40);
             this.dropDownTree1.TabIndex = 0;
             this.dropDownTree1.Text = "dropDownTree1";
             // 
@@ -105,8 +108,9 @@
             // 
             this.Name = "DropDownTree";
             this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.panel.ResumeLayout(false);
+            this.flowLayoutPanel1.ResumeLayout(false);
+            this.flowLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 

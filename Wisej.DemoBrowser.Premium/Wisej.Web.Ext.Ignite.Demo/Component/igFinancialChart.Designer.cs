@@ -28,7 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-            Wisej.Web.Ext.Ignite.igBase.WidgetFunction widgetFunction1 = new Wisej.Web.Ext.Ignite.igBase.WidgetFunction();
+            Wisej.Web.Ext.Ignite.igBase.WidgetFunction widgetFunction2 = new Wisej.Web.Ext.Ignite.igBase.WidgetFunction();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(igFinancialChart));
             this.igFinancialChart1 = new Wisej.Web.Ext.Ignite.igFinancialChart();
             this.comboBox1 = new Wisej.Web.ComboBox();
@@ -40,31 +40,16 @@
             this.checkBox3 = new Wisej.Web.CheckBox();
             this.groupBox1.SuspendLayout();
             this.panel.SuspendLayout();
+            this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.checkBox3);
-            this.groupBox1.Controls.Add(this.checkBox2);
-            this.groupBox1.Controls.Add(this.checkBox1);
-            this.groupBox1.Controls.Add(this.button2);
-            this.groupBox1.Controls.Add(this.button1);
-            this.groupBox1.Controls.Add(this.comboBox2);
-            this.groupBox1.Controls.Add(this.comboBox1);
-            this.groupBox1.Size = new System.Drawing.Size(250, 518);
             this.groupBox1.TabIndex = 3;
-            this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
-            this.groupBox1.Controls.SetChildIndex(this.comboBox1, 0);
-            this.groupBox1.Controls.SetChildIndex(this.comboBox2, 0);
-            this.groupBox1.Controls.SetChildIndex(this.button1, 0);
-            this.groupBox1.Controls.SetChildIndex(this.button2, 0);
-            this.groupBox1.Controls.SetChildIndex(this.checkBox1, 0);
-            this.groupBox1.Controls.SetChildIndex(this.checkBox2, 0);
-            this.groupBox1.Controls.SetChildIndex(this.checkBox3, 0);
             // 
             // buttonUpdate
             // 
-            this.buttonUpdate.Location = new System.Drawing.Point(28, 433);
+            this.buttonUpdate.Location = new System.Drawing.Point(16, 476);
             this.buttonUpdate.TabIndex = 7;
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
@@ -88,6 +73,17 @@
             this.linkDocs.TabIndex = 4;
             this.linkDocs.Text = "http://www.igniteui.com/help/financial-chart-overview";
             // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Controls.Add(this.checkBox2);
+            this.flowLayoutPanel1.Controls.Add(this.checkBox1);
+            this.flowLayoutPanel1.Controls.Add(this.checkBox3);
+            this.flowLayoutPanel1.Controls.Add(this.comboBox1);
+            this.flowLayoutPanel1.Controls.Add(this.comboBox2);
+            this.flowLayoutPanel1.Controls.Add(this.button1);
+            this.flowLayoutPanel1.Controls.Add(this.button2);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 490);
+            // 
             // igFinancialChart1
             // 
             this.igFinancialChart1.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
@@ -99,13 +95,15 @@
             this.igFinancialChart1.Size = new System.Drawing.Size(1050, 512);
             this.igFinancialChart1.TabIndex = 0;
             this.igFinancialChart1.Text = "igFinancialChart1";
-            widgetFunction1.Name = "loadTheData";
-            widgetFunction1.Source = resources.GetString("widgetFunction1.Source");
+            widgetFunction2.Name = "loadTheData";
+            widgetFunction2.Source = resources.GetString("widgetFunction2.Source");
             this.igFinancialChart1.WidgetFunctions = new Wisej.Web.Ext.Ignite.igBase.WidgetFunction[] {
-        widgetFunction1};
+        widgetFunction2};
             // 
             // comboBox1
             // 
+            this.flowLayoutPanel1.SetFillWeight(this.comboBox1, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.comboBox1, true);
             this.comboBox1.Items.AddRange(new object[] {
             "auto",
             "bar",
@@ -113,13 +111,16 @@
             "column",
             "line"});
             this.comboBox1.LabelText = "Chart Type";
-            this.comboBox1.Location = new System.Drawing.Point(28, 213);
+            this.comboBox1.Location = new System.Drawing.Point(3, 187);
+            this.comboBox1.Margin = new Wisej.Web.Padding(3, 8, 3, 3);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(195, 57);
+            this.comboBox1.Size = new System.Drawing.Size(212, 57);
             this.comboBox1.TabIndex = 3;
             // 
             // comboBox2
             // 
+            this.flowLayoutPanel1.SetFillWeight(this.comboBox2, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.comboBox2, true);
             this.comboBox2.Items.AddRange(new object[] {
             "none",
             "linearFit",
@@ -136,25 +137,32 @@
             "cumulativeAverage",
             "weightedAverage"});
             this.comboBox2.LabelText = "Trend Line Type";
-            this.comboBox2.Location = new System.Drawing.Point(28, 275);
+            this.comboBox2.Location = new System.Drawing.Point(3, 255);
+            this.comboBox2.Margin = new Wisej.Web.Padding(3, 8, 3, 3);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(195, 57);
+            this.comboBox2.Size = new System.Drawing.Size(212, 57);
             this.comboBox2.TabIndex = 4;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(28, 337);
+            this.flowLayoutPanel1.SetFillWeight(this.button1, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.button1, true);
+            this.button1.Location = new System.Drawing.Point(3, 323);
+            this.button1.Margin = new Wisej.Web.Padding(3, 8, 3, 3);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(195, 27);
+            this.button1.Size = new System.Drawing.Size(212, 40);
             this.button1.TabIndex = 5;
             this.button1.Text = "Add new Item";
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(28, 385);
+            this.flowLayoutPanel1.SetFillWeight(this.button2, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.button2, true);
+            this.button2.Location = new System.Drawing.Point(3, 374);
+            this.button2.Margin = new Wisej.Web.Padding(3, 8, 3, 3);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(195, 27);
+            this.button2.Size = new System.Drawing.Size(212, 40);
             this.button2.TabIndex = 6;
             this.button2.Text = "Start Task";
             this.button2.Click += new System.EventHandler(this.button2_Click);
@@ -164,9 +172,12 @@
             this.checkBox1.Appearance = Wisej.Web.Appearance.Switch;
             this.checkBox1.AutoSize = false;
             this.checkBox1.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.checkBox1.Location = new System.Drawing.Point(28, 36);
+            this.flowLayoutPanel1.SetFillWeight(this.checkBox1, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.checkBox1, true);
+            this.checkBox1.Location = new System.Drawing.Point(3, 64);
+            this.checkBox1.Margin = new Wisej.Web.Padding(3, 8, 3, 3);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(195, 38);
+            this.checkBox1.Size = new System.Drawing.Size(212, 63);
             this.checkBox1.TabIndex = 0;
             this.checkBox1.Text = "Animate Series When Axis Range Changes";
             // 
@@ -175,9 +186,11 @@
             this.checkBox2.Appearance = Wisej.Web.Appearance.Switch;
             this.checkBox2.AutoSize = false;
             this.checkBox2.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.checkBox2.Location = new System.Drawing.Point(28, 95);
+            this.flowLayoutPanel1.SetFillWeight(this.checkBox2, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.checkBox2, true);
+            this.checkBox2.Location = new System.Drawing.Point(3, 3);
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(195, 38);
+            this.checkBox2.Size = new System.Drawing.Size(212, 50);
             this.checkBox2.TabIndex = 1;
             this.checkBox2.Text = "Crosshairs Snap to Data";
             // 
@@ -187,9 +200,12 @@
             this.checkBox3.AutoSize = false;
             this.checkBox3.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.checkBox3.Checked = true;
-            this.checkBox3.Location = new System.Drawing.Point(28, 154);
+            this.flowLayoutPanel1.SetFillWeight(this.checkBox3, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.checkBox3, true);
+            this.checkBox3.Location = new System.Drawing.Point(3, 138);
+            this.checkBox3.Margin = new Wisej.Web.Padding(3, 8, 3, 3);
             this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(195, 38);
+            this.checkBox3.Size = new System.Drawing.Size(212, 38);
             this.checkBox3.TabIndex = 2;
             this.checkBox3.Text = "Toolbar Visible";
             // 
@@ -198,8 +214,9 @@
             this.Name = "igFinancialChart";
             this.Load += new System.EventHandler(this.igFinancialChart_Load);
             this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.panel.ResumeLayout(false);
+            this.flowLayoutPanel1.ResumeLayout(false);
+            this.flowLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 

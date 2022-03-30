@@ -9,7 +9,7 @@ namespace Wisej.Web.Ext.Ignite.Demo.Component
 		{
 			InitializeComponent();
 
-			this.igFunnelChart1.Instance.sliceClicked += new WidgetEventHandler(igFunnelChart1_WidgetEvent);
+			this.igFunnelChart1.Instance.onSliceClicked += new WidgetEventHandler(igFunnelChart1_WidgetEvent);
 		}
 
 		private void igFunnelChart1_WidgetEvent(object sender, WidgetEventArgs e)

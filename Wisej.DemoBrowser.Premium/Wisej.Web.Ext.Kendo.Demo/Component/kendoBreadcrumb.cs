@@ -9,8 +9,8 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 		{
 			InitializeComponent();
 
-			this.kendoBreadcrumb1.Instance.click += new WidgetEventHandler(kendoBreadcrumb1_WidgetEvent);
-			this.kendoBreadcrumb1.Instance.change += new WidgetEventHandler(kendoBreadcrumb1_WidgetEvent);
+			this.kendoBreadcrumb1.Instance.onClick += new WidgetEventHandler(kendoBreadcrumb1_WidgetEvent);
+			this.kendoBreadcrumb1.Instance.onChange += new WidgetEventHandler(kendoBreadcrumb1_WidgetEvent);
 		}
 
 		private void kendoBreadcrumb1_WidgetEvent(object sender, WidgetEventArgs e)

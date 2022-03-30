@@ -9,7 +9,7 @@ namespace Wisej.Web.Ext.Syncfusion.Demo.Component
 		{
 			InitializeComponent();
 
-			this.ejSymbolPalette1.Instance.selectionChange += new WidgetEventHandler(ejSymbolPalette1_WidgetEvent);
+			this.ejSymbolPalette1.Instance.onSelectionChange += new WidgetEventHandler(ejSymbolPalette1_WidgetEvent);
 		}
 
 		private void ejDiagram1_Appear(object sender, EventArgs e)

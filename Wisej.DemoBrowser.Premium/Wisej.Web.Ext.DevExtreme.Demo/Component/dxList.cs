@@ -9,8 +9,8 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
 		{
 			InitializeComponent();
 
-			this.dxList1.Instance.itemClick += new WidgetEventHandler(dxList1_WidgetEvent);
-			this.dxList1.Instance.pullRefresh += new WidgetEventHandler(dxList1_WidgetEvent);
+			this.dxList1.Instance.onItemClick += new WidgetEventHandler(dxList1_WidgetEvent);
+			this.dxList1.Instance.onPullRefresh += new WidgetEventHandler(dxList1_WidgetEvent);
 		}
 
 		private void dxList1_WidgetEvent(object sender, WidgetEventArgs e)

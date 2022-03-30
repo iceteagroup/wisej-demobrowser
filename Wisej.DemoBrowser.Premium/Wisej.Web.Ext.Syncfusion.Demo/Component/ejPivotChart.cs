@@ -12,7 +12,7 @@ namespace Wisej.Web.Ext.Syncfusion.Demo.Component
 		{
 			InitializeComponent();
 
-			this.ejPivotChart1.Instance.drillSuccess += new WidgetEventHandler(ejPivotChart1_WidgetEvent);
+			this.ejPivotChart1.Instance.onDrillSuccess += new WidgetEventHandler(ejPivotChart1_WidgetEvent);
 		}
 
 		private void ejPivotChart1_WidgetEvent(object sender, WidgetEventArgs e)

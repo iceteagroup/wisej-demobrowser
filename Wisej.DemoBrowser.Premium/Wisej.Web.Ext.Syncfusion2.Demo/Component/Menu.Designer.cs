@@ -33,6 +33,7 @@
             this.comboBoxOrientation = new Wisej.Web.ComboBox();
             this.groupBox1.SuspendLayout();
             this.panel.SuspendLayout();
+            this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // linkDocs
@@ -43,12 +44,6 @@
             // 
             this.linkAPI.Text = "https://ej2.syncfusion.com/javascript/documentation/api/menu/";
             // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.comboBoxOrientation);
-            this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
-            this.groupBox1.Controls.SetChildIndex(this.comboBoxOrientation, 0);
-            // 
             // buttonUpdate
             // 
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
@@ -56,6 +51,10 @@
             // panel
             // 
             this.panel.Controls.Add(this.menu1);
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Controls.Add(this.comboBoxOrientation);
             // 
             // linkDemo
             // 
@@ -76,21 +75,24 @@
             // comboBoxOrientation
             // 
             this.comboBoxOrientation.DropDownStyle = Wisej.Web.ComboBoxStyle.DropDownList;
+            this.flowLayoutPanel1.SetFillWeight(this.comboBoxOrientation, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.comboBoxOrientation, true);
             this.comboBoxOrientation.Items.AddRange(new object[] {
             "Horizontal",
             "Vertical"});
             this.comboBoxOrientation.LabelText = "Orientation";
-            this.comboBoxOrientation.Location = new System.Drawing.Point(22, 35);
+            this.comboBoxOrientation.Location = new System.Drawing.Point(3, 3);
             this.comboBoxOrientation.Name = "comboBoxOrientation";
-            this.comboBoxOrientation.Size = new System.Drawing.Size(207, 42);
+            this.comboBoxOrientation.Size = new System.Drawing.Size(212, 57);
             this.comboBoxOrientation.TabIndex = 2;
             // 
             // Menu
             // 
             this.Name = "Menu";
             this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.panel.ResumeLayout(false);
+            this.flowLayoutPanel1.ResumeLayout(false);
+            this.flowLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 

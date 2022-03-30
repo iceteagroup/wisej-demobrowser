@@ -12,11 +12,9 @@ namespace Wisej.Web.Ext.Syncfusion.Demo.Component
 		{
 			InitializeComponent();
 
-			this.ejChart1.Instance.chartClick += new WidgetEventHandler(ejChart1_WidgetEvent);
-
-			this.ejChart1.Instance.legendItemClick += new WidgetEventHandler(ejChart1_WidgetEvent);
-
-			this.ejChart1.Instance.chartDoubleClick += new WidgetEventHandler(ejChart1_WidgetEvent);
+			this.ejChart1.Instance.onLegendItemClick += new WidgetEventHandler(ejChart1_WidgetEvent);
+			this.ejChart1.Instance.onChartDoubleClick += new WidgetEventHandler(ejChart1_WidgetEvent);
+			this.ejChart1.Instance.onPointRegionClick += new WidgetEventHandler(ejChart1_WidgetEvent);
 		}
 
 		private void buttonUpdate_Click(object sender, EventArgs e)

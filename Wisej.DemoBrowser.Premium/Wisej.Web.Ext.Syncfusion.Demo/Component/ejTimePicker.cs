@@ -11,9 +11,9 @@ namespace Wisej.Web.Ext.Syncfusion.Demo.Component
 		{
 			InitializeComponent();
 
-			this.ejTimePicker1.Instance.open += new WidgetEventHandler(ejTimePicker1_WidgetEvent);
-			this.ejTimePicker1.Instance.change += new WidgetEventHandler(ejTimePicker1_WidgetEvent);
-			this.ejTimePicker1.Instance.select += new WidgetEventHandler(ejTimePicker1_WidgetEvent);
+			this.ejTimePicker1.Instance.onOpen += new WidgetEventHandler(ejTimePicker1_WidgetEvent);
+			this.ejTimePicker1.Instance.onChange += new WidgetEventHandler(ejTimePicker1_WidgetEvent);
+			this.ejTimePicker1.Instance.onSelect += new WidgetEventHandler(ejTimePicker1_WidgetEvent);
 		}
 
 		private void buttonUpdate_Click(object sender, EventArgs e)
@@ -56,5 +56,5 @@ namespace Wisej.Web.Ext.Syncfusion.Demo.Component
 
 			Application.Play(MessageBoxIcon.Information);
 		}
-	}
+    }
 }

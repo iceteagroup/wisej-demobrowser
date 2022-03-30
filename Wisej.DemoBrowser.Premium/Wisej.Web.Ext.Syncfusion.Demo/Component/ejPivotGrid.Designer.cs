@@ -38,6 +38,7 @@
             this.buttonLoad = new Wisej.Web.Upload();
             this.groupBox1.SuspendLayout();
             this.panel.SuspendLayout();
+            this.flowLayoutPanelProperties.SuspendLayout();
             this.SuspendLayout();
             // 
             // linkDocs
@@ -45,26 +46,8 @@
             this.linkDocs.TabIndex = 4;
             this.linkDocs.Text = "https://help.syncfusion.com/js/pivotgrid/overview";
             // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.buttonSave);
-            this.groupBox1.Controls.Add(this.buttonLoad);
-            this.groupBox1.Controls.Add(this.checkBoxShow3);
-            this.groupBox1.Controls.Add(this.checkBox4);
-            this.groupBox1.Controls.Add(this.checkBox2);
-            this.groupBox1.Controls.Add(this.checkBox1);
-            this.groupBox1.Size = new System.Drawing.Size(250, 486);
-            this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
-            this.groupBox1.Controls.SetChildIndex(this.checkBox1, 0);
-            this.groupBox1.Controls.SetChildIndex(this.checkBox2, 0);
-            this.groupBox1.Controls.SetChildIndex(this.checkBox4, 0);
-            this.groupBox1.Controls.SetChildIndex(this.checkBoxShow3, 0);
-            this.groupBox1.Controls.SetChildIndex(this.buttonLoad, 0);
-            this.groupBox1.Controls.SetChildIndex(this.buttonSave, 0);
-            // 
             // buttonUpdate
             // 
-            this.buttonUpdate.Location = new System.Drawing.Point(28, 403);
             this.buttonUpdate.TabIndex = 5;
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
@@ -85,6 +68,15 @@
             this.panel.Controls.Add(this.ejPivotGrid1);
             this.panel.TabIndex = 7;
             // 
+            // flowLayoutPanelProperties
+            // 
+            this.flowLayoutPanelProperties.Controls.Add(this.checkBox1);
+            this.flowLayoutPanelProperties.Controls.Add(this.checkBox2);
+            this.flowLayoutPanelProperties.Controls.Add(this.checkBoxShow3);
+            this.flowLayoutPanelProperties.Controls.Add(this.checkBox4);
+            this.flowLayoutPanelProperties.Controls.Add(this.buttonLoad);
+            this.flowLayoutPanelProperties.Controls.Add(this.buttonSave);
+            // 
             // ejPivotGrid1
             // 
             this.ejPivotGrid1.Dock = Wisej.Web.DockStyle.Fill;
@@ -101,9 +93,11 @@
             this.checkBox1.AutoSize = false;
             this.checkBox1.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.checkBox1.Checked = true;
-            this.checkBox1.Location = new System.Drawing.Point(28, 36);
+            this.flowLayoutPanelProperties.SetFillWeight(this.checkBox1, 1);
+            this.flowLayoutPanelProperties.SetFlowBreak(this.checkBox1, true);
+            this.checkBox1.Location = new System.Drawing.Point(3, 3);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(195, 38);
+            this.checkBox1.Size = new System.Drawing.Size(212, 38);
             this.checkBox1.TabIndex = 0;
             this.checkBox1.Text = "Enable Cell Click";
             // 
@@ -113,9 +107,12 @@
             this.checkBox2.AutoSize = false;
             this.checkBox2.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.checkBox2.Checked = true;
-            this.checkBox2.Location = new System.Drawing.Point(28, 104);
+            this.flowLayoutPanelProperties.SetFillWeight(this.checkBox2, 1);
+            this.flowLayoutPanelProperties.SetFlowBreak(this.checkBox2, true);
+            this.checkBox2.Location = new System.Drawing.Point(3, 60);
+            this.checkBox2.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(195, 44);
+            this.checkBox2.Size = new System.Drawing.Size(212, 44);
             this.checkBox2.TabIndex = 1;
             this.checkBox2.Text = "Show Header Row Items";
             // 
@@ -125,9 +122,12 @@
             this.checkBox4.AutoSize = false;
             this.checkBox4.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.checkBox4.Checked = true;
-            this.checkBox4.Location = new System.Drawing.Point(28, 263);
+            this.flowLayoutPanelProperties.SetFillWeight(this.checkBox4, 1);
+            this.flowLayoutPanelProperties.SetFlowBreak(this.checkBox4, true);
+            this.checkBox4.Location = new System.Drawing.Point(3, 197);
+            this.checkBox4.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(195, 38);
+            this.checkBox4.Size = new System.Drawing.Size(212, 38);
             this.checkBox4.TabIndex = 3;
             this.checkBox4.Text = "Column Grand Total";
             // 
@@ -137,9 +137,12 @@
             this.checkBoxShow3.AutoSize = false;
             this.checkBoxShow3.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.checkBoxShow3.Checked = true;
-            this.checkBoxShow3.Location = new System.Drawing.Point(28, 178);
+            this.flowLayoutPanelProperties.SetFillWeight(this.checkBoxShow3, 1);
+            this.flowLayoutPanelProperties.SetFlowBreak(this.checkBoxShow3, true);
+            this.checkBoxShow3.Location = new System.Drawing.Point(3, 123);
+            this.checkBoxShow3.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBoxShow3.Name = "checkBoxShow3";
-            this.checkBoxShow3.Size = new System.Drawing.Size(195, 55);
+            this.checkBoxShow3.Size = new System.Drawing.Size(212, 55);
             this.checkBoxShow3.TabIndex = 2;
             this.checkBoxShow3.Text = "Show Header Row Items";
             // 
@@ -147,7 +150,8 @@
             // 
             this.buttonSave.Display = Wisej.Web.Display.Icon;
             this.buttonSave.ImageSource = "icon-save";
-            this.buttonSave.Location = new System.Drawing.Point(76, 331);
+            this.buttonSave.Location = new System.Drawing.Point(51, 254);
+            this.buttonSave.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.buttonSave.Name = "buttonSave";
             this.buttonSave.Size = new System.Drawing.Size(42, 42);
             this.buttonSave.TabIndex = 6;
@@ -159,7 +163,8 @@
             this.buttonLoad.AllowedFileTypes = ".json";
             this.buttonLoad.HideValue = true;
             this.buttonLoad.ImageSource = "icon-file";
-            this.buttonLoad.Location = new System.Drawing.Point(28, 331);
+            this.buttonLoad.Location = new System.Drawing.Point(3, 254);
+            this.buttonLoad.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.buttonLoad.Name = "buttonLoad";
             this.buttonLoad.Size = new System.Drawing.Size(42, 42);
             this.buttonLoad.TabIndex = 4;
@@ -170,6 +175,7 @@
             this.Name = "ejPivotGrid";
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
+            this.flowLayoutPanelProperties.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 

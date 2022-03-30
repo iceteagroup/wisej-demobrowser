@@ -13,7 +13,7 @@ namespace Wisej.Web.Ext.Syncfusion.Demo.Component
 		{
 			InitializeComponent();
 
-			this.ejSpreadsheet1.Instance.cellClick += new WidgetEventHandler(this.ejSpreadsheet1_WidgetEvent);
+			this.ejSpreadsheet1.Instance.onCellClick += new WidgetEventHandler(this.ejSpreadsheet1_WidgetEvent);
 		}
 
 		private void buttonUpdate_Click(object sender, EventArgs e)

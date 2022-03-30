@@ -9,8 +9,8 @@ namespace Wisej.Web.Ext.Ignite.Demo.Component
 		{
 			InitializeComponent();
 
-			this.igPieChart1.Instance.sliceClick += new WidgetEventHandler(igPieChart_WidgetEvent);
-			this.igPieChart1.Instance.labelClick += new WidgetEventHandler(igPieChart_WidgetEvent);
+			this.igPieChart1.Instance.onSliceClick += new WidgetEventHandler(igPieChart_WidgetEvent);
+			this.igPieChart1.Instance.onLabelClick += new WidgetEventHandler(igPieChart_WidgetEvent);
 		}
 
 		private void igPieChart_WidgetEvent(object sender, WidgetEventArgs e)

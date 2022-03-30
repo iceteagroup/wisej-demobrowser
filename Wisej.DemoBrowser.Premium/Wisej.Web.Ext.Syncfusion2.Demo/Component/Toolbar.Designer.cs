@@ -33,6 +33,7 @@
             this.checkBoxEnableCollision = new Wisej.Web.CheckBox();
             this.groupBox1.SuspendLayout();
             this.panel.SuspendLayout();
+            this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // linkDocs
@@ -43,14 +44,6 @@
             // 
             this.linkAPI.Text = "https://ej2.syncfusion.com/javascript/documentation/api/toolbar/";
             // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.checkBoxEnableCollision);
-            this.groupBox1.Controls.Add(this.comboBoxOverflowMode);
-            this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
-            this.groupBox1.Controls.SetChildIndex(this.comboBoxOverflowMode, 0);
-            this.groupBox1.Controls.SetChildIndex(this.checkBoxEnableCollision, 0);
-            // 
             // buttonUpdate
             // 
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
@@ -58,6 +51,11 @@
             // panel
             // 
             this.panel.Controls.Add(this.toolbar1);
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Controls.Add(this.checkBoxEnableCollision);
+            this.flowLayoutPanel1.Controls.Add(this.comboBoxOverflowMode);
             // 
             // linkDemo
             // 
@@ -77,24 +75,29 @@
             // comboBoxOverflowMode
             // 
             this.comboBoxOverflowMode.DropDownStyle = Wisej.Web.ComboBoxStyle.DropDownList;
+            this.flowLayoutPanel1.SetFillWeight(this.comboBoxOverflowMode, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.comboBoxOverflowMode, true);
             this.comboBoxOverflowMode.Items.AddRange(new object[] {
             "Scrollable",
             "Popup",
             "MultiRow",
             "Extended"});
             this.comboBoxOverflowMode.LabelText = "Overflow Mode";
-            this.comboBoxOverflowMode.Location = new System.Drawing.Point(17, 29);
+            this.comboBoxOverflowMode.Location = new System.Drawing.Point(3, 46);
+            this.comboBoxOverflowMode.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.comboBoxOverflowMode.Name = "comboBoxOverflowMode";
-            this.comboBoxOverflowMode.Size = new System.Drawing.Size(216, 42);
+            this.comboBoxOverflowMode.Size = new System.Drawing.Size(212, 57);
             this.comboBoxOverflowMode.TabIndex = 1;
             // 
             // checkBoxEnableCollision
             // 
             this.checkBoxEnableCollision.Appearance = Wisej.Web.Appearance.Switch;
             this.checkBoxEnableCollision.Checked = true;
-            this.checkBoxEnableCollision.Location = new System.Drawing.Point(17, 95);
+            this.flowLayoutPanel1.SetFillWeight(this.checkBoxEnableCollision, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.checkBoxEnableCollision, true);
+            this.checkBoxEnableCollision.Location = new System.Drawing.Point(3, 3);
             this.checkBoxEnableCollision.Name = "checkBoxEnableCollision";
-            this.checkBoxEnableCollision.Size = new System.Drawing.Size(146, 24);
+            this.checkBoxEnableCollision.Size = new System.Drawing.Size(212, 24);
             this.checkBoxEnableCollision.TabIndex = 2;
             this.checkBoxEnableCollision.Text = "Enable Collision";
             // 
@@ -102,8 +105,9 @@
             // 
             this.Name = "Toolbar";
             this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.panel.ResumeLayout(false);
+            this.flowLayoutPanel1.ResumeLayout(false);
+            this.flowLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -37,6 +37,7 @@
             this.comboBoxView = new Wisej.Web.ComboBox();
             this.groupBox1.SuspendLayout();
             this.panel.SuspendLayout();
+            this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // linkDocs
@@ -48,32 +49,21 @@
             // 
             this.linkAPI.Text = "https://ej2.syncfusion.com/javascript/documentation/api/file-manager/";
             // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.comboBoxView);
-            this.groupBox1.Controls.Add(this.checkBoxMultipleSelection);
-            this.groupBox1.Controls.Add(this.checkBoxFileExtension);
-            this.groupBox1.Controls.Add(this.checkBoxThumbnail);
-            this.groupBox1.Controls.Add(this.checkBoxHiddenItem);
-            this.groupBox1.Size = new System.Drawing.Size(339, 363);
-            this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
-            this.groupBox1.Controls.SetChildIndex(this.checkBoxHiddenItem, 0);
-            this.groupBox1.Controls.SetChildIndex(this.checkBoxThumbnail, 0);
-            this.groupBox1.Controls.SetChildIndex(this.checkBoxFileExtension, 0);
-            this.groupBox1.Controls.SetChildIndex(this.checkBoxMultipleSelection, 0);
-            this.groupBox1.Controls.SetChildIndex(this.comboBoxView, 0);
-            // 
             // buttonUpdate
             // 
-            this.buttonUpdate.Location = new System.Drawing.Point(28, 282);
-            this.buttonUpdate.Size = new System.Drawing.Size(284, 52);
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
             // panel
             // 
             this.panel.Controls.Add(this.fileManager1);
-            this.panel.Location = new System.Drawing.Point(415, 151);
-            this.panel.Size = new System.Drawing.Size(1043, 560);
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Controls.Add(this.checkBoxHiddenItem);
+            this.flowLayoutPanel1.Controls.Add(this.checkBoxThumbnail);
+            this.flowLayoutPanel1.Controls.Add(this.checkBoxFileExtension);
+            this.flowLayoutPanel1.Controls.Add(this.checkBoxMultipleSelection);
+            this.flowLayoutPanel1.Controls.Add(this.comboBoxView);
             // 
             // linkDemo
             // 
@@ -85,7 +75,7 @@
             this.fileManager1.Location = new System.Drawing.Point(8, 8);
             this.fileManager1.Name = "fileManager1";
             this.fileManager1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("fileManager1.Options"))));
-            this.fileManager1.Size = new System.Drawing.Size(1025, 542);
+            this.fileManager1.Size = new System.Drawing.Size(1073, 542);
             this.fileManager1.TabIndex = 0;
             this.fileManager1.Text = "fileManager1";
             this.fileManager1.WebRequest += new Wisej.Web.WebRequestHandler(this.fileManager1_WebRequest);
@@ -93,49 +83,62 @@
             // checkBoxHiddenItem
             // 
             this.checkBoxHiddenItem.Appearance = Wisej.Web.Appearance.Switch;
-            this.checkBoxHiddenItem.Location = new System.Drawing.Point(11, 39);
+            this.flowLayoutPanel1.SetFillWeight(this.checkBoxHiddenItem, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.checkBoxHiddenItem, true);
+            this.checkBoxHiddenItem.Location = new System.Drawing.Point(3, 3);
             this.checkBoxHiddenItem.Name = "checkBoxHiddenItem";
-            this.checkBoxHiddenItem.Size = new System.Drawing.Size(179, 24);
+            this.checkBoxHiddenItem.Size = new System.Drawing.Size(212, 24);
             this.checkBoxHiddenItem.TabIndex = 1;
-            this.checkBoxHiddenItem.Text = "Show hidden item";
+            this.checkBoxHiddenItem.Text = "Show Hidden Items";
             // 
             // checkBoxThumbnail
             // 
             this.checkBoxThumbnail.Appearance = Wisej.Web.Appearance.Switch;
-            this.checkBoxThumbnail.Location = new System.Drawing.Point(11, 80);
+            this.flowLayoutPanel1.SetFillWeight(this.checkBoxThumbnail, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.checkBoxThumbnail, true);
+            this.checkBoxThumbnail.Location = new System.Drawing.Point(3, 46);
+            this.checkBoxThumbnail.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBoxThumbnail.Name = "checkBoxThumbnail";
-            this.checkBoxThumbnail.Size = new System.Drawing.Size(166, 24);
+            this.checkBoxThumbnail.Size = new System.Drawing.Size(212, 24);
             this.checkBoxThumbnail.TabIndex = 2;
-            this.checkBoxThumbnail.Text = "Show thumbnail";
+            this.checkBoxThumbnail.Text = "Show Thumbnails";
             // 
             // checkBoxFileExtension
             // 
             this.checkBoxFileExtension.Appearance = Wisej.Web.Appearance.Switch;
-            this.checkBoxFileExtension.Location = new System.Drawing.Point(11, 119);
+            this.flowLayoutPanel1.SetFillWeight(this.checkBoxFileExtension, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.checkBoxFileExtension, true);
+            this.checkBoxFileExtension.Location = new System.Drawing.Point(3, 89);
+            this.checkBoxFileExtension.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBoxFileExtension.Name = "checkBoxFileExtension";
-            this.checkBoxFileExtension.Size = new System.Drawing.Size(190, 24);
+            this.checkBoxFileExtension.Size = new System.Drawing.Size(212, 24);
             this.checkBoxFileExtension.TabIndex = 3;
-            this.checkBoxFileExtension.Text = "Show file extension";
+            this.checkBoxFileExtension.Text = "Show File Extensions";
             // 
             // checkBoxMultipleSelection
             // 
             this.checkBoxMultipleSelection.Appearance = Wisej.Web.Appearance.Switch;
-            this.checkBoxMultipleSelection.AutoSize = false;
-            this.checkBoxMultipleSelection.Location = new System.Drawing.Point(11, 155);
+            this.flowLayoutPanel1.SetFillWeight(this.checkBoxMultipleSelection, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.checkBoxMultipleSelection, true);
+            this.checkBoxMultipleSelection.Location = new System.Drawing.Point(3, 132);
+            this.checkBoxMultipleSelection.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBoxMultipleSelection.Name = "checkBoxMultipleSelection";
-            this.checkBoxMultipleSelection.Size = new System.Drawing.Size(250, 34);
+            this.checkBoxMultipleSelection.Size = new System.Drawing.Size(212, 24);
             this.checkBoxMultipleSelection.TabIndex = 4;
-            this.checkBoxMultipleSelection.Text = "Allow multiple selection";
+            this.checkBoxMultipleSelection.Text = "Multiple Selection";
             // 
             // comboBoxView
             // 
+            this.flowLayoutPanel1.SetFillWeight(this.comboBoxView, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.comboBoxView, true);
             this.comboBoxView.Items.AddRange(new object[] {
             "LargeIcons",
             "Details"});
             this.comboBoxView.LabelText = "View";
-            this.comboBoxView.Location = new System.Drawing.Point(16, 208);
+            this.comboBoxView.Location = new System.Drawing.Point(3, 175);
+            this.comboBoxView.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.comboBoxView.Name = "comboBoxView";
-            this.comboBoxView.Size = new System.Drawing.Size(301, 46);
+            this.comboBoxView.Size = new System.Drawing.Size(212, 57);
             this.comboBoxView.TabIndex = 5;
             // 
             // FileManager
@@ -143,8 +146,9 @@
             this.Name = "FileManager";
             this.Load += new System.EventHandler(this.FileManager_Load);
             this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.panel.ResumeLayout(false);
+            this.flowLayoutPanel1.ResumeLayout(false);
+            this.flowLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 

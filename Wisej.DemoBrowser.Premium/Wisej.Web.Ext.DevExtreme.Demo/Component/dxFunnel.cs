@@ -11,8 +11,8 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
 		{
 			InitializeComponent();
 
-			this.dxFunnel1.Instance.itemClick += new WidgetEventHandler(dxFunnel1_WidgetEvent);
-			this.dxFunnel1.Instance.legendClick += new WidgetEventHandler(dxFunnel1_WidgetEvent);
+			this.dxFunnel1.Instance.onItemClick += new WidgetEventHandler(dxFunnel1_WidgetEvent);
+			this.dxFunnel1.Instance.onLegendClick += new WidgetEventHandler(dxFunnel1_WidgetEvent);
 		}
 
 		private void dxFunnel1_WidgetEvent(object sender, WidgetEventArgs e)

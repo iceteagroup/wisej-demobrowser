@@ -40,19 +40,18 @@
             // 
             // dataTable1
             // 
-            this.dataTable1.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
-            | Wisej.Web.AnchorStyles.Left) 
-            | Wisej.Web.AnchorStyles.Right)));
-            this.dataTable1.Location = new System.Drawing.Point(194, 79);
+            this.dataTable1.Dock = Wisej.Web.DockStyle.Fill;
+            this.dataTable1.Location = new System.Drawing.Point(8, 8);
             this.dataTable1.Name = "dataTable1";
             this.dataTable1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("dataTable1.Options"))));
-            this.dataTable1.Size = new System.Drawing.Size(700, 400);
+            this.dataTable1.Size = new System.Drawing.Size(1073, 542);
             this.dataTable1.TabIndex = 0;
             this.dataTable1.Text = "dataTable1";
             // 
             // DataTable
             // 
             this.Name = "DataTable";
+            this.Load += new System.EventHandler(this.DataTable_Load);
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
             this.ResumeLayout(false);

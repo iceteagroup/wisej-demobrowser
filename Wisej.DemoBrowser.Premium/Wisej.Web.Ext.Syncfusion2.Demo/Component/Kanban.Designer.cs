@@ -36,6 +36,7 @@
             this.checkBoxEmptyColumn = new Wisej.Web.CheckBox();
             this.groupBox1.SuspendLayout();
             this.panel.SuspendLayout();
+            this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // linkDocs
@@ -46,18 +47,6 @@
             // 
             this.linkAPI.Text = "https://ej2.syncfusion.com/javascript/documentation/api/kanban/";
             // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.checkBoxEmptyColumn);
-            this.groupBox1.Controls.Add(this.checkBoxColumnToggle);
-            this.groupBox1.Controls.Add(this.checkBoxKeyboard);
-            this.groupBox1.Controls.Add(this.checkBoxDragAndDrop);
-            this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
-            this.groupBox1.Controls.SetChildIndex(this.checkBoxDragAndDrop, 0);
-            this.groupBox1.Controls.SetChildIndex(this.checkBoxKeyboard, 0);
-            this.groupBox1.Controls.SetChildIndex(this.checkBoxColumnToggle, 0);
-            this.groupBox1.Controls.SetChildIndex(this.checkBoxEmptyColumn, 0);
-            // 
             // buttonUpdate
             // 
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
@@ -65,6 +54,13 @@
             // panel
             // 
             this.panel.Controls.Add(this.kanban1);
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Controls.Add(this.checkBoxDragAndDrop);
+            this.flowLayoutPanel1.Controls.Add(this.checkBoxKeyboard);
+            this.flowLayoutPanel1.Controls.Add(this.checkBoxColumnToggle);
+            this.flowLayoutPanel1.Controls.Add(this.checkBoxEmptyColumn);
             // 
             // linkDemo
             // 
@@ -84,45 +80,57 @@
             // 
             this.checkBoxDragAndDrop.Appearance = Wisej.Web.Appearance.Switch;
             this.checkBoxDragAndDrop.Checked = true;
-            this.checkBoxDragAndDrop.Location = new System.Drawing.Point(23, 34);
+            this.flowLayoutPanel1.SetFillWeight(this.checkBoxDragAndDrop, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.checkBoxDragAndDrop, true);
+            this.checkBoxDragAndDrop.Location = new System.Drawing.Point(3, 3);
             this.checkBoxDragAndDrop.Name = "checkBoxDragAndDrop";
-            this.checkBoxDragAndDrop.Size = new System.Drawing.Size(197, 24);
+            this.checkBoxDragAndDrop.Size = new System.Drawing.Size(212, 24);
             this.checkBoxDragAndDrop.TabIndex = 8;
-            this.checkBoxDragAndDrop.Text = "Allow drag-and-drop";
+            this.checkBoxDragAndDrop.Text = "Allow Drag-and-Drop";
             // 
             // checkBoxKeyboard
             // 
             this.checkBoxKeyboard.Appearance = Wisej.Web.Appearance.Switch;
-            this.checkBoxKeyboard.Location = new System.Drawing.Point(22, 70);
+            this.flowLayoutPanel1.SetFillWeight(this.checkBoxKeyboard, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.checkBoxKeyboard, true);
+            this.checkBoxKeyboard.Location = new System.Drawing.Point(3, 46);
+            this.checkBoxKeyboard.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBoxKeyboard.Name = "checkBoxKeyboard";
-            this.checkBoxKeyboard.Size = new System.Drawing.Size(161, 24);
+            this.checkBoxKeyboard.Size = new System.Drawing.Size(212, 24);
             this.checkBoxKeyboard.TabIndex = 9;
-            this.checkBoxKeyboard.Text = "Allow keyboard";
+            this.checkBoxKeyboard.Text = "Allow Keyboard";
             // 
             // checkBoxColumnToggle
             // 
             this.checkBoxColumnToggle.Appearance = Wisej.Web.Appearance.Switch;
-            this.checkBoxColumnToggle.Location = new System.Drawing.Point(23, 104);
+            this.flowLayoutPanel1.SetFillWeight(this.checkBoxColumnToggle, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.checkBoxColumnToggle, true);
+            this.checkBoxColumnToggle.Location = new System.Drawing.Point(3, 89);
+            this.checkBoxColumnToggle.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBoxColumnToggle.Name = "checkBoxColumnToggle";
-            this.checkBoxColumnToggle.Size = new System.Drawing.Size(203, 24);
+            this.checkBoxColumnToggle.Size = new System.Drawing.Size(212, 24);
             this.checkBoxColumnToggle.TabIndex = 10;
-            this.checkBoxColumnToggle.Text = "Allow columns toggle";
+            this.checkBoxColumnToggle.Text = "Allow Columns Toggle";
             // 
             // checkBoxEmptyColumn
             // 
             this.checkBoxEmptyColumn.Appearance = Wisej.Web.Appearance.Switch;
-            this.checkBoxEmptyColumn.Location = new System.Drawing.Point(22, 138);
+            this.flowLayoutPanel1.SetFillWeight(this.checkBoxEmptyColumn, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.checkBoxEmptyColumn, true);
+            this.checkBoxEmptyColumn.Location = new System.Drawing.Point(3, 132);
+            this.checkBoxEmptyColumn.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBoxEmptyColumn.Name = "checkBoxEmptyColumn";
-            this.checkBoxEmptyColumn.Size = new System.Drawing.Size(196, 24);
+            this.checkBoxEmptyColumn.Size = new System.Drawing.Size(212, 24);
             this.checkBoxEmptyColumn.TabIndex = 11;
-            this.checkBoxEmptyColumn.Text = "Show empty column";
+            this.checkBoxEmptyColumn.Text = "Show Empty Column";
             // 
             // Kanban
             // 
             this.Name = "Kanban";
             this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.panel.ResumeLayout(false);
+            this.flowLayoutPanel1.ResumeLayout(false);
+            this.flowLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 

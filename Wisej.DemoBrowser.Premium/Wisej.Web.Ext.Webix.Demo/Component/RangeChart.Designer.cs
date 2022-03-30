@@ -59,5 +59,5 @@
 		#endregion
 
 		private Webix.RangeChart rangeChart1;
-	}
+    }
 }

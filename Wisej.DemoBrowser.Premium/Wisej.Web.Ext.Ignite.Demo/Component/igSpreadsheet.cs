@@ -9,8 +9,8 @@ namespace Wisej.Web.Ext.Ignite.Demo.Component
 		{
 			InitializeComponent();
 
-			this.igSpreadsheet1.Instance.export += new WidgetEventHandler(igSpreadsheet1_WidgetEvent);
-			this.igSpreadsheet1.Instance.activeWorksheetChanged += new WidgetEventHandler(igSpreadsheet1_WidgetEvent);
+			this.igSpreadsheet1.Instance.onExport += new WidgetEventHandler(igSpreadsheet1_WidgetEvent);
+			this.igSpreadsheet1.Instance.onActiveWorksheetChanged += new WidgetEventHandler(igSpreadsheet1_WidgetEvent);
 		}
 
 		private void buttonLoad_Uploaded(object sender, UploadedEventArgs e)

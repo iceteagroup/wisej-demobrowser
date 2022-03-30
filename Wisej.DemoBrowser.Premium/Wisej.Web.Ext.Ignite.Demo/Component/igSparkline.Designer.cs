@@ -37,30 +37,16 @@
             this.comboBox2 = new Wisej.Web.ComboBox();
             this.groupBox1.SuspendLayout();
             this.panel.SuspendLayout();
+            this.flowLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.comboBox2);
-            this.groupBox1.Controls.Add(this.numericUpDown1);
-            this.groupBox1.Controls.Add(this.comboBox1);
-            this.groupBox1.Controls.Add(this.button1);
-            this.groupBox1.Controls.Add(this.buttonLoad);
-            this.groupBox1.Controls.Add(this.buttonSave);
-            this.groupBox1.Size = new System.Drawing.Size(250, 487);
             this.groupBox1.TabIndex = 3;
-            this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
-            this.groupBox1.Controls.SetChildIndex(this.buttonSave, 0);
-            this.groupBox1.Controls.SetChildIndex(this.buttonLoad, 0);
-            this.groupBox1.Controls.SetChildIndex(this.button1, 0);
-            this.groupBox1.Controls.SetChildIndex(this.comboBox1, 0);
-            this.groupBox1.Controls.SetChildIndex(this.numericUpDown1, 0);
-            this.groupBox1.Controls.SetChildIndex(this.comboBox2, 0);
             // 
             // buttonUpdate
             // 
-            this.buttonUpdate.Location = new System.Drawing.Point(28, 403);
             this.buttonUpdate.TabIndex = 6;
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
@@ -84,6 +70,15 @@
             this.linkDocs.TabIndex = 4;
             this.linkDocs.Text = "http://www.igniteui.com/help/igsparkline-landing";
             // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Controls.Add(this.comboBox2);
+            this.flowLayoutPanel1.Controls.Add(this.comboBox1);
+            this.flowLayoutPanel1.Controls.Add(this.numericUpDown1);
+            this.flowLayoutPanel1.Controls.Add(this.button1);
+            this.flowLayoutPanel1.Controls.Add(this.buttonLoad);
+            this.flowLayoutPanel1.Controls.Add(this.buttonSave);
+            // 
             // igSparkline1
             // 
             this.igSparkline1.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
@@ -103,7 +98,8 @@
             this.buttonLoad.AllowedFileTypes = ".json";
             this.buttonLoad.HideValue = true;
             this.buttonLoad.ImageSource = "icon-file";
-            this.buttonLoad.Location = new System.Drawing.Point(28, 326);
+            this.buttonLoad.Location = new System.Drawing.Point(3, 290);
+            this.buttonLoad.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.buttonLoad.Name = "buttonLoad";
             this.buttonLoad.Size = new System.Drawing.Size(42, 42);
             this.buttonLoad.TabIndex = 4;
@@ -113,7 +109,8 @@
             // 
             this.buttonSave.Display = Wisej.Web.Display.Icon;
             this.buttonSave.ImageSource = "icon-save";
-            this.buttonSave.Location = new System.Drawing.Point(76, 326);
+            this.buttonSave.Location = new System.Drawing.Point(51, 290);
+            this.buttonSave.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.buttonSave.Name = "buttonSave";
             this.buttonSave.Size = new System.Drawing.Size(42, 42);
             this.buttonSave.TabIndex = 5;
@@ -121,38 +118,47 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(28, 264);
+            this.flowLayoutPanel1.SetFillWeight(this.button1, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.button1, true);
+            this.button1.Location = new System.Drawing.Point(3, 231);
+            this.button1.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(195, 27);
+            this.button1.Size = new System.Drawing.Size(212, 40);
             this.button1.TabIndex = 3;
             this.button1.Text = "Add Random Item";
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // comboBox1
             // 
+            this.flowLayoutPanel1.SetFillWeight(this.comboBox1, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.comboBox1, true);
             this.comboBox1.Items.AddRange(new object[] {
             "line",
             "area",
             "column",
             "winLoss"});
             this.comboBox1.LabelText = "Display Type";
-            this.comboBox1.Location = new System.Drawing.Point(28, 112);
+            this.comboBox1.Location = new System.Drawing.Point(3, 79);
+            this.comboBox1.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(195, 57);
+            this.comboBox1.Size = new System.Drawing.Size(212, 57);
             this.comboBox1.TabIndex = 1;
             this.comboBox1.Text = "line";
             // 
             // numericUpDown1
             // 
+            this.flowLayoutPanel1.SetFillWeight(this.numericUpDown1, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.numericUpDown1, true);
             this.numericUpDown1.LabelText = "Line Thickness";
-            this.numericUpDown1.Location = new System.Drawing.Point(28, 188);
+            this.numericUpDown1.Location = new System.Drawing.Point(3, 155);
+            this.numericUpDown1.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.numericUpDown1.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             -2147483648});
             this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(195, 57);
+            this.numericUpDown1.Size = new System.Drawing.Size(212, 57);
             this.numericUpDown1.TabIndex = 2;
             this.numericUpDown1.Value = new decimal(new int[] {
             1,
@@ -163,6 +169,8 @@
             // comboBox2
             // 
             this.comboBox2.DropDownStyle = Wisej.Web.ComboBoxStyle.DropDownList;
+            this.flowLayoutPanel1.SetFillWeight(this.comboBox2, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.comboBox2, true);
             this.comboBox2.Items.AddRange(new object[] {
             "none",
             "linearFit",
@@ -179,9 +187,9 @@
             "cumulativeAverage",
             "weightedAverage"});
             this.comboBox2.LabelText = "Trend Line Type";
-            this.comboBox2.Location = new System.Drawing.Point(28, 36);
+            this.comboBox2.Location = new System.Drawing.Point(3, 3);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(195, 57);
+            this.comboBox2.Size = new System.Drawing.Size(212, 57);
             this.comboBox2.TabIndex = 0;
             this.comboBox2.Text = "none";
             // 
@@ -190,8 +198,9 @@
             this.Name = "igSparkline";
             this.Load += new System.EventHandler(this.igSparkline_Load);
             this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.panel.ResumeLayout(false);
+            this.flowLayoutPanel1.ResumeLayout(false);
+            this.flowLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

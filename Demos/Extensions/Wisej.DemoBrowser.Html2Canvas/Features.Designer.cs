@@ -58,10 +58,13 @@
             // htmlPanel
             // 
             this.htmlPanel.Anchor = Wisej.Web.AnchorStyles.None;
+            this.htmlPanel.Focusable = false;
             this.htmlPanel.Html = resources.GetString("htmlPanel.Html");
             this.htmlPanel.Location = new System.Drawing.Point(236, 10);
             this.htmlPanel.Name = "htmlPanel";
             this.htmlPanel.Size = new System.Drawing.Size(989, 367);
+            this.htmlPanel.TabIndex = 0;
+            this.htmlPanel.TabStop = false;
             // 
             // chartJS
             // 
@@ -193,7 +196,7 @@
             // 
             this.Controls.Add(this.flowLayoutPanelExamples);
             this.Controls.Add(this.pnlDemo);
-            this.MinimumSize = new System.Drawing.Size(1079, 285);
+            this.MinimumSize = new System.Drawing.Size(970, 400);
             this.Name = "Features";
             this.Load += new System.EventHandler(this.Features_Load);
             this.pnlDemo.ResumeLayout(false);

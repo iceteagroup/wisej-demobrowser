@@ -9,8 +9,7 @@ namespace Wisej.Web.Ext.Syncfusion2.Demo.Component
 		{
 			InitializeComponent();
 
-			this.kanban1.Instance.cardClick += new WidgetEventHandler(kanban1_WidgetEvent);
-			this.kanban1.Instance.dataSourceChanged += new WidgetEventHandler(kanban1_WidgetEvent);
+			this.kanban1.Instance.onCardClick += new WidgetEventHandler(kanban1_WidgetEvent);
 		}
 
 		private void kanban1_WidgetEvent(object sender, WidgetEventArgs e)

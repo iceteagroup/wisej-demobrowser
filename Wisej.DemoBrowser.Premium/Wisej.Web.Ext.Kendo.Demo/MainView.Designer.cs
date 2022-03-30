@@ -103,7 +103,7 @@
             this.labelNavigationSeparator1.ForeColor = System.Drawing.Color.FromName("@highlightText-demo");
             this.labelNavigationSeparator1.Location = new System.Drawing.Point(110, 3);
             this.labelNavigationSeparator1.Name = "labelNavigationSeparator1";
-            this.labelNavigationSeparator1.Size = new System.Drawing.Size(14, 22);
+            this.labelNavigationSeparator1.Size = new System.Drawing.Size(12, 22);
             this.labelNavigationSeparator1.TabIndex = 6;
             this.labelNavigationSeparator1.Text = ">";
             // 
@@ -112,9 +112,9 @@
             this.labelNaivgationCategory.AutoSize = true;
             this.labelNaivgationCategory.Font = new System.Drawing.Font("@default", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.labelNaivgationCategory.ForeColor = System.Drawing.Color.FromName("@demoPanelText-demo");
-            this.labelNaivgationCategory.Location = new System.Drawing.Point(130, 3);
+            this.labelNaivgationCategory.Location = new System.Drawing.Point(128, 3);
             this.labelNaivgationCategory.Name = "labelNaivgationCategory";
-            this.labelNaivgationCategory.Size = new System.Drawing.Size(85, 22);
+            this.labelNaivgationCategory.Size = new System.Drawing.Size(68, 22);
             this.labelNaivgationCategory.TabIndex = 7;
             this.labelNaivgationCategory.Text = "Extensions";
             // 
@@ -123,9 +123,9 @@
             this.labelNavigationSeparator2.AutoSize = true;
             this.labelNavigationSeparator2.Font = new System.Drawing.Font("@defaultBold", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.labelNavigationSeparator2.ForeColor = System.Drawing.Color.FromName("@highlightText-demo");
-            this.labelNavigationSeparator2.Location = new System.Drawing.Point(221, 3);
+            this.labelNavigationSeparator2.Location = new System.Drawing.Point(202, 3);
             this.labelNavigationSeparator2.Name = "labelNavigationSeparator2";
-            this.labelNavigationSeparator2.Size = new System.Drawing.Size(14, 22);
+            this.labelNavigationSeparator2.Size = new System.Drawing.Size(12, 22);
             this.labelNavigationSeparator2.TabIndex = 8;
             this.labelNavigationSeparator2.Text = ">";
             // 
@@ -134,9 +134,9 @@
             this.labelNavigationPremium.AutoSize = true;
             this.labelNavigationPremium.Font = new System.Drawing.Font("@default", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.labelNavigationPremium.ForeColor = System.Drawing.Color.FromName("@demoPanelText-demo");
-            this.labelNavigationPremium.Location = new System.Drawing.Point(241, 3);
+            this.labelNavigationPremium.Location = new System.Drawing.Point(220, 3);
             this.labelNavigationPremium.Name = "labelNavigationPremium";
-            this.labelNavigationPremium.Size = new System.Drawing.Size(73, 22);
+            this.labelNavigationPremium.Size = new System.Drawing.Size(57, 22);
             this.labelNavigationPremium.TabIndex = 10;
             this.labelNavigationPremium.Text = "Premium";
             // 
@@ -145,9 +145,9 @@
             this.labelSeparator.AutoSize = true;
             this.labelSeparator.Font = new System.Drawing.Font("@defaultBold", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.labelSeparator.ForeColor = System.Drawing.Color.FromName("@highlightText-demo");
-            this.labelSeparator.Location = new System.Drawing.Point(320, 3);
+            this.labelSeparator.Location = new System.Drawing.Point(283, 3);
             this.labelSeparator.Name = "labelSeparator";
-            this.labelSeparator.Size = new System.Drawing.Size(14, 22);
+            this.labelSeparator.Size = new System.Drawing.Size(12, 22);
             this.labelSeparator.TabIndex = 11;
             this.labelSeparator.Text = ">";
             // 
@@ -156,9 +156,9 @@
             this.labelNavigationDemo.AutoSize = true;
             this.labelNavigationDemo.Font = new System.Drawing.Font("@defaultBold", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.labelNavigationDemo.ForeColor = System.Drawing.Color.FromName("@highlightText-demo");
-            this.labelNavigationDemo.Location = new System.Drawing.Point(340, 3);
+            this.labelNavigationDemo.Location = new System.Drawing.Point(301, 3);
             this.labelNavigationDemo.Name = "labelNavigationDemo";
-            this.labelNavigationDemo.Size = new System.Drawing.Size(132, 22);
+            this.labelNavigationDemo.Size = new System.Drawing.Size(103, 22);
             this.labelNavigationDemo.TabIndex = 9;
             this.labelNavigationDemo.Text = "Telerik KendoUI";
             // 
@@ -496,7 +496,7 @@
             this.listBoxDemos.ItemHeight = 35;
             this.listBoxDemos.Location = new System.Drawing.Point(47, 16);
             this.listBoxDemos.Name = "listBoxDemos";
-            this.listBoxDemos.Size = new System.Drawing.Size(278, 763);
+            this.listBoxDemos.Size = new System.Drawing.Size(278, 746);
             this.listBoxDemos.TabIndex = 0;
             this.listBoxDemos.ValueMember = "Name";
             this.listBoxDemos.SelectedIndexChanged += new System.EventHandler(this.listBoxDemos_SelectedIndexChanged);
@@ -515,7 +515,7 @@
             this.panelComponents.Name = "panelComponents";
             this.panelComponents.Padding = new Wisej.Web.Padding(47, 16, 16, 16);
             this.panelComponents.ShowHeader = true;
-            this.panelComponents.Size = new System.Drawing.Size(341, 835);
+            this.panelComponents.Size = new System.Drawing.Size(341, 818);
             this.panelComponents.TabIndex = 22;
             this.panelComponents.TabStop = true;
             this.panelComponents.Text = "KendoUI Components";
@@ -528,7 +528,7 @@
             this.panelDemo.Location = new System.Drawing.Point(341, 263);
             this.panelDemo.Name = "panelDemo";
             this.panelDemo.ShowCloseButton = false;
-            this.panelDemo.Size = new System.Drawing.Size(1262, 648);
+            this.panelDemo.Size = new System.Drawing.Size(1262, 631);
             this.panelDemo.TabIndex = 23;
             this.panelDemo.TabStop = true;
             this.panelDemo.Text = "Test";
@@ -542,7 +542,7 @@
             this.Controls.Add(this.panelComponents);
             this.Controls.Add(this.flexLayoutPanelMenu);
             this.Name = "MainView";
-            this.Size = new System.Drawing.Size(1603, 911);
+            this.Size = new System.Drawing.Size(1603, 894);
             this.Text = "Wisej KendoUI Integration Tests";
             this.Load += new System.EventHandler(this.MainView_Load);
             this.flowLayoutPanel1.ResumeLayout(false);

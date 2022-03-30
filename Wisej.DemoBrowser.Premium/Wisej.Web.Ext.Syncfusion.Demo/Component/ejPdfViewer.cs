@@ -12,6 +12,8 @@ namespace Wisej.Web.Ext.Syncfusion.Demo.Component
 		public ejPdfViewer()
 		{
 			InitializeComponent();
+
+			this.ejPdfViewer1.Instance.onHyperlinkClick += new WidgetEventHandler(ejPdfViewer1_WidgetEvent);
 		}
 
 		private void ejPdfViewer1_WebRequest(object sender, WebRequestEventArgs e)
@@ -111,6 +113,15 @@ namespace Wisej.Web.Ext.Syncfusion.Demo.Component
 			this.ejPdfViewer1.Options.enableHighlightAnnotation = true;
 			this.ejPdfViewer1.Options.enableTextMarkupAnnotations = true;
 			this.ejPdfViewer1.Options.enableStrikethroughAnnotation = true;
+		}
+
+		private void ejPdfViewer1_WidgetEvent(object sender, WidgetEventArgs e)
+		{
+			AlertBox.Show(
+				$"<b>{e.Type}</b><br/>{JSON.Stringify(e.Data)}",
+				MessageBoxIcon.Information);
+
+			Application.Play(MessageBoxIcon.Information);
 		}
 	}
 }

@@ -58,6 +58,33 @@
     <EmbeddedResource Include="Component\ColorPicker.resx">
       <DependentUpon>ColorPicker.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Component\Diagram.resx">
+      <DependentUpon>Diagram.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\DocumentManager.resx">
+      <DependentUpon>DocumentManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\Gantt.resx">
+      <DependentUpon>Gantt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\Kanban.resx">
+      <DependentUpon>Kanban.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\Pivot.resx">
+      <DependentUpon>Pivot.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\Query.resx">
+      <DependentUpon>Query.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\ReportManager.resx">
+      <DependentUpon>ReportManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\Scheduler.resx">
+      <DependentUpon>Scheduler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\Spreadsheet.resx">
+      <DependentUpon>Spreadsheet.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Component\TimeBoard.resx">
       <DependentUpon>TimeBoard.cs</DependentUpon>
     </EmbeddedResource>
@@ -73,13 +100,19 @@
     <EmbeddedResource Include="Component\UnitList.resx">
       <DependentUpon>UnitList.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Component\UserManager.resx">
+      <DependentUpon>UserManager.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Themes\Webix.mixin.theme" />
+    <Content Include="Data\data.xlsx" />
+    <Content Include="Data\Wisej-Datasheet-V2.2.pdf" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+    <Content Include="Wisej.Web.Ext.Webix.json" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Images\wisej.png" />
@@ -146,6 +179,18 @@
     <Compile Include="Component\DateRange.Designer.cs">
       <DependentUpon>DateRange.cs</DependentUpon>
     </Compile>
+    <Compile Include="Component\Diagram.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Component\Diagram.Designer.cs">
+      <DependentUpon>Diagram.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\DocumentManager.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Component\DocumentManager.Designer.cs">
+      <DependentUpon>DocumentManager.cs</DependentUpon>
+    </Compile>
     <Compile Include="Component\ExcelViewer.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -164,6 +209,12 @@
     <Compile Include="Component\Gage.Designer.cs">
       <DependentUpon>Gage.cs</DependentUpon>
     </Compile>
+    <Compile Include="Component\Gantt.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Component\Gantt.Designer.cs">
+      <DependentUpon>Gantt.cs</DependentUpon>
+    </Compile>
     <Compile Include="Component\GeoChart.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -176,11 +227,29 @@
     <Compile Include="Component\GroupList.Designer.cs">
       <DependentUpon>GroupList.cs</DependentUpon>
     </Compile>
+    <Compile Include="Component\Kanban.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Component\Kanban.Designer.cs">
+      <DependentUpon>Kanban.cs</DependentUpon>
+    </Compile>
     <Compile Include="Component\PDFViewer.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Component\PDFViewer.Designer.cs">
       <DependentUpon>PDFViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\Pivot.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Component\Pivot.Designer.cs">
+      <DependentUpon>Pivot.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\Query.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Component\Query.Designer.cs">
+      <DependentUpon>Query.cs</DependentUpon>
     </Compile>
     <Compile Include="Component\RangeChart.cs">
       <SubType>UserControl</SubType>
@@ -188,17 +257,29 @@
     <Compile Include="Component\RangeChart.Designer.cs">
       <DependentUpon>RangeChart.cs</DependentUpon>
     </Compile>
+    <Compile Include="Component\ReportManager.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Component\ReportManager.Designer.cs">
+      <DependentUpon>ReportManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\Scheduler.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Component\Scheduler.Designer.cs">
+      <DependentUpon>Scheduler.cs</DependentUpon>
+    </Compile>
     <Compile Include="Component\Sidebar.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Component\Sidebar.Designer.cs">
       <DependentUpon>Sidebar.cs</DependentUpon>
     </Compile>
-    <Compile Include="Component\SideMenu.cs">
+    <Compile Include="Component\Spreadsheet.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Component\SideMenu.Designer.cs">
-      <DependentUpon>SideMenu.cs</DependentUpon>
+    <Compile Include="Component\Spreadsheet.Designer.cs">
+      <DependentUpon>Spreadsheet.cs</DependentUpon>
     </Compile>
     <Compile Include="Component\TimeBoard.cs">
       <SubType>UserControl</SubType>
@@ -236,6 +317,12 @@
     <Compile Include="Component\UnitList.Designer.cs">
       <DependentUpon>UnitList.cs</DependentUpon>
     </Compile>
+    <Compile Include="Component\UserManager.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Component\UserManager.Designer.cs">
+      <DependentUpon>UserManager.cs</DependentUpon>
+    </Compile>
     <Compile Include="Component\ViewBase.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -251,7 +338,6 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
@@ -259,10 +345,6 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
     <Reference Include="System.Windows.Forms" />
-    <Reference Include="Wisej.Framework, Version=2.0.0.0, Culture=neutral, PublicKeyToken=17bef35e11b84171, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\Wisej\Development\2.5\bin\Wisej.Framework.dll</HintPath>
-    </Reference>
     <Reference Include="Wisej.Web.Ext.Webix">
       <HintPath>..\..\..\..\..\..\Wisej\Extensions\Premium\2.5\bin\Wisej.Web.Ext.Webix.dll</HintPath>
     </Reference>
@@ -316,9 +398,6 @@
     <EmbeddedResource Include="Component\Sidebar.resx">
       <DependentUpon>Sidebar.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Component\SideMenu.resx">
-      <DependentUpon>SideMenu.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Component\Tree.resx">
       <DependentUpon>Tree.cs</DependentUpon>
     </EmbeddedResource>
@@ -328,6 +407,14 @@
     <EmbeddedResource Include="MainView.resx">
       <DependentUpon>MainView.cs</DependentUpon>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Wisej-2">
+      <Version>2.5.*-*</Version>
+    </PackageReference>
+    <PackageReference Include="Wisej-2-MaterialDesign">
+      <Version>2.5.*-*</Version>
+    </PackageReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

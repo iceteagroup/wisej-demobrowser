@@ -9,7 +9,7 @@ namespace Wisej.Web.Ext.Webix.Demo.Component
 		{
 			InitializeComponent();
 
-			this.calendar1.Instance.afterDateSelect += new WidgetEventHandler(calendar1_WidgetEvent);
+			this.calendar1.Instance.onAfterDateSelect += new WidgetEventHandler(calendar1_WidgetEvent);
 		}
 
 		private void calendar1_WidgetEvent(object sender, WidgetEventArgs e)

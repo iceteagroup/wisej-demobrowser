@@ -12,8 +12,8 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 		{
 			InitializeComponent();
 
-			this.kendoGantt1.Instance.add += new WidgetEventHandler(kendoGantt1_WidgetEvent);
-			this.kendoGantt1.Instance.change += new WidgetEventHandler(kendoGantt1_WidgetEvent);
+			this.kendoGantt1.Instance.onAdd += new WidgetEventHandler(kendoGantt1_WidgetEvent);
+			this.kendoGantt1.Instance.onChange += new WidgetEventHandler(kendoGantt1_WidgetEvent);
 		}
 
 		private void kendoGantt1_WidgetEvent(object sender, WidgetEventArgs e)

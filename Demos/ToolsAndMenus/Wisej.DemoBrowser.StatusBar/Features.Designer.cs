@@ -143,20 +143,6 @@
 			this.statusBarPanel9.Name = "statusBarPanel9";
 			this.statusBarPanel9.Text = "Double";
 			// 
-			// statusBarPanel10
-			// 
-			this.statusBarPanel10.AutoSize = Wisej.Web.StatusBarPanelAutoSize.Contents;
-			this.statusBarPanel10.BorderStyle = Wisej.Web.StatusBarPanelBorderStyle.Raised;
-			this.statusBarPanel10.Name = "statusBarPanel10";
-			this.statusBarPanel10.Text = "Raised";
-			// 
-			// statusBarPanel11
-			// 
-			this.statusBarPanel11.AutoSize = Wisej.Web.StatusBarPanelAutoSize.Contents;
-			this.statusBarPanel11.BorderStyle = Wisej.Web.StatusBarPanelBorderStyle.Sunken;
-			this.statusBarPanel11.Name = "statusBarPanel11";
-			this.statusBarPanel11.Text = "Sunken";
-			// 
 			// panel3
 			// 
 			this.panel3.Anchor = Wisej.Web.AnchorStyles.None;

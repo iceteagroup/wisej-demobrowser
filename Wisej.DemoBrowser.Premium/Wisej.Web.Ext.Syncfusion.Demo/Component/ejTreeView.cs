@@ -9,8 +9,8 @@ namespace Wisej.Web.Ext.Syncfusion.Demo.Component
 		{
 			InitializeComponent();
 
-			this.ejTreeView1.Instance.nodeClick += new WidgetEventHandler(ejTreeView1_WidgetEvent);
-			this.ejTreeView1.Instance.nodeCollapse += new WidgetEventHandler(ejTreeView1_WidgetEvent);
+			this.ejTreeView1.Instance.onNodeClick += new WidgetEventHandler(ejTreeView1_WidgetEvent);
+			this.ejTreeView1.Instance.onNodeCollapse += new WidgetEventHandler(ejTreeView1_WidgetEvent);
 		}
 
 		private void ejTreeView1_WidgetEvent(object sender, WidgetEventArgs e)
@@ -40,5 +40,5 @@ namespace Wisej.Web.Ext.Syncfusion.Demo.Component
 
 			this.ejTreeView1.Update();
 		}
-	}
+    }
 }

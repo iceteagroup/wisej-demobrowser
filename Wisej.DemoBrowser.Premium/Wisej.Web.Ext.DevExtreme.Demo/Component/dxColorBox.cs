@@ -9,7 +9,7 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
 		{
 			InitializeComponent();
 
-			this.dxColorBox1.Instance.valueChanged += new WidgetEventHandler(dxColorBox1_WidgetEvent);
+			this.dxColorBox1.Instance.onValueChanged += new WidgetEventHandler(dxColorBox1_WidgetEvent);
 		}
 
 		private void dxColorBox1_WidgetEvent(object sender, WidgetEventArgs e)

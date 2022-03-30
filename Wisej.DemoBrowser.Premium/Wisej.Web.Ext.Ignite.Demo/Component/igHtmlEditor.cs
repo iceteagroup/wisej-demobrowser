@@ -10,8 +10,8 @@ namespace Wisej.Web.Ext.Ignite.Demo.Component
 		{
 			InitializeComponent();
 
-			this.igHtmlEditor1.Instance.copy += new WidgetEventHandler(igHtmlEditor_WidgetEvent);
-			this.igHtmlEditor1.Instance.actionExecuted += new WidgetEventHandler(igHtmlEditor_WidgetEvent);
+			this.igHtmlEditor1.Instance.onCopy += new WidgetEventHandler(igHtmlEditor_WidgetEvent);
+			this.igHtmlEditor1.Instance.onActionExecuted += new WidgetEventHandler(igHtmlEditor_WidgetEvent);
 		}
 
 		private void igHtmlEditor_Load(object sender, EventArgs e)

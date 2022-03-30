@@ -9,9 +9,8 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
 		{
 			InitializeComponent();
 
-			this.dxFileManager1.Instance.selectedFileOpened += new WidgetEventHandler(dxFileManager1_WidgetEvent);
-
-			this.dxFileManager1.Instance.currentDirectoryChanged += new WidgetEventHandler(dxFileManager1_WidgetEvent);
+			this.dxFileManager1.Instance.onSelectedFileOpened += new WidgetEventHandler(dxFileManager1_WidgetEvent);
+			this.dxFileManager1.Instance.onCurrentDirectoryChanged += new WidgetEventHandler(dxFileManager1_WidgetEvent);
 		}
 
 		private void dxFileManager1_WidgetEvent(object sender, WidgetEventArgs e)

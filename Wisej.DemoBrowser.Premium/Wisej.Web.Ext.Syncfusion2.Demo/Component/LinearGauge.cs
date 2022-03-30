@@ -9,7 +9,7 @@ namespace Wisej.Web.Ext.Syncfusion2.Demo.Component
 		{
 			InitializeComponent();
 
-			this.linearGauge1.Instance.valueChange += new WidgetEventHandler(linearGauge1_WidgetEvent);
+			this.linearGauge1.Instance.onValueChange += new WidgetEventHandler(linearGauge1_WidgetEvent);
 		}
 
 		private void linearGauge1_WidgetEvent(object sender, WidgetEventArgs e)

@@ -13,9 +13,9 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 		{
 			InitializeComponent();
 
-			this.kendoGrid1.Instance.edit += new WidgetEventHandler(kendoGrid1_WidgetEvent);
-			this.kendoGrid1.Instance.navigate += new WidgetEventHandler(kendoGrid1_WidgetEvent);
-			this.kendoGrid1.Instance.dataBound += new WidgetEventHandler(kendoGrid1_DataBound);		}
+			this.kendoGrid1.Instance.onEdit += new WidgetEventHandler(kendoGrid1_WidgetEvent);
+			this.kendoGrid1.Instance.onNavigate += new WidgetEventHandler(kendoGrid1_WidgetEvent);
+			this.kendoGrid1.Instance.onDataBound += new WidgetEventHandler(kendoGrid1_DataBound);		}
 
 		private void kendoGrid1_WidgetEvent(object sender, WidgetEventArgs e)
 		{

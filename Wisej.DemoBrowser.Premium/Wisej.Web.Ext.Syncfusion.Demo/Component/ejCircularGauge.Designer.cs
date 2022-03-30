@@ -38,6 +38,7 @@
             this.checkBoxShowTicks = new Wisej.Web.CheckBox();
             this.groupBox1.SuspendLayout();
             this.panel.SuspendLayout();
+            this.flowLayoutPanelProperties.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownVal)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarDistanceFromScale)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarSize)).BeginInit();
@@ -48,26 +49,8 @@
             this.linkDocs.TabIndex = 4;
             this.linkDocs.Text = "https://help.syncfusion.com/js/circulargauge/overview";
             // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.checkBoxShowTicks);
-            this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.trackBarSize);
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.trackBarDistanceFromScale);
-            this.groupBox1.Controls.Add(this.numericUpDownVal);
-            this.groupBox1.Size = new System.Drawing.Size(250, 472);
-            this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
-            this.groupBox1.Controls.SetChildIndex(this.numericUpDownVal, 0);
-            this.groupBox1.Controls.SetChildIndex(this.trackBarDistanceFromScale, 0);
-            this.groupBox1.Controls.SetChildIndex(this.label4, 0);
-            this.groupBox1.Controls.SetChildIndex(this.trackBarSize, 0);
-            this.groupBox1.Controls.SetChildIndex(this.label5, 0);
-            this.groupBox1.Controls.SetChildIndex(this.checkBoxShowTicks, 0);
-            // 
             // buttonUpdate
             // 
-            this.buttonUpdate.Location = new System.Drawing.Point(28, 391);
             this.buttonUpdate.TabIndex = 6;
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
@@ -88,6 +71,15 @@
             this.panel.Controls.Add(this.ejCircularGauge1);
             this.panel.TabIndex = 7;
             // 
+            // flowLayoutPanelProperties
+            // 
+            this.flowLayoutPanelProperties.Controls.Add(this.checkBoxShowTicks);
+            this.flowLayoutPanelProperties.Controls.Add(this.label5);
+            this.flowLayoutPanelProperties.Controls.Add(this.trackBarSize);
+            this.flowLayoutPanelProperties.Controls.Add(this.label4);
+            this.flowLayoutPanelProperties.Controls.Add(this.trackBarDistanceFromScale);
+            this.flowLayoutPanelProperties.Controls.Add(this.numericUpDownVal);
+            // 
             // ejCircularGauge1
             // 
             this.ejCircularGauge1.Dock = Wisej.Web.DockStyle.Fill;
@@ -102,12 +94,15 @@
             // numericUpDownVal
             // 
             this.numericUpDownVal.AutoSize = false;
+            this.flowLayoutPanelProperties.SetFillWeight(this.numericUpDownVal, 1);
+            this.flowLayoutPanelProperties.SetFlowBreak(this.numericUpDownVal, true);
             this.numericUpDownVal.Label.Size = 50;
             this.numericUpDownVal.Label.SizeType = Wisej.Web.SizeType.Percent;
             this.numericUpDownVal.LabelText = "Value";
-            this.numericUpDownVal.Location = new System.Drawing.Point(28, 36);
+            this.numericUpDownVal.Location = new System.Drawing.Point(3, 222);
+            this.numericUpDownVal.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.numericUpDownVal.Name = "numericUpDownVal";
-            this.numericUpDownVal.Size = new System.Drawing.Size(195, 60);
+            this.numericUpDownVal.Size = new System.Drawing.Size(212, 60);
             this.numericUpDownVal.TabIndex = 0;
             this.numericUpDownVal.Value = new decimal(new int[] {
             50,
@@ -117,39 +112,49 @@
             // 
             // trackBarDistanceFromScale
             // 
-            this.trackBarDistanceFromScale.Location = new System.Drawing.Point(28, 146);
+            this.flowLayoutPanelProperties.SetFillWeight(this.trackBarDistanceFromScale, 1);
+            this.flowLayoutPanelProperties.SetFlowBreak(this.trackBarDistanceFromScale, true);
+            this.trackBarDistanceFromScale.Location = new System.Drawing.Point(3, 169);
             this.trackBarDistanceFromScale.Maximum = 0;
             this.trackBarDistanceFromScale.Minimum = -30;
             this.trackBarDistanceFromScale.Name = "trackBarDistanceFromScale";
-            this.trackBarDistanceFromScale.Size = new System.Drawing.Size(195, 34);
+            this.trackBarDistanceFromScale.Size = new System.Drawing.Size(212, 34);
             this.trackBarDistanceFromScale.TabIndex = 2;
             this.trackBarDistanceFromScale.Value = -30;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(28, 124);
+            this.flowLayoutPanelProperties.SetFillWeight(this.label4, 1);
+            this.flowLayoutPanelProperties.SetFlowBreak(this.label4, true);
+            this.label4.Location = new System.Drawing.Point(3, 141);
+            this.label4.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(119, 22);
+            this.label4.Size = new System.Drawing.Size(212, 22);
             this.label4.TabIndex = 1;
             this.label4.Text = "Range Distance";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(28, 214);
+            this.flowLayoutPanelProperties.SetFillWeight(this.label5, 1);
+            this.flowLayoutPanelProperties.SetFlowBreak(this.label5, true);
+            this.label5.Location = new System.Drawing.Point(3, 60);
+            this.label5.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(84, 22);
+            this.label5.Size = new System.Drawing.Size(212, 22);
             this.label5.TabIndex = 3;
             this.label5.Text = "Range Size";
             // 
             // trackBarSize
             // 
-            this.trackBarSize.Location = new System.Drawing.Point(28, 236);
+            this.flowLayoutPanelProperties.SetFillWeight(this.trackBarSize, 1);
+            this.flowLayoutPanelProperties.SetFlowBreak(this.trackBarSize, true);
+            this.trackBarSize.Location = new System.Drawing.Point(3, 88);
             this.trackBarSize.Maximum = 12;
             this.trackBarSize.Minimum = 2;
             this.trackBarSize.Name = "trackBarSize";
-            this.trackBarSize.Size = new System.Drawing.Size(195, 34);
+            this.trackBarSize.Size = new System.Drawing.Size(212, 34);
             this.trackBarSize.TabIndex = 4;
             this.trackBarSize.Value = 2;
             // 
@@ -159,9 +164,11 @@
             this.checkBoxShowTicks.AutoSize = false;
             this.checkBoxShowTicks.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.checkBoxShowTicks.Checked = true;
-            this.checkBoxShowTicks.Location = new System.Drawing.Point(28, 309);
+            this.flowLayoutPanelProperties.SetFillWeight(this.checkBoxShowTicks, 1);
+            this.flowLayoutPanelProperties.SetFlowBreak(this.checkBoxShowTicks, true);
+            this.checkBoxShowTicks.Location = new System.Drawing.Point(3, 3);
             this.checkBoxShowTicks.Name = "checkBoxShowTicks";
-            this.checkBoxShowTicks.Size = new System.Drawing.Size(183, 38);
+            this.checkBoxShowTicks.Size = new System.Drawing.Size(212, 38);
             this.checkBoxShowTicks.TabIndex = 5;
             this.checkBoxShowTicks.Text = "Show Ticks";
             // 
@@ -169,8 +176,9 @@
             // 
             this.Name = "ejCircularGauge";
             this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.panel.ResumeLayout(false);
+            this.flowLayoutPanelProperties.ResumeLayout(false);
+            this.flowLayoutPanelProperties.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownVal)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarDistanceFromScale)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarSize)).EndInit();

@@ -12,7 +12,7 @@ namespace Wisej.Web.Ext.Syncfusion2.Demo.Component
 		{
 			InitializeComponent();
 
-			this.maps1.Instance.click += new WidgetEventHandler(maps1_click);
+			this.maps1.Instance.onClick += new WidgetEventHandler(maps1_click);
 		}
 
         private void maps1_click(object sender, WidgetEventArgs e)

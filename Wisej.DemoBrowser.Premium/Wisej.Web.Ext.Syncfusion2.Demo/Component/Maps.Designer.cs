@@ -34,6 +34,7 @@
             this.button1 = new Wisej.Web.Button();
             this.groupBox1.SuspendLayout();
             this.panel.SuspendLayout();
+            this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // linkDocs
@@ -44,12 +45,6 @@
             // 
             this.linkAPI.Text = "https://ej2.syncfusion.com/javascript/documentation/api/maps/";
             // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.button1);
-            this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
-            this.groupBox1.Controls.SetChildIndex(this.button1, 0);
-            // 
             // buttonUpdate
             // 
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
@@ -57,6 +52,10 @@
             // panel
             // 
             this.panel.Controls.Add(this.maps1);
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Controls.Add(this.button1);
             // 
             // linkDemo
             // 
@@ -79,9 +78,11 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(28, 49);
+            this.flowLayoutPanel1.SetFillWeight(this.button1, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.button1, true);
+            this.button1.Location = new System.Drawing.Point(3, 3);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(195, 35);
+            this.button1.Size = new System.Drawing.Size(212, 35);
             this.button1.TabIndex = 1;
             this.button1.Text = "Add Marker (Chicago)";
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -92,6 +93,7 @@
             this.Load += new System.EventHandler(this.Maps_Load);
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
+            this.flowLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 

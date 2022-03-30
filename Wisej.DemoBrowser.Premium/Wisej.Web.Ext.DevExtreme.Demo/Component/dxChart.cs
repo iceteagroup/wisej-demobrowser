@@ -10,8 +10,8 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
 		{
 			InitializeComponent();
 
-			this.dxChart1.Instance.pointClick += new WidgetEventHandler(dxChart1_WidgetEvent);
-			this.dxChart1.Instance.legendClick += new WidgetEventHandler(dxChart1_WidgetEvent);
+			this.dxChart1.Instance.onPointClick += new WidgetEventHandler(dxChart1_WidgetEvent);
+			this.dxChart1.Instance.onLegendClick += new WidgetEventHandler(dxChart1_WidgetEvent);
 		}
 
 		private void dxChart1_WidgetEvent(object sender, WidgetEventArgs e)

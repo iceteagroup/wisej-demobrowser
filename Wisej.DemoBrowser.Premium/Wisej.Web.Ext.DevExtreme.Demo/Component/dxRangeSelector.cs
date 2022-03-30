@@ -11,7 +11,7 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
 		{
 			InitializeComponent();
 
-			this.dxRangeSelector1.Instance.valueChanged += new WidgetEventHandler(dxRangeSelector1_WidgetEvent);
+			this.dxRangeSelector1.Instance.onValueChanged += new WidgetEventHandler(dxRangeSelector1_WidgetEvent);
 
 			this.dxRangeSelector1.Options.scale = new { startValue = 15000, endValue = 150000, minorTickInterval = 500, tickInterval = 15000, label = new { format = "currency" } };
 			this.dxRangeSelector1.Options.slideMarker = new { format = "currency" };
@@ -31,7 +31,6 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
 			this.dxRangeSelector1.Options.behavior = new
 			{
 				allowSlidersSwap = this.checkBox1.Checked,
-				animationEnabled = this.checkBox2.Checked,
 				manualRangeSelectionEnabled = this.checkBox3.Checked,
 				moveSelectedRangeByClick = this.checkBox4.Checked,
 				snapToTicks = this.checkBox5.Checked

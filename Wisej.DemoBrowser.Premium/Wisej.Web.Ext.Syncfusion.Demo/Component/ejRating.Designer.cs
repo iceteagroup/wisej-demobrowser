@@ -58,6 +58,7 @@
             this.label16 = new Wisej.Web.Label();
             this.groupBox1.SuspendLayout();
             this.panel.SuspendLayout();
+            this.flowLayoutPanelProperties.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -74,24 +75,8 @@
             this.linkDocs.TabIndex = 4;
             this.linkDocs.Text = "https://help.syncfusion.com/js/rating/overview";
             // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.label16);
-            this.groupBox1.Controls.Add(this.comboBox1);
-            this.groupBox1.Controls.Add(this.checkBox1);
-            this.groupBox1.Controls.Add(this.numericUpDown2);
-            this.groupBox1.Controls.Add(this.numericUpDown1);
-            this.groupBox1.Size = new System.Drawing.Size(250, 554);
-            this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
-            this.groupBox1.Controls.SetChildIndex(this.numericUpDown1, 0);
-            this.groupBox1.Controls.SetChildIndex(this.numericUpDown2, 0);
-            this.groupBox1.Controls.SetChildIndex(this.checkBox1, 0);
-            this.groupBox1.Controls.SetChildIndex(this.comboBox1, 0);
-            this.groupBox1.Controls.SetChildIndex(this.label16, 0);
-            // 
             // buttonUpdate
             // 
-            this.buttonUpdate.Location = new System.Drawing.Point(28, 466);
             this.buttonUpdate.TabIndex = 5;
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
@@ -110,6 +95,14 @@
             // 
             this.panel.Controls.Add(this.tabControl1);
             this.panel.TabIndex = 7;
+            // 
+            // flowLayoutPanelProperties
+            // 
+            this.flowLayoutPanelProperties.Controls.Add(this.label16);
+            this.flowLayoutPanelProperties.Controls.Add(this.checkBox1);
+            this.flowLayoutPanelProperties.Controls.Add(this.numericUpDown1);
+            this.flowLayoutPanelProperties.Controls.Add(this.numericUpDown2);
+            this.flowLayoutPanelProperties.Controls.Add(this.comboBox1);
             // 
             // tabControl1
             // 
@@ -344,17 +337,20 @@
             // numericUpDown1
             // 
             this.numericUpDown1.AutoSize = false;
+            this.flowLayoutPanelProperties.SetFillWeight(this.numericUpDown1, 1);
+            this.flowLayoutPanelProperties.SetFlowBreak(this.numericUpDown1, true);
             this.numericUpDown1.Label.Size = 50;
             this.numericUpDown1.Label.SizeType = Wisej.Web.SizeType.Percent;
             this.numericUpDown1.LabelText = "Max Value";
-            this.numericUpDown1.Location = new System.Drawing.Point(28, 199);
+            this.numericUpDown1.Location = new System.Drawing.Point(3, 130);
+            this.numericUpDown1.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.numericUpDown1.Maximum = new decimal(new int[] {
             5,
             0,
             0,
             0});
             this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(195, 60);
+            this.numericUpDown1.Size = new System.Drawing.Size(212, 60);
             this.numericUpDown1.TabIndex = 2;
             this.numericUpDown1.Value = new decimal(new int[] {
             5,
@@ -365,17 +361,20 @@
             // numericUpDown2
             // 
             this.numericUpDown2.AutoSize = false;
+            this.flowLayoutPanelProperties.SetFillWeight(this.numericUpDown2, 1);
+            this.flowLayoutPanelProperties.SetFlowBreak(this.numericUpDown2, true);
             this.numericUpDown2.Label.Size = 50;
             this.numericUpDown2.Label.SizeType = Wisej.Web.SizeType.Percent;
             this.numericUpDown2.LabelText = "Increment Step";
-            this.numericUpDown2.Location = new System.Drawing.Point(28, 288);
+            this.numericUpDown2.Location = new System.Drawing.Point(3, 209);
+            this.numericUpDown2.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.numericUpDown2.Maximum = new decimal(new int[] {
             5,
             0,
             0,
             0});
             this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(195, 60);
+            this.numericUpDown2.Size = new System.Drawing.Size(212, 60);
             this.numericUpDown2.TabIndex = 3;
             this.numericUpDown2.Value = new decimal(new int[] {
             1,
@@ -389,9 +388,12 @@
             this.checkBox1.AutoSize = false;
             this.checkBox1.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.checkBox1.Checked = true;
-            this.checkBox1.Location = new System.Drawing.Point(28, 132);
+            this.flowLayoutPanelProperties.SetFillWeight(this.checkBox1, 1);
+            this.flowLayoutPanelProperties.SetFlowBreak(this.checkBox1, true);
+            this.checkBox1.Location = new System.Drawing.Point(3, 73);
+            this.checkBox1.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(195, 38);
+            this.checkBox1.Size = new System.Drawing.Size(212, 38);
             this.checkBox1.TabIndex = 1;
             this.checkBox1.Text = "Allow Reset";
             // 
@@ -399,6 +401,8 @@
             // 
             this.comboBox1.AutoSize = false;
             this.comboBox1.DropDownStyle = Wisej.Web.ComboBoxStyle.DropDownList;
+            this.flowLayoutPanelProperties.SetFillWeight(this.comboBox1, 1);
+            this.flowLayoutPanelProperties.SetFlowBreak(this.comboBox1, true);
             this.comboBox1.Items.AddRange(new object[] {
             "Exact",
             "Full",
@@ -406,17 +410,20 @@
             this.comboBox1.Label.Size = 50;
             this.comboBox1.Label.SizeType = Wisej.Web.SizeType.Percent;
             this.comboBox1.LabelText = "Precision";
-            this.comboBox1.Location = new System.Drawing.Point(28, 377);
+            this.comboBox1.Location = new System.Drawing.Point(3, 288);
+            this.comboBox1.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(195, 60);
+            this.comboBox1.Size = new System.Drawing.Size(212, 60);
             this.comboBox1.TabIndex = 4;
             this.comboBox1.Text = "full";
             // 
             // label16
             // 
-            this.label16.Location = new System.Drawing.Point(28, 36);
+            this.flowLayoutPanelProperties.SetFillWeight(this.label16, 1);
+            this.flowLayoutPanelProperties.SetFlowBreak(this.label16, true);
+            this.label16.Location = new System.Drawing.Point(3, 3);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(195, 67);
+            this.label16.Size = new System.Drawing.Size(212, 51);
             this.label16.TabIndex = 0;
             this.label16.Text = "Note: Property changes only affect \"Man of Steel\" rating";
             // 
@@ -425,6 +432,7 @@
             this.Name = "ejRating";
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
+            this.flowLayoutPanelProperties.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();

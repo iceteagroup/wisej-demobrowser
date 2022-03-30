@@ -9,7 +9,7 @@ namespace Wisej.Web.Ext.Syncfusion2.Demo.Component
 		{
 			InitializeComponent();
 
-			this.grid1.Instance.recordClick += new WidgetEventHandler(grid1_WidgetEvent);
+			this.grid1.Instance.onRecordClick += new WidgetEventHandler(grid1_WidgetEvent);
 		}
 
         private void buttonUpdate_Click(object sender, EventArgs e)

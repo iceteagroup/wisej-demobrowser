@@ -40,6 +40,7 @@
             this.checkBoxCellLabel = new Wisej.Web.CheckBox();
             this.groupBox1.SuspendLayout();
             this.panel.SuspendLayout();
+            this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // linkDocs
@@ -51,29 +52,21 @@
             // 
             this.linkAPI.Text = "https://ej2.syncfusion.com/javascript/documentation/api/heatmap/";
             // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.checkBoxCellLabel);
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.buttonToColor);
-            this.groupBox1.Controls.Add(this.buttonFromColor);
-            this.groupBox1.Controls.Add(this.checkBoxSelection);
-            this.groupBox1.Size = new System.Drawing.Size(250, 401);
-            this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
-            this.groupBox1.Controls.SetChildIndex(this.checkBoxSelection, 0);
-            this.groupBox1.Controls.SetChildIndex(this.buttonFromColor, 0);
-            this.groupBox1.Controls.SetChildIndex(this.buttonToColor, 0);
-            this.groupBox1.Controls.SetChildIndex(this.label4, 0);
-            this.groupBox1.Controls.SetChildIndex(this.checkBoxCellLabel, 0);
-            // 
             // buttonUpdate
             // 
-            this.buttonUpdate.Location = new System.Drawing.Point(28, 320);
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
             // panel
             // 
             this.panel.Controls.Add(this.heatMap1);
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Controls.Add(this.checkBoxSelection);
+            this.flowLayoutPanel1.Controls.Add(this.checkBoxCellLabel);
+            this.flowLayoutPanel1.Controls.Add(this.label4);
+            this.flowLayoutPanel1.Controls.Add(this.buttonFromColor);
+            this.flowLayoutPanel1.Controls.Add(this.buttonToColor);
             // 
             // linkDemo
             // 
@@ -92,18 +85,22 @@
             // checkBoxSelection
             // 
             this.checkBoxSelection.Appearance = Wisej.Web.Appearance.Switch;
-            this.checkBoxSelection.Location = new System.Drawing.Point(16, 33);
+            this.flowLayoutPanel1.SetFillWeight(this.checkBoxSelection, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.checkBoxSelection, true);
+            this.checkBoxSelection.Location = new System.Drawing.Point(3, 3);
             this.checkBoxSelection.Name = "checkBoxSelection";
-            this.checkBoxSelection.Size = new System.Drawing.Size(159, 24);
+            this.checkBoxSelection.Size = new System.Drawing.Size(212, 24);
             this.checkBoxSelection.TabIndex = 8;
-            this.checkBoxSelection.Text = "Allow selection";
+            this.checkBoxSelection.Text = "Allow Selection";
             // 
             // buttonFromColor
             // 
             this.buttonFromColor.BackColor = System.Drawing.Color.FromArgb(18, 215, 182);
-            this.buttonFromColor.Location = new System.Drawing.Point(15, 130);
+            this.flowLayoutPanel1.SetFillWeight(this.buttonFromColor, 1);
+            this.buttonFromColor.ForeColor = System.Drawing.Color.White;
+            this.buttonFromColor.Location = new System.Drawing.Point(3, 117);
             this.buttonFromColor.Name = "buttonFromColor";
-            this.buttonFromColor.Size = new System.Drawing.Size(100, 27);
+            this.buttonFromColor.Size = new System.Drawing.Size(103, 27);
             this.buttonFromColor.TabIndex = 9;
             this.buttonFromColor.Text = "From";
             this.buttonFromColor.Click += new System.EventHandler(this.buttonFromColor_Click);
@@ -111,9 +108,12 @@
             // buttonToColor
             // 
             this.buttonToColor.BackColor = System.Drawing.Color.FromArgb(19, 110, 214);
-            this.buttonToColor.Location = new System.Drawing.Point(132, 130);
+            this.flowLayoutPanel1.SetFillWeight(this.buttonToColor, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.buttonToColor, true);
+            this.buttonToColor.ForeColor = System.Drawing.Color.White;
+            this.buttonToColor.Location = new System.Drawing.Point(112, 117);
             this.buttonToColor.Name = "buttonToColor";
-            this.buttonToColor.Size = new System.Drawing.Size(100, 27);
+            this.buttonToColor.Size = new System.Drawing.Size(103, 27);
             this.buttonToColor.TabIndex = 10;
             this.buttonToColor.Text = "To";
             this.buttonToColor.Click += new System.EventHandler(this.buttonToColor_Click);
@@ -121,27 +121,34 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(18, 107);
+            this.flowLayoutPanel1.SetFillWeight(this.label4, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.label4, true);
+            this.label4.Location = new System.Drawing.Point(3, 89);
+            this.label4.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(114, 19);
+            this.label4.Size = new System.Drawing.Size(212, 22);
             this.label4.TabIndex = 11;
-            this.label4.Text = "Palette settings";
+            this.label4.Text = "Palette Settings";
             // 
             // checkBoxCellLabel
             // 
             this.checkBoxCellLabel.Appearance = Wisej.Web.Appearance.Switch;
-            this.checkBoxCellLabel.Location = new System.Drawing.Point(16, 72);
+            this.flowLayoutPanel1.SetFillWeight(this.checkBoxCellLabel, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.checkBoxCellLabel, true);
+            this.checkBoxCellLabel.Location = new System.Drawing.Point(3, 46);
+            this.checkBoxCellLabel.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBoxCellLabel.Name = "checkBoxCellLabel";
-            this.checkBoxCellLabel.Size = new System.Drawing.Size(159, 24);
+            this.checkBoxCellLabel.Size = new System.Drawing.Size(212, 24);
             this.checkBoxCellLabel.TabIndex = 12;
-            this.checkBoxCellLabel.Text = "Show cell label";
+            this.checkBoxCellLabel.Text = "Show Cell Label";
             // 
             // HeatMap
             // 
             this.Name = "HeatMap";
             this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.panel.ResumeLayout(false);
+            this.flowLayoutPanel1.ResumeLayout(false);
+            this.flowLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 

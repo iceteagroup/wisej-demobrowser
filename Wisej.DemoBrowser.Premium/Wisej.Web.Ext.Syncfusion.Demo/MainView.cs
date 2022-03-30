@@ -70,6 +70,7 @@ namespace Wisej.Web.Ext.Syncfusion.Demo
         private void comboBoxLanguage_SelectedIndexChanged(object sender, EventArgs e)
         {
 			ejBase.Culture = new CultureInfo(this.comboBoxLanguage.Text);
+			Application.Reload();
         }
 
         private void buttonDocs_Click(object sender, EventArgs e)

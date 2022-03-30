@@ -12,25 +12,25 @@ namespace Wisej.Web.Ext.Syncfusion2.Demo.Component
 		{
 			InitializeComponent();
 
-			this.documentEditor1.Instance.toolbarClick += new WidgetEventHandler(documentEditor1_WidgetEvent);
-			this.documentEditor1.Instance.actionComplete += new WidgetEventHandler(documentEditor1_WidgetEvent);
+			this.documentEditor1.Instance.onToolbarClick += new WidgetEventHandler(documentEditor1_WidgetEvent);
+			this.documentEditor1.Instance.onActionComplete += new WidgetEventHandler(documentEditor1_WidgetEvent);
 		}
 
 		private void DocumentEditor_Load(object sender, EventArgs e)
 		{
-			var defaultFile = "Sample1.docx";
-			var samplesPath = Application.MapPath("Data/DocumentEditor");
-			using (var fs = new FileStream(Path.Combine(samplesPath, defaultFile), FileMode.Open))
-			{
-				var sfdt = ProcessDocument(fs, "docx");
-				this.documentEditor1.Call("openFile", sfdt);
-			}
+			//var defaultFile = "Sample1.docx";
+			//var samplesPath = Application.MapPath("Data/DocumentEditor");
+			//using (var fs = new FileStream(Path.Combine(samplesPath, defaultFile), FileMode.Open))
+			//{
+			//	var sfdt = ProcessDocument(fs, "docx");
+			//	this.documentEditor1.Call("openFile", sfdt);
+			//}
 
-			var samples = Directory.GetFiles(samplesPath)
-				.Select(x => Path.GetFileName(x)).ToArray();
+			//var samples = Directory.GetFiles(samplesPath)
+			//	.Select(x => Path.GetFileName(x)).ToArray();
 
-			this.comboBoxDataSource.DataSource = samples;
-			this.comboBoxDataSource.SelectedItem = defaultFile;
+			//this.comboBoxDataSource.DataSource = samples;
+			//this.comboBoxDataSource.SelectedItem = defaultFile;
 		}
 
 		private async void buttonSave_Click(object sender, EventArgs e)
@@ -85,11 +85,6 @@ namespace Wisej.Web.Ext.Syncfusion2.Demo.Component
 			}
 		}
 
-		/// <summary>
-		/// Process widget events.
-		/// </summary>
-		/// <param name="sender"></param>
-		/// <param name="e"></param>
 		private void documentEditor1_WidgetEvent(object sender, WidgetEventArgs e)
 		{
 			AlertBox.Show(

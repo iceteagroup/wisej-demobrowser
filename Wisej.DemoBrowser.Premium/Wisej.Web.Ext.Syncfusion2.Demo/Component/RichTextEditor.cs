@@ -9,7 +9,7 @@ namespace Wisej.Web.Ext.Syncfusion2.Demo.Component
 		{
 			InitializeComponent();
 
-			this.richTextEditor1.Instance.toolbarClick += new WidgetEventHandler(richTextEditor1_WidgetEvent);
+			this.richTextEditor1.Instance.onToolbarClick += new WidgetEventHandler(richTextEditor1_WidgetEvent);
 		}
 
 		private void button1_Click(object sender, EventArgs e)

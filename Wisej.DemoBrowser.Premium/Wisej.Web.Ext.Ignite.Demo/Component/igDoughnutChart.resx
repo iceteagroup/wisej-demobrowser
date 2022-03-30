@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="igDoughnutChart1.Options" xml:space="preserve">
-    <value>{"selectedStyle":{"fill":"red","stroke":"blue","strokeThickness":3,"opacity":1},"series":[{"name":"pop1990","labelMemberPath":"countryName","valueMemberPath":"pop1990","dataSource":[{"countryName":"Ukraine","pop1990":43},{"countryName":"Turkey","pop1990":91},{"countryName":"Uganda","pop1990":43},{"countryName":"Somalia","pop1990":15},{"countryName":"Colombia","pop1990":49},{"countryName":"South Africa","pop1990":57},{"countryName":"Botswana","pop1990":3},{"countryName":"Mongolia","pop1990":3},{"countryName":"Kyrgyzstan","pop1990":7},{"countryName":"Taiwan","pop1990":24}],"labelsPosition":"bestFit","formatLabel":"formatLabel"}]}</value>
+    <value>{"series":[{"name":"Pop1990","labelMemberPath":"CountryName","valueMemberPath":"Pop1990","dataSource":[{"CountryName":"China","Pop1990":1141},{"CountryName":"India","Pop1990":849},{"CountryName":"United States","Pop1990":250},{"CountryName":"Indonesia","Pop1990":178},{"CountryName":"Brazil","Pop1990":150}],"labelsPosition":"bestFit"}]}</value>
   </data>
   <metadata name="$this.RulerSnapLines" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>

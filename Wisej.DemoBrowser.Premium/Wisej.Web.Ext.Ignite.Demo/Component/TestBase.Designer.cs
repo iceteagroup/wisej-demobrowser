@@ -30,6 +30,8 @@
 		{
             this.components = new System.ComponentModel.Container();
             this.groupBox1 = new Wisej.Web.GroupBox();
+            this.flowLayoutPanel1 = new Wisej.Web.FlowLayoutPanel();
+            this.spacer1 = new Wisej.Web.Spacer();
             this.buttonUpdate = new Wisej.Web.Button();
             this.panel = new Wisej.Web.Panel();
             this.label3 = new Wisej.Web.Label();
@@ -44,20 +46,37 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.flowLayoutPanel1);
+            this.groupBox1.Controls.Add(this.spacer1);
             this.groupBox1.Controls.Add(this.buttonUpdate);
             this.groupBox1.Location = new System.Drawing.Point(43, 151);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(250, 315);
+            this.groupBox1.Padding = new Wisej.Web.Padding(16);
+            this.groupBox1.Size = new System.Drawing.Size(250, 560);
             this.groupBox1.TabIndex = 4;
             this.groupBox1.Text = "Properties";
             // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Dock = Wisej.Web.DockStyle.Fill;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 38);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 438);
+            this.flowLayoutPanel1.TabIndex = 1;
+            // 
+            // spacer1
+            // 
+            this.spacer1.Dock = Wisej.Web.DockStyle.Bottom;
+            this.spacer1.Location = new System.Drawing.Point(16, 476);
+            this.spacer1.Name = "spacer1";
+            this.spacer1.Size = new System.Drawing.Size(218, 16);
+            // 
             // buttonUpdate
             // 
-            this.buttonUpdate.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Bottom | Wisej.Web.AnchorStyles.Left) 
-            | Wisej.Web.AnchorStyles.Right)));
-            this.buttonUpdate.Location = new System.Drawing.Point(28, 234);
+            this.buttonUpdate.Dock = Wisej.Web.DockStyle.Bottom;
+            this.buttonUpdate.Location = new System.Drawing.Point(16, 492);
             this.buttonUpdate.Name = "buttonUpdate";
-            this.buttonUpdate.Size = new System.Drawing.Size(195, 52);
+            this.buttonUpdate.Size = new System.Drawing.Size(218, 52);
             this.buttonUpdate.TabIndex = 0;
             this.buttonUpdate.Text = "Update";
             // 
@@ -110,7 +129,7 @@
             this.linkDemo.ImageSource = "resource.wx/Wisej.Ext.MaterialDesign/link-button.svg";
             this.linkDemo.Location = new System.Drawing.Point(101, 93);
             this.linkDemo.Name = "linkDemo";
-            this.linkDemo.Size = new System.Drawing.Size(456, 24);
+            this.linkDemo.Size = new System.Drawing.Size(1077, 24);
             this.linkDemo.TabIndex = 10;
             this.linkDemo.Text = "https://www.igniteui.com/";
             this.linkDemo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -127,7 +146,7 @@
             this.linkAPI.ImageSource = "resource.wx/Wisej.Ext.MaterialDesign/link-button.svg";
             this.linkAPI.Location = new System.Drawing.Point(101, 63);
             this.linkAPI.Name = "linkAPI";
-            this.linkAPI.Size = new System.Drawing.Size(456, 24);
+            this.linkAPI.Size = new System.Drawing.Size(1077, 24);
             this.linkAPI.TabIndex = 9;
             this.linkAPI.Text = "http://www.igniteui.com/help/api";
             this.linkAPI.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -140,7 +159,7 @@
             this.linkDocs.ImageSource = "resource.wx/Wisej.Ext.MaterialDesign/link-button.svg";
             this.linkDocs.Location = new System.Drawing.Point(101, 33);
             this.linkDocs.Name = "linkDocs";
-            this.linkDocs.Size = new System.Drawing.Size(456, 24);
+            this.linkDocs.Size = new System.Drawing.Size(1077, 24);
             this.linkDocs.TabIndex = 8;
             this.linkDocs.Text = "https://www.igniteui.com/";
             this.linkDocs.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -176,5 +195,7 @@
 		protected LinkLabel linkAPI;
 		protected LinkLabel linkDocs;
 		private ImageList imageList1;
-	}
+        private Spacer spacer1;
+        public FlowLayoutPanel flowLayoutPanel1;
+    }
 }

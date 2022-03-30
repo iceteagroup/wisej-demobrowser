@@ -36,6 +36,7 @@
             this.checkBox1 = new Wisej.Web.CheckBox();
             this.groupBox1.SuspendLayout();
             this.panel.SuspendLayout();
+            this.flowLayoutPanelProperties.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMinimumFontSize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMaximumFontSize)).BeginInit();
             this.SuspendLayout();
@@ -45,22 +46,8 @@
             this.linkDocs.TabIndex = 4;
             this.linkDocs.Text = "https://help.syncfusion.com/js/tagcloud/overview";
             // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.checkBox1);
-            this.groupBox1.Controls.Add(this.comboBoxFormat);
-            this.groupBox1.Controls.Add(this.numericUpDownMaximumFontSize);
-            this.groupBox1.Controls.Add(this.numericUpDownMinimumFontSize);
-            this.groupBox1.Size = new System.Drawing.Size(250, 398);
-            this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
-            this.groupBox1.Controls.SetChildIndex(this.numericUpDownMinimumFontSize, 0);
-            this.groupBox1.Controls.SetChildIndex(this.numericUpDownMaximumFontSize, 0);
-            this.groupBox1.Controls.SetChildIndex(this.comboBoxFormat, 0);
-            this.groupBox1.Controls.SetChildIndex(this.checkBox1, 0);
-            // 
             // buttonUpdate
             // 
-            this.buttonUpdate.Location = new System.Drawing.Point(28, 314);
             this.buttonUpdate.TabIndex = 4;
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
@@ -80,6 +67,13 @@
             this.panel.Controls.Add(this.ejTagCloud1);
             this.panel.TabIndex = 7;
             // 
+            // flowLayoutPanelProperties
+            // 
+            this.flowLayoutPanelProperties.Controls.Add(this.checkBox1);
+            this.flowLayoutPanelProperties.Controls.Add(this.numericUpDownMinimumFontSize);
+            this.flowLayoutPanelProperties.Controls.Add(this.numericUpDownMaximumFontSize);
+            this.flowLayoutPanelProperties.Controls.Add(this.comboBoxFormat);
+            // 
             // ejTagCloud1
             // 
             this.ejTagCloud1.Dock = Wisej.Web.DockStyle.Fill;
@@ -93,6 +87,8 @@
             // numericUpDownMinimumFontSize
             // 
             this.numericUpDownMinimumFontSize.AutoSize = false;
+            this.flowLayoutPanelProperties.SetFillWeight(this.numericUpDownMinimumFontSize, 1);
+            this.flowLayoutPanelProperties.SetFlowBreak(this.numericUpDownMinimumFontSize, true);
             this.numericUpDownMinimumFontSize.Increment = new decimal(new int[] {
             2,
             0,
@@ -101,7 +97,8 @@
             this.numericUpDownMinimumFontSize.Label.Size = 50;
             this.numericUpDownMinimumFontSize.Label.SizeType = Wisej.Web.SizeType.Percent;
             this.numericUpDownMinimumFontSize.LabelText = "Minimum Font Size";
-            this.numericUpDownMinimumFontSize.Location = new System.Drawing.Point(28, 89);
+            this.numericUpDownMinimumFontSize.Location = new System.Drawing.Point(3, 60);
+            this.numericUpDownMinimumFontSize.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.numericUpDownMinimumFontSize.Maximum = new decimal(new int[] {
             40,
             0,
@@ -113,7 +110,7 @@
             0,
             0});
             this.numericUpDownMinimumFontSize.Name = "numericUpDownMinimumFontSize";
-            this.numericUpDownMinimumFontSize.Size = new System.Drawing.Size(195, 60);
+            this.numericUpDownMinimumFontSize.Size = new System.Drawing.Size(212, 60);
             this.numericUpDownMinimumFontSize.TabIndex = 1;
             this.numericUpDownMinimumFontSize.Value = new decimal(new int[] {
             10,
@@ -124,6 +121,8 @@
             // numericUpDownMaximumFontSize
             // 
             this.numericUpDownMaximumFontSize.AutoSize = false;
+            this.flowLayoutPanelProperties.SetFillWeight(this.numericUpDownMaximumFontSize, 1);
+            this.flowLayoutPanelProperties.SetFlowBreak(this.numericUpDownMaximumFontSize, true);
             this.numericUpDownMaximumFontSize.Increment = new decimal(new int[] {
             2,
             0,
@@ -132,7 +131,8 @@
             this.numericUpDownMaximumFontSize.Label.Size = 50;
             this.numericUpDownMaximumFontSize.Label.SizeType = Wisej.Web.SizeType.Percent;
             this.numericUpDownMaximumFontSize.LabelText = "Maximum Font Size";
-            this.numericUpDownMaximumFontSize.Location = new System.Drawing.Point(28, 164);
+            this.numericUpDownMaximumFontSize.Location = new System.Drawing.Point(3, 139);
+            this.numericUpDownMaximumFontSize.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.numericUpDownMaximumFontSize.Maximum = new decimal(new int[] {
             60,
             0,
@@ -144,7 +144,7 @@
             0,
             0});
             this.numericUpDownMaximumFontSize.Name = "numericUpDownMaximumFontSize";
-            this.numericUpDownMaximumFontSize.Size = new System.Drawing.Size(195, 60);
+            this.numericUpDownMaximumFontSize.Size = new System.Drawing.Size(212, 60);
             this.numericUpDownMaximumFontSize.TabIndex = 2;
             this.numericUpDownMaximumFontSize.Value = new decimal(new int[] {
             40,
@@ -156,15 +156,18 @@
             // 
             this.comboBoxFormat.AutoSize = false;
             this.comboBoxFormat.DropDownStyle = Wisej.Web.ComboBoxStyle.DropDownList;
+            this.flowLayoutPanelProperties.SetFillWeight(this.comboBoxFormat, 1);
+            this.flowLayoutPanelProperties.SetFlowBreak(this.comboBoxFormat, true);
             this.comboBoxFormat.Items.AddRange(new object[] {
             "Cloud",
             "List"});
             this.comboBoxFormat.Label.Size = 50;
             this.comboBoxFormat.Label.SizeType = Wisej.Web.SizeType.Percent;
             this.comboBoxFormat.LabelText = "Format";
-            this.comboBoxFormat.Location = new System.Drawing.Point(28, 239);
+            this.comboBoxFormat.Location = new System.Drawing.Point(3, 218);
+            this.comboBoxFormat.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.comboBoxFormat.Name = "comboBoxFormat";
-            this.comboBoxFormat.Size = new System.Drawing.Size(195, 60);
+            this.comboBoxFormat.Size = new System.Drawing.Size(212, 60);
             this.comboBoxFormat.TabIndex = 3;
             this.comboBoxFormat.Text = "Cloud";
             // 
@@ -174,9 +177,11 @@
             this.checkBox1.AutoSize = false;
             this.checkBox1.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.checkBox1.Checked = true;
-            this.checkBox1.Location = new System.Drawing.Point(28, 36);
+            this.flowLayoutPanelProperties.SetFillWeight(this.checkBox1, 1);
+            this.flowLayoutPanelProperties.SetFlowBreak(this.checkBox1, true);
+            this.checkBox1.Location = new System.Drawing.Point(3, 3);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(195, 38);
+            this.checkBox1.Size = new System.Drawing.Size(212, 38);
             this.checkBox1.TabIndex = 0;
             this.checkBox1.Text = "Show Title";
             // 
@@ -185,6 +190,7 @@
             this.Name = "ejTagCloud";
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
+            this.flowLayoutPanelProperties.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMinimumFontSize)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMaximumFontSize)).EndInit();
             this.ResumeLayout(false);

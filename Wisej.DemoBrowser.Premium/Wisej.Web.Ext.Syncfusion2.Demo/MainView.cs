@@ -24,22 +24,6 @@ namespace Wisej.Web.Ext.Syncfusion2.Demo
 
 			if (hash != "")
 				this.listBoxDemos.SelectedIndex = this.listBoxDemos.FindString(hash);
-
-			PopulateCustomLocales();
-		}
-
-		/// <summary>
-		/// Loads custom locales.
-		/// </summary>
-		private void PopulateCustomLocales()
-		{
-			var resources = Directory.GetFiles(Application.MapPath("Data/CustomLocalization"))
-				.Select(f => new Package
-				{
-					Name = Path.GetFileName(f),
-					Source = $"./Data/CustomLocalization/{Path.GetFileName(f)}"
-				});
-			ej2Base.Locales = resources.ToArray();
 		}
 
 		private void Application_HashChanged(object sender, HashChangedEventArgs e)

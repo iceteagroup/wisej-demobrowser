@@ -9,7 +9,7 @@ namespace Wisej.Web.Ext.Syncfusion2.Demo.Component
 		{
 			InitializeComponent();
 
-			this.listBox1.Instance.change += new WidgetEventHandler(listBox1_change);
+			this.listBox1.Instance.onChange += new WidgetEventHandler(listBox1_change);
 		}
 
         private void listBox1_change(object sender, WidgetEventArgs e)

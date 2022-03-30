@@ -51,6 +51,7 @@
             // TimeLine
             // 
             this.Name = "TimeLine";
+            this.Load += new System.EventHandler(this.TimeLine_Load);
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
             this.ResumeLayout(false);

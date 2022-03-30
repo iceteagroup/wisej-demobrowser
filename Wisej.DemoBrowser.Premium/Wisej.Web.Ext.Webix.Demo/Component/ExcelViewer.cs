@@ -1,4 +1,5 @@
 ﻿using System;
+using Wisej.Core;
 using Wisej.Web;
 
 namespace Wisej.Web.Ext.Webix.Demo.Component
@@ -9,5 +10,22 @@ namespace Wisej.Web.Ext.Webix.Demo.Component
 		{
 			InitializeComponent();
 		}
-	}
+
+        private void ExcelViewer_Load(object sender, EventArgs e)
+        {
+			var serviceUrl = ((IWisejHandler)this.excelViewer1).GetServiceURL();
+			this.excelViewer1.Options.url = $"binary->{serviceUrl}?action=load";
+        }
+
+        private void excelViewer1_WebRequest(object sender, WebRequestEventArgs e)
+        {
+			switch (e.Request["action"])
+            {
+                case "load":
+                    e.Response.WriteFile(Application.MapPath("Data/data.xlsx"));
+                    break;
+
+            }
+        }
+    }
 }

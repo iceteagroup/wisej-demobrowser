@@ -9,7 +9,7 @@ namespace Wisej.Web.Ext.Syncfusion2.Demo.Component
 		{
 			InitializeComponent();
 
-			this.diagram1.Instance.click += new WidgetEventHandler(diagram1_WidgetEvent);
+			this.diagram1.Instance.onClick += new WidgetEventHandler(diagram1_WidgetEvent);
 		}
 
 		private void diagram1_WidgetEvent(object sender, WidgetEventArgs e)

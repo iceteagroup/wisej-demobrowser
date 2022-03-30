@@ -35,6 +35,7 @@
             this.textBox2 = new Wisej.Web.TextBox();
             this.groupBox1.SuspendLayout();
             this.panel.SuspendLayout();
+            this.flowLayoutPanelProperties.SuspendLayout();
             this.SuspendLayout();
             // 
             // linkDocs
@@ -42,22 +43,8 @@
             this.linkDocs.TabIndex = 4;
             this.linkDocs.Text = "https://help.syncfusion.com/js/barcode/overview";
             // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Controls.Add(this.comboBox1);
-            this.groupBox1.Controls.Add(this.textBox3);
-            this.groupBox1.Size = new System.Drawing.Size(250, 527);
-            this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
-            this.groupBox1.Controls.SetChildIndex(this.textBox3, 0);
-            this.groupBox1.Controls.SetChildIndex(this.comboBox1, 0);
-            this.groupBox1.Controls.SetChildIndex(this.textBox1, 0);
-            this.groupBox1.Controls.SetChildIndex(this.textBox2, 0);
-            // 
             // buttonUpdate
             // 
-            this.buttonUpdate.Location = new System.Drawing.Point(28, 440);
             this.buttonUpdate.TabIndex = 4;
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
@@ -76,15 +63,25 @@
             this.panel.Controls.Add(this.ejBarcode1);
             this.panel.TabIndex = 7;
             // 
+            // flowLayoutPanelProperties
+            // 
+            this.flowLayoutPanelProperties.Controls.Add(this.textBox1);
+            this.flowLayoutPanelProperties.Controls.Add(this.textBox2);
+            this.flowLayoutPanelProperties.Controls.Add(this.textBox3);
+            this.flowLayoutPanelProperties.Controls.Add(this.comboBox1);
+            // 
             // textBox3
             // 
             this.textBox3.AutoSize = false;
+            this.flowLayoutPanelProperties.SetFillWeight(this.textBox3, 1);
+            this.flowLayoutPanelProperties.SetFlowBreak(this.textBox3, true);
             this.textBox3.Label.Size = 50;
             this.textBox3.Label.SizeType = Wisej.Web.SizeType.Percent;
             this.textBox3.LabelText = "Text";
-            this.textBox3.Location = new System.Drawing.Point(28, 238);
+            this.textBox3.Location = new System.Drawing.Point(3, 161);
+            this.textBox3.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(195, 60);
+            this.textBox3.Size = new System.Drawing.Size(212, 60);
             this.textBox3.TabIndex = 2;
             this.textBox3.Text = "HTTP://WISEJ.COM";
             // 
@@ -102,6 +99,8 @@
             // 
             this.comboBox1.AutoSize = false;
             this.comboBox1.DropDownStyle = Wisej.Web.ComboBoxStyle.DropDownList;
+            this.flowLayoutPanelProperties.SetFillWeight(this.comboBox1, 1);
+            this.flowLayoutPanelProperties.SetFlowBreak(this.comboBox1, true);
             this.comboBox1.Items.AddRange(new object[] {
             "QRBarcode",
             "DataMatrix",
@@ -118,34 +117,40 @@
             this.comboBox1.Label.Size = 50;
             this.comboBox1.Label.SizeType = Wisej.Web.SizeType.Percent;
             this.comboBox1.LabelText = "Symbology";
-            this.comboBox1.Location = new System.Drawing.Point(28, 339);
+            this.comboBox1.Location = new System.Drawing.Point(3, 240);
+            this.comboBox1.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(195, 60);
+            this.comboBox1.Size = new System.Drawing.Size(212, 60);
             this.comboBox1.TabIndex = 3;
             this.comboBox1.Text = "QRBarcode";
             // 
             // textBox1
             // 
             this.textBox1.AutoSize = false;
+            this.flowLayoutPanelProperties.SetFillWeight(this.textBox1, 1);
+            this.flowLayoutPanelProperties.SetFlowBreak(this.textBox1, true);
             this.textBox1.InputType.Type = Wisej.Web.TextBoxType.Color;
             this.textBox1.Label.Size = 50;
             this.textBox1.Label.SizeType = Wisej.Web.SizeType.Percent;
             this.textBox1.LabelText = "Dark Bar Color";
-            this.textBox1.Location = new System.Drawing.Point(28, 36);
+            this.textBox1.Location = new System.Drawing.Point(3, 3);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(195, 60);
+            this.textBox1.Size = new System.Drawing.Size(212, 60);
             this.textBox1.TabIndex = 0;
             // 
             // textBox2
             // 
             this.textBox2.AutoSize = false;
+            this.flowLayoutPanelProperties.SetFillWeight(this.textBox2, 1);
+            this.flowLayoutPanelProperties.SetFlowBreak(this.textBox2, true);
             this.textBox2.InputType.Type = Wisej.Web.TextBoxType.Color;
             this.textBox2.Label.Size = 50;
             this.textBox2.Label.SizeType = Wisej.Web.SizeType.Percent;
             this.textBox2.LabelText = "Light Bar Color";
-            this.textBox2.Location = new System.Drawing.Point(28, 137);
+            this.textBox2.Location = new System.Drawing.Point(3, 82);
+            this.textBox2.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(195, 60);
+            this.textBox2.Size = new System.Drawing.Size(212, 60);
             this.textBox2.TabIndex = 1;
             // 
             // ejBarcode
@@ -153,6 +158,7 @@
             this.Name = "ejBarcode";
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
+            this.flowLayoutPanelProperties.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 

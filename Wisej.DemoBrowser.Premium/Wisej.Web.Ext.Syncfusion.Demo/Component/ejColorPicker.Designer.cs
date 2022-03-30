@@ -33,18 +33,13 @@
             this.label4 = new Wisej.Web.Label();
             this.groupBox1.SuspendLayout();
             this.panel.SuspendLayout();
+            this.flowLayoutPanelProperties.SuspendLayout();
             this.SuspendLayout();
             // 
             // linkDocs
             // 
             this.linkDocs.TabIndex = 4;
             this.linkDocs.Text = "https://help.syncfusion.com/js/colorpicker/overview";
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.textBoxColor);
-            this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
-            this.groupBox1.Controls.SetChildIndex(this.textBoxColor, 0);
             // 
             // buttonUpdate
             // 
@@ -67,6 +62,10 @@
             this.panel.Controls.Add(this.ejColorPicker1);
             this.panel.TabIndex = 7;
             // 
+            // flowLayoutPanelProperties
+            // 
+            this.flowLayoutPanelProperties.Controls.Add(this.textBoxColor);
+            // 
             // ejColorPicker1
             // 
             this.ejColorPicker1.Anchor = Wisej.Web.AnchorStyles.None;
@@ -80,12 +79,14 @@
             // textBoxColor
             // 
             this.textBoxColor.AutoSize = false;
+            this.flowLayoutPanelProperties.SetFillWeight(this.textBoxColor, 1);
+            this.flowLayoutPanelProperties.SetFlowBreak(this.textBoxColor, true);
             this.textBoxColor.Label.Size = 50;
             this.textBoxColor.Label.SizeType = Wisej.Web.SizeType.Percent;
             this.textBoxColor.LabelText = "Value (prefix with #)";
-            this.textBoxColor.Location = new System.Drawing.Point(28, 32);
+            this.textBoxColor.Location = new System.Drawing.Point(3, 3);
             this.textBoxColor.Name = "textBoxColor";
-            this.textBoxColor.Size = new System.Drawing.Size(200, 60);
+            this.textBoxColor.Size = new System.Drawing.Size(212, 60);
             this.textBoxColor.TabIndex = 0;
             // 
             // label4
@@ -104,6 +105,7 @@
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
             this.panel.PerformLayout();
+            this.flowLayoutPanelProperties.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 

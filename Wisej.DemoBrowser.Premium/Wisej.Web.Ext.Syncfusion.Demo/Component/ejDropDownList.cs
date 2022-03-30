@@ -8,6 +8,8 @@ namespace Wisej.Web.Ext.Syncfusion.Demo.Component
 		public ejDropDownList()
 		{
 			InitializeComponent();
+
+			this.ejDropDownList1.Instance.onChange += new WidgetEventHandler(ejDropDownList_WidgetEvent);
 		}
 
 		private void ejDropDownList_WidgetEvent(object sender, WidgetEventArgs e)

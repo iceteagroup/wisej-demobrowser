@@ -33,19 +33,12 @@
             this.textBox1 = new Wisej.Web.TextBox();
             this.panel.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            this.flowLayoutPanelProperties.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel
             // 
             this.panel.Controls.Add(this.kendoQRCode1);
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
-            this.groupBox1.Controls.SetChildIndex(this.textBox2, 0);
-            this.groupBox1.Controls.SetChildIndex(this.textBox1, 0);
             // 
             // buttonUpdate
             // 
@@ -63,6 +56,11 @@
             // 
             this.linkDocs.Text = "https://docs.telerik.com/kendo-ui/controls/barcodes/qrcode/overview";
             // 
+            // flowLayoutPanelProperties
+            // 
+            this.flowLayoutPanelProperties.Controls.Add(this.textBox1);
+            this.flowLayoutPanelProperties.Controls.Add(this.textBox2);
+            // 
             // kendoQRCode1
             // 
             this.kendoQRCode1.Anchor = Wisej.Web.AnchorStyles.None;
@@ -76,25 +74,30 @@
             // textBox2
             // 
             this.textBox2.AutoSize = false;
+            this.flowLayoutPanelProperties.SetFillWeight(this.textBox2, 1);
+            this.flowLayoutPanelProperties.SetFlowBreak(this.textBox2, true);
             this.textBox2.InputType.Type = Wisej.Web.TextBoxType.Color;
             this.textBox2.Label.Size = 50;
             this.textBox2.Label.SizeType = Wisej.Web.SizeType.Percent;
             this.textBox2.LabelText = "Color";
-            this.textBox2.Location = new System.Drawing.Point(28, 132);
+            this.textBox2.Location = new System.Drawing.Point(3, 82);
+            this.textBox2.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(195, 60);
+            this.textBox2.Size = new System.Drawing.Size(212, 60);
             this.textBox2.TabIndex = 2;
             this.textBox2.Text = "#E15613";
             // 
             // textBox1
             // 
             this.textBox1.AutoSize = false;
+            this.flowLayoutPanelProperties.SetFillWeight(this.textBox1, 1);
+            this.flowLayoutPanelProperties.SetFlowBreak(this.textBox1, true);
             this.textBox1.Label.Size = 50;
             this.textBox1.Label.SizeType = Wisej.Web.SizeType.Percent;
             this.textBox1.LabelText = "Value";
-            this.textBox1.Location = new System.Drawing.Point(28, 30);
+            this.textBox1.Location = new System.Drawing.Point(3, 3);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(195, 60);
+            this.textBox1.Size = new System.Drawing.Size(212, 60);
             this.textBox1.TabIndex = 3;
             this.textBox1.Text = "http://www.wisej.com/";
             // 
@@ -103,6 +106,7 @@
             this.Name = "kendoQRCode";
             this.panel.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
+            this.flowLayoutPanelProperties.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 

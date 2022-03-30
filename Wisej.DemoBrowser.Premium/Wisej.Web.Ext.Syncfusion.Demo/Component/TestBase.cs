@@ -23,6 +23,8 @@ namespace Wisej.Web.Ext.Syncfusion.Demo.Component
         private Label label2;
         private Label label1;
         protected Panel panel;
+        protected FlowLayoutPanel flowLayoutPanelProperties;
+        private Spacer spacer1;
         private System.ComponentModel.IContainer components;
 
 		private void InitializeComponent()
@@ -31,6 +33,8 @@ namespace Wisej.Web.Ext.Syncfusion.Demo.Component
             this.linkDocs = new Wisej.Web.LinkLabel();
             this.imageList1 = new Wisej.Web.ImageList(this.components);
             this.groupBox1 = new Wisej.Web.GroupBox();
+            this.flowLayoutPanelProperties = new Wisej.Web.FlowLayoutPanel();
+            this.spacer1 = new Wisej.Web.Spacer();
             this.buttonUpdate = new Wisej.Web.Button();
             this.linkDemo = new Wisej.Web.LinkLabel();
             this.linkAPI = new Wisej.Web.LinkLabel();
@@ -48,7 +52,7 @@ namespace Wisej.Web.Ext.Syncfusion.Demo.Component
             this.linkDocs.ImageSource = "resource.wx/Wisej.Ext.MaterialDesign/link-button.svg";
             this.linkDocs.Location = new System.Drawing.Point(109, 25);
             this.linkDocs.Name = "linkDocs";
-            this.linkDocs.Size = new System.Drawing.Size(704, 24);
+            this.linkDocs.Size = new System.Drawing.Size(1103, 24);
             this.linkDocs.TabIndex = 8;
             this.linkDocs.Text = "https://help.syncfusion.com/js/overview";
             this.linkDocs.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -60,20 +64,37 @@ namespace Wisej.Web.Ext.Syncfusion.Demo.Component
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.flowLayoutPanelProperties);
+            this.groupBox1.Controls.Add(this.spacer1);
             this.groupBox1.Controls.Add(this.buttonUpdate);
             this.groupBox1.Location = new System.Drawing.Point(51, 166);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(250, 315);
+            this.groupBox1.Padding = new Wisej.Web.Padding(16);
+            this.groupBox1.Size = new System.Drawing.Size(250, 560);
             this.groupBox1.TabIndex = 11;
             this.groupBox1.Text = "Properties";
             // 
+            // flowLayoutPanelProperties
+            // 
+            this.flowLayoutPanelProperties.Dock = Wisej.Web.DockStyle.Fill;
+            this.flowLayoutPanelProperties.Location = new System.Drawing.Point(16, 38);
+            this.flowLayoutPanelProperties.Name = "flowLayoutPanelProperties";
+            this.flowLayoutPanelProperties.Size = new System.Drawing.Size(218, 434);
+            this.flowLayoutPanelProperties.TabIndex = 1;
+            // 
+            // spacer1
+            // 
+            this.spacer1.Dock = Wisej.Web.DockStyle.Bottom;
+            this.spacer1.Location = new System.Drawing.Point(16, 472);
+            this.spacer1.Name = "spacer1";
+            this.spacer1.Size = new System.Drawing.Size(218, 20);
+            // 
             // buttonUpdate
             // 
-            this.buttonUpdate.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Bottom | Wisej.Web.AnchorStyles.Left) 
-            | Wisej.Web.AnchorStyles.Right)));
-            this.buttonUpdate.Location = new System.Drawing.Point(28, 234);
+            this.buttonUpdate.Dock = Wisej.Web.DockStyle.Bottom;
+            this.buttonUpdate.Location = new System.Drawing.Point(16, 492);
             this.buttonUpdate.Name = "buttonUpdate";
-            this.buttonUpdate.Size = new System.Drawing.Size(195, 52);
+            this.buttonUpdate.Size = new System.Drawing.Size(218, 52);
             this.buttonUpdate.TabIndex = 0;
             this.buttonUpdate.Text = "Update";
             // 
@@ -84,7 +105,7 @@ namespace Wisej.Web.Ext.Syncfusion.Demo.Component
             this.linkDemo.ImageSource = "resource.wx/Wisej.Ext.MaterialDesign/link-button.svg";
             this.linkDemo.Location = new System.Drawing.Point(109, 85);
             this.linkDemo.Name = "linkDemo";
-            this.linkDemo.Size = new System.Drawing.Size(704, 24);
+            this.linkDemo.Size = new System.Drawing.Size(1103, 24);
             this.linkDemo.TabIndex = 10;
             this.linkDemo.Text = "https://js.syncfusion.com/demos/jquery/";
             this.linkDemo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -97,7 +118,7 @@ namespace Wisej.Web.Ext.Syncfusion.Demo.Component
             this.linkAPI.ImageSource = "resource.wx/Wisej.Ext.MaterialDesign/link-button.svg";
             this.linkAPI.Location = new System.Drawing.Point(109, 55);
             this.linkAPI.Name = "linkAPI";
-            this.linkAPI.Size = new System.Drawing.Size(704, 24);
+            this.linkAPI.Size = new System.Drawing.Size(1103, 24);
             this.linkAPI.TabIndex = 9;
             this.linkAPI.Text = "https://help.syncfusion.com/api/js";
             this.linkAPI.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;

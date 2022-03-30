@@ -9,8 +9,8 @@ namespace Wisej.Web.Ext.Ignite.Demo.Component
 		{
 			InitializeComponent();
 
-			this.igGrid1.Instance.cellClick += new WidgetEventHandler(igGrid_WidgetEvent);
-			this.igGrid1.Instance.cellRightClick += new WidgetEventHandler(igGrid_WidgetEvent);
+			this.igGrid1.Instance.onCellClick += new WidgetEventHandler(igGrid_WidgetEvent);
+			this.igGrid1.Instance.onCellRightClick += new WidgetEventHandler(igGrid_WidgetEvent);
 		}
 
 		private void igGrid_WidgetEvent(object sender, WidgetEventArgs e)

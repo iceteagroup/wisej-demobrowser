@@ -33,20 +33,15 @@
             this.igQRCodeBarcode1 = new Wisej.Web.Ext.Ignite.igQRCodeBarcode();
             this.groupBox1.SuspendLayout();
             this.panel.SuspendLayout();
+            this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.comboBox1);
-            this.groupBox1.Controls.Add(this.textBox1);
             this.groupBox1.TabIndex = 3;
-            this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
-            this.groupBox1.Controls.SetChildIndex(this.textBox1, 0);
-            this.groupBox1.Controls.SetChildIndex(this.comboBox1, 0);
             // 
             // buttonUpdate
             // 
-            this.buttonUpdate.Location = new System.Drawing.Point(28, 233);
             this.buttonUpdate.TabIndex = 2;
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
@@ -70,17 +65,26 @@
             this.linkDocs.TabIndex = 4;
             this.linkDocs.Text = "https://www.igniteui.com/help/igqrcodebarcode-overview";
             // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Controls.Add(this.textBox1);
+            this.flowLayoutPanel1.Controls.Add(this.comboBox1);
+            // 
             // textBox1
             // 
+            this.flowLayoutPanel1.SetFillWeight(this.textBox1, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.textBox1, true);
             this.textBox1.LabelText = "Value to Encode";
-            this.textBox1.Location = new System.Drawing.Point(28, 135);
+            this.textBox1.Location = new System.Drawing.Point(3, 3);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(195, 57);
+            this.textBox1.Size = new System.Drawing.Size(212, 57);
             this.textBox1.TabIndex = 1;
             // 
             // comboBox1
             // 
             this.comboBox1.DropDownStyle = Wisej.Web.ComboBoxStyle.DropDownList;
+            this.flowLayoutPanel1.SetFillWeight(this.comboBox1, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.comboBox1, true);
             this.comboBox1.Items.AddRange(new object[] {
             "undefined",
             "numeric",
@@ -88,9 +92,10 @@
             "byte",
             "kanji"});
             this.comboBox1.LabelText = "Encoding Mode";
-            this.comboBox1.Location = new System.Drawing.Point(28, 37);
+            this.comboBox1.Location = new System.Drawing.Point(3, 79);
+            this.comboBox1.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(195, 57);
+            this.comboBox1.Size = new System.Drawing.Size(212, 57);
             this.comboBox1.TabIndex = 0;
             this.comboBox1.Text = "undefined";
             // 
@@ -107,8 +112,9 @@
             // 
             this.Name = "igQRCodeBarcode";
             this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.panel.ResumeLayout(false);
+            this.flowLayoutPanel1.ResumeLayout(false);
+            this.flowLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 

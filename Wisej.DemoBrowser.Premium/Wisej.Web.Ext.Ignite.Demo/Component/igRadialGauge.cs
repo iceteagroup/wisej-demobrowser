@@ -12,7 +12,7 @@ namespace Wisej.Web.Ext.Ignite.Demo.Component
 		{
 			InitializeComponent();
 
-			this.igRadialGauge1.Instance.valueChanged += new WidgetEventHandler(igRadialGauge_WidgetEvent);
+			this.igRadialGauge1.Instance.onValueChanged += new WidgetEventHandler(igRadialGauge_WidgetEvent);
 		}
 
 		private void buttonUpdate_Click(object sender, EventArgs e)

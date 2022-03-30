@@ -9,7 +9,7 @@ namespace Wisej.Web.Ext.Syncfusion.Demo.Component
 		{
 			InitializeComponent();
 
-			this.ejSparkline1.Instance.click += new WidgetEventHandler(ejSparkline1_WidgetEvent);
+			this.ejSparkline1.Instance.onClick += new WidgetEventHandler(ejSparkline1_WidgetEvent);
 		}
 
 		private void ejSparkline1_WidgetEvent(object sender, WidgetEventArgs e)

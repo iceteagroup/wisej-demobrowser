@@ -37,7 +37,6 @@
             // panel
             // 
             this.panel.Controls.Add(this.kendoStepper1);
-            this.panel.Size = new System.Drawing.Size(750, 315);
             // 
             // linkDemo
             // 
@@ -54,17 +53,16 @@
             // kendoStepper1
             // 
             this.kendoStepper1.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Left | Wisej.Web.AnchorStyles.Right)));
-            this.kendoStepper1.Location = new System.Drawing.Point(40, 122);
+            this.kendoStepper1.Location = new System.Drawing.Point(40, 245);
             this.kendoStepper1.Name = "kendoStepper1";
             this.kendoStepper1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("kendoStepper1.Options"))));
-            this.kendoStepper1.Size = new System.Drawing.Size(668, 91);
+            this.kendoStepper1.Size = new System.Drawing.Size(1009, 91);
             this.kendoStepper1.TabIndex = 0;
             this.kendoStepper1.Text = "kendoStepper1";
             // 
             // kendoStepper
             // 
             this.Name = "kendoStepper";
-            this.Size = new System.Drawing.Size(1159, 505);
             this.panel.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);

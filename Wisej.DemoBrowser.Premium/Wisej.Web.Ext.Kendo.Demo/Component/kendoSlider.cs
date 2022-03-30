@@ -9,7 +9,7 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 		{
 			InitializeComponent();
 
-			this.kendoSlider1.Instance.change += new WidgetEventHandler(kendoSlider1_WidgetEvent);
+			this.kendoSlider1.Instance.onChange += new WidgetEventHandler(kendoSlider1_WidgetEvent);
 		}
 
 		private void kendoSlider1_WidgetEvent(object sender, WidgetEventArgs e)

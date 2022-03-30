@@ -9,7 +9,7 @@ namespace Wisej.Web.Ext.Syncfusion2.Demo.Component
 		{
 			InitializeComponent();
 
-			this.listView1.Instance.select += new WidgetEventHandler(listView1_select);
+			this.listView1.Instance.onSelect += new WidgetEventHandler(listView1_select);
 		}
 
         private void listView1_select(object sender, WidgetEventArgs e)

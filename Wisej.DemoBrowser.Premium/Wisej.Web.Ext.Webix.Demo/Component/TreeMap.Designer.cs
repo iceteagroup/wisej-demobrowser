@@ -51,6 +51,7 @@
             // TreeMap
             // 
             this.Name = "TreeMap";
+            this.Load += new System.EventHandler(this.TreeMap_Load);
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
             this.ResumeLayout(false);

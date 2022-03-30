@@ -8,6 +8,8 @@ namespace Wisej.Web.Ext.Syncfusion.Demo.Component
 		public ejAutocomplete()
 		{
 			InitializeComponent();
+
+			this.ejAutocomplete1.Instance.onChange += new WidgetEventHandler(ejAutocomplete1_WidgetEvent);
 		}
 
 		private async void button1_Click(object sender, EventArgs e)
@@ -27,6 +29,15 @@ namespace Wisej.Web.Ext.Syncfusion.Demo.Component
 			this.ejAutocomplete1.Options.showPopupButton = this.checkBox6.Checked;
 
 			this.ejAutocomplete1.Update();
+		}
+
+		private void ejAutocomplete1_WidgetEvent(object sender, WidgetEventArgs e)
+		{
+			AlertBox.Show(
+				$"<b>{e.Type}</b><br/>{JSON.Stringify(e.Data)}",
+				MessageBoxIcon.Information);
+
+			Application.Play(MessageBoxIcon.Information);
 		}
 	}
 }

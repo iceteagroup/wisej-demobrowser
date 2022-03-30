@@ -51,6 +51,7 @@
             // UnitList
             // 
             this.Name = "UnitList";
+            this.Load += new System.EventHandler(this.UnitList_Load);
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
             this.ResumeLayout(false);

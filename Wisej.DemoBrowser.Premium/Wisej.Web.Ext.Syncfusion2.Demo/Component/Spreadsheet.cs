@@ -13,7 +13,7 @@ namespace Wisej.Web.Ext.Syncfusion2.Demo.Component
 		{
 			InitializeComponent();
 
-			this.spreadsheet1.Instance.cellSave += new WidgetEventHandler(spreadsheet1_cellSave);
+			this.spreadsheet1.Instance.onCellSave += new WidgetEventHandler(spreadsheet1_cellSave);
 		}
 
         private void spreadsheet1_cellSave(object sender, WidgetEventArgs e)

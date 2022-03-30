@@ -117,15 +117,11 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="dxToolbar1.Options" xml:space="preserve">
-    <value>{"items":[{"location":"before","widget":"dxButton","options":{"type":"back"}},{"location":"before","widget":"dxButton","locateInMenu":"auto","options":{"icon":"refresh"}},{"location":"center","locateInMenu":"never"},{"location":"after","widget":"dxSelectBox","locateInMenu":"auto","options":{"width":140,"items":[{"id":1,"text":"All"},{"id":2,"text":"Video Players"},{"id":3,"text":"Televisions"},{"id":4,"text":"Monitors"},{"id":5,"text":"Projectors"}],"valueExpr":"id","displayExpr":"text","value":1}},{"location":"after","widget":"dxButton","locateInMenu":"auto","options":{"icon":"plus"}},{"locateInMenu":"always","text":"Save"},{"locateInMenu":"always","text":"Print","onClick":"click"},{"locateInMenu":"always","text":"Settings"}]}</value>
-  </data>
   <metadata name="$this.RulerSnapLines" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0
-        dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EHAQAAAAABAAAAAQAAAAQU
-        U3lzdGVtLkRyYXdpbmcuUG9pbnQCAAAABf3///8UU3lzdGVtLkRyYXdpbmcuUG9pbnQCAAAAAXgBeQAA
-        CAgCAAAAAAAAANQAAAAL
+        dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EHAQAAAAABAAAAAAAAAAQU
+        U3lzdGVtLkRyYXdpbmcuUG9pbnQCAAAACw==
 </value>
   </metadata>
 </root>

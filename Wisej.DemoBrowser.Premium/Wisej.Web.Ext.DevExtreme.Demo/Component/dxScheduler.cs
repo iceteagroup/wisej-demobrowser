@@ -9,9 +9,9 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
 		{
 			InitializeComponent();
 
-			this.dxScheduler1.Instance.appointmentClick += new WidgetEventHandler(dxScheduler1_WidgetEvent);
-			this.dxScheduler1.Instance.appointmentAdded += new WidgetEventHandler(dxScheduler1_WidgetEvent);
-			this.dxScheduler1.Instance.appointmentDeleted += new WidgetEventHandler(dxScheduler1_WidgetEvent);
+			this.dxScheduler1.Instance.onAppointmentClick += new WidgetEventHandler(dxScheduler1_WidgetEvent);
+			this.dxScheduler1.Instance.onAppointmentAdded += new WidgetEventHandler(dxScheduler1_WidgetEvent);
+			this.dxScheduler1.Instance.onAppointmentDeleted += new WidgetEventHandler(dxScheduler1_WidgetEvent);
 		}
 
 		private void dxScheduler1_WidgetEvent(object sender, WidgetEventArgs e)

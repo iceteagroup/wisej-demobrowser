@@ -31,7 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(igMap));
             Wisej.Web.Ext.Ignite.igBase.WidgetTemplate widgetTemplate1 = new Wisej.Web.Ext.Ignite.igBase.WidgetTemplate();
             this.igMap1 = new Wisej.Web.Ext.Ignite.igMap();
-            this.groupBox2 = new Wisej.Web.GroupBox();
             this.textBox2 = new Wisej.Web.TextBox();
             this.button1 = new Wisej.Web.Button();
             this.numericUpDown2 = new Wisej.Web.NumericUpDown();
@@ -39,22 +38,18 @@
             this.textBox1 = new Wisej.Web.TextBox();
             this.groupBox1.SuspendLayout();
             this.panel.SuspendLayout();
-            this.groupBox2.SuspendLayout();
+            this.flowLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.groupBox2);
-            this.groupBox1.Size = new System.Drawing.Size(250, 521);
             this.groupBox1.TabIndex = 3;
-            this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
-            this.groupBox1.Controls.SetChildIndex(this.groupBox2, 0);
             // 
             // buttonUpdate
             // 
-            this.buttonUpdate.Location = new System.Drawing.Point(28, 440);
+            this.buttonUpdate.Location = new System.Drawing.Point(16, 476);
             this.buttonUpdate.TabIndex = 1;
             // 
             // panel
@@ -77,6 +72,15 @@
             this.linkDocs.TabIndex = 4;
             this.linkDocs.Text = "http://www.igniteui.com/help/igmap-landing-page";
             // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Controls.Add(this.textBox1);
+            this.flowLayoutPanel1.Controls.Add(this.numericUpDown1);
+            this.flowLayoutPanel1.Controls.Add(this.numericUpDown2);
+            this.flowLayoutPanel1.Controls.Add(this.textBox2);
+            this.flowLayoutPanel1.Controls.Add(this.button1);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 490);
+            // 
             // igMap1
             // 
             this.igMap1.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
@@ -94,32 +98,25 @@
             this.igMap1.WidgetTemplates = new Wisej.Web.Ext.Ignite.igBase.WidgetTemplate[] {
         widgetTemplate1};
             // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.textBox2);
-            this.groupBox2.Controls.Add(this.button1);
-            this.groupBox2.Controls.Add(this.numericUpDown2);
-            this.groupBox2.Controls.Add(this.numericUpDown1);
-            this.groupBox2.Controls.Add(this.textBox1);
-            this.groupBox2.Location = new System.Drawing.Point(23, 37);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(200, 342);
-            this.groupBox2.TabIndex = 0;
-            this.groupBox2.Text = "Add a Marker";
-            // 
             // textBox2
             // 
+            this.flowLayoutPanel1.SetFillWeight(this.textBox2, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.textBox2, true);
             this.textBox2.LabelText = "Country";
-            this.textBox2.Location = new System.Drawing.Point(6, 93);
+            this.textBox2.Location = new System.Drawing.Point(3, 231);
+            this.textBox2.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(188, 57);
+            this.textBox2.Size = new System.Drawing.Size(212, 57);
             this.textBox2.TabIndex = 1;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(6, 307);
+            this.flowLayoutPanel1.SetFillWeight(this.button1, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.button1, true);
+            this.button1.Location = new System.Drawing.Point(3, 307);
+            this.button1.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(188, 27);
+            this.button1.Size = new System.Drawing.Size(212, 27);
             this.button1.TabIndex = 4;
             this.button1.Text = "Add";
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -127,27 +124,35 @@
             // numericUpDown2
             // 
             this.numericUpDown2.DecimalPlaces = 2;
+            this.flowLayoutPanel1.SetFillWeight(this.numericUpDown2, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.numericUpDown2, true);
             this.numericUpDown2.LabelText = "Longitude";
-            this.numericUpDown2.Location = new System.Drawing.Point(6, 237);
+            this.numericUpDown2.Location = new System.Drawing.Point(3, 155);
+            this.numericUpDown2.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(188, 57);
+            this.numericUpDown2.Size = new System.Drawing.Size(212, 57);
             this.numericUpDown2.TabIndex = 3;
             // 
             // numericUpDown1
             // 
             this.numericUpDown1.DecimalPlaces = 2;
+            this.flowLayoutPanel1.SetFillWeight(this.numericUpDown1, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.numericUpDown1, true);
             this.numericUpDown1.LabelText = "Latitude";
-            this.numericUpDown1.Location = new System.Drawing.Point(6, 165);
+            this.numericUpDown1.Location = new System.Drawing.Point(3, 79);
+            this.numericUpDown1.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(188, 57);
+            this.numericUpDown1.Size = new System.Drawing.Size(212, 57);
             this.numericUpDown1.TabIndex = 2;
             // 
             // textBox1
             // 
+            this.flowLayoutPanel1.SetFillWeight(this.textBox1, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.textBox1, true);
             this.textBox1.LabelText = "Name";
-            this.textBox1.Location = new System.Drawing.Point(6, 21);
+            this.textBox1.Location = new System.Drawing.Point(3, 3);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(188, 57);
+            this.textBox1.Size = new System.Drawing.Size(212, 57);
             this.textBox1.TabIndex = 0;
             // 
             // igMap
@@ -155,8 +160,8 @@
             this.Name = "igMap";
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
+            this.flowLayoutPanel1.ResumeLayout(false);
+            this.flowLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
@@ -167,7 +172,6 @@
 		#endregion
 
 		private Ignite.igMap igMap1;
-		private GroupBox groupBox2;
 		private Button button1;
 		private NumericUpDown numericUpDown2;
 		private NumericUpDown numericUpDown1;

@@ -49,6 +49,7 @@
             this.numericUpDown4 = new Wisej.Web.NumericUpDown();
             this.groupBox1.SuspendLayout();
             this.panel.SuspendLayout();
+            this.flowLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
@@ -57,27 +58,10 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.numericUpDown4);
-            this.groupBox1.Controls.Add(this.numericUpDown3);
-            this.groupBox1.Controls.Add(this.numericUpDown2);
-            this.groupBox1.Controls.Add(this.checkBox2);
-            this.groupBox1.Controls.Add(this.checkBox1);
-            this.groupBox1.Controls.Add(this.comboBox1);
-            this.groupBox1.Controls.Add(this.numericUpDown1);
-            this.groupBox1.Size = new System.Drawing.Size(250, 594);
             this.groupBox1.TabIndex = 3;
-            this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
-            this.groupBox1.Controls.SetChildIndex(this.numericUpDown1, 0);
-            this.groupBox1.Controls.SetChildIndex(this.comboBox1, 0);
-            this.groupBox1.Controls.SetChildIndex(this.checkBox1, 0);
-            this.groupBox1.Controls.SetChildIndex(this.checkBox2, 0);
-            this.groupBox1.Controls.SetChildIndex(this.numericUpDown2, 0);
-            this.groupBox1.Controls.SetChildIndex(this.numericUpDown3, 0);
-            this.groupBox1.Controls.SetChildIndex(this.numericUpDown4, 0);
             // 
             // buttonUpdate
             // 
-            this.buttonUpdate.Location = new System.Drawing.Point(28, 513);
             this.buttonUpdate.TabIndex = 7;
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
@@ -107,6 +91,16 @@
             // 
             this.linkDocs.TabIndex = 4;
             this.linkDocs.Text = "http://www.igniteui.com/help/iglineargauge-overview";
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Controls.Add(this.checkBox1);
+            this.flowLayoutPanel1.Controls.Add(this.checkBox2);
+            this.flowLayoutPanel1.Controls.Add(this.comboBox1);
+            this.flowLayoutPanel1.Controls.Add(this.numericUpDown2);
+            this.flowLayoutPanel1.Controls.Add(this.numericUpDown3);
+            this.flowLayoutPanel1.Controls.Add(this.numericUpDown4);
+            this.flowLayoutPanel1.Controls.Add(this.numericUpDown1);
             // 
             // igLinearGauge1
             // 
@@ -205,10 +199,13 @@
             // 
             // numericUpDown1
             // 
+            this.flowLayoutPanel1.SetFillWeight(this.numericUpDown1, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.numericUpDown1, true);
             this.numericUpDown1.LabelText = "Value";
-            this.numericUpDown1.Location = new System.Drawing.Point(28, 444);
+            this.numericUpDown1.Location = new System.Drawing.Point(3, 376);
+            this.numericUpDown1.Margin = new Wisej.Web.Padding(3, 10, 3, 3);
             this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(195, 57);
+            this.numericUpDown1.Size = new System.Drawing.Size(212, 57);
             this.numericUpDown1.TabIndex = 6;
             this.numericUpDown1.Value = new decimal(new int[] {
             40,
@@ -218,6 +215,8 @@
             // 
             // comboBox1
             // 
+            this.flowLayoutPanel1.SetFillWeight(this.comboBox1, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.comboBox1, true);
             this.comboBox1.Items.AddRange(new object[] {
             "custom",
             "rectangle",
@@ -225,9 +224,10 @@
             "needle",
             "trapezoid"});
             this.comboBox1.LabelText = "Needle Shape";
-            this.comboBox1.Location = new System.Drawing.Point(28, 168);
+            this.comboBox1.Location = new System.Drawing.Point(3, 96);
+            this.comboBox1.Margin = new Wisej.Web.Padding(3, 10, 3, 3);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(195, 57);
+            this.comboBox1.Size = new System.Drawing.Size(212, 57);
             this.comboBox1.TabIndex = 2;
             this.comboBox1.Text = "needle";
             // 
@@ -237,34 +237,42 @@
             this.checkBox1.AutoSize = false;
             this.checkBox1.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.checkBox1.Checked = true;
-            this.checkBox1.Location = new System.Drawing.Point(28, 36);
+            this.flowLayoutPanel1.SetFillWeight(this.checkBox1, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.checkBox1, true);
+            this.checkBox1.Location = new System.Drawing.Point(3, 3);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(195, 38);
+            this.checkBox1.Size = new System.Drawing.Size(212, 29);
             this.checkBox1.TabIndex = 0;
-            this.checkBox1.Text = "Needle Dragging Enabled";
+            this.checkBox1.Text = "Needle Dragging";
             // 
             // checkBox2
             // 
             this.checkBox2.Appearance = Wisej.Web.Appearance.Switch;
             this.checkBox2.AutoSize = false;
             this.checkBox2.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.checkBox2.Location = new System.Drawing.Point(28, 102);
+            this.flowLayoutPanel1.SetFillWeight(this.checkBox2, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.checkBox2, true);
+            this.checkBox2.Location = new System.Drawing.Point(3, 45);
+            this.checkBox2.Margin = new Wisej.Web.Padding(3, 10, 3, 3);
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(195, 38);
+            this.checkBox2.Size = new System.Drawing.Size(212, 38);
             this.checkBox2.TabIndex = 1;
             this.checkBox2.Text = "Scale Inverted";
             // 
             // numericUpDown2
             // 
+            this.flowLayoutPanel1.SetFillWeight(this.numericUpDown2, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.numericUpDown2, true);
             this.numericUpDown2.LabelText = "Minor Tick Count";
-            this.numericUpDown2.Location = new System.Drawing.Point(28, 237);
+            this.numericUpDown2.Location = new System.Drawing.Point(3, 166);
+            this.numericUpDown2.Margin = new Wisej.Web.Padding(3, 10, 3, 3);
             this.numericUpDown2.Maximum = new decimal(new int[] {
             20,
             0,
             0,
             0});
             this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(195, 57);
+            this.numericUpDown2.Size = new System.Drawing.Size(212, 57);
             this.numericUpDown2.TabIndex = 3;
             this.numericUpDown2.Value = new decimal(new int[] {
             4,
@@ -275,20 +283,23 @@
             // numericUpDown3
             // 
             this.numericUpDown3.DecimalPlaces = 2;
+            this.flowLayoutPanel1.SetFillWeight(this.numericUpDown3, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.numericUpDown3, true);
             this.numericUpDown3.Increment = new decimal(new int[] {
             1,
             0,
             0,
             131072});
             this.numericUpDown3.LabelText = "Scale Inner Extent";
-            this.numericUpDown3.Location = new System.Drawing.Point(28, 306);
+            this.numericUpDown3.Location = new System.Drawing.Point(3, 236);
+            this.numericUpDown3.Margin = new Wisej.Web.Padding(3, 10, 3, 3);
             this.numericUpDown3.Maximum = new decimal(new int[] {
             1,
             0,
             0,
             0});
             this.numericUpDown3.Name = "numericUpDown3";
-            this.numericUpDown3.Size = new System.Drawing.Size(195, 57);
+            this.numericUpDown3.Size = new System.Drawing.Size(212, 57);
             this.numericUpDown3.TabIndex = 4;
             this.numericUpDown3.Value = new decimal(new int[] {
             5,
@@ -299,20 +310,23 @@
             // numericUpDown4
             // 
             this.numericUpDown4.DecimalPlaces = 2;
+            this.flowLayoutPanel1.SetFillWeight(this.numericUpDown4, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.numericUpDown4, true);
             this.numericUpDown4.Increment = new decimal(new int[] {
             1,
             0,
             0,
             131072});
             this.numericUpDown4.LabelText = "Scale Outer Extent";
-            this.numericUpDown4.Location = new System.Drawing.Point(28, 375);
+            this.numericUpDown4.Location = new System.Drawing.Point(3, 306);
+            this.numericUpDown4.Margin = new Wisej.Web.Padding(3, 10, 3, 3);
             this.numericUpDown4.Maximum = new decimal(new int[] {
             1,
             0,
             0,
             0});
             this.numericUpDown4.Name = "numericUpDown4";
-            this.numericUpDown4.Size = new System.Drawing.Size(195, 57);
+            this.numericUpDown4.Size = new System.Drawing.Size(212, 57);
             this.numericUpDown4.TabIndex = 5;
             this.numericUpDown4.Value = new decimal(new int[] {
             65,
@@ -324,9 +338,10 @@
             // 
             this.Name = "igLinearGauge";
             this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.panel.ResumeLayout(false);
             this.panel.PerformLayout();
+            this.flowLayoutPanel1.ResumeLayout(false);
+            this.flowLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();

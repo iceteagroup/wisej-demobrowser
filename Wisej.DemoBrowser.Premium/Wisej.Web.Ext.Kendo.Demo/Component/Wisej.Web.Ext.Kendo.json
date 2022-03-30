@@ -1,0 +1,48 @@
+﻿{
+  //
+  // Specifies which set of packages to use from the "sources" map below.
+  //
+  "source": "cdn",
+
+  //
+  // Specifies the default theme. Used when the Theme property of the widget is not set.
+  //
+  "theme": "bootstrap-main",
+
+  //
+  // Widget packages.
+  //
+  "sources": {
+    "cdn": {
+      "root": "https://kendo.cdn.telerik.com/2022.1.301",
+      "packages": {
+        "jquery.js": "%root%/js/jquery.min.js",
+        "kendo.all.js": "%root%/js/kendo.all.min.js",
+        "kendo.theme.css": "%root%/styles/kendo.%theme%.min.css",
+        "kendo.culture.js": "%root%/js/cultures/kendo.culture.%culture%.min.js",
+        "kendo.messages.js": "%root%/js/messages/kendo.messages.%culture%.min.js",
+        "pdf.js": "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.6.347/pdf.min.js"
+      }
+    },
+    "local": {
+      "root": "Kendo",
+      "packages": {
+        "jquery.js": "%root%/js/jquery.min.js",
+        "kendo.all.js": "%root%/js/kendo.all.min.js",
+        "kendo.theme.css": "%root%/styles/kendo.%theme%.min.css",
+        "kendo.culture.js": "%root%/js/cultures/kendo.culture.%culture%.min.js",
+        "kendo.messages.js": "%root%/js/messages/kendo.messages.%culture%.min.js"
+      }
+    },
+    "embedded": {
+      "root": "resource.wx",
+      "packages": {
+        "jquery.js": "%root%/js/jquery.min.js",
+        "kendo.all.js": "%root%/js/kendo.all.min.js",
+        "kendo.theme.css": "%root%/styles/kendo.%theme%.min.css",
+        "kendo.culture.js": "%root%/js/cultures/kendo.culture.%culture%.min.js",
+        "kendo.messages.js": "%root%/js/messages/kendo.messages.%culture%.min.js"
+      }
+    }
+  }
+}

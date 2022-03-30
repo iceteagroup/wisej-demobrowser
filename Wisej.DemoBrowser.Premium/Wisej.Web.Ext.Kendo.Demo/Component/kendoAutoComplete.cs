@@ -9,8 +9,8 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 		{
 			InitializeComponent();
 
-			this.kendoAutoComplete1.Instance.change += new WidgetEventHandler(kendoAutoComplete1_WidgetEvent);
-			this.kendoAutoComplete1.Instance.select += new WidgetEventHandler(kendoAutoComplete1_WidgetEvent);
+			this.kendoAutoComplete1.Instance.onChange += new WidgetEventHandler(kendoAutoComplete1_WidgetEvent);
+			this.kendoAutoComplete1.Instance.onSelect += new WidgetEventHandler(kendoAutoComplete1_WidgetEvent);
 		}
 
 		private void kendoAutoComplete1_WidgetEvent(object sender, WidgetEventArgs e)

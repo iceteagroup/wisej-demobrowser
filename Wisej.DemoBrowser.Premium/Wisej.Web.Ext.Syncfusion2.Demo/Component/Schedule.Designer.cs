@@ -37,6 +37,7 @@
             this.checkBoxAdaptativeUI = new Wisej.Web.CheckBox();
             this.groupBox1.SuspendLayout();
             this.panel.SuspendLayout();
+            this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // linkDocs
@@ -47,32 +48,22 @@
             // 
             this.linkAPI.Text = "https://ej2.syncfusion.com/javascript/documentation/api/schedule";
             // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.checkBoxAdaptativeUI);
-            this.groupBox1.Controls.Add(this.comboBoxCurrentView);
-            this.groupBox1.Controls.Add(this.checkBoxResizing);
-            this.groupBox1.Controls.Add(this.checkBoxInline);
-            this.groupBox1.Controls.Add(this.checkBoxDragAndDrop);
-            this.groupBox1.Controls.Add(this.comboBoxCalendarMode);
-            this.groupBox1.Size = new System.Drawing.Size(285, 477);
-            this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
-            this.groupBox1.Controls.SetChildIndex(this.comboBoxCalendarMode, 0);
-            this.groupBox1.Controls.SetChildIndex(this.checkBoxDragAndDrop, 0);
-            this.groupBox1.Controls.SetChildIndex(this.checkBoxInline, 0);
-            this.groupBox1.Controls.SetChildIndex(this.checkBoxResizing, 0);
-            this.groupBox1.Controls.SetChildIndex(this.comboBoxCurrentView, 0);
-            this.groupBox1.Controls.SetChildIndex(this.checkBoxAdaptativeUI, 0);
-            // 
             // buttonUpdate
             // 
-            this.buttonUpdate.Location = new System.Drawing.Point(28, 396);
-            this.buttonUpdate.Size = new System.Drawing.Size(230, 52);
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
             // panel
             // 
             this.panel.Controls.Add(this.schedule1);
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Controls.Add(this.checkBoxDragAndDrop);
+            this.flowLayoutPanel1.Controls.Add(this.checkBoxInline);
+            this.flowLayoutPanel1.Controls.Add(this.checkBoxResizing);
+            this.flowLayoutPanel1.Controls.Add(this.checkBoxAdaptativeUI);
+            this.flowLayoutPanel1.Controls.Add(this.comboBoxCalendarMode);
+            this.flowLayoutPanel1.Controls.Add(this.comboBoxCurrentView);
             // 
             // linkDemo
             // 
@@ -91,46 +82,58 @@
             // comboBoxCalendarMode
             // 
             this.comboBoxCalendarMode.DropDownStyle = Wisej.Web.ComboBoxStyle.DropDownList;
+            this.flowLayoutPanel1.SetFillWeight(this.comboBoxCalendarMode, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.comboBoxCalendarMode, true);
             this.comboBoxCalendarMode.Items.AddRange(new object[] {
             "Gregorian",
             "Islamic"});
-            this.comboBoxCalendarMode.LabelText = "Calendar mode";
-            this.comboBoxCalendarMode.Location = new System.Drawing.Point(21, 31);
+            this.comboBoxCalendarMode.LabelText = "Calendar Mode";
+            this.comboBoxCalendarMode.Location = new System.Drawing.Point(3, 175);
+            this.comboBoxCalendarMode.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.comboBoxCalendarMode.Name = "comboBoxCalendarMode";
-            this.comboBoxCalendarMode.Size = new System.Drawing.Size(211, 46);
+            this.comboBoxCalendarMode.Size = new System.Drawing.Size(212, 57);
             this.comboBoxCalendarMode.TabIndex = 1;
             // 
             // checkBoxDragAndDrop
             // 
             this.checkBoxDragAndDrop.Appearance = Wisej.Web.Appearance.Switch;
-            this.checkBoxDragAndDrop.AutoSize = false;
-            this.checkBoxDragAndDrop.Location = new System.Drawing.Point(21, 96);
+            this.flowLayoutPanel1.SetFillWeight(this.checkBoxDragAndDrop, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.checkBoxDragAndDrop, true);
+            this.checkBoxDragAndDrop.Location = new System.Drawing.Point(3, 3);
             this.checkBoxDragAndDrop.Name = "checkBoxDragAndDrop";
-            this.checkBoxDragAndDrop.Size = new System.Drawing.Size(245, 35);
+            this.checkBoxDragAndDrop.Size = new System.Drawing.Size(212, 24);
             this.checkBoxDragAndDrop.TabIndex = 2;
-            this.checkBoxDragAndDrop.Text = "Allow drag and drop";
+            this.checkBoxDragAndDrop.Text = "Allow Drag-and-Drop";
             // 
             // checkBoxInline
             // 
             this.checkBoxInline.Appearance = Wisej.Web.Appearance.Switch;
-            this.checkBoxInline.Location = new System.Drawing.Point(21, 139);
+            this.flowLayoutPanel1.SetFillWeight(this.checkBoxInline, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.checkBoxInline, true);
+            this.checkBoxInline.Location = new System.Drawing.Point(3, 46);
+            this.checkBoxInline.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBoxInline.Name = "checkBoxInline";
-            this.checkBoxInline.Size = new System.Drawing.Size(133, 24);
+            this.checkBoxInline.Size = new System.Drawing.Size(212, 24);
             this.checkBoxInline.TabIndex = 3;
-            this.checkBoxInline.Text = "Allow inline";
+            this.checkBoxInline.Text = "Allow Inline";
             // 
             // checkBoxResizing
             // 
             this.checkBoxResizing.Appearance = Wisej.Web.Appearance.Switch;
-            this.checkBoxResizing.Location = new System.Drawing.Point(21, 174);
+            this.flowLayoutPanel1.SetFillWeight(this.checkBoxResizing, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.checkBoxResizing, true);
+            this.checkBoxResizing.Location = new System.Drawing.Point(3, 89);
+            this.checkBoxResizing.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBoxResizing.Name = "checkBoxResizing";
-            this.checkBoxResizing.Size = new System.Drawing.Size(150, 24);
+            this.checkBoxResizing.Size = new System.Drawing.Size(212, 24);
             this.checkBoxResizing.TabIndex = 4;
-            this.checkBoxResizing.Text = "Allow resizing";
+            this.checkBoxResizing.Text = "Allow Resizing";
             // 
             // comboBoxCurrentView
             // 
             this.comboBoxCurrentView.DropDownStyle = Wisej.Web.ComboBoxStyle.DropDownList;
+            this.flowLayoutPanel1.SetFillWeight(this.comboBoxCurrentView, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.comboBoxCurrentView, true);
             this.comboBoxCurrentView.Items.AddRange(new object[] {
             "Day",
             "Week",
@@ -144,28 +147,33 @@
             "TimelineWorkWeek",
             "TimelineMonth",
             "TimelineYear"});
-            this.comboBoxCurrentView.LabelText = "Current view";
-            this.comboBoxCurrentView.Location = new System.Drawing.Point(20, 243);
+            this.comboBoxCurrentView.LabelText = "Current View";
+            this.comboBoxCurrentView.Location = new System.Drawing.Point(3, 251);
+            this.comboBoxCurrentView.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.comboBoxCurrentView.Name = "comboBoxCurrentView";
-            this.comboBoxCurrentView.Size = new System.Drawing.Size(211, 46);
+            this.comboBoxCurrentView.Size = new System.Drawing.Size(212, 57);
             this.comboBoxCurrentView.TabIndex = 5;
             // 
             // checkBoxAdaptativeUI
             // 
             this.checkBoxAdaptativeUI.Appearance = Wisej.Web.Appearance.Switch;
-            this.checkBoxAdaptativeUI.Location = new System.Drawing.Point(21, 208);
+            this.flowLayoutPanel1.SetFillWeight(this.checkBoxAdaptativeUI, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.checkBoxAdaptativeUI, true);
+            this.checkBoxAdaptativeUI.Location = new System.Drawing.Point(3, 132);
+            this.checkBoxAdaptativeUI.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBoxAdaptativeUI.Name = "checkBoxAdaptativeUI";
-            this.checkBoxAdaptativeUI.Size = new System.Drawing.Size(201, 24);
+            this.checkBoxAdaptativeUI.Size = new System.Drawing.Size(212, 24);
             this.checkBoxAdaptativeUI.TabIndex = 6;
-            this.checkBoxAdaptativeUI.Text = "Enable adaptative UI";
+            this.checkBoxAdaptativeUI.Text = "Enable Adaptative UI";
             // 
             // Schedule
             // 
             this.Name = "Schedule";
             this.Load += new System.EventHandler(this.Schedule_Load);
             this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.panel.ResumeLayout(false);
+            this.flowLayoutPanel1.ResumeLayout(false);
+            this.flowLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 

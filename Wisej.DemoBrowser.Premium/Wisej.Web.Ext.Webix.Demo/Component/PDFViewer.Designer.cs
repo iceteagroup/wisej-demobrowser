@@ -45,10 +45,12 @@
             this.pdfViewer1.Size = new System.Drawing.Size(1073, 542);
             this.pdfViewer1.TabIndex = 0;
             this.pdfViewer1.Text = "pdfViewer1";
+            this.pdfViewer1.WebRequest += new Wisej.Web.WebRequestHandler(this.pdfViewer1_WebRequest);
             // 
             // PDFViewer
             // 
             this.Name = "PDFViewer";
+            this.Load += new System.EventHandler(this.PDFViewer_Load);
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
             this.ResumeLayout(false);

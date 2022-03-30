@@ -30,14 +30,13 @@
 		{
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PivotView));
             this.pivotView1 = new Wisej.Web.Ext.Syncfusion2.PivotView();
-            this.groupBox2 = new Wisej.Web.GroupBox();
             this.checkBoxRemoveIcon = new Wisej.Web.CheckBox();
             this.checkBoxValueTypeIcon = new Wisej.Web.CheckBox();
             this.checkBoxSortIcon = new Wisej.Web.CheckBox();
             this.checkBoxFilterIcon = new Wisej.Web.CheckBox();
             this.groupBox1.SuspendLayout();
             this.panel.SuspendLayout();
-            this.groupBox2.SuspendLayout();
+            this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // linkDocs
@@ -48,21 +47,20 @@
             // 
             this.linkAPI.Text = "https://ej2.syncfusion.com/javascript/documentation/api/pivotview/";
             // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.groupBox2);
-            this.groupBox1.Size = new System.Drawing.Size(250, 504);
-            this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
-            this.groupBox1.Controls.SetChildIndex(this.groupBox2, 0);
-            // 
             // buttonUpdate
             // 
-            this.buttonUpdate.Location = new System.Drawing.Point(28, 423);
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
             // panel
             // 
             this.panel.Controls.Add(this.pivotView1);
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Controls.Add(this.checkBoxFilterIcon);
+            this.flowLayoutPanel1.Controls.Add(this.checkBoxSortIcon);
+            this.flowLayoutPanel1.Controls.Add(this.checkBoxValueTypeIcon);
+            this.flowLayoutPanel1.Controls.Add(this.checkBoxRemoveIcon);
             // 
             // linkDemo
             // 
@@ -78,65 +76,64 @@
             this.pivotView1.TabIndex = 0;
             this.pivotView1.Text = "pivotView1";
             // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.checkBoxRemoveIcon);
-            this.groupBox2.Controls.Add(this.checkBoxValueTypeIcon);
-            this.groupBox2.Controls.Add(this.checkBoxSortIcon);
-            this.groupBox2.Controls.Add(this.checkBoxFilterIcon);
-            this.groupBox2.Location = new System.Drawing.Point(7, 27);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(237, 196);
-            this.groupBox2.TabIndex = 1;
-            this.groupBox2.Text = "Grouping bar";
-            // 
             // checkBoxRemoveIcon
             // 
             this.checkBoxRemoveIcon.Appearance = Wisej.Web.Appearance.Switch;
             this.checkBoxRemoveIcon.Checked = true;
-            this.checkBoxRemoveIcon.Location = new System.Drawing.Point(6, 137);
+            this.flowLayoutPanel1.SetFillWeight(this.checkBoxRemoveIcon, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.checkBoxRemoveIcon, true);
+            this.checkBoxRemoveIcon.Location = new System.Drawing.Point(3, 132);
+            this.checkBoxRemoveIcon.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBoxRemoveIcon.Name = "checkBoxRemoveIcon";
-            this.checkBoxRemoveIcon.Size = new System.Drawing.Size(184, 24);
+            this.checkBoxRemoveIcon.Size = new System.Drawing.Size(212, 24);
             this.checkBoxRemoveIcon.TabIndex = 3;
-            this.checkBoxRemoveIcon.Text = "Show remove icon";
+            this.checkBoxRemoveIcon.Text = "Show Remove Icon";
             // 
             // checkBoxValueTypeIcon
             // 
             this.checkBoxValueTypeIcon.Appearance = Wisej.Web.Appearance.Switch;
             this.checkBoxValueTypeIcon.Checked = true;
-            this.checkBoxValueTypeIcon.Location = new System.Drawing.Point(7, 102);
+            this.flowLayoutPanel1.SetFillWeight(this.checkBoxValueTypeIcon, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.checkBoxValueTypeIcon, true);
+            this.checkBoxValueTypeIcon.Location = new System.Drawing.Point(3, 89);
+            this.checkBoxValueTypeIcon.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBoxValueTypeIcon.Name = "checkBoxValueTypeIcon";
-            this.checkBoxValueTypeIcon.Size = new System.Drawing.Size(203, 24);
+            this.checkBoxValueTypeIcon.Size = new System.Drawing.Size(212, 24);
             this.checkBoxValueTypeIcon.TabIndex = 2;
-            this.checkBoxValueTypeIcon.Text = "Show value type icon";
+            this.checkBoxValueTypeIcon.Text = "Show Value Type Icon";
             // 
             // checkBoxSortIcon
             // 
             this.checkBoxSortIcon.Appearance = Wisej.Web.Appearance.Switch;
             this.checkBoxSortIcon.Checked = true;
-            this.checkBoxSortIcon.Location = new System.Drawing.Point(7, 66);
+            this.flowLayoutPanel1.SetFillWeight(this.checkBoxSortIcon, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.checkBoxSortIcon, true);
+            this.checkBoxSortIcon.Location = new System.Drawing.Point(3, 46);
+            this.checkBoxSortIcon.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBoxSortIcon.Name = "checkBoxSortIcon";
-            this.checkBoxSortIcon.Size = new System.Drawing.Size(157, 24);
+            this.checkBoxSortIcon.Size = new System.Drawing.Size(212, 24);
             this.checkBoxSortIcon.TabIndex = 1;
-            this.checkBoxSortIcon.Text = "Show sort icon";
+            this.checkBoxSortIcon.Text = "Show Sort Icon";
             // 
             // checkBoxFilterIcon
             // 
             this.checkBoxFilterIcon.Appearance = Wisej.Web.Appearance.Switch;
             this.checkBoxFilterIcon.Checked = true;
-            this.checkBoxFilterIcon.Location = new System.Drawing.Point(7, 29);
+            this.flowLayoutPanel1.SetFillWeight(this.checkBoxFilterIcon, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.checkBoxFilterIcon, true);
+            this.checkBoxFilterIcon.Location = new System.Drawing.Point(3, 3);
             this.checkBoxFilterIcon.Name = "checkBoxFilterIcon";
-            this.checkBoxFilterIcon.Size = new System.Drawing.Size(161, 24);
+            this.checkBoxFilterIcon.Size = new System.Drawing.Size(212, 24);
             this.checkBoxFilterIcon.TabIndex = 0;
-            this.checkBoxFilterIcon.Text = "Show filter icon";
+            this.checkBoxFilterIcon.Text = "Show Filter Icon";
             // 
             // PivotView
             // 
             this.Name = "PivotView";
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
+            this.flowLayoutPanel1.ResumeLayout(false);
+            this.flowLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -145,7 +142,6 @@
 		#endregion
 
 		private Syncfusion2.PivotView pivotView1;
-        private GroupBox groupBox2;
         private CheckBox checkBoxRemoveIcon;
         private CheckBox checkBoxValueTypeIcon;
         private CheckBox checkBoxSortIcon;

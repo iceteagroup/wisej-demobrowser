@@ -13,11 +13,11 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 		{
 			InitializeComponent();
 
-			this.kendoScheduler1.Instance.add += new WidgetEventHandler(kendoScheduler1_WidgetEvent);
-			this.kendoScheduler1.Instance.cancel += new WidgetEventHandler(kendoScheduler1_WidgetEvent);
-			this.kendoScheduler1.Instance.change += new WidgetEventHandler(kendoScheduler1_WidgetEvent);
-			this.kendoScheduler1.Instance.edit += new WidgetEventHandler(kendoScheduler1_WidgetEvent);
-			this.kendoScheduler1.Instance.save += new WidgetEventHandler(kendoScheduler1_WidgetEvent);
+			this.kendoScheduler1.Instance.onAdd += new WidgetEventHandler(kendoScheduler1_WidgetEvent);
+			this.kendoScheduler1.Instance.onCancel += new WidgetEventHandler(kendoScheduler1_WidgetEvent);
+			this.kendoScheduler1.Instance.onChange += new WidgetEventHandler(kendoScheduler1_WidgetEvent);
+			this.kendoScheduler1.Instance.onEdit += new WidgetEventHandler(kendoScheduler1_WidgetEvent);
+			this.kendoScheduler1.Instance.onSave += new WidgetEventHandler(kendoScheduler1_WidgetEvent);
 		}
 
 		private void kendoScheduler1_WidgetEvent(object sender, WidgetEventArgs e)

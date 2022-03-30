@@ -29,7 +29,7 @@
 		private void InitializeComponent()
 		{
             this.components = new System.ComponentModel.Container();
-            Wisej.Web.Ext.Kendo.kendoBase.WidgetFunction widgetFunction1 = new Wisej.Web.Ext.Kendo.kendoBase.WidgetFunction();
+            Wisej.Web.Ext.Kendo.kendoBase.WidgetFunction widgetFunction2 = new Wisej.Web.Ext.Kendo.kendoBase.WidgetFunction();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(kendoChat));
             this.buttonGetUser = new Wisej.Web.Button();
             this.buttonApplyColor = new Wisej.Web.Button();
@@ -50,6 +50,7 @@
             this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
             this.groupBox1.Controls.SetChildIndex(this.buttonGetUser, 0);
             this.groupBox1.Controls.SetChildIndex(this.buttonApplyColor, 0);
+            this.groupBox1.Controls.SetChildIndex(this.flowLayoutPanelProperties, 0);
             // 
             // linkDemo
             // 
@@ -91,10 +92,10 @@
             this.kendoChat1.Size = new System.Drawing.Size(595, 542);
             this.kendoChat1.TabIndex = 0;
             this.kendoChat1.Text = "kendoChat1";
-            widgetFunction1.Name = "applyColor";
-            widgetFunction1.Source = resources.GetString("widgetFunction1.Source");
+            widgetFunction2.Name = "applyColor";
+            widgetFunction2.Source = resources.GetString("widgetFunction2.Source");
             this.kendoChat1.WidgetFunctions = new Wisej.Web.Ext.Kendo.kendoBase.WidgetFunction[] {
-        widgetFunction1};
+        widgetFunction2};
             // 
             // kendoChat
             // 

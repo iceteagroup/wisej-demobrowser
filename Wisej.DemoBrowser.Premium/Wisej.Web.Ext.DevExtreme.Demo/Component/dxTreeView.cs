@@ -8,8 +8,8 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
 		{
 			InitializeComponent();
 
-			this.dxTreeView1.Instance.itemClick += new WidgetEventHandler(dxTreeView1_WidgetEvent);
-			this.dxTreeView1.Instance.selectionChanged += new WidgetEventHandler(dxTreeView1_WidgetEvent);
+			this.dxTreeView1.Instance.onItemClick += new WidgetEventHandler(dxTreeView1_WidgetEvent);
+			this.dxTreeView1.Instance.onSelectionChanged += new WidgetEventHandler(dxTreeView1_WidgetEvent);
 		}
 
 		private void dxTreeView1_WidgetEvent(object sender, WidgetEventArgs e)
@@ -24,7 +24,6 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
 		private void buttonUpdate_Click(object sender, EventArgs e)
 		{
 			this.dxTreeView1.Options.allowExpandAll = this.checkBox1.Checked;
-			this.dxTreeView1.Options.animationEnabled = this.checkBox2.Checked;
 			this.dxTreeView1.Options.expandAllEnabled = this.checkBox3.Checked;
 			this.dxTreeView1.Options.expandNodesRecursive = this.checkBox4.Checked;
 			this.dxTreeView1.Options.hoverStateEnabled = this.checkBox5.Checked;

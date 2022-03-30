@@ -15,10 +15,5 @@ namespace Wisej.DemoBrowser.PropertyGrid
         {
             this.propertyGrid1.SelectedObject = personCard1.Person;
         }
-
-        private void propertyGrid1_SelectedObjectsChanged(object sender, EventArgs e)
-        {
-            AlertBox.Show($"Selected object is {propertyGrid1.SelectedObject.GetType()}");
-        }
     }
 }

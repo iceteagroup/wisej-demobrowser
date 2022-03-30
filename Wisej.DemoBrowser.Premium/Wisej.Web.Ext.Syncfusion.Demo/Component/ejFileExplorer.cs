@@ -13,12 +13,27 @@ namespace Wisej.Web.Ext.Syncfusion.Demo.Component
 		public ejFileExplorer()
 		{
 			InitializeComponent();
+
+			this.ejFileExplorer1.Instance.onCut += new WidgetEventHandler(ejFileExplorer1_WidgetEvent);
+			this.ejFileExplorer1.Instance.onCopy += new WidgetEventHandler(ejFileExplorer1_WidgetEvent);
+			this.ejFileExplorer1.Instance.onOpen += new WidgetEventHandler(ejFileExplorer1_WidgetEvent);
+			this.ejFileExplorer1.Instance.onSelect += new WidgetEventHandler(ejFileExplorer1_WidgetEvent);
+		}
+		private void ejFileExplorer_Load(object sender, EventArgs e)
+		{
+			this.ejFileExplorer1.Options = new
+			{
+				showFooter = true,
+				showToolbar = true,
+				layout = "tile",
+				path = Application.MapPath("Data")
+			};
 		}
 
 		private void ejFileExplorer1_WebRequest(object sender, WebRequestEventArgs e)
 		{
 			try
-            {
+			{
 				var helper = new FileExplorerOperations();
 
 				if (e.Request.HttpMethod == "POST")
@@ -50,9 +65,9 @@ namespace Wisej.Web.Ext.Syncfusion.Demo.Component
 				}
 			} 
 			catch
-            {
+			{
 				AlertBox.Show("Feature not implemented.", MessageBoxIcon.Error);
-            }
+			}
 		}
 
 		private void buttonUpdate_Click(object sender, EventArgs e)
@@ -68,15 +83,13 @@ namespace Wisej.Web.Ext.Syncfusion.Demo.Component
 			this.ejFileExplorer1.Update();
 		}
 
-        private void ejFileExplorer_Load(object sender, EventArgs e)
-        {
-			this.ejFileExplorer1.Options = new
-			{
-				showFooter = true,
-				showToolbar = true,
-				layout = "tile",
-				path = Application.MapPath("Data")
-			};
+		private void ejFileExplorer1_WidgetEvent(object sender, WidgetEventArgs e)
+		{
+			AlertBox.Show(
+				$"<b>{e.Type}</b><br/>{JSON.Stringify(e.Data)}",
+				MessageBoxIcon.Information);
+
+			Application.Play(MessageBoxIcon.Information);
 		}
-    }
+	}
 }

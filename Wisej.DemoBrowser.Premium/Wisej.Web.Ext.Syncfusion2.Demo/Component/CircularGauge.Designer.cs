@@ -32,6 +32,7 @@
             this.numericUpDownValue = new Wisej.Web.NumericUpDown();
             this.groupBox1.SuspendLayout();
             this.panel.SuspendLayout();
+            this.flowLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownValue)).BeginInit();
             this.SuspendLayout();
             // 
@@ -44,12 +45,6 @@
             // 
             this.linkAPI.Text = "https://ej2.syncfusion.com/javascript/documentation/api/circular-gauge/";
             // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.numericUpDownValue);
-            this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
-            this.groupBox1.Controls.SetChildIndex(this.numericUpDownValue, 0);
-            // 
             // buttonUpdate
             // 
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
@@ -57,6 +52,10 @@
             // panel
             // 
             this.panel.Controls.Add(this.circularGauge1);
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Controls.Add(this.numericUpDownValue);
             // 
             // linkDemo
             // 
@@ -76,10 +75,12 @@
             // 
             this.numericUpDownValue.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Left) 
             | Wisej.Web.AnchorStyles.Right)));
+            this.flowLayoutPanel1.SetFillWeight(this.numericUpDownValue, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.numericUpDownValue, true);
             this.numericUpDownValue.LabelText = "Value";
-            this.numericUpDownValue.Location = new System.Drawing.Point(28, 74);
+            this.numericUpDownValue.Location = new System.Drawing.Point(3, 3);
             this.numericUpDownValue.Name = "numericUpDownValue";
-            this.numericUpDownValue.Size = new System.Drawing.Size(195, 53);
+            this.numericUpDownValue.Size = new System.Drawing.Size(212, 57);
             this.numericUpDownValue.TabIndex = 1;
             this.numericUpDownValue.Value = new decimal(new int[] {
             35,
@@ -91,8 +92,9 @@
             // 
             this.Name = "CircularGauge";
             this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.panel.ResumeLayout(false);
+            this.flowLayoutPanel1.ResumeLayout(false);
+            this.flowLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownValue)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

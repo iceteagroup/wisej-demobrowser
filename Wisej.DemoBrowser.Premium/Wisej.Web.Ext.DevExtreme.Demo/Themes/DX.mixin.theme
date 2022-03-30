@@ -114,8 +114,16 @@
 			"inherit": "listitem",
 			"states": {
 				"default": {
+					"styles": {
+						"width": 1,
+						"color": "transparent"
+					},
 					"properties": {
-						"font": "default"
+						"font": "default",
+						"opacity": 1,
+						"padding": [ 2, 2, 2, 6 ],
+						"textColor": "inherit",
+						"backgroundColor": "inherit"
 					}
 				},
 				"hovered": {
@@ -124,10 +132,11 @@
 					}
 				},
 				"selected": {
+					"inherit": "listitem/selected",
 					"properties": {
 						"font": "defaultBold",
 						"textColor": "dx-orange",
-						"backgroundColor": "transparent"
+						"backgroundColor": "#F2F4F5"
 					}
 				}
 			}

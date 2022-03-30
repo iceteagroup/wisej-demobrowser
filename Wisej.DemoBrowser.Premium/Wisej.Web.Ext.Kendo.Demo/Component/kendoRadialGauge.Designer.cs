@@ -35,6 +35,7 @@
             this.checkBox1 = new Wisej.Web.CheckBox();
             this.panel.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            this.flowLayoutPanelProperties.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -42,20 +43,8 @@
             // 
             this.panel.Controls.Add(this.kendoRadialGauge1);
             // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.checkBox1);
-            this.groupBox1.Controls.Add(this.numericUpDown1);
-            this.groupBox1.Controls.Add(this.button1);
-            this.groupBox1.Size = new System.Drawing.Size(250, 419);
-            this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
-            this.groupBox1.Controls.SetChildIndex(this.button1, 0);
-            this.groupBox1.Controls.SetChildIndex(this.numericUpDown1, 0);
-            this.groupBox1.Controls.SetChildIndex(this.checkBox1, 0);
-            // 
             // buttonUpdate
             // 
-            this.buttonUpdate.Location = new System.Drawing.Point(28, 338);
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
             // linkDemo
@@ -70,6 +59,12 @@
             // 
             this.linkDocs.Text = "https://docs.telerik.com/kendo-ui/controls/gauges/radialgauge/overview";
             // 
+            // flowLayoutPanelProperties
+            // 
+            this.flowLayoutPanelProperties.Controls.Add(this.checkBox1);
+            this.flowLayoutPanelProperties.Controls.Add(this.numericUpDown1);
+            this.flowLayoutPanelProperties.Controls.Add(this.button1);
+            // 
             // kendoRadialGauge1
             // 
             this.kendoRadialGauge1.Anchor = Wisej.Web.AnchorStyles.None;
@@ -82,9 +77,12 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(28, 280);
+            this.flowLayoutPanelProperties.SetFillWeight(this.button1, 1);
+            this.flowLayoutPanelProperties.SetFlowBreak(this.button1, true);
+            this.button1.Location = new System.Drawing.Point(3, 139);
+            this.button1.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(195, 27);
+            this.button1.Size = new System.Drawing.Size(212, 40);
             this.button1.TabIndex = 1;
             this.button1.Text = "Start Task";
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -92,17 +90,20 @@
             // numericUpDown1
             // 
             this.numericUpDown1.AutoSize = false;
+            this.flowLayoutPanelProperties.SetFillWeight(this.numericUpDown1, 1);
+            this.flowLayoutPanelProperties.SetFlowBreak(this.numericUpDown1, true);
             this.numericUpDown1.Label.Size = 50;
             this.numericUpDown1.Label.SizeType = Wisej.Web.SizeType.Percent;
             this.numericUpDown1.LabelText = "Value";
-            this.numericUpDown1.Location = new System.Drawing.Point(28, 183);
+            this.numericUpDown1.Location = new System.Drawing.Point(3, 60);
+            this.numericUpDown1.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.numericUpDown1.Maximum = new decimal(new int[] {
             180,
             0,
             0,
             0});
             this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(195, 60);
+            this.numericUpDown1.Size = new System.Drawing.Size(212, 60);
             this.numericUpDown1.TabIndex = 3;
             this.numericUpDown1.Value = new decimal(new int[] {
             50,
@@ -116,10 +117,11 @@
             this.checkBox1.AutoSize = false;
             this.checkBox1.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.checkBox1.Checked = true;
-            this.checkBox1.CheckState = Wisej.Web.CheckState.Checked;
-            this.checkBox1.Location = new System.Drawing.Point(28, 29);
+            this.flowLayoutPanelProperties.SetFillWeight(this.checkBox1, 1);
+            this.flowLayoutPanelProperties.SetFlowBreak(this.checkBox1, true);
+            this.checkBox1.Location = new System.Drawing.Point(3, 3);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(195, 38);
+            this.checkBox1.Size = new System.Drawing.Size(212, 38);
             this.checkBox1.TabIndex = 6;
             this.checkBox1.Text = "Transitions";
             // 
@@ -128,6 +130,7 @@
             this.Name = "kendoRadialGauge";
             this.panel.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
+            this.flowLayoutPanelProperties.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

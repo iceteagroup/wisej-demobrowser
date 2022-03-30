@@ -53,7 +53,6 @@
             this.groupBox1.Controls.Add(this.numericUpDown1);
             this.groupBox1.Controls.Add(this.checkBox2);
             this.groupBox1.Controls.Add(this.checkBox1);
-            this.groupBox1.Size = new System.Drawing.Size(250, 434);
             this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
             this.groupBox1.Controls.SetChildIndex(this.checkBox1, 0);
             this.groupBox1.Controls.SetChildIndex(this.checkBox2, 0);
@@ -61,10 +60,10 @@
             this.groupBox1.Controls.SetChildIndex(this.checkBox3, 0);
             this.groupBox1.Controls.SetChildIndex(this.checkBox4, 0);
             this.groupBox1.Controls.SetChildIndex(this.checkBox5, 0);
+            this.groupBox1.Controls.SetChildIndex(this.flowLayoutPanelProperties, 0);
             // 
             // buttonUpdate
             // 
-            this.buttonUpdate.Location = new System.Drawing.Point(28, 351);
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
             // linkDemo
@@ -106,7 +105,6 @@
             this.checkBox2.AutoSize = false;
             this.checkBox2.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.checkBox2.Checked = true;
-            this.checkBox2.CheckState = Wisej.Web.CheckState.Checked;
             this.checkBox2.Location = new System.Drawing.Point(28, 79);
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.Size = new System.Drawing.Size(195, 38);
@@ -140,7 +138,6 @@
             this.checkBox3.AutoSize = false;
             this.checkBox3.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.checkBox3.Checked = true;
-            this.checkBox3.CheckState = Wisej.Web.CheckState.Checked;
             this.checkBox3.Location = new System.Drawing.Point(28, 129);
             this.checkBox3.Name = "checkBox3";
             this.checkBox3.Size = new System.Drawing.Size(195, 38);
@@ -153,7 +150,6 @@
             this.checkBox4.AutoSize = false;
             this.checkBox4.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.checkBox4.Checked = true;
-            this.checkBox4.CheckState = Wisej.Web.CheckState.Checked;
             this.checkBox4.Location = new System.Drawing.Point(28, 179);
             this.checkBox4.Name = "checkBox4";
             this.checkBox4.Size = new System.Drawing.Size(195, 38);

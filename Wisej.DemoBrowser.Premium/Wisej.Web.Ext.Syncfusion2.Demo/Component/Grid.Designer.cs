@@ -37,6 +37,7 @@
             this.comboBoxGridLine = new Wisej.Web.ComboBox();
             this.groupBox1.SuspendLayout();
             this.panel.SuspendLayout();
+            this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // linkDocs
@@ -47,29 +48,21 @@
             // 
             this.linkAPI.Text = "https://ej2.syncfusion.com/javascript/documentation/api/grid/";
             // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.comboBoxGridLine);
-            this.groupBox1.Controls.Add(this.checkBoxFiltering);
-            this.groupBox1.Controls.Add(this.checkBoxResizing);
-            this.groupBox1.Controls.Add(this.checkBoxReordering);
-            this.groupBox1.Controls.Add(this.checkBoxGrouping);
-            this.groupBox1.Size = new System.Drawing.Size(250, 426);
-            this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
-            this.groupBox1.Controls.SetChildIndex(this.checkBoxGrouping, 0);
-            this.groupBox1.Controls.SetChildIndex(this.checkBoxReordering, 0);
-            this.groupBox1.Controls.SetChildIndex(this.checkBoxResizing, 0);
-            this.groupBox1.Controls.SetChildIndex(this.checkBoxFiltering, 0);
-            this.groupBox1.Controls.SetChildIndex(this.comboBoxGridLine, 0);
-            // 
             // buttonUpdate
             // 
-            this.buttonUpdate.Location = new System.Drawing.Point(28, 345);
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
             // panel
             // 
             this.panel.Controls.Add(this.grid1);
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Controls.Add(this.checkBoxGrouping);
+            this.flowLayoutPanel1.Controls.Add(this.checkBoxReordering);
+            this.flowLayoutPanel1.Controls.Add(this.checkBoxResizing);
+            this.flowLayoutPanel1.Controls.Add(this.checkBoxFiltering);
+            this.flowLayoutPanel1.Controls.Add(this.comboBoxGridLine);
             // 
             // linkDemo
             // 
@@ -88,60 +81,75 @@
             // checkBoxGrouping
             // 
             this.checkBoxGrouping.Appearance = Wisej.Web.Appearance.Switch;
-            this.checkBoxGrouping.Location = new System.Drawing.Point(20, 32);
+            this.flowLayoutPanel1.SetFillWeight(this.checkBoxGrouping, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.checkBoxGrouping, true);
+            this.checkBoxGrouping.Location = new System.Drawing.Point(3, 3);
             this.checkBoxGrouping.Name = "checkBoxGrouping";
-            this.checkBoxGrouping.Size = new System.Drawing.Size(158, 24);
+            this.checkBoxGrouping.Size = new System.Drawing.Size(212, 24);
             this.checkBoxGrouping.TabIndex = 1;
-            this.checkBoxGrouping.Text = "Allow grouping";
+            this.checkBoxGrouping.Text = "Allow Grouping";
             // 
             // checkBoxReordering
             // 
             this.checkBoxReordering.Appearance = Wisej.Web.Appearance.Switch;
-            this.checkBoxReordering.Location = new System.Drawing.Point(20, 67);
+            this.flowLayoutPanel1.SetFillWeight(this.checkBoxReordering, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.checkBoxReordering, true);
+            this.checkBoxReordering.Location = new System.Drawing.Point(3, 46);
+            this.checkBoxReordering.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBoxReordering.Name = "checkBoxReordering";
-            this.checkBoxReordering.Size = new System.Drawing.Size(168, 24);
+            this.checkBoxReordering.Size = new System.Drawing.Size(212, 24);
             this.checkBoxReordering.TabIndex = 2;
-            this.checkBoxReordering.Text = "Allow reordering";
+            this.checkBoxReordering.Text = "Allow Reordering";
             // 
             // checkBoxResizing
             // 
             this.checkBoxResizing.Appearance = Wisej.Web.Appearance.Switch;
-            this.checkBoxResizing.Location = new System.Drawing.Point(20, 102);
+            this.flowLayoutPanel1.SetFillWeight(this.checkBoxResizing, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.checkBoxResizing, true);
+            this.checkBoxResizing.Location = new System.Drawing.Point(3, 89);
+            this.checkBoxResizing.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBoxResizing.Name = "checkBoxResizing";
-            this.checkBoxResizing.Size = new System.Drawing.Size(150, 24);
+            this.checkBoxResizing.Size = new System.Drawing.Size(212, 24);
             this.checkBoxResizing.TabIndex = 3;
-            this.checkBoxResizing.Text = "Allow resizing";
+            this.checkBoxResizing.Text = "Allow Resizing";
             // 
             // checkBoxFiltering
             // 
             this.checkBoxFiltering.Appearance = Wisej.Web.Appearance.Switch;
-            this.checkBoxFiltering.Location = new System.Drawing.Point(20, 137);
+            this.flowLayoutPanel1.SetFillWeight(this.checkBoxFiltering, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.checkBoxFiltering, true);
+            this.checkBoxFiltering.Location = new System.Drawing.Point(3, 132);
+            this.checkBoxFiltering.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBoxFiltering.Name = "checkBoxFiltering";
-            this.checkBoxFiltering.Size = new System.Drawing.Size(147, 24);
+            this.checkBoxFiltering.Size = new System.Drawing.Size(212, 24);
             this.checkBoxFiltering.TabIndex = 4;
-            this.checkBoxFiltering.Text = "Allow filtering";
+            this.checkBoxFiltering.Text = "Allow Filtering";
             // 
             // comboBoxGridLine
             // 
             this.comboBoxGridLine.DropDownStyle = Wisej.Web.ComboBoxStyle.DropDownList;
+            this.flowLayoutPanel1.SetFillWeight(this.comboBoxGridLine, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.comboBoxGridLine, true);
             this.comboBoxGridLine.Items.AddRange(new object[] {
             "Default",
             "Both",
             "None",
             "Horizontal",
             "Vertical"});
-            this.comboBoxGridLine.LabelText = "Grid line type";
-            this.comboBoxGridLine.Location = new System.Drawing.Point(20, 177);
+            this.comboBoxGridLine.LabelText = "Grid Line Type";
+            this.comboBoxGridLine.Location = new System.Drawing.Point(3, 175);
+            this.comboBoxGridLine.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.comboBoxGridLine.Name = "comboBoxGridLine";
-            this.comboBoxGridLine.Size = new System.Drawing.Size(208, 46);
+            this.comboBoxGridLine.Size = new System.Drawing.Size(212, 57);
             this.comboBoxGridLine.TabIndex = 5;
             // 
             // Grid
             // 
             this.Name = "Grid";
             this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.panel.ResumeLayout(false);
+            this.flowLayoutPanel1.ResumeLayout(false);
+            this.flowLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 

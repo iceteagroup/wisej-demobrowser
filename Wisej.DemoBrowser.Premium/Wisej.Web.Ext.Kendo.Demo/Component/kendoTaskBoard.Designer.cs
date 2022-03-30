@@ -29,33 +29,33 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.kendoTaskBoard1 = new Wisej.Web.Ext.Kendo.kendoTaskBoard();
-			this.panel.SuspendLayout();
-			this.groupBox1.SuspendLayout();
-			this.SuspendLayout();
-			// 
-			// panel
-			// 
-			this.panel.Controls.Add(this.kendoTaskBoard1);
-			// 
-			// kendoTaskBoard1
-			// 
-			this.kendoTaskBoard1.Dock = Wisej.Web.DockStyle.Fill;
-			this.kendoTaskBoard1.Location = new System.Drawing.Point(8, 8);
-			this.kendoTaskBoard1.Name = "kendoTaskBoard1";
-			this.kendoTaskBoard1.Size = new System.Drawing.Size(437, 297);
-			this.kendoTaskBoard1.TabIndex = 0;
-			this.kendoTaskBoard1.Text = "kendoTaskBoard1";
-			this.kendoTaskBoard1.WidgetEvent += new Wisej.Web.WidgetEventHandler(this.kendoTaskBoard1_WidgetEvent);
-			// 
-			// kendoTaskBoard
-			// 
-			this.Name = "kendoTaskBoard";
-			this.Load += new System.EventHandler(this.kendoTaskBoard_Load);
-			this.panel.ResumeLayout(false);
-			this.groupBox1.ResumeLayout(false);
-			this.ResumeLayout(false);
-			this.PerformLayout();
+            this.kendoTaskBoard1 = new Wisej.Web.Ext.Kendo.kendoTaskBoard();
+            this.panel.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // panel
+            // 
+            this.panel.Controls.Add(this.kendoTaskBoard1);
+            // 
+            // kendoTaskBoard1
+            // 
+            this.kendoTaskBoard1.Dock = Wisej.Web.DockStyle.Fill;
+            this.kendoTaskBoard1.Location = new System.Drawing.Point(8, 8);
+            this.kendoTaskBoard1.Name = "kendoTaskBoard1";
+            this.kendoTaskBoard1.Size = new System.Drawing.Size(1073, 542);
+            this.kendoTaskBoard1.TabIndex = 0;
+            this.kendoTaskBoard1.Text = "kendoTaskBoard1";
+            this.kendoTaskBoard1.WidgetEvent += new Wisej.Web.WidgetEventHandler(this.kendoTaskBoard1_WidgetEvent);
+            // 
+            // kendoTaskBoard
+            // 
+            this.Name = "kendoTaskBoard";
+            this.Load += new System.EventHandler(this.kendoTaskBoard_Load);
+            this.panel.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
+            this.ResumeLayout(false);
+            this.PerformLayout();
 
 		}
 

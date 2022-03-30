@@ -9,7 +9,7 @@ namespace Wisej.Web.Ext.Ignite.Demo.Component
 		{
 			InitializeComponent();
 
-			this.igDoughnutChart1.Instance.sliceClick += new WidgetEventHandler(igDoughnutChart_WidgetEvent);
+			this.igDoughnutChart1.Instance.onSliceClick += new WidgetEventHandler(igDoughnutChart_WidgetEvent);
 		}
 
 		private void igDoughnutChart_WidgetEvent(object sender, WidgetEventArgs e)

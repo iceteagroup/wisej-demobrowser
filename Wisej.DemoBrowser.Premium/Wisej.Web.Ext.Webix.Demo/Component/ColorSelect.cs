@@ -9,7 +9,7 @@ namespace Wisej.Web.Ext.Webix.Demo.Component
 		{
 			InitializeComponent();
 
-			this.colorSelect1.Instance.change += new WidgetEventHandler(colorSelect1_WidgetEvent);
+			this.colorSelect1.Instance.onChange += new WidgetEventHandler(colorSelect1_WidgetEvent);
 		}
 
 		private void colorSelect1_WidgetEvent(object sender, WidgetEventArgs e)

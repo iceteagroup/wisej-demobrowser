@@ -42,7 +42,7 @@
             this.barcode1.Anchor = Wisej.Web.AnchorStyles.None;
             this.barcode1.Location = new System.Drawing.Point(294, 79);
             this.barcode1.Name = "barcode1";
-            this.barcode1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"id\":\"barcode\",\"type\":\"ean13\",\"value\":\"123456789012\"}")));
+            this.barcode1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"type\":\"ean13\",\"value\":\"123456789012\"}")));
             this.barcode1.Size = new System.Drawing.Size(500, 400);
             this.barcode1.TabIndex = 0;
             this.barcode1.Text = "barcode1";
@@ -50,6 +50,7 @@
             // Barcode
             // 
             this.Name = "Barcode";
+            this.Load += new System.EventHandler(this.Barcode_Load);
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
             this.ResumeLayout(false);
