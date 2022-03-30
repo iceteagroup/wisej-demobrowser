@@ -112,7 +112,6 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
-    <Content Include="Wisej.Web.Ext.Webix.json" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Images\wisej.png" />

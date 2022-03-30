@@ -1,38 +1,27 @@
 ﻿{
-  //
-  // Specifies which set of packages to use from the "sources" map below.
-  //
-  "source": "cdn",
+	//
+	// Specifies which set of packages to use from the "sources" map below.
+	//
+	"source": "cdn",
 
-  //
-  // Specifies the default theme. Used when the Theme property of the widget is not set.
-  //
-  "theme": "bootstrap5",
+	//
+	// Specifies the default theme. Used when the Theme property of the widget is not set.
+	//
+	"theme": "bootstrap5",
 
-  //
-  // Widget packages.
-  //
-  "sources": {
-    "cdn": {
-      "root": "https://cdn.syncfusion.com/ej2",
-      "packages": {
-        "ej2.js": "%root%/dist/ej2.min.js",
-        "theme.css": "%root%/%theme%.css"
-      }
-    },
-    "local": {
-      "root": "Syncfusion2",
-      "packages": {
-        "ej2.js": "%root%/dist/ej2.min.js",
-        "theme.css": "%root%/%theme%.css"
-      }
-    },
-    "embedded": {
-      "root": "resource.wx",
-      "packages": {
-        "ej2.js": "%root%/dist/ej2.min.js",
-        "theme.css": "%root%/%theme%.css"
-      }
-    }
-  }
+	//
+	// Widget packages.
+	//
+	"sources": {
+		"cdn": {
+			"root": "https://cdn.syncfusion.com/ej2",
+			"packages": {
+				"ej2.js": "%root%/dist/ej2.min.js",
+				"theme.css": "%root%/%theme%.css",
+
+				// also load local localization packages.
+				"localization.js": "Syncfusion2/localization-%locale%.js"
+			}
+		}
+	}
 }

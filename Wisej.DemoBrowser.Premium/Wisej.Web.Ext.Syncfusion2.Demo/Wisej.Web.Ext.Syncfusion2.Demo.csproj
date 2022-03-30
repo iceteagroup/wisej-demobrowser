@@ -83,12 +83,24 @@
     <EmbeddedResource Include="Data\CustomLocalization\pt.js" />
     <Content Include="Data\Schedule\data.json" />
     <EmbeddedResource Include="Themes\EJ2.mixin.theme" />
+    <Content Include="Syncfusion2\cldr-data\en\ca-gregorian.json" />
+    <Content Include="Syncfusion2\cldr-data\en\timeZoneNames.json" />
+    <Content Include="Syncfusion2\cldr-data\de\ca-gregorian.json" />
+    <Content Include="Syncfusion2\cldr-data\de\timeZoneNames.json" />
+    <Content Include="Syncfusion2\cldr-data\it\ca-gregorian.json" />
+    <Content Include="Syncfusion2\cldr-data\it\timeZoneNames.json" />
+    <Content Include="Syncfusion2\cldr-data\en\numbers.json" />
+    <Content Include="Syncfusion2\cldr-data\de\numbers.json" />
+    <Content Include="Syncfusion2\cldr-data\it\numbers.json" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+    <Content Include="Syncfusion2\localization-it.js" />
+    <Content Include="Syncfusion2\localization-de.js" />
+    <Content Include="Syncfusion2\localization-en.js" />
     <Content Include="Wisej.Web.Ext.Syncfusion2.json" />
   </ItemGroup>
   <ItemGroup>

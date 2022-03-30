@@ -117,7 +117,6 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
-    <EmbeddedResource Include="Wisej.Web.Ext.Ignite.json" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Images\HtmlEditor\ig-html-editor-shutterstock.jpg" />
