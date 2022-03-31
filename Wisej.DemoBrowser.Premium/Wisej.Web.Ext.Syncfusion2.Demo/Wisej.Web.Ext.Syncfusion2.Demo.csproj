@@ -429,9 +429,15 @@
     <Reference Include="Syncfusion.Compression.Base">
       <HintPath>..\Libs\Syncfusion.Compression.Base.dll</HintPath>
     </Reference>
-    <Reference Include="Wisej.Web.Ext.Syncfusion2">
-      <HintPath>..\..\..\..\..\..\Wisej\Extensions\Premium\2.5\bin\Wisej.Web.Ext.Syncfusion2.dll</HintPath>
+    <Reference Include="Wisej.Web.Ext.Syncfusion2, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Documents\IceTeaGroup\WorkOnExtension\Premium\2.5\Wisej.Web.Ext.Syncfusion2\bin\Debug\Wisej.Web.Ext.Syncfusion2.dll</HintPath>
     </Reference>
+	  <Reference Include="Wisej.Framework, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+		  <SpecificVersion>False</SpecificVersion>
+		  <HintPath> C:\Users\BUSH\Documents\IceTeaGroup\Developpement\2.5\bin\Wisej.Framework.dll</HintPath>
+	  </Reference>
+	 
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Component\AccumulationChart.resx">
@@ -579,9 +585,6 @@
     </PackageReference>
     <PackageReference Include="Newtonsoft.Json">
       <Version>13.0.1</Version>
-    </PackageReference>
-    <PackageReference Include="Wisej-2">
-      <Version>2.5.*-*</Version>
     </PackageReference>
     <PackageReference Include="Wisej-2-MaterialDesign">
       <Version>2.5.*-*</Version>
