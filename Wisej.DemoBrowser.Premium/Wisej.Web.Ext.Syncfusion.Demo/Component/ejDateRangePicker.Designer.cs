@@ -77,10 +77,9 @@
             this.ejDateRangePicker1.Anchor = Wisej.Web.AnchorStyles.None;
             this.ejDateRangePicker1.Location = new System.Drawing.Point(394, 262);
             this.ejDateRangePicker1.Name = "ejDateRangePicker1";
-            this.ejDateRangePicker1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"value\":\"1/1/2020 - 1/15/2020\"}")));
+            this.ejDateRangePicker1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"value\":null}")));
             this.ejDateRangePicker1.Size = new System.Drawing.Size(300, 35);
             this.ejDateRangePicker1.TabIndex = 0;
-            this.ejDateRangePicker1.Text = "ejDateRangePicker1";
             // 
             // textBoxStartDay
             // 

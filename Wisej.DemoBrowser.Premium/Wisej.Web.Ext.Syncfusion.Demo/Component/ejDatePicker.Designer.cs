@@ -81,10 +81,9 @@
             this.ejDatePicker1.Anchor = Wisej.Web.AnchorStyles.None;
             this.ejDatePicker1.Location = new System.Drawing.Point(394, 262);
             this.ejDatePicker1.Name = "ejDatePicker1";
-            this.ejDatePicker1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"value\":\"1/1/2020\",\"showOtherMonths\":true,\"enableStrictMode\":true}")));
+            this.ejDatePicker1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"value\":null,\"showOtherMonths\":true,\"enableStrictMode\":true}")));
             this.ejDatePicker1.Size = new System.Drawing.Size(300, 35);
             this.ejDatePicker1.TabIndex = 0;
-            this.ejDatePicker1.Text = "ejDatePicker1";
             // 
             // checkBox1
             // 

@@ -80,10 +80,9 @@
             this.ejDateTimePicker1.Anchor = Wisej.Web.AnchorStyles.None;
             this.ejDateTimePicker1.Location = new System.Drawing.Point(394, 262);
             this.ejDateTimePicker1.Name = "ejDateTimePicker1";
-            this.ejDateTimePicker1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"value\":\"2020-01-01 00:00:00\"}")));
+            this.ejDateTimePicker1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"value\":null}")));
             this.ejDateTimePicker1.Size = new System.Drawing.Size(300, 35);
             this.ejDateTimePicker1.TabIndex = 0;
-            this.ejDateTimePicker1.Text = "ejDateTimePicker1";
             // 
             // textBox1
             // 

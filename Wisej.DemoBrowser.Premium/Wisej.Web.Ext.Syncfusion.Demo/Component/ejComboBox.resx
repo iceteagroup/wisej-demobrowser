@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="ejComboBox1.Options" xml:space="preserve">
-    <value>{"autofill":true,"fields":{"text":"game","value":"id"},"placeholder":"Select a game","index":-1,"popupHeight":"200px","popupWidth":"250px","dataSource":[{"id":"level1","game":"American Football"},{"id":"level2","game":"Badminton"},{"id":"level3","game":"Basketball"},{"id":"level4","game":"Cricket"},{"id":"level5","game":"Football"},{"id":"level6","game":"Golf"},{"id":"level7","game":"Hockey"},{"id":"level8","game":"Rugby"},{"id":"level9","game":"Snooker"},{"id":"level10","game":"Tennis"}]}</value>
+    <value>{"autofill":true,"fields":{"text":"game","value":"id"},"placeholder":"Select a game","index":-1,"popupHeight":"200px","popupWidth":"250px","dataSource":[{"id":"level1","game":"American Football"},{"id":"level2","game":"Badminton"},{"id":"level3","game":"Basketball"},{"id":"level4","game":"Cricket"},{"id":"level5","game":"Football"},{"id":"level6","game":"Golf"},{"id":"level7","game":"Hockey"},{"id":"level8","game":"Rugby"},{"id":"level9","game":"Snooker"},{"id":"level10","game":"Tennis"}],"value":""}</value>
   </data>
   <metadata name="$this.RulerSnapLines" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>

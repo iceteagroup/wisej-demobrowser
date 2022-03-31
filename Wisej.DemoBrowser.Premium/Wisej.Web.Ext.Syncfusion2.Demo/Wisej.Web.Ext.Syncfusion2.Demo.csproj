@@ -101,7 +101,7 @@
     <Content Include="Syncfusion2\localization-it.js" />
     <Content Include="Syncfusion2\localization-de.js" />
     <Content Include="Syncfusion2\localization-en.js" />
-    <Content Include="Wisej.Web.Ext.Syncfusion2.json" />
+    <EmbeddedResource Include="Wisej.Web.Ext.Syncfusion2.json" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Images\logo-wisej-white.png" />
