@@ -63,6 +63,7 @@ namespace Wisej.Web.Ext.Syncfusion2.Demo
         private void comboBoxLanguage_SelectedIndexChanged(object sender, EventArgs e)
         {
 			ej2Base.Culture = new CultureInfo(this.comboBoxLanguage.Text);
+			Application.Reload();
         }
 
         private void comboBoxEJ2Theme_SelectedIndexChanged(object sender, EventArgs e)

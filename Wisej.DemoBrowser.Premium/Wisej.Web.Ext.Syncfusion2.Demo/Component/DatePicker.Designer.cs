@@ -28,10 +28,10 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-            this.datePicker1 = new Wisej.Web.Ext.Syncfusion2.DatePicker();
             this.dateTimePickerEnd = new Wisej.Web.DateTimePicker();
             this.dateTimePickerStart = new Wisej.Web.DateTimePicker();
             this.comboBoxFormat = new Wisej.Web.ComboBox();
+            this.datePicker1 = new Wisej.Web.Ext.Syncfusion2.DatePicker();
             this.groupBox1.SuspendLayout();
             this.panel.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
@@ -63,16 +63,6 @@
             // linkDemo
             // 
             this.linkDemo.Text = "https://ej2.syncfusion.com/demos/#/bootstrap5/datepicker/default.html";
-            // 
-            // datePicker1
-            // 
-            this.datePicker1.Anchor = Wisej.Web.AnchorStyles.None;
-            this.datePicker1.Location = new System.Drawing.Point(369, 259);
-            this.datePicker1.Name = "datePicker1";
-            this.datePicker1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"format\":\"dd-MMM-yy\"}")));
-            this.datePicker1.Size = new System.Drawing.Size(350, 40);
-            this.datePicker1.TabIndex = 0;
-            this.datePicker1.Text = "datePicker1";
             // 
             // dateTimePickerEnd
             // 
@@ -112,6 +102,16 @@
             this.comboBoxFormat.Name = "comboBoxFormat";
             this.comboBoxFormat.Size = new System.Drawing.Size(212, 57);
             this.comboBoxFormat.TabIndex = 5;
+            // 
+            // datePicker1
+            // 
+            this.datePicker1.Anchor = Wisej.Web.AnchorStyles.None;
+            this.datePicker1.Location = new System.Drawing.Point(369, 259);
+            this.datePicker1.Name = "datePicker1";
+            this.datePicker1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"format\":\"dd-MMM-yy\",\"value\":\"01/01/2022\"}")));
+            this.datePicker1.Size = new System.Drawing.Size(350, 40);
+            this.datePicker1.TabIndex = 0;
+            this.datePicker1.Text = "01/01/2022";
             // 
             // DatePicker
             // 

@@ -63,6 +63,8 @@
             this.flowLayoutPanel1.Controls.Add(this.checkBoxInline);
             this.flowLayoutPanel1.Controls.Add(this.label4);
             this.flowLayoutPanel1.Controls.Add(this.panelColorValue);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 45);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 441);
             // 
             // linkDemo
             // 
@@ -73,10 +75,10 @@
             this.colorPicker1.Anchor = Wisej.Web.AnchorStyles.None;
             this.colorPicker1.Location = new System.Drawing.Point(514, 256);
             this.colorPicker1.Name = "colorPicker1";
-            this.colorPicker1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"value\":\"#345876\"}")));
+            this.colorPicker1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"value\":\"#000000\"}")));
             this.colorPicker1.Size = new System.Drawing.Size(60, 47);
             this.colorPicker1.TabIndex = 0;
-            this.colorPicker1.Text = "colorPicker1";
+            this.colorPicker1.Text = "#000000";
             // 
             // comboBoxMode
             // 

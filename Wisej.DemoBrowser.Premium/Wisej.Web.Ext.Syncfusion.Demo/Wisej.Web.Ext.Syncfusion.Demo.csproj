@@ -211,7 +211,6 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
-    <EmbeddedResource Include="Wisej.Web.Ext.Syncfusion.json" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Images\bird.jpg" />

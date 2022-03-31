@@ -76,7 +76,7 @@
             this.ejComboBox1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("ejComboBox1.Options"))));
             this.ejComboBox1.Size = new System.Drawing.Size(300, 35);
             this.ejComboBox1.TabIndex = 0;
-            this.ejComboBox1.Text = "ejComboBox1";
+            this.ejComboBox1.Text = "";
             // 
             // checkBoxAutofill
             // 
