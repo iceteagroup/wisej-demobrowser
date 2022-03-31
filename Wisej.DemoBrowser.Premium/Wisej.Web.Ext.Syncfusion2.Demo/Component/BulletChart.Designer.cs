@@ -79,6 +79,7 @@
             // 
             // numericUpDownValue
             // 
+            this.numericUpDownValue.Dock = Wisej.Web.DockStyle.Top;
             this.flowLayoutPanel1.SetFillWeight(this.numericUpDownValue, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.numericUpDownValue, true);
             this.numericUpDownValue.LabelText = "Value";
@@ -89,7 +90,7 @@
             0,
             0});
             this.numericUpDownValue.Name = "numericUpDownValue";
-            this.numericUpDownValue.Size = new System.Drawing.Size(212, 57);
+            this.numericUpDownValue.Size = new System.Drawing.Size(212, 46);
             this.numericUpDownValue.TabIndex = 1;
             this.numericUpDownValue.Value = new decimal(new int[] {
             270,
@@ -99,10 +100,11 @@
             // 
             // numericUpDownTarget
             // 
+            this.numericUpDownTarget.Dock = Wisej.Web.DockStyle.Top;
             this.flowLayoutPanel1.SetFillWeight(this.numericUpDownTarget, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.numericUpDownTarget, true);
             this.numericUpDownTarget.LabelText = "Target";
-            this.numericUpDownTarget.Location = new System.Drawing.Point(3, 79);
+            this.numericUpDownTarget.Location = new System.Drawing.Point(3, 68);
             this.numericUpDownTarget.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.numericUpDownTarget.Maximum = new decimal(new int[] {
             300,
@@ -110,7 +112,7 @@
             0,
             0});
             this.numericUpDownTarget.Name = "numericUpDownTarget";
-            this.numericUpDownTarget.Size = new System.Drawing.Size(212, 57);
+            this.numericUpDownTarget.Size = new System.Drawing.Size(212, 46);
             this.numericUpDownTarget.TabIndex = 2;
             this.numericUpDownTarget.Value = new decimal(new int[] {
             250,

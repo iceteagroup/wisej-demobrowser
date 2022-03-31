@@ -91,6 +91,7 @@
             // 
             // textBoxTitle
             // 
+            this.textBoxTitle.Dock = Wisej.Web.DockStyle.Top;
             this.flowLayoutPanel1.SetFillWeight(this.textBoxTitle, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.textBoxTitle, true);
             this.textBoxTitle.LabelText = "Title";
@@ -101,6 +102,7 @@
             // 
             // textBoxSubTitle
             // 
+            this.textBoxSubTitle.Dock = Wisej.Web.DockStyle.Top;
             this.flowLayoutPanel1.SetFillWeight(this.textBoxSubTitle, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.textBoxSubTitle, true);
             this.textBoxSubTitle.LabelText = "SubTitle";
@@ -113,10 +115,11 @@
             // trackBarPieAngle
             // 
             this.trackBarPieAngle.AutoSize = false;
+            this.trackBarPieAngle.Dock = Wisej.Web.DockStyle.Top;
             this.trackBarPieAngle.Location = new System.Drawing.Point(3, 158);
             this.trackBarPieAngle.Maximum = 360;
             this.trackBarPieAngle.Name = "trackBarPieAngle";
-            this.trackBarPieAngle.Size = new System.Drawing.Size(238, 40);
+            this.trackBarPieAngle.Size = new System.Drawing.Size(212, 40);
             this.trackBarPieAngle.TabIndex = 3;
             this.trackBarPieAngle.TickStyle = Wisej.Web.TickStyle.None;
             // 
@@ -136,6 +139,7 @@
             // 
             // numericUpDownExplodeRadius
             // 
+            this.numericUpDownExplodeRadius.Dock = Wisej.Web.DockStyle.Top;
             this.flowLayoutPanel1.SetFillWeight(this.numericUpDownExplodeRadius, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.numericUpDownExplodeRadius, true);
             this.numericUpDownExplodeRadius.Label.AutoEllipsis = true;
@@ -153,6 +157,7 @@
             // 
             // textBoxNumOuterRadius
             // 
+            this.textBoxNumOuterRadius.Dock = Wisej.Web.DockStyle.Top;
             this.flowLayoutPanel1.SetFillWeight(this.textBoxNumOuterRadius, 1);
             this.textBoxNumOuterRadius.InputType.Max = "0,85";
             this.textBoxNumOuterRadius.InputType.Min = "0,10";
@@ -168,6 +173,7 @@
             // 
             // trackBarExplodeIndex
             // 
+            this.trackBarExplodeIndex.Dock = Wisej.Web.DockStyle.Top;
             this.flowLayoutPanel1.SetFillWeight(this.trackBarExplodeIndex, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.trackBarExplodeIndex, true);
             this.trackBarExplodeIndex.Location = new System.Drawing.Point(3, 307);

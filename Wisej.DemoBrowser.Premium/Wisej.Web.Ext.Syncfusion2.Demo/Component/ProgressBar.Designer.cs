@@ -29,7 +29,6 @@
 		private void InitializeComponent()
 		{
             this.progressBar1 = new Wisej.Web.Ext.Syncfusion2.ProgressBar();
-            this.groupBox2 = new Wisej.Web.GroupBox();
             this.checkBoxAnimationEnable = new Wisej.Web.CheckBox();
             this.numericUpDownAnimationDuration = new Wisej.Web.NumericUpDown();
             this.numericUpDownAnimationDelay = new Wisej.Web.NumericUpDown();
@@ -41,7 +40,6 @@
             this.groupBox1.SuspendLayout();
             this.panel.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownAnimationDuration)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownAnimationDelay)).BeginInit();
             this.SuspendLayout();
@@ -65,12 +63,14 @@
             // 
             // flowLayoutPanel1
             // 
-            this.flowLayoutPanel1.Controls.Add(this.groupBox2);
+            this.flowLayoutPanel1.Controls.Add(this.checkBoxAnimationEnable);
             this.flowLayoutPanel1.Controls.Add(this.checkBoxPieProgress);
             this.flowLayoutPanel1.Controls.Add(this.checkBoxProcessSegment);
             this.flowLayoutPanel1.Controls.Add(this.checkBoxIsIndeterminate);
             this.flowLayoutPanel1.Controls.Add(this.checkBoxIsStriped);
             this.flowLayoutPanel1.Controls.Add(this.comboBoxType);
+            this.flowLayoutPanel1.Controls.Add(this.numericUpDownAnimationDelay);
+            this.flowLayoutPanel1.Controls.Add(this.numericUpDownAnimationDuration);
             // 
             // linkDemo
             // 
@@ -86,45 +86,37 @@
             this.progressBar1.TabIndex = 0;
             this.progressBar1.Text = "progressBar1";
             // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.checkBoxAnimationEnable);
-            this.groupBox2.Controls.Add(this.numericUpDownAnimationDuration);
-            this.groupBox2.Controls.Add(this.numericUpDownAnimationDelay);
-            this.flowLayoutPanel1.SetFillWeight(this.groupBox2, 1);
-            this.flowLayoutPanel1.SetFlowBreak(this.groupBox2, true);
-            this.groupBox2.Location = new System.Drawing.Point(3, 3);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(212, 172);
-            this.groupBox2.TabIndex = 1;
-            this.groupBox2.Text = "Animation";
-            // 
             // checkBoxAnimationEnable
             // 
+            this.checkBoxAnimationEnable.Appearance = Wisej.Web.Appearance.Switch;
+            this.checkBoxAnimationEnable.AutoSize = false;
+            this.checkBoxAnimationEnable.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.checkBoxAnimationEnable.Checked = true;
-            this.checkBoxAnimationEnable.Location = new System.Drawing.Point(6, 27);
+            this.checkBoxAnimationEnable.Dock = Wisej.Web.DockStyle.Top;
+            this.checkBoxAnimationEnable.Location = new System.Drawing.Point(3, 3);
             this.checkBoxAnimationEnable.Name = "checkBoxAnimationEnable";
-            this.checkBoxAnimationEnable.Size = new System.Drawing.Size(82, 26);
+            this.checkBoxAnimationEnable.Size = new System.Drawing.Size(212, 26);
             this.checkBoxAnimationEnable.TabIndex = 3;
-            this.checkBoxAnimationEnable.Text = "Enable";
+            this.checkBoxAnimationEnable.Text = "Enable animation";
             this.checkBoxAnimationEnable.CheckedChanged += new System.EventHandler(this.checkBoxAnimationEnable_CheckedChanged);
             // 
             // numericUpDownAnimationDuration
             // 
+            this.numericUpDownAnimationDuration.Dock = Wisej.Web.DockStyle.Top;
             this.numericUpDownAnimationDuration.Increment = new decimal(new int[] {
             100,
             0,
             0,
             0});
             this.numericUpDownAnimationDuration.LabelText = "Duration";
-            this.numericUpDownAnimationDuration.Location = new System.Drawing.Point(6, 111);
+            this.numericUpDownAnimationDuration.Location = new System.Drawing.Point(3, 324);
             this.numericUpDownAnimationDuration.Maximum = new decimal(new int[] {
             10000,
             0,
             0,
             0});
             this.numericUpDownAnimationDuration.Name = "numericUpDownAnimationDuration";
-            this.numericUpDownAnimationDuration.Size = new System.Drawing.Size(200, 46);
+            this.numericUpDownAnimationDuration.Size = new System.Drawing.Size(212, 46);
             this.numericUpDownAnimationDuration.TabIndex = 2;
             this.numericUpDownAnimationDuration.Value = new decimal(new int[] {
             2000,
@@ -134,19 +126,21 @@
             // 
             // numericUpDownAnimationDelay
             // 
+            this.numericUpDownAnimationDelay.Dock = Wisej.Web.DockStyle.Top;
             this.numericUpDownAnimationDelay.LabelText = "Delay";
-            this.numericUpDownAnimationDelay.Location = new System.Drawing.Point(6, 52);
+            this.numericUpDownAnimationDelay.Location = new System.Drawing.Point(3, 272);
             this.numericUpDownAnimationDelay.Name = "numericUpDownAnimationDelay";
-            this.numericUpDownAnimationDelay.Size = new System.Drawing.Size(200, 46);
+            this.numericUpDownAnimationDelay.Size = new System.Drawing.Size(212, 46);
             this.numericUpDownAnimationDelay.TabIndex = 1;
             // 
             // checkBoxPieProgress
             // 
             this.checkBoxPieProgress.Appearance = Wisej.Web.Appearance.Switch;
             this.checkBoxPieProgress.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.checkBoxPieProgress.Dock = Wisej.Web.DockStyle.Top;
             this.flowLayoutPanel1.SetFillWeight(this.checkBoxPieProgress, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.checkBoxPieProgress, true);
-            this.checkBoxPieProgress.Location = new System.Drawing.Point(3, 194);
+            this.checkBoxPieProgress.Location = new System.Drawing.Point(3, 48);
             this.checkBoxPieProgress.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBoxPieProgress.Name = "checkBoxPieProgress";
             this.checkBoxPieProgress.Size = new System.Drawing.Size(212, 24);
@@ -157,9 +151,10 @@
             // 
             this.checkBoxProcessSegment.Appearance = Wisej.Web.Appearance.Switch;
             this.checkBoxProcessSegment.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.checkBoxProcessSegment.Dock = Wisej.Web.DockStyle.Top;
             this.flowLayoutPanel1.SetFillWeight(this.checkBoxProcessSegment, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.checkBoxProcessSegment, true);
-            this.checkBoxProcessSegment.Location = new System.Drawing.Point(3, 237);
+            this.checkBoxProcessSegment.Location = new System.Drawing.Point(3, 91);
             this.checkBoxProcessSegment.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBoxProcessSegment.Name = "checkBoxProcessSegment";
             this.checkBoxProcessSegment.Size = new System.Drawing.Size(212, 24);
@@ -168,12 +163,12 @@
             // 
             // checkBoxIsIndeterminate
             // 
-            this.checkBoxIsIndeterminate.Anchor = Wisej.Web.AnchorStyles.Left;
             this.checkBoxIsIndeterminate.Appearance = Wisej.Web.Appearance.Switch;
             this.checkBoxIsIndeterminate.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.checkBoxIsIndeterminate.Dock = Wisej.Web.DockStyle.Top;
             this.flowLayoutPanel1.SetFillWeight(this.checkBoxIsIndeterminate, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.checkBoxIsIndeterminate, true);
-            this.checkBoxIsIndeterminate.Location = new System.Drawing.Point(3, 280);
+            this.checkBoxIsIndeterminate.Location = new System.Drawing.Point(3, 134);
             this.checkBoxIsIndeterminate.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBoxIsIndeterminate.Name = "checkBoxIsIndeterminate";
             this.checkBoxIsIndeterminate.Size = new System.Drawing.Size(212, 24);
@@ -184,9 +179,10 @@
             // 
             this.checkBoxIsStriped.Appearance = Wisej.Web.Appearance.Switch;
             this.checkBoxIsStriped.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.checkBoxIsStriped.Dock = Wisej.Web.DockStyle.Top;
             this.flowLayoutPanel1.SetFillWeight(this.checkBoxIsStriped, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.checkBoxIsStriped, true);
-            this.checkBoxIsStriped.Location = new System.Drawing.Point(3, 323);
+            this.checkBoxIsStriped.Location = new System.Drawing.Point(3, 177);
             this.checkBoxIsStriped.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBoxIsStriped.Name = "checkBoxIsStriped";
             this.checkBoxIsStriped.Size = new System.Drawing.Size(212, 24);
@@ -195,6 +191,7 @@
             // 
             // comboBoxType
             // 
+            this.comboBoxType.Dock = Wisej.Web.DockStyle.Top;
             this.comboBoxType.DropDownStyle = Wisej.Web.ComboBoxStyle.DropDownList;
             this.flowLayoutPanel1.SetFillWeight(this.comboBoxType, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.comboBoxType, true);
@@ -202,7 +199,7 @@
             "Linear",
             "Circular"});
             this.comboBoxType.LabelText = "Type";
-            this.comboBoxType.Location = new System.Drawing.Point(3, 366);
+            this.comboBoxType.Location = new System.Drawing.Point(3, 220);
             this.comboBoxType.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.comboBoxType.Name = "comboBoxType";
             this.comboBoxType.Size = new System.Drawing.Size(212, 46);
@@ -215,8 +212,6 @@
             this.panel.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownAnimationDuration)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownAnimationDelay)).EndInit();
             this.ResumeLayout(false);
@@ -231,7 +226,6 @@
         private CheckBox checkBoxIsIndeterminate;
         private CheckBox checkBoxProcessSegment;
         private CheckBox checkBoxPieProgress;
-        private GroupBox groupBox2;
         private CheckBox checkBoxAnimationEnable;
         private NumericUpDown numericUpDownAnimationDuration;
         private NumericUpDown numericUpDownAnimationDelay;

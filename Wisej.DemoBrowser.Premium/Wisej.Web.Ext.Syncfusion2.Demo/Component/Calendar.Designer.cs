@@ -73,24 +73,26 @@
             // 
             // dateTimePickerStart
             // 
+            this.dateTimePickerStart.Dock = Wisej.Web.DockStyle.Top;
             this.flowLayoutPanel1.SetFillWeight(this.dateTimePickerStart, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.dateTimePickerStart, true);
             this.dateTimePickerStart.LabelText = "Start Date";
             this.dateTimePickerStart.Location = new System.Drawing.Point(3, 3);
             this.dateTimePickerStart.Name = "dateTimePickerStart";
-            this.dateTimePickerStart.Size = new System.Drawing.Size(212, 57);
+            this.dateTimePickerStart.Size = new System.Drawing.Size(212, 46);
             this.dateTimePickerStart.TabIndex = 1;
             this.dateTimePickerStart.Value = new System.DateTime(2022, 1, 17, 20, 36, 40, 363);
             // 
             // dateTimePickerEnd
             // 
+            this.dateTimePickerEnd.Dock = Wisej.Web.DockStyle.Top;
             this.flowLayoutPanel1.SetFillWeight(this.dateTimePickerEnd, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.dateTimePickerEnd, true);
             this.dateTimePickerEnd.LabelText = "End Date";
-            this.dateTimePickerEnd.Location = new System.Drawing.Point(3, 79);
+            this.dateTimePickerEnd.Location = new System.Drawing.Point(3, 68);
             this.dateTimePickerEnd.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.dateTimePickerEnd.Name = "dateTimePickerEnd";
-            this.dateTimePickerEnd.Size = new System.Drawing.Size(212, 57);
+            this.dateTimePickerEnd.Size = new System.Drawing.Size(212, 46);
             this.dateTimePickerEnd.TabIndex = 2;
             this.dateTimePickerEnd.Value = new System.DateTime(2022, 1, 17, 20, 36, 40, 363);
             // 

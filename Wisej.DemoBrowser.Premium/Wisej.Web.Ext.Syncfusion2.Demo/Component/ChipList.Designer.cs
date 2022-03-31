@@ -85,7 +85,7 @@
             "Filter chip",
             "Action chip"});
             this.comboBoxSelection.LabelText = "Selection";
-            this.comboBoxSelection.Location = new System.Drawing.Point(3, 48);
+            this.comboBoxSelection.Location = new System.Drawing.Point(3, 46);
             this.comboBoxSelection.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.comboBoxSelection.Name = "comboBoxSelection";
             this.comboBoxSelection.Size = new System.Drawing.Size(212, 46);
@@ -93,11 +93,13 @@
             // 
             // checkBoxDelete
             // 
+            this.checkBoxDelete.Appearance = Wisej.Web.Appearance.Switch;
+            this.checkBoxDelete.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.flowLayoutPanel1.SetFillWeight(this.checkBoxDelete, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.checkBoxDelete, true);
             this.checkBoxDelete.Location = new System.Drawing.Point(3, 3);
             this.checkBoxDelete.Name = "checkBoxDelete";
-            this.checkBoxDelete.Size = new System.Drawing.Size(212, 26);
+            this.checkBoxDelete.Size = new System.Drawing.Size(212, 24);
             this.checkBoxDelete.TabIndex = 2;
             this.checkBoxDelete.Text = "Enable Delete";
             // 
@@ -106,7 +108,7 @@
             this.flowLayoutPanel1.SetFillWeight(this.textBoxAvatarText, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.textBoxAvatarText, true);
             this.textBoxAvatarText.LabelText = "Avatar Text";
-            this.textBoxAvatarText.Location = new System.Drawing.Point(3, 113);
+            this.textBoxAvatarText.Location = new System.Drawing.Point(3, 111);
             this.textBoxAvatarText.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.textBoxAvatarText.Name = "textBoxAvatarText";
             this.textBoxAvatarText.Size = new System.Drawing.Size(212, 46);
@@ -117,7 +119,7 @@
             this.label4.AllowHtml = true;
             this.flowLayoutPanel1.SetFillWeight(this.label4, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.label4, true);
-            this.label4.Location = new System.Drawing.Point(3, 178);
+            this.label4.Location = new System.Drawing.Point(3, 176);
             this.label4.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(212, 55);
