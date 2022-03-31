@@ -85,6 +85,7 @@
             // checkBoxSelection
             // 
             this.checkBoxSelection.Appearance = Wisej.Web.Appearance.Switch;
+            this.checkBoxSelection.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.flowLayoutPanel1.SetFillWeight(this.checkBoxSelection, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.checkBoxSelection, true);
             this.checkBoxSelection.Location = new System.Drawing.Point(3, 3);
@@ -98,7 +99,7 @@
             this.buttonFromColor.BackColor = System.Drawing.Color.FromArgb(18, 215, 182);
             this.flowLayoutPanel1.SetFillWeight(this.buttonFromColor, 1);
             this.buttonFromColor.ForeColor = System.Drawing.Color.White;
-            this.buttonFromColor.Location = new System.Drawing.Point(3, 117);
+            this.buttonFromColor.Location = new System.Drawing.Point(3, 114);
             this.buttonFromColor.Name = "buttonFromColor";
             this.buttonFromColor.Size = new System.Drawing.Size(103, 27);
             this.buttonFromColor.TabIndex = 9;
@@ -111,7 +112,7 @@
             this.flowLayoutPanel1.SetFillWeight(this.buttonToColor, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.buttonToColor, true);
             this.buttonToColor.ForeColor = System.Drawing.Color.White;
-            this.buttonToColor.Location = new System.Drawing.Point(112, 117);
+            this.buttonToColor.Location = new System.Drawing.Point(112, 114);
             this.buttonToColor.Name = "buttonToColor";
             this.buttonToColor.Size = new System.Drawing.Size(103, 27);
             this.buttonToColor.TabIndex = 10;
@@ -126,13 +127,14 @@
             this.label4.Location = new System.Drawing.Point(3, 89);
             this.label4.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(212, 22);
+            this.label4.Size = new System.Drawing.Size(212, 19);
             this.label4.TabIndex = 11;
             this.label4.Text = "Palette Settings";
             // 
             // checkBoxCellLabel
             // 
             this.checkBoxCellLabel.Appearance = Wisej.Web.Appearance.Switch;
+            this.checkBoxCellLabel.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.flowLayoutPanel1.SetFillWeight(this.checkBoxCellLabel, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.checkBoxCellLabel, true);
             this.checkBoxCellLabel.Location = new System.Drawing.Point(3, 46);

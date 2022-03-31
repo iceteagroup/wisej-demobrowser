@@ -83,6 +83,7 @@
             // checkBoxHiddenItem
             // 
             this.checkBoxHiddenItem.Appearance = Wisej.Web.Appearance.Switch;
+            this.checkBoxHiddenItem.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.flowLayoutPanel1.SetFillWeight(this.checkBoxHiddenItem, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.checkBoxHiddenItem, true);
             this.checkBoxHiddenItem.Location = new System.Drawing.Point(3, 3);
@@ -94,6 +95,7 @@
             // checkBoxThumbnail
             // 
             this.checkBoxThumbnail.Appearance = Wisej.Web.Appearance.Switch;
+            this.checkBoxThumbnail.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.flowLayoutPanel1.SetFillWeight(this.checkBoxThumbnail, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.checkBoxThumbnail, true);
             this.checkBoxThumbnail.Location = new System.Drawing.Point(3, 46);
@@ -106,6 +108,7 @@
             // checkBoxFileExtension
             // 
             this.checkBoxFileExtension.Appearance = Wisej.Web.Appearance.Switch;
+            this.checkBoxFileExtension.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.flowLayoutPanel1.SetFillWeight(this.checkBoxFileExtension, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.checkBoxFileExtension, true);
             this.checkBoxFileExtension.Location = new System.Drawing.Point(3, 89);
@@ -118,6 +121,7 @@
             // checkBoxMultipleSelection
             // 
             this.checkBoxMultipleSelection.Appearance = Wisej.Web.Appearance.Switch;
+            this.checkBoxMultipleSelection.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.flowLayoutPanel1.SetFillWeight(this.checkBoxMultipleSelection, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.checkBoxMultipleSelection, true);
             this.checkBoxMultipleSelection.Location = new System.Drawing.Point(3, 132);
@@ -138,7 +142,7 @@
             this.comboBoxView.Location = new System.Drawing.Point(3, 175);
             this.comboBoxView.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.comboBoxView.Name = "comboBoxView";
-            this.comboBoxView.Size = new System.Drawing.Size(212, 57);
+            this.comboBoxView.Size = new System.Drawing.Size(212, 46);
             this.comboBoxView.TabIndex = 5;
             // 
             // FileManager

@@ -70,7 +70,7 @@
             this.flowLayoutPanel1.SetFillWeight(this.tagTextBoxDataSource, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.tagTextBoxDataSource, true);
             this.tagTextBoxDataSource.LabelText = "Data source";
-            this.tagTextBoxDataSource.Location = new System.Drawing.Point(3, 122);
+            this.tagTextBoxDataSource.Location = new System.Drawing.Point(3, 111);
             this.tagTextBoxDataSource.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.tagTextBoxDataSource.MaxTagCount = 10;
             this.tagTextBoxDataSource.Multiline = true;
@@ -82,6 +82,7 @@
             // checkBoxSearchable
             // 
             this.checkBoxSearchable.Appearance = Wisej.Web.Appearance.Switch;
+            this.checkBoxSearchable.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.flowLayoutPanel1.SetFillWeight(this.checkBoxSearchable, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.checkBoxSearchable, true);
             this.checkBoxSearchable.Location = new System.Drawing.Point(3, 3);
@@ -103,7 +104,7 @@
             this.comboBoxSortOrder.Location = new System.Drawing.Point(3, 46);
             this.comboBoxSortOrder.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.comboBoxSortOrder.Name = "comboBoxSortOrder";
-            this.comboBoxSortOrder.Size = new System.Drawing.Size(212, 57);
+            this.comboBoxSortOrder.Size = new System.Drawing.Size(212, 46);
             this.comboBoxSortOrder.TabIndex = 3;
             // 
             // dropDownList1

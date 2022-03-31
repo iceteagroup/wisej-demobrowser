@@ -76,6 +76,7 @@
             // checkBoxGroupingSeparator
             // 
             this.checkBoxGroupingSeparator.Appearance = Wisej.Web.Appearance.Switch;
+            this.checkBoxGroupingSeparator.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.flowLayoutPanel1.SetFillWeight(this.checkBoxGroupingSeparator, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.checkBoxGroupingSeparator, true);
             this.checkBoxGroupingSeparator.Location = new System.Drawing.Point(3, 3);
@@ -100,7 +101,7 @@
             this.comboBoxRenderDirection.Location = new System.Drawing.Point(3, 46);
             this.comboBoxRenderDirection.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.comboBoxRenderDirection.Name = "comboBoxRenderDirection";
-            this.comboBoxRenderDirection.Size = new System.Drawing.Size(212, 57);
+            this.comboBoxRenderDirection.Size = new System.Drawing.Size(212, 46);
             this.comboBoxRenderDirection.TabIndex = 2;
             // 
             // TreeMap

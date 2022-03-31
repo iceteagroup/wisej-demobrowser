@@ -84,6 +84,7 @@
             // checkBoxReording
             // 
             this.checkBoxReording.Appearance = Wisej.Web.Appearance.Switch;
+            this.checkBoxReording.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.flowLayoutPanel1.SetFillWeight(this.checkBoxReording, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.checkBoxReording, true);
             this.checkBoxReording.Location = new System.Drawing.Point(3, 3);
@@ -95,6 +96,7 @@
             // checkBoxUnscheduleTask
             // 
             this.checkBoxUnscheduleTask.Appearance = Wisej.Web.Appearance.Switch;
+            this.checkBoxUnscheduleTask.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.flowLayoutPanel1.SetFillWeight(this.checkBoxUnscheduleTask, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.checkBoxUnscheduleTask, true);
             this.checkBoxUnscheduleTask.Location = new System.Drawing.Point(3, 175);
@@ -107,6 +109,7 @@
             // checkBoxSorting
             // 
             this.checkBoxSorting.Appearance = Wisej.Web.Appearance.Switch;
+            this.checkBoxSorting.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.flowLayoutPanel1.SetFillWeight(this.checkBoxSorting, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.checkBoxSorting, true);
             this.checkBoxSorting.Location = new System.Drawing.Point(3, 132);
@@ -119,6 +122,7 @@
             // checkBoxSelection
             // 
             this.checkBoxSelection.Appearance = Wisej.Web.Appearance.Switch;
+            this.checkBoxSelection.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.flowLayoutPanel1.SetFillWeight(this.checkBoxSelection, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.checkBoxSelection, true);
             this.checkBoxSelection.Location = new System.Drawing.Point(3, 89);
@@ -131,6 +135,7 @@
             // checkBoxResizing
             // 
             this.checkBoxResizing.Appearance = Wisej.Web.Appearance.Switch;
+            this.checkBoxResizing.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.flowLayoutPanel1.SetFillWeight(this.checkBoxResizing, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.checkBoxResizing, true);
             this.checkBoxResizing.Location = new System.Drawing.Point(3, 46);
@@ -153,12 +158,13 @@
             this.comboBoxDuration.Location = new System.Drawing.Point(3, 261);
             this.comboBoxDuration.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.comboBoxDuration.Name = "comboBoxDuration";
-            this.comboBoxDuration.Size = new System.Drawing.Size(212, 57);
+            this.comboBoxDuration.Size = new System.Drawing.Size(212, 46);
             this.comboBoxDuration.TabIndex = 6;
             // 
             // checkBoxShowColumn
             // 
             this.checkBoxShowColumn.Appearance = Wisej.Web.Appearance.Switch;
+            this.checkBoxShowColumn.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.flowLayoutPanel1.SetFillWeight(this.checkBoxShowColumn, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.checkBoxShowColumn, true);
             this.checkBoxShowColumn.Location = new System.Drawing.Point(3, 218);

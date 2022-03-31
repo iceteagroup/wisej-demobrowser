@@ -86,12 +86,13 @@
             this.comboBoxOverflowMode.Location = new System.Drawing.Point(3, 46);
             this.comboBoxOverflowMode.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.comboBoxOverflowMode.Name = "comboBoxOverflowMode";
-            this.comboBoxOverflowMode.Size = new System.Drawing.Size(212, 57);
+            this.comboBoxOverflowMode.Size = new System.Drawing.Size(212, 46);
             this.comboBoxOverflowMode.TabIndex = 1;
             // 
             // checkBoxEnableCollision
             // 
             this.checkBoxEnableCollision.Appearance = Wisej.Web.Appearance.Switch;
+            this.checkBoxEnableCollision.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.checkBoxEnableCollision.Checked = true;
             this.flowLayoutPanel1.SetFillWeight(this.checkBoxEnableCollision, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.checkBoxEnableCollision, true);

@@ -85,12 +85,13 @@
             this.comboBoxOrientation.Location = new System.Drawing.Point(3, 46);
             this.comboBoxOrientation.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.comboBoxOrientation.Name = "comboBoxOrientation";
-            this.comboBoxOrientation.Size = new System.Drawing.Size(212, 57);
+            this.comboBoxOrientation.Size = new System.Drawing.Size(212, 46);
             this.comboBoxOrientation.TabIndex = 1;
             // 
             // checkBoxShowButton
             // 
             this.checkBoxShowButton.Appearance = Wisej.Web.Appearance.Switch;
+            this.checkBoxShowButton.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.flowLayoutPanel1.SetFillWeight(this.checkBoxShowButton, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.checkBoxShowButton, true);
             this.checkBoxShowButton.Location = new System.Drawing.Point(3, 3);

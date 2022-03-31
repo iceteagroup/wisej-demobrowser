@@ -96,7 +96,7 @@
             this.textBoxTitle.LabelText = "Title";
             this.textBoxTitle.Location = new System.Drawing.Point(3, 3);
             this.textBoxTitle.Name = "textBoxTitle";
-            this.textBoxTitle.Size = new System.Drawing.Size(212, 57);
+            this.textBoxTitle.Size = new System.Drawing.Size(212, 46);
             this.textBoxTitle.TabIndex = 1;
             // 
             // textBoxSubTitle
@@ -104,16 +104,16 @@
             this.flowLayoutPanel1.SetFillWeight(this.textBoxSubTitle, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.textBoxSubTitle, true);
             this.textBoxSubTitle.LabelText = "SubTitle";
-            this.textBoxSubTitle.Location = new System.Drawing.Point(3, 79);
+            this.textBoxSubTitle.Location = new System.Drawing.Point(3, 68);
             this.textBoxSubTitle.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.textBoxSubTitle.Name = "textBoxSubTitle";
-            this.textBoxSubTitle.Size = new System.Drawing.Size(212, 57);
+            this.textBoxSubTitle.Size = new System.Drawing.Size(212, 46);
             this.textBoxSubTitle.TabIndex = 2;
             // 
             // trackBarPieAngle
             // 
             this.trackBarPieAngle.AutoSize = false;
-            this.trackBarPieAngle.Location = new System.Drawing.Point(3, 183);
+            this.trackBarPieAngle.Location = new System.Drawing.Point(3, 158);
             this.trackBarPieAngle.Maximum = 360;
             this.trackBarPieAngle.Name = "trackBarPieAngle";
             this.trackBarPieAngle.Size = new System.Drawing.Size(238, 40);
@@ -127,10 +127,10 @@
             this.label4.AutoSize = true;
             this.flowLayoutPanel1.SetFillWeight(this.label4, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.label4, true);
-            this.label4.Location = new System.Drawing.Point(3, 155);
+            this.label4.Location = new System.Drawing.Point(3, 133);
             this.label4.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(212, 22);
+            this.label4.Size = new System.Drawing.Size(212, 19);
             this.label4.TabIndex = 6;
             this.label4.Text = "Pie Angle";
             // 
@@ -140,7 +140,7 @@
             this.flowLayoutPanel1.SetFlowBreak(this.numericUpDownExplodeRadius, true);
             this.numericUpDownExplodeRadius.Label.AutoEllipsis = true;
             this.numericUpDownExplodeRadius.LabelText = "Explode Radius";
-            this.numericUpDownExplodeRadius.Location = new System.Drawing.Point(112, 242);
+            this.numericUpDownExplodeRadius.Location = new System.Drawing.Point(112, 217);
             this.numericUpDownExplodeRadius.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.numericUpDownExplodeRadius.Maximum = new decimal(new int[] {
             40,
@@ -148,7 +148,7 @@
             0,
             0});
             this.numericUpDownExplodeRadius.Name = "numericUpDownExplodeRadius";
-            this.numericUpDownExplodeRadius.Size = new System.Drawing.Size(103, 57);
+            this.numericUpDownExplodeRadius.Size = new System.Drawing.Size(103, 46);
             this.numericUpDownExplodeRadius.TabIndex = 11;
             // 
             // textBoxNumOuterRadius
@@ -160,17 +160,17 @@
             this.textBoxNumOuterRadius.InputType.Step = 0.075D;
             this.textBoxNumOuterRadius.InputType.Type = Wisej.Web.TextBoxType.Number;
             this.textBoxNumOuterRadius.LabelText = "Outer Radius";
-            this.textBoxNumOuterRadius.Location = new System.Drawing.Point(3, 242);
+            this.textBoxNumOuterRadius.Location = new System.Drawing.Point(3, 217);
             this.textBoxNumOuterRadius.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.textBoxNumOuterRadius.Name = "textBoxNumOuterRadius";
-            this.textBoxNumOuterRadius.Size = new System.Drawing.Size(103, 57);
+            this.textBoxNumOuterRadius.Size = new System.Drawing.Size(103, 46);
             this.textBoxNumOuterRadius.TabIndex = 12;
             // 
             // trackBarExplodeIndex
             // 
             this.flowLayoutPanel1.SetFillWeight(this.trackBarExplodeIndex, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.trackBarExplodeIndex, true);
-            this.trackBarExplodeIndex.Location = new System.Drawing.Point(3, 346);
+            this.trackBarExplodeIndex.Location = new System.Drawing.Point(3, 307);
             this.trackBarExplodeIndex.Maximum = 11;
             this.trackBarExplodeIndex.Name = "trackBarExplodeIndex";
             this.trackBarExplodeIndex.Size = new System.Drawing.Size(212, 34);
@@ -185,10 +185,10 @@
             this.label5.AutoSize = true;
             this.flowLayoutPanel1.SetFillWeight(this.label5, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.label5, true);
-            this.label5.Location = new System.Drawing.Point(3, 318);
+            this.label5.Location = new System.Drawing.Point(3, 282);
             this.label5.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(212, 22);
+            this.label5.Size = new System.Drawing.Size(212, 19);
             this.label5.TabIndex = 14;
             this.label5.Text = "Explosion Index";
             // 

@@ -104,7 +104,7 @@
             this.checkBoxAnimationEnable.Checked = true;
             this.checkBoxAnimationEnable.Location = new System.Drawing.Point(6, 27);
             this.checkBoxAnimationEnable.Name = "checkBoxAnimationEnable";
-            this.checkBoxAnimationEnable.Size = new System.Drawing.Size(81, 27);
+            this.checkBoxAnimationEnable.Size = new System.Drawing.Size(82, 26);
             this.checkBoxAnimationEnable.TabIndex = 3;
             this.checkBoxAnimationEnable.Text = "Enable";
             this.checkBoxAnimationEnable.CheckedChanged += new System.EventHandler(this.checkBoxAnimationEnable_CheckedChanged);
@@ -124,7 +124,7 @@
             0,
             0});
             this.numericUpDownAnimationDuration.Name = "numericUpDownAnimationDuration";
-            this.numericUpDownAnimationDuration.Size = new System.Drawing.Size(200, 57);
+            this.numericUpDownAnimationDuration.Size = new System.Drawing.Size(200, 46);
             this.numericUpDownAnimationDuration.TabIndex = 2;
             this.numericUpDownAnimationDuration.Value = new decimal(new int[] {
             2000,
@@ -137,12 +137,13 @@
             this.numericUpDownAnimationDelay.LabelText = "Delay";
             this.numericUpDownAnimationDelay.Location = new System.Drawing.Point(6, 52);
             this.numericUpDownAnimationDelay.Name = "numericUpDownAnimationDelay";
-            this.numericUpDownAnimationDelay.Size = new System.Drawing.Size(200, 57);
+            this.numericUpDownAnimationDelay.Size = new System.Drawing.Size(200, 46);
             this.numericUpDownAnimationDelay.TabIndex = 1;
             // 
             // checkBoxPieProgress
             // 
             this.checkBoxPieProgress.Appearance = Wisej.Web.Appearance.Switch;
+            this.checkBoxPieProgress.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.flowLayoutPanel1.SetFillWeight(this.checkBoxPieProgress, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.checkBoxPieProgress, true);
             this.checkBoxPieProgress.Location = new System.Drawing.Point(3, 194);
@@ -155,6 +156,7 @@
             // checkBoxProcessSegment
             // 
             this.checkBoxProcessSegment.Appearance = Wisej.Web.Appearance.Switch;
+            this.checkBoxProcessSegment.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.flowLayoutPanel1.SetFillWeight(this.checkBoxProcessSegment, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.checkBoxProcessSegment, true);
             this.checkBoxProcessSegment.Location = new System.Drawing.Point(3, 237);
@@ -168,6 +170,7 @@
             // 
             this.checkBoxIsIndeterminate.Anchor = Wisej.Web.AnchorStyles.Left;
             this.checkBoxIsIndeterminate.Appearance = Wisej.Web.Appearance.Switch;
+            this.checkBoxIsIndeterminate.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.flowLayoutPanel1.SetFillWeight(this.checkBoxIsIndeterminate, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.checkBoxIsIndeterminate, true);
             this.checkBoxIsIndeterminate.Location = new System.Drawing.Point(3, 280);
@@ -180,6 +183,7 @@
             // checkBoxIsStriped
             // 
             this.checkBoxIsStriped.Appearance = Wisej.Web.Appearance.Switch;
+            this.checkBoxIsStriped.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.flowLayoutPanel1.SetFillWeight(this.checkBoxIsStriped, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.checkBoxIsStriped, true);
             this.checkBoxIsStriped.Location = new System.Drawing.Point(3, 323);
@@ -201,7 +205,7 @@
             this.comboBoxType.Location = new System.Drawing.Point(3, 366);
             this.comboBoxType.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.comboBoxType.Name = "comboBoxType";
-            this.comboBoxType.Size = new System.Drawing.Size(212, 57);
+            this.comboBoxType.Size = new System.Drawing.Size(212, 46);
             this.comboBoxType.TabIndex = 9;
             // 
             // ProgressBar

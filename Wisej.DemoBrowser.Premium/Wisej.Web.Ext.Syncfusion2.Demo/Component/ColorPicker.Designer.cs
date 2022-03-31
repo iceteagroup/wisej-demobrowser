@@ -91,15 +91,16 @@
             this.comboBoxMode.LabelText = "Mode";
             this.comboBoxMode.Location = new System.Drawing.Point(3, 3);
             this.comboBoxMode.Name = "comboBoxMode";
-            this.comboBoxMode.Size = new System.Drawing.Size(212, 57);
+            this.comboBoxMode.Size = new System.Drawing.Size(212, 46);
             this.comboBoxMode.TabIndex = 2;
             // 
             // checkBoxShowButton
             // 
             this.checkBoxShowButton.Appearance = Wisej.Web.Appearance.Switch;
+            this.checkBoxShowButton.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.flowLayoutPanel1.SetFillWeight(this.checkBoxShowButton, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.checkBoxShowButton, true);
-            this.checkBoxShowButton.Location = new System.Drawing.Point(3, 79);
+            this.checkBoxShowButton.Location = new System.Drawing.Point(3, 68);
             this.checkBoxShowButton.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBoxShowButton.Name = "checkBoxShowButton";
             this.checkBoxShowButton.Size = new System.Drawing.Size(212, 24);
@@ -109,9 +110,10 @@
             // checkBoxInline
             // 
             this.checkBoxInline.Appearance = Wisej.Web.Appearance.Switch;
+            this.checkBoxInline.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.flowLayoutPanel1.SetFillWeight(this.checkBoxInline, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.checkBoxInline, true);
-            this.checkBoxInline.Location = new System.Drawing.Point(3, 122);
+            this.checkBoxInline.Location = new System.Drawing.Point(3, 111);
             this.checkBoxInline.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBoxInline.Name = "checkBoxInline";
             this.checkBoxInline.Size = new System.Drawing.Size(212, 24);
@@ -123,7 +125,7 @@
             this.panelColorValue.BorderStyle = Wisej.Web.BorderStyle.Solid;
             this.flowLayoutPanel1.SetFillWeight(this.panelColorValue, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.panelColorValue, true);
-            this.panelColorValue.Location = new System.Drawing.Point(3, 193);
+            this.panelColorValue.Location = new System.Drawing.Point(3, 179);
             this.panelColorValue.Name = "panelColorValue";
             this.panelColorValue.Size = new System.Drawing.Size(212, 27);
             this.panelColorValue.TabIndex = 5;
@@ -134,10 +136,10 @@
             this.label4.AutoSize = true;
             this.flowLayoutPanel1.SetFillWeight(this.label4, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.label4, true);
-            this.label4.Location = new System.Drawing.Point(3, 165);
+            this.label4.Location = new System.Drawing.Point(3, 154);
             this.label4.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(212, 22);
+            this.label4.Size = new System.Drawing.Size(212, 19);
             this.label4.TabIndex = 6;
             this.label4.Text = "Selected Color";
             // 

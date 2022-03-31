@@ -79,6 +79,7 @@
             // checkBoxDragAndDrop
             // 
             this.checkBoxDragAndDrop.Appearance = Wisej.Web.Appearance.Switch;
+            this.checkBoxDragAndDrop.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.flowLayoutPanel1.SetFillWeight(this.checkBoxDragAndDrop, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.checkBoxDragAndDrop, true);
             this.checkBoxDragAndDrop.Location = new System.Drawing.Point(3, 3);
@@ -90,6 +91,7 @@
             // checkBoxFiltering
             // 
             this.checkBoxFiltering.Appearance = Wisej.Web.Appearance.Switch;
+            this.checkBoxFiltering.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.flowLayoutPanel1.SetFillWeight(this.checkBoxFiltering, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.checkBoxFiltering, true);
             this.checkBoxFiltering.Location = new System.Drawing.Point(3, 46);
@@ -114,7 +116,7 @@
             this.comboBoxFilterType.Location = new System.Drawing.Point(3, 89);
             this.comboBoxFilterType.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.comboBoxFilterType.Name = "comboBoxFilterType";
-            this.comboBoxFilterType.Size = new System.Drawing.Size(212, 57);
+            this.comboBoxFilterType.Size = new System.Drawing.Size(212, 46);
             this.comboBoxFilterType.TabIndex = 3;
             // 
             // comboBoxSortOrder
@@ -127,10 +129,10 @@
             "Ascending",
             "Descending"});
             this.comboBoxSortOrder.LabelText = "Sort Order";
-            this.comboBoxSortOrder.Location = new System.Drawing.Point(3, 165);
+            this.comboBoxSortOrder.Location = new System.Drawing.Point(3, 154);
             this.comboBoxSortOrder.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.comboBoxSortOrder.Name = "comboBoxSortOrder";
-            this.comboBoxSortOrder.Size = new System.Drawing.Size(212, 57);
+            this.comboBoxSortOrder.Size = new System.Drawing.Size(212, 46);
             this.comboBoxSortOrder.TabIndex = 4;
             // 
             // ListBox

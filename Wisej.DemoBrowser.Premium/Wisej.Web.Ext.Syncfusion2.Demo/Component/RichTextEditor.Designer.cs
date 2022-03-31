@@ -91,6 +91,7 @@
             // 
             this.checkBox1.Appearance = Wisej.Web.Appearance.Switch;
             this.checkBox1.AutoSize = false;
+            this.checkBox1.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.flowLayoutPanel1.SetFillWeight(this.checkBox1, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.checkBox1, true);
             this.checkBox1.Location = new System.Drawing.Point(3, 3);
@@ -103,6 +104,7 @@
             // 
             this.checkBox2.Appearance = Wisej.Web.Appearance.Switch;
             this.checkBox2.AutoSize = false;
+            this.checkBox2.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.flowLayoutPanel1.SetFillWeight(this.checkBox2, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.checkBox2, true);
             this.checkBox2.Location = new System.Drawing.Point(3, 57);
@@ -116,6 +118,7 @@
             // 
             this.checkBox3.Appearance = Wisej.Web.Appearance.Switch;
             this.checkBox3.AutoSize = false;
+            this.checkBox3.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.checkBox3.Checked = true;
             this.flowLayoutPanel1.SetFillWeight(this.checkBox3, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.checkBox3, true);

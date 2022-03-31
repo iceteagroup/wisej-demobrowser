@@ -84,7 +84,7 @@
             // 
             this.flowLayoutPanel1.SetFillWeight(this.button1, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.button1, true);
-            this.button1.Location = new System.Drawing.Point(3, 244);
+            this.button1.Location = new System.Drawing.Point(3, 233);
             this.button1.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(212, 40);
@@ -110,6 +110,7 @@
             // checkBoxFormularBar
             // 
             this.checkBoxFormularBar.Appearance = Wisej.Web.Appearance.Switch;
+            this.checkBoxFormularBar.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.flowLayoutPanel1.SetFillWeight(this.checkBoxFormularBar, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.checkBoxFormularBar, true);
             this.checkBoxFormularBar.Location = new System.Drawing.Point(3, 3);
@@ -121,6 +122,7 @@
             // checkBoxRibbon
             // 
             this.checkBoxRibbon.Appearance = Wisej.Web.Appearance.Switch;
+            this.checkBoxRibbon.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.flowLayoutPanel1.SetFillWeight(this.checkBoxRibbon, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.checkBoxRibbon, true);
             this.checkBoxRibbon.Location = new System.Drawing.Point(3, 46);
@@ -138,7 +140,7 @@
             this.numericUpDownActiveSheetIndex.Location = new System.Drawing.Point(3, 168);
             this.numericUpDownActiveSheetIndex.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.numericUpDownActiveSheetIndex.Name = "numericUpDownActiveSheetIndex";
-            this.numericUpDownActiveSheetIndex.Size = new System.Drawing.Size(212, 57);
+            this.numericUpDownActiveSheetIndex.Size = new System.Drawing.Size(212, 46);
             this.numericUpDownActiveSheetIndex.TabIndex = 6;
             // 
             // Spreadsheet

@@ -81,6 +81,7 @@
             // checkBoxMultiple
             // 
             this.checkBoxMultiple.Appearance = Wisej.Web.Appearance.Switch;
+            this.checkBoxMultiple.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.flowLayoutPanel1.SetFillWeight(this.checkBoxMultiple, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.checkBoxMultiple, true);
             this.checkBoxMultiple.Location = new System.Drawing.Point(3, 3);
@@ -92,6 +93,7 @@
             // checkBoxSequentiallUpload
             // 
             this.checkBoxSequentiallUpload.Appearance = Wisej.Web.Appearance.Switch;
+            this.checkBoxSequentiallUpload.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.flowLayoutPanel1.SetFillWeight(this.checkBoxSequentiallUpload, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.checkBoxSequentiallUpload, true);
             this.checkBoxSequentiallUpload.Location = new System.Drawing.Point(3, 46);

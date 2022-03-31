@@ -76,6 +76,7 @@
             // checkBoxDisabled
             // 
             this.checkBoxDisabled.Appearance = Wisej.Web.Appearance.Switch;
+            this.checkBoxDisabled.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.flowLayoutPanel1.SetFillWeight(this.checkBoxDisabled, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.checkBoxDisabled, true);
             this.checkBoxDisabled.Location = new System.Drawing.Point(3, 3);
@@ -93,7 +94,7 @@
             this.comboBoxIconPosition.Location = new System.Drawing.Point(3, 46);
             this.comboBoxIconPosition.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.comboBoxIconPosition.Name = "comboBoxIconPosition";
-            this.comboBoxIconPosition.Size = new System.Drawing.Size(212, 57);
+            this.comboBoxIconPosition.Size = new System.Drawing.Size(212, 46);
             this.comboBoxIconPosition.TabIndex = 2;
             // 
             // SplitButton

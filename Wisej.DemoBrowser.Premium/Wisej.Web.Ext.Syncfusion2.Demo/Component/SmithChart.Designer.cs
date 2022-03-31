@@ -78,6 +78,7 @@
             // checkBoxMarkerVisible
             // 
             this.checkBoxMarkerVisible.Appearance = Wisej.Web.Appearance.Switch;
+            this.checkBoxMarkerVisible.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.checkBoxMarkerVisible.Checked = true;
             this.flowLayoutPanel1.SetFillWeight(this.checkBoxMarkerVisible, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.checkBoxMarkerVisible, true);
@@ -99,12 +100,13 @@
             this.comboBoxShaprType.Location = new System.Drawing.Point(3, 89);
             this.comboBoxShaprType.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.comboBoxShaprType.Name = "comboBoxShaprType";
-            this.comboBoxShaprType.Size = new System.Drawing.Size(212, 57);
+            this.comboBoxShaprType.Size = new System.Drawing.Size(212, 46);
             this.comboBoxShaprType.TabIndex = 2;
             // 
             // checkBoxLegendVisibility
             // 
             this.checkBoxLegendVisibility.Appearance = Wisej.Web.Appearance.Switch;
+            this.checkBoxLegendVisibility.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.checkBoxLegendVisibility.Checked = true;
             this.flowLayoutPanel1.SetFillWeight(this.checkBoxLegendVisibility, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.checkBoxLegendVisibility, true);

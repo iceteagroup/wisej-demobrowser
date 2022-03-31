@@ -79,6 +79,7 @@
             // checkBoxRemoveIcon
             // 
             this.checkBoxRemoveIcon.Appearance = Wisej.Web.Appearance.Switch;
+            this.checkBoxRemoveIcon.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.checkBoxRemoveIcon.Checked = true;
             this.flowLayoutPanel1.SetFillWeight(this.checkBoxRemoveIcon, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.checkBoxRemoveIcon, true);
@@ -92,6 +93,7 @@
             // checkBoxValueTypeIcon
             // 
             this.checkBoxValueTypeIcon.Appearance = Wisej.Web.Appearance.Switch;
+            this.checkBoxValueTypeIcon.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.checkBoxValueTypeIcon.Checked = true;
             this.flowLayoutPanel1.SetFillWeight(this.checkBoxValueTypeIcon, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.checkBoxValueTypeIcon, true);
@@ -105,6 +107,7 @@
             // checkBoxSortIcon
             // 
             this.checkBoxSortIcon.Appearance = Wisej.Web.Appearance.Switch;
+            this.checkBoxSortIcon.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.checkBoxSortIcon.Checked = true;
             this.flowLayoutPanel1.SetFillWeight(this.checkBoxSortIcon, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.checkBoxSortIcon, true);
@@ -118,6 +121,7 @@
             // checkBoxFilterIcon
             // 
             this.checkBoxFilterIcon.Appearance = Wisej.Web.Appearance.Switch;
+            this.checkBoxFilterIcon.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.checkBoxFilterIcon.Checked = true;
             this.flowLayoutPanel1.SetFillWeight(this.checkBoxFilterIcon, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.checkBoxFilterIcon, true);

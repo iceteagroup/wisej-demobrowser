@@ -86,10 +86,10 @@
             "hh:mm a",
             "HH:mm"});
             this.comboBoxHourFormat.LabelText = "Hour Format";
-            this.comboBoxHourFormat.Location = new System.Drawing.Point(3, 198);
+            this.comboBoxHourFormat.Location = new System.Drawing.Point(3, 176);
             this.comboBoxHourFormat.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.comboBoxHourFormat.Name = "comboBoxHourFormat";
-            this.comboBoxHourFormat.Size = new System.Drawing.Size(212, 57);
+            this.comboBoxHourFormat.Size = new System.Drawing.Size(212, 46);
             this.comboBoxHourFormat.TabIndex = 14;
             // 
             // numericUpDownFrom
@@ -105,7 +105,7 @@
             0,
             0});
             this.numericUpDownFrom.Name = "numericUpDownFrom";
-            this.numericUpDownFrom.Size = new System.Drawing.Size(212, 57);
+            this.numericUpDownFrom.Size = new System.Drawing.Size(212, 46);
             this.numericUpDownFrom.TabIndex = 15;
             this.numericUpDownFrom.Value = new decimal(new int[] {
             1,
@@ -118,7 +118,7 @@
             this.flowLayoutPanel1.SetFillWeight(this.numericUpDownTo, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.numericUpDownTo, true);
             this.numericUpDownTo.LabelText = "To";
-            this.numericUpDownTo.Location = new System.Drawing.Point(3, 122);
+            this.numericUpDownTo.Location = new System.Drawing.Point(3, 111);
             this.numericUpDownTo.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.numericUpDownTo.Maximum = new decimal(new int[] {
             23,
@@ -126,12 +126,13 @@
             0,
             0});
             this.numericUpDownTo.Name = "numericUpDownTo";
-            this.numericUpDownTo.Size = new System.Drawing.Size(212, 57);
+            this.numericUpDownTo.Size = new System.Drawing.Size(212, 46);
             this.numericUpDownTo.TabIndex = 17;
             // 
             // checkBoxOpenOnFocus
             // 
             this.checkBoxOpenOnFocus.Appearance = Wisej.Web.Appearance.Switch;
+            this.checkBoxOpenOnFocus.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.flowLayoutPanel1.SetFillWeight(this.checkBoxOpenOnFocus, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.checkBoxOpenOnFocus, true);
             this.checkBoxOpenOnFocus.Location = new System.Drawing.Point(3, 3);

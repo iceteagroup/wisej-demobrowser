@@ -91,12 +91,13 @@
             this.comboBoxCalendarMode.Location = new System.Drawing.Point(3, 175);
             this.comboBoxCalendarMode.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.comboBoxCalendarMode.Name = "comboBoxCalendarMode";
-            this.comboBoxCalendarMode.Size = new System.Drawing.Size(212, 57);
+            this.comboBoxCalendarMode.Size = new System.Drawing.Size(212, 46);
             this.comboBoxCalendarMode.TabIndex = 1;
             // 
             // checkBoxDragAndDrop
             // 
             this.checkBoxDragAndDrop.Appearance = Wisej.Web.Appearance.Switch;
+            this.checkBoxDragAndDrop.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.flowLayoutPanel1.SetFillWeight(this.checkBoxDragAndDrop, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.checkBoxDragAndDrop, true);
             this.checkBoxDragAndDrop.Location = new System.Drawing.Point(3, 3);
@@ -108,6 +109,7 @@
             // checkBoxInline
             // 
             this.checkBoxInline.Appearance = Wisej.Web.Appearance.Switch;
+            this.checkBoxInline.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.flowLayoutPanel1.SetFillWeight(this.checkBoxInline, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.checkBoxInline, true);
             this.checkBoxInline.Location = new System.Drawing.Point(3, 46);
@@ -120,6 +122,7 @@
             // checkBoxResizing
             // 
             this.checkBoxResizing.Appearance = Wisej.Web.Appearance.Switch;
+            this.checkBoxResizing.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.flowLayoutPanel1.SetFillWeight(this.checkBoxResizing, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.checkBoxResizing, true);
             this.checkBoxResizing.Location = new System.Drawing.Point(3, 89);
@@ -148,15 +151,16 @@
             "TimelineMonth",
             "TimelineYear"});
             this.comboBoxCurrentView.LabelText = "Current View";
-            this.comboBoxCurrentView.Location = new System.Drawing.Point(3, 251);
+            this.comboBoxCurrentView.Location = new System.Drawing.Point(3, 240);
             this.comboBoxCurrentView.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.comboBoxCurrentView.Name = "comboBoxCurrentView";
-            this.comboBoxCurrentView.Size = new System.Drawing.Size(212, 57);
+            this.comboBoxCurrentView.Size = new System.Drawing.Size(212, 46);
             this.comboBoxCurrentView.TabIndex = 5;
             // 
             // checkBoxAdaptativeUI
             // 
             this.checkBoxAdaptativeUI.Appearance = Wisej.Web.Appearance.Switch;
+            this.checkBoxAdaptativeUI.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.flowLayoutPanel1.SetFillWeight(this.checkBoxAdaptativeUI, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.checkBoxAdaptativeUI, true);
             this.checkBoxAdaptativeUI.Location = new System.Drawing.Point(3, 132);

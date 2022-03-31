@@ -79,6 +79,7 @@
             // checkBoxDragAndDrop
             // 
             this.checkBoxDragAndDrop.Appearance = Wisej.Web.Appearance.Switch;
+            this.checkBoxDragAndDrop.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.checkBoxDragAndDrop.Checked = true;
             this.flowLayoutPanel1.SetFillWeight(this.checkBoxDragAndDrop, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.checkBoxDragAndDrop, true);
@@ -91,6 +92,7 @@
             // checkBoxKeyboard
             // 
             this.checkBoxKeyboard.Appearance = Wisej.Web.Appearance.Switch;
+            this.checkBoxKeyboard.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.flowLayoutPanel1.SetFillWeight(this.checkBoxKeyboard, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.checkBoxKeyboard, true);
             this.checkBoxKeyboard.Location = new System.Drawing.Point(3, 46);
@@ -103,6 +105,7 @@
             // checkBoxColumnToggle
             // 
             this.checkBoxColumnToggle.Appearance = Wisej.Web.Appearance.Switch;
+            this.checkBoxColumnToggle.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.flowLayoutPanel1.SetFillWeight(this.checkBoxColumnToggle, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.checkBoxColumnToggle, true);
             this.checkBoxColumnToggle.Location = new System.Drawing.Point(3, 89);
@@ -115,6 +118,7 @@
             // checkBoxEmptyColumn
             // 
             this.checkBoxEmptyColumn.Appearance = Wisej.Web.Appearance.Switch;
+            this.checkBoxEmptyColumn.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.flowLayoutPanel1.SetFillWeight(this.checkBoxEmptyColumn, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.checkBoxEmptyColumn, true);
             this.checkBoxEmptyColumn.Location = new System.Drawing.Point(3, 132);

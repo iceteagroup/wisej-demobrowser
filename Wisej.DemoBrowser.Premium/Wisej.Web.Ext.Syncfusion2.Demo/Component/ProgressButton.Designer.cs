@@ -190,7 +190,7 @@
             0,
             0});
             this.numericUpDownDuration.Name = "numericUpDownDuration";
-            this.numericUpDownDuration.Size = new System.Drawing.Size(212, 57);
+            this.numericUpDownDuration.Size = new System.Drawing.Size(212, 46);
             this.numericUpDownDuration.TabIndex = 1;
             this.numericUpDownDuration.Value = new decimal(new int[] {
             2000,
@@ -201,9 +201,10 @@
             // checkBoxProgress
             // 
             this.checkBoxProgress.Appearance = Wisej.Web.Appearance.Switch;
+            this.checkBoxProgress.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.flowLayoutPanel1.SetFillWeight(this.checkBoxProgress, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.checkBoxProgress, true);
-            this.checkBoxProgress.Location = new System.Drawing.Point(3, 79);
+            this.checkBoxProgress.Location = new System.Drawing.Point(3, 68);
             this.checkBoxProgress.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBoxProgress.Name = "checkBoxProgress";
             this.checkBoxProgress.Size = new System.Drawing.Size(212, 24);
@@ -213,9 +214,10 @@
             // checkBoxIsToggle
             // 
             this.checkBoxIsToggle.Appearance = Wisej.Web.Appearance.Switch;
+            this.checkBoxIsToggle.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.flowLayoutPanel1.SetFillWeight(this.checkBoxIsToggle, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.checkBoxIsToggle, true);
-            this.checkBoxIsToggle.Location = new System.Drawing.Point(3, 122);
+            this.checkBoxIsToggle.Location = new System.Drawing.Point(3, 111);
             this.checkBoxIsToggle.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBoxIsToggle.Name = "checkBoxIsToggle";
             this.checkBoxIsToggle.Size = new System.Drawing.Size(212, 24);
@@ -226,13 +228,12 @@
             // 
             this.label4.AllowHtml = true;
             this.label4.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Bottom | Wisej.Web.AnchorStyles.Left)));
-            this.label4.AutoSize = true;
             this.flowLayoutPanel1.SetFillWeight(this.label4, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.label4, true);
-            this.label4.Location = new System.Drawing.Point(3, 165);
+            this.label4.Location = new System.Drawing.Point(3, 154);
             this.label4.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(212, 44);
+            this.label4.Size = new System.Drawing.Size(212, 81);
             this.label4.TabIndex = 8;
             this.label4.Text = "Note: Properties affect the \"Zoom In\" button.";
             // 

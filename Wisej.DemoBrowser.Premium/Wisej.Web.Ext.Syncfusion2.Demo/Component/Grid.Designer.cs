@@ -81,6 +81,7 @@
             // checkBoxGrouping
             // 
             this.checkBoxGrouping.Appearance = Wisej.Web.Appearance.Switch;
+            this.checkBoxGrouping.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.flowLayoutPanel1.SetFillWeight(this.checkBoxGrouping, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.checkBoxGrouping, true);
             this.checkBoxGrouping.Location = new System.Drawing.Point(3, 3);
@@ -92,6 +93,7 @@
             // checkBoxReordering
             // 
             this.checkBoxReordering.Appearance = Wisej.Web.Appearance.Switch;
+            this.checkBoxReordering.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.flowLayoutPanel1.SetFillWeight(this.checkBoxReordering, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.checkBoxReordering, true);
             this.checkBoxReordering.Location = new System.Drawing.Point(3, 46);
@@ -104,6 +106,7 @@
             // checkBoxResizing
             // 
             this.checkBoxResizing.Appearance = Wisej.Web.Appearance.Switch;
+            this.checkBoxResizing.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.flowLayoutPanel1.SetFillWeight(this.checkBoxResizing, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.checkBoxResizing, true);
             this.checkBoxResizing.Location = new System.Drawing.Point(3, 89);
@@ -116,6 +119,7 @@
             // checkBoxFiltering
             // 
             this.checkBoxFiltering.Appearance = Wisej.Web.Appearance.Switch;
+            this.checkBoxFiltering.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.flowLayoutPanel1.SetFillWeight(this.checkBoxFiltering, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.checkBoxFiltering, true);
             this.checkBoxFiltering.Location = new System.Drawing.Point(3, 132);
@@ -140,7 +144,7 @@
             this.comboBoxGridLine.Location = new System.Drawing.Point(3, 175);
             this.comboBoxGridLine.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.comboBoxGridLine.Name = "comboBoxGridLine";
-            this.comboBoxGridLine.Size = new System.Drawing.Size(212, 57);
+            this.comboBoxGridLine.Size = new System.Drawing.Size(212, 46);
             this.comboBoxGridLine.TabIndex = 5;
             // 
             // Grid

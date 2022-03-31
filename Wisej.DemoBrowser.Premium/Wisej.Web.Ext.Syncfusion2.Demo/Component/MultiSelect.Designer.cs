@@ -87,6 +87,7 @@
             // checkBoxCustomValue
             // 
             this.checkBoxCustomValue.Appearance = Wisej.Web.Appearance.Switch;
+            this.checkBoxCustomValue.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.flowLayoutPanel1.SetFillWeight(this.checkBoxCustomValue, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.checkBoxCustomValue, true);
             this.checkBoxCustomValue.Location = new System.Drawing.Point(3, 3);
@@ -98,6 +99,7 @@
             // checkBoxChangeOnBlur
             // 
             this.checkBoxChangeOnBlur.Appearance = Wisej.Web.Appearance.Switch;
+            this.checkBoxChangeOnBlur.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.flowLayoutPanel1.SetFillWeight(this.checkBoxChangeOnBlur, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.checkBoxChangeOnBlur, true);
             this.checkBoxChangeOnBlur.Location = new System.Drawing.Point(3, 46);
@@ -110,6 +112,7 @@
             // checkBoxClosePopupOnSelect
             // 
             this.checkBoxClosePopupOnSelect.Appearance = Wisej.Web.Appearance.Switch;
+            this.checkBoxClosePopupOnSelect.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.flowLayoutPanel1.SetFillWeight(this.checkBoxClosePopupOnSelect, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.checkBoxClosePopupOnSelect, true);
             this.checkBoxClosePopupOnSelect.Location = new System.Drawing.Point(3, 89);
@@ -122,6 +125,7 @@
             // checkBoxHideSelectedItem
             // 
             this.checkBoxHideSelectedItem.Appearance = Wisej.Web.Appearance.Switch;
+            this.checkBoxHideSelectedItem.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.flowLayoutPanel1.SetFillWeight(this.checkBoxHideSelectedItem, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.checkBoxHideSelectedItem, true);
             this.checkBoxHideSelectedItem.Location = new System.Drawing.Point(3, 132);
@@ -134,6 +138,7 @@
             // checkBoxOpenOnClick
             // 
             this.checkBoxOpenOnClick.Appearance = Wisej.Web.Appearance.Switch;
+            this.checkBoxOpenOnClick.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.flowLayoutPanel1.SetFillWeight(this.checkBoxOpenOnClick, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.checkBoxOpenOnClick, true);
             this.checkBoxOpenOnClick.Location = new System.Drawing.Point(3, 175);
@@ -157,12 +162,13 @@
             this.comboBoxMode.Location = new System.Drawing.Point(3, 304);
             this.comboBoxMode.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.comboBoxMode.Name = "comboBoxMode";
-            this.comboBoxMode.Size = new System.Drawing.Size(212, 57);
+            this.comboBoxMode.Size = new System.Drawing.Size(212, 46);
             this.comboBoxMode.TabIndex = 8;
             // 
             // checkBoxClearButton
             // 
             this.checkBoxClearButton.Appearance = Wisej.Web.Appearance.Switch;
+            this.checkBoxClearButton.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.flowLayoutPanel1.SetFillWeight(this.checkBoxClearButton, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.checkBoxClearButton, true);
             this.checkBoxClearButton.Location = new System.Drawing.Point(3, 218);
@@ -175,6 +181,7 @@
             // checkBoxDropDownIcon
             // 
             this.checkBoxDropDownIcon.Appearance = Wisej.Web.Appearance.Switch;
+            this.checkBoxDropDownIcon.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.flowLayoutPanel1.SetFillWeight(this.checkBoxDropDownIcon, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.checkBoxDropDownIcon, true);
             this.checkBoxDropDownIcon.Location = new System.Drawing.Point(3, 261);

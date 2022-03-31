@@ -91,12 +91,13 @@
             this.comboBoxExpandOn.Location = new System.Drawing.Point(3, 132);
             this.comboBoxExpandOn.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.comboBoxExpandOn.Name = "comboBoxExpandOn";
-            this.comboBoxExpandOn.Size = new System.Drawing.Size(212, 57);
+            this.comboBoxExpandOn.Size = new System.Drawing.Size(212, 46);
             this.comboBoxExpandOn.TabIndex = 1;
             // 
             // checkBoxDragAndDrop
             // 
             this.checkBoxDragAndDrop.Appearance = Wisej.Web.Appearance.Switch;
+            this.checkBoxDragAndDrop.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.flowLayoutPanel1.SetFillWeight(this.checkBoxDragAndDrop, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.checkBoxDragAndDrop, true);
             this.checkBoxDragAndDrop.Location = new System.Drawing.Point(3, 3);
@@ -108,6 +109,7 @@
             // checkBoxShowCheckbox
             // 
             this.checkBoxShowCheckbox.Appearance = Wisej.Web.Appearance.Switch;
+            this.checkBoxShowCheckbox.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.flowLayoutPanel1.SetFillWeight(this.checkBoxShowCheckbox, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.checkBoxShowCheckbox, true);
             this.checkBoxShowCheckbox.Location = new System.Drawing.Point(3, 46);
@@ -120,6 +122,7 @@
             // checkBoxEditing
             // 
             this.checkBoxEditing.Appearance = Wisej.Web.Appearance.Switch;
+            this.checkBoxEditing.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.flowLayoutPanel1.SetFillWeight(this.checkBoxEditing, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.checkBoxEditing, true);
             this.checkBoxEditing.Location = new System.Drawing.Point(3, 89);

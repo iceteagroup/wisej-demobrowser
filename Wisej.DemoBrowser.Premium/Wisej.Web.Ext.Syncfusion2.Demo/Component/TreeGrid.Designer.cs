@@ -79,6 +79,7 @@
             this.checkBoxResizing.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
             | Wisej.Web.AnchorStyles.Left)));
             this.checkBoxResizing.Appearance = Wisej.Web.Appearance.Switch;
+            this.checkBoxResizing.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.flowLayoutPanel1.SetFillWeight(this.checkBoxResizing, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.checkBoxResizing, true);
             this.checkBoxResizing.Location = new System.Drawing.Point(3, 89);
@@ -91,6 +92,7 @@
             // checkBoxReordering
             // 
             this.checkBoxReordering.Appearance = Wisej.Web.Appearance.Switch;
+            this.checkBoxReordering.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.flowLayoutPanel1.SetFillWeight(this.checkBoxReordering, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.checkBoxReordering, true);
             this.checkBoxReordering.Location = new System.Drawing.Point(3, 46);
@@ -103,6 +105,7 @@
             // checkBoxDragAndDrop
             // 
             this.checkBoxDragAndDrop.Appearance = Wisej.Web.Appearance.Switch;
+            this.checkBoxDragAndDrop.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.flowLayoutPanel1.SetFillWeight(this.checkBoxDragAndDrop, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.checkBoxDragAndDrop, true);
             this.checkBoxDragAndDrop.Location = new System.Drawing.Point(3, 3);
