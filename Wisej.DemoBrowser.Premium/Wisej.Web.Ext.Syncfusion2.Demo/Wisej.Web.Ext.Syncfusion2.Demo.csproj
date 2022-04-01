@@ -83,6 +83,7 @@
     <EmbeddedResource Include="Data\CustomLocalization\pt.js" />
     <Content Include="Data\Schedule\data.json" />
     <EmbeddedResource Include="Themes\EJ2.mixin.theme" />
+    <Content Include="Playground\Earth_Zoom_In_preview.mp4" />
     <Content Include="Syncfusion2\cldr-data\en\ca-gregorian.json" />
     <Content Include="Syncfusion2\cldr-data\en\timeZoneNames.json" />
     <Content Include="Syncfusion2\cldr-data\de\ca-gregorian.json" />
@@ -92,6 +93,8 @@
     <Content Include="Syncfusion2\cldr-data\en\numbers.json" />
     <Content Include="Syncfusion2\cldr-data\de\numbers.json" />
     <Content Include="Syncfusion2\cldr-data\it\numbers.json" />
+    <Content Include="Playground\Wisej-datasheet-10012020.pdf" />
+    <Content Include="Playground\Wisej-datasheet-10012020.pdf" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -392,7 +395,9 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Playground\Folder\" />
+  </ItemGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Syncfusion.DocIO.Base, Version=19.3450.0.43, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
@@ -445,11 +450,10 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\..\..\Documents\IceTeaGroup\WorkOnExtension\Premium\2.5\Wisej.Web.Ext.Syncfusion2\bin\Debug\Wisej.Web.Ext.Syncfusion2.dll</HintPath>
     </Reference>
-	  <Reference Include="Wisej.Framework, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-		  <SpecificVersion>False</SpecificVersion>
-		  <HintPath> C:\Users\BUSH\Documents\IceTeaGroup\Developpement\2.5\bin\Wisej.Framework.dll</HintPath>
-	  </Reference>
-	 
+    <Reference Include="Wisej.Framework, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath> C:\Users\BUSH\Documents\IceTeaGroup\Developpement\2.5\bin\Wisej.Framework.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Component\AccumulationChart.resx">

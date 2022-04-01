@@ -31,7 +31,7 @@ namespace Wisej.Web.Ext.Syncfusion2.Demo.Component
 
 		private void FileManager_Load(object sender, EventArgs e)
 		{
-			this.operation.RootFolder(Application.StartupPath);
+			this.operation.RootFolder(Path.Combine(Application.StartupPath, "Playground"));
 		}
 
 		private void fileManager1_WebRequest(object sender, WebRequestEventArgs e)
@@ -143,7 +143,9 @@ namespace Wisej.Web.Ext.Syncfusion2.Demo.Component
 				case "copy":
 					return ProcessErrorResponse("Cannot copy files in this sample."); // operation.ToCamelCase(operation.Copy(args.path, args.targetPath, args.names, args.renameFiles, args.targetData));
 				case "move":
-					return ProcessErrorResponse("Cannot move files in this sample."); // operation.ToCamelCase(operation.Move(args.path, args.targetPath, args.names, args.renameFiles, args.targetData));
+					//var renameFiles = JsonConvert.DeserializeObject<string[]>(JSON.Stringify(args.renameFiles));
+					//var targetData = JsonConvert.DeserializeObject<FileManagerDirectoryContent>(args.targetData.ToJSON());
+					return ProcessErrorResponse("Cannot copy files in this sample."); //return operation.ToCamelCase(operation.Move(args.path, args.targetPath, args.names, renameFiles, targetData));
 				case "rename":
 					return ProcessErrorResponse("Cannot rewrite file names in this sample."); //operation.ToCamelCase(operation.Rename(args.path, args.name, args.newName));
 			}
