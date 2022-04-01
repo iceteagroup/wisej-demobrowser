@@ -1035,9 +1035,9 @@
 			},
 		"TourPanel": {
 			"Features": {
-				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Extensions/Wisej.DemoBrowser.TinyMCE",
+				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Extensions/Wisej.DemoBrowser.TourPanel",
 				"assembly": "Features, Wisej.DemoBrowser.TourPanel.dll",
-				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/HtmlTagEnd.svg",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/ModalPopup.svg",
 				"docsUrl": "https://docs.wisej.com/extensions/extensions/tourpanel",
 				"description-en": "The <b>Wisej.Web.Ext.TourPanel</b> component can create a customized tour of an existing application highlighting specific targets and displaying HTML Text in steps."
 			}
