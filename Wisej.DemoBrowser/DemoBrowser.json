@@ -1029,11 +1029,19 @@
 					"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Extensions/Wisej.DemoBrowser.TinyMCE",
 					"assembly": "Features, Wisej.DemoBrowser.TinyMCE.dll",
 					"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/HtmlTagEnd.svg",
-					"docsUrl": "https://docs.wisej.com/extensions/extensions/geolocation/api/wisej.ext.geolocation.geolocation",
+					"docsUrl": "https://docs.wisej.com/extensions/extensions/tinymce",
 					"description-en": "The <b>Wisej.Web.Ext.TinyMCE</b> control (Tiny Moxiecode Content Editor) is a platform-independent, browser-based WYSIWYG editor control, written in JavaScript and released as open-source software under the LGPL by Ephox."
 				}
 			},
-			"TourPanel": {},
+		"TourPanel": {
+			"Features": {
+				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Extensions/Wisej.DemoBrowser.TinyMCE",
+				"assembly": "Features, Wisej.DemoBrowser.TourPanel.dll",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/HtmlTagEnd.svg",
+				"docsUrl": "https://docs.wisej.com/extensions/extensions/tourpanel",
+				"description-en": "The <b>Wisej.Web.Ext.TourPanel</b> component can create a customized tour of an existing application highlighting specific targets and displaying HTML Text in steps."
+			}
+		},
 			"Translation": {}
 		},
 		"Icon Packs": {

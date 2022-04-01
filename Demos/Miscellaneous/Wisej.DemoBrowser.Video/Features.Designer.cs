@@ -40,7 +40,7 @@
             this.videoDefault.Name = "videoDefault";
             this.videoDefault.ObjectFit = Wisej.Web.ObjectFit.Cover;
             this.videoDefault.Size = new System.Drawing.Size(735, 430);
-            this.videoDefault.SourceURL = "https://filesamples.com/samples/video/mp4/sample_1280x720_surfing_with_audio.mp4";
+            this.videoDefault.SourceURL = "Videos/sample.mp4";
             this.videoDefault.TabIndex = 0;
             this.videoDefault.Volume = 0D;
             this.videoDefault.VolumeChanged += new System.EventHandler(this.videoDefault_VolumeChanged);
