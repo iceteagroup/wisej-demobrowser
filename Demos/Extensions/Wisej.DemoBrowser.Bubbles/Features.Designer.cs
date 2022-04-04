@@ -43,24 +43,27 @@
             // 
             // cmbBubblesAlignment
             // 
+            this.cmbBubblesAlignment.Anchor = Wisej.Web.AnchorStyles.None;
             this.cmbBubblesAlignment.LabelText = "Alignment";
             this.cmbBubblesAlignment.Location = new System.Drawing.Point(324, 192);
             this.cmbBubblesAlignment.Name = "cmbBubblesAlignment";
-            this.cmbBubblesAlignment.Size = new System.Drawing.Size(272, 42);
+            this.cmbBubblesAlignment.Size = new System.Drawing.Size(272, 53);
             this.cmbBubblesAlignment.TabIndex = 1;
             this.cmbBubblesAlignment.SelectedIndexChanged += new System.EventHandler(this.cmbBubblesAlignment_SelectedIndexChanged);
             // 
             // cmbBubbleStyle
             // 
+            this.cmbBubbleStyle.Anchor = Wisej.Web.AnchorStyles.None;
             this.cmbBubbleStyle.LabelText = "Style";
             this.cmbBubbleStyle.Location = new System.Drawing.Point(324, 275);
             this.cmbBubbleStyle.Name = "cmbBubbleStyle";
-            this.cmbBubbleStyle.Size = new System.Drawing.Size(272, 42);
+            this.cmbBubbleStyle.Size = new System.Drawing.Size(272, 53);
             this.cmbBubbleStyle.TabIndex = 2;
             this.cmbBubbleStyle.SelectedIndexChanged += new System.EventHandler(this.cmbBubbleStyle_SelectedIndexChanged);
             // 
             // textBox
             // 
+            this.textBox.Anchor = Wisej.Web.AnchorStyles.None;
             this.textBox.Location = new System.Drawing.Point(662, 163);
             this.textBox.Multiline = true;
             this.textBox.Name = "textBox";
@@ -72,6 +75,7 @@
             // 
             // button
             // 
+            this.button.Anchor = Wisej.Web.AnchorStyles.None;
             this.button.Location = new System.Drawing.Point(812, 104);
             this.button.Name = "button";
             this.button.Size = new System.Drawing.Size(137, 37);
