@@ -23,7 +23,7 @@ namespace Wisej.DemoBrowser
 		/// <summary>
 		/// The current search results.
 		/// </summary>
-		private List<TreeNode> SearchResults = new List<TreeNode>();
+		private List<TreeNode> CategoryNodes = new List<TreeNode>();
 
 		/// <summary>
 		/// The default URL for the source code.
@@ -150,6 +150,7 @@ namespace Wisej.DemoBrowser
 						demoNode.UserData.Type = "Demo";
 					}
 				}
+				this.CategoryNodes.Add(categoryNode);
 				this.treeViewComponents.Nodes.Add(categoryNode);
 			}
 		}
@@ -346,25 +347,21 @@ namespace Wisej.DemoBrowser
 		/// <param name="e"></param>
 		private void buttonPrevious_Click(object sender, EventArgs e)
 		{
-			var node = this.treeViewComponents.SelectedNode;
-			var previous = GetPreviousDemo(node, false);
-			if (previous != null && previous != node)
-				this.treeViewComponents.SelectedNode = previous;
+			this.treeViewComponents.SelectedNode = GetPreviousDemo();
 		}
 
-		private TreeNode GetPreviousDemo(TreeNode treeNode, bool check)
+		private TreeNode GetPreviousDemo()
 		{
-			if (check && treeNode.UserData.Type != "Category")
-				return treeNode;
-
-			if (treeNode.PrevNode?.LastNode != null) // last node of previous node.
-				return treeNode.PrevNode.LastNode;
-			else if (treeNode.PrevNode != null) // last node.
-				return treeNode.PrevNode;
-			else if (treeNode.Parent == null) // parent node.
+			if (this.treeViewComponents.Nodes.Count == 0)
 				return null;
 
-			return GetPreviousDemo(treeNode.Parent, true);
+			var node = this.treeViewComponents.SelectedNode ?? this.treeViewComponents.Nodes[0];
+			var previousNode = node.PrevNode ?? node.Parent?.PrevNode?.LastNode ?? this.treeViewComponents.Nodes[0];
+
+			if (previousNode?.UserData.type == "Category")
+				previousNode = previousNode.LastNode;
+
+			return previousNode ?? this.treeViewComponents.Nodes.Last();
 		}
 
 		/// <summary>
@@ -374,48 +371,41 @@ namespace Wisej.DemoBrowser
 		/// <param name="e"></param>
 		private void buttonNext_Click(object sender, EventArgs e)
 		{
-			var node = this.treeViewComponents.SelectedNode;
-			//var next = node?.NextNode ?? node.Parent.NextNode ?? node.Parent.Parent.NextNode;
-			var next = GetNextDemo(node, false);
-			if (next != null && next != node)
-				this.treeViewComponents.SelectedNode = next;
+			this.treeViewComponents.SelectedNode = GetNextDemo();
 		}
 
-		private TreeNode GetNextDemo(TreeNode treeNode,bool check)
+		private TreeNode GetNextDemo()
 		{
-			if (check && treeNode.UserData.Type != "Category")
-				return treeNode;
+			if (this.treeViewComponents.Nodes.Count == 0)
+				return null;
 
-			if (treeNode.FirstNode != null)
-				return treeNode.FirstNode;
-			else if (treeNode.NextNode != null)
-				return treeNode.NextNode;
+			var node = this.treeViewComponents.SelectedNode ?? this.treeViewComponents.Nodes[0];
+			var nextNode = node.NextNode ?? node.Parent?.NextNode?.FirstNode;
+			if (nextNode?.UserData.type == "Category")
+				nextNode = nextNode.FirstNode;
 
-			return GetNextDemo(treeNode.Parent.NextNode, true);
+			return nextNode ?? this.treeViewComponents.Nodes[0] ?? null;
 		}
 
 		private void SearchForPhrase(string phrase)
 		{
-			this.SearchResults.Clear();
-			this.textBoxSearch.Tools["back"].Visible = false;
-			this.textBoxSearch.Tools["forward"].Visible = false;
+			this.treeViewComponents.Nodes.Clear();
 
-			// searching for a node?
-			if (string.IsNullOrEmpty(phrase))
-				return;
-			
-			foreach (var node in this.treeViewComponents.Nodes)
-				CheckNodeContains(node, phrase);
-
-			var searchResults = this.SearchResults.Count > 0;
-			if (searchResults)
+			var isSearch = !String.IsNullOrEmpty(phrase.Trim(' '));
+			if (isSearch)
 			{
-				this.textBoxSearch.Tools["back"].Visible = true;
-				this.textBoxSearch.Tools["forward"].Visible = true;
+				foreach (var node in this.CategoryNodes)
+					ProcessNodesContain(node.Nodes, phrase);
 
-				this.SelectedSearchItem = this.SearchResults.First();
-				this.treeViewComponents.SelectedNode = this.SearchResults.First();
+				this.treeViewComponents.SelectedNode = this.treeViewComponents.Nodes[0] ?? null;
 			}
+			else
+			{
+				this.treeViewComponents.Nodes.AddRange(this.CategoryNodes.ToArray());
+			}
+
+			this.textBoxSearch.Tools["back"].Visible = isSearch;
+			this.textBoxSearch.Tools["forward"].Visible = isSearch;
 		}
 		
 		/// <summary>
@@ -423,16 +413,11 @@ namespace Wisej.DemoBrowser
 		/// </summary>
 		/// <param name="node">The root node.</param>
 		/// <param name="phrase">The search phrase.</param>
-		private void CheckNodeContains(TreeNode node, string phrase)
+		private void ProcessNodesContain(TreeNodeCollection nodes, string phrase)
 		{
-			// check the children nodes.
-			foreach (var child in node.Nodes)
-				CheckNodeContains(child, phrase);
-
-			// check the current node.
-			if (node.Text.ToUpper().Contains(phrase.ToUpper())
-				&& (node.UserData.Type == "Control" || node.UserData.Type == "Demo"))
-				this.SearchResults.Add(node);
+			foreach (var node in nodes)
+				if (node.Text.ToUpper().Contains(phrase.ToUpper()))
+					this.treeViewComponents.Nodes.Add((TreeNode)node.Clone());
 		}
 
 		private void textBoxSearch_WidgetEvent(object sender, WidgetEventArgs e)
@@ -440,11 +425,11 @@ namespace Wisej.DemoBrowser
 			switch (e.Type)
 			{
 				case "previous":
-					SelectPreviousSearchItem();
+					this.treeViewComponents.SelectedNode = GetPreviousDemo();
 					break;
 
 				case "next":
-					SelectNextSearchItem();
+					this.treeViewComponents.SelectedNode = GetNextDemo();
 					break;
 
 				case "search":
@@ -463,47 +448,13 @@ namespace Wisej.DemoBrowser
 			switch (e.Tool.Name)
 			{
 				case "forward":
-					SelectNextSearchItem();
+					this.treeViewComponents.SelectedNode = GetNextDemo();
 					break;
 
 				case "back":
-					SelectPreviousSearchItem();
+					this.treeViewComponents.SelectedNode = GetPreviousDemo();
 					break;
 			}
-		}
-
-		/// <summary>
-		/// Selects the next search result.
-		/// </summary>
-		private void SelectNextSearchItem()
-		{
-			if (this.SearchResults.Count == 0)
-				return;
-
-			var nextIndex = this.SearchResults.IndexOf(this.SelectedSearchItem) + 1;
-			if (nextIndex < this.SearchResults.Count)
-				this.SelectedSearchItem = this.SearchResults[nextIndex];
-			else
-				this.SelectedSearchItem = this.SearchResults.First();
-
-			this.treeViewComponents.SelectedNode = this.SelectedSearchItem;
-		}
-
-		/// <summary>
-		/// Selects the previous search result.
-		/// </summary>
-		private void SelectPreviousSearchItem()
-		{
-			if (this.SearchResults.Count == 0)
-				return;
-
-			var nextIndex = this.SearchResults.IndexOf(this.SelectedSearchItem) - 1;
-			if (nextIndex >= 0)
-				this.SelectedSearchItem = this.SearchResults[nextIndex];
-			else
-				this.SelectedSearchItem = this.SearchResults.Last();
-
-			this.treeViewComponents.SelectedNode = this.SelectedSearchItem;
 		}
 
 		#endregion

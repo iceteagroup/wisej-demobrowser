@@ -776,7 +776,6 @@
 				"description-en": "The <b>Wisej.Web.Ext.CKEditor</b> control (formerly FCKeditor) is an open source WYSIWYG text editor designed to bring common word processor features directly to web pages, simplifying their content creation."
 			}
 		},
-		"ColumnFilter": {},
 		"CoolClock": {
 			"Features": {
 				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Extensions/Wisej.DemoBrowser.CoolClock",
@@ -1041,9 +1040,8 @@
 				"docsUrl": "https://docs.wisej.com/extensions/extensions/tourpanel",
 				"description-en": "The <b>Wisej.Web.Ext.TourPanel</b> component can create a customized tour of an existing application highlighting specific targets and displaying HTML Text in steps."
 			}
-		},
-			"Translation": {}
-		},
+		}
+	},
 		"Icon Packs": {
 			"Bootstrap Icons": {
 				"Features": {
