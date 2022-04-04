@@ -23,5 +23,10 @@ namespace Wisej.DemoBrowser.PdfViewer
 
             pdfViewer1.PdfStream = pdfStream;
         }
+
+        private void comboBoxViewerType_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            this.pdfViewer1.ViewerType = (PdfViewerType)Enum.Parse(typeof(PdfViewerType), this.comboBoxViewerType.SelectedText);
+        }
     }
 }

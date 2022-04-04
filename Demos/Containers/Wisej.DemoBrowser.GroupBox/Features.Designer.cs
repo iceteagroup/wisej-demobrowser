@@ -31,11 +31,14 @@
             this.grpCollapsible = new Wisej.Web.GroupBox();
             this.button3 = new Wisej.Web.Button();
             this.grpRegular = new Wisej.Web.GroupBox();
-            this.button2 = new Wisej.Web.Button();
             this.grpCheckBox = new Wisej.Web.GroupBox();
             this.button1 = new Wisej.Web.Button();
             this.groupBox1 = new Wisej.Web.GroupBox();
             this.button4 = new Wisej.Web.Button();
+            this.radioButton1 = new Wisej.Web.RadioButton();
+            this.radioButton2 = new Wisej.Web.RadioButton();
+            this.radioButton3 = new Wisej.Web.RadioButton();
+            this.radioButton4 = new Wisej.Web.RadioButton();
             this.grpCollapsible.SuspendLayout();
             this.grpRegular.SuspendLayout();
             this.grpCheckBox.SuspendLayout();
@@ -65,21 +68,15 @@
             // grpRegular
             // 
             this.grpRegular.Anchor = Wisej.Web.AnchorStyles.None;
-            this.grpRegular.Controls.Add(this.button2);
+            this.grpRegular.Controls.Add(this.radioButton4);
+            this.grpRegular.Controls.Add(this.radioButton3);
+            this.grpRegular.Controls.Add(this.radioButton2);
+            this.grpRegular.Controls.Add(this.radioButton1);
             this.grpRegular.Location = new System.Drawing.Point(439, 249);
             this.grpRegular.Name = "grpRegular";
             this.grpRegular.Size = new System.Drawing.Size(256, 195);
             this.grpRegular.TabIndex = 1;
             this.grpRegular.Text = "Regular GroupBox";
-            // 
-            // button2
-            // 
-            this.button2.Anchor = Wisej.Web.AnchorStyles.None;
-            this.button2.Location = new System.Drawing.Point(78, 84);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(100, 27);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "button2";
             // 
             // grpCheckBox
             // 
@@ -123,6 +120,42 @@
             this.button4.TabIndex = 1;
             this.button4.Text = "button4";
             // 
+            // radioButton1
+            // 
+            this.radioButton1.Location = new System.Drawing.Point(75, 36);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(84, 23);
+            this.radioButton1.TabIndex = 0;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "Arlington";
+            // 
+            // radioButton2
+            // 
+            this.radioButton2.Location = new System.Drawing.Point(75, 69);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(111, 23);
+            this.radioButton2.TabIndex = 1;
+            this.radioButton2.TabStop = true;
+            this.radioButton2.Text = "New York City";
+            // 
+            // radioButton3
+            // 
+            this.radioButton3.Location = new System.Drawing.Point(75, 102);
+            this.radioButton3.Name = "radioButton3";
+            this.radioButton3.Size = new System.Drawing.Size(87, 23);
+            this.radioButton3.TabIndex = 2;
+            this.radioButton3.TabStop = true;
+            this.radioButton3.Text = "Las Vegas";
+            // 
+            // radioButton4
+            // 
+            this.radioButton4.Location = new System.Drawing.Point(75, 135);
+            this.radioButton4.Name = "radioButton4";
+            this.radioButton4.Size = new System.Drawing.Size(77, 23);
+            this.radioButton4.TabIndex = 3;
+            this.radioButton4.TabStop = true;
+            this.radioButton4.Text = "Orlando";
+            // 
             // Features
             // 
             this.BackColor = System.Drawing.Color.White;
@@ -134,6 +167,7 @@
             this.Name = "Features";
             this.grpCollapsible.ResumeLayout(false);
             this.grpRegular.ResumeLayout(false);
+            this.grpRegular.PerformLayout();
             this.grpCheckBox.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -145,10 +179,13 @@
         private Web.GroupBox grpCollapsible;
         private Web.Button button3;
         private Web.GroupBox grpRegular;
-        private Web.Button button2;
         private Web.GroupBox grpCheckBox;
         private Web.Button button1;
         private Web.GroupBox groupBox1;
         private Web.Button button4;
+        private Web.RadioButton radioButton4;
+        private Web.RadioButton radioButton3;
+        private Web.RadioButton radioButton2;
+        private Web.RadioButton radioButton1;
     }
 }

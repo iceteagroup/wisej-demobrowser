@@ -804,14 +804,15 @@
 				"description-en": "The <b>Wisej.Web.Ext.FullCalendar</b> extension is an amazing full-size drag-n-drop event calendar. Supports multiple views, flexible events, custom styles, integrates with Google Calendars, and it’s completely integrated with Wisej."
 			}
 		},
-		"Geolocation": {
-			"Features": {
-				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Extensions/Wisej.DemoBrowser.Geolocation",
-				"assembly": "Features, Wisej.DemoBrowser.Geolocation.dll",
-				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/GeoLocation.svg",
-				"docsUrl": "https://docs.wisej.com/extensions/extensions/geolocation/api/wisej.ext.geolocation.geolocation",
-				"description-en": "The <b>Wisej.Ext.Geolocation</b> component represents an object able to programmatically obtain the position of the device."
-			}
+		// requires https.
+		//"Geolocation": {
+		//	"Features": {
+		//		"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Extensions/Wisej.DemoBrowser.Geolocation",
+		//		"assembly": "Features, Wisej.DemoBrowser.Geolocation.dll",
+		//		"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/GeoLocation.svg",
+		//		"docsUrl": "https://docs.wisej.com/extensions/extensions/geolocation/api/wisej.ext.geolocation.geolocation",
+		//		"description-en": "The <b>Wisej.Ext.Geolocation</b> component represents an object able to programmatically obtain the position of the device."
+		//	}
 		},
 		"GoogleMaps": {
 			"Features": {

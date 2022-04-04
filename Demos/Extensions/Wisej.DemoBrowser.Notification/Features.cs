@@ -20,25 +20,11 @@ namespace Wisej.DemoBrowser.Notification
 
 		private void buttonProgress_Click(object sender, EventArgs e)
 		{
-			this.buttonProgress.Enabled = false;
-
-			Application.StartTask(() =>
-			{
-				for (int i = 0; i<=4; i++)
-				{
-					Thread.Sleep(5000);
-					
-					this.notification1.Show("Progress Update", $"Progress: {i * 25}%", icon: "icon-info", true);
-					this.buttonProgress.Text = $"Progress: {i * 25}%";
-
-					Application.Update(this);
-				}
-
-				this.buttonProgress.Text = "Start Task";
-				this.buttonProgress.Enabled = true;
-				
-				Application.Update(this);
-			});
+			this.notification1.Show(this.textBoxTitle.Text, 
+				this.textBoxBody.Text, 
+				icon: "icon-info", 
+				this.checkBoxShowOnClick.Checked, 
+				requireInteraction: this.checkBoxRequireInteraction.Checked);
 		}
 	}
 }
