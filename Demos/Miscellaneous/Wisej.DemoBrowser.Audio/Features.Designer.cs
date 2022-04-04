@@ -37,7 +37,7 @@
             this.audioDefault.Location = new System.Drawing.Point(442, 210);
             this.audioDefault.Name = "audioDefault";
             this.audioDefault.Size = new System.Drawing.Size(538, 55);
-            this.audioDefault.SourceURL = "https://download.samplelib.com/mp3/sample-15s.mp3";
+            this.audioDefault.SourceURL = "Media/sample.mp3";
             this.audioDefault.TabIndex = 0;
             this.audioDefault.Volume = 0.5D;
             this.audioDefault.VolumeChanged += new System.EventHandler(this.audioDefault_VolumeChanged);
