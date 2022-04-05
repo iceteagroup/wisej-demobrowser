@@ -33,6 +33,8 @@
             this.linkDocs = new Wisej.Web.LinkLabel();
             this.imageList2 = new Wisej.Web.ImageList(this.components);
             this.groupBox1 = new Wisej.Web.GroupBox();
+            this.flowLayoutPanel1 = new Wisej.Web.FlowLayoutPanel();
+            this.spacer1 = new Wisej.Web.Spacer();
             this.buttonUpdate = new Wisej.Web.Button();
             this.linkDemo = new Wisej.Web.LinkLabel();
             this.linkAPI = new Wisej.Web.LinkLabel();
@@ -40,8 +42,6 @@
             this.label2 = new Wisej.Web.Label();
             this.label1 = new Wisej.Web.Label();
             this.panel = new Wisej.Web.Panel();
-            this.flowLayoutPanel1 = new Wisej.Web.FlowLayoutPanel();
-            this.spacer1 = new Wisej.Web.Spacer();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -68,6 +68,8 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
+            | Wisej.Web.AnchorStyles.Left)));
             this.groupBox1.Controls.Add(this.flowLayoutPanel1);
             this.groupBox1.Controls.Add(this.spacer1);
             this.groupBox1.Controls.Add(this.buttonUpdate);
@@ -77,6 +79,21 @@
             this.groupBox1.Size = new System.Drawing.Size(250, 560);
             this.groupBox1.TabIndex = 11;
             this.groupBox1.Text = "Properties";
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Dock = Wisej.Web.DockStyle.Fill;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 35);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 437);
+            this.flowLayoutPanel1.TabIndex = 1;
+            // 
+            // spacer1
+            // 
+            this.spacer1.Dock = Wisej.Web.DockStyle.Bottom;
+            this.spacer1.Location = new System.Drawing.Point(16, 472);
+            this.spacer1.Name = "spacer1";
+            this.spacer1.Size = new System.Drawing.Size(218, 20);
             // 
             // buttonUpdate
             // 
@@ -118,7 +135,7 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(51, 88);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(56, 22);
+            this.label3.Size = new System.Drawing.Size(57, 19);
             this.label3.TabIndex = 15;
             this.label3.Text = "DEMO:";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -128,7 +145,7 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(51, 58);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(33, 22);
+            this.label2.Size = new System.Drawing.Size(35, 19);
             this.label2.TabIndex = 14;
             this.label2.Text = "API:";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -138,7 +155,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(51, 28);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(52, 22);
+            this.label1.Size = new System.Drawing.Size(55, 19);
             this.label1.TabIndex = 13;
             this.label1.Text = "DOCS:";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -155,21 +172,6 @@
             this.panel.Size = new System.Drawing.Size(1091, 560);
             this.panel.TabIndex = 12;
             this.panel.TabStop = true;
-            // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.Dock = Wisej.Web.DockStyle.Fill;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 38);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 434);
-            this.flowLayoutPanel1.TabIndex = 1;
-            // 
-            // spacer1
-            // 
-            this.spacer1.Dock = Wisej.Web.DockStyle.Bottom;
-            this.spacer1.Location = new System.Drawing.Point(16, 472);
-            this.spacer1.Name = "spacer1";
-            this.spacer1.Size = new System.Drawing.Size(218, 20);
             // 
             // ViewBase
             // 

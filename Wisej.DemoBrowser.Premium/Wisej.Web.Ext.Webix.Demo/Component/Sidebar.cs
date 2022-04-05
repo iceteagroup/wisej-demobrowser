@@ -35,5 +35,13 @@ namespace Wisej.Web.Ext.Webix.Demo.Component
 				}
 			};
 		}
-	}
+
+        private void buttonUpdate_Click(object sender, EventArgs e)
+        {
+			this.sidebar1.Options.collapsed = this.checkBoxCollapsed.Checked;
+			this.sidebar1.Options.multipleOpen = this.checkBoxEnableMultiOpen.Checked;
+
+			this.sidebar1.Update();
+        }
+    }
 }

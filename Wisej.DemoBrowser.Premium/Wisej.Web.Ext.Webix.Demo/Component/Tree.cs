@@ -73,5 +73,17 @@ namespace Wisej.Web.Ext.Webix.Demo.Component
 				}
 			};
 		}
-	}
+
+        private void buttonUpdate_Click(object sender, EventArgs e)
+        {
+            if (this.checkBoxDragScroll.Checked)
+				this.tree1.Options.dragscroll = true;
+			this.tree1.Options.select = this.checkBoxEnableSelect.Checked;
+			this.tree1.Options.dragscroll = this.checkBoxDragScroll.Checked;
+			this.tree1.Options.multiselect = this.checkBoxMultiSelect.Checked;
+			this.tree1.Options.threeState = this.checkBoxEnableThreeState.Checked;
+
+			this.tree1.Update();
+        }
+    }
 }

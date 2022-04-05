@@ -83,5 +83,16 @@ namespace Wisej.Web.Ext.Webix.Demo.Component
                 }
             };
         }
+
+        private void buttonUpdate_Click(object sender, EventArgs e)
+        {
+            if(this.checkBoxEnableFull.Checked)
+                this.spreadsheet1.Options.toolbar ="full";
+            else
+                this.spreadsheet1.Options.toolbar = false;
+            this.spreadsheet1.Options.clipboard = this.checkBoxClipboard.Checked;
+
+            this.spreadsheet1.Update();
+        }
     }
 }

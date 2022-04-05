@@ -12,7 +12,9 @@ namespace Wisej.Web.Ext.Webix.Demo.Component
 
 		private void TimeLine_Load(object sender, EventArgs e)
 		{
-			timeLine1.Options.data = new dynamic[]
+			this.comboBoxLayout.SelectedIndex = 0;
+
+			this.timeLine1.Options.data = new dynamic[]
 			{
 				new
 				{
@@ -78,5 +80,12 @@ namespace Wisej.Web.Ext.Webix.Demo.Component
 				}
 			};
 		}
-	}
+
+        private void buttonUpdate_Click(object sender, EventArgs e)
+        {
+			this.timeLine1.Options.layout = this.comboBoxLayout.SelectedText;
+
+			this.timeLine1.Update();
+        }
+    }
 }

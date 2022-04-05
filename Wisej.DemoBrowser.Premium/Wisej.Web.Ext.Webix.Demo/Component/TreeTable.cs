@@ -11,11 +11,17 @@ namespace Wisej.Web.Ext.Webix.Demo.Component
 		public TreeTable()
 		{
 			InitializeComponent();
+
+			this.treeTable1.Instance.onSelectChange += new WidgetEventHandler(treeTable1_onSelectChange);
 		}
 
-		private void TreeTable_Load(object sender, EventArgs e)
+       
+        private void TreeTable_Load(object sender, EventArgs e)
 		{
+			this.comboBoxEditaction.SelectedIndex = 0;
+
 			treeTable1.Options.areaselect = true;
+			
 			treeTable1.Options.columns = new dynamic[]
 			{
 				new
@@ -107,5 +113,27 @@ namespace Wisej.Web.Ext.Webix.Demo.Component
 				}
 			};
 		}
-	}
+
+        private void checkBoxEditable_CheckedChanged(object sender, EventArgs e)
+        {
+			this.comboBoxEditaction.Enabled = checkBoxEditable.Checked;
+        }
+		private void treeTable1_onSelectChange(object sender, WidgetEventArgs e)
+		{
+			AlertBox.Show($"<b>{e.Type}</b><br/>{JSON.Stringify(e.Data)}",
+																   MessageBoxIcon.Information);
+
+			Application.Play(MessageBoxIcon.Information);
+		}
+
+
+		private void buttonUpdate_Click(object sender, EventArgs e)
+        {
+			this.treeTable1.Options.editable = this.checkBoxEditable.Checked;
+			this.treeTable1.Options.editaction = this.comboBoxEditaction.SelectedText;
+			this.treeTable1.Options.multiselect = this.checkBoxEnableMultiSelect.Checked;
+
+			this.treeTable1.Update();
+        }
+    }
 }

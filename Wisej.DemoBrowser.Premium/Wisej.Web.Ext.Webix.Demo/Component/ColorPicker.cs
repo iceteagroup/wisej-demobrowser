@@ -20,5 +20,14 @@ namespace Wisej.Web.Ext.Webix.Demo.Component
 
 			Application.Play(MessageBoxIcon.Information);
 		}
-	}
+
+        private void buttonUpdate_Click(object sender, EventArgs e)
+        {
+			this.colorPicker1.Options.clear = this.checkBoxClear.Checked;
+			this.colorPicker1.Options.icons = this.checkBoxShowIcon.Checked;
+			this.colorPicker1.Options.stringResult = this.checkBoxStringResult.Checked;
+
+			this.colorPicker1.Update();
+        }
+    }
 }

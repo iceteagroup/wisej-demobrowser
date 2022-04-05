@@ -178,5 +178,13 @@ namespace Wisej.Web.Ext.Webix.Demo.Component
 				}
 			};
 		}
-	}
+
+        private void buttonUpdate_Click(object sender, EventArgs e)
+        {
+			this.groupList1.Options.select = this.checkBoxEnableSelect.Checked;
+			this.groupList1.Options.drag = this.checkBoxEnableDragAndDrop.Checked;
+
+			this.groupList1.Update();
+        }
+    }
 }

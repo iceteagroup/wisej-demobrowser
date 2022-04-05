@@ -17,10 +17,20 @@ namespace Wisej.Web.Ext.Webix.Demo.Component
 		{
 			InitializeComponent();
 		}
+        protected override void OnLoad(EventArgs e)
+        {
+            base.OnLoad(e);
 
-		private void chat1_WebRequest(object sender, WebRequestEventArgs e)
-		{
-			
-		}
-	}
+			this.comboBoxChatType.SelectedIndex = 0;
+        }
+        private void buttonUpdate_Click(object sender, EventArgs e)
+        {
+
+			this.chat1.Options.chatType = this.comboBoxChatType.Text;
+			this.chat1.Options.files = this.checkBoxAllowFile.Checked;
+			this.chat1.Options.compact = this.checkBoxCompact.Checked;
+
+			this.chat1.Update();
+        }
+    }
 }

@@ -20,5 +20,12 @@ namespace Wisej.Web.Ext.Webix.Demo.Component
 
 			Application.Play(MessageBoxIcon.Information);
 		}
-	}
+
+        private void buttonUpdate_Click(object sender, EventArgs e)
+        {
+			this.colorSelect1.Options.borderless = this.checkBoxBorderless.Checked;
+
+			this.colorSelect1.Update();
+        }
+    }
 }

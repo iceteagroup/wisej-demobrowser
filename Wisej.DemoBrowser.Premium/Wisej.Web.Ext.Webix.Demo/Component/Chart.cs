@@ -57,5 +57,12 @@ namespace Wisej.Web.Ext.Webix.Demo.Component
 
 			Application.Play(MessageBoxIcon.Information);
 		}
-	}
+
+        private void buttonUpdate_Click(object sender, EventArgs e)
+        {
+			this.chart1.Options.type = this.comboBoxChartType.SelectedText;
+
+			this.chart1.Update();
+        }
+    }
 }

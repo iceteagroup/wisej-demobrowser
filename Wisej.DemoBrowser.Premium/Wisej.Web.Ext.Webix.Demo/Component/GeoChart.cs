@@ -48,5 +48,12 @@ namespace Wisej.Web.Ext.Webix.Demo.Component
 				},
 			};
 		}
+
+        private void buttonUpdate_Click(object sender, EventArgs e)
+        {
+			this.geoChart1.Options.removeMissed = this.checkBoxRemoveMissed.Checked;
+
+			this.geoChart1.Update();
+		}
     }
 }

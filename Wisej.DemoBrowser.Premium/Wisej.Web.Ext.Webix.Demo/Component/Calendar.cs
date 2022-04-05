@@ -20,5 +20,26 @@ namespace Wisej.Web.Ext.Webix.Demo.Component
 
 			Application.Play(MessageBoxIcon.Information);
 		}
-	}
+
+        private void buttonUpdate_Click(object sender, EventArgs e)
+        {
+			if (this.dateTimePickerMinDate.Value >= this.dateTimePickerMaxDate.Value)
+			{
+				AlertBox.Show($"Max date must be greater than min date ",
+								MessageBoxIcon.Error);
+
+				Application.Play(MessageBoxIcon.Error);
+				return;
+			}
+
+			this.calendar1.Options.minDate = this.dateTimePickerMinDate.Value;
+			this.calendar1.Options.maxDate = this.dateTimePickerMaxDate.Value;
+			this.calendar1.Options.timepicker = this.checkBoxTimePicker.Checked;
+			this.calendar1.Options.weekHeader = this.checkBoxWeekHeader.Checked;
+			this.calendar1.Options.weekNumber = this.checkBoxWeekNumber.Checked;
+			this.calendar1.Options.skipEmptyWeeks = this.checkBoxSkipEmptyWeeks.Checked;
+
+			this.calendar1.Update();
+        }
+    }
 }

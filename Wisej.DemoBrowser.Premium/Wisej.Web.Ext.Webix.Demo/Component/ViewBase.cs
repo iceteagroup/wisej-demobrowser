@@ -14,5 +14,6 @@ namespace Wisej.Web.Ext.Webix.Demo.Component
         {
 			Application.Navigate(e.Link, "_blank");
         }
+       
     }
 }

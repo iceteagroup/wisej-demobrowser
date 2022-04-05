@@ -14,5 +14,19 @@ namespace Wisej.Web.Ext.Webix.Demo.Component
         {
             InitializeComponent();
         }
+
+        protected override void OnLoad(EventArgs e)
+        {
+            base.OnLoad(e);
+
+            this.comboBoxMode.SelectedIndex = 0;
+        }
+
+        private void buttonUpdate_Click(object sender, EventArgs e)
+        {
+            this.documentManager1.Options.mode = this.comboBoxMode.SelectedText;
+
+            this.documentManager1.Update();
+        }
     }
 }

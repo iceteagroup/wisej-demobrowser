@@ -33,6 +33,14 @@
             this.panel.SuspendLayout();
             this.SuspendLayout();
             // 
+            // linkDemo
+            // 
+            this.linkDemo.Text = "https://snippet.webix.com/gallery/usermanager";
+            // 
+            // linkAPI
+            // 
+            this.linkAPI.Text = "https://docs.webix.com/api__refs__ui.usermanager.html";
+            // 
             // panel
             // 
             this.panel.Controls.Add(this.userManager1);

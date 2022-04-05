@@ -34,6 +34,14 @@
             this.panel.SuspendLayout();
             this.SuspendLayout();
             // 
+            // linkDemo
+            // 
+            this.linkDemo.Text = "https://snippet.webix.com/gallery/query";
+            // 
+            // linkAPI
+            // 
+            this.linkAPI.Text = "https://docs.webix.com/api__refs__ui.query.html";
+            // 
             // panel
             // 
             this.panel.Controls.Add(this.query1);

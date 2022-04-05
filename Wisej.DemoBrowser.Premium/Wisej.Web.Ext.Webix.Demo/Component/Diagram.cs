@@ -186,5 +186,15 @@ namespace Wisej.Web.Ext.Webix.Demo.Component
 		{
 			InitializeComponent();
 		}
-	}
+
+        private void buttonUpdate_Click(object sender, EventArgs e)
+        {
+
+			this.diagram1.Options.zoom = this.numericUpDownZoomLevel.Value;
+			this.diagram1.Options.scroll = this.checkBoxAllowScroll.Checked;
+			this.diagram1.Options.select = this.checkBoxAllowSelect.Checked;
+
+			this.diagram1.Update();
+        }
+    }
 }

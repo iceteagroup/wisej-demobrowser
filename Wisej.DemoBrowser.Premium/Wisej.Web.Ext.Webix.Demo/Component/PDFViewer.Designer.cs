@@ -33,6 +33,14 @@
             this.panel.SuspendLayout();
             this.SuspendLayout();
             // 
+            // linkDemo
+            // 
+            this.linkDemo.Text = "https://snippet.webix.com/gallery?search=#pdfviewer";
+            // 
+            // linkAPI
+            // 
+            this.linkAPI.Text = "https://docs.webix.com/api__refs__ui.pdfviewer.html";
+            // 
             // panel
             // 
             this.panel.Controls.Add(this.pdfViewer1);

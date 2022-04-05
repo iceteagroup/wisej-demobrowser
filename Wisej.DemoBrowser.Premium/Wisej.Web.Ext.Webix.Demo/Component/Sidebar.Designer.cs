@@ -29,13 +29,33 @@
 		private void InitializeComponent()
 		{
             this.sidebar1 = new Wisej.Web.Ext.Webix.Sidebar();
+            this.checkBoxCollapsed = new Wisej.Web.CheckBox();
+            this.checkBoxEnableMultiOpen = new Wisej.Web.CheckBox();
             this.groupBox1.SuspendLayout();
             this.panel.SuspendLayout();
+            this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // buttonUpdate
+            // 
+            this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
+            // 
+            // linkDemo
+            // 
+            this.linkDemo.Text = "https://snippet.webix.com/gallery?search=#sidebar";
+            // 
+            // linkAPI
+            // 
+            this.linkAPI.Text = "https://docs.webix.com/api__refs__ui.sidebar.html";
             // 
             // panel
             // 
             this.panel.Controls.Add(this.sidebar1);
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Controls.Add(this.checkBoxCollapsed);
+            this.flowLayoutPanel1.Controls.Add(this.checkBoxEnableMultiOpen);
             // 
             // sidebar1
             // 
@@ -46,12 +66,39 @@
             this.sidebar1.TabIndex = 0;
             this.sidebar1.Text = "sidebar1";
             // 
+            // checkBoxCollapsed
+            // 
+            this.checkBoxCollapsed.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Left) 
+            | Wisej.Web.AnchorStyles.Right)));
+            this.checkBoxCollapsed.Appearance = Wisej.Web.Appearance.Switch;
+            this.checkBoxCollapsed.AutoSize = false;
+            this.checkBoxCollapsed.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.checkBoxCollapsed.Location = new System.Drawing.Point(3, 3);
+            this.checkBoxCollapsed.Name = "checkBoxCollapsed";
+            this.checkBoxCollapsed.Size = new System.Drawing.Size(212, 26);
+            this.checkBoxCollapsed.TabIndex = 1;
+            this.checkBoxCollapsed.Text = "Collapsed";
+            // 
+            // checkBoxEnableMultiOpen
+            // 
+            this.checkBoxEnableMultiOpen.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Left) 
+            | Wisej.Web.AnchorStyles.Right)));
+            this.checkBoxEnableMultiOpen.Appearance = Wisej.Web.Appearance.Switch;
+            this.checkBoxEnableMultiOpen.AutoSize = false;
+            this.checkBoxEnableMultiOpen.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.checkBoxEnableMultiOpen.Location = new System.Drawing.Point(3, 35);
+            this.checkBoxEnableMultiOpen.Name = "checkBoxEnableMultiOpen";
+            this.checkBoxEnableMultiOpen.Size = new System.Drawing.Size(212, 26);
+            this.checkBoxEnableMultiOpen.TabIndex = 2;
+            this.checkBoxEnableMultiOpen.Text = "Enable multi open";
+            // 
             // Sidebar
             // 
             this.Name = "Sidebar";
             this.Load += new System.EventHandler(this.Sidebar_Load);
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
+            this.flowLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -60,5 +107,7 @@
 		#endregion
 
 		private Webix.Sidebar sidebar1;
-	}
+        private CheckBox checkBoxCollapsed;
+        private CheckBox checkBoxEnableMultiOpen;
+    }
 }

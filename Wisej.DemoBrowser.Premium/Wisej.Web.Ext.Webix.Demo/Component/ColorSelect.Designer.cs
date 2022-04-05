@@ -29,13 +29,31 @@
 		private void InitializeComponent()
 		{
             this.colorSelect1 = new Wisej.Web.Ext.Webix.ColorSelect();
+            this.checkBoxBorderless = new Wisej.Web.CheckBox();
             this.groupBox1.SuspendLayout();
             this.panel.SuspendLayout();
+            this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // buttonUpdate
+            // 
+            this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
+            // 
+            // linkDemo
+            // 
+            this.linkDemo.Text = "https://snippet.webix.com/gallery?search=#colorselector";
+            // 
+            // linkAPI
+            // 
+            this.linkAPI.Text = "https://docs.webix.com/api__refs__ui.colorselect.html";
             // 
             // panel
             // 
             this.panel.Controls.Add(this.colorSelect1);
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Controls.Add(this.checkBoxBorderless);
             // 
             // colorSelect1
             // 
@@ -46,11 +64,25 @@
             this.colorSelect1.TabIndex = 0;
             this.colorSelect1.Text = "colorSelect1";
             // 
+            // checkBoxBorderless
+            // 
+            this.checkBoxBorderless.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Left) 
+            | Wisej.Web.AnchorStyles.Right)));
+            this.checkBoxBorderless.Appearance = Wisej.Web.Appearance.Switch;
+            this.checkBoxBorderless.AutoSize = false;
+            this.checkBoxBorderless.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.checkBoxBorderless.Location = new System.Drawing.Point(3, 3);
+            this.checkBoxBorderless.Name = "checkBoxBorderless";
+            this.checkBoxBorderless.Size = new System.Drawing.Size(212, 26);
+            this.checkBoxBorderless.TabIndex = 0;
+            this.checkBoxBorderless.Text = "Borderless";
+            // 
             // ColorSelect
             // 
             this.Name = "ColorSelect";
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
+            this.flowLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -59,5 +91,6 @@
 		#endregion
 
 		private Webix.ColorSelect colorSelect1;
-	}
+        private CheckBox checkBoxBorderless;
+    }
 }

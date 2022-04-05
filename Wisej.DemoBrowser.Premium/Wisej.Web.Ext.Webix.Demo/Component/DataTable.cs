@@ -46,5 +46,15 @@ namespace Wisej.Web.Ext.Webix.Demo.Component
 				}
 			};
 		}
+
+        private void buttonUpdate_Click(object sender, EventArgs e)
+        {
+			this.dataTable1.Options.sort = this.checkBoxEnableSort.Checked;
+			this.dataTable1.Options.drag = this.checkBoxEnableDrag.Checked;
+			this.dataTable1.Options.editable = this.checkBoxEditable.Checked;
+			this.dataTable1.Options.header = this.checkBoxEnableHeader.Checked;
+
+			this.dataTable1.Update();
+        }
     }
 }

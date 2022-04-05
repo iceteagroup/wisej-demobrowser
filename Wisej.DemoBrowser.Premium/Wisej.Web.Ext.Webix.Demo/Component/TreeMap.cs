@@ -186,5 +186,13 @@ namespace Wisej.Web.Ext.Webix.Demo.Component
 				}
 			};
 		}
-	}
+
+        private void buttonUpdate_Click(object sender, EventArgs e)
+        {
+			this.treeMap1.Options.select = this.checkBoxEnableSelect.Checked;
+			this.treeMap1.Options.multiselect = this.checkBoxEnableMultiSelect.Checked;
+
+			this.treeMap1.Update();
+        }
+    }
 }
