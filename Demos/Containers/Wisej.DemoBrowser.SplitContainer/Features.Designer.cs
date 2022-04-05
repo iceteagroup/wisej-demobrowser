@@ -28,12 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
+            Wisej.Web.TreeNode treeNode1 = new Wisej.Web.TreeNode();
+            Wisej.Web.TreeNode treeNode2 = new Wisej.Web.TreeNode();
+            Wisej.Web.TreeNode treeNode3 = new Wisej.Web.TreeNode();
+            Wisej.Web.TreeNode treeNode4 = new Wisej.Web.TreeNode();
+            Wisej.Web.TreeNode treeNode5 = new Wisej.Web.TreeNode();
             this.splitContainer1 = new Wisej.Web.SplitContainer();
-            this.textBox1 = new Wisej.Web.TextBox();
-            this.monthCalendar1 = new Wisej.Web.MonthCalendar();
+            this.treeViewControls = new Wisej.Web.TreeView();
+            this.label1 = new Wisej.Web.Label();
             this.splitContainer2 = new Wisej.Web.SplitContainer();
-            this.textBox2 = new Wisej.Web.TextBox();
-            this.monthCalendar2 = new Wisej.Web.MonthCalendar();
+            this.panelDesigner = new Wisej.Web.Panel();
+            this.label2 = new Wisej.Web.Label();
+            this.textBoxOutput = new Wisej.Web.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -46,90 +52,132 @@
             // 
             // splitContainer1
             // 
-            this.splitContainer1.Anchor = Wisej.Web.AnchorStyles.None;
-            this.splitContainer1.Location = new System.Drawing.Point(68, 28);
+            this.splitContainer1.BackColor = System.Drawing.Color.White;
+            this.splitContainer1.BorderStyle = Wisej.Web.BorderStyle.None;
+            this.splitContainer1.Dock = Wisej.Web.DockStyle.Fill;
+            this.splitContainer1.Location = new System.Drawing.Point(0, 0);
             this.splitContainer1.Name = "splitContainer1";
             // 
             // splitContainer1.Panel1
             // 
-            this.splitContainer1.Panel1.Controls.Add(this.textBox1);
+            this.splitContainer1.Panel1.Controls.Add(this.treeViewControls);
+            this.splitContainer1.Panel1.Controls.Add(this.label1);
+            this.splitContainer1.Panel1.Padding = new Wisej.Web.Padding(8);
             this.splitContainer1.Panel1.TabStop = true;
             // 
             // splitContainer1.Panel2
             // 
-            this.splitContainer1.Panel2.Controls.Add(this.monthCalendar1);
+            this.splitContainer1.Panel2.Controls.Add(this.splitContainer2);
             this.splitContainer1.Panel2.TabStop = true;
-            this.splitContainer1.Size = new System.Drawing.Size(633, 418);
-            this.splitContainer1.SplitterDistance = 194;
+            this.splitContainer1.Size = new System.Drawing.Size(1422, 474);
+            this.splitContainer1.SplitterDistance = 189;
             this.splitContainer1.TabIndex = 1;
             // 
-            // textBox1
+            // treeViewControls
             // 
-            this.textBox1.Dock = Wisej.Web.DockStyle.Fill;
-            this.textBox1.LabelText = "Vertical SplitContainer";
-            this.textBox1.Location = new System.Drawing.Point(0, 0);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(194, 418);
-            this.textBox1.TabIndex = 0;
+            this.treeViewControls.AllowDrag = true;
+            this.treeViewControls.Dock = Wisej.Web.DockStyle.Fill;
+            this.treeViewControls.Location = new System.Drawing.Point(8, 34);
+            this.treeViewControls.MinimumSize = new System.Drawing.Size(173, 0);
+            this.treeViewControls.Name = "treeViewControls";
+            treeNode1.Name = "Node0";
+            treeNode1.Text = "Button";
+            treeNode2.Name = "Node4";
+            treeNode2.Text = "CheckBox";
+            treeNode3.Name = "Node1";
+            treeNode3.Text = "DateTimePicker";
+            treeNode4.Name = "Node2";
+            treeNode4.Text = "Label";
+            treeNode5.Name = "Node3";
+            treeNode5.Text = "Line";
+            this.treeViewControls.Nodes.AddRange(new Wisej.Web.TreeNode[] {
+            treeNode1,
+            treeNode2,
+            treeNode3,
+            treeNode4,
+            treeNode5});
+            this.treeViewControls.Size = new System.Drawing.Size(173, 432);
+            this.treeViewControls.TabIndex = 1;
+            this.treeViewControls.NodeDrag += new Wisej.Web.TreeViewNodeDragEventHandler(this.treeViewControls_NodeDrag);
             // 
-            // monthCalendar1
+            // label1
             // 
-            this.monthCalendar1.AutoSize = true;
-            this.monthCalendar1.Dock = Wisej.Web.DockStyle.Fill;
-            this.monthCalendar1.Location = new System.Drawing.Point(0, 0);
-            this.monthCalendar1.Name = "monthCalendar1";
-            this.monthCalendar1.Size = new System.Drawing.Size(433, 418);
-            this.monthCalendar1.TabIndex = 0;
+            this.label1.AutoSize = true;
+            this.label1.Dock = Wisej.Web.DockStyle.Top;
+            this.label1.Location = new System.Drawing.Point(8, 8);
+            this.label1.Name = "label1";
+            this.label1.Padding = new Wisej.Web.Padding(8, 0, 0, 8);
+            this.label1.Size = new System.Drawing.Size(173, 26);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Controls";
             // 
             // splitContainer2
             // 
-            this.splitContainer2.Anchor = Wisej.Web.AnchorStyles.None;
-            this.splitContainer2.Location = new System.Drawing.Point(722, 28);
+            this.splitContainer2.BorderStyle = Wisej.Web.BorderStyle.None;
+            this.splitContainer2.Dock = Wisej.Web.DockStyle.Fill;
+            this.splitContainer2.Location = new System.Drawing.Point(0, 0);
             this.splitContainer2.Name = "splitContainer2";
             this.splitContainer2.Orientation = Wisej.Web.Orientation.Horizontal;
             // 
             // splitContainer2.Panel1
             // 
-            this.splitContainer2.Panel1.Controls.Add(this.textBox2);
+            this.splitContainer2.Panel1.Controls.Add(this.panelDesigner);
+            this.splitContainer2.Panel1.Controls.Add(this.label2);
+            this.splitContainer2.Panel1.Padding = new Wisej.Web.Padding(8);
             this.splitContainer2.Panel1.TabStop = true;
             // 
             // splitContainer2.Panel2
             // 
-            this.splitContainer2.Panel2.Controls.Add(this.monthCalendar2);
+            this.splitContainer2.Panel2.Controls.Add(this.textBoxOutput);
+            this.splitContainer2.Panel2.Padding = new Wisej.Web.Padding(8);
             this.splitContainer2.Panel2.TabStop = true;
-            this.splitContainer2.Size = new System.Drawing.Size(633, 418);
-            this.splitContainer2.SplitterDistance = 112;
+            this.splitContainer2.Size = new System.Drawing.Size(1224, 474);
+            this.splitContainer2.SplitterDistance = 329;
             this.splitContainer2.TabIndex = 2;
             // 
-            // textBox2
+            // panelDesigner
             // 
-            this.textBox2.Dock = Wisej.Web.DockStyle.Fill;
-            this.textBox2.LabelText = "Horizontal SplitContainer";
-            this.textBox2.Location = new System.Drawing.Point(0, 0);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(633, 112);
-            this.textBox2.TabIndex = 1;
+            this.panelDesigner.AllowDrop = true;
+            this.panelDesigner.BackColor = System.Drawing.Color.White;
+            this.panelDesigner.BorderStyle = Wisej.Web.BorderStyle.Solid;
+            this.panelDesigner.Dock = Wisej.Web.DockStyle.Fill;
+            this.panelDesigner.Location = new System.Drawing.Point(8, 34);
+            this.panelDesigner.Name = "panelDesigner";
+            this.panelDesigner.Size = new System.Drawing.Size(1208, 287);
+            this.panelDesigner.TabIndex = 0;
+            this.panelDesigner.DragDrop += new Wisej.Web.DragEventHandler(this.panelDesigner_DragDrop);
+            this.panelDesigner.DragEnter += new Wisej.Web.DragEventHandler(this.panelDesigner_DragEnter);
             // 
-            // monthCalendar2
+            // label2
             // 
-            this.monthCalendar2.AutoSize = true;
-            this.monthCalendar2.Dock = Wisej.Web.DockStyle.Fill;
-            this.monthCalendar2.Location = new System.Drawing.Point(0, 0);
-            this.monthCalendar2.Name = "monthCalendar2";
-            this.monthCalendar2.Size = new System.Drawing.Size(631, 298);
-            this.monthCalendar2.TabIndex = 1;
+            this.label2.AutoSize = true;
+            this.label2.Dock = Wisej.Web.DockStyle.Top;
+            this.label2.Location = new System.Drawing.Point(8, 8);
+            this.label2.Name = "label2";
+            this.label2.Padding = new Wisej.Web.Padding(0, 0, 0, 8);
+            this.label2.Size = new System.Drawing.Size(1208, 26);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Designer";
+            // 
+            // textBoxOutput
+            // 
+            this.textBoxOutput.Dock = Wisej.Web.DockStyle.Fill;
+            this.textBoxOutput.Label.Padding = new Wisej.Web.Padding(0, 0, 0, 8);
+            this.textBoxOutput.LabelText = "Output";
+            this.textBoxOutput.Location = new System.Drawing.Point(8, 8);
+            this.textBoxOutput.Multiline = true;
+            this.textBoxOutput.Name = "textBoxOutput";
+            this.textBoxOutput.Size = new System.Drawing.Size(1208, 120);
+            this.textBoxOutput.TabIndex = 2;
             // 
             // Features
             // 
-            this.Controls.Add(this.splitContainer2);
             this.Controls.Add(this.splitContainer1);
+            this.MinimumSize = new System.Drawing.Size(1422, 474);
             this.Name = "Features";
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel1.PerformLayout();
             this.splitContainer1.Panel2.ResumeLayout(false);
-            this.splitContainer1.Panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
             this.splitContainer2.Panel1.ResumeLayout(false);
@@ -145,9 +193,10 @@
         #endregion
         private Web.SplitContainer splitContainer1;
         private Web.SplitContainer splitContainer2;
-        private Web.TextBox textBox1;
-        private Web.MonthCalendar monthCalendar1;
-        private Web.TextBox textBox2;
-        private Web.MonthCalendar monthCalendar2;
+        private Web.TreeView treeViewControls;
+        private Web.Label label1;
+        private Web.Panel panelDesigner;
+        private Web.Label label2;
+        private Web.TextBox textBoxOutput;
     }
 }
