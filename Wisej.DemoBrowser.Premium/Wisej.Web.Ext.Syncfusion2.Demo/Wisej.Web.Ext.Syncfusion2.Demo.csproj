@@ -445,11 +445,6 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\..\..\Documents\IceTeaGroup\WorkOnExtension\Premium\2.5\Wisej.Web.Ext.Syncfusion2\bin\Debug\Wisej.Web.Ext.Syncfusion2.dll</HintPath>
     </Reference>
-	  <Reference Include="Wisej.Framework, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-		  <SpecificVersion>False</SpecificVersion>
-		  <HintPath> C:\Users\BUSH\Documents\IceTeaGroup\Developpement\2.5\bin\Wisej.Framework.dll</HintPath>
-	  </Reference>
-	 
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Component\AccumulationChart.resx">

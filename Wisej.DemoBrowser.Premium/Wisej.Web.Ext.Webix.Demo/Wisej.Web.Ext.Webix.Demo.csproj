@@ -23,7 +23,7 @@
     </NuGetPackageImportStamp>
     <TargetFrameworkProfile />
     <ProjectGuid>{15AF76F2-FF14-49D2-BB7D-94B4AE2E7957}</ProjectGuid>
-    <Use64BitIISExpress />
+    <Use64BitIISExpress>false</Use64BitIISExpress>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -345,7 +345,7 @@
     <Reference Include="System.Web" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="Wisej.Web.Ext.Webix">
-      <HintPath>..\..\..\..\..\..\Wisej\Extensions\Premium\2.5\bin\Wisej.Web.Ext.Webix.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\Documents\IceTeaGroup\WorkOnExtension\Premium\2.5\Wisej.Web.Ext.Webix\bin\Debug\Wisej.Web.Ext.Webix.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
