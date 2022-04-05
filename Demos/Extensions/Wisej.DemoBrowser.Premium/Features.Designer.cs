@@ -44,6 +44,9 @@
             this.panelIgnite = new Wisej.Web.Panel();
             this.pictureBox5 = new Wisej.Web.PictureBox();
             this.buttonIgniteUI = new Wisej.Web.Button();
+            this.panelWebix = new Wisej.Web.Panel();
+            this.pictureBox6 = new Wisej.Web.PictureBox();
+            this.button1 = new Wisej.Web.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.flowLayoutPanel1.SuspendLayout();
             this.panelKendo.SuspendLayout();
@@ -55,6 +58,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.panelIgnite.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            this.panelWebix.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.SuspendLayout();
             // 
             // buttonKendo
@@ -90,6 +95,7 @@
             this.flowLayoutPanel1.Controls.Add(this.panelEJ1);
             this.flowLayoutPanel1.Controls.Add(this.panelEJ2);
             this.flowLayoutPanel1.Controls.Add(this.panelIgnite);
+            this.flowLayoutPanel1.Controls.Add(this.panelWebix);
             this.flowLayoutPanel1.Dock = Wisej.Web.DockStyle.Fill;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 16);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
@@ -277,6 +283,47 @@
             this.buttonIgniteUI.Text = "Infragistics IgniteUI";
             this.buttonIgniteUI.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
+            // panelWebix
+            // 
+            this.panelWebix.BackColor = System.Drawing.Color.White;
+            this.panelWebix.Controls.Add(this.pictureBox6);
+            this.panelWebix.Controls.Add(this.button1);
+            this.panelWebix.CssStyle = "border-radius: 0px;\r\nborder-right: 1px solid #EDEDEE;\r\nborder-bottom: 1px solid #" +
+    "EDEDEE;";
+            this.panelWebix.Cursor = Wisej.Web.Cursors.Hand;
+            this.panelWebix.Location = new System.Drawing.Point(840, 176);
+            this.panelWebix.Margin = new Wisej.Web.Padding(8);
+            this.panelWebix.Name = "panelWebix";
+            this.panelWebix.Size = new System.Drawing.Size(400, 152);
+            this.panelWebix.TabIndex = 8;
+            this.panelWebix.TabStop = true;
+            this.panelWebix.Click += new System.EventHandler(this.panelWebix_Click);
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Anchor = Wisej.Web.AnchorStyles.None;
+            this.pictureBox6.Anonymous = true;
+            this.pictureBox6.ImageSource = "resource.wx/Wisej.DemoBrowser.Premium/Images/webix.png";
+            this.pictureBox6.Location = new System.Drawing.Point(24, 26);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(100, 100);
+            this.pictureBox6.SizeMode = Wisej.Web.PictureBoxSizeMode.Zoom;
+            // 
+            // button1
+            // 
+            this.button1.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Bottom | Wisej.Web.AnchorStyles.Left) 
+            | Wisej.Web.AnchorStyles.Right)));
+            this.button1.Anonymous = true;
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.Font = new System.Drawing.Font("@condensedWindowTitle", 35F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.button1.ForeColor = System.Drawing.Color.FromName("@demoPanelText-demo");
+            this.button1.Location = new System.Drawing.Point(130, 26);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(254, 100);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "Webix";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // Features
             // 
             this.Controls.Add(this.flowLayoutPanel1);
@@ -293,6 +340,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.panelIgnite.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            this.panelWebix.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.ResumeLayout(false);
 
 		}
@@ -315,5 +364,8 @@
 		private Web.Button buttonEJ2;
 		private Web.PictureBox pictureBox5;
 		private Web.Button buttonIgniteUI;
-	}
+        private Web.Panel panelWebix;
+        private Web.PictureBox pictureBox6;
+        private Web.Button button1;
+    }
 }

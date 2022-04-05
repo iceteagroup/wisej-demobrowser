@@ -1,5 +1,6 @@
 ﻿using System;
 using Wisej.DemoBrowser.Common;
+using Wisej.Web;
 
 namespace Wisej.DemoBrowser.jSequence
 {
@@ -26,5 +27,10 @@ namespace Wisej.DemoBrowser.jSequence
 		{
 			sequence.Theme = cmbThemes.Text;
 		}
-	}
+
+        private void sequence_ElementClick(object sender, Web.Ext.jSequence.ElementClickEventArgs e)
+        {
+			AlertBox.Show($"Clicked {e.Element}");
+        }
+    }
 }

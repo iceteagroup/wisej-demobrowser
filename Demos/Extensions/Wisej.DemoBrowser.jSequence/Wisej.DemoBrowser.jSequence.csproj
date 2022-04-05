@@ -38,31 +38,13 @@
     <Reference Include="System.Windows.Forms" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Comments.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Comments.Designer.cs">
-      <DependentUpon>Comments.cs</DependentUpon>
-    </Compile>
     <Compile Include="Features.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Features.Designer.cs">
       <DependentUpon>Features.cs</DependentUpon>
     </Compile>
-    <Compile Include="Participants.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Participants.Designer.cs">
-      <DependentUpon>Participants.cs</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Title.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Title.Designer.cs">
-      <DependentUpon>Title.cs</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\..\Wisej.DemoBrowser.Common\Wisej.DemoBrowser.Common.csproj">
@@ -82,17 +64,8 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Comments.resx">
-      <DependentUpon>Comments.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Features.resx">
       <DependentUpon>Features.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Participants.resx">
-      <DependentUpon>Participants.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Title.resx">
-      <DependentUpon>Title.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup />
