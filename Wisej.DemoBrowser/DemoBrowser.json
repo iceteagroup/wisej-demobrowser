@@ -813,7 +813,7 @@
 		//		"docsUrl": "https://docs.wisej.com/extensions/extensions/geolocation/api/wisej.ext.geolocation.geolocation",
 		//		"description-en": "The <b>Wisej.Ext.Geolocation</b> component represents an object able to programmatically obtain the position of the device."
 		//	}
-		},
+		//},
 		"GoogleMaps": {
 			"Features": {
 				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Extensions/Wisej.DemoBrowser.GoogleMaps",
