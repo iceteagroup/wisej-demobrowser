@@ -43,10 +43,6 @@
             this.toolTipAlignment = new Wisej.Web.ToolTip(this.components);
             this.SuspendLayout();
             // 
-            // toolTipDefault
-            // 
-            this.toolTipDefault.Alignment = Wisej.Web.Placement.LeftMiddle;
-            // 
             // button1
             // 
             this.button1.Anchor = Wisej.Web.AnchorStyles.None;

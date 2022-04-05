@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="fileManager1.Options" xml:space="preserve">
-    <value>{"allowDragAndDrop":false,"contextMenuSettings":{"file":["Open","|","Cut","Copy","|","Delete","Rename","|","Details"],"folder":["Open","|","Cut","Copy","Paste","|","Delete","Rename","|","Details"],"layout":["SortBy","View","Refresh","|","Paste","|","NewFolder","Upload","|","Details","|","SelectAll"],"visible":true}}</value>
+    <value>{"allowDragAndDrop":true,"contextMenuSettings":{"file":["Open","|","Cut","Copy","|","Delete","Rename","|","Details"],"folder":["Open","|","Cut","Copy","Paste","|","Delete","Rename","|","Details"],"layout":["SortBy","View","Refresh","|","Paste","|","NewFolder","Upload","|","Details","|","SelectAll"],"visible":true}}</value>
   </data>
   <metadata name="$this.RulerSnapLines" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>

@@ -90,7 +90,7 @@
 		},
 		"CheckedListBox": {
 			"Features": {
-				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Editors/Wisej.DemoBrowser.CheckListBox",
+				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Editors/Wisej.DemoBrowser.CheckedListBox",
 				"assembly": "Features, Wisej.DemoBrowser.CheckedListBox.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/ListBox.svg",
 				"docsUrl": "https://docs.wisej.com/docs/controls/lists/listbox/checkedlistbox",
@@ -302,7 +302,7 @@
 		},
 		"IFramePanel": {
 			"Features": {
-				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Containers/Wisej.DemoBrowser.IFramePanel",
+				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Containers/Wisej.DemoBrowser.iFramePanel",
 				"assembly": "Features, Wisej.DemoBrowser.iFramePanel.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/IFrame.svg",
 				"docsUrl": "https://docs.wisej.com/docs/controls/content/iframepanel",
@@ -347,7 +347,6 @@
 				"description-en": "The <b>Wisej.Web.MenuBar</b> component represents a menu structure for containers. The menu is composed of MenuItem objects that represent the individual menu commands in the menu structure. Each MenuItem can be a command for your application or a parent menu for other submenu items."
 			}
 		},
-		// TODO: "MainMenu": {},
 		"ContextMenu": {
 			"Features": {
 				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/ToolsAndMenus/Wisej.DemoBrowser.ContextMenu",
@@ -371,7 +370,7 @@
 				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/ToolsAndMenus/Wisej.DemoBrowser.EmbeddedTools",
 				"assembly": "Features, Wisej.DemoBrowser.EmbeddedTools.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/ToolstripAlignment.svg",
-				"docsUrl": "https://docs.wisej.com/docs/controls/containers/statusbar",
+				"docsUrl": "https://docs.wisej.com/docs/controls/general/embedded-tools",
 				"description-en": "Tool buttons can be placed to the left or right of the target control, be enabled or disabled, auto-hide when the control loses focus, be always hidden, toggled on or off, and have their own tooltip."
 			}
 		},
@@ -409,7 +408,7 @@
 				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Extenders/Wisej.DemoBrowser.Tooltip",
 				"assembly": "Features, Wisej.DemoBrowser.ToolTip.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/ToolTip.svg",
-				"docsUrl": "https://docs.wisej.com/api/wisej.web/extenders/wisej.web.tooltip",
+				"docsUrl": "https://docs.wisej.com/docs/controls/general/tooltips",
 				"description-en": "The <b>Wisej.Web.ToolTip</b> component represents a small rectangular pop-up window that displays a brief description of a control's purpose when the user rests the pointer on the control."
 			}
 		},
@@ -501,7 +500,7 @@
 				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Content/Wisej.DemoBrowser.PictureBox",
 				"assembly": "Features, Wisej.DemoBrowser.PictureBox.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/PictureAndText.svg",
-				"docsUrl": "https://docs.wisej.com/docs/controls/content/PictureBox",
+				"docsUrl": "https://docs.wisej.com/docs/controls/content/picturebox",
 				"description-en": "The <b>Wisej.Web.PictureBox</b> is used to display graphics from a bitmap, metafile, icon, JPEG, GIF, or PNG file.",
 				"description-fr": "Le contrôle <Wisej.Web.PictureBox</b> peut être utilisé pour afficher des graphiques à partir d'un fichier bitmap, metafile, icon, JPEG, GIF ou bien PNG"
 			}
@@ -552,14 +551,11 @@
 	"Grids": {
 		"PropertyGrid": {
 			"Features": {
-				"sourceUrl":
-					"https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Grids/Wisej.DemoBrowser.PropertyGrid",
+				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Grids/Wisej.DemoBrowser.PropertyGrid",
 				"assembly": "Features, Wisej.DemoBrowser.PropertyGrid.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/PropertySnippet.svg",
-				"docsUrl": "https://docs.wisej.com/docs/controls/grids/propertygrid",
-				"description-en":
-					"The <b>Wisej.Web.PropertyGrid</b> provides a user interface for browsing the properties of an object.",
-				"description-fr": "à faire"
+				"docsUrl": "https://docs.wisej.com/docs/controls/lists/propertygrid",
+				"description-en": "The <b>Wisej.Web.PropertyGrid</b> provides a user interface for browsing the properties of an object.",
 			}
 		},
 		"DataGridView": {
@@ -567,17 +563,15 @@
 				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Grids/Wisej.DemoBrowser.DataGridView",
 				"assembly": "Features, Wisej.DemoBrowser.DataGridView.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/DataGrid.svg",
-				"docsUrl": "https://docs.wisej.com/docs/controls/grids/datagridview",
+				"docsUrl": "https://docs.wisej.com/docs/controls/lists/datagridview",
 				"description-en": "The <b>Wisej.Web.DataGridView</b> control provides a customizable table for displaying data. The DataGridView class allows customization of cells, rows, columns, and borders through the use of properties such as DefaultCellStyle, ColumnHeadersDefaultCellStyle, CellBorderStyle, and GridColor.",
-				"description-fr": "à faire"
 			},
 			"Summary Rows": {
 				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Grids/Wisej.DemoBrowser.DataGridView",
 				"assembly": "SummaryRows, Wisej.DemoBrowser.DataGridView.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/DataGridView.svg",
 				"docsUrl": "https://docs.wisej.com/docs/controls/grids/datagridview",
-				"description-en": "TODO",
-				"description-fr": "à faire"
+				"description-en": "Summary rows display table information aggregated to a single row."
 			}
 		},
 		"ListView": {
@@ -608,7 +602,7 @@
 				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Grids/Wisej.DemoBrowser.DataRepeater",
 				"assembly": "Features, Wisej.DemoBrowser.DataRepeater.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/DataRepeater.svg",
-				"docsUrl": "https://docs.wisej.com/docs/controls/grids/datarepeater",
+				"docsUrl": "https://docs.wisej.com/docs/controls/lists/datarepeater",
 				"description-en": "The <b>Wisej.Web.DataRepeater</b> control functions as a scrollable container for controls that display repeated data, for example, rows in a database table."
 			}
 		}
@@ -664,7 +658,7 @@
 		},
 		"Barcode": {
 			"Features": {
-				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Extensions/Wisej.DemoBrowser.BarCode",
+				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Extensions/Wisej.DemoBrowser.Barcode",
 				"assembly": "Features, Wisej.DemoBrowser.Barcode.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/CameraOutline.svg",
 				"docsUrl": "https://docs.wisej.com/extensions/extensions/barcode",
@@ -776,7 +770,6 @@
 				"description-en": "The <b>Wisej.Web.Ext.CKEditor</b> control (formerly FCKeditor) is an open source WYSIWYG text editor designed to bring common word processor features directly to web pages, simplifying their content creation."
 			}
 		},
-		"ColumnFilter": {},
 		"CoolClock": {
 			"Features": {
 				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Extensions/Wisej.DemoBrowser.CoolClock",
@@ -811,14 +804,15 @@
 				"description-en": "The <b>Wisej.Web.Ext.FullCalendar</b> extension is an amazing full-size drag-n-drop event calendar. Supports multiple views, flexible events, custom styles, integrates with Google Calendars, and it’s completely integrated with Wisej."
 			}
 		},
-		"Geolocation": {
-			"Features": {
-				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Extensions/Wisej.DemoBrowser.Geolocation",
-				"assembly": "Features, Wisej.DemoBrowser.Geolocation.dll",
-				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/GeoLocation.svg",
-				"docsUrl": "https://docs.wisej.com/extensions/extensions/geolocation/api/wisej.ext.geolocation.geolocation",
-				"description-en": "The <b>Wisej.Ext.Geolocation</b> component represents an object able to programmatically obtain the position of the device."
-			}
+		// requires https.
+		//"Geolocation": {
+		//	"Features": {
+		//		"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Extensions/Wisej.DemoBrowser.Geolocation",
+		//		"assembly": "Features, Wisej.DemoBrowser.Geolocation.dll",
+		//		"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/GeoLocation.svg",
+		//		"docsUrl": "https://docs.wisej.com/extensions/extensions/geolocation/api/wisej.ext.geolocation.geolocation",
+		//		"description-en": "The <b>Wisej.Ext.Geolocation</b> component represents an object able to programmatically obtain the position of the device."
+		//	}
 		},
 		"GoogleMaps": {
 			"Features": {
@@ -945,35 +939,35 @@
 				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Extensions/Wisej.DemoBrowser.Pannellum",
 				"assembly": "Features, Wisej.DemoBrowser.Pannellum.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/ImageSlideshow.svg",
-				"docsUrl": "https://docs.wisej.com/extensions/pannellum",
+				"docsUrl": "https://docs.wisej.com/extensions/extensions/pannellum",
 				"description-en": "The <b>Wisej.Web.Ext.Pannellum</b> extension component uses the Pannellum library. Pannellum is a lightweight, free, and open source panorama viewer for the web."
 			},
 			"Auto Rotate": {
 				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Extensions/Wisej.DemoBrowser.Pannellum",
 				"assembly": "AutoRotate, Wisej.DemoBrowser.Pannellum.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/ImageSlideshow.svg",
-				"docsUrl": "https://docs.wisej.com/extensions/pannellum",
+				"docsUrl": "https://docs.wisej.com/extensions/extensions/pannellum",
 				"description-en": "Once the panorama has been loaded, make it rotate automatically."
 			},
 			"Cube Map": {
 				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Extensions/Wisej.DemoBrowser.Pannellum",
 				"assembly": "CubeMap, Wisej.DemoBrowser.Pannellum.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/ImageSlideshow.svg",
-				"docsUrl": "https://docs.wisej.com/extensions/pannellum",
+				"docsUrl": "https://docs.wisej.com/extensions/extensions/pannellum",
 				"description-en": "Show a panoramic of a cube map"
 			},
 			"Hot Spots": {
 				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Extensions/Wisej.DemoBrowser.Pannellum",
 				"assembly": "HotSpots, Wisej.DemoBrowser.Pannellum.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/ImageSlideshow.svg",
-				"docsUrl": "https://docs.wisej.com/extensions/pannellum",
+				"docsUrl": "https://docs.wisej.com/extensions/extensions/pannellum",
 				"description-en": "Hot spots can be used to display additional information on the panorama."
 			},
 			"Multiresolution": {
 				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Extensions/Wisej.DemoBrowser.Pannellum",
 				"assembly": "Multires, Wisej.DemoBrowser.Pannellum.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/ImageSlideshow.svg",
-				"docsUrl": "https://docs.wisej.com/extensions/pannellum",
+				"docsUrl": "https://docs.wisej.com/extensions/extensions/pannellum",
 				"description-en": "You can display a high resolution panoramas with the <b>Multiresolution</b> feature"
 			}
 		},
@@ -982,7 +976,7 @@
 				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Wisej.DemoBrowser.Premium",
 				"assembly": "Features, Wisej.DemoBrowser.Premium.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/PictureAndText.svg",
-				"docsUrl": "https://docs.wisej.com/extensions/icon-packs/bootstrapicons",
+				"docsUrl": "https://docs.wisej.com/extensions/premium-extensions/overview",
 				"description-en": "Wisej Professional and Enterprise licenses include access to premium extensions. Control libraries from the following vendors have been wrapped in Wisej to provide developers a seamless integration of any type of control."
 			}
 		},
@@ -1029,13 +1023,20 @@
 					"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Extensions/Wisej.DemoBrowser.TinyMCE",
 					"assembly": "Features, Wisej.DemoBrowser.TinyMCE.dll",
 					"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/HtmlTagEnd.svg",
-					"docsUrl": "https://docs.wisej.com/extensions/extensions/geolocation/api/wisej.ext.geolocation.geolocation",
+					"docsUrl": "https://docs.wisej.com/extensions/extensions/tinymce",
 					"description-en": "The <b>Wisej.Web.Ext.TinyMCE</b> control (Tiny Moxiecode Content Editor) is a platform-independent, browser-based WYSIWYG editor control, written in JavaScript and released as open-source software under the LGPL by Ephox."
 				}
 			},
-			"TourPanel": {},
-			"Translation": {}
-		},
+		"TourPanel": {
+			"Features": {
+				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Extensions/Wisej.DemoBrowser.TourPanel",
+				"assembly": "Features, Wisej.DemoBrowser.TourPanel.dll",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/ModalPopup.svg",
+				"docsUrl": "https://docs.wisej.com/extensions/extensions/tourpanel",
+				"description-en": "The <b>Wisej.Web.Ext.TourPanel</b> component can create a customized tour of an existing application highlighting specific targets and displaying HTML Text in steps."
+			}
+		}
+	},
 		"Icon Packs": {
 			"Bootstrap Icons": {
 				"Features": {
@@ -1060,7 +1061,7 @@
 					"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/IconPacks/Wisej.DemoBrowser.FontAwsome",
 					"assembly": "Features, Wisej.DemoBrowser.FontAwsome.dll",
 					"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/PictureAndText.svg",
-					"docsUrl": "https://docs.wisej.com/extensions/icon-packs/materialdesign-iconpack",
+					"docsUrl": "https://docs.wisej.com/extensions/icon-packs/fontawesome-iconpack",
 					"description-en": "The complete set of 600+ icons in <b>Font Awesome</b>."
 				}
 			},
@@ -1078,7 +1079,7 @@
 					"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/IconPacks/Wisej.DemoBrowser.ModernUI",
 					"assembly": "Features, Wisej.DemoBrowser.ModernUi.dll",
 					"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/PictureAndText.svg",
-					"docsUrl": "https://docs.wisej.com/extensions/icon-packs/materialdesign-iconpack",
+					"docsUrl": "https://docs.wisej.com/extensions/icon-packs/modernui-iconpack",
 					"description-en": "The complete set of <b>ModernUI icons</b>, featuring 1200+ icons for you to choose from."
 				}
 			},
@@ -1087,7 +1088,7 @@
 					"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/IconPacks/Wisej.DemoBrowser.VaadinIcons",
 					"assembly": "Features, Wisej.DemoBrowser.VaadinIcons.dll",
 					"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/PictureAndText.svg",
-					"docsUrl": "https://docs.wisej.com/extensions/icon-packs/materialdesign-iconpack",
+					"docsUrl": "https://docs.wisej.com/extensions/icon-packs/vaadinicons-iconpack",
 					"description-en": "<b>Vaadin Icons</b> is a set of 600+ icons designed for web applications. Free to use, anywhere!"
 				}
 			},
@@ -1096,7 +1097,7 @@
 					"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/IconPacks/Wisej.DemoBrowser.VisualStudioIcons",
 					"assembly": "Features, Wisej.DemoBrowser.VisualStudioIcons.dll",
 					"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/PictureAndText.svg",
-					"docsUrl": "https://docs.wisej.com/extensions/icon-packs/materialdesign-iconpack",
+					"docsUrl": "https://docs.wisej.com/extensions/icon-packs/visualstudioicons-iconpack",
 					"description-en": "The <b>Visual Studio Icon Library</b> contains application 4600+ icons that appear in Microsoft Visual Studio, Microsoft Windows, the Office system and other Microsoft software."
 				}
 			}

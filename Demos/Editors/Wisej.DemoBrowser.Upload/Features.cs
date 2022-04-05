@@ -20,8 +20,8 @@ namespace Wisej.DemoBrowser.Upload
 			if (e.Files.Count == 0)
 				return;
 
-			using (var image = Image.FromStream(e.Files[0].InputStream))
-				this.pictureBox.Image = image;
+			var image = Image.FromStream(e.Files[0].InputStream);
+			this.pictureBox.Image = image;
 
 			AlertBox.Show("Loaded Image");
 			Application.Update(this);

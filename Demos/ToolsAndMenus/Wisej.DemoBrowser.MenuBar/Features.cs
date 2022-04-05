@@ -21,10 +21,5 @@ namespace Wisej.DemoBrowser.MenuBar
 			if (e.MenuItem.RadioCheck)
 				e.MenuItem.Checked = !e.MenuItem.Checked;
 		}
-
-		private void checkedMenuItem6_Click(object sender, EventArgs e)
-		{
-
-		}
 	}
 }

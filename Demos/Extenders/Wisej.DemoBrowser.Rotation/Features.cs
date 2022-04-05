@@ -30,6 +30,7 @@ namespace Wisej.DemoBrowser.Rotation
 		{
 			this.rotation1.SetRotation(this.label3, new Web.Rotation.Properties()
 			{
+				Perspective = (int) this.numericUpDownPerspective.Value,
 				RotateX = (int)this.numericUpDownXRotation.Value,
 				RotateY = (int)this.numericUpDownYRotation.Value,
 				RotateZ = (int)this.numericUpDownZRotation.Value,

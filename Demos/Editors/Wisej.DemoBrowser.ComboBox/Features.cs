@@ -10,5 +10,10 @@ namespace Wisej.DemoBrowser.ComboBox
 		{
 			InitializeComponent();
 		}
-	}
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+			AlertBox.Show($"Selected Index: {this.comboBox1.SelectedIndex}");
+        }
+    }
 }

@@ -30,5 +30,10 @@ namespace Wisej.DemoBrowser.CountUp
 		{
 			this.countUp1.UseEasing = this.checkBoxEasing.Checked;
 		}
-	}
+
+        private void buttonUpdate_Click(object sender, EventArgs e)
+        {
+			this.countUp1.Value = (int)this.numericUpDownValue.Value;
+        }
+    }
 }
