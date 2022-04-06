@@ -18,7 +18,7 @@ namespace Wisej.DemoBrowser.Notification
 			AlertBox.Show($"Clicked {e.Title}");
 		}
 
-		private void buttonProgress_Click(object sender, EventArgs e)
+		private void buttonShowNotification_Click(object sender, EventArgs e)
 		{
 			this.notification1.Show(this.textBoxTitle.Text, 
 				this.textBoxBody.Text, 

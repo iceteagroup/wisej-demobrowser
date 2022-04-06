@@ -18,6 +18,8 @@ namespace Wisej.DemoBrowser.ChartJS
 		private void Radar_Load(object sender, EventArgs e)
 		{
 			AddDataSet();
+			AddDataSet();
+			AddDataSet();
 
 			//Add labels
 			string[] labels = new string[12];

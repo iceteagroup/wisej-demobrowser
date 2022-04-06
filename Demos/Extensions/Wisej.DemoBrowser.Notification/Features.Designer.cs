@@ -30,7 +30,7 @@
 		{
             this.components = new System.ComponentModel.Container();
             this.notification1 = new Wisej.Web.Ext.Notification.Notification(this.components);
-            this.buttonProgress = new Wisej.Web.Button();
+            this.buttonShowNotification = new Wisej.Web.Button();
             this.textBoxTitle = new Wisej.Web.TextBox();
             this.textBoxBody = new Wisej.Web.TextBox();
             this.checkBoxShowOnClick = new Wisej.Web.CheckBox();
@@ -41,15 +41,15 @@
             // 
             this.notification1.Click += new Wisej.Web.Ext.Notification.NotificationClickEventHandler(this.notification1_Click);
             // 
-            // buttonProgress
+            // buttonShowNotification
             // 
-            this.buttonProgress.Anchor = Wisej.Web.AnchorStyles.None;
-            this.buttonProgress.Location = new System.Drawing.Point(619, 369);
-            this.buttonProgress.Name = "buttonProgress";
-            this.buttonProgress.Size = new System.Drawing.Size(185, 37);
-            this.buttonProgress.TabIndex = 0;
-            this.buttonProgress.Text = "Show Notification";
-            this.buttonProgress.Click += new System.EventHandler(this.buttonProgress_Click);
+            this.buttonShowNotification.Anchor = Wisej.Web.AnchorStyles.None;
+            this.buttonShowNotification.Location = new System.Drawing.Point(619, 369);
+            this.buttonShowNotification.Name = "buttonShowNotification";
+            this.buttonShowNotification.Size = new System.Drawing.Size(185, 37);
+            this.buttonShowNotification.TabIndex = 0;
+            this.buttonShowNotification.Text = "Show Notification";
+            this.buttonShowNotification.Click += new System.EventHandler(this.buttonShowNotification_Click);
             // 
             // textBoxTitle
             // 
@@ -57,7 +57,7 @@
             this.textBoxTitle.LabelText = "Title";
             this.textBoxTitle.Location = new System.Drawing.Point(619, 69);
             this.textBoxTitle.Name = "textBoxTitle";
-            this.textBoxTitle.Size = new System.Drawing.Size(185, 53);
+            this.textBoxTitle.Size = new System.Drawing.Size(185, 57);
             this.textBoxTitle.TabIndex = 2;
             // 
             // textBoxBody
@@ -66,7 +66,7 @@
             this.textBoxBody.LabelText = "Body";
             this.textBoxBody.Location = new System.Drawing.Point(619, 149);
             this.textBoxBody.Name = "textBoxBody";
-            this.textBoxBody.Size = new System.Drawing.Size(185, 53);
+            this.textBoxBody.Size = new System.Drawing.Size(185, 57);
             this.textBoxBody.TabIndex = 3;
             // 
             // checkBoxShowOnClick
@@ -97,7 +97,7 @@
             this.Controls.Add(this.checkBoxShowOnClick);
             this.Controls.Add(this.textBoxBody);
             this.Controls.Add(this.textBoxTitle);
-            this.Controls.Add(this.buttonProgress);
+            this.Controls.Add(this.buttonShowNotification);
             this.Name = "Features";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -107,7 +107,7 @@
 		#endregion
 
 		private Web.Ext.Notification.Notification notification1;
-		private Web.Button buttonProgress;
+		private Web.Button buttonShowNotification;
         private Web.TextBox textBoxTitle;
         private Web.TextBox textBoxBody;
         private Web.CheckBox checkBoxShowOnClick;

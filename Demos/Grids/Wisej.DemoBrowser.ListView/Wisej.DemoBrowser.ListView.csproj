@@ -44,12 +44,6 @@
       <DependentUpon>Features.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Appearances.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Appearances.designer.cs">
-      <DependentUpon>Appearances.cs</DependentUpon>
-    </Compile>
     <Compile Include="SelectionModes.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -72,8 +66,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Appearances.resx">
-      <DependentUpon>Appearances.cs</DependentUpon>
+    <EmbeddedResource Include="Features.resx">
+      <DependentUpon>Features.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SelectionModes.resx">
       <DependentUpon>SelectionModes.cs</DependentUpon>

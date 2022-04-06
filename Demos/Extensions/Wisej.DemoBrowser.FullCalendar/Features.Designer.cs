@@ -53,8 +53,9 @@
             this.comboBoxView.LabelText = "View Type";
             this.comboBoxView.Location = new System.Drawing.Point(19, 21);
             this.comboBoxView.Name = "comboBoxView";
-            this.comboBoxView.Size = new System.Drawing.Size(219, 53);
+            this.comboBoxView.Size = new System.Drawing.Size(219, 57);
             this.comboBoxView.TabIndex = 1;
+            this.comboBoxView.Text = "Month";
             this.comboBoxView.SelectedIndexChanged += new System.EventHandler(this.comboBoxView_SelectedIndexChanged);
             // 
             // Features

@@ -35,19 +35,11 @@ namespace Wisej.DemoBrowser.ListView
 
 		private void AttachImageLists()
 		{
-			this.listView1.SmallImageList = SmallImageList;
-			this.listView2.SmallImageList = SmallImageList;
-			this.listView3.SmallImageList = SmallImageList;
-			this.listView4.SmallImageList = SmallImageList;
-
-
-			this.listView1.LargeImageList = LargeImageList;
-			this.listView2.LargeImageList = LargeImageList;
-			this.listView3.LargeImageList = LargeImageList;
-			this.listView4.LargeImageList = DetailsImageList;
+			this.listViewDemo.SmallImageList = SmallImageList;
+			this.listViewDemo.LargeImageList = LargeImageList;
 		}
 
-        private void listView1_RetrieveVirtualItem(object sender, RetrieveVirtualItemEventArgs e)
+        private void listViewDemo_RetrieveVirtualItem(object sender, RetrieveVirtualItemEventArgs e)
 		{
 			Faker faker = new Faker();
 
@@ -67,6 +59,26 @@ namespace Wisej.DemoBrowser.ListView
 		{
 			FillImageLists();
 			AttachImageLists();
+		}
+
+        private void comboBoxView_SelectedIndexChanged(object sender, EventArgs e)
+        {
+			var view = (View)Enum.Parse(typeof(View), comboBoxView.Text);
+
+			switch (view)
+            {
+				case View.Tile:
+				case View.SmallIcon:
+					this.listViewDemo.ItemSize = new Size(175, 225);
+					break;
+
+				case View.LargeIcon:
+					this.listViewDemo.ItemSize = new Size(175, 175);
+					break;
+            }
+
+			this.listViewDemo.View = view;
+			this.listViewDemo.Update();
 		}
     }
 }
