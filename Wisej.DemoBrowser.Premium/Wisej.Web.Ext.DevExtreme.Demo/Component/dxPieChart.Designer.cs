@@ -48,13 +48,8 @@
             // 
             this.linkDocs.Text = "https://js.devexpress.com/Documentation/Guide/Widgets/PieChart/Series/Overview/";
             // 
-            // groupBox1
-            // 
-            this.groupBox1.Size = new System.Drawing.Size(250, 586);
-            // 
             // buttonUpdate
             // 
-            this.buttonUpdate.Location = new System.Drawing.Point(16, 502);
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
             // linkDemo
@@ -81,7 +76,6 @@
             this.flowLayoutPanel1.Controls.Add(this.comboBox2);
             this.flowLayoutPanel1.Controls.Add(this.comboBox3);
             this.flowLayoutPanel1.Controls.Add(this.comboBox4);
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 516);
             // 
             // dxPieChart1
             // 

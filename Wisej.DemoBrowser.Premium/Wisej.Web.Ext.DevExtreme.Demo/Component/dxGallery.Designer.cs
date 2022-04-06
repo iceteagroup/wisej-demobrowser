@@ -48,13 +48,8 @@
             // 
             this.linkDocs.Text = "https://js.devexpress.com/Documentation/Guide/Widgets/Gallery/Overview/";
             // 
-            // groupBox1
-            // 
-            this.groupBox1.Size = new System.Drawing.Size(250, 526);
-            // 
             // buttonUpdate
             // 
-            this.buttonUpdate.Location = new System.Drawing.Point(16, 458);
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
             // linkDemo
@@ -80,7 +75,6 @@
             this.flowLayoutPanel1.Controls.Add(this.checkBox6);
             this.flowLayoutPanel1.Controls.Add(this.checkBox7);
             this.flowLayoutPanel1.Controls.Add(this.numericUpDown1);
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 404);
             // 
             // dxGallery1
             // 
