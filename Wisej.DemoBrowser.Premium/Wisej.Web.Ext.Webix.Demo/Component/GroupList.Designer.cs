@@ -57,6 +57,8 @@
             // 
             this.flowLayoutPanel1.Controls.Add(this.checkBoxEnableSelect);
             this.flowLayoutPanel1.Controls.Add(this.checkBoxEnableDragAndDrop);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 38);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 434);
             // 
             // groupList1
             // 
@@ -75,11 +77,13 @@
             this.checkBoxEnableSelect.Appearance = Wisej.Web.Appearance.Switch;
             this.checkBoxEnableSelect.AutoSize = false;
             this.checkBoxEnableSelect.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.flowLayoutPanel1.SetFillWeight(this.checkBoxEnableSelect, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.checkBoxEnableSelect, true);
             this.checkBoxEnableSelect.Location = new System.Drawing.Point(3, 3);
             this.checkBoxEnableSelect.Name = "checkBoxEnableSelect";
             this.checkBoxEnableSelect.Size = new System.Drawing.Size(212, 26);
             this.checkBoxEnableSelect.TabIndex = 5;
-            this.checkBoxEnableSelect.Text = "Enable select";
+            this.checkBoxEnableSelect.Text = "Enable Select";
             // 
             // checkBoxEnableDragAndDrop
             // 
@@ -88,11 +92,14 @@
             this.checkBoxEnableDragAndDrop.Appearance = Wisej.Web.Appearance.Switch;
             this.checkBoxEnableDragAndDrop.AutoSize = false;
             this.checkBoxEnableDragAndDrop.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.checkBoxEnableDragAndDrop.Location = new System.Drawing.Point(3, 35);
+            this.flowLayoutPanel1.SetFillWeight(this.checkBoxEnableDragAndDrop, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.checkBoxEnableDragAndDrop, true);
+            this.checkBoxEnableDragAndDrop.Location = new System.Drawing.Point(3, 48);
+            this.checkBoxEnableDragAndDrop.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBoxEnableDragAndDrop.Name = "checkBoxEnableDragAndDrop";
             this.checkBoxEnableDragAndDrop.Size = new System.Drawing.Size(212, 26);
             this.checkBoxEnableDragAndDrop.TabIndex = 6;
-            this.checkBoxEnableDragAndDrop.Text = "Enable drag and drop";
+            this.checkBoxEnableDragAndDrop.Text = "Drag-and-Drop";
             // 
             // GroupList
             // 

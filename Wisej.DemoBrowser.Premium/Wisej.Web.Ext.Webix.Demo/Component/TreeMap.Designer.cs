@@ -57,8 +57,8 @@
             // 
             this.flowLayoutPanel1.Controls.Add(this.checkBoxEnableSelect);
             this.flowLayoutPanel1.Controls.Add(this.checkBoxEnableMultiSelect);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 31);
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 441);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 38);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 434);
             // 
             // treeMap1
             // 
@@ -78,11 +78,13 @@
             this.checkBoxEnableSelect.AutoSize = false;
             this.checkBoxEnableSelect.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.checkBoxEnableSelect.Checked = true;
+            this.flowLayoutPanel1.SetFillWeight(this.checkBoxEnableSelect, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.checkBoxEnableSelect, true);
             this.checkBoxEnableSelect.Location = new System.Drawing.Point(3, 3);
             this.checkBoxEnableSelect.Name = "checkBoxEnableSelect";
             this.checkBoxEnableSelect.Size = new System.Drawing.Size(212, 26);
             this.checkBoxEnableSelect.TabIndex = 3;
-            this.checkBoxEnableSelect.Text = "Enable select";
+            this.checkBoxEnableSelect.Text = "Enable Select";
             // 
             // checkBoxEnableMultiSelect
             // 
@@ -92,11 +94,14 @@
             this.checkBoxEnableMultiSelect.AutoSize = false;
             this.checkBoxEnableMultiSelect.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.checkBoxEnableMultiSelect.Checked = true;
-            this.checkBoxEnableMultiSelect.Location = new System.Drawing.Point(3, 35);
+            this.flowLayoutPanel1.SetFillWeight(this.checkBoxEnableMultiSelect, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.checkBoxEnableMultiSelect, true);
+            this.checkBoxEnableMultiSelect.Location = new System.Drawing.Point(3, 48);
+            this.checkBoxEnableMultiSelect.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBoxEnableMultiSelect.Name = "checkBoxEnableMultiSelect";
             this.checkBoxEnableMultiSelect.Size = new System.Drawing.Size(212, 26);
             this.checkBoxEnableMultiSelect.TabIndex = 4;
-            this.checkBoxEnableMultiSelect.Text = "Enable multi select";
+            this.checkBoxEnableMultiSelect.Text = "Enable Multi-Select";
             // 
             // TreeMap
             // 

@@ -55,9 +55,11 @@
             // 
             // flowLayoutPanel1
             // 
-            this.flowLayoutPanel1.Controls.Add(this.comboBoxTimelineMode);
-            this.flowLayoutPanel1.Controls.Add(this.comboBoxMode);
             this.flowLayoutPanel1.Controls.Add(this.checkBoxAllowTimeline);
+            this.flowLayoutPanel1.Controls.Add(this.comboBoxMode);
+            this.flowLayoutPanel1.Controls.Add(this.comboBoxTimelineMode);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 38);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 434);
             // 
             // scheduler1
             // 
@@ -75,14 +77,17 @@
             this.comboBoxTimelineMode.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Left) 
             | Wisej.Web.AnchorStyles.Right)));
             this.comboBoxTimelineMode.DropDownStyle = Wisej.Web.ComboBoxStyle.DropDownList;
+            this.flowLayoutPanel1.SetFillWeight(this.comboBoxTimelineMode, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.comboBoxTimelineMode, true);
             this.comboBoxTimelineMode.Items.AddRange(new object[] {
             "day",
             "week",
             "month"});
-            this.comboBoxTimelineMode.LabelText = "Timeline mode";
-            this.comboBoxTimelineMode.Location = new System.Drawing.Point(3, 3);
+            this.comboBoxTimelineMode.LabelText = "Timeline Mode";
+            this.comboBoxTimelineMode.Location = new System.Drawing.Point(3, 124);
+            this.comboBoxTimelineMode.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.comboBoxTimelineMode.Name = "comboBoxTimelineMode";
-            this.comboBoxTimelineMode.Size = new System.Drawing.Size(212, 46);
+            this.comboBoxTimelineMode.Size = new System.Drawing.Size(212, 57);
             this.comboBoxTimelineMode.TabIndex = 0;
             // 
             // checkBoxAllowTimeline
@@ -92,17 +97,21 @@
             this.checkBoxAllowTimeline.Appearance = Wisej.Web.Appearance.Switch;
             this.checkBoxAllowTimeline.AutoSize = false;
             this.checkBoxAllowTimeline.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.checkBoxAllowTimeline.Location = new System.Drawing.Point(3, 107);
+            this.flowLayoutPanel1.SetFillWeight(this.checkBoxAllowTimeline, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.checkBoxAllowTimeline, true);
+            this.checkBoxAllowTimeline.Location = new System.Drawing.Point(3, 3);
             this.checkBoxAllowTimeline.Name = "checkBoxAllowTimeline";
             this.checkBoxAllowTimeline.Size = new System.Drawing.Size(212, 26);
             this.checkBoxAllowTimeline.TabIndex = 2;
-            this.checkBoxAllowTimeline.Text = "Allow timeline";
+            this.checkBoxAllowTimeline.Text = "Allow Timeline";
             // 
             // comboBoxMode
             // 
             this.comboBoxMode.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Left) 
             | Wisej.Web.AnchorStyles.Right)));
             this.comboBoxMode.DropDownStyle = Wisej.Web.ComboBoxStyle.DropDownList;
+            this.flowLayoutPanel1.SetFillWeight(this.comboBoxMode, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.comboBoxMode, true);
             this.comboBoxMode.Items.AddRange(new object[] {
             "day",
             "week",
@@ -111,9 +120,10 @@
             "timeline",
             "units"});
             this.comboBoxMode.LabelText = "Mode";
-            this.comboBoxMode.Location = new System.Drawing.Point(3, 55);
+            this.comboBoxMode.Location = new System.Drawing.Point(3, 48);
+            this.comboBoxMode.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.comboBoxMode.Name = "comboBoxMode";
-            this.comboBoxMode.Size = new System.Drawing.Size(212, 46);
+            this.comboBoxMode.Size = new System.Drawing.Size(212, 57);
             this.comboBoxMode.TabIndex = 3;
             // 
             // Scheduler

@@ -60,6 +60,8 @@
             this.flowLayoutPanel1.Controls.Add(this.checkBoxAllowScroll);
             this.flowLayoutPanel1.Controls.Add(this.checkBoxAllowSelect);
             this.flowLayoutPanel1.Controls.Add(this.numericUpDownZoomLevel);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 38);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 434);
             // 
             // diagram1
             // 
@@ -78,11 +80,13 @@
             this.checkBoxAllowScroll.Appearance = Wisej.Web.Appearance.Switch;
             this.checkBoxAllowScroll.AutoSize = false;
             this.checkBoxAllowScroll.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.flowLayoutPanel1.SetFillWeight(this.checkBoxAllowScroll, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.checkBoxAllowScroll, true);
             this.checkBoxAllowScroll.Location = new System.Drawing.Point(3, 3);
             this.checkBoxAllowScroll.Name = "checkBoxAllowScroll";
             this.checkBoxAllowScroll.Size = new System.Drawing.Size(212, 26);
             this.checkBoxAllowScroll.TabIndex = 3;
-            this.checkBoxAllowScroll.Text = "Allow scroll";
+            this.checkBoxAllowScroll.Text = "Allow Scroll";
             // 
             // checkBoxAllowSelect
             // 
@@ -91,24 +95,30 @@
             this.checkBoxAllowSelect.Appearance = Wisej.Web.Appearance.Switch;
             this.checkBoxAllowSelect.AutoSize = false;
             this.checkBoxAllowSelect.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.checkBoxAllowSelect.Location = new System.Drawing.Point(3, 35);
+            this.flowLayoutPanel1.SetFillWeight(this.checkBoxAllowSelect, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.checkBoxAllowSelect, true);
+            this.checkBoxAllowSelect.Location = new System.Drawing.Point(3, 48);
+            this.checkBoxAllowSelect.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBoxAllowSelect.Name = "checkBoxAllowSelect";
             this.checkBoxAllowSelect.Size = new System.Drawing.Size(212, 26);
             this.checkBoxAllowSelect.TabIndex = 4;
-            this.checkBoxAllowSelect.Text = "Allow select";
+            this.checkBoxAllowSelect.Text = "Allow Select";
             // 
             // numericUpDownZoomLevel
             // 
             this.numericUpDownZoomLevel.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Left) 
             | Wisej.Web.AnchorStyles.Right)));
             this.numericUpDownZoomLevel.DecimalPlaces = 2;
+            this.flowLayoutPanel1.SetFillWeight(this.numericUpDownZoomLevel, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.numericUpDownZoomLevel, true);
             this.numericUpDownZoomLevel.Increment = new decimal(new int[] {
             1,
             0,
             0,
             65536});
-            this.numericUpDownZoomLevel.LabelText = "Zoom level";
-            this.numericUpDownZoomLevel.Location = new System.Drawing.Point(3, 67);
+            this.numericUpDownZoomLevel.LabelText = "Zoom Level";
+            this.numericUpDownZoomLevel.Location = new System.Drawing.Point(3, 93);
+            this.numericUpDownZoomLevel.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.numericUpDownZoomLevel.Maximum = new decimal(new int[] {
             3,
             0,
@@ -120,7 +130,7 @@
             0,
             65536});
             this.numericUpDownZoomLevel.Name = "numericUpDownZoomLevel";
-            this.numericUpDownZoomLevel.Size = new System.Drawing.Size(212, 46);
+            this.numericUpDownZoomLevel.Size = new System.Drawing.Size(212, 57);
             this.numericUpDownZoomLevel.TabIndex = 5;
             this.numericUpDownZoomLevel.Value = new decimal(new int[] {
             1,

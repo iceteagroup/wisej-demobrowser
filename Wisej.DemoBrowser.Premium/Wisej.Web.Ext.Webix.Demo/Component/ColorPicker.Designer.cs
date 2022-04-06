@@ -58,6 +58,8 @@
             this.flowLayoutPanel1.Controls.Add(this.checkBoxClear);
             this.flowLayoutPanel1.Controls.Add(this.checkBoxShowIcon);
             this.flowLayoutPanel1.Controls.Add(this.checkBoxStringResult);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 38);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 434);
             // 
             // colorPicker1
             // 
@@ -75,6 +77,8 @@
             this.checkBoxClear.Appearance = Wisej.Web.Appearance.Switch;
             this.checkBoxClear.AutoSize = false;
             this.checkBoxClear.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.flowLayoutPanel1.SetFillWeight(this.checkBoxClear, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.checkBoxClear, true);
             this.checkBoxClear.Location = new System.Drawing.Point(3, 3);
             this.checkBoxClear.Name = "checkBoxClear";
             this.checkBoxClear.Size = new System.Drawing.Size(212, 26);
@@ -88,11 +92,14 @@
             this.checkBoxShowIcon.Appearance = Wisej.Web.Appearance.Switch;
             this.checkBoxShowIcon.AutoSize = false;
             this.checkBoxShowIcon.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.checkBoxShowIcon.Location = new System.Drawing.Point(3, 35);
+            this.flowLayoutPanel1.SetFillWeight(this.checkBoxShowIcon, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.checkBoxShowIcon, true);
+            this.checkBoxShowIcon.Location = new System.Drawing.Point(3, 48);
+            this.checkBoxShowIcon.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBoxShowIcon.Name = "checkBoxShowIcon";
             this.checkBoxShowIcon.Size = new System.Drawing.Size(212, 26);
             this.checkBoxShowIcon.TabIndex = 1;
-            this.checkBoxShowIcon.Text = "Show icons";
+            this.checkBoxShowIcon.Text = "Show Icons";
             // 
             // checkBoxStringResult
             // 
@@ -101,11 +108,14 @@
             this.checkBoxStringResult.Appearance = Wisej.Web.Appearance.Switch;
             this.checkBoxStringResult.AutoSize = false;
             this.checkBoxStringResult.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.checkBoxStringResult.Location = new System.Drawing.Point(3, 67);
+            this.flowLayoutPanel1.SetFillWeight(this.checkBoxStringResult, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.checkBoxStringResult, true);
+            this.checkBoxStringResult.Location = new System.Drawing.Point(3, 93);
+            this.checkBoxStringResult.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBoxStringResult.Name = "checkBoxStringResult";
             this.checkBoxStringResult.Size = new System.Drawing.Size(212, 26);
             this.checkBoxStringResult.TabIndex = 2;
-            this.checkBoxStringResult.Text = "String result";
+            this.checkBoxStringResult.Text = "String Result";
             // 
             // ColorPicker
             // 

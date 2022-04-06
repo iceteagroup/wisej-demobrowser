@@ -57,6 +57,8 @@
             // 
             this.flowLayoutPanel1.Controls.Add(this.checkBoxEnableFull);
             this.flowLayoutPanel1.Controls.Add(this.checkBoxClipboard);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 38);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 434);
             // 
             // spreadsheet1
             // 
@@ -75,11 +77,13 @@
             this.checkBoxEnableFull.Appearance = Wisej.Web.Appearance.Switch;
             this.checkBoxEnableFull.AutoSize = false;
             this.checkBoxEnableFull.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.flowLayoutPanel1.SetFillWeight(this.checkBoxEnableFull, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.checkBoxEnableFull, true);
             this.checkBoxEnableFull.Location = new System.Drawing.Point(3, 3);
             this.checkBoxEnableFull.Name = "checkBoxEnableFull";
             this.checkBoxEnableFull.Size = new System.Drawing.Size(212, 26);
             this.checkBoxEnableFull.TabIndex = 0;
-            this.checkBoxEnableFull.Text = "Enable full";
+            this.checkBoxEnableFull.Text = "Full Toolbar";
             // 
             // checkBoxClipboard
             // 
@@ -88,11 +92,14 @@
             this.checkBoxClipboard.Appearance = Wisej.Web.Appearance.Switch;
             this.checkBoxClipboard.AutoSize = false;
             this.checkBoxClipboard.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.checkBoxClipboard.Location = new System.Drawing.Point(3, 35);
+            this.flowLayoutPanel1.SetFillWeight(this.checkBoxClipboard, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.checkBoxClipboard, true);
+            this.checkBoxClipboard.Location = new System.Drawing.Point(3, 48);
+            this.checkBoxClipboard.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBoxClipboard.Name = "checkBoxClipboard";
             this.checkBoxClipboard.Size = new System.Drawing.Size(212, 26);
             this.checkBoxClipboard.TabIndex = 1;
-            this.checkBoxClipboard.Text = "Enable clipboard";
+            this.checkBoxClipboard.Text = "Enable Clipboard";
             // 
             // Spreadsheet
             // 

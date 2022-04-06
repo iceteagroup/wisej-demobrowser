@@ -56,6 +56,8 @@
             // 
             this.flowLayoutPanel1.Controls.Add(this.checkBoxGrayScale);
             this.flowLayoutPanel1.Controls.Add(this.comboBoxType);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 38);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 434);
             // 
             // colorBoard1
             // 
@@ -73,23 +75,28 @@
             this.checkBoxGrayScale.Appearance = Wisej.Web.Appearance.Switch;
             this.checkBoxGrayScale.AutoSize = false;
             this.checkBoxGrayScale.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.flowLayoutPanel1.SetFillWeight(this.checkBoxGrayScale, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.checkBoxGrayScale, true);
             this.checkBoxGrayScale.Location = new System.Drawing.Point(3, 3);
             this.checkBoxGrayScale.Name = "checkBoxGrayScale";
             this.checkBoxGrayScale.Size = new System.Drawing.Size(212, 26);
             this.checkBoxGrayScale.TabIndex = 0;
-            this.checkBoxGrayScale.Text = "Gray scale";
+            this.checkBoxGrayScale.Text = "Gray Scale";
             // 
             // comboBoxType
             // 
             this.comboBoxType.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Left) 
             | Wisej.Web.AnchorStyles.Right)));
+            this.flowLayoutPanel1.SetFillWeight(this.comboBoxType, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.comboBoxType, true);
             this.comboBoxType.Items.AddRange(new object[] {
             "material",
             "classic"});
             this.comboBoxType.LabelText = "Type";
-            this.comboBoxType.Location = new System.Drawing.Point(3, 35);
+            this.comboBoxType.Location = new System.Drawing.Point(3, 48);
+            this.comboBoxType.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.comboBoxType.Name = "comboBoxType";
-            this.comboBoxType.Size = new System.Drawing.Size(212, 46);
+            this.comboBoxType.Size = new System.Drawing.Size(212, 57);
             this.comboBoxType.TabIndex = 1;
             // 
             // ColorBoard

@@ -58,8 +58,8 @@
             this.flowLayoutPanel1.Controls.Add(this.checkBoxCompact);
             this.flowLayoutPanel1.Controls.Add(this.checkBoxAllowFile);
             this.flowLayoutPanel1.Controls.Add(this.comboBoxChatType);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 31);
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 441);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 38);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 434);
             // 
             // chat1
             // 
@@ -76,14 +76,17 @@
             this.comboBoxChatType.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Left) 
             | Wisej.Web.AnchorStyles.Right)));
             this.comboBoxChatType.DropDownStyle = Wisej.Web.ComboBoxStyle.DropDownList;
+            this.flowLayoutPanel1.SetFillWeight(this.comboBoxChatType, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.comboBoxChatType, true);
             this.comboBoxChatType.Focusable = false;
             this.comboBoxChatType.Items.AddRange(new object[] {
             "user",
             "chat"});
-            this.comboBoxChatType.LabelText = "Chat type";
-            this.comboBoxChatType.Location = new System.Drawing.Point(3, 67);
+            this.comboBoxChatType.LabelText = "Chat Type";
+            this.comboBoxChatType.Location = new System.Drawing.Point(3, 93);
+            this.comboBoxChatType.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.comboBoxChatType.Name = "comboBoxChatType";
-            this.comboBoxChatType.Size = new System.Drawing.Size(212, 46);
+            this.comboBoxChatType.Size = new System.Drawing.Size(212, 57);
             this.comboBoxChatType.TabIndex = 0;
             // 
             // checkBoxCompact
@@ -93,6 +96,8 @@
             this.checkBoxCompact.Appearance = Wisej.Web.Appearance.Switch;
             this.checkBoxCompact.AutoSize = false;
             this.checkBoxCompact.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.flowLayoutPanel1.SetFillWeight(this.checkBoxCompact, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.checkBoxCompact, true);
             this.checkBoxCompact.Location = new System.Drawing.Point(3, 3);
             this.checkBoxCompact.Name = "checkBoxCompact";
             this.checkBoxCompact.Size = new System.Drawing.Size(212, 26);
@@ -106,11 +111,14 @@
             this.checkBoxAllowFile.Appearance = Wisej.Web.Appearance.Switch;
             this.checkBoxAllowFile.AutoSize = false;
             this.checkBoxAllowFile.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.checkBoxAllowFile.Location = new System.Drawing.Point(3, 35);
+            this.flowLayoutPanel1.SetFillWeight(this.checkBoxAllowFile, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.checkBoxAllowFile, true);
+            this.checkBoxAllowFile.Location = new System.Drawing.Point(3, 48);
+            this.checkBoxAllowFile.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBoxAllowFile.Name = "checkBoxAllowFile";
             this.checkBoxAllowFile.Size = new System.Drawing.Size(212, 26);
             this.checkBoxAllowFile.TabIndex = 2;
-            this.checkBoxAllowFile.Text = "Allow files";
+            this.checkBoxAllowFile.Text = "Allow Files";
             // 
             // Chat
             // 

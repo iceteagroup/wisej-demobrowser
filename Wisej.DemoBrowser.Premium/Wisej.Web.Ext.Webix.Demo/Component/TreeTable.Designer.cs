@@ -59,6 +59,8 @@
             this.flowLayoutPanel1.Controls.Add(this.checkBoxEnableMultiSelect);
             this.flowLayoutPanel1.Controls.Add(this.checkBoxEditable);
             this.flowLayoutPanel1.Controls.Add(this.comboBoxEditaction);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 38);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 434);
             // 
             // treeTable1
             // 
@@ -78,7 +80,10 @@
             this.checkBoxEditable.AutoSize = false;
             this.checkBoxEditable.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.checkBoxEditable.Checked = true;
-            this.checkBoxEditable.Location = new System.Drawing.Point(3, 35);
+            this.flowLayoutPanel1.SetFillWeight(this.checkBoxEditable, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.checkBoxEditable, true);
+            this.checkBoxEditable.Location = new System.Drawing.Point(3, 48);
+            this.checkBoxEditable.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBoxEditable.Name = "checkBoxEditable";
             this.checkBoxEditable.Size = new System.Drawing.Size(212, 26);
             this.checkBoxEditable.TabIndex = 0;
@@ -90,13 +95,16 @@
             this.comboBoxEditaction.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Left) 
             | Wisej.Web.AnchorStyles.Right)));
             this.comboBoxEditaction.DropDownStyle = Wisej.Web.ComboBoxStyle.DropDownList;
+            this.flowLayoutPanel1.SetFillWeight(this.comboBoxEditaction, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.comboBoxEditaction, true);
             this.comboBoxEditaction.Items.AddRange(new object[] {
             "click",
             "dblclick"});
-            this.comboBoxEditaction.LabelText = "Editaction";
-            this.comboBoxEditaction.Location = new System.Drawing.Point(3, 67);
+            this.comboBoxEditaction.LabelText = "Edit Action";
+            this.comboBoxEditaction.Location = new System.Drawing.Point(3, 93);
+            this.comboBoxEditaction.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.comboBoxEditaction.Name = "comboBoxEditaction";
-            this.comboBoxEditaction.Size = new System.Drawing.Size(212, 46);
+            this.comboBoxEditaction.Size = new System.Drawing.Size(212, 57);
             this.comboBoxEditaction.TabIndex = 1;
             // 
             // checkBoxEnableMultiSelect
@@ -107,11 +115,13 @@
             this.checkBoxEnableMultiSelect.AutoSize = false;
             this.checkBoxEnableMultiSelect.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.checkBoxEnableMultiSelect.Checked = true;
+            this.flowLayoutPanel1.SetFillWeight(this.checkBoxEnableMultiSelect, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.checkBoxEnableMultiSelect, true);
             this.checkBoxEnableMultiSelect.Location = new System.Drawing.Point(3, 3);
             this.checkBoxEnableMultiSelect.Name = "checkBoxEnableMultiSelect";
             this.checkBoxEnableMultiSelect.Size = new System.Drawing.Size(212, 26);
             this.checkBoxEnableMultiSelect.TabIndex = 2;
-            this.checkBoxEnableMultiSelect.Text = "Enable multiselect";
+            this.checkBoxEnableMultiSelect.Text = "Enable Multi-Select";
             // 
             // TreeTable
             // 

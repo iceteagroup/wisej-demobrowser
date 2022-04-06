@@ -56,6 +56,8 @@
             // 
             this.flowLayoutPanel1.Controls.Add(this.checkBoxCollapsed);
             this.flowLayoutPanel1.Controls.Add(this.checkBoxEnableMultiOpen);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 38);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 434);
             // 
             // sidebar1
             // 
@@ -73,6 +75,8 @@
             this.checkBoxCollapsed.Appearance = Wisej.Web.Appearance.Switch;
             this.checkBoxCollapsed.AutoSize = false;
             this.checkBoxCollapsed.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.flowLayoutPanel1.SetFillWeight(this.checkBoxCollapsed, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.checkBoxCollapsed, true);
             this.checkBoxCollapsed.Location = new System.Drawing.Point(3, 3);
             this.checkBoxCollapsed.Name = "checkBoxCollapsed";
             this.checkBoxCollapsed.Size = new System.Drawing.Size(212, 26);
@@ -86,11 +90,14 @@
             this.checkBoxEnableMultiOpen.Appearance = Wisej.Web.Appearance.Switch;
             this.checkBoxEnableMultiOpen.AutoSize = false;
             this.checkBoxEnableMultiOpen.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.checkBoxEnableMultiOpen.Location = new System.Drawing.Point(3, 35);
+            this.flowLayoutPanel1.SetFillWeight(this.checkBoxEnableMultiOpen, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.checkBoxEnableMultiOpen, true);
+            this.checkBoxEnableMultiOpen.Location = new System.Drawing.Point(3, 48);
+            this.checkBoxEnableMultiOpen.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBoxEnableMultiOpen.Name = "checkBoxEnableMultiOpen";
             this.checkBoxEnableMultiOpen.Size = new System.Drawing.Size(212, 26);
             this.checkBoxEnableMultiOpen.TabIndex = 2;
-            this.checkBoxEnableMultiOpen.Text = "Enable multi open";
+            this.checkBoxEnableMultiOpen.Text = "Enable Multi-Open";
             // 
             // Sidebar
             // 
