@@ -136,7 +136,6 @@ namespace Wisej.DemoBrowser
 							{
 								Text = demoName,
 								Name = demoName,
-								HideNodeImage = true,
 							};
 							controlNode.Nodes.Add(demoNode);
 						}
@@ -147,6 +146,14 @@ namespace Wisej.DemoBrowser
 							Info = demoContent,
 							Title = demoName,
 						};
+
+						// apply the "features" image.
+						var demoImageSource = ((dynamic)demo.Value)?.imageSource ?? "";
+						var demoImageIndex = AppendImage(demoImageSource);
+
+						demoNode.ImageIndex = demoImageIndex;
+						demoNode.SelectedImageIndex = demoImageIndex;
+
 						demoNode.UserData.Type = "Demo";
 					}
 				}

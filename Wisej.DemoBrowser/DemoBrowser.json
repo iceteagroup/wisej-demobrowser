@@ -795,13 +795,6 @@
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/Calendar.svg",
 				"docsUrl": "https://docs.wisej.com/extensions/extensions/fullcalendar",
 				"description-en": "The <b>Wisej.Web.Ext.FullCalendar</b> extension is an amazing full-size drag-n-drop event calendar. Supports multiple views, flexible events, custom styles, integrates with Google Calendars, and it’s completely integrated with Wisej."
-			},
-			"Appearances": {
-				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Extensions/Wisej.DemoBrowser.FullCalendar",
-				"assembly": "Appearances, Wisej.DemoBrowser.FullCalendar.dll",
-				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/Calendar.svg",
-				"docsUrl": "https://docs.wisej.com/extensions/extensions/fullcalendar",
-				"description-en": "The <b>Wisej.Web.Ext.FullCalendar</b> extension is an amazing full-size drag-n-drop event calendar. Supports multiple views, flexible events, custom styles, integrates with Google Calendars, and it’s completely integrated with Wisej."
 			}
 		},
 		// requires https.

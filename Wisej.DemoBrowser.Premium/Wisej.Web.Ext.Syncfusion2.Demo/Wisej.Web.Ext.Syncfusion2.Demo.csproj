@@ -448,7 +448,7 @@
     </Reference>
     <Reference Include="Wisej.Web.Ext.Syncfusion2, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\Documents\IceTeaGroup\WorkOnExtension\Premium\2.5\Wisej.Web.Ext.Syncfusion2\bin\Debug\Wisej.Web.Ext.Syncfusion2.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\Wisej\Extensions\Premium\2.5\bin\Wisej.Web.Ext.Syncfusion2.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

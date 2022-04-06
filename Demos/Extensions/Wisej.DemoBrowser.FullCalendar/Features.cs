@@ -16,6 +16,8 @@ namespace Wisej.DemoBrowser.FullCalendar
 		private void Features_Load(object sender, EventArgs e)
 		{
 			AddEvents();
+
+			this.comboBoxView.Items.AddRange(Enum.GetNames(typeof(ViewType)));
 		}
 
 		private void AddEvents()
@@ -127,5 +129,10 @@ namespace Wisej.DemoBrowser.FullCalendar
 							"End: " + e.Event.End
 				);
 		}
-	}
+
+        private void comboBoxView_SelectedIndexChanged(object sender, EventArgs e)
+        {
+			this.fullCalendar1.View = (ViewType)Enum.Parse(typeof(ViewType), comboBoxView.Text);
+        }
+    }
 }
