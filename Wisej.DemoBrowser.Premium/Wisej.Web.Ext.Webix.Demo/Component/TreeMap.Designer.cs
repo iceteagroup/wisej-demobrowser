@@ -37,6 +37,10 @@
             this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
+            // linkDocs
+            // 
+            this.linkDocs.Text = "https://docs.webix.com/datatree__index.html";
+            // 
             // buttonUpdate
             // 
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
@@ -57,8 +61,6 @@
             // 
             this.flowLayoutPanel1.Controls.Add(this.checkBoxEnableSelect);
             this.flowLayoutPanel1.Controls.Add(this.checkBoxEnableMultiSelect);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 31);
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 441);
             // 
             // treeMap1
             // 

@@ -34,6 +34,10 @@
             this.panel.SuspendLayout();
             this.SuspendLayout();
             // 
+            // linkDocs
+            // 
+            this.linkDocs.Text = "https://docs.webix.com/desktop__query.html#overview";
+            // 
             // linkDemo
             // 
             this.linkDemo.Text = "https://snippet.webix.com/gallery/query";

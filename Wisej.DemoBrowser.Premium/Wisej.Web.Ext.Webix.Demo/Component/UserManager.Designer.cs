@@ -33,6 +33,10 @@
             this.panel.SuspendLayout();
             this.SuspendLayout();
             // 
+            // linkDocs
+            // 
+            this.linkDocs.Text = "https://docs.webix.com/desktop__unitlist.html";
+            // 
             // linkDemo
             // 
             this.linkDemo.Text = "https://snippet.webix.com/gallery/usermanager";

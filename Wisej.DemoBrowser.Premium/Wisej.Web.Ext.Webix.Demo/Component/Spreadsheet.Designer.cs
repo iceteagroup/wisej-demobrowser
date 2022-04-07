@@ -37,6 +37,10 @@
             this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
+            // linkDocs
+            // 
+            this.linkDocs.Text = "https://docs.webix.com/desktop__spreadsheet.html";
+            // 
             // buttonUpdate
             // 
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);

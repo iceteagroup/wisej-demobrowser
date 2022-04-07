@@ -37,6 +37,10 @@
             this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
+            // linkDocs
+            // 
+            this.linkDocs.Text = "https://docs.webix.com/desktop__chat.html";
+            // 
             // buttonUpdate
             // 
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
@@ -58,8 +62,6 @@
             this.flowLayoutPanel1.Controls.Add(this.checkBoxCompact);
             this.flowLayoutPanel1.Controls.Add(this.checkBoxAllowFile);
             this.flowLayoutPanel1.Controls.Add(this.comboBoxChatType);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 31);
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 441);
             // 
             // chat1
             // 

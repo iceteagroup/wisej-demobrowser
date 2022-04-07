@@ -39,6 +39,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownZoomLevel)).BeginInit();
             this.SuspendLayout();
             // 
+            // linkDocs
+            // 
+            this.linkDocs.Text = "https://docs.webix.com/desktop__diagram.html#overview";
+            // 
             // buttonUpdate
             // 
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
