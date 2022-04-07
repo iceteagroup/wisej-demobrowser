@@ -59,6 +59,8 @@
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.Controls.Add(this.comboBoxChartType);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 38);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 434);
             // 
             // chart1
             // 
@@ -80,10 +82,10 @@
             "donut",
             "spline",
             "line"});
-            this.comboBoxChartType.LabelText = "Chart type";
+            this.comboBoxChartType.LabelText = "Chart Type";
             this.comboBoxChartType.Location = new System.Drawing.Point(3, 3);
             this.comboBoxChartType.Name = "comboBoxChartType";
-            this.comboBoxChartType.Size = new System.Drawing.Size(212, 46);
+            this.comboBoxChartType.Size = new System.Drawing.Size(212, 57);
             this.comboBoxChartType.TabIndex = 0;
             // 
             // Chart

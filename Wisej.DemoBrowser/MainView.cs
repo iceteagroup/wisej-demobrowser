@@ -91,8 +91,8 @@ namespace Wisej.DemoBrowser
 				{
 					Text = categoryName,
 					Name = categoryName,
-					HideNodeImage = true,
 				};
+
 				categoryNode.UserData.Type = "Category";
 
 				foreach (Core.DynamicObject.Member control in controls)
@@ -109,9 +109,12 @@ namespace Wisej.DemoBrowser
 					};
 					controlNode.UserData.Type = "Control";
 
-					// apply the "features" image.
+					// apply the "features" image to the category and control.
 					var imageSource = demos["Features"]?.imageSource ?? "";
 					var imageIndex = AppendImage(imageSource);
+
+					categoryNode.ImageIndex = imageIndex;
+					categoryNode.SelectedImageIndex = imageIndex;
 
 					controlNode.ImageIndex = imageIndex;
 					controlNode.SelectedImageIndex = imageIndex;
@@ -136,7 +139,6 @@ namespace Wisej.DemoBrowser
 							{
 								Text = demoName,
 								Name = demoName,
-								HideNodeImage = true,
 							};
 							controlNode.Nodes.Add(demoNode);
 						}
@@ -147,6 +149,14 @@ namespace Wisej.DemoBrowser
 							Info = demoContent,
 							Title = demoName,
 						};
+
+						// apply the "features" image.
+						var demoImageSource = ((dynamic)demo.Value)?.imageSource ?? "";
+						var demoImageIndex = AppendImage(demoImageSource);
+
+						demoNode.ImageIndex = demoImageIndex;
+						demoNode.SelectedImageIndex = demoImageIndex;
+
 						demoNode.UserData.Type = "Demo";
 					}
 				}

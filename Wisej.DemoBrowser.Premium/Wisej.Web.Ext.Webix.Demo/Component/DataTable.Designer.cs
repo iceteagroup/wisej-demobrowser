@@ -65,6 +65,8 @@
             this.flowLayoutPanel1.Controls.Add(this.checkBoxEditable);
             this.flowLayoutPanel1.Controls.Add(this.checkBoxEnableHeader);
             this.flowLayoutPanel1.Controls.Add(this.checkBoxEnableSort);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 38);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 434);
             // 
             // dataTable1
             // 
@@ -83,11 +85,13 @@
             this.checkBoxEnableDrag.Appearance = Wisej.Web.Appearance.Switch;
             this.checkBoxEnableDrag.AutoSize = false;
             this.checkBoxEnableDrag.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.flowLayoutPanel1.SetFillWeight(this.checkBoxEnableDrag, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.checkBoxEnableDrag, true);
             this.checkBoxEnableDrag.Location = new System.Drawing.Point(3, 3);
             this.checkBoxEnableDrag.Name = "checkBoxEnableDrag";
             this.checkBoxEnableDrag.Size = new System.Drawing.Size(212, 26);
             this.checkBoxEnableDrag.TabIndex = 1;
-            this.checkBoxEnableDrag.Text = "Enable drag and drop";
+            this.checkBoxEnableDrag.Text = "Drag-and-Drop";
             // 
             // checkBoxEditable
             // 
@@ -96,7 +100,10 @@
             this.checkBoxEditable.Appearance = Wisej.Web.Appearance.Switch;
             this.checkBoxEditable.AutoSize = false;
             this.checkBoxEditable.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.checkBoxEditable.Location = new System.Drawing.Point(3, 35);
+            this.flowLayoutPanel1.SetFillWeight(this.checkBoxEditable, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.checkBoxEditable, true);
+            this.checkBoxEditable.Location = new System.Drawing.Point(3, 48);
+            this.checkBoxEditable.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBoxEditable.Name = "checkBoxEditable";
             this.checkBoxEditable.Size = new System.Drawing.Size(212, 26);
             this.checkBoxEditable.TabIndex = 2;
@@ -109,11 +116,14 @@
             this.checkBoxEnableHeader.Appearance = Wisej.Web.Appearance.Switch;
             this.checkBoxEnableHeader.AutoSize = false;
             this.checkBoxEnableHeader.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.checkBoxEnableHeader.Location = new System.Drawing.Point(3, 67);
+            this.flowLayoutPanel1.SetFillWeight(this.checkBoxEnableHeader, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.checkBoxEnableHeader, true);
+            this.checkBoxEnableHeader.Location = new System.Drawing.Point(3, 93);
+            this.checkBoxEnableHeader.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBoxEnableHeader.Name = "checkBoxEnableHeader";
             this.checkBoxEnableHeader.Size = new System.Drawing.Size(212, 26);
             this.checkBoxEnableHeader.TabIndex = 3;
-            this.checkBoxEnableHeader.Text = "Enable header";
+            this.checkBoxEnableHeader.Text = "Header";
             // 
             // checkBoxEnableSort
             // 
@@ -122,11 +132,14 @@
             this.checkBoxEnableSort.Appearance = Wisej.Web.Appearance.Switch;
             this.checkBoxEnableSort.AutoSize = false;
             this.checkBoxEnableSort.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.checkBoxEnableSort.Location = new System.Drawing.Point(3, 99);
+            this.flowLayoutPanel1.SetFillWeight(this.checkBoxEnableSort, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.checkBoxEnableSort, true);
+            this.checkBoxEnableSort.Location = new System.Drawing.Point(3, 138);
+            this.checkBoxEnableSort.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBoxEnableSort.Name = "checkBoxEnableSort";
             this.checkBoxEnableSort.Size = new System.Drawing.Size(212, 26);
             this.checkBoxEnableSort.TabIndex = 4;
-            this.checkBoxEnableSort.Text = "Enable sort";
+            this.checkBoxEnableSort.Text = "Sort";
             // 
             // DataTable
             // 

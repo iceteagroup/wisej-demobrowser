@@ -62,6 +62,8 @@
             this.flowLayoutPanel1.Controls.Add(this.checkBoxShowTwelve);
             this.flowLayoutPanel1.Controls.Add(this.checkBoxShowSeconds);
             this.flowLayoutPanel1.Controls.Add(this.checkBoxEnableStringResult);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 38);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 434);
             // 
             // timeBoard1
             // 
@@ -79,11 +81,14 @@
             this.checkBoxShowSeconds.Appearance = Wisej.Web.Appearance.Switch;
             this.checkBoxShowSeconds.AutoSize = false;
             this.checkBoxShowSeconds.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.checkBoxShowSeconds.Location = new System.Drawing.Point(3, 35);
+            this.flowLayoutPanel1.SetFillWeight(this.checkBoxShowSeconds, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.checkBoxShowSeconds, true);
+            this.checkBoxShowSeconds.Location = new System.Drawing.Point(3, 48);
+            this.checkBoxShowSeconds.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBoxShowSeconds.Name = "checkBoxShowSeconds";
             this.checkBoxShowSeconds.Size = new System.Drawing.Size(212, 26);
             this.checkBoxShowSeconds.TabIndex = 0;
-            this.checkBoxShowSeconds.Text = "Show seconds";
+            this.checkBoxShowSeconds.Text = "Show Seconds";
             // 
             // checkBoxShowTwelve
             // 
@@ -92,11 +97,13 @@
             this.checkBoxShowTwelve.Appearance = Wisej.Web.Appearance.Switch;
             this.checkBoxShowTwelve.AutoSize = false;
             this.checkBoxShowTwelve.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.flowLayoutPanel1.SetFillWeight(this.checkBoxShowTwelve, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.checkBoxShowTwelve, true);
             this.checkBoxShowTwelve.Location = new System.Drawing.Point(3, 3);
             this.checkBoxShowTwelve.Name = "checkBoxShowTwelve";
             this.checkBoxShowTwelve.Size = new System.Drawing.Size(212, 26);
             this.checkBoxShowTwelve.TabIndex = 1;
-            this.checkBoxShowTwelve.Text = "Show twelve";
+            this.checkBoxShowTwelve.Text = "Show Twelve";
             // 
             // checkBoxEnableStringResult
             // 
@@ -105,11 +112,14 @@
             this.checkBoxEnableStringResult.Appearance = Wisej.Web.Appearance.Switch;
             this.checkBoxEnableStringResult.AutoSize = false;
             this.checkBoxEnableStringResult.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.checkBoxEnableStringResult.Location = new System.Drawing.Point(3, 67);
+            this.flowLayoutPanel1.SetFillWeight(this.checkBoxEnableStringResult, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.checkBoxEnableStringResult, true);
+            this.checkBoxEnableStringResult.Location = new System.Drawing.Point(3, 93);
+            this.checkBoxEnableStringResult.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBoxEnableStringResult.Name = "checkBoxEnableStringResult";
             this.checkBoxEnableStringResult.Size = new System.Drawing.Size(212, 26);
             this.checkBoxEnableStringResult.TabIndex = 2;
-            this.checkBoxEnableStringResult.Text = "Enable string result";
+            this.checkBoxEnableStringResult.Text = "Enable String Result";
             // 
             // TimeBoard
             // 

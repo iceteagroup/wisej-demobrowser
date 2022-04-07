@@ -65,6 +65,8 @@
             this.flowLayoutPanel1.Controls.Add(this.checkBoxMultiSelect);
             this.flowLayoutPanel1.Controls.Add(this.checkBoxEnableSelect);
             this.flowLayoutPanel1.Controls.Add(this.checkBoxEnableThreeState);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 38);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 434);
             // 
             // tree1
             // 
@@ -84,11 +86,13 @@
             this.checkBoxDragScroll.AutoSize = false;
             this.checkBoxDragScroll.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.checkBoxDragScroll.Checked = true;
+            this.flowLayoutPanel1.SetFillWeight(this.checkBoxDragScroll, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.checkBoxDragScroll, true);
             this.checkBoxDragScroll.Location = new System.Drawing.Point(3, 3);
             this.checkBoxDragScroll.Name = "checkBoxDragScroll";
             this.checkBoxDragScroll.Size = new System.Drawing.Size(212, 26);
             this.checkBoxDragScroll.TabIndex = 4;
-            this.checkBoxDragScroll.Text = "Enable drag scroll";
+            this.checkBoxDragScroll.Text = "Enable Drag Scroll";
             // 
             // checkBoxMultiSelect
             // 
@@ -97,11 +101,14 @@
             this.checkBoxMultiSelect.Appearance = Wisej.Web.Appearance.Switch;
             this.checkBoxMultiSelect.AutoSize = false;
             this.checkBoxMultiSelect.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.checkBoxMultiSelect.Location = new System.Drawing.Point(3, 35);
+            this.flowLayoutPanel1.SetFillWeight(this.checkBoxMultiSelect, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.checkBoxMultiSelect, true);
+            this.checkBoxMultiSelect.Location = new System.Drawing.Point(3, 48);
+            this.checkBoxMultiSelect.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBoxMultiSelect.Name = "checkBoxMultiSelect";
             this.checkBoxMultiSelect.Size = new System.Drawing.Size(212, 26);
             this.checkBoxMultiSelect.TabIndex = 5;
-            this.checkBoxMultiSelect.Text = "Enable multi select";
+            this.checkBoxMultiSelect.Text = "Enable Multi-Select";
             // 
             // checkBoxEnableSelect
             // 
@@ -110,11 +117,14 @@
             this.checkBoxEnableSelect.Appearance = Wisej.Web.Appearance.Switch;
             this.checkBoxEnableSelect.AutoSize = false;
             this.checkBoxEnableSelect.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.checkBoxEnableSelect.Location = new System.Drawing.Point(3, 67);
+            this.flowLayoutPanel1.SetFillWeight(this.checkBoxEnableSelect, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.checkBoxEnableSelect, true);
+            this.checkBoxEnableSelect.Location = new System.Drawing.Point(3, 93);
+            this.checkBoxEnableSelect.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBoxEnableSelect.Name = "checkBoxEnableSelect";
             this.checkBoxEnableSelect.Size = new System.Drawing.Size(212, 26);
             this.checkBoxEnableSelect.TabIndex = 6;
-            this.checkBoxEnableSelect.Text = "Enable select";
+            this.checkBoxEnableSelect.Text = "Enable Select";
             // 
             // checkBoxEnableThreeState
             // 
@@ -123,11 +133,14 @@
             this.checkBoxEnableThreeState.Appearance = Wisej.Web.Appearance.Switch;
             this.checkBoxEnableThreeState.AutoSize = false;
             this.checkBoxEnableThreeState.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.checkBoxEnableThreeState.Location = new System.Drawing.Point(3, 99);
+            this.flowLayoutPanel1.SetFillWeight(this.checkBoxEnableThreeState, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.checkBoxEnableThreeState, true);
+            this.checkBoxEnableThreeState.Location = new System.Drawing.Point(3, 138);
+            this.checkBoxEnableThreeState.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBoxEnableThreeState.Name = "checkBoxEnableThreeState";
             this.checkBoxEnableThreeState.Size = new System.Drawing.Size(212, 26);
             this.checkBoxEnableThreeState.TabIndex = 7;
-            this.checkBoxEnableThreeState.Text = "Enable three state";
+            this.checkBoxEnableThreeState.Text = "Enable Three-State";
             // 
             // Tree
             // 

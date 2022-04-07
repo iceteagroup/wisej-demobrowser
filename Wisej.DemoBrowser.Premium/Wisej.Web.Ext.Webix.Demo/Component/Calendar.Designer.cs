@@ -68,6 +68,8 @@
             this.flowLayoutPanel1.Controls.Add(this.checkBoxWeekNumber);
             this.flowLayoutPanel1.Controls.Add(this.dateTimePickerMinDate);
             this.flowLayoutPanel1.Controls.Add(this.dateTimePickerMaxDate);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 38);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 434);
             // 
             // calendar1
             // 
@@ -85,11 +87,14 @@
             this.checkBoxSkipEmptyWeeks.Appearance = Wisej.Web.Appearance.Switch;
             this.checkBoxSkipEmptyWeeks.AutoSize = false;
             this.checkBoxSkipEmptyWeeks.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.checkBoxSkipEmptyWeeks.Location = new System.Drawing.Point(3, 41);
+            this.flowLayoutPanel1.SetFillWeight(this.checkBoxSkipEmptyWeeks, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.checkBoxSkipEmptyWeeks, true);
+            this.checkBoxSkipEmptyWeeks.Location = new System.Drawing.Point(3, 54);
+            this.checkBoxSkipEmptyWeeks.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBoxSkipEmptyWeeks.Name = "checkBoxSkipEmptyWeeks";
             this.checkBoxSkipEmptyWeeks.Size = new System.Drawing.Size(212, 32);
             this.checkBoxSkipEmptyWeeks.TabIndex = 0;
-            this.checkBoxSkipEmptyWeeks.Text = "Skip empty week";
+            this.checkBoxSkipEmptyWeeks.Text = "Skip Empty Week";
             // 
             // checkBoxWeekHeader
             // 
@@ -98,11 +103,14 @@
             this.checkBoxWeekHeader.Appearance = Wisej.Web.Appearance.Switch;
             this.checkBoxWeekHeader.AutoSize = false;
             this.checkBoxWeekHeader.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.checkBoxWeekHeader.Location = new System.Drawing.Point(3, 79);
+            this.flowLayoutPanel1.SetFillWeight(this.checkBoxWeekHeader, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.checkBoxWeekHeader, true);
+            this.checkBoxWeekHeader.Location = new System.Drawing.Point(3, 105);
+            this.checkBoxWeekHeader.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBoxWeekHeader.Name = "checkBoxWeekHeader";
             this.checkBoxWeekHeader.Size = new System.Drawing.Size(212, 32);
             this.checkBoxWeekHeader.TabIndex = 1;
-            this.checkBoxWeekHeader.Text = "Week header";
+            this.checkBoxWeekHeader.Text = "Week Header";
             // 
             // checkBoxWeekNumber
             // 
@@ -111,27 +119,36 @@
             this.checkBoxWeekNumber.Appearance = Wisej.Web.Appearance.Switch;
             this.checkBoxWeekNumber.AutoSize = false;
             this.checkBoxWeekNumber.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.checkBoxWeekNumber.Location = new System.Drawing.Point(3, 117);
+            this.flowLayoutPanel1.SetFillWeight(this.checkBoxWeekNumber, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.checkBoxWeekNumber, true);
+            this.checkBoxWeekNumber.Location = new System.Drawing.Point(3, 156);
+            this.checkBoxWeekNumber.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBoxWeekNumber.Name = "checkBoxWeekNumber";
             this.checkBoxWeekNumber.Size = new System.Drawing.Size(212, 32);
             this.checkBoxWeekNumber.TabIndex = 2;
-            this.checkBoxWeekNumber.Text = "Week number";
+            this.checkBoxWeekNumber.Text = "Week Number";
             // 
             // dateTimePickerMinDate
             // 
-            this.dateTimePickerMinDate.LabelText = "Min date";
-            this.dateTimePickerMinDate.Location = new System.Drawing.Point(3, 155);
+            this.flowLayoutPanel1.SetFillWeight(this.dateTimePickerMinDate, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.dateTimePickerMinDate, true);
+            this.dateTimePickerMinDate.LabelText = "Minimum Date";
+            this.dateTimePickerMinDate.Location = new System.Drawing.Point(3, 207);
+            this.dateTimePickerMinDate.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.dateTimePickerMinDate.Name = "dateTimePickerMinDate";
-            this.dateTimePickerMinDate.Size = new System.Drawing.Size(212, 46);
+            this.dateTimePickerMinDate.Size = new System.Drawing.Size(212, 57);
             this.dateTimePickerMinDate.TabIndex = 5;
             this.dateTimePickerMinDate.Value = new System.DateTime(2022, 3, 31, 23, 48, 18, 519);
             // 
             // dateTimePickerMaxDate
             // 
-            this.dateTimePickerMaxDate.LabelText = "Max date";
-            this.dateTimePickerMaxDate.Location = new System.Drawing.Point(3, 207);
+            this.flowLayoutPanel1.SetFillWeight(this.dateTimePickerMaxDate, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.dateTimePickerMaxDate, true);
+            this.dateTimePickerMaxDate.LabelText = "Maximum date";
+            this.dateTimePickerMaxDate.Location = new System.Drawing.Point(3, 283);
+            this.dateTimePickerMaxDate.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.dateTimePickerMaxDate.Name = "dateTimePickerMaxDate";
-            this.dateTimePickerMaxDate.Size = new System.Drawing.Size(212, 46);
+            this.dateTimePickerMaxDate.Size = new System.Drawing.Size(212, 57);
             this.dateTimePickerMaxDate.TabIndex = 6;
             this.dateTimePickerMaxDate.Value = new System.DateTime(2022, 3, 31, 23, 48, 21, 962);
             // 
@@ -142,11 +159,13 @@
             this.checkBoxTimePicker.Appearance = Wisej.Web.Appearance.Switch;
             this.checkBoxTimePicker.AutoSize = false;
             this.checkBoxTimePicker.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.flowLayoutPanel1.SetFillWeight(this.checkBoxTimePicker, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.checkBoxTimePicker, true);
             this.checkBoxTimePicker.Location = new System.Drawing.Point(3, 3);
             this.checkBoxTimePicker.Name = "checkBoxTimePicker";
             this.checkBoxTimePicker.Size = new System.Drawing.Size(212, 32);
             this.checkBoxTimePicker.TabIndex = 7;
-            this.checkBoxTimePicker.Text = "Time picker";
+            this.checkBoxTimePicker.Text = "Time Picker";
             // 
             // Calendar
             // 

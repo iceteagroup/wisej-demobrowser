@@ -8,6 +8,11 @@ namespace Wisej.DemoBrowser.FullCalendar
 {
 	public partial class Features : DemoView
 	{
+		private Random r = new Random();
+
+		private string[] eventBank = new[] { "Birthday Party", "Office Party", "Conference",
+			"Lunch with John", "Holiday", "Surgery", "Mom's Birthday", "School Event", "Wisdom Teeth Removal" };
+
 		public Features()
 		{
 			InitializeComponent();
@@ -16,116 +21,43 @@ namespace Wisej.DemoBrowser.FullCalendar
 		private void Features_Load(object sender, EventArgs e)
 		{
 			AddEvents();
+
+			this.comboBoxView.Items.AddRange(Enum.GetNames(typeof(ViewType)));
 		}
 
 		private void AddEvents()
 		{
-			fullCalendar1.Events.Add(new Event()
-			{
-				Id = "Event1",
-				Start = DateTime.Now,
-				End = DateTime.Now.AddHours(1),
-				Title = "Prepare a sales report",
-				ClassName = "Other",
-				BackgroundColor = Color.Yellow,
-				TextColor = Color.Black
-			});
+			for (int i = 0; i < eventBank.Length; i++)
+            {
+				var startDate = DateTime.Now.AddDays(r.Next(30));
+				var backgroundColor = Color.FromArgb(r.Next(255), r.Next(255), r.Next(255));
 
-			fullCalendar1.Events.Add(new Event()
-			{
-				Id = "Event2",
-				Start = DateTime.Now.Date.AddHours(12),
-				End = DateTime.Now.Date.AddHours(13),
-				Title = "Lunch break",
-				ClassName = "Appointment",
-				BackgroundColor = Color.AliceBlue,
-				TextColor = Color.Brown
-			});
+				this.fullCalendar1.Events.Add(new Event
+				{
+					Id = $"Event{i}",
+					Start = startDate,
+					Title = this.eventBank[i],
+					BackgroundColor = backgroundColor,
+					End = startDate.AddHours(r.Next(24)).AddMinutes(r.Next(60)),
+					TextColor = isDark(backgroundColor) ? Color.White : Color.Black,
+				});
+			}
+		}
 
-			fullCalendar1.Events.Add(new Event()
-			{
-				Id = "Event3",
-				Start = DateTime.Now.Date.AddHours(13),
-				End = DateTime.Now.Date.AddHours(14),
-				Title = "Coffe break",
-				ClassName = "Appointment",
-				BackgroundColor = Color.AliceBlue,
-				TextColor = Color.Brown
-			});
-
-			fullCalendar1.Events.Add(new Event()
-			{
-				Id = "Event4",
-				Start = DateTime.Now.Date.AddHours(15),
-				End = DateTime.Now.Date.AddHours(16),
-				Title = "Coffe break",
-				ClassName = "Appointment",
-				BackgroundColor = Color.AliceBlue,
-				TextColor = Color.Brown
-			});
-
-			fullCalendar1.Events.Add(new Event()
-			{
-				Id = "Event5",
-				Start = DateTime.Now.Date.AddHours(15),
-				End = DateTime.Now.Date.AddHours(16),
-				Title = "Other break",
-				ClassName = "Appointment",
-				BackgroundColor = Color.AliceBlue,
-				TextColor = Color.Brown
-			});
-
-			fullCalendar1.Events.Add(new Event()
-			{
-				Id = "Event5",
-				Start = DateTime.Now.Date.AddHours(16),
-				End = DateTime.Now.Date.AddHours(17),
-				Title = "Also another break",
-				ClassName = "Appointment",
-				BackgroundColor = Color.AliceBlue,
-				TextColor = Color.Brown
-			});
-
-			fullCalendar1.Events.Add(new Event()
-			{
-				Id = "Event6",
-				Start = DateTime.Now.Date.AddDays(-1).AddHours(10.5),
-				End = DateTime.Now.Date.AddDays(-1).AddHours(11.75),
-				Title = "Meeting with ABC Client",
-				ClassName = "Meeting",
-				BackgroundColor = Color.Chocolate,
-				TextColor = Color.White
-			});
-
-			fullCalendar1.Events.Add(new Event()
-			{
-				Id = "Event7",
-				Start = DateTime.Now.Date.AddDays(2),
-				End = DateTime.Now.Date.AddDays(4),
-				AllDay = true,
-				Title = "Holidays :-)",
-				ClassName = "Vacation"
-			});
-
-			fullCalendar1.Events.Add(new Event()
-			{
-				Id = "Event8",
-				Start = DateTime.Now.Date.AddDays(3),
-				End = DateTime.Now.Date.AddDays(5),
-				AllDay = true,
-				Title = "Conference",
-				ClassName = "Vacation"
-			});
+		private bool isDark(Color color)
+        {
+			return color.R * 0.2126 + color.G * 0.7152 + color.B * 0.0722 < 255 / 2;
 		}
 
 		private void fullCalendar1_EventClick(object sender, EventClickEventArgs e)
 		{
 			if (e.Event != null)
-				AlertBox.Show("Title: " + e.Event.Title + ", " +
-							"Id: " + e.Event.Id + ", " +
-							"Start: " + e.Event.Start + ", " +
-							"End: " + e.Event.End
-				);
+				AlertBox.Show(e.Event.ToJSON());
 		}
-	}
+
+        private void comboBoxView_SelectedIndexChanged(object sender, EventArgs e)
+        {
+			this.fullCalendar1.View = (ViewType)Enum.Parse(typeof(ViewType), comboBoxView.Text);
+        }
+    }
 }

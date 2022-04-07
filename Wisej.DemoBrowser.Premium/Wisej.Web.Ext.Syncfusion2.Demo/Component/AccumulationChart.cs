@@ -8,11 +8,13 @@ namespace Wisej.Web.Ext.Syncfusion2.Demo.Component
 		{
 			InitializeComponent();
 
-			this.accumulationChart1.Instance.onChartMouseClick += new WidgetEventHandler(accumulationChart1_WidgetEvent);
+			this.accumulationChart1.WiredEvents = new[] { "chartMouseClick" };
+			this.accumulationChart1.Instance.chartMouseClick += new WidgetEventHandler(accumulationChart1_WidgetEvent);
 		}
 
 		private void accumulationChart1_WidgetEvent(object sender, WidgetEventArgs e)
 		{
+			
 			AlertBox.Show(
 				$"<b>{e.Type}</b><br/>{JSON.Stringify(e.Data)}",
 				MessageBoxIcon.Information);

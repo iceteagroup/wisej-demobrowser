@@ -18,6 +18,8 @@ namespace Wisej.DemoBrowser.ChartJS
 		private void Line_Load(object sender, EventArgs e)
 		{
 			AddDataSet();
+			AddDataSet();
+			AddDataSet();
 		}
 
 		private void AddDataSet()

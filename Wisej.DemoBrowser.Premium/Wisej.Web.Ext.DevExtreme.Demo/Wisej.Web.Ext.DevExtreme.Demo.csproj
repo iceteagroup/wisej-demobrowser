@@ -137,9 +137,6 @@
     <EmbeddedResource Include="Component\dxPivotGrid.resx">
       <DependentUpon>dxPivotGrid.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Component\dxPivotGridFieldChooser.resx">
-      <DependentUpon>dxPivotGridFieldChooser.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Component\dxPolarChart.resx">
       <DependentUpon>dxPolarChart.cs</DependentUpon>
     </EmbeddedResource>
@@ -367,12 +364,6 @@
     </Compile>
     <Compile Include="Component\dxPivotGrid.Designer.cs">
       <DependentUpon>dxPivotGrid.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Component\dxPivotGridFieldChooser.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Component\dxPivotGridFieldChooser.Designer.cs">
-      <DependentUpon>dxPivotGridFieldChooser.cs</DependentUpon>
     </Compile>
     <Compile Include="Component\dxPolarChart.cs">
       <SubType>UserControl</SubType>

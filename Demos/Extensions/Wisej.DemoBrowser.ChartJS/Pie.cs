@@ -19,6 +19,8 @@ namespace Wisej.DemoBrowser.ChartJS
 		private void Pie_Load(object sender, EventArgs e)
 		{
 			AddDataSet();
+			AddDataSet();
+			AddDataSet();
 
 			//Add labels and background colors
 			string[] labels = new string[12];

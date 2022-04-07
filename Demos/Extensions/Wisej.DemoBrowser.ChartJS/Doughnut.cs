@@ -20,6 +20,8 @@ namespace Wisej.DemoBrowser.ChartJS
 		private void Doughnut_Load(object sender, EventArgs e)
 		{
 			AddDataSet();
+			AddDataSet();
+			AddDataSet();
 
 			//Add labels and background colors
 			var labels = new string[12];

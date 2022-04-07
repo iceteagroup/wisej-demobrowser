@@ -37,12 +37,6 @@
     <Reference Include="System.Windows.Forms" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Appearances.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Appearances.Designer.cs">
-      <DependentUpon>Appearances.cs</DependentUpon>
-    </Compile>
     <Compile Include="Features.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -66,9 +60,6 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Appearances.resx">
-      <DependentUpon>Appearances.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Features.resx">
       <DependentUpon>Features.cs</DependentUpon>
     </EmbeddedResource>

@@ -61,7 +61,9 @@
       <DependentUpon>Features.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="Images\webix.png" />
+  </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Images\devextreme.png" />
     <EmbeddedResource Include="Images\kendoui.png" />

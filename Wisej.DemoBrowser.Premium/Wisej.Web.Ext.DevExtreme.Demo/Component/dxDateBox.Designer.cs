@@ -45,13 +45,8 @@
             this.linkDocs.TabIndex = 4;
             this.linkDocs.Text = "https://js.devexpress.com/Documentation/Guide/Widgets/DateBox/Overview/";
             // 
-            // groupBox1
-            // 
-            this.groupBox1.Size = new System.Drawing.Size(250, 481);
-            // 
             // buttonUpdate
             // 
-            this.buttonUpdate.Location = new System.Drawing.Point(16, 413);
             this.buttonUpdate.TabIndex = 6;
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
@@ -79,7 +74,6 @@
             this.flowLayoutPanel1.Controls.Add(this.checkBox4);
             this.flowLayoutPanel1.Controls.Add(this.comboBox1);
             this.flowLayoutPanel1.Controls.Add(this.comboBox2);
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 359);
             // 
             // dxDateBox1
             // 

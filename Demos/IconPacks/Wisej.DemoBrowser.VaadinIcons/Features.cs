@@ -26,7 +26,7 @@ namespace Wisej.DemoBrowser.VaadinIcons
 
 		private void listViewIcons_Appear(object sender, EventArgs e)
 		{
-			this.listViewIcons.ItemSize = new System.Drawing.Size((this.listViewIcons.Width / 10) - 2, 150);
+			this.listViewIcons.ItemSize = new System.Drawing.Size((this.listViewIcons.Width / 10) - 2, 115);
 		}
 
 		private void listViewIcons_RetrieveVirtualItem(object sender, RetrieveVirtualItemEventArgs e)

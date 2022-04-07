@@ -620,7 +620,7 @@
     <Reference Include="System.Web" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="Wisej.Web.Ext.Syncfusion">
-      <HintPath>..\..\..\..\..\..\Documents\IceTeaGroup\WorkOnExtension\Premium\2.5\Wisej.Web.Ext.Syncfusion\bin\Debug\Wisej.Web.Ext.Syncfusion.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\Wisej\Extensions\Premium\2.5\bin\Wisej.Web.Ext.Syncfusion.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

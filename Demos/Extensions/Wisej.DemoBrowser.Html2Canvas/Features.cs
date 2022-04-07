@@ -14,37 +14,6 @@ namespace Wisej.DemoBrowser.Html2Canvas
             InitializeComponent();
         }
 
-        private void btnCaptureChart_Click(object sender, EventArgs e)
-        {
-            PreviewCapture(chartJS);
-        }
-
-        private void btnHtmlPanel_Click(object sender, EventArgs e)
-        {
-            PreviewCapture(htmlPanel);
-        }
-
-        private void btnCapturePanel_Click(object sender, EventArgs e)
-        {
-            PreviewCapture(pnlDemo);
-        }
-
-        void PreviewCapture(Control control)
-        {
-            Web.Ext.Html2Canvas.Html2Canvas.Screenshot(control, (image) =>
-            {
-                Application.Download(image,$"html2canvas-demo-{DateTime.UtcNow}.jpg");
-            });
-        }
-
-        private void btnCaptureWindow_Click(object sender, EventArgs e)
-        {
-            Web.Ext.Html2Canvas.Html2Canvas.Screenshot((image) =>
-            {
-                Application.Download(image,$"html2canvas-demo-{DateTime.UtcNow}.jpg");
-            });
-        }
-
         private void Features_Load(object sender, EventArgs e)
         {
             PolarAreaDataSet polarDataSet = new PolarAreaDataSet(); 
@@ -74,6 +43,14 @@ namespace Wisej.DemoBrowser.Html2Canvas
                 data[i] = random.Next(100);
 
             dataSet.Data = data;
+        }
+
+        private void buttonScreenshot_Click(object sender, EventArgs e)
+        {
+            Web.Ext.Html2Canvas.Html2Canvas.Screenshot(this, (image) =>
+            {
+                Application.Download(image, $"html2canvas-demo-{DateTime.UtcNow}.jpg");
+            });
         }
     }
 }

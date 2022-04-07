@@ -582,13 +582,6 @@
 				"docsUrl": "https://docs.wisej.com/docs/controls/lists/listview",
 				"description-en": "The <b>Wisej.Web.ListView</b> is a control used to display a list of items through one of four predefined views."
 			},
-			"Appearances": {
-				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Grids/Wisej.DemoBrowser.ListView",
-				"assembly": "Appearances, Wisej.DemoBrowser.ListView.dll",
-				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/ListView.svg",
-				"docsUrl": "https://docs.wisej.com/docs/controls/lists/listview",
-				"description-en": "The <b>Wisej.Web.ListView</b> is a control used to display a list of items through one of four predefined views."
-			},
 			"Selection Modes": {
 				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Grids/Wisej.DemoBrowser.ListView",
 				"assembly": "SelectionModes, Wisej.DemoBrowser.ListView.dll",
@@ -795,13 +788,6 @@
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/Calendar.svg",
 				"docsUrl": "https://docs.wisej.com/extensions/extensions/fullcalendar",
 				"description-en": "The <b>Wisej.Web.Ext.FullCalendar</b> extension is an amazing full-size drag-n-drop event calendar. Supports multiple views, flexible events, custom styles, integrates with Google Calendars, and it’s completely integrated with Wisej."
-			},
-			"Appearances": {
-				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Extensions/Wisej.DemoBrowser.FullCalendar",
-				"assembly": "Appearances, Wisej.DemoBrowser.FullCalendar.dll",
-				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/Calendar.svg",
-				"docsUrl": "https://docs.wisej.com/extensions/extensions/fullcalendar",
-				"description-en": "The <b>Wisej.Web.Ext.FullCalendar</b> extension is an amazing full-size drag-n-drop event calendar. Supports multiple views, flexible events, custom styles, integrates with Google Calendars, and it’s completely integrated with Wisej."
 			}
 		},
 		// requires https.
@@ -813,7 +799,7 @@
 		//		"docsUrl": "https://docs.wisej.com/extensions/extensions/geolocation/api/wisej.ext.geolocation.geolocation",
 		//		"description-en": "The <b>Wisej.Ext.Geolocation</b> component represents an object able to programmatically obtain the position of the device."
 		//	}
-		},
+		//},
 		"GoogleMaps": {
 			"Features": {
 				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Extensions/Wisej.DemoBrowser.GoogleMaps",
@@ -879,27 +865,6 @@
 			"Features": {
 				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Extensions/Wisej.DemoBrowser.jSequence",
 				"assembly": "Features, Wisej.DemoBrowser.jSequence.dll",
-				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/ShowDiagramPane.svg",
-				"docsUrl": "https://docs.wisej.com/extensions/extensions/jsequence",
-				"description-en": "The <b>Wisej.Web.Ext.jSequence</b> control uses the jSequence widget to turn text into UML sequence diagram."
-			},
-			"Title Showcase": {
-				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Extensions/Wisej.DemoBrowser.jSequence",
-				"assembly": "Title, Wisej.DemoBrowser.jSequence.dll",
-				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/ShowDiagramPane.svg",
-				"docsUrl": "https://docs.wisej.com/extensions/extensions/jsequence",
-				"description-en": "The <b>Wisej.Web.Ext.jSequence</b> control uses the jSequence widget to turn text into UML sequence diagram."
-			},
-			"Comments Showcase": {
-				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Extensions/Wisej.DemoBrowser.jSequence",
-				"assembly": "Comments, Wisej.DemoBrowser.jSequence.dll",
-				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/ShowDiagramPane.svg",
-				"docsUrl": "https://docs.wisej.com/extensions/extensions/jsequence",
-				"description-en": "The <b>Wisej.Web.Ext.jSequence</b> control uses the jSequence widget to turn text into UML sequence diagram."
-			},
-			"Participants Showcase": {
-				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Extensions/Wisej.DemoBrowser.jSequence",
-				"assembly": "Participants, Wisej.DemoBrowser.jSequence.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/ShowDiagramPane.svg",
 				"docsUrl": "https://docs.wisej.com/extensions/extensions/jsequence",
 				"description-en": "The <b>Wisej.Web.Ext.jSequence</b> control uses the jSequence widget to turn text into UML sequence diagram."
