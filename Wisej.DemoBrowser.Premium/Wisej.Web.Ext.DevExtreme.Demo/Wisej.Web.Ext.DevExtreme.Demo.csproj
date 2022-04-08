@@ -1,515 +1,63 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
-  <PropertyGroup>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>
-    </ProductVersion>
-    <SchemaVersion>2.0</SchemaVersion>
-    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
-    <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Wisej.Web.Ext.DevExtreme.Demo</RootNamespace>
-    <AssemblyName>Wisej.Web.Ext.DevExtreme.Demo</AssemblyName>
-    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
-    <UseIISExpress>true</UseIISExpress>
-    <IISExpressSSLPort />
-    <IISExpressAnonymousAuthentication />
-    <IISExpressWindowsAuthentication />
-    <IISExpressUseClassicPipelineMode />
-    <UseGlobalApplicationHostFile />
-    <NuGetPackageImportStamp>
-    </NuGetPackageImportStamp>
-    <TargetFrameworkProfile />
-    <Use64BitIISExpress />
-    <ProjectGuid>{3CF70E34-BB81-4D95-83CF-972ECCF063E0}</ProjectGuid>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <DebugSymbols>true</DebugSymbols>
-    <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
-    <OutputPath>bin\</OutputPath>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <DebugType>pdbonly</DebugType>
-    <Optimize>true</Optimize>
-    <OutputPath>bin\</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Data\TreeView\4.png" />
-    <EmbeddedResource Include="Data\TreeView\5.png" />
-    <EmbeddedResource Include="Data\TreeView\6.png" />
-    <EmbeddedResource Include="Data\TreeView\7.png" />
-    <EmbeddedResource Include="Data\TreeView\9.png" />
-    <EmbeddedResource Include="Data\List\01.png" />
-    <EmbeddedResource Include="Data\List\02.png" />
-    <EmbeddedResource Include="Data\List\03.png" />
-    <EmbeddedResource Include="Data\List\04.png" />
-    <EmbeddedResource Include="Data\List\05.png" />
-    <EmbeddedResource Include="Data\List\06.png" />
-    <EmbeddedResource Include="Data\List\07.png" />
-    <EmbeddedResource Include="Data\List\08.png" />
-    <EmbeddedResource Include="Data\List\09.png" />
-    <Content Include="Data\CustomLocalization\dx.messages_en.js" />
-    <Content Include="Data\TreeView\10.png" />
-    <Content Include="Data\TreeView\14.png" />
-    <Content Include="Data\TreeView\15.png" />
-    <Content Include="Data\TreeView\2.png" />
-    <Content Include="Default.html" />
-    <Content Include="Default.json" />
-    <Content Include="favicon.ico" />
-    <EmbeddedResource Include="Component\dxBullet.resx">
-      <DependentUpon>dxBullet.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Component\dxCalendar.resx">
-      <DependentUpon>dxCalendar.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Component\dxChart.resx">
-      <DependentUpon>dxChart.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Component\dxCircularGauge.resx">
-      <DependentUpon>dxCircularGauge.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Component\dxColorBox.resx">
-      <DependentUpon>dxColorBox.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Component\dxDataGrid.resx">
-      <DependentUpon>dxDataGrid.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Component\dxDateBox.resx">
-      <DependentUpon>dxDateBox.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Component\dxDiagram.resx">
-      <DependentUpon>dxDiagram.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Component\dxDropDownButton.resx">
-      <DependentUpon>dxDropDownButton.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Component\dxFileManager.resx">
-      <DependentUpon>dxFileManager.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Component\dxFilterBuilder.resx">
-      <DependentUpon>dxFilterBuilder.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Component\dxForm.resx">
-      <DependentUpon>dxForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Component\dxFunnel.resx">
-      <DependentUpon>dxFunnel.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Component\dxGallery.resx">
-      <DependentUpon>dxGallery.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Component\dxGantt.resx">
-      <DependentUpon>dxGantt.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Component\dxHtmlEditor.resx">
-      <DependentUpon>dxHtmlEditor.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Component\dxLinearGauge.resx">
-      <DependentUpon>dxLinearGauge.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Component\dxList.resx">
-      <DependentUpon>dxList.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Component\dxLookup.resx">
-      <DependentUpon>dxLookup.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Component\dxMap.resx">
-      <DependentUpon>dxMap.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Component\dxMenu.resx">
-      <DependentUpon>dxMenu.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Component\dxNavBar.resx">
-      <DependentUpon>dxNavBar.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Component\dxPieChart.resx">
-      <DependentUpon>dxPieChart.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Component\dxPivotGrid.resx">
-      <DependentUpon>dxPivotGrid.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Component\dxPolarChart.resx">
-      <DependentUpon>dxPolarChart.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Component\dxProgressBar.resx">
-      <DependentUpon>dxProgressBar.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Component\dxRangeSelector.resx">
-      <DependentUpon>dxRangeSelector.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Component\dxRangeSlider.resx">
-      <DependentUpon>dxRangeSlider.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Component\dxSankey.resx">
-      <DependentUpon>dxSankey.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Component\dxScheduler.resx">
-      <DependentUpon>dxScheduler.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Component\dxSparkline.resx">
-      <DependentUpon>dxSparkline.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Component\dxSwitch.resx">
-      <DependentUpon>dxSwitch.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Component\dxTileView.resx">
-      <DependentUpon>dxTileView.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Component\dxTreeList.resx">
-      <DependentUpon>dxTreeList.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Component\dxTreeMap.resx">
-      <DependentUpon>dxTreeMap.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Component\dxTreeView.resx">
-      <DependentUpon>dxTreeView.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Component\TestBase.resx">
-      <DependentUpon>TestBase.cs</DependentUpon>
-    </EmbeddedResource>
-    <Content Include="Data\PivotGrid\sales.json" />
-    <Content Include="Data\DataGrid\data.json" />
-    <None Include="Data\Gantt\tasks.json" />
-    <None Include="Data\DropDownBox\customers.json" />
-    <None Include="Data\Gantt\dependencies.json" />
-    <None Include="Data\Gantt\resources.json" />
-    <None Include="Data\Gantt\resourceAssignments.json" />
-    <EmbeddedResource Include="Themes\DX.mixin.theme" />
-    <None Include="Web.Debug.config">
-      <DependentUpon>Web.config</DependentUpon>
-    </None>
-    <None Include="Web.Release.config">
-      <DependentUpon>Web.config</DependentUpon>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Images\devextreme.png" />
-    <Content Include="Images\DropDownButton\coach-woman.png" />
-    <Content Include="Images\Icon Buy.png" />
-    <Content Include="Images\Icon Contact.png" />
-    <Content Include="Images\Icon Free Trial.png" />
-    <Content Include="Images\logo-wisej-white.png" />
-    <EmbeddedResource Include="Images\TileView\1.jpg" />
-    <EmbeddedResource Include="Images\TileView\2.jpg" />
-    <EmbeddedResource Include="Images\TileView\3.jpg" />
-    <EmbeddedResource Include="Images\TileView\4.jpg" />
-    <EmbeddedResource Include="Images\TileView\5.jpg" />
-    <EmbeddedResource Include="Images\TileView\6.jpg" />
-    <EmbeddedResource Include="Images\TileView\7.jpg" />
-    <EmbeddedResource Include="Images\TileView\8.jpg" />
-    <EmbeddedResource Include="Images\TileView\9.jpg" />
-    <EmbeddedResource Include="Images\TileView\12.jpg" />
-    <EmbeddedResource Include="Images\TileView\14.jpg" />
-    <EmbeddedResource Include="Images\TileView\17.jpg" />
-    <EmbeddedResource Include="Images\TileView\20.jpg" />
-    <EmbeddedResource Include="Images\TileView\21.jpg" />
-    <EmbeddedResource Include="Images\TileView\22.jpg" />
-    <EmbeddedResource Include="Images\TileView\23.jpg" />
-    <Content Include="Images\Menu\1.png" />
-    <Content Include="Images\Menu\2.png" />
-    <Content Include="Images\splash.png" />
-    <Content Include="Images\wisej.png" />
-    <Content Include="Web.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="Component\dxBullet.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Component\dxBullet.Designer.cs">
-      <DependentUpon>dxBullet.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Component\dxCalendar.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Component\dxCalendar.Designer.cs">
-      <DependentUpon>dxCalendar.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Component\dxChart.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Component\dxChart.Designer.cs">
-      <DependentUpon>dxChart.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Component\dxCircularGauge.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Component\dxCircularGauge.Designer.cs">
-      <DependentUpon>dxCircularGauge.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Component\dxColorBox.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Component\dxColorBox.Designer.cs">
-      <DependentUpon>dxColorBox.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Component\dxDataGrid.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Component\dxDataGrid.Designer.cs">
-      <DependentUpon>dxDataGrid.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Component\dxDateBox.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Component\dxDateBox.Designer.cs">
-      <DependentUpon>dxDateBox.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Component\dxDiagram.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Component\dxDiagram.Designer.cs">
-      <DependentUpon>dxDiagram.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Component\dxDropDownButton.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Component\dxDropDownButton.Designer.cs">
-      <DependentUpon>dxDropDownButton.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Component\dxFileManager.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Component\dxFileManager.Designer.cs">
-      <DependentUpon>dxFileManager.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Component\dxFilterBuilder.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Component\dxFilterBuilder.Designer.cs">
-      <DependentUpon>dxFilterBuilder.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Component\dxForm.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Component\dxForm.Designer.cs">
-      <DependentUpon>dxForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Component\dxFunnel.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Component\dxFunnel.Designer.cs">
-      <DependentUpon>dxFunnel.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Component\dxGallery.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Component\dxGallery.Designer.cs">
-      <DependentUpon>dxGallery.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Component\dxGantt.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Component\dxGantt.Designer.cs">
-      <DependentUpon>dxGantt.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Component\dxHtmlEditor.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Component\dxHtmlEditor.Designer.cs">
-      <DependentUpon>dxHtmlEditor.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Component\dxLinearGauge.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Component\dxLinearGauge.Designer.cs">
-      <DependentUpon>dxLinearGauge.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Component\dxList.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Component\dxList.Designer.cs">
-      <DependentUpon>dxList.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Component\dxLookup.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Component\dxLookup.Designer.cs">
-      <DependentUpon>dxLookup.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Component\dxMap.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Component\dxMap.Designer.cs">
-      <DependentUpon>dxMap.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Component\dxMenu.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Component\dxMenu.Designer.cs">
-      <DependentUpon>dxMenu.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Component\dxNavBar.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Component\dxNavBar.Designer.cs">
-      <DependentUpon>dxNavBar.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Component\dxPieChart.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Component\dxPieChart.Designer.cs">
-      <DependentUpon>dxPieChart.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Component\dxPivotGrid.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Component\dxPivotGrid.Designer.cs">
-      <DependentUpon>dxPivotGrid.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Component\dxPolarChart.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Component\dxPolarChart.Designer.cs">
-      <DependentUpon>dxPolarChart.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Component\dxProgressBar.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Component\dxProgressBar.Designer.cs">
-      <DependentUpon>dxProgressBar.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Component\dxRangeSelector.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Component\dxRangeSelector.Designer.cs">
-      <DependentUpon>dxRangeSelector.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Component\dxRangeSlider.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Component\dxRangeSlider.Designer.cs">
-      <DependentUpon>dxRangeSlider.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Component\dxSankey.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Component\dxSankey.Designer.cs">
-      <DependentUpon>dxSankey.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Component\dxScheduler.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Component\dxScheduler.Designer.cs">
-      <DependentUpon>dxScheduler.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Component\dxSparkline.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Component\dxSparkline.Designer.cs">
-      <DependentUpon>dxSparkline.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Component\dxSwitch.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Component\dxSwitch.Designer.cs">
-      <DependentUpon>dxSwitch.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Component\dxTileView.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Component\dxTileView.Designer.cs">
-      <DependentUpon>dxTileView.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Component\dxTreeList.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Component\dxTreeList.Designer.cs">
-      <DependentUpon>dxTreeList.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Component\dxTreeMap.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Component\dxTreeMap.Designer.cs">
-      <DependentUpon>dxTreeMap.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Component\dxTreeView.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Component\dxTreeView.Designer.cs">
-      <DependentUpon>dxTreeView.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Component\TestBase.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="MainView.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MainView.Designer.cs">
-      <DependentUpon>MainView.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Program.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <PackageReference Include="Wisej-2">
-      <Version>2.5.*-*</Version>
-    </PackageReference>
-    <PackageReference Include="Wisej-2-DevExtreme">
-      <Version>2.5.30-test.1</Version>
-    </PackageReference>
-    <PackageReference Include="Wisej-2-MaterialDesign">
-      <Version>2.5.*-*</Version>
-    </PackageReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System" />
-    <Reference Include="System.Configuration" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="System.Drawing" />
-    <Reference Include="System.Web" />
-    <Reference Include="System.Web.ApplicationServices" />
-    <Reference Include="System.Web.DynamicData" />
-    <Reference Include="System.Web.Entity" />
-    <Reference Include="System.Web.Extensions" />
-    <Reference Include="System.Windows.Forms" />
-    <Reference Include="System.Xml.Linq" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="MainView.resx">
-      <DependentUpon>MainView.cs</DependentUpon>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup />
-  <PropertyGroup>
-    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
-    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
-  </PropertyGroup>
-  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
-  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
-  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
-  <ProjectExtensions>
-    <VisualStudio>
-      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
-        <WebProjectProperties>
-          <UseIIS>True</UseIIS>
-          <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>0</DevelopmentServerPort>
-          <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:55069/</IISUrl>
-          <NTLMAuthentication>False</NTLMAuthentication>
-          <UseCustomServer>False</UseCustomServer>
-          <CustomServerUrl>
-          </CustomServerUrl>
-          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
-        </WebProjectProperties>
-      </FlavorProperties>
-    </VisualStudio>
-  </ProjectExtensions>
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
-			 Other similar extension points exist, see Microsoft.Common.targets.
-	<Target Name="BeforeBuild">
-	</Target>
-	<Target Name="AfterBuild">
-	</Target>
-	-->
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+	<PropertyGroup>
+		<TargetFrameworks>net48;net6.0</TargetFrameworks>
+		<PlatformTarget>AnyCPU</PlatformTarget>
+		<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+		<EmbeddedResourceUseDependentUponConvention>true</EmbeddedResourceUseDependentUponConvention>
+		<NoWarn>CA1416</NoWarn>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(TargetFramework.TrimEnd(`0123456789`))'=='net'">
+		<OutputPath>bin\</OutputPath>
+		<StartupObject></StartupObject>
+		<OutputType>Library</OutputType>
+		<RunCommand>$(ProgramFiles)\IIS Express\iisexpress.exe</RunCommand>
+		<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+		<RunArguments>/path:"$(MSBuildProjectDirectory)" /port:5000</RunArguments>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(TargetFramework.TrimEnd(`0123456789`))'!='net'">
+		<StartupObject>$(RootNamespace).Startup</StartupObject>
+	</PropertyGroup>
+
+	<ItemGroup Condition="'$(TargetFramework.TrimEnd(`0123456789`))'=='net'">
+		<Reference Include="System.Windows.Forms" />
+		<Compile Remove="Startup.cs" />
+		<Content Include="Startup.cs" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Remove="Themes\DX.mixin.theme" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Content Update="Default.json">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Content>
+		<Content Update="Web.config">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Content>
+	</ItemGroup>
+
+	<ItemGroup>
+		<Content Include="Default.html">
+			<CopyToPublishDirectory>Always</CopyToPublishDirectory>
+		</Content>
+		<Content Include="favicon.ico">
+			<CopyToPublishDirectory>Always</CopyToPublishDirectory>
+		</Content>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <EmbeddedResource Include="Themes\DX.mixin.theme" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Wisej-3" Version="3.*-*" />
+		<PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
+		<PackageReference Include="Wisej-3-DevExtreme" Version="3.0.4-test.1" />
+		<PackageReference Include="Wisej-3-MaterialDesign" Version="3.0.3-dev" />
+	</ItemGroup>
+
 </Project>

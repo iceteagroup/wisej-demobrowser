@@ -10,7 +10,6 @@ namespace Wisej.Web.Ext.DevExtreme.Demo
 		/// </summary>
 		static void Main()
 		{
-			dxBase.Theme = "material.blue.light";
 			Application.MainPage = new MainView();
 		}
 
