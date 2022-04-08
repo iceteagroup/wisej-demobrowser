@@ -55,6 +55,10 @@ namespace Wisej.DemoBrowser
 			this.treeViewComponents.Nodes.Clear();
 			PopulateTestList();
 
+#if NETCOREAPP
+			LoadUnreferencedWisejAssemblies();
+#endif
+
 			if (this.treeViewComponents.Nodes.Count > 0)
 				this.treeViewComponents.SelectedNode = this.treeViewComponents.Nodes[0];
 
@@ -63,6 +67,17 @@ namespace Wisej.DemoBrowser
 
 			this.panelComponents.ShowHeader = false;
 		}
+
+		/// <summary>
+		/// Load Wisej-related assemblies that aren't referenced in the main project.
+		/// </summary>
+		private void LoadUnreferencedWisejAssemblies()
+		{
+			var directory = Path.GetDirectoryName(Application.ExecutablePath);
+			var assemblies = Directory.GetFiles(directory, "Wisej.*.dll");
+			foreach (var assembly in assemblies)
+				Application.LoadAssembly(Path.Combine(directory, assembly));
+        }
 
 		private void Application_HashChanged(object sender, HashChangedEventArgs e)
 		{
@@ -196,7 +211,7 @@ namespace Wisej.DemoBrowser
 			} 
 			catch
 			{
-				AlertBox.Show("Unknown Demo.", MessageBoxIcon.Error, showProgressBar: true);
+				Wisej.Web.AlertBox.Show("Unknown Demo.", MessageBoxIcon.Error, showProgressBar: true);
 			}
 		}
 
@@ -247,7 +262,7 @@ namespace Wisej.DemoBrowser
 
 				var directory = Path.GetDirectoryName(Application.ExecutablePath);
 				var path = Path.Combine(directory, assemblyName);
-				var assembly = Assembly.LoadFrom(path);
+				var assembly = Application.LoadAssembly(path);
 				var type = assembly.GetTypes().Where(t => t.Name == typeName).ToArray()[0] ?? null;
 
 				var demoInstance = (Control)Activator.CreateInstance(type);
@@ -269,7 +284,7 @@ namespace Wisej.DemoBrowser
 			}
 		}
 
-		#region Links
+#region Links
 
 		private void buttonDocs_Click(object sender, EventArgs e)
 		{
@@ -328,7 +343,7 @@ namespace Wisej.DemoBrowser
 			Application.Navigate(tag?.Info.docsUrl ?? BASE_DOCS_URL, "_blank");
 		}
 
-		#endregion
+#endregion
 
 		private void buttonSearch_Click(object sender, EventArgs e)
 		{
@@ -350,7 +365,7 @@ namespace Wisej.DemoBrowser
 			this.panelComponents.ShowHeader = true;
 		}
 
-		#region Search Implementation
+#region Search Implementation
 
 		/// <summary>
 		/// Selects the previous demo node.
@@ -469,7 +484,7 @@ namespace Wisej.DemoBrowser
 			}
 		}
 
-		#endregion
+#endregion
 
 	}
 }
