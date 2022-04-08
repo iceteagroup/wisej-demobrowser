@@ -56,6 +56,7 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
             this.linkDocs.TabIndex = 8;
             this.linkDocs.Text = "https://js.devexpress.com/Documentation/";
             this.linkDocs.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.linkDocs.LinkClicked += new Wisej.Web.LinkLabelLinkClickedEventHandler(this.linkDocs_LinkClicked);
             // 
             // imageList1
             // 
@@ -108,6 +109,7 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
             this.linkDemo.TabIndex = 10;
             this.linkDemo.Text = "https://js.devexpress.com/Demos/WidgetsGallery/";
             this.linkDemo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.linkDemo.LinkClicked += new Wisej.Web.LinkLabelLinkClickedEventHandler(this.linkDocs_LinkClicked);
             // 
             // linkAPI
             // 
@@ -120,13 +122,14 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
             this.linkAPI.TabIndex = 9;
             this.linkAPI.Text = "https://js.devexpress.com/Documentation/ApiReference/UI_Components/";
             this.linkAPI.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.linkAPI.LinkClicked += new Wisej.Web.LinkLabelLinkClickedEventHandler(this.linkDocs_LinkClicked);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(51, 88);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(56, 22);
+            this.label3.Size = new System.Drawing.Size(47, 22);
             this.label3.TabIndex = 15;
             this.label3.Text = "DEMO:";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -136,7 +139,7 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(51, 58);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(33, 22);
+            this.label2.Size = new System.Drawing.Size(29, 22);
             this.label2.TabIndex = 14;
             this.label2.Text = "API:";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -146,7 +149,7 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(51, 28);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(52, 22);
+            this.label1.Size = new System.Drawing.Size(46, 22);
             this.label1.TabIndex = 13;
             this.label1.Text = "DOCS:";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
