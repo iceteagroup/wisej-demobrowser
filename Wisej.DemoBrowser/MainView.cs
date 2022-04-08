@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Dynamic;
 using System.IO;
 using System.Linq;
+using System.Net;
 using System.Reflection;
 using System.Web;
 using Wisej.DemoBrowser.Common;
@@ -184,7 +185,7 @@ namespace Wisej.DemoBrowser
 		{
 			try
 			{
-				var nodePath = HttpUtility.UrlDecode(path).Split(this.treeViewComponents.PathSeparator.ToCharArray());
+				var nodePath = WebUtility.UrlDecode(path).Split(this.treeViewComponents.PathSeparator.ToCharArray());
 				var categoryNode = this.treeViewComponents.Nodes[nodePath[0]];
 				var controlNode = categoryNode.Nodes[nodePath[1]];
 				TreeNode demoNode = controlNode;
@@ -244,7 +245,8 @@ namespace Wisej.DemoBrowser
 				var assemblyName = components[1].Trim();
 				var typeName = components[0].Trim();
 
-				var path = $"{Application.MapPath("bin")}/{assemblyName}";
+				var directory = Path.GetDirectoryName(Application.ExecutablePath);
+				var path = Path.Combine(directory, assemblyName);
 				var assembly = Assembly.LoadFrom(path);
 				var type = assembly.GetTypes().Where(t => t.Name == typeName).ToArray()[0] ?? null;
 

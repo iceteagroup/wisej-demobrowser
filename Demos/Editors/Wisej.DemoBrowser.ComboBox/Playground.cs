@@ -1,6 +1,5 @@
 ﻿using System;
 using Wisej.Web;
-using Wisej.DemoBrowser.Common.Views;
 using Wisej.DemoBrowser.Common;
 using System.ComponentModel;
 
