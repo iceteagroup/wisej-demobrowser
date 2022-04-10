@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.panel1 = new Wisej.Web.Panel();
+            this.pbVip = new Wisej.Web.PictureBox();
             this.label1 = new Wisej.Web.Label();
             this.lblIssued = new Wisej.Web.Label();
             this.panel2 = new Wisej.Web.Panel();
             this.label2 = new Wisej.Web.Label();
-            this.pbVip = new Wisej.Web.PictureBox();
             this.lblDob = new Wisej.Web.Label();
             this.lblDobTxt = new Wisej.Web.Label();
             this.pnlFavColor = new Wisej.Web.Panel();
@@ -48,8 +48,8 @@
             this.barcode1 = new Wisej.Web.Ext.Barcode.Barcode();
             this.lblID = new Wisej.Web.Label();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbVip)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -61,6 +61,15 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(582, 44);
             this.panel1.TabIndex = 0;
+            // 
+            // pbVip
+            // 
+            this.pbVip.Anchor = Wisej.Web.AnchorStyles.None;
+            this.pbVip.ImageSource = "wisej.png";
+            this.pbVip.Location = new System.Drawing.Point(535, 6);
+            this.pbVip.Name = "pbVip";
+            this.pbVip.Size = new System.Drawing.Size(37, 32);
+            this.pbVip.SizeMode = Wisej.Web.PictureBoxSizeMode.Zoom;
             // 
             // label1
             // 
@@ -116,15 +125,6 @@
             this.label2.TabIndex = 19;
             this.label2.Text = "Favorite color: ";
             this.label2.Click += new System.EventHandler(this.label2_Click);
-            // 
-            // pbVip
-            // 
-            this.pbVip.Anchor = Wisej.Web.AnchorStyles.None;
-            this.pbVip.ImageSource = "resource.wx/Wisej.DemoBrowser.PropertyGrid/wisej.png";
-            this.pbVip.Location = new System.Drawing.Point(535, 6);
-            this.pbVip.Name = "pbVip";
-            this.pbVip.Size = new System.Drawing.Size(37, 32);
-            this.pbVip.SizeMode = Wisej.Web.PictureBoxSizeMode.Zoom;
             // 
             // lblDob
             // 
@@ -285,9 +285,9 @@
             this.Load += new System.EventHandler(this.PersonCard_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbVip)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbVip)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
