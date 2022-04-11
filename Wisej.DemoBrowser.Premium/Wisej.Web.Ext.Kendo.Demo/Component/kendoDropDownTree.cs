@@ -20,5 +20,29 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 
 			Application.Play(MessageBoxIcon.Information);
 		}
-	}
+
+        protected override void OnLoad(EventArgs e)
+        {
+            base.OnLoad(e);
+
+			this.comboBoxTagMode.SelectedIndex = 0;
+        }
+
+        private void buttonUpdate_Click(object sender, EventArgs e)
+        {
+			this.kendoDropDownTree1.Options.checkboxes = this.checkBoxCheckBoxes.Checked;
+			
+			if(this.checkBoxCheckBoxes.Checked)
+				this.kendoDropDownTree1.Options.checkAll = this.checkBoxCheckAll.Checked;
+
+			this.kendoDropDownTree1.Options.tagMode = this.comboBoxTagMode.SelectedText?.ToLower();
+
+			this.kendoDropDownTree1.Update();
+        }
+
+        private void checkBoxCheckBoxes_CheckedChanged(object sender, EventArgs e)
+        {
+			this.checkBoxCheckAll.Enabled = this.checkBoxCheckBoxes.Checked;
+        }
+    }
 }

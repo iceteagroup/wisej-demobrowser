@@ -48,5 +48,13 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 			var value = await this.kendoDropDownListColor.Instance.valueAsync();
 			this.pictureBox1.Image = Image.FromFile(Application.MapPath($"Images/DropDownList/{value}"));
 		}
-	}
+
+        private void buttonUpdate_Click(object sender, EventArgs e)
+        {
+			this.kendoDropDownListColor.Options.filterTitle = this.textBox1.Text;
+			this.kendoDropDownListColor.Options.filter = this.comboBoxFilter.SelectedText;
+
+			this.kendoDropDownListColor.Update();
+        }
+    }
 }

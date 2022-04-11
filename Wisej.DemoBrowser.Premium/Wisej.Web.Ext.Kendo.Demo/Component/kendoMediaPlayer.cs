@@ -22,5 +22,16 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 
 			Application.Play(MessageBoxIcon.Information);
 		}
-	}
+
+        private async void buttonUpdate_Click(object sender, EventArgs e)
+        {
+
+			await this.kendoMediaPlayer1.Instance.muteAsync(this.checkBoxMute.Checked);
+
+			if(!this.checkBoxMute.Checked)
+				await this.kendoMediaPlayer1.Instance.volumeAsync(this.numericUpDownVolume.Value);
+
+			this.kendoMediaPlayer1.Update();
+        }
+    }
 }

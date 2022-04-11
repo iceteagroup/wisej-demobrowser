@@ -20,5 +20,10 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 
 			Application.Play(MessageBoxIcon.Information);
 		}
-	}
+
+        private async void buttonAddStep_Click(object sender, EventArgs e)
+        {
+			await this.kendoStepper1.Instance.insertAtAsync(0, new { label = "Label added" });
+		}
+    }
 }

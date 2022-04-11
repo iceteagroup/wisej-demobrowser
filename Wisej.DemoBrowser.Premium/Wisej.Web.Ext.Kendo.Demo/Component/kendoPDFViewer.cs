@@ -20,5 +20,12 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 
 			Application.Play(MessageBoxIcon.Information);
 		}
-	}
+
+        private void buttonUpdate_Click(object sender, EventArgs e)
+        {
+			this.kendoPDFViewer1.Options.scale = this.numericUpDownScale.Value;
+
+			this.kendoPDFViewer1.Update();
+        }
+    }
 }

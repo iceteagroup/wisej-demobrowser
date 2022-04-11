@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using Wisej.Web;
 
 namespace Wisej.Web.Ext.Kendo.Demo.Component
@@ -20,5 +22,25 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 
 			Application.Play(MessageBoxIcon.Information);
 		}
-	}
+
+        private async void buttonUpdate_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(this.tagTextBoxDataSource.Text))
+            {
+				var data = this.tagTextBoxDataSource.Text.Split(',');
+				IList<object> list = new List<object>();
+				data.ToList().ForEach(d => list.Add(new
+				{
+					value = Guid.NewGuid().ToString(),
+					text = d
+				}));
+
+				await this.kendoMultiSelect1.Instance.setDataSourceAsync(list);
+			}
+
+			//this.kendoMultiSelect1.Options.autoClose = this.checkBoxAutoClose.Checked;
+
+			this.kendoMultiSelect1.Update();
+        }
+    }
 }

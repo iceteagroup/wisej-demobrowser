@@ -30,13 +30,45 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 		private void InitializeComponent()
 		{
             this.kendoTaskBoard1 = new Wisej.Web.Ext.Kendo.kendoTaskBoard();
+            this.checkBoxEditable = new Wisej.Web.CheckBox();
+            this.checkBoxSelectable = new Wisej.Web.CheckBox();
+            this.checkBoxReordable = new Wisej.Web.CheckBox();
+            this.checkBoxToolbar = new Wisej.Web.CheckBox();
+            this.label4 = new Wisej.Web.Label();
             this.panel.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            this.flowLayoutPanelProperties.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel
             // 
             this.panel.Controls.Add(this.kendoTaskBoard1);
+            // 
+            // buttonUpdate
+            // 
+            this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
+            // 
+            // linkDemo
+            // 
+            this.linkDemo.Text = "https://demos.telerik.com/kendo-ui/taskboard/index";
+            // 
+            // linkAPI
+            // 
+            this.linkAPI.Text = "https://docs.telerik.com/kendo-ui/api/javascript/ui/taskboard";
+            // 
+            // linkDocs
+            // 
+            this.linkDocs.Text = "https://docs.telerik.com/kendo-ui/controls/data-management/taskboard/overview";
+            // 
+            // flowLayoutPanelProperties
+            // 
+            this.flowLayoutPanelProperties.Controls.Add(this.checkBoxEditable);
+            this.flowLayoutPanelProperties.Controls.Add(this.checkBoxReordable);
+            this.flowLayoutPanelProperties.Controls.Add(this.checkBoxSelectable);
+            this.flowLayoutPanelProperties.Controls.Add(this.checkBoxToolbar);
+            this.flowLayoutPanelProperties.Controls.Add(this.label4);
+            this.flowLayoutPanelProperties.Location = new System.Drawing.Point(16, 35);
+            this.flowLayoutPanelProperties.Size = new System.Drawing.Size(218, 437);
             // 
             // kendoTaskBoard1
             // 
@@ -48,12 +80,79 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
             this.kendoTaskBoard1.Text = "kendoTaskBoard1";
             this.kendoTaskBoard1.WidgetEvent += new Wisej.Web.WidgetEventHandler(this.kendoTaskBoard1_WidgetEvent);
             // 
+            // checkBoxEditable
+            // 
+            this.checkBoxEditable.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Left) 
+            | Wisej.Web.AnchorStyles.Right)));
+            this.checkBoxEditable.Appearance = Wisej.Web.Appearance.Switch;
+            this.checkBoxEditable.AutoSize = false;
+            this.checkBoxEditable.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.checkBoxEditable.Checked = true;
+            this.checkBoxEditable.Location = new System.Drawing.Point(3, 3);
+            this.checkBoxEditable.Name = "checkBoxEditable";
+            this.checkBoxEditable.Size = new System.Drawing.Size(212, 44);
+            this.checkBoxEditable.TabIndex = 0;
+            this.checkBoxEditable.Text = "Editable";
+            // 
+            // checkBoxSelectable
+            // 
+            this.checkBoxSelectable.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Left) 
+            | Wisej.Web.AnchorStyles.Right)));
+            this.checkBoxSelectable.Appearance = Wisej.Web.Appearance.Switch;
+            this.checkBoxSelectable.AutoSize = false;
+            this.checkBoxSelectable.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.checkBoxSelectable.Checked = true;
+            this.checkBoxSelectable.Location = new System.Drawing.Point(3, 103);
+            this.checkBoxSelectable.Name = "checkBoxSelectable";
+            this.checkBoxSelectable.Size = new System.Drawing.Size(212, 44);
+            this.checkBoxSelectable.TabIndex = 1;
+            this.checkBoxSelectable.Text = "Selectable";
+            // 
+            // checkBoxReordable
+            // 
+            this.checkBoxReordable.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Left) 
+            | Wisej.Web.AnchorStyles.Right)));
+            this.checkBoxReordable.Appearance = Wisej.Web.Appearance.Switch;
+            this.checkBoxReordable.AutoSize = false;
+            this.checkBoxReordable.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.checkBoxReordable.Checked = true;
+            this.checkBoxReordable.Location = new System.Drawing.Point(3, 53);
+            this.checkBoxReordable.Name = "checkBoxReordable";
+            this.checkBoxReordable.Size = new System.Drawing.Size(212, 44);
+            this.checkBoxReordable.TabIndex = 2;
+            this.checkBoxReordable.Text = "Reordable";
+            // 
+            // checkBoxToolbar
+            // 
+            this.checkBoxToolbar.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Left) 
+            | Wisej.Web.AnchorStyles.Right)));
+            this.checkBoxToolbar.Appearance = Wisej.Web.Appearance.Switch;
+            this.checkBoxToolbar.AutoSize = false;
+            this.checkBoxToolbar.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.checkBoxToolbar.Checked = true;
+            this.checkBoxToolbar.Location = new System.Drawing.Point(3, 153);
+            this.checkBoxToolbar.Name = "checkBoxToolbar";
+            this.checkBoxToolbar.Size = new System.Drawing.Size(212, 44);
+            this.checkBoxToolbar.TabIndex = 3;
+            this.checkBoxToolbar.Text = "Toolbar";
+            // 
+            // label4
+            // 
+            this.label4.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Left) 
+            | Wisej.Web.AnchorStyles.Right)));
+            this.label4.Location = new System.Drawing.Point(3, 203);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(212, 77);
+            this.label4.TabIndex = 4;
+            this.label4.Text = "Note: Toolbar can be an object check api for more detail";
+            // 
             // kendoTaskBoard
             // 
             this.Name = "kendoTaskBoard";
             this.Load += new System.EventHandler(this.kendoTaskBoard_Load);
             this.panel.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
+            this.flowLayoutPanelProperties.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -62,5 +161,10 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 		#endregion
 
 		private Kendo.kendoTaskBoard kendoTaskBoard1;
-	}
+        private CheckBox checkBoxEditable;
+        private CheckBox checkBoxSelectable;
+        private CheckBox checkBoxReordable;
+        private CheckBox checkBoxToolbar;
+        private Label label4;
+    }
 }

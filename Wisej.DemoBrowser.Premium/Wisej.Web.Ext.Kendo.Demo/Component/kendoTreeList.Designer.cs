@@ -31,13 +31,21 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(kendoTreeList));
             Wisej.Web.Ext.Kendo.kendoBase.WidgetTemplate widgetTemplate1 = new Wisej.Web.Ext.Kendo.kendoBase.WidgetTemplate();
             this.kendoTreeList1 = new Wisej.Web.Ext.Kendo.kendoTreeList();
+            this.comboBoxEditMode = new Wisej.Web.ComboBox();
+            this.checkBoxFiltrable = new Wisej.Web.CheckBox();
+            this.checkBoxColumnMenu = new Wisej.Web.CheckBox();
             this.panel.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            this.flowLayoutPanelProperties.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel
             // 
             this.panel.Controls.Add(this.kendoTreeList1);
+            // 
+            // buttonUpdate
+            // 
+            this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
             // linkDemo
             // 
@@ -50,6 +58,14 @@
             // linkDocs
             // 
             this.linkDocs.Text = "https://docs.telerik.com/kendo-ui/controls/data-management/treelist/overview";
+            // 
+            // flowLayoutPanelProperties
+            // 
+            this.flowLayoutPanelProperties.Controls.Add(this.comboBoxEditMode);
+            this.flowLayoutPanelProperties.Controls.Add(this.checkBoxFiltrable);
+            this.flowLayoutPanelProperties.Controls.Add(this.checkBoxColumnMenu);
+            this.flowLayoutPanelProperties.Location = new System.Drawing.Point(16, 31);
+            this.flowLayoutPanelProperties.Size = new System.Drawing.Size(218, 441);
             // 
             // kendoTreeList1
             // 
@@ -68,12 +84,55 @@
             this.kendoTreeList1.WidgetTemplates = new Wisej.Web.Ext.Kendo.kendoBase.WidgetTemplate[] {
         widgetTemplate1};
             // 
+            // comboBoxEditMode
+            // 
+            this.comboBoxEditMode.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Left) 
+            | Wisej.Web.AnchorStyles.Right)));
+            this.comboBoxEditMode.Items.AddRange(new object[] {
+            "inline",
+            "popup",
+            "incell",
+            "none"});
+            this.comboBoxEditMode.LabelText = "Edit mode";
+            this.comboBoxEditMode.Location = new System.Drawing.Point(3, 3);
+            this.comboBoxEditMode.Name = "comboBoxEditMode";
+            this.comboBoxEditMode.Size = new System.Drawing.Size(212, 46);
+            this.comboBoxEditMode.TabIndex = 0;
+            // 
+            // checkBoxFiltrable
+            // 
+            this.checkBoxFiltrable.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Left) 
+            | Wisej.Web.AnchorStyles.Right)));
+            this.checkBoxFiltrable.Appearance = Wisej.Web.Appearance.Switch;
+            this.checkBoxFiltrable.AutoSize = false;
+            this.checkBoxFiltrable.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.checkBoxFiltrable.Location = new System.Drawing.Point(3, 55);
+            this.checkBoxFiltrable.Name = "checkBoxFiltrable";
+            this.checkBoxFiltrable.Size = new System.Drawing.Size(212, 26);
+            this.checkBoxFiltrable.TabIndex = 1;
+            this.checkBoxFiltrable.Text = "Filtrable";
+            // 
+            // checkBoxColumnMenu
+            // 
+            this.checkBoxColumnMenu.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Left) 
+            | Wisej.Web.AnchorStyles.Right)));
+            this.checkBoxColumnMenu.Appearance = Wisej.Web.Appearance.Switch;
+            this.checkBoxColumnMenu.AutoSize = false;
+            this.checkBoxColumnMenu.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.checkBoxColumnMenu.Location = new System.Drawing.Point(3, 87);
+            this.checkBoxColumnMenu.Name = "checkBoxColumnMenu";
+            this.checkBoxColumnMenu.Size = new System.Drawing.Size(212, 26);
+            this.checkBoxColumnMenu.TabIndex = 2;
+            this.checkBoxColumnMenu.Text = "Column menu";
+            // 
             // kendoTreeList
             // 
             this.Name = "kendoTreeList";
             this.Load += new System.EventHandler(this.kendoTreeList_Load);
             this.panel.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
+            this.flowLayoutPanelProperties.ResumeLayout(false);
+            this.flowLayoutPanelProperties.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -82,5 +141,8 @@
 		#endregion
 
 		private Kendo.kendoTreeList kendoTreeList1;
-	}
+        private ComboBox comboBoxEditMode;
+        private CheckBox checkBoxFiltrable;
+        private CheckBox checkBoxColumnMenu;
+    }
 }

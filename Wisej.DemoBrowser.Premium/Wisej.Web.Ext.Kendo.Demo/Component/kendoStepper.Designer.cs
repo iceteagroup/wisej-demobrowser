@@ -30,8 +30,10 @@
 		{
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(kendoStepper));
             this.kendoStepper1 = new Wisej.Web.Ext.Kendo.kendoStepper();
+            this.buttonAddStep = new Wisej.Web.Button();
             this.panel.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            this.flowLayoutPanelProperties.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel
@@ -50,6 +52,12 @@
             // 
             this.linkDocs.Text = "https://docs.telerik.com/kendo-ui/controls/navigation/stepper/overview";
             // 
+            // flowLayoutPanelProperties
+            // 
+            this.flowLayoutPanelProperties.Controls.Add(this.buttonAddStep);
+            this.flowLayoutPanelProperties.Location = new System.Drawing.Point(16, 35);
+            this.flowLayoutPanelProperties.Size = new System.Drawing.Size(218, 437);
+            // 
             // kendoStepper1
             // 
             this.kendoStepper1.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Left | Wisej.Web.AnchorStyles.Right)));
@@ -60,11 +68,23 @@
             this.kendoStepper1.TabIndex = 0;
             this.kendoStepper1.Text = "kendoStepper1";
             // 
+            // buttonAddStep
+            // 
+            this.buttonAddStep.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Left) 
+            | Wisej.Web.AnchorStyles.Right)));
+            this.buttonAddStep.Location = new System.Drawing.Point(3, 3);
+            this.buttonAddStep.Name = "buttonAddStep";
+            this.buttonAddStep.Size = new System.Drawing.Size(212, 38);
+            this.buttonAddStep.TabIndex = 0;
+            this.buttonAddStep.Text = "Add step";
+            this.buttonAddStep.Click += new System.EventHandler(this.buttonAddStep_Click);
+            // 
             // kendoStepper
             // 
             this.Name = "kendoStepper";
             this.panel.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
+            this.flowLayoutPanelProperties.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -73,5 +93,6 @@
 		#endregion
 
 		private Kendo.kendoStepper kendoStepper1;
-	}
+        private Button buttonAddStep;
+    }
 }

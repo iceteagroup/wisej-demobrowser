@@ -29,13 +29,20 @@
 		private void InitializeComponent()
 		{
             this.kendoPDFViewer1 = new Wisej.Web.Ext.Kendo.kendoPDFViewer();
+            this.numericUpDownScale = new Wisej.Web.NumericUpDown();
             this.panel.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            this.flowLayoutPanelProperties.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownScale)).BeginInit();
             this.SuspendLayout();
             // 
             // panel
             // 
             this.panel.Controls.Add(this.kendoPDFViewer1);
+            // 
+            // buttonUpdate
+            // 
+            this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
             // linkDemo
             // 
@@ -49,6 +56,12 @@
             // 
             this.linkDocs.Text = "https://docs.telerik.com/kendo-ui/controls/PDF/PDFViewer/overview";
             // 
+            // flowLayoutPanelProperties
+            // 
+            this.flowLayoutPanelProperties.Controls.Add(this.numericUpDownScale);
+            this.flowLayoutPanelProperties.Location = new System.Drawing.Point(16, 35);
+            this.flowLayoutPanelProperties.Size = new System.Drawing.Size(218, 437);
+            // 
             // kendoPDFViewer1
             // 
             this.kendoPDFViewer1.Dock = Wisej.Web.DockStyle.Fill;
@@ -59,11 +72,41 @@
             this.kendoPDFViewer1.TabIndex = 0;
             this.kendoPDFViewer1.Text = "kendoPDFViewer1";
             // 
+            // numericUpDownScale
+            // 
+            this.numericUpDownScale.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Left) 
+            | Wisej.Web.AnchorStyles.Right)));
+            this.numericUpDownScale.DecimalPlaces = 2;
+            this.numericUpDownScale.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            65536});
+            this.numericUpDownScale.LabelText = "Scale";
+            this.numericUpDownScale.Location = new System.Drawing.Point(3, 3);
+            this.numericUpDownScale.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            65536});
+            this.numericUpDownScale.Name = "numericUpDownScale";
+            this.numericUpDownScale.Postfix = "%";
+            this.numericUpDownScale.Size = new System.Drawing.Size(212, 46);
+            this.numericUpDownScale.TabIndex = 0;
+            this.numericUpDownScale.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            65536});
+            // 
             // kendoPDFViewer
             // 
             this.Name = "kendoPDFViewer";
             this.panel.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
+            this.flowLayoutPanelProperties.ResumeLayout(false);
+            this.flowLayoutPanelProperties.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownScale)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -72,5 +115,6 @@
 		#endregion
 
 		private Kendo.kendoPDFViewer kendoPDFViewer1;
-	}
+        private NumericUpDown numericUpDownScale;
+    }
 }

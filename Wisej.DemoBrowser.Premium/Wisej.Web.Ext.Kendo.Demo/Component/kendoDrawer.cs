@@ -32,5 +32,23 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 		{
 			this.kendoDrawer1.Eval("this.widget.hide()");
 		}
-	}
+
+        private async void buttonSh_Click(object sender, EventArgs e)
+        {
+			await this.kendoDrawer1.Instance.showAsync();
+        }
+
+        private async void buttonHi_Click(object sender, EventArgs e)
+        {
+			await this.kendoDrawer1.Instance.hideAsync();
+		}
+
+        private void buttonUpdate_Click(object sender, EventArgs e)
+        {
+
+			this.kendoDrawer1.Options.mode = this.comboBoxMode.SelectedText;
+
+			this.kendoDrawer1.Update();
+        }
+    }
 }

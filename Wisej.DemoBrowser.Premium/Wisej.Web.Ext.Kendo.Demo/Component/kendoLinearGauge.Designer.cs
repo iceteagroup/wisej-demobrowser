@@ -46,7 +46,6 @@
             // 
             // buttonUpdate
             // 
-            this.buttonUpdate.Location = new System.Drawing.Point(16, 472);
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
             // linkDemo
@@ -66,7 +65,8 @@
             this.flowLayoutPanelProperties.Controls.Add(this.checkBox1);
             this.flowLayoutPanelProperties.Controls.Add(this.numericUpDown1);
             this.flowLayoutPanelProperties.Controls.Add(this.button1);
-            this.flowLayoutPanelProperties.Size = new System.Drawing.Size(218, 486);
+            this.flowLayoutPanelProperties.Location = new System.Drawing.Point(16, 35);
+            this.flowLayoutPanelProperties.Size = new System.Drawing.Size(218, 437);
             // 
             // kendoLinearGauge1
             // 
@@ -86,7 +86,7 @@
             this.numericUpDown1.Location = new System.Drawing.Point(3, 60);
             this.numericUpDown1.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(212, 57);
+            this.numericUpDown1.Size = new System.Drawing.Size(212, 46);
             this.numericUpDown1.TabIndex = 1;
             this.numericUpDown1.Value = new decimal(new int[] {
             50,
@@ -98,7 +98,7 @@
             // 
             this.flowLayoutPanelProperties.SetFillWeight(this.button1, 1);
             this.flowLayoutPanelProperties.SetFlowBreak(this.button1, true);
-            this.button1.Location = new System.Drawing.Point(3, 136);
+            this.button1.Location = new System.Drawing.Point(3, 125);
             this.button1.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(212, 40);

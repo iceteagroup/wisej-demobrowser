@@ -38,6 +38,23 @@
             // 
             this.panel.Controls.Add(this.kendoPivotGridV21);
             // 
+            // linkDemo
+            // 
+            this.linkDemo.Text = "https://demos.telerik.com/kendo-ui/pivotgridv2/index";
+            // 
+            // linkAPI
+            // 
+            this.linkAPI.Text = "https://docs.telerik.com/kendo-ui/api/javascript/ui/pivotgridv2";
+            // 
+            // linkDocs
+            // 
+            this.linkDocs.Text = "https://docs.telerik.com/kendo-ui/controls/data-management/pivotgridv2/overview";
+            // 
+            // flowLayoutPanelProperties
+            // 
+            this.flowLayoutPanelProperties.Location = new System.Drawing.Point(16, 35);
+            this.flowLayoutPanelProperties.Size = new System.Drawing.Size(218, 437);
+            // 
             // kendoPivotGridV21
             // 
             this.kendoPivotGridV21.Dock = Wisej.Web.DockStyle.Fill;

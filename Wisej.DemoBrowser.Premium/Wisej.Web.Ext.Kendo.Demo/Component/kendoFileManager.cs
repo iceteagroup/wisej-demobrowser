@@ -22,5 +22,13 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 
 			Application.Play(MessageBoxIcon.Information);
 		}
-	}
+
+        private void buttonUpdate_Click(object sender, EventArgs e)
+        {
+			this.kendoFileManager1.Options.draggable = this.checkBoxDraggable.Checked;
+			this.kendoFileManager1.Options.resizable = this.checkBoxResizable.Checked;
+
+			this.kendoFileManager1.Update();
+        }
+    }
 }

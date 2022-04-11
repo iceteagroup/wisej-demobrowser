@@ -61,6 +61,8 @@
             // 
             this.flowLayoutPanelProperties.Controls.Add(this.checkBoxAllowDragAndDrop);
             this.flowLayoutPanelProperties.Controls.Add(this.checkBoxShowcheckboxes);
+            this.flowLayoutPanelProperties.Location = new System.Drawing.Point(16, 35);
+            this.flowLayoutPanelProperties.Size = new System.Drawing.Size(218, 437);
             // 
             // kendoTreeView1
             // 
@@ -73,22 +75,26 @@
             // 
             // checkBoxAllowDragAndDrop
             // 
+            this.checkBoxAllowDragAndDrop.Appearance = Wisej.Web.Appearance.Switch;
+            this.checkBoxAllowDragAndDrop.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.flowLayoutPanelProperties.SetFillWeight(this.checkBoxAllowDragAndDrop, 1);
             this.flowLayoutPanelProperties.SetFlowBreak(this.checkBoxAllowDragAndDrop, true);
             this.checkBoxAllowDragAndDrop.Location = new System.Drawing.Point(3, 3);
             this.checkBoxAllowDragAndDrop.Name = "checkBoxAllowDragAndDrop";
-            this.checkBoxAllowDragAndDrop.Size = new System.Drawing.Size(212, 27);
+            this.checkBoxAllowDragAndDrop.Size = new System.Drawing.Size(212, 24);
             this.checkBoxAllowDragAndDrop.TabIndex = 1;
             this.checkBoxAllowDragAndDrop.Text = "Allow drag-and-drop";
             // 
             // checkBoxShowcheckboxes
             // 
+            this.checkBoxShowcheckboxes.Appearance = Wisej.Web.Appearance.Switch;
+            this.checkBoxShowcheckboxes.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.flowLayoutPanelProperties.SetFillWeight(this.checkBoxShowcheckboxes, 1);
             this.flowLayoutPanelProperties.SetFlowBreak(this.checkBoxShowcheckboxes, true);
-            this.checkBoxShowcheckboxes.Location = new System.Drawing.Point(3, 49);
+            this.checkBoxShowcheckboxes.Location = new System.Drawing.Point(3, 46);
             this.checkBoxShowcheckboxes.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBoxShowcheckboxes.Name = "checkBoxShowcheckboxes";
-            this.checkBoxShowcheckboxes.Size = new System.Drawing.Size(212, 27);
+            this.checkBoxShowcheckboxes.Size = new System.Drawing.Size(212, 24);
             this.checkBoxShowcheckboxes.TabIndex = 2;
             this.checkBoxShowcheckboxes.Text = "Show checkbox";
             // 

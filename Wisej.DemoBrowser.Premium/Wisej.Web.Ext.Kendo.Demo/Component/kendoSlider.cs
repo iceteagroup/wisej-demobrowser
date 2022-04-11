@@ -20,5 +20,20 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 
 			Application.Play(MessageBoxIcon.Information);
 		}
-	}
+
+        protected override void OnLoad(EventArgs e)
+        {
+            base.OnLoad(e);
+
+			this.comboBoxTickPlacement.SelectedIndex = 0;
+        }
+
+        private void buttonUpdate_Click(object sender, EventArgs e)
+        {
+			this.kendoSlider1.Options.showButtons = this.checkBoxShowButtons.Checked;
+			this.kendoSlider1.Options.orientation = this.comboBoxTickPlacement.SelectedText?.ToLower();
+
+			this.kendoSlider1.Update();
+        }
+    }
 }
