@@ -56,6 +56,7 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
             this.linkDocs.TabIndex = 8;
             this.linkDocs.Text = "https://js.devexpress.com/Documentation/";
             this.linkDocs.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.linkDocs.LinkClicked += new Wisej.Web.LinkLabelLinkClickedEventHandler(this.linkDocs_LinkClicked);
             // 
             // imageList1
             // 
@@ -108,6 +109,7 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
             this.linkDemo.TabIndex = 10;
             this.linkDemo.Text = "https://js.devexpress.com/Demos/WidgetsGallery/";
             this.linkDemo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.linkDemo.LinkClicked += new Wisej.Web.LinkLabelLinkClickedEventHandler(this.linkDocs_LinkClicked);
             // 
             // linkAPI
             // 
@@ -120,6 +122,7 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
             this.linkAPI.TabIndex = 9;
             this.linkAPI.Text = "https://js.devexpress.com/Documentation/ApiReference/UI_Components/";
             this.linkAPI.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.linkAPI.LinkClicked += new Wisej.Web.LinkLabelLinkClickedEventHandler(this.linkDocs_LinkClicked);
             // 
             // label3
             // 
@@ -184,7 +187,7 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
 
 		private void linkDocs_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
 		{
-			Application.Navigate(e.Link, "Syncfusion");
+			Application.Navigate(e.Link, "DevExtreme");
 		}
 	}
 }

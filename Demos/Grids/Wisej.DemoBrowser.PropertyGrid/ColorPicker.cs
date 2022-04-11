@@ -1,12 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing;
 using System.Drawing.Design;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Wisej.Web;
+using PaintValueEventArgs = Wisej.Web.PaintValueEventArgs;
+using UITypeEditor = Wisej.Web.UITypeEditor;
+using UITypeEditorEditStyle = Wisej.Web.UITypeEditorEditStyle;
 
 namespace Wisej.DemoBrowser.PropertyGrid
 {

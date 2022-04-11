@@ -308,34 +308,7 @@
 				"docsUrl": "https://docs.wisej.com/docs/controls/content/iframepanel",
 				"description-en": "The <b>Wisej.Web.IFramePanel</b> control can be used to show embedded web pages. "
 			}
-		},
-		//"AspNetPanel": {
-		//	"Features": {
-		//		"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos",
-		//		"assembly": "Features, Wisej.DemoBrowser.AspNetPanel.dll",
-		//		"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/AspxFile.svg",
-		//		"docsUrl": "https://docs.wisej.com/docs/controls/content/aspnetpanel",
-		//		"description-en": "To use the <b>Wisej.Web.AspNetPanel</b> control, simply set the PageSource property to the location of an existing .aspx document in the project."
-		//	}
-		//},
-		//"UserControl": {
-		//	"Features": {
-		//		"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos",
-		//		"assembly": "Features, Wisej.DemoBrowser.UserControl.dll",
-		//		"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/UserControl.svg",
-		//		"docsUrl": "https://docs.wisej.com/docs/controls/containers/usercontrol",
-		//		"description-en": "The <b>Wisej.DemoBrowser.UserControl</b> gives you the ability to create controls that can be used in multiple places within an application or organization."
-		//	}
-		//},
-		//"Widget": {
-		//	"Features": {
-		//		"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos",
-		//		"assembly": "Features, Wisej.DemoBrowser.Widget.dll",
-		//		"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/JsApplication.svg",
-		//		"docsUrl": "https://docs.wisej.com/docs/controls/content/widget",
-		//		"description-en": "The <b>Wisej.Web.Widget</b> control is the key to integrating the rest of the JavaScript world into a Wisej application. The Widget control allows developers to load custom JavaScript and CSS libraries into their Wisej application at runtime to utilize and containerize custom controls."
-		//	}
-		//}
+		}
 	},
 	"Tools and Menus": {
 		"MenuBar": {

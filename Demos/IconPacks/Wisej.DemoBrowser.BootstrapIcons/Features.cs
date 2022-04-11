@@ -18,9 +18,7 @@ namespace Wisej.DemoBrowser.BootstrapIcons
 		private void Features_Load(object sender, EventArgs e)
 		{
 			this.fields = typeof(Ext.BootstrapIcons.Icons).GetFields();
-			var imageEntries = fields.Select(item => new ImageListEntry((string)item.GetValue(null))).ToArray();
-			
-			this.imageListIcons.Images.AddRange(imageEntries);
+			var imageEntries = fields.Select(item => new ImageListEntry((string)item.GetValue(null))).ToArray();			this.imageListIcons.Images.AddRange(imageEntries);
 			this.listViewIcons.VirtualListSize = imageEntries.Length;
 		}
 

@@ -1,105 +1,23 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
-  <PropertyGroup>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{37E52095-BB4E-4DEB-A5B4-B7546D113FC8}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Wisej.DemoBrowser.GoogleMaps</RootNamespace>
-    <AssemblyName>Wisej.DemoBrowser.GoogleMaps</AssemblyName>
-    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
-    <FileAlignment>512</FileAlignment>
-    <Deterministic>true</Deterministic>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <DebugSymbols>true</DebugSymbols>
-    <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <DebugType>pdbonly</DebugType>
-    <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
-  <ItemGroup>
-    <Reference Include="System" />
-    <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System.Drawing" />
-    <Reference Include="System.Windows.Forms" />
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="Geometry.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Geometry.Designer.cs">
-      <DependentUpon>Geometry.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GoogleMapBase.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="GoogleMapBase.Designer.cs">
-      <DependentUpon>GoogleMapBase.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Tilt.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Tilt.Designer.cs">
-      <DependentUpon>Tilt.cs</DependentUpon>
-    </Compile>
-    <Compile Include="HeatMap.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="HeatMap.Designer.cs">
-      <DependentUpon>HeatMap.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Features.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Features.Designer.cs">
-      <DependentUpon>Features.cs</DependentUpon>
-    </Compile>
-    <Compile Include="LatLngHelper.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <PackageReference Include="Wisej-2">
-      <Version>2.5.*-*</Version>
-    </PackageReference>
-    <PackageReference Include="Wisej-2-GoogleMaps">
-      <Version>2.5.*-*</Version>
-    </PackageReference>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\..\Wisej.DemoBrowser.Common\Wisej.DemoBrowser.Common.csproj">
-      <Project>{1f0b2e9e-6624-4db8-810f-48a7bc531a29}</Project>
-      <Name>Wisej.DemoBrowser.Common</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Geometry.resx">
-      <DependentUpon>Geometry.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GoogleMapBase.resx">
-      <DependentUpon>GoogleMapBase.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Tilt.resx">
-      <DependentUpon>Tilt.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="HeatMap.resx">
-      <DependentUpon>HeatMap.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Features.resx">
-      <DependentUpon>Features.cs</DependentUpon>
-    </EmbeddedResource>
-  </ItemGroup>
-  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFrameworks>net48;net6.0</TargetFrameworks>
+		<PlatformTarget>AnyCPU</PlatformTarget>
+		<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+		<CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+		<EmbeddedResourceUseDependentUponConvention>true</EmbeddedResourceUseDependentUponConvention>
+		<NoWarn>CA1416</NoWarn>
+	</PropertyGroup>
+
+	<ItemGroup Condition="'$(TargetFramework.TrimEnd(`0123456789`))'=='net'">
+		<Reference Include="System.Windows.Forms" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Wisej-3" Version="3.*-*" />
+		<PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
+		<PackageReference Include="Wisej-3-GoogleMaps" Version="3.*-*" />
+		<ProjectReference Include="..\..\..\Wisej.DemoBrowser.Common\Wisej.DemoBrowser.Common.csproj" />
+	</ItemGroup>
+
 </Project>

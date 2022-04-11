@@ -1,13 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Web.ModelBinding;
 using Wisej.DemoBrowser.Common;
 using Wisej.Web;
 
 namespace Wisej.DemoBrowser.DataGridView
 {
-	public partial class Features : DemoView
+    public partial class Features : DemoView
 	{
 		public Features()
 		{
@@ -45,11 +43,6 @@ namespace Wisej.DemoBrowser.DataGridView
 
 			var dgv = (Web.DataGridView) sender;
 			if (dgv.Columns[e.ColumnIndex].Name == "colButton") dgv.Rows.RemoveAt(e.RowIndex);
-		}
-
-		private void dataGridView1_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
-		{
-
 		}
 	}
 }

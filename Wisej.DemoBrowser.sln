@@ -3,12 +3,12 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31612.314
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wisej.DemoBrowser", "Wisej.DemoBrowser\Wisej.DemoBrowser.csproj", "{9A83DA07-B98C-4805-A73D-1FA672E7AADD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wisej.DemoBrowser", "Wisej.DemoBrowser\Wisej.DemoBrowser.csproj", "{9A83DA07-B98C-4805-A73D-1FA672E7AADD}"
 	ProjectSection(ProjectDependencies) = postProject
 		{1F0B2E9E-6624-4DB8-810F-48A7BC531A29} = {1F0B2E9E-6624-4DB8-810F-48A7BC531A29}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wisej.DemoBrowser.Common", "Wisej.DemoBrowser.Common\Wisej.DemoBrowser.Common.csproj", "{1F0B2E9E-6624-4DB8-810F-48A7BC531A29}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wisej.DemoBrowser.Common", "Wisej.DemoBrowser.Common\Wisej.DemoBrowser.Common.csproj", "{1F0B2E9E-6624-4DB8-810F-48A7BC531A29}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Demos", "Demos", "{9F6D8234-C001-4350-8206-8396FBCA9D7E}"
 EndProject
@@ -32,183 +32,179 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Notifications", "Notificati
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Extensions", "Extensions", "{C51A27C9-479B-478F-8158-62189CA32E59}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wisej.DemoBrowser.Button", "Demos\Buttons\Wisej.DemoBrowser.Button\Wisej.DemoBrowser.Button.csproj", "{FECBD337-7E19-44A6-8541-877209F23198}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wisej.DemoBrowser.Button", "Demos\Buttons\Wisej.DemoBrowser.Button\Wisej.DemoBrowser.Button.csproj", "{FECBD337-7E19-44A6-8541-877209F23198}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wisej.DemoBrowser.ComboBox", "Demos\Editors\Wisej.DemoBrowser.ComboBox\Wisej.DemoBrowser.ComboBox.csproj", "{26A0A8F4-D7CD-43C9-B2A9-BAEA5D4A85D2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wisej.DemoBrowser.ComboBox", "Demos\Editors\Wisej.DemoBrowser.ComboBox\Wisej.DemoBrowser.ComboBox.csproj", "{26A0A8F4-D7CD-43C9-B2A9-BAEA5D4A85D2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wisej.DemoBrowser.CheckBox", "Demos\Buttons\Wisej.DemoBrowser.CheckBox\Wisej.DemoBrowser.CheckBox.csproj", "{6C9A78B8-D510-4A6A-A770-D896ED5F9EDB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wisej.DemoBrowser.CheckBox", "Demos\Buttons\Wisej.DemoBrowser.CheckBox\Wisej.DemoBrowser.CheckBox.csproj", "{6C9A78B8-D510-4A6A-A770-D896ED5F9EDB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wisej.DemoBrowser.RadioButton", "Demos\Buttons\Wisej.DemoBrowser.RadioButton\Wisej.DemoBrowser.RadioButton.csproj", "{15896EE1-ADC0-4590-A677-38279682224F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wisej.DemoBrowser.RadioButton", "Demos\Buttons\Wisej.DemoBrowser.RadioButton\Wisej.DemoBrowser.RadioButton.csproj", "{15896EE1-ADC0-4590-A677-38279682224F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wisej.DemoBrowser.TextBox", "Demos\Editors\Wisej.DemoBrowser.TextBox\Wisej.DemoBrowser.TextBox.csproj", "{B9498A37-054D-435B-8B22-CC18066271C4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wisej.DemoBrowser.TextBox", "Demos\Editors\Wisej.DemoBrowser.TextBox\Wisej.DemoBrowser.TextBox.csproj", "{B9498A37-054D-435B-8B22-CC18066271C4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wisej.DemoBrowser.Label", "Demos\Content\Wisej.DemoBrowser.Label\Wisej.DemoBrowser.Label.csproj", "{83C1200A-C7F8-4902-8A1B-B3F31E6A9945}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wisej.DemoBrowser.Label", "Demos\Content\Wisej.DemoBrowser.Label\Wisej.DemoBrowser.Label.csproj", "{83C1200A-C7F8-4902-8A1B-B3F31E6A9945}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wisej.DemoBrowser.MaskedTextBox", "Demos\Editors\Wisej.DemoBrowser.MaskedTextBox\Wisej.DemoBrowser.MaskedTextBox.csproj", "{1B0C151A-3B98-4946-8859-1677A64520A7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wisej.DemoBrowser.MaskedTextBox", "Demos\Editors\Wisej.DemoBrowser.MaskedTextBox\Wisej.DemoBrowser.MaskedTextBox.csproj", "{1B0C151A-3B98-4946-8859-1677A64520A7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wisej.DemoBrowser.ListBox", "Demos\Editors\Wisej.DemoBrowser.ListBox\Wisej.DemoBrowser.ListBox.csproj", "{E1F63D0D-F9A3-437E-AAB2-5B7FF112BADF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wisej.DemoBrowser.ListBox", "Demos\Editors\Wisej.DemoBrowser.ListBox\Wisej.DemoBrowser.ListBox.csproj", "{E1F63D0D-F9A3-437E-AAB2-5B7FF112BADF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wisej.DemoBrowser.CheckedListBox", "Demos\Editors\Wisej.DemoBrowser.CheckedListBox\Wisej.DemoBrowser.CheckedListBox.csproj", "{A3821F09-F381-4775-86F8-40AB74CF72C3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wisej.DemoBrowser.CheckedListBox", "Demos\Editors\Wisej.DemoBrowser.CheckedListBox\Wisej.DemoBrowser.CheckedListBox.csproj", "{A3821F09-F381-4775-86F8-40AB74CF72C3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wisej.DemoBrowser.LinkLabel", "Demos\Content\Wisej.DemoBrowser.LinkLabel\Wisej.DemoBrowser.LinkLabel.csproj", "{F0E5F24F-3054-4609-9397-1C826089FEF6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wisej.DemoBrowser.LinkLabel", "Demos\Content\Wisej.DemoBrowser.LinkLabel\Wisej.DemoBrowser.LinkLabel.csproj", "{F0E5F24F-3054-4609-9397-1C826089FEF6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wisej.DemoBrowser.HtmlPanel", "Demos\Content\Wisej.DemoBrowser.HtmlPanel\Wisej.DemoBrowser.HtmlPanel.csproj", "{EEEDBE96-EBCB-4BBE-9F3F-027AFECD223D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wisej.DemoBrowser.HtmlPanel", "Demos\Content\Wisej.DemoBrowser.HtmlPanel\Wisej.DemoBrowser.HtmlPanel.csproj", "{EEEDBE96-EBCB-4BBE-9F3F-027AFECD223D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wisej.DemoBrowser.PictureBox", "Demos\Content\Wisej.DemoBrowser.PictureBox\Wisej.DemoBrowser.PictureBox.csproj", "{C6D25541-C1D6-4E01-8FF3-D31BB6E37DDD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wisej.DemoBrowser.PictureBox", "Demos\Content\Wisej.DemoBrowser.PictureBox\Wisej.DemoBrowser.PictureBox.csproj", "{C6D25541-C1D6-4E01-8FF3-D31BB6E37DDD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wisej.DemoBrowser.SplitButton", "Demos\Buttons\Wisej.DemoBrowser.SplitButton\Wisej.DemoBrowser.SplitButton.csproj", "{FDE6AC76-F181-4B48-95D3-AFE9927F14D2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wisej.DemoBrowser.SplitButton", "Demos\Buttons\Wisej.DemoBrowser.SplitButton\Wisej.DemoBrowser.SplitButton.csproj", "{FDE6AC76-F181-4B48-95D3-AFE9927F14D2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wisej.DemoBrowser.Video", "Demos\Miscellaneous\Wisej.DemoBrowser.Video\Wisej.DemoBrowser.Video.csproj", "{C377802C-9721-480F-A126-5D7312EC4674}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wisej.DemoBrowser.Video", "Demos\Miscellaneous\Wisej.DemoBrowser.Video\Wisej.DemoBrowser.Video.csproj", "{C377802C-9721-480F-A126-5D7312EC4674}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wisej.DemoBrowser.Audio", "Demos\Miscellaneous\Wisej.DemoBrowser.Audio\Wisej.DemoBrowser.Audio.csproj", "{9FCF1252-4525-4F3E-ABE6-79A2FC1EFE46}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wisej.DemoBrowser.Audio", "Demos\Miscellaneous\Wisej.DemoBrowser.Audio\Wisej.DemoBrowser.Audio.csproj", "{9FCF1252-4525-4F3E-ABE6-79A2FC1EFE46}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wisej.DemoBrowser.Line", "Demos\Miscellaneous\Wisej.DemoBrowser.Line\Wisej.DemoBrowser.Line.csproj", "{64DF8FB2-35C7-4977-BDAE-EBAF76E14916}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wisej.DemoBrowser.Line", "Demos\Miscellaneous\Wisej.DemoBrowser.Line\Wisej.DemoBrowser.Line.csproj", "{64DF8FB2-35C7-4977-BDAE-EBAF76E14916}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wisej.DemoBrowser.Panel", "Demos\Containers\Wisej.DemoBrowser.Panel\Wisej.DemoBrowser.Panel.csproj", "{FE154550-C27D-48BD-A479-4AC065BA85A0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wisej.DemoBrowser.Panel", "Demos\Containers\Wisej.DemoBrowser.Panel\Wisej.DemoBrowser.Panel.csproj", "{FE154550-C27D-48BD-A479-4AC065BA85A0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wisej.DemoBrowser.FlowLayoutPanel", "Demos\Containers\Wisej.DemoBrowser.FlowLayoutPanel\Wisej.DemoBrowser.FlowLayoutPanel.csproj", "{79EEDA2E-D0B3-4362-9E1D-1C3683EE6C13}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wisej.DemoBrowser.FlowLayoutPanel", "Demos\Containers\Wisej.DemoBrowser.FlowLayoutPanel\Wisej.DemoBrowser.FlowLayoutPanel.csproj", "{79EEDA2E-D0B3-4362-9E1D-1C3683EE6C13}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wisej.DemoBrowser.FlexLayoutPanel", "Demos\Containers\Wisej.DemoBrowser.FlexLayoutPanel\Wisej.DemoBrowser.FlexLayoutPanel.csproj", "{CE98BF87-C476-4C70-A001-03A485AA8BD9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wisej.DemoBrowser.FlexLayoutPanel", "Demos\Containers\Wisej.DemoBrowser.FlexLayoutPanel\Wisej.DemoBrowser.FlexLayoutPanel.csproj", "{CE98BF87-C476-4C70-A001-03A485AA8BD9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wisej.DemoBrowser.TableLayoutPanel", "Demos\Containers\Wisej.DemoBrowser.TableLayoutPanel\Wisej.DemoBrowser.TableLayoutPanel.csproj", "{1C352C74-15EA-4CC4-883C-E7694B35117E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wisej.DemoBrowser.TableLayoutPanel", "Demos\Containers\Wisej.DemoBrowser.TableLayoutPanel\Wisej.DemoBrowser.TableLayoutPanel.csproj", "{1C352C74-15EA-4CC4-883C-E7694B35117E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wisej.DemoBrowser.MessageBox", "Demos\Notifications\Wisej.DemoBrowser.MessageBox\Wisej.DemoBrowser.MessageBox.csproj", "{C9529375-B091-4A2B-AA53-3F9CE2599A18}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wisej.DemoBrowser.MessageBox", "Demos\Notifications\Wisej.DemoBrowser.MessageBox\Wisej.DemoBrowser.MessageBox.csproj", "{C9529375-B091-4A2B-AA53-3F9CE2599A18}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wisej.DemoBrowser.GroupBox", "Demos\Containers\Wisej.DemoBrowser.GroupBox\Wisej.DemoBrowser.GroupBox.csproj", "{7617033D-4399-4C28-B471-B6FE86BFC3CB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wisej.DemoBrowser.GroupBox", "Demos\Containers\Wisej.DemoBrowser.GroupBox\Wisej.DemoBrowser.GroupBox.csproj", "{7617033D-4399-4C28-B471-B6FE86BFC3CB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wisej.DemoBrowser.PdfViewer", "Demos\Containers\Wisej.DemoBrowser.PdfViewer\Wisej.DemoBrowser.PdfViewer.csproj", "{5504D547-9ED3-44EE-A702-294005CD08E7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wisej.DemoBrowser.PdfViewer", "Demos\Containers\Wisej.DemoBrowser.PdfViewer\Wisej.DemoBrowser.PdfViewer.csproj", "{5504D547-9ED3-44EE-A702-294005CD08E7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wisej.DemoBrowser.SplitContainer", "Demos\Containers\Wisej.DemoBrowser.SplitContainer\Wisej.DemoBrowser.SplitContainer.csproj", "{B9977238-0EC9-4DC2-B7E7-4CC7EA03C6DA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wisej.DemoBrowser.SplitContainer", "Demos\Containers\Wisej.DemoBrowser.SplitContainer\Wisej.DemoBrowser.SplitContainer.csproj", "{B9977238-0EC9-4DC2-B7E7-4CC7EA03C6DA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wisej.DemoBrowser.TabControl", "Demos\Containers\Wisej.DemoBrowser.TabControl\Wisej.DemoBrowser.TabControl.csproj", "{52A838E3-798E-4E00-920E-630DD6AF1E5B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wisej.DemoBrowser.TabControl", "Demos\Containers\Wisej.DemoBrowser.TabControl\Wisej.DemoBrowser.TabControl.csproj", "{52A838E3-798E-4E00-920E-630DD6AF1E5B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wisej.DemoBrowser.MonthCalendar", "Demos\Editors\Wisej.DemoBrowser.MonthCalendar\Wisej.DemoBrowser.MonthCalendar.csproj", "{A284FE78-E300-4A8C-A549-80120F7862F1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wisej.DemoBrowser.MonthCalendar", "Demos\Editors\Wisej.DemoBrowser.MonthCalendar\Wisej.DemoBrowser.MonthCalendar.csproj", "{A284FE78-E300-4A8C-A549-80120F7862F1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wisej.DemoBrowser.TreeView", "Demos\Editors\Wisej.DemoBrowser.TreeView\Wisej.DemoBrowser.TreeView.csproj", "{32865E50-585D-424F-A044-21A0E0A4B89F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wisej.DemoBrowser.TreeView", "Demos\Editors\Wisej.DemoBrowser.TreeView\Wisej.DemoBrowser.TreeView.csproj", "{32865E50-585D-424F-A044-21A0E0A4B89F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wisej.DemoBrowser.DateTimePicker", "Demos\Editors\Wisej.DemoBrowser.DateTimePicker\Wisej.DemoBrowser.DateTimePicker.csproj", "{A4DB1F93-B1E0-4B0D-A6E3-645584CE0B6F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wisej.DemoBrowser.DateTimePicker", "Demos\Editors\Wisej.DemoBrowser.DateTimePicker\Wisej.DemoBrowser.DateTimePicker.csproj", "{A4DB1F93-B1E0-4B0D-A6E3-645584CE0B6F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wisej.DemoBrowser.NumericUpDown", "Demos\Editors\Wisej.DemoBrowser.NumericUpDown\Wisej.DemoBrowser.NumericUpDown.csproj", "{24B2EBD9-9597-40FF-B974-F683698FF160}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wisej.DemoBrowser.NumericUpDown", "Demos\Editors\Wisej.DemoBrowser.NumericUpDown\Wisej.DemoBrowser.NumericUpDown.csproj", "{24B2EBD9-9597-40FF-B974-F683698FF160}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wisej.DemoBrowser.DomainUpDown", "Demos\Editors\Wisej.DemoBrowser.DomainUpDown\Wisej.DemoBrowser.DomainUpDown.csproj", "{D678075E-81F6-4518-8F7E-9F041EFAE80E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wisej.DemoBrowser.DomainUpDown", "Demos\Editors\Wisej.DemoBrowser.DomainUpDown\Wisej.DemoBrowser.DomainUpDown.csproj", "{D678075E-81F6-4518-8F7E-9F041EFAE80E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wisej.DemoBrowser.Upload", "Demos\Editors\Wisej.DemoBrowser.Upload\Wisej.DemoBrowser.Upload.csproj", "{78C364CB-EC5C-4460-930B-300C0B7B0773}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wisej.DemoBrowser.Upload", "Demos\Editors\Wisej.DemoBrowser.Upload\Wisej.DemoBrowser.Upload.csproj", "{78C364CB-EC5C-4460-930B-300C0B7B0773}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wisej.DemoBrowser.MenuBar", "Demos\ToolsAndMenus\Wisej.DemoBrowser.MenuBar\Wisej.DemoBrowser.MenuBar.csproj", "{DCB0687C-63D1-49E0-8849-54D03927D017}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wisej.DemoBrowser.MenuBar", "Demos\ToolsAndMenus\Wisej.DemoBrowser.MenuBar\Wisej.DemoBrowser.MenuBar.csproj", "{DCB0687C-63D1-49E0-8849-54D03927D017}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wisej.DemoBrowser.TrackBar", "Demos\ToolsAndMenus\Wisej.DemoBrowser.TrackBar\Wisej.DemoBrowser.TrackBar.csproj", "{8E193B05-B0CA-4636-8BB2-3C34258C3A6C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wisej.DemoBrowser.TrackBar", "Demos\ToolsAndMenus\Wisej.DemoBrowser.TrackBar\Wisej.DemoBrowser.TrackBar.csproj", "{8E193B05-B0CA-4636-8BB2-3C34258C3A6C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wisej.DemoBrowser.AlertBox", "Demos\Notifications\Wisej.DemoBrowser.AlertBox\Wisej.DemoBrowser.AlertBox.csproj", "{A25327FF-D69D-4705-A777-AC5482A482CA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wisej.DemoBrowser.AlertBox", "Demos\Notifications\Wisej.DemoBrowser.AlertBox\Wisej.DemoBrowser.AlertBox.csproj", "{A25327FF-D69D-4705-A777-AC5482A482CA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wisej.DemoBrowser.Toast", "Demos\Notifications\Wisej.DemoBrowser.Toast\Wisej.DemoBrowser.Toast.csproj", "{112AC186-25FB-4AE6-9D16-BCCAD72B2DA0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wisej.DemoBrowser.Toast", "Demos\Notifications\Wisej.DemoBrowser.Toast\Wisej.DemoBrowser.Toast.csproj", "{112AC186-25FB-4AE6-9D16-BCCAD72B2DA0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wisej.DemoBrowser.ProgressBar", "Demos\Notifications\Wisej.DemoBrowser.ProgressBar\Wisej.DemoBrowser.ProgressBar.csproj", "{563A1092-3679-4A66-804F-DF2AC4AA75CF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wisej.DemoBrowser.ProgressBar", "Demos\Notifications\Wisej.DemoBrowser.ProgressBar\Wisej.DemoBrowser.ProgressBar.csproj", "{563A1092-3679-4A66-804F-DF2AC4AA75CF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wisej.DemoBrowser.ToolBar", "Demos\ToolsAndMenus\Wisej.DemoBrowser.ToolBar\Wisej.DemoBrowser.ToolBar.csproj", "{AAA51C79-DDFC-4640-A057-A090E5729A17}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wisej.DemoBrowser.ToolBar", "Demos\ToolsAndMenus\Wisej.DemoBrowser.ToolBar\Wisej.DemoBrowser.ToolBar.csproj", "{AAA51C79-DDFC-4640-A057-A090E5729A17}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wisej.DemoBrowser.ScrollBars", "Demos\ToolsAndMenus\Wisej.DemoBrowser.ScrollBars\Wisej.DemoBrowser.ScrollBars.csproj", "{8E7FF304-5BE6-4B19-883D-F3487718BE27}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wisej.DemoBrowser.ScrollBars", "Demos\ToolsAndMenus\Wisej.DemoBrowser.ScrollBars\Wisej.DemoBrowser.ScrollBars.csproj", "{8E7FF304-5BE6-4B19-883D-F3487718BE27}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wisej.DemoBrowser.StatusBar", "Demos\ToolsAndMenus\Wisej.DemoBrowser.StatusBar\Wisej.DemoBrowser.StatusBar.csproj", "{6E247E06-7577-49FF-BE91-D11CEFF3E8C0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wisej.DemoBrowser.StatusBar", "Demos\ToolsAndMenus\Wisej.DemoBrowser.StatusBar\Wisej.DemoBrowser.StatusBar.csproj", "{6E247E06-7577-49FF-BE91-D11CEFF3E8C0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wisej.DemoBrowser.Rotation", "Demos\Extenders\Wisej.DemoBrowser.Rotation\Wisej.DemoBrowser.Rotation.csproj", "{89C3F5AA-A54A-4C2C-9D26-247F6036D5B4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wisej.DemoBrowser.Rotation", "Demos\Extenders\Wisej.DemoBrowser.Rotation\Wisej.DemoBrowser.Rotation.csproj", "{89C3F5AA-A54A-4C2C-9D26-247F6036D5B4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wisej.DemoBrowser.DataGridView", "Demos\Grids\Wisej.DemoBrowser.DataGridView\Wisej.DemoBrowser.DataGridView.csproj", "{94808ED3-78EC-4F9A-AB9E-83558F9A18A8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wisej.DemoBrowser.DataGridView", "Demos\Grids\Wisej.DemoBrowser.DataGridView\Wisej.DemoBrowser.DataGridView.csproj", "{94808ED3-78EC-4F9A-AB9E-83558F9A18A8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wisej.DemoBrowser.ContextMenu", "Demos\ToolsAndMenus\Wisej.DemoBrowser.ContextMenu\Wisej.DemoBrowser.ContextMenu.csproj", "{89600B6E-9619-483D-8160-C0FACE402E04}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wisej.DemoBrowser.ContextMenu", "Demos\ToolsAndMenus\Wisej.DemoBrowser.ContextMenu\Wisej.DemoBrowser.ContextMenu.csproj", "{89600B6E-9619-483D-8160-C0FACE402E04}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wisej.DemoBrowser.HelpTip", "Demos\Extenders\Wisej.DemoBrowser.HelpTip\Wisej.DemoBrowser.HelpTip.csproj", "{D9239742-BB44-4EAD-B001-7C8349617B2A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wisej.DemoBrowser.HelpTip", "Demos\Extenders\Wisej.DemoBrowser.HelpTip\Wisej.DemoBrowser.HelpTip.csproj", "{D9239742-BB44-4EAD-B001-7C8349617B2A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IconPacks", "IconPacks", "{4E707CA1-F43B-4DA6-9260-72778A573939}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wisej.DemoBrowser.BootstrapIcons", "Demos\IconPacks\Wisej.DemoBrowser.BootstrapIcons\Wisej.DemoBrowser.BootstrapIcons.csproj", "{DA767D37-415C-4F7A-84BB-5D6C6816021C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wisej.DemoBrowser.BootstrapIcons", "Demos\IconPacks\Wisej.DemoBrowser.BootstrapIcons\Wisej.DemoBrowser.BootstrapIcons.csproj", "{DA767D37-415C-4F7A-84BB-5D6C6816021C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wisej.DemoBrowser.MaterialDesign", "Demos\IconPacks\Wisej.DemoBrowser.MaterialDesign\Wisej.DemoBrowser.MaterialDesign.csproj", "{F98288EF-0E21-440E-A479-81AB28F352BB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wisej.DemoBrowser.MaterialDesign", "Demos\IconPacks\Wisej.DemoBrowser.MaterialDesign\Wisej.DemoBrowser.MaterialDesign.csproj", "{F98288EF-0E21-440E-A479-81AB28F352BB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wisej.DemoBrowser.ElegantIcons", "Demos\IconPacks\Wisej.DemoBrowser.ElegantIcons\Wisej.DemoBrowser.ElegantIcons.csproj", "{50396798-9AF7-419B-AB92-870E61F0734C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wisej.DemoBrowser.ElegantIcons", "Demos\IconPacks\Wisej.DemoBrowser.ElegantIcons\Wisej.DemoBrowser.ElegantIcons.csproj", "{50396798-9AF7-419B-AB92-870E61F0734C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wisej.DemoBrowser.VaadinIcons", "Demos\IconPacks\Wisej.DemoBrowser.VaadinIcons\Wisej.DemoBrowser.VaadinIcons.csproj", "{0F437BBC-79E2-41D2-90A1-6E625DB872DB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wisej.DemoBrowser.VaadinIcons", "Demos\IconPacks\Wisej.DemoBrowser.VaadinIcons\Wisej.DemoBrowser.VaadinIcons.csproj", "{0F437BBC-79E2-41D2-90A1-6E625DB872DB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wisej.DemoBrowser.VisualStudioIcons", "Demos\IconPacks\Wisej.DemoBrowser.VisualStudioIcons\Wisej.DemoBrowser.VisualStudioIcons.csproj", "{0D58E2D0-2461-4CF5-BA28-457F57D74F77}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wisej.DemoBrowser.VisualStudioIcons", "Demos\IconPacks\Wisej.DemoBrowser.VisualStudioIcons\Wisej.DemoBrowser.VisualStudioIcons.csproj", "{0D58E2D0-2461-4CF5-BA28-457F57D74F77}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wisej.DemoBrowser.ModernUI", "Demos\IconPacks\Wisej.DemoBrowser.ModernUI\Wisej.DemoBrowser.ModernUI.csproj", "{EEFB01CE-6FD3-418A-9692-296F5046440F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wisej.DemoBrowser.ModernUI", "Demos\IconPacks\Wisej.DemoBrowser.ModernUI\Wisej.DemoBrowser.ModernUI.csproj", "{EEFB01CE-6FD3-418A-9692-296F5046440F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wisej.DemoBrowser.FontAwsome", "Demos\IconPacks\Wisej.DemoBrowser.FontAwsome\Wisej.DemoBrowser.FontAwsome.csproj", "{5DD77F10-B584-4318-BDEE-DB7217983469}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wisej.DemoBrowser.FontAwsome", "Demos\IconPacks\Wisej.DemoBrowser.FontAwsome\Wisej.DemoBrowser.FontAwsome.csproj", "{5DD77F10-B584-4318-BDEE-DB7217983469}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wisej.DemoBrowser.PropertyGrid", "Demos\Grids\Wisej.DemoBrowser.PropertyGrid\Wisej.DemoBrowser.PropertyGrid.csproj", "{3D6E8FA2-7D76-43DD-9A08-EDBE0808FFE6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wisej.DemoBrowser.PropertyGrid", "Demos\Grids\Wisej.DemoBrowser.PropertyGrid\Wisej.DemoBrowser.PropertyGrid.csproj", "{3D6E8FA2-7D76-43DD-9A08-EDBE0808FFE6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wisej.DemoBrowser.DataRepeater", "Demos\Grids\Wisej.DemoBrowser.DataRepeater\Wisej.DemoBrowser.DataRepeater.csproj", "{7512CA9B-B5D6-4E07-8B72-7E766770488F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wisej.DemoBrowser.DataRepeater", "Demos\Grids\Wisej.DemoBrowser.DataRepeater\Wisej.DemoBrowser.DataRepeater.csproj", "{7512CA9B-B5D6-4E07-8B72-7E766770488F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wisej.DemoBrowser.ListView", "Demos\Grids\Wisej.DemoBrowser.ListView\Wisej.DemoBrowser.ListView.csproj", "{5D683938-D848-4110-AE46-E4898F5325DE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wisej.DemoBrowser.ListView", "Demos\Grids\Wisej.DemoBrowser.ListView\Wisej.DemoBrowser.ListView.csproj", "{5D683938-D848-4110-AE46-E4898F5325DE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wisej.DemoBrowser.iFramePanel", "Demos\Containers\Wisej.DemoBrowser.iFramePanel\Wisej.DemoBrowser.iFramePanel.csproj", "{90199012-87D9-4550-B9DB-8FD443C6033D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wisej.DemoBrowser.iFramePanel", "Demos\Containers\Wisej.DemoBrowser.iFramePanel\Wisej.DemoBrowser.iFramePanel.csproj", "{90199012-87D9-4550-B9DB-8FD443C6033D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wisej.DemoBrowser.AspNetPanel", "Demos\Containers\Wisej.DemoBrowser.AspNetPanel\Wisej.DemoBrowser.AspNetPanel.csproj", "{178CFA96-F7FE-4B73-8D39-E0E8CB1A803A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wisej.DemoBrowser.UserControl", "Demos\Containers\Wisej.DemoBrowser.UserControl\Wisej.DemoBrowser.UserControl.csproj", "{C0F8D897-46CB-4421-B13D-4D48D2AE3F55}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wisej.DemoBrowser.UserControl", "Demos\Containers\Wisej.DemoBrowser.UserControl\Wisej.DemoBrowser.UserControl.csproj", "{C0F8D897-46CB-4421-B13D-4D48D2AE3F55}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wisej.DemoBrowser.Premium", "Demos\Extensions\Wisej.DemoBrowser.Premium\Wisej.DemoBrowser.Premium.csproj", "{05BA42B0-5D11-4591-80E6-1E8A1A75EF7E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wisej.DemoBrowser.Widget", "Demos\Containers\Wisej.DemoBrowser.Widget\Wisej.DemoBrowser.Widget.csproj", "{84DCE1F4-7376-4E4E-83D4-030E3D1108D5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wisej.DemoBrowser.Geolocation", "Demos\Extensions\Wisej.DemoBrowser.Geolocation\Wisej.DemoBrowser.Geolocation.csproj", "{2549B8CE-90F5-4136-A5C6-704163FF8752}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wisej.DemoBrowser.Premium", "Demos\Extensions\Wisej.DemoBrowser.Premium\Wisej.DemoBrowser.Premium.csproj", "{05BA42B0-5D11-4591-80E6-1E8A1A75EF7E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wisej.DemoBrowser.TinyMCE", "Demos\Extensions\Wisej.DemoBrowser.TinyMCE\Wisej.DemoBrowser.TinyMCE.csproj", "{183D559D-71DB-4D11-98CF-9D520CF5CEB5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wisej.DemoBrowser.Geolocation", "Demos\Extensions\Wisej.DemoBrowser.Geolocation\Wisej.DemoBrowser.Geolocation.csproj", "{2549B8CE-90F5-4136-A5C6-704163FF8752}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wisej.DemoBrowser.TinyEditor", "Demos\Extensions\Wisej.DemoBrowser.TinyEditor\Wisej.DemoBrowser.TinyEditor.csproj", "{CF5C9CA6-8AE4-4971-9E73-63557C8D3016}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wisej.DemoBrowser.TinyMCE", "Demos\Extensions\Wisej.DemoBrowser.TinyMCE\Wisej.DemoBrowser.TinyMCE.csproj", "{183D559D-71DB-4D11-98CF-9D520CF5CEB5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wisej.DemoBrowser.AceEditor", "Demos\Extensions\Wisej.DemoBrowser.AceEditor\Wisej.DemoBrowser.AceEditor.csproj", "{55C6345C-E5EF-4E2E-BE8D-114D363E6042}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wisej.DemoBrowser.TinyEditor", "Demos\Extensions\Wisej.DemoBrowser.TinyEditor\Wisej.DemoBrowser.TinyEditor.csproj", "{CF5C9CA6-8AE4-4971-9E73-63557C8D3016}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wisej.DemoBrowser.BingWallpaper", "Demos\Extensions\Wisej.DemoBrowser.BingWallpaper\Wisej.DemoBrowser.BingWallpaper.csproj", "{528CAD81-F0CE-4D33-8D45-578FB8DFA37D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wisej.DemoBrowser.AceEditor", "Demos\Extensions\Wisej.DemoBrowser.AceEditor\Wisej.DemoBrowser.AceEditor.csproj", "{55C6345C-E5EF-4E2E-BE8D-114D363E6042}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wisej.DemoBrowser.Camera", "Demos\Extensions\Wisej.DemoBrowser.Camera\Wisej.DemoBrowser.Camera.csproj", "{43459A22-C36D-4B56-9A51-9904F898EF3F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wisej.DemoBrowser.BingWallpaper", "Demos\Extensions\Wisej.DemoBrowser.BingWallpaper\Wisej.DemoBrowser.BingWallpaper.csproj", "{528CAD81-F0CE-4D33-8D45-578FB8DFA37D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wisej.DemoBrowser.CKEditor", "Demos\Extensions\Wisej.DemoBrowser.CKEditor\Wisej.DemoBrowser.CKEditor.csproj", "{516763FC-FAB1-43FE-A6C8-22CDE5054A26}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wisej.DemoBrowser.Camera", "Demos\Extensions\Wisej.DemoBrowser.Camera\Wisej.DemoBrowser.Camera.csproj", "{43459A22-C36D-4B56-9A51-9904F898EF3F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wisej.DemoBrowser.ProgressCircle", "Demos\Extensions\Wisej.DemoBrowser.ProgressCircle\Wisej.DemoBrowser.ProgressCircle.csproj", "{2B916FE5-D4A4-47A4-8F58-10E1AA13704B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wisej.DemoBrowser.CKEditor", "Demos\Extensions\Wisej.DemoBrowser.CKEditor\Wisej.DemoBrowser.CKEditor.csproj", "{516763FC-FAB1-43FE-A6C8-22CDE5054A26}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wisej.DemoBrowser.Barcode", "Demos\Extensions\Wisej.DemoBrowser.Barcode\Wisej.DemoBrowser.Barcode.csproj", "{7DADCA16-32A6-4F8D-9478-5C910BDE1AE2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wisej.DemoBrowser.ProgressCircle", "Demos\Extensions\Wisej.DemoBrowser.ProgressCircle\Wisej.DemoBrowser.ProgressCircle.csproj", "{2B916FE5-D4A4-47A4-8F58-10E1AA13704B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wisej.DemoBrowser.CoolClock", "Demos\Extensions\Wisej.DemoBrowser.CoolClock\Wisej.DemoBrowser.CoolClock.csproj", "{9B7A51AB-F085-40C6-8DFC-B9F30437C032}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wisej.DemoBrowser.Barcode", "Demos\Extensions\Wisej.DemoBrowser.Barcode\Wisej.DemoBrowser.Barcode.csproj", "{7DADCA16-32A6-4F8D-9478-5C910BDE1AE2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wisej.DemoBrowser.FullCalendar", "Demos\Extensions\Wisej.DemoBrowser.FullCalendar\Wisej.DemoBrowser.FullCalendar.csproj", "{6858E617-49EF-4172-B04A-A4E409566F67}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wisej.DemoBrowser.CoolClock", "Demos\Extensions\Wisej.DemoBrowser.CoolClock\Wisej.DemoBrowser.CoolClock.csproj", "{9B7A51AB-F085-40C6-8DFC-B9F30437C032}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wisej.DemoBrowser.CountUp", "Demos\Extensions\Wisej.DemoBrowser.CountUp\Wisej.DemoBrowser.CountUp.csproj", "{DFEA437D-D816-4C14-9BDC-3D5D215C6EDB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wisej.DemoBrowser.FullCalendar", "Demos\Extensions\Wisej.DemoBrowser.FullCalendar\Wisej.DemoBrowser.FullCalendar.csproj", "{6858E617-49EF-4172-B04A-A4E409566F67}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wisej.DemoBrowser.jQueryKnob", "Demos\Extensions\Wisej.DemoBrowser.jQueryKnob\Wisej.DemoBrowser.jQueryKnob.csproj", "{6F387B69-349F-4276-B29C-BE9603BCC1F1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wisej.DemoBrowser.CountUp", "Demos\Extensions\Wisej.DemoBrowser.CountUp\Wisej.DemoBrowser.CountUp.csproj", "{DFEA437D-D816-4C14-9BDC-3D5D215C6EDB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wisej.DemoBrowser.NavigationBar", "Demos\Extensions\Wisej.DemoBrowser.NavigationBar\Wisej.DemoBrowser.NavigationBar.csproj", "{28E64D09-2602-47B4-AED8-D98762F7B30A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wisej.DemoBrowser.jQueryKnob", "Demos\Extensions\Wisej.DemoBrowser.jQueryKnob\Wisej.DemoBrowser.jQueryKnob.csproj", "{6F387B69-349F-4276-B29C-BE9603BCC1F1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wisej.DemoBrowser.Notification", "Demos\Extensions\Wisej.DemoBrowser.Notification\Wisej.DemoBrowser.Notification.csproj", "{FC74624D-F548-4590-9B80-DF3B875FD2D3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wisej.DemoBrowser.NavigationBar", "Demos\Extensions\Wisej.DemoBrowser.NavigationBar\Wisej.DemoBrowser.NavigationBar.csproj", "{28E64D09-2602-47B4-AED8-D98762F7B30A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wisej.DemoBrowser.GoogleMaps", "Demos\Extensions\Wisej.DemoBrowser.GoogleMaps\Wisej.DemoBrowser.GoogleMaps.csproj", "{37E52095-BB4E-4DEB-A5B4-B7546D113FC8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wisej.DemoBrowser.Notification", "Demos\Extensions\Wisej.DemoBrowser.Notification\Wisej.DemoBrowser.Notification.csproj", "{FC74624D-F548-4590-9B80-DF3B875FD2D3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wisej.DemoBrowser.Animation", "Demos\Extenders\Wisej.DemoBrowser.Animation\Wisej.DemoBrowser.Animation.csproj", "{B5225083-8DE7-4F3E-9E77-AEE33C3676A8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wisej.DemoBrowser.GoogleMaps", "Demos\Extensions\Wisej.DemoBrowser.GoogleMaps\Wisej.DemoBrowser.GoogleMaps.csproj", "{37E52095-BB4E-4DEB-A5B4-B7546D113FC8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wisej.DemoBrowser.ErrorProvider", "Demos\Extenders\Wisej.DemoBrowser.ErrorProvider\Wisej.DemoBrowser.ErrorProvider.csproj", "{F8618041-35DF-4D06-872D-4498AAE89558}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wisej.DemoBrowser.Animation", "Demos\Extenders\Wisej.DemoBrowser.Animation\Wisej.DemoBrowser.Animation.csproj", "{B5225083-8DE7-4F3E-9E77-AEE33C3676A8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wisej.DemoBrowser.jSequence", "Demos\Extensions\Wisej.DemoBrowser.jSequence\Wisej.DemoBrowser.jSequence.csproj", "{9B550D24-C109-40B3-AFD0-7318B63833A4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wisej.DemoBrowser.ErrorProvider", "Demos\Extenders\Wisej.DemoBrowser.ErrorProvider\Wisej.DemoBrowser.ErrorProvider.csproj", "{F8618041-35DF-4D06-872D-4498AAE89558}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wisej.DemoBrowser.JustGage", "Demos\Extensions\Wisej.DemoBrowser.JustGage\Wisej.DemoBrowser.JustGage.csproj", "{A3B264AE-23ED-40FA-92C5-85C4CBC17B73}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wisej.DemoBrowser.jSequence", "Demos\Extensions\Wisej.DemoBrowser.jSequence\Wisej.DemoBrowser.jSequence.csproj", "{9B550D24-C109-40B3-AFD0-7318B63833A4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wisej.DemoBrowser.Bubbles", "Demos\Extensions\Wisej.DemoBrowser.Bubbles\Wisej.DemoBrowser.Bubbles.csproj", "{CC48E3FA-EE20-4BFF-8B91-A5FE1E371324}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wisej.DemoBrowser.JustGage", "Demos\Extensions\Wisej.DemoBrowser.JustGage\Wisej.DemoBrowser.JustGage.csproj", "{A3B264AE-23ED-40FA-92C5-85C4CBC17B73}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wisej.DemoBrowser.OfficeViewer", "Demos\Extensions\Wisej.DemoBrowser.OfficeViewer\Wisej.DemoBrowser.OfficeViewer.csproj", "{8C7539A6-15D3-4DC0-82E9-6C71901A6464}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wisej.DemoBrowser.Bubbles", "Demos\Extensions\Wisej.DemoBrowser.Bubbles\Wisej.DemoBrowser.Bubbles.csproj", "{CC48E3FA-EE20-4BFF-8B91-A5FE1E371324}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wisej.DemoBrowser.Html2Canvas", "Demos\Extensions\Wisej.DemoBrowser.Html2Canvas\Wisej.DemoBrowser.Html2Canvas.csproj", "{22A73A18-38EB-4E50-ABE3-BBFED2705EB7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wisej.DemoBrowser.OfficeViewer", "Demos\Extensions\Wisej.DemoBrowser.OfficeViewer\Wisej.DemoBrowser.OfficeViewer.csproj", "{8C7539A6-15D3-4DC0-82E9-6C71901A6464}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wisej.DemoBrowser.Speech", "Demos\Extensions\Wisej.DemoBrowser.Speech\Wisej.DemoBrowser.Speech.csproj", "{55AA5696-9B5C-4C20-82B3-6B263D6C32F4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wisej.DemoBrowser.Html2Canvas", "Demos\Extensions\Wisej.DemoBrowser.Html2Canvas\Wisej.DemoBrowser.Html2Canvas.csproj", "{22A73A18-38EB-4E50-ABE3-BBFED2705EB7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wisej.DemoBrowser.Pannellum", "Demos\Extensions\Wisej.DemoBrowser.Pannellum\Wisej.DemoBrowser.Pannellum.csproj", "{2792EAEB-FA42-4D4D-8124-0544E5F7824D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wisej.DemoBrowser.Speech", "Demos\Extensions\Wisej.DemoBrowser.Speech\Wisej.DemoBrowser.Speech.csproj", "{55AA5696-9B5C-4C20-82B3-6B263D6C32F4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wisej.DemoBrowser.RibbonBar", "Demos\Extensions\Wisej.DemoBrowser.RibbonBar\Wisej.DemoBrowser.RibbonBar.csproj", "{7894EB74-3C5E-4B3E-9077-A67B0E56380E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wisej.DemoBrowser.Pannellum", "Demos\Extensions\Wisej.DemoBrowser.Pannellum\Wisej.DemoBrowser.Pannellum.csproj", "{2792EAEB-FA42-4D4D-8124-0544E5F7824D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wisej.DemoBrowser.ChartJS", "Demos\Extensions\Wisej.DemoBrowser.ChartJS\Wisej.DemoBrowser.ChartJS.csproj", "{D4C5CC75-0EE1-4048-99E7-4AA591F4EA55}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wisej.DemoBrowser.RibbonBar", "Demos\Extensions\Wisej.DemoBrowser.RibbonBar\Wisej.DemoBrowser.RibbonBar.csproj", "{7894EB74-3C5E-4B3E-9077-A67B0E56380E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wisej.DemoBrowser.EmbeddedTools", "Demos\ToolsAndMenus\Wisej.DemoBrowser.EmbeddedTools\Wisej.DemoBrowser.EmbeddedTools.csproj", "{8F9248BD-0FA9-4F8D-A183-077A8517FFDC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wisej.DemoBrowser.ChartJS", "Demos\Extensions\Wisej.DemoBrowser.ChartJS\Wisej.DemoBrowser.ChartJS.csproj", "{D4C5CC75-0EE1-4048-99E7-4AA591F4EA55}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wisej.DemoBrowser.Tooltip", "Demos\Extenders\Wisej.DemoBrowser.Tooltip\Wisej.DemoBrowser.Tooltip.csproj", "{0491ECAE-8E84-4528-AB74-3AC5CDCC3387}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wisej.DemoBrowser.EmbeddedTools", "Demos\ToolsAndMenus\Wisej.DemoBrowser.EmbeddedTools\Wisej.DemoBrowser.EmbeddedTools.csproj", "{8F9248BD-0FA9-4F8D-A183-077A8517FFDC}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wisej.DemoBrowser.Tooltip", "Demos\Extenders\Wisej.DemoBrowser.Tooltip\Wisej.DemoBrowser.Tooltip.csproj", "{0491ECAE-8E84-4528-AB74-3AC5CDCC3387}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wisej.DemoBrowser.TourPanel", "Demos\Extensions\Wisej.DemoBrowser.TourPanel\Wisej.DemoBrowser.TourPanel.csproj", "{3F756BE7-A1C3-4A11-981D-A3D012A2BC4B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wisej.DemoBrowser.TourPanel", "Demos\Extensions\Wisej.DemoBrowser.TourPanel\Wisej.DemoBrowser.TourPanel.csproj", "{3F756BE7-A1C3-4A11-981D-A3D012A2BC4B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -440,18 +436,10 @@ Global
 		{90199012-87D9-4550-B9DB-8FD443C6033D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{90199012-87D9-4550-B9DB-8FD443C6033D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{90199012-87D9-4550-B9DB-8FD443C6033D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{178CFA96-F7FE-4B73-8D39-E0E8CB1A803A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{178CFA96-F7FE-4B73-8D39-E0E8CB1A803A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{178CFA96-F7FE-4B73-8D39-E0E8CB1A803A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{178CFA96-F7FE-4B73-8D39-E0E8CB1A803A}.Release|Any CPU.Build.0 = Release|Any CPU
 		{C0F8D897-46CB-4421-B13D-4D48D2AE3F55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{C0F8D897-46CB-4421-B13D-4D48D2AE3F55}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C0F8D897-46CB-4421-B13D-4D48D2AE3F55}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C0F8D897-46CB-4421-B13D-4D48D2AE3F55}.Release|Any CPU.Build.0 = Release|Any CPU
-		{84DCE1F4-7376-4E4E-83D4-030E3D1108D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{84DCE1F4-7376-4E4E-83D4-030E3D1108D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{84DCE1F4-7376-4E4E-83D4-030E3D1108D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{84DCE1F4-7376-4E4E-83D4-030E3D1108D5}.Release|Any CPU.Build.0 = Release|Any CPU
 		{05BA42B0-5D11-4591-80E6-1E8A1A75EF7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{05BA42B0-5D11-4591-80E6-1E8A1A75EF7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{05BA42B0-5D11-4591-80E6-1E8A1A75EF7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -646,9 +634,7 @@ Global
 		{7512CA9B-B5D6-4E07-8B72-7E766770488F} = {DAB009C9-2764-4E1D-B181-911F1C83EB49}
 		{5D683938-D848-4110-AE46-E4898F5325DE} = {DAB009C9-2764-4E1D-B181-911F1C83EB49}
 		{90199012-87D9-4550-B9DB-8FD443C6033D} = {9194B6DA-D1FB-4ABC-8983-A1FECDD6AE90}
-		{178CFA96-F7FE-4B73-8D39-E0E8CB1A803A} = {9194B6DA-D1FB-4ABC-8983-A1FECDD6AE90}
 		{C0F8D897-46CB-4421-B13D-4D48D2AE3F55} = {9194B6DA-D1FB-4ABC-8983-A1FECDD6AE90}
-		{84DCE1F4-7376-4E4E-83D4-030E3D1108D5} = {9194B6DA-D1FB-4ABC-8983-A1FECDD6AE90}
 		{05BA42B0-5D11-4591-80E6-1E8A1A75EF7E} = {C51A27C9-479B-478F-8158-62189CA32E59}
 		{2549B8CE-90F5-4136-A5C6-704163FF8752} = {C51A27C9-479B-478F-8158-62189CA32E59}
 		{183D559D-71DB-4D11-98CF-9D520CF5CEB5} = {C51A27C9-479B-478F-8158-62189CA32E59}
