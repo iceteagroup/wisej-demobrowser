@@ -21,7 +21,7 @@ namespace Wisej.Web.Ext.Ignite.Demo.Component
 			this.igZoombar1.Update();
 		}
 
-		private void igDataChart1_Initialized(object sender, EventArgs e)
+		private void igDataChart1_Appear(object sender, EventArgs e)
 		{
 			igZoombar1 = new Ignite.igZoombar(new { target = $"#id_{this.igDataChart1.Handle}_container" });
 			igZoombar1.Dock = DockStyle.Fill;

@@ -58,9 +58,7 @@ namespace Wisej.Web.Ext.Ignite.Demo.Component
 
 		private void buttonUpdate_Click(object sender, EventArgs e)
 		{
-			this.igScheduler1.Options.enableTodayButton = this.checkBox1.Checked;
 			this.igScheduler1.Options.viewMode = this.comboBox1.SelectedItem ?? "none";
-			this.igScheduler1.Options.agendaViewSettings.dateRangeInterval = this.numericUpDown1.Value;
 
 			this.igScheduler1.Update();
 		}

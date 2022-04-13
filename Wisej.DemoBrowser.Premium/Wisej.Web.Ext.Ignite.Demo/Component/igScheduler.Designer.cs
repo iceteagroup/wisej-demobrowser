@@ -29,7 +29,7 @@
 		private void InitializeComponent()
 		{
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(igScheduler));
-            Wisej.Web.Ext.Ignite.igBase.WidgetFunction widgetFunction2 = new Wisej.Web.Ext.Ignite.igBase.WidgetFunction();
+            Wisej.Web.Ext.Ignite.igBase.WidgetFunction widgetFunction1 = new Wisej.Web.Ext.Ignite.igBase.WidgetFunction();
             this.igScheduler1 = new Wisej.Web.Ext.Ignite.igScheduler();
             this.buttonLoad = new Wisej.Web.Upload();
             this.dateTimePicker1 = new Wisej.Web.DateTimePicker();
@@ -37,13 +37,10 @@
             this.button1 = new Wisej.Web.Button();
             this.dateTimePicker2 = new Wisej.Web.DateTimePicker();
             this.comboBox1 = new Wisej.Web.ComboBox();
-            this.checkBox1 = new Wisej.Web.CheckBox();
-            this.numericUpDown1 = new Wisej.Web.NumericUpDown();
             this.groupBox1.SuspendLayout();
             this.panel.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -76,9 +73,7 @@
             // 
             // flowLayoutPanel1
             // 
-            this.flowLayoutPanel1.Controls.Add(this.checkBox1);
             this.flowLayoutPanel1.Controls.Add(this.comboBox1);
-            this.flowLayoutPanel1.Controls.Add(this.numericUpDown1);
             this.flowLayoutPanel1.Controls.Add(this.groupBox2);
             this.flowLayoutPanel1.Controls.Add(this.buttonLoad);
             // 
@@ -93,10 +88,10 @@
             this.igScheduler1.Size = new System.Drawing.Size(1048, 528);
             this.igScheduler1.TabIndex = 0;
             this.igScheduler1.Text = "igScheduler1";
-            widgetFunction2.Name = "loadData";
-            widgetFunction2.Source = resources.GetString("widgetFunction2.Source");
+            widgetFunction1.Name = "loadData";
+            widgetFunction1.Source = resources.GetString("widgetFunction1.Source");
             this.igScheduler1.WidgetFunctions = new Wisej.Web.Ext.Ignite.igBase.WidgetFunction[] {
-        widgetFunction2};
+        widgetFunction1};
             this.igScheduler1.Appear += new System.EventHandler(this.igScheduler1_Appear);
             // 
             // buttonLoad
@@ -104,7 +99,7 @@
             this.buttonLoad.AllowedFileTypes = ".json";
             this.buttonLoad.HideValue = true;
             this.buttonLoad.ImageSource = "icon-file";
-            this.buttonLoad.Location = new System.Drawing.Point(3, 392);
+            this.buttonLoad.Location = new System.Drawing.Point(3, 309);
             this.buttonLoad.Margin = new Wisej.Web.Padding(3, 7, 3, 3);
             this.buttonLoad.Name = "buttonLoad";
             this.buttonLoad.Size = new System.Drawing.Size(42, 42);
@@ -112,7 +107,10 @@
             // 
             // dateTimePicker1
             // 
+            this.dateTimePicker1.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Left) 
+            | Wisej.Web.AnchorStyles.Right)));
             this.dateTimePicker1.Checked = false;
+            this.dateTimePicker1.Format = Wisej.Web.DateTimePickerFormat.Short;
             this.dateTimePicker1.LabelText = "From";
             this.dateTimePicker1.Location = new System.Drawing.Point(6, 35);
             this.dateTimePicker1.Name = "dateTimePicker1";
@@ -127,25 +125,30 @@
             this.groupBox2.Controls.Add(this.dateTimePicker1);
             this.flowLayoutPanel1.SetFillWeight(this.groupBox2, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.groupBox2, true);
-            this.groupBox2.Location = new System.Drawing.Point(3, 185);
+            this.groupBox2.Location = new System.Drawing.Point(3, 74);
             this.groupBox2.Margin = new Wisej.Web.Padding(3, 7, 3, 3);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(212, 197);
+            this.groupBox2.Size = new System.Drawing.Size(212, 225);
             this.groupBox2.TabIndex = 4;
             this.groupBox2.Text = "Export Appts. in Range";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(6, 164);
+            this.button1.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Left) 
+            | Wisej.Web.AnchorStyles.Right)));
+            this.button1.Location = new System.Drawing.Point(6, 172);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(200, 27);
+            this.button1.Size = new System.Drawing.Size(200, 40);
             this.button1.TabIndex = 2;
             this.button1.Text = "Export";
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // dateTimePicker2
             // 
+            this.dateTimePicker2.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Left) 
+            | Wisej.Web.AnchorStyles.Right)));
             this.dateTimePicker2.Checked = false;
+            this.dateTimePicker2.Format = Wisej.Web.DateTimePickerFormat.Short;
             this.dateTimePicker2.LabelText = "To";
             this.dateTimePicker2.Location = new System.Drawing.Point(6, 101);
             this.dateTimePicker2.Name = "dateTimePicker2";
@@ -161,46 +164,11 @@
             "monthView",
             "agendaView"});
             this.comboBox1.LabelText = "View Mode";
-            this.comboBox1.Location = new System.Drawing.Point(3, 51);
+            this.comboBox1.Location = new System.Drawing.Point(3, 7);
             this.comboBox1.Margin = new Wisej.Web.Padding(3, 7, 3, 3);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(212, 57);
             this.comboBox1.TabIndex = 2;
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.Appearance = Wisej.Web.Appearance.Switch;
-            this.checkBox1.AutoSize = false;
-            this.checkBox1.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.checkBox1.Checked = true;
-            this.flowLayoutPanel1.SetFillWeight(this.checkBox1, 1);
-            this.flowLayoutPanel1.SetFlowBreak(this.checkBox1, true);
-            this.checkBox1.Location = new System.Drawing.Point(3, 3);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(212, 38);
-            this.checkBox1.TabIndex = 0;
-            this.checkBox1.Text = "Today Button";
-            // 
-            // numericUpDown1
-            // 
-            this.flowLayoutPanel1.SetFillWeight(this.numericUpDown1, 1);
-            this.flowLayoutPanel1.SetFlowBreak(this.numericUpDown1, true);
-            this.numericUpDown1.LabelText = "Date Range Interval";
-            this.numericUpDown1.Location = new System.Drawing.Point(3, 118);
-            this.numericUpDown1.Margin = new Wisej.Web.Padding(3, 7, 3, 3);
-            this.numericUpDown1.Maximum = new decimal(new int[] {
-            7,
-            0,
-            0,
-            0});
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(212, 57);
-            this.numericUpDown1.TabIndex = 3;
-            this.numericUpDown1.Value = new decimal(new int[] {
-            3,
-            0,
-            0,
-            0});
             // 
             // igScheduler
             // 
@@ -211,7 +179,6 @@
             this.flowLayoutPanel1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -226,7 +193,5 @@
 		private DateTimePicker dateTimePicker2;
 		private DateTimePicker dateTimePicker1;
 		private ComboBox comboBox1;
-		private CheckBox checkBox1;
-		private NumericUpDown numericUpDown1;
 	}
 }

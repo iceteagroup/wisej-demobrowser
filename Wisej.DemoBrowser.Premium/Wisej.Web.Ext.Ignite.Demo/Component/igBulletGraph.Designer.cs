@@ -171,7 +171,7 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(26, 75);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(103, 22);
+            this.label4.Size = new System.Drawing.Size(86, 22);
             this.label4.TabIndex = 0;
             this.label4.Text = "YTD Revenue";
             // 
@@ -181,7 +181,7 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(26, 180);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(45, 22);
+            this.label5.Size = new System.Drawing.Size(35, 22);
             this.label5.TabIndex = 2;
             this.label5.Text = "Profit";
             // 
@@ -191,7 +191,7 @@
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(26, 285);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(80, 22);
+            this.label6.Size = new System.Drawing.Size(64, 22);
             this.label6.TabIndex = 4;
             this.label6.Text = "Avg Order";
             // 
@@ -201,7 +201,7 @@
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(26, 390);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(123, 22);
+            this.label7.Size = new System.Drawing.Size(97, 22);
             this.label7.TabIndex = 6;
             this.label7.Text = "New Customers";
             // 
@@ -210,7 +210,7 @@
             this.flowLayoutPanel1.SetFillWeight(this.numericUpDown1, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.numericUpDown1, true);
             this.numericUpDown1.LabelText = "Minimum Value";
-            this.numericUpDown1.Location = new System.Drawing.Point(3, 66);
+            this.numericUpDown1.Location = new System.Drawing.Point(3, 52);
             this.numericUpDown1.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.numericUpDown1.Maximum = new decimal(new int[] {
             10000,
@@ -218,7 +218,7 @@
             0,
             0});
             this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(212, 57);
+            this.numericUpDown1.Size = new System.Drawing.Size(212, 50);
             this.numericUpDown1.TabIndex = 1;
             // 
             // label8
@@ -228,7 +228,7 @@
             this.flowLayoutPanel1.SetFlowBreak(this.label8, true);
             this.label8.Location = new System.Drawing.Point(3, 3);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(212, 44);
+            this.label8.Size = new System.Drawing.Size(212, 30);
             this.label8.TabIndex = 0;
             this.label8.Text = "Note: Changes only affect top widget";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -238,7 +238,7 @@
             this.flowLayoutPanel1.SetFillWeight(this.numericUpDown2, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.numericUpDown2, true);
             this.numericUpDown2.LabelText = "Maximum Value";
-            this.numericUpDown2.Location = new System.Drawing.Point(3, 142);
+            this.numericUpDown2.Location = new System.Drawing.Point(3, 121);
             this.numericUpDown2.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.numericUpDown2.Maximum = new decimal(new int[] {
             10000,
@@ -246,7 +246,7 @@
             0,
             0});
             this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(212, 57);
+            this.numericUpDown2.Size = new System.Drawing.Size(212, 50);
             this.numericUpDown2.TabIndex = 2;
             this.numericUpDown2.Value = new decimal(new int[] {
             10000,
@@ -265,7 +265,7 @@
             0,
             131072});
             this.numericUpDown3.LabelText = "Value Inner Extent";
-            this.numericUpDown3.Location = new System.Drawing.Point(3, 218);
+            this.numericUpDown3.Location = new System.Drawing.Point(3, 190);
             this.numericUpDown3.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.numericUpDown3.Maximum = new decimal(new int[] {
             1,
@@ -273,7 +273,7 @@
             0,
             0});
             this.numericUpDown3.Name = "numericUpDown3";
-            this.numericUpDown3.Size = new System.Drawing.Size(212, 57);
+            this.numericUpDown3.Size = new System.Drawing.Size(212, 50);
             this.numericUpDown3.TabIndex = 3;
             this.numericUpDown3.Value = new decimal(new int[] {
             5,
@@ -292,7 +292,7 @@
             0,
             131072});
             this.numericUpDown4.LabelText = "Value Outer Extent";
-            this.numericUpDown4.Location = new System.Drawing.Point(3, 294);
+            this.numericUpDown4.Location = new System.Drawing.Point(3, 259);
             this.numericUpDown4.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.numericUpDown4.Maximum = new decimal(new int[] {
             1,
@@ -300,7 +300,7 @@
             0,
             0});
             this.numericUpDown4.Name = "numericUpDown4";
-            this.numericUpDown4.Size = new System.Drawing.Size(212, 57);
+            this.numericUpDown4.Size = new System.Drawing.Size(212, 50);
             this.numericUpDown4.TabIndex = 4;
             this.numericUpDown4.Value = new decimal(new int[] {
             65,

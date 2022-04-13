@@ -41,7 +41,6 @@
             this.igLinearGauge2 = new Wisej.Web.Ext.Ignite.igLinearGauge();
             this.igLinearGauge3 = new Wisej.Web.Ext.Ignite.igLinearGauge();
             this.numericUpDown1 = new Wisej.Web.NumericUpDown();
-            this.comboBox1 = new Wisej.Web.ComboBox();
             this.checkBox1 = new Wisej.Web.CheckBox();
             this.checkBox2 = new Wisej.Web.CheckBox();
             this.numericUpDown2 = new Wisej.Web.NumericUpDown();
@@ -96,7 +95,6 @@
             // 
             this.flowLayoutPanel1.Controls.Add(this.checkBox1);
             this.flowLayoutPanel1.Controls.Add(this.checkBox2);
-            this.flowLayoutPanel1.Controls.Add(this.comboBox1);
             this.flowLayoutPanel1.Controls.Add(this.numericUpDown2);
             this.flowLayoutPanel1.Controls.Add(this.numericUpDown3);
             this.flowLayoutPanel1.Controls.Add(this.numericUpDown4);
@@ -202,7 +200,7 @@
             this.flowLayoutPanel1.SetFillWeight(this.numericUpDown1, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.numericUpDown1, true);
             this.numericUpDown1.LabelText = "Value";
-            this.numericUpDown1.Location = new System.Drawing.Point(3, 376);
+            this.numericUpDown1.Location = new System.Drawing.Point(3, 306);
             this.numericUpDown1.Margin = new Wisej.Web.Padding(3, 10, 3, 3);
             this.numericUpDown1.Name = "numericUpDown1";
             this.numericUpDown1.Size = new System.Drawing.Size(212, 57);
@@ -212,24 +210,6 @@
             0,
             0,
             0});
-            // 
-            // comboBox1
-            // 
-            this.flowLayoutPanel1.SetFillWeight(this.comboBox1, 1);
-            this.flowLayoutPanel1.SetFlowBreak(this.comboBox1, true);
-            this.comboBox1.Items.AddRange(new object[] {
-            "custom",
-            "rectangle",
-            "triangle",
-            "needle",
-            "trapezoid"});
-            this.comboBox1.LabelText = "Needle Shape";
-            this.comboBox1.Location = new System.Drawing.Point(3, 96);
-            this.comboBox1.Margin = new Wisej.Web.Padding(3, 10, 3, 3);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(212, 57);
-            this.comboBox1.TabIndex = 2;
-            this.comboBox1.Text = "needle";
             // 
             // checkBox1
             // 
@@ -264,7 +244,7 @@
             this.flowLayoutPanel1.SetFillWeight(this.numericUpDown2, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.numericUpDown2, true);
             this.numericUpDown2.LabelText = "Minor Tick Count";
-            this.numericUpDown2.Location = new System.Drawing.Point(3, 166);
+            this.numericUpDown2.Location = new System.Drawing.Point(3, 96);
             this.numericUpDown2.Margin = new Wisej.Web.Padding(3, 10, 3, 3);
             this.numericUpDown2.Maximum = new decimal(new int[] {
             20,
@@ -291,7 +271,7 @@
             0,
             131072});
             this.numericUpDown3.LabelText = "Scale Inner Extent";
-            this.numericUpDown3.Location = new System.Drawing.Point(3, 236);
+            this.numericUpDown3.Location = new System.Drawing.Point(3, 166);
             this.numericUpDown3.Margin = new Wisej.Web.Padding(3, 10, 3, 3);
             this.numericUpDown3.Maximum = new decimal(new int[] {
             1,
@@ -318,7 +298,7 @@
             0,
             131072});
             this.numericUpDown4.LabelText = "Scale Outer Extent";
-            this.numericUpDown4.Location = new System.Drawing.Point(3, 306);
+            this.numericUpDown4.Location = new System.Drawing.Point(3, 236);
             this.numericUpDown4.Margin = new Wisej.Web.Padding(3, 10, 3, 3);
             this.numericUpDown4.Maximum = new decimal(new int[] {
             1,
@@ -362,7 +342,6 @@
 		private Label label5;
 		private Label label4;
 		private NumericUpDown numericUpDown1;
-		private ComboBox comboBox1;
 		private NumericUpDown numericUpDown2;
 		private CheckBox checkBox2;
 		private CheckBox checkBox1;

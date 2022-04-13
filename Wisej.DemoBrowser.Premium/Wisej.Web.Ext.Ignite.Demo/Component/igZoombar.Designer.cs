@@ -90,7 +90,7 @@
             this.igDataChart1.TabIndex = 0;
             this.igDataChart1.Text = "igDataChart1";
             this.igDataChart1.WidgetTemplates = new Wisej.Web.Ext.Ignite.igBase.WidgetTemplate[0];
-            this.igDataChart1.Initialized += new System.EventHandler(this.igDataChart1_Initialized);
+            this.igDataChart1.Appear += new System.EventHandler(this.igDataChart1_Appear);
             // 
             // panel1
             // 

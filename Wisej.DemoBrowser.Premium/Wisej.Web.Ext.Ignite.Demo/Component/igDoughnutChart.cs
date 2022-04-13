@@ -21,36 +21,6 @@ namespace Wisej.Web.Ext.Ignite.Demo.Component
 			Application.Play(MessageBoxIcon.Information);
 		}
 
-		private void buttonLoad_Uploaded(object sender, UploadedEventArgs e)
-		{
-			this.igDoughnutChart1.Options.series[0].dataSource = JSON.Parse(e.Files[0].InputStream);
-
-			this.igDoughnutChart1.Update();
-		}
-
-		private async void buttonExportData_Click(object sender, EventArgs e)
-		{
-			var data = await this.igDoughnutChart1.Instance.getDataAsync();
-
-			using (MemoryStream ms = new MemoryStream())
-			{
-				var sw = new StreamWriter(ms);
-				try
-				{
-					// getData returns an array with one element: the array of elements
-					sw.Write(JSON.Stringify(data[0]));
-					sw.Flush();
-					ms.Seek(0, SeekOrigin.Begin);
-
-					Application.Download(ms, "myData.json");
-				}
-				finally
-				{
-					sw.Dispose();
-				}
-			}
-		}
-
 		private void buttonUpdate_Click(object sender, EventArgs e)
 		{
 			this.igDoughnutChart1.Options.allowSliceExplosion = this.checkBox1.Checked;
