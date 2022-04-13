@@ -34,7 +34,6 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
 			this.dxPivotGrid1.Options.allowSorting = this.checkBox3.Checked;
 			this.dxPivotGrid1.Options.hideEmptySummaryCells = this.checkBox4.Checked;
 			this.dxPivotGrid1.Options.showBorder = this.checkBox5.Checked;
-			this.dxPivotGrid1.Options.showColumnGrandTotals = this.checkBox6.Checked;
 			this.dxPivotGrid1.Options.showColumnTotals = this.checkBox7.Checked;
 			this.dxPivotGrid1.Options.showRowGrandTotals = this.checkBox8.Checked;
 			this.dxPivotGrid1.Options.showRowTotals = this.checkBox9.Checked;

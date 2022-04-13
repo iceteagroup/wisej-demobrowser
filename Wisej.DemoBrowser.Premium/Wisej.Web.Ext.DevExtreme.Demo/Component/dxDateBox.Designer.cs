@@ -45,6 +45,11 @@
             this.linkDocs.TabIndex = 4;
             this.linkDocs.Text = "https://js.devexpress.com/Documentation/Guide/Widgets/DateBox/Overview/";
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
+            | Wisej.Web.AnchorStyles.Left)));
+            // 
             // buttonUpdate
             // 
             this.buttonUpdate.TabIndex = 6;

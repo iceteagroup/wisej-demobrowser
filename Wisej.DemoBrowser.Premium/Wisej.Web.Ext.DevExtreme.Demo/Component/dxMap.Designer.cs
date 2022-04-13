@@ -35,7 +35,6 @@
             this.numericUpDown1 = new Wisej.Web.NumericUpDown();
             this.checkBox2 = new Wisej.Web.CheckBox();
             this.comboBox1 = new Wisej.Web.ComboBox();
-            this.comboBox2 = new Wisej.Web.ComboBox();
             this.numericUpDown3 = new Wisej.Web.NumericUpDown();
             this.groupBox1.SuspendLayout();
             this.panel.SuspendLayout();
@@ -70,7 +69,6 @@
             // 
             this.flowLayoutPanel1.Controls.Add(this.checkBox1);
             this.flowLayoutPanel1.Controls.Add(this.checkBox2);
-            this.flowLayoutPanel1.Controls.Add(this.comboBox2);
             this.flowLayoutPanel1.Controls.Add(this.comboBox1);
             this.flowLayoutPanel1.Controls.Add(this.numericUpDown3);
             this.flowLayoutPanel1.Controls.Add(this.numericUpDown1);
@@ -107,7 +105,7 @@
             this.flowLayoutPanel1.SetFillWeight(this.numericUpDown2, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.numericUpDown2, true);
             this.numericUpDown2.LabelText = "Longitude";
-            this.numericUpDown2.Location = new System.Drawing.Point(3, 375);
+            this.numericUpDown2.Location = new System.Drawing.Point(3, 335);
             this.numericUpDown2.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.numericUpDown2.Maximum = new decimal(new int[] {
             180,
@@ -134,7 +132,7 @@
             this.flowLayoutPanel1.SetFillWeight(this.numericUpDown1, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.numericUpDown1, true);
             this.numericUpDown1.LabelText = "Latitude";
-            this.numericUpDown1.Location = new System.Drawing.Point(3, 299);
+            this.numericUpDown1.Location = new System.Drawing.Point(3, 259);
             this.numericUpDown1.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.numericUpDown1.Maximum = new decimal(new int[] {
             90,
@@ -181,37 +179,20 @@
             this.comboBox1.Label.Size = 50;
             this.comboBox1.Label.SizeType = Wisej.Web.SizeType.Percent;
             this.comboBox1.LabelText = "Type";
-            this.comboBox1.Location = new System.Drawing.Point(3, 157);
+            this.comboBox1.Location = new System.Drawing.Point(3, 104);
+            this.comboBox1.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(212, 60);
             this.comboBox1.TabIndex = 13;
             this.comboBox1.Text = "roadmap";
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.AutoSize = false;
-            this.comboBox2.DropDownStyle = Wisej.Web.ComboBoxStyle.DropDownList;
-            this.flowLayoutPanel1.SetFillWeight(this.comboBox2, 1);
-            this.flowLayoutPanel1.SetFlowBreak(this.comboBox2, true);
-            this.comboBox2.Items.AddRange(new object[] {
-            "bing",
-            "google",
-            "googleStatic"});
-            this.comboBox2.Label.Size = 50;
-            this.comboBox2.Label.SizeType = Wisej.Web.SizeType.Percent;
-            this.comboBox2.LabelText = "Provider";
-            this.comboBox2.Location = new System.Drawing.Point(3, 91);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(212, 60);
-            this.comboBox2.TabIndex = 14;
-            this.comboBox2.Text = "bing";
             // 
             // numericUpDown3
             // 
             this.flowLayoutPanel1.SetFillWeight(this.numericUpDown3, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.numericUpDown3, true);
             this.numericUpDown3.LabelText = "Zoom Level";
-            this.numericUpDown3.Location = new System.Drawing.Point(3, 223);
+            this.numericUpDown3.Location = new System.Drawing.Point(3, 183);
+            this.numericUpDown3.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.numericUpDown3.Maximum = new decimal(new int[] {
             1000,
             0,
@@ -248,7 +229,6 @@
 		private NumericUpDown numericUpDown1;
 		private CheckBox checkBox1;
 		private CheckBox checkBox2;
-		private ComboBox comboBox2;
 		private ComboBox comboBox1;
 		private NumericUpDown numericUpDown3;
 	}

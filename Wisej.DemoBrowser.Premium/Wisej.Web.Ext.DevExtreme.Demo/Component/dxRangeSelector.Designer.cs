@@ -30,8 +30,6 @@
 		{
             this.dxRangeSelector1 = new Wisej.Web.Ext.DevExtreme.dxRangeSelector();
             this.checkBox1 = new Wisej.Web.CheckBox();
-            this.checkBox3 = new Wisej.Web.CheckBox();
-            this.checkBox4 = new Wisej.Web.CheckBox();
             this.checkBox5 = new Wisej.Web.CheckBox();
             this.buttonExport = new Wisej.Web.Button();
             this.numericUpDown1 = new Wisej.Web.NumericUpDown();
@@ -44,14 +42,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
             this.SuspendLayout();
             // 
-            // groupBox1
-            // 
-            this.groupBox1.AutoSize = true;
-            // 
             // linkDocs
             // 
             this.linkDocs.Text = "https://js.devexpress.com/Documentation/Guide/Widgets/RangeSelector/Visual_Elemen" +
     "ts/";
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.AutoSize = true;
             // 
             // buttonUpdate
             // 
@@ -75,8 +73,6 @@
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.Controls.Add(this.checkBox1);
-            this.flowLayoutPanel1.Controls.Add(this.checkBox3);
-            this.flowLayoutPanel1.Controls.Add(this.checkBox4);
             this.flowLayoutPanel1.Controls.Add(this.checkBox5);
             this.flowLayoutPanel1.Controls.Add(this.comboBox1);
             this.flowLayoutPanel1.Controls.Add(this.numericUpDown1);
@@ -107,36 +103,6 @@
             this.checkBox1.TabIndex = 24;
             this.checkBox1.Text = "Allow Sliders Swap";
             // 
-            // checkBox3
-            // 
-            this.checkBox3.Appearance = Wisej.Web.Appearance.Switch;
-            this.checkBox3.AutoSize = false;
-            this.checkBox3.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.checkBox3.Checked = true;
-            this.flowLayoutPanel1.SetFillWeight(this.checkBox3, 1);
-            this.flowLayoutPanel1.SetFlowBreak(this.checkBox3, true);
-            this.checkBox3.Location = new System.Drawing.Point(3, 56);
-            this.checkBox3.Margin = new Wisej.Web.Padding(3, 12, 3, 3);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(212, 45);
-            this.checkBox3.TabIndex = 26;
-            this.checkBox3.Text = "Manual Range Selection Enabled";
-            // 
-            // checkBox4
-            // 
-            this.checkBox4.Appearance = Wisej.Web.Appearance.Switch;
-            this.checkBox4.AutoSize = false;
-            this.checkBox4.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.checkBox4.Checked = true;
-            this.flowLayoutPanel1.SetFillWeight(this.checkBox4, 1);
-            this.flowLayoutPanel1.SetFlowBreak(this.checkBox4, true);
-            this.checkBox4.Location = new System.Drawing.Point(3, 116);
-            this.checkBox4.Margin = new Wisej.Web.Padding(3, 12, 3, 3);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(212, 46);
-            this.checkBox4.TabIndex = 27;
-            this.checkBox4.Text = "Move Selected Range by Click";
-            // 
             // checkBox5
             // 
             this.checkBox5.Appearance = Wisej.Web.Appearance.Switch;
@@ -145,7 +111,7 @@
             this.checkBox5.Checked = true;
             this.flowLayoutPanel1.SetFillWeight(this.checkBox5, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.checkBox5, true);
-            this.checkBox5.Location = new System.Drawing.Point(3, 177);
+            this.checkBox5.Location = new System.Drawing.Point(3, 56);
             this.checkBox5.Margin = new Wisej.Web.Padding(3, 12, 3, 3);
             this.checkBox5.Name = "checkBox5";
             this.checkBox5.Size = new System.Drawing.Size(212, 38);
@@ -156,7 +122,7 @@
             // 
             this.buttonExport.Display = Wisej.Web.Display.Icon;
             this.buttonExport.ImageSource = "resource.wx/Wisej.Ext.MaterialDesign/google-drive-image.svg";
-            this.buttonExport.Location = new System.Drawing.Point(3, 449);
+            this.buttonExport.Location = new System.Drawing.Point(3, 328);
             this.buttonExport.Margin = new Wisej.Web.Padding(3, 12, 3, 3);
             this.buttonExport.Name = "buttonExport";
             this.buttonExport.Size = new System.Drawing.Size(42, 42);
@@ -168,7 +134,7 @@
             this.flowLayoutPanel1.SetFillWeight(this.numericUpDown1, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.numericUpDown1, true);
             this.numericUpDown1.LabelText = "Start Value";
-            this.numericUpDown1.Location = new System.Drawing.Point(3, 305);
+            this.numericUpDown1.Location = new System.Drawing.Point(3, 184);
             this.numericUpDown1.Margin = new Wisej.Web.Padding(3, 12, 3, 3);
             this.numericUpDown1.Maximum = new decimal(new int[] {
             100000,
@@ -189,7 +155,7 @@
             this.flowLayoutPanel1.SetFillWeight(this.numericUpDown2, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.numericUpDown2, true);
             this.numericUpDown2.LabelText = "End Value";
-            this.numericUpDown2.Location = new System.Drawing.Point(3, 377);
+            this.numericUpDown2.Location = new System.Drawing.Point(3, 256);
             this.numericUpDown2.Margin = new Wisej.Web.Padding(3, 12, 3, 3);
             this.numericUpDown2.Maximum = new decimal(new int[] {
             100000,
@@ -224,7 +190,7 @@
             this.comboBox1.Label.Size = 50;
             this.comboBox1.Label.SizeType = Wisej.Web.SizeType.Percent;
             this.comboBox1.LabelText = "Value Length";
-            this.comboBox1.Location = new System.Drawing.Point(3, 230);
+            this.comboBox1.Location = new System.Drawing.Point(3, 109);
             this.comboBox1.Margin = new Wisej.Web.Padding(3, 12, 3, 3);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(212, 60);
@@ -249,8 +215,6 @@
 
 		private DevExtreme.dxRangeSelector dxRangeSelector1;
 		private CheckBox checkBox5;
-		private CheckBox checkBox4;
-		private CheckBox checkBox3;
 		private CheckBox checkBox1;
 		private Button buttonExport;
 		private NumericUpDown numericUpDown2;

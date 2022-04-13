@@ -28,7 +28,6 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
 			};
 			this.dxMap1.Options.autoAdjust = this.checkBox1.Checked;
 			this.dxMap1.Options.controls = this.checkBox2.Checked;
-			this.dxMap1.Options.provider = this.comboBox2.SelectedItem;
 			this.dxMap1.Options.type = this.comboBox1.SelectedItem;
 			this.dxMap1.Options.zoom = this.numericUpDown3.Value;
 

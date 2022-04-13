@@ -28,46 +28,50 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(dxScheduler));
-			this.dxScheduler1 = new Wisej.Web.Ext.DevExtreme.dxScheduler();
-			this.groupBox1.SuspendLayout();
-			this.panel.SuspendLayout();
-			this.SuspendLayout();
-			// 
-			// linkDocs
-			// 
-			this.linkDocs.Text = "https://js.devexpress.com/Documentation/Guide/Widgets/Scheduler/Overview/";
-			// 
-			// linkAPI
-			// 
-			this.linkAPI.Text = "https://js.devexpress.com/Documentation/ApiReference/UI_Widgets/dxScheduler/";
-			// 
-			// panel
-			// 
-			this.panel.Controls.Add(this.dxScheduler1);
-			// 
-			// linkDemo
-			// 
-			this.linkDemo.Text = "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/Overview/jQuery/Lig" +
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(dxScheduler));
+            this.dxScheduler1 = new Wisej.Web.Ext.DevExtreme.dxScheduler();
+            this.groupBox1.SuspendLayout();
+            this.panel.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // linkDocs
+            // 
+            this.linkDocs.Text = "https://js.devexpress.com/Documentation/Guide/Widgets/Scheduler/Overview/";
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
+            | Wisej.Web.AnchorStyles.Left)));
+            // 
+            // linkDemo
+            // 
+            this.linkDemo.Text = "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/Overview/jQuery/Lig" +
     "ht/";
-			// 
-			// dxScheduler1
-			// 
-			this.dxScheduler1.Anchor = Wisej.Web.AnchorStyles.None;
-			this.dxScheduler1.Location = new System.Drawing.Point(162, 48);
-			this.dxScheduler1.Name = "dxScheduler1";
-			this.dxScheduler1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("dxScheduler1.Options"))));
-			this.dxScheduler1.Size = new System.Drawing.Size(764, 462);
-			this.dxScheduler1.TabIndex = 0;
-			this.dxScheduler1.Text = "dxScheduler1";
-			// 
-			// dxScheduler
-			// 
-			this.Name = "dxScheduler";
-			this.groupBox1.ResumeLayout(false);
-			this.panel.ResumeLayout(false);
-			this.ResumeLayout(false);
-			this.PerformLayout();
+            // 
+            // linkAPI
+            // 
+            this.linkAPI.Text = "https://js.devexpress.com/Documentation/ApiReference/UI_Widgets/dxScheduler/";
+            // 
+            // panel
+            // 
+            this.panel.Controls.Add(this.dxScheduler1);
+            // 
+            // dxScheduler1
+            // 
+            this.dxScheduler1.Anchor = Wisej.Web.AnchorStyles.None;
+            this.dxScheduler1.Location = new System.Drawing.Point(162, 48);
+            this.dxScheduler1.Name = "dxScheduler1";
+            this.dxScheduler1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("dxScheduler1.Options"))));
+            this.dxScheduler1.Size = new System.Drawing.Size(764, 462);
+            this.dxScheduler1.TabIndex = 0;
+            // 
+            // dxScheduler
+            // 
+            this.Name = "dxScheduler";
+            this.groupBox1.ResumeLayout(false);
+            this.panel.ResumeLayout(false);
+            this.ResumeLayout(false);
+            this.PerformLayout();
 
 		}
 

@@ -37,7 +37,6 @@
             this.panel1 = new Wisej.Web.Panel();
             this.numericUpDown2 = new Wisej.Web.NumericUpDown();
             this.numericUpDown3 = new Wisej.Web.NumericUpDown();
-            this.buttonExport = new Wisej.Web.Button();
             this.groupBox1.SuspendLayout();
             this.panel.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
@@ -82,7 +81,6 @@
             this.flowLayoutPanel1.Controls.Add(this.numericUpDown1);
             this.flowLayoutPanel1.Controls.Add(this.numericUpDown2);
             this.flowLayoutPanel1.Controls.Add(this.numericUpDown3);
-            this.flowLayoutPanel1.Controls.Add(this.buttonExport);
             // 
             // checkBox1
             // 
@@ -214,20 +212,6 @@
             0,
             0});
             // 
-            // buttonExport
-            // 
-            this.flowLayoutPanel1.SetFillWeight(this.buttonExport, 1);
-            this.flowLayoutPanel1.SetFlowBreak(this.buttonExport, true);
-            this.buttonExport.ImageSource = "resource.wx/Wisej.Ext.MaterialDesign/google-drive-image.svg";
-            this.buttonExport.Location = new System.Drawing.Point(3, 384);
-            this.buttonExport.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
-            this.buttonExport.Name = "buttonExport";
-            this.buttonExport.Size = new System.Drawing.Size(212, 42);
-            this.buttonExport.TabIndex = 5;
-            this.buttonExport.Text = "Save Image";
-            this.buttonExport.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonExport.Click += new System.EventHandler(this.buttonExport_Click);
-            // 
             // dxCircularGauge
             // 
             this.Name = "dxCircularGauge";
@@ -256,6 +240,5 @@
 		private NumericUpDown numericUpDown3;
 		private NumericUpDown numericUpDown2;
 		private Panel panel1;
-		private Button buttonExport;
 	}
 }

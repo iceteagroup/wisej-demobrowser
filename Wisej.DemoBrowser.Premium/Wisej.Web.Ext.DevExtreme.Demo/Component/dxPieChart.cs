@@ -31,9 +31,7 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
 			this.dxPieChart1.Options.diameter = (this.numericUpDown1.Value == 0) ? "undefined" : this.numericUpDown1.Value.ToString();
 			this.dxPieChart1.Options.innerRadius = this.numericUpDown2.Value;
 			this.dxPieChart1.Options.palette = this.comboBox1.SelectedItem;
-			this.dxPieChart1.Options.paletteExtensionMode = this.comboBox2.SelectedItem;
 			this.dxPieChart1.Options.segmentsDirection = this.comboBox3.SelectedItem;
-			this.dxPieChart1.Options.type = this.comboBox4.SelectedItem;
 
 			this.dxPieChart1.Update();
 		}

@@ -49,6 +49,8 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
+            | Wisej.Web.AnchorStyles.Left)));
             this.groupBox1.AutoSize = true;
             // 
             // buttonUpdate

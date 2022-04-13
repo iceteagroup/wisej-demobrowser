@@ -23,8 +23,6 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
 
 		private void buttonUpdate_Click(object sender, EventArgs e)
 		{
-			this.dxTreeView1.Options.allowExpandAll = this.checkBox1.Checked;
-			this.dxTreeView1.Options.expandAllEnabled = this.checkBox3.Checked;
 			this.dxTreeView1.Options.expandNodesRecursive = this.checkBox4.Checked;
 			this.dxTreeView1.Options.hoverStateEnabled = this.checkBox5.Checked;
 			this.dxTreeView1.Options.searchEnabled = this.checkBox6.Checked;

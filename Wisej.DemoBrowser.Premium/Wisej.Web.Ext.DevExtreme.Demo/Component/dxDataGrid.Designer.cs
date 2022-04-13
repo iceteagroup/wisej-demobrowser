@@ -39,7 +39,6 @@
             this.checkBox4 = new Wisej.Web.CheckBox();
             this.checkBox5 = new Wisej.Web.CheckBox();
             this.checkBox6 = new Wisej.Web.CheckBox();
-            this.checkBox7 = new Wisej.Web.CheckBox();
             this.groupBox1.SuspendLayout();
             this.panel.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
@@ -79,7 +78,6 @@
             this.flowLayoutPanel1.Controls.Add(this.checkBox4);
             this.flowLayoutPanel1.Controls.Add(this.checkBox5);
             this.flowLayoutPanel1.Controls.Add(this.checkBox6);
-            this.flowLayoutPanel1.Controls.Add(this.checkBox7);
             this.flowLayoutPanel1.Controls.Add(this.buttonLoad);
             this.flowLayoutPanel1.Controls.Add(this.buttonExport);
             // 
@@ -130,7 +128,7 @@
             this.buttonLoad.AllowedFileTypes = ".json";
             this.buttonLoad.HideValue = true;
             this.buttonLoad.ImageSource = "icon-file";
-            this.buttonLoad.Location = new System.Drawing.Point(3, 385);
+            this.buttonLoad.Location = new System.Drawing.Point(3, 332);
             this.buttonLoad.Margin = new Wisej.Web.Padding(3, 12, 3, 3);
             this.buttonLoad.Name = "buttonLoad";
             this.buttonLoad.Size = new System.Drawing.Size(42, 42);
@@ -140,7 +138,7 @@
             // 
             this.buttonExport.Display = Wisej.Web.Display.Icon;
             this.buttonExport.ImageSource = "resource.wx/Wisej.Ext.MaterialDesign/google-drive-image.svg";
-            this.buttonExport.Location = new System.Drawing.Point(51, 385);
+            this.buttonExport.Location = new System.Drawing.Point(51, 332);
             this.buttonExport.Margin = new Wisej.Web.Padding(3, 12, 3, 3);
             this.buttonExport.Name = "buttonExport";
             this.buttonExport.Size = new System.Drawing.Size(42, 42);
@@ -206,20 +204,6 @@
             this.checkBox6.TabIndex = 5;
             this.checkBox6.Text = "Column Hiding";
             // 
-            // checkBox7
-            // 
-            this.checkBox7.Appearance = Wisej.Web.Appearance.Switch;
-            this.checkBox7.AutoSize = false;
-            this.checkBox7.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.flowLayoutPanel1.SetFillWeight(this.checkBox7, 1);
-            this.flowLayoutPanel1.SetFlowBreak(this.checkBox7, true);
-            this.checkBox7.Location = new System.Drawing.Point(3, 332);
-            this.checkBox7.Margin = new Wisej.Web.Padding(3, 12, 3, 3);
-            this.checkBox7.Name = "checkBox7";
-            this.checkBox7.Size = new System.Drawing.Size(212, 38);
-            this.checkBox7.TabIndex = 6;
-            this.checkBox7.Text = "Word Wrap Enabled";
-            // 
             // dxDataGrid
             // 
             this.Name = "dxDataGrid";
@@ -242,7 +226,6 @@
 		private CheckBox checkBox3;
 		private CheckBox checkBox5;
 		private CheckBox checkBox4;
-		private CheckBox checkBox7;
 		private CheckBox checkBox6;
 	}
 }
