@@ -7,7 +7,6 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Net;
-using System.Web;
 using System.Web.Mvc;
 
 namespace Wisej.Web.Ext.Syncfusion2.Demo.Component
@@ -40,7 +39,7 @@ namespace Wisej.Web.Ext.Syncfusion2.Demo.Component
 			using (var sr = new StreamReader(e.Request.InputStream))
 				data = JSON.Parse(sr.ReadToEnd());
 
-			switch (e.Request.Params["action"])
+			switch (e.Request["action"])
 			{
 				case "FileOperations":
 					e.Response.Write(ProcessFileOperations(data.action, data));
@@ -53,14 +52,7 @@ namespace Wisej.Web.Ext.Syncfusion2.Demo.Component
 				case "Upload,save":
 				case "Upload,replace":
 				case "Upload,keepboth":
-					var status = "400 Files cannot be uploaded in this sample.";
-					e.Response.Write(status);
-					e.Response.Status = status;
-					e.Response.StatusDescription = status;
-					e.Response.StatusCode = (int)HttpStatusCode.BadRequest;
-
-					var files = e.Request.Files.AllKeys.Select(item => new HttpPostedFileWrapper(e.Request.Files[item])).ToList<HttpPostedFileBase>();
-					ProcessUploadOperation(e.Request.Form["action"], e.Request.Form["path"], files, e.Response);
+					ProcessErrorResponse("action not supported in this example.");
 					break;
 
 				case "Download":
@@ -68,7 +60,7 @@ namespace Wisej.Web.Ext.Syncfusion2.Demo.Component
 					var fileName = download.FileDownloadName;
 
 					download.FileStream.CopyTo(e.Response.OutputStream);
-					e.Response.AddHeader("content-disposition", "attachment;filename=" + fileName);
+					e.Response.AppendHeader("content-disposition", "attachment;filename=" + fileName);
 					break;
 
 				default:
@@ -85,33 +77,6 @@ namespace Wisej.Web.Ext.Syncfusion2.Demo.Component
 		{
 			FileManagerDirectoryContent args = JsonConvert.DeserializeObject<FileManagerDirectoryContent>(downloadInput);
 			return this.operation.Download(args.Path, args.Names);
-		}
-
-		/// <summary>
-		/// Uploads the given files to the server path provided.
-		/// </summary>
-		/// <param name="action"></param>
-		/// <param name="path"></param>
-		/// <param name="files"></param>
-		/// <param name="response"></param>
-		private void ProcessUploadOperation(string action, string path, List<HttpPostedFileBase> files, HttpResponse response)
-		{
-			if (path == null)
-			{
-				response.Write("");
-				return;
-			}
-
-			var uploadResponse = operation.Upload(path, files, action, null);
-			if (uploadResponse.Error != null)
-			{
-				response.Clear();
-				response.Status = uploadResponse.Error.Code + " " + uploadResponse.Error.Message;
-				response.StatusCode = int.Parse(uploadResponse.Error.Code);
-				response.StatusDescription = uploadResponse.Error.Message;
-				response.End();
-			}
-			response.Write("");
 		}
 
 		/// <summary>

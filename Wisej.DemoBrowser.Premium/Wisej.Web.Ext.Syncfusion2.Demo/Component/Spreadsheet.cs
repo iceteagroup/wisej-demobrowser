@@ -2,7 +2,6 @@
 using System;
 using System.IO;
 using System.Linq;
-using System.Web;
 using Wisej.Core;
 
 namespace Wisej.Web.Ext.Syncfusion2.Demo.Component
@@ -62,15 +61,15 @@ namespace Wisej.Web.Ext.Syncfusion2.Demo.Component
 
 		private void spreadsheet1_WebRequest(object sender, WebRequestEventArgs e)
 		{
-			switch (e.Request.Params["action"])
+			switch (e.Request["action"])
 			{
 				case "load":
 						e.Response.Write(ProcessFile(e.Request.Files[0]));
 					break;
 
 				case "fetch":
-					var fileName = e.Request.Params["fileName"];
-					e.Response.WriteFile(Application.MapPath($"Data/Spreadsheet/{fileName}.xlsx"));
+					var fileName = e.Request["fileName"];
+					e.Response.BinaryWrite(File.ReadAllBytes(Application.MapPath($"Data/Spreadsheet/{fileName}.xlsx")));
 					break;
 
 				default:
@@ -102,7 +101,7 @@ namespace Wisej.Web.Ext.Syncfusion2.Demo.Component
 		private string ProcessFile(HttpPostedFile file)
 		{
 			var open = new OpenRequest();
-			open.File = new[] { new HttpPostedFileWrapper(file) };
+			open.File = new[] { file };
 			return Workbook.Open(open);
 		}
 

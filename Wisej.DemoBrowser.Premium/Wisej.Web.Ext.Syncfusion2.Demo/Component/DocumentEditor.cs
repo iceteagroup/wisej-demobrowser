@@ -71,7 +71,7 @@ namespace Wisej.Web.Ext.Syncfusion2.Demo.Component
 						var type = file.FileName.Substring(index).ToLower();
 
 						e.Response.ContentType = "text/plain";
-						e.Response.Output.Write(ProcessDocument(file.InputStream, type));
+						e.Response.Write(ProcessDocument(file.InputStream, type));
 					}
 					break;
 
