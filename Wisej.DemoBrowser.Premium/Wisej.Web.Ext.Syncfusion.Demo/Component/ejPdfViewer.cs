@@ -18,7 +18,7 @@ namespace Wisej.Web.Ext.Syncfusion.Demo.Component
 
 		private void ejPdfViewer1_WebRequest(object sender, WebRequestEventArgs e)
 		{
-			if (e.Request.HttpMethod == "POST")
+			if (e.Request.RequestType == "POST")
 			{
 				var action = Path.GetFileName(e.Request.Path);
 				switch (action)

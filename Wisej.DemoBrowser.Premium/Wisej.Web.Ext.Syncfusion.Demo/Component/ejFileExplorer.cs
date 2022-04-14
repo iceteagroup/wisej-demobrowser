@@ -36,7 +36,7 @@ namespace Wisej.Web.Ext.Syncfusion.Demo.Component
 			{
 				var helper = new FileExplorerOperations();
 
-				if (e.Request.HttpMethod == "POST")
+				if (e.Request.RequestType == "POST")
 				{
 					var data = JSON.Parse(e.Request.InputStream);
 					switch (data.ActionType)
