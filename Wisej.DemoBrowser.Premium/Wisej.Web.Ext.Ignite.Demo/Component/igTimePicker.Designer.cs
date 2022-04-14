@@ -143,6 +143,7 @@
             // 
             // igTimePicker
             // 
+            this.MinimumSize = new System.Drawing.Size(782, 566);
             this.Name = "igTimePicker";
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);

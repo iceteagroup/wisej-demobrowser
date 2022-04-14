@@ -209,6 +209,7 @@
             // 
             // dxMap
             // 
+            this.MinimumSize = new System.Drawing.Size(959, 708);
             this.Name = "dxMap";
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);

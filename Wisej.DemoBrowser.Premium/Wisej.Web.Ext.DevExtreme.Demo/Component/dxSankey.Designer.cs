@@ -47,11 +47,6 @@
             // 
             this.linkDocs.Text = "https://js.devexpress.com/Documentation/Guide/Widgets/Sankey/Overview/";
             // 
-            // groupBox1
-            // 
-            this.groupBox1.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
-            | Wisej.Web.AnchorStyles.Left)));
-            // 
             // buttonUpdate
             // 
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
@@ -81,7 +76,7 @@
             // 
             // dxSankey1
             // 
-            this.dxSankey1.Anchor = Wisej.Web.AnchorStyles.None;
+            this.dxSankey1.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Left | Wisej.Web.AnchorStyles.Right)));
             this.dxSankey1.Location = new System.Drawing.Point(88, 47);
             this.dxSankey1.Name = "dxSankey1";
             this.dxSankey1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("dxSankey1.Options"))));
@@ -193,6 +188,7 @@
             // 
             // dxSankey
             // 
+            this.MinimumSize = new System.Drawing.Size(1126, 729);
             this.Name = "dxSankey";
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);

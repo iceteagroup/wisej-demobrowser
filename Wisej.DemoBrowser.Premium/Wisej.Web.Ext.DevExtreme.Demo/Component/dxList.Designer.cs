@@ -34,7 +34,6 @@
             this.comboBox1 = new Wisej.Web.ComboBox();
             this.checkBox2 = new Wisej.Web.CheckBox();
             this.comboBox3 = new Wisej.Web.ComboBox();
-            this.checkBox3 = new Wisej.Web.CheckBox();
             this.checkBox4 = new Wisej.Web.CheckBox();
             this.comboBox2 = new Wisej.Web.ComboBox();
             this.checkBox5 = new Wisej.Web.CheckBox();
@@ -46,11 +45,6 @@
             // linkDocs
             // 
             this.linkDocs.Text = "https://js.devexpress.com/Documentation/Guide/Widgets/List/Overview/";
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
-            | Wisej.Web.AnchorStyles.Left)));
             // 
             // buttonUpdate
             // 
@@ -73,7 +67,6 @@
             // 
             this.flowLayoutPanel1.Controls.Add(this.checkBox1);
             this.flowLayoutPanel1.Controls.Add(this.checkBox2);
-            this.flowLayoutPanel1.Controls.Add(this.checkBox3);
             this.flowLayoutPanel1.Controls.Add(this.checkBox4);
             this.flowLayoutPanel1.Controls.Add(this.checkBox5);
             this.flowLayoutPanel1.Controls.Add(this.comboBox1);
@@ -100,7 +93,7 @@
             this.flowLayoutPanel1.SetFlowBreak(this.checkBox1, true);
             this.checkBox1.Location = new System.Drawing.Point(3, 3);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(212, 38);
+            this.checkBox1.Size = new System.Drawing.Size(212, 45);
             this.checkBox1.TabIndex = 8;
             this.checkBox1.Text = "Search Enabled";
             // 
@@ -117,7 +110,7 @@
             this.comboBox1.Label.Size = 50;
             this.comboBox1.Label.SizeType = Wisej.Web.SizeType.Percent;
             this.comboBox1.LabelText = "Search Mode";
-            this.comboBox1.Location = new System.Drawing.Point(3, 223);
+            this.comboBox1.Location = new System.Drawing.Point(3, 207);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(212, 60);
             this.comboBox1.TabIndex = 9;
@@ -130,9 +123,9 @@
             this.checkBox2.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.flowLayoutPanel1.SetFillWeight(this.checkBox2, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.checkBox2, true);
-            this.checkBox2.Location = new System.Drawing.Point(3, 47);
+            this.checkBox2.Location = new System.Drawing.Point(3, 54);
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(212, 38);
+            this.checkBox2.Size = new System.Drawing.Size(212, 45);
             this.checkBox2.TabIndex = 10;
             this.checkBox2.Text = "Bounce Enabled";
             // 
@@ -152,24 +145,11 @@
             this.comboBox3.Label.Size = 50;
             this.comboBox3.Label.SizeType = Wisej.Web.SizeType.Percent;
             this.comboBox3.LabelText = "Item Delete Mode";
-            this.comboBox3.Location = new System.Drawing.Point(3, 289);
+            this.comboBox3.Location = new System.Drawing.Point(3, 273);
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(212, 60);
             this.comboBox3.TabIndex = 11;
             this.comboBox3.Text = "static";
-            // 
-            // checkBox3
-            // 
-            this.checkBox3.Appearance = Wisej.Web.Appearance.Switch;
-            this.checkBox3.AutoSize = false;
-            this.checkBox3.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.flowLayoutPanel1.SetFillWeight(this.checkBox3, 1);
-            this.flowLayoutPanel1.SetFlowBreak(this.checkBox3, true);
-            this.checkBox3.Location = new System.Drawing.Point(3, 91);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(212, 38);
-            this.checkBox3.TabIndex = 12;
-            this.checkBox3.Text = "Pull Refresh Enabled";
             // 
             // checkBox4
             // 
@@ -178,9 +158,9 @@
             this.checkBox4.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.flowLayoutPanel1.SetFillWeight(this.checkBox4, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.checkBox4, true);
-            this.checkBox4.Location = new System.Drawing.Point(3, 135);
+            this.checkBox4.Location = new System.Drawing.Point(3, 105);
             this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(212, 38);
+            this.checkBox4.Size = new System.Drawing.Size(212, 45);
             this.checkBox4.TabIndex = 13;
             this.checkBox4.Text = "Repaint changes Only";
             // 
@@ -198,7 +178,7 @@
             this.comboBox2.Label.Size = 50;
             this.comboBox2.Label.SizeType = Wisej.Web.SizeType.Percent;
             this.comboBox2.LabelText = "Selection Mode";
-            this.comboBox2.Location = new System.Drawing.Point(3, 355);
+            this.comboBox2.Location = new System.Drawing.Point(3, 339);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(212, 60);
             this.comboBox2.TabIndex = 14;
@@ -212,14 +192,15 @@
             this.checkBox5.Checked = true;
             this.flowLayoutPanel1.SetFillWeight(this.checkBox5, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.checkBox5, true);
-            this.checkBox5.Location = new System.Drawing.Point(3, 179);
+            this.checkBox5.Location = new System.Drawing.Point(3, 156);
             this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(212, 38);
+            this.checkBox5.Size = new System.Drawing.Size(212, 45);
             this.checkBox5.TabIndex = 15;
             this.checkBox5.Text = "Selection Controls";
             // 
             // dxList
             // 
+            this.MinimumSize = new System.Drawing.Size(992, 715);
             this.Name = "dxList";
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
@@ -237,7 +218,6 @@
 		private CheckBox checkBox5;
 		private ComboBox comboBox2;
 		private CheckBox checkBox4;
-		private CheckBox checkBox3;
 		private ComboBox comboBox3;
 		private CheckBox checkBox2;
 	}

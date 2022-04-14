@@ -316,6 +316,7 @@
             // 
             // igLinearGauge
             // 
+            this.MinimumSize = new System.Drawing.Size(990, 680);
             this.Name = "igLinearGauge";
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);

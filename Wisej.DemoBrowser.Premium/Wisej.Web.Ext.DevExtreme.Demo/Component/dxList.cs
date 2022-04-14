@@ -29,7 +29,6 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
 			this.dxList1.Options.itemDeleteMode = this.comboBox3.SelectedItem;
 			this.dxList1.Options.searchEnabled = this.checkBox1.Checked;
 			this.dxList1.Options.bounceEnabled = this.checkBox2.Checked;
-			this.dxList1.Options.pullRefreshEnabled = this.checkBox3.Checked;
 			this.dxList1.Options.repaintChangesOnly = this.checkBox4.Checked;
 			this.dxList1.Options.showSelectionControls = this.checkBox5.Checked;
 

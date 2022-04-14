@@ -36,11 +36,16 @@
             this.checkBox1 = new Wisej.Web.CheckBox();
             this.checkBox2 = new Wisej.Web.CheckBox();
             this.numericUpDown1 = new Wisej.Web.NumericUpDown();
-            this.groupBox1.SuspendLayout();
             this.panel.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
+            // 
+            // panel
+            // 
+            this.panel.Controls.Add(this.igDataChart1);
+            this.panel.TabIndex = 7;
             // 
             // groupBox1
             // 
@@ -48,14 +53,17 @@
             // 
             // buttonUpdate
             // 
-            this.buttonUpdate.Location = new System.Drawing.Point(16, 476);
             this.buttonUpdate.TabIndex = 6;
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
-            // panel
+            // flowLayoutPanel1
             // 
-            this.panel.Controls.Add(this.igDataChart1);
-            this.panel.TabIndex = 7;
+            this.flowLayoutPanel1.Controls.Add(this.checkBox1);
+            this.flowLayoutPanel1.Controls.Add(this.checkBox2);
+            this.flowLayoutPanel1.Controls.Add(this.numericUpDown1);
+            this.flowLayoutPanel1.Controls.Add(this.button1);
+            this.flowLayoutPanel1.Controls.Add(this.buttonLoad);
+            this.flowLayoutPanel1.Controls.Add(this.buttonExportImage);
             // 
             // linkDemo
             // 
@@ -71,16 +79,6 @@
             // 
             this.linkDocs.TabIndex = 4;
             this.linkDocs.Text = "http://www.igniteui.com/help/igdatachart-landing-page";
-            // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.Controls.Add(this.checkBox1);
-            this.flowLayoutPanel1.Controls.Add(this.checkBox2);
-            this.flowLayoutPanel1.Controls.Add(this.numericUpDown1);
-            this.flowLayoutPanel1.Controls.Add(this.button1);
-            this.flowLayoutPanel1.Controls.Add(this.buttonLoad);
-            this.flowLayoutPanel1.Controls.Add(this.buttonExportImage);
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 490);
             // 
             // igDataChart1
             // 
@@ -179,9 +177,10 @@
             // 
             // igDataChartIndicator
             // 
+            this.MinimumSize = new System.Drawing.Size(893, 636);
             this.Name = "igDataChartIndicator";
-            this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();

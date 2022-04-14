@@ -35,17 +35,17 @@
             this.numericUpDown1 = new Wisej.Web.NumericUpDown();
             this.numericUpDown2 = new Wisej.Web.NumericUpDown();
             this.comboBox1 = new Wisej.Web.ComboBox();
-            this.groupBox1.SuspendLayout();
             this.panel.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
             this.SuspendLayout();
             // 
-            // linkDocs
+            // panel
             // 
-            this.linkDocs.Text = "https://js.devexpress.com/Documentation/Guide/Widgets/RangeSelector/Visual_Elemen" +
-    "ts/";
+            this.panel.Controls.Add(this.dxRangeSelector1);
+            this.panel.Location = new System.Drawing.Point(355, 159);
             // 
             // groupBox1
             // 
@@ -54,6 +54,20 @@
             // buttonUpdate
             // 
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Controls.Add(this.checkBox1);
+            this.flowLayoutPanel1.Controls.Add(this.checkBox5);
+            this.flowLayoutPanel1.Controls.Add(this.comboBox1);
+            this.flowLayoutPanel1.Controls.Add(this.numericUpDown1);
+            this.flowLayoutPanel1.Controls.Add(this.numericUpDown2);
+            this.flowLayoutPanel1.Controls.Add(this.buttonExport);
+            // 
+            // linkDocs
+            // 
+            this.linkDocs.Text = "https://js.devexpress.com/Documentation/Guide/Widgets/RangeSelector/Visual_Elemen" +
+    "ts/";
             // 
             // linkDemo
             // 
@@ -65,23 +79,9 @@
             this.linkAPI.Text = "https://js.devexpress.com/Documentation/ApiReference/Data_Visualization_Widgets/d" +
     "xRangeSelector/";
             // 
-            // panel
-            // 
-            this.panel.Controls.Add(this.dxRangeSelector1);
-            this.panel.Location = new System.Drawing.Point(355, 159);
-            // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.Controls.Add(this.checkBox1);
-            this.flowLayoutPanel1.Controls.Add(this.checkBox5);
-            this.flowLayoutPanel1.Controls.Add(this.comboBox1);
-            this.flowLayoutPanel1.Controls.Add(this.numericUpDown1);
-            this.flowLayoutPanel1.Controls.Add(this.numericUpDown2);
-            this.flowLayoutPanel1.Controls.Add(this.buttonExport);
-            // 
             // dxRangeSelector1
             // 
-            this.dxRangeSelector1.Anchor = Wisej.Web.AnchorStyles.None;
+            this.dxRangeSelector1.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Left | Wisej.Web.AnchorStyles.Right)));
             this.dxRangeSelector1.Location = new System.Drawing.Point(114, 211);
             this.dxRangeSelector1.Name = "dxRangeSelector1";
             this.dxRangeSelector1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"value\":{\"startValue\":\"40000\",\"endValue\":\"80000\"},\"title\":\"Select House Price Ra" +
@@ -199,9 +199,10 @@
             // dxRangeSelector
             // 
             this.AutoScroll = true;
+            this.MinimumSize = new System.Drawing.Size(1012, 688);
             this.Name = "dxRangeSelector";
-            this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();

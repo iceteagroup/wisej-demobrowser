@@ -45,11 +45,6 @@
             // 
             this.linkDocs.Text = "https://js.devexpress.com/Documentation/Guide/Widgets/Form/Overview/";
             // 
-            // groupBox1
-            // 
-            this.groupBox1.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
-            | Wisej.Web.AnchorStyles.Left)));
-            // 
             // buttonUpdate
             // 
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
@@ -176,6 +171,7 @@
             // 
             // dxForm
             // 
+            this.MinimumSize = new System.Drawing.Size(942, 671);
             this.Name = "dxForm";
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);

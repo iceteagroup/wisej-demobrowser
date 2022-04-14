@@ -38,11 +38,6 @@
             // 
             this.linkDocs.Text = "https://js.devexpress.com/Documentation/Guide/Widgets/Scheduler/Overview/";
             // 
-            // groupBox1
-            // 
-            this.groupBox1.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
-            | Wisej.Web.AnchorStyles.Left)));
-            // 
             // linkDemo
             // 
             this.linkDemo.Text = "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/Overview/jQuery/Lig" +
@@ -58,15 +53,18 @@
             // 
             // dxScheduler1
             // 
-            this.dxScheduler1.Anchor = Wisej.Web.AnchorStyles.None;
-            this.dxScheduler1.Location = new System.Drawing.Point(162, 48);
+            this.dxScheduler1.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
+            | Wisej.Web.AnchorStyles.Left) 
+            | Wisej.Web.AnchorStyles.Right)));
+            this.dxScheduler1.Location = new System.Drawing.Point(27, 17);
             this.dxScheduler1.Name = "dxScheduler1";
             this.dxScheduler1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("dxScheduler1.Options"))));
-            this.dxScheduler1.Size = new System.Drawing.Size(764, 462);
+            this.dxScheduler1.Size = new System.Drawing.Size(1034, 524);
             this.dxScheduler1.TabIndex = 0;
             // 
             // dxScheduler
             // 
+            this.MinimumSize = new System.Drawing.Size(1003, 615);
             this.Name = "dxScheduler";
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);

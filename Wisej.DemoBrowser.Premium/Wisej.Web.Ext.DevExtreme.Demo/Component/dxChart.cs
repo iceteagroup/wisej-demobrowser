@@ -32,28 +32,6 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
 			this.dxChart1.Update();
 		}
 
-		private async void buttonExport_Click(object sender, EventArgs e)
-		{
-			var data = await this.dxChart1.CallAsync("getDataSourceItems");
-
-			using (MemoryStream ms = new MemoryStream())
-			{
-				var sw = new StreamWriter(ms);
-				try
-				{
-					sw.Write(JSON.Stringify(data));
-					sw.Flush();
-					ms.Seek(0, SeekOrigin.Begin);
-
-					Application.Download(ms, "chartData.json");
-				}
-				finally
-				{
-					sw.Dispose();
-				}
-			}
-		}
-
 		private void buttonUpdate_Click(object sender, EventArgs e)
 		{
 			this.dxChart1.Options.adjustOnZoom = this.checkBox1.Checked;

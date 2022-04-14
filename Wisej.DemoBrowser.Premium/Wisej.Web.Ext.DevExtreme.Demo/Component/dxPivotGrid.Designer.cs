@@ -67,6 +67,7 @@
             // panel
             // 
             this.panel.Controls.Add(this.dxPivotGrid1);
+            this.panel.Size = new System.Drawing.Size(1112, 560);
             // 
             // flowLayoutPanel1
             // 
@@ -87,7 +88,7 @@
             this.dxPivotGrid1.Location = new System.Drawing.Point(23, 24);
             this.dxPivotGrid1.Name = "dxPivotGrid1";
             this.dxPivotGrid1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("dxPivotGrid1.Options"))));
-            this.dxPivotGrid1.Size = new System.Drawing.Size(1043, 509);
+            this.dxPivotGrid1.Size = new System.Drawing.Size(1064, 509);
             this.dxPivotGrid1.TabIndex = 0;
             // 
             // checkBox1
@@ -201,8 +202,8 @@
             // dxPivotGrid
             // 
             this.AutoScroll = true;
+            this.MinimumSize = new System.Drawing.Size(1028, 687);
             this.Name = "dxPivotGrid";
-            this.Size = new System.Drawing.Size(1479, 750);
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);

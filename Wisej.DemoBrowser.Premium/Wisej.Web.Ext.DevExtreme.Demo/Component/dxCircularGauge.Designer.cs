@@ -135,7 +135,9 @@
             // 
             // dxCircularGauge1
             // 
-            this.dxCircularGauge1.Anchor = Wisej.Web.AnchorStyles.None;
+            this.dxCircularGauge1.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
+            | Wisej.Web.AnchorStyles.Left) 
+            | Wisej.Web.AnchorStyles.Right)));
             this.dxCircularGauge1.Location = new System.Drawing.Point(81, 29);
             this.dxCircularGauge1.Name = "dxCircularGauge1";
             this.dxCircularGauge1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("dxCircularGauge1.Options"))));
@@ -214,6 +216,7 @@
             // 
             // dxCircularGauge
             // 
+            this.MinimumSize = new System.Drawing.Size(988, 684);
             this.Name = "dxCircularGauge";
             this.Load += new System.EventHandler(this.dxCircularGauge_Load);
             this.groupBox1.ResumeLayout(false);

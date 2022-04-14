@@ -45,11 +45,6 @@
             // 
             this.linkDocs.Text = "https://js.devexpress.com/Documentation/Guide/Widgets/Menu/Overview/";
             // 
-            // groupBox1
-            // 
-            this.groupBox1.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
-            | Wisej.Web.AnchorStyles.Left)));
-            // 
             // buttonUpdate
             // 
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
@@ -180,6 +175,7 @@
             // 
             // dxMenu
             // 
+            this.MinimumSize = new System.Drawing.Size(877, 701);
             this.Name = "dxMenu";
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);

@@ -34,7 +34,6 @@
             this.checkBox1 = new Wisej.Web.CheckBox();
             this.checkBox2 = new Wisej.Web.CheckBox();
             this.buttonLoad = new Wisej.Web.Upload();
-            this.buttonExport = new Wisej.Web.Button();
             this.checkBox3 = new Wisej.Web.CheckBox();
             this.checkBox4 = new Wisej.Web.CheckBox();
             this.comboBox1 = new Wisej.Web.ComboBox();
@@ -47,11 +46,6 @@
             // 
             this.linkDocs.TabIndex = 4;
             this.linkDocs.Text = "https://js.devexpress.com/Documentation/Guide/Widgets/Chart/Overview/";
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
-            | Wisej.Web.AnchorStyles.Left)));
             // 
             // buttonUpdate
             // 
@@ -83,11 +77,12 @@
             this.flowLayoutPanel1.Controls.Add(this.checkBox4);
             this.flowLayoutPanel1.Controls.Add(this.comboBox1);
             this.flowLayoutPanel1.Controls.Add(this.buttonLoad);
-            this.flowLayoutPanel1.Controls.Add(this.buttonExport);
             // 
             // dxChart1
             // 
-            this.dxChart1.Anchor = Wisej.Web.AnchorStyles.None;
+            this.dxChart1.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
+            | Wisej.Web.AnchorStyles.Left) 
+            | Wisej.Web.AnchorStyles.Right)));
             this.dxChart1.Location = new System.Drawing.Point(37, 28);
             this.dxChart1.Name = "dxChart1";
             this.dxChart1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("dxChart1.Options"))));
@@ -138,17 +133,6 @@
             this.buttonLoad.Size = new System.Drawing.Size(42, 42);
             this.buttonLoad.TabIndex = 5;
             this.buttonLoad.Uploaded += new Wisej.Web.UploadedEventHandler(this.buttonLoad_Uploaded);
-            // 
-            // buttonExport
-            // 
-            this.buttonExport.Display = Wisej.Web.Display.Icon;
-            this.buttonExport.ImageSource = "resource.wx/Wisej.Ext.MaterialDesign/google-drive-image.svg";
-            this.buttonExport.Location = new System.Drawing.Point(51, 310);
-            this.buttonExport.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
-            this.buttonExport.Name = "buttonExport";
-            this.buttonExport.Size = new System.Drawing.Size(42, 42);
-            this.buttonExport.TabIndex = 6;
-            this.buttonExport.Click += new System.EventHandler(this.buttonExport_Click);
             // 
             // checkBox3
             // 
@@ -202,6 +186,7 @@
             // 
             // dxChart
             // 
+            this.MinimumSize = new System.Drawing.Size(924, 675);
             this.Name = "dxChart";
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
@@ -217,7 +202,6 @@
 		private CheckBox checkBox2;
 		private CheckBox checkBox1;
 		private Upload buttonLoad;
-		private Button buttonExport;
 		private CheckBox checkBox3;
 		private CheckBox checkBox4;
 		private ComboBox comboBox1;

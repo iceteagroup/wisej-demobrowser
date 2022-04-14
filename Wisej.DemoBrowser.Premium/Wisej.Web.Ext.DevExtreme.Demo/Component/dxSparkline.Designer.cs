@@ -54,11 +54,6 @@
             // 
             this.linkDocs.Text = "https://js.devexpress.com/Documentation/Guide/Widgets/Sparkline/Visual_Elements/";
             // 
-            // groupBox1
-            // 
-            this.groupBox1.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
-            | Wisej.Web.AnchorStyles.Left)));
-            // 
             // linkDemo
             // 
             this.linkDemo.Text = "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/SimpleSparklines/jQuer" +
@@ -75,7 +70,9 @@
             // 
             // tableLayoutPanel1
             // 
-            this.tableLayoutPanel1.Anchor = Wisej.Web.AnchorStyles.None;
+            this.tableLayoutPanel1.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
+            | Wisej.Web.AnchorStyles.Left) 
+            | Wisej.Web.AnchorStyles.Right)));
             this.tableLayoutPanel1.BorderStyle = Wisej.Web.BorderStyle.Solid;
             this.tableLayoutPanel1.ColumnCount = 4;
             this.tableLayoutPanel1.ColumnStyles.Clear();
@@ -277,6 +274,7 @@
             // 
             // dxSparkline
             // 
+            this.MinimumSize = new System.Drawing.Size(934, 597);
             this.Name = "dxSparkline";
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);

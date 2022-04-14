@@ -45,15 +45,18 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Size = new System.Drawing.Size(250, 479);
             this.groupBox1.TabIndex = 3;
             // 
             // buttonUpdate
             // 
+            this.buttonUpdate.Location = new System.Drawing.Point(16, 411);
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
             // panel
             // 
             this.panel.Controls.Add(this.igScheduler1);
+            this.panel.Size = new System.Drawing.Size(600, 479);
             this.panel.TabIndex = 7;
             // 
             // linkDemo
@@ -76,6 +79,7 @@
             this.flowLayoutPanel1.Controls.Add(this.comboBox1);
             this.flowLayoutPanel1.Controls.Add(this.groupBox2);
             this.flowLayoutPanel1.Controls.Add(this.buttonLoad);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 357);
             // 
             // igScheduler1
             // 
@@ -85,7 +89,7 @@
             this.igScheduler1.Location = new System.Drawing.Point(21, 16);
             this.igScheduler1.Name = "igScheduler1";
             this.igScheduler1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("igScheduler1.Options"))));
-            this.igScheduler1.Size = new System.Drawing.Size(1048, 528);
+            this.igScheduler1.Size = new System.Drawing.Size(557, 447);
             this.igScheduler1.TabIndex = 0;
             this.igScheduler1.Text = "igScheduler1";
             widgetFunction1.Name = "loadData";
@@ -172,7 +176,9 @@
             // 
             // igScheduler
             // 
+            this.MinimumSize = new System.Drawing.Size(1009, 669);
             this.Name = "igScheduler";
+            this.Size = new System.Drawing.Size(1009, 669);
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);

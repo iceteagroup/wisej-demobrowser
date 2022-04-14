@@ -46,11 +46,6 @@
             // 
             this.linkDocs.Text = "https://js.devexpress.com/Documentation/Guide/Widgets/PolarChart/";
             // 
-            // groupBox1
-            // 
-            this.groupBox1.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
-            | Wisej.Web.AnchorStyles.Left)));
-            // 
             // buttonUpdate
             // 
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
@@ -81,11 +76,13 @@
             // 
             // dxPolarChart1
             // 
-            this.dxPolarChart1.Anchor = Wisej.Web.AnchorStyles.None;
-            this.dxPolarChart1.Location = new System.Drawing.Point(54, 18);
+            this.dxPolarChart1.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
+            | Wisej.Web.AnchorStyles.Left) 
+            | Wisej.Web.AnchorStyles.Right)));
+            this.dxPolarChart1.Location = new System.Drawing.Point(54, 17);
             this.dxPolarChart1.Name = "dxPolarChart1";
             this.dxPolarChart1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("dxPolarChart1.Options"))));
-            this.dxPolarChart1.Size = new System.Drawing.Size(981, 522);
+            this.dxPolarChart1.Size = new System.Drawing.Size(981, 525);
             this.dxPolarChart1.TabIndex = 0;
             // 
             // checkBox1
@@ -178,6 +175,7 @@
             // 
             // dxPolarChart
             // 
+            this.MinimumSize = new System.Drawing.Size(905, 673);
             this.Name = "dxPolarChart";
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);

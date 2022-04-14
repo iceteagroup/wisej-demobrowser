@@ -190,6 +190,7 @@
             // 
             // igPieChart
             // 
+            this.MinimumSize = new System.Drawing.Size(910, 701);
             this.Name = "igPieChart";
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);

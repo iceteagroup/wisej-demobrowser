@@ -34,10 +34,15 @@
             this.button1 = new Wisej.Web.Button();
             this.comboBox3 = new Wisej.Web.ComboBox();
             this.checkBox1 = new Wisej.Web.CheckBox();
-            this.groupBox1.SuspendLayout();
             this.panel.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // panel
+            // 
+            this.panel.Controls.Add(this.igDateEditor1);
+            this.panel.TabIndex = 7;
             // 
             // groupBox1
             // 
@@ -48,10 +53,13 @@
             this.buttonUpdate.TabIndex = 5;
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
-            // panel
+            // flowLayoutPanel1
             // 
-            this.panel.Controls.Add(this.igDateEditor1);
-            this.panel.TabIndex = 7;
+            this.flowLayoutPanel1.Controls.Add(this.checkBox1);
+            this.flowLayoutPanel1.Controls.Add(this.comboBox1);
+            this.flowLayoutPanel1.Controls.Add(this.comboBox2);
+            this.flowLayoutPanel1.Controls.Add(this.comboBox3);
+            this.flowLayoutPanel1.Controls.Add(this.button1);
             // 
             // linkDemo
             // 
@@ -67,14 +75,6 @@
             // 
             this.linkDocs.TabIndex = 4;
             this.linkDocs.Text = "http://www.igniteui.com/help/igeditors-landingpage";
-            // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.Controls.Add(this.checkBox1);
-            this.flowLayoutPanel1.Controls.Add(this.comboBox1);
-            this.flowLayoutPanel1.Controls.Add(this.comboBox2);
-            this.flowLayoutPanel1.Controls.Add(this.comboBox3);
-            this.flowLayoutPanel1.Controls.Add(this.button1);
             // 
             // igDateEditor1
             // 
@@ -164,9 +164,10 @@
             // 
             // igDateEditor
             // 
+            this.MinimumSize = new System.Drawing.Size(738, 644);
             this.Name = "igDateEditor";
-            this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);

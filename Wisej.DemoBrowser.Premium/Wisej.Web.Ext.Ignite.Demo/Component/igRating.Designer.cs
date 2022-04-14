@@ -145,6 +145,7 @@
             // 
             // igRating
             // 
+            this.MinimumSize = new System.Drawing.Size(1037, 448);
             this.Name = "igRating";
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);

@@ -155,6 +155,7 @@
             // 
             // igZoombar
             // 
+            this.MinimumSize = new System.Drawing.Size(831, 554);
             this.Name = "igZoombar";
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);

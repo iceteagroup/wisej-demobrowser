@@ -206,6 +206,7 @@
             // 
             // dxDataGrid
             // 
+            this.MinimumSize = new System.Drawing.Size(1176, 692);
             this.Name = "dxDataGrid";
             this.Load += new System.EventHandler(this.dxDataGrid_Load);
             this.groupBox1.ResumeLayout(false);

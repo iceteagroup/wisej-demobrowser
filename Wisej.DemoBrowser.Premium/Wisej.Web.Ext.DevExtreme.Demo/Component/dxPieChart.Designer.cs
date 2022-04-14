@@ -63,7 +63,7 @@
             // 
             this.panel.AutoScroll = true;
             this.panel.Controls.Add(this.dxPieChart1);
-            this.panel.Size = new System.Drawing.Size(1091, 562);
+            this.panel.Size = new System.Drawing.Size(1108, 562);
             // 
             // flowLayoutPanel1
             // 
@@ -81,7 +81,7 @@
             this.dxPieChart1.Location = new System.Drawing.Point(21, 19);
             this.dxPieChart1.Name = "dxPieChart1";
             this.dxPieChart1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("dxPieChart1.Options"))));
-            this.dxPieChart1.Size = new System.Drawing.Size(1047, 521);
+            this.dxPieChart1.Size = new System.Drawing.Size(1064, 521);
             this.dxPieChart1.TabIndex = 0;
             // 
             // checkBox1
@@ -201,8 +201,8 @@
             // dxPieChart
             // 
             this.AutoScroll = true;
+            this.MinimumSize = new System.Drawing.Size(940, 672);
             this.Name = "dxPieChart";
-            this.Size = new System.Drawing.Size(1483, 750);
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);

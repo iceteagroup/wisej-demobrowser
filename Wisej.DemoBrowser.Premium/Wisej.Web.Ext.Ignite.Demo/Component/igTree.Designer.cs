@@ -79,7 +79,7 @@
             // 
             // igTree2
             // 
-            this.igTree2.Anchor = Wisej.Web.AnchorStyles.None;
+            this.igTree2.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom)));
             this.igTree2.Location = new System.Drawing.Point(546, 19);
             this.igTree2.Name = "igTree2";
             this.igTree2.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("igTree2.Options"))));
@@ -93,7 +93,7 @@
             // 
             // igTree1
             // 
-            this.igTree1.Anchor = Wisej.Web.AnchorStyles.None;
+            this.igTree1.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom)));
             this.igTree1.Location = new System.Drawing.Point(290, 19);
             this.igTree1.Name = "igTree1";
             this.igTree1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("igTree1.Options"))));
@@ -149,6 +149,7 @@
             // 
             // igTree
             // 
+            this.MinimumSize = new System.Drawing.Size(940, 507);
             this.Name = "igTree";
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);

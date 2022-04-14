@@ -49,8 +49,6 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
-            | Wisej.Web.AnchorStyles.Left)));
             this.groupBox1.AutoSize = true;
             // 
             // buttonUpdate
@@ -83,11 +81,13 @@
             // 
             // dxTreeList1
             // 
-            this.dxTreeList1.Anchor = Wisej.Web.AnchorStyles.None;
-            this.dxTreeList1.Location = new System.Drawing.Point(244, 54);
+            this.dxTreeList1.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
+            | Wisej.Web.AnchorStyles.Left) 
+            | Wisej.Web.AnchorStyles.Right)));
+            this.dxTreeList1.Location = new System.Drawing.Point(143, 35);
             this.dxTreeList1.Name = "dxTreeList1";
             this.dxTreeList1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("dxTreeList1.Options"))));
-            this.dxTreeList1.Size = new System.Drawing.Size(601, 450);
+            this.dxTreeList1.Size = new System.Drawing.Size(803, 489);
             this.dxTreeList1.TabIndex = 0;
             // 
             // checkBox1
@@ -210,6 +210,7 @@
             // dxTreeList
             // 
             this.AutoScroll = true;
+            this.MinimumSize = new System.Drawing.Size(1097, 733);
             this.Name = "dxTreeList";
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);

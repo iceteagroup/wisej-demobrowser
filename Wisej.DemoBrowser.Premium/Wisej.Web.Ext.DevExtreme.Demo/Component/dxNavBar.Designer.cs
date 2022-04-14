@@ -51,11 +51,6 @@
             // 
             this.linkDocs.Text = "https://js.devexpress.com/Documentation/Guide/Widgets/NavBar/Overview/";
             // 
-            // groupBox1
-            // 
-            this.groupBox1.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
-            | Wisej.Web.AnchorStyles.Left)));
-            // 
             // buttonUpdate
             // 
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
@@ -196,6 +191,7 @@
             // 
             // dxNavBar
             // 
+            this.MinimumSize = new System.Drawing.Size(873, 549);
             this.Name = "dxNavBar";
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);

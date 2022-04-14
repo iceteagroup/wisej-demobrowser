@@ -83,6 +83,7 @@
             // 
             // igColorPicker
             // 
+            this.MinimumSize = new System.Drawing.Size(663, 427);
             this.Name = "igColorPicker";
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);

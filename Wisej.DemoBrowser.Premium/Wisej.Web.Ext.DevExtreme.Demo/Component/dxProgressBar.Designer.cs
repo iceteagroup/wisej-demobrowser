@@ -46,11 +46,6 @@
             // 
             this.linkDocs.Text = "https://js.devexpress.com/Documentation/Guide/Widgets/ProgressBar/Overview/";
             // 
-            // groupBox1
-            // 
-            this.groupBox1.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
-            | Wisej.Web.AnchorStyles.Left)));
-            // 
             // buttonUpdate
             // 
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
@@ -173,6 +168,7 @@
             // 
             // dxProgressBar
             // 
+            this.MinimumSize = new System.Drawing.Size(784, 655);
             this.Name = "dxProgressBar";
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);

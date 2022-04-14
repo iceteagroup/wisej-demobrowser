@@ -48,11 +48,6 @@
             // 
             this.linkDocs.Text = "https://js.devexpress.com/Documentation/Guide/Widgets/Gallery/Overview/";
             // 
-            // groupBox1
-            // 
-            this.groupBox1.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
-            | Wisej.Web.AnchorStyles.Left)));
-            // 
             // buttonUpdate
             // 
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
@@ -83,7 +78,9 @@
             // 
             // dxGallery1
             // 
-            this.dxGallery1.Anchor = Wisej.Web.AnchorStyles.None;
+            this.dxGallery1.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
+            | Wisej.Web.AnchorStyles.Left) 
+            | Wisej.Web.AnchorStyles.Right)));
             this.dxGallery1.BorderStyle = Wisej.Web.BorderStyle.Solid;
             this.dxGallery1.Location = new System.Drawing.Point(183, 54);
             this.dxGallery1.Name = "dxGallery1";
@@ -211,6 +208,7 @@
             // 
             // dxGallery
             // 
+            this.MinimumSize = new System.Drawing.Size(1168, 722);
             this.Name = "dxGallery";
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);

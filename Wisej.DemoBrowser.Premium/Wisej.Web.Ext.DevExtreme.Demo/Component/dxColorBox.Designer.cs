@@ -45,11 +45,6 @@
             this.linkDocs.TabIndex = 4;
             this.linkDocs.Text = "https://js.devexpress.com/Documentation/Guide/Widgets/ColorBox/Overview/";
             // 
-            // groupBox1
-            // 
-            this.groupBox1.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
-            | Wisej.Web.AnchorStyles.Left)));
-            // 
             // buttonUpdate
             // 
             this.buttonUpdate.TabIndex = 6;
@@ -182,6 +177,7 @@
             // 
             // dxColorBox
             // 
+            this.MinimumSize = new System.Drawing.Size(782, 666);
             this.Name = "dxColorBox";
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);

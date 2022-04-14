@@ -48,11 +48,6 @@
             this.linkDocs.Text = "https://js.devexpress.com/Documentation/Guide/Widgets/DropDownButton/Getting_Star" +
     "ted_with_DropDownButton/";
             // 
-            // groupBox1
-            // 
-            this.groupBox1.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
-            | Wisej.Web.AnchorStyles.Left)));
-            // 
             // buttonUpdate
             // 
             this.buttonUpdate.TabIndex = 5;
@@ -175,6 +170,7 @@
             // 
             // dxDropDownButton
             // 
+            this.MinimumSize = new System.Drawing.Size(783, 586);
             this.Name = "dxDropDownButton";
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);

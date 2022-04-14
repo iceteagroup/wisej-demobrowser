@@ -37,11 +37,6 @@
             // 
             this.linkDocs.Text = "https://js.devexpress.com/Documentation/Guide/Widgets/Switch/Overview/";
             // 
-            // groupBox1
-            // 
-            this.groupBox1.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
-            | Wisej.Web.AnchorStyles.Left)));
-            // 
             // linkDemo
             // 
             this.linkDemo.Text = "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Switch/Overview/jQuery/Light/" +
@@ -65,6 +60,7 @@
             // 
             // dxSwitch
             // 
+            this.MinimumSize = new System.Drawing.Size(815, 403);
             this.Name = "dxSwitch";
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);

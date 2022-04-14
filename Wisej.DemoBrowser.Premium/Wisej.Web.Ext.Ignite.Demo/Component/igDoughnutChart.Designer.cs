@@ -29,7 +29,7 @@
 		private void InitializeComponent()
 		{
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(igDoughnutChart));
-            Wisej.Web.Ext.Ignite.igBase.WidgetFunction widgetFunction2 = new Wisej.Web.Ext.Ignite.igBase.WidgetFunction();
+            Wisej.Web.Ext.Ignite.igBase.WidgetFunction widgetFunction1 = new Wisej.Web.Ext.Ignite.igBase.WidgetFunction();
             this.igDoughnutChart1 = new Wisej.Web.Ext.Ignite.igDoughnutChart();
             this.textBox1 = new Wisej.Web.TextBox();
             this.numericUpDown1 = new Wisej.Web.NumericUpDown();
@@ -94,11 +94,11 @@
             this.igDoughnutChart1.Size = new System.Drawing.Size(1043, 519);
             this.igDoughnutChart1.TabIndex = 0;
             this.igDoughnutChart1.Text = "igDoughnutChart1";
-            widgetFunction2.Name = "formatLabel";
-            widgetFunction2.Source = "var context = arguments[0];\r\n\r\nreturn context.itemLabel + \" (\" + context.item.pop" +
+            widgetFunction1.Name = "formatLabel";
+            widgetFunction1.Source = "var context = arguments[0];\r\n\r\nreturn context.itemLabel + \" (\" + context.item.pop" +
     "1990 + \")\";\r\n        ";
             this.igDoughnutChart1.WidgetFunctions = new Wisej.Web.Ext.Ignite.igBase.WidgetFunction[] {
-        widgetFunction2};
+        widgetFunction1};
             // 
             // textBox1
             // 
@@ -206,6 +206,7 @@
             // 
             // igDoughnutChart
             // 
+            this.MinimumSize = new System.Drawing.Size(914, 710);
             this.Name = "igDoughnutChart";
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);

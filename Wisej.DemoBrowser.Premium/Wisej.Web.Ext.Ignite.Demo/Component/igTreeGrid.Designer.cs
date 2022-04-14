@@ -43,16 +43,19 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Size = new System.Drawing.Size(250, 396);
             this.groupBox1.TabIndex = 3;
             // 
             // buttonUpdate
             // 
+            this.buttonUpdate.Location = new System.Drawing.Point(16, 328);
             this.buttonUpdate.TabIndex = 6;
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
             // panel
             // 
             this.panel.Controls.Add(this.igTreeGrid1);
+            this.panel.Size = new System.Drawing.Size(747, 396);
             this.panel.TabIndex = 7;
             // 
             // linkDemo
@@ -77,6 +80,7 @@
             this.flowLayoutPanel1.Controls.Add(this.checkBox4);
             this.flowLayoutPanel1.Controls.Add(this.buttonLoad);
             this.flowLayoutPanel1.Controls.Add(this.buttonExport);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 274);
             // 
             // buttonLoad
             // 
@@ -110,7 +114,7 @@
             this.igTreeGrid1.Location = new System.Drawing.Point(22, 24);
             this.igTreeGrid1.Name = "igTreeGrid1";
             this.igTreeGrid1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("igTreeGrid1.Options"))));
-            this.igTreeGrid1.Size = new System.Drawing.Size(1045, 510);
+            this.igTreeGrid1.Size = new System.Drawing.Size(701, 346);
             this.igTreeGrid1.TabIndex = 0;
             this.igTreeGrid1.Text = "igTreeGrid1";
             widgetFunction1.Name = "customDropValidation";
@@ -164,7 +168,9 @@
             // 
             // igTreeGrid
             // 
+            this.MinimumSize = new System.Drawing.Size(1156, 586);
             this.Name = "igTreeGrid";
+            this.Size = new System.Drawing.Size(1156, 586);
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
