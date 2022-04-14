@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using Wisej.Core;
 using Wisej.Web;
 
@@ -47,7 +48,7 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 			switch (e.Request["action"])
 			{
 				case "load":
-					e.Response.WriteFile(Application.MapPath("Data/Stock/Boeing.json"));
+					e.Response.Write(File.ReadAllText(Application.MapPath("Data/Stock/Boeing.json")));
 					break;
 			}
 		}

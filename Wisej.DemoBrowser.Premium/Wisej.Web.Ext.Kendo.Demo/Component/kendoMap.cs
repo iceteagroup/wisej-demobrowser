@@ -9,7 +9,6 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 		{
 			InitializeComponent();
 
-			this.kendoMap1.Instance.onClick += new WidgetEventHandler(kendoMap1_WidgetEvent);
 			this.kendoMap1.Instance.onMarkerClick += new WidgetEventHandler(kendoMap1_WidgetEvent);
 		}
 
@@ -27,10 +26,7 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 
 		private void kendoMap1_WidgetEvent(object sender, WidgetEventArgs e)
 		{
-			AlertBox.Show(
-					$"<b>{e.Type}</b><br/>{JSON.Stringify(e.Data)}",
-					MessageBoxIcon.Information);
-
+			AlertBox.Show(e.Data.marker.options.ToJSON());
 			Application.Play(MessageBoxIcon.Information);
 		}
 	}

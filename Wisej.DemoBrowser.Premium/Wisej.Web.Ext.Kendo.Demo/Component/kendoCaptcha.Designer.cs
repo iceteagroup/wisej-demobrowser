@@ -46,7 +46,7 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
             // 
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
-            // flowLayoutPanel1
+            // flowLayoutPanelProperties
             // 
             this.flowLayoutPanelProperties.Controls.Add(this.button1);
             this.flowLayoutPanelProperties.Controls.Add(this.button2);
@@ -77,9 +77,9 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
             // kendoCaptcha1
             // 
             this.kendoCaptcha1.Anchor = Wisej.Web.AnchorStyles.None;
-            this.kendoCaptcha1.Location = new System.Drawing.Point(270, 90);
+            this.kendoCaptcha1.Location = new System.Drawing.Point(358, 179);
             this.kendoCaptcha1.Name = "kendoCaptcha1";
-            this.kendoCaptcha1.Size = new System.Drawing.Size(548, 378);
+            this.kendoCaptcha1.Size = new System.Drawing.Size(373, 201);
             this.kendoCaptcha1.TabIndex = 0;
             this.kendoCaptcha1.Text = "kendoCaptcha1";
             this.kendoCaptcha1.WebRequest += new Wisej.Web.WebRequestHandler(this.kendoCaptcha1_WebRequest);

@@ -52,7 +52,7 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 
 			}
 			e.Response.StatusCode = (int)HttpStatusCode.NotModified;
-			e.Response.Headers.Add("Content-Disposition", "inline");
+			e.Response.AppendHeader("Content-Disposition", "inline");
 		}
 
 		private void ExportDocument(string base64, string fileName)

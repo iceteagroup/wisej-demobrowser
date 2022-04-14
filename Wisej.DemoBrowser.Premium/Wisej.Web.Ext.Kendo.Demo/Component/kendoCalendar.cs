@@ -13,10 +13,15 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 			this.kendoCalendar1.Instance.onNavigate += new WidgetEventHandler(kendoCalendar1_WidgetEvent);
 		}
 
-		private void kendoCalendar1_WidgetEvent(object sender, WidgetEventArgs e)
+		private async void kendoCalendar1_WidgetEvent(object sender, WidgetEventArgs e)
 		{
+			var data = e.Data;
+
+			if (e.Type == "change")
+				data = await this.kendoCalendar1.Instance.valueAsync();
+
 			AlertBox.Show(
-					$"<b>{e.Type}</b><br/>{JSON.Stringify(e.Data)}",
+					$"<b>{e.Type}</b><br/>{JSON.Stringify(data)}",
 					MessageBoxIcon.Information);
 
 			Application.Play(MessageBoxIcon.Information);

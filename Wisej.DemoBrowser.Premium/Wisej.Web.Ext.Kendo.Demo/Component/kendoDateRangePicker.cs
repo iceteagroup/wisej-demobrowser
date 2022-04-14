@@ -12,16 +12,21 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 			this.kendoDateRangePicker1.Instance.onChange += new WidgetEventHandler(kendoDateRangePicker1_WidgetEvent);
 		}
 
-		private void kendoDateRangePicker1_WidgetEvent(object sender, WidgetEventArgs e)
+		private async void kendoDateRangePicker1_WidgetEvent(object sender, WidgetEventArgs e)
 		{
+			var data = e.Data;
+
+			if (e.Type == "change")
+				data = await this.kendoDateRangePicker1.Instance.rangeAsync();
+
 			AlertBox.Show(
-					$"<b>{e.Type}</b><br/>{JSON.Stringify(e.Data)}",
+					$"<b>{e.Type}</b><br/>{JSON.Stringify(data)}",
 					MessageBoxIcon.Information);
 
 			Application.Play(MessageBoxIcon.Information);
 		}
 
-        protected override void OnLoad(EventArgs e)
+		protected override void OnLoad(EventArgs e)
         {
             base.OnLoad(e);
 

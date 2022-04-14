@@ -2,7 +2,7 @@
 using System.IO;
 using System.Net;
 using System.Web;
-using System.Web.UI.WebControls;
+using Wisej.Core;
 using Wisej.Web;
 
 namespace Wisej.Web.Ext.Kendo.Demo.Component
@@ -22,7 +22,11 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 
 		private void kendoScheduler1_WidgetEvent(object sender, WidgetEventArgs e)
 		{
+			AlertBox.Show(
+					$"<b>{e.Type}</b><br/>{JSON.Stringify(e.Data)}",
+					MessageBoxIcon.Information);
 
+			Application.Play(MessageBoxIcon.Information);
 		}
 
 		private void buttonExport_Click(object sender, EventArgs e)
@@ -45,7 +49,7 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 		private void HandleFile(HttpResponse response, string base64Data, string fileName)
 		{
 			var bytes = Convert.FromBase64String(base64Data);
-			response.AddHeader("Content-Disposition", $"attachment; filename={fileName}");
+			response.AppendHeader("Content-Disposition", $"attachment; filename={fileName}");
 			response.OutputStream.Write(bytes, 0, bytes.Length);
 		}
 	}

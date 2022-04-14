@@ -53,7 +53,7 @@
             // 
             // buttonUpdate
             // 
-            this.buttonUpdate.Location = new System.Drawing.Point(16, 467);
+            this.buttonUpdate.Location = new System.Drawing.Point(16, 487);
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
             // linkDemo
@@ -77,7 +77,7 @@
             this.flowLayoutPanelProperties.Controls.Add(this.checkBox5);
             this.flowLayoutPanelProperties.Controls.Add(this.numericUpDown1);
             this.flowLayoutPanelProperties.Controls.Add(this.buttonPDF);
-            this.flowLayoutPanelProperties.Size = new System.Drawing.Size(218, 481);
+            this.flowLayoutPanelProperties.Size = new System.Drawing.Size(218, 429);
             // 
             // checkBox1
             // 

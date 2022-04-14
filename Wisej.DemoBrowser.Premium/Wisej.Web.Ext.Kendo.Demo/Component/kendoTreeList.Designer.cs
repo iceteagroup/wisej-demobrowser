@@ -64,8 +64,6 @@
             this.flowLayoutPanelProperties.Controls.Add(this.comboBoxEditMode);
             this.flowLayoutPanelProperties.Controls.Add(this.checkBoxFiltrable);
             this.flowLayoutPanelProperties.Controls.Add(this.checkBoxColumnMenu);
-            this.flowLayoutPanelProperties.Location = new System.Drawing.Point(16, 31);
-            this.flowLayoutPanelProperties.Size = new System.Drawing.Size(218, 441);
             // 
             // kendoTreeList1
             // 
@@ -88,15 +86,16 @@
             // 
             this.comboBoxEditMode.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Left) 
             | Wisej.Web.AnchorStyles.Right)));
+            this.comboBoxEditMode.DropDownStyle = Wisej.Web.ComboBoxStyle.DropDownList;
             this.comboBoxEditMode.Items.AddRange(new object[] {
             "inline",
             "popup",
             "incell",
             "none"});
-            this.comboBoxEditMode.LabelText = "Edit mode";
+            this.comboBoxEditMode.LabelText = "Edit Mode";
             this.comboBoxEditMode.Location = new System.Drawing.Point(3, 3);
             this.comboBoxEditMode.Name = "comboBoxEditMode";
-            this.comboBoxEditMode.Size = new System.Drawing.Size(212, 46);
+            this.comboBoxEditMode.Size = new System.Drawing.Size(212, 57);
             this.comboBoxEditMode.TabIndex = 0;
             // 
             // checkBoxFiltrable
@@ -106,11 +105,12 @@
             this.checkBoxFiltrable.Appearance = Wisej.Web.Appearance.Switch;
             this.checkBoxFiltrable.AutoSize = false;
             this.checkBoxFiltrable.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.checkBoxFiltrable.Location = new System.Drawing.Point(3, 55);
+            this.checkBoxFiltrable.Location = new System.Drawing.Point(3, 79);
+            this.checkBoxFiltrable.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBoxFiltrable.Name = "checkBoxFiltrable";
             this.checkBoxFiltrable.Size = new System.Drawing.Size(212, 26);
             this.checkBoxFiltrable.TabIndex = 1;
-            this.checkBoxFiltrable.Text = "Filtrable";
+            this.checkBoxFiltrable.Text = "Enable Filter";
             // 
             // checkBoxColumnMenu
             // 
@@ -119,11 +119,12 @@
             this.checkBoxColumnMenu.Appearance = Wisej.Web.Appearance.Switch;
             this.checkBoxColumnMenu.AutoSize = false;
             this.checkBoxColumnMenu.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.checkBoxColumnMenu.Location = new System.Drawing.Point(3, 87);
+            this.checkBoxColumnMenu.Location = new System.Drawing.Point(3, 124);
+            this.checkBoxColumnMenu.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBoxColumnMenu.Name = "checkBoxColumnMenu";
             this.checkBoxColumnMenu.Size = new System.Drawing.Size(212, 26);
             this.checkBoxColumnMenu.TabIndex = 2;
-            this.checkBoxColumnMenu.Text = "Column menu";
+            this.checkBoxColumnMenu.Text = "Column Menu";
             // 
             // kendoTreeList
             // 

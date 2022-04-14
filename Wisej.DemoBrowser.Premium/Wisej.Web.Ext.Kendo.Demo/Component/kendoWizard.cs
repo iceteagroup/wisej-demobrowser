@@ -18,8 +18,8 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 		private void kendoWizard1_WidgetEvent(object sender, WidgetEventArgs e)
 		{
 			AlertBox.Show(
-					$"<b>{e.Type}</b><br/>{JSON.Stringify(e.Data)}",
-					MessageBoxIcon.Information);
+					$"{e.Type} {JSON.Stringify(e.Data)}",
+					MessageBoxIcon.Information, allowHtml: false);
 
 			Application.Play(MessageBoxIcon.Information);
 		}
