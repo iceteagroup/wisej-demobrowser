@@ -39,6 +39,15 @@
             // panel
             // 
             this.panel.Controls.Add(this.kendoStepper1);
+            this.panel.Size = new System.Drawing.Size(682, 236);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Size = new System.Drawing.Size(250, 236);
+            // 
+            // buttonUpdate
+            // 
+            this.buttonUpdate.Location = new System.Drawing.Point(16, 168);
             // 
             // linkDemo
             // 
@@ -55,16 +64,15 @@
             // flowLayoutPanelProperties
             // 
             this.flowLayoutPanelProperties.Controls.Add(this.buttonAddStep);
-            this.flowLayoutPanelProperties.Location = new System.Drawing.Point(16, 35);
-            this.flowLayoutPanelProperties.Size = new System.Drawing.Size(218, 437);
+            this.flowLayoutPanelProperties.Size = new System.Drawing.Size(218, 110);
             // 
             // kendoStepper1
             // 
             this.kendoStepper1.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Left | Wisej.Web.AnchorStyles.Right)));
-            this.kendoStepper1.Location = new System.Drawing.Point(40, 245);
+            this.kendoStepper1.Location = new System.Drawing.Point(40, 83);
             this.kendoStepper1.Name = "kendoStepper1";
             this.kendoStepper1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("kendoStepper1.Options"))));
-            this.kendoStepper1.Size = new System.Drawing.Size(1009, 91);
+            this.kendoStepper1.Size = new System.Drawing.Size(600, 91);
             this.kendoStepper1.TabIndex = 0;
             this.kendoStepper1.Text = "kendoStepper1";
             // 
@@ -81,7 +89,9 @@
             // 
             // kendoStepper
             // 
+            this.MinimumSize = new System.Drawing.Size(1091, 426);
             this.Name = "kendoStepper";
+            this.Size = new System.Drawing.Size(1091, 426);
             this.panel.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.flowLayoutPanelProperties.ResumeLayout(false);

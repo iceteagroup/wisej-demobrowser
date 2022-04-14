@@ -164,6 +164,7 @@
             // 
             // kendoScheduler
             // 
+            this.MinimumSize = new System.Drawing.Size(996, 649);
             this.Name = "kendoScheduler";
             this.panel.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);

@@ -60,8 +60,6 @@
             // 
             this.flowLayoutPanelProperties.Controls.Add(this.dateTimePickerMin);
             this.flowLayoutPanelProperties.Controls.Add(this.dateTimePickerMax);
-            this.flowLayoutPanelProperties.Location = new System.Drawing.Point(16, 35);
-            this.flowLayoutPanelProperties.Size = new System.Drawing.Size(218, 437);
             // 
             // kendoDateTimePicker1
             // 
@@ -79,7 +77,7 @@
             this.dateTimePickerMin.LabelText = "Min";
             this.dateTimePickerMin.Location = new System.Drawing.Point(3, 3);
             this.dateTimePickerMin.Name = "dateTimePickerMin";
-            this.dateTimePickerMin.Size = new System.Drawing.Size(212, 46);
+            this.dateTimePickerMin.Size = new System.Drawing.Size(212, 57);
             this.dateTimePickerMin.TabIndex = 0;
             this.dateTimePickerMin.Value = new System.DateTime(2022, 4, 11, 20, 18, 35, 660);
             // 
@@ -88,14 +86,15 @@
             this.dateTimePickerMax.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Left) 
             | Wisej.Web.AnchorStyles.Right)));
             this.dateTimePickerMax.LabelText = "Max";
-            this.dateTimePickerMax.Location = new System.Drawing.Point(3, 55);
+            this.dateTimePickerMax.Location = new System.Drawing.Point(3, 66);
             this.dateTimePickerMax.Name = "dateTimePickerMax";
-            this.dateTimePickerMax.Size = new System.Drawing.Size(212, 46);
+            this.dateTimePickerMax.Size = new System.Drawing.Size(212, 57);
             this.dateTimePickerMax.TabIndex = 1;
             this.dateTimePickerMax.Value = new System.DateTime(2022, 4, 11, 20, 18, 35, 660);
             // 
             // kendoDateTimePicker
             // 
+            this.MinimumSize = new System.Drawing.Size(721, 467);
             this.Name = "kendoDateTimePicker";
             this.panel.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);

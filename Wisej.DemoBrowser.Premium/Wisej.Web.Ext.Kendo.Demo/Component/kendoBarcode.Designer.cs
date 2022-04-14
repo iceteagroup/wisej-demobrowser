@@ -32,18 +32,24 @@
             this.checkBox1 = new Wisej.Web.CheckBox();
             this.textBox1 = new Wisej.Web.TextBox();
             this.comboBox1 = new Wisej.Web.ComboBox();
-            this.panel.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.flowLayoutPanelProperties.SuspendLayout();
+            this.panel.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // panel
-            // 
-            this.panel.Controls.Add(this.kendoBarcode1);
             // 
             // buttonUpdate
             // 
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
+            // 
+            // flowLayoutPanelProperties
+            // 
+            this.flowLayoutPanelProperties.Controls.Add(this.checkBox1);
+            this.flowLayoutPanelProperties.Controls.Add(this.comboBox1);
+            this.flowLayoutPanelProperties.Controls.Add(this.textBox1);
+            // 
+            // panel
+            // 
+            this.panel.Controls.Add(this.kendoBarcode1);
             // 
             // linkDemo
             // 
@@ -56,12 +62,6 @@
             // linkDocs
             // 
             this.linkDocs.Text = "https://docs.telerik.com/kendo-ui/controls/barcodes/barcode/overview";
-            // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanelProperties.Controls.Add(this.checkBox1);
-            this.flowLayoutPanelProperties.Controls.Add(this.comboBox1);
-            this.flowLayoutPanelProperties.Controls.Add(this.textBox1);
             // 
             // kendoBarcode1
             // 
@@ -139,10 +139,11 @@
             // 
             // kendoBarcode
             // 
+            this.MinimumSize = new System.Drawing.Size(902, 526);
             this.Name = "kendoBarcode";
-            this.panel.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.flowLayoutPanelProperties.ResumeLayout(false);
+            this.panel.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -29,7 +29,7 @@
 		private void InitializeComponent()
 		{
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(kendoGrid));
-            Wisej.Web.Ext.Kendo.kendoBase.WidgetFunction widgetFunction2 = new Wisej.Web.Ext.Kendo.kendoBase.WidgetFunction();
+            Wisej.Web.Ext.Kendo.kendoBase.WidgetFunction widgetFunction1 = new Wisej.Web.Ext.Kendo.kendoBase.WidgetFunction();
             this.buttonPDF = new Wisej.Web.Button();
             this.buttonExport = new Wisej.Web.Button();
             this.checkBox1 = new Wisej.Web.CheckBox();
@@ -120,10 +120,10 @@
             this.kendoGrid1.Size = new System.Drawing.Size(1041, 510);
             this.kendoGrid1.TabIndex = 0;
             this.kendoGrid1.Text = "kendoGrid1";
-            widgetFunction2.Name = "onDataBound";
-            widgetFunction2.Source = resources.GetString("widgetFunction2.Source");
+            widgetFunction1.Name = "onDataBound";
+            widgetFunction1.Source = resources.GetString("widgetFunction1.Source");
             this.kendoGrid1.WidgetFunctions = new Wisej.Web.Ext.Kendo.kendoBase.WidgetFunction[] {
-        widgetFunction2};
+        widgetFunction1};
             this.kendoGrid1.WebRequest += new Wisej.Web.WebRequestHandler(this.kendoGrid1_WebRequest);
             // 
             // numericUpDown1
@@ -189,6 +189,7 @@
             // 
             // kendoGrid
             // 
+            this.MinimumSize = new System.Drawing.Size(1057, 654);
             this.Name = "kendoGrid";
             this.Load += new System.EventHandler(this.kendoGrid_Load);
             this.panel.ResumeLayout(false);

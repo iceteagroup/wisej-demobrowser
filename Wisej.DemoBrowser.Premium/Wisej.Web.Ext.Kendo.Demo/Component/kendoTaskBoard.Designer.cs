@@ -34,7 +34,6 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
             this.checkBoxSelectable = new Wisej.Web.CheckBox();
             this.checkBoxReordable = new Wisej.Web.CheckBox();
             this.checkBoxToolbar = new Wisej.Web.CheckBox();
-            this.label4 = new Wisej.Web.Label();
             this.panel.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.flowLayoutPanelProperties.SuspendLayout();
@@ -66,9 +65,6 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
             this.flowLayoutPanelProperties.Controls.Add(this.checkBoxReordable);
             this.flowLayoutPanelProperties.Controls.Add(this.checkBoxSelectable);
             this.flowLayoutPanelProperties.Controls.Add(this.checkBoxToolbar);
-            this.flowLayoutPanelProperties.Controls.Add(this.label4);
-            this.flowLayoutPanelProperties.Location = new System.Drawing.Point(16, 35);
-            this.flowLayoutPanelProperties.Size = new System.Drawing.Size(218, 437);
             // 
             // kendoTaskBoard1
             // 
@@ -136,18 +132,9 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
             this.checkBoxToolbar.TabIndex = 3;
             this.checkBoxToolbar.Text = "Toolbar";
             // 
-            // label4
-            // 
-            this.label4.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Left) 
-            | Wisej.Web.AnchorStyles.Right)));
-            this.label4.Location = new System.Drawing.Point(3, 203);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(212, 77);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "Note: Toolbar can be an object check api for more detail";
-            // 
             // kendoTaskBoard
             // 
+            this.MinimumSize = new System.Drawing.Size(818, 518);
             this.Name = "kendoTaskBoard";
             this.Load += new System.EventHandler(this.kendoTaskBoard_Load);
             this.panel.ResumeLayout(false);
@@ -165,6 +152,5 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
         private CheckBox checkBoxSelectable;
         private CheckBox checkBoxReordable;
         private CheckBox checkBoxToolbar;
-        private Label label4;
     }
 }

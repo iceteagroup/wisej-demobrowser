@@ -151,6 +151,7 @@
             // 
             // kendoMultiColumnComboBox
             // 
+            this.MinimumSize = new System.Drawing.Size(732, 614);
             this.Name = "kendoMultiColumnComboBox";
             this.panel.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);

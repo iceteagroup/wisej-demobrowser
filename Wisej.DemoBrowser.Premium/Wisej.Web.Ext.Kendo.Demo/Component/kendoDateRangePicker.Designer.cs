@@ -62,8 +62,6 @@
             this.flowLayoutPanelProperties.Controls.Add(this.comboBoxDepth);
             this.flowLayoutPanelProperties.Controls.Add(this.dateTimePickerMin);
             this.flowLayoutPanelProperties.Controls.Add(this.dateTimePickerMax);
-            this.flowLayoutPanelProperties.Location = new System.Drawing.Point(16, 35);
-            this.flowLayoutPanelProperties.Size = new System.Drawing.Size(218, 437);
             // 
             // kendoDateRangePicker1
             // 
@@ -79,9 +77,9 @@
             this.dateTimePickerMin.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Left) 
             | Wisej.Web.AnchorStyles.Right)));
             this.dateTimePickerMin.LabelText = "Min";
-            this.dateTimePickerMin.Location = new System.Drawing.Point(3, 55);
+            this.dateTimePickerMin.Location = new System.Drawing.Point(3, 66);
             this.dateTimePickerMin.Name = "dateTimePickerMin";
-            this.dateTimePickerMin.Size = new System.Drawing.Size(212, 46);
+            this.dateTimePickerMin.Size = new System.Drawing.Size(212, 57);
             this.dateTimePickerMin.TabIndex = 2;
             this.dateTimePickerMin.Value = new System.DateTime(2022, 4, 11, 20, 18, 35, 660);
             // 
@@ -90,9 +88,9 @@
             this.dateTimePickerMax.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Left) 
             | Wisej.Web.AnchorStyles.Right)));
             this.dateTimePickerMax.LabelText = "Max";
-            this.dateTimePickerMax.Location = new System.Drawing.Point(3, 107);
+            this.dateTimePickerMax.Location = new System.Drawing.Point(3, 129);
             this.dateTimePickerMax.Name = "dateTimePickerMax";
-            this.dateTimePickerMax.Size = new System.Drawing.Size(212, 46);
+            this.dateTimePickerMax.Size = new System.Drawing.Size(212, 57);
             this.dateTimePickerMax.TabIndex = 3;
             this.dateTimePickerMax.Value = new System.DateTime(2022, 4, 11, 20, 18, 35, 660);
             // 
@@ -108,11 +106,12 @@
             this.comboBoxDepth.LabelText = "Depth";
             this.comboBoxDepth.Location = new System.Drawing.Point(3, 3);
             this.comboBoxDepth.Name = "comboBoxDepth";
-            this.comboBoxDepth.Size = new System.Drawing.Size(212, 46);
+            this.comboBoxDepth.Size = new System.Drawing.Size(212, 57);
             this.comboBoxDepth.TabIndex = 4;
             // 
             // kendoDateRangePicker
             // 
+            this.MinimumSize = new System.Drawing.Size(823, 510);
             this.Name = "kendoDateRangePicker";
             this.panel.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);

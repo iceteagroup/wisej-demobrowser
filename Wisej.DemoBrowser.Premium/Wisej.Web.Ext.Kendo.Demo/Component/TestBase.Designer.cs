@@ -103,6 +103,7 @@
             // 
             // flowLayoutPanelProperties
             // 
+            this.flowLayoutPanelProperties.AutoScroll = true;
             this.flowLayoutPanelProperties.Dock = Wisej.Web.DockStyle.Fill;
             this.flowLayoutPanelProperties.Location = new System.Drawing.Point(16, 38);
             this.flowLayoutPanelProperties.Name = "flowLayoutPanelProperties";

@@ -86,6 +86,7 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
             // 
             // kendoCaptcha
             // 
+            this.MinimumSize = new System.Drawing.Size(802, 423);
             this.Name = "kendoCaptcha";
             this.panel.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);

@@ -128,6 +128,7 @@
             // 
             // kendoTreeList
             // 
+            this.MinimumSize = new System.Drawing.Size(907, 497);
             this.Name = "kendoTreeList";
             this.Load += new System.EventHandler(this.kendoTreeList_Load);
             this.panel.ResumeLayout(false);

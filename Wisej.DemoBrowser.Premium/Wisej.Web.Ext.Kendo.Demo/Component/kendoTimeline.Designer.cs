@@ -75,18 +75,17 @@
             // 
             this.flowLayoutPanelProperties.Controls.Add(this.comboBoxOrientation);
             this.flowLayoutPanelProperties.Controls.Add(this.checkBoxShowDateLabel);
-            this.flowLayoutPanelProperties.Location = new System.Drawing.Point(16, 35);
-            this.flowLayoutPanelProperties.Size = new System.Drawing.Size(219, 437);
+            this.flowLayoutPanelProperties.Size = new System.Drawing.Size(219, 434);
             // 
             // kendoTimeline1
             // 
             this.kendoTimeline1.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
             | Wisej.Web.AnchorStyles.Left) 
             | Wisej.Web.AnchorStyles.Right)));
-            this.kendoTimeline1.Location = new System.Drawing.Point(87, 64);
+            this.kendoTimeline1.Location = new System.Drawing.Point(99, 13);
             this.kendoTimeline1.Name = "kendoTimeline1";
             this.kendoTimeline1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("kendoTimeline1.Options"))));
-            this.kendoTimeline1.Size = new System.Drawing.Size(892, 431);
+            this.kendoTimeline1.Size = new System.Drawing.Size(892, 532);
             this.kendoTimeline1.TabIndex = 0;
             this.kendoTimeline1.Text = "kendoTimeline1";
             // 
@@ -101,7 +100,7 @@
             this.comboBoxOrientation.LabelText = "Orientation";
             this.comboBoxOrientation.Location = new System.Drawing.Point(3, 3);
             this.comboBoxOrientation.Name = "comboBoxOrientation";
-            this.comboBoxOrientation.Size = new System.Drawing.Size(213, 46);
+            this.comboBoxOrientation.Size = new System.Drawing.Size(213, 57);
             this.comboBoxOrientation.TabIndex = 0;
             // 
             // checkBoxShowDateLabel
@@ -112,7 +111,7 @@
             this.checkBoxShowDateLabel.AutoSize = false;
             this.checkBoxShowDateLabel.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.checkBoxShowDateLabel.Checked = true;
-            this.checkBoxShowDateLabel.Location = new System.Drawing.Point(3, 55);
+            this.checkBoxShowDateLabel.Location = new System.Drawing.Point(3, 66);
             this.checkBoxShowDateLabel.Name = "checkBoxShowDateLabel";
             this.checkBoxShowDateLabel.Size = new System.Drawing.Size(213, 26);
             this.checkBoxShowDateLabel.TabIndex = 1;
@@ -120,6 +119,7 @@
             // 
             // kendoTimeline
             // 
+            this.MinimumSize = new System.Drawing.Size(1320, 618);
             this.Name = "kendoTimeline";
             this.panel.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);

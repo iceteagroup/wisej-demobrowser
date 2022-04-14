@@ -218,6 +218,7 @@
             // 
             // kendoMap
             // 
+            this.MinimumSize = new System.Drawing.Size(907, 720);
             this.Name = "kendoMap";
             this.panel.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);

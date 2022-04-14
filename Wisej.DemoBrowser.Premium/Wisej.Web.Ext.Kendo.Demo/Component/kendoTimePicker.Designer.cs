@@ -62,8 +62,6 @@
             this.flowLayoutPanelProperties.Controls.Add(this.comboBoxFillMode);
             this.flowLayoutPanelProperties.Controls.Add(this.maskedTextBoxMin);
             this.flowLayoutPanelProperties.Controls.Add(this.maskedTextBoxMax);
-            this.flowLayoutPanelProperties.Location = new System.Drawing.Point(16, 31);
-            this.flowLayoutPanelProperties.Size = new System.Drawing.Size(218, 441);
             // 
             // kendoTimePicker1
             // 
@@ -87,7 +85,7 @@
             this.comboBoxFillMode.LabelText = "Fill mode";
             this.comboBoxFillMode.Location = new System.Drawing.Point(3, 3);
             this.comboBoxFillMode.Name = "comboBoxFillMode";
-            this.comboBoxFillMode.Size = new System.Drawing.Size(212, 46);
+            this.comboBoxFillMode.Size = new System.Drawing.Size(212, 57);
             this.comboBoxFillMode.TabIndex = 0;
             // 
             // maskedTextBoxMin
@@ -95,10 +93,10 @@
             this.maskedTextBoxMin.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Left) 
             | Wisej.Web.AnchorStyles.Right)));
             this.maskedTextBoxMin.LabelText = "Min";
-            this.maskedTextBoxMin.Location = new System.Drawing.Point(3, 55);
+            this.maskedTextBoxMin.Location = new System.Drawing.Point(3, 66);
             this.maskedTextBoxMin.Mask = "00:00";
             this.maskedTextBoxMin.Name = "maskedTextBoxMin";
-            this.maskedTextBoxMin.Size = new System.Drawing.Size(212, 46);
+            this.maskedTextBoxMin.Size = new System.Drawing.Size(212, 57);
             this.maskedTextBoxMin.TabIndex = 1;
             // 
             // maskedTextBoxMax
@@ -106,14 +104,15 @@
             this.maskedTextBoxMax.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Left) 
             | Wisej.Web.AnchorStyles.Right)));
             this.maskedTextBoxMax.LabelText = "Max";
-            this.maskedTextBoxMax.Location = new System.Drawing.Point(3, 107);
+            this.maskedTextBoxMax.Location = new System.Drawing.Point(3, 129);
             this.maskedTextBoxMax.Mask = "00:00";
             this.maskedTextBoxMax.Name = "maskedTextBoxMax";
-            this.maskedTextBoxMax.Size = new System.Drawing.Size(212, 46);
+            this.maskedTextBoxMax.Size = new System.Drawing.Size(212, 57);
             this.maskedTextBoxMax.TabIndex = 2;
             // 
             // kendoTimePicker
             // 
+            this.MinimumSize = new System.Drawing.Size(935, 509);
             this.Name = "kendoTimePicker";
             this.panel.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);

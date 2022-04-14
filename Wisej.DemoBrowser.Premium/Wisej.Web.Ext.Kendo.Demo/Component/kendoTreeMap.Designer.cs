@@ -59,8 +59,6 @@
             // flowLayoutPanelProperties
             // 
             this.flowLayoutPanelProperties.Controls.Add(this.comboBoxType);
-            this.flowLayoutPanelProperties.Location = new System.Drawing.Point(16, 35);
-            this.flowLayoutPanelProperties.Size = new System.Drawing.Size(218, 437);
             // 
             // kendoTreeMap1
             // 
@@ -86,11 +84,12 @@
             this.comboBoxType.LabelText = "Type";
             this.comboBoxType.Location = new System.Drawing.Point(3, 3);
             this.comboBoxType.Name = "comboBoxType";
-            this.comboBoxType.Size = new System.Drawing.Size(212, 46);
+            this.comboBoxType.Size = new System.Drawing.Size(212, 57);
             this.comboBoxType.TabIndex = 0;
             // 
             // kendoTreeMap
             // 
+            this.MinimumSize = new System.Drawing.Size(961, 582);
             this.Name = "kendoTreeMap";
             this.panel.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);

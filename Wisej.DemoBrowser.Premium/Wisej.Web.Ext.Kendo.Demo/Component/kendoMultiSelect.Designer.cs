@@ -60,8 +60,6 @@
             // 
             this.flowLayoutPanelProperties.Controls.Add(this.checkBoxAutoClose);
             this.flowLayoutPanelProperties.Controls.Add(this.tagTextBoxDataSource);
-            this.flowLayoutPanelProperties.Location = new System.Drawing.Point(16, 35);
-            this.flowLayoutPanelProperties.Size = new System.Drawing.Size(218, 437);
             // 
             // kendoMultiSelect1
             // 
@@ -95,11 +93,12 @@
             this.tagTextBoxDataSource.Location = new System.Drawing.Point(3, 42);
             this.tagTextBoxDataSource.Margin = new Wisej.Web.Padding(3, 10, 3, 3);
             this.tagTextBoxDataSource.Name = "tagTextBoxDataSource";
-            this.tagTextBoxDataSource.Size = new System.Drawing.Size(212, 52);
+            this.tagTextBoxDataSource.Size = new System.Drawing.Size(212, 55);
             this.tagTextBoxDataSource.TabIndex = 1;
             // 
             // kendoMultiSelect
             // 
+            this.MinimumSize = new System.Drawing.Size(755, 440);
             this.Name = "kendoMultiSelect";
             this.panel.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);

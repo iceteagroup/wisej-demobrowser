@@ -42,9 +42,15 @@
             // panel
             // 
             this.panel.Controls.Add(this.kendoRadialGauge1);
+            this.panel.Size = new System.Drawing.Size(470, 314);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Size = new System.Drawing.Size(250, 314);
             // 
             // buttonUpdate
             // 
+            this.buttonUpdate.Location = new System.Drawing.Point(16, 246);
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
             // linkDemo
@@ -64,14 +70,17 @@
             this.flowLayoutPanelProperties.Controls.Add(this.checkBox1);
             this.flowLayoutPanelProperties.Controls.Add(this.numericUpDown1);
             this.flowLayoutPanelProperties.Controls.Add(this.button1);
+            this.flowLayoutPanelProperties.Size = new System.Drawing.Size(218, 188);
             // 
             // kendoRadialGauge1
             // 
-            this.kendoRadialGauge1.Anchor = Wisej.Web.AnchorStyles.None;
-            this.kendoRadialGauge1.Location = new System.Drawing.Point(224, 101);
+            this.kendoRadialGauge1.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
+            | Wisej.Web.AnchorStyles.Left) 
+            | Wisej.Web.AnchorStyles.Right)));
+            this.kendoRadialGauge1.Location = new System.Drawing.Point(51, 34);
             this.kendoRadialGauge1.Name = "kendoRadialGauge1";
             this.kendoRadialGauge1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("kendoRadialGauge1.Options"))));
-            this.kendoRadialGauge1.Size = new System.Drawing.Size(640, 357);
+            this.kendoRadialGauge1.Size = new System.Drawing.Size(365, 244);
             this.kendoRadialGauge1.TabIndex = 0;
             this.kendoRadialGauge1.Text = "kendoRadialGauge1";
             // 
@@ -127,7 +136,9 @@
             // 
             // kendoRadialGauge
             // 
+            this.MinimumSize = new System.Drawing.Size(879, 504);
             this.Name = "kendoRadialGauge";
+            this.Size = new System.Drawing.Size(879, 504);
             this.panel.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.flowLayoutPanelProperties.ResumeLayout(false);

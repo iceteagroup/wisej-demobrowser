@@ -203,6 +203,7 @@
             // 
             // kendoGantt
             // 
+            this.MinimumSize = new System.Drawing.Size(1161, 737);
             this.Name = "kendoGantt";
             this.panel.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);

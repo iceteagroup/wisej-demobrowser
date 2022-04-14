@@ -179,6 +179,7 @@
             // 
             // kendoAutoComplete
             // 
+            this.MinimumSize = new System.Drawing.Size(760, 670);
             this.Name = "kendoAutoComplete";
             this.panel.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);

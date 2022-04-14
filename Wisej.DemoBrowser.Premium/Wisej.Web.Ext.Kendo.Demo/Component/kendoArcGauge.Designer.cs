@@ -61,7 +61,7 @@
             // 
             this.linkDocs.Text = "https://docs.telerik.com/kendo-ui/controls/gauges/arcgauge/overview";
             // 
-            // flowLayoutPanel1
+            // flowLayoutPanelProperties
             // 
             this.flowLayoutPanelProperties.Controls.Add(this.checkBox1);
             this.flowLayoutPanelProperties.Controls.Add(this.textBox1);
@@ -162,16 +162,19 @@
             // 
             // kendoArcGauge1
             // 
-            this.kendoArcGauge1.Anchor = Wisej.Web.AnchorStyles.None;
-            this.kendoArcGauge1.Location = new System.Drawing.Point(318, 29);
+            this.kendoArcGauge1.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
+            | Wisej.Web.AnchorStyles.Left) 
+            | Wisej.Web.AnchorStyles.Right)));
+            this.kendoArcGauge1.Location = new System.Drawing.Point(94, 29);
             this.kendoArcGauge1.Name = "kendoArcGauge1";
             this.kendoArcGauge1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"value\":50,\"centerTemplate\":\"<h1>#: value #%</h1>\"}")));
-            this.kendoArcGauge1.Size = new System.Drawing.Size(453, 501);
+            this.kendoArcGauge1.Size = new System.Drawing.Size(901, 501);
             this.kendoArcGauge1.TabIndex = 0;
             this.kendoArcGauge1.Text = "kendoArcGauge1";
             // 
             // kendoArcGauge
             // 
+            this.MinimumSize = new System.Drawing.Size(938, 661);
             this.Name = "kendoArcGauge";
             this.panel.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);

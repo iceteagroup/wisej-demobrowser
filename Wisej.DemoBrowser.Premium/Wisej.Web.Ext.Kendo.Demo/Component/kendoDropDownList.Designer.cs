@@ -48,9 +48,15 @@
             // panel
             // 
             this.panel.Controls.Add(this.flowLayoutPanel1);
+            this.panel.Size = new System.Drawing.Size(384, 377);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Size = new System.Drawing.Size(250, 377);
             // 
             // buttonUpdate
             // 
+            this.buttonUpdate.Location = new System.Drawing.Point(16, 309);
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
             // linkDemo
@@ -70,8 +76,7 @@
             this.flowLayoutPanelProperties.Controls.Add(this.textBox1);
             this.flowLayoutPanelProperties.Controls.Add(this.comboBoxFilter);
             this.flowLayoutPanelProperties.Controls.Add(this.label7);
-            this.flowLayoutPanelProperties.Location = new System.Drawing.Point(16, 31);
-            this.flowLayoutPanelProperties.Size = new System.Drawing.Size(218, 441);
+            this.flowLayoutPanelProperties.Size = new System.Drawing.Size(218, 251);
             // 
             // kendoDropDownListColor
             // 
@@ -79,7 +84,7 @@
             | Wisej.Web.AnchorStyles.Right)));
             this.flowLayoutPanel1.SetFillWeight(this.kendoDropDownListColor, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.kendoDropDownListColor, true);
-            this.kendoDropDownListColor.Location = new System.Drawing.Point(19, 240);
+            this.kendoDropDownListColor.Location = new System.Drawing.Point(19, 246);
             this.kendoDropDownListColor.Name = "kendoDropDownListColor";
             this.kendoDropDownListColor.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"optionLabel\":\"Select a Color...\"}")));
             this.kendoDropDownListColor.Size = new System.Drawing.Size(324, 30);
@@ -96,7 +101,7 @@
             this.flowLayoutPanel1.Controls.Add(this.kendoDropDownListColor);
             this.flowLayoutPanel1.Controls.Add(this.label6);
             this.flowLayoutPanel1.Controls.Add(this.kendoDropDownListSize);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(362, 101);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(9, 9);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Padding = new Wisej.Web.Padding(16);
             this.flowLayoutPanel1.Size = new System.Drawing.Size(364, 356);
@@ -112,7 +117,7 @@
             this.label4.Location = new System.Drawing.Point(19, 19);
             this.label4.Margin = new Wisej.Web.Padding(3, 3, 3, 8);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(324, 19);
+            this.label4.Size = new System.Drawing.Size(324, 22);
             this.label4.TabIndex = 1;
             this.label4.Text = "Customize your Kendo Cap";
             // 
@@ -122,7 +127,7 @@
             this.flowLayoutPanel1.SetFillWeight(this.pictureBox1, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.pictureBox1, true);
             this.pictureBox1.ImageSource = "Images\\DropDownList\\orange-cap.png";
-            this.pictureBox1.Location = new System.Drawing.Point(19, 49);
+            this.pictureBox1.Location = new System.Drawing.Point(19, 52);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(324, 159);
             this.pictureBox1.SizeMode = Wisej.Web.PictureBoxSizeMode.Zoom;
@@ -133,10 +138,10 @@
             this.flowLayoutPanel1.SetFillWeight(this.label5, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.label5, true);
             this.label5.Font = new System.Drawing.Font("default", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.label5.Location = new System.Drawing.Point(19, 214);
+            this.label5.Location = new System.Drawing.Point(19, 217);
             this.label5.Margin = new Wisej.Web.Padding(3, 3, 3, 8);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(324, 15);
+            this.label5.Size = new System.Drawing.Size(324, 18);
             this.label5.TabIndex = 3;
             this.label5.Text = "Cap Color";
             // 
@@ -146,10 +151,10 @@
             this.flowLayoutPanel1.SetFillWeight(this.label6, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.label6, true);
             this.label6.Font = new System.Drawing.Font("default", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.label6.Location = new System.Drawing.Point(19, 276);
+            this.label6.Location = new System.Drawing.Point(19, 282);
             this.label6.Margin = new Wisej.Web.Padding(3, 3, 3, 8);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(324, 15);
+            this.label6.Size = new System.Drawing.Size(324, 18);
             this.label6.TabIndex = 5;
             this.label6.Text = "Cap Size";
             // 
@@ -159,7 +164,7 @@
             | Wisej.Web.AnchorStyles.Right)));
             this.flowLayoutPanel1.SetFillWeight(this.kendoDropDownListSize, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.kendoDropDownListSize, true);
-            this.kendoDropDownListSize.Location = new System.Drawing.Point(19, 302);
+            this.kendoDropDownListSize.Location = new System.Drawing.Point(19, 311);
             this.kendoDropDownListSize.Name = "kendoDropDownListSize";
             this.kendoDropDownListSize.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"optionLabel\":\"Select a Size...\"}")));
             this.kendoDropDownListSize.Size = new System.Drawing.Size(324, 30);
@@ -173,7 +178,7 @@
             this.textBox1.LabelText = "Filter title";
             this.textBox1.Location = new System.Drawing.Point(3, 3);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(212, 46);
+            this.textBox1.Size = new System.Drawing.Size(212, 57);
             this.textBox1.TabIndex = 0;
             // 
             // comboBoxFilter
@@ -186,16 +191,16 @@
             "endswith",
             "contains"});
             this.comboBoxFilter.LabelText = "Filter";
-            this.comboBoxFilter.Location = new System.Drawing.Point(3, 55);
+            this.comboBoxFilter.Location = new System.Drawing.Point(3, 66);
             this.comboBoxFilter.Name = "comboBoxFilter";
-            this.comboBoxFilter.Size = new System.Drawing.Size(212, 46);
+            this.comboBoxFilter.Size = new System.Drawing.Size(212, 57);
             this.comboBoxFilter.TabIndex = 1;
             // 
             // label7
             // 
             this.label7.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Left) 
             | Wisej.Web.AnchorStyles.Right)));
-            this.label7.Location = new System.Drawing.Point(3, 107);
+            this.label7.Location = new System.Drawing.Point(3, 129);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(212, 59);
             this.label7.TabIndex = 2;
@@ -203,7 +208,9 @@
             // 
             // kendoDropDownList
             // 
+            this.MinimumSize = new System.Drawing.Size(793, 567);
             this.Name = "kendoDropDownList";
+            this.Size = new System.Drawing.Size(793, 567);
             this.Load += new System.EventHandler(this.kendoDropDownList_Load);
             this.panel.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);

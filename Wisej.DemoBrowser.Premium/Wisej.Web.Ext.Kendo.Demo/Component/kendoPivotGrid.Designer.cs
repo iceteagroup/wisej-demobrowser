@@ -66,8 +66,6 @@
             this.flowLayoutPanelProperties.Controls.Add(this.numericUpDown1);
             this.flowLayoutPanelProperties.Controls.Add(this.buttonExport);
             this.flowLayoutPanelProperties.Controls.Add(this.buttonPDF);
-            this.flowLayoutPanelProperties.Location = new System.Drawing.Point(16, 35);
-            this.flowLayoutPanelProperties.Size = new System.Drawing.Size(218, 437);
             // 
             // checkBox1
             // 
@@ -174,6 +172,7 @@
             // 
             // kendoPivotGrid
             // 
+            this.MinimumSize = new System.Drawing.Size(887, 615);
             this.Name = "kendoPivotGrid";
             this.panel.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);

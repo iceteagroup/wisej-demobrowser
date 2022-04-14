@@ -29,7 +29,7 @@
 		private void InitializeComponent()
 		{
             this.components = new System.ComponentModel.Container();
-            Wisej.Web.Ext.Kendo.kendoBase.WidgetFunction widgetFunction2 = new Wisej.Web.Ext.Kendo.kendoBase.WidgetFunction();
+            Wisej.Web.Ext.Kendo.kendoBase.WidgetFunction widgetFunction1 = new Wisej.Web.Ext.Kendo.kendoBase.WidgetFunction();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(kendoChat));
             this.buttonGetUser = new Wisej.Web.Button();
             this.buttonApplyColor = new Wisej.Web.Button();
@@ -51,6 +51,10 @@
             this.groupBox1.Controls.SetChildIndex(this.buttonGetUser, 0);
             this.groupBox1.Controls.SetChildIndex(this.buttonApplyColor, 0);
             this.groupBox1.Controls.SetChildIndex(this.flowLayoutPanelProperties, 0);
+            // 
+            // buttonUpdate
+            // 
+            this.buttonUpdate.Location = new System.Drawing.Point(16, 472);
             // 
             // linkDemo
             // 
@@ -84,21 +88,24 @@
             // 
             // kendoChat1
             // 
-            this.kendoChat1.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom)));
-            this.kendoChat1.Location = new System.Drawing.Point(247, 8);
+            this.kendoChat1.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
+            | Wisej.Web.AnchorStyles.Left) 
+            | Wisej.Web.AnchorStyles.Right)));
+            this.kendoChat1.Location = new System.Drawing.Point(75, 22);
             this.kendoChat1.Name = "kendoChat1";
             this.kendoChat1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"user\":{\"name\":\"Wisej User\",\"iconUrl\":\"Images/Chat/ANATR.jpg\"},\"toolbar\":{\"toggl" +
         "eable\":true,\"buttons\":[{\"name\":\"sendimage\",\"iconClass\":\"k-icon k-i-image\"}]}}")));
-            this.kendoChat1.Size = new System.Drawing.Size(595, 542);
+            this.kendoChat1.Size = new System.Drawing.Size(939, 513);
             this.kendoChat1.TabIndex = 0;
             this.kendoChat1.Text = "kendoChat1";
-            widgetFunction2.Name = "applyColor";
-            widgetFunction2.Source = resources.GetString("widgetFunction2.Source");
+            widgetFunction1.Name = "applyColor";
+            widgetFunction1.Source = resources.GetString("widgetFunction1.Source");
             this.kendoChat1.WidgetFunctions = new Wisej.Web.Ext.Kendo.kendoBase.WidgetFunction[] {
-        widgetFunction2};
+        widgetFunction1};
             // 
             // kendoChat
             // 
+            this.MinimumSize = new System.Drawing.Size(887, 557);
             this.Name = "kendoChat";
             this.Load += new System.EventHandler(this.kendoChat_Load);
             this.panel.ResumeLayout(false);

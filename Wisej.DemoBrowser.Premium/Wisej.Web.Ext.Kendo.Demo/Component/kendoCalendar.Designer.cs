@@ -60,6 +60,7 @@
             // 
             // kendoCalendar
             // 
+            this.MinimumSize = new System.Drawing.Size(906, 593);
             this.Name = "kendoCalendar";
             this.panel.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);

@@ -166,6 +166,7 @@
             // 
             // kendoDatePicker
             // 
+            this.MinimumSize = new System.Drawing.Size(727, 578);
             this.Name = "kendoDatePicker";
             this.panel.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);

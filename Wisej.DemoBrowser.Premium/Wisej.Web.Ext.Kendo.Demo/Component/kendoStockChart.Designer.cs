@@ -52,17 +52,20 @@
             // 
             // kendoStockChart1
             // 
-            this.kendoStockChart1.Anchor = Wisej.Web.AnchorStyles.None;
-            this.kendoStockChart1.Location = new System.Drawing.Point(114, 45);
+            this.kendoStockChart1.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
+            | Wisej.Web.AnchorStyles.Left) 
+            | Wisej.Web.AnchorStyles.Right)));
+            this.kendoStockChart1.Location = new System.Drawing.Point(23, 20);
             this.kendoStockChart1.Name = "kendoStockChart1";
             this.kendoStockChart1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("kendoStockChart1.Options"))));
-            this.kendoStockChart1.Size = new System.Drawing.Size(860, 469);
+            this.kendoStockChart1.Size = new System.Drawing.Size(1042, 518);
             this.kendoStockChart1.TabIndex = 0;
             this.kendoStockChart1.Text = "kendoStockChart1";
             this.kendoStockChart1.WebRequest += new Wisej.Web.WebRequestHandler(this.kendoStockChart1_WebRequest);
             // 
             // kendoStockChart
             // 
+            this.MinimumSize = new System.Drawing.Size(830, 504);
             this.Name = "kendoStockChart";
             this.Load += new System.EventHandler(this.kendoStockChart_Load);
             this.panel.ResumeLayout(false);
