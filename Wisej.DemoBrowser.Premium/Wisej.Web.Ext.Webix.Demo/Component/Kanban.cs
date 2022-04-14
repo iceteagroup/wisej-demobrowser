@@ -268,11 +268,7 @@ namespace Wisej.Web.Ext.Webix.Demo.Component
 				}
 			};
 		}
-        protected override void OnLoad(EventArgs e)
-        {
-            base.OnLoad(e);
-			this.comboBoxType.SelectedIndex = 0;
-        }
+
         private void buttonUpdate_Click(object sender, EventArgs e)
         {
 			this.kanban1.Options.type = this.comboBoxType.SelectedText;

@@ -64,8 +64,6 @@
             this.flowLayoutPanel1.Controls.Add(this.checkBoxAllowScroll);
             this.flowLayoutPanel1.Controls.Add(this.checkBoxAllowSelect);
             this.flowLayoutPanel1.Controls.Add(this.numericUpDownZoomLevel);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 38);
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 434);
             // 
             // diagram1
             // 
@@ -144,6 +142,7 @@
             // 
             // Diagram
             // 
+            this.MinimumSize = new System.Drawing.Size(1500, 750);
             this.Name = "Diagram";
             this.Load += new System.EventHandler(this.Diagram_Load);
             this.groupBox1.ResumeLayout(false);

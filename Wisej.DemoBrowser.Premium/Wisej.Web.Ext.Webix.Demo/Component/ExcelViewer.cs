@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using Wisej.Core;
 using Wisej.Web;
 
@@ -22,7 +23,7 @@ namespace Wisej.Web.Ext.Webix.Demo.Component
 			switch (e.Request["action"])
             {
                 case "load":
-                    e.Response.WriteFile(Application.MapPath("Data/data.xlsx"));
+                    e.Response.BinaryWrite(File.ReadAllBytes(Application.MapPath("Data/data.xlsx")));
                     break;
 
             }

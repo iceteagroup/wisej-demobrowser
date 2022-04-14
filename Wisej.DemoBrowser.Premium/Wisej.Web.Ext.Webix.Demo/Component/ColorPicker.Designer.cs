@@ -62,8 +62,6 @@
             this.flowLayoutPanel1.Controls.Add(this.checkBoxClear);
             this.flowLayoutPanel1.Controls.Add(this.checkBoxShowIcon);
             this.flowLayoutPanel1.Controls.Add(this.checkBoxStringResult);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 38);
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 434);
             // 
             // colorPicker1
             // 
@@ -123,6 +121,7 @@
             // 
             // ColorPicker
             // 
+            this.MinimumSize = new System.Drawing.Size(736, 440);
             this.Name = "ColorPicker";
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);

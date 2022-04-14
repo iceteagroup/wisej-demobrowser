@@ -62,6 +62,7 @@
             // 
             // Dashboard
             // 
+            this.MinimumSize = new System.Drawing.Size(1321, 737);
             this.Name = "Dashboard";
             this.Load += new System.EventHandler(this.Dashboard_Load);
             this.groupBox1.ResumeLayout(false);
