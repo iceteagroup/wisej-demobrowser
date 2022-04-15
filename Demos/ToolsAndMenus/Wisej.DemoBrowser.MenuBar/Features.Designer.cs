@@ -121,6 +121,7 @@
             // 
             // menuItem29
             // 
+            this.menuItem29.IconSource = "icon-new";
             this.menuItem29.Index = 0;
             this.menuItem29.MenuItems.AddRange(new Wisej.Web.MenuItem[] {
             this.menuItem39,
@@ -131,24 +132,28 @@
             // 
             // menuItem39
             // 
+            this.menuItem39.IconSource = "icon-file";
             this.menuItem39.Index = 0;
             this.menuItem39.Name = "menuItem39";
             this.menuItem39.Text = "Project";
             // 
             // menuItem40
             // 
+            this.menuItem40.IconSource = "icon-file";
             this.menuItem40.Index = 1;
             this.menuItem40.Name = "menuItem40";
             this.menuItem40.Text = "File";
             // 
             // menuItem41
             // 
+            this.menuItem41.IconSource = "icon-file";
             this.menuItem41.Index = 2;
             this.menuItem41.Name = "menuItem41";
             this.menuItem41.Text = "Resource";
             // 
             // menuItem30
             // 
+            this.menuItem30.IconSource = "icon-open";
             this.menuItem30.Index = 1;
             this.menuItem30.Name = "menuItem30";
             this.menuItem30.Text = "Open";
@@ -165,18 +170,21 @@
             // 
             // menuItem31
             // 
+            this.menuItem31.IconSource = "icon-copy";
             this.menuItem31.Index = 0;
             this.menuItem31.Name = "menuItem31";
             this.menuItem31.Text = "Copy";
             // 
             // menuItem32
             // 
+            this.menuItem32.IconSource = "icon-cut";
             this.menuItem32.Index = 1;
             this.menuItem32.Name = "menuItem32";
             this.menuItem32.Text = "Cut";
             // 
             // menuItem34
             // 
+            this.menuItem34.IconSource = "icon-paste";
             this.menuItem34.Index = 2;
             this.menuItem34.Name = "menuItem34";
             this.menuItem34.Text = "Paste";
@@ -213,6 +221,7 @@
             // 
             // menuItem37
             // 
+            this.menuItem37.IconSource = "table-row-editing";
             this.menuItem37.Index = 0;
             this.menuItem37.Name = "menuItem37";
             this.menuItem37.Text = "Editor";
@@ -233,6 +242,7 @@
             // 
             // menuItem42
             // 
+            this.menuItem42.IconSource = "icon-help";
             this.menuItem42.Index = 0;
             this.menuItem42.Name = "menuItem42";
             this.menuItem42.Text = "Contact Support";

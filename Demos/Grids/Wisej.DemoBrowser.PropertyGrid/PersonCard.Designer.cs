@@ -65,7 +65,7 @@
             // pbVip
             // 
             this.pbVip.Anchor = Wisej.Web.AnchorStyles.None;
-            this.pbVip.ImageSource = "wisej.png";
+            this.pbVip.ImageSource = "resource.wx/Wisej.DemoBrowser.PropertyGrid/wisej.png";
             this.pbVip.Location = new System.Drawing.Point(535, 6);
             this.pbVip.Name = "pbVip";
             this.pbVip.Size = new System.Drawing.Size(37, 32);
