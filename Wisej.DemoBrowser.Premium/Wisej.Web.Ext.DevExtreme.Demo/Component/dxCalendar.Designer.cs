@@ -189,6 +189,7 @@
             // 
             // dxCalendar
             // 
+            this.MinimumSize = new System.Drawing.Size(831, 693);
             this.Name = "dxCalendar";
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);

@@ -62,6 +62,7 @@
             // 
             // dxFilterBuilder
             // 
+            this.MinimumSize = new System.Drawing.Size(1028, 571);
             this.Name = "dxFilterBuilder";
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);

@@ -12,16 +12,21 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 			this.kendoDateTimePicker1.Instance.onChange += new WidgetEventHandler(kendoDateTimePicker1_WidgetEvent);
 		}
 
-		private void kendoDateTimePicker1_WidgetEvent(object sender, WidgetEventArgs e)
+		private async void kendoDateTimePicker1_WidgetEvent(object sender, WidgetEventArgs e)
 		{
+			var data = e.Data;
+
+			if (e.Type == "change")
+				data = await this.kendoDateTimePicker1.Instance.valueAsync();
+
 			AlertBox.Show(
-					$"<b>{e.Type}</b><br/>{JSON.Stringify(e.Data)}",
+					$"<b>{e.Type}</b><br/>{JSON.Stringify(data)}",
 					MessageBoxIcon.Information);
 
 			Application.Play(MessageBoxIcon.Information);
 		}
 
-        private async void buttonUpdate_Click(object sender, EventArgs e)
+		private async void buttonUpdate_Click(object sender, EventArgs e)
         {
 			if(this.dateTimePickerMax.Value <= this.dateTimePickerMin.Value)
             {

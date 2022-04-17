@@ -59,8 +59,6 @@
             // flowLayoutPanelProperties
             // 
             this.flowLayoutPanelProperties.Controls.Add(this.numericUpDownScale);
-            this.flowLayoutPanelProperties.Location = new System.Drawing.Point(16, 35);
-            this.flowLayoutPanelProperties.Size = new System.Drawing.Size(218, 437);
             // 
             // kendoPDFViewer1
             // 
@@ -91,7 +89,7 @@
             65536});
             this.numericUpDownScale.Name = "numericUpDownScale";
             this.numericUpDownScale.Postfix = "%";
-            this.numericUpDownScale.Size = new System.Drawing.Size(212, 46);
+            this.numericUpDownScale.Size = new System.Drawing.Size(212, 57);
             this.numericUpDownScale.TabIndex = 0;
             this.numericUpDownScale.Value = new decimal(new int[] {
             1,
@@ -101,6 +99,7 @@
             // 
             // kendoPDFViewer
             // 
+            this.MinimumSize = new System.Drawing.Size(886, 537);
             this.Name = "kendoPDFViewer";
             this.panel.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);

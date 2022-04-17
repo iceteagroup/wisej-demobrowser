@@ -108,6 +108,7 @@
 	  <ProjectReference Include="..\Demos\Content\Wisej.DemoBrowser.Label\Wisej.DemoBrowser.Label.csproj" />
 	  <ProjectReference Include="..\Demos\Content\Wisej.DemoBrowser.LinkLabel\Wisej.DemoBrowser.LinkLabel.csproj" />
 	  <ProjectReference Include="..\Demos\Content\Wisej.DemoBrowser.PictureBox\Wisej.DemoBrowser.PictureBox.csproj" />
+	  <ProjectReference Include="..\Demos\Content\Wisej.DemoBrowser.Shape\Wisej.DemoBrowser.Shape.csproj" />
 	  <ProjectReference Include="..\Demos\Editors\Wisej.DemoBrowser.CheckedListBox\Wisej.DemoBrowser.CheckedListBox.csproj" />
 	  <ProjectReference Include="..\Demos\Editors\Wisej.DemoBrowser.ComboBox\Wisej.DemoBrowser.ComboBox.csproj" />
 	  <ProjectReference Include="..\Demos\Editors\Wisej.DemoBrowser.DateTimePicker\Wisej.DemoBrowser.DateTimePicker.csproj" />

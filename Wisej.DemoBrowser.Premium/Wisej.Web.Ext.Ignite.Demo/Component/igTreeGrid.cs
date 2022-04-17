@@ -43,7 +43,6 @@ namespace Wisej.Web.Ext.Ignite.Demo.Component
 			else
 				this.igTreeGrid1.Options.features = new { };
 			
-			this.igTreeGrid1.Options.rowVirtualization = this.checkBox2.Checked;
 			this.igTreeGrid1.Options.showHeader = this.checkBox3.Checked;
 			this.igTreeGrid1.Options.enableHoverStyles = this.checkBox4.Checked;
 

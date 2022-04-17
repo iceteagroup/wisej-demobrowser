@@ -43,16 +43,19 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Size = new System.Drawing.Size(250, 378);
             this.groupBox1.TabIndex = 3;
             // 
             // buttonUpdate
             // 
+            this.buttonUpdate.Location = new System.Drawing.Point(16, 310);
             this.buttonUpdate.TabIndex = 4;
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
             // panel
             // 
             this.panel.Controls.Add(this.igShapeChart1);
+            this.panel.Size = new System.Drawing.Size(500, 378);
             this.panel.TabIndex = 7;
             // 
             // linkDemo
@@ -76,6 +79,7 @@
             this.flowLayoutPanel1.Controls.Add(this.checkBox2);
             this.flowLayoutPanel1.Controls.Add(this.comboBox1);
             this.flowLayoutPanel1.Controls.Add(this.comboBox2);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 256);
             // 
             // igShapeChart1
             // 
@@ -85,7 +89,7 @@
             this.igShapeChart1.Location = new System.Drawing.Point(31, 20);
             this.igShapeChart1.Name = "igShapeChart1";
             this.igShapeChart1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("igShapeChart1.Options"))));
-            this.igShapeChart1.Size = new System.Drawing.Size(1027, 518);
+            this.igShapeChart1.Size = new System.Drawing.Size(436, 336);
             this.igShapeChart1.TabIndex = 0;
             this.igShapeChart1.Text = "igShapeChart1";
             widgetFunction1.Name = "SetDensityData";
@@ -167,7 +171,9 @@
             // 
             // igShapeChart
             // 
+            this.MinimumSize = new System.Drawing.Size(909, 568);
             this.Name = "igShapeChart";
+            this.Size = new System.Drawing.Size(909, 568);
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);

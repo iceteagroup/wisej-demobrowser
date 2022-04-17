@@ -52,14 +52,15 @@
             // kendoCalendar1
             // 
             this.kendoCalendar1.Anchor = Wisej.Web.AnchorStyles.None;
-            this.kendoCalendar1.Location = new System.Drawing.Point(269, 87);
+            this.kendoCalendar1.Location = new System.Drawing.Point(304, 87);
             this.kendoCalendar1.Name = "kendoCalendar1";
-            this.kendoCalendar1.Size = new System.Drawing.Size(550, 384);
+            this.kendoCalendar1.Size = new System.Drawing.Size(480, 384);
             this.kendoCalendar1.TabIndex = 0;
             this.kendoCalendar1.Text = "kendoCalendar1";
             // 
             // kendoCalendar
             // 
+            this.MinimumSize = new System.Drawing.Size(906, 593);
             this.Name = "kendoCalendar";
             this.panel.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);

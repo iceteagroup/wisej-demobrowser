@@ -175,6 +175,7 @@
             // 
             // dxMenu
             // 
+            this.MinimumSize = new System.Drawing.Size(877, 701);
             this.Name = "dxMenu";
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);

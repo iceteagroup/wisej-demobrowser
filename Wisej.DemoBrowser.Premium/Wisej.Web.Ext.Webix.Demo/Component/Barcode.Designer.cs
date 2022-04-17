@@ -49,6 +49,11 @@
             // 
             this.panel.Controls.Add(this.barcode1);
             // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 38);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 434);
+            // 
             // barcode1
             // 
             this.barcode1.Anchor = Wisej.Web.AnchorStyles.None;
@@ -61,6 +66,7 @@
             // 
             // Barcode
             // 
+            this.MinimumSize = new System.Drawing.Size(922, 606);
             this.Name = "Barcode";
             this.Load += new System.EventHandler(this.Barcode_Load);
             this.groupBox1.ResumeLayout(false);

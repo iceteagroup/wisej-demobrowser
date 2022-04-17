@@ -169,6 +169,7 @@
             // 
             // Calendar
             // 
+            this.MinimumSize = new System.Drawing.Size(977, 660);
             this.Name = "Calendar";
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);

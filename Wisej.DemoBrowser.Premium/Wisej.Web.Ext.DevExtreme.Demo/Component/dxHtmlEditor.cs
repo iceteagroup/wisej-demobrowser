@@ -46,5 +46,5 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
 			}
 			this.userComboBox1.Text = comboString;
 		}
-	}
+    }
 }

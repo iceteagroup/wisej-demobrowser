@@ -70,11 +70,13 @@
             // 
             // dxTreeMap1
             // 
-            this.dxTreeMap1.Anchor = Wisej.Web.AnchorStyles.None;
-            this.dxTreeMap1.Location = new System.Drawing.Point(71, 31);
+            this.dxTreeMap1.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
+            | Wisej.Web.AnchorStyles.Left) 
+            | Wisej.Web.AnchorStyles.Right)));
+            this.dxTreeMap1.Location = new System.Drawing.Point(28, 31);
             this.dxTreeMap1.Name = "dxTreeMap1";
             this.dxTreeMap1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("dxTreeMap1.Options"))));
-            this.dxTreeMap1.Size = new System.Drawing.Size(946, 497);
+            this.dxTreeMap1.Size = new System.Drawing.Size(1033, 497);
             this.dxTreeMap1.TabIndex = 0;
             this.dxTreeMap1.WidgetFunctions = new Wisej.Web.Ext.DevExtreme.dxBase.WidgetFunction[0];
             // 
@@ -167,6 +169,7 @@
             // 
             // dxTreeMap
             // 
+            this.MinimumSize = new System.Drawing.Size(1249, 599);
             this.Name = "dxTreeMap";
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);

@@ -55,7 +55,7 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 		private void ExportDocument(string base64Data, string fileName, HttpResponse response)
 		{
 			var bytes = Convert.FromBase64String(base64Data);
-			response.AddHeader("Content-Disposition", $"attachment; filename={fileName}");
+			response.AppendHeader("Content-Disposition", $"attachment; filename={fileName}");
 			response.OutputStream.Write(bytes, 0, bytes.Length);
 		}
 

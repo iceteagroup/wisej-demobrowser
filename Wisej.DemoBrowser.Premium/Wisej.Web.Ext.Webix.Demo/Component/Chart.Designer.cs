@@ -59,16 +59,16 @@
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.Controls.Add(this.comboBoxChartType);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 38);
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 434);
             // 
             // chart1
             // 
-            this.chart1.Anchor = Wisej.Web.AnchorStyles.None;
-            this.chart1.Location = new System.Drawing.Point(294, 79);
+            this.chart1.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
+            | Wisej.Web.AnchorStyles.Left) 
+            | Wisej.Web.AnchorStyles.Right)));
+            this.chart1.Location = new System.Drawing.Point(36, 16);
             this.chart1.Name = "chart1";
             this.chart1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("chart1.Options"))));
-            this.chart1.Size = new System.Drawing.Size(500, 400);
+            this.chart1.Size = new System.Drawing.Size(1016, 526);
             this.chart1.TabIndex = 0;
             this.chart1.Text = "chart1";
             // 
@@ -90,6 +90,7 @@
             // 
             // Chart
             // 
+            this.MinimumSize = new System.Drawing.Size(832, 514);
             this.Name = "Chart";
             this.Load += new System.EventHandler(this.Chart_Load);
             this.groupBox1.ResumeLayout(false);

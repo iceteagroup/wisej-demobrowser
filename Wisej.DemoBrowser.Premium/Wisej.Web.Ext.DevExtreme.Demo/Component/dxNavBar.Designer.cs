@@ -53,7 +53,6 @@
             // 
             // buttonUpdate
             // 
-            this.buttonUpdate.Location = new System.Drawing.Point(16, 476);
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
             // linkDemo
@@ -75,7 +74,6 @@
             this.flowLayoutPanel1.Controls.Add(this.checkBox1);
             this.flowLayoutPanel1.Controls.Add(this.comboBox1);
             this.flowLayoutPanel1.Controls.Add(this.numericUpDown1);
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 490);
             // 
             // dxNavBar1
             // 
@@ -193,6 +191,7 @@
             // 
             // dxNavBar
             // 
+            this.MinimumSize = new System.Drawing.Size(873, 549);
             this.Name = "dxNavBar";
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);

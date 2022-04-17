@@ -57,10 +57,12 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Size = new System.Drawing.Size(250, 477);
             this.groupBox1.TabIndex = 3;
             // 
             // buttonUpdate
             // 
+            this.buttonUpdate.Location = new System.Drawing.Point(16, 409);
             this.buttonUpdate.TabIndex = 5;
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
@@ -74,6 +76,7 @@
             this.panel.Controls.Add(this.igBulletGraph3);
             this.panel.Controls.Add(this.igBulletGraph2);
             this.panel.Controls.Add(this.igBulletGraph1);
+            this.panel.Size = new System.Drawing.Size(519, 477);
             this.panel.TabIndex = 7;
             // 
             // linkDemo
@@ -98,15 +101,16 @@
             this.flowLayoutPanel1.Controls.Add(this.numericUpDown2);
             this.flowLayoutPanel1.Controls.Add(this.numericUpDown3);
             this.flowLayoutPanel1.Controls.Add(this.numericUpDown4);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 355);
             // 
             // igBulletGraph1
             // 
             this.igBulletGraph1.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Left | Wisej.Web.AnchorStyles.Right)));
-            this.igBulletGraph1.Location = new System.Drawing.Point(26, 97);
+            this.igBulletGraph1.Location = new System.Drawing.Point(26, 55);
             this.igBulletGraph1.MaximumValue = 10000D;
             this.igBulletGraph1.Name = "igBulletGraph1";
             this.igBulletGraph1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("igBulletGraph1.Options"))));
-            this.igBulletGraph1.Size = new System.Drawing.Size(1037, 72);
+            this.igBulletGraph1.Size = new System.Drawing.Size(465, 72);
             this.igBulletGraph1.TabIndex = 1;
             this.igBulletGraph1.Value = 6500;
             this.igBulletGraph1.ValueInnerExtent = 0.5D;
@@ -119,11 +123,11 @@
             // igBulletGraph2
             // 
             this.igBulletGraph2.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Left | Wisej.Web.AnchorStyles.Right)));
-            this.igBulletGraph2.Location = new System.Drawing.Point(26, 202);
+            this.igBulletGraph2.Location = new System.Drawing.Point(26, 160);
             this.igBulletGraph2.MaximumValue = 10000D;
             this.igBulletGraph2.Name = "igBulletGraph2";
             this.igBulletGraph2.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("igBulletGraph2.Options"))));
-            this.igBulletGraph2.Size = new System.Drawing.Size(1037, 72);
+            this.igBulletGraph2.Size = new System.Drawing.Size(465, 72);
             this.igBulletGraph2.TabIndex = 3;
             this.igBulletGraph2.Value = 5000;
             this.igBulletGraph2.ValueInnerExtent = 0.5D;
@@ -136,11 +140,11 @@
             // igBulletGraph3
             // 
             this.igBulletGraph3.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Left | Wisej.Web.AnchorStyles.Right)));
-            this.igBulletGraph3.Location = new System.Drawing.Point(26, 307);
+            this.igBulletGraph3.Location = new System.Drawing.Point(26, 265);
             this.igBulletGraph3.MaximumValue = 500D;
             this.igBulletGraph3.Name = "igBulletGraph3";
             this.igBulletGraph3.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("igBulletGraph3.Options"))));
-            this.igBulletGraph3.Size = new System.Drawing.Size(1037, 72);
+            this.igBulletGraph3.Size = new System.Drawing.Size(465, 72);
             this.igBulletGraph3.TabIndex = 5;
             this.igBulletGraph3.Value = 350;
             this.igBulletGraph3.ValueInnerExtent = 0.35D;
@@ -153,11 +157,11 @@
             // igBulletGraph4
             // 
             this.igBulletGraph4.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Left | Wisej.Web.AnchorStyles.Right)));
-            this.igBulletGraph4.Location = new System.Drawing.Point(26, 412);
+            this.igBulletGraph4.Location = new System.Drawing.Point(26, 370);
             this.igBulletGraph4.MaximumValue = 100D;
             this.igBulletGraph4.Name = "igBulletGraph4";
             this.igBulletGraph4.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("igBulletGraph4.Options"))));
-            this.igBulletGraph4.Size = new System.Drawing.Size(1037, 72);
+            this.igBulletGraph4.Size = new System.Drawing.Size(465, 72);
             this.igBulletGraph4.TabIndex = 7;
             this.igBulletGraph4.Value = 55;
             widgetFunction1.Name = "formatLabel";
@@ -169,7 +173,7 @@
             // 
             this.label4.Anchor = Wisej.Web.AnchorStyles.Left;
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(26, 75);
+            this.label4.Location = new System.Drawing.Point(26, 33);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(103, 22);
             this.label4.TabIndex = 0;
@@ -179,7 +183,7 @@
             // 
             this.label5.Anchor = Wisej.Web.AnchorStyles.Left;
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(26, 180);
+            this.label5.Location = new System.Drawing.Point(26, 138);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(45, 22);
             this.label5.TabIndex = 2;
@@ -189,7 +193,7 @@
             // 
             this.label6.Anchor = Wisej.Web.AnchorStyles.Left;
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(26, 285);
+            this.label6.Location = new System.Drawing.Point(26, 243);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(80, 22);
             this.label6.TabIndex = 4;
@@ -199,7 +203,7 @@
             // 
             this.label7.Anchor = Wisej.Web.AnchorStyles.Left;
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(26, 390);
+            this.label7.Location = new System.Drawing.Point(26, 348);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(123, 22);
             this.label7.TabIndex = 6;
@@ -310,7 +314,9 @@
             // 
             // igBulletGraph
             // 
+            this.MinimumSize = new System.Drawing.Size(928, 667);
             this.Name = "igBulletGraph";
+            this.Size = new System.Drawing.Size(928, 667);
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
             this.panel.PerformLayout();

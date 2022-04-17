@@ -34,7 +34,6 @@
             this.buttonExport = new Wisej.Web.Button();
             this.igTreeGrid1 = new Wisej.Web.Ext.Ignite.igTreeGrid();
             this.checkBox1 = new Wisej.Web.CheckBox();
-            this.checkBox2 = new Wisej.Web.CheckBox();
             this.checkBox3 = new Wisej.Web.CheckBox();
             this.checkBox4 = new Wisej.Web.CheckBox();
             this.groupBox1.SuspendLayout();
@@ -44,16 +43,19 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Size = new System.Drawing.Size(250, 396);
             this.groupBox1.TabIndex = 3;
             // 
             // buttonUpdate
             // 
+            this.buttonUpdate.Location = new System.Drawing.Point(16, 328);
             this.buttonUpdate.TabIndex = 6;
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
             // panel
             // 
             this.panel.Controls.Add(this.igTreeGrid1);
+            this.panel.Size = new System.Drawing.Size(747, 396);
             this.panel.TabIndex = 7;
             // 
             // linkDemo
@@ -74,18 +76,18 @@
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.Controls.Add(this.checkBox1);
-            this.flowLayoutPanel1.Controls.Add(this.checkBox2);
             this.flowLayoutPanel1.Controls.Add(this.checkBox3);
             this.flowLayoutPanel1.Controls.Add(this.checkBox4);
             this.flowLayoutPanel1.Controls.Add(this.buttonLoad);
             this.flowLayoutPanel1.Controls.Add(this.buttonExport);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 274);
             // 
             // buttonLoad
             // 
             this.buttonLoad.AllowedFileTypes = ".json";
             this.buttonLoad.HideValue = true;
             this.buttonLoad.ImageSource = "icon-file";
-            this.buttonLoad.Location = new System.Drawing.Point(3, 231);
+            this.buttonLoad.Location = new System.Drawing.Point(3, 174);
             this.buttonLoad.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.buttonLoad.Name = "buttonLoad";
             this.buttonLoad.Size = new System.Drawing.Size(42, 42);
@@ -96,7 +98,7 @@
             // 
             this.buttonExport.Display = Wisej.Web.Display.Icon;
             this.buttonExport.ImageSource = "icon-save";
-            this.buttonExport.Location = new System.Drawing.Point(51, 231);
+            this.buttonExport.Location = new System.Drawing.Point(51, 174);
             this.buttonExport.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.buttonExport.Name = "buttonExport";
             this.buttonExport.Size = new System.Drawing.Size(42, 42);
@@ -112,7 +114,7 @@
             this.igTreeGrid1.Location = new System.Drawing.Point(22, 24);
             this.igTreeGrid1.Name = "igTreeGrid1";
             this.igTreeGrid1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("igTreeGrid1.Options"))));
-            this.igTreeGrid1.Size = new System.Drawing.Size(1045, 510);
+            this.igTreeGrid1.Size = new System.Drawing.Size(701, 346);
             this.igTreeGrid1.TabIndex = 0;
             this.igTreeGrid1.Text = "igTreeGrid1";
             widgetFunction1.Name = "customDropValidation";
@@ -134,20 +136,6 @@
             this.checkBox1.TabIndex = 0;
             this.checkBox1.Text = "Paging";
             // 
-            // checkBox2
-            // 
-            this.checkBox2.Appearance = Wisej.Web.Appearance.Switch;
-            this.checkBox2.AutoSize = false;
-            this.checkBox2.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.flowLayoutPanel1.SetFillWeight(this.checkBox2, 1);
-            this.flowLayoutPanel1.SetFlowBreak(this.checkBox2, true);
-            this.checkBox2.Location = new System.Drawing.Point(3, 60);
-            this.checkBox2.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(212, 38);
-            this.checkBox2.TabIndex = 1;
-            this.checkBox2.Text = "Row Virtualization";
-            // 
             // checkBox3
             // 
             this.checkBox3.Appearance = Wisej.Web.Appearance.Switch;
@@ -156,7 +144,7 @@
             this.checkBox3.Checked = true;
             this.flowLayoutPanel1.SetFillWeight(this.checkBox3, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.checkBox3, true);
-            this.checkBox3.Location = new System.Drawing.Point(3, 117);
+            this.checkBox3.Location = new System.Drawing.Point(3, 60);
             this.checkBox3.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBox3.Name = "checkBox3";
             this.checkBox3.Size = new System.Drawing.Size(212, 38);
@@ -171,7 +159,7 @@
             this.checkBox4.Checked = true;
             this.flowLayoutPanel1.SetFillWeight(this.checkBox4, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.checkBox4, true);
-            this.checkBox4.Location = new System.Drawing.Point(3, 174);
+            this.checkBox4.Location = new System.Drawing.Point(3, 117);
             this.checkBox4.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBox4.Name = "checkBox4";
             this.checkBox4.Size = new System.Drawing.Size(212, 38);
@@ -180,7 +168,9 @@
             // 
             // igTreeGrid
             // 
+            this.MinimumSize = new System.Drawing.Size(1156, 586);
             this.Name = "igTreeGrid";
+            this.Size = new System.Drawing.Size(1156, 586);
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
@@ -195,7 +185,6 @@
 		private Upload buttonLoad;
 		private Button buttonExport;
 		private CheckBox checkBox1;
-		private CheckBox checkBox2;
 		private CheckBox checkBox3;
 		private CheckBox checkBox4;
 	}

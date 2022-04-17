@@ -176,6 +176,7 @@
             // 
             // igGrid
             // 
+            this.MinimumSize = new System.Drawing.Size(1030, 635);
             this.Name = "igGrid";
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);

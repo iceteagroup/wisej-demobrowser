@@ -60,8 +60,6 @@
             // 
             this.flowLayoutPanel1.Controls.Add(this.checkBoxGrayScale);
             this.flowLayoutPanel1.Controls.Add(this.comboBoxType);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 38);
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 434);
             // 
             // colorBoard1
             // 
@@ -105,6 +103,7 @@
             // 
             // ColorBoard
             // 
+            this.MinimumSize = new System.Drawing.Size(927, 604);
             this.Name = "ColorBoard";
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);

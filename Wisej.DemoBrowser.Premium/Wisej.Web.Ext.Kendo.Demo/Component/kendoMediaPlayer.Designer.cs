@@ -61,8 +61,6 @@
             // 
             this.flowLayoutPanelProperties.Controls.Add(this.checkBoxMute);
             this.flowLayoutPanelProperties.Controls.Add(this.numericUpDownVolume);
-            this.flowLayoutPanelProperties.Location = new System.Drawing.Point(16, 35);
-            this.flowLayoutPanelProperties.Size = new System.Drawing.Size(218, 437);
             // 
             // kendoMediaPlayer1
             // 
@@ -83,7 +81,7 @@
             this.numericUpDownVolume.Location = new System.Drawing.Point(3, 42);
             this.numericUpDownVolume.Margin = new Wisej.Web.Padding(3, 10, 3, 3);
             this.numericUpDownVolume.Name = "numericUpDownVolume";
-            this.numericUpDownVolume.Size = new System.Drawing.Size(212, 46);
+            this.numericUpDownVolume.Size = new System.Drawing.Size(212, 57);
             this.numericUpDownVolume.TabIndex = 0;
             // 
             // checkBoxMute
@@ -101,6 +99,7 @@
             // 
             // kendoMediaPlayer
             // 
+            this.MinimumSize = new System.Drawing.Size(885, 522);
             this.Name = "kendoMediaPlayer";
             this.panel.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);

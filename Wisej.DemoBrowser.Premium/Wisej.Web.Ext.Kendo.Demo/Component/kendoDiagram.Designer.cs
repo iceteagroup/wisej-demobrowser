@@ -40,6 +40,15 @@
             // panel
             // 
             this.panel.Controls.Add(this.kendoDiagram1);
+            this.panel.Size = new System.Drawing.Size(480, 475);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Size = new System.Drawing.Size(250, 475);
+            // 
+            // buttonUpdate
+            // 
+            this.buttonUpdate.Location = new System.Drawing.Point(16, 407);
             // 
             // linkDemo
             // 
@@ -57,6 +66,7 @@
             // 
             this.flowLayoutPanelProperties.Controls.Add(this.comboBox1);
             this.flowLayoutPanelProperties.Controls.Add(this.buttonExport);
+            this.flowLayoutPanelProperties.Size = new System.Drawing.Size(218, 349);
             // 
             // kendoDiagram1
             // 
@@ -64,7 +74,7 @@
             this.kendoDiagram1.Location = new System.Drawing.Point(8, 8);
             this.kendoDiagram1.Name = "kendoDiagram1";
             this.kendoDiagram1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("kendoDiagram1.Options"))));
-            this.kendoDiagram1.Size = new System.Drawing.Size(1073, 542);
+            this.kendoDiagram1.Size = new System.Drawing.Size(462, 457);
             this.kendoDiagram1.TabIndex = 0;
             this.kendoDiagram1.Text = "kendoDiagram1";
             this.kendoDiagram1.WebRequest += new Wisej.Web.WebRequestHandler(this.kendoDiagram1_WebRequest);
@@ -100,7 +110,9 @@
             // 
             // kendoDiagram
             // 
+            this.MinimumSize = new System.Drawing.Size(889, 665);
             this.Name = "kendoDiagram";
+            this.Size = new System.Drawing.Size(889, 665);
             this.panel.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.flowLayoutPanelProperties.ResumeLayout(false);

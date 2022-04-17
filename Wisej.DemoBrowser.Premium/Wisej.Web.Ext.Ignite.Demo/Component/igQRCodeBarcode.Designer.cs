@@ -110,6 +110,7 @@
             // 
             // igQRCodeBarcode
             // 
+            this.MinimumSize = new System.Drawing.Size(791, 545);
             this.Name = "igQRCodeBarcode";
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);

@@ -171,6 +171,7 @@
             // 
             // dxForm
             // 
+            this.MinimumSize = new System.Drawing.Size(942, 671);
             this.Name = "dxForm";
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);

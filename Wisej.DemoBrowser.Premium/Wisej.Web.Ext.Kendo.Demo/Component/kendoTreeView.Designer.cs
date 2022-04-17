@@ -61,15 +61,16 @@
             // 
             this.flowLayoutPanelProperties.Controls.Add(this.checkBoxAllowDragAndDrop);
             this.flowLayoutPanelProperties.Controls.Add(this.checkBoxShowcheckboxes);
-            this.flowLayoutPanelProperties.Location = new System.Drawing.Point(16, 35);
-            this.flowLayoutPanelProperties.Size = new System.Drawing.Size(218, 437);
             // 
             // kendoTreeView1
             // 
-            this.kendoTreeView1.Location = new System.Drawing.Point(51, 31);
+            this.kendoTreeView1.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
+            | Wisej.Web.AnchorStyles.Left) 
+            | Wisej.Web.AnchorStyles.Right)));
+            this.kendoTreeView1.Location = new System.Drawing.Point(44, 23);
             this.kendoTreeView1.Name = "kendoTreeView1";
             this.kendoTreeView1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("kendoTreeView1.Options"))));
-            this.kendoTreeView1.Size = new System.Drawing.Size(350, 250);
+            this.kendoTreeView1.Size = new System.Drawing.Size(1001, 512);
             this.kendoTreeView1.TabIndex = 0;
             this.kendoTreeView1.Text = "kendoTreeView1";
             // 
@@ -83,7 +84,7 @@
             this.checkBoxAllowDragAndDrop.Name = "checkBoxAllowDragAndDrop";
             this.checkBoxAllowDragAndDrop.Size = new System.Drawing.Size(212, 24);
             this.checkBoxAllowDragAndDrop.TabIndex = 1;
-            this.checkBoxAllowDragAndDrop.Text = "Allow drag-and-drop";
+            this.checkBoxAllowDragAndDrop.Text = "Allow Drag-and-Drop";
             // 
             // checkBoxShowcheckboxes
             // 
@@ -96,10 +97,11 @@
             this.checkBoxShowcheckboxes.Name = "checkBoxShowcheckboxes";
             this.checkBoxShowcheckboxes.Size = new System.Drawing.Size(212, 24);
             this.checkBoxShowcheckboxes.TabIndex = 2;
-            this.checkBoxShowcheckboxes.Text = "Show checkbox";
+            this.checkBoxShowcheckboxes.Text = "Show Checkbox";
             // 
             // kendoTreeView
             // 
+            this.MinimumSize = new System.Drawing.Size(744, 549);
             this.Name = "kendoTreeView";
             this.panel.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);

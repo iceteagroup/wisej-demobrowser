@@ -24,7 +24,6 @@ namespace Wisej.Web.Ext.Ignite.Demo.Component
 		private void buttonUpdate_Click(object sender, EventArgs e)
 		{
 			this.igLinearGauge1.Value = (double) this.numericUpDown1.Value;
-			this.igLinearGauge1.Options.needleShape = this.comboBox1.SelectedItem;
 			this.igLinearGauge1.Options.isNeedleDraggingEnabled = this.checkBox1.Checked;
 			this.igLinearGauge1.Options.isScaleInverted = this.checkBox2.Checked;
 			this.igLinearGauge1.Options.minorTickCount = this.numericUpDown2.Value;

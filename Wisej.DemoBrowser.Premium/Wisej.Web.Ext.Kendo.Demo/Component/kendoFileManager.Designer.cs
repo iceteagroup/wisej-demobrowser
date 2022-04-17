@@ -40,9 +40,15 @@
             // panel
             // 
             this.panel.Controls.Add(this.kendoFileManager1);
+            this.panel.Size = new System.Drawing.Size(679, 283);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Size = new System.Drawing.Size(250, 283);
             // 
             // buttonUpdate
             // 
+            this.buttonUpdate.Location = new System.Drawing.Point(16, 215);
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
             // linkDemo
@@ -61,8 +67,7 @@
             // 
             this.flowLayoutPanelProperties.Controls.Add(this.checkBoxResizable);
             this.flowLayoutPanelProperties.Controls.Add(this.checkBoxDraggable);
-            this.flowLayoutPanelProperties.Location = new System.Drawing.Point(16, 35);
-            this.flowLayoutPanelProperties.Size = new System.Drawing.Size(218, 437);
+            this.flowLayoutPanelProperties.Size = new System.Drawing.Size(218, 157);
             // 
             // kendoFileManager1
             // 
@@ -70,7 +75,7 @@
             this.kendoFileManager1.Location = new System.Drawing.Point(8, 8);
             this.kendoFileManager1.Name = "kendoFileManager1";
             this.kendoFileManager1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("kendoFileManager1.Options"))));
-            this.kendoFileManager1.Size = new System.Drawing.Size(1073, 542);
+            this.kendoFileManager1.Size = new System.Drawing.Size(661, 265);
             this.kendoFileManager1.TabIndex = 0;
             this.kendoFileManager1.Text = "kendoFileManager1";
             // 
@@ -104,7 +109,9 @@
             // 
             // kendoFileManager
             // 
+            this.MinimumSize = new System.Drawing.Size(1088, 473);
             this.Name = "kendoFileManager";
+            this.Size = new System.Drawing.Size(1088, 473);
             this.panel.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.flowLayoutPanelProperties.ResumeLayout(false);

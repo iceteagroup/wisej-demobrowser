@@ -67,11 +67,9 @@
             this.flowLayoutPanelProperties.Controls.Add(this.checkBox5);
             this.flowLayoutPanelProperties.Controls.Add(this.checkBox4);
             this.flowLayoutPanelProperties.Controls.Add(this.checkBox3);
-            this.flowLayoutPanelProperties.Controls.Add(this.numericUpDown1);
             this.flowLayoutPanelProperties.Controls.Add(this.checkBox2);
             this.flowLayoutPanelProperties.Controls.Add(this.checkBox1);
-            this.flowLayoutPanelProperties.Location = new System.Drawing.Point(16, 35);
-            this.flowLayoutPanelProperties.Size = new System.Drawing.Size(218, 437);
+            this.flowLayoutPanelProperties.Controls.Add(this.numericUpDown1);
             // 
             // kendoAutoComplete1
             // 
@@ -88,9 +86,12 @@
             this.checkBox1.Appearance = Wisej.Web.Appearance.Switch;
             this.checkBox1.AutoSize = false;
             this.checkBox1.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.checkBox1.Location = new System.Drawing.Point(3, 245);
+            this.flowLayoutPanelProperties.SetFillWeight(this.checkBox1, 1);
+            this.flowLayoutPanelProperties.SetFlowBreak(this.checkBox1, true);
+            this.checkBox1.Location = new System.Drawing.Point(3, 231);
+            this.checkBox1.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(195, 38);
+            this.checkBox1.Size = new System.Drawing.Size(212, 38);
             this.checkBox1.TabIndex = 2;
             this.checkBox1.Text = "Animation";
             // 
@@ -100,26 +101,32 @@
             this.checkBox2.AutoSize = false;
             this.checkBox2.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.checkBox2.Checked = true;
-            this.checkBox2.Location = new System.Drawing.Point(3, 201);
+            this.flowLayoutPanelProperties.SetFillWeight(this.checkBox2, 1);
+            this.flowLayoutPanelProperties.SetFlowBreak(this.checkBox2, true);
+            this.checkBox2.Location = new System.Drawing.Point(3, 174);
+            this.checkBox2.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(195, 38);
+            this.checkBox2.Size = new System.Drawing.Size(212, 38);
             this.checkBox2.TabIndex = 3;
             this.checkBox2.Text = "Clear Button";
             // 
             // numericUpDown1
             // 
             this.numericUpDown1.AutoSize = false;
+            this.flowLayoutPanelProperties.SetFillWeight(this.numericUpDown1, 1);
+            this.flowLayoutPanelProperties.SetFlowBreak(this.numericUpDown1, true);
             this.numericUpDown1.Label.Size = 50;
             this.numericUpDown1.Label.SizeType = Wisej.Web.SizeType.Percent;
             this.numericUpDown1.LabelText = "Delay";
-            this.numericUpDown1.Location = new System.Drawing.Point(3, 135);
+            this.numericUpDown1.Location = new System.Drawing.Point(3, 288);
+            this.numericUpDown1.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.numericUpDown1.Maximum = new decimal(new int[] {
             1000,
             0,
             0,
             0});
             this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(195, 60);
+            this.numericUpDown1.Size = new System.Drawing.Size(212, 60);
             this.numericUpDown1.TabIndex = 4;
             this.numericUpDown1.Value = new decimal(new int[] {
             200,
@@ -133,9 +140,12 @@
             this.checkBox3.AutoSize = false;
             this.checkBox3.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.checkBox3.Checked = true;
-            this.checkBox3.Location = new System.Drawing.Point(3, 91);
+            this.flowLayoutPanelProperties.SetFillWeight(this.checkBox3, 1);
+            this.flowLayoutPanelProperties.SetFlowBreak(this.checkBox3, true);
+            this.checkBox3.Location = new System.Drawing.Point(3, 117);
+            this.checkBox3.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(195, 38);
+            this.checkBox3.Size = new System.Drawing.Size(212, 38);
             this.checkBox3.TabIndex = 5;
             this.checkBox3.Text = "Highlight First";
             // 
@@ -145,9 +155,12 @@
             this.checkBox4.AutoSize = false;
             this.checkBox4.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.checkBox4.Checked = true;
-            this.checkBox4.Location = new System.Drawing.Point(3, 47);
+            this.flowLayoutPanelProperties.SetFillWeight(this.checkBox4, 1);
+            this.flowLayoutPanelProperties.SetFlowBreak(this.checkBox4, true);
+            this.checkBox4.Location = new System.Drawing.Point(3, 60);
+            this.checkBox4.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(195, 38);
+            this.checkBox4.Size = new System.Drawing.Size(212, 38);
             this.checkBox4.TabIndex = 6;
             this.checkBox4.Text = "Ignore Case";
             // 
@@ -156,14 +169,17 @@
             this.checkBox5.Appearance = Wisej.Web.Appearance.Switch;
             this.checkBox5.AutoSize = false;
             this.checkBox5.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.flowLayoutPanelProperties.SetFillWeight(this.checkBox5, 1);
+            this.flowLayoutPanelProperties.SetFlowBreak(this.checkBox5, true);
             this.checkBox5.Location = new System.Drawing.Point(3, 3);
             this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(195, 38);
+            this.checkBox5.Size = new System.Drawing.Size(212, 38);
             this.checkBox5.TabIndex = 7;
             this.checkBox5.Text = "Suggest";
             // 
             // kendoAutoComplete
             // 
+            this.MinimumSize = new System.Drawing.Size(760, 670);
             this.Name = "kendoAutoComplete";
             this.panel.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);

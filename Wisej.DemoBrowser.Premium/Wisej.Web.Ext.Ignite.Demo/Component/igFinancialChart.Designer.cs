@@ -28,7 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-            Wisej.Web.Ext.Ignite.igBase.WidgetFunction widgetFunction2 = new Wisej.Web.Ext.Ignite.igBase.WidgetFunction();
+            Wisej.Web.Ext.Ignite.igBase.WidgetFunction widgetFunction1 = new Wisej.Web.Ext.Ignite.igBase.WidgetFunction();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(igFinancialChart));
             this.igFinancialChart1 = new Wisej.Web.Ext.Ignite.igFinancialChart();
             this.comboBox1 = new Wisej.Web.ComboBox();
@@ -49,7 +49,6 @@
             // 
             // buttonUpdate
             // 
-            this.buttonUpdate.Location = new System.Drawing.Point(16, 476);
             this.buttonUpdate.TabIndex = 7;
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
@@ -82,7 +81,6 @@
             this.flowLayoutPanel1.Controls.Add(this.comboBox2);
             this.flowLayoutPanel1.Controls.Add(this.button1);
             this.flowLayoutPanel1.Controls.Add(this.button2);
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 490);
             // 
             // igFinancialChart1
             // 
@@ -95,10 +93,10 @@
             this.igFinancialChart1.Size = new System.Drawing.Size(1050, 512);
             this.igFinancialChart1.TabIndex = 0;
             this.igFinancialChart1.Text = "igFinancialChart1";
-            widgetFunction2.Name = "loadTheData";
-            widgetFunction2.Source = resources.GetString("widgetFunction2.Source");
+            widgetFunction1.Name = "loadTheData";
+            widgetFunction1.Source = resources.GetString("widgetFunction1.Source");
             this.igFinancialChart1.WidgetFunctions = new Wisej.Web.Ext.Ignite.igBase.WidgetFunction[] {
-        widgetFunction2};
+        widgetFunction1};
             // 
             // comboBox1
             // 
@@ -211,6 +209,7 @@
             // 
             // igFinancialChart
             // 
+            this.MinimumSize = new System.Drawing.Size(850, 735);
             this.Name = "igFinancialChart";
             this.Load += new System.EventHandler(this.igFinancialChart_Load);
             this.groupBox1.ResumeLayout(false);

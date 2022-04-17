@@ -170,6 +170,7 @@
             // 
             // dxDropDownButton
             // 
+            this.MinimumSize = new System.Drawing.Size(783, 586);
             this.Name = "dxDropDownButton";
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);

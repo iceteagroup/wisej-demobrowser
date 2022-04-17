@@ -56,8 +56,8 @@
 	<ItemGroup>
 		<PackageReference Include="Wisej-3" Version="3.*-*" />
 		<PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
-		<PackageReference Include="Wisej-3-DevExtreme" Version="3.0.4-test.1" />
-		<PackageReference Include="Wisej-3-MaterialDesign" Version="3.0.3-dev" />
+		<PackageReference Include="Wisej-3-DevExtreme" Version="3.*-*" />
+		<PackageReference Include="Wisej-3-MaterialDesign" Version="3.*-*" />
 	</ItemGroup>
 
 </Project>

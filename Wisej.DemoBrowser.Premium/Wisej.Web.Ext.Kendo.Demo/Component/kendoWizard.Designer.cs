@@ -99,6 +99,7 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
             // 
             // kendoWizard
             // 
+            this.MinimumSize = new System.Drawing.Size(856, 729);
             this.Name = "kendoWizard";
             this.panel.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);

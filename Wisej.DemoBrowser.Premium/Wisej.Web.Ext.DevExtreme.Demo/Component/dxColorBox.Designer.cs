@@ -177,6 +177,7 @@
             // 
             // dxColorBox
             // 
+            this.MinimumSize = new System.Drawing.Size(782, 666);
             this.Name = "dxColorBox";
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);

@@ -181,6 +181,7 @@
             // 
             // dxDiagram
             // 
+            this.MinimumSize = new System.Drawing.Size(1051, 696);
             this.Name = "dxDiagram";
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);

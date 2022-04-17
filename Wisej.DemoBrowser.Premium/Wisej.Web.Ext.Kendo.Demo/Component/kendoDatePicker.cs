@@ -19,45 +19,29 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 			this.kendoDatePicker1.Instance.onChange += new WidgetEventHandler(kendoDatePicker1_WidgetEvent);
 		}
 
-		private void kendoDatePicker1_WidgetEvent(object sender, WidgetEventArgs e)
+		private async void kendoDatePicker1_WidgetEvent(object sender, WidgetEventArgs e)
 		{
+			var data = e.Data;
+
+			if (e.Type == "change")
+				data = await this.kendoDatePicker1.Instance.valueAsync();
+
 			AlertBox.Show(
-					$"<b>{e.Type}</b><br/>{JSON.Stringify(e.Data)}",
+					$"<b>{e.Type}</b><br/>{JSON.Stringify(data)}",
 					MessageBoxIcon.Information);
 
 			Application.Play(MessageBoxIcon.Information);
 		}
 
-        private void buttonUpdate_Click(object sender, EventArgs e)
+		private void buttonUpdate_Click(object sender, EventArgs e)
         {
-			var disableDate = this.tagTextBoxDisableDate.Text.Split(',');
-			if(disableDate.Length > this._possibilities.Length)
-            {
-				AlertBox.Show("Lenght is 7",MessageBoxIcon.Error);
-				Application.Play(MessageBoxIcon.Error);
-				return;
-			}
-
-			bool contains = true;
-
-			disableDate.ToList().ForEach(d =>
-			{
-				if (!this._possibilities.Contains(d))
-					contains = false;
-			});
-
-            if (!contains)
-            {
-				AlertBox.Show("Must contain only mo,tu,we,th,fr,sa,su", MessageBoxIcon.Error);
-				Application.Play(MessageBoxIcon.Error);
-
-				return;
-            }
-
-			this.kendoDatePicker1.Options.disableDates = disableDate;
+			var daysOfWeek = this.flowLayoutPanelProperties.Controls
+				.Where(c => c is CheckBox && ((CheckBox)c).Checked)
+				.Select(c => c.Text.Substring(0, 2).ToLower()).ToArray();
+				
+			this.kendoDatePicker1.Options.disableDates = daysOfWeek;
 
 			this.kendoDatePicker1.Update();
-
 		}
     }
 }

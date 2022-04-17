@@ -17,9 +17,9 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 		private void kendoSpreadsheet1_WidgetEvent(object sender, WidgetEventArgs e)
 		{
 			AlertBox.Show(
-					$"<b>{e.Type}</b><br/>{JSON.Stringify(e.Data)}",
-					MessageBoxIcon.Information);
-
+			$"<b>{e.Type}</b><br/>{JSON.Stringify(e.Data.range["_ref"])}",
+			MessageBoxIcon.Information);
+			
 			Application.Play(MessageBoxIcon.Information);
 		}
 

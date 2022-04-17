@@ -79,10 +79,10 @@
             // 
             this.dxTileView1.Anchor = Wisej.Web.AnchorStyles.None;
             this.dxTileView1.CssStyle = ".img { width: 500px; }";
-            this.dxTileView1.Location = new System.Drawing.Point(173, 31);
+            this.dxTileView1.Location = new System.Drawing.Point(179, 31);
             this.dxTileView1.Name = "dxTileView1";
             this.dxTileView1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("dxTileView1.Options"))));
-            this.dxTileView1.Size = new System.Drawing.Size(742, 495);
+            this.dxTileView1.Size = new System.Drawing.Size(731, 495);
             this.dxTileView1.TabIndex = 0;
             widgetEventHandler1.Name = "itemTemplate";
             widgetEventHandler1.Source = resources.GetString("widgetEventHandler1.Source");
@@ -198,6 +198,7 @@
             // 
             // dxTileView
             // 
+            this.MinimumSize = new System.Drawing.Size(1181, 726);
             this.Name = "dxTileView";
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);

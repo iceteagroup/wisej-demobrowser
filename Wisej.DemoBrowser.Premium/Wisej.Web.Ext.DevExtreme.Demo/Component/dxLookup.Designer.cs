@@ -189,6 +189,7 @@
             // 
             // dxLookup
             // 
+            this.MinimumSize = new System.Drawing.Size(773, 720);
             this.Name = "dxLookup";
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);

@@ -65,8 +65,6 @@
             this.flowLayoutPanel1.Controls.Add(this.checkBoxEditable);
             this.flowLayoutPanel1.Controls.Add(this.checkBoxEnableHeader);
             this.flowLayoutPanel1.Controls.Add(this.checkBoxEnableSort);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 38);
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 434);
             // 
             // dataTable1
             // 
@@ -143,6 +141,7 @@
             // 
             // DataTable
             // 
+            this.MinimumSize = new System.Drawing.Size(1194, 571);
             this.Name = "DataTable";
             this.Load += new System.EventHandler(this.DataTable_Load);
             this.groupBox1.ResumeLayout(false);

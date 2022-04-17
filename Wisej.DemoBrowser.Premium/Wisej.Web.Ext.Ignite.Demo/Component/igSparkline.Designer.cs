@@ -195,6 +195,7 @@
             // 
             // igSparkline
             // 
+            this.MinimumSize = new System.Drawing.Size(835, 650);
             this.Name = "igSparkline";
             this.Load += new System.EventHandler(this.igSparkline_Load);
             this.groupBox1.ResumeLayout(false);

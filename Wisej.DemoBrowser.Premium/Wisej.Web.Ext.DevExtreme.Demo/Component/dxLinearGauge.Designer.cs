@@ -140,6 +140,7 @@
             // 
             // dxLinearGauge
             // 
+            this.MinimumSize = new System.Drawing.Size(1097, 589);
             this.Name = "dxLinearGauge";
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);

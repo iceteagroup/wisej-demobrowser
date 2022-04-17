@@ -155,6 +155,7 @@
             // 
             // igHtmlEditor
             // 
+            this.MinimumSize = new System.Drawing.Size(985, 552);
             this.Name = "igHtmlEditor";
             this.Load += new System.EventHandler(this.igHtmlEditor_Load);
             this.groupBox1.ResumeLayout(false);

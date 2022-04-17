@@ -33,19 +33,25 @@
             this.numericUpDown1 = new Wisej.Web.NumericUpDown();
             this.checkBox2 = new Wisej.Web.CheckBox();
             this.kendoBreadcrumb1 = new Wisej.Web.Ext.Kendo.kendoBreadcrumb();
-            this.panel.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.flowLayoutPanelProperties.SuspendLayout();
+            this.panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // panel
-            // 
-            this.panel.Controls.Add(this.kendoBreadcrumb1);
             // 
             // buttonUpdate
             // 
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
+            // 
+            // flowLayoutPanelProperties
+            // 
+            this.flowLayoutPanelProperties.Controls.Add(this.checkBox1);
+            this.flowLayoutPanelProperties.Controls.Add(this.checkBox2);
+            this.flowLayoutPanelProperties.Controls.Add(this.numericUpDown1);
+            // 
+            // panel
+            // 
+            this.panel.Controls.Add(this.kendoBreadcrumb1);
             // 
             // linkDemo
             // 
@@ -58,12 +64,6 @@
             // linkDocs
             // 
             this.linkDocs.Text = "https://docs.telerik.com/kendo-ui/controls/navigation/breadcrumb/overview";
-            // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanelProperties.Controls.Add(this.checkBox1);
-            this.flowLayoutPanelProperties.Controls.Add(this.checkBox2);
-            this.flowLayoutPanelProperties.Controls.Add(this.numericUpDown1);
             // 
             // checkBox1
             // 
@@ -119,19 +119,20 @@
             // kendoBreadcrumb1
             // 
             this.kendoBreadcrumb1.Anchor = Wisej.Web.AnchorStyles.None;
-            this.kendoBreadcrumb1.Location = new System.Drawing.Point(255, 235);
+            this.kendoBreadcrumb1.Location = new System.Drawing.Point(334, 235);
             this.kendoBreadcrumb1.Name = "kendoBreadcrumb1";
             this.kendoBreadcrumb1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("kendoBreadcrumb1.Options"))));
-            this.kendoBreadcrumb1.Size = new System.Drawing.Size(578, 88);
+            this.kendoBreadcrumb1.Size = new System.Drawing.Size(421, 88);
             this.kendoBreadcrumb1.TabIndex = 0;
             this.kendoBreadcrumb1.Text = "kendoBreadcrumb1";
             // 
             // kendoBreadcrumb
             // 
+            this.MinimumSize = new System.Drawing.Size(840, 503);
             this.Name = "kendoBreadcrumb";
-            this.panel.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.flowLayoutPanelProperties.ResumeLayout(false);
+            this.panel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

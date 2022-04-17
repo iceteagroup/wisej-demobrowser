@@ -184,6 +184,7 @@
             // 
             // dxDateBox
             // 
+            this.MinimumSize = new System.Drawing.Size(793, 687);
             this.Name = "dxDateBox";
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);

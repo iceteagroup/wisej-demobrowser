@@ -60,7 +60,7 @@
             // 
             this.linkDocs.Text = "https://docs.telerik.com/kendo-ui/controls/charts/overview";
             // 
-            // flowLayoutPanel1
+            // flowLayoutPanelProperties
             // 
             this.flowLayoutPanelProperties.Controls.Add(this.checkBox1);
             this.flowLayoutPanelProperties.Controls.Add(this.checkBox2);
@@ -156,6 +156,7 @@
             // 
             // kendoChart
             // 
+            this.MinimumSize = new System.Drawing.Size(812, 623);
             this.Name = "kendoChart";
             this.panel.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);

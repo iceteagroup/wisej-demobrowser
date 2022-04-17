@@ -62,8 +62,6 @@
             // 
             this.flowLayoutPanelProperties.Controls.Add(this.checkBoxShowButtons);
             this.flowLayoutPanelProperties.Controls.Add(this.comboBoxTickPlacement);
-            this.flowLayoutPanelProperties.Location = new System.Drawing.Point(16, 35);
-            this.flowLayoutPanelProperties.Size = new System.Drawing.Size(218, 437);
             // 
             // kendoSlider1
             // 
@@ -113,11 +111,12 @@
             this.comboBoxTickPlacement.LabelText = "Tick placement";
             this.comboBoxTickPlacement.Location = new System.Drawing.Point(3, 35);
             this.comboBoxTickPlacement.Name = "comboBoxTickPlacement";
-            this.comboBoxTickPlacement.Size = new System.Drawing.Size(212, 46);
+            this.comboBoxTickPlacement.Size = new System.Drawing.Size(212, 57);
             this.comboBoxTickPlacement.TabIndex = 1;
             // 
             // kendoSlider
             // 
+            this.MinimumSize = new System.Drawing.Size(787, 603);
             this.Name = "kendoSlider";
             this.panel.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);

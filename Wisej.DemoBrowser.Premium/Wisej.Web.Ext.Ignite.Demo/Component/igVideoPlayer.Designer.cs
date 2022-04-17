@@ -174,6 +174,7 @@
             // 
             // igVideoPlayer
             // 
+            this.MinimumSize = new System.Drawing.Size(833, 652);
             this.Name = "igVideoPlayer";
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);

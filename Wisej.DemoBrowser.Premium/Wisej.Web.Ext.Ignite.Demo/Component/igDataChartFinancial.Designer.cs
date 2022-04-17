@@ -46,7 +46,6 @@
             // 
             // buttonUpdate
             // 
-            this.buttonUpdate.Location = new System.Drawing.Point(16, 476);
             this.buttonUpdate.TabIndex = 5;
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
@@ -77,7 +76,6 @@
             this.flowLayoutPanel1.Controls.Add(this.comboBox3);
             this.flowLayoutPanel1.Controls.Add(this.buttonLoad);
             this.flowLayoutPanel1.Controls.Add(this.buttonExportImage);
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 490);
             // 
             // igDataChart1
             // 
@@ -116,6 +114,7 @@
             // 
             // comboBox1
             // 
+            this.comboBox1.DropDownStyle = Wisej.Web.ComboBoxStyle.DropDownList;
             this.flowLayoutPanel1.SetFillWeight(this.comboBox1, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.comboBox1, true);
             this.comboBox1.Items.AddRange(new object[] {
@@ -127,10 +126,10 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(212, 57);
             this.comboBox1.TabIndex = 0;
-            this.comboBox1.Text = "dragZoom";
             // 
             // comboBox2
             // 
+            this.comboBox2.DropDownStyle = Wisej.Web.ComboBoxStyle.DropDownList;
             this.flowLayoutPanel1.SetFillWeight(this.comboBox2, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.comboBox2, true);
             this.comboBox2.Items.AddRange(new object[] {
@@ -144,10 +143,10 @@
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(212, 57);
             this.comboBox2.TabIndex = 1;
-            this.comboBox2.Text = "none";
             // 
             // comboBox3
             // 
+            this.comboBox3.DropDownStyle = Wisej.Web.ComboBoxStyle.DropDownList;
             this.flowLayoutPanel1.SetFillWeight(this.comboBox3, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.comboBox3, true);
             this.comboBox3.Items.AddRange(new object[] {
@@ -160,10 +159,10 @@
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(212, 57);
             this.comboBox3.TabIndex = 2;
-            this.comboBox3.Text = "behindSeries";
             // 
             // igDataChartFinancial
             // 
+            this.MinimumSize = new System.Drawing.Size(932, 594);
             this.Name = "igDataChartFinancial";
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);

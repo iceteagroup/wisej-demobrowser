@@ -49,7 +49,6 @@
             // 
             // buttonUpdate
             // 
-            this.buttonUpdate.Location = new System.Drawing.Point(16, 476);
             this.buttonUpdate.TabIndex = 1;
             // 
             // panel
@@ -79,7 +78,6 @@
             this.flowLayoutPanel1.Controls.Add(this.numericUpDown2);
             this.flowLayoutPanel1.Controls.Add(this.textBox2);
             this.flowLayoutPanel1.Controls.Add(this.button1);
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 490);
             // 
             // igMap1
             // 
@@ -157,6 +155,7 @@
             // 
             // igMap
             // 
+            this.MinimumSize = new System.Drawing.Size(994, 653);
             this.Name = "igMap";
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);

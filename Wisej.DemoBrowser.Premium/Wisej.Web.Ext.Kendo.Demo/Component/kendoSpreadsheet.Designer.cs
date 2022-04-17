@@ -70,8 +70,6 @@
             this.flowLayoutPanelProperties.Controls.Add(this.numericUpDown2);
             this.flowLayoutPanelProperties.Controls.Add(this.buttonExport);
             this.flowLayoutPanelProperties.Controls.Add(this.buttonPDF);
-            this.flowLayoutPanelProperties.Location = new System.Drawing.Point(16, 35);
-            this.flowLayoutPanelProperties.Size = new System.Drawing.Size(218, 437);
             // 
             // buttonPDF
             // 
@@ -172,6 +170,7 @@
             // 
             // kendoSpreadsheet
             // 
+            this.MinimumSize = new System.Drawing.Size(900, 610);
             this.Name = "kendoSpreadsheet";
             this.panel.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);

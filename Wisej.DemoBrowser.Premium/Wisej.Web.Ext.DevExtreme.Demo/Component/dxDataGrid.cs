@@ -30,7 +30,6 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
 			this.dxDataGrid1.Options.cellHintEnabled = this.checkBox4.Checked;
 			this.dxDataGrid1.Options.columnAutoWidth = this.checkBox5.Checked;
 			this.dxDataGrid1.Options.columnHidingEnabled = this.checkBox6.Checked;
-			this.dxDataGrid1.Options.wordWrapEnabled = this.checkBox7.Checked;
 
 			this.dxDataGrid1.Update();
 		}

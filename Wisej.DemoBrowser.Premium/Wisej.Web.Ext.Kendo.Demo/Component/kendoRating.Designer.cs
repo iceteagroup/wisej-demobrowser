@@ -187,6 +187,7 @@
             // 
             // kendoRating
             // 
+            this.MinimumSize = new System.Drawing.Size(864, 677);
             this.Name = "kendoRating";
             this.panel.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);

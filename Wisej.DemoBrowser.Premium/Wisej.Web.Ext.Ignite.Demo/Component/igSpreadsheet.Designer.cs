@@ -33,7 +33,6 @@
             this.textBox1 = new Wisej.Web.TextBox();
             this.checkBox1 = new Wisej.Web.CheckBox();
             this.numericUpDown1 = new Wisej.Web.NumericUpDown();
-            this.comboBox1 = new Wisej.Web.ComboBox();
             this.igSpreadsheet1 = new Wisej.Web.Ext.Ignite.igSpreadsheet();
             this.checkBox2 = new Wisej.Web.CheckBox();
             this.checkBox3 = new Wisej.Web.CheckBox();
@@ -78,7 +77,6 @@
             this.flowLayoutPanel1.Controls.Add(this.checkBox2);
             this.flowLayoutPanel1.Controls.Add(this.checkBox3);
             this.flowLayoutPanel1.Controls.Add(this.textBox1);
-            this.flowLayoutPanel1.Controls.Add(this.comboBox1);
             this.flowLayoutPanel1.Controls.Add(this.numericUpDown1);
             this.flowLayoutPanel1.Controls.Add(this.buttonLoad);
             this.flowLayoutPanel1.Controls.Add(this.buttonSave);
@@ -88,7 +86,7 @@
             this.buttonLoad.AllowedFileTypes = ".xlsx";
             this.buttonLoad.HideValue = true;
             this.buttonLoad.ImageSource = "icon-file";
-            this.buttonLoad.Location = new System.Drawing.Point(3, 390);
+            this.buttonLoad.Location = new System.Drawing.Point(3, 316);
             this.buttonLoad.Margin = new Wisej.Web.Padding(3, 14, 3, 3);
             this.buttonLoad.Name = "buttonLoad";
             this.buttonLoad.Size = new System.Drawing.Size(42, 42);
@@ -99,7 +97,7 @@
             // 
             this.buttonSave.Display = Wisej.Web.Display.Icon;
             this.buttonSave.ImageSource = "icon-save";
-            this.buttonSave.Location = new System.Drawing.Point(51, 390);
+            this.buttonSave.Location = new System.Drawing.Point(51, 316);
             this.buttonSave.Margin = new Wisej.Web.Padding(3, 14, 3, 3);
             this.buttonSave.Name = "buttonSave";
             this.buttonSave.Size = new System.Drawing.Size(42, 42);
@@ -137,7 +135,7 @@
             this.flowLayoutPanel1.SetFillWeight(this.numericUpDown1, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.numericUpDown1, true);
             this.numericUpDown1.LabelText = "Zoom Level";
-            this.numericUpDown1.Location = new System.Drawing.Point(3, 316);
+            this.numericUpDown1.Location = new System.Drawing.Point(3, 242);
             this.numericUpDown1.Margin = new Wisej.Web.Padding(3, 14, 3, 3);
             this.numericUpDown1.Maximum = new decimal(new int[] {
             200,
@@ -152,24 +150,6 @@
             0,
             0,
             0});
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.DropDownStyle = Wisej.Web.ComboBoxStyle.DropDownList;
-            this.flowLayoutPanel1.SetFillWeight(this.comboBox1, 1);
-            this.flowLayoutPanel1.SetFlowBreak(this.comboBox1, true);
-            this.comboBox1.Items.AddRange(new object[] {
-            "down",
-            "right",
-            "up",
-            "left"});
-            this.comboBox1.LabelText = "Enter Key Nav Direction";
-            this.comboBox1.Location = new System.Drawing.Point(3, 242);
-            this.comboBox1.Margin = new Wisej.Web.Padding(3, 14, 3, 3);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(212, 57);
-            this.comboBox1.TabIndex = 4;
-            this.comboBox1.Text = "down";
             // 
             // igSpreadsheet1
             // 
@@ -216,6 +196,7 @@
             // 
             // igSpreadsheet
             // 
+            this.MinimumSize = new System.Drawing.Size(828, 675);
             this.Name = "igSpreadsheet";
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
@@ -235,7 +216,6 @@
 		private CheckBox checkBox1;
 		private TextBox textBox1;
 		private NumericUpDown numericUpDown1;
-		private ComboBox comboBox1;
 		private CheckBox checkBox3;
 		private CheckBox checkBox2;
 	}

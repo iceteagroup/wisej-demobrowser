@@ -50,7 +50,6 @@
             // 
             // buttonUpdate
             // 
-            this.buttonUpdate.Location = new System.Drawing.Point(16, 476);
             this.buttonUpdate.TabIndex = 4;
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
@@ -80,7 +79,6 @@
             this.flowLayoutPanel1.Controls.Add(this.groupBox2);
             this.flowLayoutPanel1.Controls.Add(this.buttonLoad);
             this.flowLayoutPanel1.Controls.Add(this.buttonExportImage);
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 490);
             // 
             // igDataChart1
             // 
@@ -195,6 +193,7 @@
             // 
             // igDataChart
             // 
+            this.MinimumSize = new System.Drawing.Size(926, 712);
             this.Name = "igDataChart";
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);

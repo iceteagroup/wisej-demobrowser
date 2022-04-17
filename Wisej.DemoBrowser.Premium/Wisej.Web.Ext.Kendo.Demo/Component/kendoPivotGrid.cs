@@ -2,6 +2,7 @@
 using System.IO;
 using System.Net;
 using System.Web;
+using Wisej.Core;
 using Wisej.Web;
 
 namespace Wisej.Web.Ext.Kendo.Demo.Component
@@ -43,7 +44,7 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 		private void ExportDocument(HttpResponse response, string base64Data, string fileName)
 		{
 			var bytes = Convert.FromBase64String(base64Data);
-			response.AddHeader("Content-Disposition", $"attachment; filename={fileName}");
+			response.AppendHeader("Content-Disposition", $"attachment; filename={fileName}");
 			response.OutputStream.Write(bytes, 0, bytes.Length);
 		}
 

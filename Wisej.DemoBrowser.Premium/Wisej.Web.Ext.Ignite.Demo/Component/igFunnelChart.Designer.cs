@@ -53,7 +53,6 @@
             // 
             // buttonUpdate
             // 
-            this.buttonUpdate.Location = new System.Drawing.Point(16, 476);
             this.buttonUpdate.TabIndex = 5;
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
@@ -87,7 +86,6 @@
             this.flowLayoutPanel1.Controls.Add(this.numericUpDown1);
             this.flowLayoutPanel1.Controls.Add(this.numericUpDown2);
             this.flowLayoutPanel1.Controls.Add(this.comboBox1);
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 490);
             // 
             // label4
             // 
@@ -232,6 +230,7 @@
             // 
             // igFunnelChart
             // 
+            this.MinimumSize = new System.Drawing.Size(1209, 643);
             this.Name = "igFunnelChart";
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);

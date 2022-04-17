@@ -77,11 +77,13 @@
             // 
             // dxFunnel1
             // 
-            this.dxFunnel1.Anchor = Wisej.Web.AnchorStyles.None;
-            this.dxFunnel1.Location = new System.Drawing.Point(210, 35);
+            this.dxFunnel1.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
+            | Wisej.Web.AnchorStyles.Left) 
+            | Wisej.Web.AnchorStyles.Right)));
+            this.dxFunnel1.Location = new System.Drawing.Point(51, 35);
             this.dxFunnel1.Name = "dxFunnel1";
             this.dxFunnel1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("dxFunnel1.Options"))));
-            this.dxFunnel1.Size = new System.Drawing.Size(669, 489);
+            this.dxFunnel1.Size = new System.Drawing.Size(987, 489);
             this.dxFunnel1.TabIndex = 0;
             widgetFunction1.Name = "customizeText";
             widgetFunction1.Source = "return \"<span style=\'font-size: 28px\'>\" +\r\n                    arguments[0].perce" +
@@ -208,6 +210,7 @@
             // 
             // dxFunnel
             // 
+            this.MinimumSize = new System.Drawing.Size(949, 691);
             this.Name = "dxFunnel";
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);

@@ -475,7 +475,23 @@
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/PictureAndText.svg",
 				"docsUrl": "https://docs.wisej.com/docs/controls/content/picturebox",
 				"description-en": "The <b>Wisej.Web.PictureBox</b> is used to display graphics from a bitmap, metafile, icon, JPEG, GIF, or PNG file.",
-				"description-fr": "Le contrôle <Wisej.Web.PictureBox</b> peut être utilisé pour afficher des graphiques à partir d'un fichier bitmap, metafile, icon, JPEG, GIF ou bien PNG"
+				"description-fr": "Le contrôle <b>Wisej.Web.PictureBox</b> peut être utilisé pour afficher des graphiques à partir d'un fichier bitmap, metafile, icon, JPEG, GIF ou bien PNG"
+			}
+		},
+		"Shape": {
+			"Features": {
+				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Content/Wisej.DemoBrowser.Shape",
+				"assembly": "Features, Wisej.DemoBrowser.Shape.dll",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/ShapeArcPie.svg",
+				"docsUrl": "https://docs.wisej.com/docs/controls/content/shape",
+				"description-en": "The <b>Wisej.Web.Shape</b> control is used to create any kind of shape by modifying the various properties of the Shape control."
+			},
+			"Appearance": {
+				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Content/Wisej.DemoBrowser.Shape",
+				"assembly": "Appearance, Wisej.DemoBrowser.Shape.dll",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/ShapeArcPie.svg",
+				"docsUrl": "https://docs.wisej.com/docs/controls/content/shape",
+				"description-en": "The <b>Wisej.Web.Shape</b> control is used to create any kind of shape by modifying the various properties of the Shape control."
 			}
 		}
 	},

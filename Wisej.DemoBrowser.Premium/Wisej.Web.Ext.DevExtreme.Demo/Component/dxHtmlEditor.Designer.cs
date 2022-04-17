@@ -172,12 +172,13 @@
             "clear"});
             this.checkedListBox1.Location = new System.Drawing.Point(3, 262);
             this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(195, 201);
+            this.checkedListBox1.Size = new System.Drawing.Size(195, 170);
             this.checkedListBox1.TabIndex = 15;
             this.checkedListBox1.AfterItemCheck += new Wisej.Web.ItemCheckEventHandler(this.checkedListBox1_AfterItemCheck);
             // 
             // dxHtmlEditor
             // 
+            this.MinimumSize = new System.Drawing.Size(1144, 572);
             this.Name = "dxHtmlEditor";
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);

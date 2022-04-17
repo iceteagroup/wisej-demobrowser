@@ -46,8 +46,13 @@
             // 
             this.linkDocs.Text = "https://js.devexpress.com/Documentation/Guide/Widgets/RangeSlider/Overview/";
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Size = new System.Drawing.Size(250, 534);
+            // 
             // buttonUpdate
             // 
+            this.buttonUpdate.Location = new System.Drawing.Point(16, 466);
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
             // linkDemo
@@ -62,6 +67,7 @@
             // panel
             // 
             this.panel.Controls.Add(this.dxRangeSlider1);
+            this.panel.Size = new System.Drawing.Size(570, 534);
             // 
             // flowLayoutPanel1
             // 
@@ -71,13 +77,14 @@
             this.flowLayoutPanel1.Controls.Add(this.numericUpDown2);
             this.flowLayoutPanel1.Controls.Add(this.textBox1);
             this.flowLayoutPanel1.Controls.Add(this.textBox2);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 412);
             // 
             // dxRangeSlider1
             // 
-            this.dxRangeSlider1.Anchor = Wisej.Web.AnchorStyles.None;
-            this.dxRangeSlider1.Location = new System.Drawing.Point(294, 250);
+            this.dxRangeSlider1.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Left | Wisej.Web.AnchorStyles.Right)));
+            this.dxRangeSlider1.Location = new System.Drawing.Point(164, 237);
             this.dxRangeSlider1.Name = "dxRangeSlider1";
-            this.dxRangeSlider1.Size = new System.Drawing.Size(500, 59);
+            this.dxRangeSlider1.Size = new System.Drawing.Size(239, 59);
             this.dxRangeSlider1.TabIndex = 0;
             // 
             // numericUpDown1
@@ -175,7 +182,9 @@
             // 
             // dxRangeSlider
             // 
+            this.MinimumSize = new System.Drawing.Size(979, 724);
             this.Name = "dxRangeSlider";
+            this.Size = new System.Drawing.Size(979, 724);
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);

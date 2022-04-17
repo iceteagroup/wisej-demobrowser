@@ -34,7 +34,6 @@ namespace Wisej.Web.Ext.Ignite.Demo.Component
 			this.igSpreadsheet1.Options.allowAddWorksheet = this.checkBox2.Checked;
 			this.igSpreadsheet1.Options.areGridlinesVisible = this.checkBox3.Checked;
 			this.igSpreadsheet1.Options.isFormulaBarVisible = this.checkBox1.Checked;
-			this.igSpreadsheet1.Options.enterKeyNavigationDirection = this.comboBox1.SelectedItem;
 
 			this.igSpreadsheet1.Update();
 		}

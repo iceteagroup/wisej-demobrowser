@@ -206,6 +206,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wisej.DemoBrowser.Tooltip",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wisej.DemoBrowser.TourPanel", "Demos\Extensions\Wisej.DemoBrowser.TourPanel\Wisej.DemoBrowser.TourPanel.csproj", "{3F756BE7-A1C3-4A11-981D-A3D012A2BC4B}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wisej.DemoBrowser.Shape", "Demos\Content\Wisej.DemoBrowser.Shape\Wisej.DemoBrowser.Shape.csproj", "{53838866-F345-4C28-A698-F34AEA57DB36}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -564,6 +566,10 @@ Global
 		{3F756BE7-A1C3-4A11-981D-A3D012A2BC4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3F756BE7-A1C3-4A11-981D-A3D012A2BC4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3F756BE7-A1C3-4A11-981D-A3D012A2BC4B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53838866-F345-4C28-A698-F34AEA57DB36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53838866-F345-4C28-A698-F34AEA57DB36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53838866-F345-4C28-A698-F34AEA57DB36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53838866-F345-4C28-A698-F34AEA57DB36}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -666,6 +672,7 @@ Global
 		{8F9248BD-0FA9-4F8D-A183-077A8517FFDC} = {E9662BDC-2195-4EDB-ACEE-71402C99178E}
 		{0491ECAE-8E84-4528-AB74-3AC5CDCC3387} = {72C4514F-D281-46A8-9B9D-DC28E3AE470F}
 		{3F756BE7-A1C3-4A11-981D-A3D012A2BC4B} = {C51A27C9-479B-478F-8158-62189CA32E59}
+		{53838866-F345-4C28-A698-F34AEA57DB36} = {3AC0DACA-7F81-448E-9575-FFAA60A08F43}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7FE19C61-811C-4966-BC10-2A1D53829B5A}

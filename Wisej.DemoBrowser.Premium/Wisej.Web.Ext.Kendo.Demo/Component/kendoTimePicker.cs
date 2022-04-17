@@ -12,16 +12,21 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 			this.kendoTimePicker1.Instance.onChange += new WidgetEventHandler(kendoTimePicker1_WidgetEvent);
 		}
 
-		private void kendoTimePicker1_WidgetEvent(object sender, WidgetEventArgs e)
+		private async void kendoTimePicker1_WidgetEvent(object sender, WidgetEventArgs e)
 		{
+			var data = e.Data;
+
+			if (e.Type == "change")
+				data = await this.kendoTimePicker1.Instance.valueAsync();
+
 			AlertBox.Show(
-					$"<b>{e.Type}</b><br/>{JSON.Stringify(e.Data)}",
+					$"<b>{e.Type}</b><br/>{JSON.Stringify(data)}",
 					MessageBoxIcon.Information);
 
 			Application.Play(MessageBoxIcon.Information);
 		}
 
-        protected override void OnLoad(EventArgs e)
+		protected override void OnLoad(EventArgs e)
         {
             base.OnLoad(e);
 

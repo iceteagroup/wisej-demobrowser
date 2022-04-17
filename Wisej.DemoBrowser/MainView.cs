@@ -424,7 +424,14 @@ namespace Wisej.DemoBrowser
 				foreach (var node in this.CategoryNodes)
 					ProcessNodesContain(node.Nodes, phrase);
 
-				this.treeViewComponents.SelectedNode = this.treeViewComponents.Nodes[0] ?? null;
+				if (this.treeViewComponents.Nodes.Count > 0)
+                {
+					this.treeViewComponents.SelectedNode = this.treeViewComponents.Nodes[0];
+                }
+                else
+                {
+					this.treeViewComponents.SelectedNode = null;
+				}
 			}
 			else
 			{

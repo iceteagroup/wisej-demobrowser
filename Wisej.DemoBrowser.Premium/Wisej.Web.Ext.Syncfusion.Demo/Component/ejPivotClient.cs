@@ -54,8 +54,9 @@ namespace Wisej.Web.Ext.Syncfusion.Demo.Component
 
 		private void ExportPivotClientData(WebRequestEventArgs webRequestEvent)
 		{
-			var pivotClientExport = new PivotClientExport();
-			pivotClientExport.ExportPivotClient("myPivotClient", webRequestEvent.Request.Form[0], webRequestEvent.Response);
+			// TODO: Wisej 3.
+			//var pivotClientExport = new PivotClientExport();
+			//pivotClientExport.ExportPivotClient("myPivotClient", webRequestEvent.Request.Form[0], webRequestEvent.Response);
 		}
 
 		private DataTable GenerateDataSource()

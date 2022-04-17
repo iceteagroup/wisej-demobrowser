@@ -41,8 +41,13 @@
             // 
             this.linkDocs.Text = "https://docs.webix.com/desktop__chat.html";
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Size = new System.Drawing.Size(250, 433);
+            // 
             // buttonUpdate
             // 
+            this.buttonUpdate.Location = new System.Drawing.Point(16, 365);
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
             // linkDemo
@@ -56,14 +61,14 @@
             // panel
             // 
             this.panel.Controls.Add(this.chat1);
+            this.panel.Size = new System.Drawing.Size(710, 433);
             // 
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.Controls.Add(this.checkBoxCompact);
             this.flowLayoutPanel1.Controls.Add(this.checkBoxAllowFile);
             this.flowLayoutPanel1.Controls.Add(this.comboBoxChatType);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 38);
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 434);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 307);
             // 
             // chat1
             // 
@@ -71,7 +76,7 @@
             this.chat1.Enabled = false;
             this.chat1.Location = new System.Drawing.Point(8, 8);
             this.chat1.Name = "chat1";
-            this.chat1.Size = new System.Drawing.Size(1073, 542);
+            this.chat1.Size = new System.Drawing.Size(692, 415);
             this.chat1.TabIndex = 11;
             this.chat1.Text = "chat1";
             // 
@@ -126,7 +131,9 @@
             // 
             // Chat
             // 
+            this.MinimumSize = new System.Drawing.Size(1119, 623);
             this.Name = "Chat";
+            this.Size = new System.Drawing.Size(1119, 623);
             this.Load += new System.EventHandler(this.Chat_Load);
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);

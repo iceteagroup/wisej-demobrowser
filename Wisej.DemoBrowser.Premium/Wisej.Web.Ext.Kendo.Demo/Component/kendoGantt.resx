@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="kendoGantt1.Options" xml:space="preserve">
-    <value>{"dataSource":[{"id":1,"orderId":0,"parentId":null,"title":"Task1","start":"2014/6/17 9:00","end":"2014/6/17 11:00"},{"id":2,"orderId":1,"parentId":null,"title":"Task2","start":"2014/6/17 12:00","end":"2014/6/17 14:00"},{"id":3,"orderId":2,"parentId":null,"title":"Task3","start":"2014/6/17 13:00","end":"2014/6/17 15:00"}]}</value>
+    <value>{"dataSource":[{"id":1,"orderId":0,"parentId":null,"title":"Task1","start":"2014/6/17 9:00","end":"2014/6/17 11:00"},{"id":2,"orderId":1,"parentId":null,"title":"Task2","start":"2014/6/17 12:00","end":"2014/6/17 14:00"},{"id":3,"orderId":2,"parentId":null,"title":"Task3","start":"2014/6/17 13:00","end":"2014/6/17 15:00"}],"tooltip":{"visible":true,"template":"#= task.title #&lt;br&gt;Begins: #= task.start #&lt;br&gt;Ends: #= task.end #"}}</value>
   </data>
   <metadata name="$this.RulerSnapLines" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>

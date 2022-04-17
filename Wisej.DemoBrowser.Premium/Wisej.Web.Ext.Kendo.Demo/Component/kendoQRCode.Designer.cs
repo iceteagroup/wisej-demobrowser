@@ -103,6 +103,7 @@
             // 
             // kendoQRCode
             // 
+            this.MinimumSize = new System.Drawing.Size(684, 470);
             this.Name = "kendoQRCode";
             this.panel.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);

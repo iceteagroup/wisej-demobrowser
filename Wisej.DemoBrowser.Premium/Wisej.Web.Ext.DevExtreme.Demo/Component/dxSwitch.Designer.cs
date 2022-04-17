@@ -60,6 +60,7 @@
             // 
             // dxSwitch
             // 
+            this.MinimumSize = new System.Drawing.Size(815, 403);
             this.Name = "dxSwitch";
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);

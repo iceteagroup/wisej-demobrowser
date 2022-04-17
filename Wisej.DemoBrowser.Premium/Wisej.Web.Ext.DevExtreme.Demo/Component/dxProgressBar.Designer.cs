@@ -168,6 +168,7 @@
             // 
             // dxProgressBar
             // 
+            this.MinimumSize = new System.Drawing.Size(784, 655);
             this.Name = "dxProgressBar";
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);

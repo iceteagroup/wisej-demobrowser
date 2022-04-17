@@ -1,452 +1,65 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
-  <PropertyGroup>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>
-    </ProductVersion>
-    <SchemaVersion>2.0</SchemaVersion>
-    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
-    <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Wisej.Web.Ext.Ignite.Demo</RootNamespace>
-    <AssemblyName>Wisej.Web.Ext.Ignite.Demo</AssemblyName>
-    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
-    <UseIISExpress>true</UseIISExpress>
-    <IISExpressSSLPort />
-    <IISExpressAnonymousAuthentication />
-    <IISExpressWindowsAuthentication />
-    <IISExpressUseClassicPipelineMode />
-    <UseGlobalApplicationHostFile />
-    <NuGetPackageImportStamp>
-    </NuGetPackageImportStamp>
-    <TargetFrameworkProfile />
-    <Use64BitIISExpress />
-    <ProjectGuid>{417F385C-7B5A-41E1-AF9E-1375ED9C5985}</ProjectGuid>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <DebugSymbols>true</DebugSymbols>
-    <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
-    <OutputPath>bin\</OutputPath>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <DebugType>pdbonly</DebugType>
-    <Optimize>true</Optimize>
-    <OutputPath>bin\</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Component\igBulletGraph.resx">
-      <DependentUpon>igBulletGraph.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Component\igColorPicker.resx">
-      <DependentUpon>igColorPicker.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Component\igDateEditor.resx">
-      <DependentUpon>igDateEditor.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Component\igGrid.resx">
-      <DependentUpon>igGrid.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Component\igHierarchicalGrid.resx">
-      <DependentUpon>igHierarchicalGrid.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Component\igHtmlEditor.resx">
-      <DependentUpon>igHtmlEditor.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Component\igLinearGauge.resx">
-      <DependentUpon>igLinearGauge.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Component\igMap.resx">
-      <DependentUpon>igMap.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Component\igPieChart.resx">
-      <DependentUpon>igPieChart.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Component\igPivotView.resx">
-      <DependentUpon>igPivotView.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Component\igRating.resx">
-      <DependentUpon>igRating.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Component\igScheduler.resx">
-      <DependentUpon>igScheduler.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Component\igShapeChart.resx">
-      <DependentUpon>igShapeChart.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Component\igSparkline.resx">
-      <DependentUpon>igSparkline.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Component\igSpreadsheet.resx">
-      <DependentUpon>igSpreadsheet.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Component\igTimePicker.resx">
-      <DependentUpon>igTimePicker.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Component\igTree.resx">
-      <DependentUpon>igTree.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Component\igTreeGrid.resx">
-      <DependentUpon>igTreeGrid.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Component\igVideoPlayer.resx">
-      <DependentUpon>igVideoPlayer.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Component\igZoombar.resx">
-      <DependentUpon>igZoombar.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Data\FinancialChart\data.json" />
-    <Content Include="Data\HtmlEditor\data.html" />
-    <Content Include="Default.html" />
-    <Content Include="Default.json" />
-    <Content Include="favicon.ico" />
-    <Content Include="Data\Sparkline\data.json" />
-    <Content Include="Data\Spreadsheet\statistic.xlsx" />
-    <EmbeddedResource Include="Themes\Ignite.mixin.theme" />
-    <None Include="Web.Debug.config">
-      <DependentUpon>Web.config</DependentUpon>
-    </None>
-    <None Include="Web.Release.config">
-      <DependentUpon>Web.config</DependentUpon>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Images\HtmlEditor\ig-html-editor-shutterstock.jpg" />
-    <EmbeddedResource Include="Images\Grid\1.jpg" />
-    <EmbeddedResource Include="Images\Grid\2.jpg" />
-    <EmbeddedResource Include="Images\Grid\3.jpg" />
-    <EmbeddedResource Include="Images\Grid\4.jpg" />
-    <EmbeddedResource Include="Images\Grid\5.jpg" />
-    <EmbeddedResource Include="Images\Grid\6.jpg" />
-    <EmbeddedResource Include="Images\Grid\7.jpg" />
-    <EmbeddedResource Include="Images\Grid\8.jpg" />
-    <EmbeddedResource Include="Images\Grid\9.jpg" />
-    <Content Include="Images\Icon Buy.png" />
-    <Content Include="Images\Icon Contact.png" />
-    <Content Include="Images\Icon Free Trial.png" />
-    <Content Include="Images\ignite.png" />
-    <Content Include="Images\Rating\Avengers.jpg" />
-    <Content Include="Images\splash.png" />
-    <Content Include="Images\Tree\bin_empty.png" />
-    <Content Include="Images\Tree\book.png" />
-    <Content Include="Images\Tree\coins.png" />
-    <Content Include="Images\Tree\coins_add.png" />
-    <Content Include="Images\Tree\computer.png" />
-    <Content Include="Images\Tree\documents-folder.png" />
-    <Content Include="Images\Tree\documents.png" />
-    <Content Include="Images\Tree\door.png" />
-    <Content Include="Images\Tree\door_in.png" />
-    <Content Include="Images\Tree\music.png" />
-    <Content Include="Images\Tree\up.png" />
-    <Content Include="Images\wisej.png" />
-    <Content Include="Web.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="Component\igBulletGraph.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Component\igBulletGraph.Designer.cs">
-      <DependentUpon>igBulletGraph.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Component\igCategoryChart.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Component\igCategoryChart.Designer.cs">
-      <DependentUpon>igCategoryChart.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Component\igColorPicker.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Component\igColorPicker.Designer.cs">
-      <DependentUpon>igColorPicker.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Component\igDataChart.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Component\igDataChart.Designer.cs">
-      <DependentUpon>igDataChart.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Component\igDataChartFinancial.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Component\igDataChartFinancial.Designer.cs">
-      <DependentUpon>igDataChartFinancial.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Component\igDataChartIndicator.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Component\igDataChartIndicator.Designer.cs">
-      <DependentUpon>igDataChartIndicator.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Component\igDateEditor.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Component\igDateEditor.Designer.cs">
-      <DependentUpon>igDateEditor.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Component\igDoughnutChart.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Component\igDoughnutChart.Designer.cs">
-      <DependentUpon>igDoughnutChart.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Component\igFinancialChart.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Component\igFinancialChart.Designer.cs">
-      <DependentUpon>igFinancialChart.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Component\igGrid.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Component\igGrid.Designer.cs">
-      <DependentUpon>igGrid.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Component\igHierarchicalGrid.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Component\igHierarchicalGrid.Designer.cs">
-      <DependentUpon>igHierarchicalGrid.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Component\igHtmlEditor.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Component\igHtmlEditor.Designer.cs">
-      <DependentUpon>igHtmlEditor.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Component\igLinearGauge.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Component\igLinearGauge.Designer.cs">
-      <DependentUpon>igLinearGauge.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Component\igMap.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Component\igMap.Designer.cs">
-      <DependentUpon>igMap.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Component\igPieChart.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Component\igPieChart.Designer.cs">
-      <DependentUpon>igPieChart.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Component\igPivotView.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Component\igPivotView.Designer.cs">
-      <DependentUpon>igPivotView.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Component\igQRCodeBarcode.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Component\igQRCodeBarcode.Designer.cs">
-      <DependentUpon>igQRCodeBarcode.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Component\igFunnelChart.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Component\igFunnelChart.Designer.cs">
-      <DependentUpon>igFunnelChart.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Component\igRadialGauge.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Component\igRadialGauge.Designer.cs">
-      <DependentUpon>igRadialGauge.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Component\igRating.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Component\igRating.Designer.cs">
-      <DependentUpon>igRating.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Component\igScheduler.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Component\igScheduler.Designer.cs">
-      <DependentUpon>igScheduler.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Component\igShapeChart.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Component\igShapeChart.Designer.cs">
-      <DependentUpon>igShapeChart.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Component\igSparkline.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Component\igSparkline.Designer.cs">
-      <DependentUpon>igSparkline.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Component\igSpreadsheet.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Component\igSpreadsheet.Designer.cs">
-      <DependentUpon>igSpreadsheet.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Component\igTimePicker.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Component\igTimePicker.Designer.cs">
-      <DependentUpon>igTimePicker.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Component\igTree.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Component\igTree.Designer.cs">
-      <DependentUpon>igTree.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Component\igTreeGrid.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Component\igTreeGrid.Designer.cs">
-      <DependentUpon>igTreeGrid.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Component\igVideoPlayer.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Component\igVideoPlayer.Designer.cs">
-      <DependentUpon>igVideoPlayer.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Component\igZoombar.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Component\igZoombar.Designer.cs">
-      <DependentUpon>igZoombar.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Component\TestBase.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Component\TestBase.Designer.cs">
-      <DependentUpon>TestBase.cs</DependentUpon>
-    </Compile>
-    <Compile Include="MainView.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MainView.Designer.cs">
-      <DependentUpon>MainView.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Popups\AddRadialGaugeRange.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Popups\AddRadialGaugeRange.Designer.cs">
-      <DependentUpon>AddRadialGaugeRange.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Program.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <PackageReference Include="Wisej-2">
-      <Version>2.5.*-*</Version>
-    </PackageReference>
-    <PackageReference Include="Wisej-2-MaterialDesign">
-      <Version>2.5.*-*</Version>
-    </PackageReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System" />
-    <Reference Include="System.Configuration" />
-    <Reference Include="System.Drawing" />
-    <Reference Include="System.Web" />
-    <Reference Include="System.Windows.Forms" />
-    <Reference Include="Telerik.Web.Captcha">
-      <HintPath>C:\Users\llruf\.nuget\packages\telerik.web.captcha.trial\1.0.0\lib\net40\Telerik.Web.Captcha.dll</HintPath>
-    </Reference>
-    <Reference Include="Wisej.Web.Ext.Ignite">
-      <HintPath>..\..\..\..\..\..\Wisej\Extensions\Premium\2.5\bin\Wisej.Web.Ext.Ignite.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Component\igCategoryChart.resx">
-      <DependentUpon>igCategoryChart.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Component\igDataChart.resx">
-      <DependentUpon>igDataChart.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Component\igDataChartFinancial.resx">
-      <DependentUpon>igDataChartFinancial.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Component\igDataChartIndicator.resx">
-      <DependentUpon>igDataChartIndicator.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Component\igDoughnutChart.resx">
-      <DependentUpon>igDoughnutChart.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Component\igFinancialChart.resx">
-      <DependentUpon>igFinancialChart.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Component\igQRCodeBarcode.resx">
-      <DependentUpon>igQRCodeBarcode.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Component\igFunnelChart.resx">
-      <DependentUpon>igFunnelChart.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Component\igRadialGauge.resx">
-      <DependentUpon>igRadialGauge.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Component\TestBase.resx">
-      <DependentUpon>TestBase.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MainView.resx">
-      <DependentUpon>MainView.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Popups\AddRadialGaugeRange.resx">
-      <DependentUpon>AddRadialGaugeRange.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <WCFMetadata Include="Connected Services\" />
-  </ItemGroup>
-  <PropertyGroup>
-    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
-    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
-  </PropertyGroup>
-  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
-  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
-  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
-  <ProjectExtensions>
-    <VisualStudio>
-      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
-        <WebProjectProperties>
-          <UseIIS>True</UseIIS>
-          <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>0</DevelopmentServerPort>
-          <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:50434/</IISUrl>
-          <NTLMAuthentication>False</NTLMAuthentication>
-          <UseCustomServer>False</UseCustomServer>
-          <CustomServerUrl>
-          </CustomServerUrl>
-          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
-        </WebProjectProperties>
-      </FlavorProperties>
-    </VisualStudio>
-  </ProjectExtensions>
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
-       Other similar extension points exist, see Microsoft.Common.targets.
-  <Target Name="BeforeBuild">
-  </Target>
-  <Target Name="AfterBuild">
-  </Target>
-  -->
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+	<PropertyGroup>
+		<TargetFrameworks>net48;net6.0</TargetFrameworks>
+		<PlatformTarget>AnyCPU</PlatformTarget>
+		<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+		<EmbeddedResourceUseDependentUponConvention>true</EmbeddedResourceUseDependentUponConvention>
+		<NoWarn>CA1416</NoWarn>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(TargetFramework.TrimEnd(`0123456789`))'=='net'">
+		<OutputPath>bin\</OutputPath>
+		<StartupObject></StartupObject>
+		<OutputType>Library</OutputType>
+		<RunCommand>$(ProgramFiles)\IIS Express\iisexpress.exe</RunCommand>
+		<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+		<RunArguments>/path:"$(MSBuildProjectDirectory)" /port:5000</RunArguments>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(TargetFramework.TrimEnd(`0123456789`))'!='net'">
+		<StartupObject>$(RootNamespace).Startup</StartupObject>
+	</PropertyGroup>
+
+	<ItemGroup Condition="'$(TargetFramework.TrimEnd(`0123456789`))'=='net'">
+		<Reference Include="System.Windows.Forms" />
+		<Compile Remove="Startup.cs" />
+		<Content Include="Startup.cs" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Remove="Images\HtmlEditor\ig-html-editor-shutterstock.jpg" />
+		<None Remove="Themes\Ignite.mixin.theme" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Content Update="Default.json">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Content>
+		<Content Update="Web.config">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Content>
+	</ItemGroup>
+
+	<ItemGroup>
+		<Content Include="Default.html">
+			<CopyToPublishDirectory>Always</CopyToPublishDirectory>
+		</Content>
+		<Content Include="favicon.ico">
+			<CopyToPublishDirectory>Always</CopyToPublishDirectory>
+		</Content>
+	</ItemGroup>
+
+	<ItemGroup>
+		<EmbeddedResource Include="Images\HtmlEditor\ig-html-editor-shutterstock.jpg" />
+		<EmbeddedResource Include="Themes\Ignite.mixin.theme" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Wisej-3" Version="3.*-*" />
+		<PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
+		<PackageReference Include="Wisej-3-Ignite" Version="3.*-*" />
+		<PackageReference Include="Wisej-3-MaterialDesign" Version="3.*-*" />
+	</ItemGroup>
+
 </Project>

@@ -50,11 +50,6 @@
             // 
             this.linkDocs.Text = "https://docs.telerik.com/kendo-ui/controls/data-management/pivotgridv2/overview";
             // 
-            // flowLayoutPanelProperties
-            // 
-            this.flowLayoutPanelProperties.Location = new System.Drawing.Point(16, 35);
-            this.flowLayoutPanelProperties.Size = new System.Drawing.Size(218, 437);
-            // 
             // kendoPivotGridV21
             // 
             this.kendoPivotGridV21.Dock = Wisej.Web.DockStyle.Fill;
@@ -67,6 +62,7 @@
             // 
             // kendoPivotGridV2
             // 
+            this.MinimumSize = new System.Drawing.Size(1264, 676);
             this.Name = "kendoPivotGridV2";
             this.panel.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);

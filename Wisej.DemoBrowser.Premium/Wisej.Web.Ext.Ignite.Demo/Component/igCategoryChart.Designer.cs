@@ -48,7 +48,6 @@
             // 
             // buttonUpdate
             // 
-            this.buttonUpdate.Location = new System.Drawing.Point(16, 476);
             this.buttonUpdate.TabIndex = 6;
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
@@ -80,7 +79,6 @@
             this.flowLayoutPanel1.Controls.Add(this.comboBox1);
             this.flowLayoutPanel1.Controls.Add(this.buttonLoad);
             this.flowLayoutPanel1.Controls.Add(this.buttonSave);
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 490);
             // 
             // comboBox1
             // 
@@ -177,6 +175,7 @@
             // 
             // igCategoryChart
             // 
+            this.MinimumSize = new System.Drawing.Size(804, 629);
             this.Name = "igCategoryChart";
             this.Load += new System.EventHandler(this.igCategoryChart_Load);
             this.groupBox1.ResumeLayout(false);

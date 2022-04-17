@@ -31,8 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(igDoughnutChart));
             Wisej.Web.Ext.Ignite.igBase.WidgetFunction widgetFunction1 = new Wisej.Web.Ext.Ignite.igBase.WidgetFunction();
             this.igDoughnutChart1 = new Wisej.Web.Ext.Ignite.igDoughnutChart();
-            this.buttonLoad = new Wisej.Web.Upload();
-            this.buttonExportData = new Wisej.Web.Button();
             this.textBox1 = new Wisej.Web.TextBox();
             this.numericUpDown1 = new Wisej.Web.NumericUpDown();
             this.groupBox2 = new Wisej.Web.GroupBox();
@@ -83,8 +81,6 @@
             this.flowLayoutPanel1.Controls.Add(this.checkBox2);
             this.flowLayoutPanel1.Controls.Add(this.numericUpDown2);
             this.flowLayoutPanel1.Controls.Add(this.groupBox2);
-            this.flowLayoutPanel1.Controls.Add(this.buttonLoad);
-            this.flowLayoutPanel1.Controls.Add(this.buttonExportData);
             // 
             // igDoughnutChart1
             // 
@@ -104,33 +100,13 @@
             this.igDoughnutChart1.WidgetFunctions = new Wisej.Web.Ext.Ignite.igBase.WidgetFunction[] {
         widgetFunction1};
             // 
-            // buttonLoad
-            // 
-            this.buttonLoad.AllowedFileTypes = ".json";
-            this.buttonLoad.HideValue = true;
-            this.buttonLoad.ImageSource = "icon-file";
-            this.buttonLoad.Location = new System.Drawing.Point(3, 381);
-            this.buttonLoad.Margin = new Wisej.Web.Padding(3, 8, 3, 3);
-            this.buttonLoad.Name = "buttonLoad";
-            this.buttonLoad.Size = new System.Drawing.Size(42, 42);
-            this.buttonLoad.TabIndex = 4;
-            this.buttonLoad.Uploaded += new Wisej.Web.UploadedEventHandler(this.buttonLoad_Uploaded);
-            // 
-            // buttonExportData
-            // 
-            this.buttonExportData.Display = Wisej.Web.Display.Icon;
-            this.buttonExportData.ImageSource = "icon-save";
-            this.buttonExportData.Location = new System.Drawing.Point(51, 381);
-            this.buttonExportData.Margin = new Wisej.Web.Padding(3, 8, 3, 3);
-            this.buttonExportData.Name = "buttonExportData";
-            this.buttonExportData.Size = new System.Drawing.Size(42, 42);
-            this.buttonExportData.TabIndex = 5;
-            this.buttonExportData.Click += new System.EventHandler(this.buttonExportData_Click);
-            // 
             // textBox1
             // 
+            this.textBox1.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Left) 
+            | Wisej.Web.AnchorStyles.Right)));
             this.textBox1.LabelText = "Country Name";
-            this.textBox1.Location = new System.Drawing.Point(9, 21);
+            this.textBox1.Location = new System.Drawing.Point(9, 25);
+            this.textBox1.Margin = new Wisej.Web.Padding(3, 8, 3, 3);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(195, 57);
             this.textBox1.TabIndex = 0;
@@ -138,8 +114,11 @@
             // 
             // numericUpDown1
             // 
+            this.numericUpDown1.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Left) 
+            | Wisej.Web.AnchorStyles.Right)));
             this.numericUpDown1.LabelText = "Population";
-            this.numericUpDown1.Location = new System.Drawing.Point(9, 86);
+            this.numericUpDown1.Location = new System.Drawing.Point(9, 96);
+            this.numericUpDown1.Margin = new Wisej.Web.Padding(3, 8, 3, 3);
             this.numericUpDown1.Maximum = new decimal(new int[] {
             2000,
             0,
@@ -164,15 +143,18 @@
             this.groupBox2.Location = new System.Drawing.Point(3, 183);
             this.groupBox2.Margin = new Wisej.Web.Padding(3, 8, 3, 3);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(212, 187);
+            this.groupBox2.Size = new System.Drawing.Size(212, 211);
             this.groupBox2.TabIndex = 3;
-            this.groupBox2.Text = "Add a new Country";
+            this.groupBox2.Text = "Add Country";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(9, 147);
+            this.button1.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Left) 
+            | Wisej.Web.AnchorStyles.Right)));
+            this.button1.Location = new System.Drawing.Point(9, 164);
+            this.button1.Margin = new Wisej.Web.Padding(3, 8, 3, 3);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(195, 27);
+            this.button1.Size = new System.Drawing.Size(195, 40);
             this.button1.TabIndex = 2;
             this.button1.Text = "Add";
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -224,6 +206,7 @@
             // 
             // igDoughnutChart
             // 
+            this.MinimumSize = new System.Drawing.Size(914, 710);
             this.Name = "igDoughnutChart";
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
@@ -241,8 +224,6 @@
 		#endregion
 
 		private Ignite.igDoughnutChart igDoughnutChart1;
-		private Upload buttonLoad;
-		private Button buttonExportData;
 		private NumericUpDown numericUpDown1;
 		private TextBox textBox1;
 		private GroupBox groupBox2;

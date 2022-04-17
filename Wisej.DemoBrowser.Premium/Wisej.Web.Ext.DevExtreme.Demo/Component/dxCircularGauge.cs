@@ -53,27 +53,5 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
 
 			return ranges;
 		}
-
-		private async void buttonExport_Click(object sender, EventArgs e)
-		{
-			var svgData = await this.dxCircularGauge1.Instance.svgAsync();
-
-			using (MemoryStream ms = new MemoryStream())
-			{
-				var sw = new StreamWriter(ms);
-				try
-				{
-					sw.Write(Regex.Unescape(svgData));
-					sw.Flush();
-					ms.Seek(0, SeekOrigin.Begin);
-
-					Application.Download(ms, "circularGauge.svg");
-				}
-				finally
-				{
-					sw.Dispose();
-				}
-			}
-		}
 	}
 }

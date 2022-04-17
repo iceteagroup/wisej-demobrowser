@@ -195,6 +195,7 @@
             // 
             // dxGantt
             // 
+            this.MinimumSize = new System.Drawing.Size(1302, 694);
             this.Name = "dxGantt";
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);

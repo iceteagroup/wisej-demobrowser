@@ -35,7 +35,6 @@
             this.checkBox3 = new Wisej.Web.CheckBox();
             this.checkBox4 = new Wisej.Web.CheckBox();
             this.checkBox5 = new Wisej.Web.CheckBox();
-            this.checkBox6 = new Wisej.Web.CheckBox();
             this.checkBox7 = new Wisej.Web.CheckBox();
             this.checkBox8 = new Wisej.Web.CheckBox();
             this.checkBox9 = new Wisej.Web.CheckBox();
@@ -68,6 +67,7 @@
             // panel
             // 
             this.panel.Controls.Add(this.dxPivotGrid1);
+            this.panel.Size = new System.Drawing.Size(1112, 560);
             // 
             // flowLayoutPanel1
             // 
@@ -76,7 +76,6 @@
             this.flowLayoutPanel1.Controls.Add(this.checkBox3);
             this.flowLayoutPanel1.Controls.Add(this.checkBox4);
             this.flowLayoutPanel1.Controls.Add(this.checkBox5);
-            this.flowLayoutPanel1.Controls.Add(this.checkBox6);
             this.flowLayoutPanel1.Controls.Add(this.checkBox7);
             this.flowLayoutPanel1.Controls.Add(this.checkBox8);
             this.flowLayoutPanel1.Controls.Add(this.checkBox9);
@@ -89,7 +88,7 @@
             this.dxPivotGrid1.Location = new System.Drawing.Point(23, 24);
             this.dxPivotGrid1.Name = "dxPivotGrid1";
             this.dxPivotGrid1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("dxPivotGrid1.Options"))));
-            this.dxPivotGrid1.Size = new System.Drawing.Size(1043, 509);
+            this.dxPivotGrid1.Size = new System.Drawing.Size(1064, 509);
             this.dxPivotGrid1.TabIndex = 0;
             // 
             // checkBox1
@@ -158,20 +157,6 @@
             this.checkBox5.TabIndex = 16;
             this.checkBox5.Text = "Show Borders";
             // 
-            // checkBox6
-            // 
-            this.checkBox6.Appearance = Wisej.Web.Appearance.Switch;
-            this.checkBox6.AutoSize = false;
-            this.checkBox6.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.checkBox6.Checked = true;
-            this.flowLayoutPanel1.SetFillWeight(this.checkBox6, 1);
-            this.flowLayoutPanel1.SetFlowBreak(this.checkBox6, true);
-            this.checkBox6.Location = new System.Drawing.Point(3, 236);
-            this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(212, 50);
-            this.checkBox6.TabIndex = 17;
-            this.checkBox6.Text = "Show Column Grand Totals";
-            // 
             // checkBox7
             // 
             this.checkBox7.Appearance = Wisej.Web.Appearance.Switch;
@@ -180,7 +165,7 @@
             this.checkBox7.Checked = true;
             this.flowLayoutPanel1.SetFillWeight(this.checkBox7, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.checkBox7, true);
-            this.checkBox7.Location = new System.Drawing.Point(3, 292);
+            this.checkBox7.Location = new System.Drawing.Point(3, 236);
             this.checkBox7.Name = "checkBox7";
             this.checkBox7.Size = new System.Drawing.Size(212, 38);
             this.checkBox7.TabIndex = 18;
@@ -194,7 +179,7 @@
             this.checkBox8.Checked = true;
             this.flowLayoutPanel1.SetFillWeight(this.checkBox8, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.checkBox8, true);
-            this.checkBox8.Location = new System.Drawing.Point(3, 336);
+            this.checkBox8.Location = new System.Drawing.Point(3, 280);
             this.checkBox8.Name = "checkBox8";
             this.checkBox8.Size = new System.Drawing.Size(212, 47);
             this.checkBox8.TabIndex = 19;
@@ -208,7 +193,7 @@
             this.checkBox9.Checked = true;
             this.flowLayoutPanel1.SetFillWeight(this.checkBox9, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.checkBox9, true);
-            this.checkBox9.Location = new System.Drawing.Point(3, 389);
+            this.checkBox9.Location = new System.Drawing.Point(3, 333);
             this.checkBox9.Name = "checkBox9";
             this.checkBox9.Size = new System.Drawing.Size(212, 38);
             this.checkBox9.TabIndex = 20;
@@ -217,8 +202,8 @@
             // dxPivotGrid
             // 
             this.AutoScroll = true;
+            this.MinimumSize = new System.Drawing.Size(1028, 687);
             this.Name = "dxPivotGrid";
-            this.Size = new System.Drawing.Size(1479, 750);
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
@@ -233,7 +218,6 @@
 		private CheckBox checkBox9;
 		private CheckBox checkBox8;
 		private CheckBox checkBox7;
-		private CheckBox checkBox6;
 		private CheckBox checkBox5;
 		private CheckBox checkBox4;
 		private CheckBox checkBox3;
