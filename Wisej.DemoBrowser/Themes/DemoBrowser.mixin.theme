@@ -345,6 +345,20 @@
 					}
 				}
 			}
+		},
+		"tooltip": {
+			"inherit": "tooltip",
+			"states": {
+				"default": {
+					"properties": {
+						"offsetLeft": 0,
+						"placeMethod": "widget",
+						"position": "top-center",
+						"maxWidth": 280,
+						"offsetBottom": 10
+					}
+				}
+			}
 		}
 	}
 }
