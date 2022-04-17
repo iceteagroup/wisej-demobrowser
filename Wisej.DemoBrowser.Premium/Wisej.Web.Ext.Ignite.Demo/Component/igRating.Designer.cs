@@ -34,6 +34,7 @@
             this.pictureBox1 = new Wisej.Web.PictureBox();
             this.label4 = new Wisej.Web.Label();
             this.label5 = new Wisej.Web.Label();
+            this.comboBoxPrecision = new Wisej.Web.ComboBox();
             this.groupBox1.SuspendLayout();
             this.panel.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
@@ -76,6 +77,9 @@
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.Controls.Add(this.numericUpDown1);
+            this.flowLayoutPanel1.Controls.Add(this.comboBoxPrecision);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 35);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 441);
             // 
             // igRating1
             // 
@@ -105,7 +109,7 @@
             0,
             0});
             this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(212, 57);
+            this.numericUpDown1.Size = new System.Drawing.Size(212, 46);
             this.numericUpDown1.TabIndex = 0;
             this.numericUpDown1.Value = new decimal(new int[] {
             1,
@@ -143,6 +147,21 @@
     "are going to stop the mischievous Loki and his alien army from enslaving humanit" +
     "y.";
             // 
+            // comboBoxPrecision
+            // 
+            this.comboBoxPrecision.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Left) 
+            | Wisej.Web.AnchorStyles.Right)));
+            this.comboBoxPrecision.DropDownStyle = Wisej.Web.ComboBoxStyle.DropDownList;
+            this.comboBoxPrecision.Items.AddRange(new object[] {
+            "exact",
+            "half",
+            "whole"});
+            this.comboBoxPrecision.LabelText = "Precision";
+            this.comboBoxPrecision.Location = new System.Drawing.Point(3, 55);
+            this.comboBoxPrecision.Name = "comboBoxPrecision";
+            this.comboBoxPrecision.Size = new System.Drawing.Size(212, 46);
+            this.comboBoxPrecision.TabIndex = 5;
+            // 
             // igRating
             // 
             this.Name = "igRating";
@@ -164,5 +183,6 @@
 		private Label label5;
 		private Label label4;
 		private PictureBox pictureBox1;
-	}
+        private ComboBox comboBoxPrecision;
+    }
 }

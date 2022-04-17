@@ -25,7 +25,7 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 
         private async void buttonUpdate_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(this.tagTextBoxDataSource.Text))
+            if (!string.IsNullOrEmpty(this.tagTextBoxDataSource.Text))
             {
 				var data = this.tagTextBoxDataSource.Text.Split(',');
 				IList<object> list = new List<object>();
@@ -38,7 +38,7 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 				await this.kendoMultiSelect1.Instance.setDataSourceAsync(list);
 			}
 
-			//this.kendoMultiSelect1.Options.autoClose = this.checkBoxAutoClose.Checked;
+			this.kendoMultiSelect1.Options.autoClose = this.checkBoxAutoClose.Checked;
 
 			this.kendoMultiSelect1.Update();
         }

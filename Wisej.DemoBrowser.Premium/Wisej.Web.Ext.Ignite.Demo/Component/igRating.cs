@@ -21,10 +21,18 @@ namespace Wisej.Web.Ext.Ignite.Demo.Component
 			Application.Play(MessageBoxIcon.Information);
 		}
 
-		private void buttonUpdate_Click(object sender, EventArgs e)
+        protected override void OnLoad(EventArgs e)
+        {
+            base.OnLoad(e);
+
+			this.comboBoxPrecision.SelectedIndex = 0;
+        }
+
+        private void buttonUpdate_Click(object sender, EventArgs e)
 		{
 			this.igRating1.Instance.value(this.numericUpDown1.Value);
 
+			this.igRating1.Options.precision = this.comboBoxPrecision.SelectedText;
 			this.igRating1.Update();
 		}
 	}

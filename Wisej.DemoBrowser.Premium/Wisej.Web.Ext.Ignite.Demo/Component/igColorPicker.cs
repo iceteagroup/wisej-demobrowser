@@ -26,5 +26,17 @@ namespace Wisej.Web.Ext.Ignite.Demo.Component
 		{
 			this.igColorPicker1.Update();
 		}
-	}
+
+        private async void buttonGetSelectedColor_Click(object sender, EventArgs e)
+        {
+			var color = await this.igColorPicker1.Instance.selectedColorAsync();
+
+			AlertBox.Show($"{color}",
+				MessageBoxIcon.Information);
+
+
+			Application.Play(MessageBoxIcon.Information);
+
+		}
+    }
 }

@@ -30,8 +30,10 @@
 		{
             this.label4 = new Wisej.Web.Label();
             this.igColorPicker1 = new Wisej.Web.Ext.Ignite.igColorPicker();
+            this.buttonGetSelectedColor = new Wisej.Web.Button();
             this.groupBox1.SuspendLayout();
             this.panel.SuspendLayout();
+            this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -61,6 +63,12 @@
             // 
             this.linkDocs.TabIndex = 4;
             // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Controls.Add(this.buttonGetSelectedColor);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 31);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 445);
+            // 
             // label4
             // 
             this.label4.Anchor = Wisej.Web.AnchorStyles.None;
@@ -81,11 +89,23 @@
             this.igColorPicker1.TabIndex = 0;
             this.igColorPicker1.Text = "igColorPicker1";
             // 
+            // buttonGetSelectedColor
+            // 
+            this.buttonGetSelectedColor.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Left) 
+            | Wisej.Web.AnchorStyles.Right)));
+            this.buttonGetSelectedColor.Location = new System.Drawing.Point(3, 3);
+            this.buttonGetSelectedColor.Name = "buttonGetSelectedColor";
+            this.buttonGetSelectedColor.Size = new System.Drawing.Size(212, 27);
+            this.buttonGetSelectedColor.TabIndex = 4;
+            this.buttonGetSelectedColor.Text = "Get selected color";
+            this.buttonGetSelectedColor.Click += new System.EventHandler(this.buttonGetSelectedColor_Click);
+            // 
             // igColorPicker
             // 
             this.Name = "igColorPicker";
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
+            this.flowLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -95,5 +115,6 @@
 
 		private Ignite.igColorPicker igColorPicker1;
 		private Label label4;
+        private Button buttonGetSelectedColor;
     }
 }

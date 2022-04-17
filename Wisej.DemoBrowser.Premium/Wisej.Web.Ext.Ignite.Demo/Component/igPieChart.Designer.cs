@@ -83,6 +83,8 @@
             this.flowLayoutPanel1.Controls.Add(this.numericUpDown2);
             this.flowLayoutPanel1.Controls.Add(this.comboBox1);
             this.flowLayoutPanel1.Controls.Add(this.groupBox2);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 35);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 441);
             // 
             // igPieChart1
             // 
@@ -107,7 +109,7 @@
             this.groupBox2.Controls.Add(this.textBox1);
             this.flowLayoutPanel1.SetFillWeight(this.groupBox2, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.groupBox2, true);
-            this.groupBox2.Location = new System.Drawing.Point(3, 253);
+            this.groupBox2.Location = new System.Drawing.Point(3, 231);
             this.groupBox2.Margin = new Wisej.Web.Padding(3, 12, 3, 3);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(212, 182);
@@ -116,27 +118,33 @@
             // 
             // button1
             // 
+            this.button1.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Left) 
+            | Wisej.Web.AnchorStyles.Right)));
             this.button1.Location = new System.Drawing.Point(6, 146);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(183, 27);
+            this.button1.Size = new System.Drawing.Size(200, 27);
             this.button1.TabIndex = 2;
             this.button1.Text = "Add";
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // numericUpDown1
             // 
+            this.numericUpDown1.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Left) 
+            | Wisej.Web.AnchorStyles.Right)));
             this.numericUpDown1.LabelText = "Budget";
             this.numericUpDown1.Location = new System.Drawing.Point(6, 83);
             this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(183, 57);
+            this.numericUpDown1.Size = new System.Drawing.Size(200, 46);
             this.numericUpDown1.TabIndex = 1;
             // 
             // textBox1
             // 
+            this.textBox1.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Left) 
+            | Wisej.Web.AnchorStyles.Right)));
             this.textBox1.LabelText = "Department";
             this.textBox1.Location = new System.Drawing.Point(6, 22);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(183, 57);
+            this.textBox1.Size = new System.Drawing.Size(200, 46);
             this.textBox1.TabIndex = 0;
             // 
             // checkBox2
@@ -187,7 +195,7 @@
             0,
             0});
             this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(212, 57);
+            this.numericUpDown2.Size = new System.Drawing.Size(212, 46);
             this.numericUpDown2.TabIndex = 2;
             this.numericUpDown2.Value = new decimal(new int[] {
             2,
@@ -205,10 +213,10 @@
             "multiple",
             "manual"});
             this.comboBox1.LabelText = "Selection Mode";
-            this.comboBox1.Location = new System.Drawing.Point(3, 181);
+            this.comboBox1.Location = new System.Drawing.Point(3, 170);
             this.comboBox1.Margin = new Wisej.Web.Padding(3, 12, 3, 3);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(212, 57);
+            this.comboBox1.Size = new System.Drawing.Size(212, 46);
             this.comboBox1.TabIndex = 3;
             this.comboBox1.Text = "single";
             // 
