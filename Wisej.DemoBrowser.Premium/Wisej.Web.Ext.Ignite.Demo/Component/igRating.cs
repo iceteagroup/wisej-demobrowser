@@ -32,7 +32,7 @@ namespace Wisej.Web.Ext.Ignite.Demo.Component
 		{
 			this.igRating1.Instance.value(this.numericUpDown1.Value);
 
-			this.igRating1.Options.precision = this.comboBoxPrecision.SelectedText;
+			this.igRating1.Options.precision = this.comboBoxPrecision.SelectedItem.ToString();
 			this.igRating1.Update();
 		}
 	}

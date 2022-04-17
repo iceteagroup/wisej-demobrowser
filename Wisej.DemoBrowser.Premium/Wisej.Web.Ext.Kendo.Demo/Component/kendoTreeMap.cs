@@ -19,7 +19,7 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 
         private void buttonUpdate_Click(object sender, EventArgs e)
         {
-            this.kendoTreeMap1.Options.type = this.comboBoxType.SelectedText?.ToLower();
+            this.kendoTreeMap1.Options.type = this.comboBoxType.SelectedItem.ToString()?.ToLower();
 
             this.kendoTreeMap1.Update();
         }

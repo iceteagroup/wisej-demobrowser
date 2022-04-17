@@ -130,7 +130,7 @@ namespace Wisej.Web.Ext.Webix.Demo.Component
 		private void buttonUpdate_Click(object sender, EventArgs e)
         {
 			this.treeTable1.Options.editable = this.checkBoxEditable.Checked;
-			this.treeTable1.Options.editaction = this.comboBoxEditaction.SelectedText;
+			this.treeTable1.Options.editaction = this.comboBoxEditaction.SelectedItem.ToString();
 			this.treeTable1.Options.multiselect = this.checkBoxEnableMultiSelect.Checked;
 
 			this.treeTable1.Update();

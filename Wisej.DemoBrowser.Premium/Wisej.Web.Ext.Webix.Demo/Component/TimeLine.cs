@@ -83,7 +83,7 @@ namespace Wisej.Web.Ext.Webix.Demo.Component
 
         private void buttonUpdate_Click(object sender, EventArgs e)
         {
-			this.timeLine1.Options.layout = this.comboBoxLayout.SelectedText;
+			this.timeLine1.Options.layout = this.comboBoxLayout.SelectedItem.ToString();
 
 			this.timeLine1.Update();
         }

@@ -23,7 +23,7 @@ namespace Wisej.Web.Ext.Webix.Demo.Component
 
         private void buttonUpdate_Click(object sender, EventArgs e)
         {
-			this.colorBoard1.Options.type = this.comboBoxType.SelectedText;
+			this.colorBoard1.Options.type = this.comboBoxType.SelectedItem.ToString();
 			this.colorBoard1.Options.grayScale = this.checkBoxGrayScale.Checked;
 
 			this.colorBoard1.Update();

@@ -61,7 +61,7 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 
 			this.kendoTimePicker1.Options.min = this.maskedTextBoxMin.Text;
 			this.kendoTimePicker1.Options.max = this.maskedTextBoxMax.Text;
-			this.kendoTimePicker1.Options.fillMode = this.comboBoxFillMode.SelectedText;
+			this.kendoTimePicker1.Options.fillMode = this.comboBoxFillMode.SelectedItem.ToString();
 
 			this.kendoTimePicker1.Update();
         }

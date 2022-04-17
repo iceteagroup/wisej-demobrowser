@@ -271,7 +271,7 @@ namespace Wisej.Web.Ext.Webix.Demo.Component
 
         private void buttonUpdate_Click(object sender, EventArgs e)
         {
-			this.kanban1.Options.type = this.comboBoxType.SelectedText;
+			this.kanban1.Options.type = this.comboBoxType.SelectedItem.ToString();
 
 			this.kanban1.Update();
         }

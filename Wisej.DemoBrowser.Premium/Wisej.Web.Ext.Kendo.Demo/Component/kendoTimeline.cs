@@ -30,7 +30,7 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
         private void buttonUpdate_Click(object sender, EventArgs e)
         {
 			this.kendoTimeline1.Options.showDateLabels = this.checkBoxShowDateLabel.Checked;
-			this.kendoTimeline1.Options.orientation = this.comboBoxOrientation.SelectedText?.ToLower();
+			this.kendoTimeline1.Options.orientation = this.comboBoxOrientation.SelectedItem.ToString()?.ToLower();
 
 			this.kendoTimeline1.Update();
         }

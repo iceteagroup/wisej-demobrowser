@@ -31,7 +31,7 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
         private void buttonUpdate_Click(object sender, EventArgs e)
         {
 			this.kendoSlider1.Options.showButtons = this.checkBoxShowButtons.Checked;
-			this.kendoSlider1.Options.orientation = this.comboBoxTickPlacement.SelectedText?.ToLower();
+			this.kendoSlider1.Options.orientation = this.comboBoxTickPlacement.SelectedItem.ToString()?.ToLower();
 
 			this.kendoSlider1.Update();
         }

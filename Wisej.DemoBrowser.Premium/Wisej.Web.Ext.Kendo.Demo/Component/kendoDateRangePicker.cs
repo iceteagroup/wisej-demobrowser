@@ -40,7 +40,7 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 				Application.Play(MessageBoxIcon.Error);
 				return;
 			}
-			this.kendoDateRangePicker1.Options.depth = this.comboBoxDepth.SelectedText;
+			this.kendoDateRangePicker1.Options.depth = this.comboBoxDepth.SelectedItem.ToString();
 
 			await this.kendoDateRangePicker1.Instance.minAsync(this.dateTimePickerMin.Value);
 			await this.kendoDateRangePicker1.Instance.maxAsync(this.dateTimePickerMax.Value);

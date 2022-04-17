@@ -23,7 +23,7 @@ namespace Wisej.Web.Ext.Webix.Demo.Component
         {
 			this.scheduler1.Options.mode = this.comboBoxMode.SelectedItem;
 			this.scheduler1.Options.timeline = this.checkBoxAllowTimeline.Checked;
-			this.scheduler1.Options.timelineMode = this.comboBoxTimelineMode.SelectedText;
+			this.scheduler1.Options.timelineMode = this.comboBoxTimelineMode.SelectedItem.ToString();
 
 			this.scheduler1.Update();
         }

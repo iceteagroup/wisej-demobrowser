@@ -73,10 +73,10 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 
 			this.kendoTreeList1.Options.columnMenu = this.checkBoxColumnMenu.Checked;
 			
-			if (string.Equals(this.comboBoxEditMode.SelectedText, "none"))
+			if (string.Equals(this.comboBoxEditMode.SelectedItem.ToString(), "none"))
 				this.kendoTreeList1.Options.editable = false;
 			else
-				this.kendoTreeList1.Options.editable = this.comboBoxEditMode.SelectedText;
+				this.kendoTreeList1.Options.editable = this.comboBoxEditMode.SelectedItem.ToString();
 			
 			for (int i = 0; i < ((dynamic[])this.kendoTreeList1.Options.columns).Length; i++)
 				this.kendoTreeList1.Options.columns[i].filterable = this.checkBoxFiltrable.Checked;

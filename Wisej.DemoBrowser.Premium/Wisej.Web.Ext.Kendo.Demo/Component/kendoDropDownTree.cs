@@ -35,7 +35,7 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 			if(this.checkBoxCheckBoxes.Checked)
 				this.kendoDropDownTree1.Options.checkAll = this.checkBoxCheckAll.Checked;
 
-			this.kendoDropDownTree1.Options.tagMode = this.comboBoxTagMode.SelectedText?.ToLower();
+			this.kendoDropDownTree1.Options.tagMode = this.comboBoxTagMode.SelectedItem.ToString()?.ToLower();
 
 			this.kendoDropDownTree1.Update();
         }

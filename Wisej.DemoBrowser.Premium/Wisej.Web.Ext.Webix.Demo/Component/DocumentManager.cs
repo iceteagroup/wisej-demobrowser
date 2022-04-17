@@ -24,7 +24,7 @@ namespace Wisej.Web.Ext.Webix.Demo.Component
 
         private void buttonUpdate_Click(object sender, EventArgs e)
         {
-            this.documentManager1.Options.mode = this.comboBoxMode.SelectedText;
+            this.documentManager1.Options.mode = this.comboBoxMode.SelectedItem.ToString();
 
             this.documentManager1.Update();
         }
