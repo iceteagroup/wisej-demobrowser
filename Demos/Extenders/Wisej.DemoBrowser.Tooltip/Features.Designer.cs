@@ -1,4 +1,6 @@
-﻿namespace Wisej.DemoBrowser.Tooltip
+﻿using System.Drawing;
+
+namespace Wisej.DemoBrowser.Tooltip
 {
     partial class Features
     {
@@ -128,7 +130,7 @@
             this.toolTipCustomColors.Alignment = Wisej.Web.Placement.LeftTop;
             this.toolTipCustomColors.AllowHtml = true;
             this.toolTipCustomColors.AutoPopDelay = 3000;
-            this.toolTipCustomColors.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.toolTipCustomColors.ForeColor = Color.Yellow;
             // 
             // toolTipAlignment
             // 

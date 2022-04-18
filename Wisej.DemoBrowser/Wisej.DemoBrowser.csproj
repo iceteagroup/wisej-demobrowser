@@ -39,6 +39,7 @@
 	<ItemGroup>
 		<None Remove="Default.html" />
 		<None Remove="favicon.ico" />
+		<None Remove="Files\Wisej.pdf" />
 		<None Remove="GoogleMapsAPIKey.txt" />
 		<None Remove="Images\book.png" />
 		<None Remove="Images\collapse icon.png" />
@@ -67,6 +68,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <EmbeddedResource Include="Files\Wisej.pdf" />
 	  <EmbeddedResource Include="Images\book.png" />
 	  <EmbeddedResource Include="Images\collapse icon.png" />
 	  <EmbeddedResource Include="Images\combo.png" />

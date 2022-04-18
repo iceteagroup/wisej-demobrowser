@@ -49,6 +49,7 @@
             "Auto",
             "Google",
             "Mozilla"});
+            this.comboBoxViewerType.Text = "Auto";
             this.comboBoxViewerType.LabelText = "Viewer Type";
             this.comboBoxViewerType.Location = new System.Drawing.Point(19, 19);
             this.comboBoxViewerType.Name = "comboBoxViewerType";
