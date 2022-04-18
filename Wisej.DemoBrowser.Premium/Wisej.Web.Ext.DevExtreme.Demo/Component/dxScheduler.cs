@@ -22,5 +22,25 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
 
 			Application.Play(MessageBoxIcon.Information);
 		}
-	}
+
+        protected override void OnLoad(EventArgs e)
+        {
+            base.OnLoad(e);
+
+			this.comboBoxCurrentView.SelectedIndex = 2;
+        }
+
+        private void buttonUpdate_Click(object sender, EventArgs e)
+        {
+			this.dxScheduler1.Options.editing.allowAdding = this.comboBoxCurrentView.Text;
+			this.dxScheduler1.Options.editing.allowDragging = this.comboBoxCurrentView.Text;
+			this.dxScheduler1.Options.editing.allowResizing = this.comboBoxCurrentView.Text;
+			this.dxScheduler1.Options.editing.allowUpdating = this.comboBoxCurrentView.Text;
+			this.dxScheduler1.Options.editing.allowDeleting = this.comboBoxCurrentView.Text;
+			this.dxScheduler1.Options.editing.allowTimeZoneEditing = this.comboBoxCurrentView.Text;
+			this.dxScheduler1.Options.currentView = this.comboBoxCurrentView.SelectedItem.ToString();
+
+			this.dxScheduler1.Update();
+        }
+    }
 }
