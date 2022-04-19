@@ -16,12 +16,7 @@ namespace Wisej.DemoBrowser.PdfViewer
 
         private void Features_Load(object sender, EventArgs e)
         {
-            var assembly = Assembly.GetExecutingAssembly();
-            var resources = assembly.GetManifestResourceNames();
-            var pdfPath = resources.First((r) => r.EndsWith("Wisej.pdf"));
-
-            pdfViewer1.PdfStream = new MemoryStream();
-            assembly.GetManifestResourceStream(pdfPath).CopyTo(pdfViewer1.PdfStream);
+            pdfViewer1.PdfSource = "Files/Wisej.pdf";
         }
 
         private void comboBoxViewerType_SelectedIndexChanged(object sender, EventArgs e)
