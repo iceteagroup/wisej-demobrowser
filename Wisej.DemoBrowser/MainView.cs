@@ -313,12 +313,12 @@ namespace Wisej.DemoBrowser
 
 		private void buttonFreeTrial_Click(object sender, EventArgs e)
 		{
-			Application.Navigate("https://wisej.com/products/", "_blank");
+			Application.Navigate("https://wisej.com/developer-licenses/", "_blank");
 		}
 
 		private void buttonBuy_Click(object sender, EventArgs e)
 		{
-			Application.Navigate("https://wisej.com/products/", "_blank");
+			Application.Navigate("https://wisej.com/developer-licenses/", "_blank");
 		}
 
 		/// <summary>
