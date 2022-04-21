@@ -173,33 +173,6 @@
             this.checkBox1.TabIndex = 0;
             this.checkBox1.Text = "Slice Explosion";
             // 
-            // numericUpDown2
-            // 
-            this.numericUpDown2.DecimalPlaces = 2;
-            this.flowLayoutPanel1.SetFillWeight(this.numericUpDown2, 1);
-            this.flowLayoutPanel1.SetFlowBreak(this.numericUpDown2, true);
-            this.numericUpDown2.Increment = new decimal(new int[] {
-            1,
-            0,
-            0,
-            131072});
-            this.numericUpDown2.LabelText = "Exploded Radius";
-            this.numericUpDown2.Location = new System.Drawing.Point(3, 109);
-            this.numericUpDown2.Margin = new Wisej.Web.Padding(3, 12, 3, 3);
-            this.numericUpDown2.Maximum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(212, 57);
-            this.numericUpDown2.TabIndex = 2;
-            this.numericUpDown2.Value = new decimal(new int[] {
-            2,
-            0,
-            0,
-            65536});
-            // 
             // comboBox1
             // 
             this.comboBox1.DropDownStyle = Wisej.Web.ComboBoxStyle.DropDownList;

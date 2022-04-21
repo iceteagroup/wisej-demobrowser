@@ -28,8 +28,8 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(kendoGrid));
             Wisej.Web.Ext.Kendo.kendoBase.WidgetFunction widgetFunction1 = new Wisej.Web.Ext.Kendo.kendoBase.WidgetFunction();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(kendoGrid));
             this.buttonPDF = new Wisej.Web.Button();
             this.buttonExport = new Wisej.Web.Button();
             this.checkBox1 = new Wisej.Web.CheckBox();
@@ -77,6 +77,7 @@
             // buttonPDF
             // 
             this.buttonPDF.Display = Wisej.Web.Display.Icon;
+            this.flowLayoutPanelProperties.SetFlowBreak(this.buttonPDF, true);
             this.buttonPDF.ImageSource = "resource.wx/Wisej.Ext.MaterialDesign/google-drive-pdf-file.svg";
             this.buttonPDF.Location = new System.Drawing.Point(51, 282);
             this.buttonPDF.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
@@ -116,7 +117,6 @@
             | Wisej.Web.AnchorStyles.Right)));
             this.kendoGrid1.Location = new System.Drawing.Point(23, 23);
             this.kendoGrid1.Name = "kendoGrid1";
-            this.kendoGrid1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("kendoGrid1.Options"))));
             this.kendoGrid1.Size = new System.Drawing.Size(1041, 510);
             this.kendoGrid1.TabIndex = 0;
             this.kendoGrid1.Text = "kendoGrid1";
@@ -124,6 +124,8 @@
             widgetFunction1.Source = resources.GetString("widgetFunction1.Source");
             this.kendoGrid1.WidgetFunctions = new Wisej.Web.Ext.Kendo.kendoBase.WidgetFunction[] {
         widgetFunction1};
+            this.kendoGrid1.DataRead += new Wisej.Web.Ext.Kendo.KendoGridDataReadEventHandler(this.kendoGrid1_DataRead);
+            this.kendoGrid1.DataUpdate += new Wisej.Web.Ext.Kendo.KendoGridDataUpdateEventHandler(this.kendoGrid1_DataUpdate);
             this.kendoGrid1.WebRequest += new Wisej.Web.WebRequestHandler(this.kendoGrid1_WebRequest);
             // 
             // numericUpDown1
@@ -211,5 +213,5 @@
 		private CheckBox checkBox4;
 		private CheckBox checkBox3;
 		private CheckBox checkBox2;
-	}
+    }
 }

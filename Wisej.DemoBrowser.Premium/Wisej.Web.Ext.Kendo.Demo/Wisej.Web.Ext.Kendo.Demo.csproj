@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
 	<PropertyGroup>
-		<TargetFrameworks>net48;net6.0</TargetFrameworks>
+		<TargetFrameworks>net48</TargetFrameworks>
 		<PlatformTarget>AnyCPU</PlatformTarget>
 		<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
 		<EmbeddedResourceUseDependentUponConvention>true</EmbeddedResourceUseDependentUponConvention>
@@ -55,13 +55,19 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Wisej-3" Version="3.*-*" />
 		<PackageReference Include="Telerik.Web.Captcha.Trial">
 			<Version>1.0.0</Version>
 		</PackageReference>
 		<PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
-		<PackageReference Include="Wisej-3-Kendo" Version="3.*-*" />
-		<PackageReference Include="Wisej-3-MaterialDesign" Version="3.*-*" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Reference Include="Wisej.Framework">
+	    <HintPath>..\..\..\..\..\..\Wisej\Development\3.0\bin\net48\Wisej.Framework.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Wisej.Web.Ext.Kendo">
+	    <HintPath>..\..\..\..\..\..\Wisej\Extensions\Premium\3.0\Wisej.Web.Ext.Kendo\bin\Release\net48\Wisej.Web.Ext.Kendo.dll</HintPath>
+	  </Reference>
 	</ItemGroup>
 
 </Project>
