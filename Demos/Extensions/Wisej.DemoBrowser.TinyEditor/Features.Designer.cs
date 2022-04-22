@@ -36,6 +36,7 @@
             this.tinyEditor1.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
             | Wisej.Web.AnchorStyles.Left) 
             | Wisej.Web.AnchorStyles.Right)));
+            this.tinyEditor1.BackColor = System.Drawing.Color.White;
             this.tinyEditor1.Location = new System.Drawing.Point(211, 12);
             this.tinyEditor1.Name = "tinyEditor1";
             this.tinyEditor1.Size = new System.Drawing.Size(1000, 450);

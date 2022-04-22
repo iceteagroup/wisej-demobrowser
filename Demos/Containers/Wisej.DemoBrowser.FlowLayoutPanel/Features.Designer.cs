@@ -182,7 +182,6 @@
             componentTool1.ToolTipText = "Clear Inbox";
             this.flowLayoutPanel.Tools.AddRange(new Wisej.Web.ComponentTool[] {
             componentTool1});
-            this.flowLayoutPanel.ToolClick += new Wisej.Web.ToolClickEventHandler(this.flowLayoutPanelInbox_ToolClick);
             // 
             // comboBoxView
             // 
@@ -192,6 +191,7 @@
             this.comboBoxView.Name = "comboBoxView";
             this.comboBoxView.Size = new System.Drawing.Size(177, 53);
             this.comboBoxView.TabIndex = 5;
+            this.comboBoxView.Text = "LeftToRight";
             this.comboBoxView.SelectedIndexChanged += new System.EventHandler(this.comboBoxView_SelectedIndexChanged);
             // 
             // buttonAdd

@@ -28,33 +28,35 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.components = new System.ComponentModel.Container();
-			this.bingWallpaper1 = new Wisej.Web.Ext.BingWallpaper.BingWallpaper(this.components);
-			this.panelWallpaper = new Wisej.Web.Panel();
-			this.SuspendLayout();
-			// 
-			// bingWallpaper1
-			// 
-			this.bingWallpaper1.Control = this.panelWallpaper;
-			this.bingWallpaper1.RotationInterval = 5000;
-			// 
-			// panelWallpaper
-			// 
-			this.panelWallpaper.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
+            this.components = new System.ComponentModel.Container();
+            this.bingWallpaper1 = new Wisej.Web.Ext.BingWallpaper.BingWallpaper(this.components);
+            this.panelWallpaper = new Wisej.Web.Panel();
+            this.SuspendLayout();
+            // 
+            // bingWallpaper1
+            // 
+            this.bingWallpaper1.Control = this.panelWallpaper;
+            this.bingWallpaper1.RotationInterval = 5000;
+            // 
+            // panelWallpaper
+            // 
+            this.panelWallpaper.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
             | Wisej.Web.AnchorStyles.Left) 
             | Wisej.Web.AnchorStyles.Right)));
-			this.panelWallpaper.BorderStyle = Wisej.Web.BorderStyle.Solid;
-			this.panelWallpaper.Location = new System.Drawing.Point(220, 31);
-			this.panelWallpaper.Name = "panelWallpaper";
-			this.panelWallpaper.Size = new System.Drawing.Size(982, 413);
-			this.panelWallpaper.TabIndex = 0;
-			this.panelWallpaper.TabStop = true;
-			// 
-			// Features
-			// 
-			this.Controls.Add(this.panelWallpaper);
-			this.Name = "Features";
-			this.ResumeLayout(false);
+            this.panelWallpaper.BorderStyle = Wisej.Web.BorderStyle.Solid;
+            this.panelWallpaper.Location = new System.Drawing.Point(220, 31);
+            this.panelWallpaper.Name = "panelWallpaper";
+            this.panelWallpaper.Size = new System.Drawing.Size(352, 293);
+            this.panelWallpaper.TabIndex = 0;
+            this.panelWallpaper.TabStop = true;
+            // 
+            // Features
+            // 
+            this.Controls.Add(this.panelWallpaper);
+            this.MinimumSize = new System.Drawing.Size(792, 354);
+            this.Name = "Features";
+            this.Size = new System.Drawing.Size(792, 354);
+            this.ResumeLayout(false);
 
 		}
 

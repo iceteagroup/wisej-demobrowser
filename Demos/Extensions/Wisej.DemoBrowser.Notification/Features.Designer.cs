@@ -57,7 +57,7 @@
             this.textBoxTitle.LabelText = "Title";
             this.textBoxTitle.Location = new System.Drawing.Point(619, 69);
             this.textBoxTitle.Name = "textBoxTitle";
-            this.textBoxTitle.Size = new System.Drawing.Size(185, 57);
+            this.textBoxTitle.Size = new System.Drawing.Size(185, 53);
             this.textBoxTitle.TabIndex = 2;
             // 
             // textBoxBody
@@ -66,7 +66,7 @@
             this.textBoxBody.LabelText = "Body";
             this.textBoxBody.Location = new System.Drawing.Point(619, 149);
             this.textBoxBody.Name = "textBoxBody";
-            this.textBoxBody.Size = new System.Drawing.Size(185, 57);
+            this.textBoxBody.Size = new System.Drawing.Size(185, 53);
             this.textBoxBody.TabIndex = 3;
             // 
             // checkBoxShowOnClick
@@ -98,6 +98,7 @@
             this.Controls.Add(this.textBoxBody);
             this.Controls.Add(this.textBoxTitle);
             this.Controls.Add(this.buttonShowNotification);
+            this.MinimumSize = new System.Drawing.Size(213, 361);
             this.Name = "Features";
             this.ResumeLayout(false);
             this.PerformLayout();

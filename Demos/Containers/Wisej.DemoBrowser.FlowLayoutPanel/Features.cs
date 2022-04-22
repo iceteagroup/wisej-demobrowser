@@ -19,18 +19,6 @@ namespace Wisej.DemoBrowser.FlowLayoutPanel
 			this.comboBoxView.Items.AddRange(Enum.GetNames(typeof(FlowDirection)));
 		}
 
-		private void flowLayoutPanelInbox_ToolClick(object sender, ToolClickEventArgs e)
-		{
-			var toDelete = this.flowLayoutPanel.Controls
-				.Where(card => ((PersonCard)card).Checked);
-
-			foreach (PersonCard card in toDelete)
-			{
-				card.Dispose();
-				AlertBox.Show($"Deleted the message from {card.PersonName}");
-			}
-		}
-
         private void comboBoxView_SelectedIndexChanged(object sender, EventArgs e)
         {
 			var flow = (FlowDirection)Enum.Parse(typeof(FlowDirection), (string)this.comboBoxView.SelectedItem);
