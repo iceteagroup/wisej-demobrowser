@@ -20,49 +20,49 @@ namespace Wisej.DemoBrowser
 
 		private static bool CheckOpenSansInstalled()
         {
-            if (System.Runtime.InteropServices.RuntimeInformation.IsOSPlatform(System.Runtime.InteropServices.OSPlatform.OSX))
-            {
-                //WIP
-                return true;
-            }
+            //if (System.Runtime.InteropServices.RuntimeInformation.IsOSPlatform(System.Runtime.InteropServices.OSPlatform.OSX))
+            //{
+            //    //WIP
+            //    return true;
+            //}
 
-            if (System.Runtime.InteropServices.RuntimeInformation.IsOSPlatform(System.Runtime.InteropServices.OSPlatform.Windows))
-            {
+            //if (System.Runtime.InteropServices.RuntimeInformation.IsOSPlatform(System.Runtime.InteropServices.OSPlatform.Windows))
+            //{
                 var fontsCollection = new System.Drawing.Text.InstalledFontCollection();
                 foreach (var fontFamily in fontsCollection.Families)
                     if (fontFamily.Name == "Open Sans")
                         return true;
 
                 return false;
-            }
+            //}
 
-            if (System.Runtime.InteropServices.RuntimeInformation.IsOSPlatform(System.Runtime.InteropServices.OSPlatform.Linux))
-            {
-                string command = "fc-list | grep –I OpenSans";
-                string result = "";
-                using (System.Diagnostics.Process proc = new System.Diagnostics.Process())
-                {
-                    proc.StartInfo.FileName = "/bin/bash";
-                    proc.StartInfo.Arguments = "-c \" " + command + " \"";
-                    proc.StartInfo.UseShellExecute = false;
-                    proc.StartInfo.RedirectStandardOutput = true;
-                    proc.StartInfo.RedirectStandardError = true;
-                    proc.Start();
+            //if (System.Runtime.InteropServices.RuntimeInformation.IsOSPlatform(System.Runtime.InteropServices.OSPlatform.Linux))
+            //{
+            //    string command = "fc-list | grep –I OpenSans";
+            //    string result = "";
+            //    using (System.Diagnostics.Process proc = new System.Diagnostics.Process())
+            //    {
+            //        proc.StartInfo.FileName = "/bin/bash";
+            //        proc.StartInfo.Arguments = "-c \" " + command + " \"";
+            //        proc.StartInfo.UseShellExecute = false;
+            //        proc.StartInfo.RedirectStandardOutput = true;
+            //        proc.StartInfo.RedirectStandardError = true;
+            //        proc.Start();
 
-                    result += proc.StandardOutput.ReadToEnd();
-                    result += proc.StandardError.ReadToEnd();
+            //        result += proc.StandardOutput.ReadToEnd();
+            //        result += proc.StandardError.ReadToEnd();
 
-                    proc.WaitForExit();
+            //        proc.WaitForExit();
 
-                }
-                if (!string.IsNullOrEmpty(result) && result.ToLower().Contains("opensans"))
-                {
-                    return true;
-                }
-                return false;
-            }
+            //    }
+            //    if (!string.IsNullOrEmpty(result) && result.ToLower().Contains("opensans"))
+            //    {
+            //        return true;
+            //    }
+            //    return false;
+            //}
 
-            return false;
+            //return false;
         }
 
 		private static void Application_SessionTimeout(object sender, System.ComponentModel.HandledEventArgs e)

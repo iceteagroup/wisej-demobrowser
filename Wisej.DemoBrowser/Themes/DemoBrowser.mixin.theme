@@ -168,197 +168,247 @@
 				}
 			}
 		},
-		"button-demo": {
-			"inherit": "button",
+		"listview": {
+			"inherit": "listview",
 			"states": {
-				"default": {
-					"styles": {
-						"radius": "0",
-						"shadowColor": "transparent", // block Material-3 theme shadows.
-						"backgroundColor": "transparent",
-						"style": [ "none", "none", "none", "none" ]
-					},
+				"tile": {
 					"properties": {
-						"textColor": "buttonText-demo"
-					}
-				},
-				"hovered": {
-					"styles": {
-						"backgroundColor": "transparent"
-					}
-				},
-				"pressed": {
-					"styles": {
-						"transform": "",
-						"backgroundColor": "transparent"
-					},
-					"properties": {
-						"textColor": "buttonText-demo"
-					}
-				}
-			},
-			"components": {
-				"icon": {
-					"states": {
-						"default": {
-							"properties": {
-								"width": 20,
-								"height": 20
-							}
-						}
-					}
-				}
-			}
-		},
-		"tree-file-demo": {
-			"inherit": "tree-file",
-			"states": {
-				"default": {
-					"properties": {
-						"font": "defaultBold"
-					}
-				},
-				"hovered": {
-					"styles": {
-						"backgroundColor": "hotTrack-demo"
-					}
-				},
-				"selected": {
-					"styles": {
-						"backgroundColor": "hotTrack-demo"
-					},
-					"properties": {
-						"textColor": "highlightText-demo"
-					}
-				}
-			}
-		},
-		"tree-folder-demo": {
-			"inherit": "tree-folder",
-			"states": {
-				"default": {
-					"properties": {
-						"font": "defaultBold"
-					}
-				},
-				"hovered": {
-					"styles": {
-						"backgroundColor": "hotTrack-demo"
-					}
-				},
-				"opened": {
-					"properties": {
-						"textColor": "highlightText-demo"
-
-					}
-				},
-				"selected": {
-					"styles": {
-						"backgroundColor": "hotTrack-demo"
-					},
-					"properties": {
-						"textColor": "highlightText-demo"
-					}
-				}
-			},
-			"components": {
-				"open": {
-					"states": {
-						"default": {
-							"properties": {
-								"source": "node-closed-demo"
-							}
+						"itemSize": {
+							"width": 350,
+							"height": 175
 						},
-						"opened": {
-							"properties": {
-								"source": "node-opened-demo"
-							},
-							"styles": {
-								"transform": ""
-							}
+						"iconSize": {
+							"width": 48,
+							"height": 48
 						}
-					}
-				}
-			}
-		},
-		"textbox-demo": {
-			"inherit": "textbox",
-			"states": {
-				"focused": {
-					"styles": {
-						"color": "transparent",
-						"shadowColor": "transparent"
-					}
-				}
-			}
-		},
-		"tree-demo": {
-			"states": {
-				"default": {
-					"properties": {
-						"fileAppearance": "tree-file-demo",
-						"folderAppearance": "tree-folder-demo"
-					}
-				}
-			},
-			"components": {
-				"scrollbar-y": {
-					"inherit": "scrollbar"
-				},
-				"scrollbar-x": {
-					"inherit": "scrollbar"
-				}
-			}
-		},
-		"panel-demo": {
-			"states": {
-				"default": {
-					"styles": {
-						"radius": "0"
 					},
-					"properties": {
-						"textColor": "controlText-demo",
-						"backgroundColor": "panel-background-demo"
+					"styles": {
 					}
-				}
-			},
-			"components": {
-				"pane": {
-					"inherit": "scrollarea"
 				},
-				"captionbar": {
-					"states": {
-						"default": {
-							"styles": {
-								"backgroundColor": "hotTrack-demo"
-							}
+				"disabled": {
+					"properties": {
+						"opacity": 0.5
+					},
+					"styles": {
+					}
+				},
+				"smallIcon": {
+					"properties": {
+						"itemSize": {
+							"width": 250,
+							"height": 75
+						},
+						"iconSize": {
+							"width": 18,
+							"height": 18
 						}
 					}
 				},
-				"title": {
-					"states": {
-						"barLeft": {
-							"properties": {
-								"margin": [ 10, 0, 20, 0 ]
-							}
+				"largeIcon": {
+					"properties": {
+						"itemSize": {
+							"width": 200,
+							"height": 200
+						},
+						"iconSize": {
+							"width": 32,
+							"height": 32
 						}
 					}
 				}
 			}
 		},
-		"tooltip": {
-			"inherit": "tooltip",
-			"states": {
-				"default": {
-					"properties": {
-						"offsetLeft": 0,
-						"placeMethod": "widget",
-						"position": "top-center",
-						"maxWidth": 280,
-						"offsetBottom": 10
+			"button-demo": {
+				"inherit": "button",
+				"states": {
+					"default": {
+						"styles": {
+							"radius": "0",
+							"shadowColor": "transparent", // block Material-3 theme shadows.
+							"backgroundColor": "transparent",
+							"style": [ "none", "none", "none", "none" ]
+						},
+						"properties": {
+							"textColor": "buttonText-demo"
+						}
+					},
+					"hovered": {
+						"styles": {
+							"backgroundColor": "transparent"
+						}
+					},
+					"pressed": {
+						"styles": {
+							"transform": "",
+							"backgroundColor": "transparent"
+						},
+						"properties": {
+							"textColor": "buttonText-demo"
+						}
+					}
+				},
+				"components": {
+					"icon": {
+						"states": {
+							"default": {
+								"properties": {
+									"width": 20,
+									"height": 20
+								}
+							}
+						}
+					}
+				}
+			},
+			"tree-file-demo": {
+				"inherit": "tree-file",
+				"states": {
+					"default": {
+						"properties": {
+							"font": "defaultBold"
+						}
+					},
+					"hovered": {
+						"styles": {
+							"backgroundColor": "hotTrack-demo"
+						}
+					},
+					"selected": {
+						"styles": {
+							"backgroundColor": "hotTrack-demo"
+						},
+						"properties": {
+							"textColor": "highlightText-demo"
+						}
+					}
+				}
+			},
+			"tree-folder-demo": {
+				"inherit": "tree-folder",
+				"states": {
+					"default": {
+						"properties": {
+							"font": "defaultBold"
+						}
+					},
+					"hovered": {
+						"styles": {
+							"backgroundColor": "hotTrack-demo"
+						}
+					},
+					"opened": {
+						"properties": {
+							"textColor": "highlightText-demo"
+
+						}
+					},
+					"selected": {
+						"styles": {
+							"backgroundColor": "hotTrack-demo"
+						},
+						"properties": {
+							"textColor": "highlightText-demo"
+						}
+					}
+				},
+				"components": {
+					"open": {
+						"states": {
+							"default": {
+								"properties": {
+									"source": "node-closed-demo"
+								}
+							},
+							"opened": {
+								"properties": {
+									"source": "node-opened-demo"
+								},
+								"styles": {
+									"transform": ""
+								}
+							}
+						}
+					}
+				}
+			},
+			"textbox-demo": {
+				"inherit": "textbox",
+				"states": {
+					"focused": {
+						"styles": {
+							"color": "transparent",
+							"shadowColor": "transparent"
+						}
+					}
+				}
+			},
+			"tree-demo": {
+				"states": {
+					"default": {
+						"properties": {
+							"fileAppearance": "tree-file-demo",
+							"folderAppearance": "tree-folder-demo"
+						}
+					}
+				},
+				"components": {
+					"scrollbar-y": {
+						"inherit": "scrollbar"
+					},
+					"scrollbar-x": {
+						"inherit": "scrollbar"
+					}
+				}
+			},
+			"panel-demo": {
+				"states": {
+					"default": {
+						"styles": {
+							"radius": "0"
+						},
+						"properties": {
+							"textColor": "controlText-demo",
+							"backgroundColor": "panel-background-demo"
+						}
+					}
+				},
+				"components": {
+					"pane": {
+						"inherit": "scrollarea"
+					},
+					"captionbar": {
+						"states": {
+							"default": {
+								"styles": {
+									"backgroundColor": "hotTrack-demo"
+								}
+							}
+						}
+					},
+					"title": {
+						"states": {
+							"barLeft": {
+								"properties": {
+									"margin": [ 10, 0, 20, 0 ]
+								}
+							}
+						}
+					}
+				}
+			},
+			"tooltip": {
+				"inherit": "tooltip",
+				"states": {
+					"default": {
+						"properties": {
+							"offsetLeft": 0,
+							"placeMethod": "widget",
+							"position": "top-center",
+							"maxWidth": 280,
+							"offsetBottom": 10
+						}
 					}
 				}
 			}
 		}
 	}
-}

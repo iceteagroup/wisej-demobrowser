@@ -37,10 +37,5 @@ namespace Wisej.DemoBrowser.Premium
 		{
 			Application.Navigate($"{BASE_URL}Ignite");
 		}
-
-        private void panelWebix_Click(object sender, EventArgs e)
-        {
-			Application.Navigate($"{BASE_URL}Webix");
-		}
     }
 }

@@ -14,6 +14,14 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Images\download.png" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <EmbeddedResource Include="Images\download.png" />
+	</ItemGroup>
+
+	<ItemGroup>
 		<PackageReference Include="Wisej-3" Version="3.*-*" />
 		<PackageReference Include="Wisej-3-ChartJs" Version="3.*-*" />
 		<PackageReference Include="Wisej-3-Html2Canvas" Version="3.*-*" />

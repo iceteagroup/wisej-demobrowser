@@ -24,7 +24,7 @@
 				"assembly": "Labels, Wisej.DemoBrowser.TextBox.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/TextBox.svg",
 				"docsUrl": "https://docs.wisej.com/docs/controls/editors/textbox#label",
-				"description-en": "The <b>Wisej.Web.TextBox</b> control supports the inline Label property.flabel This allows an application to set a label in relation to a TextBox control without having to create an additional Label control."
+				"description-en": "The <b>Wisej.Web.TextBox</b> control supports the inline Label property. This allows an application to set a label in relation to a TextBox control without having to create an additional Label control."
 			},
 			"Input Types": {
 				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Editors/Wisej.DemoBrowser.TextBox",
@@ -136,7 +136,7 @@
 				"assembly": "Features, Wisej.DemoBrowser.MonthCalendar.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/Calendar.svg",
 				"docsUrl": "https://docs.wisej.com/docs/controls/editors/monthcalendar",
-				"description-en": "The <b>Wisej.Web.MonthCalendar</b> is a control that enables the user to select a date using a visual monthly calendar display."
+				"description-en": "The <b>Wisej.Web.MonthCalendar</b> is a control that enables the user to select a date using a visual monthly calendar display. All the selection events are automatically available to handle on the server."
 			}
 		},
 		"NumericUpDown": {
@@ -178,7 +178,7 @@
 				"assembly": "Features, Wisej.DemoBrowser.Upload.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/Upload.svg",
 				"docsUrl": "https://docs.wisej.com/docs/controls/content/upload",
-				"description-en": "The <b>Wisej.Web.Upload</b> control allows users to select files from their local machine and upload them to the server. The files are available in the Uploaded event as a HttpFileCollection."
+				"description-en": "The <b>Wisej.Web.Upload</b> control allows users to select files from their local machine and upload them to the server. The files are available in the Uploaded event on the server as a HttpFileCollection."
 			}
 		}
 	},
@@ -189,7 +189,7 @@
 				"assembly": "Features, Wisej.DemoBrowser.Video.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/PlayVideo.svg",
 				"docsUrl": "https://docs.wisej.com/docs/controls/media/video",
-				"description-en": "The <b>Wisej.Web.Video</b> control allows users to play media from a given video file.",
+				"description-en": "The <b>Wisej.Web.Video</b> control allows users to play media from a given video file. The playback control events are automatically available on the server.",
 				"description-fr": "Le contrôle <b>Wisej.Web.Video</b> permet aux utilisateurs de lire des médias à partir d’un fichier vidéo donné."
 			}
 		},
@@ -199,7 +199,7 @@
 				"assembly": "Features, Wisej.DemoBrowser.Audio.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/Audio.svg",
 				"docsUrl": "https://docs.wisej.com/docs/controls/media/audio",
-				"description-en": "The <b>Wisej.Web.Audio</b> control allows users to play aduio from a given media file.",
+				"description-en": "The <b>Wisej.Web.Audio</b> control allows users to play aduio from a given media file. The playback control events are automatically available on the server.",
 				"description-fr": "Le contrôle <b>Wisej.Web.Audio</b> permet aux utilisateurs de lire des médias à partir d'un fichier audio donné.'"
 			}
 		},
@@ -211,6 +211,22 @@
 				"docsUrl": "https://docs.wisej.com/docs/controls/content/line",
 				"description-en": "The <b>Wisej.Web.Line</b> control enables you to draw lines on a form or container at design time or run time.",
 				"description-fr": "Le contrôle <b>Wisej.Web.Line</b> vous permet de dessiner des lignes sur un form ou un conteneur au moment du design ou de l’exécution."
+			}
+		},
+		"Shape": {
+			"Features": {
+				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Content/Wisej.DemoBrowser.Shape",
+				"assembly": "Features, Wisej.DemoBrowser.Shape.dll",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/ShapeArcPie.svg",
+				"docsUrl": "https://docs.wisej.com/docs/controls/content/shape",
+				"description-en": "The <b>Wisej.Web.Shape</b> control is used to create any kind of shape by modifying the various properties of the Shape control."
+			},
+			"Appearance": {
+				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Content/Wisej.DemoBrowser.Shape",
+				"assembly": "Appearance, Wisej.DemoBrowser.Shape.dll",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/ShapeArcPie.svg",
+				"docsUrl": "https://docs.wisej.com/docs/controls/content/shape",
+				"description-en": "The <b>Wisej.Web.Shape</b> control is used to create any kind of shape by modifying the various properties of the Shape control."
 			}
 		}
 	},
@@ -306,7 +322,7 @@
 				"assembly": "Features, Wisej.DemoBrowser.iFramePanel.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/IFrame.svg",
 				"docsUrl": "https://docs.wisej.com/docs/controls/content/iframepanel",
-				"description-en": "The <b>Wisej.Web.IFramePanel</b> control can be used to show embedded web pages. "
+				"description-en": "The <b>Wisej.Web.IFramePanel</b> control can be used to show embedded web pages. This example embeds <a target='_blank' href='http://demo.wisej.com/CodeProject'>http://demo.wisej.com/CodeProject</a>."
 			}
 		}
 	},
@@ -476,22 +492,6 @@
 				"docsUrl": "https://docs.wisej.com/docs/controls/content/picturebox",
 				"description-en": "The <b>Wisej.Web.PictureBox</b> is used to display graphics from a bitmap, metafile, icon, JPEG, GIF, or PNG file.",
 				"description-fr": "Le contrôle <b>Wisej.Web.PictureBox</b> peut être utilisé pour afficher des graphiques à partir d'un fichier bitmap, metafile, icon, JPEG, GIF ou bien PNG"
-			}
-		},
-		"Shape": {
-			"Features": {
-				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Content/Wisej.DemoBrowser.Shape",
-				"assembly": "Features, Wisej.DemoBrowser.Shape.dll",
-				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/ShapeArcPie.svg",
-				"docsUrl": "https://docs.wisej.com/docs/controls/content/shape",
-				"description-en": "The <b>Wisej.Web.Shape</b> control is used to create any kind of shape by modifying the various properties of the Shape control."
-			},
-			"Appearance": {
-				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Content/Wisej.DemoBrowser.Shape",
-				"assembly": "Appearance, Wisej.DemoBrowser.Shape.dll",
-				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/ShapeArcPie.svg",
-				"docsUrl": "https://docs.wisej.com/docs/controls/content/shape",
-				"description-en": "The <b>Wisej.Web.Shape</b> control is used to create any kind of shape by modifying the various properties of the Shape control."
 			}
 		}
 	},
@@ -667,16 +667,15 @@
 					"The <b>Wisej.Web.Ext.Bubbles</b> extender component enhances all Wisej components by providing additional properties and a useful bubble notification functionality. Every widget can display a popup animated and themed bubble when a value changes."
 			}
 		},
-		// requires HTTPS.
-		//"Camera": {
-		//	"Features": {
-		//		"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos",
-		//		"assembly": "Features, Wisej.DemoBrowser.Camera.dll",
-		//		"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/CameraOutline.svg",
-		//		"docsUrl": "https://docs.wisej.com/extensions/extensions/camera",
-		//		"description-en": "The <b>Wisej.Web.Ext.Camera</b> control makes it possible to take pictures with the device's camera and upload them to the server."
-		//	}
-		//},
+		"Camera": {
+			"Features": {
+				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos",
+				"assembly": "Features, Wisej.DemoBrowser.Camera.dll",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/CameraOutline.svg",
+				"docsUrl": "https://docs.wisej.com/extensions/extensions/camera",
+				"description-en": "The <b>Wisej.Web.Ext.Camera</b> control makes it possible to take pictures with the device's camera and upload them to the server."
+			}
+		},
 		"ChartJS": {
 			"Features": {
 				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Extensions/Wisej.DemoBrowser.ChartJS",
@@ -779,16 +778,15 @@
 				"description-en": "The <b>Wisej.Web.Ext.FullCalendar</b> extension is an amazing full-size drag-n-drop event calendar. Supports multiple views, flexible events, custom styles, integrates with Google Calendars, and it’s completely integrated with Wisej."
 			}
 		},
-		// requires https.
-		//"Geolocation": {
-		//	"Features": {
-		//		"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Extensions/Wisej.DemoBrowser.Geolocation",
-		//		"assembly": "Features, Wisej.DemoBrowser.Geolocation.dll",
-		//		"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/GeoLocation.svg",
-		//		"docsUrl": "https://docs.wisej.com/extensions/extensions/geolocation/api/wisej.ext.geolocation.geolocation",
-		//		"description-en": "The <b>Wisej.Ext.Geolocation</b> component represents an object able to programmatically obtain the position of the device."
-		//	}
-		//},
+		"Geolocation": {
+			"Features": {
+				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Extensions/Wisej.DemoBrowser.Geolocation",
+				"assembly": "Features, Wisej.DemoBrowser.Geolocation.dll",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/GeoLocation.svg",
+				"docsUrl": "https://docs.wisej.com/extensions/extensions/geolocation/api/wisej.ext.geolocation.geolocation",
+				"description-en": "The <b>Wisej.Ext.Geolocation</b> component represents an object able to programmatically obtain the position of the device."
+			}
+		},
 		"GoogleMaps": {
 			"Features": {
 				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Extensions/Wisej.DemoBrowser.GoogleMaps",
@@ -814,7 +812,7 @@
 			"Geometry": {
 				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Extensions/Wisej.DemoBrowser.GoogleMaps",
 				"assembly": "Geometry, Wisej.DemoBrowser.GoogleMaps.dll",
-				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/Pencil.svg",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/GeoLocation.svg",
 				"docsUrl": "https://docs.wisej.com/extensions/extensions/googlemaps",
 				"description-en": "The Maps JavaScript API geometry library provides utility functions for the computation of geometric data on the surface of the Earth."
 			}

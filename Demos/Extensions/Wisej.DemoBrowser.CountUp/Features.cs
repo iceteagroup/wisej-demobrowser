@@ -11,11 +11,6 @@ namespace Wisej.DemoBrowser.CountUp
 			InitializeComponent();
 		}
 
-		private void numericUpDownValue_ValueChanged(object sender, EventArgs e)
-		{
-			this.countUp1.Value = (float)this.numericUpDownValue.Value;
-		}
-
 		private void numericUpDownDuration_ValueChanged(object sender, EventArgs e)
 		{
 			this.countUp1.Duration = (int)this.numericUpDownDuration.Value;

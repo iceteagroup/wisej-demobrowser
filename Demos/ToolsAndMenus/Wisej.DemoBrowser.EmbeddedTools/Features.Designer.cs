@@ -34,6 +34,8 @@
             Wisej.Web.ComponentTool componentTool4 = new Wisej.Web.ComponentTool();
             Wisej.Web.ComponentTool componentTool5 = new Wisej.Web.ComponentTool();
             Wisej.Web.ComponentTool componentTool6 = new Wisej.Web.ComponentTool();
+            Wisej.Web.ComponentTool componentTool7 = new Wisej.Web.ComponentTool();
+            Wisej.Web.ComponentTool componentTool8 = new Wisej.Web.ComponentTool();
             this.textBox1 = new Wisej.Web.TextBox();
             this.textBox2 = new Wisej.Web.TextBox();
             this.textBox3 = new Wisej.Web.TextBox();
@@ -48,7 +50,7 @@
             this.textBox1.LabelText = "Tool Position Right With ToolTip";
             this.textBox1.Location = new System.Drawing.Point(231, 170);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(247, 53);
+            this.textBox1.Size = new System.Drawing.Size(247, 57);
             this.textBox1.TabIndex = 9;
             componentTool1.ImageSource = "node-opened";
             componentTool1.ToolTipText = "This is a Tool component";
@@ -62,7 +64,7 @@
             this.textBox2.LabelText = "Tool Position Left";
             this.textBox2.Location = new System.Drawing.Point(231, 260);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(247, 53);
+            this.textBox2.Size = new System.Drawing.Size(247, 57);
             this.textBox2.TabIndex = 10;
             componentTool2.ImageSource = "icon-settings";
             componentTool2.Position = Wisej.Web.LeftRightAlignment.Left;
@@ -76,7 +78,7 @@
             this.textBox3.LabelText = "Tool AutoHide";
             this.textBox3.Location = new System.Drawing.Point(607, 161);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(247, 53);
+            this.textBox3.Size = new System.Drawing.Size(247, 57);
             this.textBox3.TabIndex = 11;
             componentTool3.AutoHide = true;
             componentTool3.ImageSource = "icon-print?color=activeCaption";
@@ -87,15 +89,19 @@
             // textBox4
             // 
             this.textBox4.Anchor = Wisej.Web.AnchorStyles.None;
-            this.textBox4.LabelText = "Tool Disabled";
+            this.textBox4.LabelText = "Multiple Tools";
             this.textBox4.Location = new System.Drawing.Point(607, 261);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(247, 53);
+            this.textBox4.Size = new System.Drawing.Size(247, 57);
             this.textBox4.TabIndex = 12;
             componentTool4.Enabled = false;
             componentTool4.ImageSource = "icon-save?color=windowText";
+            componentTool5.ImageSource = "icon-search";
+            componentTool6.ImageSource = "menu-overflow";
             this.textBox4.Tools.AddRange(new Wisej.Web.ComponentTool[] {
-            componentTool4});
+            componentTool4,
+            componentTool5,
+            componentTool6});
             this.textBox4.ToolClick += new Wisej.Web.ToolClickEventHandler(this.Tool_Click);
             // 
             // checkedListBox1
@@ -109,11 +115,11 @@
             this.checkedListBox1.Name = "checkedListBox1";
             this.checkedListBox1.Size = new System.Drawing.Size(247, 88);
             this.checkedListBox1.TabIndex = 13;
-            componentTool5.ImageSource = "checkbox-checked";
-            componentTool5.Position = Wisej.Web.LeftRightAlignment.Left;
-            componentTool5.ToolTipText = "Check All";
+            componentTool7.ImageSource = "checkbox-checked";
+            componentTool7.Position = Wisej.Web.LeftRightAlignment.Left;
+            componentTool7.ToolTipText = "Check All";
             this.checkedListBox1.Tools.AddRange(new Wisej.Web.ComponentTool[] {
-            componentTool5});
+            componentTool7});
             this.checkedListBox1.ToolClick += new Wisej.Web.ToolClickEventHandler(this.checkedListBox1_ToolClick);
             // 
             // comboBox1
@@ -128,9 +134,9 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(247, 30);
             this.comboBox1.TabIndex = 14;
-            componentTool6.ImageSource = "icon-info";
+            componentTool8.ImageSource = "icon-info";
             this.comboBox1.Tools.AddRange(new Wisej.Web.ComponentTool[] {
-            componentTool6});
+            componentTool8});
             this.comboBox1.ToolClick += new Wisej.Web.ToolClickEventHandler(this.comboBox1_ToolClick);
             // 
             // Features

@@ -22,7 +22,8 @@ namespace Wisej.DemoBrowser.ListView
 			Faker f = new Faker();
 			for (int i = 0; i < 20; i++)
 			{
-				string imageSource = $"https://i.pravatar.cc/150?img={f.Random.Int(1, 70)}";
+				string imageSource = ImageHelper.GetRandomPerson();
+
 				LargeImageList.Images.Add(imageSource);
 				SmallImageList.Images.Add(imageSource);
 				DetailsImageList.Images.Add(imageSource);
@@ -64,21 +65,7 @@ namespace Wisej.DemoBrowser.ListView
         private void comboBoxView_SelectedIndexChanged(object sender, EventArgs e)
         {
 			var view = (View)Enum.Parse(typeof(View), comboBoxView.Text);
-
-			switch (view)
-            {
-				case View.Tile:
-				case View.SmallIcon:
-					this.listViewDemo.ItemSize = new Size(175, 225);
-					break;
-
-				case View.LargeIcon:
-					this.listViewDemo.ItemSize = new Size(175, 175);
-					break;
-            }
-
 			this.listViewDemo.View = view;
-			this.listViewDemo.Update();
 		}
     }
 }

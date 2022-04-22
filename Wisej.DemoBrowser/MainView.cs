@@ -1,17 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Dynamic;
 using System.IO;
 using System.Linq;
 using System.Net;
-using System.Reflection;
-using System.Web;
-using Wisej.DemoBrowser.Common;
 using Wisej.Web;
 
 namespace Wisej.DemoBrowser
 {
-	public partial class MainView : Page
+    public partial class MainView : Page
 	{
 
 		#region Properties
@@ -54,6 +50,9 @@ namespace Wisej.DemoBrowser
 
 			this.treeViewComponents.Nodes.Clear();
 			PopulateTestList();
+
+			if (Application.Browser.Device == "Mobile")
+				this.panelComponents.Collapsed = true;
 
 #if NETCOREAPP
 			LoadUnreferencedWisejAssemblies();

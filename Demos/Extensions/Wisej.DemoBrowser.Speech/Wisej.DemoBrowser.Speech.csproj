@@ -14,18 +14,6 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <None Remove="Images\play.png" />
-	  <None Remove="Images\record.png" />
-	  <None Remove="Images\stop.png" />
-	</ItemGroup>
-
-	<ItemGroup>
-	  <EmbeddedResource Include="Images\play.png" />
-	  <EmbeddedResource Include="Images\record.png" />
-	  <EmbeddedResource Include="Images\stop.png" />
-	</ItemGroup>
-
-	<ItemGroup>
 		<PackageReference Include="Wisej-3" Version="3.*-*" />
 		<PackageReference Include="Wisej-3-Speech" Version="3.*-*" />
 		<ProjectReference Include="..\..\..\Wisej.DemoBrowser.Common\Wisej.DemoBrowser.Common.csproj" />

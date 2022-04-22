@@ -128,7 +128,6 @@ var textField   = this.getChildControl("textfield");
 
 textField.addListener("keydown", function (e) {
 
-    debugger;
     switch (e.getKeyIdentifier())
     {
       case "F8":

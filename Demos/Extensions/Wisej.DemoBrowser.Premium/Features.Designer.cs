@@ -297,7 +297,6 @@
             this.panelWebix.Size = new System.Drawing.Size(400, 152);
             this.panelWebix.TabIndex = 8;
             this.panelWebix.TabStop = true;
-            this.panelWebix.Click += new System.EventHandler(this.panelWebix_Click);
             // 
             // pictureBox6
             // 

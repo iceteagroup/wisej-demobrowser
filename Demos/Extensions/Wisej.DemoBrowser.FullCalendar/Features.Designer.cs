@@ -53,7 +53,7 @@
             this.comboBoxView.LabelText = "View Type";
             this.comboBoxView.Location = new System.Drawing.Point(19, 21);
             this.comboBoxView.Name = "comboBoxView";
-            this.comboBoxView.Size = new System.Drawing.Size(219, 57);
+            this.comboBoxView.Size = new System.Drawing.Size(219, 53);
             this.comboBoxView.TabIndex = 1;
             this.comboBoxView.Text = "Month";
             this.comboBoxView.SelectedIndexChanged += new System.EventHandler(this.comboBoxView_SelectedIndexChanged);
@@ -62,6 +62,7 @@
             // 
             this.Controls.Add(this.comboBoxView);
             this.Controls.Add(this.fullCalendar1);
+            this.MinimumSize = new System.Drawing.Size(708, 311);
             this.Name = "Features";
             this.Padding = new Wisej.Web.Padding(16);
             this.Load += new System.EventHandler(this.Features_Load);

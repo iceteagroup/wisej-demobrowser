@@ -43,7 +43,7 @@
             this.countUp1.Anchor = Wisej.Web.AnchorStyles.None;
             this.countUp1.Font = new System.Drawing.Font("windowTitle", 45F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.countUp1.ForeColor = System.Drawing.Color.FromArgb(77, 99, 188);
-            this.countUp1.Location = new System.Drawing.Point(564, 206);
+            this.countUp1.Location = new System.Drawing.Point(702, 209);
             this.countUp1.Name = "countUp1";
             this.countUp1.Size = new System.Drawing.Size(294, 62);
             this.countUp1.TabIndex = 0;
@@ -54,7 +54,7 @@
             // 
             this.numericUpDownValue.Anchor = Wisej.Web.AnchorStyles.None;
             this.numericUpDownValue.LabelText = "Value";
-            this.numericUpDownValue.Location = new System.Drawing.Point(289, 324);
+            this.numericUpDownValue.Location = new System.Drawing.Point(427, 327);
             this.numericUpDownValue.Maximum = new decimal(new int[] {
             10000000,
             0,
@@ -63,13 +63,12 @@
             this.numericUpDownValue.Name = "numericUpDownValue";
             this.numericUpDownValue.Size = new System.Drawing.Size(103, 53);
             this.numericUpDownValue.TabIndex = 1;
-            this.numericUpDownValue.ValueChanged += new System.EventHandler(this.numericUpDownValue_ValueChanged);
             // 
             // numericUpDownDuration
             // 
             this.numericUpDownDuration.Anchor = Wisej.Web.AnchorStyles.None;
             this.numericUpDownDuration.LabelText = "Duration";
-            this.numericUpDownDuration.Location = new System.Drawing.Point(289, 232);
+            this.numericUpDownDuration.Location = new System.Drawing.Point(427, 235);
             this.numericUpDownDuration.Maximum = new decimal(new int[] {
             10000000,
             0,
@@ -91,7 +90,7 @@
             this.checkBoxGrouping.Appearance = Wisej.Web.Appearance.Switch;
             this.checkBoxGrouping.AutoSize = false;
             this.checkBoxGrouping.Checked = true;
-            this.checkBoxGrouping.Location = new System.Drawing.Point(289, 162);
+            this.checkBoxGrouping.Location = new System.Drawing.Point(427, 165);
             this.checkBoxGrouping.Name = "checkBoxGrouping";
             this.checkBoxGrouping.Size = new System.Drawing.Size(200, 35);
             this.checkBoxGrouping.TabIndex = 3;
@@ -104,7 +103,7 @@
             this.checkBoxEasing.Appearance = Wisej.Web.Appearance.Switch;
             this.checkBoxEasing.AutoSize = false;
             this.checkBoxEasing.Checked = true;
-            this.checkBoxEasing.Location = new System.Drawing.Point(289, 92);
+            this.checkBoxEasing.Location = new System.Drawing.Point(427, 95);
             this.checkBoxEasing.Name = "checkBoxEasing";
             this.checkBoxEasing.Size = new System.Drawing.Size(200, 35);
             this.checkBoxEasing.TabIndex = 4;
@@ -116,7 +115,7 @@
             this.buttonUpdate.Anchor = Wisej.Web.AnchorStyles.None;
             this.buttonUpdate.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonUpdate.ImageSource = "icon-refresh";
-            this.buttonUpdate.Location = new System.Drawing.Point(398, 347);
+            this.buttonUpdate.Location = new System.Drawing.Point(536, 350);
             this.buttonUpdate.Name = "buttonUpdate";
             this.buttonUpdate.Size = new System.Drawing.Size(91, 30);
             this.buttonUpdate.TabIndex = 5;
@@ -133,6 +132,7 @@
             this.Controls.Add(this.numericUpDownDuration);
             this.Controls.Add(this.numericUpDownValue);
             this.Controls.Add(this.countUp1);
+            this.MinimumSize = new System.Drawing.Size(579, 299);
             this.Name = "Features";
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownValue)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownDuration)).EndInit();

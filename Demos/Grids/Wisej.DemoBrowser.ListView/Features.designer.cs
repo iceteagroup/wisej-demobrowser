@@ -44,7 +44,7 @@
             this.columnHeader7,
             this.columnHeader8,
             this.columnHeader9});
-            this.listViewDemo.ItemSize = new System.Drawing.Size(200, 175);
+            this.listViewDemo.ItemPadding = new Wisej.Web.Padding(8, 3, 3, 3);
             this.listViewDemo.Location = new System.Drawing.Point(263, 15);
             this.listViewDemo.Name = "listViewDemo";
             this.listViewDemo.Size = new System.Drawing.Size(1138, 444);
@@ -57,7 +57,7 @@
             // columnHeader7
             // 
             this.columnHeader7.Name = "columnHeader7";
-            this.columnHeader7.Text = "Full name";
+            this.columnHeader7.Text = "Name";
             this.columnHeader7.Width = 400;
             // 
             // columnHeader8

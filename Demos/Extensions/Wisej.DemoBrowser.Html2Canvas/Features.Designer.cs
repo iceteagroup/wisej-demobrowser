@@ -99,7 +99,7 @@
             // 
             // buttonScreenshot
             // 
-            this.buttonScreenshot.ImageSource = "icon-save";
+            this.buttonScreenshot.ImageSource = "resource.wx/Wisej.DemoBrowser.Html2Canvas/Images/download.png";
             this.buttonScreenshot.Location = new System.Drawing.Point(16, 16);
             this.buttonScreenshot.Name = "buttonScreenshot";
             this.buttonScreenshot.Size = new System.Drawing.Size(171, 37);

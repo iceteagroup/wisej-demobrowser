@@ -271,7 +271,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BorderStyle = Wisej.Web.BorderStyle.Solid;
+            this.pictureBox1.CssStyle = "border-radius: 100px;\r\nborder: 2px solid gray;";
             this.pictureBox1.ImageSource = "resource.wx/Wisej.DemoBrowser.TabControl/JohnDoe.jpg";
             this.pictureBox1.Location = new System.Drawing.Point(50, 44);
             this.pictureBox1.Name = "pictureBox1";
@@ -465,7 +465,7 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.BorderStyle = Wisej.Web.BorderStyle.Solid;
+            this.pictureBox2.CssStyle = "border-radius: 100px;\r\nborder: 2px solid gray;";
             this.pictureBox2.ImageSource = "resource.wx/Wisej.DemoBrowser.TabControl/JaneDoe.jpg";
             this.pictureBox2.Location = new System.Drawing.Point(50, 44);
             this.pictureBox2.Name = "pictureBox2";

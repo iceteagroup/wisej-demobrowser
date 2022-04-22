@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Bogus;
+using Wisej.DemoBrowser.Common;
 
 namespace Wisej.DemoBrowser.DataGridView
 {
@@ -51,7 +52,7 @@ namespace Wisej.DemoBrowser.DataGridView
 						.RuleFor(u => u.Mail, f => f.Internet.Email())
 						.RuleFor(u => u.Designation, f => f.PickRandom<string>(designation))
 						.RuleFor(u => u.Rating, f => f.Random.Int(1, 5).ToString())
-						.RuleFor(u=>u.Avatar,f=>f.Internet.Avatar())
+						.RuleFor(u=>u.Avatar,f=> ImageHelper.GetRandomPerson())
 						.RuleFor(u => u.Progress, f => f.Random.Int(1, 100));
 
 			return faker.Generate(personCount);

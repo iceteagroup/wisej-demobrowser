@@ -28,64 +28,97 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pbPhoto = new Wisej.Web.PictureBox();
-            this.panel1 = new Wisej.Web.Panel();
-            this.lblName = new Wisej.Web.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pbPhoto)).BeginInit();
-            this.panel1.SuspendLayout();
+            this.pictureBoxPhoto = new Wisej.Web.PictureBox();
+            this.labelSubject = new Wisej.Web.Label();
+            this.labelName = new Wisej.Web.Label();
+            this.labelTime = new Wisej.Web.Label();
+            this.checkBoxMark = new Wisej.Web.CheckBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPhoto)).BeginInit();
             this.SuspendLayout();
             // 
-            // pbPhoto
+            // pictureBoxPhoto
             // 
-            this.pbPhoto.Dock = Wisej.Web.DockStyle.Left;
-            this.pbPhoto.Location = new System.Drawing.Point(8, 8);
-            this.pbPhoto.Name = "pbPhoto";
-            this.pbPhoto.Size = new System.Drawing.Size(52, 43);
-            this.pbPhoto.SizeMode = Wisej.Web.PictureBoxSizeMode.Cover;
+            this.pictureBoxPhoto.Anonymous = true;
+            this.pictureBoxPhoto.CssStyle = "border-radius: 100px;\r\nborder: 2px solid gray;";
+            this.pictureBoxPhoto.Location = new System.Drawing.Point(11, 5);
+            this.pictureBoxPhoto.Name = "pictureBoxPhoto";
+            this.pictureBoxPhoto.Size = new System.Drawing.Size(50, 50);
+            this.pictureBoxPhoto.SizeMode = Wisej.Web.PictureBoxSizeMode.Zoom;
             // 
-            // panel1
+            // labelSubject
             // 
-            this.panel1.Controls.Add(this.lblName);
-            this.panel1.Dock = Wisej.Web.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(60, 8);
-            this.panel1.Name = "panel1";
-            this.panel1.Padding = new Wisej.Web.Padding(6);
-            this.panel1.Size = new System.Drawing.Size(332, 43);
-            this.panel1.TabIndex = 1;
+            this.labelSubject.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Left) 
+            | Wisej.Web.AnchorStyles.Right)));
+            this.labelSubject.Anonymous = true;
+            this.labelSubject.AutoEllipsis = true;
+            this.labelSubject.Location = new System.Drawing.Point(11, 62);
+            this.labelSubject.Name = "labelSubject";
+            this.labelSubject.Size = new System.Drawing.Size(278, 25);
+            this.labelSubject.TabIndex = 4;
+            this.labelSubject.Text = "Some subject...";
+            this.labelSubject.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // lblName
+            // labelName
             // 
-            this.lblName.AutoSize = true;
-            this.lblName.Dock = Wisej.Web.DockStyle.Fill;
-            this.lblName.Font = new System.Drawing.Font("defaultBold", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.lblName.Location = new System.Drawing.Point(6, 6);
-            this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(320, 31);
-            this.lblName.TabIndex = 0;
-            this.lblName.Text = "label1";
-            this.lblName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.labelName.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Left) 
+            | Wisej.Web.AnchorStyles.Right)));
+            this.labelName.Anonymous = true;
+            this.labelName.AutoEllipsis = true;
+            this.labelName.Location = new System.Drawing.Point(67, 5);
+            this.labelName.Name = "labelName";
+            this.labelName.Padding = new Wisej.Web.Padding(8, 0, 32, 0);
+            this.labelName.Size = new System.Drawing.Size(126, 50);
+            this.labelName.TabIndex = 3;
+            this.labelName.Text = "Doe, John";
+            this.labelName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // labelTime
+            // 
+            this.labelTime.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Right)));
+            this.labelTime.Anonymous = true;
+            this.labelTime.Location = new System.Drawing.Point(208, 5);
+            this.labelTime.Name = "labelTime";
+            this.labelTime.Size = new System.Drawing.Size(56, 50);
+            this.labelTime.TabIndex = 5;
+            this.labelTime.Text = "7:28 AM";
+            this.labelTime.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // checkBoxMark
+            // 
+            this.checkBoxMark.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Right)));
+            this.checkBoxMark.Location = new System.Drawing.Point(270, 19);
+            this.checkBoxMark.Name = "checkBoxMark";
+            this.checkBoxMark.Size = new System.Drawing.Size(30, 23);
+            this.checkBoxMark.TabIndex = 6;
+            this.checkBoxMark.CheckedChanged += new System.EventHandler(this.checkBoxMark_CheckedChanged);
             // 
             // PersonCard
             // 
-            this.BackColor = System.Drawing.Color.FromArgb(215, 215, 215);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.pbPhoto);
-            this.CssStyle = "border-radius: 8px;";
+            this.BackColor = System.Drawing.Color.FromArgb(255, 255, 255);
+            this.Controls.Add(this.labelSubject);
+            this.Controls.Add(this.labelTime);
+            this.Controls.Add(this.labelName);
+            this.Controls.Add(this.pictureBoxPhoto);
+            this.Controls.Add(this.checkBoxMark);
+            this.CssStyle = "box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;";
+            this.Cursor = Wisej.Web.Cursors.Hand;
             this.Name = "PersonCard";
             this.Padding = new Wisej.Web.Padding(8);
-            this.Size = new System.Drawing.Size(400, 59);
+            this.Size = new System.Drawing.Size(300, 98);
             this.Load += new System.EventHandler(this.PersonCard_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pbPhoto)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.Click += new System.EventHandler(this.PersonCard_Click);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPhoto)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private Web.PictureBox pbPhoto;
-        private Web.Panel panel1;
-        private Web.Label lblName;
+        private Web.PictureBox pictureBoxPhoto;
+        private Web.Label labelSubject;
+        private Web.Label labelName;
+        private Web.Label labelTime;
+        private Web.CheckBox checkBoxMark;
     }
 }

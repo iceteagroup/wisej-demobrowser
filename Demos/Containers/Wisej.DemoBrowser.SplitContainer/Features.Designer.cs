@@ -69,16 +69,15 @@
             // 
             this.splitContainer1.Panel2.Controls.Add(this.splitContainer2);
             this.splitContainer1.Panel2.TabStop = true;
-            this.splitContainer1.Size = new System.Drawing.Size(1422, 474);
-            this.splitContainer1.SplitterDistance = 189;
+            this.splitContainer1.Size = new System.Drawing.Size(864, 420);
+            this.splitContainer1.SplitterDistance = 197;
             this.splitContainer1.TabIndex = 1;
             // 
             // treeViewControls
             // 
             this.treeViewControls.AllowDrag = true;
             this.treeViewControls.Dock = Wisej.Web.DockStyle.Fill;
-            this.treeViewControls.Location = new System.Drawing.Point(8, 34);
-            this.treeViewControls.MinimumSize = new System.Drawing.Size(173, 0);
+            this.treeViewControls.Location = new System.Drawing.Point(8, 38);
             this.treeViewControls.Name = "treeViewControls";
             treeNode1.Name = "Node0";
             treeNode1.Text = "Button";
@@ -96,7 +95,7 @@
             treeNode3,
             treeNode4,
             treeNode5});
-            this.treeViewControls.Size = new System.Drawing.Size(173, 432);
+            this.treeViewControls.Size = new System.Drawing.Size(181, 374);
             this.treeViewControls.TabIndex = 1;
             this.treeViewControls.NodeDrag += new Wisej.Web.TreeViewNodeDragEventHandler(this.treeViewControls_NodeDrag);
             // 
@@ -107,7 +106,7 @@
             this.label1.Location = new System.Drawing.Point(8, 8);
             this.label1.Name = "label1";
             this.label1.Padding = new Wisej.Web.Padding(8, 0, 0, 8);
-            this.label1.Size = new System.Drawing.Size(173, 26);
+            this.label1.Size = new System.Drawing.Size(181, 30);
             this.label1.TabIndex = 2;
             this.label1.Text = "Controls";
             // 
@@ -131,8 +130,8 @@
             this.splitContainer2.Panel2.Controls.Add(this.textBoxOutput);
             this.splitContainer2.Panel2.Padding = new Wisej.Web.Padding(8);
             this.splitContainer2.Panel2.TabStop = true;
-            this.splitContainer2.Size = new System.Drawing.Size(1224, 474);
-            this.splitContainer2.SplitterDistance = 329;
+            this.splitContainer2.Size = new System.Drawing.Size(658, 420);
+            this.splitContainer2.SplitterDistance = 214;
             this.splitContainer2.TabIndex = 2;
             // 
             // panelDesigner
@@ -141,9 +140,9 @@
             this.panelDesigner.BackColor = System.Drawing.Color.White;
             this.panelDesigner.BorderStyle = Wisej.Web.BorderStyle.Solid;
             this.panelDesigner.Dock = Wisej.Web.DockStyle.Fill;
-            this.panelDesigner.Location = new System.Drawing.Point(8, 34);
+            this.panelDesigner.Location = new System.Drawing.Point(8, 38);
             this.panelDesigner.Name = "panelDesigner";
-            this.panelDesigner.Size = new System.Drawing.Size(1208, 287);
+            this.panelDesigner.Size = new System.Drawing.Size(642, 168);
             this.panelDesigner.TabIndex = 0;
             this.panelDesigner.DragDrop += new Wisej.Web.DragEventHandler(this.panelDesigner_DragDrop);
             this.panelDesigner.DragEnter += new Wisej.Web.DragEventHandler(this.panelDesigner_DragEnter);
@@ -155,7 +154,7 @@
             this.label2.Location = new System.Drawing.Point(8, 8);
             this.label2.Name = "label2";
             this.label2.Padding = new Wisej.Web.Padding(0, 0, 0, 8);
-            this.label2.Size = new System.Drawing.Size(1208, 26);
+            this.label2.Size = new System.Drawing.Size(642, 30);
             this.label2.TabIndex = 3;
             this.label2.Text = "Designer";
             // 
@@ -167,14 +166,14 @@
             this.textBoxOutput.Location = new System.Drawing.Point(8, 8);
             this.textBoxOutput.Multiline = true;
             this.textBoxOutput.Name = "textBoxOutput";
-            this.textBoxOutput.Size = new System.Drawing.Size(1208, 120);
+            this.textBoxOutput.Size = new System.Drawing.Size(642, 181);
             this.textBoxOutput.TabIndex = 2;
             // 
             // Features
             // 
             this.Controls.Add(this.splitContainer1);
-            this.MinimumSize = new System.Drawing.Size(1422, 474);
             this.Name = "Features";
+            this.Size = new System.Drawing.Size(864, 420);
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel1.PerformLayout();
             this.splitContainer1.Panel2.ResumeLayout(false);

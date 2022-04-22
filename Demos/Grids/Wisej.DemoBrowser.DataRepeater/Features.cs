@@ -29,7 +29,7 @@ namespace Wisej.DemoBrowser.DataRepeater
 					Name = faker.Name.FullName(),
 					Phone = faker.Phone.PhoneNumber(),
 					Address = faker.Address.FullAddress(),
-					Picture = $"https://i.pravatar.cc/150?img={this.users.Count % 70}"
+					Picture = ImageHelper.GetRandomPerson()
 				});
 			}
 		}
