@@ -500,7 +500,7 @@ namespace Wisej.DemoBrowser
             // 
             // labelNavigationWisejDemos
             // 
-            this.labelNavigationWisejDemos.Font = new System.Drawing.Font("@default", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.labelNavigationWisejDemos.Font = new System.Drawing.Font("@default", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.labelNavigationWisejDemos.ForeColor = System.Drawing.Color.FromName("@demoPanelText-demo");
             this.labelNavigationWisejDemos.Location = new System.Drawing.Point(3, 3);
             this.labelNavigationWisejDemos.Name = "labelNavigationWisejDemos";
@@ -511,66 +511,66 @@ namespace Wisej.DemoBrowser
             // labelNavigationSeparator1
             // 
             this.labelNavigationSeparator1.AutoSize = true;
-            this.labelNavigationSeparator1.Font = new System.Drawing.Font("@defaultBold", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.labelNavigationSeparator1.Font = new System.Drawing.Font("@defaultBold", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.labelNavigationSeparator1.ForeColor = System.Drawing.Color.FromName("@highlightText-demo");
             this.labelNavigationSeparator1.Location = new System.Drawing.Point(110, 3);
             this.labelNavigationSeparator1.Name = "labelNavigationSeparator1";
-            this.labelNavigationSeparator1.Size = new System.Drawing.Size(14, 18);
+            this.labelNavigationSeparator1.Size = new System.Drawing.Size(14, 22);
             this.labelNavigationSeparator1.TabIndex = 6;
             this.labelNavigationSeparator1.Text = ">";
             // 
             // labelNaivgationCategory
             // 
             this.labelNaivgationCategory.AutoSize = true;
-            this.labelNaivgationCategory.Font = new System.Drawing.Font("@default", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.labelNaivgationCategory.Font = new System.Drawing.Font("@default", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.labelNaivgationCategory.ForeColor = System.Drawing.Color.FromName("@demoPanelText-demo");
             this.labelNaivgationCategory.Location = new System.Drawing.Point(130, 3);
             this.labelNaivgationCategory.Name = "labelNaivgationCategory";
-            this.labelNaivgationCategory.Size = new System.Drawing.Size(44, 18);
+            this.labelNaivgationCategory.Size = new System.Drawing.Size(57, 22);
             this.labelNaivgationCategory.TabIndex = 7;
             this.labelNaivgationCategory.Text = "Editors";
             // 
             // labelNavigationSeparator2
             // 
             this.labelNavigationSeparator2.AutoSize = true;
-            this.labelNavigationSeparator2.Font = new System.Drawing.Font("@defaultBold", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.labelNavigationSeparator2.Font = new System.Drawing.Font("@defaultBold", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.labelNavigationSeparator2.ForeColor = System.Drawing.Color.FromName("@highlightText-demo");
-            this.labelNavigationSeparator2.Location = new System.Drawing.Point(180, 3);
+            this.labelNavigationSeparator2.Location = new System.Drawing.Point(193, 3);
             this.labelNavigationSeparator2.Name = "labelNavigationSeparator2";
-            this.labelNavigationSeparator2.Size = new System.Drawing.Size(14, 18);
+            this.labelNavigationSeparator2.Size = new System.Drawing.Size(14, 22);
             this.labelNavigationSeparator2.TabIndex = 8;
             this.labelNavigationSeparator2.Text = ">";
             // 
             // labelNavigationControl
             // 
             this.labelNavigationControl.AutoSize = true;
-            this.labelNavigationControl.Font = new System.Drawing.Font("@default", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.labelNavigationControl.Font = new System.Drawing.Font("@default", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.labelNavigationControl.ForeColor = System.Drawing.Color.FromName("@demoPanelText-demo");
-            this.labelNavigationControl.Location = new System.Drawing.Point(200, 3);
+            this.labelNavigationControl.Location = new System.Drawing.Point(213, 3);
             this.labelNavigationControl.Name = "labelNavigationControl";
-            this.labelNavigationControl.Size = new System.Drawing.Size(68, 18);
+            this.labelNavigationControl.Size = new System.Drawing.Size(87, 22);
             this.labelNavigationControl.TabIndex = 10;
             this.labelNavigationControl.Text = "ComboBox";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("@defaultBold", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.label2.Font = new System.Drawing.Font("@defaultBold", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.label2.ForeColor = System.Drawing.Color.FromName("@highlightText-demo");
-            this.label2.Location = new System.Drawing.Point(274, 3);
+            this.label2.Location = new System.Drawing.Point(306, 3);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(14, 18);
+            this.label2.Size = new System.Drawing.Size(14, 22);
             this.label2.TabIndex = 11;
             this.label2.Text = ">";
             // 
             // labelNavigationDemo
             // 
             this.labelNavigationDemo.AutoSize = true;
-            this.labelNavigationDemo.Font = new System.Drawing.Font("@defaultBold", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.labelNavigationDemo.Font = new System.Drawing.Font("@defaultBold", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.labelNavigationDemo.ForeColor = System.Drawing.Color.FromName("@highlightText-demo");
-            this.labelNavigationDemo.Location = new System.Drawing.Point(294, 3);
+            this.labelNavigationDemo.Location = new System.Drawing.Point(326, 3);
             this.labelNavigationDemo.Name = "labelNavigationDemo";
-            this.labelNavigationDemo.Size = new System.Drawing.Size(97, 18);
+            this.labelNavigationDemo.Size = new System.Drawing.Size(123, 22);
             this.labelNavigationDemo.TabIndex = 9;
             this.labelNavigationDemo.Text = "Simple Binding";
             // 
@@ -713,7 +713,7 @@ namespace Wisej.DemoBrowser
             // 
             // MainView
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 19F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 24F);
             this.AutoScaleMode = Wisej.Web.AutoScaleMode.Font;
             this.Controls.Add(this.panelContainer);
             this.Controls.Add(this.panelComponents);

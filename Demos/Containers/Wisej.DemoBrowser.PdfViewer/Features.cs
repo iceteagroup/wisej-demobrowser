@@ -1,9 +1,6 @@
 ﻿using System;
-using System.Reflection;
 using Wisej.DemoBrowser.Common;
-using System.Linq;
 using Wisej.Web;
-using System.IO;
 
 namespace Wisej.DemoBrowser.PdfViewer
 {

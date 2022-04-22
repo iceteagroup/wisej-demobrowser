@@ -14,14 +14,6 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <None Remove="Files\Wisej.pdf" />
-	</ItemGroup>
-
-	<ItemGroup>
-	  <EmbeddedResource Include="Files\Wisej.pdf" />
-	</ItemGroup>
-
-	<ItemGroup>
 		<PackageReference Include="Wisej-3" Version="3.*-*" />
 		<ProjectReference Include="..\..\..\Wisej.DemoBrowser.Common\Wisej.DemoBrowser.Common.csproj" />
 	</ItemGroup>

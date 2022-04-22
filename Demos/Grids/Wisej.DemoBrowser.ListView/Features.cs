@@ -51,7 +51,7 @@ namespace Wisej.DemoBrowser.ListView
 			ListViewItem item = new ListViewItem(fullName);
 			item.SubItems.Add(new ListViewItem.ListViewSubItem(item,address));
 			item.SubItems.Add(new ListViewItem.ListViewSubItem(item, phoneNumber));
-			item.ImageIndex = faker.Random.Int(1, 20);
+			item.ImageIndex = faker.Random.Int(0, 19);
 
 			e.Item = item;
 		}
