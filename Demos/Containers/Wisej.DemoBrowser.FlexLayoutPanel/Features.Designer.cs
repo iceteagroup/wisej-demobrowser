@@ -28,171 +28,161 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.flexLayoutPanel2 = new Wisej.Web.FlexLayoutPanel();
-            this.button6 = new Wisej.Web.Button();
-            this.button7 = new Wisej.Web.Button();
-            this.button8 = new Wisej.Web.Button();
-            this.button9 = new Wisej.Web.Button();
-            this.button10 = new Wisej.Web.Button();
-            this.flexLayoutPanel1 = new Wisej.Web.FlexLayoutPanel();
-            this.button1 = new Wisej.Web.Button();
-            this.button2 = new Wisej.Web.Button();
-            this.button3 = new Wisej.Web.Button();
-            this.button4 = new Wisej.Web.Button();
-            this.button5 = new Wisej.Web.Button();
-            this.flexLayoutPanel2.SuspendLayout();
-            this.flexLayoutPanel1.SuspendLayout();
+            this.flexLayoutPanel3 = new Wisej.Web.FlexLayoutPanel();
+            this.txtUsername = new Wisej.Web.TextBox();
+            this.txtEmail = new Wisej.Web.TextBox();
+            this.txtPassword = new Wisej.Web.TextBox();
+            this.btnConfirm = new Wisej.Web.Button();
+            this.cmbGender = new Wisej.Web.ComboBox();
+            this.chkSubscribe = new Wisej.Web.CheckBox();
+            this.cmbLayoutStyle = new Wisej.Web.ComboBox();
+            this.cmbHorizontalAlignement = new Wisej.Web.ComboBox();
+            this.cmbVerticalAlignement = new Wisej.Web.ComboBox();
+            this.flexLayoutPanel3.SuspendLayout();
             this.SuspendLayout();
             // 
-            // flexLayoutPanel2
+            // flexLayoutPanel3
             // 
-            this.flexLayoutPanel2.Anchor = Wisej.Web.AnchorStyles.None;
-            this.flexLayoutPanel2.BorderStyle = Wisej.Web.BorderStyle.Solid;
-            this.flexLayoutPanel2.Controls.Add(this.button6);
-            this.flexLayoutPanel2.Controls.Add(this.button7);
-            this.flexLayoutPanel2.Controls.Add(this.button8);
-            this.flexLayoutPanel2.Controls.Add(this.button9);
-            this.flexLayoutPanel2.Controls.Add(this.button10);
-            this.flexLayoutPanel2.LayoutStyle = Wisej.Web.FlexLayoutStyle.Horizontal;
-            this.flexLayoutPanel2.Location = new System.Drawing.Point(744, 95);
-            this.flexLayoutPanel2.Name = "flexLayoutPanel2";
-            this.flexLayoutPanel2.ShowCloseButton = false;
-            this.flexLayoutPanel2.ShowHeader = true;
-            this.flexLayoutPanel2.Size = new System.Drawing.Size(447, 284);
-            this.flexLayoutPanel2.TabIndex = 3;
-            this.flexLayoutPanel2.TabStop = true;
-            this.flexLayoutPanel2.Text = "LayoutStyle Vertical";
+            this.flexLayoutPanel3.Anchor = Wisej.Web.AnchorStyles.None;
+            this.flexLayoutPanel3.BorderStyle = Wisej.Web.BorderStyle.Solid;
+            this.flexLayoutPanel3.Controls.Add(this.txtUsername);
+            this.flexLayoutPanel3.Controls.Add(this.txtEmail);
+            this.flexLayoutPanel3.Controls.Add(this.txtPassword);
+            this.flexLayoutPanel3.Controls.Add(this.cmbGender);
+            this.flexLayoutPanel3.Controls.Add(this.chkSubscribe);
+            this.flexLayoutPanel3.Controls.Add(this.btnConfirm);
+            this.flexLayoutPanel3.HorizontalAlign = Wisej.Web.HorizontalAlignment.Center;
+            this.flexLayoutPanel3.LayoutStyle = Wisej.Web.FlexLayoutStyle.Vertical;
+            this.flexLayoutPanel3.Location = new System.Drawing.Point(626, 6);
+            this.flexLayoutPanel3.Margin = new Wisej.Web.Padding(6);
+            this.flexLayoutPanel3.Name = "flexLayoutPanel3";
+            this.flexLayoutPanel3.Padding = new Wisej.Web.Padding(3);
+            this.flexLayoutPanel3.ShowCloseButton = false;
+            this.flexLayoutPanel3.ShowHeader = true;
+            this.flexLayoutPanel3.Size = new System.Drawing.Size(566, 462);
+            this.flexLayoutPanel3.TabIndex = 4;
+            this.flexLayoutPanel3.TabStop = true;
+            this.flexLayoutPanel3.Text = "LayoutStyle Vertical";
+            this.flexLayoutPanel3.VerticalAlign = Wisej.Web.VerticalAlignment.Middle;
             // 
-            // button6
+            // txtUsername
             // 
-            this.flexLayoutPanel2.SetFillWeight(this.button6, 1);
-            this.button6.Location = new System.Drawing.Point(3, 3);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(75, 248);
-            this.button6.TabIndex = 0;
-            this.button6.Text = "button6";
+            this.txtUsername.LabelText = "Username";
+            this.txtUsername.Location = new System.Drawing.Point(6, 41);
+            this.txtUsername.Name = "txtUsername";
+            this.txtUsername.Size = new System.Drawing.Size(552, 53);
+            this.txtUsername.TabIndex = 2;
             // 
-            // button7
+            // txtEmail
             // 
-            this.flexLayoutPanel2.SetFillWeight(this.button7, 1);
-            this.button7.Location = new System.Drawing.Point(94, 3);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(75, 248);
-            this.button7.TabIndex = 1;
-            this.button7.Text = "button7";
+            this.txtEmail.LabelText = "E-Mail";
+            this.txtEmail.Location = new System.Drawing.Point(6, 110);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(552, 53);
+            this.txtEmail.TabIndex = 3;
             // 
-            // button8
+            // txtPassword
             // 
-            this.flexLayoutPanel2.SetFillWeight(this.button8, 1);
-            this.button8.Location = new System.Drawing.Point(185, 3);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(75, 248);
-            this.button8.TabIndex = 2;
-            this.button8.Text = "button8";
+            this.txtPassword.LabelText = "Password";
+            this.txtPassword.Location = new System.Drawing.Point(6, 179);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.Size = new System.Drawing.Size(552, 53);
+            this.txtPassword.TabIndex = 4;
             // 
-            // button9
+            // btnConfirm
             // 
-            this.flexLayoutPanel2.SetFillWeight(this.button9, 1);
-            this.button9.Location = new System.Drawing.Point(276, 3);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(75, 248);
-            this.button9.TabIndex = 3;
-            this.button9.Text = "button9";
+            this.btnConfirm.BackColor = System.Drawing.Color.FromArgb(105, 205, 116);
+            this.btnConfirm.ForeColor = System.Drawing.Color.FromArgb(255, 255, 255);
+            this.btnConfirm.Location = new System.Drawing.Point(6, 356);
+            this.btnConfirm.Name = "btnConfirm";
+            this.btnConfirm.Size = new System.Drawing.Size(552, 34);
+            this.btnConfirm.TabIndex = 5;
+            this.btnConfirm.Text = "Confirm";
             // 
-            // button10
+            // cmbGender
             // 
-            this.flexLayoutPanel2.SetFillWeight(this.button10, 1);
-            this.button10.Location = new System.Drawing.Point(367, 3);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(75, 248);
-            this.button10.TabIndex = 4;
-            this.button10.Text = "button10";
+            this.cmbGender.Items.AddRange(new object[] {
+            "Male",
+            "Female",
+            "Other"});
+            this.cmbGender.LabelText = "Gender";
+            this.cmbGender.Location = new System.Drawing.Point(6, 248);
+            this.cmbGender.Name = "cmbGender";
+            this.cmbGender.Size = new System.Drawing.Size(552, 53);
+            this.cmbGender.TabIndex = 6;
             // 
-            // flexLayoutPanel1
+            // chkSubscribe
             // 
-            this.flexLayoutPanel1.Anchor = Wisej.Web.AnchorStyles.None;
-            this.flexLayoutPanel1.BorderStyle = Wisej.Web.BorderStyle.Solid;
-            this.flexLayoutPanel1.Controls.Add(this.button1);
-            this.flexLayoutPanel1.Controls.Add(this.button2);
-            this.flexLayoutPanel1.Controls.Add(this.button3);
-            this.flexLayoutPanel1.Controls.Add(this.button4);
-            this.flexLayoutPanel1.Controls.Add(this.button5);
-            this.flexLayoutPanel1.LayoutStyle = Wisej.Web.FlexLayoutStyle.Vertical;
-            this.flexLayoutPanel1.Location = new System.Drawing.Point(232, 95);
-            this.flexLayoutPanel1.Name = "flexLayoutPanel1";
-            this.flexLayoutPanel1.ShowCloseButton = false;
-            this.flexLayoutPanel1.ShowHeader = true;
-            this.flexLayoutPanel1.Size = new System.Drawing.Size(447, 284);
-            this.flexLayoutPanel1.TabIndex = 2;
-            this.flexLayoutPanel1.TabStop = true;
-            this.flexLayoutPanel1.Text = "LayoutStyle Vertical";
+            this.chkSubscribe.Location = new System.Drawing.Point(6, 317);
+            this.chkSubscribe.Name = "chkSubscribe";
+            this.chkSubscribe.Size = new System.Drawing.Size(552, 23);
+            this.chkSubscribe.TabIndex = 7;
+            this.chkSubscribe.Text = "Subscribe To Newsletter";
             // 
-            // button1
+            // cmbLayoutStyle
             // 
-            this.button1.Location = new System.Drawing.Point(3, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(439, 27);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
+            this.cmbLayoutStyle.DropDownStyle = Wisej.Web.ComboBoxStyle.DropDownList;
+            this.cmbLayoutStyle.Items.AddRange(new object[] {
+            "Default",
+            "Vertical",
+            "Horizontal"});
+            this.cmbLayoutStyle.LabelText = "LayoutStyle";
+            this.cmbLayoutStyle.Location = new System.Drawing.Point(231, 144);
+            this.cmbLayoutStyle.Name = "cmbLayoutStyle";
+            this.cmbLayoutStyle.Size = new System.Drawing.Size(230, 53);
+            this.cmbLayoutStyle.TabIndex = 5;
             // 
-            // button2
+            // cmbHorizontalAlignement
             // 
-            this.button2.Location = new System.Drawing.Point(3, 46);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(439, 27);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "button2";
+            this.cmbHorizontalAlignement.Items.AddRange(new object[] {
+            "Left",
+            "Right",
+            "Center"});
+            this.cmbHorizontalAlignement.LabelText = "HorizontalAlignement";
+            this.cmbHorizontalAlignement.Location = new System.Drawing.Point(231, 218);
+            this.cmbHorizontalAlignement.Name = "cmbHorizontalAlignement";
+            this.cmbHorizontalAlignement.Size = new System.Drawing.Size(230, 53);
+            this.cmbHorizontalAlignement.TabIndex = 6;
             // 
-            // button3
+            // cmbVerticalAlignement
             // 
-            this.button3.Location = new System.Drawing.Point(3, 89);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(439, 27);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "button3";
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(3, 132);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(439, 27);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "button4";
-            // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(3, 175);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(439, 27);
-            this.button5.TabIndex = 4;
-            this.button5.Text = "button5";
+            this.cmbVerticalAlignement.Items.AddRange(new object[] {
+            "Top",
+            "Center",
+            "Bottom"});
+            this.cmbVerticalAlignement.LabelText = "VerticalAlignement";
+            this.cmbVerticalAlignement.Location = new System.Drawing.Point(231, 298);
+            this.cmbVerticalAlignement.Name = "cmbVerticalAlignement";
+            this.cmbVerticalAlignement.Size = new System.Drawing.Size(230, 53);
+            this.cmbVerticalAlignement.TabIndex = 7;
             // 
             // Features
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 19F);
             this.AutoScaleMode = Wisej.Web.AutoScaleMode.Font;
-            this.Controls.Add(this.flexLayoutPanel2);
-            this.Controls.Add(this.flexLayoutPanel1);
+            this.Controls.Add(this.cmbVerticalAlignement);
+            this.Controls.Add(this.cmbHorizontalAlignement);
+            this.Controls.Add(this.cmbLayoutStyle);
+            this.Controls.Add(this.flexLayoutPanel3);
+            this.MinimumSize = new System.Drawing.Size(940, 400);
             this.Name = "Features";
-            this.flexLayoutPanel2.ResumeLayout(false);
-            this.flexLayoutPanel1.ResumeLayout(false);
+            this.flexLayoutPanel3.ResumeLayout(false);
+            this.flexLayoutPanel3.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
-
-        private Web.FlexLayoutPanel flexLayoutPanel2;
-        private Web.Button button6;
-        private Web.Button button7;
-        private Web.Button button8;
-        private Web.Button button9;
-        private Web.Button button10;
-        private Web.FlexLayoutPanel flexLayoutPanel1;
-        private Web.Button button1;
-        private Web.Button button2;
-        private Web.Button button3;
-        private Web.Button button4;
-        private Web.Button button5;
+        private Web.FlexLayoutPanel flexLayoutPanel3;
+        private Web.TextBox txtUsername;
+        private Web.TextBox txtEmail;
+        private Web.TextBox txtPassword;
+        private Web.Button btnConfirm;
+        private Web.ComboBox cmbGender;
+        private Web.CheckBox chkSubscribe;
+        private Web.ComboBox cmbLayoutStyle;
+        private Web.ComboBox cmbHorizontalAlignement;
+        private Web.ComboBox cmbVerticalAlignement;
     }
 }

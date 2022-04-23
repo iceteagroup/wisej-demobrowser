@@ -130,7 +130,7 @@ namespace Wisej.DemoBrowser.Tooltip
             this.toolTipCustomColors.Alignment = Wisej.Web.Placement.LeftTop;
             this.toolTipCustomColors.AllowHtml = true;
             this.toolTipCustomColors.AutoPopDelay = 3000;
-            this.toolTipCustomColors.ForeColor = Color.Yellow;
+            this.toolTipCustomColors.ForeColor = System.Drawing.Color.Yellow;
             // 
             // toolTipAlignment
             // 

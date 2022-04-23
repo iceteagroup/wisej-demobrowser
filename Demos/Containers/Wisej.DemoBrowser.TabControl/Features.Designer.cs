@@ -475,6 +475,7 @@
             // Features
             // 
             this.Controls.Add(this.tabControl1);
+            this.MinimumSize = new System.Drawing.Size(940, 400);
             this.Name = "Features";
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);

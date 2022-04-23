@@ -111,6 +111,7 @@
             this.Controls.Add(this.checkBoxAudio);
             this.Controls.Add(this.checkBoxVideo);
             this.Controls.Add(this.camera1);
+            this.MinimumSize = new System.Drawing.Size(940, 400);
             this.Name = "Features";
             this.ResumeLayout(false);
 

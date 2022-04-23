@@ -14,12 +14,18 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Files\excel_sample.xls" />
+	  <None Remove="Files\powerpoint_sample.ppt" />
+	  <None Remove="Files\word_sample.doc" />
 	  <None Remove="Icons\excel.svg" />
 	  <None Remove="Icons\powerpoint.svg" />
 	  <None Remove="Icons\word.svg" />
 	</ItemGroup>
 
 	<ItemGroup>
+	  <EmbeddedResource Include="Files\excel_sample.xls" />
+	  <EmbeddedResource Include="Files\powerpoint_sample.ppt" />
+	  <EmbeddedResource Include="Files\word_sample.doc" />
 	  <EmbeddedResource Include="Icons\excel.svg" />
 	  <EmbeddedResource Include="Icons\powerpoint.svg" />
 	  <EmbeddedResource Include="Icons\word.svg" />

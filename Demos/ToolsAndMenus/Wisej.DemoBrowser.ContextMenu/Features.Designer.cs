@@ -300,6 +300,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.buttonCheckedContextMenu);
             this.Controls.Add(this.buttonDefault);
+            this.MinimumSize = new System.Drawing.Size(940, 400);
             this.Name = "Features";
             this.ResumeLayout(false);
 

@@ -9,6 +9,7 @@ namespace Wisej.DemoBrowser.ProgressCircle
 		public Features()
 		{
 			InitializeComponent();
+			this.comboBoxLineCap.SelectedIndex = 0;
 		}
 
 		private void checkBoxFill_CheckedChanged(object sender, EventArgs e)
