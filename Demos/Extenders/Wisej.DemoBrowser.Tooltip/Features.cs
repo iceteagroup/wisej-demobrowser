@@ -50,7 +50,7 @@ namespace Wisej.DemoBrowser.Tooltip
 
         private void txtToolTipText_TextChanged(object sender, EventArgs e)
         {
-            this.btnToolTip.ToolTipText = txtToolTipText.Text;
+           this.toolTip.SetToolTip(this.btnToolTip, txtToolTipText.Text);
         }
 
         private void chkAllowHtml_CheckedChanged(object sender, EventArgs e)

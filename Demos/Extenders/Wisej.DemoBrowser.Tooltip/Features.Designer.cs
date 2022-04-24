@@ -33,8 +33,8 @@ namespace Wisej.DemoBrowser.Tooltip
             this.components = new System.ComponentModel.Container();
             this.toolTip = new Wisej.Web.ToolTip(this.components);
             this.progressBar1 = new Wisej.Web.ProgressBar();
-            this.comboBoxIcon = new Wisej.Web.ComboBox();
             this.btnToolTip = new Wisej.Web.Button();
+            this.comboBoxIcon = new Wisej.Web.ComboBox();
             this.comboBoxAlignment = new Wisej.Web.ComboBox();
             this.txtColor = new Wisej.Web.TextBox();
             this.txtToolTipText = new Wisej.Web.TextBox();
@@ -53,6 +53,16 @@ namespace Wisej.DemoBrowser.Tooltip
             this.progressBar1.Value = 1;
             this.progressBar1.Click += new System.EventHandler(this.progressBar1_Click);
             // 
+            // btnToolTip
+            // 
+            this.btnToolTip.Anchor = Wisej.Web.AnchorStyles.None;
+            this.btnToolTip.Location = new System.Drawing.Point(713, 153);
+            this.btnToolTip.Name = "btnToolTip";
+            this.btnToolTip.Size = new System.Drawing.Size(200, 40);
+            this.btnToolTip.TabIndex = 14;
+            this.btnToolTip.Text = "ToolTip";
+            this.toolTip.SetToolTip(this.btnToolTip, "ToolTip Text");
+            // 
             // comboBoxIcon
             // 
             this.comboBoxIcon.Anchor = Wisej.Web.AnchorStyles.None;
@@ -62,17 +72,6 @@ namespace Wisej.DemoBrowser.Tooltip
             this.comboBoxIcon.TabIndex = 13;
             this.comboBoxIcon.Watermark = "ToolTip Icon";
             this.comboBoxIcon.SelectedIndexChanged += new System.EventHandler(this.comboBoxIcon_SelectedIndexChanged);
-            // 
-            // btnToolTip
-            // 
-            this.btnToolTip.Anchor = Wisej.Web.AnchorStyles.None;
-            this.btnToolTip.Location = new System.Drawing.Point(713, 153);
-            this.btnToolTip.Name = "btnToolTip";
-            this.btnToolTip.Size = new System.Drawing.Size(200, 40);
-            this.btnToolTip.TabIndex = 14;
-            this.btnToolTip.Text = "ToolTip";
-            this.toolTip.SetToolTip(this.btnToolTip, "toolTip");
-            this.btnToolTip.ToolTipText = "This is the default Text";
             // 
             // comboBoxAlignment
             // 

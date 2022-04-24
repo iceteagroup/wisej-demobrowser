@@ -73,6 +73,7 @@
             // shape1
             // 
             this.shape1.Anchor = Wisej.Web.AnchorStyles.None;
+            this.shape1.BackColor = System.Drawing.Color.White;
             this.shape1.BorderStyle.Color = System.Drawing.Color.FromName("@highlight");
             this.shape1.BorderStyle.Size = 10;
             this.shape1.BorderStyleBottom.Color = System.Drawing.Color.FromName("@highlight");
@@ -119,7 +120,7 @@
             // 
             // Features
             // 
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.Color.Transparent;
             this.Controls.Add(this.btnShapeBackColor);
             this.Controls.Add(this.btnShapeColor);
             this.Controls.Add(this.nudShapeRotation);
