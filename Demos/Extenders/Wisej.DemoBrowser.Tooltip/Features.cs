@@ -16,6 +16,9 @@ namespace Wisej.DemoBrowser.Tooltip
         {
             this.comboBoxIcon.DataSource = Enum.GetNames(typeof(ToolTipIcon));
             this.comboBoxAlignment.DataSource = Enum.GetNames(typeof(Placement));
+
+            this.comboBoxAlignment.SelectedIndex = 0;
+            this.comboBoxIcon.SelectedIndex = 0;
         }
 
         private void progressBar1_Click(object sender, EventArgs e)
@@ -30,30 +33,42 @@ namespace Wisej.DemoBrowser.Tooltip
                     this.progressBar1.Value = i;
                     Application.Update(this);
 
-                    Thread.Sleep((this.toolTipAutoPopDelay.AutoPopDelay - 1000) / maximum);
+                    Thread.Sleep((this.toolTip.AutoPopDelay - 1000) / maximum);
                 }
             });
         }
 
         private void comboBoxIcon_SelectedIndexChanged(object sender, EventArgs e)
         {
-            var icon = (string)this.comboBoxIcon.SelectedItem;
-
-            this.toolTipIcon.ToolTipIcon = (ToolTipIcon)Enum.Parse(typeof(ToolTipIcon), icon);
-            this.toolTipIcon.SetToolTip(this.comboBoxIcon, icon);
+            this.toolTip.ToolTipIcon = (ToolTipIcon)Enum.Parse(typeof(ToolTipIcon), this.comboBoxIcon.SelectedItem.ToString());
         }
 
         private void comboBoxAlignment_SelectedIndexChanged(object sender, EventArgs e)
         {
-            var alignment = (string)this.comboBoxAlignment.SelectedItem;
-
-            this.toolTipAlignment.Alignment = (Placement)Enum.Parse(typeof(Placement), alignment);
-            this.toolTipAlignment.SetToolTip(this.comboBoxAlignment, alignment);
+            this.toolTip.Alignment = (Placement)Enum.Parse(typeof(Placement), this.comboBoxAlignment.SelectedItem.ToString());
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void txtToolTipText_TextChanged(object sender, EventArgs e)
         {
-            AlertBox.Show($"Text: {this.textBox1.Text}");
+            this.btnToolTip.ToolTipText = txtToolTipText.Text;
+        }
+
+        private void chkAllowHtml_CheckedChanged(object sender, EventArgs e)
+        {
+            this.toolTip.AllowHtml = chkAllowHtml.Checked;
+        }
+
+        private void txtColor_Enter(object sender, EventArgs e)
+        {
+            using (ColorDialog dlg = new ColorDialog())
+            {
+                if (dlg.ShowDialog() == DialogResult.OK)
+                {
+                    this.toolTip.ForeColor = dlg.Color;
+                    this.txtColor.Text = dlg.Color.ToString();
+                    this.txtColor.BackColor = dlg.Color;
+                }
+            }
         }
     }
 }
