@@ -42,8 +42,9 @@
             // 
             // linkDocs
             // 
-            this.linkDocs.Text = "https://js.devexpress.com/Documentation/Guide/Widgets/File_Manager/Getting_Starte" +
-    "d_with_File_Manager/";
+            this.linkDocs.Size = new System.Drawing.Size(1028, 24);
+            this.linkDocs.Text = "https://js.devexpress.com/Documentation/Guide/UI_Components/FileManager/Getting_S" +
+    "tarted_with_File_Manager/";
             // 
             // buttonUpdate
             // 
@@ -69,6 +70,8 @@
             this.flowLayoutPanel1.Controls.Add(this.userComboBox1);
             this.flowLayoutPanel1.Controls.Add(this.comboBox1);
             this.flowLayoutPanel1.Controls.Add(this.checkedListBox1);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 31);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 445);
             // 
             // dxFileManager1
             // 
