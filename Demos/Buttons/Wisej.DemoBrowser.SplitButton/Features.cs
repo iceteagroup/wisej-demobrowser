@@ -23,9 +23,9 @@ namespace Wisej.DemoBrowser.SplitButton
 			this.splitButtonRepeat.Text = $"Repeat ({++_count})";
 		}
 
-		private void splitButtonRepeat_ItemClicked(object sender, MenuButtonItemClickedEventArgs e)
-		{
-			AlertBox.Show($"Selected {e.Item.Text}");
-		}
-	}
+        private void splitButton_ItemClicked(object sender, MenuButtonItemClickedEventArgs e)
+        {
+			AlertBox.Show($"Selected Item: {e.Item.Text}");
+        }
+    }
 }

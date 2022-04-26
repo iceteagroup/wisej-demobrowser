@@ -25,7 +25,7 @@ namespace Wisej.DemoBrowser.HelpTip
 
 		private void textBox1_TextChanged(object sender, EventArgs e)
 		{
-			AlertBox.Show($"Text: {this.textBox1.Text}");
+			AlertBox.Show($"Text: {this.txtColor.Text}");
 		}
 
 		private void comboBoxAlignment_SelectedIndexChanged(object sender, EventArgs e)
@@ -60,5 +60,18 @@ namespace Wisej.DemoBrowser.HelpTip
 			this.helpTipIcon.HelpTipIcon = (ToolTipIcon)Enum.Parse(typeof(ToolTipIcon), icon);
 			this.helpTipIcon.SetHelpTip(this.comboBoxIcon, icon);
 		}
-	}
+
+        private void textBox1_Enter(object sender, EventArgs e)
+        {
+			using (ColorDialog dlg = new ColorDialog())
+			{
+				if (dlg.ShowDialog() == DialogResult.OK)
+				{
+					this.helpTipColor.ForeColor = dlg.Color;
+					this.txtColor.Text = dlg.Color.ToString();
+					this.txtColor.BackColor = dlg.Color;
+				}
+			}
+		}
+    }
 }

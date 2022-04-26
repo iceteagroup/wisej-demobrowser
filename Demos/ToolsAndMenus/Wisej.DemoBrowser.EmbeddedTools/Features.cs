@@ -23,7 +23,7 @@ namespace Wisej.DemoBrowser.EmbeddedTools
 			if (!_checked)
 			{
 				checkedListBox1.Tools[0].ToolTipText = "Check All";
-				checkedListBox1.Tools[0].ImageSource = "checkbox";
+				checkedListBox1.Tools[0].ImageSource = "checkbox-checked";
 				_checked = true;
 
 				for (int i = 0; i < checkedListBox1.Items.Count; i++)
@@ -36,7 +36,7 @@ namespace Wisej.DemoBrowser.EmbeddedTools
 			else
 			{
 				checkedListBox1.Tools[0].ToolTipText = "Uncheck All";
-				checkedListBox1.Tools[0].ImageSource = "checkbox-checked";
+				checkedListBox1.Tools[0].ImageSource = "checkbox";
 				_checked = false;
 
 				for (int i = 0; i < checkedListBox1.Items.Count; i++)

@@ -33,7 +33,7 @@
             this.button1 = new Wisej.Web.Button();
             this.button2 = new Wisej.Web.Button();
             this.comboBoxIcon = new Wisej.Web.ComboBox();
-            this.textBox1 = new Wisej.Web.TextBox();
+            this.txtColor = new Wisej.Web.TextBox();
             this.helpTipColor = new Wisej.Web.HelpTip(this.components);
             this.progressBar1 = new Wisej.Web.ProgressBar();
             this.helpTipAutoPopDelay = new Wisej.Web.HelpTip(this.components);
@@ -74,16 +74,17 @@
             this.comboBoxIcon.Watermark = "HelpTip Icon";
             this.comboBoxIcon.SelectedIndexChanged += new System.EventHandler(this.comboBoxIcon_SelectedIndexChanged);
             // 
-            // textBox1
+            // txtColor
             // 
-            this.textBox1.Anchor = Wisej.Web.AnchorStyles.None;
-            this.helpTipColor.SetHelpTip(this.textBox1, "Customizable Colors");
-            this.textBox1.Location = new System.Drawing.Point(211, 292);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(200, 30);
-            this.textBox1.TabIndex = 2;
-            this.textBox1.Watermark = "Customizable Colors";
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.txtColor.Anchor = Wisej.Web.AnchorStyles.None;
+            this.helpTipColor.SetHelpTip(this.txtColor, "Customizable Colors");
+            this.txtColor.Location = new System.Drawing.Point(211, 292);
+            this.txtColor.Name = "txtColor";
+            this.txtColor.Size = new System.Drawing.Size(200, 30);
+            this.txtColor.TabIndex = 2;
+            this.txtColor.Watermark = "Customizable Colors";
+            this.txtColor.Enter += new System.EventHandler(this.textBox1_Enter);
+            this.txtColor.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // helpTipColor
             // 
@@ -126,7 +127,7 @@
             this.Controls.Add(this.comboBoxIcon);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.comboBoxAlignment);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtColor);
             this.Controls.Add(this.button1);
             this.MinimumSize = new System.Drawing.Size(940, 400);
             this.Name = "Features";
@@ -140,7 +141,7 @@
 
 		private Web.HelpTip helpTipDefault;
 		private Web.Button button1;
-		private Web.TextBox textBox1;
+		private Web.TextBox txtColor;
 		private Web.HelpTip helpTipAutoPopDelay;
 		private Web.HelpTip helpTipColor;
 		private Web.ComboBox comboBoxAlignment;
