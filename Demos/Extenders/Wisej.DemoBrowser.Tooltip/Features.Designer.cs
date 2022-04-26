@@ -44,7 +44,7 @@ namespace Wisej.DemoBrowser.Tooltip
             // progressBar1
             // 
             this.progressBar1.Anchor = Wisej.Web.AnchorStyles.None;
-            this.progressBar1.Location = new System.Drawing.Point(713, 278);
+            this.progressBar1.Location = new System.Drawing.Point(821, 268);
             this.progressBar1.Name = "progressBar1";
             this.progressBar1.Size = new System.Drawing.Size(200, 40);
             this.progressBar1.TabIndex = 12;
@@ -56,7 +56,7 @@ namespace Wisej.DemoBrowser.Tooltip
             // btnToolTip
             // 
             this.btnToolTip.Anchor = Wisej.Web.AnchorStyles.None;
-            this.btnToolTip.Location = new System.Drawing.Point(713, 153);
+            this.btnToolTip.Location = new System.Drawing.Point(821, 167);
             this.btnToolTip.Name = "btnToolTip";
             this.btnToolTip.Size = new System.Drawing.Size(200, 40);
             this.btnToolTip.TabIndex = 14;
@@ -66,7 +66,7 @@ namespace Wisej.DemoBrowser.Tooltip
             // comboBoxIcon
             // 
             this.comboBoxIcon.Anchor = Wisej.Web.AnchorStyles.None;
-            this.comboBoxIcon.Location = new System.Drawing.Point(305, 285);
+            this.comboBoxIcon.Location = new System.Drawing.Point(407, 291);
             this.comboBoxIcon.Name = "comboBoxIcon";
             this.comboBoxIcon.Size = new System.Drawing.Size(200, 30);
             this.comboBoxIcon.TabIndex = 13;
@@ -76,7 +76,7 @@ namespace Wisej.DemoBrowser.Tooltip
             // comboBoxAlignment
             // 
             this.comboBoxAlignment.Anchor = Wisej.Web.AnchorStyles.None;
-            this.comboBoxAlignment.Location = new System.Drawing.Point(305, 220);
+            this.comboBoxAlignment.Location = new System.Drawing.Point(407, 226);
             this.comboBoxAlignment.Name = "comboBoxAlignment";
             this.comboBoxAlignment.Size = new System.Drawing.Size(200, 30);
             this.comboBoxAlignment.TabIndex = 11;
@@ -86,7 +86,7 @@ namespace Wisej.DemoBrowser.Tooltip
             // txtColor
             // 
             this.txtColor.Anchor = Wisej.Web.AnchorStyles.None;
-            this.txtColor.Location = new System.Drawing.Point(305, 155);
+            this.txtColor.Location = new System.Drawing.Point(407, 161);
             this.txtColor.Name = "txtColor";
             this.txtColor.Size = new System.Drawing.Size(200, 30);
             this.txtColor.TabIndex = 10;
@@ -96,7 +96,7 @@ namespace Wisej.DemoBrowser.Tooltip
             // txtToolTipText
             // 
             this.txtToolTipText.Anchor = Wisej.Web.AnchorStyles.None;
-            this.txtToolTipText.Location = new System.Drawing.Point(305, 90);
+            this.txtToolTipText.Location = new System.Drawing.Point(407, 96);
             this.txtToolTipText.Name = "txtToolTipText";
             this.txtToolTipText.Size = new System.Drawing.Size(200, 30);
             this.txtToolTipText.TabIndex = 15;
@@ -107,7 +107,7 @@ namespace Wisej.DemoBrowser.Tooltip
             // chkAllowHtml
             // 
             this.chkAllowHtml.Anchor = Wisej.Web.AnchorStyles.None;
-            this.chkAllowHtml.Location = new System.Drawing.Point(305, 350);
+            this.chkAllowHtml.Location = new System.Drawing.Point(407, 356);
             this.chkAllowHtml.Name = "chkAllowHtml";
             this.chkAllowHtml.Size = new System.Drawing.Size(100, 23);
             this.chkAllowHtml.TabIndex = 16;

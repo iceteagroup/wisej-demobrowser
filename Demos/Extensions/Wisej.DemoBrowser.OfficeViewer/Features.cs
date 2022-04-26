@@ -27,7 +27,7 @@ namespace Wisej.DemoBrowser.OfficeViewer
 
         private void button2_Click(object sender, EventArgs e)
         {
-            var filename = "powerpoint_sample.doc";
+            var filename = "powerpoint_sample.ppt";
             var resourceName = $"Wisej.DemoBrowser.OfficeViewer.Files.{filename}";
 
             Stream stream = assembly.GetManifestResourceStream(resourceName);
@@ -38,7 +38,7 @@ namespace Wisej.DemoBrowser.OfficeViewer
 
         private void button3_Click(object sender, EventArgs e)
         {
-            var filename = "excel_sample.doc";
+            var filename = "excel_sample.xls";
             var resourceName = $"Wisej.DemoBrowser.OfficeViewer.Files.{filename}";
 
             Stream stream = assembly.GetManifestResourceStream(resourceName);
