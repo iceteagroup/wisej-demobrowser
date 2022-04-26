@@ -200,12 +200,14 @@
             // 
             // menuItem35
             // 
+            this.menuItem35.IconSource = "icon-save";
             this.menuItem35.Index = 0;
             this.menuItem35.Name = "menuItem35";
             this.menuItem35.Text = "Output";
             // 
             // menuItem36
             // 
+            this.menuItem36.IconSource = "messagebox-error";
             this.menuItem36.Index = 1;
             this.menuItem36.Name = "menuItem36";
             this.menuItem36.Text = "Breakpoints";
@@ -228,6 +230,7 @@
             // 
             // menuItem38
             // 
+            this.menuItem38.IconSource = "icon-preview";
             this.menuItem38.Index = 1;
             this.menuItem38.Name = "menuItem38";
             this.menuItem38.Text = "Organizer";
@@ -285,12 +288,14 @@
             // menuItem24
             // 
             this.menuItem24.AllowHtml = true;
+            this.menuItem24.IconSource = "icon-file";
             this.menuItem24.Index = 0;
             this.menuItem24.Name = "menuItem24";
             this.menuItem24.Text = "<b>File</b>";
             // 
             // menuItem25
             // 
+            this.menuItem25.IconSource = "table-row-editing";
             this.menuItem25.Index = 1;
             this.menuItem25.Name = "menuItem25";
             this.menuItem25.Text = "Edit";
@@ -298,18 +303,21 @@
             // menuItem26
             // 
             this.menuItem26.AllowHtml = true;
+            this.menuItem26.IconSource = "window-icon";
             this.menuItem26.Index = 2;
             this.menuItem26.Name = "menuItem26";
             this.menuItem26.Text = "<i>View</i>";
             // 
             // menuItem27
             // 
+            this.menuItem27.IconSource = "icon-settings";
             this.menuItem27.Index = 3;
             this.menuItem27.Name = "menuItem27";
             this.menuItem27.Text = "Tools";
             // 
             // menuItem28
             // 
+            this.menuItem28.IconSource = "icon-help";
             this.menuItem28.Index = 4;
             this.menuItem28.Name = "menuItem28";
             this.menuItem28.Text = "Help";
@@ -342,36 +350,42 @@
             // 
             // menuItem18
             // 
+            this.menuItem18.IconSource = "icon-file";
             this.menuItem18.Index = 0;
             this.menuItem18.Name = "menuItem18";
             this.menuItem18.Text = "File";
             // 
             // menuItem19
             // 
+            this.menuItem19.IconSource = "table-row-editing";
             this.menuItem19.Index = 1;
             this.menuItem19.Name = "menuItem19";
             this.menuItem19.Text = "Edit";
             // 
             // menuItem20
             // 
+            this.menuItem20.IconSource = "window-icon";
             this.menuItem20.Index = 2;
             this.menuItem20.Name = "menuItem20";
             this.menuItem20.Text = "View";
             // 
             // menuItem21
             // 
+            this.menuItem21.IconSource = "icon-settings";
             this.menuItem21.Index = 3;
             this.menuItem21.Name = "menuItem21";
             this.menuItem21.Text = "Tools";
             // 
             // menuItem22
             // 
+            this.menuItem22.IconSource = "icon-help";
             this.menuItem22.Index = 4;
             this.menuItem22.Name = "menuItem22";
             this.menuItem22.Text = "Help";
             // 
             // menuItem23
             // 
+            this.menuItem23.IconSource = "icon-copy";
             this.menuItem23.Index = 5;
             this.menuItem23.Name = "menuItem23";
             this.menuItem23.Text = "Resources";
@@ -401,12 +415,14 @@
             // 
             // menuItem6
             // 
+            this.menuItem6.IconSource = "icon-comment";
             this.menuItem6.Index = 0;
             this.menuItem6.Name = "menuItem6";
             this.menuItem6.Text = "Auto";
             // 
             // menuItem11
             // 
+            this.menuItem11.IconSource = "icon-comment";
             this.menuItem11.Index = 1;
             this.menuItem11.Name = "menuItem11";
             this.menuItem11.SizeMode = Wisej.Web.MenuItemSizeMode.Fill;
@@ -414,6 +430,7 @@
             // 
             // menuItem12
             // 
+            this.menuItem12.IconSource = "icon-comment";
             this.menuItem12.Index = 2;
             this.menuItem12.Name = "menuItem12";
             this.menuItem12.Text = "Auto";
@@ -486,6 +503,7 @@
             // 
             // menuItem10
             // 
+            this.menuItem10.IconSource = "icon-preview?color=#0027FF";
             this.menuItem10.Index = 0;
             this.menuItem10.MenuItems.AddRange(new Wisej.Web.MenuItem[] {
             this.menuItem14,
@@ -497,6 +515,7 @@
             // 
             // menuItem14
             // 
+            this.menuItem14.IconSource = "icon-file?color=#FF0000";
             this.menuItem14.Index = 0;
             this.menuItem14.Name = "menuItem14";
             this.menuItem14.RadioCheck = true;
@@ -504,6 +523,7 @@
             // 
             // menuItem15
             // 
+            this.menuItem15.IconSource = "icon-file?color=#FF8F00";
             this.menuItem15.Index = 1;
             this.menuItem15.Name = "menuItem15";
             this.menuItem15.RadioCheck = true;
@@ -511,6 +531,7 @@
             // 
             // menuItem16
             // 
+            this.menuItem16.IconSource = "icon-file?color=#FFEF00";
             this.menuItem16.Index = 2;
             this.menuItem16.Name = "menuItem16";
             this.menuItem16.RadioCheck = true;
@@ -518,6 +539,7 @@
             // 
             // menuItem17
             // 
+            this.menuItem17.IconSource = "icon-file?color=#29C100";
             this.menuItem17.Index = 3;
             this.menuItem17.Name = "menuItem17";
             this.menuItem17.RadioCheck = true;
@@ -546,6 +568,7 @@
             // 
             // menuItem13
             // 
+            this.menuItem13.IconSource = "icon-preview?color=#0027FF";
             this.menuItem13.Index = 0;
             this.menuItem13.MenuItems.AddRange(new Wisej.Web.MenuItem[] {
             this.checkedMenuItem2,
@@ -557,24 +580,28 @@
             // 
             // checkedMenuItem2
             // 
+            this.checkedMenuItem2.IconSource = "icon-file?color=#FF0000";
             this.checkedMenuItem2.Index = 0;
             this.checkedMenuItem2.Name = "checkedMenuItem2";
             this.checkedMenuItem2.Text = "Red";
             // 
             // checkedMenuItem3
             // 
+            this.checkedMenuItem3.IconSource = "icon-file?color=#FF8F00";
             this.checkedMenuItem3.Index = 1;
             this.checkedMenuItem3.Name = "checkedMenuItem3";
             this.checkedMenuItem3.Text = "Orange";
             // 
             // checkedMenuItem4
             // 
+            this.checkedMenuItem4.IconSource = "icon-file?color=#FFEF00";
             this.checkedMenuItem4.Index = 2;
             this.checkedMenuItem4.Name = "checkedMenuItem4";
             this.checkedMenuItem4.Text = "Yellow";
             // 
             // checkedMenuItem5
             // 
+            this.checkedMenuItem5.IconSource = "icon-file?color=#29C100";
             this.checkedMenuItem5.Index = 3;
             this.checkedMenuItem5.Name = "checkedMenuItem5";
             this.checkedMenuItem5.Text = "Green";
@@ -594,6 +621,7 @@
             // 
             // menuItem33
             // 
+            this.menuItem33.IconSource = "icon-file";
             this.menuItem33.Index = 0;
             this.menuItem33.Name = "menuItem33";
             this.menuItem33.Text = "Default";
@@ -601,6 +629,7 @@
             // linkMenuItem1
             // 
             this.linkMenuItem1.HRef = "https://www.wisej.com";
+            this.linkMenuItem1.IconSource = "icon-file";
             this.linkMenuItem1.Index = 1;
             this.linkMenuItem1.Name = "linkMenuItem1";
             this.linkMenuItem1.Target = "_blank";
@@ -609,6 +638,7 @@
             // checkedMenuItem1
             // 
             this.checkedMenuItem1.Checked = true;
+            this.checkedMenuItem1.IconSource = "icon-file";
             this.checkedMenuItem1.Index = 2;
             this.checkedMenuItem1.Name = "checkedMenuItem1";
             this.checkedMenuItem1.Text = "Checked";
