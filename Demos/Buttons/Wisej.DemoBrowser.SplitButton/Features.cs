@@ -26,6 +26,12 @@ namespace Wisej.DemoBrowser.SplitButton
         private void splitButton_ItemClicked(object sender, MenuButtonItemClickedEventArgs e)
         {
 			AlertBox.Show($"Selected Item: {e.Item.Text}");
+
+			Wisej.Web.SplitButton btn = (Wisej.Web.SplitButton)sender;
+
+			if (btn.Name == "splitButtonRepeat" || btn.Name == "splitButtonHtml") return;
+			
+			btn.Text = e.Item.Text;
         }
     }
 }

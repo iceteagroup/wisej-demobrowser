@@ -35,7 +35,7 @@
             this.menuItem4 = new Wisej.Web.MenuItem();
             this.menuItem5 = new Wisej.Web.MenuItem();
             this.menuItem6 = new Wisej.Web.MenuItem();
-            this.splitButton1 = new Wisej.Web.SplitButton();
+            this.splitButtonHtml = new Wisej.Web.SplitButton();
             this.menuItem7 = new Wisej.Web.MenuItem();
             this.menuItem8 = new Wisej.Web.MenuItem();
             this.menuItem9 = new Wisej.Web.MenuItem();
@@ -154,23 +154,23 @@
             this.menuItem6.Name = "menuItem6";
             this.menuItem6.Text = "Paris";
             // 
-            // splitButton1
+            // splitButtonHtml
             // 
-            this.splitButton1.AllowHtml = true;
-            this.splitButton1.Anchor = Wisej.Web.AnchorStyles.None;
-            this.splitButton1.Location = new System.Drawing.Point(15, 121);
-            this.splitButton1.MenuItems.AddRange(new Wisej.Web.MenuItem[] {
+            this.splitButtonHtml.AllowHtml = true;
+            this.splitButtonHtml.Anchor = Wisej.Web.AnchorStyles.None;
+            this.splitButtonHtml.Location = new System.Drawing.Point(15, 121);
+            this.splitButtonHtml.MenuItems.AddRange(new Wisej.Web.MenuItem[] {
             this.menuItem7,
             this.menuItem8,
             this.menuItem9,
             this.menuItem10,
             this.menuItem11,
             this.menuItem12});
-            this.splitButton1.Name = "splitButton1";
-            this.splitButton1.Size = new System.Drawing.Size(200, 35);
-            this.splitButton1.TabIndex = 1;
-            this.splitButton1.Text = "Cities <b>with</b> HTML";
-            this.splitButton1.ItemClicked += new Wisej.Web.MenuButtonItemClickedEventHandler(this.splitButton_ItemClicked);
+            this.splitButtonHtml.Name = "splitButtonHtml";
+            this.splitButtonHtml.Size = new System.Drawing.Size(200, 35);
+            this.splitButtonHtml.TabIndex = 1;
+            this.splitButtonHtml.Text = "Cities <b>with</b> HTML";
+            this.splitButtonHtml.ItemClicked += new Wisej.Web.MenuButtonItemClickedEventHandler(this.splitButton_ItemClicked);
             // 
             // menuItem7
             // 
@@ -656,7 +656,7 @@
             this.Controls.Add(this.splitButton3);
             this.Controls.Add(this.splitButtonRepeat);
             this.Controls.Add(this.splitButton2);
-            this.Controls.Add(this.splitButton1);
+            this.Controls.Add(this.splitButtonHtml);
             this.Controls.Add(this.splitButtonCities);
             this.MinimumSize = new System.Drawing.Size(906, 397);
             this.Name = "Features";
@@ -674,7 +674,7 @@
 		private Web.MenuItem menuItem4;
 		private Web.MenuItem menuItem5;
 		private Web.MenuItem menuItem6;
-		private Web.SplitButton splitButton1;
+		private Web.SplitButton splitButtonHtml;
 		private Web.MenuItem menuItem7;
 		private Web.MenuItem menuItem8;
 		private Web.MenuItem menuItem9;
