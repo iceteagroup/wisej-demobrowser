@@ -10,7 +10,14 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
 			InitializeComponent();
 		}
 
-		private void dxSparkline1_WidgetEvent(object sender, WidgetEventArgs e)
+        protected override void OnLoad(EventArgs e)
+        {
+            base.OnLoad(e);
+
+			this.comboBoxPointSymbol.SelectedIndex = 0;
+        }
+
+        private void dxSparkline1_WidgetEvent(object sender, WidgetEventArgs e)
 		{
 			AlertBox.Show(
 				$"<b>{e.Type}</b><br/>{JSON.Stringify(e.Data)}",
@@ -18,5 +25,12 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
 
 			Application.Play(MessageBoxIcon.Information);
 		}
-	}
+
+        private async void buttonUpdate_Click(object sender, EventArgs e)
+        {
+			this.dxSparkline1.Options.type = this.comboBoxPointSymbol.SelectedItem.ToString();
+
+			this.dxSparkline1.Update();
+        }
+    }
 }

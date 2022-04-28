@@ -33,8 +33,6 @@
             this.numericUpDown2 = new Wisej.Web.NumericUpDown();
             this.checkBox1 = new Wisej.Web.CheckBox();
             this.checkBox2 = new Wisej.Web.CheckBox();
-            this.textBox1 = new Wisej.Web.TextBox();
-            this.textBox2 = new Wisej.Web.TextBox();
             this.groupBox1.SuspendLayout();
             this.panel.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
@@ -75,15 +73,15 @@
             this.flowLayoutPanel1.Controls.Add(this.checkBox2);
             this.flowLayoutPanel1.Controls.Add(this.numericUpDown1);
             this.flowLayoutPanel1.Controls.Add(this.numericUpDown2);
-            this.flowLayoutPanel1.Controls.Add(this.textBox1);
-            this.flowLayoutPanel1.Controls.Add(this.textBox2);
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 412);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 35);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 415);
             // 
             // dxRangeSlider1
             // 
             this.dxRangeSlider1.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Left | Wisej.Web.AnchorStyles.Right)));
             this.dxRangeSlider1.Location = new System.Drawing.Point(164, 237);
             this.dxRangeSlider1.Name = "dxRangeSlider1";
+            this.dxRangeSlider1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"startName\":\"st\",\"endName\":\"csa\"}")));
             this.dxRangeSlider1.Size = new System.Drawing.Size(239, 59);
             this.dxRangeSlider1.TabIndex = 0;
             // 
@@ -100,7 +98,7 @@
             0,
             0});
             this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(212, 57);
+            this.numericUpDown1.Size = new System.Drawing.Size(212, 46);
             this.numericUpDown1.TabIndex = 1;
             this.numericUpDown1.Value = new decimal(new int[] {
             40,
@@ -113,7 +111,7 @@
             this.flowLayoutPanel1.SetFillWeight(this.numericUpDown2, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.numericUpDown2, true);
             this.numericUpDown2.LabelText = "End";
-            this.numericUpDown2.Location = new System.Drawing.Point(3, 193);
+            this.numericUpDown2.Location = new System.Drawing.Point(3, 182);
             this.numericUpDown2.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.numericUpDown2.Maximum = new decimal(new int[] {
             1000,
@@ -121,7 +119,7 @@
             0,
             0});
             this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(212, 57);
+            this.numericUpDown2.Size = new System.Drawing.Size(212, 46);
             this.numericUpDown2.TabIndex = 2;
             this.numericUpDown2.Value = new decimal(new int[] {
             60,
@@ -158,28 +156,6 @@
             this.checkBox2.TabIndex = 26;
             this.checkBox2.Text = "Show Range";
             // 
-            // textBox1
-            // 
-            this.flowLayoutPanel1.SetFillWeight(this.textBox1, 1);
-            this.flowLayoutPanel1.SetFlowBreak(this.textBox1, true);
-            this.textBox1.LabelText = "Start Name";
-            this.textBox1.Location = new System.Drawing.Point(3, 269);
-            this.textBox1.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(212, 57);
-            this.textBox1.TabIndex = 27;
-            // 
-            // textBox2
-            // 
-            this.flowLayoutPanel1.SetFillWeight(this.textBox2, 1);
-            this.flowLayoutPanel1.SetFlowBreak(this.textBox2, true);
-            this.textBox2.LabelText = "End Name";
-            this.textBox2.Location = new System.Drawing.Point(3, 345);
-            this.textBox2.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(212, 57);
-            this.textBox2.TabIndex = 28;
-            // 
             // dxRangeSlider
             // 
             this.MinimumSize = new System.Drawing.Size(979, 724);
@@ -201,8 +177,6 @@
 		private DevExtreme.dxRangeSlider dxRangeSlider1;
 		private NumericUpDown numericUpDown2;
 		private NumericUpDown numericUpDown1;
-		private TextBox textBox2;
-		private TextBox textBox1;
 		private CheckBox checkBox2;
 		private CheckBox checkBox1;
 	}

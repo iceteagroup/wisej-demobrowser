@@ -45,28 +45,43 @@
             this.label9 = new Wisej.Web.Label();
             this.dxSparkline7 = new Wisej.Web.Ext.DevExtreme.dxSparkline();
             this.dxSparkline5 = new Wisej.Web.Ext.DevExtreme.dxSparkline();
+            this.comboBoxPointSymbol = new Wisej.Web.ComboBox();
             this.groupBox1.SuspendLayout();
             this.panel.SuspendLayout();
+            this.flowLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // linkDocs
             // 
+            this.linkDocs.Size = new System.Drawing.Size(986, 24);
             this.linkDocs.Text = "https://js.devexpress.com/Documentation/Guide/Widgets/Sparkline/Visual_Elements/";
+            // 
+            // buttonUpdate
+            // 
+            this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
             // linkDemo
             // 
+            this.linkDemo.Size = new System.Drawing.Size(828, 24);
             this.linkDemo.Text = "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/SimpleSparklines/jQuer" +
     "y/Light/";
             // 
             // linkAPI
             // 
+            this.linkAPI.Size = new System.Drawing.Size(904, 24);
             this.linkAPI.Text = "https://js.devexpress.com/Documentation/ApiReference/Data_Visualization_Widgets/d" +
     "xSparkline/";
             // 
             // panel
             // 
             this.panel.Controls.Add(this.tableLayoutPanel1);
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Controls.Add(this.comboBoxPointSymbol);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 31);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 445);
             // 
             // tableLayoutPanel1
             // 
@@ -172,9 +187,9 @@
             this.label7.Anchor = Wisej.Web.AnchorStyles.None;
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("@defaultBold", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.label7.Location = new System.Drawing.Point(334, 47);
+            this.label7.Location = new System.Drawing.Point(337, 49);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(130, 22);
+            this.label7.Size = new System.Drawing.Size(123, 19);
             this.label7.TabIndex = 4;
             this.label7.Text = "Oil (USD/barrel)";
             // 
@@ -223,9 +238,9 @@
             this.label8.Anchor = Wisej.Web.AnchorStyles.None;
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("@defaultBold", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.label8.Location = new System.Drawing.Point(574, 47);
+            this.label8.Location = new System.Drawing.Point(579, 49);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(181, 22);
+            this.label8.Size = new System.Drawing.Size(172, 19);
             this.label8.TabIndex = 10;
             this.label8.Text = "Gold (USD/troy ounce)";
             // 
@@ -246,9 +261,9 @@
             this.label9.Anchor = Wisej.Web.AnchorStyles.None;
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("@defaultBold", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.label9.Location = new System.Drawing.Point(836, 47);
+            this.label9.Location = new System.Drawing.Point(841, 49);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(189, 22);
+            this.label9.Size = new System.Drawing.Size(179, 19);
             this.label9.TabIndex = 13;
             this.label9.Text = "Silver (USD/troy ounce)";
             // 
@@ -272,12 +287,34 @@
             this.dxSparkline5.Size = new System.Drawing.Size(234, 38);
             this.dxSparkline5.TabIndex = 11;
             // 
+            // comboBoxPointSymbol
+            // 
+            this.comboBoxPointSymbol.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Left) 
+            | Wisej.Web.AnchorStyles.Right)));
+            this.comboBoxPointSymbol.DropDownStyle = Wisej.Web.ComboBoxStyle.DropDownList;
+            this.comboBoxPointSymbol.Items.AddRange(new object[] {
+            "area",
+            "bar",
+            "line",
+            "spline",
+            "splinearea",
+            "steparea",
+            "stepline",
+            "winloss"});
+            this.comboBoxPointSymbol.LabelText = "Type";
+            this.comboBoxPointSymbol.Location = new System.Drawing.Point(3, 3);
+            this.comboBoxPointSymbol.Name = "comboBoxPointSymbol";
+            this.comboBoxPointSymbol.Size = new System.Drawing.Size(212, 46);
+            this.comboBoxPointSymbol.TabIndex = 0;
+            // 
             // dxSparkline
             // 
             this.MinimumSize = new System.Drawing.Size(934, 597);
             this.Name = "dxSparkline";
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
+            this.flowLayoutPanel1.ResumeLayout(false);
+            this.flowLayoutPanel1.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
@@ -303,5 +340,6 @@
 		private Label label9;
 		private DevExtreme.dxSparkline dxSparkline7;
 		private DevExtreme.dxSparkline dxSparkline5;
-	}
+        private ComboBox comboBoxPointSymbol;
+    }
 }

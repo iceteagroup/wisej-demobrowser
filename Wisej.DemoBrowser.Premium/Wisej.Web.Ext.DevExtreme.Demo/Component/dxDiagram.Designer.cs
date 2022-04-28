@@ -75,6 +75,8 @@
             this.flowLayoutPanel1.Controls.Add(this.comboBox1);
             this.flowLayoutPanel1.Controls.Add(this.comboBox2);
             this.flowLayoutPanel1.Controls.Add(this.buttonExport);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 31);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 445);
             // 
             // dxDiagram1
             // 

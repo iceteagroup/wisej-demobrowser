@@ -23,12 +23,10 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
 
 		private void buttonUpdate_Click(object sender, EventArgs e)
 		{
-			this.dxRangeSlider1.Options.isValid = this.checkBox1.Checked;
-			this.dxRangeSlider1.Options.showRange = this.checkBox2.Checked;
-			this.dxRangeSlider1.Options.start = this.numericUpDown1.Value;
 			this.dxRangeSlider1.Options.end = this.numericUpDown2.Value;
-			this.dxRangeSlider1.Options.startName = this.textBox1.Text;
-			this.dxRangeSlider1.Options.endName = this.textBox2.Text;
+			this.dxRangeSlider1.Options.isValid = this.checkBox1.Checked;
+			this.dxRangeSlider1.Options.start = this.numericUpDown1.Value;
+			this.dxRangeSlider1.Options.showRange = this.checkBox2.Checked;
 
 			this.dxRangeSlider1.Update();
 		}

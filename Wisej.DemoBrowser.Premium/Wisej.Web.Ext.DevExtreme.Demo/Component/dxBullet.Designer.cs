@@ -61,6 +61,7 @@
             // 
             // linkDocs
             // 
+            this.linkDocs.Size = new System.Drawing.Size(920, 24);
             this.linkDocs.TabIndex = 4;
             this.linkDocs.Text = "https://js.devexpress.com/Documentation/Guide/Widgets/Bullet/Visual_Elements/";
             // 
@@ -76,6 +77,7 @@
             // 
             // linkAPI
             // 
+            this.linkAPI.Size = new System.Drawing.Size(931, 24);
             this.linkAPI.TabIndex = 5;
             this.linkAPI.Text = "https://js.devexpress.com/Documentation/ApiReference/Data_Visualization_Widgets/d" +
     "xBullet/";
@@ -97,6 +99,8 @@
             this.flowLayoutPanel1.Controls.Add(this.numericUpDown1);
             this.flowLayoutPanel1.Controls.Add(this.numericUpDown2);
             this.flowLayoutPanel1.Controls.Add(this.numericUpDown3);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 35);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 441);
             // 
             // label9
             // 
@@ -116,7 +120,7 @@
             this.numericUpDown1.Location = new System.Drawing.Point(3, 180);
             this.numericUpDown1.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(212, 57);
+            this.numericUpDown1.Size = new System.Drawing.Size(212, 46);
             this.numericUpDown1.TabIndex = 3;
             this.numericUpDown1.Value = new decimal(new int[] {
             23,
@@ -129,10 +133,10 @@
             this.flowLayoutPanel1.SetFillWeight(this.numericUpDown2, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.numericUpDown2, true);
             this.numericUpDown2.LabelText = "Target";
-            this.numericUpDown2.Location = new System.Drawing.Point(3, 256);
+            this.numericUpDown2.Location = new System.Drawing.Point(3, 245);
             this.numericUpDown2.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(212, 57);
+            this.numericUpDown2.Size = new System.Drawing.Size(212, 46);
             this.numericUpDown2.TabIndex = 4;
             this.numericUpDown2.Value = new decimal(new int[] {
             20,
@@ -175,10 +179,10 @@
             this.flowLayoutPanel1.SetFillWeight(this.numericUpDown3, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.numericUpDown3, true);
             this.numericUpDown3.LabelText = "Start Scale Value";
-            this.numericUpDown3.Location = new System.Drawing.Point(3, 332);
+            this.numericUpDown3.Location = new System.Drawing.Point(3, 310);
             this.numericUpDown3.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.numericUpDown3.Name = "numericUpDown3";
-            this.numericUpDown3.Size = new System.Drawing.Size(212, 57);
+            this.numericUpDown3.Size = new System.Drawing.Size(212, 46);
             this.numericUpDown3.TabIndex = 5;
             // 
             // panel1

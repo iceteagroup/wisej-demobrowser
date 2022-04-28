@@ -115,7 +115,8 @@
             this.checkBoxAllowAdding.AutoSize = false;
             this.checkBoxAllowAdding.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.checkBoxAllowAdding.Checked = true;
-            this.checkBoxAllowAdding.Location = new System.Drawing.Point(3, 55);
+            this.checkBoxAllowAdding.Location = new System.Drawing.Point(3, 68);
+            this.checkBoxAllowAdding.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBoxAllowAdding.Name = "checkBoxAllowAdding";
             this.checkBoxAllowAdding.Size = new System.Drawing.Size(212, 26);
             this.checkBoxAllowAdding.TabIndex = 1;
@@ -129,7 +130,8 @@
             this.checkBoxAllowDeleting.AutoSize = false;
             this.checkBoxAllowDeleting.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.checkBoxAllowDeleting.Checked = true;
-            this.checkBoxAllowDeleting.Location = new System.Drawing.Point(3, 87);
+            this.checkBoxAllowDeleting.Location = new System.Drawing.Point(3, 113);
+            this.checkBoxAllowDeleting.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBoxAllowDeleting.Name = "checkBoxAllowDeleting";
             this.checkBoxAllowDeleting.Size = new System.Drawing.Size(212, 26);
             this.checkBoxAllowDeleting.TabIndex = 2;
@@ -143,7 +145,8 @@
             this.checkBoxAllowDragging.AutoSize = false;
             this.checkBoxAllowDragging.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.checkBoxAllowDragging.Checked = true;
-            this.checkBoxAllowDragging.Location = new System.Drawing.Point(3, 119);
+            this.checkBoxAllowDragging.Location = new System.Drawing.Point(3, 158);
+            this.checkBoxAllowDragging.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBoxAllowDragging.Name = "checkBoxAllowDragging";
             this.checkBoxAllowDragging.Size = new System.Drawing.Size(212, 26);
             this.checkBoxAllowDragging.TabIndex = 3;
@@ -157,7 +160,8 @@
             this.checkBoxAllowResizing.AutoSize = false;
             this.checkBoxAllowResizing.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.checkBoxAllowResizing.Checked = true;
-            this.checkBoxAllowResizing.Location = new System.Drawing.Point(3, 151);
+            this.checkBoxAllowResizing.Location = new System.Drawing.Point(3, 203);
+            this.checkBoxAllowResizing.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBoxAllowResizing.Name = "checkBoxAllowResizing";
             this.checkBoxAllowResizing.Size = new System.Drawing.Size(212, 26);
             this.checkBoxAllowResizing.TabIndex = 4;
@@ -171,7 +175,8 @@
             this.checkBoxAllowTimeZoneEditing.AutoSize = false;
             this.checkBoxAllowTimeZoneEditing.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.checkBoxAllowTimeZoneEditing.Checked = true;
-            this.checkBoxAllowTimeZoneEditing.Location = new System.Drawing.Point(3, 215);
+            this.checkBoxAllowTimeZoneEditing.Location = new System.Drawing.Point(3, 293);
+            this.checkBoxAllowTimeZoneEditing.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBoxAllowTimeZoneEditing.Name = "checkBoxAllowTimeZoneEditing";
             this.checkBoxAllowTimeZoneEditing.Size = new System.Drawing.Size(212, 26);
             this.checkBoxAllowTimeZoneEditing.TabIndex = 5;
@@ -185,7 +190,8 @@
             this.checkBoxAllowUpdating.AutoSize = false;
             this.checkBoxAllowUpdating.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.checkBoxAllowUpdating.Checked = true;
-            this.checkBoxAllowUpdating.Location = new System.Drawing.Point(3, 183);
+            this.checkBoxAllowUpdating.Location = new System.Drawing.Point(3, 248);
+            this.checkBoxAllowUpdating.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBoxAllowUpdating.Name = "checkBoxAllowUpdating";
             this.checkBoxAllowUpdating.Size = new System.Drawing.Size(212, 26);
             this.checkBoxAllowUpdating.TabIndex = 6;
