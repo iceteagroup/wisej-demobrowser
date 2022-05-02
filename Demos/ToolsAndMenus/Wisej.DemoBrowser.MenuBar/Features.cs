@@ -32,8 +32,24 @@ namespace Wisej.DemoBrowser.MenuBar
 
         private void menuBarTypes_MenuItemClicked(object sender, MenuItemEventArgs e)
         {
-			if (!e.MenuItem.IsParent)
-				e.MenuItem.Checked = !e.MenuItem.Checked;
+			if (e.MenuItem.IsParent)
+				return;
+
+			var selectionCount = 0;
+			var parentNode = this.menuItemCheck;
+			var nodeCount = parentNode.MenuItems.Count;
+			foreach (MenuItem node in parentNode.MenuItems)
+            {
+				if (node.Checked)
+					selectionCount++;
+            }
+
+			if (selectionCount == 0)
+				parentNode.IconSource = "checkbox";
+			else if (selectionCount == nodeCount)
+				parentNode.IconSource = "checkbox-checked";
+			else
+				parentNode.IconSource = "checkbox-undefined";
 		}
     }
 }

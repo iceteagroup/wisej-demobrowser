@@ -87,14 +87,14 @@
             this.menuItem33 = new Wisej.Web.MenuItem();
             this.linkMenuItem1 = new Wisej.Web.LinkMenuItem();
             this.menuItemCheck = new Wisej.Web.MenuItem();
-            this.menuItem44 = new Wisej.Web.MenuItem();
-            this.menuItem45 = new Wisej.Web.MenuItem();
-            this.menuItem46 = new Wisej.Web.MenuItem();
             this.label8 = new Wisej.Web.Label();
             this.checkedMenuItem1 = new Wisej.Web.CheckedMenuItem();
             this.checkedMenuItem6 = new Wisej.Web.CheckedMenuItem();
             this.checkedMenuItem7 = new Wisej.Web.CheckedMenuItem();
             this.checkedMenuItem8 = new Wisej.Web.CheckedMenuItem();
+            this.checkedMenuItem9 = new Wisej.Web.CheckedMenuItem();
+            this.checkedMenuItem10 = new Wisej.Web.CheckedMenuItem();
+            this.checkedMenuItem11 = new Wisej.Web.CheckedMenuItem();
             this.SuspendLayout();
             // 
             // menuBarDefault
@@ -609,34 +609,14 @@
             // 
             // menuItemCheck
             // 
+            this.menuItemCheck.IconSource = "checkbox";
             this.menuItemCheck.Index = 2;
             this.menuItemCheck.MenuItems.AddRange(new Wisej.Web.MenuItem[] {
-            this.menuItem44,
-            this.menuItem45,
-            this.menuItem46});
+            this.checkedMenuItem9,
+            this.checkedMenuItem10,
+            this.checkedMenuItem11});
             this.menuItemCheck.Name = "menuItemCheck";
             this.menuItemCheck.Text = "Checked";
-            // 
-            // menuItem44
-            // 
-            this.menuItem44.Checked = true;
-            this.menuItem44.Index = 0;
-            this.menuItem44.Name = "menuItem44";
-            this.menuItem44.Text = "Apples";
-            // 
-            // menuItem45
-            // 
-            this.menuItem45.Checked = true;
-            this.menuItem45.Index = 1;
-            this.menuItem45.Name = "menuItem45";
-            this.menuItem45.Text = "Bananas";
-            // 
-            // menuItem46
-            // 
-            this.menuItem46.Checked = true;
-            this.menuItem46.Index = 2;
-            this.menuItem46.Name = "menuItem46";
-            this.menuItem46.Text = "Oranges";
             // 
             // label8
             // 
@@ -675,6 +655,24 @@
             this.checkedMenuItem8.Name = "checkedMenuItem8";
             this.checkedMenuItem8.RadioCheck = true;
             this.checkedMenuItem8.Text = "Green";
+            // 
+            // checkedMenuItem9
+            // 
+            this.checkedMenuItem9.Index = 0;
+            this.checkedMenuItem9.Name = "checkedMenuItem9";
+            this.checkedMenuItem9.Text = "Apples";
+            // 
+            // checkedMenuItem10
+            // 
+            this.checkedMenuItem10.Index = 1;
+            this.checkedMenuItem10.Name = "checkedMenuItem10";
+            this.checkedMenuItem10.Text = "Bananas";
+            // 
+            // checkedMenuItem11
+            // 
+            this.checkedMenuItem11.Index = 2;
+            this.checkedMenuItem11.Name = "checkedMenuItem11";
+            this.checkedMenuItem11.Text = "Oranges";
             // 
             // Features
             // 
@@ -763,12 +761,12 @@
 		private Web.MenuItem menuItem38;
 		private Web.MenuItem menuItem42;
         private Web.MenuItem menuItemCheck;
-        private Web.MenuItem menuItem44;
-        private Web.MenuItem menuItem45;
-        private Web.MenuItem menuItem46;
         private Web.CheckedMenuItem checkedMenuItem1;
         private Web.CheckedMenuItem checkedMenuItem6;
         private Web.CheckedMenuItem checkedMenuItem7;
         private Web.CheckedMenuItem checkedMenuItem8;
+        private Web.CheckedMenuItem checkedMenuItem9;
+        private Web.CheckedMenuItem checkedMenuItem10;
+        private Web.CheckedMenuItem checkedMenuItem11;
     }
 }
