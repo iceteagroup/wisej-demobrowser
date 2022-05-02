@@ -46,7 +46,7 @@
             this.btnShapeColor.Location = new System.Drawing.Point(358, 328);
             this.btnShapeColor.Name = "btnShapeColor";
             this.btnShapeColor.Size = new System.Drawing.Size(210, 30);
-            this.btnShapeColor.TabIndex = 16;
+            this.btnShapeColor.TabIndex = 4;
             this.btnShapeColor.Text = "Color";
             this.btnShapeColor.Click += new System.EventHandler(this.btnShapeColor_Click);
             // 
@@ -57,7 +57,7 @@
             this.nudShapeRotation.Location = new System.Drawing.Point(358, 68);
             this.nudShapeRotation.Name = "nudShapeRotation";
             this.nudShapeRotation.Size = new System.Drawing.Size(210, 53);
-            this.nudShapeRotation.TabIndex = 17;
+            this.nudShapeRotation.TabIndex = 0;
             this.nudShapeRotation.ValueChanged += new System.EventHandler(this.nudShapeRotation_ValueChanged);
             // 
             // cmbShapeStyle
@@ -67,7 +67,7 @@
             this.cmbShapeStyle.Location = new System.Drawing.Point(358, 198);
             this.cmbShapeStyle.Name = "cmbShapeStyle";
             this.cmbShapeStyle.Size = new System.Drawing.Size(210, 53);
-            this.cmbShapeStyle.TabIndex = 15;
+            this.cmbShapeStyle.TabIndex = 2;
             this.cmbShapeStyle.SelectedIndexChanged += new System.EventHandler(this.cmbShapeStyle_SelectedIndexChanged);
             // 
             // shape1
@@ -95,7 +95,7 @@
             this.nudShapeSize.Location = new System.Drawing.Point(358, 133);
             this.nudShapeSize.Name = "nudShapeSize";
             this.nudShapeSize.Size = new System.Drawing.Size(210, 53);
-            this.nudShapeSize.TabIndex = 14;
+            this.nudShapeSize.TabIndex = 1;
             this.nudShapeSize.ValueChanged += new System.EventHandler(this.nudShapeSize_ValueChanged);
             // 
             // nudShapeRadius
@@ -110,7 +110,7 @@
             this.nudShapeRadius.Location = new System.Drawing.Point(358, 263);
             this.nudShapeRadius.Name = "nudShapeRadius";
             this.nudShapeRadius.Size = new System.Drawing.Size(210, 53);
-            this.nudShapeRadius.TabIndex = 13;
+            this.nudShapeRadius.TabIndex = 3;
             this.nudShapeRadius.ValueChanged += new System.EventHandler(this.nudShapeRadius_ValueChanged);
             // 
             // btnShapeBackColor
@@ -119,7 +119,7 @@
             this.btnShapeBackColor.Location = new System.Drawing.Point(358, 370);
             this.btnShapeBackColor.Name = "btnShapeBackColor";
             this.btnShapeBackColor.Size = new System.Drawing.Size(210, 30);
-            this.btnShapeBackColor.TabIndex = 19;
+            this.btnShapeBackColor.TabIndex = 5;
             this.btnShapeBackColor.Text = "Background Color";
             this.btnShapeBackColor.Click += new System.EventHandler(this.btnShapeBackColor_Click);
             // 

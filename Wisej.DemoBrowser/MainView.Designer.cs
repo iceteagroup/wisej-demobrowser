@@ -105,7 +105,7 @@ namespace Wisej.DemoBrowser
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
             this.panelMenu.Name = "panelMenu";
             this.panelMenu.ShowCloseButton = false;
-            this.panelMenu.Size = new System.Drawing.Size(1727, 77);
+            this.panelMenu.Size = new System.Drawing.Size(1763, 77);
             this.panelMenu.TabIndex = 0;
             this.panelMenu.TabStop = true;
             // 
@@ -128,7 +128,7 @@ namespace Wisej.DemoBrowser
             this.menuSlideBar.MinimumSize = new System.Drawing.Size(220, 0);
             this.menuSlideBar.Name = "menuSlideBar";
             this.menuSlideBar.ScrollStep = 50;
-            this.menuSlideBar.Size = new System.Drawing.Size(669, 71);
+            this.menuSlideBar.Size = new System.Drawing.Size(705, 71);
             this.menuSlideBar.Spacing = 20;
             this.menuSlideBar.TabIndex = 0;
             // 
@@ -194,7 +194,7 @@ namespace Wisej.DemoBrowser
             this.rightPanel.Controls.Add(this.buttonFreeTrial);
             this.rightPanel.Controls.Add(this.buttonContact);
             this.rightPanel.Controls.Add(this.lineMenuDivider2);
-            this.rightPanel.Location = new System.Drawing.Point(907, 3);
+            this.rightPanel.Location = new System.Drawing.Point(943, 3);
             this.rightPanel.Name = "rightPanel";
             this.rightPanel.Size = new System.Drawing.Size(817, 71);
             this.rightPanel.TabIndex = 25;
@@ -335,7 +335,7 @@ namespace Wisej.DemoBrowser
             this.panelComponents.Name = "panelComponents";
             this.panelComponents.ResizableEdges = Wisej.Web.AnchorStyles.Right;
             this.panelComponents.ShowHeader = true;
-            this.panelComponents.Size = new System.Drawing.Size(345, 772);
+            this.panelComponents.Size = new System.Drawing.Size(345, 756);
             this.panelComponents.TabIndex = 1;
             this.panelComponents.TabStop = true;
             this.panelComponents.Text = "Components";
@@ -439,7 +439,7 @@ namespace Wisej.DemoBrowser
             treeNode1});
             this.treeViewComponents.PathSeparator = "/";
             this.treeViewComponents.SelectedImageIndex = 0;
-            this.treeViewComponents.Size = new System.Drawing.Size(268, 632);
+            this.treeViewComponents.Size = new System.Drawing.Size(268, 616);
             this.treeViewComponents.TabIndex = 1;
             this.treeViewComponents.AfterSelect += new Wisej.Web.TreeViewEventHandler(this.treeViewComponents_AfterSelect);
             // 
@@ -460,7 +460,7 @@ namespace Wisej.DemoBrowser
             this.panelContainer.Location = new System.Drawing.Point(345, 77);
             this.panelContainer.Name = "panelContainer";
             this.panelContainer.ShowCloseButton = false;
-            this.panelContainer.Size = new System.Drawing.Size(1382, 772);
+            this.panelContainer.Size = new System.Drawing.Size(1418, 756);
             this.panelContainer.TabIndex = 2;
             this.panelContainer.TabStop = true;
             this.panelContainer.Text = "Test";
@@ -475,7 +475,7 @@ namespace Wisej.DemoBrowser
             this.panelDemo.Location = new System.Drawing.Point(39, 280);
             this.panelDemo.MinimumSize = new System.Drawing.Size(300, 0);
             this.panelDemo.Name = "panelDemo";
-            this.panelDemo.Size = new System.Drawing.Size(1250, 435);
+            this.panelDemo.Size = new System.Drawing.Size(1286, 419);
             this.panelDemo.TabIndex = 21;
             this.panelDemo.TabStop = true;
             // 
@@ -486,7 +486,7 @@ namespace Wisej.DemoBrowser
             this.line6.Location = new System.Drawing.Point(39, 277);
             this.line6.MinimumSize = new System.Drawing.Size(300, 0);
             this.line6.Name = "line6";
-            this.line6.Size = new System.Drawing.Size(1250, 5);
+            this.line6.Size = new System.Drawing.Size(1286, 5);
             // 
             // flowLayoutPanel1
             // 
@@ -501,7 +501,7 @@ namespace Wisej.DemoBrowser
             this.flowLayoutPanel1.Controls.Add(this.labelNavigationDemo);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(36, 12);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(1252, 30);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1288, 30);
             this.flowLayoutPanel1.TabIndex = 12;
             this.flowLayoutPanel1.TabStop = true;
             // 
@@ -591,7 +591,7 @@ namespace Wisej.DemoBrowser
             this.panelLinks.Controls.Add(this.buttonSourceCode);
             this.panelLinks.CssStyle = "border-width: 1px;\r\nborder-color: #D2D8DB;\r\nborder-right-style: none;\r\nborder-rad" +
     "ius: 6px 0px 0px 6px;\r\n";
-            this.panelLinks.Location = new System.Drawing.Point(1318, 71);
+            this.panelLinks.Location = new System.Drawing.Point(1354, 71);
             this.panelLinks.Name = "panelLinks";
             this.panelLinks.Size = new System.Drawing.Size(64, 125);
             this.panelLinks.TabIndex = 22;
@@ -640,7 +640,7 @@ namespace Wisej.DemoBrowser
             this.line4.Location = new System.Drawing.Point(39, 224);
             this.line4.MinimumSize = new System.Drawing.Size(300, 0);
             this.line4.Name = "line4";
-            this.line4.Size = new System.Drawing.Size(1250, 5);
+            this.line4.Size = new System.Drawing.Size(1286, 5);
             // 
             // labelDescription
             // 
@@ -662,7 +662,7 @@ namespace Wisej.DemoBrowser
             this.labelTitle.ForeColor = System.Drawing.Color.FromName("@demoPanelText-demo");
             this.labelTitle.Location = new System.Drawing.Point(115, 67);
             this.labelTitle.Name = "labelTitle";
-            this.labelTitle.Size = new System.Drawing.Size(1174, 67);
+            this.labelTitle.Size = new System.Drawing.Size(1210, 67);
             this.labelTitle.TabIndex = 14;
             this.labelTitle.Text = "ComboBox Simple Binding";
             this.labelTitle.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -686,7 +686,7 @@ namespace Wisej.DemoBrowser
             this.panel1.Location = new System.Drawing.Point(39, 228);
             this.panel1.MinimumSize = new System.Drawing.Size(300, 50);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1250, 50);
+            this.panel1.Size = new System.Drawing.Size(1286, 50);
             this.panel1.TabIndex = 25;
             this.panel1.TabStop = true;
             // 
@@ -711,7 +711,7 @@ namespace Wisej.DemoBrowser
             this.buttonNext.Focusable = false;
             this.buttonNext.Font = new System.Drawing.Font("@defaultDemo", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.buttonNext.ImageSource = "icon-right";
-            this.buttonNext.Location = new System.Drawing.Point(1119, 5);
+            this.buttonNext.Location = new System.Drawing.Point(1155, 5);
             this.buttonNext.Name = "buttonNext";
             this.buttonNext.Size = new System.Drawing.Size(130, 40);
             this.buttonNext.TabIndex = 20;
@@ -728,7 +728,7 @@ namespace Wisej.DemoBrowser
             this.Controls.Add(this.panelComponents);
             this.Controls.Add(this.panelMenu);
             this.Name = "MainView";
-            this.Size = new System.Drawing.Size(1727, 849);
+            this.Size = new System.Drawing.Size(1763, 833);
             this.Text = "Wisej Demo Browser";
             this.Load += new System.EventHandler(this.MainView_Load);
             this.panelMenu.ResumeLayout(false);

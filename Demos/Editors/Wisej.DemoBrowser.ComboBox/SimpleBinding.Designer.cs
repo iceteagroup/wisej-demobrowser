@@ -63,7 +63,7 @@ namespace Wisej.DemoBrowser.ComboBox
             this.Controls.Add(this.comboBox3);
             this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.comboBox1);
-            this.MinimumSize = new System.Drawing.Size(940, 400);
+            this.MinimumSize = new System.Drawing.Size(328, 168);
             this.Name = "SimpleBinding";
             this.Load += new System.EventHandler(this.SimpleBinding_Load);
             this.ResumeLayout(false);
