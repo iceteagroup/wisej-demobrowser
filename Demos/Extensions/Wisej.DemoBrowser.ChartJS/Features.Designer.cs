@@ -39,6 +39,7 @@
             this.chartJS1.AppearanceKey = "chartjs";
             this.chartJS1.BackColor = System.Drawing.Color.White;
             this.chartJS1.BorderStyle = Wisej.Web.BorderStyle.Dotted;
+            this.chartJS1.CssStyle = "border-radius: 8px;\r\nbox-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;";
             this.chartJS1.Labels = new string[] {
         "Jan",
         "Feb",
@@ -52,7 +53,7 @@
         "Oct",
         "Nov",
         "Dec"};
-            this.chartJS1.Location = new System.Drawing.Point(10, 240);
+            this.chartJS1.Location = new System.Drawing.Point(10, 243);
             this.chartJS1.Margin = new Wisej.Web.Padding(10);
             this.chartJS1.MinimumSize = new System.Drawing.Size(418, 213);
             this.chartJS1.Name = "chartJS1";
@@ -64,7 +65,8 @@
             this.chartJS1.Options.DataLabel.TextShadowColor = System.Drawing.Color.Empty;
             this.chartJS1.Options.DataLabel.TextStrokeColor = System.Drawing.Color.Empty;
             this.chartJS1.Options.Legend.Display = false;
-            this.chartJS1.Size = new System.Drawing.Size(810, 218);
+            this.chartJS1.Padding = new Wisej.Web.Padding(8);
+            this.chartJS1.Size = new System.Drawing.Size(810, 215);
             this.chartJS1.TabIndex = 9;
             this.chartJS1.Text = "Line Chart";
             this.chartJS1.ChartClick += new Wisej.Web.Ext.ChartJS.ChartClickEventHandler(this.chartJS_ChartClick);
@@ -76,6 +78,7 @@
             this.chartJS2.BackColor = System.Drawing.Color.White;
             this.chartJS2.BorderStyle = Wisej.Web.BorderStyle.Dotted;
             this.chartJS2.ChartType = Wisej.Web.Ext.ChartJS.ChartType.Bar;
+            this.chartJS2.CssStyle = "border-radius: 8px;\r\nbox-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;";
             this.chartJS2.Labels = new string[] {
         "Jan",
         "Feb",
@@ -101,7 +104,8 @@
             this.chartJS2.Options.DataLabel.TextShadowColor = System.Drawing.Color.Empty;
             this.chartJS2.Options.DataLabel.TextStrokeColor = System.Drawing.Color.Empty;
             this.chartJS2.Options.Title.Text = "Bar Chart";
-            this.chartJS2.Size = new System.Drawing.Size(810, 218);
+            this.chartJS2.Padding = new Wisej.Web.Padding(8);
+            this.chartJS2.Size = new System.Drawing.Size(810, 215);
             this.chartJS2.TabIndex = 10;
             this.chartJS2.Text = "Bar Chart";
             this.chartJS2.ChartClick += new Wisej.Web.Ext.ChartJS.ChartClickEventHandler(this.chartJS_ChartClick);
@@ -113,6 +117,7 @@
             this.chartJS4.BackColor = System.Drawing.Color.White;
             this.chartJS4.BorderStyle = Wisej.Web.BorderStyle.Dotted;
             this.chartJS4.ChartType = Wisej.Web.Ext.ChartJS.ChartType.Radar;
+            this.chartJS4.CssStyle = "border-radius: 8px;\r\nbox-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;";
             this.chartJS4.Labels = new string[] {
         "Jan",
         "Feb",
@@ -137,6 +142,7 @@
             this.chartJS4.Options.DataLabel.TextAlign = Wisej.Web.Ext.ChartJS.DataLabelTextAlignment.Start;
             this.chartJS4.Options.DataLabel.TextShadowColor = System.Drawing.Color.Empty;
             this.chartJS4.Options.DataLabel.TextStrokeColor = System.Drawing.Color.Empty;
+            this.chartJS4.Padding = new Wisej.Web.Padding(8);
             this.chartJS4.Size = new System.Drawing.Size(581, 441);
             this.chartJS4.TabIndex = 12;
             this.chartJS4.Text = "Radar Chart";

@@ -24,26 +24,26 @@ namespace Wisej.DemoBrowser.ChartJS
 
 		private void AddDataSet()
 		{
-			chartJS1.DataSets.Add(new DataSet()
-			{
-				Label = $"Bubble Data Set {chartJS1.DataSets.Count + 1}",
-				Data = new[]
-				{
-					new {x = rand.Next(100), y = rand.Next(100)},
-					new {x = rand.Next(100), y = rand.Next(100)},
-					new {x = rand.Next(100), y = rand.Next(100)},
-					new {x = rand.Next(100), y = rand.Next(100)},
-					new {x = rand.Next(100), y = rand.Next(100)},
-					new {x = rand.Next(100), y = rand.Next(100)},
-					new {x = rand.Next(100), y = rand.Next(100)},
-					new {x = rand.Next(100), y = rand.Next(100)},
-					new {x = rand.Next(100), y = rand.Next(100)},
-					new {x = rand.Next(100), y = rand.Next(100)},
-					new {x = rand.Next(100), y = rand.Next(100)}
-				},
-				BackgroundColor = Color.FromArgb(rand.Next(255), rand.Next(255), rand.Next(255))
-			});
-		}
+            chartJS1.DataSets.Add(new BubbleDataSet()
+            {
+                Label = $"Bubble Data Set {chartJS1.DataSets.Count + 1}",
+                Data = new[]
+                {
+                    new { x = rand.Next(100), y = rand.Next(100), r = rand.Next(15) },
+                    new { x = rand.Next(100), y = rand.Next(100), r = rand.Next(15) },
+                    new { x = rand.Next(100), y = rand.Next(100), r = rand.Next(15) },
+                    new { x = rand.Next(100), y = rand.Next(100), r = rand.Next(15) },
+                    new { x = rand.Next(100), y = rand.Next(100), r = rand.Next(15) },
+                    new { x = rand.Next(100), y = rand.Next(100), r = rand.Next(15) },
+                    new { x = rand.Next(100), y = rand.Next(100), r = rand.Next(15) },
+                    new { x = rand.Next(100), y = rand.Next(100), r = rand.Next(15) },
+                    new { x = rand.Next(100), y = rand.Next(100), r = rand.Next(15) },
+                    new { x = rand.Next(100), y = rand.Next(100), r = rand.Next(15) },
+                    new { x = rand.Next(100), y = rand.Next(100), r = rand.Next(15) }
+                },
+                BackgroundColor = Color.FromArgb(rand.Next(255), rand.Next(255), rand.Next(255))
+            });
+        }
 
 		private void buttonAdd_Click(object sender, EventArgs e)
 		{
