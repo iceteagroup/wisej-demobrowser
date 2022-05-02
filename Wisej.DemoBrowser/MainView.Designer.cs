@@ -361,7 +361,6 @@ namespace Wisej.DemoBrowser
             this.textBoxSearch.BackColor = System.Drawing.Color.Transparent;
             this.textBoxSearch.BorderStyle = Wisej.Web.BorderStyle.None;
             this.textBoxSearch.Dock = Wisej.Web.DockStyle.Fill;
-            this.textBoxSearch.Focusable = false;
             this.textBoxSearch.Font = new System.Drawing.Font("@defaultDemo", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.textBoxSearch.InitScript = resources.GetString("textBoxSearch.InitScript");
             this.textBoxSearch.Location = new System.Drawing.Point(70, 0);

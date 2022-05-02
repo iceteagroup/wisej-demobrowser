@@ -467,7 +467,7 @@ namespace Wisej.DemoBrowser
 					break;
 
 				case "search":
-					SearchForPhrase(this.textBoxSearch.Text);
+						SearchForPhrase(this.textBoxSearch.Text);
 					break;
 			}
 		}

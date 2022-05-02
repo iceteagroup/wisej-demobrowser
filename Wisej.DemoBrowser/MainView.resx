@@ -138,6 +138,9 @@ textField.addListener("keydown", function (e) {
         me.fireWidgetEvent("next");
         break;
         
+      case "Tab":
+        break;
+        
       default:
         clearTimeout(timer);
         timer = setTimeout(function() {
