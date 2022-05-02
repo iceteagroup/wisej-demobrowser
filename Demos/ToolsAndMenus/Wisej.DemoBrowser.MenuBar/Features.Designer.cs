@@ -75,11 +75,7 @@
             this.menuItem9 = new Wisej.Web.MenuItem();
             this.label6 = new Wisej.Web.Label();
             this.menuBarRadio = new Wisej.Web.MenuBar();
-            this.menuItem10 = new Wisej.Web.MenuItem();
-            this.menuItem14 = new Wisej.Web.MenuItem();
-            this.menuItem15 = new Wisej.Web.MenuItem();
-            this.menuItem16 = new Wisej.Web.MenuItem();
-            this.menuItem17 = new Wisej.Web.MenuItem();
+            this.menuItemFavoriteColor = new Wisej.Web.MenuItem();
             this.label7 = new Wisej.Web.Label();
             this.menuBarCheck = new Wisej.Web.MenuBar();
             this.menuItem13 = new Wisej.Web.MenuItem();
@@ -87,11 +83,18 @@
             this.checkedMenuItem3 = new Wisej.Web.CheckedMenuItem();
             this.checkedMenuItem4 = new Wisej.Web.CheckedMenuItem();
             this.checkedMenuItem5 = new Wisej.Web.CheckedMenuItem();
-            this.menuBar1 = new Wisej.Web.MenuBar();
+            this.menuBarTypes = new Wisej.Web.MenuBar();
             this.menuItem33 = new Wisej.Web.MenuItem();
             this.linkMenuItem1 = new Wisej.Web.LinkMenuItem();
-            this.checkedMenuItem1 = new Wisej.Web.CheckedMenuItem();
+            this.menuItemCheck = new Wisej.Web.MenuItem();
+            this.menuItem44 = new Wisej.Web.MenuItem();
+            this.menuItem45 = new Wisej.Web.MenuItem();
+            this.menuItem46 = new Wisej.Web.MenuItem();
             this.label8 = new Wisej.Web.Label();
+            this.checkedMenuItem1 = new Wisej.Web.CheckedMenuItem();
+            this.checkedMenuItem6 = new Wisej.Web.CheckedMenuItem();
+            this.checkedMenuItem7 = new Wisej.Web.CheckedMenuItem();
+            this.checkedMenuItem8 = new Wisej.Web.CheckedMenuItem();
             this.SuspendLayout();
             // 
             // menuBarDefault
@@ -494,56 +497,24 @@
             this.menuBarRadio.Anchor = Wisej.Web.AnchorStyles.None;
             this.menuBarRadio.Location = new System.Drawing.Point(585, 379);
             this.menuBarRadio.MenuItems.AddRange(new Wisej.Web.MenuItem[] {
-            this.menuItem10});
+            this.menuItemFavoriteColor});
             this.menuBarRadio.Name = "menuBarRadio";
             this.menuBarRadio.Size = new System.Drawing.Size(315, 40);
             this.menuBarRadio.TabIndex = 12;
             this.menuBarRadio.TabStop = false;
             this.menuBarRadio.MenuItemClicked += new Wisej.Web.MenuItemEventHandler(this.menuBarRadio_MenuItemClicked);
             // 
-            // menuItem10
+            // menuItemFavoriteColor
             // 
-            this.menuItem10.IconSource = "icon-preview?color=#0027FF";
-            this.menuItem10.Index = 0;
-            this.menuItem10.MenuItems.AddRange(new Wisej.Web.MenuItem[] {
-            this.menuItem14,
-            this.menuItem15,
-            this.menuItem16,
-            this.menuItem17});
-            this.menuItem10.Name = "menuItem10";
-            this.menuItem10.Text = "Favorite Color";
-            // 
-            // menuItem14
-            // 
-            this.menuItem14.IconSource = "icon-file?color=#FF0000";
-            this.menuItem14.Index = 0;
-            this.menuItem14.Name = "menuItem14";
-            this.menuItem14.RadioCheck = true;
-            this.menuItem14.Text = "Red";
-            // 
-            // menuItem15
-            // 
-            this.menuItem15.IconSource = "icon-file?color=#FF8F00";
-            this.menuItem15.Index = 1;
-            this.menuItem15.Name = "menuItem15";
-            this.menuItem15.RadioCheck = true;
-            this.menuItem15.Text = "Orange";
-            // 
-            // menuItem16
-            // 
-            this.menuItem16.IconSource = "icon-file?color=#FFEF00";
-            this.menuItem16.Index = 2;
-            this.menuItem16.Name = "menuItem16";
-            this.menuItem16.RadioCheck = true;
-            this.menuItem16.Text = "Yellow";
-            // 
-            // menuItem17
-            // 
-            this.menuItem17.IconSource = "icon-file?color=#29C100";
-            this.menuItem17.Index = 3;
-            this.menuItem17.Name = "menuItem17";
-            this.menuItem17.RadioCheck = true;
-            this.menuItem17.Text = "Green";
+            this.menuItemFavoriteColor.IconSource = "icon-preview?color=#0027FF";
+            this.menuItemFavoriteColor.Index = 0;
+            this.menuItemFavoriteColor.MenuItems.AddRange(new Wisej.Web.MenuItem[] {
+            this.checkedMenuItem1,
+            this.checkedMenuItem6,
+            this.checkedMenuItem7,
+            this.checkedMenuItem8});
+            this.menuItemFavoriteColor.Name = "menuItemFavoriteColor";
+            this.menuItemFavoriteColor.Text = "Favorite Color";
             // 
             // label7
             // 
@@ -606,18 +577,19 @@
             this.checkedMenuItem5.Name = "checkedMenuItem5";
             this.checkedMenuItem5.Text = "Green";
             // 
-            // menuBar1
+            // menuBarTypes
             // 
-            this.menuBar1.Anchor = Wisej.Web.AnchorStyles.None;
-            this.menuBar1.Location = new System.Drawing.Point(1003, 240);
-            this.menuBar1.MenuItems.AddRange(new Wisej.Web.MenuItem[] {
+            this.menuBarTypes.Anchor = Wisej.Web.AnchorStyles.None;
+            this.menuBarTypes.Location = new System.Drawing.Point(1003, 240);
+            this.menuBarTypes.MenuItems.AddRange(new Wisej.Web.MenuItem[] {
             this.menuItem33,
             this.linkMenuItem1,
-            this.checkedMenuItem1});
-            this.menuBar1.Name = "menuBar1";
-            this.menuBar1.Size = new System.Drawing.Size(315, 40);
-            this.menuBar1.TabIndex = 16;
-            this.menuBar1.TabStop = false;
+            this.menuItemCheck});
+            this.menuBarTypes.Name = "menuBarTypes";
+            this.menuBarTypes.Size = new System.Drawing.Size(315, 40);
+            this.menuBarTypes.TabIndex = 16;
+            this.menuBarTypes.TabStop = false;
+            this.menuBarTypes.MenuItemClicked += new Wisej.Web.MenuItemEventHandler(this.menuBarTypes_MenuItemClicked);
             // 
             // menuItem33
             // 
@@ -635,13 +607,36 @@
             this.linkMenuItem1.Target = "_blank";
             this.linkMenuItem1.Text = "Link";
             // 
-            // checkedMenuItem1
+            // menuItemCheck
             // 
-            this.checkedMenuItem1.Checked = true;
-            this.checkedMenuItem1.IconSource = "icon-file";
-            this.checkedMenuItem1.Index = 2;
-            this.checkedMenuItem1.Name = "checkedMenuItem1";
-            this.checkedMenuItem1.Text = "Checked";
+            this.menuItemCheck.Index = 2;
+            this.menuItemCheck.MenuItems.AddRange(new Wisej.Web.MenuItem[] {
+            this.menuItem44,
+            this.menuItem45,
+            this.menuItem46});
+            this.menuItemCheck.Name = "menuItemCheck";
+            this.menuItemCheck.Text = "Checked";
+            // 
+            // menuItem44
+            // 
+            this.menuItem44.Checked = true;
+            this.menuItem44.Index = 0;
+            this.menuItem44.Name = "menuItem44";
+            this.menuItem44.Text = "Apples";
+            // 
+            // menuItem45
+            // 
+            this.menuItem45.Checked = true;
+            this.menuItem45.Index = 1;
+            this.menuItem45.Name = "menuItem45";
+            this.menuItem45.Text = "Bananas";
+            // 
+            // menuItem46
+            // 
+            this.menuItem46.Checked = true;
+            this.menuItem46.Index = 2;
+            this.menuItem46.Name = "menuItem46";
+            this.menuItem46.Text = "Oranges";
             // 
             // label8
             // 
@@ -653,10 +648,38 @@
             this.label8.TabIndex = 17;
             this.label8.Text = "Menu Item Types";
             // 
+            // checkedMenuItem1
+            // 
+            this.checkedMenuItem1.Index = 0;
+            this.checkedMenuItem1.Name = "checkedMenuItem1";
+            this.checkedMenuItem1.RadioCheck = true;
+            this.checkedMenuItem1.Text = "Red";
+            // 
+            // checkedMenuItem6
+            // 
+            this.checkedMenuItem6.Index = 1;
+            this.checkedMenuItem6.Name = "checkedMenuItem6";
+            this.checkedMenuItem6.RadioCheck = true;
+            this.checkedMenuItem6.Text = "Orange";
+            // 
+            // checkedMenuItem7
+            // 
+            this.checkedMenuItem7.Index = 2;
+            this.checkedMenuItem7.Name = "checkedMenuItem7";
+            this.checkedMenuItem7.RadioCheck = true;
+            this.checkedMenuItem7.Text = "Yellow";
+            // 
+            // checkedMenuItem8
+            // 
+            this.checkedMenuItem8.Index = 3;
+            this.checkedMenuItem8.Name = "checkedMenuItem8";
+            this.checkedMenuItem8.RadioCheck = true;
+            this.checkedMenuItem8.Text = "Green";
+            // 
             // Features
             // 
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.menuBar1);
+            this.Controls.Add(this.menuBarTypes);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.menuBarCheck);
             this.Controls.Add(this.label6);
@@ -714,23 +737,18 @@
 		private Web.MenuItem menuItem9;
 		private Web.Label label6;
 		private Web.MenuBar menuBarRadio;
-		private Web.MenuItem menuItem10;
+		private Web.MenuItem menuItemFavoriteColor;
 		private Web.Label label7;
 		private Web.MenuBar menuBarCheck;
 		private Web.MenuItem menuItem13;
-		private Web.MenuBar menuBar1;
+		private Web.MenuBar menuBarTypes;
 		private Web.LinkMenuItem linkMenuItem1;
-		private Web.CheckedMenuItem checkedMenuItem1;
 		private Web.MenuItem menuItem33;
 		private Web.Label label8;
 		private Web.CheckedMenuItem checkedMenuItem2;
 		private Web.CheckedMenuItem checkedMenuItem3;
 		private Web.CheckedMenuItem checkedMenuItem4;
 		private Web.CheckedMenuItem checkedMenuItem5;
-		private Web.MenuItem menuItem14;
-		private Web.MenuItem menuItem15;
-		private Web.MenuItem menuItem16;
-		private Web.MenuItem menuItem17;
 		private Web.MenuItem menuItem29;
 		private Web.MenuItem menuItem39;
 		private Web.MenuItem menuItem40;
@@ -744,5 +762,13 @@
 		private Web.MenuItem menuItem37;
 		private Web.MenuItem menuItem38;
 		private Web.MenuItem menuItem42;
-	}
+        private Web.MenuItem menuItemCheck;
+        private Web.MenuItem menuItem44;
+        private Web.MenuItem menuItem45;
+        private Web.MenuItem menuItem46;
+        private Web.CheckedMenuItem checkedMenuItem1;
+        private Web.CheckedMenuItem checkedMenuItem6;
+        private Web.CheckedMenuItem checkedMenuItem7;
+        private Web.CheckedMenuItem checkedMenuItem8;
+    }
 }

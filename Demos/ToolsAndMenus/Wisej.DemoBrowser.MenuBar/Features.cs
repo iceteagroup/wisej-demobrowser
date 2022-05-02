@@ -18,8 +18,22 @@ namespace Wisej.DemoBrowser.MenuBar
 
 		private void menuBarRadio_MenuItemClicked(object sender, MenuItemEventArgs e)
 		{
-			if (e.MenuItem.RadioCheck)
+			if (!e.MenuItem.RadioCheck)
+				return;
+
+			if (checkedMenuItem != null)
+				checkedMenuItem.Checked = false;
+
+			this.checkedMenuItem = e.MenuItem;
+
+			this.menuItemFavoriteColor.IconSource = $"icon-preview?color={e.MenuItem.Text}";
+		}
+		private MenuItem checkedMenuItem;
+
+        private void menuBarTypes_MenuItemClicked(object sender, MenuItemEventArgs e)
+        {
+			if (!e.MenuItem.IsParent)
 				e.MenuItem.Checked = !e.MenuItem.Checked;
 		}
-	}
+    }
 }
