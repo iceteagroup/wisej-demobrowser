@@ -120,6 +120,9 @@
   <data name="ejPivotTreeMap1.Options" xml:space="preserve">
     <value>{"dataSource":{"data":"http://bi.syncfusion.com/olap/msmdpump.dll","catalog":"Adventure Works DW 2008 SE","cube":"Adventure Works","rows":[{"fieldName":"[Customer].[Customer Geography]"}],"columns":[{"fieldName":"[Date].[Fiscal]"}],"values":[{"measures":[{"fieldName":"[Measures].[Customer Count]"}],"axis":"columns"}]}}</value>
   </data>
+  <data name="widgetTemplate1.Template" xml:space="preserve">
+    <value>&lt;div style="background:White; color:black; font-size:12px; font-weight:normal; border: 1px solid #4D4D4D; white-space: nowrap;border-radius: 2px; margin-right: 25px; min-width: 110px;padding-right: 5px; padding-left: 5px; padding-bottom: 2px ;width: auto; height: auto;"&gt;</value>
+  </data>
   <metadata name="$this.RulerSnapLines" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0

@@ -24,6 +24,15 @@ namespace Wisej.Web.Ext.Ignite.Demo
 
 			if (hash != "")
 				this.listBoxDemos.SelectedIndex = this.listBoxDemos.FindString(hash);
+
+			var cultureName = Application.CurrentCulture.TextInfo.CultureName;
+
+			if (!this.comboBoxLanguage.Items.Contains(cultureName))
+				this.comboBoxLanguage.Items.Add(cultureName);
+
+			this.comboBoxLanguage.Text = cultureName;
+
+			this.comboBoxLanguage.SelectedIndexChanged += new EventHandler(this.comboBoxLanguage_SelectedIndexChanged);
 		}
 
 		private void Application_HashChanged(object sender, HashChangedEventArgs e)

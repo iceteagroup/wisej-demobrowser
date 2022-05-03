@@ -25,6 +25,15 @@ namespace Wisej.Web.Ext.DevExtreme.Demo
 
 			if (hash != "")
 				this.listBoxDemos.SelectedIndex = this.listBoxDemos.FindString(hash);
+
+			var cultureName = Application.CurrentCulture.TextInfo.CultureName;
+
+			if (!this.comboBoxLanguage.Items.Contains(cultureName))
+				this.comboBoxLanguage.Items.Add(cultureName);
+
+			this.comboBoxLanguage.Text = cultureName;
+
+			this.comboBoxLanguage.SelectedIndexChanged += new EventHandler(this.comboBoxLanguage_SelectedIndexChanged);
 		}
 
 		private void Application_HashChanged(object sender, HashChangedEventArgs e)
@@ -65,7 +74,6 @@ namespace Wisej.Web.Ext.DevExtreme.Demo
 		private void comboBoxLanguage_SelectedIndexChanged(object sender, EventArgs e)
         {
 			dxBase.Culture = new CultureInfo(this.comboBoxLanguage.Text);
-			Application.Reload();
 		}
 
 		private void comboBoxWisejTheme_SelectedIndexChanged(object sender, EventArgs e)

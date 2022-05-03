@@ -53,6 +53,7 @@
             // 
             this.textBox1.Anchor = Wisej.Web.AnchorStyles.None;
             this.errorProviderHtml.SetError(this.textBox1, "Error");
+            this.errorProviderHtml.SetIconAlignment(this.textBox1, Wisej.Web.ErrorIconAlignment.BottomRight);
             this.textBox1.LabelText = "Default";
             this.textBox1.Location = new System.Drawing.Point(325, 95);
             this.textBox1.Name = "textBox1";
@@ -63,6 +64,7 @@
             // 
             this.textBox2.Anchor = Wisej.Web.AnchorStyles.None;
             this.errorProviderHtml.SetError(this.textBox2, "<b>ErrorProvider</b> with <i>Animation</i>");
+            this.errorProviderHtml.SetIconAlignment(this.textBox2, Wisej.Web.ErrorIconAlignment.BottomRight);
             this.textBox2.LabelText = "HTML";
             this.textBox2.Location = new System.Drawing.Point(325, 211);
             this.textBox2.Name = "textBox2";

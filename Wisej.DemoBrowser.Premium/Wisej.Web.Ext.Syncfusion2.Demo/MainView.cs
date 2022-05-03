@@ -24,6 +24,13 @@ namespace Wisej.Web.Ext.Syncfusion2.Demo
 
 			if (hash != "")
 				this.listBoxDemos.SelectedIndex = this.listBoxDemos.FindString(hash);
+
+			var cultureName = Application.CurrentCulture.TextInfo.CultureName;
+
+			if (!this.comboBoxLanguage.Items.Contains(cultureName))
+				this.comboBoxLanguage.Items.Add(cultureName);
+
+			this.comboBoxLanguage.Text = cultureName;
 		}
 
 		private void Application_HashChanged(object sender, HashChangedEventArgs e)
