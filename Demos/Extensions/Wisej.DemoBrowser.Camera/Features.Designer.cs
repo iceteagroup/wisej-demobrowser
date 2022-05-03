@@ -84,6 +84,7 @@
             this.comboBoxFacingMode.Name = "comboBoxFacingMode";
             this.comboBoxFacingMode.Size = new System.Drawing.Size(200, 60);
             this.comboBoxFacingMode.TabIndex = 3;
+            this.comboBoxFacingMode.Text = "User";
             this.comboBoxFacingMode.SelectedIndexChanged += new System.EventHandler(this.comboBoxFacingMode_SelectedIndexChanged);
             // 
             // comboBoxObjectFit
@@ -102,6 +103,7 @@
             this.comboBoxObjectFit.Name = "comboBoxObjectFit";
             this.comboBoxObjectFit.Size = new System.Drawing.Size(200, 60);
             this.comboBoxObjectFit.TabIndex = 4;
+            this.comboBoxObjectFit.Text = "Contain";
             this.comboBoxObjectFit.SelectedIndexChanged += new System.EventHandler(this.comboBoxObjectFit_SelectedIndexChanged);
             // 
             // Features

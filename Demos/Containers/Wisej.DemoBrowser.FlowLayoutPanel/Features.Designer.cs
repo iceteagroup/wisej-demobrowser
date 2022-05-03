@@ -29,74 +29,19 @@
         private void InitializeComponent()
         {
             Wisej.Web.ComponentTool componentTool1 = new Wisej.Web.ComponentTool();
-            this.personCard9 = new Wisej.DemoBrowser.FlowLayoutPanel.PersonCard();
-            this.personCard8 = new Wisej.DemoBrowser.FlowLayoutPanel.PersonCard();
-            this.personCard7 = new Wisej.DemoBrowser.FlowLayoutPanel.PersonCard();
-            this.personCard6 = new Wisej.DemoBrowser.FlowLayoutPanel.PersonCard();
-            this.personCard5 = new Wisej.DemoBrowser.FlowLayoutPanel.PersonCard();
-            this.personCard4 = new Wisej.DemoBrowser.FlowLayoutPanel.PersonCard();
-            this.personCard2 = new Wisej.DemoBrowser.FlowLayoutPanel.PersonCard();
-            this.personCard1 = new Wisej.DemoBrowser.FlowLayoutPanel.PersonCard();
-            this.personCard3 = new Wisej.DemoBrowser.FlowLayoutPanel.PersonCard();
             this.flowLayoutPanel = new Wisej.Web.FlowLayoutPanel();
             this.comboBoxView = new Wisej.Web.ComboBox();
-            this.buttonAdd = new Wisej.Web.Button();
+            this.personCard3 = new Wisej.DemoBrowser.FlowLayoutPanel.PersonCard();
+            this.personCard1 = new Wisej.DemoBrowser.FlowLayoutPanel.PersonCard();
+            this.personCard2 = new Wisej.DemoBrowser.FlowLayoutPanel.PersonCard();
+            this.personCard4 = new Wisej.DemoBrowser.FlowLayoutPanel.PersonCard();
+            this.personCard5 = new Wisej.DemoBrowser.FlowLayoutPanel.PersonCard();
+            this.personCard6 = new Wisej.DemoBrowser.FlowLayoutPanel.PersonCard();
+            this.personCard7 = new Wisej.DemoBrowser.FlowLayoutPanel.PersonCard();
+            this.personCard8 = new Wisej.DemoBrowser.FlowLayoutPanel.PersonCard();
+            this.personCard9 = new Wisej.DemoBrowser.FlowLayoutPanel.PersonCard();
             this.flowLayoutPanel.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // personCard9
-            // 
-            this.personCard9.Location = new System.Drawing.Point(361, 169);
-            this.personCard9.Name = "personCard9";
-            this.personCard9.TabIndex = 27;
-            // 
-            // personCard8
-            // 
-            this.personCard8.Location = new System.Drawing.Point(182, 169);
-            this.personCard8.Name = "personCard8";
-            this.personCard8.TabIndex = 26;
-            // 
-            // personCard7
-            // 
-            this.personCard7.Location = new System.Drawing.Point(3, 169);
-            this.personCard7.Name = "personCard7";
-            this.personCard7.TabIndex = 25;
-            // 
-            // personCard6
-            // 
-            this.personCard6.Location = new System.Drawing.Point(898, 3);
-            this.personCard6.Name = "personCard6";
-            this.personCard6.TabIndex = 24;
-            // 
-            // personCard5
-            // 
-            this.personCard5.Location = new System.Drawing.Point(719, 3);
-            this.personCard5.Name = "personCard5";
-            this.personCard5.TabIndex = 23;
-            // 
-            // personCard4
-            // 
-            this.personCard4.Location = new System.Drawing.Point(540, 3);
-            this.personCard4.Name = "personCard4";
-            this.personCard4.TabIndex = 22;
-            // 
-            // personCard2
-            // 
-            this.personCard2.Location = new System.Drawing.Point(361, 3);
-            this.personCard2.Name = "personCard2";
-            this.personCard2.TabIndex = 21;
-            // 
-            // personCard1
-            // 
-            this.personCard1.Location = new System.Drawing.Point(182, 3);
-            this.personCard1.Name = "personCard1";
-            this.personCard1.TabIndex = 20;
-            // 
-            // personCard3
-            // 
-            this.personCard3.Location = new System.Drawing.Point(3, 3);
-            this.personCard3.Name = "personCard3";
-            this.personCard3.TabIndex = 19;
             // 
             // flowLayoutPanel
             // 
@@ -139,21 +84,64 @@
             this.comboBoxView.Text = "LeftToRight";
             this.comboBoxView.SelectedIndexChanged += new System.EventHandler(this.comboBoxView_SelectedIndexChanged);
             // 
-            // buttonAdd
+            // personCard3
             // 
-            this.buttonAdd.Location = new System.Drawing.Point(23, 128);
-            this.buttonAdd.Name = "buttonAdd";
-            this.buttonAdd.Size = new System.Drawing.Size(177, 37);
-            this.buttonAdd.TabIndex = 6;
-            this.buttonAdd.Text = "Add Items";
-            this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
+            this.personCard3.Location = new System.Drawing.Point(3, 3);
+            this.personCard3.Name = "personCard3";
+            this.personCard3.TabIndex = 19;
+            // 
+            // personCard1
+            // 
+            this.personCard1.Location = new System.Drawing.Point(182, 3);
+            this.personCard1.Name = "personCard1";
+            this.personCard1.TabIndex = 20;
+            // 
+            // personCard2
+            // 
+            this.personCard2.Location = new System.Drawing.Point(361, 3);
+            this.personCard2.Name = "personCard2";
+            this.personCard2.TabIndex = 21;
+            // 
+            // personCard4
+            // 
+            this.personCard4.Location = new System.Drawing.Point(540, 3);
+            this.personCard4.Name = "personCard4";
+            this.personCard4.TabIndex = 22;
+            // 
+            // personCard5
+            // 
+            this.personCard5.Location = new System.Drawing.Point(719, 3);
+            this.personCard5.Name = "personCard5";
+            this.personCard5.TabIndex = 23;
+            // 
+            // personCard6
+            // 
+            this.personCard6.Location = new System.Drawing.Point(898, 3);
+            this.personCard6.Name = "personCard6";
+            this.personCard6.TabIndex = 24;
+            // 
+            // personCard7
+            // 
+            this.personCard7.Location = new System.Drawing.Point(3, 169);
+            this.personCard7.Name = "personCard7";
+            this.personCard7.TabIndex = 25;
+            // 
+            // personCard8
+            // 
+            this.personCard8.Location = new System.Drawing.Point(182, 169);
+            this.personCard8.Name = "personCard8";
+            this.personCard8.TabIndex = 26;
+            // 
+            // personCard9
+            // 
+            this.personCard9.Location = new System.Drawing.Point(361, 169);
+            this.personCard9.Name = "personCard9";
+            this.personCard9.TabIndex = 27;
             // 
             // Features
             // 
-            this.Controls.Add(this.buttonAdd);
             this.Controls.Add(this.comboBoxView);
             this.Controls.Add(this.flowLayoutPanel);
-            this.MinimumSize = new System.Drawing.Size(828, 395);
             this.Name = "Features";
             this.Load += new System.EventHandler(this.Features_Load);
             this.flowLayoutPanel.ResumeLayout(false);
@@ -174,6 +162,5 @@
         private PersonCard personCard3;
         private Web.FlowLayoutPanel flowLayoutPanel;
         private Web.ComboBox comboBoxView;
-        private Web.Button buttonAdd;
     }
 }

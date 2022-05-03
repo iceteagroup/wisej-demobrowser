@@ -29,8 +29,8 @@
 		private void InitializeComponent()
 		{
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Features));
             this.rotation1 = new Wisej.Web.Rotation(this.components);
-            this.label3 = new Wisej.Web.Label();
             this.numericUpDownXRotation = new Wisej.Web.NumericUpDown();
             this.numericUpDownYRotation = new Wisej.Web.NumericUpDown();
             this.numericUpDownZRotation = new Wisej.Web.NumericUpDown();
@@ -39,6 +39,7 @@
             this.numericUpDownXScale = new Wisej.Web.NumericUpDown();
             this.panel1 = new Wisej.Web.Panel();
             this.numericUpDownPerspective = new Wisej.Web.NumericUpDown();
+            this.htmlPanel1 = new Wisej.Web.HtmlPanel();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownXRotation)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownYRotation)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownZRotation)).BeginInit();
@@ -48,17 +49,6 @@
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPerspective)).BeginInit();
             this.SuspendLayout();
-            // 
-            // label3
-            // 
-            this.label3.Anchor = Wisej.Web.AnchorStyles.None;
-            this.label3.BorderStyle = Wisej.Web.BorderStyle.Solid;
-            this.label3.Location = new System.Drawing.Point(132, 94);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(189, 139);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "Rotate Me";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // numericUpDownXRotation
             // 
@@ -73,6 +63,11 @@
             this.numericUpDownXRotation.Name = "numericUpDownXRotation";
             this.numericUpDownXRotation.Size = new System.Drawing.Size(190, 53);
             this.numericUpDownXRotation.TabIndex = 8;
+            this.numericUpDownXRotation.Value = new decimal(new int[] {
+            13,
+            0,
+            0,
+            0});
             // 
             // numericUpDownYRotation
             // 
@@ -162,10 +157,11 @@
             // panel1
             // 
             this.panel1.Anchor = Wisej.Web.AnchorStyles.None;
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Location = new System.Drawing.Point(737, 74);
+            this.panel1.BackColor = System.Drawing.Color.Black;
+            this.panel1.Controls.Add(this.htmlPanel1);
+            this.panel1.Location = new System.Drawing.Point(737, 63);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(453, 327);
+            this.panel1.Size = new System.Drawing.Size(609, 338);
             this.panel1.TabIndex = 14;
             this.panel1.TabStop = true;
             // 
@@ -188,6 +184,19 @@
             0,
             0});
             // 
+            // htmlPanel1
+            // 
+            this.htmlPanel1.Dock = Wisej.Web.DockStyle.Fill;
+            this.htmlPanel1.Focusable = false;
+            this.htmlPanel1.Html = resources.GetString("htmlPanel1.Html");
+            this.htmlPanel1.Location = new System.Drawing.Point(0, 0);
+            this.htmlPanel1.Name = "htmlPanel1";
+            this.rotation1.GetRotation(this.htmlPanel1).Perspective = 100;
+            this.rotation1.GetRotation(this.htmlPanel1).RotateX = 13;
+            this.htmlPanel1.Size = new System.Drawing.Size(609, 338);
+            this.htmlPanel1.TabIndex = 1;
+            this.htmlPanel1.TabStop = false;
+            // 
             // Features
             // 
             this.Controls.Add(this.numericUpDownPerspective);
@@ -198,7 +207,6 @@
             this.Controls.Add(this.numericUpDownZRotation);
             this.Controls.Add(this.numericUpDownYRotation);
             this.Controls.Add(this.numericUpDownXRotation);
-            this.MinimumSize = new System.Drawing.Size(980, 378);
             this.Name = "Features";
             this.Load += new System.EventHandler(this.Features_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownXRotation)).EndInit();
@@ -217,7 +225,6 @@
 		#endregion
 
 		private Web.Rotation rotation1;
-		private Web.Label label3;
 		private Web.NumericUpDown numericUpDownXRotation;
 		private Web.NumericUpDown numericUpDownYRotation;
 		private Web.NumericUpDown numericUpDownZRotation;
@@ -226,5 +233,6 @@
 		private Web.NumericUpDown numericUpDownXScale;
 		private Web.Panel panel1;
         private Web.NumericUpDown numericUpDownPerspective;
+        private Web.HtmlPanel htmlPanel1;
     }
 }

@@ -24,11 +24,5 @@ namespace Wisej.DemoBrowser.FlowLayoutPanel
 			var flow = (FlowDirection)Enum.Parse(typeof(FlowDirection), (string)this.comboBoxView.SelectedItem);
 			this.flowLayoutPanel.FlowDirection = flow;
         }
-
-        private void buttonAdd_Click(object sender, EventArgs e)
-        {
-			for (var i = 0; i < 10; i++)
-				this.flowLayoutPanel.Controls.Add(new PersonCard());
-        }
     }
 }

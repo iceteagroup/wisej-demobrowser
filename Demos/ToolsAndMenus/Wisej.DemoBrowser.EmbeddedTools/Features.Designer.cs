@@ -47,13 +47,12 @@
             // textBox1
             // 
             this.textBox1.Anchor = Wisej.Web.AnchorStyles.None;
-            this.textBox1.LabelText = "Tool Position Right With ToolTip";
+            this.textBox1.LabelText = "Tool Position Right";
             this.textBox1.Location = new System.Drawing.Point(231, 170);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(247, 53);
             this.textBox1.TabIndex = 9;
             componentTool1.ImageSource = "node-opened";
-            componentTool1.ToolTipText = "This is a Tool component";
             this.textBox1.Tools.AddRange(new Wisej.Web.ComponentTool[] {
             componentTool1});
             this.textBox1.ToolClick += new Wisej.Web.ToolClickEventHandler(this.Tool_Click);

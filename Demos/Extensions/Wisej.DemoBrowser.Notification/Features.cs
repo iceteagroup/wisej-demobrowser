@@ -20,11 +20,11 @@ namespace Wisej.DemoBrowser.Notification
 
 		private void buttonShowNotification_Click(object sender, EventArgs e)
 		{
-			this.notification1.Show(this.textBoxTitle.Text, 
-				this.textBoxBody.Text, 
-				icon: "icon-info", 
-				this.checkBoxShowOnClick.Checked, 
-				requireInteraction: this.checkBoxRequireInteraction.Checked);
+			this.notification1.Show(title: this.textBoxTitle.Text, 
+				body: this.textBoxBody.Text, 
+				showOnClick: this.checkBoxShowOnClick.Checked,
+				requireInteraction: this.checkBoxRequireInteraction.Checked,
+				icon: Application.StartupUrl + "resource.wx/Wisej.DemoBrowser.Notification.Images.avatar.png");
 		}
 	}
 }
