@@ -29,8 +29,7 @@
 		private void InitializeComponent()
 		{
             this.dxSwitch1 = new Wisej.Web.Ext.DevExtreme.dxSwitch();
-            this.textBoxOnText = new Wisej.Web.TextBox();
-            this.textBoxOffText = new Wisej.Web.TextBox();
+            this.checkBoxIsValid = new Wisej.Web.CheckBox();
             this.groupBox1.SuspendLayout();
             this.panel.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
@@ -59,38 +58,32 @@
             // 
             // flowLayoutPanel1
             // 
-            this.flowLayoutPanel1.Controls.Add(this.textBoxOnText);
-            this.flowLayoutPanel1.Controls.Add(this.textBoxOffText);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 31);
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 445);
+            this.flowLayoutPanel1.Controls.Add(this.checkBoxIsValid);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 35);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 441);
             // 
             // dxSwitch1
             // 
             this.dxSwitch1.Anchor = Wisej.Web.AnchorStyles.None;
             this.dxSwitch1.Location = new System.Drawing.Point(513, 262);
             this.dxSwitch1.Name = "dxSwitch1";
+            this.dxSwitch1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"switchedOnText\":\"on\",\"switchedOffText\":\"off\",\"isValid\":false}")));
             this.dxSwitch1.Size = new System.Drawing.Size(63, 35);
             this.dxSwitch1.TabIndex = 0;
             // 
-            // textBoxOnText
+            // checkBoxIsValid
             // 
-            this.textBoxOnText.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Left) 
+            this.checkBoxIsValid.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Left) 
             | Wisej.Web.AnchorStyles.Right)));
-            this.textBoxOnText.LabelText = "On Text";
-            this.textBoxOnText.Location = new System.Drawing.Point(3, 3);
-            this.textBoxOnText.Name = "textBoxOnText";
-            this.textBoxOnText.Size = new System.Drawing.Size(212, 46);
-            this.textBoxOnText.TabIndex = 0;
-            // 
-            // textBoxOffText
-            // 
-            this.textBoxOffText.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Left) 
-            | Wisej.Web.AnchorStyles.Right)));
-            this.textBoxOffText.LabelText = "Off Text";
-            this.textBoxOffText.Location = new System.Drawing.Point(3, 55);
-            this.textBoxOffText.Name = "textBoxOffText";
-            this.textBoxOffText.Size = new System.Drawing.Size(212, 46);
-            this.textBoxOffText.TabIndex = 1;
+            this.checkBoxIsValid.Appearance = Wisej.Web.Appearance.Switch;
+            this.checkBoxIsValid.AutoSize = false;
+            this.checkBoxIsValid.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.checkBoxIsValid.Location = new System.Drawing.Point(3, 16);
+            this.checkBoxIsValid.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
+            this.checkBoxIsValid.Name = "checkBoxIsValid";
+            this.checkBoxIsValid.Size = new System.Drawing.Size(212, 26);
+            this.checkBoxIsValid.TabIndex = 2;
+            this.checkBoxIsValid.Text = "Is Valid";
             // 
             // dxSwitch
             // 
@@ -99,7 +92,6 @@
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
-            this.flowLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -108,7 +100,6 @@
 		#endregion
 
 		private DevExtreme.dxSwitch dxSwitch1;
-        private TextBox textBoxOnText;
-        private TextBox textBoxOffText;
+        private CheckBox checkBoxIsValid;
     }
 }
