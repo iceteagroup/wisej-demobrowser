@@ -48,17 +48,15 @@
             // linkDocs
             // 
             this.linkDocs.TabIndex = 4;
-            this.linkDocs.Text = "https://help.syncfusion.com/js/digitalgauge/ove";
+            this.linkDocs.Text = "https://help.syncfusion.com/js/digitalgauge/overview";
             // 
             // buttonUpdate
             // 
-            this.buttonUpdate.Location = new System.Drawing.Point(16, 472);
             this.buttonUpdate.TabIndex = 3;
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
             // linkDemo
             // 
-            this.linkDemo.Size = new System.Drawing.Size(582, 24);
             this.linkDemo.TabIndex = 6;
             this.linkDemo.Text = "https://js.syncfusion.com/demos/web/#!/flatlight/digitalgauge/DefaultFunctionalit" +
     "ies";
@@ -78,6 +76,8 @@
             this.flowLayoutPanelProperties.Controls.Add(this.textBox1);
             this.flowLayoutPanelProperties.Controls.Add(this.panel1);
             this.flowLayoutPanelProperties.Controls.Add(this.panel2);
+            this.flowLayoutPanelProperties.Location = new System.Drawing.Point(16, 31);
+            this.flowLayoutPanelProperties.Size = new System.Drawing.Size(218, 441);
             // 
             // ejDigitalGauge1
             // 
@@ -110,7 +110,7 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(3, 3);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(132, 22);
+            this.label4.Size = new System.Drawing.Size(131, 19);
             this.label4.TabIndex = 0;
             this.label4.Text = "Segment Spacing";
             // 
@@ -128,7 +128,7 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(3, 3);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(139, 22);
+            this.label5.Size = new System.Drawing.Size(137, 19);
             this.label5.TabIndex = 0;
             this.label5.Text = "Character Spacing";
             // 
