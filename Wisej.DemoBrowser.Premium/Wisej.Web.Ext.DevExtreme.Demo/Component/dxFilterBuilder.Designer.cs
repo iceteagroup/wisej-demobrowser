@@ -30,13 +30,21 @@
 		{
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(dxFilterBuilder));
             this.dxFilterBuilder1 = new Wisej.Web.Ext.DevExtreme.dxFilterBuilder();
+            this.buttonGetFilterExpression = new Wisej.Web.Button();
+            this.tagTextBoxGroupOperation = new Wisej.Web.TagTextBox();
+            this.label4 = new Wisej.Web.Label();
             this.groupBox1.SuspendLayout();
             this.panel.SuspendLayout();
+            this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // linkDocs
             // 
             this.linkDocs.Text = "https://js.devexpress.com/Documentation/Guide/Widgets/FilterBuilder/Overview/";
+            // 
+            // buttonUpdate
+            // 
+            this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
             // linkDemo
             // 
@@ -51,6 +59,14 @@
             // 
             this.panel.Controls.Add(this.dxFilterBuilder1);
             // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Controls.Add(this.tagTextBoxGroupOperation);
+            this.flowLayoutPanel1.Controls.Add(this.label4);
+            this.flowLayoutPanel1.Controls.Add(this.buttonGetFilterExpression);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 35);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 441);
+            // 
             // dxFilterBuilder1
             // 
             this.dxFilterBuilder1.Anchor = Wisej.Web.AnchorStyles.None;
@@ -60,12 +76,48 @@
             this.dxFilterBuilder1.Size = new System.Drawing.Size(608, 370);
             this.dxFilterBuilder1.TabIndex = 0;
             // 
+            // buttonGetFilterExpression
+            // 
+            this.buttonGetFilterExpression.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Left) 
+            | Wisej.Web.AnchorStyles.Right)));
+            this.buttonGetFilterExpression.Location = new System.Drawing.Point(3, 180);
+            this.buttonGetFilterExpression.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
+            this.buttonGetFilterExpression.Name = "buttonGetFilterExpression";
+            this.buttonGetFilterExpression.Size = new System.Drawing.Size(212, 27);
+            this.buttonGetFilterExpression.TabIndex = 16;
+            this.buttonGetFilterExpression.Text = "Get filter expression";
+            this.buttonGetFilterExpression.Click += new System.EventHandler(this.buttonGetFilterExpression_Click);
+            // 
+            // tagTextBoxGroupOperation
+            // 
+            this.tagTextBoxGroupOperation.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Left) 
+            | Wisej.Web.AnchorStyles.Right)));
+            this.tagTextBoxGroupOperation.LabelText = "Group operation";
+            this.tagTextBoxGroupOperation.Location = new System.Drawing.Point(3, 16);
+            this.tagTextBoxGroupOperation.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
+            this.tagTextBoxGroupOperation.Name = "tagTextBoxGroupOperation";
+            this.tagTextBoxGroupOperation.Size = new System.Drawing.Size(212, 52);
+            this.tagTextBoxGroupOperation.TabIndex = 17;
+            // 
+            // label4
+            // 
+            this.label4.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Left) 
+            | Wisej.Web.AnchorStyles.Right)));
+            this.label4.Location = new System.Drawing.Point(3, 87);
+            this.label4.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(212, 74);
+            this.label4.TabIndex = 18;
+            this.label4.Text = "Accepted Values: \'and\' | \'or\' | \'notAnd\' | \'notOr\' more details in doc";
+            // 
             // dxFilterBuilder
             // 
             this.MinimumSize = new System.Drawing.Size(1028, 571);
             this.Name = "dxFilterBuilder";
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
+            this.flowLayoutPanel1.ResumeLayout(false);
+            this.flowLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -74,5 +126,8 @@
 		#endregion
 
 		private DevExtreme.dxFilterBuilder dxFilterBuilder1;
-	}
+        private Button buttonGetFilterExpression;
+        private TagTextBox tagTextBoxGroupOperation;
+        private Label label4;
+    }
 }
