@@ -7,8 +7,6 @@
 		/// </summary>
 		static void Main()
 		{
-			Application.CurrentCulture = new System.Globalization.CultureInfo("pt");
-
 			ejBase.Theme = "bootstrap-theme";
 			Application.MainPage = new MainView();
 		}

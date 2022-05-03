@@ -11,8 +11,6 @@ namespace Wisej.Web.Ext.Kendo.Demo
 		/// </summary>
 		static void Main()
 		{
-			Application.CurrentCulture = new CultureInfo("pt");
-
 			kendoBase.Theme = "bootstrap-main";
 			Application.MainPage = new MainView();
 		}

@@ -64,6 +64,8 @@ namespace Wisej.Web.Ext.Syncfusion.Demo.Component
             // 
             // groupBox1
             // 
+            this.groupBox1.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
+            | Wisej.Web.AnchorStyles.Left)));
             this.groupBox1.Controls.Add(this.flowLayoutPanelProperties);
             this.groupBox1.Controls.Add(this.spacer1);
             this.groupBox1.Controls.Add(this.buttonUpdate);
@@ -76,6 +78,7 @@ namespace Wisej.Web.Ext.Syncfusion.Demo.Component
             // 
             // flowLayoutPanelProperties
             // 
+            this.flowLayoutPanelProperties.AutoScroll = true;
             this.flowLayoutPanelProperties.Dock = Wisej.Web.DockStyle.Fill;
             this.flowLayoutPanelProperties.Location = new System.Drawing.Point(16, 38);
             this.flowLayoutPanelProperties.Name = "flowLayoutPanelProperties";

@@ -24,14 +24,7 @@ namespace Wisej.Web.Ext.Kendo.Demo
 			if (hash != "")
 				this.listBoxDemos.SelectedIndex = this.listBoxDemos.FindString(hash);
 
-			var cultureName = Application.CurrentCulture.TextInfo.CultureName;
-			
-			if (!this.comboBoxLanguage.Items.Contains(cultureName))
-				this.comboBoxLanguage.Items.Add(cultureName);
-
-			this.comboBoxLanguage.Text = cultureName;
-
-			this.comboBoxLanguage.SelectedIndexChanged += new EventHandler(this.comboBoxLanguage_SelectedIndexChanged);
+			kendoBase.Culture = new CultureInfo("en-US");
 		}
 
 		private void Application_HashChanged(object sender, HashChangedEventArgs e)
@@ -114,5 +107,20 @@ namespace Wisej.Web.Ext.Kendo.Demo
         {
 			Application.Navigate("https://wisej.com/products/", "_blank");
 		}
-    }
+
+		private void labelNavigationWisejDemos_Click(object sender, EventArgs e)
+		{
+			Application.Navigate("https://demo.wisej.com/DemoBrowser");
+		}
+
+		private void labelNaivgationCategory_Click(object sender, EventArgs e)
+		{
+			Application.Navigate("https://demo.wisej.com/DemoBrowser/#Extensions/Premium");
+		}
+
+		private void labelNavigationPremium_Click(object sender, EventArgs e)
+		{
+			Application.Navigate("https://demo.wisej.com/DemoBrowser/#Extensions/Premium");
+		}
+	}
 }

@@ -104,5 +104,20 @@ namespace Wisej.Web.Ext.Webix.Demo
         {
 			Application.Navigate("https://wisej.com/products/", "_blank");
 		}
+
+		private void labelNavigationWisejDemos_Click(object sender, EventArgs e)
+		{
+			Application.Navigate("https://demo.wisej.com/DemoBrowser");
+		}
+
+		private void labelNaivgationCategory_Click(object sender, EventArgs e)
+		{
+			Application.Navigate("https://demo.wisej.com/DemoBrowser/#Extensions/Premium");
+		}
+
+		private void labelNavigationPremium_Click(object sender, EventArgs e)
+		{
+			Application.Navigate("https://demo.wisej.com/DemoBrowser/#Extensions/Premium");
+		}
 	}
 }
