@@ -9,6 +9,8 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
 		{
 			InitializeComponent();
 
+			this.comboBox1.DataBindings.Add(new Binding("Enabled", this.checkBox1, "Checked"));
+			
 			this.dxList1.Instance.onItemClick += new WidgetEventHandler(dxList1_WidgetEvent);
 			this.dxList1.Instance.onPullRefresh += new WidgetEventHandler(dxList1_WidgetEvent);
 		}
@@ -26,7 +28,10 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
 		{
 			this.dxList1.Options.bounceEnabled = this.checkBox2.Checked;
 			this.dxList1.Options.searchEnabled = this.checkBox1.Checked;
-			this.dxList1.Options.searchMode = this.comboBox1.SelectedItem;
+
+			if(this.checkBox1.Checked)
+				this.dxList1.Options.searchMode = this.comboBox1.SelectedItem;
+			
 			this.dxList1.Options.repaintChangesOnly = this.checkBox4.Checked;
 			this.dxList1.Options.selectionMode = this.comboBox2.SelectedItem;
 			this.dxList1.Options.itemDeleteMode = this.comboBox3.SelectedItem;
