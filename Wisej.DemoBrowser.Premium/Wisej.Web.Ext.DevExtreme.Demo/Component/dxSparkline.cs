@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Drawing;
 using Wisej.Web;
 
 namespace Wisej.Web.Ext.DevExtreme.Demo.Component
@@ -10,13 +11,6 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
 			InitializeComponent();
 		}
 
-        protected override void OnLoad(EventArgs e)
-        {
-            base.OnLoad(e);
-
-			this.comboBoxPointSymbol.SelectedIndex = 0;
-        }
-
         private void dxSparkline1_WidgetEvent(object sender, WidgetEventArgs e)
 		{
 			AlertBox.Show(
@@ -26,11 +20,20 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
 			Application.Play(MessageBoxIcon.Information);
 		}
 
-        private async void buttonUpdate_Click(object sender, EventArgs e)
+        private async void button1_Click(object sender, EventArgs e)
         {
-			this.dxSparkline1.Options.type = this.comboBoxPointSymbol.SelectedItem.ToString();
-
-			this.dxSparkline1.Update();
-        }
+			var result = await this.colorDialog1.ShowDialogAsync();
+			if(result == DialogResult.OK)
+            {
+				string color = ColorTranslator.ToHtml(this.colorDialog1.Color);
+				
+				this.button1.Text = color;
+				this.button1.BackColor = this.colorDialog1.Color;
+				
+				this.dxSparkline1.Options.lineColor = color;
+				
+				this.dxSparkline1.Update();
+			}
+		}
     }
 }

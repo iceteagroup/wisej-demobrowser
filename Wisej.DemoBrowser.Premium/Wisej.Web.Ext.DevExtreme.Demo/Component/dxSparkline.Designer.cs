@@ -28,6 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(dxSparkline));
             this.tableLayoutPanel1 = new Wisej.Web.TableLayoutPanel();
             this.dxSparkline9 = new Wisej.Web.Ext.DevExtreme.dxSparkline();
@@ -45,7 +46,9 @@
             this.label9 = new Wisej.Web.Label();
             this.dxSparkline7 = new Wisej.Web.Ext.DevExtreme.dxSparkline();
             this.dxSparkline5 = new Wisej.Web.Ext.DevExtreme.dxSparkline();
-            this.comboBoxPointSymbol = new Wisej.Web.ComboBox();
+            this.colorDialog1 = new Wisej.Web.ColorDialog(this.components);
+            this.button1 = new Wisej.Web.Button();
+            this.label10 = new Wisej.Web.Label();
             this.groupBox1.SuspendLayout();
             this.panel.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
@@ -56,10 +59,6 @@
             // 
             this.linkDocs.Size = new System.Drawing.Size(986, 24);
             this.linkDocs.Text = "https://js.devexpress.com/Documentation/Guide/Widgets/Sparkline/Visual_Elements/";
-            // 
-            // buttonUpdate
-            // 
-            this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
             // linkDemo
             // 
@@ -79,9 +78,10 @@
             // 
             // flowLayoutPanel1
             // 
-            this.flowLayoutPanel1.Controls.Add(this.comboBoxPointSymbol);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 31);
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 445);
+            this.flowLayoutPanel1.Controls.Add(this.button1);
+            this.flowLayoutPanel1.Controls.Add(this.label10);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 35);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 441);
             // 
             // tableLayoutPanel1
             // 
@@ -287,25 +287,26 @@
             this.dxSparkline5.Size = new System.Drawing.Size(234, 38);
             this.dxSparkline5.TabIndex = 11;
             // 
-            // comboBoxPointSymbol
+            // button1
             // 
-            this.comboBoxPointSymbol.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Left) 
+            this.button1.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Left) 
             | Wisej.Web.AnchorStyles.Right)));
-            this.comboBoxPointSymbol.DropDownStyle = Wisej.Web.ComboBoxStyle.DropDownList;
-            this.comboBoxPointSymbol.Items.AddRange(new object[] {
-            "area",
-            "bar",
-            "line",
-            "spline",
-            "splinearea",
-            "steparea",
-            "stepline",
-            "winloss"});
-            this.comboBoxPointSymbol.LabelText = "Type";
-            this.comboBoxPointSymbol.Location = new System.Drawing.Point(3, 3);
-            this.comboBoxPointSymbol.Name = "comboBoxPointSymbol";
-            this.comboBoxPointSymbol.Size = new System.Drawing.Size(212, 46);
-            this.comboBoxPointSymbol.TabIndex = 0;
+            this.button1.Location = new System.Drawing.Point(3, 3);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(212, 27);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "Line color";
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // label10
+            // 
+            this.label10.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Left) 
+            | Wisej.Web.AnchorStyles.Right)));
+            this.label10.Location = new System.Drawing.Point(3, 36);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(212, 50);
+            this.label10.TabIndex = 2;
+            this.label10.Text = "Note. For 2010 Oil(USD/barrel)";
             // 
             // dxSparkline
             // 
@@ -314,7 +315,6 @@
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
-            this.flowLayoutPanel1.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
@@ -340,6 +340,8 @@
 		private Label label9;
 		private DevExtreme.dxSparkline dxSparkline7;
 		private DevExtreme.dxSparkline dxSparkline5;
-        private ComboBox comboBoxPointSymbol;
+        private Button button1;
+        private ColorDialog colorDialog1;
+        private Label label10;
     }
 }
