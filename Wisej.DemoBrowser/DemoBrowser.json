@@ -607,7 +607,7 @@
 				"assembly": "Features, Wisej.DemoBrowser.ProgressBar.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/ProgressBar.svg",
 				"docsUrl": "https://docs.wisej.com/docs/controls/content/progressbar",
-				"description-en": "The <b>Wisej.Web.ProgressBar</b> is used to visual indicate the progress of lengthy operations."
+				"description-en": "The <b>Wisej.Web.ProgressBar</b> is used to visual indicate the progress of lengthy operations. This demo starts a background task on the server and updates the client with new progress. The state of the progress bars are restored on a page refresh."
 			}
 		},
 		"Toast": {
