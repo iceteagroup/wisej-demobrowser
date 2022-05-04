@@ -30,12 +30,6 @@
 		{
             this.components = new System.ComponentModel.Container();
             this.animation1 = new Wisej.Web.Animation(this.components);
-            this.panelControls = new Wisej.Web.Panel();
-            this.buttonHidePage = new Wisej.Web.Button();
-            this.buttonShowPage = new Wisej.Web.Button();
-            this.buttonHideNavigation = new Wisej.Web.Button();
-            this.buttonShowNavigation = new Wisej.Web.Button();
-            this.animation2 = new Wisej.Web.Animation(this.components);
             this.flowLayoutPanel1 = new Wisej.Web.FlowLayoutPanel();
             this.panel1 = new Wisej.Web.Panel();
             this.label3 = new Wisej.Web.Label();
@@ -73,14 +67,19 @@
             this.label25 = new Wisej.Web.Label();
             this.label26 = new Wisej.Web.Label();
             this.label27 = new Wisej.Web.Label();
-            this.navigationBarItem4 = new Wisej.Web.Ext.NavigationBar.NavigationBarItem();
-            this.navigationBarItem3 = new Wisej.Web.Ext.NavigationBar.NavigationBarItem();
-            this.navigationBarItem2 = new Wisej.Web.Ext.NavigationBar.NavigationBarItem();
-            this.navigationBarItem1 = new Wisej.Web.Ext.NavigationBar.NavigationBarItem();
             this.navigationBar1 = new Wisej.Web.Ext.NavigationBar.NavigationBar();
+            this.navigationBarItem1 = new Wisej.Web.Ext.NavigationBar.NavigationBarItem();
+            this.navigationBarItem2 = new Wisej.Web.Ext.NavigationBar.NavigationBarItem();
+            this.navigationBarItem3 = new Wisej.Web.Ext.NavigationBar.NavigationBarItem();
+            this.navigationBarItem4 = new Wisej.Web.Ext.NavigationBar.NavigationBarItem();
             this.navigationBarItem5 = new Wisej.Web.Ext.NavigationBar.NavigationBarItem();
             this.navigationBarItem6 = new Wisej.Web.Ext.NavigationBar.NavigationBarItem();
-            this.panelControls.SuspendLayout();
+            this.panelControls = new Wisej.Web.Panel();
+            this.buttonHidePage = new Wisej.Web.Button();
+            this.buttonShowPage = new Wisej.Web.Button();
+            this.buttonHideNavigation = new Wisej.Web.Button();
+            this.buttonShowNavigation = new Wisej.Web.Button();
+            this.animation2 = new Wisej.Web.Animation(this.components);
             this.flowLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -91,59 +90,8 @@
             this.panel7.SuspendLayout();
             this.panel8.SuspendLayout();
             this.panel9.SuspendLayout();
+            this.panelControls.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // panelControls
-            // 
-            this.panelControls.Controls.Add(this.buttonHidePage);
-            this.panelControls.Controls.Add(this.buttonShowPage);
-            this.panelControls.Controls.Add(this.buttonHideNavigation);
-            this.panelControls.Controls.Add(this.buttonShowNavigation);
-            this.panelControls.Dock = Wisej.Web.DockStyle.Top;
-            this.panelControls.Location = new System.Drawing.Point(8, 8);
-            this.panelControls.Name = "panelControls";
-            this.panelControls.Size = new System.Drawing.Size(1406, 46);
-            this.panelControls.TabIndex = 2;
-            // 
-            // buttonHidePage
-            // 
-            this.buttonHidePage.Anchor = Wisej.Web.AnchorStyles.Right;
-            this.buttonHidePage.Location = new System.Drawing.Point(1251, 5);
-            this.buttonHidePage.Name = "buttonHidePage";
-            this.buttonHidePage.Size = new System.Drawing.Size(150, 37);
-            this.buttonHidePage.TabIndex = 3;
-            this.buttonHidePage.Text = "Hide Page";
-            this.buttonHidePage.Click += new System.EventHandler(this.buttonHidePage_Click);
-            // 
-            // buttonShowPage
-            // 
-            this.buttonShowPage.Anchor = Wisej.Web.AnchorStyles.Right;
-            this.buttonShowPage.Location = new System.Drawing.Point(1095, 5);
-            this.buttonShowPage.Name = "buttonShowPage";
-            this.buttonShowPage.Size = new System.Drawing.Size(150, 37);
-            this.buttonShowPage.TabIndex = 2;
-            this.buttonShowPage.Text = "Show Page";
-            this.buttonShowPage.Click += new System.EventHandler(this.buttonShowPage_Click);
-            // 
-            // buttonHideNavigation
-            // 
-            this.buttonHideNavigation.Anchor = Wisej.Web.AnchorStyles.Left;
-            this.buttonHideNavigation.Location = new System.Drawing.Point(159, 5);
-            this.buttonHideNavigation.Name = "buttonHideNavigation";
-            this.buttonHideNavigation.Size = new System.Drawing.Size(150, 37);
-            this.buttonHideNavigation.TabIndex = 1;
-            this.buttonHideNavigation.Text = "Hide Navigation";
-            this.buttonHideNavigation.Click += new System.EventHandler(this.buttonHideNavigation_Click);
-            // 
-            // buttonShowNavigation
-            // 
-            this.buttonShowNavigation.Anchor = Wisej.Web.AnchorStyles.Left;
-            this.buttonShowNavigation.Location = new System.Drawing.Point(3, 5);
-            this.buttonShowNavigation.Name = "buttonShowNavigation";
-            this.buttonShowNavigation.Size = new System.Drawing.Size(150, 37);
-            this.buttonShowNavigation.TabIndex = 0;
-            this.buttonShowNavigation.Text = "Show Navigation";
-            this.buttonShowNavigation.Click += new System.EventHandler(this.buttonShowNavigation_Click);
             // 
             // flowLayoutPanel1
             // 
@@ -568,30 +516,6 @@
             this.label27.TabIndex = 0;
             this.label27.Text = "63";
             // 
-            // navigationBarItem4
-            // 
-            this.navigationBarItem4.Icon = "icon-upload";
-            this.navigationBarItem4.InfoTextBackColor = System.Drawing.Color.FromName("@window");
-            this.navigationBarItem4.Name = "NavigationBarItem";
-            // 
-            // navigationBarItem3
-            // 
-            this.navigationBarItem3.Icon = "icon-preview";
-            this.navigationBarItem3.InfoTextBackColor = System.Drawing.Color.FromName("@window");
-            this.navigationBarItem3.Name = "NavigationBarItem";
-            // 
-            // navigationBarItem2
-            // 
-            this.navigationBarItem2.Icon = "icon-search";
-            this.navigationBarItem2.InfoTextBackColor = System.Drawing.Color.FromName("@window");
-            this.navigationBarItem2.Name = "NavigationBarItem";
-            // 
-            // navigationBarItem1
-            // 
-            this.navigationBarItem1.Icon = "file-pdf";
-            this.navigationBarItem1.InfoTextBackColor = System.Drawing.Color.FromName("@window");
-            this.navigationBarItem1.Name = "NavigationBarItem";
-            // 
             // navigationBar1
             // 
             this.animation1.GetAnimation(this.navigationBar1).Duration = 500;
@@ -620,6 +544,30 @@
             this.navigationBar1.UserName = "John Doe";
             this.navigationBar1.UserStatus = "Online";
             // 
+            // navigationBarItem1
+            // 
+            this.navigationBarItem1.Icon = "file-pdf";
+            this.navigationBarItem1.InfoTextBackColor = System.Drawing.Color.FromName("@window");
+            this.navigationBarItem1.Name = "NavigationBarItem";
+            // 
+            // navigationBarItem2
+            // 
+            this.navigationBarItem2.Icon = "icon-search";
+            this.navigationBarItem2.InfoTextBackColor = System.Drawing.Color.FromName("@window");
+            this.navigationBarItem2.Name = "NavigationBarItem";
+            // 
+            // navigationBarItem3
+            // 
+            this.navigationBarItem3.Icon = "icon-preview";
+            this.navigationBarItem3.InfoTextBackColor = System.Drawing.Color.FromName("@window");
+            this.navigationBarItem3.Name = "NavigationBarItem";
+            // 
+            // navigationBarItem4
+            // 
+            this.navigationBarItem4.Icon = "icon-upload";
+            this.navigationBarItem4.InfoTextBackColor = System.Drawing.Color.FromName("@window");
+            this.navigationBarItem4.Name = "NavigationBarItem";
+            // 
             // navigationBarItem5
             // 
             this.navigationBarItem5.Icon = "icon-saveas";
@@ -630,16 +578,67 @@
             this.navigationBarItem6.Icon = "icon-new";
             this.navigationBarItem6.Name = "NavigationBarItem";
             // 
+            // panelControls
+            // 
+            this.panelControls.Controls.Add(this.buttonHidePage);
+            this.panelControls.Controls.Add(this.buttonShowPage);
+            this.panelControls.Controls.Add(this.buttonHideNavigation);
+            this.panelControls.Controls.Add(this.buttonShowNavigation);
+            this.panelControls.Dock = Wisej.Web.DockStyle.Top;
+            this.panelControls.Location = new System.Drawing.Point(8, 8);
+            this.panelControls.Name = "panelControls";
+            this.panelControls.Size = new System.Drawing.Size(1406, 46);
+            this.panelControls.TabIndex = 2;
+            // 
+            // buttonHidePage
+            // 
+            this.buttonHidePage.Anchor = Wisej.Web.AnchorStyles.Right;
+            this.buttonHidePage.Location = new System.Drawing.Point(1251, 5);
+            this.buttonHidePage.Name = "buttonHidePage";
+            this.buttonHidePage.Size = new System.Drawing.Size(150, 37);
+            this.buttonHidePage.TabIndex = 3;
+            this.buttonHidePage.Text = "Hide Page";
+            this.buttonHidePage.Click += new System.EventHandler(this.buttonHidePage_Click);
+            // 
+            // buttonShowPage
+            // 
+            this.buttonShowPage.Anchor = Wisej.Web.AnchorStyles.Right;
+            this.buttonShowPage.Location = new System.Drawing.Point(1095, 5);
+            this.buttonShowPage.Name = "buttonShowPage";
+            this.buttonShowPage.Size = new System.Drawing.Size(150, 37);
+            this.buttonShowPage.TabIndex = 2;
+            this.buttonShowPage.Text = "Show Page";
+            this.buttonShowPage.Click += new System.EventHandler(this.buttonShowPage_Click);
+            // 
+            // buttonHideNavigation
+            // 
+            this.buttonHideNavigation.Anchor = Wisej.Web.AnchorStyles.Left;
+            this.buttonHideNavigation.Location = new System.Drawing.Point(159, 5);
+            this.buttonHideNavigation.Name = "buttonHideNavigation";
+            this.buttonHideNavigation.Size = new System.Drawing.Size(150, 37);
+            this.buttonHideNavigation.TabIndex = 1;
+            this.buttonHideNavigation.Text = "Hide Navigation";
+            this.buttonHideNavigation.Click += new System.EventHandler(this.buttonHideNavigation_Click);
+            // 
+            // buttonShowNavigation
+            // 
+            this.buttonShowNavigation.Anchor = Wisej.Web.AnchorStyles.Left;
+            this.buttonShowNavigation.Location = new System.Drawing.Point(3, 5);
+            this.buttonShowNavigation.Name = "buttonShowNavigation";
+            this.buttonShowNavigation.Size = new System.Drawing.Size(150, 37);
+            this.buttonShowNavigation.TabIndex = 0;
+            this.buttonShowNavigation.Text = "Show Navigation";
+            this.buttonShowNavigation.Click += new System.EventHandler(this.buttonShowNavigation_Click);
+            // 
             // Features
             // 
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.navigationBar1);
             this.Controls.Add(this.panelControls);
-            this.MinimumSize = new System.Drawing.Size(1132, 431);
+            this.MinimumSize = new System.Drawing.Size(642, 216);
             this.Name = "Features";
             this.Padding = new Wisej.Web.Padding(8);
             this.Load += new System.EventHandler(this.Features_Load);
-            this.panelControls.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -659,6 +658,7 @@
             this.panel8.PerformLayout();
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
+            this.panelControls.ResumeLayout(false);
             this.ResumeLayout(false);
 
 		}
