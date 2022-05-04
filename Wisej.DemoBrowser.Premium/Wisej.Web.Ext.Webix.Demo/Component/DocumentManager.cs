@@ -22,10 +22,10 @@ namespace Wisej.Web.Ext.Webix.Demo.Component
             this.comboBoxMode.SelectedIndex = 0;
         }
 
-        private void buttonUpdate_Click(object sender, EventArgs e)
+        private async void buttonUpdate_Click(object sender, EventArgs e)
         {
             this.documentManager1.Options.mode = this.comboBoxMode.SelectedItem.ToString();
-
+            //(await this.documentManager1.Instance.getStateAsync()).mode = this.comboBoxMode.SelectedItem.ToString();
             this.documentManager1.Update();
         }
     }

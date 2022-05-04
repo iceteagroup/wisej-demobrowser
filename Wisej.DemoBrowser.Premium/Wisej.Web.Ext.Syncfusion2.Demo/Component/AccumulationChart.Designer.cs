@@ -35,19 +35,21 @@
             this.trackBarPieAngle = new Wisej.Web.TrackBar();
             this.label4 = new Wisej.Web.Label();
             this.numericUpDownExplodeRadius = new Wisej.Web.NumericUpDown();
-            this.textBoxNumOuterRadius = new Wisej.Web.TextBox();
             this.trackBarExplodeIndex = new Wisej.Web.TrackBar();
             this.label5 = new Wisej.Web.Label();
+            this.numericUpDownOuterRadius = new Wisej.Web.NumericUpDown();
             this.groupBox1.SuspendLayout();
             this.panel.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarPieAngle)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownExplodeRadius)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarExplodeIndex)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownOuterRadius)).BeginInit();
             this.SuspendLayout();
             // 
             // linkDocs
             // 
+            this.linkDocs.Size = new System.Drawing.Size(836, 24);
             this.linkDocs.Text = "https://ej2.syncfusion.com/javascript/documentation/accumulation-chart/es5-gettin" +
     "g-started/";
             // 
@@ -70,8 +72,8 @@
             this.flowLayoutPanel1.Controls.Add(this.textBoxSubTitle);
             this.flowLayoutPanel1.Controls.Add(this.label4);
             this.flowLayoutPanel1.Controls.Add(this.trackBarPieAngle);
-            this.flowLayoutPanel1.Controls.Add(this.textBoxNumOuterRadius);
             this.flowLayoutPanel1.Controls.Add(this.numericUpDownExplodeRadius);
+            this.flowLayoutPanel1.Controls.Add(this.numericUpDownOuterRadius);
             this.flowLayoutPanel1.Controls.Add(this.label5);
             this.flowLayoutPanel1.Controls.Add(this.trackBarExplodeIndex);
             // 
@@ -144,7 +146,7 @@
             this.flowLayoutPanel1.SetFlowBreak(this.numericUpDownExplodeRadius, true);
             this.numericUpDownExplodeRadius.Label.AutoEllipsis = true;
             this.numericUpDownExplodeRadius.LabelText = "Explode Radius";
-            this.numericUpDownExplodeRadius.Location = new System.Drawing.Point(112, 217);
+            this.numericUpDownExplodeRadius.Location = new System.Drawing.Point(3, 217);
             this.numericUpDownExplodeRadius.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.numericUpDownExplodeRadius.Maximum = new decimal(new int[] {
             40,
@@ -152,31 +154,15 @@
             0,
             0});
             this.numericUpDownExplodeRadius.Name = "numericUpDownExplodeRadius";
-            this.numericUpDownExplodeRadius.Size = new System.Drawing.Size(103, 46);
+            this.numericUpDownExplodeRadius.Size = new System.Drawing.Size(212, 46);
             this.numericUpDownExplodeRadius.TabIndex = 11;
-            // 
-            // textBoxNumOuterRadius
-            // 
-            this.textBoxNumOuterRadius.Dock = Wisej.Web.DockStyle.Top;
-            this.flowLayoutPanel1.SetFillWeight(this.textBoxNumOuterRadius, 1);
-            this.textBoxNumOuterRadius.InputType.Max = "0,85";
-            this.textBoxNumOuterRadius.InputType.Min = "0,10";
-            this.textBoxNumOuterRadius.InputType.Mode = Wisej.Web.TextBoxMode.Decimal;
-            this.textBoxNumOuterRadius.InputType.Step = 0.075D;
-            this.textBoxNumOuterRadius.InputType.Type = Wisej.Web.TextBoxType.Number;
-            this.textBoxNumOuterRadius.LabelText = "Outer Radius";
-            this.textBoxNumOuterRadius.Location = new System.Drawing.Point(3, 217);
-            this.textBoxNumOuterRadius.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
-            this.textBoxNumOuterRadius.Name = "textBoxNumOuterRadius";
-            this.textBoxNumOuterRadius.Size = new System.Drawing.Size(103, 46);
-            this.textBoxNumOuterRadius.TabIndex = 12;
             // 
             // trackBarExplodeIndex
             // 
             this.trackBarExplodeIndex.Dock = Wisej.Web.DockStyle.Top;
             this.flowLayoutPanel1.SetFillWeight(this.trackBarExplodeIndex, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.trackBarExplodeIndex, true);
-            this.trackBarExplodeIndex.Location = new System.Drawing.Point(3, 307);
+            this.trackBarExplodeIndex.Location = new System.Drawing.Point(3, 372);
             this.trackBarExplodeIndex.Maximum = 11;
             this.trackBarExplodeIndex.Name = "trackBarExplodeIndex";
             this.trackBarExplodeIndex.Size = new System.Drawing.Size(212, 34);
@@ -191,12 +177,31 @@
             this.label5.AutoSize = true;
             this.flowLayoutPanel1.SetFillWeight(this.label5, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.label5, true);
-            this.label5.Location = new System.Drawing.Point(3, 282);
+            this.label5.Location = new System.Drawing.Point(3, 347);
             this.label5.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(212, 19);
             this.label5.TabIndex = 14;
             this.label5.Text = "Explosion Index";
+            // 
+            // numericUpDownOuterRadius
+            // 
+            this.numericUpDownOuterRadius.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Left) 
+            | Wisej.Web.AnchorStyles.Right)));
+            this.flowLayoutPanel1.SetFillWeight(this.numericUpDownOuterRadius, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.numericUpDownOuterRadius, true);
+            this.numericUpDownOuterRadius.Increment = new decimal(new int[] {
+            5,
+            0,
+            0,
+            65536});
+            this.numericUpDownOuterRadius.Label.AutoEllipsis = true;
+            this.numericUpDownOuterRadius.LabelText = "Outer radius (%)";
+            this.numericUpDownOuterRadius.Location = new System.Drawing.Point(3, 282);
+            this.numericUpDownOuterRadius.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
+            this.numericUpDownOuterRadius.Name = "numericUpDownOuterRadius";
+            this.numericUpDownOuterRadius.Size = new System.Drawing.Size(212, 46);
+            this.numericUpDownOuterRadius.TabIndex = 15;
             // 
             // AccumulationChart
             // 
@@ -208,6 +213,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.trackBarPieAngle)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownExplodeRadius)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarExplodeIndex)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownOuterRadius)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -221,8 +227,8 @@
         private TrackBar trackBarPieAngle;
         private Label label4;
         private NumericUpDown numericUpDownExplodeRadius;
-        private TextBox textBoxNumOuterRadius;
         private Label label5;
         private TrackBar trackBarExplodeIndex;
+        private NumericUpDown numericUpDownOuterRadius;
     }
 }

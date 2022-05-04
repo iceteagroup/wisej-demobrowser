@@ -82,7 +82,7 @@
             this.comboBoxChartType.LabelText = "Chart Type";
             this.comboBoxChartType.Location = new System.Drawing.Point(3, 3);
             this.comboBoxChartType.Name = "comboBoxChartType";
-            this.comboBoxChartType.Size = new System.Drawing.Size(212, 57);
+            this.comboBoxChartType.Size = new System.Drawing.Size(212, 46);
             this.comboBoxChartType.TabIndex = 1;
             // 
             // Chart

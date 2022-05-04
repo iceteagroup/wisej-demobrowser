@@ -27,5 +27,15 @@ namespace Wisej.Web.Ext.Webix.Demo.Component
 
 			this.colorSelect1.Update();
         }
+
+        private async void buttonGetSelectedColor_Click(object sender, EventArgs e)
+        {
+			var currentColor = await this.colorSelect1.Instance.getValueAsync();
+
+			AlertBox.Show($"Current color :{currentColor}",
+				MessageBoxIcon.Information);
+
+			Application.Play(MessageBoxIcon.Information);
+		}
     }
 }

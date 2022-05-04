@@ -30,6 +30,7 @@
 		{
             this.colorSelect1 = new Wisej.Web.Ext.Webix.ColorSelect();
             this.checkBoxBorderless = new Wisej.Web.CheckBox();
+            this.buttonGetSelectedColor = new Wisej.Web.Button();
             this.groupBox1.SuspendLayout();
             this.panel.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
@@ -58,6 +59,9 @@
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.Controls.Add(this.checkBoxBorderless);
+            this.flowLayoutPanel1.Controls.Add(this.buttonGetSelectedColor);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 35);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 437);
             // 
             // colorSelect1
             // 
@@ -81,6 +85,18 @@
             this.checkBoxBorderless.TabIndex = 0;
             this.checkBoxBorderless.Text = "Borderless";
             // 
+            // buttonGetSelectedColor
+            // 
+            this.buttonGetSelectedColor.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Left) 
+            | Wisej.Web.AnchorStyles.Right)));
+            this.buttonGetSelectedColor.Location = new System.Drawing.Point(3, 48);
+            this.buttonGetSelectedColor.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
+            this.buttonGetSelectedColor.Name = "buttonGetSelectedColor";
+            this.buttonGetSelectedColor.Size = new System.Drawing.Size(212, 34);
+            this.buttonGetSelectedColor.TabIndex = 1;
+            this.buttonGetSelectedColor.Text = "Get selcted color";
+            this.buttonGetSelectedColor.Click += new System.EventHandler(this.buttonGetSelectedColor_Click);
+            // 
             // ColorSelect
             // 
             this.MinimumSize = new System.Drawing.Size(927, 606);
@@ -97,5 +113,6 @@
 
 		private Webix.ColorSelect colorSelect1;
         private CheckBox checkBoxBorderless;
+        private Button buttonGetSelectedColor;
     }
 }
