@@ -67,9 +67,9 @@
 			// contextMenuDropDown
 			// 
 			this.contextMenuDropDown.MenuItems.AddRange(new Wisej.Web.MenuItem[] {
-            this.menuItem1,
-            this.menuItem2,
-            this.menuItem3});
+			this.menuItem1,
+			this.menuItem2,
+			this.menuItem3});
 			this.contextMenuDropDown.Name = "contextMenuDropDown";
 			this.contextMenuDropDown.MenuItemClicked += new Wisej.Web.MenuItemEventHandler(this.contextMenuDropDown_MenuItemClicked);
 			// 
@@ -107,13 +107,13 @@
 			// toolBarDefault
 			// 
 			this.toolBarDefault.Buttons.AddRange(new Wisej.Web.ToolBarButton[] {
-            this.toolBarButton1,
-            this.toolBarButton2,
-            this.toolBarButton3,
-            this.toolBarButton4,
-            this.toolBarButton7,
-            this.toolBarButton10,
-            this.toolBarButton6});
+			this.toolBarButton1,
+			this.toolBarButton2,
+			this.toolBarButton3,
+			this.toolBarButton4,
+			this.toolBarButton7,
+			this.toolBarButton10,
+			this.toolBarButton6});
 			this.toolBarDefault.Dock = Wisej.Web.DockStyle.Fill;
 			this.toolBarDefault.Location = new System.Drawing.Point(0, 0);
 			this.toolBarDefault.Name = "toolBarDefault";
@@ -184,15 +184,15 @@
 			// toolBar1
 			// 
 			this.toolBar1.Buttons.AddRange(new Wisej.Web.ToolBarButton[] {
-            this.toolBarButton5,
-            this.toolBarButton11,
-            this.toolBarButton12,
-            this.toolBarButton13,
-            this.toolBarButton14,
-            this.toolBarButton15,
-            this.toolBarButton16,
-            this.toolBarButton17,
-            this.toolBarButton18});
+			this.toolBarButton5,
+			this.toolBarButton11,
+			this.toolBarButton12,
+			this.toolBarButton13,
+			this.toolBarButton14,
+			this.toolBarButton15,
+			this.toolBarButton16,
+			this.toolBarButton17,
+			this.toolBarButton18});
 			this.toolBar1.Dock = Wisej.Web.DockStyle.Fill;
 			this.toolBar1.Location = new System.Drawing.Point(0, 0);
 			this.toolBar1.Name = "toolBar1";
@@ -272,7 +272,7 @@
 			// toolBar2
 			// 
 			this.toolBar2.Buttons.AddRange(new Wisej.Web.ToolBarButton[] {
-            this.toolBarButton27});
+			this.toolBarButton27});
 			this.toolBar2.Dock = Wisej.Web.DockStyle.Fill;
 			this.toolBar2.Location = new System.Drawing.Point(0, 0);
 			this.toolBar2.Name = "toolBar2";
@@ -300,7 +300,7 @@
 			// toolBar3
 			// 
 			this.toolBar3.Buttons.AddRange(new Wisej.Web.ToolBarButton[] {
-            this.toolBarButton8});
+			this.toolBarButton8});
 			this.toolBar3.Dock = Wisej.Web.DockStyle.Fill;
 			this.toolBar3.Location = new System.Drawing.Point(0, 0);
 			this.toolBar3.Name = "toolBar3";
