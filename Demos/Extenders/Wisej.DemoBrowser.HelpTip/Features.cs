@@ -23,11 +23,6 @@ namespace Wisej.DemoBrowser.HelpTip
 			AlertBox.Show("Clicked!");
 		}
 
-		private void textBox1_TextChanged(object sender, EventArgs e)
-		{
-			AlertBox.Show($"Text: {this.txtColor.Text}");
-		}
-
 		private void comboBoxAlignment_SelectedIndexChanged(object sender, EventArgs e)
 		{
 			var alignment = (string)this.comboBoxAlignment.SelectedItem;
@@ -61,17 +56,16 @@ namespace Wisej.DemoBrowser.HelpTip
 			this.helpTipIcon.SetHelpTip(this.comboBoxIcon, icon);
 		}
 
-        private void textBox1_Enter(object sender, EventArgs e)
-        {
+		private void buttonCustomColors_Click(object sender, EventArgs e)
+		{
 			using (ColorDialog dlg = new ColorDialog())
 			{
 				if (dlg.ShowDialog() == DialogResult.OK)
 				{
 					this.helpTipColor.ForeColor = dlg.Color;
-					this.txtColor.Text = dlg.Color.ToString();
-					this.txtColor.BackColor = dlg.Color;
+					this.buttonCustomColors.BackColor = dlg.Color;
 				}
 			}
 		}
-    }
+	}
 }
