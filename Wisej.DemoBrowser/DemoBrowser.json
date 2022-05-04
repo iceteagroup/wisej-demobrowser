@@ -563,13 +563,6 @@
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/ListView.svg",
 				"docsUrl": "https://docs.wisej.com/docs/controls/lists/listview",
 				"description-en": "The <b>Wisej.Web.ListView</b> is a control used to display a list of items through one of four predefined views."
-			},
-			"Selection Modes": {
-				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Grids/Wisej.DemoBrowser.ListView",
-				"assembly": "SelectionModes, Wisej.DemoBrowser.ListView.dll",
-				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/ListView.svg",
-				"docsUrl": "https://docs.wisej.com/docs/controls/lists/listview",
-				"description-en": "The <b>Wisej.Web.ListView</b> is a control used to display a list of items through one of four predefined views."
 			}
 		},
 		"DataRepeater": {

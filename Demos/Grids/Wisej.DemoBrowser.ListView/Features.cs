@@ -64,8 +64,14 @@ namespace Wisej.DemoBrowser.ListView
 
         private void comboBoxView_SelectedIndexChanged(object sender, EventArgs e)
         {
-			var view = (View)Enum.Parse(typeof(View), comboBoxView.Text);
+			var view = (View)Enum.Parse(typeof(View), (string)comboBoxView.SelectedItem);
 			this.listViewDemo.View = view;
+		}
+
+        private void comboBoxSelectionMode_SelectedIndexChanged(object sender, EventArgs e)
+        {
+			var mode = (SelectionMode)Enum.Parse(typeof(SelectionMode), (string)comboBoxSelectionMode.SelectedItem);
+			this.listViewDemo.SelectionMode = mode;
 		}
     }
 }
