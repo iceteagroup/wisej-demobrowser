@@ -102,6 +102,7 @@
             this.comboBoxSelectionMode.Name = "comboBoxSelectionMode";
             this.comboBoxSelectionMode.Size = new System.Drawing.Size(227, 53);
             this.comboBoxSelectionMode.TabIndex = 4;
+            this.comboBoxSelectionMode.Text = "One";
             this.comboBoxSelectionMode.SelectedIndexChanged += new System.EventHandler(this.comboBoxSelectionMode_SelectedIndexChanged);
             // 
             // Features
