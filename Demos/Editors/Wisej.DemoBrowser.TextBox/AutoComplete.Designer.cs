@@ -36,7 +36,6 @@
             // textBoxAutoCompleteMode
             // 
             this.textBoxAutoCompleteMode.Anchor = Wisej.Web.AnchorStyles.None;
-            this.textBoxAutoCompleteMode.AutoComplete = Wisej.Web.AutoComplete.GivenName;
             this.textBoxAutoCompleteMode.LabelText = "None";
             this.textBoxAutoCompleteMode.Location = new System.Drawing.Point(662, 263);
             this.textBoxAutoCompleteMode.Name = "textBoxAutoCompleteMode";
@@ -52,6 +51,7 @@
             this.comboBoxAutoCompleteMode.Name = "comboBoxAutoCompleteMode";
             this.comboBoxAutoCompleteMode.Size = new System.Drawing.Size(178, 53);
             this.comboBoxAutoCompleteMode.TabIndex = 1;
+            this.comboBoxAutoCompleteMode.Text = "Default";
             this.comboBoxAutoCompleteMode.SelectedIndexChanged += new System.EventHandler(this.comboBoxAutoCompleteMode_SelectedIndexChanged);
             // 
             // textBoxAutoCompleteList
