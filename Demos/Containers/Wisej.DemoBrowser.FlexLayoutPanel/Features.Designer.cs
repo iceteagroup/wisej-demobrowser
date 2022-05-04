@@ -124,7 +124,6 @@
             this.cmbLayoutStyle.Anchor = Wisej.Web.AnchorStyles.None;
             this.cmbLayoutStyle.DropDownStyle = Wisej.Web.ComboBoxStyle.DropDownList;
             this.cmbLayoutStyle.Items.AddRange(new object[] {
-            "Default",
             "Vertical",
             "Horizontal"});
             this.cmbLayoutStyle.LabelText = "LayoutStyle";

@@ -59,6 +59,7 @@
             this.textBoxTitle.Name = "textBoxTitle";
             this.textBoxTitle.Size = new System.Drawing.Size(185, 53);
             this.textBoxTitle.TabIndex = 2;
+            this.textBoxTitle.Text = "Wisej";
             // 
             // textBoxBody
             // 
@@ -68,6 +69,7 @@
             this.textBoxBody.Name = "textBoxBody";
             this.textBoxBody.Size = new System.Drawing.Size(185, 53);
             this.textBoxBody.TabIndex = 3;
+            this.textBoxBody.Text = "Integrate anything with Wisej.";
             // 
             // checkBoxShowOnClick
             // 

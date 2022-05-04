@@ -28,7 +28,7 @@ namespace Wisej.DemoBrowser.Rotation
 
 		private void UpdateLabel()
 		{
-			this.rotation1.SetRotation(this.label3, new Web.Rotation.Properties()
+			this.rotation1.SetRotation(this.htmlPanel1, new Web.Rotation.Properties()
 			{
 				Perspective = (int) this.numericUpDownPerspective.Value,
 				RotateX = (int)this.numericUpDownXRotation.Value,

@@ -29,6 +29,7 @@
 		private void InitializeComponent()
 		{
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ejPivotTreeMap));
+            Wisej.Web.Ext.Syncfusion.ejBase.WidgetTemplate widgetTemplate1 = new Wisej.Web.Ext.Syncfusion.ejBase.WidgetTemplate();
             this.ejPivotTreeMap1 = new Wisej.Web.Ext.Syncfusion.ejPivotTreeMap();
             this.label4 = new Wisej.Web.Label();
             this.buttonSave = new Wisej.Web.Button();
@@ -79,13 +80,18 @@
             this.ejPivotTreeMap1.Size = new System.Drawing.Size(1073, 542);
             this.ejPivotTreeMap1.TabIndex = 0;
             this.ejPivotTreeMap1.Text = "ejPivotTreeMap1";
+            widgetTemplate1.Id = "tooltipTemplate";
+            widgetTemplate1.Template = resources.GetString("widgetTemplate1.Template");
+            widgetTemplate1.Type = "application/jsrender";
+            this.ejPivotTreeMap1.WidgetTemplates = new Wisej.Web.Ext.Syncfusion.ejBase.WidgetTemplate[] {
+        widgetTemplate1};
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(382, 129);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(410, 22);
+            this.label4.Size = new System.Drawing.Size(319, 22);
             this.label4.TabIndex = 7;
             this.label4.Text = "Note: Issue with hover and has an external datasource";
             // 

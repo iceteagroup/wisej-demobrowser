@@ -20,6 +20,34 @@ namespace Wisej.Web.Ext.Syncfusion.Demo.Component
 			this.ejPivotClient1.Instance.onCellDoubleClick += new WidgetEventHandler(ejPivotClient1_WidgetEvent);
 		}
 
+		private void ejPivotClient_Load(object sender, EventArgs e)
+		{
+			this.ejPivotClient1.Options.dataSource = new
+			{
+				data = GetDataSource(),
+				rows = new[]
+				{
+					new { fieldName = "Country", fieldCaption = "Country" },
+					new { fieldName = "State", fieldCaption = "State" },
+					new { fieldName = "Date", fieldCaption = "Date" },
+				},
+				columns = new[]
+				{
+					new { fieldName = "Product", fieldCaption = "Product" }
+				},
+				values = new[]
+				{
+					new { fieldName = "Amount", fieldCaption = "Amount" }
+				}
+			};
+
+			this.ejPivotClient1.Options.enableSplitter = false;
+			this.ejPivotClient1.Options.title = "Relational Browser";
+			this.ejPivotClient1.Options.enableMemberEditorSorting = true;
+
+			this.ejPivotClient1.Update();
+		}
+
 		private void ejPivotClient1_WidgetEvent(object sender, WidgetEventArgs e)
 		{
 			AlertBox.Show(
@@ -54,98 +82,40 @@ namespace Wisej.Web.Ext.Syncfusion.Demo.Component
 
 		private void ExportPivotClientData(WebRequestEventArgs webRequestEvent)
 		{
-			// TODO: Wisej 3.
+			// TODO = Wisej 3.
 			//var pivotClientExport = new PivotClientExport();
 			//pivotClientExport.ExportPivotClient("myPivotClient", webRequestEvent.Request.Form[0], webRequestEvent.Response);
 		}
 
-		private DataTable GenerateDataSource()
+		private dynamic GetDataSource()
 		{
-			// table setup.
-			var dt = new DataTable();
-
-			dt.Columns.Add("amount", typeof(decimal));
-			dt.Columns.Add("country", typeof(string));
-			dt.Columns.Add("date", typeof(string));
-			dt.Columns.Add("product", typeof(string));
-			dt.Columns.Add("quantity", typeof(int));
-			dt.Columns.Add("state", typeof(string));
-
-			// adding rows.
-
-			// ca.
-			dt.Rows.Add(100, "Canada", "FY 2005", "Bike", 2, "Alberta");
-			dt.Rows.Add(200, "Canada", "FY 2006", "Van", 3, "British Columbia");
-			dt.Rows.Add(300, "Canada", "FY 2007", "Car", 4, "Brunswick");
-			dt.Rows.Add(150, "Canada", "FY 2008", "Bike", 3, "Manitoba");
-			dt.Rows.Add(200, "Canada", "FY 2006", "Car", 4, "Ontario");
-			dt.Rows.Add(100, "Canada", "FY 2007", "Van", 1, "Quebec");
-
-			// fr.
-			dt.Rows.Add(200, "France", "FY 2005", "Bike", 2, "Charente-Maritime");
-			dt.Rows.Add(250, "France", "FY 2006", "Van", 4, "Essonne");
-			dt.Rows.Add(300, "France", "FY 2007", "Car", 3, "Garonne (Haute)");
-			dt.Rows.Add(150, "France", "FY 2008", "Van", 2, "Gers");
-
-			// de.
-			dt.Rows.Add(200, "Germany", "FY 2006", "Van", 3, "Bayern");
-			dt.Rows.Add(250, "Germany", "FY 2007", "Car", 3, "Bradenburg");
-			dt.Rows.Add(150, "Germany", "FY 2008", "Car", 4, "Hamburg");
-			dt.Rows.Add(200, "Germany", "FY 2008", "Bike", 4, "Hessen");
-			dt.Rows.Add(150, "Germany", "FY 2007", "Van", 3, "Nordrhein-Westfalen");
-			dt.Rows.Add(100, "Germany", "FY 2005", "Bike", 2, "Saarland");
-
-			// uk.
-			dt.Rows.Add(150, "United Kingdom", "FY 2008", "Bike", 5, "England");
-
-			// us.
-			dt.Rows.Add(250, "United States", "FY 2007", "Car", 4, "Alabama");
-			dt.Rows.Add(200, "United States", "FY 2005", "Van", 4, "California");
-			dt.Rows.Add(100, "United States", "FY 2006", "Bike", 2, "Colorado");
-			dt.Rows.Add(150, "United States", "FY 2008", "Car", 3, "New Mexico");
-			dt.Rows.Add(200, "United States", "FY 2005", "Bike", 4, "New York");
-			dt.Rows.Add(250, "United States", "FY 2008", "Car", 3, "North Carolina");
-			dt.Rows.Add(300, "United States", "FY 2007", "Van", 4, "South Carolina");
-
-			return dt;
-		}
-
-		private void ejPivotClient_Load(object sender, EventArgs e)
-		{
-			// apply data source.
-			this.ejPivotClient1.Options.dataSource = new
+			return new[]
 			{
-				data = GenerateDataSource(),
-				// apply rows.
-				rows = new[]
-				{
-					new { fieldName = "country", fieldCaption = "Country" },
-					new { fieldName = "state", fieldCaption = "State" },
-					new { fieldName = "date", fieldCaption = "Date" },
-				},
-				// specify the columns to show.
-				columns = new[]
-				{
-					new { fieldName = "product", fieldCaption = "Product" }
-				},
-				// specify the data you want to visualize.
-				values = new[]
-				{
-					new { fieldName = "amount", fieldCaption = "Amount" }
-				}
+				new { Amount = 100, Country = "Canada", Date = "FY 2005", Product = "Bike", Quantity = 2, State = "Alberta" },
+				new { Amount = 200, Country = "Canada", Date = "FY 2006", Product = "Van", Quantity = 3, State = "British Columbia" },
+				new { Amount = 300, Country = "Canada", Date = "FY 2007", Product = "Car", Quantity = 4, State = "Brunswick" },
+				new { Amount = 150, Country = "Canada", Date = "FY 2008", Product = "Bike", Quantity = 3, State = "Manitoba" },
+				new { Amount = 200, Country = "Canada", Date = "FY 2006", Product = "Car", Quantity = 4, State = "Ontario" },
+				new { Amount = 100, Country = "Canada", Date = "FY 2007", Product = "Van", Quantity = 1, State = "Quebec" },
+				new { Amount = 200, Country = "France", Date = "FY 2005", Product = "Bike", Quantity = 2, State = "Charente-Maritime" },
+				new { Amount = 250, Country = "France", Date = "FY 2006", Product = "Van", Quantity = 4, State = "Essonne" },
+				new { Amount = 300, Country = "France", Date = "FY 2007", Product = "Car", Quantity = 3, State = "Garonne (Haute)" },
+				new { Amount = 150, Country = "France", Date = "FY 2008", Product = "Van", Quantity = 2, State = "Gers" },
+				new { Amount = 200, Country = "Germany", Date = "FY 2006", Product = "Van", Quantity = 3, State = "Bayern" },
+				new { Amount = 250, Country = "Germany", Date = "FY 2007", Product = "Car", Quantity = 3, State = "Brandenburg" },
+				new { Amount = 150, Country = "Germany", Date = "FY 2008", Product = "Car", Quantity = 4, State = "Hamburg" },
+				new { Amount = 200, Country = "Germany", Date = "FY 2008", Product = "Bike", Quantity = 4, State = "Hessen" },
+				new { Amount = 150, Country = "Germany", Date = "FY 2007", Product = "Van", Quantity = 3, State = "Nordrhein-Westfalen" },
+				new { Amount = 100, Country = "Germany", Date = "FY 2005", Product = "Bike", Quantity = 2, State = "Saarland" },
+				new { Amount = 150, Country = "United Kingdom", Date = "FY 2008", Product = "Bike", Quantity = 5, State = "England" },
+				new { Amount = 250, Country = "United States", Date = "FY 2007", Product = "Car", Quantity = 4, State = "Alabama" },
+				new { Amount = 200, Country = "United States", Date = "FY 2005", Product = "Van", Quantity = 4, State = "California" },
+				new { Amount = 100, Country = "United States", Date = "FY 2006", Product = "Bike", Quantity = 2, State = "Colorado" },
+				new { Amount = 150, Country = "United States", Date = "FY 2008", Product = "Car", Quantity = 3, State = "New Mexico" },
+				new { Amount = 200, Country = "United States", Date = "FY 2005", Product = "Bike", Quantity = 4, State = "New York" },
+				new { Amount = 250, Country = "United States", Date = "FY 2008", Product = "Car", Quantity = 3, State = "North Carolina" },
+				new { Amount = 300, Country = "United States", Date = "FY 2007", Product = "Van", Quantity = 4, State = "South Carolina" }
 			};
-
-			// apply title.
-			this.ejPivotClient1.Options.title = "Relational Browser";
-
-			// apply splitter.
-			this.ejPivotClient1.Options.enableSplitter = true;
-
-			// apply member editor sorting.
-			this.ejPivotClient1.Options.enableMemberEditorSorting = true;
-
-			// force update the JS client widget with the new configuration.
-			this.ejPivotClient1.Update();
 		}
 	}
 }

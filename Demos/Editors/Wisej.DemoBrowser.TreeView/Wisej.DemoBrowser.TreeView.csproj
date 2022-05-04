@@ -14,6 +14,32 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Images\apple.png" />
+	  <None Remove="Images\banana.png" />
+	  <None Remove="Images\carrot.png" />
+	  <None Remove="Images\cucumber.png" />
+	  <None Remove="Images\dairy.png" />
+	  <None Remove="Images\fruit.png" />
+	  <None Remove="Images\milk.png" />
+	  <None Remove="Images\orange.png" />
+	  <None Remove="Images\vegetables.png" />
+	  <None Remove="Images\yogurt.png" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <EmbeddedResource Include="Images\apple.png" />
+	  <EmbeddedResource Include="Images\banana.png" />
+	  <EmbeddedResource Include="Images\carrot.png" />
+	  <EmbeddedResource Include="Images\cucumber.png" />
+	  <EmbeddedResource Include="Images\dairy.png" />
+	  <EmbeddedResource Include="Images\fruit.png" />
+	  <EmbeddedResource Include="Images\milk.png" />
+	  <EmbeddedResource Include="Images\orange.png" />
+	  <EmbeddedResource Include="Images\vegetables.png" />
+	  <EmbeddedResource Include="Images\yogurt.png" />
+	</ItemGroup>
+
+	<ItemGroup>
 		<PackageReference Include="Wisej-3" Version="3.*-*" />
 		<ProjectReference Include="..\..\..\Wisej.DemoBrowser.Common\Wisej.DemoBrowser.Common.csproj" />
 	</ItemGroup>

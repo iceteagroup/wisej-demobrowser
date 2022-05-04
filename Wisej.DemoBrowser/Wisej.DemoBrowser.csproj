@@ -110,7 +110,6 @@
 	  <ProjectReference Include="..\Demos\Content\Wisej.DemoBrowser.Label\Wisej.DemoBrowser.Label.csproj" />
 	  <ProjectReference Include="..\Demos\Content\Wisej.DemoBrowser.LinkLabel\Wisej.DemoBrowser.LinkLabel.csproj" />
 	  <ProjectReference Include="..\Demos\Content\Wisej.DemoBrowser.PictureBox\Wisej.DemoBrowser.PictureBox.csproj" />
-	  <ProjectReference Include="..\Demos\Content\Wisej.DemoBrowser.Shape\Wisej.DemoBrowser.Shape.csproj" />
 	  <ProjectReference Include="..\Demos\Editors\Wisej.DemoBrowser.CheckedListBox\Wisej.DemoBrowser.CheckedListBox.csproj" />
 	  <ProjectReference Include="..\Demos\Editors\Wisej.DemoBrowser.ComboBox\Wisej.DemoBrowser.ComboBox.csproj" />
 	  <ProjectReference Include="..\Demos\Editors\Wisej.DemoBrowser.DateTimePicker\Wisej.DemoBrowser.DateTimePicker.csproj" />
@@ -167,6 +166,7 @@
 	  <ProjectReference Include="..\Demos\IconPacks\Wisej.DemoBrowser.VisualStudioIcons\Wisej.DemoBrowser.VisualStudioIcons.csproj" />
 	  <ProjectReference Include="..\Demos\Miscellaneous\Wisej.DemoBrowser.Audio\Wisej.DemoBrowser.Audio.csproj" />
 	  <ProjectReference Include="..\Demos\Miscellaneous\Wisej.DemoBrowser.Line\Wisej.DemoBrowser.Line.csproj" />
+	  <ProjectReference Include="..\Demos\Miscellaneous\Wisej.DemoBrowser.Shape\Wisej.DemoBrowser.Shape.csproj" />
 	  <ProjectReference Include="..\Demos\Miscellaneous\Wisej.DemoBrowser.Video\Wisej.DemoBrowser.Video.csproj" />
 	  <ProjectReference Include="..\Demos\Notifications\Wisej.DemoBrowser.AlertBox\Wisej.DemoBrowser.AlertBox.csproj" />
 	  <ProjectReference Include="..\Demos\Notifications\Wisej.DemoBrowser.MessageBox\Wisej.DemoBrowser.MessageBox.csproj" />

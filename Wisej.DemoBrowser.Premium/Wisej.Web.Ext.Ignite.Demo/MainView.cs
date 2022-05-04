@@ -24,6 +24,8 @@ namespace Wisej.Web.Ext.Ignite.Demo
 
 			if (hash != "")
 				this.listBoxDemos.SelectedIndex = this.listBoxDemos.FindString(hash);
+
+			igBase.Culture = new CultureInfo("en-US");
 		}
 
 		private void Application_HashChanged(object sender, HashChangedEventArgs e)
@@ -112,5 +114,20 @@ namespace Wisej.Web.Ext.Ignite.Demo
         {
 			Application.Navigate("https://wisej.com/products/", "_blank");
 		}
-    }
+
+		private void labelNavigationWisejDemos_Click(object sender, EventArgs e)
+		{
+			Application.Navigate("https://demo.wisej.com/DemoBrowser");
+		}
+
+		private void labelNaivgationCategory_Click(object sender, EventArgs e)
+		{
+			Application.Navigate("https://demo.wisej.com/DemoBrowser/#Extensions/Premium");
+		}
+
+		private void labelNavigationPremium_Click(object sender, EventArgs e)
+		{
+			Application.Navigate("https://demo.wisej.com/DemoBrowser/#Extensions/Premium");
+		}
+	}
 }

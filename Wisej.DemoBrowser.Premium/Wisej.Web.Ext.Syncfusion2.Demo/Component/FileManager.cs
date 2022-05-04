@@ -1,21 +1,17 @@
 ﻿using Newtonsoft.Json;
 using Syncfusion.EJ2.FileManager.Base;
 using Syncfusion.EJ2.FileManager.PhysicalFileProvider;
-using Syncfusion.EJ2.Linq;
 using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Net;
 using System.Web.Mvc;
 
 namespace Wisej.Web.Ext.Syncfusion2.Demo.Component
 {
-	/// <summary>
-	/// File Manager Implementation.
-	/// See: https://github.com/SyncfusionExamples/ej2-aspmvc-file-provider/blob/73f10f29a61eee5a89f54c1c45bd429612ee1471/Controllers/FileManagerController.cs.
-	/// </summary>
-	public partial class FileManager : TestBase
+    /// <summary>
+    /// File Manager Implementation.
+    /// See: https://github.com/SyncfusionExamples/ej2-aspmvc-file-provider/blob/73f10f29a61eee5a89f54c1c45bd429612ee1471/Controllers/FileManagerController.cs.
+    /// </summary>
+    public partial class FileManager : TestBase
 	{
 		PhysicalFileProvider operation = new PhysicalFileProvider();
 

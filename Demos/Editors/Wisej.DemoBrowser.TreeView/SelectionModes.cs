@@ -14,8 +14,11 @@ namespace Wisej.DemoBrowser.TreeView
 
 		private void treeView_AfterSelect(object sender, TreeViewEventArgs e)
 		{
-			var titles = e.Nodes.Select((n) => n.Text);
-			AlertBox.Show($"<b>Values:</b><br>{string.Join("<br>", titles)}");
+			if (e.Nodes?.Length > 0)
+            {
+				var titles = e.Nodes.Select((n) => n.Text);
+				AlertBox.Show($"<b>Values:</b><br>{string.Join("<br>", titles)}");
+			}
 		}
 	}
 }

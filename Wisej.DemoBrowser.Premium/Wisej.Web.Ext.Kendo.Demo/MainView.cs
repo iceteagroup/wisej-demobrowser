@@ -2,14 +2,12 @@
 using System;
 using System.Collections;
 using System.Globalization;
-using System.IO;
 using System.Linq;
 using Wisej.Web.Ext.Kendo.Demo.Component;
-using static Wisej.Web.Widget;
 
 namespace Wisej.Web.Ext.Kendo.Demo
 {
-	public partial class MainView : Page
+    public partial class MainView : Page
 	{
 		public MainView()
 		{
@@ -25,6 +23,8 @@ namespace Wisej.Web.Ext.Kendo.Demo
 
 			if (hash != "")
 				this.listBoxDemos.SelectedIndex = this.listBoxDemos.FindString(hash);
+
+			kendoBase.Culture = new CultureInfo("en-US");
 		}
 
 		private void Application_HashChanged(object sender, HashChangedEventArgs e)
@@ -107,5 +107,20 @@ namespace Wisej.Web.Ext.Kendo.Demo
         {
 			Application.Navigate("https://wisej.com/products/", "_blank");
 		}
-    }
+
+		private void labelNavigationWisejDemos_Click(object sender, EventArgs e)
+		{
+			Application.Navigate("https://demo.wisej.com/DemoBrowser");
+		}
+
+		private void labelNaivgationCategory_Click(object sender, EventArgs e)
+		{
+			Application.Navigate("https://demo.wisej.com/DemoBrowser/#Extensions/Premium");
+		}
+
+		private void labelNavigationPremium_Click(object sender, EventArgs e)
+		{
+			Application.Navigate("https://demo.wisej.com/DemoBrowser/#Extensions/Premium");
+		}
+	}
 }

@@ -13,7 +13,7 @@ namespace Wisej.Web.Ext.Syncfusion.Demo.Component
 
 		private async void buttonSave_Click(object sender, EventArgs e)
 		{
-			var data = await this.ejPivotTreeMap1.Instance.getJSONRecordsAsync();
+			var data = await this.ejPivotTreeMap1.Instance.getJsonRecordsAsync();
 
 			using (MemoryStream ms = new MemoryStream())
 			{

@@ -40,11 +40,12 @@
             // aceEditor1
             // 
             this.aceEditor1.Anchor = Wisej.Web.AnchorStyles.None;
+            this.aceEditor1.Language = "xml";
             this.aceEditor1.Location = new System.Drawing.Point(413, 12);
             this.aceEditor1.Name = "aceEditor1";
             this.aceEditor1.Size = new System.Drawing.Size(839, 450);
             this.aceEditor1.TabIndex = 0;
-            this.aceEditor1.Text = "aceEditor1";
+            this.aceEditor1.Text = "<test>hello</test>";
             // 
             // checkBoxIndent
             // 
@@ -100,6 +101,7 @@
             this.comboBoxLanguage.Name = "comboBoxLanguage";
             this.comboBoxLanguage.Size = new System.Drawing.Size(200, 60);
             this.comboBoxLanguage.TabIndex = 4;
+            this.comboBoxLanguage.Text = "XML";
             this.comboBoxLanguage.SelectedIndexChanged += new System.EventHandler(this.comboBoxLanguage_SelectedIndexChanged);
             // 
             // checkBoxPrintMargin
@@ -166,6 +168,7 @@
             this.comboBoxTheme.Name = "comboBoxTheme";
             this.comboBoxTheme.Size = new System.Drawing.Size(200, 60);
             this.comboBoxTheme.TabIndex = 6;
+            this.comboBoxTheme.Text = "chrome";
             this.comboBoxTheme.SelectedIndexChanged += new System.EventHandler(this.comboBoxTheme_SelectedIndexChanged);
             // 
             // Features
@@ -179,6 +182,7 @@
             this.Controls.Add(this.aceEditor1);
             this.MinimumSize = new System.Drawing.Size(1090, 461);
             this.Name = "Features";
+            this.Load += new System.EventHandler(this.Features_Load);
             this.ResumeLayout(false);
 
 		}

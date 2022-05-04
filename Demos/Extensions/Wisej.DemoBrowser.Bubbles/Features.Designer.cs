@@ -44,16 +44,19 @@
             // cmbBubblesAlignment
             // 
             this.cmbBubblesAlignment.Anchor = Wisej.Web.AnchorStyles.None;
+            this.cmbBubblesAlignment.DropDownStyle = Wisej.Web.ComboBoxStyle.DropDownList;
             this.cmbBubblesAlignment.LabelText = "Alignment";
             this.cmbBubblesAlignment.Location = new System.Drawing.Point(324, 192);
             this.cmbBubblesAlignment.Name = "cmbBubblesAlignment";
             this.cmbBubblesAlignment.Size = new System.Drawing.Size(272, 53);
             this.cmbBubblesAlignment.TabIndex = 1;
+            this.cmbBubblesAlignment.Text = "TopRight";
             this.cmbBubblesAlignment.SelectedIndexChanged += new System.EventHandler(this.cmbBubblesAlignment_SelectedIndexChanged);
             // 
             // cmbBubbleStyle
             // 
             this.cmbBubbleStyle.Anchor = Wisej.Web.AnchorStyles.None;
+            this.cmbBubbleStyle.DropDownStyle = Wisej.Web.ComboBoxStyle.DropDownList;
             this.cmbBubbleStyle.LabelText = "Style";
             this.cmbBubbleStyle.Location = new System.Drawing.Point(324, 275);
             this.cmbBubbleStyle.Name = "cmbBubbleStyle";

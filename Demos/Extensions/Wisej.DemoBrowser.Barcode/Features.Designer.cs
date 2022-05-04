@@ -91,6 +91,7 @@
             this.textBoxValue.Name = "textBoxValue";
             this.textBoxValue.Size = new System.Drawing.Size(200, 53);
             this.textBoxValue.TabIndex = 6;
+            this.textBoxValue.Text = "1234567890";
             this.textBoxValue.KeyPress += new Wisej.Web.KeyPressEventHandler(this.textBoxValue_KeyPress);
             // 
             // Features

@@ -43,6 +43,7 @@
             this.knob1.Size = new System.Drawing.Size(638, 297);
             this.knob1.TabIndex = 0;
             this.knob1.Text = "knob1";
+            this.knob1.Value = 50;
             // 
             // numericUpDownValue
             // 
@@ -52,6 +53,11 @@
             this.numericUpDownValue.Name = "numericUpDownValue";
             this.numericUpDownValue.Size = new System.Drawing.Size(200, 53);
             this.numericUpDownValue.TabIndex = 1;
+            this.numericUpDownValue.Value = new decimal(new int[] {
+            50,
+            0,
+            0,
+            0});
             this.numericUpDownValue.ValueChanged += new System.EventHandler(this.numericUpDownValue_ValueChanged);
             // 
             // comboBoxKnobType
@@ -66,6 +72,7 @@
             this.comboBoxKnobType.Name = "comboBoxKnobType";
             this.comboBoxKnobType.Size = new System.Drawing.Size(200, 53);
             this.comboBoxKnobType.TabIndex = 2;
+            this.comboBoxKnobType.Text = "Gauge";
             this.comboBoxKnobType.SelectedIndexChanged += new System.EventHandler(this.comboBoxKnobType_SelectedIndexChanged);
             // 
             // comboBoxCapStyle
@@ -80,6 +87,7 @@
             this.comboBoxCapStyle.Name = "comboBoxCapStyle";
             this.comboBoxCapStyle.Size = new System.Drawing.Size(200, 53);
             this.comboBoxCapStyle.TabIndex = 3;
+            this.comboBoxCapStyle.Text = "Butt";
             this.comboBoxCapStyle.SelectedIndexChanged += new System.EventHandler(this.comboBoxCapStyle_SelectedIndexChanged);
             // 
             // Features

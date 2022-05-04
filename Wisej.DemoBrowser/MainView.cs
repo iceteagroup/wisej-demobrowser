@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Net;
@@ -466,7 +467,7 @@ namespace Wisej.DemoBrowser
 					break;
 
 				case "search":
-					SearchForPhrase(this.textBoxSearch.Text);
+						SearchForPhrase(this.textBoxSearch.Text);
 					break;
 			}
 		}

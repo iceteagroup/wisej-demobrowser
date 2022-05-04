@@ -28,6 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
+            Wisej.Web.Ext.Syncfusion.ejBase.WidgetEventHandler widgetEventHandler1 = new Wisej.Web.Ext.Syncfusion.ejBase.WidgetEventHandler();
             this.comboBox1 = new Wisej.Web.ComboBox();
             this.checkBox1 = new Wisej.Web.CheckBox();
             this.checkBox2 = new Wisej.Web.CheckBox();
@@ -143,6 +144,10 @@
             this.ejPivotClient1.Size = new System.Drawing.Size(1065, 525);
             this.ejPivotClient1.TabIndex = 0;
             this.ejPivotClient1.Text = "ejPivotClient1";
+            widgetEventHandler1.Name = "renderSuccess";
+            widgetEventHandler1.Source = "this._pivotChart.model.load = \"loadTheme\";";
+            this.ejPivotClient1.WidgetEvents = new Wisej.Web.Ext.Syncfusion.ejBase.WidgetEventHandler[] {
+        widgetEventHandler1};
             this.ejPivotClient1.WebRequest += new Wisej.Web.WebRequestHandler(this.ejPivotClient1_WebRequest);
             // 
             // ejPivotClient

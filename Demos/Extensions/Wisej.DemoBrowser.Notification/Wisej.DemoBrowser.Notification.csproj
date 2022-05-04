@@ -14,6 +14,14 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Images\avatar.png" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <EmbeddedResource Include="Images\avatar.png" />
+	</ItemGroup>
+
+	<ItemGroup>
 		<PackageReference Include="Wisej-3" Version="3.*-*" />
 		<PackageReference Include="Wisej-3-Notification" Version="3.*-*" />
 		<ProjectReference Include="..\..\..\Wisej.DemoBrowser.Common\Wisej.DemoBrowser.Common.csproj" />

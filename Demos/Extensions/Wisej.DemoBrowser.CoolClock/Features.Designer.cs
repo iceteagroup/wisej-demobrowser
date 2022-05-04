@@ -152,7 +152,6 @@
             // Features
             // 
             this.Controls.Add(this.flowLayoutPanel1);
-            this.MinimumSize = new System.Drawing.Size(954, 414);
             this.Name = "Features";
             this.Padding = new Wisej.Web.Padding(16);
             this.flowLayoutPanel1.ResumeLayout(false);

@@ -49,13 +49,8 @@
             this.linkDocs.TabIndex = 4;
             this.linkDocs.Text = "https://help.syncfusion.com/js/kanban/overview";
             // 
-            // groupBox1
-            // 
-            this.groupBox1.Size = new System.Drawing.Size(250, 605);
-            // 
             // buttonUpdate
             // 
-            this.buttonUpdate.Location = new System.Drawing.Point(16, 537);
             this.buttonUpdate.TabIndex = 9;
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
@@ -86,7 +81,6 @@
             this.flowLayoutPanelProperties.Controls.Add(this.buttonLoad);
             this.flowLayoutPanelProperties.Controls.Add(this.buttonSave);
             this.flowLayoutPanelProperties.Controls.Add(this.buttonGetVisibleColumnNames);
-            this.flowLayoutPanelProperties.Size = new System.Drawing.Size(218, 479);
             // 
             // ejKanban1
             // 

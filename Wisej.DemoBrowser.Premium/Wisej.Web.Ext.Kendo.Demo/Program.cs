@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Globalization;
 using Wisej.Web;
 
 namespace Wisej.Web.Ext.Kendo.Demo
