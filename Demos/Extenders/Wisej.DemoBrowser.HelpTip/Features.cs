@@ -14,8 +14,8 @@ namespace Wisej.DemoBrowser.HelpTip
 
 		private void Features_Load(object sender, EventArgs e)
 		{
-			this.comboBoxIcon.DataSource = Enum.GetNames(typeof(ToolTipIcon));
-			this.comboBoxAlignment.DataSource = Enum.GetNames(typeof(Placement));
+			comboBoxIcon.DataSource = Enum.GetNames(typeof(ToolTipIcon));
+			comboBoxAlignment.DataSource = Enum.GetNames(typeof(Placement));
 		}
 
 		private void buttonDefault_Click(object sender, EventArgs e)
@@ -25,45 +25,45 @@ namespace Wisej.DemoBrowser.HelpTip
 
 		private void comboBoxAlignment_SelectedIndexChanged(object sender, EventArgs e)
 		{
-			var alignment = (string)this.comboBoxAlignment.SelectedItem;
+			var alignment = (string) comboBoxAlignment.SelectedItem;
 
-			this.helpTipAlignment.Alignment = (Placement)Enum.Parse(typeof(Placement), alignment);
-			this.helpTipAlignment.SetHelpTip(this.comboBoxAlignment, alignment);
+			helpTipAlignment.Alignment = (Placement) Enum.Parse(typeof(Placement), alignment);
+			helpTipAlignment.SetHelpTip(comboBoxAlignment, alignment);
 		}
 
 		private void progressBar1_Click(object sender, EventArgs e)
 		{
-			this.progressBar1.Focus();
+			progressBar1.Focus();
 
 			Application.StartTask(() =>
 			{
-				var maximum = this.progressBar1.Maximum;
-				for (int i = 0; i <= maximum; i++)
+				var maximum = progressBar1.Maximum;
+				for (var i = 0; i <= maximum; i++)
 				{
-					this.progressBar1.Value = i;
+					progressBar1.Value = i;
 					Application.Update(this);
 
-					Thread.Sleep((this.helpTipAutoPopDelay.AutoPopDelay - 1000) / maximum);
+					Thread.Sleep((helpTipAutoPopDelay.AutoPopDelay - 1000) / maximum);
 				}
 			});
 		}
 
 		private void comboBoxIcon_SelectedIndexChanged(object sender, EventArgs e)
 		{
-			var icon = (string)this.comboBoxIcon.SelectedItem;
+			var icon = (string) comboBoxIcon.SelectedItem;
 
-			this.helpTipIcon.HelpTipIcon = (ToolTipIcon)Enum.Parse(typeof(ToolTipIcon), icon);
-			this.helpTipIcon.SetHelpTip(this.comboBoxIcon, icon);
+			helpTipIcon.HelpTipIcon = (ToolTipIcon) Enum.Parse(typeof(ToolTipIcon), icon);
+			helpTipIcon.SetHelpTip(comboBoxIcon, icon);
 		}
 
 		private void buttonCustomColors_Click(object sender, EventArgs e)
 		{
-			using (ColorDialog dlg = new ColorDialog())
+			using (var dlg = new ColorDialog())
 			{
 				if (dlg.ShowDialog() == DialogResult.OK)
 				{
-					this.helpTipColor.ForeColor = dlg.Color;
-					this.buttonCustomColors.BackColor = dlg.Color;
+					helpTipColor.ForeColor = dlg.Color;
+					buttonCustomColors.BackColor = dlg.Color;
 				}
 			}
 		}

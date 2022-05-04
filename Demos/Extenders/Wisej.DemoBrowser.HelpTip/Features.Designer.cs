@@ -78,6 +78,7 @@
 			// comboBoxIcon
 			// 
 			this.comboBoxIcon.Anchor = Wisej.Web.AnchorStyles.None;
+			this.comboBoxIcon.DropDownStyle = Wisej.Web.ComboBoxStyle.DropDownList;
 			this.comboBoxIcon.Location = new System.Drawing.Point(1011, 291);
 			this.comboBoxIcon.Name = "comboBoxIcon";
 			this.comboBoxIcon.Size = new System.Drawing.Size(200, 30);
@@ -109,6 +110,7 @@
 			// comboBoxAlignment
 			// 
 			this.comboBoxAlignment.Anchor = Wisej.Web.AnchorStyles.None;
+			this.comboBoxAlignment.DropDownStyle = Wisej.Web.ComboBoxStyle.DropDownList;
 			this.comboBoxAlignment.Location = new System.Drawing.Point(611, 291);
 			this.comboBoxAlignment.Name = "comboBoxAlignment";
 			this.comboBoxAlignment.Size = new System.Drawing.Size(200, 30);
