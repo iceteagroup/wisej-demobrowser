@@ -36,7 +36,7 @@
             // textBoxAutoCompleteMode
             // 
             this.textBoxAutoCompleteMode.Anchor = Wisej.Web.AnchorStyles.None;
-            this.textBoxAutoCompleteMode.LabelText = "None";
+            this.textBoxAutoCompleteMode.LabelText = "Default";
             this.textBoxAutoCompleteMode.Location = new System.Drawing.Point(662, 263);
             this.textBoxAutoCompleteMode.Name = "textBoxAutoCompleteMode";
             this.textBoxAutoCompleteMode.Size = new System.Drawing.Size(304, 53);
