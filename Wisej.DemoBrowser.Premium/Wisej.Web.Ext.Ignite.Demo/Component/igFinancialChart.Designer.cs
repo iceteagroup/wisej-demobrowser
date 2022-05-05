@@ -100,6 +100,7 @@
             // 
             // comboBox1
             // 
+            this.comboBox1.DropDownStyle = Wisej.Web.ComboBoxStyle.DropDownList;
             this.flowLayoutPanel1.SetFillWeight(this.comboBox1, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.comboBox1, true);
             this.comboBox1.Items.AddRange(new object[] {
@@ -114,9 +115,11 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(212, 57);
             this.comboBox1.TabIndex = 3;
+            this.comboBox1.Text = "auto";
             // 
             // comboBox2
             // 
+            this.comboBox2.DropDownStyle = Wisej.Web.ComboBoxStyle.DropDownList;
             this.flowLayoutPanel1.SetFillWeight(this.comboBox2, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.comboBox2, true);
             this.comboBox2.Items.AddRange(new object[] {
@@ -140,6 +143,7 @@
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(212, 57);
             this.comboBox2.TabIndex = 4;
+            this.comboBox2.Text = "none";
             // 
             // button1
             // 
@@ -148,7 +152,7 @@
             this.button1.Location = new System.Drawing.Point(3, 323);
             this.button1.Margin = new Wisej.Web.Padding(3, 8, 3, 3);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(212, 40);
+            this.button1.Size = new System.Drawing.Size(212, 35);
             this.button1.TabIndex = 5;
             this.button1.Text = "Add new Item";
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -157,10 +161,10 @@
             // 
             this.flowLayoutPanel1.SetFillWeight(this.button2, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.button2, true);
-            this.button2.Location = new System.Drawing.Point(3, 374);
+            this.button2.Location = new System.Drawing.Point(3, 369);
             this.button2.Margin = new Wisej.Web.Padding(3, 8, 3, 3);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(212, 40);
+            this.button2.Size = new System.Drawing.Size(212, 35);
             this.button2.TabIndex = 6;
             this.button2.Text = "Start Task";
             this.button2.Click += new System.EventHandler(this.button2_Click);

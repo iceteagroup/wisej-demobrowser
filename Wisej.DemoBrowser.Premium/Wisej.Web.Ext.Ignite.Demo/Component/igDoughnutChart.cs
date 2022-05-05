@@ -3,7 +3,7 @@ using System.IO;
 
 namespace Wisej.Web.Ext.Ignite.Demo.Component
 {
-	public partial class igDoughnutChart : Wisej.Web.Ext.Ignite.Demo.Component.TestBase
+	public partial class igDoughnutChart : TestBase
 	{
 		public igDoughnutChart()
 		{
@@ -31,10 +31,13 @@ namespace Wisej.Web.Ext.Ignite.Demo.Component
 
 		}
 
-		private void button1_Click(object sender, EventArgs e)
+		private void buttonAddItem_Click(object sender, EventArgs e)
 		{
-			// Inserts a new item to the beginning of the dataSource
-			this.igDoughnutChart1.AddItem(new { countryName = this.textBox1.Text, pop1990 = this.numericUpDown1.Value }, 0);
+			this.igDoughnutChart1.AddItem(new 
+			{ 
+				CountryName = this.textBox1.Text, 
+				Pop1990 = this.numericUpDown1.Value 
+			}, 0);
 		}
 	}
 }

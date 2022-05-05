@@ -3,7 +3,7 @@ using Wisej.Web;
 
 namespace Wisej.Web.Ext.Ignite.Demo.Component
 {
-	public partial class igFunnelChart : Wisej.Web.Ext.Ignite.Demo.Component.TestBase
+	public partial class igFunnelChart : TestBase
 	{
 		public igFunnelChart()
 		{

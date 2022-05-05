@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 
 namespace Wisej.Web.Ext.Ignite.Demo.Component
 {
@@ -19,10 +20,21 @@ namespace Wisej.Web.Ext.Ignite.Demo.Component
 			this.igTreeGrid1.Instance.dataSourceObject(data);
 		}
 
-		private void buttonExport_Click(object sender, EventArgs e)
+		private async void buttonExport_Click(object sender, EventArgs e)
 		{
-			// Need to add more packages for this
-			this.igTreeGrid1.Eval("$.ig.GridExcelExporter.exportGrid(this.widget, { fileName: 'treegrid1' });");
+			var data = await this.igTreeGrid1.EvalAsync("this.widget.options.dataSource");
+
+			using (var ms = new MemoryStream())
+            {
+				using (var sw = new StreamWriter(ms))
+                {
+					sw.Write(JSON.Stringify(data));
+					sw.Flush();
+
+					ms.Position = 0;
+					Application.Download(ms, "igTreeGrid.json");
+				}
+			}
 		}
 
 		private void igTree_WidgetEvent(object sender, WidgetEventArgs e)

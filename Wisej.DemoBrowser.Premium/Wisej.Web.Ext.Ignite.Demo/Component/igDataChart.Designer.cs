@@ -30,14 +30,14 @@
 		{
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(igDataChart));
             this.igDataChart1 = new Wisej.Web.Ext.Ignite.igDataChart();
-            this.textBox1 = new Wisej.Web.TextBox();
-            this.textBox2 = new Wisej.Web.TextBox();
-            this.comboBox1 = new Wisej.Web.ComboBox();
+            this.textBoxTitle = new Wisej.Web.TextBox();
             this.buttonLoad = new Wisej.Web.Upload();
             this.buttonExportImage = new Wisej.Web.Button();
-            this.button1 = new Wisej.Web.Button();
+            this.buttonAdd = new Wisej.Web.Button();
             this.comboBox2 = new Wisej.Web.ComboBox();
             this.groupBox2 = new Wisej.Web.GroupBox();
+            this.textBoxCountry = new Wisej.Web.TextBox();
+            this.textBoxSubtitle = new Wisej.Web.TextBox();
             this.groupBox1.SuspendLayout();
             this.panel.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
@@ -75,6 +75,8 @@
             // 
             // flowLayoutPanel1
             // 
+            this.flowLayoutPanel1.Controls.Add(this.textBoxTitle);
+            this.flowLayoutPanel1.Controls.Add(this.textBoxSubtitle);
             this.flowLayoutPanel1.Controls.Add(this.comboBox2);
             this.flowLayoutPanel1.Controls.Add(this.groupBox2);
             this.flowLayoutPanel1.Controls.Add(this.buttonLoad);
@@ -92,47 +94,23 @@
             this.igDataChart1.TabIndex = 0;
             this.igDataChart1.Text = "igDataChart1";
             // 
-            // textBox1
+            // textBoxTitle
             // 
-            this.textBox1.LabelText = "Title";
-            this.textBox1.Location = new System.Drawing.Point(6, 33);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(200, 57);
-            this.textBox1.TabIndex = 0;
-            // 
-            // textBox2
-            // 
-            this.textBox2.LabelText = "Subtitle";
-            this.textBox2.Location = new System.Drawing.Point(7, 92);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(199, 57);
-            this.textBox2.TabIndex = 1;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.DropDownStyle = Wisej.Web.ComboBoxStyle.DropDownList;
-            this.comboBox1.Items.AddRange(new object[] {
-            "red",
-            "orange",
-            "yellow",
-            "green",
-            "blue",
-            "purple",
-            "black",
-            "white"});
-            this.comboBox1.LabelText = "Title Color";
-            this.comboBox1.Location = new System.Drawing.Point(6, 150);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(200, 57);
-            this.comboBox1.TabIndex = 2;
-            this.comboBox1.Text = "black";
+            this.flowLayoutPanel1.SetFillWeight(this.textBoxTitle, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.textBoxTitle, true);
+            this.textBoxTitle.LabelText = "Title";
+            this.textBoxTitle.Location = new System.Drawing.Point(3, 3);
+            this.textBoxTitle.Name = "textBoxTitle";
+            this.textBoxTitle.Size = new System.Drawing.Size(212, 57);
+            this.textBoxTitle.TabIndex = 0;
+            this.textBoxTitle.Text = "Population per Country";
             // 
             // buttonLoad
             // 
             this.buttonLoad.AllowedFileTypes = ".json";
             this.buttonLoad.HideValue = true;
             this.buttonLoad.ImageSource = "icon-file";
-            this.buttonLoad.Location = new System.Drawing.Point(3, 348);
+            this.buttonLoad.Location = new System.Drawing.Point(3, 388);
             this.buttonLoad.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.buttonLoad.Name = "buttonLoad";
             this.buttonLoad.Size = new System.Drawing.Size(42, 42);
@@ -143,21 +121,22 @@
             // 
             this.buttonExportImage.Display = Wisej.Web.Display.Icon;
             this.buttonExportImage.ImageSource = "resource.wx/Wisej.Ext.MaterialDesign/google-drive-image.svg";
-            this.buttonExportImage.Location = new System.Drawing.Point(51, 348);
+            this.buttonExportImage.Location = new System.Drawing.Point(51, 388);
             this.buttonExportImage.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.buttonExportImage.Name = "buttonExportImage";
             this.buttonExportImage.Size = new System.Drawing.Size(42, 42);
             this.buttonExportImage.TabIndex = 3;
             this.buttonExportImage.Click += new System.EventHandler(this.buttonExportImage_Click);
             // 
-            // button1
+            // buttonAdd
             // 
-            this.button1.Location = new System.Drawing.Point(7, 211);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(199, 27);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Add";
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.buttonAdd.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Bottom | Wisej.Web.AnchorStyles.Left)));
+            this.buttonAdd.Location = new System.Drawing.Point(7, 93);
+            this.buttonAdd.Name = "buttonAdd";
+            this.buttonAdd.Size = new System.Drawing.Size(199, 35);
+            this.buttonAdd.TabIndex = 3;
+            this.buttonAdd.Text = "Add";
+            this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
             // 
             // comboBox2
             // 
@@ -170,7 +149,8 @@
             "Pop2015",
             "Pop2025"});
             this.comboBox2.LabelText = "Population Year";
-            this.comboBox2.Location = new System.Drawing.Point(3, 3);
+            this.comboBox2.Location = new System.Drawing.Point(3, 155);
+            this.comboBox2.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(212, 57);
             this.comboBox2.TabIndex = 0;
@@ -178,18 +158,37 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.button1);
-            this.groupBox2.Controls.Add(this.comboBox1);
-            this.groupBox2.Controls.Add(this.textBox2);
-            this.groupBox2.Controls.Add(this.textBox1);
+            this.groupBox2.Controls.Add(this.textBoxCountry);
+            this.groupBox2.Controls.Add(this.buttonAdd);
             this.flowLayoutPanel1.SetFillWeight(this.groupBox2, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.groupBox2, true);
-            this.groupBox2.Location = new System.Drawing.Point(3, 79);
+            this.groupBox2.Location = new System.Drawing.Point(3, 231);
             this.groupBox2.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(212, 250);
+            this.groupBox2.Size = new System.Drawing.Size(212, 138);
             this.groupBox2.TabIndex = 1;
-            this.groupBox2.Text = "Add New Item";
+            this.groupBox2.Text = "Add Country";
+            // 
+            // textBoxCountry
+            // 
+            this.textBoxCountry.LabelText = "Name";
+            this.textBoxCountry.Location = new System.Drawing.Point(7, 28);
+            this.textBoxCountry.Name = "textBoxCountry";
+            this.textBoxCountry.Size = new System.Drawing.Size(199, 57);
+            this.textBoxCountry.TabIndex = 4;
+            this.textBoxCountry.Text = "Disneyland";
+            // 
+            // textBoxSubtitle
+            // 
+            this.flowLayoutPanel1.SetFillWeight(this.textBoxSubtitle, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.textBoxSubtitle, true);
+            this.textBoxSubtitle.LabelText = "Subtitle";
+            this.textBoxSubtitle.Location = new System.Drawing.Point(3, 79);
+            this.textBoxSubtitle.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
+            this.textBoxSubtitle.Name = "textBoxSubtitle";
+            this.textBoxSubtitle.Size = new System.Drawing.Size(212, 57);
+            this.textBoxSubtitle.TabIndex = 1;
+            this.textBoxSubtitle.Text = "Largest projected populations for 2015";
             // 
             // igDataChart
             // 
@@ -209,13 +208,13 @@
 		#endregion
 
 		private Ignite.igDataChart igDataChart1;
-		private TextBox textBox2;
-		private TextBox textBox1;
-		private ComboBox comboBox1;
+		private TextBox textBoxTitle;
 		private Upload buttonLoad;
 		private Button buttonExportImage;
-		private Button button1;
+		private Button buttonAdd;
 		private ComboBox comboBox2;
 		private GroupBox groupBox2;
-	}
+        private TextBox textBoxSubtitle;
+        private TextBox textBoxCountry;
+    }
 }

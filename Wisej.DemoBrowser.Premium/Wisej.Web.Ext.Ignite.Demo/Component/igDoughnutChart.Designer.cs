@@ -34,7 +34,7 @@
             this.textBox1 = new Wisej.Web.TextBox();
             this.numericUpDown1 = new Wisej.Web.NumericUpDown();
             this.groupBox2 = new Wisej.Web.GroupBox();
-            this.button1 = new Wisej.Web.Button();
+            this.buttonAddItem = new Wisej.Web.Button();
             this.checkBox1 = new Wisej.Web.CheckBox();
             this.checkBox2 = new Wisej.Web.CheckBox();
             this.numericUpDown2 = new Wisej.Web.NumericUpDown();
@@ -135,7 +135,7 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.button1);
+            this.groupBox2.Controls.Add(this.buttonAddItem);
             this.groupBox2.Controls.Add(this.numericUpDown1);
             this.groupBox2.Controls.Add(this.textBox1);
             this.flowLayoutPanel1.SetFillWeight(this.groupBox2, 1);
@@ -147,17 +147,17 @@
             this.groupBox2.TabIndex = 3;
             this.groupBox2.Text = "Add Country";
             // 
-            // button1
+            // buttonAddItem
             // 
-            this.button1.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Left) 
+            this.buttonAddItem.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Left) 
             | Wisej.Web.AnchorStyles.Right)));
-            this.button1.Location = new System.Drawing.Point(9, 164);
-            this.button1.Margin = new Wisej.Web.Padding(3, 8, 3, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(195, 40);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Add";
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.buttonAddItem.Location = new System.Drawing.Point(9, 164);
+            this.buttonAddItem.Margin = new Wisej.Web.Padding(3, 8, 3, 3);
+            this.buttonAddItem.Name = "buttonAddItem";
+            this.buttonAddItem.Size = new System.Drawing.Size(195, 40);
+            this.buttonAddItem.TabIndex = 2;
+            this.buttonAddItem.Text = "Add";
+            this.buttonAddItem.Click += new System.EventHandler(this.buttonAddItem_Click);
             // 
             // checkBox1
             // 
@@ -227,7 +227,7 @@
 		private NumericUpDown numericUpDown1;
 		private TextBox textBox1;
 		private GroupBox groupBox2;
-		private Button button1;
+		private Button buttonAddItem;
 		private NumericUpDown numericUpDown2;
 		private CheckBox checkBox2;
 		private CheckBox checkBox1;

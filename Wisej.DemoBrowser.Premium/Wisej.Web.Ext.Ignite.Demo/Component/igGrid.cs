@@ -55,7 +55,6 @@ namespace Wisej.Web.Ext.Ignite.Demo.Component
 		{
 			this.igGrid1.Options.enableHoverStyles = this.checkBox1.Checked;
 			this.igGrid1.Options.alternateRowStyles = this.checkBox2.Checked;
-			this.igGrid1.Options.showFooter = this.checkBox3.Checked;
 			this.igGrid1.Options.showHeader = this.checkBox4.Checked;
 
 			this.igGrid1.Update();
@@ -67,5 +66,5 @@ namespace Wisej.Web.Ext.Ignite.Demo.Component
 
 			AlertBox.Show(result);
 		}
-	}
+    }
 }

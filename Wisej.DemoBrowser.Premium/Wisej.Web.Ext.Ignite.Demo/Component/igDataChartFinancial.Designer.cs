@@ -126,6 +126,7 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(212, 57);
             this.comboBox1.TabIndex = 0;
+            this.comboBox1.Text = "none";
             // 
             // comboBox2
             // 
@@ -143,6 +144,7 @@
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(212, 57);
             this.comboBox2.TabIndex = 1;
+            this.comboBox2.Text = "none";
             // 
             // comboBox3
             // 
@@ -159,6 +161,7 @@
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(212, 57);
             this.comboBox3.TabIndex = 2;
+            this.comboBox3.Text = "behindSeries";
             // 
             // igDataChartFinancial
             // 

@@ -31,10 +31,10 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(igVideoPlayer));
             this.button1 = new Wisej.Web.Button();
             this.button2 = new Wisej.Web.Button();
-            this.checkBox1 = new Wisej.Web.CheckBox();
-            this.checkBox2 = new Wisej.Web.CheckBox();
-            this.checkBox3 = new Wisej.Web.CheckBox();
-            this.checkBox4 = new Wisej.Web.CheckBox();
+            this.checkBoxAutoHide = new Wisej.Web.CheckBox();
+            this.checkBoxAutoPlay = new Wisej.Web.CheckBox();
+            this.checkBoxBrowserControls = new Wisej.Web.CheckBox();
+            this.checkBoxShowSeekTime = new Wisej.Web.CheckBox();
             this.igVideoPlayer1 = new Wisej.Web.Ext.Ignite.igVideoPlayer();
             this.groupBox1.SuspendLayout();
             this.panel.SuspendLayout();
@@ -48,6 +48,7 @@
             // buttonUpdate
             // 
             this.buttonUpdate.TabIndex = 6;
+            this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
             // panel
             // 
@@ -71,10 +72,10 @@
             // 
             // flowLayoutPanel1
             // 
-            this.flowLayoutPanel1.Controls.Add(this.checkBox1);
-            this.flowLayoutPanel1.Controls.Add(this.checkBox2);
-            this.flowLayoutPanel1.Controls.Add(this.checkBox3);
-            this.flowLayoutPanel1.Controls.Add(this.checkBox4);
+            this.flowLayoutPanel1.Controls.Add(this.checkBoxAutoHide);
+            this.flowLayoutPanel1.Controls.Add(this.checkBoxAutoPlay);
+            this.flowLayoutPanel1.Controls.Add(this.checkBoxBrowserControls);
+            this.flowLayoutPanel1.Controls.Add(this.checkBoxShowSeekTime);
             this.flowLayoutPanel1.Controls.Add(this.button1);
             this.flowLayoutPanel1.Controls.Add(this.button2);
             // 
@@ -102,62 +103,61 @@
             this.button2.Text = "Pause";
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // checkBox1
+            // checkBoxAutoHide
             // 
-            this.checkBox1.Appearance = Wisej.Web.Appearance.Switch;
-            this.checkBox1.AutoSize = false;
-            this.checkBox1.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.checkBox1.Checked = true;
-            this.flowLayoutPanel1.SetFillWeight(this.checkBox1, 1);
-            this.flowLayoutPanel1.SetFlowBreak(this.checkBox1, true);
-            this.checkBox1.Location = new System.Drawing.Point(3, 3);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(212, 38);
-            this.checkBox1.TabIndex = 0;
-            this.checkBox1.Text = "Auto Hide";
+            this.checkBoxAutoHide.Appearance = Wisej.Web.Appearance.Switch;
+            this.checkBoxAutoHide.AutoSize = false;
+            this.checkBoxAutoHide.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.flowLayoutPanel1.SetFillWeight(this.checkBoxAutoHide, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.checkBoxAutoHide, true);
+            this.checkBoxAutoHide.Location = new System.Drawing.Point(3, 3);
+            this.checkBoxAutoHide.Name = "checkBoxAutoHide";
+            this.checkBoxAutoHide.Size = new System.Drawing.Size(212, 38);
+            this.checkBoxAutoHide.TabIndex = 0;
+            this.checkBoxAutoHide.Text = "Auto Hide";
             // 
-            // checkBox2
+            // checkBoxAutoPlay
             // 
-            this.checkBox2.Appearance = Wisej.Web.Appearance.Switch;
-            this.checkBox2.AutoSize = false;
-            this.checkBox2.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.flowLayoutPanel1.SetFillWeight(this.checkBox2, 1);
-            this.flowLayoutPanel1.SetFlowBreak(this.checkBox2, true);
-            this.checkBox2.Location = new System.Drawing.Point(3, 60);
-            this.checkBox2.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(212, 38);
-            this.checkBox2.TabIndex = 1;
-            this.checkBox2.Text = "AutoPlay";
+            this.checkBoxAutoPlay.Appearance = Wisej.Web.Appearance.Switch;
+            this.checkBoxAutoPlay.AutoSize = false;
+            this.checkBoxAutoPlay.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.flowLayoutPanel1.SetFillWeight(this.checkBoxAutoPlay, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.checkBoxAutoPlay, true);
+            this.checkBoxAutoPlay.Location = new System.Drawing.Point(3, 60);
+            this.checkBoxAutoPlay.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
+            this.checkBoxAutoPlay.Name = "checkBoxAutoPlay";
+            this.checkBoxAutoPlay.Size = new System.Drawing.Size(212, 38);
+            this.checkBoxAutoPlay.TabIndex = 1;
+            this.checkBoxAutoPlay.Text = "AutoPlay";
             // 
-            // checkBox3
+            // checkBoxBrowserControls
             // 
-            this.checkBox3.Appearance = Wisej.Web.Appearance.Switch;
-            this.checkBox3.AutoSize = false;
-            this.checkBox3.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.flowLayoutPanel1.SetFillWeight(this.checkBox3, 1);
-            this.flowLayoutPanel1.SetFlowBreak(this.checkBox3, true);
-            this.checkBox3.Location = new System.Drawing.Point(3, 117);
-            this.checkBox3.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(212, 38);
-            this.checkBox3.TabIndex = 2;
-            this.checkBox3.Text = "Browser Controls";
+            this.checkBoxBrowserControls.Appearance = Wisej.Web.Appearance.Switch;
+            this.checkBoxBrowserControls.AutoSize = false;
+            this.checkBoxBrowserControls.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.flowLayoutPanel1.SetFillWeight(this.checkBoxBrowserControls, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.checkBoxBrowserControls, true);
+            this.checkBoxBrowserControls.Location = new System.Drawing.Point(3, 117);
+            this.checkBoxBrowserControls.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
+            this.checkBoxBrowserControls.Name = "checkBoxBrowserControls";
+            this.checkBoxBrowserControls.Size = new System.Drawing.Size(212, 38);
+            this.checkBoxBrowserControls.TabIndex = 2;
+            this.checkBoxBrowserControls.Text = "Browser Controls";
             // 
-            // checkBox4
+            // checkBoxShowSeekTime
             // 
-            this.checkBox4.Appearance = Wisej.Web.Appearance.Switch;
-            this.checkBox4.AutoSize = false;
-            this.checkBox4.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.checkBox4.Checked = true;
-            this.flowLayoutPanel1.SetFillWeight(this.checkBox4, 1);
-            this.flowLayoutPanel1.SetFlowBreak(this.checkBox4, true);
-            this.checkBox4.Location = new System.Drawing.Point(3, 174);
-            this.checkBox4.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(212, 38);
-            this.checkBox4.TabIndex = 3;
-            this.checkBox4.Text = "Show Seek Time";
+            this.checkBoxShowSeekTime.Appearance = Wisej.Web.Appearance.Switch;
+            this.checkBoxShowSeekTime.AutoSize = false;
+            this.checkBoxShowSeekTime.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.checkBoxShowSeekTime.Checked = true;
+            this.flowLayoutPanel1.SetFillWeight(this.checkBoxShowSeekTime, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.checkBoxShowSeekTime, true);
+            this.checkBoxShowSeekTime.Location = new System.Drawing.Point(3, 174);
+            this.checkBoxShowSeekTime.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
+            this.checkBoxShowSeekTime.Name = "checkBoxShowSeekTime";
+            this.checkBoxShowSeekTime.Size = new System.Drawing.Size(212, 38);
+            this.checkBoxShowSeekTime.TabIndex = 3;
+            this.checkBoxShowSeekTime.Text = "Show Seek Time";
             // 
             // igVideoPlayer1
             // 
@@ -189,9 +189,9 @@
 		private Ignite.igVideoPlayer igVideoPlayer1;
 		private Button button2;
 		private Button button1;
-		private CheckBox checkBox1;
-		private CheckBox checkBox4;
-		private CheckBox checkBox3;
-		private CheckBox checkBox2;
+		private CheckBox checkBoxAutoHide;
+		private CheckBox checkBoxShowSeekTime;
+		private CheckBox checkBoxBrowserControls;
+		private CheckBox checkBoxAutoPlay;
 	}
 }

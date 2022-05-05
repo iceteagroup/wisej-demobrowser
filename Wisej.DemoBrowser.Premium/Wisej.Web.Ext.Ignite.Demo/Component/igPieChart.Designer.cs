@@ -29,7 +29,7 @@
 		private void InitializeComponent()
 		{
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(igPieChart));
-            Wisej.Web.Ext.Ignite.igBase.WidgetFunction widgetFunction1 = new Wisej.Web.Ext.Ignite.igBase.WidgetFunction();
+            Wisej.Web.Ext.Ignite.igBase.WidgetFunction widgetFunction2 = new Wisej.Web.Ext.Ignite.igBase.WidgetFunction();
             this.igPieChart1 = new Wisej.Web.Ext.Ignite.igPieChart();
             this.groupBox2 = new Wisej.Web.GroupBox();
             this.button1 = new Wisej.Web.Button();
@@ -80,8 +80,6 @@
             this.flowLayoutPanel1.Controls.Add(this.checkBox2);
             this.flowLayoutPanel1.Controls.Add(this.comboBox1);
             this.flowLayoutPanel1.Controls.Add(this.groupBox2);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 35);
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 441);
             // 
             // igPieChart1
             // 
@@ -94,10 +92,10 @@
             this.igPieChart1.Size = new System.Drawing.Size(1053, 522);
             this.igPieChart1.TabIndex = 0;
             this.igPieChart1.Text = "igPieChart1";
-            widgetFunction1.Name = "AddItem";
-            widgetFunction1.Source = "this.Instance.addItem({\r\n    Label: \"Test\",\r\n    Budget: 50\r\n});";
+            widgetFunction2.Name = "AddItem";
+            widgetFunction2.Source = "this.Instance.addItem({\r\n    Label: \"Test\",\r\n    Budget: 50\r\n});";
             this.igPieChart1.WidgetFunctions = new Wisej.Web.Ext.Ignite.igBase.WidgetFunction[] {
-        widgetFunction1};
+        widgetFunction2};
             // 
             // groupBox2
             // 
@@ -106,7 +104,7 @@
             this.groupBox2.Controls.Add(this.textBox1);
             this.flowLayoutPanel1.SetFillWeight(this.groupBox2, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.groupBox2, true);
-            this.groupBox2.Location = new System.Drawing.Point(3, 231);
+            this.groupBox2.Location = new System.Drawing.Point(3, 181);
             this.groupBox2.Margin = new Wisej.Web.Padding(3, 12, 3, 3);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(212, 200);
@@ -117,9 +115,9 @@
             // 
             this.button1.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Left) 
             | Wisej.Web.AnchorStyles.Right)));
-            this.button1.Location = new System.Drawing.Point(6, 146);
+            this.button1.Location = new System.Drawing.Point(6, 155);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(200, 27);
+            this.button1.Size = new System.Drawing.Size(200, 35);
             this.button1.TabIndex = 2;
             this.button1.Text = "Add";
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -131,7 +129,7 @@
             this.numericUpDown1.LabelText = "Budget";
             this.numericUpDown1.Location = new System.Drawing.Point(6, 88);
             this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(200, 46);
+            this.numericUpDown1.Size = new System.Drawing.Size(200, 57);
             this.numericUpDown1.TabIndex = 1;
             // 
             // textBox1
@@ -141,7 +139,7 @@
             this.textBox1.LabelText = "Department";
             this.textBox1.Location = new System.Drawing.Point(6, 24);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(200, 46);
+            this.textBox1.Size = new System.Drawing.Size(200, 57);
             this.textBox1.TabIndex = 0;
             // 
             // checkBox2
@@ -183,10 +181,10 @@
             "multiple",
             "manual"});
             this.comboBox1.LabelText = "Selection Mode";
-            this.comboBox1.Location = new System.Drawing.Point(3, 170);
+            this.comboBox1.Location = new System.Drawing.Point(3, 109);
             this.comboBox1.Margin = new Wisej.Web.Padding(3, 12, 3, 3);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(212, 46);
+            this.comboBox1.Size = new System.Drawing.Size(212, 57);
             this.comboBox1.TabIndex = 3;
             this.comboBox1.Text = "single";
             // 

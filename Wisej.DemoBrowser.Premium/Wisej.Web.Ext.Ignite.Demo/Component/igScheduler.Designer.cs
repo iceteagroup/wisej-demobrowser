@@ -29,7 +29,7 @@
 		private void InitializeComponent()
 		{
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(igScheduler));
-            Wisej.Web.Ext.Ignite.igBase.WidgetFunction widgetFunction1 = new Wisej.Web.Ext.Ignite.igBase.WidgetFunction();
+            Wisej.Web.Ext.Ignite.igBase.WidgetFunction widgetFunction3 = new Wisej.Web.Ext.Ignite.igBase.WidgetFunction();
             this.igScheduler1 = new Wisej.Web.Ext.Ignite.igScheduler();
             this.buttonLoad = new Wisej.Web.Upload();
             this.dateTimePicker1 = new Wisej.Web.DateTimePicker();
@@ -45,18 +45,15 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Size = new System.Drawing.Size(250, 479);
             this.groupBox1.TabIndex = 3;
             // 
             // buttonUpdate
             // 
-            this.buttonUpdate.Location = new System.Drawing.Point(16, 411);
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
             // panel
             // 
             this.panel.Controls.Add(this.igScheduler1);
-            this.panel.Size = new System.Drawing.Size(600, 479);
             this.panel.TabIndex = 7;
             // 
             // linkDemo
@@ -79,7 +76,6 @@
             this.flowLayoutPanel1.Controls.Add(this.comboBox1);
             this.flowLayoutPanel1.Controls.Add(this.groupBox2);
             this.flowLayoutPanel1.Controls.Add(this.buttonLoad);
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 357);
             // 
             // igScheduler1
             // 
@@ -89,14 +85,13 @@
             this.igScheduler1.Location = new System.Drawing.Point(21, 16);
             this.igScheduler1.Name = "igScheduler1";
             this.igScheduler1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("igScheduler1.Options"))));
-            this.igScheduler1.Size = new System.Drawing.Size(557, 447);
+            this.igScheduler1.Size = new System.Drawing.Size(1048, 528);
             this.igScheduler1.TabIndex = 0;
             this.igScheduler1.Text = "igScheduler1";
-            widgetFunction1.Name = "loadData";
-            widgetFunction1.Source = resources.GetString("widgetFunction1.Source");
+            widgetFunction3.Name = "loadData";
+            widgetFunction3.Source = resources.GetString("widgetFunction3.Source");
             this.igScheduler1.WidgetFunctions = new Wisej.Web.Ext.Ignite.igBase.WidgetFunction[] {
-        widgetFunction1};
-            this.igScheduler1.Appear += new System.EventHandler(this.igScheduler1_Appear);
+        widgetFunction3};
             // 
             // buttonLoad
             // 
@@ -120,7 +115,7 @@
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(200, 57);
             this.dateTimePicker1.TabIndex = 0;
-            this.dateTimePicker1.Value = new System.DateTime(2020, 3, 3, 0, 0, 0, 0);
+            this.dateTimePicker1.Value = new System.DateTime(2022, 4, 1, 0, 0, 0, 0);
             // 
             // groupBox2
             // 
@@ -158,10 +153,11 @@
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(200, 57);
             this.dateTimePicker2.TabIndex = 1;
-            this.dateTimePicker2.Value = new System.DateTime(2020, 3, 10, 16, 0, 25, 25);
+            this.dateTimePicker2.Value = new System.DateTime(2022, 5, 1, 0, 0, 0, 0);
             // 
             // comboBox1
             // 
+            this.comboBox1.DropDownStyle = Wisej.Web.ComboBoxStyle.DropDownList;
             this.flowLayoutPanel1.SetFillWeight(this.comboBox1, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.comboBox1, true);
             this.comboBox1.Items.AddRange(new object[] {
@@ -173,12 +169,13 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(212, 57);
             this.comboBox1.TabIndex = 2;
+            this.comboBox1.Text = "monthView";
             // 
             // igScheduler
             // 
             this.MinimumSize = new System.Drawing.Size(1009, 669);
             this.Name = "igScheduler";
-            this.Size = new System.Drawing.Size(1009, 669);
+            this.Load += new System.EventHandler(this.igScheduler_Load);
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
