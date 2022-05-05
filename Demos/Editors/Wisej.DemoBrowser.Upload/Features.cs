@@ -1,14 +1,13 @@
 ﻿using System;
 using System.Drawing;
 using System.IO;
-using System.Web;
 using Wisej.Core;
 using Wisej.DemoBrowser.Common;
 using Wisej.Web;
 
 namespace Wisej.DemoBrowser.Upload
 {
-	public partial class Features : DemoView
+    public partial class Features : DemoView
 	{
 		public Features()
 		{
@@ -20,60 +19,50 @@ namespace Wisej.DemoBrowser.Upload
 			if (e.Files.Count == 0)
 				return;
 
-			var image = Image.FromStream(e.Files[0].InputStream);
-			this.pictureBox.Image = image;
-
-			AlertBox.Show("Loaded Image");
-			Application.Update(this);
+			LoadImage(e.Files[0]);
 		}
 
-		private void uploadVideo_Uploaded(object sender, UploadedEventArgs e)
+		private void pictureBox_DragDrop(object sender, DragEventArgs e)
 		{
-			if (e.Files.Count == 0)
+			this.pictureBox.BackColor = Color.Transparent;
+
+			var file = e.Files?[0];
+			if (file == null)
 				return;
 
-			AlertBox.Show("Processing Video");
-			Application.Update(this);
-
-			using (var stream = new MemoryStream())
+			var extension = Path.GetExtension(file.FileName);
+			switch (extension)
 			{
-				e.Files[0].InputStream.CopyTo(stream);
+				case ".png":
+				case ".jpg":
+				case ".jpeg":
+					LoadImage(file);
+					break;
 
-				var bytes = stream.ToArray();
-				var base64String = $"data:video/mp4;base64,{Convert.ToBase64String(bytes)}";
-
-				this.video.SourceURL = base64String;
+				default:
+					AlertBox.Show("The file must be a PNG or JPEG.");
+					return;
 			}
-
-			AlertBox.Show("Loaded Video");
-			Application.Update(this);
 		}
 
-		private void uploadAudio_Uploaded(object sender, UploadedEventArgs e)
+		private void pictureBox_DragEnter(object sender, DragEventArgs e)
 		{
-			if (e.Files.Count == 0)
-				return;
-
-			using (var stream = new MemoryStream())
-			{
-				e.Files[0].InputStream.CopyTo(stream);
-
-				var bytes = stream.ToArray();
-				var base64String = $"data:audio/mp3;base64,{Convert.ToBase64String(bytes)}";
-
-				this.audio.SourceURL = base64String;
-			}
-
-			AlertBox.Show("Loaded Audio");
-			Application.Update(this);
+			e.Effect = DragDropEffects.Copy;
+			e.AllowedFileTypes = "image/png";
+			
+			this.pictureBox.BackColor = Color.White;
 		}
 
-		private void upload_Progress(object sender, UploadProgressEventArgs e)
+		private void pictureBox_DragLeave(object sender, EventArgs e)
 		{
-			var progress = (float)e.Loaded / (float)e.Total * 100F;
+			this.pictureBox.BackColor = Color.Transparent;
+		}
 
-			this.progressBar.Text = $"{progress}%";
-			this.progressBar.Value = (int)progress;
+		private void LoadImage(HttpPostedFile file)
+        {
+			this.labelChoose.Hide();
+			this.uploadImage.Value = file.FileName;
+			this.pictureBox.Image = Image.FromStream(file.InputStream);
 		}
 	}
 }

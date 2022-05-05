@@ -1,4 +1,5 @@
-﻿using System.Threading;
+﻿using System.Linq;
+using System.Threading;
 using Wisej.DemoBrowser.Common;
 using Wisej.Web;
 
@@ -14,13 +15,21 @@ namespace Wisej.DemoBrowser.ProgressBar
 		private void buttonTask_Click(object sender, System.EventArgs e)
 		{
 			this.buttonTask.Enabled = false;
-			this.progressBarSteps.Value = 0;
+
+			var progressBars = this.Controls.Where(c => c is Web.ProgressBar);
+			foreach (Web.ProgressBar progressBar in progressBars)
+				progressBar.Value = 0;
+
 			Application.StartTask(() =>
 			{
 				for (int i = 0; i <= this.progressBarSteps.Maximum; i++)
 				{
-					this.progressBarSteps.Text = $"{i}%";
-					this.progressBarSteps.PerformStep();
+					foreach (Web.ProgressBar progressBar in progressBars)
+                    {
+						progressBar.Text = $"{i}%";
+						progressBar.PerformStep();
+					}
+					
 					Application.Update(this);
 					Thread.Sleep(100);
 				}

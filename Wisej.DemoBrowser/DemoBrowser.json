@@ -10,14 +10,17 @@
 				"assembly": "Features, Wisej.DemoBrowser.TextBox.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/TextBox.svg",
 				"docsUrl": "https://docs.wisej.com/docs/controls/editors/textbox",
-				"description-en":
-					"The <b>Wisej.Web.TextBox</b> control allows the user to enter unformatted text in an application.<br>Usually a TextBox control accepts a single line of text. You can use the Multiline property to allow the control to display and accept text on more than one line.",
-				"description-de":
-					"Das <b>Wisej.Web.TextBox</b>-Steuerelement ermöglicht dem Benutzer, unformatierten Text in eine Anwendung einzugeben.<br>Normalerweise akzeptiert ein TextBox-Steuerelement eine einzelne Textzeile. Sie können die Multiline-Eigenschaft verwenden, um zuzulassen, dass das Steuerelement Text in mehr als einer Zeile anzeigt und akzeptiert.",
-				"description-it":
-					"Il controllo <b>Wisej.Web.TextBox</b> consente all'utente di immettere testo non formattato in un'applicazione.<br>Di solito un controllo TextBox accetta una singola riga di testo. È possibile utilizzare la proprietà Multiline per consentire al controllo di visualizzare e accettare testo su più righe.",
-				"description-es":
-					"El control <b>Wisej.Web.TextBox</b> permite al usuario ingresar texto sin formato en una aplicación. <br> Por lo general, un control TextBox acepta una sola línea de texto. Puede utilizar la propiedad Multiline para permitir que el control muestre y acepte texto en más de una línea."
+				"description-en": "The <b>Wisej.Web.TextBox</b> control allows the user to enter unformatted text in an application.<br>Usually a TextBox control accepts a single line of text. You can use the Multiline property to allow the control to display and accept text on more than one line.",
+				"description-de": "Das <b>Wisej.Web.TextBox</b>-Steuerelement ermöglicht dem Benutzer, unformatierten Text in eine Anwendung einzugeben.<br>Normalerweise akzeptiert ein TextBox-Steuerelement eine einzelne Textzeile. Sie können die Multiline-Eigenschaft verwenden, um zuzulassen, dass das Steuerelement Text in mehr als einer Zeile anzeigt und akzeptiert.",
+				"description-it": "Il controllo <b>Wisej.Web.TextBox</b> consente all'utente di immettere testo non formattato in un'applicazione.<br>Di solito un controllo TextBox accetta una singola riga di testo. È possibile utilizzare la proprietà Multiline per consentire al controllo di visualizzare e accettare testo su più righe.",
+				"description-es": "El control <b>Wisej.Web.TextBox</b> permite al usuario ingresar texto sin formato en una aplicación. <br> Por lo general, un control TextBox acepta una sola línea de texto. Puede utilizar la propiedad Multiline para permitir que el control muestre y acepte texto en más de una línea."
+			},
+			"Auto Complete": {
+				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Editors/Wisej.DemoBrowser.TextBox",
+				"assembly": "AutoComplete, Wisej.DemoBrowser.TextBox.dll",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/TextBox.svg",
+				"docsUrl": "https://docs.wisej.com/docs/controls/editors/textbox#label",
+				"description-en": "The <b>Wisej.Web.TextBox</b> control supports the inline Label property. This allows an application to set a label in relation to a TextBox control without having to create an additional Label control."
 			},
 			"Labels": {
 				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Editors/Wisej.DemoBrowser.TextBox",
@@ -54,6 +57,13 @@
 				"description-en": "The <b>Wisej.Web.ComboBox</b> control displays a text box combined with a ListBox, which enables the user to select items from the list or enter a new value. Objects in the drop down list can be of any type, the list will show a string representation of each item.",
 				"description-de": "Das <b>Wisej.Web.ComboBox</b>-Steuerelement zeigt ein mit einer ListBox kombiniertes Textfeld an, das es dem Benutzer ermöglicht, Elemente aus der Liste auszuwählen oder einen neuen Wert einzugeben. Objekte in der Dropdown-Liste können jeden Typs sein. Die Liste zeigt eine Zeichenfolgendarstellung jedes Elements.",
 				"description-it": "Il controllo Wisej.Web.ComboBox visualizza una casella di testo combinata con un ListBox, che consente all'utente di selezionare elementi dall'elenco o di immettere un nuovo valore. Gli oggetti nell'elenco a discesa possono essere di qualsiasi tipo, l'elenco mostrerà una rappresentazione di stringa di ciascun elemento."
+			},
+			"Auto Complete": {
+				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Editors/Wisej.DemoBrowser.ComboBox",
+				"assembly": "AutoComplete, Wisej.DemoBrowser.ComboBox.dll",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/ComboBox.svg",
+				"docsUrl": "https://docs.wisej.com/docs/controls/lists/combobox#label",
+				"description-en": "Use the <b>AutoCompleteMode</b> property to create a ComboBox that automatically completes input strings by comparing the prefix being entered to the prefixes of all strings in a maintained source."
 			},
 			"Labels": {
 				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Editors/Wisej.DemoBrowser.ComboBox",
@@ -563,13 +573,6 @@
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/ListView.svg",
 				"docsUrl": "https://docs.wisej.com/docs/controls/lists/listview",
 				"description-en": "The <b>Wisej.Web.ListView</b> is a control used to display a list of items through one of four predefined views."
-			},
-			"Selection Modes": {
-				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Grids/Wisej.DemoBrowser.ListView",
-				"assembly": "SelectionModes, Wisej.DemoBrowser.ListView.dll",
-				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/ListView.svg",
-				"docsUrl": "https://docs.wisej.com/docs/controls/lists/listview",
-				"description-en": "The <b>Wisej.Web.ListView</b> is a control used to display a list of items through one of four predefined views."
 			}
 		},
 		"DataRepeater": {
@@ -607,7 +610,7 @@
 				"assembly": "Features, Wisej.DemoBrowser.ProgressBar.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/ProgressBar.svg",
 				"docsUrl": "https://docs.wisej.com/docs/controls/content/progressbar",
-				"description-en": "The <b>Wisej.Web.ProgressBar</b> is used to visual indicate the progress of lengthy operations."
+				"description-en": "The <b>Wisej.Web.ProgressBar</b> is used to visual indicate the progress of lengthy operations. This demo starts a background task on the server and updates the client with new progress. The state of the progress bars are restored on a page refresh."
 			}
 		},
 		"Toast": {

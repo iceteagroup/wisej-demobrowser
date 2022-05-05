@@ -33,6 +33,7 @@
             this.columnHeader8 = new Wisej.Web.ColumnHeader();
             this.columnHeader9 = new Wisej.Web.ColumnHeader();
             this.comboBoxView = new Wisej.Web.ComboBox();
+            this.comboBoxSelectionMode = new Wisej.Web.ComboBox();
             this.SuspendLayout();
             // 
             // listViewDemo
@@ -83,13 +84,30 @@
             this.comboBoxView.LabelText = "View";
             this.comboBoxView.Location = new System.Drawing.Point(16, 15);
             this.comboBoxView.Name = "comboBoxView";
-            this.comboBoxView.Size = new System.Drawing.Size(227, 57);
+            this.comboBoxView.Size = new System.Drawing.Size(227, 53);
             this.comboBoxView.TabIndex = 3;
             this.comboBoxView.Text = "Details";
             this.comboBoxView.SelectedIndexChanged += new System.EventHandler(this.comboBoxView_SelectedIndexChanged);
             // 
+            // comboBoxSelectionMode
+            // 
+            this.comboBoxSelectionMode.DropDownStyle = Wisej.Web.ComboBoxStyle.DropDownList;
+            this.comboBoxSelectionMode.Items.AddRange(new object[] {
+            "None",
+            "One",
+            "MultiSimple",
+            "MultiExtended"});
+            this.comboBoxSelectionMode.LabelText = "Selection Mode";
+            this.comboBoxSelectionMode.Location = new System.Drawing.Point(16, 103);
+            this.comboBoxSelectionMode.Name = "comboBoxSelectionMode";
+            this.comboBoxSelectionMode.Size = new System.Drawing.Size(227, 53);
+            this.comboBoxSelectionMode.TabIndex = 4;
+            this.comboBoxSelectionMode.Text = "One";
+            this.comboBoxSelectionMode.SelectedIndexChanged += new System.EventHandler(this.comboBoxSelectionMode_SelectedIndexChanged);
+            // 
             // Features
             // 
+            this.Controls.Add(this.comboBoxSelectionMode);
             this.Controls.Add(this.comboBoxView);
             this.Controls.Add(this.listViewDemo);
             this.Name = "Features";
@@ -105,5 +123,6 @@
         private Web.ColumnHeader columnHeader8;
         private Web.ColumnHeader columnHeader9;
         private Web.ComboBox comboBoxView;
+        private Web.ComboBox comboBoxSelectionMode;
     }
 }
