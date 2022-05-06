@@ -62,7 +62,7 @@ namespace Wisej.DemoBrowser.Upload
         {
 			this.labelChoose.Hide();
 			this.uploadImage.Value = file.FileName;
-			this.pictureBox.Image = Image.FromStream(file.InputStream);
+			this.pictureBox.Image = new Bitmap(Image.FromStream(file.InputStream));
 		}
 	}
 }

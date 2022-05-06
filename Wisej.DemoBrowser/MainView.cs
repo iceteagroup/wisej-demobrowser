@@ -8,15 +8,10 @@ using Wisej.Web;
 
 namespace Wisej.DemoBrowser
 {
-    public partial class MainView : Page
+	public partial class MainView : Page
 	{
 
 		#region Properties
-
-		/// <summary>
-		/// The current-selected search item.
-		/// </summary>
-		private TreeNode SelectedSearchItem;
 
 		/// <summary>
 		/// The current search results.
@@ -62,7 +57,7 @@ namespace Wisej.DemoBrowser
 			if (this.treeViewComponents.Nodes.Count > 0)
 				this.treeViewComponents.SelectedNode = this.treeViewComponents.Nodes[0];
 
-			 if (!string.IsNullOrEmpty(hash))
+			if (!string.IsNullOrEmpty(hash))
 				SelectNode(hash);
 
 			this.panelComponents.ShowHeader = false;
@@ -77,7 +72,7 @@ namespace Wisej.DemoBrowser
 			var assemblies = Directory.GetFiles(directory, "Wisej.*.dll");
 			foreach (var assembly in assemblies)
 				Application.LoadAssembly(Path.Combine(directory, assembly));
-        }
+		}
 
 		private void Application_HashChanged(object sender, HashChangedEventArgs e)
 		{
@@ -149,7 +144,7 @@ namespace Wisej.DemoBrowser
 						{
 							demoNode = controlNode;
 						}
-						else 
+						else
 						{
 							demoNode = new TreeNode
 							{
@@ -206,9 +201,9 @@ namespace Wisej.DemoBrowser
 				TreeNode demoNode = controlNode;
 				if (nodePath.Length > 2)
 					demoNode = controlNode.Nodes[nodePath[2]];
-				
+
 				this.treeViewComponents.SelectedNode = demoNode;
-			} 
+			}
 			catch
 			{
 				Wisej.Web.AlertBox.Show("Unknown Demo.", MessageBoxIcon.Error, showProgressBar: true);
@@ -243,7 +238,7 @@ namespace Wisej.DemoBrowser
 			var container = this.panelDemo;
 			container.Controls.Clear(true);
 
-			var data = (dynamic) node.Tag;
+			var data = (dynamic)node.Tag;
 			var category = data.Category;
 			var control = data.Control;
 			var title = data.Title;
@@ -252,8 +247,8 @@ namespace Wisej.DemoBrowser
 			// retrieve the localized description or default to english.
 			var culture = Application.CurrentCulture.TwoLetterISOLanguageName;
 			var description = info[$"description-{culture}"] ?? info["description-en"];
-			
-			var fullyQualifiedName = (string) info.assembly ?? null;
+
+			var fullyQualifiedName = (string)info.assembly ?? null;
 			if (fullyQualifiedName != null)
 			{
 				var components = fullyQualifiedName.Split(',');
@@ -284,7 +279,7 @@ namespace Wisej.DemoBrowser
 			}
 		}
 
-#region Links
+		#region Links
 
 		private void buttonDocs_Click(object sender, EventArgs e)
 		{
@@ -343,7 +338,7 @@ namespace Wisej.DemoBrowser
 			Application.Navigate(tag?.Info.docsUrl ?? BASE_DOCS_URL, "_blank");
 		}
 
-#endregion
+		#endregion
 
 		private void buttonSearch_Click(object sender, EventArgs e)
 		{
@@ -365,7 +360,7 @@ namespace Wisej.DemoBrowser
 			this.panelComponents.ShowHeader = true;
 		}
 
-#region Search Implementation
+		#region Search Implementation
 
 		/// <summary>
 		/// Selects the previous demo node.
@@ -425,11 +420,11 @@ namespace Wisej.DemoBrowser
 					ProcessNodesContain(node.Nodes, phrase);
 
 				if (this.treeViewComponents.Nodes.Count > 0)
-                {
+				{
 					this.treeViewComponents.SelectedNode = this.treeViewComponents.Nodes[0];
-                }
-                else
-                {
+				}
+				else
+				{
 					this.treeViewComponents.SelectedNode = null;
 				}
 			}
@@ -439,9 +434,10 @@ namespace Wisej.DemoBrowser
 			}
 
 			this.textBoxSearch.Tools["back"].Visible = isSearch;
+			this.textBoxSearch.Tools["clear"].Visible = isSearch;
 			this.textBoxSearch.Tools["forward"].Visible = isSearch;
 		}
-		
+
 		/// <summary>
 		/// Simple method that recursively searches for a phrase from a given root node.
 		/// </summary>
@@ -467,7 +463,7 @@ namespace Wisej.DemoBrowser
 					break;
 
 				case "search":
-						SearchForPhrase(this.textBoxSearch.Text);
+					SearchForPhrase(this.textBoxSearch.Text);
 					break;
 			}
 		}
@@ -488,14 +484,19 @@ namespace Wisej.DemoBrowser
 				case "back":
 					this.treeViewComponents.SelectedNode = GetPreviousDemo();
 					break;
+
+				case "clear":
+					this.textBoxSearch.Text = "";
+					SearchForPhrase(this.textBoxSearch.Text);
+					break;
 			}
 		}
 
-        #endregion
+		#endregion
 
-        private void pictureBoxLogo_Click(object sender, EventArgs e)
-        {
-			Application.Navigate("https://wisej.com/");
-        }
-    }
+		private void pictureBoxLogo_Click(object sender, EventArgs e)
+		{
+			Application.Navigate("https://wisej.com/", "_blank");
+		}
+	}
 }

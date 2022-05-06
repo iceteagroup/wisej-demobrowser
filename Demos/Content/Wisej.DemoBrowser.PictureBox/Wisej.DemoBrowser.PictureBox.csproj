@@ -14,11 +14,11 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <None Remove="Images\wisej.png" />
+	  <None Remove="Images\wisej-logo.png" />
 	</ItemGroup>
 
 	<ItemGroup>
-	  <EmbeddedResource Include="Images\wisej.png" />
+	  <EmbeddedResource Include="Images\wisej-logo.png" />
 	</ItemGroup>
 
 	<ItemGroup>

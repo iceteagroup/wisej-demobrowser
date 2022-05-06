@@ -28,16 +28,16 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-            this.comboBox1 = new Wisej.Web.ComboBox();
-            this.comboBox9 = new Wisej.Web.ComboBox();
-            this.comboBox10 = new Wisej.Web.ComboBox();
-            this.comboBox11 = new Wisej.Web.ComboBox();
-            this.SuspendLayout();
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.Anchor = Wisej.Web.AnchorStyles.None;
-            this.comboBox1.Items.AddRange(new object[] {
+			this.comboBox1 = new Wisej.Web.ComboBox();
+			this.comboBox9 = new Wisej.Web.ComboBox();
+			this.comboBox10 = new Wisej.Web.ComboBox();
+			this.comboBox11 = new Wisej.Web.ComboBox();
+			this.SuspendLayout();
+			// 
+			// comboBox1
+			// 
+			this.comboBox1.Anchor = Wisej.Web.AnchorStyles.None;
+			this.comboBox1.Items.AddRange(new object[] {
             "Elkhart",
             "Erie",
             "Escondido",
@@ -70,19 +70,19 @@
             "Grayslake",
             "Green Bay",
             "GreenBay"});
-            this.comboBox1.LabelText = "Watermark";
-            this.comboBox1.Location = new System.Drawing.Point(430, 118);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(250, 53);
-            this.comboBox1.TabIndex = 0;
-            this.comboBox1.Watermark = "Select a Fruit";
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
-            // 
-            // comboBox9
-            // 
-            this.comboBox9.Anchor = Wisej.Web.AnchorStyles.None;
-            this.comboBox9.DropDownStyle = Wisej.Web.ComboBoxStyle.Simple;
-            this.comboBox9.Items.AddRange(new object[] {
+			this.comboBox1.LabelText = "Watermark";
+			this.comboBox1.Location = new System.Drawing.Point(54, 90);
+			this.comboBox1.Name = "comboBox1";
+			this.comboBox1.Size = new System.Drawing.Size(250, 42);
+			this.comboBox1.TabIndex = 0;
+			this.comboBox1.Watermark = "Select a Fruit";
+			this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+			// 
+			// comboBox9
+			// 
+			this.comboBox9.Anchor = Wisej.Web.AnchorStyles.None;
+			this.comboBox9.DropDownStyle = Wisej.Web.ComboBoxStyle.Simple;
+			this.comboBox9.Items.AddRange(new object[] {
             "Daytona Beach",
             "Deltona",
             "Denton",
@@ -381,18 +381,18 @@
             "Winter Haven",
             "Worcester",
             "Yakima"});
-            this.comboBox9.LabelText = "Simple";
-            this.comboBox9.Location = new System.Drawing.Point(743, 118);
-            this.comboBox9.Name = "comboBox9";
-            this.comboBox9.Size = new System.Drawing.Size(250, 239);
-            this.comboBox9.TabIndex = 10;
-            // 
-            // comboBox10
-            // 
-            this.comboBox10.Anchor = Wisej.Web.AnchorStyles.None;
-            this.comboBox10.DropDownHeight = 700;
-            this.comboBox10.DropDownStyle = Wisej.Web.ComboBoxStyle.DropDownList;
-            this.comboBox10.Items.AddRange(new object[] {
+			this.comboBox9.LabelText = "Simple";
+			this.comboBox9.Location = new System.Drawing.Point(367, 90);
+			this.comboBox9.Name = "comboBox9";
+			this.comboBox9.Size = new System.Drawing.Size(250, 239);
+			this.comboBox9.TabIndex = 10;
+			// 
+			// comboBox10
+			// 
+			this.comboBox10.Anchor = Wisej.Web.AnchorStyles.None;
+			this.comboBox10.DropDownHeight = 700;
+			this.comboBox10.DropDownStyle = Wisej.Web.ComboBoxStyle.DropDownList;
+			this.comboBox10.Items.AddRange(new object[] {
             "Daytona Beach",
             "Deltona",
             "Denton",
@@ -691,18 +691,18 @@
             "Winter Haven",
             "Worcester",
             "Yakima"});
-            this.comboBox10.LabelText = "Large Drop Down List";
-            this.comboBox10.Location = new System.Drawing.Point(430, 209);
-            this.comboBox10.Name = "comboBox10";
-            this.comboBox10.Size = new System.Drawing.Size(250, 53);
-            this.comboBox10.TabIndex = 1;
-            // 
-            // comboBox11
-            // 
-            this.comboBox11.Anchor = Wisej.Web.AnchorStyles.None;
-            this.comboBox11.DropDownStyle = Wisej.Web.ComboBoxStyle.DropDownList;
-            this.comboBox11.DropDownWidth = 100;
-            this.comboBox11.Items.AddRange(new object[] {
+			this.comboBox10.LabelText = "Large Drop Down List";
+			this.comboBox10.Location = new System.Drawing.Point(54, 181);
+			this.comboBox10.Name = "comboBox10";
+			this.comboBox10.Size = new System.Drawing.Size(250, 42);
+			this.comboBox10.TabIndex = 1;
+			// 
+			// comboBox11
+			// 
+			this.comboBox11.Anchor = Wisej.Web.AnchorStyles.None;
+			this.comboBox11.DropDownStyle = Wisej.Web.ComboBoxStyle.DropDownList;
+			this.comboBox11.DropDownWidth = 100;
+			this.comboBox11.Items.AddRange(new object[] {
             "Daytona Beach",
             "Deltona",
             "Denton",
@@ -1001,22 +1001,23 @@
             "Winter Haven",
             "Worcester",
             "Yakima"});
-            this.comboBox11.LabelText = "Skinny Drop Down List";
-            this.comboBox11.Location = new System.Drawing.Point(430, 300);
-            this.comboBox11.Name = "comboBox11";
-            this.comboBox11.Size = new System.Drawing.Size(250, 53);
-            this.comboBox11.TabIndex = 2;
-            // 
-            // Features
-            // 
-            this.Controls.Add(this.comboBox11);
-            this.Controls.Add(this.comboBox10);
-            this.Controls.Add(this.comboBox9);
-            this.Controls.Add(this.comboBox1);
-            this.MinimumSize = new System.Drawing.Size(580, 249);
-            this.Name = "Features";
-            this.ResumeLayout(false);
-            this.PerformLayout();
+			this.comboBox11.LabelText = "Skinny Drop Down List";
+			this.comboBox11.Location = new System.Drawing.Point(54, 272);
+			this.comboBox11.Name = "comboBox11";
+			this.comboBox11.Size = new System.Drawing.Size(250, 42);
+			this.comboBox11.TabIndex = 2;
+			// 
+			// Features
+			// 
+			this.Controls.Add(this.comboBox11);
+			this.Controls.Add(this.comboBox10);
+			this.Controls.Add(this.comboBox9);
+			this.Controls.Add(this.comboBox1);
+			this.MinimumSize = new System.Drawing.Size(580, 249);
+			this.Name = "Features";
+			this.Size = new System.Drawing.Size(670, 418);
+			this.ResumeLayout(false);
+			this.PerformLayout();
 
 		}
 

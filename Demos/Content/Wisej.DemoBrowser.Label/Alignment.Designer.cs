@@ -43,7 +43,7 @@
 			// 
 			this.label11.Anchor = Wisej.Web.AnchorStyles.None;
 			this.label11.BorderStyle = Wisej.Web.BorderStyle.Solid;
-			this.label11.Location = new System.Drawing.Point(843, 331);
+			this.label11.Location = new System.Drawing.Point(462, 268);
 			this.label11.Name = "label11";
 			this.label11.Size = new System.Drawing.Size(150, 40);
 			this.label11.TabIndex = 25;
@@ -54,7 +54,7 @@
 			// 
 			this.label10.Anchor = Wisej.Web.AnchorStyles.None;
 			this.label10.BorderStyle = Wisej.Web.BorderStyle.Solid;
-			this.label10.Location = new System.Drawing.Point(843, 217);
+			this.label10.Location = new System.Drawing.Point(462, 154);
 			this.label10.Name = "label10";
 			this.label10.Size = new System.Drawing.Size(150, 40);
 			this.label10.TabIndex = 24;
@@ -65,7 +65,7 @@
 			// 
 			this.label9.Anchor = Wisej.Web.AnchorStyles.None;
 			this.label9.BorderStyle = Wisej.Web.BorderStyle.Solid;
-			this.label9.Location = new System.Drawing.Point(843, 103);
+			this.label9.Location = new System.Drawing.Point(462, 40);
 			this.label9.Name = "label9";
 			this.label9.Size = new System.Drawing.Size(150, 40);
 			this.label9.TabIndex = 23;
@@ -76,7 +76,7 @@
 			// 
 			this.label8.Anchor = Wisej.Web.AnchorStyles.None;
 			this.label8.BorderStyle = Wisej.Web.BorderStyle.Solid;
-			this.label8.Location = new System.Drawing.Point(636, 331);
+			this.label8.Location = new System.Drawing.Point(255, 268);
 			this.label8.Name = "label8";
 			this.label8.Size = new System.Drawing.Size(150, 40);
 			this.label8.TabIndex = 22;
@@ -87,7 +87,7 @@
 			// 
 			this.label7.Anchor = Wisej.Web.AnchorStyles.None;
 			this.label7.BorderStyle = Wisej.Web.BorderStyle.Solid;
-			this.label7.Location = new System.Drawing.Point(636, 217);
+			this.label7.Location = new System.Drawing.Point(255, 154);
 			this.label7.Name = "label7";
 			this.label7.Size = new System.Drawing.Size(150, 40);
 			this.label7.TabIndex = 21;
@@ -98,7 +98,7 @@
 			// 
 			this.label6.Anchor = Wisej.Web.AnchorStyles.None;
 			this.label6.BorderStyle = Wisej.Web.BorderStyle.Solid;
-			this.label6.Location = new System.Drawing.Point(636, 103);
+			this.label6.Location = new System.Drawing.Point(255, 40);
 			this.label6.Name = "label6";
 			this.label6.Size = new System.Drawing.Size(150, 40);
 			this.label6.TabIndex = 20;
@@ -109,7 +109,7 @@
 			// 
 			this.label5.Anchor = Wisej.Web.AnchorStyles.None;
 			this.label5.BorderStyle = Wisej.Web.BorderStyle.Solid;
-			this.label5.Location = new System.Drawing.Point(429, 331);
+			this.label5.Location = new System.Drawing.Point(48, 268);
 			this.label5.Name = "label5";
 			this.label5.Size = new System.Drawing.Size(150, 40);
 			this.label5.TabIndex = 19;
@@ -120,7 +120,7 @@
 			// 
 			this.label4.Anchor = Wisej.Web.AnchorStyles.None;
 			this.label4.BorderStyle = Wisej.Web.BorderStyle.Solid;
-			this.label4.Location = new System.Drawing.Point(429, 217);
+			this.label4.Location = new System.Drawing.Point(48, 154);
 			this.label4.Name = "label4";
 			this.label4.Size = new System.Drawing.Size(150, 40);
 			this.label4.TabIndex = 18;
@@ -131,7 +131,7 @@
 			// 
 			this.label3.Anchor = Wisej.Web.AnchorStyles.None;
 			this.label3.BorderStyle = Wisej.Web.BorderStyle.Solid;
-			this.label3.Location = new System.Drawing.Point(429, 103);
+			this.label3.Location = new System.Drawing.Point(48, 40);
 			this.label3.Name = "label3";
 			this.label3.Size = new System.Drawing.Size(150, 40);
 			this.label3.TabIndex = 17;
@@ -148,7 +148,9 @@
 			this.Controls.Add(this.label5);
 			this.Controls.Add(this.label4);
 			this.Controls.Add(this.label3);
+			this.MinimumSize = new System.Drawing.Size(660, 348);
 			this.Name = "Alignment";
+			this.Size = new System.Drawing.Size(660, 348);
 			this.ResumeLayout(false);
 
 		}

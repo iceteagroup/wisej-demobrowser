@@ -51,7 +51,6 @@
 		<None Remove="Images\search.png" />
 		<None Remove="Images\splash.png" />
 		<None Remove="Images\strike.png" />
-		<None Remove="Images\Wisej logo 160px copy.png" />
 		<None Remove="Images\wisej-logo.png" />
 		<None Remove="Images\wisej.png" />
 		<None Remove="Themes\DemoBrowser.mixin.theme" />
@@ -79,7 +78,6 @@
 	  <EmbeddedResource Include="Images\search.png" />
 	  <EmbeddedResource Include="Images\splash.png" />
 	  <EmbeddedResource Include="Images\strike.png" />
-	  <EmbeddedResource Include="Images\Wisej logo 160px copy.png" />
 	  <EmbeddedResource Include="Images\wisej-logo.png" />
 	  <EmbeddedResource Include="Images\wisej.png" />
 	  <EmbeddedResource Include="Themes\DemoBrowser.mixin.theme" />

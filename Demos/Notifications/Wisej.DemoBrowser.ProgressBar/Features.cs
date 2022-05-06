@@ -17,12 +17,15 @@ namespace Wisej.DemoBrowser.ProgressBar
 			this.buttonTask.Enabled = false;
 
 			var progressBars = this.Controls.Where(c => c is Web.ProgressBar);
+			
 			foreach (Web.ProgressBar progressBar in progressBars)
+			{
 				progressBar.Value = 0;
+			}
 
 			Application.StartTask(() =>
 			{
-				for (int i = 0; i <= this.progressBarSteps.Maximum; i++)
+				for (int i = 0; i <= this.progressBarSteps.Maximum && !this.IsDisposed; i++)
 				{
 					foreach (Web.ProgressBar progressBar in progressBars)
                     {
