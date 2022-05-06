@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="igDoughnutChart1.Options" xml:space="preserve">
-    <value>{"series":[{"name":"Pop1990","labelMemberPath":"CountryName","valueMemberPath":"Pop1990","dataSource":[{"CountryName":"China","Pop1990":1141},{"CountryName":"India","Pop1990":849},{"CountryName":"United States","Pop1990":250},{"CountryName":"Indonesia","Pop1990":178},{"CountryName":"Brazil","Pop1990":150}],"labelsPosition":"bestFit"}]}</value>
+    <value>{"selectedStyle":{"stroke":"gray","strokeThickness":2},"series":[{"name":"Pop1990","labelMemberPath":"CountryName","valueMemberPath":"Pop1990","dataSource":[{"CountryName":"China","Pop1990":1141},{"CountryName":"India","Pop1990":849},{"CountryName":"United States","Pop1990":250},{"CountryName":"Indonesia","Pop1990":178},{"CountryName":"Brazil","Pop1990":150}],"labelsPosition":"bestFit"}]}</value>
   </data>
   <metadata name="$this.RulerSnapLines" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>

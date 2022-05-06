@@ -3,7 +3,7 @@ using Wisej.Web;
 
 namespace Wisej.Web.Ext.Ignite.Demo.Component
 {
-	public partial class igVideoPlayer : Wisej.Web.Ext.Ignite.Demo.Component.TestBase
+	public partial class igVideoPlayer : TestBase
 	{
 		public igVideoPlayer()
 		{
@@ -31,5 +31,13 @@ namespace Wisej.Web.Ext.Ignite.Demo.Component
 
 			Application.Play(MessageBoxIcon.Information);
 		}
-	}
+
+        private void buttonUpdate_Click(object sender, EventArgs e)
+        {
+			this.igVideoPlayer1.Options.autohide = this.checkBoxAutoHide.Checked;
+			this.igVideoPlayer1.Options.autoplay = this.checkBoxAutoPlay.Checked;
+			this.igVideoPlayer1.Options.showSeekTime = this.checkBoxShowSeekTime.Checked;
+			this.igVideoPlayer1.Options.browserControls = this.checkBoxBrowserControls.Checked;
+        }
+    }
 }

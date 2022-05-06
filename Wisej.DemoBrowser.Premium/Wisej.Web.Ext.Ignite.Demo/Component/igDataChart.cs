@@ -15,9 +15,8 @@ namespace Wisej.Web.Ext.Ignite.Demo.Component
 
 		private void buttonUpdate_Click(object sender, EventArgs e)
 		{
-			if (this.textBox1.Text.Length > 0) { this.igDataChart1.Options.title = textBox1.Text; }
-			if (this.textBox2.Text.Length > 0) { this.igDataChart1.Options.subtitle = textBox2.Text; }
-			this.igDataChart1.Options.titleTextColor = comboBox1.SelectedItem;
+			this.igDataChart1.Options.title = textBoxTitle.Text;
+			this.igDataChart1.Options.subtitle = textBoxSubtitle.Text;
 			this.igDataChart1.Options.series[0].valueMemberPath = this.comboBox2.SelectedItem;
 
 			this.igDataChart1.Update();
@@ -44,14 +43,12 @@ namespace Wisej.Web.Ext.Ignite.Demo.Component
 			this.igDataChart1.Call("exportImageData");
 		}
 
-		private void button1_Click(object sender, EventArgs e)
+		private void buttonAdd_Click(object sender, EventArgs e)
 		{
-
 			var rand = new Random();
-
 			this.igDataChart1.AddItem(new
 			{
-				CountryName = "MyCountry",
+				CountryName = this.textBoxCountry.Text,
 				Pop1995 = rand.Next(300, 1000),
 				Pop2005 = rand.Next(300, 1000),
 				Pop2015 = rand.Next(300, 1000),

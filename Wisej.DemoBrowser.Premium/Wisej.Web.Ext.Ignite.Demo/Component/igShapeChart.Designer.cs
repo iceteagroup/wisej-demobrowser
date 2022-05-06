@@ -43,19 +43,16 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Size = new System.Drawing.Size(250, 378);
             this.groupBox1.TabIndex = 3;
             // 
             // buttonUpdate
             // 
-            this.buttonUpdate.Location = new System.Drawing.Point(16, 310);
             this.buttonUpdate.TabIndex = 4;
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
             // panel
             // 
             this.panel.Controls.Add(this.igShapeChart1);
-            this.panel.Size = new System.Drawing.Size(500, 378);
             this.panel.TabIndex = 7;
             // 
             // linkDemo
@@ -79,7 +76,6 @@
             this.flowLayoutPanel1.Controls.Add(this.checkBox2);
             this.flowLayoutPanel1.Controls.Add(this.comboBox1);
             this.flowLayoutPanel1.Controls.Add(this.comboBox2);
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 256);
             // 
             // igShapeChart1
             // 
@@ -89,7 +85,7 @@
             this.igShapeChart1.Location = new System.Drawing.Point(31, 20);
             this.igShapeChart1.Name = "igShapeChart1";
             this.igShapeChart1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("igShapeChart1.Options"))));
-            this.igShapeChart1.Size = new System.Drawing.Size(436, 336);
+            this.igShapeChart1.Size = new System.Drawing.Size(1027, 518);
             this.igShapeChart1.TabIndex = 0;
             this.igShapeChart1.Text = "igShapeChart1";
             widgetFunction1.Name = "SetDensityData";
@@ -102,6 +98,7 @@
             // 
             // comboBox1
             // 
+            this.comboBox1.DropDownStyle = Wisej.Web.ComboBoxStyle.DropDownList;
             this.flowLayoutPanel1.SetFillWeight(this.comboBox1, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.comboBox1, true);
             this.comboBox1.Items.AddRange(new object[] {
@@ -121,10 +118,11 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(212, 57);
             this.comboBox1.TabIndex = 2;
-            this.comboBox1.Text = "point";
+            this.comboBox1.Text = "auto";
             // 
             // comboBox2
             // 
+            this.comboBox2.DropDownStyle = Wisej.Web.ComboBoxStyle.DropDownList;
             this.flowLayoutPanel1.SetFillWeight(this.comboBox2, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.comboBox2, true);
             this.comboBox2.Items.AddRange(new object[] {
@@ -139,6 +137,7 @@
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(212, 57);
             this.comboBox2.TabIndex = 3;
+            this.comboBox2.Text = "default";
             // 
             // checkBox1
             // 
@@ -173,7 +172,6 @@
             // 
             this.MinimumSize = new System.Drawing.Size(909, 568);
             this.Name = "igShapeChart";
-            this.Size = new System.Drawing.Size(909, 568);
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);

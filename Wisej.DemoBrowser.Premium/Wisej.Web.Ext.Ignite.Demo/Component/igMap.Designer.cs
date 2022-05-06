@@ -29,7 +29,7 @@
 		private void InitializeComponent()
 		{
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(igMap));
-            Wisej.Web.Ext.Ignite.igBase.WidgetTemplate widgetTemplate1 = new Wisej.Web.Ext.Ignite.igBase.WidgetTemplate();
+            Wisej.Web.Ext.Ignite.igBase.WidgetTemplate widgetTemplate2 = new Wisej.Web.Ext.Ignite.igBase.WidgetTemplate();
             this.igMap1 = new Wisej.Web.Ext.Ignite.igMap();
             this.textBox2 = new Wisej.Web.TextBox();
             this.button1 = new Wisej.Web.Button();
@@ -90,11 +90,11 @@
             this.igMap1.Size = new System.Drawing.Size(1046, 516);
             this.igMap1.TabIndex = 0;
             this.igMap1.Text = "igMap1";
-            widgetTemplate1.Id = "tooltipTemplate";
-            widgetTemplate1.Template = resources.GetString("widgetTemplate1.Template");
-            widgetTemplate1.Type = "text/x-jquery-tmpl";
+            widgetTemplate2.Id = "tooltipTemplate";
+            widgetTemplate2.Template = resources.GetString("widgetTemplate2.Template");
+            widgetTemplate2.Type = "text/x-jquery-tmpl";
             this.igMap1.WidgetTemplates = new Wisej.Web.Ext.Ignite.igBase.WidgetTemplate[] {
-        widgetTemplate1};
+        widgetTemplate2};
             // 
             // textBox2
             // 
@@ -106,6 +106,7 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(212, 57);
             this.textBox2.TabIndex = 1;
+            this.textBox2.Text = "Disney Land";
             // 
             // button1
             // 
@@ -114,26 +115,36 @@
             this.button1.Location = new System.Drawing.Point(3, 307);
             this.button1.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(212, 27);
+            this.button1.Size = new System.Drawing.Size(212, 35);
             this.button1.TabIndex = 4;
             this.button1.Text = "Add";
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // numericUpDown2
             // 
-            this.numericUpDown2.DecimalPlaces = 2;
+            this.numericUpDown2.DecimalPlaces = 6;
             this.flowLayoutPanel1.SetFillWeight(this.numericUpDown2, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.numericUpDown2, true);
             this.numericUpDown2.LabelText = "Longitude";
             this.numericUpDown2.Location = new System.Drawing.Point(3, 155);
             this.numericUpDown2.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
+            this.numericUpDown2.Minimum = new decimal(new int[] {
+            500,
+            0,
+            0,
+            -2147483648});
             this.numericUpDown2.Name = "numericUpDown2";
             this.numericUpDown2.Size = new System.Drawing.Size(212, 57);
             this.numericUpDown2.TabIndex = 3;
+            this.numericUpDown2.Value = new decimal(new int[] {
+            117918976,
+            0,
+            0,
+            -2147090432});
             // 
             // numericUpDown1
             // 
-            this.numericUpDown1.DecimalPlaces = 2;
+            this.numericUpDown1.DecimalPlaces = 6;
             this.flowLayoutPanel1.SetFillWeight(this.numericUpDown1, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.numericUpDown1, true);
             this.numericUpDown1.LabelText = "Latitude";
@@ -142,6 +153,11 @@
             this.numericUpDown1.Name = "numericUpDown1";
             this.numericUpDown1.Size = new System.Drawing.Size(212, 57);
             this.numericUpDown1.TabIndex = 2;
+            this.numericUpDown1.Value = new decimal(new int[] {
+            33812511,
+            0,
+            0,
+            393216});
             // 
             // textBox1
             // 
@@ -152,6 +168,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(212, 57);
             this.textBox1.TabIndex = 0;
+            this.textBox1.Text = "MyCountry";
             // 
             // igMap
             // 

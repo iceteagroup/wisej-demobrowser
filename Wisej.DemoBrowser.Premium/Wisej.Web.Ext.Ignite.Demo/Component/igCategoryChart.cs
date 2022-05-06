@@ -20,7 +20,6 @@ namespace Wisej.Web.Ext.Ignite.Demo.Component
 		private void buttonUpdate_Click(object sender, EventArgs e)
 		{
 			this.igCategoryChart1.ChartType = (Ignite.igCategoryChart.ChartTypes)Enum.Parse(typeof(Ignite.igCategoryChart.ChartTypes), ((string)this.comboBox1.SelectedItem));
-			this.igCategoryChart1.Options.alignGridLinesToPixels = this.checkBox1.Checked;
 			this.igCategoryChart1.Options.finalValueAnnotationsVisible = this.checkBox2.Checked;
 			this.igCategoryChart1.Options.isItemHighlightingEnabled = this.checkBox3.Checked;
 

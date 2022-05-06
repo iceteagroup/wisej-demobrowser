@@ -29,5 +29,10 @@ namespace Wisej.Web.Ext.Ignite.Demo.Component
 		
 			this.igTree1.Update();
 		}
-	}
+
+        private void buttonClearSelection_Click(object sender, EventArgs e)
+        {
+			this.igTree1.Instance.clearSelection();
+        }
+    }
 }

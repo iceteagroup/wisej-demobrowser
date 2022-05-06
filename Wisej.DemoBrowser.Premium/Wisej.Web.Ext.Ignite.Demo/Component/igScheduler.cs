@@ -4,7 +4,7 @@ using Wisej.Web;
 
 namespace Wisej.Web.Ext.Ignite.Demo.Component
 {
-	public partial class igScheduler : Wisej.Web.Ext.Ignite.Demo.Component.TestBase
+	public partial class igScheduler : TestBase
 	{
 		public igScheduler()
 		{
@@ -16,10 +16,8 @@ namespace Wisej.Web.Ext.Ignite.Demo.Component
 			this.igScheduler1.Instance.onAppointmentDeleting += new WidgetEventHandler(igScheduler_WidgetEvent);
 		}
 
-		private void igScheduler1_Appear(object sender, EventArgs e)
+		private void igScheduler_Load(object sender, EventArgs e)
 		{
-			this.igScheduler1.Call("loadData");
-			this.igScheduler1.Update();
 		}
 
 		private void igScheduler_WidgetEvent(object sender, WidgetEventArgs e)

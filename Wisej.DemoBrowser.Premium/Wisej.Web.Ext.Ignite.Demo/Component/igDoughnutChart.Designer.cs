@@ -34,8 +34,7 @@
             this.textBox1 = new Wisej.Web.TextBox();
             this.numericUpDown1 = new Wisej.Web.NumericUpDown();
             this.groupBox2 = new Wisej.Web.GroupBox();
-            this.button1 = new Wisej.Web.Button();
-            this.checkBox1 = new Wisej.Web.CheckBox();
+            this.buttonAddItem = new Wisej.Web.Button();
             this.checkBox2 = new Wisej.Web.CheckBox();
             this.numericUpDown2 = new Wisej.Web.NumericUpDown();
             this.groupBox1.SuspendLayout();
@@ -77,7 +76,6 @@
             // 
             // flowLayoutPanel1
             // 
-            this.flowLayoutPanel1.Controls.Add(this.checkBox1);
             this.flowLayoutPanel1.Controls.Add(this.checkBox2);
             this.flowLayoutPanel1.Controls.Add(this.numericUpDown2);
             this.flowLayoutPanel1.Controls.Add(this.groupBox2);
@@ -135,43 +133,29 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.button1);
+            this.groupBox2.Controls.Add(this.buttonAddItem);
             this.groupBox2.Controls.Add(this.numericUpDown1);
             this.groupBox2.Controls.Add(this.textBox1);
             this.flowLayoutPanel1.SetFillWeight(this.groupBox2, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.groupBox2, true);
-            this.groupBox2.Location = new System.Drawing.Point(3, 183);
+            this.groupBox2.Location = new System.Drawing.Point(3, 125);
             this.groupBox2.Margin = new Wisej.Web.Padding(3, 8, 3, 3);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(212, 211);
             this.groupBox2.TabIndex = 3;
             this.groupBox2.Text = "Add Country";
             // 
-            // button1
+            // buttonAddItem
             // 
-            this.button1.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Left) 
+            this.buttonAddItem.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Left) 
             | Wisej.Web.AnchorStyles.Right)));
-            this.button1.Location = new System.Drawing.Point(9, 164);
-            this.button1.Margin = new Wisej.Web.Padding(3, 8, 3, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(195, 40);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Add";
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.Appearance = Wisej.Web.Appearance.Switch;
-            this.checkBox1.AutoSize = false;
-            this.checkBox1.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.checkBox1.Checked = true;
-            this.flowLayoutPanel1.SetFillWeight(this.checkBox1, 1);
-            this.flowLayoutPanel1.SetFlowBreak(this.checkBox1, true);
-            this.checkBox1.Location = new System.Drawing.Point(3, 3);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(212, 52);
-            this.checkBox1.TabIndex = 0;
-            this.checkBox1.Text = "Allow Slice Explosion";
+            this.buttonAddItem.Location = new System.Drawing.Point(9, 164);
+            this.buttonAddItem.Margin = new Wisej.Web.Padding(3, 8, 3, 3);
+            this.buttonAddItem.Name = "buttonAddItem";
+            this.buttonAddItem.Size = new System.Drawing.Size(195, 40);
+            this.buttonAddItem.TabIndex = 2;
+            this.buttonAddItem.Text = "Add";
+            this.buttonAddItem.Click += new System.EventHandler(this.buttonAddItem_Click);
             // 
             // checkBox2
             // 
@@ -181,7 +165,7 @@
             this.checkBox2.Checked = true;
             this.flowLayoutPanel1.SetFillWeight(this.checkBox2, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.checkBox2, true);
-            this.checkBox2.Location = new System.Drawing.Point(3, 66);
+            this.checkBox2.Location = new System.Drawing.Point(3, 8);
             this.checkBox2.Margin = new Wisej.Web.Padding(3, 8, 3, 3);
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.Size = new System.Drawing.Size(212, 38);
@@ -193,7 +177,7 @@
             this.flowLayoutPanel1.SetFillWeight(this.numericUpDown2, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.numericUpDown2, true);
             this.numericUpDown2.LabelText = "Inner Extent";
-            this.numericUpDown2.Location = new System.Drawing.Point(3, 115);
+            this.numericUpDown2.Location = new System.Drawing.Point(3, 57);
             this.numericUpDown2.Margin = new Wisej.Web.Padding(3, 8, 3, 3);
             this.numericUpDown2.Name = "numericUpDown2";
             this.numericUpDown2.Size = new System.Drawing.Size(212, 57);
@@ -227,9 +211,8 @@
 		private NumericUpDown numericUpDown1;
 		private TextBox textBox1;
 		private GroupBox groupBox2;
-		private Button button1;
+		private Button buttonAddItem;
 		private NumericUpDown numericUpDown2;
 		private CheckBox checkBox2;
-		private CheckBox checkBox1;
 	}
 }

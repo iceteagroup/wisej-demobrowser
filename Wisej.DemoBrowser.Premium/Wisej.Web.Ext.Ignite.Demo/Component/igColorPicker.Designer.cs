@@ -66,8 +66,6 @@
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.Controls.Add(this.buttonGetSelectedColor);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 31);
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 445);
             // 
             // label4
             // 
@@ -95,7 +93,7 @@
             | Wisej.Web.AnchorStyles.Right)));
             this.buttonGetSelectedColor.Location = new System.Drawing.Point(3, 3);
             this.buttonGetSelectedColor.Name = "buttonGetSelectedColor";
-            this.buttonGetSelectedColor.Size = new System.Drawing.Size(212, 27);
+            this.buttonGetSelectedColor.Size = new System.Drawing.Size(212, 35);
             this.buttonGetSelectedColor.TabIndex = 4;
             this.buttonGetSelectedColor.Text = "Get selected color";
             this.buttonGetSelectedColor.Click += new System.EventHandler(this.buttonGetSelectedColor_Click);

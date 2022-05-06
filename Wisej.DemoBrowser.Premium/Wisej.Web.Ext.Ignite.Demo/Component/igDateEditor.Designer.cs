@@ -29,20 +29,15 @@
 		private void InitializeComponent()
 		{
             this.igDateEditor1 = new Wisej.Web.Ext.Ignite.igDateEditor();
-            this.comboBox1 = new Wisej.Web.ComboBox();
-            this.comboBox2 = new Wisej.Web.ComboBox();
-            this.button1 = new Wisej.Web.Button();
-            this.comboBox3 = new Wisej.Web.ComboBox();
-            this.checkBox1 = new Wisej.Web.CheckBox();
-            this.panel.SuspendLayout();
+            this.comboBoxButtonType = new Wisej.Web.ComboBox();
+            this.comboBoxSelectionOnFocus = new Wisej.Web.ComboBox();
+            this.buttonGetSelectedDate = new Wisej.Web.Button();
+            this.comboBoxDataMode = new Wisej.Web.ComboBox();
+            this.checkBoxRevertIfNotValid = new Wisej.Web.CheckBox();
             this.groupBox1.SuspendLayout();
+            this.panel.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // panel
-            // 
-            this.panel.Controls.Add(this.igDateEditor1);
-            this.panel.TabIndex = 7;
             // 
             // groupBox1
             // 
@@ -53,13 +48,10 @@
             this.buttonUpdate.TabIndex = 5;
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
-            // flowLayoutPanel1
+            // panel
             // 
-            this.flowLayoutPanel1.Controls.Add(this.checkBox1);
-            this.flowLayoutPanel1.Controls.Add(this.comboBox1);
-            this.flowLayoutPanel1.Controls.Add(this.comboBox2);
-            this.flowLayoutPanel1.Controls.Add(this.comboBox3);
-            this.flowLayoutPanel1.Controls.Add(this.button1);
+            this.panel.Controls.Add(this.igDateEditor1);
+            this.panel.TabIndex = 7;
             // 
             // linkDemo
             // 
@@ -76,6 +68,14 @@
             this.linkDocs.TabIndex = 4;
             this.linkDocs.Text = "http://www.igniteui.com/help/igeditors-landingpage";
             // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Controls.Add(this.checkBoxRevertIfNotValid);
+            this.flowLayoutPanel1.Controls.Add(this.comboBoxButtonType);
+            this.flowLayoutPanel1.Controls.Add(this.comboBoxSelectionOnFocus);
+            this.flowLayoutPanel1.Controls.Add(this.comboBoxDataMode);
+            this.flowLayoutPanel1.Controls.Add(this.buttonGetSelectedDate);
+            // 
             // igDateEditor1
             // 
             this.igDateEditor1.Anchor = Wisej.Web.AnchorStyles.None;
@@ -86,88 +86,90 @@
             this.igDateEditor1.TabIndex = 0;
             this.igDateEditor1.Text = "igDateEditor1";
             // 
-            // comboBox1
+            // comboBoxButtonType
             // 
-            this.comboBox1.DropDownStyle = Wisej.Web.ComboBoxStyle.DropDownList;
-            this.flowLayoutPanel1.SetFillWeight(this.comboBox1, 1);
-            this.flowLayoutPanel1.SetFlowBreak(this.comboBox1, true);
-            this.comboBox1.Items.AddRange(new object[] {
+            this.comboBoxButtonType.DropDownStyle = Wisej.Web.ComboBoxStyle.DropDownList;
+            this.flowLayoutPanel1.SetFillWeight(this.comboBoxButtonType, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.comboBoxButtonType, true);
+            this.comboBoxButtonType.Items.AddRange(new object[] {
+            "none",
             "clear",
             "spin"});
-            this.comboBox1.LabelText = "Button Type";
-            this.comboBox1.Location = new System.Drawing.Point(3, 60);
-            this.comboBox1.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(212, 57);
-            this.comboBox1.TabIndex = 1;
+            this.comboBoxButtonType.LabelText = "Button Type";
+            this.comboBoxButtonType.Location = new System.Drawing.Point(3, 60);
+            this.comboBoxButtonType.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
+            this.comboBoxButtonType.Name = "comboBoxButtonType";
+            this.comboBoxButtonType.Size = new System.Drawing.Size(212, 57);
+            this.comboBoxButtonType.TabIndex = 1;
+            this.comboBoxButtonType.Text = "none";
             // 
-            // comboBox2
+            // comboBoxSelectionOnFocus
             // 
-            this.comboBox2.DropDownStyle = Wisej.Web.ComboBoxStyle.DropDownList;
-            this.flowLayoutPanel1.SetFillWeight(this.comboBox2, 1);
-            this.flowLayoutPanel1.SetFlowBreak(this.comboBox2, true);
-            this.comboBox2.Items.AddRange(new object[] {
+            this.comboBoxSelectionOnFocus.DropDownStyle = Wisej.Web.ComboBoxStyle.DropDownList;
+            this.flowLayoutPanel1.SetFillWeight(this.comboBoxSelectionOnFocus, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.comboBoxSelectionOnFocus, true);
+            this.comboBoxSelectionOnFocus.Items.AddRange(new object[] {
             "selectAll",
             "atStart",
             "atEnd",
             "browserDefault"});
-            this.comboBox2.LabelText = "Selection on Focus";
-            this.comboBox2.Location = new System.Drawing.Point(3, 136);
-            this.comboBox2.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(212, 57);
-            this.comboBox2.TabIndex = 2;
-            this.comboBox2.Text = "selectAll";
+            this.comboBoxSelectionOnFocus.LabelText = "Selection on Focus";
+            this.comboBoxSelectionOnFocus.Location = new System.Drawing.Point(3, 136);
+            this.comboBoxSelectionOnFocus.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
+            this.comboBoxSelectionOnFocus.Name = "comboBoxSelectionOnFocus";
+            this.comboBoxSelectionOnFocus.Size = new System.Drawing.Size(212, 57);
+            this.comboBoxSelectionOnFocus.TabIndex = 2;
+            this.comboBoxSelectionOnFocus.Text = "selectAll";
             // 
-            // button1
+            // buttonGetSelectedDate
             // 
-            this.flowLayoutPanel1.SetFillWeight(this.button1, 1);
-            this.flowLayoutPanel1.SetFlowBreak(this.button1, true);
-            this.button1.Location = new System.Drawing.Point(3, 288);
-            this.button1.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(212, 40);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Get Selected Date";
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.flowLayoutPanel1.SetFillWeight(this.buttonGetSelectedDate, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.buttonGetSelectedDate, true);
+            this.buttonGetSelectedDate.Location = new System.Drawing.Point(3, 288);
+            this.buttonGetSelectedDate.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
+            this.buttonGetSelectedDate.Name = "buttonGetSelectedDate";
+            this.buttonGetSelectedDate.Size = new System.Drawing.Size(212, 40);
+            this.buttonGetSelectedDate.TabIndex = 4;
+            this.buttonGetSelectedDate.Text = "Get Selected Date";
+            this.buttonGetSelectedDate.Click += new System.EventHandler(this.buttonGetSelectedDate_Click);
             // 
-            // comboBox3
+            // comboBoxDataMode
             // 
-            this.comboBox3.DropDownStyle = Wisej.Web.ComboBoxStyle.DropDownList;
-            this.flowLayoutPanel1.SetFillWeight(this.comboBox3, 1);
-            this.flowLayoutPanel1.SetFlowBreak(this.comboBox3, true);
-            this.comboBox3.Items.AddRange(new object[] {
+            this.comboBoxDataMode.DropDownStyle = Wisej.Web.ComboBoxStyle.DropDownList;
+            this.flowLayoutPanel1.SetFillWeight(this.comboBoxDataMode, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.comboBoxDataMode, true);
+            this.comboBoxDataMode.Items.AddRange(new object[] {
             "date",
             "displayModeText",
             "editModeText"});
-            this.comboBox3.LabelText = "Data Mode";
-            this.comboBox3.Location = new System.Drawing.Point(3, 212);
-            this.comboBox3.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(212, 57);
-            this.comboBox3.TabIndex = 3;
-            this.comboBox3.Text = "date";
+            this.comboBoxDataMode.LabelText = "Data Mode";
+            this.comboBoxDataMode.Location = new System.Drawing.Point(3, 212);
+            this.comboBoxDataMode.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
+            this.comboBoxDataMode.Name = "comboBoxDataMode";
+            this.comboBoxDataMode.Size = new System.Drawing.Size(212, 57);
+            this.comboBoxDataMode.TabIndex = 3;
+            this.comboBoxDataMode.Text = "date";
             // 
-            // checkBox1
+            // checkBoxRevertIfNotValid
             // 
-            this.checkBox1.Appearance = Wisej.Web.Appearance.Switch;
-            this.checkBox1.AutoSize = false;
-            this.checkBox1.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.checkBox1.Checked = true;
-            this.flowLayoutPanel1.SetFillWeight(this.checkBox1, 1);
-            this.flowLayoutPanel1.SetFlowBreak(this.checkBox1, true);
-            this.checkBox1.Location = new System.Drawing.Point(3, 3);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(212, 38);
-            this.checkBox1.TabIndex = 0;
-            this.checkBox1.Text = "Revert if Not Valid";
+            this.checkBoxRevertIfNotValid.Appearance = Wisej.Web.Appearance.Switch;
+            this.checkBoxRevertIfNotValid.AutoSize = false;
+            this.checkBoxRevertIfNotValid.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.checkBoxRevertIfNotValid.Checked = true;
+            this.flowLayoutPanel1.SetFillWeight(this.checkBoxRevertIfNotValid, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.checkBoxRevertIfNotValid, true);
+            this.checkBoxRevertIfNotValid.Location = new System.Drawing.Point(3, 3);
+            this.checkBoxRevertIfNotValid.Name = "checkBoxRevertIfNotValid";
+            this.checkBoxRevertIfNotValid.Size = new System.Drawing.Size(212, 38);
+            this.checkBoxRevertIfNotValid.TabIndex = 0;
+            this.checkBoxRevertIfNotValid.Text = "Revert if Not Valid";
             // 
             // igDateEditor
             // 
             this.MinimumSize = new System.Drawing.Size(738, 644);
             this.Name = "igDateEditor";
-            this.panel.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
+            this.panel.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
@@ -178,10 +180,10 @@
 		#endregion
 
 		private Ignite.igDateEditor igDateEditor1;
-		private ComboBox comboBox1;
-		private ComboBox comboBox2;
-		private Button button1;
-		private ComboBox comboBox3;
-		private CheckBox checkBox1;
+		private ComboBox comboBoxButtonType;
+		private ComboBox comboBoxSelectionOnFocus;
+		private Button buttonGetSelectedDate;
+		private ComboBox comboBoxDataMode;
+		private CheckBox checkBoxRevertIfNotValid;
 	}
 }

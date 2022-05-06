@@ -79,6 +79,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(212, 57);
             this.textBox1.TabIndex = 1;
+            this.textBox1.Text = "1234567890";
             // 
             // comboBox1
             // 
@@ -97,14 +98,15 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(212, 57);
             this.comboBox1.TabIndex = 0;
-            this.comboBox1.Text = "undefined";
+            this.comboBox1.Text = "numeric";
             // 
             // igQRCodeBarcode1
             // 
             this.igQRCodeBarcode1.Anchor = Wisej.Web.AnchorStyles.None;
-            this.igQRCodeBarcode1.Data = "http://www.infragistics.com/products/jquery/";
+            this.igQRCodeBarcode1.Data = "1234567890";
             this.igQRCodeBarcode1.Location = new System.Drawing.Point(360, 108);
             this.igQRCodeBarcode1.Name = "igQRCodeBarcode1";
+            this.igQRCodeBarcode1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"data\":\"1234567890\",\"encodingMode\":\"numeric\"}")));
             this.igQRCodeBarcode1.Size = new System.Drawing.Size(368, 342);
             this.igQRCodeBarcode1.TabIndex = 0;
             // 

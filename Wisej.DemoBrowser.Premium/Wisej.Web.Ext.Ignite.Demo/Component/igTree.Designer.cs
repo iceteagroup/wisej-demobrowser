@@ -33,7 +33,7 @@
             Wisej.Web.Ext.Ignite.igBase.WidgetFunction widgetFunction2 = new Wisej.Web.Ext.Ignite.igBase.WidgetFunction();
             this.igTree2 = new Wisej.Web.Ext.Ignite.igTree();
             this.igTree1 = new Wisej.Web.Ext.Ignite.igTree();
-            this.button1 = new Wisej.Web.Button();
+            this.buttonClearSelection = new Wisej.Web.Button();
             this.checkBox1 = new Wisej.Web.CheckBox();
             this.comboBox1 = new Wisej.Web.ComboBox();
             this.groupBox1.SuspendLayout();
@@ -75,7 +75,7 @@
             // 
             this.flowLayoutPanel1.Controls.Add(this.checkBox1);
             this.flowLayoutPanel1.Controls.Add(this.comboBox1);
-            this.flowLayoutPanel1.Controls.Add(this.button1);
+            this.flowLayoutPanel1.Controls.Add(this.buttonClearSelection);
             // 
             // igTree2
             // 
@@ -105,16 +105,17 @@
             this.igTree1.WidgetFunctions = new Wisej.Web.Ext.Ignite.igBase.WidgetFunction[] {
         widgetFunction2};
             // 
-            // button1
+            // buttonClearSelection
             // 
-            this.flowLayoutPanel1.SetFillWeight(this.button1, 1);
-            this.flowLayoutPanel1.SetFlowBreak(this.button1, true);
-            this.button1.Location = new System.Drawing.Point(3, 148);
-            this.button1.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(212, 40);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Clear Selection";
+            this.flowLayoutPanel1.SetFillWeight(this.buttonClearSelection, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.buttonClearSelection, true);
+            this.buttonClearSelection.Location = new System.Drawing.Point(3, 148);
+            this.buttonClearSelection.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
+            this.buttonClearSelection.Name = "buttonClearSelection";
+            this.buttonClearSelection.Size = new System.Drawing.Size(212, 40);
+            this.buttonClearSelection.TabIndex = 2;
+            this.buttonClearSelection.Text = "Clear Selection";
+            this.buttonClearSelection.Click += new System.EventHandler(this.buttonClearSelection_Click);
             // 
             // checkBox1
             // 
@@ -164,7 +165,7 @@
 
 		private Ignite.igTree igTree1;
 		private Ignite.igTree igTree2;
-		private Button button1;
+		private Button buttonClearSelection;
 		private CheckBox checkBox1;
 		private ComboBox comboBox1;
 	}

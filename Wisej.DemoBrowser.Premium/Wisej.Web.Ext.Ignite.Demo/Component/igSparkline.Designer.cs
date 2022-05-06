@@ -31,7 +31,6 @@
             this.igSparkline1 = new Wisej.Web.Ext.Ignite.igSparkline();
             this.buttonLoad = new Wisej.Web.Upload();
             this.buttonSave = new Wisej.Web.Button();
-            this.button1 = new Wisej.Web.Button();
             this.comboBox1 = new Wisej.Web.ComboBox();
             this.numericUpDown1 = new Wisej.Web.NumericUpDown();
             this.comboBox2 = new Wisej.Web.ComboBox();
@@ -75,7 +74,6 @@
             this.flowLayoutPanel1.Controls.Add(this.comboBox2);
             this.flowLayoutPanel1.Controls.Add(this.comboBox1);
             this.flowLayoutPanel1.Controls.Add(this.numericUpDown1);
-            this.flowLayoutPanel1.Controls.Add(this.button1);
             this.flowLayoutPanel1.Controls.Add(this.buttonLoad);
             this.flowLayoutPanel1.Controls.Add(this.buttonSave);
             // 
@@ -98,7 +96,7 @@
             this.buttonLoad.AllowedFileTypes = ".json";
             this.buttonLoad.HideValue = true;
             this.buttonLoad.ImageSource = "icon-file";
-            this.buttonLoad.Location = new System.Drawing.Point(3, 290);
+            this.buttonLoad.Location = new System.Drawing.Point(3, 231);
             this.buttonLoad.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.buttonLoad.Name = "buttonLoad";
             this.buttonLoad.Size = new System.Drawing.Size(42, 42);
@@ -109,27 +107,16 @@
             // 
             this.buttonSave.Display = Wisej.Web.Display.Icon;
             this.buttonSave.ImageSource = "icon-save";
-            this.buttonSave.Location = new System.Drawing.Point(51, 290);
+            this.buttonSave.Location = new System.Drawing.Point(51, 231);
             this.buttonSave.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.buttonSave.Name = "buttonSave";
             this.buttonSave.Size = new System.Drawing.Size(42, 42);
             this.buttonSave.TabIndex = 5;
             this.buttonSave.Click += new System.EventHandler(this.buttonSave_Click);
             // 
-            // button1
-            // 
-            this.flowLayoutPanel1.SetFillWeight(this.button1, 1);
-            this.flowLayoutPanel1.SetFlowBreak(this.button1, true);
-            this.button1.Location = new System.Drawing.Point(3, 231);
-            this.button1.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(212, 40);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Add Random Item";
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // comboBox1
             // 
+            this.comboBox1.DropDownStyle = Wisej.Web.ComboBoxStyle.DropDownList;
             this.flowLayoutPanel1.SetFillWeight(this.comboBox1, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.comboBox1, true);
             this.comboBox1.Items.AddRange(new object[] {
@@ -143,7 +130,6 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(212, 57);
             this.comboBox1.TabIndex = 1;
-            this.comboBox1.Text = "line";
             // 
             // numericUpDown1
             // 
@@ -215,7 +201,6 @@
 		private Button buttonSave;
 		private NumericUpDown numericUpDown1;
 		private ComboBox comboBox1;
-		private Button button1;
 		private ComboBox comboBox2;
 	}
 }

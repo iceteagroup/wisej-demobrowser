@@ -34,7 +34,6 @@
             this.igCategoryChart1 = new Wisej.Web.Ext.Ignite.igCategoryChart();
             this.buttonLoad = new Wisej.Web.Upload();
             this.buttonSave = new Wisej.Web.Button();
-            this.checkBox1 = new Wisej.Web.CheckBox();
             this.checkBox2 = new Wisej.Web.CheckBox();
             this.checkBox3 = new Wisej.Web.CheckBox();
             this.groupBox1.SuspendLayout();
@@ -73,7 +72,6 @@
             // 
             // flowLayoutPanel1
             // 
-            this.flowLayoutPanel1.Controls.Add(this.checkBox1);
             this.flowLayoutPanel1.Controls.Add(this.checkBox2);
             this.flowLayoutPanel1.Controls.Add(this.checkBox3);
             this.flowLayoutPanel1.Controls.Add(this.comboBox1);
@@ -86,7 +84,7 @@
             this.flowLayoutPanel1.SetFillWeight(this.comboBox1, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.comboBox1, true);
             this.comboBox1.LabelText = "Chart Type";
-            this.comboBox1.Location = new System.Drawing.Point(3, 191);
+            this.comboBox1.Location = new System.Drawing.Point(3, 138);
             this.comboBox1.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(212, 57);
@@ -113,7 +111,7 @@
             this.buttonLoad.AllowedFileTypes = ".json";
             this.buttonLoad.HideValue = true;
             this.buttonLoad.ImageSource = "icon-file";
-            this.buttonLoad.Location = new System.Drawing.Point(3, 267);
+            this.buttonLoad.Location = new System.Drawing.Point(3, 214);
             this.buttonLoad.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.buttonLoad.Name = "buttonLoad";
             this.buttonLoad.Size = new System.Drawing.Size(42, 42);
@@ -124,26 +122,12 @@
             // 
             this.buttonSave.Display = Wisej.Web.Display.Icon;
             this.buttonSave.ImageSource = "icon-save";
-            this.buttonSave.Location = new System.Drawing.Point(51, 267);
+            this.buttonSave.Location = new System.Drawing.Point(51, 214);
             this.buttonSave.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.buttonSave.Name = "buttonSave";
             this.buttonSave.Size = new System.Drawing.Size(42, 42);
             this.buttonSave.TabIndex = 5;
             this.buttonSave.Click += new System.EventHandler(this.buttonSave_Click);
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.Appearance = Wisej.Web.Appearance.Switch;
-            this.checkBox1.AutoSize = false;
-            this.checkBox1.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.checkBox1.Checked = true;
-            this.flowLayoutPanel1.SetFillWeight(this.checkBox1, 1);
-            this.flowLayoutPanel1.SetFlowBreak(this.checkBox1, true);
-            this.checkBox1.Location = new System.Drawing.Point(3, 3);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(212, 47);
-            this.checkBox1.TabIndex = 0;
-            this.checkBox1.Text = "Align Gridlines to Pixels";
             // 
             // checkBox2
             // 
@@ -152,7 +136,7 @@
             this.checkBox2.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.flowLayoutPanel1.SetFillWeight(this.checkBox2, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.checkBox2, true);
-            this.checkBox2.Location = new System.Drawing.Point(3, 69);
+            this.checkBox2.Location = new System.Drawing.Point(3, 16);
             this.checkBox2.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.Size = new System.Drawing.Size(212, 46);
@@ -166,7 +150,7 @@
             this.checkBox3.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.flowLayoutPanel1.SetFillWeight(this.checkBox3, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.checkBox3, true);
-            this.checkBox3.Location = new System.Drawing.Point(3, 134);
+            this.checkBox3.Location = new System.Drawing.Point(3, 81);
             this.checkBox3.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBox3.Name = "checkBox3";
             this.checkBox3.Size = new System.Drawing.Size(212, 38);
@@ -193,7 +177,6 @@
 		private ComboBox comboBox1;
 		private Upload buttonLoad;
 		private Button buttonSave;
-		private CheckBox checkBox1;
 		private CheckBox checkBox3;
 		private CheckBox checkBox2;
 	}
