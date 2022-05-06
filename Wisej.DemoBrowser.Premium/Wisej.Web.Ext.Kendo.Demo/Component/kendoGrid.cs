@@ -18,13 +18,6 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 		{
 			this.kendoGrid1.Options.editable = true;
 			this.kendoGrid1.Options.toolbar = new[] { "Save" };
-			this.kendoGrid1.Options.columns = new dynamic[]
-			{
-				"ProductName",
-				new { field = "UnitPrice", title = "Unit Price", format = "{0:c}", width = "130px" },
-				new { field = "UnitsInStock", title = "Units In Stock", width = "130px" },
-				new { field = "Discontinued", width = "130px" }
-			};
 		}
 
 		private void buttonPDF_Click(object sender, EventArgs e)
@@ -55,16 +48,8 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 			response.OutputStream.Write(bytes, 0, bytes.Length);
 		}
 
-		private void kendoGrid1_DataRead(object sender, KendoGridDataReadEventArgs e)
-		{
-			var json = File.ReadAllText(Application.MapPath("Data/Grid/ProductDetails.json"));
-			e.Response.ContentType = "application/json";
-			e.Response.Write(json);
-		}
-
 		private void buttonUpdate_Click(object sender, EventArgs e)
 		{
-			this.kendoGrid1.Options.mobile = this.checkBox2.Checked;
 			this.kendoGrid1.Options.allowCopy = this.checkBox1.Checked;
 			this.kendoGrid1.Options.navigatable = this.checkBox3.Checked;
 			this.kendoGrid1.Options.persistSelection = this.checkBox4.Checked;
@@ -80,9 +65,5 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 
 			Application.Play(MessageBoxIcon.Information);
 		}
-
-        private void kendoGrid1_DataUpdate(object sender, KendoGridDataUpdateEventArgs e)
-        {
-        }
     }
 }

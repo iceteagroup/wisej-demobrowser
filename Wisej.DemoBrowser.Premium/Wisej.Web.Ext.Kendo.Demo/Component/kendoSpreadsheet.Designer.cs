@@ -64,10 +64,10 @@
             // 
             // flowLayoutPanelProperties
             // 
-            this.flowLayoutPanelProperties.Controls.Add(this.buttonAddSheet);
             this.flowLayoutPanelProperties.Controls.Add(this.checkBox1);
             this.flowLayoutPanelProperties.Controls.Add(this.numericUpDown1);
             this.flowLayoutPanelProperties.Controls.Add(this.numericUpDown2);
+            this.flowLayoutPanelProperties.Controls.Add(this.buttonAddSheet);
             this.flowLayoutPanelProperties.Controls.Add(this.buttonExport);
             this.flowLayoutPanelProperties.Controls.Add(this.buttonPDF);
             // 
@@ -75,7 +75,7 @@
             // 
             this.buttonPDF.Display = Wisej.Web.Display.Icon;
             this.buttonPDF.ImageSource = "resource.wx/Wisej.Ext.MaterialDesign/google-drive-pdf-file.svg";
-            this.buttonPDF.Location = new System.Drawing.Point(51, 244);
+            this.buttonPDF.Location = new System.Drawing.Point(51, 265);
             this.buttonPDF.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.buttonPDF.Name = "buttonPDF";
             this.buttonPDF.Size = new System.Drawing.Size(42, 42);
@@ -86,7 +86,7 @@
             // 
             this.buttonExport.Display = Wisej.Web.Display.Icon;
             this.buttonExport.ImageSource = "resource.wx/Wisej.Ext.MaterialDesign/microsoft-excel-logo.svg";
-            this.buttonExport.Location = new System.Drawing.Point(3, 244);
+            this.buttonExport.Location = new System.Drawing.Point(3, 265);
             this.buttonExport.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.buttonExport.Name = "buttonExport";
             this.buttonExport.Size = new System.Drawing.Size(42, 42);
@@ -113,7 +113,7 @@
             this.numericUpDown1.Label.Size = 50;
             this.numericUpDown1.Label.SizeType = Wisej.Web.SizeType.Percent;
             this.numericUpDown1.LabelText = "Header Height";
-            this.numericUpDown1.Location = new System.Drawing.Point(3, 86);
+            this.numericUpDown1.Location = new System.Drawing.Point(3, 53);
             this.numericUpDown1.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.numericUpDown1.Name = "numericUpDown1";
             this.numericUpDown1.Size = new System.Drawing.Size(212, 60);
@@ -132,7 +132,7 @@
             this.numericUpDown2.Label.Size = 50;
             this.numericUpDown2.Label.SizeType = Wisej.Web.SizeType.Percent;
             this.numericUpDown2.LabelText = "Header Width";
-            this.numericUpDown2.Location = new System.Drawing.Point(3, 165);
+            this.numericUpDown2.Location = new System.Drawing.Point(3, 132);
             this.numericUpDown2.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.numericUpDown2.Name = "numericUpDown2";
             this.numericUpDown2.Size = new System.Drawing.Size(212, 60);
@@ -151,7 +151,7 @@
             this.checkBox1.Checked = true;
             this.flowLayoutPanelProperties.SetFillWeight(this.checkBox1, 1);
             this.flowLayoutPanelProperties.SetFlowBreak(this.checkBox1, true);
-            this.checkBox1.Location = new System.Drawing.Point(3, 36);
+            this.checkBox1.Location = new System.Drawing.Point(3, 3);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(212, 31);
             this.checkBox1.TabIndex = 17;
@@ -161,11 +161,12 @@
             // 
             this.buttonAddSheet.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Left) 
             | Wisej.Web.AnchorStyles.Right)));
-            this.buttonAddSheet.Location = new System.Drawing.Point(3, 3);
+            this.buttonAddSheet.Location = new System.Drawing.Point(3, 211);
+            this.buttonAddSheet.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.buttonAddSheet.Name = "buttonAddSheet";
-            this.buttonAddSheet.Size = new System.Drawing.Size(212, 27);
+            this.buttonAddSheet.Size = new System.Drawing.Size(212, 35);
             this.buttonAddSheet.TabIndex = 18;
-            this.buttonAddSheet.Text = "Add sheet";
+            this.buttonAddSheet.Text = "Add Sheet";
             this.buttonAddSheet.Click += new System.EventHandler(this.buttonAddSheet_Click);
             // 
             // kendoSpreadsheet

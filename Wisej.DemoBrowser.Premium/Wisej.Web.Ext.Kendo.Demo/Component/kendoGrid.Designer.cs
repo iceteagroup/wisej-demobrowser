@@ -28,14 +28,13 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-            Wisej.Web.Ext.Kendo.kendoBase.WidgetFunction widgetFunction1 = new Wisej.Web.Ext.Kendo.kendoBase.WidgetFunction();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(kendoGrid));
+            Wisej.Web.Ext.Kendo.kendoBase.WidgetFunction widgetFunction1 = new Wisej.Web.Ext.Kendo.kendoBase.WidgetFunction();
             this.buttonPDF = new Wisej.Web.Button();
             this.buttonExport = new Wisej.Web.Button();
             this.checkBox1 = new Wisej.Web.CheckBox();
             this.kendoGrid1 = new Wisej.Web.Ext.Kendo.kendoGrid();
             this.numericUpDown1 = new Wisej.Web.NumericUpDown();
-            this.checkBox2 = new Wisej.Web.CheckBox();
             this.checkBox3 = new Wisej.Web.CheckBox();
             this.checkBox4 = new Wisej.Web.CheckBox();
             this.panel.SuspendLayout();
@@ -67,7 +66,6 @@
             // flowLayoutPanelProperties
             // 
             this.flowLayoutPanelProperties.Controls.Add(this.checkBox1);
-            this.flowLayoutPanelProperties.Controls.Add(this.checkBox2);
             this.flowLayoutPanelProperties.Controls.Add(this.checkBox3);
             this.flowLayoutPanelProperties.Controls.Add(this.checkBox4);
             this.flowLayoutPanelProperties.Controls.Add(this.numericUpDown1);
@@ -79,7 +77,7 @@
             this.buttonPDF.Display = Wisej.Web.Display.Icon;
             this.flowLayoutPanelProperties.SetFlowBreak(this.buttonPDF, true);
             this.buttonPDF.ImageSource = "resource.wx/Wisej.Ext.MaterialDesign/google-drive-pdf-file.svg";
-            this.buttonPDF.Location = new System.Drawing.Point(51, 282);
+            this.buttonPDF.Location = new System.Drawing.Point(51, 232);
             this.buttonPDF.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.buttonPDF.Name = "buttonPDF";
             this.buttonPDF.Size = new System.Drawing.Size(42, 42);
@@ -90,7 +88,7 @@
             // 
             this.buttonExport.Display = Wisej.Web.Display.Icon;
             this.buttonExport.ImageSource = "resource.wx/Wisej.Ext.MaterialDesign/microsoft-excel-logo.svg";
-            this.buttonExport.Location = new System.Drawing.Point(3, 282);
+            this.buttonExport.Location = new System.Drawing.Point(3, 232);
             this.buttonExport.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.buttonExport.Name = "buttonExport";
             this.buttonExport.Size = new System.Drawing.Size(42, 42);
@@ -117,6 +115,7 @@
             | Wisej.Web.AnchorStyles.Right)));
             this.kendoGrid1.Location = new System.Drawing.Point(23, 23);
             this.kendoGrid1.Name = "kendoGrid1";
+            this.kendoGrid1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("kendoGrid1.Options"))));
             this.kendoGrid1.Size = new System.Drawing.Size(1041, 510);
             this.kendoGrid1.TabIndex = 0;
             this.kendoGrid1.Text = "kendoGrid1";
@@ -124,8 +123,6 @@
             widgetFunction1.Source = resources.GetString("widgetFunction1.Source");
             this.kendoGrid1.WidgetFunctions = new Wisej.Web.Ext.Kendo.kendoBase.WidgetFunction[] {
         widgetFunction1};
-            this.kendoGrid1.DataRead += new Wisej.Web.Ext.Kendo.KendoGridDataReadEventHandler(this.kendoGrid1_DataRead);
-            this.kendoGrid1.DataUpdate += new Wisej.Web.Ext.Kendo.KendoGridDataUpdateEventHandler(this.kendoGrid1_DataUpdate);
             this.kendoGrid1.WebRequest += new Wisej.Web.WebRequestHandler(this.kendoGrid1_WebRequest);
             // 
             // numericUpDown1
@@ -136,7 +133,7 @@
             this.numericUpDown1.Label.Size = 50;
             this.numericUpDown1.Label.SizeType = Wisej.Web.SizeType.Percent;
             this.numericUpDown1.LabelText = "Column Resize Handle";
-            this.numericUpDown1.Location = new System.Drawing.Point(3, 203);
+            this.numericUpDown1.Location = new System.Drawing.Point(3, 153);
             this.numericUpDown1.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.numericUpDown1.Name = "numericUpDown1";
             this.numericUpDown1.Size = new System.Drawing.Size(212, 60);
@@ -147,20 +144,6 @@
             0,
             0});
             // 
-            // checkBox2
-            // 
-            this.checkBox2.Appearance = Wisej.Web.Appearance.Switch;
-            this.checkBox2.AutoSize = false;
-            this.checkBox2.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.flowLayoutPanelProperties.SetFillWeight(this.checkBox2, 1);
-            this.flowLayoutPanelProperties.SetFlowBreak(this.checkBox2, true);
-            this.checkBox2.Location = new System.Drawing.Point(3, 53);
-            this.checkBox2.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(212, 31);
-            this.checkBox2.TabIndex = 20;
-            this.checkBox2.Text = "Mobile";
-            // 
             // checkBox3
             // 
             this.checkBox3.Appearance = Wisej.Web.Appearance.Switch;
@@ -168,7 +151,7 @@
             this.checkBox3.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.flowLayoutPanelProperties.SetFillWeight(this.checkBox3, 1);
             this.flowLayoutPanelProperties.SetFlowBreak(this.checkBox3, true);
-            this.checkBox3.Location = new System.Drawing.Point(3, 103);
+            this.checkBox3.Location = new System.Drawing.Point(3, 53);
             this.checkBox3.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBox3.Name = "checkBox3";
             this.checkBox3.Size = new System.Drawing.Size(212, 31);
@@ -182,7 +165,7 @@
             this.checkBox4.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.flowLayoutPanelProperties.SetFillWeight(this.checkBox4, 1);
             this.flowLayoutPanelProperties.SetFlowBreak(this.checkBox4, true);
-            this.checkBox4.Location = new System.Drawing.Point(3, 153);
+            this.checkBox4.Location = new System.Drawing.Point(3, 103);
             this.checkBox4.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBox4.Name = "checkBox4";
             this.checkBox4.Size = new System.Drawing.Size(212, 31);
@@ -212,6 +195,5 @@
 		private NumericUpDown numericUpDown1;
 		private CheckBox checkBox4;
 		private CheckBox checkBox3;
-		private CheckBox checkBox2;
     }
 }
