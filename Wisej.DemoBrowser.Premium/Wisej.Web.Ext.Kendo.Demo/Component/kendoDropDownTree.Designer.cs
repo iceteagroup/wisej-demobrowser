@@ -41,15 +41,9 @@
             // panel
             // 
             this.panel.Controls.Add(this.kendoDropDownTree1);
-            this.panel.Size = new System.Drawing.Size(314, 258);
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Size = new System.Drawing.Size(250, 258);
             // 
             // buttonUpdate
             // 
-            this.buttonUpdate.Location = new System.Drawing.Point(16, 190);
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
             // linkDemo
@@ -69,12 +63,11 @@
             this.flowLayoutPanelProperties.Controls.Add(this.comboBoxTagMode);
             this.flowLayoutPanelProperties.Controls.Add(this.checkBoxCheckBoxes);
             this.flowLayoutPanelProperties.Controls.Add(this.checkBoxCheckAll);
-            this.flowLayoutPanelProperties.Size = new System.Drawing.Size(218, 132);
             // 
             // kendoDropDownTree1
             // 
             this.kendoDropDownTree1.Anchor = Wisej.Web.AnchorStyles.None;
-            this.kendoDropDownTree1.Location = new System.Drawing.Point(6, 108);
+            this.kendoDropDownTree1.Location = new System.Drawing.Point(394, 259);
             this.kendoDropDownTree1.Name = "kendoDropDownTree1";
             this.kendoDropDownTree1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("kendoDropDownTree1.Options"))));
             this.kendoDropDownTree1.Size = new System.Drawing.Size(300, 40);
@@ -88,7 +81,8 @@
             this.checkBoxCheckBoxes.Appearance = Wisej.Web.Appearance.Switch;
             this.checkBoxCheckBoxes.AutoSize = false;
             this.checkBoxCheckBoxes.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.checkBoxCheckBoxes.Location = new System.Drawing.Point(3, 66);
+            this.checkBoxCheckBoxes.Location = new System.Drawing.Point(3, 79);
+            this.checkBoxCheckBoxes.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBoxCheckBoxes.Name = "checkBoxCheckBoxes";
             this.checkBoxCheckBoxes.Size = new System.Drawing.Size(212, 26);
             this.checkBoxCheckBoxes.TabIndex = 0;
@@ -103,11 +97,12 @@
             this.checkBoxCheckAll.AutoSize = false;
             this.checkBoxCheckAll.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.checkBoxCheckAll.Enabled = false;
-            this.checkBoxCheckAll.Location = new System.Drawing.Point(3, 98);
+            this.checkBoxCheckAll.Location = new System.Drawing.Point(3, 124);
+            this.checkBoxCheckAll.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBoxCheckAll.Name = "checkBoxCheckAll";
             this.checkBoxCheckAll.Size = new System.Drawing.Size(212, 26);
             this.checkBoxCheckAll.TabIndex = 1;
-            this.checkBoxCheckAll.Text = "Check all";
+            this.checkBoxCheckAll.Text = "Check All";
             // 
             // comboBoxTagMode
             // 
@@ -127,7 +122,6 @@
             // 
             this.MinimumSize = new System.Drawing.Size(723, 448);
             this.Name = "kendoDropDownTree";
-            this.Size = new System.Drawing.Size(723, 448);
             this.panel.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.flowLayoutPanelProperties.ResumeLayout(false);

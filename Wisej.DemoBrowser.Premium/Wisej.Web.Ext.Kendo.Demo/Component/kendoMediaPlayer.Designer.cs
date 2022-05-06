@@ -31,6 +31,8 @@
             this.kendoMediaPlayer1 = new Wisej.Web.Ext.Kendo.kendoMediaPlayer();
             this.numericUpDownVolume = new Wisej.Web.NumericUpDown();
             this.checkBoxMute = new Wisej.Web.CheckBox();
+            this.buttonPlay = new Wisej.Web.Button();
+            this.buttonPause = new Wisej.Web.Button();
             this.panel.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.flowLayoutPanelProperties.SuspendLayout();
@@ -61,6 +63,8 @@
             // 
             this.flowLayoutPanelProperties.Controls.Add(this.checkBoxMute);
             this.flowLayoutPanelProperties.Controls.Add(this.numericUpDownVolume);
+            this.flowLayoutPanelProperties.Controls.Add(this.buttonPlay);
+            this.flowLayoutPanelProperties.Controls.Add(this.buttonPause);
             // 
             // kendoMediaPlayer1
             // 
@@ -97,6 +101,30 @@
             this.checkBoxMute.TabIndex = 1;
             this.checkBoxMute.Text = "Mute";
             // 
+            // buttonPlay
+            // 
+            this.flowLayoutPanelProperties.SetFillWeight(this.buttonPlay, 1);
+            this.flowLayoutPanelProperties.SetFlowBreak(this.buttonPlay, true);
+            this.buttonPlay.Location = new System.Drawing.Point(3, 118);
+            this.buttonPlay.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
+            this.buttonPlay.Name = "buttonPlay";
+            this.buttonPlay.Size = new System.Drawing.Size(212, 37);
+            this.buttonPlay.TabIndex = 2;
+            this.buttonPlay.Text = "Play";
+            this.buttonPlay.Click += new System.EventHandler(this.buttonPlay_Click);
+            // 
+            // buttonPause
+            // 
+            this.flowLayoutPanelProperties.SetFillWeight(this.buttonPause, 1);
+            this.flowLayoutPanelProperties.SetFlowBreak(this.buttonPause, true);
+            this.buttonPause.Location = new System.Drawing.Point(3, 174);
+            this.buttonPause.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
+            this.buttonPause.Name = "buttonPause";
+            this.buttonPause.Size = new System.Drawing.Size(212, 37);
+            this.buttonPause.TabIndex = 3;
+            this.buttonPause.Text = "Pause";
+            this.buttonPause.Click += new System.EventHandler(this.buttonPause_Click);
+            // 
             // kendoMediaPlayer
             // 
             this.MinimumSize = new System.Drawing.Size(885, 522);
@@ -116,5 +144,7 @@
 		private Kendo.kendoMediaPlayer kendoMediaPlayer1;
         private NumericUpDown numericUpDownVolume;
         private CheckBox checkBoxMute;
+        private Button buttonPlay;
+        private Button buttonPause;
     }
 }

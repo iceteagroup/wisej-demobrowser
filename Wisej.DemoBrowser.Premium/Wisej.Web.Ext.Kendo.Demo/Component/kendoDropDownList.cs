@@ -51,7 +51,6 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 
         private void buttonUpdate_Click(object sender, EventArgs e)
         {
-			this.kendoDropDownListColor.Options.filterTitle = this.textBox1.Text;
 			this.kendoDropDownListColor.Options.ignoreCase = this.checkBoxIgnoreCase.Checked;
 			this.kendoDropDownListColor.Options.filter = this.comboBoxFilter.SelectedItem.ToString();
 
