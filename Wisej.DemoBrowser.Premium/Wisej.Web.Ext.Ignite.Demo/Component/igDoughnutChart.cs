@@ -23,7 +23,6 @@ namespace Wisej.Web.Ext.Ignite.Demo.Component
 
 		private void buttonUpdate_Click(object sender, EventArgs e)
 		{
-			this.igDoughnutChart1.Options.allowSliceExplosion = this.checkBox1.Checked;
 			this.igDoughnutChart1.Options.allowSliceSelection = this.checkBox2.Checked;
 			this.igDoughnutChart1.Options.innerExtent = this.numericUpDown2.Value;
 		

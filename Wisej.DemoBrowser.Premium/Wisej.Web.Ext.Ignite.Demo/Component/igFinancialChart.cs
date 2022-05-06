@@ -31,10 +31,9 @@ namespace Wisej.Web.Ext.Ignite.Demo.Component
 		private void buttonUpdate_Click(object sender, EventArgs e)
 		{
 			this.igFinancialChart1.Options.chartType = this.comboBox1.SelectedItem;
-			this.igFinancialChart1.Options.trendLineType = this.comboBox2.SelectedItem;
-			this.igFinancialChart1.Options.animateSeriesWhenAxisRangeChanges = this.checkBox1.Checked;
-			this.igFinancialChart1.Options.crosshairsSnapToDate = this.checkBox2.Checked;
 			this.igFinancialChart1.Options.isToolbarVisible = this.checkBox3.Checked;
+			this.igFinancialChart1.Options.trendLineType = this.comboBox2.SelectedItem;
+			this.igFinancialChart1.Options.crosshairsDisplayMode = this.comboBoxCrosshairsDisplayMode.SelectedItem;
 
 			this.igFinancialChart1.Update();
 		}
