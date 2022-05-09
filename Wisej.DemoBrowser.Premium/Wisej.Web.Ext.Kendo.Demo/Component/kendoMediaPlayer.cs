@@ -33,5 +33,15 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 
 			this.kendoMediaPlayer1.Update();
         }
+
+        private void buttonPlay_Click(object sender, EventArgs e)
+        {
+			this.kendoMediaPlayer1.Instance.play();
+        }
+
+        private void buttonPause_Click(object sender, EventArgs e)
+        {
+			this.kendoMediaPlayer1.Instance.pause();
+        }
     }
 }

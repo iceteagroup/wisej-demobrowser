@@ -77,7 +77,8 @@
             this.flowLayoutPanelProperties.Controls.Add(this.checkBox5);
             this.flowLayoutPanelProperties.Controls.Add(this.numericUpDown1);
             this.flowLayoutPanelProperties.Controls.Add(this.buttonPDF);
-            this.flowLayoutPanelProperties.Size = new System.Drawing.Size(218, 429);
+            this.flowLayoutPanelProperties.Location = new System.Drawing.Point(16, 31);
+            this.flowLayoutPanelProperties.Size = new System.Drawing.Size(218, 436);
             // 
             // checkBox1
             // 
@@ -105,7 +106,7 @@
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.Size = new System.Drawing.Size(212, 38);
             this.checkBox2.TabIndex = 6;
-            this.checkBox2.Text = "Navigatable";
+            this.checkBox2.Text = "Keyboard Navigation";
             // 
             // checkBox3
             // 
@@ -120,7 +121,7 @@
             this.checkBox3.Name = "checkBox3";
             this.checkBox3.Size = new System.Drawing.Size(212, 38);
             this.checkBox3.TabIndex = 7;
-            this.checkBox3.Text = "Snap";
+            this.checkBox3.Text = "Snap to Line";
             // 
             // checkBox4
             // 
@@ -162,16 +163,11 @@
             this.numericUpDown1.LabelText = "Row Height (px)";
             this.numericUpDown1.Location = new System.Drawing.Point(3, 288);
             this.numericUpDown1.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
-            this.numericUpDown1.Maximum = new decimal(new int[] {
-            500,
-            0,
-            0,
-            0});
             this.numericUpDown1.Name = "numericUpDown1";
             this.numericUpDown1.Size = new System.Drawing.Size(212, 60);
             this.numericUpDown1.TabIndex = 10;
             this.numericUpDown1.Value = new decimal(new int[] {
-            100,
+            35,
             0,
             0,
             0});
