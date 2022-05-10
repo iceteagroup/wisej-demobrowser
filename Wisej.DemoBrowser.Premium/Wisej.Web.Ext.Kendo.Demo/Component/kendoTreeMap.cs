@@ -8,14 +8,15 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 		public kendoTreeMap()
 		{
 			InitializeComponent();
+
+            this.Load += KendoTreeMap_Load;
 		}
 
-        protected override void OnLoad(EventArgs e)
+        private void KendoTreeMap_Load(object sender, EventArgs e)
         {
-            base.OnLoad(e);
-
             this.comboBoxType.SelectedIndex = 0;
         }
+
 
         private void buttonUpdate_Click(object sender, EventArgs e)
         {

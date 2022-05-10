@@ -36,5 +36,10 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
 		{
 			this.dxForm1.Instance.resetValues();
 		}
+
+        private void dxForm_Load(object sender, EventArgs e)
+        {
+			this.comboBox1.SelectedIndex = 0;
+		}
 	}
 }

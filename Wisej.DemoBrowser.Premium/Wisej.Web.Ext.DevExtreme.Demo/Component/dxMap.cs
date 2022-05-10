@@ -33,5 +33,10 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
 
 			this.dxMap1.Update();
 		}
+
+        private void dxMap_Load(object sender, EventArgs e)
+        {
+			this.comboBox1.SelectedIndex = 0;
+		}
 	}
 }

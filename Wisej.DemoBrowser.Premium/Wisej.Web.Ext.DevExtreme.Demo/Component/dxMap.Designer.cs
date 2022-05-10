@@ -73,6 +73,8 @@
             this.flowLayoutPanel1.Controls.Add(this.numericUpDown3);
             this.flowLayoutPanel1.Controls.Add(this.numericUpDown1);
             this.flowLayoutPanel1.Controls.Add(this.numericUpDown2);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 35);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 441);
             // 
             // dxMap1
             // 
@@ -105,7 +107,7 @@
             this.flowLayoutPanel1.SetFillWeight(this.numericUpDown2, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.numericUpDown2, true);
             this.numericUpDown2.LabelText = "Longitude";
-            this.numericUpDown2.Location = new System.Drawing.Point(3, 335);
+            this.numericUpDown2.Location = new System.Drawing.Point(3, 313);
             this.numericUpDown2.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.numericUpDown2.Maximum = new decimal(new int[] {
             180,
@@ -118,7 +120,7 @@
             0,
             -2147483648});
             this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(212, 57);
+            this.numericUpDown2.Size = new System.Drawing.Size(212, 46);
             this.numericUpDown2.TabIndex = 1;
             this.numericUpDown2.Value = new decimal(new int[] {
             -817490707,
@@ -132,7 +134,7 @@
             this.flowLayoutPanel1.SetFillWeight(this.numericUpDown1, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.numericUpDown1, true);
             this.numericUpDown1.LabelText = "Latitude";
-            this.numericUpDown1.Location = new System.Drawing.Point(3, 259);
+            this.numericUpDown1.Location = new System.Drawing.Point(3, 248);
             this.numericUpDown1.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.numericUpDown1.Maximum = new decimal(new int[] {
             90,
@@ -145,7 +147,7 @@
             0,
             -2147483648});
             this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(212, 57);
+            this.numericUpDown1.Size = new System.Drawing.Size(212, 46);
             this.numericUpDown1.TabIndex = 0;
             this.numericUpDown1.Value = new decimal(new int[] {
             965722076,
@@ -199,7 +201,7 @@
             0,
             0});
             this.numericUpDown3.Name = "numericUpDown3";
-            this.numericUpDown3.Size = new System.Drawing.Size(212, 57);
+            this.numericUpDown3.Size = new System.Drawing.Size(212, 46);
             this.numericUpDown3.TabIndex = 15;
             this.numericUpDown3.Value = new decimal(new int[] {
             400,
@@ -211,6 +213,7 @@
             // 
             this.MinimumSize = new System.Drawing.Size(959, 708);
             this.Name = "dxMap";
+            this.Load += new System.EventHandler(this.dxMap_Load);
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);

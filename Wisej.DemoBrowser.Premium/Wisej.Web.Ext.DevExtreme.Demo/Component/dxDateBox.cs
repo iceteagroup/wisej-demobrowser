@@ -23,14 +23,18 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
 
 		private void buttonUpdate_Click(object sender, EventArgs e)
 		{
-			this.dxDateBox1.Options.acceptCustomValue = this.checkBox1.Checked;
-			this.dxDateBox1.Options.activeStateEnabled = this.checkBox2.Checked;
-			this.dxDateBox1.Options.adaptivityEnabled = this.checkBox3.Checked;
-			this.dxDateBox1.Options.showAnalogClock = this.checkBox4.Checked;
 			this.dxDateBox1.Options.type = this.comboBox2.SelectedItem;
-			this.dxDateBox1.Options.stylingMode = this.comboBox1.SelectedItem;
+			this.dxDateBox1.Options.showAnalogClock = this.checkBox4.Checked;
+			this.dxDateBox1.Options.acceptCustomValue = this.checkBox1.Checked;
+			this.dxDateBox1.Options.stylingMode = this.comboBoxStylingMode.SelectedItem;
 
 			this.dxDateBox1.Update();
 		}
-	}
+
+        private void dxDateBox_Load(object sender, EventArgs e)
+        {
+			this.comboBox2.SelectedIndex = 0; 
+			this.comboBoxStylingMode.SelectedIndex = 0;
+        }
+    }
 }

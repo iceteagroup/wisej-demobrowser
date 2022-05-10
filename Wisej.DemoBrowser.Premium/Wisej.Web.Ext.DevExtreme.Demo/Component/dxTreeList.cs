@@ -23,18 +23,22 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
 
 		private void buttonUpdate_Click(object sender, EventArgs e)
 		{
-			this.dxTreeList1.Options.allowColumnReordering = this.checkBox1.Checked;
-			this.dxTreeList1.Options.allowColumnResizing = this.checkBox2.Checked;
 			this.dxTreeList1.Options.autoExpandAll = this.checkBox3.Checked;
+			this.dxTreeList1.Options.columnHidingEnabled = this.checkBox6.Checked;
+			this.dxTreeList1.Options.allowColumnReordering = this.checkBox1.Checked;
 			this.dxTreeList1.Options.columnChooser = new
 			{
 				enabled = this.checkBox5.Checked,
 				allowSearch = this.checkBox8.Checked
 			};
-			this.dxTreeList1.Options.columnHidingEnabled = this.checkBox6.Checked;
 			this.dxTreeList1.Options.expandNodesOnFiltering = this.checkBox8.Checked;
 
 			this.dxTreeList1.Update();
+		}
+
+        private void dxTreeList_Load(object sender, EventArgs e)
+        {
+			this.comboBox1.SelectedIndex = 0;
 		}
 	}
 }

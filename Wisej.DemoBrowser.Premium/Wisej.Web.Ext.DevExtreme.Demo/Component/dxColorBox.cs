@@ -32,5 +32,18 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
 
 			this.dxColorBox1.Update();
 		}
-	}
+
+        private void buttonGetValue_Click(object sender, EventArgs e)
+        {
+			AlertBox.Show($"Color selected:{this.dxColorBox1.Options.value}",
+				MessageBoxIcon.Information);
+
+			Application.Play(MessageBoxIcon.Information);
+		}
+
+        private void dxColorBox_Load(object sender, EventArgs e)
+        {
+			this.comboBox1.SelectedIndex = 0;
+        }
+    }
 }

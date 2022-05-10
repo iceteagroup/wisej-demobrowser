@@ -74,6 +74,8 @@
             this.flowLayoutPanel1.Controls.Add(this.comboBox2);
             this.flowLayoutPanel1.Controls.Add(this.buttonLoad);
             this.flowLayoutPanel1.Controls.Add(this.buttonExport);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 35);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 441);
             // 
             // dxFunnel1
             // 
@@ -198,7 +200,6 @@
             this.checkBox3.Appearance = Wisej.Web.Appearance.Switch;
             this.checkBox3.AutoSize = false;
             this.checkBox3.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.checkBox3.Checked = true;
             this.flowLayoutPanel1.SetFillWeight(this.checkBox3, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.checkBox3, true);
             this.checkBox3.Location = new System.Drawing.Point(3, 117);
@@ -212,6 +213,7 @@
             // 
             this.MinimumSize = new System.Drawing.Size(949, 691);
             this.Name = "dxFunnel";
+            this.Load += new System.EventHandler(this.dxFunnel_Load);
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);

@@ -70,8 +70,8 @@
             this.flowLayoutPanel1.Controls.Add(this.userComboBox1);
             this.flowLayoutPanel1.Controls.Add(this.comboBox1);
             this.flowLayoutPanel1.Controls.Add(this.checkedListBox1);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 31);
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 445);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 35);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 441);
             // 
             // dxFileManager1
             // 
@@ -176,6 +176,7 @@
             // 
             this.MinimumSize = new System.Drawing.Size(1202, 675);
             this.Name = "dxFileManager";
+            this.Load += new System.EventHandler(this.dxFileManager_Load);
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);

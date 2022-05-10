@@ -44,7 +44,7 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
 			this.dxRangeSelector1.Update();
 		}
 
-		private async void buttonExport_Click(object sender, EventArgs e)
+        private async void buttonExport_Click(object sender, EventArgs e)
 		{
 			var data = await this.dxRangeSelector1.Instance.svgAsync();
 
@@ -64,6 +64,11 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
 					sw.Dispose();
 				}
 			}
+		}
+
+        private void dxRangeSelector_Load(object sender, EventArgs e)
+        {
+			this.comboBox1.SelectedIndex = 0;
 		}
 	}
 }

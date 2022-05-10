@@ -18,7 +18,8 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
 			this.dxGantt1.Instance.onSelectionChanged += new WidgetEventHandler(dxGantt1_WidgetEvent);
 		}
 
-		private void dxGantt1_WidgetEvent(object sender, WidgetEventArgs e)
+
+        private void dxGantt1_WidgetEvent(object sender, WidgetEventArgs e)
 		{
 			AlertBox.Show(
 				$"<b>{e.Type}</b><br/>{JSON.Stringify(e.Data)}",
@@ -33,9 +34,17 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
 			this.dxGantt1.Options.showResources = this.checkBox2.Checked;
 			this.dxGantt1.Options.showRowLines = this.checkBox3.Checked;
 			this.dxGantt1.Options.scaleType = this.comboBox2.Text.ToLower();
-			this.dxGantt1.Options.comboBoxTaskTitlePosition = this.comboBox1.Text.ToLower();
+			this.dxGantt1.Options.taskTitlePosition = this.comboBox1.Text.ToLower();
 
 			this.dxGantt1.Update();
 		}
-	}
+
+        private void dxGantt_Load(object sender, EventArgs e)
+        {
+			this.comboBox1.SelectedIndex = 0;
+			this.comboBox2.SelectedIndex = 4;
+
+		}
+
+    }
 }

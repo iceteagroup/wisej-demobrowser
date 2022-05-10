@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="dxGallery1.Options" xml:space="preserve">
-    <value>{"dataSource":["Data/Gallery/1.jpg","Data/Gallery/2.jpg","Data/Gallery/3.jpg","Data/Gallery/4.jpg","Data/Gallery/5.jpg","Data/Gallery/6.jpg","Data/Gallery/7.jpg","Data/Gallery/8.jpg","Data/Gallery/9.jpg"],"loop":true,"slideshowDelay":2000,"showNavButtons":true,"showIndicator":true}</value>
+    <value>{"dataSource":["Data/Gallery/1.jpg","Data/Gallery/2.jpg","Data/Gallery/3.jpg","Data/Gallery/4.jpg","Data/Gallery/5.jpg","Data/Gallery/6.jpg","Data/Gallery/7.jpg","Data/Gallery/8.jpg","Data/Gallery/9.jpg"],"animationEnabled":false,"stretchImages":true,"loop":true,"slideshowDelay":2000,"showNavButtons":true,"showIndicator":true}</value>
   </data>
   <metadata name="$this.RulerSnapLines" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>

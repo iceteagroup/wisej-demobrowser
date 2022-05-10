@@ -72,6 +72,8 @@
             this.flowLayoutPanel1.Controls.Add(this.numericUpDown2);
             this.flowLayoutPanel1.Controls.Add(this.comboBox1);
             this.flowLayoutPanel1.Controls.Add(this.comboBox3);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 35);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 441);
             // 
             // dxPieChart1
             // 
@@ -117,7 +119,7 @@
             0,
             0});
             this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(212, 57);
+            this.numericUpDown1.Size = new System.Drawing.Size(212, 46);
             this.numericUpDown1.TabIndex = 12;
             // 
             // numericUpDown2
@@ -131,7 +133,7 @@
             0,
             131072});
             this.numericUpDown2.LabelText = "Inner Radius";
-            this.numericUpDown2.Location = new System.Drawing.Point(3, 136);
+            this.numericUpDown2.Location = new System.Drawing.Point(3, 125);
             this.numericUpDown2.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.numericUpDown2.Maximum = new decimal(new int[] {
             1,
@@ -139,7 +141,7 @@
             0,
             0});
             this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(212, 57);
+            this.numericUpDown2.Size = new System.Drawing.Size(212, 46);
             this.numericUpDown2.TabIndex = 13;
             this.numericUpDown2.Value = new decimal(new int[] {
             5,
@@ -172,7 +174,7 @@
             this.comboBox1.Label.Size = 50;
             this.comboBox1.Label.SizeType = Wisej.Web.SizeType.Percent;
             this.comboBox1.LabelText = "Palette";
-            this.comboBox1.Location = new System.Drawing.Point(3, 212);
+            this.comboBox1.Location = new System.Drawing.Point(3, 190);
             this.comboBox1.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(212, 60);
@@ -191,7 +193,7 @@
             this.comboBox3.Label.Size = 50;
             this.comboBox3.Label.SizeType = Wisej.Web.SizeType.Percent;
             this.comboBox3.LabelText = "Segments Direction";
-            this.comboBox3.Location = new System.Drawing.Point(3, 291);
+            this.comboBox3.Location = new System.Drawing.Point(3, 269);
             this.comboBox3.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(212, 60);
@@ -203,6 +205,7 @@
             this.AutoScroll = true;
             this.MinimumSize = new System.Drawing.Size(940, 672);
             this.Name = "dxPieChart";
+            this.Load += new System.EventHandler(this.dxPieChart_Load);
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);

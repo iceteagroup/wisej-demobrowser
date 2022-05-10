@@ -32,7 +32,6 @@
             this.checkBox1 = new Wisej.Web.CheckBox();
             this.checkBox2 = new Wisej.Web.CheckBox();
             this.comboBox1 = new Wisej.Web.ComboBox();
-            this.buttonExport = new Wisej.Web.Button();
             this.comboBox2 = new Wisej.Web.ComboBox();
             this.checkBox3 = new Wisej.Web.CheckBox();
             this.groupBox1.SuspendLayout();
@@ -74,9 +73,8 @@
             this.flowLayoutPanel1.Controls.Add(this.checkBox3);
             this.flowLayoutPanel1.Controls.Add(this.comboBox1);
             this.flowLayoutPanel1.Controls.Add(this.comboBox2);
-            this.flowLayoutPanel1.Controls.Add(this.buttonExport);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 31);
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 445);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 35);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 441);
             // 
             // dxDiagram1
             // 
@@ -136,16 +134,6 @@
             this.comboBox1.TabIndex = 3;
             this.comboBox1.Text = "Inches";
             // 
-            // buttonExport
-            // 
-            this.buttonExport.Display = Wisej.Web.Display.Icon;
-            this.buttonExport.ImageSource = "resource.wx/Wisej.Ext.MaterialDesign/google-drive-image.svg";
-            this.buttonExport.Location = new System.Drawing.Point(3, 332);
-            this.buttonExport.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
-            this.buttonExport.Name = "buttonExport";
-            this.buttonExport.Size = new System.Drawing.Size(42, 42);
-            this.buttonExport.TabIndex = 5;
-            // 
             // comboBox2
             // 
             this.comboBox2.AutoSize = false;
@@ -185,6 +173,7 @@
             // 
             this.MinimumSize = new System.Drawing.Size(1051, 696);
             this.Name = "dxDiagram";
+            this.Load += new System.EventHandler(this.dxDiagram_Load);
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
@@ -199,7 +188,6 @@
 		private CheckBox checkBox2;
 		private CheckBox checkBox1;
 		private ComboBox comboBox1;
-		private Button buttonExport;
 		private ComboBox comboBox2;
 		private CheckBox checkBox3;
 	}

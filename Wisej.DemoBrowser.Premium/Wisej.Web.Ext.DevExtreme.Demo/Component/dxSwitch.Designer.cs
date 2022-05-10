@@ -30,6 +30,7 @@
 		{
             this.dxSwitch1 = new Wisej.Web.Ext.DevExtreme.dxSwitch();
             this.checkBoxIsValid = new Wisej.Web.CheckBox();
+            this.checkBoxValue = new Wisej.Web.CheckBox();
             this.groupBox1.SuspendLayout();
             this.panel.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
@@ -59,6 +60,7 @@
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.Controls.Add(this.checkBoxIsValid);
+            this.flowLayoutPanel1.Controls.Add(this.checkBoxValue);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 35);
             this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 441);
             // 
@@ -85,6 +87,20 @@
             this.checkBoxIsValid.TabIndex = 2;
             this.checkBoxIsValid.Text = "Is Valid";
             // 
+            // checkBoxValue
+            // 
+            this.checkBoxValue.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Left) 
+            | Wisej.Web.AnchorStyles.Right)));
+            this.checkBoxValue.Appearance = Wisej.Web.Appearance.Switch;
+            this.checkBoxValue.AutoSize = false;
+            this.checkBoxValue.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.checkBoxValue.Location = new System.Drawing.Point(3, 61);
+            this.checkBoxValue.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
+            this.checkBoxValue.Name = "checkBoxValue";
+            this.checkBoxValue.Size = new System.Drawing.Size(212, 26);
+            this.checkBoxValue.TabIndex = 3;
+            this.checkBoxValue.Text = "Value";
+            // 
             // dxSwitch
             // 
             this.MinimumSize = new System.Drawing.Size(815, 403);
@@ -101,5 +117,6 @@
 
 		private DevExtreme.dxSwitch dxSwitch1;
         private CheckBox checkBoxIsValid;
+        private CheckBox checkBoxValue;
     }
 }

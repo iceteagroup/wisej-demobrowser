@@ -32,12 +32,19 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
 			if(this.checkBox1.Checked)
 				this.dxList1.Options.searchMode = this.comboBox1.SelectedItem;
 			
-			this.dxList1.Options.repaintChangesOnly = this.checkBox4.Checked;
 			this.dxList1.Options.selectionMode = this.comboBox2.SelectedItem;
 			this.dxList1.Options.itemDeleteMode = this.comboBox3.SelectedItem;
 			this.dxList1.Options.showSelectionControls = this.checkBox5.Checked;
 
 			this.dxList1.Update();
+		}
+
+        private void dxList_Load(object sender, EventArgs e)
+        {
+			this.comboBox1.SelectedIndex = 0;
+			this.comboBox2.SelectedIndex = 0;
+			this.comboBox3.SelectedIndex = 0;
+
 		}
 	}
 }

@@ -69,6 +69,8 @@
             this.flowLayoutPanel1.Controls.Add(this.textBox1);
             this.flowLayoutPanel1.Controls.Add(this.numericUpDown1);
             this.flowLayoutPanel1.Controls.Add(this.numericUpDown2);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 35);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 441);
             // 
             // dxLinearGauge1
             // 
@@ -84,7 +86,7 @@
             this.flowLayoutPanel1.SetFillWeight(this.numericUpDown1, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.numericUpDown1, true);
             this.numericUpDown1.LabelText = "Animation Duration";
-            this.numericUpDown1.Location = new System.Drawing.Point(3, 136);
+            this.numericUpDown1.Location = new System.Drawing.Point(3, 125);
             this.numericUpDown1.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.numericUpDown1.Maximum = new decimal(new int[] {
             10000,
@@ -92,7 +94,7 @@
             0,
             0});
             this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(212, 57);
+            this.numericUpDown1.Size = new System.Drawing.Size(212, 46);
             this.numericUpDown1.TabIndex = 1;
             this.numericUpDown1.Value = new decimal(new int[] {
             1000,
@@ -119,10 +121,10 @@
             this.flowLayoutPanel1.SetFillWeight(this.numericUpDown2, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.numericUpDown2, true);
             this.numericUpDown2.LabelText = "Value";
-            this.numericUpDown2.Location = new System.Drawing.Point(3, 212);
+            this.numericUpDown2.Location = new System.Drawing.Point(3, 190);
             this.numericUpDown2.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(212, 57);
+            this.numericUpDown2.Size = new System.Drawing.Size(212, 46);
             this.numericUpDown2.TabIndex = 14;
             // 
             // textBox1
@@ -134,7 +136,7 @@
             this.textBox1.Location = new System.Drawing.Point(3, 60);
             this.textBox1.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(212, 57);
+            this.textBox1.Size = new System.Drawing.Size(212, 46);
             this.textBox1.TabIndex = 15;
             this.textBox1.Text = "#8FBC8F";
             // 

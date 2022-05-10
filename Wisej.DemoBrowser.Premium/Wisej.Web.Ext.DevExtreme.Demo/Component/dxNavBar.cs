@@ -92,9 +92,27 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
 		{
 			this.dxNavBar1.Options.hoverStateEnabled = this.checkBox1.Checked;
 			this.dxNavBar1.Options.selectionMode = this.comboBox1.SelectedItem;
-			this.dxNavBar1.Options.selectedIndex = this.numericUpDown1.Value;
 
 			this.dxNavBar1.Update();
+		}
+
+        private void buttonChangeSelectedIndex_Click(object sender, EventArgs e)
+        {
+			int currentIndex = this.dxNavBar1.Options.selectedIndex == null ? 0 : this.dxNavBar1.Options.selectedIndex;
+
+			if (currentIndex >= 2)
+				currentIndex = 0;
+			else
+				currentIndex++;
+			
+			this.dxNavBar1.Options.selectedIndex = Convert.ToInt32(currentIndex);
+			this.dxNavBar1.Update();
+
+		}
+
+        private void dxNavBar_Load(object sender, EventArgs e)
+        {
+			this.comboBox1.SelectedIndex = 0;
 		}
 	}
 }

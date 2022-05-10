@@ -8,11 +8,17 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 		public kendoDropDownTree()
 		{
 			InitializeComponent();
+            this.Load += KendoDropDownTree_Load;
 
 			this.kendoDropDownTree1.Instance.onSelect += new WidgetEventHandler(kendoDropDownTree1_WidgetEvent);
 		}
 
-		private void kendoDropDownTree1_WidgetEvent(object sender, WidgetEventArgs e)
+        private void KendoDropDownTree_Load(object sender, EventArgs e)
+        {
+			this.comboBoxTagMode.SelectedIndex = 0;
+        }
+
+        private void kendoDropDownTree1_WidgetEvent(object sender, WidgetEventArgs e)
 		{
 			AlertBox.Show(
 					$"<b>{e.Type}</b><br/>{JSON.Stringify(e.Data)}",
@@ -20,13 +26,6 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 
 			Application.Play(MessageBoxIcon.Information);
 		}
-
-        protected override void OnLoad(EventArgs e)
-        {
-            base.OnLoad(e);
-
-			this.comboBoxTagMode.SelectedIndex = 0;
-        }
 
         private void buttonUpdate_Click(object sender, EventArgs e)
         {

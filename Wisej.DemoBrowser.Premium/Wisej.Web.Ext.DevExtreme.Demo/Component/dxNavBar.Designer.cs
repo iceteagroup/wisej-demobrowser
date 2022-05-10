@@ -36,7 +36,7 @@
             this.pictureBox1 = new Wisej.Web.PictureBox();
             this.checkBox1 = new Wisej.Web.CheckBox();
             this.comboBox1 = new Wisej.Web.ComboBox();
-            this.numericUpDown1 = new Wisej.Web.NumericUpDown();
+            this.buttonChangeSelectedIndex = new Wisej.Web.Button();
             this.groupBox1.SuspendLayout();
             this.panel.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
@@ -44,7 +44,6 @@
             this.dataRepeater1.ItemTemplate.SuspendLayout();
             this.dataRepeater1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
             // 
             // linkDocs
@@ -73,15 +72,17 @@
             // 
             this.flowLayoutPanel1.Controls.Add(this.checkBox1);
             this.flowLayoutPanel1.Controls.Add(this.comboBox1);
-            this.flowLayoutPanel1.Controls.Add(this.numericUpDown1);
+            this.flowLayoutPanel1.Controls.Add(this.buttonChangeSelectedIndex);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 35);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 441);
             // 
             // dxNavBar1
             // 
             this.dxNavBar1.Dock = Wisej.Web.DockStyle.Bottom;
             this.dxNavBar1.Location = new System.Drawing.Point(8, 486);
             this.dxNavBar1.Name = "dxNavBar1";
-            this.dxNavBar1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"selectedIndex\":0,\"dataSource\":[{\"text\":\"Contacts\",\"icon\":\"user\"},{\"text\":\"Misse" +
-        "d\",\"icon\":\"clock\",\"badge\":3},{\"text\":\"Favorites\",\"icon\":\"favorites\"}]}")));
+            this.dxNavBar1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"dataSource\":[{\"text\":\"Contacts\",\"icon\":\"user\"},{\"text\":\"Missed\",\"icon\":\"clock\"," +
+        "\"badge\":3},{\"text\":\"Favorites\",\"icon\":\"favorites\"}]}")));
             this.dxNavBar1.Size = new System.Drawing.Size(1073, 64);
             this.dxNavBar1.TabIndex = 2;
             this.dxNavBar1.WidgetFunctions = new Wisej.Web.Ext.DevExtreme.dxBase.WidgetFunction[0];
@@ -110,7 +111,7 @@
             this.linkLabelEmail.AutoSize = true;
             this.linkLabelEmail.Location = new System.Drawing.Point(105, 75);
             this.linkLabelEmail.Name = "linkLabelEmail";
-            this.linkLabelEmail.Size = new System.Drawing.Size(45, 22);
+            this.linkLabelEmail.Size = new System.Drawing.Size(45, 19);
             this.linkLabelEmail.TabIndex = 3;
             this.linkLabelEmail.Text = "Email";
             // 
@@ -119,7 +120,7 @@
             this.labelCategory.AutoSize = true;
             this.labelCategory.Location = new System.Drawing.Point(105, 43);
             this.labelCategory.Name = "labelCategory";
-            this.labelCategory.Size = new System.Drawing.Size(73, 22);
+            this.labelCategory.Size = new System.Drawing.Size(70, 19);
             this.labelCategory.TabIndex = 2;
             this.labelCategory.Text = "Outgoing";
             // 
@@ -129,7 +130,7 @@
             this.labelName.Font = new System.Drawing.Font("default", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.labelName.Location = new System.Drawing.Point(105, 8);
             this.labelName.Name = "labelName";
-            this.labelName.Size = new System.Drawing.Size(90, 28);
+            this.labelName.Size = new System.Drawing.Size(90, 23);
             this.labelName.TabIndex = 1;
             this.labelName.Text = "John Doe";
             // 
@@ -173,36 +174,31 @@
             this.comboBox1.TabIndex = 16;
             this.comboBox1.Text = "single";
             // 
-            // numericUpDown1
+            // buttonChangeSelectedIndex
             // 
-            this.flowLayoutPanel1.SetFillWeight(this.numericUpDown1, 1);
-            this.flowLayoutPanel1.SetFlowBreak(this.numericUpDown1, true);
-            this.numericUpDown1.LabelText = "Selected Index";
-            this.numericUpDown1.Location = new System.Drawing.Point(3, 139);
-            this.numericUpDown1.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
-            this.numericUpDown1.Maximum = new decimal(new int[] {
-            2,
-            0,
-            0,
-            0});
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(212, 57);
-            this.numericUpDown1.TabIndex = 17;
+            this.buttonChangeSelectedIndex.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Left) 
+            | Wisej.Web.AnchorStyles.Right)));
+            this.buttonChangeSelectedIndex.Location = new System.Drawing.Point(3, 139);
+            this.buttonChangeSelectedIndex.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
+            this.buttonChangeSelectedIndex.Name = "buttonChangeSelectedIndex";
+            this.buttonChangeSelectedIndex.Size = new System.Drawing.Size(212, 42);
+            this.buttonChangeSelectedIndex.TabIndex = 18;
+            this.buttonChangeSelectedIndex.Text = "Change selected index";
+            this.buttonChangeSelectedIndex.Click += new System.EventHandler(this.buttonChangeSelectedIndex_Click);
             // 
             // dxNavBar
             // 
             this.MinimumSize = new System.Drawing.Size(873, 549);
             this.Name = "dxNavBar";
+            this.Load += new System.EventHandler(this.dxNavBar_Load);
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
-            this.flowLayoutPanel1.PerformLayout();
             this.dataRepeater1.ItemTemplate.ResumeLayout(false);
             this.dataRepeater1.ItemTemplate.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataRepeater1)).EndInit();
             this.dataRepeater1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -217,7 +213,7 @@
 		private Label labelName;
 		private PictureBox pictureBox1;
 		private CheckBox checkBox1;
-		private NumericUpDown numericUpDown1;
 		private ComboBox comboBox1;
-	}
+        private Button buttonChangeSelectedIndex;
+    }
 }

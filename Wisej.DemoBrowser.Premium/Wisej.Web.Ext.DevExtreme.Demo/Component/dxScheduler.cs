@@ -23,24 +23,22 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
 			Application.Play(MessageBoxIcon.Information);
 		}
 
-        protected override void OnLoad(EventArgs e)
-        {
-            base.OnLoad(e);
-
-			this.comboBoxCurrentView.SelectedIndex = 2;
-        }
-
         private void buttonUpdate_Click(object sender, EventArgs e)
         {
-			this.dxScheduler1.Options.editing.allowAdding = this.comboBoxCurrentView.Text;
-			this.dxScheduler1.Options.editing.allowDragging = this.comboBoxCurrentView.Text;
-			this.dxScheduler1.Options.editing.allowResizing = this.comboBoxCurrentView.Text;
-			this.dxScheduler1.Options.editing.allowUpdating = this.comboBoxCurrentView.Text;
-			this.dxScheduler1.Options.editing.allowDeleting = this.comboBoxCurrentView.Text;
-			this.dxScheduler1.Options.editing.allowTimeZoneEditing = this.comboBoxCurrentView.Text;
-			this.dxScheduler1.Options.currentView = this.comboBoxCurrentView.SelectedItem.ToString();
+			this.dxScheduler1.Options.currentView = this.comboBoxCurrentView.SelectedItem;
+			this.dxScheduler1.Options.editing.allowAdding = this.checkBoxAllowAdding.Checked;
+			this.dxScheduler1.Options.editing.allowUpdating = this.checkBoxAllowUpdating.Text;
+			this.dxScheduler1.Options.editing.allowDragging = this.checkBoxAllowDragging.Checked;
+			this.dxScheduler1.Options.editing.allowResizing = this.checkBoxAllowResizing.Checked;
+			this.dxScheduler1.Options.editing.allowDeleting = this.checkBoxAllowDeleting.Checked;
+			this.dxScheduler1.Options.editing.allowTimeZoneEditing = this.checkBoxAllowTimeZoneEditing.Checked;
 
 			this.dxScheduler1.Update();
         }
-    }
+
+        private void dxScheduler_Load(object sender, EventArgs e)
+        {
+			this.comboBoxCurrentView.SelectedIndex = 2;
+		}
+	}
 }

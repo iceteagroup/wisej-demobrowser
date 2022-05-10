@@ -23,6 +23,7 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
 
         private void buttonUpdate_Click(object sender, EventArgs e)
         {
+			this.dxSwitch1.Options.value = this.checkBoxValue.Checked;
 			this.dxSwitch1.Options.isValid = this.checkBoxIsValid.Checked;
 
 			this.dxSwitch1.Update();

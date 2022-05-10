@@ -70,6 +70,8 @@
             this.flowLayoutPanel1.Controls.Add(this.checkBox7);
             this.flowLayoutPanel1.Controls.Add(this.comboBox1);
             this.flowLayoutPanel1.Controls.Add(this.comboBox2);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 35);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 441);
             // 
             // dxTreeView1
             // 
@@ -184,6 +186,7 @@
             this.AutoScroll = true;
             this.MinimumSize = new System.Drawing.Size(877, 661);
             this.Name = "dxTreeView";
+            this.Load += new System.EventHandler(this.dxTreeView_Load);
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);

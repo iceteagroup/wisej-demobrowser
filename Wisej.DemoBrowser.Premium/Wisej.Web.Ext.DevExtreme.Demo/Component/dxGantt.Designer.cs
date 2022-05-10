@@ -33,7 +33,6 @@
             this.comboBox1 = new Wisej.Web.ComboBox();
             this.comboBox2 = new Wisej.Web.ComboBox();
             this.buttonLoad = new Wisej.Web.Upload();
-            this.buttonExport = new Wisej.Web.Button();
             this.checkBox1 = new Wisej.Web.CheckBox();
             this.checkBox2 = new Wisej.Web.CheckBox();
             this.checkBox3 = new Wisej.Web.CheckBox();
@@ -71,7 +70,8 @@
             this.flowLayoutPanel1.Controls.Add(this.comboBox1);
             this.flowLayoutPanel1.Controls.Add(this.comboBox2);
             this.flowLayoutPanel1.Controls.Add(this.buttonLoad);
-            this.flowLayoutPanel1.Controls.Add(this.buttonExport);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 35);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 441);
             // 
             // dxGantt1
             // 
@@ -139,16 +139,6 @@
             this.buttonLoad.Size = new System.Drawing.Size(42, 42);
             this.buttonLoad.TabIndex = 21;
             // 
-            // buttonExport
-            // 
-            this.buttonExport.Display = Wisej.Web.Display.Icon;
-            this.buttonExport.ImageSource = "resource.wx/Wisej.Ext.MaterialDesign/google-drive-image.svg";
-            this.buttonExport.Location = new System.Drawing.Point(51, 332);
-            this.buttonExport.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
-            this.buttonExport.Name = "buttonExport";
-            this.buttonExport.Size = new System.Drawing.Size(42, 42);
-            this.buttonExport.TabIndex = 20;
-            // 
             // checkBox1
             // 
             this.checkBox1.Appearance = Wisej.Web.Appearance.Switch;
@@ -197,6 +187,7 @@
             // 
             this.MinimumSize = new System.Drawing.Size(1302, 694);
             this.Name = "dxGantt";
+            this.Load += new System.EventHandler(this.dxGantt_Load);
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
@@ -211,7 +202,6 @@
         private ComboBox comboBox2;
         private ComboBox comboBox1;
 		private Upload buttonLoad;
-		private Button buttonExport;
 		private CheckBox checkBox1;
 		private CheckBox checkBox3;
 		private CheckBox checkBox2;

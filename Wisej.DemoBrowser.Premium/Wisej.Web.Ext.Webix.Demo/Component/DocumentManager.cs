@@ -6,20 +6,14 @@ namespace Wisej.Web.Ext.Webix.Demo.Component
     public partial class DocumentManager : ViewBase
     {
         private void DocumentManager_Load(object sender, EventArgs e)
-        {
+        {            
+            this.comboBoxMode.SelectedIndex = 0;
             this.documentManager1.Options.url = "https://docs.webix.com/docmanager-backend/";
         }
 
         public DocumentManager()
         {
             InitializeComponent();
-        }
-
-        protected override void OnLoad(EventArgs e)
-        {
-            base.OnLoad(e);
-
-            this.comboBoxMode.SelectedIndex = 0;
         }
 
         private async void buttonUpdate_Click(object sender, EventArgs e)

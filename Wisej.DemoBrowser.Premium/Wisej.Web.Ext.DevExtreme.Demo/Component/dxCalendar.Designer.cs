@@ -185,7 +185,8 @@
             this.dxCalendar1.BorderStyle = Wisej.Web.BorderStyle.Solid;
             this.dxCalendar1.Location = new System.Drawing.Point(345, 59);
             this.dxCalendar1.Name = "dxCalendar1";
-            this.dxCalendar1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"value\":\"2020-01-01\",\"firstDayOfWeek\":0,\"zoomLevel\":\"month\"}")));
+            this.dxCalendar1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"activeStateEnabled\":false,\"value\":\"2020-01-01\",\"firstDayOfWeek\":0,\"zoomLevel\":\"" +
+        "month\"}")));
             this.dxCalendar1.Size = new System.Drawing.Size(399, 441);
             this.dxCalendar1.TabIndex = 0;
             // 
@@ -193,6 +194,7 @@
             // 
             this.MinimumSize = new System.Drawing.Size(831, 693);
             this.Name = "dxCalendar";
+            this.Load += new System.EventHandler(this.dxCalendar_Load);
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);

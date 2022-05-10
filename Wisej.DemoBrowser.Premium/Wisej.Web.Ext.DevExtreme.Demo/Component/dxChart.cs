@@ -38,7 +38,6 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
 			this.dxChart1.Options.autoHidePointtMarkers = this.checkBox2.Checked;
 			this.dxChart1.Options.zoomAndPan = new {
 				allowMouseWheel = true,
-				allowTouchGestures = this.checkBox3.Checked,
 				dragToZoom = this.checkBox4.Checked,
 				dragBoxStyle = new {
 					color = "#ff0000",
@@ -47,6 +46,13 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
 				panKey = this.comboBox1.SelectedItem,
 				valueAxis = "both"
 			};
+			this.dxChart1.Options.commonSeriesSettings.type = this.comboBoxChartType.SelectedItem.ToString();
 		}
-	}
+
+        private void dxChart_Load(object sender, EventArgs e)
+        {
+			this.comboBox1.SelectedIndex = 0;
+			this.comboBoxChartType.SelectedIndex = 0;
+        }
+    }
 }

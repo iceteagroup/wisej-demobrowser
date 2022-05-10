@@ -101,7 +101,7 @@
             "timelineWorkWeek  ",
             "week  ",
             "workWeek "});
-            this.comboBoxCurrentView.LabelText = "Current view";
+            this.comboBoxCurrentView.LabelText = "Current View";
             this.comboBoxCurrentView.Location = new System.Drawing.Point(3, 3);
             this.comboBoxCurrentView.Name = "comboBoxCurrentView";
             this.comboBoxCurrentView.Size = new System.Drawing.Size(212, 46);
@@ -120,7 +120,7 @@
             this.checkBoxAllowAdding.Name = "checkBoxAllowAdding";
             this.checkBoxAllowAdding.Size = new System.Drawing.Size(212, 26);
             this.checkBoxAllowAdding.TabIndex = 1;
-            this.checkBoxAllowAdding.Text = "Allow adding";
+            this.checkBoxAllowAdding.Text = "Allow Adding";
             // 
             // checkBoxAllowDeleting
             // 
@@ -135,7 +135,7 @@
             this.checkBoxAllowDeleting.Name = "checkBoxAllowDeleting";
             this.checkBoxAllowDeleting.Size = new System.Drawing.Size(212, 26);
             this.checkBoxAllowDeleting.TabIndex = 2;
-            this.checkBoxAllowDeleting.Text = "Allow deleting";
+            this.checkBoxAllowDeleting.Text = "Allow Deleting";
             // 
             // checkBoxAllowDragging
             // 
@@ -150,7 +150,7 @@
             this.checkBoxAllowDragging.Name = "checkBoxAllowDragging";
             this.checkBoxAllowDragging.Size = new System.Drawing.Size(212, 26);
             this.checkBoxAllowDragging.TabIndex = 3;
-            this.checkBoxAllowDragging.Text = "Allow dragging";
+            this.checkBoxAllowDragging.Text = "Allow Dragging";
             // 
             // checkBoxAllowResizing
             // 
@@ -165,7 +165,7 @@
             this.checkBoxAllowResizing.Name = "checkBoxAllowResizing";
             this.checkBoxAllowResizing.Size = new System.Drawing.Size(212, 26);
             this.checkBoxAllowResizing.TabIndex = 4;
-            this.checkBoxAllowResizing.Text = "Allow resizing";
+            this.checkBoxAllowResizing.Text = "Allow Resizing";
             // 
             // checkBoxAllowTimeZoneEditing
             // 
@@ -180,7 +180,7 @@
             this.checkBoxAllowTimeZoneEditing.Name = "checkBoxAllowTimeZoneEditing";
             this.checkBoxAllowTimeZoneEditing.Size = new System.Drawing.Size(212, 26);
             this.checkBoxAllowTimeZoneEditing.TabIndex = 5;
-            this.checkBoxAllowTimeZoneEditing.Text = "Allow timezone editing";
+            this.checkBoxAllowTimeZoneEditing.Text = "Allow Timezone Editing";
             // 
             // checkBoxAllowUpdating
             // 
@@ -195,12 +195,13 @@
             this.checkBoxAllowUpdating.Name = "checkBoxAllowUpdating";
             this.checkBoxAllowUpdating.Size = new System.Drawing.Size(212, 26);
             this.checkBoxAllowUpdating.TabIndex = 6;
-            this.checkBoxAllowUpdating.Text = "Allow updating";
+            this.checkBoxAllowUpdating.Text = "Allow Updating";
             // 
             // dxScheduler
             // 
             this.MinimumSize = new System.Drawing.Size(1003, 615);
             this.Name = "dxScheduler";
+            this.Load += new System.EventHandler(this.dxScheduler_Load);
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);

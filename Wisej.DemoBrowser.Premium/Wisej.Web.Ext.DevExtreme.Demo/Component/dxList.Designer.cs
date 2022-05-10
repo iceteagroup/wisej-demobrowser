@@ -34,7 +34,6 @@
             this.comboBox1 = new Wisej.Web.ComboBox();
             this.checkBox2 = new Wisej.Web.CheckBox();
             this.comboBox3 = new Wisej.Web.ComboBox();
-            this.checkBox4 = new Wisej.Web.CheckBox();
             this.comboBox2 = new Wisej.Web.ComboBox();
             this.checkBox5 = new Wisej.Web.CheckBox();
             this.groupBox1.SuspendLayout();
@@ -67,7 +66,6 @@
             // 
             this.flowLayoutPanel1.Controls.Add(this.checkBox1);
             this.flowLayoutPanel1.Controls.Add(this.checkBox2);
-            this.flowLayoutPanel1.Controls.Add(this.checkBox4);
             this.flowLayoutPanel1.Controls.Add(this.checkBox5);
             this.flowLayoutPanel1.Controls.Add(this.comboBox1);
             this.flowLayoutPanel1.Controls.Add(this.comboBox3);
@@ -112,7 +110,7 @@
             this.comboBox1.Label.Size = 50;
             this.comboBox1.Label.SizeType = Wisej.Web.SizeType.Percent;
             this.comboBox1.LabelText = "Search Mode";
-            this.comboBox1.Location = new System.Drawing.Point(3, 207);
+            this.comboBox1.Location = new System.Drawing.Point(3, 156);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(212, 60);
             this.comboBox1.TabIndex = 9;
@@ -147,24 +145,11 @@
             this.comboBox3.Label.Size = 50;
             this.comboBox3.Label.SizeType = Wisej.Web.SizeType.Percent;
             this.comboBox3.LabelText = "Item Delete Mode";
-            this.comboBox3.Location = new System.Drawing.Point(3, 273);
+            this.comboBox3.Location = new System.Drawing.Point(3, 222);
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(212, 60);
             this.comboBox3.TabIndex = 11;
             this.comboBox3.Text = "static";
-            // 
-            // checkBox4
-            // 
-            this.checkBox4.Appearance = Wisej.Web.Appearance.Switch;
-            this.checkBox4.AutoSize = false;
-            this.checkBox4.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.flowLayoutPanel1.SetFillWeight(this.checkBox4, 1);
-            this.flowLayoutPanel1.SetFlowBreak(this.checkBox4, true);
-            this.checkBox4.Location = new System.Drawing.Point(3, 105);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(212, 45);
-            this.checkBox4.TabIndex = 13;
-            this.checkBox4.Text = "Repaint changes Only";
             // 
             // comboBox2
             // 
@@ -180,7 +165,7 @@
             this.comboBox2.Label.Size = 50;
             this.comboBox2.Label.SizeType = Wisej.Web.SizeType.Percent;
             this.comboBox2.LabelText = "Selection Mode";
-            this.comboBox2.Location = new System.Drawing.Point(3, 339);
+            this.comboBox2.Location = new System.Drawing.Point(3, 288);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(212, 60);
             this.comboBox2.TabIndex = 14;
@@ -194,7 +179,7 @@
             this.checkBox5.Checked = true;
             this.flowLayoutPanel1.SetFillWeight(this.checkBox5, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.checkBox5, true);
-            this.checkBox5.Location = new System.Drawing.Point(3, 156);
+            this.checkBox5.Location = new System.Drawing.Point(3, 105);
             this.checkBox5.Name = "checkBox5";
             this.checkBox5.Size = new System.Drawing.Size(212, 45);
             this.checkBox5.TabIndex = 15;
@@ -204,6 +189,7 @@
             // 
             this.MinimumSize = new System.Drawing.Size(992, 715);
             this.Name = "dxList";
+            this.Load += new System.EventHandler(this.dxList_Load);
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
@@ -219,7 +205,6 @@
 		private ComboBox comboBox1;
 		private CheckBox checkBox5;
 		private ComboBox comboBox2;
-		private CheckBox checkBox4;
 		private ComboBox comboBox3;
 		private CheckBox checkBox2;
 	}

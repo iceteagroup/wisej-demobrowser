@@ -12,8 +12,7 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
 			this.dxPieChart1.Instance.onPointClick += new WidgetEventHandler(dxPieChart1_WidgetEvent);
 			this.dxPieChart1.Instance.onLegendClick += new WidgetEventHandler(dxPieChart1_WidgetEvent);
 		}
-
-		private void dxPieChart1_WidgetEvent(object sender, WidgetEventArgs e)
+        private void dxPieChart1_WidgetEvent(object sender, WidgetEventArgs e)
 		{
 			AlertBox.Show(
 				$"<b>{e.Type}</b><br/>{JSON.Stringify(e.Data)}",
@@ -34,6 +33,13 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
 			this.dxPieChart1.Options.segmentsDirection = this.comboBox3.SelectedItem;
 
 			this.dxPieChart1.Update();
+		}
+
+        private void dxPieChart_Load(object sender, EventArgs e)
+        {
+			this.comboBox1.SelectedIndex = 0;
+			this.comboBox3.SelectedIndex = 0;
+
 		}
 	}
 }

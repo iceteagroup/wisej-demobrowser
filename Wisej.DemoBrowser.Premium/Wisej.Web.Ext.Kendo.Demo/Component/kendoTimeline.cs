@@ -8,16 +8,16 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 		public kendoTimeline()
 		{
 			InitializeComponent();
-
+            this.Load += KendoTimeline_Load;
 			this.kendoTimeline1.Instance.onChange += new WidgetEventHandler(kendoTimeline1_WidgetEvent);
 		}
 
-        protected override void OnLoad(EventArgs e)
+        private void KendoTimeline_Load(object sender, EventArgs e)
         {
-            base.OnLoad(e);
-
 			this.comboBoxOrientation.SelectedIndex = 0;
-        }
+		}
+
+	
         private void kendoTimeline1_WidgetEvent(object sender, WidgetEventArgs e)
 		{
 			AlertBox.Show(

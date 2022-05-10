@@ -37,17 +37,24 @@
             this.checkBox4 = new Wisej.Web.CheckBox();
             this.checkBox5 = new Wisej.Web.CheckBox();
             this.checkBox6 = new Wisej.Web.CheckBox();
+            this.numericUpDownMinSearchLength = new Wisej.Web.NumericUpDown();
             this.groupBox1.SuspendLayout();
             this.panel.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMinSearchLength)).BeginInit();
             this.SuspendLayout();
             // 
             // linkDocs
             // 
             this.linkDocs.Text = "https://js.devexpress.com/Documentation/Guide/Widgets/Lookup/Overview/";
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Size = new System.Drawing.Size(250, 636);
+            // 
             // buttonUpdate
             // 
+            this.buttonUpdate.Location = new System.Drawing.Point(16, 568);
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
             // linkDemo
@@ -61,6 +68,7 @@
             // panel
             // 
             this.panel.Controls.Add(this.dxLookup1);
+            this.panel.Size = new System.Drawing.Size(1203, 636);
             // 
             // flowLayoutPanel1
             // 
@@ -71,11 +79,14 @@
             this.flowLayoutPanel1.Controls.Add(this.checkBox5);
             this.flowLayoutPanel1.Controls.Add(this.checkBox6);
             this.flowLayoutPanel1.Controls.Add(this.comboBox1);
+            this.flowLayoutPanel1.Controls.Add(this.numericUpDownMinSearchLength);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 35);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 517);
             // 
             // dxLookup1
             // 
             this.dxLookup1.Anchor = Wisej.Web.AnchorStyles.None;
-            this.dxLookup1.Location = new System.Drawing.Point(369, 262);
+            this.dxLookup1.Location = new System.Drawing.Point(425, 300);
             this.dxLookup1.Name = "dxLookup1";
             this.dxLookup1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("dxLookup1.Options"))));
             this.dxLookup1.Size = new System.Drawing.Size(350, 35);
@@ -187,13 +198,28 @@
             this.checkBox6.TabIndex = 15;
             this.checkBox6.Text = "Use Native Scrolling";
             // 
+            // numericUpDownMinSearchLength
+            // 
+            this.numericUpDownMinSearchLength.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Left) 
+            | Wisej.Web.AnchorStyles.Right)));
+            this.numericUpDownMinSearchLength.LabelText = "Min search length";
+            this.numericUpDownMinSearchLength.Location = new System.Drawing.Point(3, 424);
+            this.numericUpDownMinSearchLength.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
+            this.numericUpDownMinSearchLength.Name = "numericUpDownMinSearchLength";
+            this.numericUpDownMinSearchLength.Size = new System.Drawing.Size(212, 46);
+            this.numericUpDownMinSearchLength.TabIndex = 16;
+            // 
             // dxLookup
             // 
             this.MinimumSize = new System.Drawing.Size(773, 720);
             this.Name = "dxLookup";
+            this.Size = new System.Drawing.Size(1612, 826);
+            this.Load += new System.EventHandler(this.dxLookup_Load);
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
+            this.flowLayoutPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMinSearchLength)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -209,5 +235,6 @@
 		private CheckBox checkBox4;
 		private CheckBox checkBox3;
 		private CheckBox checkBox2;
-	}
+        private NumericUpDown numericUpDownMinSearchLength;
+    }
 }

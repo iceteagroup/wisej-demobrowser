@@ -166,6 +166,7 @@
             // 
             this.MinimumSize = new System.Drawing.Size(1037, 448);
             this.Name = "igRating";
+            this.Load += new System.EventHandler(this.igRating_Load);
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);

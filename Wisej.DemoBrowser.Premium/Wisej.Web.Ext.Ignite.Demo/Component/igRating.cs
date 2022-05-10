@@ -21,13 +21,6 @@ namespace Wisej.Web.Ext.Ignite.Demo.Component
 			Application.Play(MessageBoxIcon.Information);
 		}
 
-        protected override void OnLoad(EventArgs e)
-        {
-            base.OnLoad(e);
-
-			this.comboBoxPrecision.SelectedIndex = 0;
-        }
-
         private void buttonUpdate_Click(object sender, EventArgs e)
 		{
 			this.igRating1.Instance.value(this.numericUpDown1.Value);
@@ -35,5 +28,10 @@ namespace Wisej.Web.Ext.Ignite.Demo.Component
 			this.igRating1.Options.precision = this.comboBoxPrecision.SelectedItem.ToString();
 			this.igRating1.Update();
 		}
-	}
+
+        private void igRating_Load(object sender, EventArgs e)
+        {
+			this.comboBoxPrecision.SelectedIndex = 0;
+        }
+    }
 }

@@ -35,6 +35,7 @@
             this.checkBox3 = new Wisej.Web.CheckBox();
             this.checkBox4 = new Wisej.Web.CheckBox();
             this.checkBox5 = new Wisej.Web.CheckBox();
+            this.buttonGetValue = new Wisej.Web.Button();
             this.groupBox1.SuspendLayout();
             this.panel.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
@@ -73,6 +74,9 @@
             this.flowLayoutPanel1.Controls.Add(this.checkBox4);
             this.flowLayoutPanel1.Controls.Add(this.checkBox5);
             this.flowLayoutPanel1.Controls.Add(this.comboBox1);
+            this.flowLayoutPanel1.Controls.Add(this.buttonGetValue);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 35);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 441);
             // 
             // dxColorBox1
             // 
@@ -175,10 +179,23 @@
             this.checkBox5.TabIndex = 4;
             this.checkBox5.Text = "DropDown Button";
             // 
+            // buttonGetValue
+            // 
+            this.buttonGetValue.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Left) 
+            | Wisej.Web.AnchorStyles.Right)));
+            this.buttonGetValue.Location = new System.Drawing.Point(3, 367);
+            this.buttonGetValue.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
+            this.buttonGetValue.Name = "buttonGetValue";
+            this.buttonGetValue.Size = new System.Drawing.Size(212, 27);
+            this.buttonGetValue.TabIndex = 16;
+            this.buttonGetValue.Text = "Get value";
+            this.buttonGetValue.Click += new System.EventHandler(this.buttonGetValue_Click);
+            // 
             // dxColorBox
             // 
             this.MinimumSize = new System.Drawing.Size(782, 666);
             this.Name = "dxColorBox";
+            this.Load += new System.EventHandler(this.dxColorBox_Load);
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
@@ -196,5 +213,6 @@
 		private CheckBox checkBox4;
 		private CheckBox checkBox3;
 		private ComboBox comboBox1;
-	}
+        private Button buttonGetValue;
+    }
 }

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using Wisej.Web;
 
 namespace Wisej.Web.Ext.DevExtreme.Demo.Component
@@ -22,7 +23,8 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
 			Application.Play(MessageBoxIcon.Information);
 		}
 
-		private void buttonUpdate_Click(object sender, EventArgs e)
+       
+        private void buttonUpdate_Click(object sender, EventArgs e)
 		{
 			// Guarantees the existence of Options.itemView.
 			this.dxFileManager1.Options.itemView = new { mode = this.comboBox1.SelectedItem, showFolders = this.checkBox1.Checked };
@@ -40,6 +42,117 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
 				comboString += $"{checkedItem}, ";
 			}
 			this.userComboBox1.Text = comboString;
+		}
+
+        private void dxFileManager_Load(object sender, EventArgs e)
+        {
+			var data = new object[]
+			{
+				new
+				{
+					name = "Documents",
+					isDirectory = true,
+					items = new object[]
+					{
+						new
+						{
+							name = "Projects",
+							isDirectory = true,
+							items = new object[]
+							{
+								new
+								{
+									name = "About.rtf",
+									isDirectory = false,
+									size = 1024
+								},
+								new
+								{
+									name = "Password.rtf",
+									isDirectory = false,
+									size = 2048
+								}
+							}
+						},
+						new
+						{
+							name = "About.xml",
+							isDirectory = false,
+							size = 2048
+						},
+						new
+						{
+							name = "Manager.rtf",
+							isDirectory = false,
+							size = 2048
+						},
+						new
+						{
+							name = "Todo.txt",
+							isDirectory = false,
+							size = 2048
+						},
+						new
+						{
+							name = "Images",
+							isDirectory = true,
+							items = new object[]
+							{
+								new
+								{
+									name = "logo.png",
+									isDirectory = false,
+									size = 1024
+								},
+								new
+								{
+									name = "banner.gif",
+									isDirectory = false,
+									size = 2048
+								}
+							}
+						},
+						new
+						{
+							name = "Systems",
+							isDirectory = true,
+							items = new object[]
+							{
+								new
+								{
+									name = "Employee.txt",
+									isDirectory = false,
+									size = 1024
+								},
+								new
+								{
+									name = "PasswordList.txt",
+									isDirectory = false,
+									size = 2048
+								}
+							}
+						},
+						new
+						{
+							name = "Description.rtf",
+							isDirectory = false,
+							size = 1024
+						},
+						new
+						{
+							name = "Description.txt",
+							isDirectory = false,
+							size = 2048
+						}
+					}
+				}
+			};
+			this.dxFileManager1.Options.fileSystemProvider = data;
+
+			this.dxFileManager1.Update();
+
+			this.comboBox1.SelectedIndex = 0;
+			this.userComboBox1.SelectedIndex = 0;
 		}
 	}
 }

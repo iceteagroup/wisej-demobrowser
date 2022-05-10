@@ -65,5 +65,12 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
 
 			this.dxSankey1.Update();
 		}
+
+        private void dxSankey_Load(object sender, EventArgs e)
+        {
+			this.comboBox1.SelectedIndex = 0;
+			this.comboBox2.SelectedIndex = 0;
+
+		}
 	}
 }

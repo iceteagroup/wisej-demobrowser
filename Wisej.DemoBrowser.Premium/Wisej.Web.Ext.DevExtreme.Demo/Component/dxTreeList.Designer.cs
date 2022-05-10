@@ -31,7 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(dxTreeList));
             this.dxTreeList1 = new Wisej.Web.Ext.DevExtreme.dxTreeList();
             this.checkBox1 = new Wisej.Web.CheckBox();
-            this.checkBox2 = new Wisej.Web.CheckBox();
             this.checkBox3 = new Wisej.Web.CheckBox();
             this.checkBox5 = new Wisej.Web.CheckBox();
             this.checkBox6 = new Wisej.Web.CheckBox();
@@ -71,13 +70,14 @@
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.Controls.Add(this.checkBox1);
-            this.flowLayoutPanel1.Controls.Add(this.checkBox2);
             this.flowLayoutPanel1.Controls.Add(this.checkBox3);
             this.flowLayoutPanel1.Controls.Add(this.checkBox5);
             this.flowLayoutPanel1.Controls.Add(this.checkBox8);
             this.flowLayoutPanel1.Controls.Add(this.checkBox6);
             this.flowLayoutPanel1.Controls.Add(this.checkBox7);
             this.flowLayoutPanel1.Controls.Add(this.comboBox1);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 35);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 441);
             // 
             // dxTreeList1
             // 
@@ -103,20 +103,6 @@
             this.checkBox1.TabIndex = 13;
             this.checkBox1.Text = "Column Reordering";
             // 
-            // checkBox2
-            // 
-            this.checkBox2.Appearance = Wisej.Web.Appearance.Switch;
-            this.checkBox2.AutoSize = false;
-            this.checkBox2.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.flowLayoutPanel1.SetFillWeight(this.checkBox2, 1);
-            this.flowLayoutPanel1.SetFlowBreak(this.checkBox2, true);
-            this.checkBox2.Location = new System.Drawing.Point(3, 52);
-            this.checkBox2.Margin = new Wisej.Web.Padding(3, 8, 3, 3);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(212, 38);
-            this.checkBox2.TabIndex = 14;
-            this.checkBox2.Text = "Column Resizing";
-            // 
             // checkBox3
             // 
             this.checkBox3.Appearance = Wisej.Web.Appearance.Switch;
@@ -124,7 +110,7 @@
             this.checkBox3.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.flowLayoutPanel1.SetFillWeight(this.checkBox3, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.checkBox3, true);
-            this.checkBox3.Location = new System.Drawing.Point(3, 101);
+            this.checkBox3.Location = new System.Drawing.Point(3, 52);
             this.checkBox3.Margin = new Wisej.Web.Padding(3, 8, 3, 3);
             this.checkBox3.Name = "checkBox3";
             this.checkBox3.Size = new System.Drawing.Size(212, 38);
@@ -138,7 +124,7 @@
             this.checkBox5.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.flowLayoutPanel1.SetFillWeight(this.checkBox5, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.checkBox5, true);
-            this.checkBox5.Location = new System.Drawing.Point(3, 150);
+            this.checkBox5.Location = new System.Drawing.Point(3, 101);
             this.checkBox5.Margin = new Wisej.Web.Padding(3, 8, 3, 3);
             this.checkBox5.Name = "checkBox5";
             this.checkBox5.Size = new System.Drawing.Size(212, 38);
@@ -152,7 +138,7 @@
             this.checkBox6.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.flowLayoutPanel1.SetFillWeight(this.checkBox6, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.checkBox6, true);
-            this.checkBox6.Location = new System.Drawing.Point(3, 248);
+            this.checkBox6.Location = new System.Drawing.Point(3, 199);
             this.checkBox6.Margin = new Wisej.Web.Padding(3, 8, 3, 3);
             this.checkBox6.Name = "checkBox6";
             this.checkBox6.Size = new System.Drawing.Size(212, 38);
@@ -171,7 +157,7 @@
             this.comboBox1.Label.Size = 50;
             this.comboBox1.Label.SizeType = Wisej.Web.SizeType.Percent;
             this.comboBox1.LabelText = "Column Resizing Mode";
-            this.comboBox1.Location = new System.Drawing.Point(3, 356);
+            this.comboBox1.Location = new System.Drawing.Point(3, 307);
             this.comboBox1.Margin = new Wisej.Web.Padding(3, 8, 3, 3);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(212, 60);
@@ -186,7 +172,7 @@
             this.checkBox7.Checked = true;
             this.flowLayoutPanel1.SetFillWeight(this.checkBox7, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.checkBox7, true);
-            this.checkBox7.Location = new System.Drawing.Point(3, 297);
+            this.checkBox7.Location = new System.Drawing.Point(3, 248);
             this.checkBox7.Margin = new Wisej.Web.Padding(3, 8, 3, 3);
             this.checkBox7.Name = "checkBox7";
             this.checkBox7.Size = new System.Drawing.Size(212, 48);
@@ -200,7 +186,7 @@
             this.checkBox8.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.flowLayoutPanel1.SetFillWeight(this.checkBox8, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.checkBox8, true);
-            this.checkBox8.Location = new System.Drawing.Point(3, 199);
+            this.checkBox8.Location = new System.Drawing.Point(3, 150);
             this.checkBox8.Margin = new Wisej.Web.Padding(3, 8, 3, 3);
             this.checkBox8.Name = "checkBox8";
             this.checkBox8.Size = new System.Drawing.Size(212, 38);
@@ -212,6 +198,7 @@
             this.AutoScroll = true;
             this.MinimumSize = new System.Drawing.Size(1097, 733);
             this.Name = "dxTreeList";
+            this.Load += new System.EventHandler(this.dxTreeList_Load);
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
@@ -226,7 +213,6 @@
 		private CheckBox checkBox6;
 		private CheckBox checkBox5;
 		private CheckBox checkBox3;
-		private CheckBox checkBox2;
 		private CheckBox checkBox1;
 		private ComboBox comboBox1;
 		private CheckBox checkBox8;

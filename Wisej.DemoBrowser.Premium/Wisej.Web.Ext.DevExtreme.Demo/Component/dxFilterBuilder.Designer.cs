@@ -83,7 +83,7 @@
             this.buttonGetFilterExpression.Location = new System.Drawing.Point(3, 180);
             this.buttonGetFilterExpression.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.buttonGetFilterExpression.Name = "buttonGetFilterExpression";
-            this.buttonGetFilterExpression.Size = new System.Drawing.Size(212, 27);
+            this.buttonGetFilterExpression.Size = new System.Drawing.Size(212, 46);
             this.buttonGetFilterExpression.TabIndex = 16;
             this.buttonGetFilterExpression.Text = "Get filter expression";
             this.buttonGetFilterExpression.Click += new System.EventHandler(this.buttonGetFilterExpression_Click);

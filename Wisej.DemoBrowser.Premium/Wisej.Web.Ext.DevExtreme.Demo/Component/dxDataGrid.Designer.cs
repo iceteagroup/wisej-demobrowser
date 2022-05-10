@@ -80,6 +80,8 @@
             this.flowLayoutPanel1.Controls.Add(this.checkBox6);
             this.flowLayoutPanel1.Controls.Add(this.buttonLoad);
             this.flowLayoutPanel1.Controls.Add(this.buttonExport);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 35);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 441);
             // 
             // dxDataGrid1
             // 
@@ -195,6 +197,7 @@
             this.checkBox6.Appearance = Wisej.Web.Appearance.Switch;
             this.checkBox6.AutoSize = false;
             this.checkBox6.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.checkBox6.Checked = true;
             this.flowLayoutPanel1.SetFillWeight(this.checkBox6, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.checkBox6, true);
             this.checkBox6.Location = new System.Drawing.Point(3, 279);
@@ -202,7 +205,7 @@
             this.checkBox6.Name = "checkBox6";
             this.checkBox6.Size = new System.Drawing.Size(212, 38);
             this.checkBox6.TabIndex = 5;
-            this.checkBox6.Text = "Column Hiding";
+            this.checkBox6.Text = "Show search panel";
             // 
             // dxDataGrid
             // 

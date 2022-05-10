@@ -69,6 +69,8 @@
             this.flowLayoutPanel1.Controls.Add(this.checkBox4);
             this.flowLayoutPanel1.Controls.Add(this.comboBox1);
             this.flowLayoutPanel1.Controls.Add(this.comboBox2);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 35);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 441);
             // 
             // dxMenu1
             // 
@@ -177,6 +179,7 @@
             // 
             this.MinimumSize = new System.Drawing.Size(877, 701);
             this.Name = "dxMenu";
+            this.Load += new System.EventHandler(this.dxMenu_Load);
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);

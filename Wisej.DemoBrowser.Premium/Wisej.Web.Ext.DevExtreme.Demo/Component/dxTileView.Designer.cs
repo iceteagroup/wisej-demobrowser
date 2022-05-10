@@ -32,17 +32,17 @@
             Wisej.Web.Ext.DevExtreme.dxBase.WidgetEventHandler widgetEventHandler1 = new Wisej.Web.Ext.DevExtreme.dxBase.WidgetEventHandler();
             this.dxTileView1 = new Wisej.Web.Ext.DevExtreme.dxTileView();
             this.comboBox1 = new Wisej.Web.ComboBox();
-            this.numericUpDown2 = new Wisej.Web.NumericUpDown();
+            this.numericUpDownItemMargin = new Wisej.Web.NumericUpDown();
             this.checkBox1 = new Wisej.Web.CheckBox();
-            this.numericUpDown1 = new Wisej.Web.NumericUpDown();
-            this.numericUpDown3 = new Wisej.Web.NumericUpDown();
+            this.numericUpDownBaseItemHeight = new Wisej.Web.NumericUpDown();
+            this.numericUpDownBaseItemWidth = new Wisej.Web.NumericUpDown();
             this.button1 = new Wisej.Web.Button();
             this.groupBox1.SuspendLayout();
             this.panel.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownItemMargin)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownBaseItemHeight)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownBaseItemWidth)).BeginInit();
             this.SuspendLayout();
             // 
             // linkDocs
@@ -69,11 +69,13 @@
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.Controls.Add(this.checkBox1);
-            this.flowLayoutPanel1.Controls.Add(this.numericUpDown2);
-            this.flowLayoutPanel1.Controls.Add(this.numericUpDown1);
-            this.flowLayoutPanel1.Controls.Add(this.numericUpDown3);
+            this.flowLayoutPanel1.Controls.Add(this.numericUpDownItemMargin);
+            this.flowLayoutPanel1.Controls.Add(this.numericUpDownBaseItemHeight);
+            this.flowLayoutPanel1.Controls.Add(this.numericUpDownBaseItemWidth);
             this.flowLayoutPanel1.Controls.Add(this.comboBox1);
             this.flowLayoutPanel1.Controls.Add(this.button1);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 35);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 441);
             // 
             // dxTileView1
             // 
@@ -101,29 +103,29 @@
             this.comboBox1.Label.Size = 50;
             this.comboBox1.Label.SizeType = Wisej.Web.SizeType.Percent;
             this.comboBox1.LabelText = "Direction";
-            this.comboBox1.Location = new System.Drawing.Point(3, 288);
+            this.comboBox1.Location = new System.Drawing.Point(3, 255);
             this.comboBox1.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(212, 60);
             this.comboBox1.TabIndex = 23;
             this.comboBox1.Text = "horizontal";
             // 
-            // numericUpDown2
+            // numericUpDownItemMargin
             // 
-            this.flowLayoutPanel1.SetFillWeight(this.numericUpDown2, 1);
-            this.flowLayoutPanel1.SetFlowBreak(this.numericUpDown2, true);
-            this.numericUpDown2.LabelText = "Item Margin";
-            this.numericUpDown2.Location = new System.Drawing.Point(3, 60);
-            this.numericUpDown2.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
-            this.numericUpDown2.Maximum = new decimal(new int[] {
+            this.flowLayoutPanel1.SetFillWeight(this.numericUpDownItemMargin, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.numericUpDownItemMargin, true);
+            this.numericUpDownItemMargin.LabelText = "Item Margin";
+            this.numericUpDownItemMargin.Location = new System.Drawing.Point(3, 60);
+            this.numericUpDownItemMargin.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
+            this.numericUpDownItemMargin.Maximum = new decimal(new int[] {
             500,
             0,
             0,
             0});
-            this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(212, 57);
-            this.numericUpDown2.TabIndex = 30;
-            this.numericUpDown2.Value = new decimal(new int[] {
+            this.numericUpDownItemMargin.Name = "numericUpDownItemMargin";
+            this.numericUpDownItemMargin.Size = new System.Drawing.Size(212, 46);
+            this.numericUpDownItemMargin.TabIndex = 30;
+            this.numericUpDownItemMargin.Value = new decimal(new int[] {
             20,
             0,
             0,
@@ -142,43 +144,43 @@
             this.checkBox1.TabIndex = 31;
             this.checkBox1.Text = "Show Scrollbar";
             // 
-            // numericUpDown1
+            // numericUpDownBaseItemHeight
             // 
-            this.flowLayoutPanel1.SetFillWeight(this.numericUpDown1, 1);
-            this.flowLayoutPanel1.SetFlowBreak(this.numericUpDown1, true);
-            this.numericUpDown1.LabelText = "Base Item Height";
-            this.numericUpDown1.Location = new System.Drawing.Point(3, 136);
-            this.numericUpDown1.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
-            this.numericUpDown1.Maximum = new decimal(new int[] {
+            this.flowLayoutPanel1.SetFillWeight(this.numericUpDownBaseItemHeight, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.numericUpDownBaseItemHeight, true);
+            this.numericUpDownBaseItemHeight.LabelText = "Base Item Height";
+            this.numericUpDownBaseItemHeight.Location = new System.Drawing.Point(3, 125);
+            this.numericUpDownBaseItemHeight.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
+            this.numericUpDownBaseItemHeight.Maximum = new decimal(new int[] {
             500,
             0,
             0,
             0});
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(212, 57);
-            this.numericUpDown1.TabIndex = 32;
-            this.numericUpDown1.Value = new decimal(new int[] {
+            this.numericUpDownBaseItemHeight.Name = "numericUpDownBaseItemHeight";
+            this.numericUpDownBaseItemHeight.Size = new System.Drawing.Size(212, 46);
+            this.numericUpDownBaseItemHeight.TabIndex = 32;
+            this.numericUpDownBaseItemHeight.Value = new decimal(new int[] {
             100,
             0,
             0,
             0});
             // 
-            // numericUpDown3
+            // numericUpDownBaseItemWidth
             // 
-            this.flowLayoutPanel1.SetFillWeight(this.numericUpDown3, 1);
-            this.flowLayoutPanel1.SetFlowBreak(this.numericUpDown3, true);
-            this.numericUpDown3.LabelText = "Base Item Width";
-            this.numericUpDown3.Location = new System.Drawing.Point(3, 212);
-            this.numericUpDown3.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
-            this.numericUpDown3.Maximum = new decimal(new int[] {
+            this.flowLayoutPanel1.SetFillWeight(this.numericUpDownBaseItemWidth, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.numericUpDownBaseItemWidth, true);
+            this.numericUpDownBaseItemWidth.LabelText = "Base Item Width";
+            this.numericUpDownBaseItemWidth.Location = new System.Drawing.Point(3, 190);
+            this.numericUpDownBaseItemWidth.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
+            this.numericUpDownBaseItemWidth.Maximum = new decimal(new int[] {
             500,
             0,
             0,
             0});
-            this.numericUpDown3.Name = "numericUpDown3";
-            this.numericUpDown3.Size = new System.Drawing.Size(212, 57);
-            this.numericUpDown3.TabIndex = 33;
-            this.numericUpDown3.Value = new decimal(new int[] {
+            this.numericUpDownBaseItemWidth.Name = "numericUpDownBaseItemWidth";
+            this.numericUpDownBaseItemWidth.Size = new System.Drawing.Size(212, 46);
+            this.numericUpDownBaseItemWidth.TabIndex = 33;
+            this.numericUpDownBaseItemWidth.Value = new decimal(new int[] {
             100,
             0,
             0,
@@ -188,7 +190,7 @@
             // 
             this.flowLayoutPanel1.SetFillWeight(this.button1, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.button1, true);
-            this.button1.Location = new System.Drawing.Point(3, 367);
+            this.button1.Location = new System.Drawing.Point(3, 334);
             this.button1.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(212, 40);
@@ -200,13 +202,14 @@
             // 
             this.MinimumSize = new System.Drawing.Size(1181, 726);
             this.Name = "dxTileView";
+            this.Load += new System.EventHandler(this.dxTileView_Load);
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownItemMargin)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownBaseItemHeight)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownBaseItemWidth)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -216,10 +219,10 @@
 
 		private DevExtreme.dxTileView dxTileView1;
 		private ComboBox comboBox1;
-		private NumericUpDown numericUpDown2;
+		private NumericUpDown numericUpDownItemMargin;
 		private Button button1;
-		private NumericUpDown numericUpDown3;
-		private NumericUpDown numericUpDown1;
+		private NumericUpDown numericUpDownBaseItemWidth;
+		private NumericUpDown numericUpDownBaseItemHeight;
 		private CheckBox checkBox1;
 	}
 }

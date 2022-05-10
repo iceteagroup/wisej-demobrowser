@@ -8,8 +8,13 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 		public kendoSlider()
 		{
 			InitializeComponent();
-
+            this.Load += KendoSlider_Load;
 			this.kendoSlider1.Instance.onChange += new WidgetEventHandler(kendoSlider1_WidgetEvent);
+		}
+
+        private void KendoSlider_Load(object sender, EventArgs e)
+        {
+			this.comboBoxTickPlacement.SelectedIndex = 0;
 		}
 
 		private void kendoSlider1_WidgetEvent(object sender, WidgetEventArgs e)
@@ -21,12 +26,6 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 			Application.Play(MessageBoxIcon.Information);
 		}
 
-        protected override void OnLoad(EventArgs e)
-        {
-            base.OnLoad(e);
-
-			this.comboBoxTickPlacement.SelectedIndex = 0;
-        }
 
         private void buttonUpdate_Click(object sender, EventArgs e)
         {

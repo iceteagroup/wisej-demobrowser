@@ -68,6 +68,8 @@
             this.flowLayoutPanel1.Controls.Add(this.userComboBox1);
             this.flowLayoutPanel1.Controls.Add(this.comboBox1);
             this.flowLayoutPanel1.Controls.Add(this.checkedListBox1);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 35);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 441);
             // 
             // dxHtmlEditor1
             // 
@@ -180,6 +182,7 @@
             // 
             this.MinimumSize = new System.Drawing.Size(1144, 572);
             this.Name = "dxHtmlEditor";
+            this.Load += new System.EventHandler(this.dxHtmlEditor_Load);
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
