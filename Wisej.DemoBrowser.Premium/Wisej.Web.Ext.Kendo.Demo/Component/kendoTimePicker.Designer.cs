@@ -30,8 +30,8 @@
 		{
             this.kendoTimePicker1 = new Wisej.Web.Ext.Kendo.kendoTimePicker();
             this.comboBoxFillMode = new Wisej.Web.ComboBox();
-            this.maskedTextBoxMin = new Wisej.Web.MaskedTextBox();
-            this.maskedTextBoxMax = new Wisej.Web.MaskedTextBox();
+            this.textBoxMinimum = new Wisej.Web.TextBox();
+            this.textBoxMaximum = new Wisej.Web.TextBox();
             this.panel.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.flowLayoutPanelProperties.SuspendLayout();
@@ -60,17 +60,17 @@
             // flowLayoutPanelProperties
             // 
             this.flowLayoutPanelProperties.Controls.Add(this.comboBoxFillMode);
-            this.flowLayoutPanelProperties.Controls.Add(this.maskedTextBoxMin);
-            this.flowLayoutPanelProperties.Controls.Add(this.maskedTextBoxMax);
+            this.flowLayoutPanelProperties.Controls.Add(this.textBoxMinimum);
+            this.flowLayoutPanelProperties.Controls.Add(this.textBoxMaximum);
             // 
             // kendoTimePicker1
             // 
             this.kendoTimePicker1.Anchor = Wisej.Web.AnchorStyles.None;
             this.kendoTimePicker1.Location = new System.Drawing.Point(394, 259);
             this.kendoTimePicker1.Name = "kendoTimePicker1";
+            this.kendoTimePicker1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"value\":\"2022-05-09T16:31:03.826\"}")));
             this.kendoTimePicker1.Size = new System.Drawing.Size(300, 40);
             this.kendoTimePicker1.TabIndex = 0;
-            this.kendoTimePicker1.Text = "kendoTimePicker1";
             // 
             // comboBoxFillMode
             // 
@@ -82,38 +82,42 @@
             "solid",
             "flat",
             "outline"});
-            this.comboBoxFillMode.LabelText = "Fill mode";
+            this.comboBoxFillMode.LabelText = "Fill Mode";
             this.comboBoxFillMode.Location = new System.Drawing.Point(3, 3);
             this.comboBoxFillMode.Name = "comboBoxFillMode";
-            this.comboBoxFillMode.Size = new System.Drawing.Size(212, 57);
+            this.comboBoxFillMode.Size = new System.Drawing.Size(212, 50);
             this.comboBoxFillMode.TabIndex = 0;
+            this.comboBoxFillMode.Text = "solid";
             // 
-            // maskedTextBoxMin
+            // textBoxMinimum
             // 
-            this.maskedTextBoxMin.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Left) 
-            | Wisej.Web.AnchorStyles.Right)));
-            this.maskedTextBoxMin.LabelText = "Min";
-            this.maskedTextBoxMin.Location = new System.Drawing.Point(3, 66);
-            this.maskedTextBoxMin.Mask = "00:00";
-            this.maskedTextBoxMin.Name = "maskedTextBoxMin";
-            this.maskedTextBoxMin.Size = new System.Drawing.Size(212, 57);
-            this.maskedTextBoxMin.TabIndex = 1;
+            this.flowLayoutPanelProperties.SetFillWeight(this.textBoxMinimum, 1);
+            this.flowLayoutPanelProperties.SetFlowBreak(this.textBoxMinimum, true);
+            this.textBoxMinimum.InputType.Type = Wisej.Web.TextBoxType.Time;
+            this.textBoxMinimum.LabelText = "Minimum Time";
+            this.textBoxMinimum.Location = new System.Drawing.Point(3, 72);
+            this.textBoxMinimum.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
+            this.textBoxMinimum.Name = "textBoxMinimum";
+            this.textBoxMinimum.Size = new System.Drawing.Size(212, 50);
+            this.textBoxMinimum.TabIndex = 1;
             // 
-            // maskedTextBoxMax
+            // textBoxMaximum
             // 
-            this.maskedTextBoxMax.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Left) 
-            | Wisej.Web.AnchorStyles.Right)));
-            this.maskedTextBoxMax.LabelText = "Max";
-            this.maskedTextBoxMax.Location = new System.Drawing.Point(3, 129);
-            this.maskedTextBoxMax.Mask = "00:00";
-            this.maskedTextBoxMax.Name = "maskedTextBoxMax";
-            this.maskedTextBoxMax.Size = new System.Drawing.Size(212, 57);
-            this.maskedTextBoxMax.TabIndex = 2;
+            this.flowLayoutPanelProperties.SetFillWeight(this.textBoxMaximum, 1);
+            this.flowLayoutPanelProperties.SetFlowBreak(this.textBoxMaximum, true);
+            this.textBoxMaximum.InputType.Type = Wisej.Web.TextBoxType.Time;
+            this.textBoxMaximum.LabelText = "Maximum Time";
+            this.textBoxMaximum.Location = new System.Drawing.Point(3, 141);
+            this.textBoxMaximum.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
+            this.textBoxMaximum.Name = "textBoxMaximum";
+            this.textBoxMaximum.Size = new System.Drawing.Size(212, 50);
+            this.textBoxMaximum.TabIndex = 2;
             // 
             // kendoTimePicker
             // 
             this.MinimumSize = new System.Drawing.Size(935, 509);
             this.Name = "kendoTimePicker";
+            this.Load += new System.EventHandler(this.kendoTimePicker_Load);
             this.panel.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.flowLayoutPanelProperties.ResumeLayout(false);
@@ -127,7 +131,7 @@
 
 		private Kendo.kendoTimePicker kendoTimePicker1;
         private ComboBox comboBoxFillMode;
-        private MaskedTextBox maskedTextBoxMin;
-        private MaskedTextBox maskedTextBoxMax;
+        private TextBox textBoxMinimum;
+        private TextBox textBoxMaximum;
     }
 }

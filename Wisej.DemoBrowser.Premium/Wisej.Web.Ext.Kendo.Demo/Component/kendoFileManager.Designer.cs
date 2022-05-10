@@ -30,8 +30,8 @@
 		{
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(kendoFileManager));
             this.kendoFileManager1 = new Wisej.Web.Ext.Kendo.kendoFileManager();
-            this.checkBoxResizable = new Wisej.Web.CheckBox();
-            this.checkBoxDraggable = new Wisej.Web.CheckBox();
+            this.checkBoxContextMenu = new Wisej.Web.CheckBox();
+            this.checkBoxBreadcrumb = new Wisej.Web.CheckBox();
             this.panel.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.flowLayoutPanelProperties.SuspendLayout();
@@ -59,8 +59,8 @@
             // 
             // flowLayoutPanelProperties
             // 
-            this.flowLayoutPanelProperties.Controls.Add(this.checkBoxResizable);
-            this.flowLayoutPanelProperties.Controls.Add(this.checkBoxDraggable);
+            this.flowLayoutPanelProperties.Controls.Add(this.checkBoxContextMenu);
+            this.flowLayoutPanelProperties.Controls.Add(this.checkBoxBreadcrumb);
             // 
             // kendoFileManager1
             // 
@@ -71,43 +71,42 @@
             this.kendoFileManager1.Size = new System.Drawing.Size(1073, 542);
             this.kendoFileManager1.TabIndex = 0;
             this.kendoFileManager1.Text = "kendoFileManager1";
+            this.kendoFileManager1.WebRequest += new Wisej.Web.WebRequestHandler(this.kendoFileManager1_WebRequest);
             // 
-            // checkBoxResizable
+            // checkBoxContextMenu
             // 
-            this.checkBoxResizable.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Left) 
-            | Wisej.Web.AnchorStyles.Right)));
-            this.checkBoxResizable.Appearance = Wisej.Web.Appearance.Switch;
-            this.checkBoxResizable.AutoSize = false;
-            this.checkBoxResizable.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.checkBoxResizable.Checked = true;
-            this.checkBoxResizable.Location = new System.Drawing.Point(3, 3);
-            this.checkBoxResizable.Name = "checkBoxResizable";
-            this.checkBoxResizable.Size = new System.Drawing.Size(212, 26);
-            this.checkBoxResizable.TabIndex = 0;
-            this.checkBoxResizable.Text = "Resizable";
+            this.checkBoxContextMenu.Appearance = Wisej.Web.Appearance.Switch;
+            this.checkBoxContextMenu.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.flowLayoutPanelProperties.SetFillWeight(this.checkBoxContextMenu, 1);
+            this.flowLayoutPanelProperties.SetFlowBreak(this.checkBoxContextMenu, true);
+            this.checkBoxContextMenu.Location = new System.Drawing.Point(3, 3);
+            this.checkBoxContextMenu.Name = "checkBoxContextMenu";
+            this.checkBoxContextMenu.Size = new System.Drawing.Size(212, 24);
+            this.checkBoxContextMenu.TabIndex = 0;
+            this.checkBoxContextMenu.Text = "Context Menu";
             // 
-            // checkBoxDraggable
+            // checkBoxBreadcrumb
             // 
-            this.checkBoxDraggable.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Left) 
-            | Wisej.Web.AnchorStyles.Right)));
-            this.checkBoxDraggable.Appearance = Wisej.Web.Appearance.Switch;
-            this.checkBoxDraggable.AutoSize = false;
-            this.checkBoxDraggable.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.checkBoxDraggable.Checked = true;
-            this.checkBoxDraggable.Location = new System.Drawing.Point(3, 48);
-            this.checkBoxDraggable.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
-            this.checkBoxDraggable.Name = "checkBoxDraggable";
-            this.checkBoxDraggable.Size = new System.Drawing.Size(212, 26);
-            this.checkBoxDraggable.TabIndex = 1;
-            this.checkBoxDraggable.Text = "Draggable";
+            this.checkBoxBreadcrumb.Appearance = Wisej.Web.Appearance.Switch;
+            this.checkBoxBreadcrumb.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.flowLayoutPanelProperties.SetFillWeight(this.checkBoxBreadcrumb, 1);
+            this.flowLayoutPanelProperties.SetFlowBreak(this.checkBoxBreadcrumb, true);
+            this.checkBoxBreadcrumb.Location = new System.Drawing.Point(3, 46);
+            this.checkBoxBreadcrumb.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
+            this.checkBoxBreadcrumb.Name = "checkBoxBreadcrumb";
+            this.checkBoxBreadcrumb.Size = new System.Drawing.Size(212, 24);
+            this.checkBoxBreadcrumb.TabIndex = 1;
+            this.checkBoxBreadcrumb.Text = "Breadcrumb";
             // 
             // kendoFileManager
             // 
             this.MinimumSize = new System.Drawing.Size(1088, 473);
             this.Name = "kendoFileManager";
+            this.Load += new System.EventHandler(this.kendoFileManager_Load);
             this.panel.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.flowLayoutPanelProperties.ResumeLayout(false);
+            this.flowLayoutPanelProperties.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -116,7 +115,7 @@
 		#endregion
 
 		private Kendo.kendoFileManager kendoFileManager1;
-        private CheckBox checkBoxResizable;
-        private CheckBox checkBoxDraggable;
+        private CheckBox checkBoxContextMenu;
+        private CheckBox checkBoxBreadcrumb;
     }
 }

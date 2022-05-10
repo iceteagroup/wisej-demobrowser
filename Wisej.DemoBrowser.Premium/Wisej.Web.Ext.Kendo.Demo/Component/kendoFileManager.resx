@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="kendoFileManager1.Options" xml:space="preserve">
-    <value>{"dataSource":[{"name":"Documents","size":0,"path":"Documents","extension":"","isDirectory":true,"hasDirectories":false,"created":"/Date(1590956858294)/","createdUtc":"/Date(1590956858294)/","modified":"/Date(1590956858294)/","modifiedUtc":"/Date(1590956858294)/"},{"name":"Images","size":0,"path":"Images","extension":"","isDirectory":true,"hasDirectories":false,"created":"/Date(1590956858310)/","createdUtc":"/Date(1590956858310)/","modified":"/Date(1590956858341)/","modifiedUtc":"/Date(1590956858341)/"}],"toolbar":{"items":[{"name":"createFolder"},{"name":"upload"},{"name":"sortDirection"},{"name":"sortField"},{"name":"changeView"},{"name":"spacer"},{"name":"details"},{"name":"search"}]},"contextMenu":{"items":[{"name":"rename"},{"name":"delete"}]},"draggable":true,"resizable":true}</value>
+    <value>{"toolbar":{"items":[{"name":"sortDirection"},{"name":"sortField"},{"name":"changeView"},{"name":"spacer"},{"name":"details"},{"name":"search"}]},"contextMenu":{"items":[{"name":"rename"}]},"draggable":true,"resizable":true}</value>
   </data>
   <metadata name="$this.RulerSnapLines" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>

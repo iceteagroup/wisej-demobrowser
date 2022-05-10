@@ -34,12 +34,11 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 			{
 				case "SVG":
 				case "PNG":
-					// see wisej implementation in kendoChart.js.
 					this.kendoChart1.Call("exportImageData", format);
 					break;
 				
 				case "PDF":
-					this.kendoChart1.Instance.exportPDF();
+					this.kendoChart1.Instance.saveAsPDF();
 					break;
 			}
 		}

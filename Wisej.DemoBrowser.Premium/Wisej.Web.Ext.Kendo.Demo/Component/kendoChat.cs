@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.IO;
 using System.Threading;
 using Wisej.Web;
 
@@ -14,7 +16,7 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 			this.kendoChat1.Instance.onTypingStart += new WidgetEventHandler(kendoChat1_WidgetEvent);
 			this.kendoChat1.Instance.onActionClick += new WidgetEventHandler(kendoChat1_actionClick);
 			this.kendoChat1.Instance.onTypingEnd += new WidgetEventHandler(kendoChat1_WidgetEvent);
-			this.kendoChat1.Instance.onToolClick += new WidgetEventHandler(kendoChat1_WidgetEvent);
+			this.kendoChat1.Instance.onToolClick += new WidgetEventHandler(kendoChat1_toolClick);
 			this.kendoChat1.Instance.onSendMessage += new WidgetEventHandler(kendoChat1_sendMessage);
 			this.kendoChat1.Instance.onPost += new WidgetEventHandler(kendoChat1_WidgetEvent);
 		}
@@ -60,6 +62,11 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 				Application.Update(this);
 			});
 		}
+
+        private void kendoChat1_toolClick(object sender, WidgetEventArgs e)
+        {
+			this.upload1.UploadFiles();
+        }
 
 		private void kendoChat1_actionClick(object sender, WidgetEventArgs e)
 		{
@@ -147,13 +154,6 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 			});
 		}
 
-		private async void buttonGetUser_Click(object sender, EventArgs e)
-		{
-			var data = await this.kendoChat1.Instance.getUserAsync();
-
-			AlertBox.Show(data.ToString());
-		}
-
 		private void buttonApplyColor_Click(object sender, EventArgs e)
 		{
 			if (this.colorDialog1.ShowDialog() == DialogResult.OK)
@@ -164,5 +164,63 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 		{
 			this.kendoChat1.Call("reset");
 		}
-	}
+
+        private void buttonPost_Click(object sender, EventArgs e)
+        {
+			this.kendoChat1.Instance.postMessage(this.textBoxMessage.Text);
+		}
+
+        private void upload1_Uploaded(object sender, UploadedEventArgs e)
+        {
+			var attachments = new List<dynamic>();
+
+			for (var i = 0; i < e.Files.Count; i++)
+            {
+				var file = e.Files[i];
+				var contentType = file.ContentType;
+
+				switch (contentType)
+                {
+					case "image/png":
+					case "image/jpg":
+					case "image/jpeg":
+						using (var ms = new MemoryStream())
+                        {
+							file.InputStream.CopyTo(ms);
+							ms.Position = 0;
+
+							var base64 = Convert.ToBase64String(ms.ToArray());
+
+							attachments.Add(new
+							{
+								contentType = "heroCard",
+								content = new
+								{
+									images = new[]
+									{
+										new {
+											alt = file.FileName,
+											url = $"data:{contentType};base64,{base64}",
+										}
+									},
+									title = file.FileName,
+									subtitle = $"{file.ContentLength} bytes"
+								}
+							});
+                        }
+						break;
+
+					default:
+						AlertBox.Show($"Unsupported file {file.FileName}");
+						break;
+                }
+            }
+
+			this.kendoChat1.Instance.renderAttachments(new
+			{
+				attachments = attachments,
+				attachmentLayout = "carousel"
+			});
+		}
+    }
 }

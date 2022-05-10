@@ -35,26 +35,18 @@
             this.buttonApplyColor = new Wisej.Web.Button();
             this.colorDialog1 = new Wisej.Web.ColorDialog(this.components);
             this.kendoChat1 = new Wisej.Web.Ext.Kendo.kendoChat();
+            this.textBoxMessage = new Wisej.Web.TextBox();
+            this.buttonPost = new Wisej.Web.Button();
+            this.upload1 = new Wisej.Web.Upload();
             this.panel.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            this.flowLayoutPanelProperties.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel
             // 
             this.panel.Controls.Add(this.kendoChat1);
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.buttonApplyColor);
-            this.groupBox1.Controls.Add(this.buttonGetUser);
-            this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
-            this.groupBox1.Controls.SetChildIndex(this.buttonGetUser, 0);
-            this.groupBox1.Controls.SetChildIndex(this.buttonApplyColor, 0);
-            this.groupBox1.Controls.SetChildIndex(this.flowLayoutPanelProperties, 0);
-            // 
-            // buttonUpdate
-            // 
-            this.buttonUpdate.Location = new System.Drawing.Point(16, 472);
+            this.panel.Controls.Add(this.upload1);
             // 
             // linkDemo
             // 
@@ -68,20 +60,32 @@
             // 
             this.linkDocs.Text = "https://docs.telerik.com/kendo-ui/controls/conversational-ui/chat/overview";
             // 
+            // flowLayoutPanelProperties
+            // 
+            this.flowLayoutPanelProperties.Controls.Add(this.textBoxMessage);
+            this.flowLayoutPanelProperties.Controls.Add(this.buttonPost);
+            this.flowLayoutPanelProperties.Controls.Add(this.buttonApplyColor);
+            this.flowLayoutPanelProperties.Controls.Add(this.buttonGetUser);
+            // 
             // buttonGetUser
             // 
-            this.buttonGetUser.Location = new System.Drawing.Point(28, 166);
+            this.flowLayoutPanelProperties.SetFillWeight(this.buttonGetUser, 1);
+            this.flowLayoutPanelProperties.SetFlowBreak(this.buttonGetUser, true);
+            this.buttonGetUser.Location = new System.Drawing.Point(3, 174);
+            this.buttonGetUser.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.buttonGetUser.Name = "buttonGetUser";
-            this.buttonGetUser.Size = new System.Drawing.Size(195, 27);
+            this.buttonGetUser.Size = new System.Drawing.Size(212, 35);
             this.buttonGetUser.TabIndex = 1;
             this.buttonGetUser.Text = "Get User";
-            this.buttonGetUser.Click += new System.EventHandler(this.buttonGetUser_Click);
             // 
             // buttonApplyColor
             // 
-            this.buttonApplyColor.Location = new System.Drawing.Point(28, 122);
+            this.flowLayoutPanelProperties.SetFillWeight(this.buttonApplyColor, 1);
+            this.flowLayoutPanelProperties.SetFlowBreak(this.buttonApplyColor, true);
+            this.buttonApplyColor.Location = new System.Drawing.Point(3, 120);
+            this.buttonApplyColor.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.buttonApplyColor.Name = "buttonApplyColor";
-            this.buttonApplyColor.Size = new System.Drawing.Size(195, 27);
+            this.buttonApplyColor.Size = new System.Drawing.Size(212, 35);
             this.buttonApplyColor.TabIndex = 2;
             this.buttonApplyColor.Text = "Change Text Color";
             this.buttonApplyColor.Click += new System.EventHandler(this.buttonApplyColor_Click);
@@ -103,6 +107,40 @@
             this.kendoChat1.WidgetFunctions = new Wisej.Web.Ext.Kendo.kendoBase.WidgetFunction[] {
         widgetFunction1};
             // 
+            // textBoxMessage
+            // 
+            this.flowLayoutPanelProperties.SetFillWeight(this.textBoxMessage, 1);
+            this.flowLayoutPanelProperties.SetFlowBreak(this.textBoxMessage, true);
+            this.textBoxMessage.LabelText = "Post a Message";
+            this.textBoxMessage.Location = new System.Drawing.Point(3, 3);
+            this.textBoxMessage.Name = "textBoxMessage";
+            this.textBoxMessage.Size = new System.Drawing.Size(212, 57);
+            this.textBoxMessage.TabIndex = 0;
+            this.textBoxMessage.Text = "Chicago";
+            // 
+            // buttonPost
+            // 
+            this.flowLayoutPanelProperties.SetFillWeight(this.buttonPost, 1);
+            this.flowLayoutPanelProperties.SetFlowBreak(this.buttonPost, true);
+            this.buttonPost.Location = new System.Drawing.Point(3, 66);
+            this.buttonPost.Name = "buttonPost";
+            this.buttonPost.Size = new System.Drawing.Size(212, 35);
+            this.buttonPost.TabIndex = 1;
+            this.buttonPost.Text = "Post";
+            this.buttonPost.Click += new System.EventHandler(this.buttonPost_Click);
+            // 
+            // upload1
+            // 
+            this.upload1.AllowedFileTypes = "image/*";
+            this.upload1.AllowMultipleFiles = true;
+            this.upload1.Location = new System.Drawing.Point(878, 11);
+            this.upload1.Name = "upload1";
+            this.upload1.Size = new System.Drawing.Size(200, 30);
+            this.upload1.TabIndex = 16;
+            this.upload1.Text = "Hidden Upload";
+            this.upload1.Visible = false;
+            this.upload1.Uploaded += new Wisej.Web.UploadedEventHandler(this.upload1_Uploaded);
+            // 
             // kendoChat
             // 
             this.MinimumSize = new System.Drawing.Size(887, 557);
@@ -110,6 +148,8 @@
             this.Load += new System.EventHandler(this.kendoChat_Load);
             this.panel.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
+            this.flowLayoutPanelProperties.ResumeLayout(false);
+            this.flowLayoutPanelProperties.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -121,5 +161,8 @@
 		private Button buttonGetUser;
         private Button buttonApplyColor;
         private ColorDialog colorDialog1;
+        private TextBox textBoxMessage;
+        private Button buttonPost;
+        private Upload upload1;
     }
 }

@@ -12,6 +12,14 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 			this.kendoDateTimePicker1.Instance.onChange += new WidgetEventHandler(kendoDateTimePicker1_WidgetEvent);
 		}
 
+		private void kendoDateTimePicker_Load(object sender, EventArgs e)
+		{
+			this.kendoDateTimePicker1.Value = DateTime.Now;
+
+			this.dateTimePickerMin.Value = DateTime.Now.AddYears(-1);
+			this.dateTimePickerMin.Value = DateTime.Now.AddYears(1);
+		}
+
 		private async void kendoDateTimePicker1_WidgetEvent(object sender, WidgetEventArgs e)
 		{
 			var data = e.Data;
@@ -26,7 +34,7 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 			Application.Play(MessageBoxIcon.Information);
 		}
 
-		private async void buttonUpdate_Click(object sender, EventArgs e)
+		private void buttonUpdate_Click(object sender, EventArgs e)
         {
 			if(this.dateTimePickerMax.Value <= this.dateTimePickerMin.Value)
             {
@@ -34,8 +42,10 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 				Application.Play(MessageBoxIcon.Error);
 				return;
 			}
-			await this.kendoDateTimePicker1.Instance.minAsync(this.dateTimePickerMin.Value);
-			await this.kendoDateTimePicker1.Instance.maxAsync(this.dateTimePickerMax.Value);
+
+			this.kendoDateTimePicker1.Options.min = this.dateTimePickerMin.Value;
+			this.kendoDateTimePicker1.Options.max = this.dateTimePickerMax.Value;
+			this.kendoDateTimePicker1.Options.interval = this.numericUpDownInterval.Value;
 
 			this.kendoDateTimePicker1.Update();
         }
