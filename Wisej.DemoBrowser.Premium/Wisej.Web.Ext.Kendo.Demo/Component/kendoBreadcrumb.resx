@@ -117,9 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="kendoBreadcrumb1.Options" xml:space="preserve">
-    <value>{"items":[{"type":"rootitem","href":"https://demos.telerik.com/kendo-ui/","text":"All Components","showText":true,"icon":"home","showIcon":true},{"type":"item","href":"#breadcrumb","text":"Breadcrumb","showText":true},{"type":"item","href":"#index","text":"Basic Usage","showText":true}]}</value>
-  </data>
   <metadata name="$this.RulerSnapLines" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0

@@ -64,8 +64,4 @@
 		<PackageReference Include="Wisej-3-MaterialDesign" Version="3.*-*" />
 	</ItemGroup>
 
-	<ItemGroup>
-
-	</ItemGroup>
-
 </Project>

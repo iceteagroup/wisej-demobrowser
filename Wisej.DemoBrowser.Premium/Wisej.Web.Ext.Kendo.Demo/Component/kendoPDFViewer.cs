@@ -23,7 +23,8 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 
         private void buttonUpdate_Click(object sender, EventArgs e)
         {
-			this.kendoPDFViewer1.Options.scale = this.numericUpDownScale.Value;
+			this.kendoPDFViewer1.Instance.zoom(this.numericUpDownZoom.Value);
+			this.kendoPDFViewer1.Options.zoomRate = this.numericUpDownZoomRate.Value;
 
 			this.kendoPDFViewer1.Update();
         }

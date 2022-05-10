@@ -28,14 +28,13 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
             if (!string.IsNullOrEmpty(this.tagTextBoxDataSource.Text))
             {
 				var data = this.tagTextBoxDataSource.Text.Split(',');
-				IList<object> list = new List<object>();
-				data.ToList().ForEach(d => list.Add(new
+				var items = data.Select(d => new
 				{
 					value = Guid.NewGuid().ToString(),
 					text = d
-				}));
+				});
 
-				await this.kendoMultiSelect1.Instance.setDataSourceAsync(list);
+				await this.kendoMultiSelect1.Instance.setDataSourceAsync(items);
 			}
 
 			this.kendoMultiSelect1.Options.autoClose = this.checkBoxAutoClose.Checked;

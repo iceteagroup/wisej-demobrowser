@@ -83,18 +83,20 @@
             this.checkBoxAutoClose.Name = "checkBoxAutoClose";
             this.checkBoxAutoClose.Size = new System.Drawing.Size(212, 26);
             this.checkBoxAutoClose.TabIndex = 0;
-            this.checkBoxAutoClose.Text = "Auto close";
+            this.checkBoxAutoClose.Text = "Auto Close";
             // 
             // tagTextBoxDataSource
             // 
             this.tagTextBoxDataSource.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Left) 
             | Wisej.Web.AnchorStyles.Right)));
-            this.tagTextBoxDataSource.LabelText = "Data source";
+            this.tagTextBoxDataSource.AutoSize = false;
+            this.tagTextBoxDataSource.LabelText = "Data Source";
             this.tagTextBoxDataSource.Location = new System.Drawing.Point(3, 42);
             this.tagTextBoxDataSource.Margin = new Wisej.Web.Padding(3, 10, 3, 3);
             this.tagTextBoxDataSource.Name = "tagTextBoxDataSource";
-            this.tagTextBoxDataSource.Size = new System.Drawing.Size(212, 55);
+            this.tagTextBoxDataSource.Size = new System.Drawing.Size(212, 175);
             this.tagTextBoxDataSource.TabIndex = 1;
+            this.tagTextBoxDataSource.Text = "Item1,Item2";
             // 
             // kendoMultiSelect
             // 
@@ -103,7 +105,6 @@
             this.panel.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.flowLayoutPanelProperties.ResumeLayout(false);
-            this.flowLayoutPanelProperties.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 

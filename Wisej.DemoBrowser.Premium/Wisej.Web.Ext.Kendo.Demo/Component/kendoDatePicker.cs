@@ -6,17 +6,21 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 {
 	public partial class kendoDatePicker : TestBase
 	{
-		private readonly string[] _possibilities;
+		private readonly string[] _possibilities = new string[7] { "mo","tu","we","th","fr","sa","su" };
+
 		public kendoDatePicker()
 		{
 			InitializeComponent();
 
-			_possibilities = new string[7]
-			{
-				"mo","tu","we","th","fr","sa","su"
-			};
-
 			this.kendoDatePicker1.Instance.onChange += new WidgetEventHandler(kendoDatePicker1_WidgetEvent);
+		}
+
+		private void kendoDatePicker_Load(object sender, EventArgs e)
+		{
+			this.kendoDatePicker1.Value = DateTime.Now;
+
+			this.dateTimePickerMin.Value = DateTime.Now.AddYears(-1);
+			this.dateTimePickerMax.Value = DateTime.Now.AddYears(1);
 		}
 
 		private async void kendoDatePicker1_WidgetEvent(object sender, WidgetEventArgs e)
@@ -40,6 +44,8 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 				.Select(c => c.Text.Substring(0, 2).ToLower()).ToArray();
 				
 			this.kendoDatePicker1.Options.disableDates = daysOfWeek;
+			this.kendoDatePicker1.Options.min = this.dateTimePickerMin.Value;
+			this.kendoDatePicker1.Options.max = this.dateTimePickerMax.Value;
 
 			this.kendoDatePicker1.Update();
 		}

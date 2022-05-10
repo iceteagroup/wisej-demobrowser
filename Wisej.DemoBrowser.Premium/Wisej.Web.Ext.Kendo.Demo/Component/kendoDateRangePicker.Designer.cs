@@ -32,6 +32,7 @@
             this.dateTimePickerMin = new Wisej.Web.DateTimePicker();
             this.dateTimePickerMax = new Wisej.Web.DateTimePicker();
             this.comboBoxDepth = new Wisej.Web.ComboBox();
+            this.checkBoxWeekNumber = new Wisej.Web.CheckBox();
             this.panel.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.flowLayoutPanelProperties.SuspendLayout();
@@ -59,6 +60,7 @@
             // 
             // flowLayoutPanelProperties
             // 
+            this.flowLayoutPanelProperties.Controls.Add(this.checkBoxWeekNumber);
             this.flowLayoutPanelProperties.Controls.Add(this.comboBoxDepth);
             this.flowLayoutPanelProperties.Controls.Add(this.dateTimePickerMin);
             this.flowLayoutPanelProperties.Controls.Add(this.dateTimePickerMax);
@@ -77,7 +79,8 @@
             this.dateTimePickerMin.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Left) 
             | Wisej.Web.AnchorStyles.Right)));
             this.dateTimePickerMin.LabelText = "Min";
-            this.dateTimePickerMin.Location = new System.Drawing.Point(3, 66);
+            this.dateTimePickerMin.Location = new System.Drawing.Point(3, 122);
+            this.dateTimePickerMin.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.dateTimePickerMin.Name = "dateTimePickerMin";
             this.dateTimePickerMin.Size = new System.Drawing.Size(212, 57);
             this.dateTimePickerMin.TabIndex = 2;
@@ -88,7 +91,8 @@
             this.dateTimePickerMax.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Left) 
             | Wisej.Web.AnchorStyles.Right)));
             this.dateTimePickerMax.LabelText = "Max";
-            this.dateTimePickerMax.Location = new System.Drawing.Point(3, 129);
+            this.dateTimePickerMax.Location = new System.Drawing.Point(3, 198);
+            this.dateTimePickerMax.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.dateTimePickerMax.Name = "dateTimePickerMax";
             this.dateTimePickerMax.Size = new System.Drawing.Size(212, 57);
             this.dateTimePickerMax.TabIndex = 3;
@@ -98,21 +102,36 @@
             // 
             this.comboBoxDepth.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Left) 
             | Wisej.Web.AnchorStyles.Right)));
+            this.comboBoxDepth.DropDownStyle = Wisej.Web.ComboBoxStyle.DropDownList;
             this.comboBoxDepth.Items.AddRange(new object[] {
             "month",
             "year",
             "decade",
             "century"});
             this.comboBoxDepth.LabelText = "Depth";
-            this.comboBoxDepth.Location = new System.Drawing.Point(3, 3);
+            this.comboBoxDepth.Location = new System.Drawing.Point(3, 46);
+            this.comboBoxDepth.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.comboBoxDepth.Name = "comboBoxDepth";
             this.comboBoxDepth.Size = new System.Drawing.Size(212, 57);
             this.comboBoxDepth.TabIndex = 4;
+            // 
+            // checkBoxWeekNumber
+            // 
+            this.checkBoxWeekNumber.Appearance = Wisej.Web.Appearance.Switch;
+            this.checkBoxWeekNumber.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.flowLayoutPanelProperties.SetFillWeight(this.checkBoxWeekNumber, 1);
+            this.flowLayoutPanelProperties.SetFlowBreak(this.checkBoxWeekNumber, true);
+            this.checkBoxWeekNumber.Location = new System.Drawing.Point(3, 3);
+            this.checkBoxWeekNumber.Name = "checkBoxWeekNumber";
+            this.checkBoxWeekNumber.Size = new System.Drawing.Size(212, 24);
+            this.checkBoxWeekNumber.TabIndex = 5;
+            this.checkBoxWeekNumber.Text = "Week Number";
             // 
             // kendoDateRangePicker
             // 
             this.MinimumSize = new System.Drawing.Size(823, 510);
             this.Name = "kendoDateRangePicker";
+            this.Load += new System.EventHandler(this.kendoDateRangePicker_Load);
             this.panel.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.flowLayoutPanelProperties.ResumeLayout(false);
@@ -128,5 +147,6 @@
         private DateTimePicker dateTimePickerMin;
         private DateTimePicker dateTimePickerMax;
         private ComboBox comboBoxDepth;
+        private CheckBox checkBoxWeekNumber;
     }
 }

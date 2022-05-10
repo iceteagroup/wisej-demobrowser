@@ -28,44 +28,45 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pdfViewer1 = new Wisej.Web.PdfViewer();
-            this.comboBoxViewerType = new Wisej.Web.ComboBox();
-            this.SuspendLayout();
-            // 
-            // pdfViewer1
-            // 
-            this.pdfViewer1.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
+			this.pdfViewer1 = new Wisej.Web.PdfViewer();
+			this.comboBoxViewerType = new Wisej.Web.ComboBox();
+			this.SuspendLayout();
+			// 
+			// pdfViewer1
+			// 
+			this.pdfViewer1.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
             | Wisej.Web.AnchorStyles.Left) 
             | Wisej.Web.AnchorStyles.Right)));
-            this.pdfViewer1.Location = new System.Drawing.Point(246, 16);
-            this.pdfViewer1.Name = "pdfViewer1";
-            this.pdfViewer1.Size = new System.Drawing.Size(1160, 442);
-            this.pdfViewer1.TabIndex = 0;
-            // 
-            // comboBoxViewerType
-            // 
-            this.comboBoxViewerType.DropDownStyle = Wisej.Web.ComboBoxStyle.DropDownList;
-            this.comboBoxViewerType.Items.AddRange(new object[] {
+			this.pdfViewer1.Location = new System.Drawing.Point(17, 91);
+			this.pdfViewer1.Name = "pdfViewer1";
+			this.pdfViewer1.Size = new System.Drawing.Size(606, 367);
+			this.pdfViewer1.TabIndex = 0;
+			// 
+			// comboBoxViewerType
+			// 
+			this.comboBoxViewerType.DropDownStyle = Wisej.Web.ComboBoxStyle.DropDownList;
+			this.comboBoxViewerType.Items.AddRange(new object[] {
             "Auto",
             "Google",
             "Mozilla"});
-            this.comboBoxViewerType.Text = "Auto";
-            this.comboBoxViewerType.LabelText = "Viewer Type";
-            this.comboBoxViewerType.Location = new System.Drawing.Point(19, 19);
-            this.comboBoxViewerType.Name = "comboBoxViewerType";
-            this.comboBoxViewerType.Size = new System.Drawing.Size(207, 53);
-            this.comboBoxViewerType.TabIndex = 1;
-            this.comboBoxViewerType.SelectedIndexChanged += new System.EventHandler(this.comboBoxViewerType_SelectedIndexChanged);
-            // 
-            // Features
-            // 
-            this.Controls.Add(this.comboBoxViewerType);
-            this.Controls.Add(this.pdfViewer1);
-            this.Name = "Features";
-            this.Padding = new Wisej.Web.Padding(16);
-            this.Load += new System.EventHandler(this.Features_Load);
-            this.ResumeLayout(false);
-            this.PerformLayout();
+			this.comboBoxViewerType.LabelText = "Viewer Type";
+			this.comboBoxViewerType.Location = new System.Drawing.Point(19, 19);
+			this.comboBoxViewerType.Name = "comboBoxViewerType";
+			this.comboBoxViewerType.Size = new System.Drawing.Size(207, 53);
+			this.comboBoxViewerType.TabIndex = 1;
+			this.comboBoxViewerType.Text = "Auto";
+			this.comboBoxViewerType.SelectedIndexChanged += new System.EventHandler(this.comboBoxViewerType_SelectedIndexChanged);
+			// 
+			// Features
+			// 
+			this.Controls.Add(this.comboBoxViewerType);
+			this.Controls.Add(this.pdfViewer1);
+			this.Name = "Features";
+			this.Padding = new Wisej.Web.Padding(16);
+			this.Size = new System.Drawing.Size(641, 474);
+			this.Load += new System.EventHandler(this.Features_Load);
+			this.ResumeLayout(false);
+			this.PerformLayout();
 
         }
 

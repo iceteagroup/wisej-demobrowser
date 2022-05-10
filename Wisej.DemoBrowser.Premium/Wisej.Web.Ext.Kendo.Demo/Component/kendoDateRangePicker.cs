@@ -12,6 +12,12 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 			this.kendoDateRangePicker1.Instance.onChange += new WidgetEventHandler(kendoDateRangePicker1_WidgetEvent);
 		}
 
+		private void kendoDateRangePicker_Load(object sender, EventArgs e)
+		{
+			this.dateTimePickerMin.Value = DateTime.Now.AddYears(-1);
+			this.dateTimePickerMax.Value = DateTime.Now.AddYears(1);
+		}
+
 		private async void kendoDateRangePicker1_WidgetEvent(object sender, WidgetEventArgs e)
 		{
 			var data = e.Data;
@@ -40,11 +46,12 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 				Application.Play(MessageBoxIcon.Error);
 				return;
 			}
+
+			this.kendoDateRangePicker1.Options.weekNumber = this.checkBoxWeekNumber.Checked;
 			this.kendoDateRangePicker1.Options.depth = this.comboBoxDepth.SelectedItem.ToString();
 
 			await this.kendoDateRangePicker1.Instance.minAsync(this.dateTimePickerMin.Value);
 			await this.kendoDateRangePicker1.Instance.maxAsync(this.dateTimePickerMax.Value);
-
 
 			this.kendoDateRangePicker1.Update();
 		}
