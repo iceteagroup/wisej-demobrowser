@@ -29,11 +29,7 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
 
 		private void buttonUpdate_Click(object sender, EventArgs e)
 		{
-			this.dxPivotGrid1.Options.allowExpandAll = this.checkBox1.Checked;
-			this.dxPivotGrid1.Options.allowFiltering = this.checkBox2.Checked;
-			this.dxPivotGrid1.Options.allowSorting = this.checkBox3.Checked;
 			this.dxPivotGrid1.Options.hideEmptySummaryCells = this.checkBox4.Checked;
-			this.dxPivotGrid1.Options.showBorder = this.checkBox5.Checked;
 			this.dxPivotGrid1.Options.showColumnTotals = this.checkBox7.Checked;
 			this.dxPivotGrid1.Options.showRowGrandTotals = this.checkBox8.Checked;
 			this.dxPivotGrid1.Options.showRowTotals = this.checkBox9.Checked;

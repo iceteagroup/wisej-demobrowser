@@ -21,7 +21,6 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
 
 		private void buttonUpdate_Click(object sender, EventArgs e)
 		{
-			this.dxProgressBar1.Options.isValid = this.checkBox1.Checked;
 			this.dxProgressBar1.Options.showStatus = this.checkBox2.Checked;
 			this.dxProgressBar1.Options.max = this.numericUpDown1.Value;
 			this.dxProgressBar1.Options.min = this.numericUpDown2.Value;
