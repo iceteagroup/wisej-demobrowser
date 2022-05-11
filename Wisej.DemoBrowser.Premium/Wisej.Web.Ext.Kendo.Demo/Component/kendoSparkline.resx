@@ -117,6 +117,9 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="kendoSparkline2.Options" xml:space="preserve">
+    <value>{"type":"bullet","data":[21,23],"valueAxis":{"min":0,"max":30,"plotBands":[{"from":0,"to":15,"color":"#787878","opacity":0.15},{"from":15,"to":22,"color":"#787878","opacity":0.3},{"from":22,"to":30,"color":"#787878","opacity":0.15}]},"tooltip":{"visible":true}}</value>
+  </data>
   <metadata name="$this.RulerSnapLines" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0

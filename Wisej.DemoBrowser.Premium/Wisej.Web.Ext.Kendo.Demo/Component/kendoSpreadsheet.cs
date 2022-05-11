@@ -14,6 +14,20 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 			this.kendoSpreadsheet1.Instance.onChange += new WidgetEventHandler(kendoSpreadsheet1_WidgetEvent);
 		}
 
+		private void kendoSpreadsheet_Load(object sender, EventArgs e)
+		{
+			using (var fs = new FileStream(Application.MapPath("Data/Spreadsheet/sample.xlsx"), FileMode.Open))
+            {
+				using (var ms = new MemoryStream())
+                {
+					fs.CopyTo(ms);
+					ms.Position = 0;
+
+					this.kendoSpreadsheet1.FromFile(ms);
+				}
+			}
+		}
+
 		private void kendoSpreadsheet1_WidgetEvent(object sender, WidgetEventArgs e)
 		{
 			AlertBox.Show(

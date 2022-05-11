@@ -76,7 +76,7 @@
             this.kendoRating1.Location = new System.Drawing.Point(321, 261);
             this.kendoRating1.Name = "kendoRating1";
             this.kendoRating1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"value\":3}")));
-            this.kendoRating1.Size = new System.Drawing.Size(446, 37);
+            this.kendoRating1.Size = new System.Drawing.Size(687, 37);
             this.kendoRating1.TabIndex = 0;
             this.kendoRating1.Text = "kendoRating1";
             // 

@@ -32,7 +32,7 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
             this.kendoTaskBoard1 = new Wisej.Web.Ext.Kendo.kendoTaskBoard();
             this.checkBoxEditable = new Wisej.Web.CheckBox();
             this.checkBoxSelectable = new Wisej.Web.CheckBox();
-            this.checkBoxReordable = new Wisej.Web.CheckBox();
+            this.checkBoxReorderable = new Wisej.Web.CheckBox();
             this.checkBoxToolbar = new Wisej.Web.CheckBox();
             this.panel.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -62,7 +62,7 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
             // flowLayoutPanelProperties
             // 
             this.flowLayoutPanelProperties.Controls.Add(this.checkBoxEditable);
-            this.flowLayoutPanelProperties.Controls.Add(this.checkBoxReordable);
+            this.flowLayoutPanelProperties.Controls.Add(this.checkBoxReorderable);
             this.flowLayoutPanelProperties.Controls.Add(this.checkBoxSelectable);
             this.flowLayoutPanelProperties.Controls.Add(this.checkBoxToolbar);
             // 
@@ -104,19 +104,19 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
             this.checkBoxSelectable.TabIndex = 1;
             this.checkBoxSelectable.Text = "Selectable";
             // 
-            // checkBoxReordable
+            // checkBoxReorderable
             // 
-            this.checkBoxReordable.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Left) 
+            this.checkBoxReorderable.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Left) 
             | Wisej.Web.AnchorStyles.Right)));
-            this.checkBoxReordable.Appearance = Wisej.Web.Appearance.Switch;
-            this.checkBoxReordable.AutoSize = false;
-            this.checkBoxReordable.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.checkBoxReordable.Checked = true;
-            this.checkBoxReordable.Location = new System.Drawing.Point(3, 53);
-            this.checkBoxReordable.Name = "checkBoxReordable";
-            this.checkBoxReordable.Size = new System.Drawing.Size(212, 44);
-            this.checkBoxReordable.TabIndex = 2;
-            this.checkBoxReordable.Text = "Reordable";
+            this.checkBoxReorderable.Appearance = Wisej.Web.Appearance.Switch;
+            this.checkBoxReorderable.AutoSize = false;
+            this.checkBoxReorderable.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.checkBoxReorderable.Checked = true;
+            this.checkBoxReorderable.Location = new System.Drawing.Point(3, 53);
+            this.checkBoxReorderable.Name = "checkBoxReorderable";
+            this.checkBoxReorderable.Size = new System.Drawing.Size(212, 44);
+            this.checkBoxReorderable.TabIndex = 2;
+            this.checkBoxReorderable.Text = "Reorderable";
             // 
             // checkBoxToolbar
             // 
@@ -150,7 +150,7 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 		private Kendo.kendoTaskBoard kendoTaskBoard1;
         private CheckBox checkBoxEditable;
         private CheckBox checkBoxSelectable;
-        private CheckBox checkBoxReordable;
+        private CheckBox checkBoxReorderable;
         private CheckBox checkBoxToolbar;
     }
 }

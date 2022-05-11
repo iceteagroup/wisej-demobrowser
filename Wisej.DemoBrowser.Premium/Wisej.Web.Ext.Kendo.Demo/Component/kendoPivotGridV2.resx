@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="kendoPivotGridV21.Options" xml:space="preserve">
-    <value>{"dataSource":{"type":"xmla","columns":[{"name":["[Date].[Calendar]"],"expand":true},{"name":["[Product].[Category]"]}],"rows":[{"name":["[Geography].[City]"],"expand":true}],"measures":[{"name":["[Measures].[Reseller Freight Cost]"]}],"transport":{"connection":{"catalog":"Adventure Works DW 2008R2","cube":"Adventure Works"},"read":"https://demos.telerik.com/olap/msmdpump.dll"}}}</value>
+    <value>{"columnWidth":120,"dataSource":{"type":"xmla","columns":[{"name":["[Date].[Calendar]"],"expand":true},{"name":["[Product].[Category]"]}],"rows":[{"name":["[Geography].[City]"],"expand":true}],"measures":[{"name":["[Measures].[Reseller Freight Cost]"]}],"transport":{"connection":{"catalog":"Adventure Works DW 2008R2","cube":"Adventure Works"},"read":"https://demos.telerik.com/olap/msmdpump.dll"}}}</value>
   </data>
   <metadata name="$this.RulerSnapLines" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>

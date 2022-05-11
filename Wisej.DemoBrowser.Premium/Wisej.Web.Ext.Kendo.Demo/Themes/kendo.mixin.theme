@@ -110,7 +110,17 @@
 				}
 			}
 		},
-		"listitem": {
+		"list-demo": {
+			"inherit": "list",
+			"states": {
+				"default": {
+					"properties": {
+						"itemAppearance": "listitem-demo"
+					}
+				}
+			}
+		},
+		"listitem-demo": {
 			"inherit": "listitem",
 			"states": {
 				"default": {

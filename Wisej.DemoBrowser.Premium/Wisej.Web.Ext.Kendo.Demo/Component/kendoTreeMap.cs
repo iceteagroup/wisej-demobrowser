@@ -8,21 +8,16 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 		public kendoTreeMap()
 		{
 			InitializeComponent();
-
-            this.Load += KendoTreeMap_Load;
 		}
 
-        private void KendoTreeMap_Load(object sender, EventArgs e)
-        {
-            this.comboBoxType.SelectedIndex = 0;
-        }
+		private void buttonUpdate_Click(object sender, EventArgs e)
+		{
+			if (this.checkedListBoxColors.CheckedItems.Count > 0)
+				this.kendoTreeMap1.Options.colors = this.checkedListBoxColors.CheckedItems;
+			
+			this.kendoTreeMap1.Options.type = this.comboBoxType.SelectedItem.ToString()?.ToLower();
 
-
-        private void buttonUpdate_Click(object sender, EventArgs e)
-        {
-            this.kendoTreeMap1.Options.type = this.comboBoxType.SelectedItem.ToString()?.ToLower();
-
-            this.kendoTreeMap1.Update();
-        }
-    }
+			this.kendoTreeMap1.Update();
+		}
+	}
 }

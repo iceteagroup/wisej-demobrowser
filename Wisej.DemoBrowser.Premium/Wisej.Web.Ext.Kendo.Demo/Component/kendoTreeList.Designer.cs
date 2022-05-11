@@ -34,6 +34,7 @@
             this.comboBoxEditMode = new Wisej.Web.ComboBox();
             this.checkBoxFiltrable = new Wisej.Web.CheckBox();
             this.checkBoxColumnMenu = new Wisej.Web.CheckBox();
+            this.checkBoxResizable = new Wisej.Web.CheckBox();
             this.panel.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.flowLayoutPanelProperties.SuspendLayout();
@@ -61,9 +62,10 @@
             // 
             // flowLayoutPanelProperties
             // 
-            this.flowLayoutPanelProperties.Controls.Add(this.comboBoxEditMode);
             this.flowLayoutPanelProperties.Controls.Add(this.checkBoxFiltrable);
             this.flowLayoutPanelProperties.Controls.Add(this.checkBoxColumnMenu);
+            this.flowLayoutPanelProperties.Controls.Add(this.checkBoxResizable);
+            this.flowLayoutPanelProperties.Controls.Add(this.comboBoxEditMode);
             // 
             // kendoTreeList1
             // 
@@ -90,13 +92,14 @@
             this.comboBoxEditMode.Items.AddRange(new object[] {
             "inline",
             "popup",
-            "incell",
-            "none"});
+            "incell"});
             this.comboBoxEditMode.LabelText = "Edit Mode";
-            this.comboBoxEditMode.Location = new System.Drawing.Point(3, 3);
+            this.comboBoxEditMode.Location = new System.Drawing.Point(3, 151);
+            this.comboBoxEditMode.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.comboBoxEditMode.Name = "comboBoxEditMode";
             this.comboBoxEditMode.Size = new System.Drawing.Size(212, 57);
             this.comboBoxEditMode.TabIndex = 0;
+            this.comboBoxEditMode.Text = "inline";
             // 
             // checkBoxFiltrable
             // 
@@ -105,7 +108,7 @@
             this.checkBoxFiltrable.Appearance = Wisej.Web.Appearance.Switch;
             this.checkBoxFiltrable.AutoSize = false;
             this.checkBoxFiltrable.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.checkBoxFiltrable.Location = new System.Drawing.Point(3, 79);
+            this.checkBoxFiltrable.Location = new System.Drawing.Point(3, 16);
             this.checkBoxFiltrable.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBoxFiltrable.Name = "checkBoxFiltrable";
             this.checkBoxFiltrable.Size = new System.Drawing.Size(212, 26);
@@ -119,12 +122,26 @@
             this.checkBoxColumnMenu.Appearance = Wisej.Web.Appearance.Switch;
             this.checkBoxColumnMenu.AutoSize = false;
             this.checkBoxColumnMenu.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.checkBoxColumnMenu.Location = new System.Drawing.Point(3, 124);
+            this.checkBoxColumnMenu.Location = new System.Drawing.Point(3, 61);
             this.checkBoxColumnMenu.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBoxColumnMenu.Name = "checkBoxColumnMenu";
             this.checkBoxColumnMenu.Size = new System.Drawing.Size(212, 26);
             this.checkBoxColumnMenu.TabIndex = 2;
             this.checkBoxColumnMenu.Text = "Column Menu";
+            // 
+            // checkBoxResizable
+            // 
+            this.checkBoxResizable.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Left) 
+            | Wisej.Web.AnchorStyles.Right)));
+            this.checkBoxResizable.Appearance = Wisej.Web.Appearance.Switch;
+            this.checkBoxResizable.AutoSize = false;
+            this.checkBoxResizable.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.checkBoxResizable.Location = new System.Drawing.Point(3, 106);
+            this.checkBoxResizable.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
+            this.checkBoxResizable.Name = "checkBoxResizable";
+            this.checkBoxResizable.Size = new System.Drawing.Size(212, 26);
+            this.checkBoxResizable.TabIndex = 3;
+            this.checkBoxResizable.Text = "Resizable";
             // 
             // kendoTreeList
             // 
@@ -146,5 +163,6 @@
         private ComboBox comboBoxEditMode;
         private CheckBox checkBoxFiltrable;
         private CheckBox checkBoxColumnMenu;
+        private CheckBox checkBoxResizable;
     }
 }

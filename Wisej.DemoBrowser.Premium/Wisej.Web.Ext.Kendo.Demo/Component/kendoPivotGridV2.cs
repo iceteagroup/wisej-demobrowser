@@ -11,5 +11,17 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 		{
 			InitializeComponent();
 		}
-	}
+
+        private void buttonUpdate_Click(object sender, EventArgs e)
+        {
+            this.kendoPivotGridV21.Options.columnWidth = this.numericUpDownColumnWidth.Value;
+
+            this.kendoPivotGridV21.Update();
+        }
+
+        private void buttonPDF_Click(object sender, EventArgs e)
+        {
+            this.kendoPivotGridV21.Instance.saveAsPDF();
+        }
+    }
 }

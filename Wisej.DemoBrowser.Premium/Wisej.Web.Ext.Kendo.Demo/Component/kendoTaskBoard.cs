@@ -58,7 +58,7 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 			this.kendoTaskBoard1.Options.toolbar = this.checkBoxToolbar.Checked;
 			this.kendoTaskBoard1.Options.editable = this.checkBoxEditable.Checked;
 			this.kendoTaskBoard1.Options.selectable = this.checkBoxSelectable.Checked;
-			this.kendoTaskBoard1.Options.reorderable = this.checkBoxReordable.Checked;
+			this.kendoTaskBoard1.Options.reorderable = this.checkBoxReorderable.Checked;
 
 			this.kendoTaskBoard1.Update();
         }

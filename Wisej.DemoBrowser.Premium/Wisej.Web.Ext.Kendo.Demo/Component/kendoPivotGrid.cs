@@ -52,5 +52,15 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 		{
 			this.kendoPivotGrid1.Instance.saveAsPDF();
 		}
-	}
+
+        private void buttonUpdate_Click(object sender, EventArgs e)
+        {
+			this.kendoPivotGrid1.Options.columnWidth = this.numericUpDownColumnWidth.Value;
+			this.kendoPivotGrid1.Options.reorderable = this.checkBoxReorderable.Checked;
+			this.kendoPivotGrid1.Options.filterable = this.checkBoxFilterable.Checked;
+			this.kendoPivotGrid1.Options.sortable = this.checkBoxSortable.Checked;
+
+			this.kendoPivotGrid1.Update();
+        }
+    }
 }

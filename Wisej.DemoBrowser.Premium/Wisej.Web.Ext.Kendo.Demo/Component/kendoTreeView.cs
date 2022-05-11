@@ -24,10 +24,15 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 
         private void buttonUpdate_Click(object sender, EventArgs e)
         {
+			this.kendoTreeView1.Options.checkboxes = this.checkBoxShowcheckboxes.Checked;
 			this.kendoTreeView1.Options.dragAndDrop = this.checkBoxAllowDragAndDrop.Checked;
-			this.kendoTreeView1.Options.checkboxes.checkChildren = this.checkBoxShowcheckboxes.Checked;
 
 			this.kendoTreeView1.Update();
+        }
+
+        private void buttonAppend_Click(object sender, EventArgs e)
+        {
+			this.kendoTreeView1.Instance.append(new { text = this.textBoxAppend.Text });
         }
     }
 }

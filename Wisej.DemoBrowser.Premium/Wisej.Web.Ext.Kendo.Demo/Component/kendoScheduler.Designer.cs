@@ -29,13 +29,12 @@
 		private void InitializeComponent()
 		{
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(kendoScheduler));
-            this.kendoScheduler1 = new Wisej.Web.Ext.Kendo.kendoScheduler();
-            this.checkBox1 = new Wisej.Web.CheckBox();
-            this.checkBox2 = new Wisej.Web.CheckBox();
-            this.checkBox3 = new Wisej.Web.CheckBox();
-            this.checkBox4 = new Wisej.Web.CheckBox();
-            this.checkBox5 = new Wisej.Web.CheckBox();
+            this.checkBoxAllDay = new Wisej.Web.CheckBox();
+            this.checkBoxEditable = new Wisej.Web.CheckBox();
+            this.checkBoxShowWorkHours = new Wisej.Web.CheckBox();
+            this.checkBoxSnap = new Wisej.Web.CheckBox();
             this.buttonExport = new Wisej.Web.Button();
+            this.kendoScheduler1 = new Wisej.Web.Ext.Kendo.kendoScheduler();
             this.panel.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.flowLayoutPanelProperties.SuspendLayout();
@@ -44,6 +43,10 @@
             // panel
             // 
             this.panel.Controls.Add(this.kendoScheduler1);
+            // 
+            // buttonUpdate
+            // 
+            this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
             // linkDemo
             // 
@@ -59,12 +62,80 @@
             // 
             // flowLayoutPanelProperties
             // 
-            this.flowLayoutPanelProperties.Controls.Add(this.checkBox1);
-            this.flowLayoutPanelProperties.Controls.Add(this.checkBox2);
-            this.flowLayoutPanelProperties.Controls.Add(this.checkBox3);
-            this.flowLayoutPanelProperties.Controls.Add(this.checkBox4);
-            this.flowLayoutPanelProperties.Controls.Add(this.checkBox5);
+            this.flowLayoutPanelProperties.Controls.Add(this.checkBoxAllDay);
+            this.flowLayoutPanelProperties.Controls.Add(this.checkBoxEditable);
+            this.flowLayoutPanelProperties.Controls.Add(this.checkBoxShowWorkHours);
+            this.flowLayoutPanelProperties.Controls.Add(this.checkBoxSnap);
             this.flowLayoutPanelProperties.Controls.Add(this.buttonExport);
+            // 
+            // checkBoxAllDay
+            // 
+            this.checkBoxAllDay.Appearance = Wisej.Web.Appearance.Switch;
+            this.checkBoxAllDay.AutoSize = false;
+            this.checkBoxAllDay.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.checkBoxAllDay.Checked = true;
+            this.flowLayoutPanelProperties.SetFillWeight(this.checkBoxAllDay, 1);
+            this.flowLayoutPanelProperties.SetFlowBreak(this.checkBoxAllDay, true);
+            this.checkBoxAllDay.Location = new System.Drawing.Point(3, 3);
+            this.checkBoxAllDay.Name = "checkBoxAllDay";
+            this.checkBoxAllDay.Size = new System.Drawing.Size(212, 38);
+            this.checkBoxAllDay.TabIndex = 5;
+            this.checkBoxAllDay.Text = "All Day Slot";
+            // 
+            // checkBoxEditable
+            // 
+            this.checkBoxEditable.Appearance = Wisej.Web.Appearance.Switch;
+            this.checkBoxEditable.AutoSize = false;
+            this.checkBoxEditable.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.checkBoxEditable.Checked = true;
+            this.flowLayoutPanelProperties.SetFillWeight(this.checkBoxEditable, 1);
+            this.flowLayoutPanelProperties.SetFlowBreak(this.checkBoxEditable, true);
+            this.checkBoxEditable.Location = new System.Drawing.Point(3, 60);
+            this.checkBoxEditable.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
+            this.checkBoxEditable.Name = "checkBoxEditable";
+            this.checkBoxEditable.Size = new System.Drawing.Size(212, 38);
+            this.checkBoxEditable.TabIndex = 6;
+            this.checkBoxEditable.Text = "Editable";
+            // 
+            // checkBoxShowWorkHours
+            // 
+            this.checkBoxShowWorkHours.Appearance = Wisej.Web.Appearance.Switch;
+            this.checkBoxShowWorkHours.AutoSize = false;
+            this.checkBoxShowWorkHours.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.flowLayoutPanelProperties.SetFillWeight(this.checkBoxShowWorkHours, 1);
+            this.flowLayoutPanelProperties.SetFlowBreak(this.checkBoxShowWorkHours, true);
+            this.checkBoxShowWorkHours.Location = new System.Drawing.Point(3, 117);
+            this.checkBoxShowWorkHours.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
+            this.checkBoxShowWorkHours.Name = "checkBoxShowWorkHours";
+            this.checkBoxShowWorkHours.Size = new System.Drawing.Size(212, 38);
+            this.checkBoxShowWorkHours.TabIndex = 8;
+            this.checkBoxShowWorkHours.Text = "Show Work Hours";
+            // 
+            // checkBoxSnap
+            // 
+            this.checkBoxSnap.Appearance = Wisej.Web.Appearance.Switch;
+            this.checkBoxSnap.AutoSize = false;
+            this.checkBoxSnap.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.checkBoxSnap.Checked = true;
+            this.flowLayoutPanelProperties.SetFillWeight(this.checkBoxSnap, 1);
+            this.flowLayoutPanelProperties.SetFlowBreak(this.checkBoxSnap, true);
+            this.checkBoxSnap.Location = new System.Drawing.Point(3, 174);
+            this.checkBoxSnap.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
+            this.checkBoxSnap.Name = "checkBoxSnap";
+            this.checkBoxSnap.Size = new System.Drawing.Size(212, 38);
+            this.checkBoxSnap.TabIndex = 9;
+            this.checkBoxSnap.Text = "Snap";
+            // 
+            // buttonExport
+            // 
+            this.buttonExport.Display = Wisej.Web.Display.Icon;
+            this.buttonExport.ImageSource = "resource.wx/Wisej.Ext.MaterialDesign/google-drive-pdf-file.svg";
+            this.buttonExport.Location = new System.Drawing.Point(3, 231);
+            this.buttonExport.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
+            this.buttonExport.Name = "buttonExport";
+            this.buttonExport.Size = new System.Drawing.Size(42, 42);
+            this.buttonExport.TabIndex = 10;
+            this.buttonExport.Click += new System.EventHandler(this.buttonExport_Click);
             // 
             // kendoScheduler1
             // 
@@ -78,89 +149,6 @@
             this.kendoScheduler1.TabIndex = 0;
             this.kendoScheduler1.Text = "kendoScheduler1";
             this.kendoScheduler1.WebRequest += new Wisej.Web.WebRequestHandler(this.kendoScheduler1_WebRequest);
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.Appearance = Wisej.Web.Appearance.Switch;
-            this.checkBox1.AutoSize = false;
-            this.checkBox1.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.checkBox1.Checked = true;
-            this.flowLayoutPanelProperties.SetFillWeight(this.checkBox1, 1);
-            this.flowLayoutPanelProperties.SetFlowBreak(this.checkBox1, true);
-            this.checkBox1.Location = new System.Drawing.Point(3, 3);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(212, 38);
-            this.checkBox1.TabIndex = 5;
-            this.checkBox1.Text = "All Day Slot";
-            // 
-            // checkBox2
-            // 
-            this.checkBox2.Appearance = Wisej.Web.Appearance.Switch;
-            this.checkBox2.AutoSize = false;
-            this.checkBox2.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.checkBox2.Checked = true;
-            this.flowLayoutPanelProperties.SetFillWeight(this.checkBox2, 1);
-            this.flowLayoutPanelProperties.SetFlowBreak(this.checkBox2, true);
-            this.checkBox2.Location = new System.Drawing.Point(3, 60);
-            this.checkBox2.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(212, 38);
-            this.checkBox2.TabIndex = 6;
-            this.checkBox2.Text = "Editable";
-            // 
-            // checkBox3
-            // 
-            this.checkBox3.Appearance = Wisej.Web.Appearance.Switch;
-            this.checkBox3.AutoSize = false;
-            this.checkBox3.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.flowLayoutPanelProperties.SetFillWeight(this.checkBox3, 1);
-            this.flowLayoutPanelProperties.SetFlowBreak(this.checkBox3, true);
-            this.checkBox3.Location = new System.Drawing.Point(3, 117);
-            this.checkBox3.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(212, 38);
-            this.checkBox3.TabIndex = 7;
-            this.checkBox3.Text = "Mobile";
-            // 
-            // checkBox4
-            // 
-            this.checkBox4.Appearance = Wisej.Web.Appearance.Switch;
-            this.checkBox4.AutoSize = false;
-            this.checkBox4.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.flowLayoutPanelProperties.SetFillWeight(this.checkBox4, 1);
-            this.flowLayoutPanelProperties.SetFlowBreak(this.checkBox4, true);
-            this.checkBox4.Location = new System.Drawing.Point(3, 174);
-            this.checkBox4.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(212, 38);
-            this.checkBox4.TabIndex = 8;
-            this.checkBox4.Text = "Show Work Hours";
-            // 
-            // checkBox5
-            // 
-            this.checkBox5.Appearance = Wisej.Web.Appearance.Switch;
-            this.checkBox5.AutoSize = false;
-            this.checkBox5.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.checkBox5.Checked = true;
-            this.flowLayoutPanelProperties.SetFillWeight(this.checkBox5, 1);
-            this.flowLayoutPanelProperties.SetFlowBreak(this.checkBox5, true);
-            this.checkBox5.Location = new System.Drawing.Point(3, 231);
-            this.checkBox5.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
-            this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(212, 38);
-            this.checkBox5.TabIndex = 9;
-            this.checkBox5.Text = "Snap";
-            // 
-            // buttonExport
-            // 
-            this.buttonExport.Display = Wisej.Web.Display.Icon;
-            this.buttonExport.ImageSource = "resource.wx/Wisej.Ext.MaterialDesign/google-drive-pdf-file.svg";
-            this.buttonExport.Location = new System.Drawing.Point(3, 288);
-            this.buttonExport.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
-            this.buttonExport.Name = "buttonExport";
-            this.buttonExport.Size = new System.Drawing.Size(42, 42);
-            this.buttonExport.TabIndex = 10;
-            this.buttonExport.Click += new System.EventHandler(this.buttonExport_Click);
             // 
             // kendoScheduler
             // 
@@ -177,11 +165,10 @@
 		#endregion
 
 		private Kendo.kendoScheduler kendoScheduler1;
-		private CheckBox checkBox3;
-		private CheckBox checkBox2;
-		private CheckBox checkBox1;
-		private CheckBox checkBox5;
-		private CheckBox checkBox4;
+		private CheckBox checkBoxEditable;
+		private CheckBox checkBoxAllDay;
+		private CheckBox checkBoxSnap;
+		private CheckBox checkBoxShowWorkHours;
 		private Button buttonExport;
 	}
 }

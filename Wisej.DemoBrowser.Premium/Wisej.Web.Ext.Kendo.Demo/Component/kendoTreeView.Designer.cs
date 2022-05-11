@@ -32,6 +32,8 @@
             this.kendoTreeView1 = new Wisej.Web.Ext.Kendo.kendoTreeView();
             this.checkBoxAllowDragAndDrop = new Wisej.Web.CheckBox();
             this.checkBoxShowcheckboxes = new Wisej.Web.CheckBox();
+            this.textBoxAppend = new Wisej.Web.TextBox();
+            this.buttonAppend = new Wisej.Web.Button();
             this.panel.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.flowLayoutPanelProperties.SuspendLayout();
@@ -61,6 +63,8 @@
             // 
             this.flowLayoutPanelProperties.Controls.Add(this.checkBoxAllowDragAndDrop);
             this.flowLayoutPanelProperties.Controls.Add(this.checkBoxShowcheckboxes);
+            this.flowLayoutPanelProperties.Controls.Add(this.textBoxAppend);
+            this.flowLayoutPanelProperties.Controls.Add(this.buttonAppend);
             // 
             // kendoTreeView1
             // 
@@ -90,6 +94,7 @@
             // 
             this.checkBoxShowcheckboxes.Appearance = Wisej.Web.Appearance.Switch;
             this.checkBoxShowcheckboxes.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.checkBoxShowcheckboxes.Checked = true;
             this.flowLayoutPanelProperties.SetFillWeight(this.checkBoxShowcheckboxes, 1);
             this.flowLayoutPanelProperties.SetFlowBreak(this.checkBoxShowcheckboxes, true);
             this.checkBoxShowcheckboxes.Location = new System.Drawing.Point(3, 46);
@@ -97,7 +102,30 @@
             this.checkBoxShowcheckboxes.Name = "checkBoxShowcheckboxes";
             this.checkBoxShowcheckboxes.Size = new System.Drawing.Size(212, 24);
             this.checkBoxShowcheckboxes.TabIndex = 2;
-            this.checkBoxShowcheckboxes.Text = "Show Checkbox";
+            this.checkBoxShowcheckboxes.Text = "Show Checkboxes";
+            // 
+            // textBoxAppend
+            // 
+            this.flowLayoutPanelProperties.SetFillWeight(this.textBoxAppend, 1);
+            this.flowLayoutPanelProperties.SetFlowBreak(this.textBoxAppend, true);
+            this.textBoxAppend.LabelText = "Append";
+            this.textBoxAppend.Location = new System.Drawing.Point(3, 89);
+            this.textBoxAppend.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
+            this.textBoxAppend.Name = "textBoxAppend";
+            this.textBoxAppend.Size = new System.Drawing.Size(212, 57);
+            this.textBoxAppend.TabIndex = 3;
+            this.textBoxAppend.Text = "Photos";
+            // 
+            // buttonAppend
+            // 
+            this.flowLayoutPanelProperties.SetFillWeight(this.buttonAppend, 1);
+            this.flowLayoutPanelProperties.SetFlowBreak(this.buttonAppend, true);
+            this.buttonAppend.Location = new System.Drawing.Point(3, 152);
+            this.buttonAppend.Name = "buttonAppend";
+            this.buttonAppend.Size = new System.Drawing.Size(212, 37);
+            this.buttonAppend.TabIndex = 4;
+            this.buttonAppend.Text = "Append";
+            this.buttonAppend.Click += new System.EventHandler(this.buttonAppend_Click);
             // 
             // kendoTreeView
             // 
@@ -117,5 +145,7 @@
 		private Kendo.kendoTreeView kendoTreeView1;
         private CheckBox checkBoxAllowDragAndDrop;
         private CheckBox checkBoxShowcheckboxes;
+        private TextBox textBoxAppend;
+        private Button buttonAppend;
     }
 }

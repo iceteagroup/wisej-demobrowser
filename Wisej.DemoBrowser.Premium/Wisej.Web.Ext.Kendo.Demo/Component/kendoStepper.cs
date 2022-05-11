@@ -23,7 +23,7 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 
         private async void buttonAddStep_Click(object sender, EventArgs e)
         {
-			await this.kendoStepper1.Instance.insertAtAsync(0, new { label = "Label added" });
+			await this.kendoStepper1.Instance.insertAtAsync(0, new { label = this.textBoxStepName.Text });
 		}
     }
 }
