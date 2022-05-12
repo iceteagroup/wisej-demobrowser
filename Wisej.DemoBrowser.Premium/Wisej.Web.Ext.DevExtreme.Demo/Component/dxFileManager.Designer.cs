@@ -70,8 +70,6 @@
             this.flowLayoutPanel1.Controls.Add(this.userComboBox1);
             this.flowLayoutPanel1.Controls.Add(this.comboBox1);
             this.flowLayoutPanel1.Controls.Add(this.checkedListBox1);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 35);
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 441);
             // 
             // dxFileManager1
             // 
@@ -136,6 +134,7 @@
             // 
             this.userComboBox1.AutoSize = false;
             this.userComboBox1.DropDownControl = this.checkedListBox1;
+            this.userComboBox1.DropDownStyle = Wisej.Web.ComboBoxStyle.DropDownList;
             this.flowLayoutPanel1.SetFillWeight(this.userComboBox1, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.userComboBox1, true);
             this.userComboBox1.LabelText = "Allowed File Extensions";
@@ -181,7 +180,6 @@
             this.panel.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 
