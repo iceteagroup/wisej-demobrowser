@@ -52,9 +52,9 @@
             this.linkDemo.Text = "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/FlatDataStructure/jQue" +
     "ry/Light/";
             // 
-            // linkAPI
+            // linkApi
             // 
-            this.linkAPI.Text = "https://js.devexpress.com/Documentation/ApiReference/Data_Visualization_Widgets/d" +
+            this.linkApi.Text = "https://js.devexpress.com/Documentation/ApiReference/Data_Visualization_Widgets/d" +
     "xTreeMap/";
             // 
             // panel
@@ -67,18 +67,16 @@
             this.flowLayoutPanel1.Controls.Add(this.comboBox1);
             this.flowLayoutPanel1.Controls.Add(this.comboBox2);
             this.flowLayoutPanel1.Controls.Add(this.comboBox3);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 35);
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 441);
             // 
             // dxTreeMap1
             // 
             this.dxTreeMap1.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
             | Wisej.Web.AnchorStyles.Left) 
             | Wisej.Web.AnchorStyles.Right)));
-            this.dxTreeMap1.Location = new System.Drawing.Point(28, 31);
+            this.dxTreeMap1.Location = new System.Drawing.Point(29, 40);
             this.dxTreeMap1.Name = "dxTreeMap1";
             this.dxTreeMap1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("dxTreeMap1.Options"))));
-            this.dxTreeMap1.Size = new System.Drawing.Size(1033, 497);
+            this.dxTreeMap1.Size = new System.Drawing.Size(831, 497);
             this.dxTreeMap1.TabIndex = 0;
             this.dxTreeMap1.WidgetFunctions = new Wisej.Web.Ext.DevExtreme.dxBase.WidgetFunction[0];
             // 
@@ -171,14 +169,12 @@
             // 
             // dxTreeMap
             // 
-            this.MinimumSize = new System.Drawing.Size(1249, 599);
             this.Name = "dxTreeMap";
             this.Load += new System.EventHandler(this.dxTreeMap_Load);
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

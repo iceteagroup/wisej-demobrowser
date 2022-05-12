@@ -48,27 +48,21 @@
             // 
             this.linkDocs.Text = "https://js.devexpress.com/Documentation/Guide/Widgets/Lookup/Overview/";
             // 
-            // groupBox1
-            // 
-            this.groupBox1.Size = new System.Drawing.Size(250, 636);
-            // 
             // buttonUpdate
             // 
-            this.buttonUpdate.Location = new System.Drawing.Point(16, 568);
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
             // linkDemo
             // 
             this.linkDemo.Text = "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Lookup/Basics/jQuery/Light/";
             // 
-            // linkAPI
+            // linkApi
             // 
-            this.linkAPI.Text = "https://js.devexpress.com/Documentation/ApiReference/UI_Widgets/dxLookup/";
+            this.linkApi.Text = "https://js.devexpress.com/Documentation/ApiReference/UI_Widgets/dxLookup/";
             // 
             // panel
             // 
             this.panel.Controls.Add(this.dxLookup1);
-            this.panel.Size = new System.Drawing.Size(1203, 636);
             // 
             // flowLayoutPanel1
             // 
@@ -80,13 +74,11 @@
             this.flowLayoutPanel1.Controls.Add(this.checkBox6);
             this.flowLayoutPanel1.Controls.Add(this.comboBox1);
             this.flowLayoutPanel1.Controls.Add(this.numericUpDownMinSearchLength);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 35);
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 517);
             // 
             // dxLookup1
             // 
             this.dxLookup1.Anchor = Wisej.Web.AnchorStyles.None;
-            this.dxLookup1.Location = new System.Drawing.Point(425, 300);
+            this.dxLookup1.Location = new System.Drawing.Point(269, 271);
             this.dxLookup1.Name = "dxLookup1";
             this.dxLookup1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("dxLookup1.Options"))));
             this.dxLookup1.Size = new System.Drawing.Size(350, 35);
@@ -101,7 +93,7 @@
             this.flowLayoutPanel1.SetFlowBreak(this.checkBox1, true);
             this.checkBox1.Location = new System.Drawing.Point(3, 3);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(212, 38);
+            this.checkBox1.Size = new System.Drawing.Size(195, 38);
             this.checkBox1.TabIndex = 9;
             this.checkBox1.Text = "Data Before Search";
             // 
@@ -120,7 +112,7 @@
             this.comboBox1.Location = new System.Drawing.Point(3, 345);
             this.comboBox1.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(212, 60);
+            this.comboBox1.Size = new System.Drawing.Size(195, 60);
             this.comboBox1.TabIndex = 10;
             this.comboBox1.Text = "instantly";
             // 
@@ -135,7 +127,7 @@
             this.checkBox2.Location = new System.Drawing.Point(3, 60);
             this.checkBox2.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(212, 38);
+            this.checkBox2.Size = new System.Drawing.Size(195, 38);
             this.checkBox2.TabIndex = 11;
             this.checkBox2.Text = "Clean Search on Open";
             // 
@@ -149,7 +141,7 @@
             this.checkBox3.Location = new System.Drawing.Point(3, 117);
             this.checkBox3.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(212, 38);
+            this.checkBox3.Size = new System.Drawing.Size(195, 38);
             this.checkBox3.TabIndex = 12;
             this.checkBox3.Text = "Close on Outside Click";
             // 
@@ -164,7 +156,7 @@
             this.checkBox4.Location = new System.Drawing.Point(3, 174);
             this.checkBox4.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(212, 38);
+            this.checkBox4.Size = new System.Drawing.Size(195, 38);
             this.checkBox4.TabIndex = 13;
             this.checkBox4.Text = "Is Valid";
             // 
@@ -179,7 +171,7 @@
             this.checkBox5.Location = new System.Drawing.Point(3, 231);
             this.checkBox5.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(212, 38);
+            this.checkBox5.Size = new System.Drawing.Size(195, 38);
             this.checkBox5.TabIndex = 14;
             this.checkBox5.Text = "Search Enabled";
             // 
@@ -194,7 +186,7 @@
             this.checkBox6.Location = new System.Drawing.Point(3, 288);
             this.checkBox6.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(212, 38);
+            this.checkBox6.Size = new System.Drawing.Size(195, 38);
             this.checkBox6.TabIndex = 15;
             this.checkBox6.Text = "Use Native Scrolling";
             // 
@@ -206,14 +198,13 @@
             this.numericUpDownMinSearchLength.Location = new System.Drawing.Point(3, 424);
             this.numericUpDownMinSearchLength.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.numericUpDownMinSearchLength.Name = "numericUpDownMinSearchLength";
-            this.numericUpDownMinSearchLength.Size = new System.Drawing.Size(212, 46);
+            this.numericUpDownMinSearchLength.Size = new System.Drawing.Size(195, 57);
             this.numericUpDownMinSearchLength.TabIndex = 16;
             // 
             // dxLookup
             // 
-            this.MinimumSize = new System.Drawing.Size(773, 720);
             this.Name = "dxLookup";
-            this.Size = new System.Drawing.Size(1612, 826);
+            this.Size = new System.Drawing.Size(1299, 720);
             this.Load += new System.EventHandler(this.dxLookup_Load);
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
@@ -221,7 +212,6 @@
             this.flowLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMinSearchLength)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

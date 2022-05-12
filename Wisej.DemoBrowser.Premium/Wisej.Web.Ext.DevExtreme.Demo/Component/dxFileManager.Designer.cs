@@ -55,9 +55,9 @@
             this.linkDemo.Text = "https://js.devexpress.com/Demos/WidgetsGallery/Demo/FileManager/Overview/jQuery/L" +
     "ight/";
             // 
-            // linkAPI
+            // linkApi
             // 
-            this.linkAPI.Text = "https://js.devexpress.com/Documentation/ApiReference/UI_Widgets/dxFileManager/";
+            this.linkApi.Text = "https://js.devexpress.com/Documentation/ApiReference/UI_Widgets/dxFileManager/";
             // 
             // panel
             // 
@@ -76,10 +76,10 @@
             this.dxFileManager1.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
             | Wisej.Web.AnchorStyles.Left) 
             | Wisej.Web.AnchorStyles.Right)));
-            this.dxFileManager1.Location = new System.Drawing.Point(33, 31);
+            this.dxFileManager1.Location = new System.Drawing.Point(11, 11);
             this.dxFileManager1.Name = "dxFileManager1";
             this.dxFileManager1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("dxFileManager1.Options"))));
-            this.dxFileManager1.Size = new System.Drawing.Size(1022, 497);
+            this.dxFileManager1.Size = new System.Drawing.Size(866, 550);
             this.dxFileManager1.TabIndex = 0;
             // 
             // comboBox1
@@ -173,7 +173,6 @@
             // 
             // dxFileManager
             // 
-            this.MinimumSize = new System.Drawing.Size(1202, 675);
             this.Name = "dxFileManager";
             this.Load += new System.EventHandler(this.dxFileManager_Load);
             this.groupBox1.ResumeLayout(false);

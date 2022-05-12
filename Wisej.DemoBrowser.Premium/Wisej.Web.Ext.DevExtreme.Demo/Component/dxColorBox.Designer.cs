@@ -56,10 +56,10 @@
             this.linkDemo.TabIndex = 6;
             this.linkDemo.Text = "https://js.devexpress.com/Demos/WidgetsGallery/Demo/ColorBox/Overview/";
             // 
-            // linkAPI
+            // linkApi
             // 
-            this.linkAPI.TabIndex = 5;
-            this.linkAPI.Text = "https://js.devexpress.com/Documentation/ApiReference/UI_Widgets/dxColorBox/";
+            this.linkApi.TabIndex = 5;
+            this.linkApi.Text = "https://js.devexpress.com/Documentation/ApiReference/UI_Widgets/dxColorBox/";
             // 
             // panel
             // 
@@ -79,7 +79,7 @@
             // dxColorBox1
             // 
             this.dxColorBox1.Anchor = Wisej.Web.AnchorStyles.None;
-            this.dxColorBox1.Location = new System.Drawing.Point(369, 262);
+            this.dxColorBox1.Location = new System.Drawing.Point(269, 271);
             this.dxColorBox1.Name = "dxColorBox1";
             this.dxColorBox1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"value\":\"#f05b41\",\"editAlphaChannel\":true}")));
             this.dxColorBox1.Size = new System.Drawing.Size(350, 35);
@@ -184,14 +184,13 @@
             this.buttonGetValue.Location = new System.Drawing.Point(3, 367);
             this.buttonGetValue.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.buttonGetValue.Name = "buttonGetValue";
-            this.buttonGetValue.Size = new System.Drawing.Size(212, 27);
+            this.buttonGetValue.Size = new System.Drawing.Size(212, 35);
             this.buttonGetValue.TabIndex = 16;
-            this.buttonGetValue.Text = "Get value";
+            this.buttonGetValue.Text = "Get Value";
             this.buttonGetValue.Click += new System.EventHandler(this.buttonGetValue_Click);
             // 
             // dxColorBox
             // 
-            this.MinimumSize = new System.Drawing.Size(782, 666);
             this.Name = "dxColorBox";
             this.Load += new System.EventHandler(this.dxColorBox_Load);
             this.groupBox1.ResumeLayout(false);

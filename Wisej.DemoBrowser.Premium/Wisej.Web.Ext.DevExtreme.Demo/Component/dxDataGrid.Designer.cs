@@ -60,10 +60,10 @@
             this.linkDemo.Text = "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/SimpleArray/jQuery/L" +
     "ight/";
             // 
-            // linkAPI
+            // linkApi
             // 
-            this.linkAPI.TabIndex = 5;
-            this.linkAPI.Text = "https://js.devexpress.com/Documentation/ApiReference/UI_Widgets/dxDataGrid/";
+            this.linkApi.TabIndex = 5;
+            this.linkApi.Text = "https://js.devexpress.com/Documentation/ApiReference/UI_Widgets/dxDataGrid/";
             // 
             // panel
             // 
@@ -80,18 +80,16 @@
             this.flowLayoutPanel1.Controls.Add(this.checkBox6);
             this.flowLayoutPanel1.Controls.Add(this.buttonLoad);
             this.flowLayoutPanel1.Controls.Add(this.buttonExport);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 35);
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 441);
             // 
             // dxDataGrid1
             // 
             this.dxDataGrid1.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
             | Wisej.Web.AnchorStyles.Left) 
             | Wisej.Web.AnchorStyles.Right)));
-            this.dxDataGrid1.Location = new System.Drawing.Point(23, 18);
+            this.dxDataGrid1.Location = new System.Drawing.Point(27, 28);
             this.dxDataGrid1.Name = "dxDataGrid1";
             this.dxDataGrid1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("dxDataGrid1.Options"))));
-            this.dxDataGrid1.Size = new System.Drawing.Size(1042, 521);
+            this.dxDataGrid1.Size = new System.Drawing.Size(835, 521);
             this.dxDataGrid1.TabIndex = 0;
             widgetFunction1.Name = "discountCellTemplate";
             widgetFunction1.Source = resources.GetString("widgetFunction1.Source");
@@ -209,14 +207,12 @@
             // 
             // dxDataGrid
             // 
-            this.MinimumSize = new System.Drawing.Size(1176, 692);
             this.Name = "dxDataGrid";
             this.Load += new System.EventHandler(this.dxDataGrid_Load);
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

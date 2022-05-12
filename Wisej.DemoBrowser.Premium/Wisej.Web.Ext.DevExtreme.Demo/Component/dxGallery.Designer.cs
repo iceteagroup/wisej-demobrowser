@@ -55,9 +55,9 @@
             this.linkDemo.Text = "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gallery/Overview/jQuery/Light" +
     "/";
             // 
-            // linkAPI
+            // linkApi
             // 
-            this.linkAPI.Text = "https://js.devexpress.com/Documentation/ApiReference/UI_Widgets/dxGallery/";
+            this.linkApi.Text = "https://js.devexpress.com/Documentation/ApiReference/UI_Widgets/dxGallery/";
             // 
             // panel
             // 
@@ -71,19 +71,15 @@
             this.flowLayoutPanel1.Controls.Add(this.checkBox6);
             this.flowLayoutPanel1.Controls.Add(this.checkBox7);
             this.flowLayoutPanel1.Controls.Add(this.numericUpDown1);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 35);
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 441);
             // 
             // dxGallery1
             // 
-            this.dxGallery1.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
-            | Wisej.Web.AnchorStyles.Left) 
-            | Wisej.Web.AnchorStyles.Right)));
+            this.dxGallery1.Anchor = Wisej.Web.AnchorStyles.None;
             this.dxGallery1.BorderStyle = Wisej.Web.BorderStyle.Solid;
-            this.dxGallery1.Location = new System.Drawing.Point(183, 54);
+            this.dxGallery1.Location = new System.Drawing.Point(166, 103);
             this.dxGallery1.Name = "dxGallery1";
             this.dxGallery1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("dxGallery1.Options"))));
-            this.dxGallery1.Size = new System.Drawing.Size(723, 450);
+            this.dxGallery1.Size = new System.Drawing.Size(556, 371);
             this.dxGallery1.TabIndex = 0;
             // 
             // checkBox1
@@ -113,7 +109,7 @@
             0,
             0});
             this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(212, 46);
+            this.numericUpDown1.Size = new System.Drawing.Size(212, 57);
             this.numericUpDown1.TabIndex = 10;
             this.numericUpDown1.Value = new decimal(new int[] {
             400,
@@ -179,15 +175,14 @@
             // 
             // dxGallery
             // 
-            this.MinimumSize = new System.Drawing.Size(1168, 722);
             this.Name = "dxGallery";
+            this.Size = new System.Drawing.Size(1299, 722);
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

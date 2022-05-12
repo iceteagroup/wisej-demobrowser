@@ -35,7 +35,6 @@
             this.checkBoxAllowDeleting = new Wisej.Web.CheckBox();
             this.checkBoxAllowDragging = new Wisej.Web.CheckBox();
             this.checkBoxAllowResizing = new Wisej.Web.CheckBox();
-            this.checkBoxAllowTimeZoneEditing = new Wisej.Web.CheckBox();
             this.checkBoxAllowUpdating = new Wisej.Web.CheckBox();
             this.groupBox1.SuspendLayout();
             this.panel.SuspendLayout();
@@ -55,9 +54,9 @@
             this.linkDemo.Text = "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/Overview/jQuery/Lig" +
     "ht/";
             // 
-            // linkAPI
+            // linkApi
             // 
-            this.linkAPI.Text = "https://js.devexpress.com/Documentation/ApiReference/UI_Widgets/dxScheduler/";
+            this.linkApi.Text = "https://js.devexpress.com/Documentation/ApiReference/UI_Widgets/dxScheduler/";
             // 
             // panel
             // 
@@ -71,19 +70,16 @@
             this.flowLayoutPanel1.Controls.Add(this.checkBoxAllowDragging);
             this.flowLayoutPanel1.Controls.Add(this.checkBoxAllowResizing);
             this.flowLayoutPanel1.Controls.Add(this.checkBoxAllowUpdating);
-            this.flowLayoutPanel1.Controls.Add(this.checkBoxAllowTimeZoneEditing);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 35);
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 441);
             // 
             // dxScheduler1
             // 
             this.dxScheduler1.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
             | Wisej.Web.AnchorStyles.Left) 
             | Wisej.Web.AnchorStyles.Right)));
-            this.dxScheduler1.Location = new System.Drawing.Point(27, 17);
+            this.dxScheduler1.Location = new System.Drawing.Point(19, 26);
             this.dxScheduler1.Name = "dxScheduler1";
             this.dxScheduler1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("dxScheduler1.Options"))));
-            this.dxScheduler1.Size = new System.Drawing.Size(1034, 524);
+            this.dxScheduler1.Size = new System.Drawing.Size(850, 524);
             this.dxScheduler1.TabIndex = 0;
             // 
             // comboBoxCurrentView
@@ -91,6 +87,8 @@
             this.comboBoxCurrentView.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Left) 
             | Wisej.Web.AnchorStyles.Right)));
             this.comboBoxCurrentView.DropDownStyle = Wisej.Web.ComboBoxStyle.DropDownList;
+            this.flowLayoutPanel1.SetFillWeight(this.comboBoxCurrentView, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.comboBoxCurrentView, true);
             this.comboBoxCurrentView.Items.AddRange(new object[] {
             "agenda",
             "day  ",
@@ -104,7 +102,7 @@
             this.comboBoxCurrentView.LabelText = "Current View";
             this.comboBoxCurrentView.Location = new System.Drawing.Point(3, 3);
             this.comboBoxCurrentView.Name = "comboBoxCurrentView";
-            this.comboBoxCurrentView.Size = new System.Drawing.Size(212, 46);
+            this.comboBoxCurrentView.Size = new System.Drawing.Size(212, 57);
             this.comboBoxCurrentView.TabIndex = 0;
             // 
             // checkBoxAllowAdding
@@ -115,7 +113,9 @@
             this.checkBoxAllowAdding.AutoSize = false;
             this.checkBoxAllowAdding.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.checkBoxAllowAdding.Checked = true;
-            this.checkBoxAllowAdding.Location = new System.Drawing.Point(3, 68);
+            this.flowLayoutPanel1.SetFillWeight(this.checkBoxAllowAdding, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.checkBoxAllowAdding, true);
+            this.checkBoxAllowAdding.Location = new System.Drawing.Point(3, 79);
             this.checkBoxAllowAdding.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBoxAllowAdding.Name = "checkBoxAllowAdding";
             this.checkBoxAllowAdding.Size = new System.Drawing.Size(212, 26);
@@ -130,7 +130,9 @@
             this.checkBoxAllowDeleting.AutoSize = false;
             this.checkBoxAllowDeleting.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.checkBoxAllowDeleting.Checked = true;
-            this.checkBoxAllowDeleting.Location = new System.Drawing.Point(3, 113);
+            this.flowLayoutPanel1.SetFillWeight(this.checkBoxAllowDeleting, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.checkBoxAllowDeleting, true);
+            this.checkBoxAllowDeleting.Location = new System.Drawing.Point(3, 124);
             this.checkBoxAllowDeleting.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBoxAllowDeleting.Name = "checkBoxAllowDeleting";
             this.checkBoxAllowDeleting.Size = new System.Drawing.Size(212, 26);
@@ -145,7 +147,9 @@
             this.checkBoxAllowDragging.AutoSize = false;
             this.checkBoxAllowDragging.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.checkBoxAllowDragging.Checked = true;
-            this.checkBoxAllowDragging.Location = new System.Drawing.Point(3, 158);
+            this.flowLayoutPanel1.SetFillWeight(this.checkBoxAllowDragging, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.checkBoxAllowDragging, true);
+            this.checkBoxAllowDragging.Location = new System.Drawing.Point(3, 169);
             this.checkBoxAllowDragging.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBoxAllowDragging.Name = "checkBoxAllowDragging";
             this.checkBoxAllowDragging.Size = new System.Drawing.Size(212, 26);
@@ -160,27 +164,14 @@
             this.checkBoxAllowResizing.AutoSize = false;
             this.checkBoxAllowResizing.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.checkBoxAllowResizing.Checked = true;
-            this.checkBoxAllowResizing.Location = new System.Drawing.Point(3, 203);
+            this.flowLayoutPanel1.SetFillWeight(this.checkBoxAllowResizing, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.checkBoxAllowResizing, true);
+            this.checkBoxAllowResizing.Location = new System.Drawing.Point(3, 214);
             this.checkBoxAllowResizing.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBoxAllowResizing.Name = "checkBoxAllowResizing";
             this.checkBoxAllowResizing.Size = new System.Drawing.Size(212, 26);
             this.checkBoxAllowResizing.TabIndex = 4;
             this.checkBoxAllowResizing.Text = "Allow Resizing";
-            // 
-            // checkBoxAllowTimeZoneEditing
-            // 
-            this.checkBoxAllowTimeZoneEditing.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Left) 
-            | Wisej.Web.AnchorStyles.Right)));
-            this.checkBoxAllowTimeZoneEditing.Appearance = Wisej.Web.Appearance.Switch;
-            this.checkBoxAllowTimeZoneEditing.AutoSize = false;
-            this.checkBoxAllowTimeZoneEditing.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.checkBoxAllowTimeZoneEditing.Checked = true;
-            this.checkBoxAllowTimeZoneEditing.Location = new System.Drawing.Point(3, 293);
-            this.checkBoxAllowTimeZoneEditing.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
-            this.checkBoxAllowTimeZoneEditing.Name = "checkBoxAllowTimeZoneEditing";
-            this.checkBoxAllowTimeZoneEditing.Size = new System.Drawing.Size(212, 26);
-            this.checkBoxAllowTimeZoneEditing.TabIndex = 5;
-            this.checkBoxAllowTimeZoneEditing.Text = "Allow Timezone Editing";
             // 
             // checkBoxAllowUpdating
             // 
@@ -190,7 +181,9 @@
             this.checkBoxAllowUpdating.AutoSize = false;
             this.checkBoxAllowUpdating.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.checkBoxAllowUpdating.Checked = true;
-            this.checkBoxAllowUpdating.Location = new System.Drawing.Point(3, 248);
+            this.flowLayoutPanel1.SetFillWeight(this.checkBoxAllowUpdating, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.checkBoxAllowUpdating, true);
+            this.checkBoxAllowUpdating.Location = new System.Drawing.Point(3, 259);
             this.checkBoxAllowUpdating.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBoxAllowUpdating.Name = "checkBoxAllowUpdating";
             this.checkBoxAllowUpdating.Size = new System.Drawing.Size(212, 26);
@@ -199,7 +192,6 @@
             // 
             // dxScheduler
             // 
-            this.MinimumSize = new System.Drawing.Size(1003, 615);
             this.Name = "dxScheduler";
             this.Load += new System.EventHandler(this.dxScheduler_Load);
             this.groupBox1.ResumeLayout(false);
@@ -207,7 +199,6 @@
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 
@@ -220,6 +211,5 @@
         private CheckBox checkBoxAllowDragging;
         private CheckBox checkBoxAllowResizing;
         private CheckBox checkBoxAllowUpdating;
-        private CheckBox checkBoxAllowTimeZoneEditing;
     }
 }

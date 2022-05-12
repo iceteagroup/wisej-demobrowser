@@ -53,9 +53,9 @@
             // 
             this.linkDemo.Text = "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Form/Overview/jQuery/Light/";
             // 
-            // linkAPI
+            // linkApi
             // 
-            this.linkAPI.Text = "https://js.devexpress.com/Documentation/ApiReference/UI_Widgets/dxForm/";
+            this.linkApi.Text = "https://js.devexpress.com/Documentation/ApiReference/UI_Widgets/dxForm/";
             // 
             // panel
             // 
@@ -69,16 +69,14 @@
             this.flowLayoutPanel1.Controls.Add(this.checkBox4);
             this.flowLayoutPanel1.Controls.Add(this.comboBox1);
             this.flowLayoutPanel1.Controls.Add(this.button1);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 35);
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 441);
             // 
             // dxForm1
             // 
             this.dxForm1.Anchor = Wisej.Web.AnchorStyles.None;
-            this.dxForm1.Location = new System.Drawing.Point(283, 54);
+            this.dxForm1.Location = new System.Drawing.Point(178, 125);
             this.dxForm1.Name = "dxForm1";
             this.dxForm1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("dxForm1.Options"))));
-            this.dxForm1.Size = new System.Drawing.Size(523, 450);
+            this.dxForm1.Size = new System.Drawing.Size(533, 327);
             this.dxForm1.TabIndex = 0;
             // 
             // comboBox1
@@ -173,14 +171,12 @@
             // 
             // dxForm
             // 
-            this.MinimumSize = new System.Drawing.Size(942, 671);
             this.Name = "dxForm";
             this.Load += new System.EventHandler(this.dxForm_Load);
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

@@ -53,9 +53,9 @@
             // 
             this.linkDemo.Text = "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Menu/Overview/jQuery/Light/";
             // 
-            // linkAPI
+            // linkApi
             // 
-            this.linkAPI.Text = "https://js.devexpress.com/Documentation/ApiReference/UI_Widgets/dxMenu/";
+            this.linkApi.Text = "https://js.devexpress.com/Documentation/ApiReference/UI_Widgets/dxMenu/";
             // 
             // panel
             // 
@@ -69,13 +69,11 @@
             this.flowLayoutPanel1.Controls.Add(this.checkBox4);
             this.flowLayoutPanel1.Controls.Add(this.comboBox1);
             this.flowLayoutPanel1.Controls.Add(this.comboBox2);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 35);
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 441);
             // 
             // dxMenu1
             // 
             this.dxMenu1.Anchor = Wisej.Web.AnchorStyles.None;
-            this.dxMenu1.Location = new System.Drawing.Point(319, 262);
+            this.dxMenu1.Location = new System.Drawing.Point(219, 271);
             this.dxMenu1.Name = "dxMenu1";
             this.dxMenu1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("dxMenu1.Options"))));
             this.dxMenu1.Size = new System.Drawing.Size(450, 34);
@@ -177,14 +175,13 @@
             // 
             // dxMenu
             // 
-            this.MinimumSize = new System.Drawing.Size(877, 701);
             this.Name = "dxMenu";
+            this.Size = new System.Drawing.Size(1299, 701);
             this.Load += new System.EventHandler(this.dxMenu_Load);
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

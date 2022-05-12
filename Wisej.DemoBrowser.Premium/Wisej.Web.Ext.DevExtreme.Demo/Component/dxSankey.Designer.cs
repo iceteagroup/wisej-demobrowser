@@ -56,9 +56,9 @@
             this.linkDemo.Text = "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/SankeyChart/jQuery/Lig" +
     "ht/";
             // 
-            // linkAPI
+            // linkApi
             // 
-            this.linkAPI.Text = "https://js.devexpress.com/Documentation/ApiReference/Data_Visualization_Widgets/d" +
+            this.linkApi.Text = "https://js.devexpress.com/Documentation/ApiReference/Data_Visualization_Widgets/d" +
     "xSankey/";
             // 
             // panel
@@ -73,23 +73,21 @@
             this.flowLayoutPanel1.Controls.Add(this.numericUpDown1);
             this.flowLayoutPanel1.Controls.Add(this.numericUpDown2);
             this.flowLayoutPanel1.Controls.Add(this.buttonExport);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 35);
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 441);
             // 
             // dxSankey1
             // 
             this.dxSankey1.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Left | Wisej.Web.AnchorStyles.Right)));
-            this.dxSankey1.Location = new System.Drawing.Point(88, 47);
+            this.dxSankey1.Location = new System.Drawing.Point(24, 41);
             this.dxSankey1.Name = "dxSankey1";
             this.dxSankey1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("dxSankey1.Options"))));
-            this.dxSankey1.Size = new System.Drawing.Size(912, 463);
+            this.dxSankey1.Size = new System.Drawing.Size(841, 494);
             this.dxSankey1.TabIndex = 0;
             // 
             // buttonExport
             // 
             this.buttonExport.Display = Wisej.Web.Display.Icon;
             this.buttonExport.ImageSource = "resource.wx/Wisej.Ext.MaterialDesign/google-drive-image.svg";
-            this.buttonExport.Location = new System.Drawing.Point(3, 348);
+            this.buttonExport.Location = new System.Drawing.Point(3, 370);
             this.buttonExport.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.buttonExport.Name = "buttonExport";
             this.buttonExport.Size = new System.Drawing.Size(42, 42);
@@ -159,7 +157,7 @@
             this.numericUpDown1.Location = new System.Drawing.Point(3, 218);
             this.numericUpDown1.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(212, 46);
+            this.numericUpDown1.Size = new System.Drawing.Size(212, 57);
             this.numericUpDown1.TabIndex = 28;
             this.numericUpDown1.Value = new decimal(new int[] {
             15,
@@ -172,7 +170,7 @@
             this.flowLayoutPanel1.SetFillWeight(this.numericUpDown2, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.numericUpDown2, true);
             this.numericUpDown2.LabelText = "Padding";
-            this.numericUpDown2.Location = new System.Drawing.Point(3, 283);
+            this.numericUpDown2.Location = new System.Drawing.Point(3, 294);
             this.numericUpDown2.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.numericUpDown2.Maximum = new decimal(new int[] {
             500,
@@ -180,7 +178,7 @@
             0,
             0});
             this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(212, 46);
+            this.numericUpDown2.Size = new System.Drawing.Size(212, 57);
             this.numericUpDown2.TabIndex = 29;
             this.numericUpDown2.Value = new decimal(new int[] {
             30,
@@ -190,8 +188,8 @@
             // 
             // dxSankey
             // 
-            this.MinimumSize = new System.Drawing.Size(1126, 729);
             this.Name = "dxSankey";
+            this.Size = new System.Drawing.Size(1299, 729);
             this.Load += new System.EventHandler(this.dxSankey_Load);
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
@@ -200,7 +198,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

@@ -56,10 +56,10 @@
             this.linkDemo.Text = "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Diagram/Overview/jQuery/Light" +
     "/";
             // 
-            // linkAPI
+            // linkApi
             // 
-            this.linkAPI.TabIndex = 5;
-            this.linkAPI.Text = "https://js.devexpress.com/Documentation/ApiReference/UI_Widgets/dxDiagram/";
+            this.linkApi.TabIndex = 5;
+            this.linkApi.Text = "https://js.devexpress.com/Documentation/ApiReference/UI_Widgets/dxDiagram/";
             // 
             // panel
             // 
@@ -73,17 +73,15 @@
             this.flowLayoutPanel1.Controls.Add(this.checkBox3);
             this.flowLayoutPanel1.Controls.Add(this.comboBox1);
             this.flowLayoutPanel1.Controls.Add(this.comboBox2);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 35);
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 441);
             // 
             // dxDiagram1
             // 
             this.dxDiagram1.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
             | Wisej.Web.AnchorStyles.Left) 
             | Wisej.Web.AnchorStyles.Right)));
-            this.dxDiagram1.Location = new System.Drawing.Point(21, 28);
+            this.dxDiagram1.Location = new System.Drawing.Point(16, 13);
             this.dxDiagram1.Name = "dxDiagram1";
-            this.dxDiagram1.Size = new System.Drawing.Size(1046, 502);
+            this.dxDiagram1.Size = new System.Drawing.Size(856, 550);
             this.dxDiagram1.TabIndex = 0;
             // 
             // checkBox1
@@ -171,14 +169,12 @@
             // 
             // dxDiagram
             // 
-            this.MinimumSize = new System.Drawing.Size(1051, 696);
             this.Name = "dxDiagram";
             this.Load += new System.EventHandler(this.dxDiagram_Load);
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

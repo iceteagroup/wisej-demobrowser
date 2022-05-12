@@ -59,10 +59,10 @@
             this.linkDemo.Text = "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DropDownButton/Overview/jQuer" +
     "y/Light/";
             // 
-            // linkAPI
+            // linkApi
             // 
-            this.linkAPI.TabIndex = 5;
-            this.linkAPI.Text = "https://js.devexpress.com/Documentation/ApiReference/UI_Widgets/dxDropDownButton/" +
+            this.linkApi.TabIndex = 5;
+            this.linkApi.Text = "https://js.devexpress.com/Documentation/ApiReference/UI_Widgets/dxDropDownButton/" +
     "Configuration/";
             // 
             // panel
@@ -77,13 +77,11 @@
             this.flowLayoutPanel1.Controls.Add(this.checkBox3);
             this.flowLayoutPanel1.Controls.Add(this.checkBox4);
             this.flowLayoutPanel1.Controls.Add(this.checkBox5);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 35);
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 441);
             // 
             // dxDropDownButton1
             // 
             this.dxDropDownButton1.Anchor = Wisej.Web.AnchorStyles.None;
-            this.dxDropDownButton1.Location = new System.Drawing.Point(369, 259);
+            this.dxDropDownButton1.Location = new System.Drawing.Point(269, 268);
             this.dxDropDownButton1.Name = "dxDropDownButton1";
             this.dxDropDownButton1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("dxDropDownButton1.Options"))));
             this.dxDropDownButton1.Size = new System.Drawing.Size(350, 40);
@@ -172,13 +170,11 @@
             // 
             // dxDropDownButton
             // 
-            this.MinimumSize = new System.Drawing.Size(783, 586);
             this.Name = "dxDropDownButton";
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

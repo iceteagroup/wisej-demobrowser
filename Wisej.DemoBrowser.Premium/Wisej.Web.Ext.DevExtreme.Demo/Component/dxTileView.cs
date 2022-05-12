@@ -23,26 +23,11 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
 
 		private void buttonUpdate_Click(object sender, EventArgs e)
 		{
-			this.dxTileView1.Options.showScrollbar = this.checkBox1.Checked;
-			this.dxTileView1.Options.direction = this.comboBox1.SelectedItem;
 			this.dxTileView1.Options.itemMargin = this.numericUpDownItemMargin.Value;
 			this.dxTileView1.Options.baseItemWidth = this.numericUpDownBaseItemWidth.Value;
 			this.dxTileView1.Options.baseItemHeight = this.numericUpDownBaseItemHeight.Value;
 
 			this.dxTileView1.Update();
 		}
-
-		private async void button1_Click(object sender, EventArgs e)
-		{
-			var scrollPosition = await this.dxTileView1.Instance.scrollPositionAsync();
-
-			AlertBox.Show($"Scroll Position: {scrollPosition}");
-		}
-
-
-        private void dxTileView_Load(object sender, EventArgs e)
-        {
-			this.comboBox1.SelectedIndex = 0;
-        }
     }
 }

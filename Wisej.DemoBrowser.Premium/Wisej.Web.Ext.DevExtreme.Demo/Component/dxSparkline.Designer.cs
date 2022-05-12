@@ -66,10 +66,10 @@
             this.linkDemo.Text = "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/SimpleSparklines/jQuer" +
     "y/Light/";
             // 
-            // linkAPI
+            // linkApi
             // 
-            this.linkAPI.Size = new System.Drawing.Size(904, 24);
-            this.linkAPI.Text = "https://js.devexpress.com/Documentation/ApiReference/Data_Visualization_Widgets/d" +
+            this.linkApi.Size = new System.Drawing.Size(904, 24);
+            this.linkApi.Text = "https://js.devexpress.com/Documentation/ApiReference/Data_Visualization_Widgets/d" +
     "xSparkline/";
             // 
             // panel
@@ -80,8 +80,6 @@
             // 
             this.flowLayoutPanel1.Controls.Add(this.button1);
             this.flowLayoutPanel1.Controls.Add(this.label10);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 35);
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 441);
             // 
             // tableLayoutPanel1
             // 
@@ -123,7 +121,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new Wisej.Web.RowStyle(Wisej.Web.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.ShowCloseButton = false;
             this.tableLayoutPanel1.ShowHeader = true;
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1066, 527);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(866, 546);
             this.tableLayoutPanel1.TabIndex = 1;
             this.tableLayoutPanel1.TabStop = true;
             this.tableLayoutPanel1.Text = "Monthly Prices of Oil, Gold, and Silver";
@@ -131,21 +129,21 @@
             // dxSparkline9
             // 
             this.dxSparkline9.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Left | Wisej.Web.AnchorStyles.Right)));
-            this.dxSparkline9.Location = new System.Drawing.Point(548, 391);
+            this.dxSparkline9.Location = new System.Drawing.Point(448, 408);
             this.dxSparkline9.Margin = new Wisej.Web.Padding(16);
             this.dxSparkline9.Name = "dxSparkline9";
             this.dxSparkline9.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("dxSparkline9.Options"))));
-            this.dxSparkline9.Size = new System.Drawing.Size(234, 38);
+            this.dxSparkline9.Size = new System.Drawing.Size(184, 38);
             this.dxSparkline9.TabIndex = 16;
             // 
             // dxSparkline8
             // 
             this.dxSparkline8.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Left | Wisej.Web.AnchorStyles.Right)));
-            this.dxSparkline8.Location = new System.Drawing.Point(282, 391);
+            this.dxSparkline8.Location = new System.Drawing.Point(232, 408);
             this.dxSparkline8.Margin = new Wisej.Web.Padding(16);
             this.dxSparkline8.Name = "dxSparkline8";
             this.dxSparkline8.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("dxSparkline8.Options"))));
-            this.dxSparkline8.Size = new System.Drawing.Size(234, 38);
+            this.dxSparkline8.Size = new System.Drawing.Size(184, 38);
             this.dxSparkline8.TabIndex = 15;
             // 
             // label5
@@ -153,9 +151,9 @@
             this.label5.AutoSize = true;
             this.label5.Dock = Wisej.Web.DockStyle.Fill;
             this.label5.Font = new System.Drawing.Font("@defaultBold", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.label5.Location = new System.Drawing.Point(3, 237);
+            this.label5.Location = new System.Drawing.Point(3, 247);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(260, 111);
+            this.label5.Size = new System.Drawing.Size(210, 116);
             this.label5.TabIndex = 2;
             this.label5.Text = "2011";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -165,9 +163,9 @@
             this.label4.AutoSize = true;
             this.label4.Dock = Wisej.Web.DockStyle.Fill;
             this.label4.Font = new System.Drawing.Font("@defaultBold", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.label4.Location = new System.Drawing.Point(3, 120);
+            this.label4.Location = new System.Drawing.Point(3, 125);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(260, 111);
+            this.label4.Size = new System.Drawing.Size(210, 116);
             this.label4.TabIndex = 1;
             this.label4.Text = "2010";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -175,11 +173,11 @@
             // dxSparkline1
             // 
             this.dxSparkline1.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Left | Wisej.Web.AnchorStyles.Right)));
-            this.dxSparkline1.Location = new System.Drawing.Point(282, 156);
+            this.dxSparkline1.Location = new System.Drawing.Point(232, 164);
             this.dxSparkline1.Margin = new Wisej.Web.Padding(16);
             this.dxSparkline1.Name = "dxSparkline1";
             this.dxSparkline1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("dxSparkline1.Options"))));
-            this.dxSparkline1.Size = new System.Drawing.Size(234, 38);
+            this.dxSparkline1.Size = new System.Drawing.Size(184, 38);
             this.dxSparkline1.TabIndex = 4;
             // 
             // label7
@@ -187,50 +185,50 @@
             this.label7.Anchor = Wisej.Web.AnchorStyles.None;
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("@defaultBold", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.label7.Location = new System.Drawing.Point(337, 49);
+            this.label7.Location = new System.Drawing.Point(259, 50);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(123, 19);
+            this.label7.Size = new System.Drawing.Size(130, 22);
             this.label7.TabIndex = 4;
             this.label7.Text = "Oil (USD/barrel)";
             // 
             // dxSparkline2
             // 
             this.dxSparkline2.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Left | Wisej.Web.AnchorStyles.Right)));
-            this.dxSparkline2.Location = new System.Drawing.Point(282, 273);
+            this.dxSparkline2.Location = new System.Drawing.Point(232, 286);
             this.dxSparkline2.Margin = new Wisej.Web.Padding(16);
             this.dxSparkline2.Name = "dxSparkline2";
             this.dxSparkline2.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("dxSparkline2.Options"))));
-            this.dxSparkline2.Size = new System.Drawing.Size(234, 38);
+            this.dxSparkline2.Size = new System.Drawing.Size(184, 38);
             this.dxSparkline2.TabIndex = 6;
             // 
             // dxSparkline3
             // 
             this.dxSparkline3.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Left | Wisej.Web.AnchorStyles.Right)));
-            this.dxSparkline3.Location = new System.Drawing.Point(814, 391);
+            this.dxSparkline3.Location = new System.Drawing.Point(664, 408);
             this.dxSparkline3.Margin = new Wisej.Web.Padding(16);
             this.dxSparkline3.Name = "dxSparkline3";
             this.dxSparkline3.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("dxSparkline3.Options"))));
-            this.dxSparkline3.Size = new System.Drawing.Size(234, 38);
+            this.dxSparkline3.Size = new System.Drawing.Size(184, 38);
             this.dxSparkline3.TabIndex = 8;
             // 
             // dxSparkline4
             // 
             this.dxSparkline4.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Left | Wisej.Web.AnchorStyles.Right)));
-            this.dxSparkline4.Location = new System.Drawing.Point(548, 156);
+            this.dxSparkline4.Location = new System.Drawing.Point(448, 164);
             this.dxSparkline4.Margin = new Wisej.Web.Padding(16);
             this.dxSparkline4.Name = "dxSparkline4";
             this.dxSparkline4.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("dxSparkline4.Options"))));
-            this.dxSparkline4.Size = new System.Drawing.Size(234, 38);
+            this.dxSparkline4.Size = new System.Drawing.Size(184, 38);
             this.dxSparkline4.TabIndex = 9;
             // 
             // dxSparkline6
             // 
             this.dxSparkline6.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Left | Wisej.Web.AnchorStyles.Right)));
-            this.dxSparkline6.Location = new System.Drawing.Point(548, 273);
+            this.dxSparkline6.Location = new System.Drawing.Point(448, 286);
             this.dxSparkline6.Margin = new Wisej.Web.Padding(16);
             this.dxSparkline6.Name = "dxSparkline6";
             this.dxSparkline6.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("dxSparkline6.Options"))));
-            this.dxSparkline6.Size = new System.Drawing.Size(234, 38);
+            this.dxSparkline6.Size = new System.Drawing.Size(184, 38);
             this.dxSparkline6.TabIndex = 12;
             // 
             // label8
@@ -238,9 +236,9 @@
             this.label8.Anchor = Wisej.Web.AnchorStyles.None;
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("@defaultBold", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.label8.Location = new System.Drawing.Point(579, 49);
+            this.label8.Location = new System.Drawing.Point(449, 50);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(172, 19);
+            this.label8.Size = new System.Drawing.Size(181, 22);
             this.label8.TabIndex = 10;
             this.label8.Text = "Gold (USD/troy ounce)";
             // 
@@ -249,9 +247,9 @@
             this.label6.AutoSize = true;
             this.label6.Dock = Wisej.Web.DockStyle.Fill;
             this.label6.Font = new System.Drawing.Font("@defaultBold", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.label6.Location = new System.Drawing.Point(3, 354);
+            this.label6.Location = new System.Drawing.Point(3, 369);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(260, 112);
+            this.label6.Size = new System.Drawing.Size(210, 116);
             this.label6.TabIndex = 3;
             this.label6.Text = "2012";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -261,30 +259,30 @@
             this.label9.Anchor = Wisej.Web.AnchorStyles.None;
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("@defaultBold", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.label9.Location = new System.Drawing.Point(841, 49);
+            this.label9.Location = new System.Drawing.Point(661, 50);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(179, 19);
+            this.label9.Size = new System.Drawing.Size(189, 22);
             this.label9.TabIndex = 13;
             this.label9.Text = "Silver (USD/troy ounce)";
             // 
             // dxSparkline7
             // 
             this.dxSparkline7.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Left | Wisej.Web.AnchorStyles.Right)));
-            this.dxSparkline7.Location = new System.Drawing.Point(814, 156);
+            this.dxSparkline7.Location = new System.Drawing.Point(664, 164);
             this.dxSparkline7.Margin = new Wisej.Web.Padding(16);
             this.dxSparkline7.Name = "dxSparkline7";
             this.dxSparkline7.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("dxSparkline7.Options"))));
-            this.dxSparkline7.Size = new System.Drawing.Size(234, 38);
+            this.dxSparkline7.Size = new System.Drawing.Size(184, 38);
             this.dxSparkline7.TabIndex = 14;
             // 
             // dxSparkline5
             // 
             this.dxSparkline5.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Left | Wisej.Web.AnchorStyles.Right)));
-            this.dxSparkline5.Location = new System.Drawing.Point(814, 273);
+            this.dxSparkline5.Location = new System.Drawing.Point(664, 286);
             this.dxSparkline5.Margin = new Wisej.Web.Padding(16);
             this.dxSparkline5.Name = "dxSparkline5";
             this.dxSparkline5.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("dxSparkline5.Options"))));
-            this.dxSparkline5.Size = new System.Drawing.Size(234, 38);
+            this.dxSparkline5.Size = new System.Drawing.Size(184, 38);
             this.dxSparkline5.TabIndex = 11;
             // 
             // button1
@@ -310,7 +308,6 @@
             // 
             // dxSparkline
             // 
-            this.MinimumSize = new System.Drawing.Size(934, 597);
             this.Name = "dxSparkline";
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
@@ -318,7 +315,6 @@
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 
