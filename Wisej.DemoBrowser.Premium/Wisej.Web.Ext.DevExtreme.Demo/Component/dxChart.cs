@@ -54,5 +54,10 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
 			this.comboBox1.SelectedIndex = 0;
 			this.comboBoxChartType.SelectedIndex = 0;
         }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
