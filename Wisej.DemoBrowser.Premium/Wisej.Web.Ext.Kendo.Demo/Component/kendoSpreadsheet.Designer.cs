@@ -173,6 +173,7 @@
             // 
             this.MinimumSize = new System.Drawing.Size(900, 610);
             this.Name = "kendoSpreadsheet";
+            this.Load += new System.EventHandler(this.kendoSpreadsheet_Load);
             this.panel.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.flowLayoutPanelProperties.ResumeLayout(false);

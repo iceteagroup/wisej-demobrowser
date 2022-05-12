@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Linq;
 using Wisej.Web;
 
@@ -23,5 +24,41 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 
 			Application.Play(MessageBoxIcon.Information);
 		}
-	}
+
+        private async void buttonImage_Click(object sender, EventArgs e)
+        {
+			var dataUrl = await this.kendoSparkline1.Instance.imageDataURLAsync();
+			var base64 = dataUrl.Replace("data:image/png;base64,", "");
+			var bytes = Convert.FromBase64String(base64);
+
+			using (var ms = new MemoryStream(bytes))
+				Application.Download(ms, "kendoSparkline.png");
+		}
+
+        private async void buttonPDF_Click(object sender, EventArgs e)
+        {
+			var dataUrl = await this.kendoSparkline1.ExportPDFAsync();
+			var base64 = dataUrl.Replace("data:application/pdf;base64,", "");
+			var bytes = Convert.FromBase64String(base64);
+
+			using (var ms = new MemoryStream(bytes))
+				Application.Download(ms, "kendoStockChart.pdf");
+		}
+
+        private void buttonUpdate_Click(object sender, EventArgs e)
+        {
+			var theme = this.comboBoxTheme.SelectedItem;
+
+			var sparklinesClimate = this.panelClimate.Controls.Where(c => c is Kendo.kendoSparkline);
+			var sparklinesTemperature = this.panelTemperature.Controls.Where(c => c is Kendo.kendoSparkline);
+			var sparklinesConditioner = this.panelConditioner.Controls.Where(c => c is Kendo.kendoSparkline);
+			var sparklines = sparklinesClimate.Union(sparklinesTemperature).Union(sparklinesConditioner);
+
+			foreach (Kendo.kendoSparkline sparkline in sparklines)
+            {
+				sparkline.Options.theme = theme;
+				sparkline.Update();
+            }
+		}
+    }
 }

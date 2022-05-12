@@ -1,20 +1,16 @@
 ﻿using System;
+using System.Linq;
 using Wisej.Web;
 
 namespace Wisej.Web.Ext.Kendo.Demo.Component
 {
-	public partial class kendoSlider : Wisej.Web.Ext.Kendo.Demo.Component.TestBase
+	public partial class kendoSlider : TestBase
 	{
 		public kendoSlider()
 		{
 			InitializeComponent();
-            this.Load += KendoSlider_Load;
-			this.kendoSlider1.Instance.onChange += new WidgetEventHandler(kendoSlider1_WidgetEvent);
-		}
 
-        private void KendoSlider_Load(object sender, EventArgs e)
-        {
-			this.comboBoxTickPlacement.SelectedIndex = 0;
+			this.kendoSlider1.Instance.onChange += new WidgetEventHandler(kendoSlider1_WidgetEvent);
 		}
 
 		private void kendoSlider1_WidgetEvent(object sender, WidgetEventArgs e)
@@ -26,13 +22,18 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 			Application.Play(MessageBoxIcon.Information);
 		}
 
-
         private void buttonUpdate_Click(object sender, EventArgs e)
         {
-			this.kendoSlider1.Options.showButtons = this.checkBoxShowButtons.Checked;
-			this.kendoSlider1.Options.orientation = this.comboBoxTickPlacement.SelectedItem.ToString()?.ToLower();
+			var sliders = this.panel.Controls.Where(c => c is Kendo.kendoSlider);
 
-			this.kendoSlider1.Update();
+			foreach (Kendo.kendoSlider slider in sliders)
+            {
+				slider.Options.value = this.numericUpDownValue.Value;
+				slider.Options.showButtons = this.checkBoxShowButtons.Checked;
+				slider.Options.tickPlacement = this.comboBoxTickPlacement.SelectedItem.ToString()?.ToLower();
+
+				slider.Update();
+			}
         }
-    }
+	}
 }

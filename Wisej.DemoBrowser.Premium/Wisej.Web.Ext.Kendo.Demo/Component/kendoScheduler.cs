@@ -52,5 +52,13 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 			response.AppendHeader("Content-Disposition", $"attachment; filename={fileName}");
 			response.OutputStream.Write(bytes, 0, bytes.Length);
 		}
-	}
+
+        private void buttonUpdate_Click(object sender, EventArgs e)
+        {
+			this.kendoScheduler1.Options.snap = this.checkBoxSnap.Checked;
+			this.kendoScheduler1.Options.allDaySlot = this.checkBoxAllDay.Checked;
+			this.kendoScheduler1.Options.editable = this.checkBoxEditable.Checked;
+			this.kendoScheduler1.Options.showWorkHours = this.checkBoxShowWorkHours.Checked;
+        }
+    }
 }

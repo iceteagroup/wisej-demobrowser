@@ -31,6 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(kendoTreeMap));
             this.kendoTreeMap1 = new Wisej.Web.Ext.Kendo.kendoTreeMap();
             this.comboBoxType = new Wisej.Web.ComboBox();
+            this.checkedListBoxColors = new Wisej.Web.CheckedListBox();
+            this.labelColors = new Wisej.Web.Label();
             this.panel.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.flowLayoutPanelProperties.SuspendLayout();
@@ -59,6 +61,8 @@
             // flowLayoutPanelProperties
             // 
             this.flowLayoutPanelProperties.Controls.Add(this.comboBoxType);
+            this.flowLayoutPanelProperties.Controls.Add(this.labelColors);
+            this.flowLayoutPanelProperties.Controls.Add(this.checkedListBoxColors);
             // 
             // kendoTreeMap1
             // 
@@ -86,6 +90,40 @@
             this.comboBoxType.Name = "comboBoxType";
             this.comboBoxType.Size = new System.Drawing.Size(212, 57);
             this.comboBoxType.TabIndex = 0;
+            this.comboBoxType.Text = "Squarified";
+            // 
+            // checkedListBoxColors
+            // 
+            this.flowLayoutPanelProperties.SetFillWeight(this.checkedListBoxColors, 1);
+            this.flowLayoutPanelProperties.SetFlowBreak(this.checkedListBoxColors, true);
+            this.checkedListBoxColors.Items.AddRange(new object[] {
+            "LightSalmon",
+            "Coral",
+            "Tomato",
+            "OrangeRed",
+            "DarkOrange",
+            "Orange",
+            "Gold",
+            "Yellow",
+            "LightYellow",
+            "LemonChiffon"});
+            this.checkedListBoxColors.Location = new System.Drawing.Point(3, 107);
+            this.checkedListBoxColors.Name = "checkedListBoxColors";
+            this.checkedListBoxColors.SelectionMode = Wisej.Web.SelectionMode.MultiExtended;
+            this.checkedListBoxColors.Size = new System.Drawing.Size(212, 309);
+            this.checkedListBoxColors.TabIndex = 1;
+            // 
+            // labelColors
+            // 
+            this.labelColors.AutoSize = true;
+            this.flowLayoutPanelProperties.SetFillWeight(this.labelColors, 1);
+            this.flowLayoutPanelProperties.SetFlowBreak(this.labelColors, true);
+            this.labelColors.Location = new System.Drawing.Point(3, 79);
+            this.labelColors.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
+            this.labelColors.Name = "labelColors";
+            this.labelColors.Size = new System.Drawing.Size(212, 22);
+            this.labelColors.TabIndex = 2;
+            this.labelColors.Text = "Colors";
             // 
             // kendoTreeMap
             // 
@@ -104,5 +142,7 @@
 
 		private Kendo.kendoTreeMap kendoTreeMap1;
         private ComboBox comboBoxType;
+        private Label labelColors;
+        private CheckedListBox checkedListBoxColors;
     }
 }

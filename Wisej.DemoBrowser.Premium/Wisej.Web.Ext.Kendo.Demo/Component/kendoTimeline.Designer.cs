@@ -73,8 +73,8 @@
             // 
             // flowLayoutPanelProperties
             // 
-            this.flowLayoutPanelProperties.Controls.Add(this.comboBoxOrientation);
             this.flowLayoutPanelProperties.Controls.Add(this.checkBoxShowDateLabel);
+            this.flowLayoutPanelProperties.Controls.Add(this.comboBoxOrientation);
             this.flowLayoutPanelProperties.Size = new System.Drawing.Size(219, 434);
             // 
             // kendoTimeline1
@@ -98,7 +98,8 @@
             "Vertical",
             "Horizontal"});
             this.comboBoxOrientation.LabelText = "Orientation";
-            this.comboBoxOrientation.Location = new System.Drawing.Point(3, 3);
+            this.comboBoxOrientation.Location = new System.Drawing.Point(3, 48);
+            this.comboBoxOrientation.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.comboBoxOrientation.Name = "comboBoxOrientation";
             this.comboBoxOrientation.Size = new System.Drawing.Size(213, 57);
             this.comboBoxOrientation.TabIndex = 0;
@@ -111,11 +112,11 @@
             this.checkBoxShowDateLabel.AutoSize = false;
             this.checkBoxShowDateLabel.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.checkBoxShowDateLabel.Checked = true;
-            this.checkBoxShowDateLabel.Location = new System.Drawing.Point(3, 66);
+            this.checkBoxShowDateLabel.Location = new System.Drawing.Point(3, 3);
             this.checkBoxShowDateLabel.Name = "checkBoxShowDateLabel";
             this.checkBoxShowDateLabel.Size = new System.Drawing.Size(213, 26);
             this.checkBoxShowDateLabel.TabIndex = 1;
-            this.checkBoxShowDateLabel.Text = "Show date label";
+            this.checkBoxShowDateLabel.Text = "Show Date Label";
             // 
             // kendoTimeline
             // 

@@ -61,5 +61,30 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 
 			Application.Play(MessageBoxIcon.Information);
 		}
-	}
+
+		private async void buttonExportPDF_Click(object sender, EventArgs e)
+		{
+			var dataUrl = await this.kendoStockChart1.ExportPDFAsync();
+			var base64 = dataUrl.Replace("data:application/pdf;base64,", "");
+			var bytes = Convert.FromBase64String(base64);
+
+			using (var ms = new MemoryStream(bytes))
+				Application.Download(ms, "kendoStockChart.pdf");
+		}
+
+		private async void buttonExportImage_Click(object sender, EventArgs e)
+		{
+			var dataUrl = await this.kendoStockChart1.Instance.imageDataURLAsync();
+			var base64 = dataUrl.Replace("data:image/png;base64,", "");
+			var bytes = Convert.FromBase64String(base64);
+			
+			using (var ms = new MemoryStream(bytes))
+				Application.Download(ms, "kendoStockChart.png");
+		}
+
+        private void buttonUpdate_Click(object sender, EventArgs e)
+        {
+			this.kendoStockChart1.Options.title = this.textBoxTitle.Text;
+        }
+    }
 }
