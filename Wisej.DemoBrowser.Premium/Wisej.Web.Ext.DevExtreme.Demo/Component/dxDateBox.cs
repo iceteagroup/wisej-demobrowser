@@ -34,7 +34,6 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
         private void dxDateBox_Load(object sender, EventArgs e)
         {
 			this.comboBox2.SelectedIndex = 0; 
-			this.comboBoxStylingMode.SelectedIndex = 0;
         }
     }
 }
