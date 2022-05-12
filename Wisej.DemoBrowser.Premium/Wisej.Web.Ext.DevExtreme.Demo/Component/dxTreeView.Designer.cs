@@ -54,9 +54,9 @@
             this.linkDemo.Text = "https://js.devexpress.com/Demos/WidgetsGallery/Demo/TreeView/HierarchicalDataStru" +
     "cture/jQuery/Light/";
             // 
-            // linkAPI
+            // linkApi
             // 
-            this.linkAPI.Text = "https://js.devexpress.com/Documentation/ApiReference/UI_Widgets/dxTreeView/";
+            this.linkApi.Text = "https://js.devexpress.com/Documentation/ApiReference/UI_Widgets/dxTreeView/";
             // 
             // panel
             // 
@@ -70,17 +70,15 @@
             this.flowLayoutPanel1.Controls.Add(this.checkBox7);
             this.flowLayoutPanel1.Controls.Add(this.comboBox1);
             this.flowLayoutPanel1.Controls.Add(this.comboBox2);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 35);
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 441);
             // 
             // dxTreeView1
             // 
             this.dxTreeView1.Anchor = Wisej.Web.AnchorStyles.None;
             this.dxTreeView1.BorderStyle = Wisej.Web.BorderStyle.Solid;
-            this.dxTreeView1.Location = new System.Drawing.Point(394, 54);
+            this.dxTreeView1.Location = new System.Drawing.Point(294, 118);
             this.dxTreeView1.Name = "dxTreeView1";
             this.dxTreeView1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("dxTreeView1.Options"))));
-            this.dxTreeView1.Size = new System.Drawing.Size(300, 450);
+            this.dxTreeView1.Size = new System.Drawing.Size(300, 340);
             this.dxTreeView1.TabIndex = 0;
             // 
             // checkBox4
@@ -184,14 +182,12 @@
             // dxTreeView
             // 
             this.AutoScroll = true;
-            this.MinimumSize = new System.Drawing.Size(877, 661);
             this.Name = "dxTreeView";
             this.Load += new System.EventHandler(this.dxTreeView_Load);
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

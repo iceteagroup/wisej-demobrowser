@@ -31,7 +31,6 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
 			this.dxScheduler1.Options.editing.allowDragging = this.checkBoxAllowDragging.Checked;
 			this.dxScheduler1.Options.editing.allowResizing = this.checkBoxAllowResizing.Checked;
 			this.dxScheduler1.Options.editing.allowDeleting = this.checkBoxAllowDeleting.Checked;
-			this.dxScheduler1.Options.editing.allowTimeZoneEditing = this.checkBoxAllowTimeZoneEditing.Checked;
 
 			this.dxScheduler1.Update();
         }

@@ -29,6 +29,6 @@ namespace Wisej.Web.Ext.DevExtreme.Demo
 			app.UseWisej();
 			app.UseFileServer();
 			app.Run();
-		}
+		} 
 	}
 }

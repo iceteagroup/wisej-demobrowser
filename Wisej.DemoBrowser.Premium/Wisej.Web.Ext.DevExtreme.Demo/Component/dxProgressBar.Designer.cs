@@ -54,9 +54,9 @@
             this.linkDemo.Text = "https://js.devexpress.com/Demos/WidgetsGallery/Demo/ProgressBar/Overview/jQuery/L" +
     "ight/";
             // 
-            // linkAPI
+            // linkApi
             // 
-            this.linkAPI.Text = "https://js.devexpress.com/Documentation/ApiReference/UI_Widgets/dxProgressBar/";
+            this.linkApi.Text = "https://js.devexpress.com/Documentation/ApiReference/UI_Widgets/dxProgressBar/";
             // 
             // panel
             // 
@@ -68,13 +68,11 @@
             this.flowLayoutPanel1.Controls.Add(this.numericUpDown1);
             this.flowLayoutPanel1.Controls.Add(this.numericUpDown2);
             this.flowLayoutPanel1.Controls.Add(this.numericUpDown3);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 35);
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 441);
             // 
             // dxProgressBar1
             // 
             this.dxProgressBar1.Anchor = Wisej.Web.AnchorStyles.None;
-            this.dxProgressBar1.Location = new System.Drawing.Point(369, 262);
+            this.dxProgressBar1.Location = new System.Drawing.Point(269, 262);
             this.dxProgressBar1.Name = "dxProgressBar1";
             this.dxProgressBar1.Size = new System.Drawing.Size(350, 35);
             this.dxProgressBar1.TabIndex = 0;
@@ -92,7 +90,7 @@
             0,
             0});
             this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(212, 46);
+            this.numericUpDown1.Size = new System.Drawing.Size(212, 57);
             this.numericUpDown1.TabIndex = 24;
             this.numericUpDown1.Value = new decimal(new int[] {
             100,
@@ -105,7 +103,7 @@
             this.flowLayoutPanel1.SetFillWeight(this.numericUpDown2, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.numericUpDown2, true);
             this.numericUpDown2.LabelText = "Minimum";
-            this.numericUpDown2.Location = new System.Drawing.Point(3, 138);
+            this.numericUpDown2.Location = new System.Drawing.Point(3, 149);
             this.numericUpDown2.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.numericUpDown2.Maximum = new decimal(new int[] {
             1000,
@@ -113,7 +111,7 @@
             0,
             0});
             this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(212, 46);
+            this.numericUpDown2.Size = new System.Drawing.Size(212, 57);
             this.numericUpDown2.TabIndex = 25;
             // 
             // numericUpDown3
@@ -121,7 +119,7 @@
             this.flowLayoutPanel1.SetFillWeight(this.numericUpDown3, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.numericUpDown3, true);
             this.numericUpDown3.LabelText = "Value";
-            this.numericUpDown3.Location = new System.Drawing.Point(3, 203);
+            this.numericUpDown3.Location = new System.Drawing.Point(3, 225);
             this.numericUpDown3.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.numericUpDown3.Maximum = new decimal(new int[] {
             1000,
@@ -129,7 +127,7 @@
             0,
             0});
             this.numericUpDown3.Name = "numericUpDown3";
-            this.numericUpDown3.Size = new System.Drawing.Size(212, 46);
+            this.numericUpDown3.Size = new System.Drawing.Size(212, 57);
             this.numericUpDown3.TabIndex = 26;
             this.numericUpDown3.Value = new decimal(new int[] {
             40,
@@ -154,7 +152,6 @@
             // 
             // dxProgressBar
             // 
-            this.MinimumSize = new System.Drawing.Size(784, 655);
             this.Name = "dxProgressBar";
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
@@ -164,7 +161,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

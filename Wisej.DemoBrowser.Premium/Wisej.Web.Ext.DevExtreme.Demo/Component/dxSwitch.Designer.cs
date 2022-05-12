@@ -49,9 +49,9 @@
             this.linkDemo.Text = "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Switch/Overview/jQuery/Light/" +
     "";
             // 
-            // linkAPI
+            // linkApi
             // 
-            this.linkAPI.Text = "https://js.devexpress.com/Documentation/ApiReference/UI_Widgets/dxSwitch/";
+            this.linkApi.Text = "https://js.devexpress.com/Documentation/ApiReference/UI_Widgets/dxSwitch/";
             // 
             // panel
             // 
@@ -61,13 +61,11 @@
             // 
             this.flowLayoutPanel1.Controls.Add(this.checkBoxIsValid);
             this.flowLayoutPanel1.Controls.Add(this.checkBoxValue);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 35);
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 441);
             // 
             // dxSwitch1
             // 
             this.dxSwitch1.Anchor = Wisej.Web.AnchorStyles.None;
-            this.dxSwitch1.Location = new System.Drawing.Point(513, 262);
+            this.dxSwitch1.Location = new System.Drawing.Point(413, 271);
             this.dxSwitch1.Name = "dxSwitch1";
             this.dxSwitch1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"switchedOnText\":\"on\",\"switchedOffText\":\"off\",\"isValid\":false}")));
             this.dxSwitch1.Size = new System.Drawing.Size(63, 35);
@@ -103,13 +101,11 @@
             // 
             // dxSwitch
             // 
-            this.MinimumSize = new System.Drawing.Size(815, 403);
             this.Name = "dxSwitch";
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

@@ -59,11 +59,11 @@
             this.linkDemo.Text = "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/Overview/jQuery/Light/" +
     "";
             // 
-            // linkAPI
+            // linkApi
             // 
-            this.linkAPI.Size = new System.Drawing.Size(827, 24);
-            this.linkAPI.TabIndex = 5;
-            this.linkAPI.Text = "https://js.devexpress.com/Documentation/ApiReference/Data_Visualization_Widgets/d" +
+            this.linkApi.Size = new System.Drawing.Size(827, 24);
+            this.linkApi.TabIndex = 5;
+            this.linkApi.Text = "https://js.devexpress.com/Documentation/ApiReference/Data_Visualization_Widgets/d" +
     "xChart/";
             // 
             // panel
@@ -88,10 +88,10 @@
             this.dxChart1.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
             | Wisej.Web.AnchorStyles.Left) 
             | Wisej.Web.AnchorStyles.Right)));
-            this.dxChart1.Location = new System.Drawing.Point(37, 28);
+            this.dxChart1.Location = new System.Drawing.Point(31, 37);
             this.dxChart1.Name = "dxChart1";
             this.dxChart1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("dxChart1.Options"))));
-            this.dxChart1.Size = new System.Drawing.Size(1015, 503);
+            this.dxChart1.Size = new System.Drawing.Size(826, 503);
             this.dxChart1.TabIndex = 0;
             widgetFunction1.Name = "getDataSourceItems";
             widgetFunction1.Source = "return this.Instance.getDataSource()._items;";
@@ -207,7 +207,6 @@
             // 
             // dxChart
             // 
-            this.MinimumSize = new System.Drawing.Size(924, 675);
             this.Name = "dxChart";
             this.Load += new System.EventHandler(this.dxChart_Load);
             this.groupBox1.ResumeLayout(false);
@@ -215,7 +214,6 @@
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

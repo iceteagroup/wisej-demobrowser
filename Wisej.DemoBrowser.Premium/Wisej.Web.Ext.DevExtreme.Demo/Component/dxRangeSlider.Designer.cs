@@ -44,13 +44,8 @@
             // 
             this.linkDocs.Text = "https://js.devexpress.com/Documentation/Guide/Widgets/RangeSlider/Overview/";
             // 
-            // groupBox1
-            // 
-            this.groupBox1.Size = new System.Drawing.Size(250, 534);
-            // 
             // buttonUpdate
             // 
-            this.buttonUpdate.Location = new System.Drawing.Point(16, 466);
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
             // linkDemo
@@ -58,14 +53,13 @@
             this.linkDemo.Text = "https://js.devexpress.com/Demos/WidgetsGallery/Demo/RangeSlider/Overview/jQuery/L" +
     "ight/";
             // 
-            // linkAPI
+            // linkApi
             // 
-            this.linkAPI.Text = "https://js.devexpress.com/Documentation/ApiReference/UI_Widgets/dxRangeSlider/";
+            this.linkApi.Text = "https://js.devexpress.com/Documentation/ApiReference/UI_Widgets/dxRangeSlider/";
             // 
             // panel
             // 
             this.panel.Controls.Add(this.dxRangeSlider1);
-            this.panel.Size = new System.Drawing.Size(570, 534);
             // 
             // flowLayoutPanel1
             // 
@@ -73,16 +67,14 @@
             this.flowLayoutPanel1.Controls.Add(this.checkBox2);
             this.flowLayoutPanel1.Controls.Add(this.numericUpDown1);
             this.flowLayoutPanel1.Controls.Add(this.numericUpDown2);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 35);
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 415);
             // 
             // dxRangeSlider1
             // 
             this.dxRangeSlider1.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Left | Wisej.Web.AnchorStyles.Right)));
-            this.dxRangeSlider1.Location = new System.Drawing.Point(164, 237);
+            this.dxRangeSlider1.Location = new System.Drawing.Point(164, 259);
             this.dxRangeSlider1.Name = "dxRangeSlider1";
             this.dxRangeSlider1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"startName\":\"st\",\"endName\":\"csa\"}")));
-            this.dxRangeSlider1.Size = new System.Drawing.Size(239, 59);
+            this.dxRangeSlider1.Size = new System.Drawing.Size(559, 59);
             this.dxRangeSlider1.TabIndex = 0;
             // 
             // numericUpDown1
@@ -98,7 +90,7 @@
             0,
             0});
             this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(212, 46);
+            this.numericUpDown1.Size = new System.Drawing.Size(212, 57);
             this.numericUpDown1.TabIndex = 1;
             this.numericUpDown1.Value = new decimal(new int[] {
             40,
@@ -111,7 +103,7 @@
             this.flowLayoutPanel1.SetFillWeight(this.numericUpDown2, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.numericUpDown2, true);
             this.numericUpDown2.LabelText = "End";
-            this.numericUpDown2.Location = new System.Drawing.Point(3, 182);
+            this.numericUpDown2.Location = new System.Drawing.Point(3, 193);
             this.numericUpDown2.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.numericUpDown2.Maximum = new decimal(new int[] {
             1000,
@@ -119,7 +111,7 @@
             0,
             0});
             this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(212, 46);
+            this.numericUpDown2.Size = new System.Drawing.Size(212, 57);
             this.numericUpDown2.TabIndex = 2;
             this.numericUpDown2.Value = new decimal(new int[] {
             60,
@@ -158,9 +150,8 @@
             // 
             // dxRangeSlider
             // 
-            this.MinimumSize = new System.Drawing.Size(979, 724);
             this.Name = "dxRangeSlider";
-            this.Size = new System.Drawing.Size(979, 724);
+            this.Size = new System.Drawing.Size(1299, 724);
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
@@ -168,7 +159,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

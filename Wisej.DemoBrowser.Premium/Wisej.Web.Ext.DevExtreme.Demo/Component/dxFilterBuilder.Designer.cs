@@ -51,9 +51,9 @@
             this.linkDemo.Text = "https://js.devexpress.com/Demos/WidgetsGallery/Demo/FilterBuilder/WithDataGrid/jQ" +
     "uery/Light/";
             // 
-            // linkAPI
+            // linkApi
             // 
-            this.linkAPI.Text = "https://js.devexpress.com/Documentation/ApiReference/UI_Widgets/dxFilterBuilder/";
+            this.linkApi.Text = "https://js.devexpress.com/Documentation/ApiReference/UI_Widgets/dxFilterBuilder/";
             // 
             // panel
             // 
@@ -64,13 +64,11 @@
             this.flowLayoutPanel1.Controls.Add(this.tagTextBoxGroupOperation);
             this.flowLayoutPanel1.Controls.Add(this.label4);
             this.flowLayoutPanel1.Controls.Add(this.buttonGetFilterExpression);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 35);
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 441);
             // 
             // dxFilterBuilder1
             // 
             this.dxFilterBuilder1.Anchor = Wisej.Web.AnchorStyles.None;
-            this.dxFilterBuilder1.Location = new System.Drawing.Point(240, 94);
+            this.dxFilterBuilder1.Location = new System.Drawing.Point(140, 103);
             this.dxFilterBuilder1.Name = "dxFilterBuilder1";
             this.dxFilterBuilder1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("dxFilterBuilder1.Options"))));
             this.dxFilterBuilder1.Size = new System.Drawing.Size(608, 370);
@@ -80,12 +78,12 @@
             // 
             this.buttonGetFilterExpression.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Left) 
             | Wisej.Web.AnchorStyles.Right)));
-            this.buttonGetFilterExpression.Location = new System.Drawing.Point(3, 180);
+            this.buttonGetFilterExpression.Location = new System.Drawing.Point(3, 183);
             this.buttonGetFilterExpression.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.buttonGetFilterExpression.Name = "buttonGetFilterExpression";
-            this.buttonGetFilterExpression.Size = new System.Drawing.Size(212, 46);
+            this.buttonGetFilterExpression.Size = new System.Drawing.Size(212, 35);
             this.buttonGetFilterExpression.TabIndex = 16;
-            this.buttonGetFilterExpression.Text = "Get filter expression";
+            this.buttonGetFilterExpression.Text = "Get Filter Expression";
             this.buttonGetFilterExpression.Click += new System.EventHandler(this.buttonGetFilterExpression_Click);
             // 
             // tagTextBoxGroupOperation
@@ -96,14 +94,14 @@
             this.tagTextBoxGroupOperation.Location = new System.Drawing.Point(3, 16);
             this.tagTextBoxGroupOperation.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.tagTextBoxGroupOperation.Name = "tagTextBoxGroupOperation";
-            this.tagTextBoxGroupOperation.Size = new System.Drawing.Size(212, 52);
+            this.tagTextBoxGroupOperation.Size = new System.Drawing.Size(212, 55);
             this.tagTextBoxGroupOperation.TabIndex = 17;
             // 
             // label4
             // 
             this.label4.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Left) 
             | Wisej.Web.AnchorStyles.Right)));
-            this.label4.Location = new System.Drawing.Point(3, 87);
+            this.label4.Location = new System.Drawing.Point(3, 90);
             this.label4.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(212, 74);
@@ -112,14 +110,12 @@
             // 
             // dxFilterBuilder
             // 
-            this.MinimumSize = new System.Drawing.Size(1028, 571);
             this.Name = "dxFilterBuilder";
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

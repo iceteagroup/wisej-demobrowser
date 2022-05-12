@@ -59,9 +59,9 @@
             this.linkDemo.Text = "https://js.devexpress.com/Demos/WidgetsGallery/Demo/TreeList/Overview/jQuery/Ligh" +
     "t/";
             // 
-            // linkAPI
+            // linkApi
             // 
-            this.linkAPI.Text = "https://js.devexpress.com/Documentation/ApiReference/UI_Widgets/dxTreeList/";
+            this.linkApi.Text = "https://js.devexpress.com/Documentation/ApiReference/UI_Widgets/dxTreeList/";
             // 
             // panel
             // 
@@ -76,15 +76,13 @@
             this.flowLayoutPanel1.Controls.Add(this.checkBox6);
             this.flowLayoutPanel1.Controls.Add(this.checkBox7);
             this.flowLayoutPanel1.Controls.Add(this.comboBox1);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 35);
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 441);
             // 
             // dxTreeList1
             // 
             this.dxTreeList1.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
             | Wisej.Web.AnchorStyles.Left) 
             | Wisej.Web.AnchorStyles.Right)));
-            this.dxTreeList1.Location = new System.Drawing.Point(143, 35);
+            this.dxTreeList1.Location = new System.Drawing.Point(43, 44);
             this.dxTreeList1.Name = "dxTreeList1";
             this.dxTreeList1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("dxTreeList1.Options"))));
             this.dxTreeList1.Size = new System.Drawing.Size(803, 489);
@@ -196,8 +194,8 @@
             // dxTreeList
             // 
             this.AutoScroll = true;
-            this.MinimumSize = new System.Drawing.Size(1097, 733);
             this.Name = "dxTreeList";
+            this.Size = new System.Drawing.Size(1299, 733);
             this.Load += new System.EventHandler(this.dxTreeList_Load);
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);

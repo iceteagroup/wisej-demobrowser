@@ -455,11 +455,11 @@
             // pictureBoxLogo
             // 
             this.pictureBoxLogo.Dock = Wisej.Web.DockStyle.Left;
-            this.pictureBoxLogo.ImageSource = "Images\\wisej.png";
+            this.pictureBoxLogo.ImageSource = "Images\\wisej-dotnet-57px-height.png";
             this.pictureBoxLogo.Location = new System.Drawing.Point(3, 3);
             this.pictureBoxLogo.Name = "pictureBoxLogo";
             this.pictureBoxLogo.Size = new System.Drawing.Size(203, 70);
-            this.pictureBoxLogo.SizeMode = Wisej.Web.PictureBoxSizeMode.AutoSize;
+            this.pictureBoxLogo.SizeMode = Wisej.Web.PictureBoxSizeMode.CenterImage;
             // 
             // menuSlideBar
             // 

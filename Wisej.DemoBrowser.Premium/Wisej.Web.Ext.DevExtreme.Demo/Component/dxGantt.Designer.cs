@@ -54,9 +54,9 @@
             // 
             this.linkDemo.Text = "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gantt/Overview/jQuery/Light/";
             // 
-            // linkAPI
+            // linkApi
             // 
-            this.linkAPI.Text = "https://js.devexpress.com/Documentation/ApiReference/UI_Widgets/dxGantt/";
+            this.linkApi.Text = "https://js.devexpress.com/Documentation/ApiReference/UI_Widgets/dxGantt/";
             // 
             // panel
             // 
@@ -70,18 +70,16 @@
             this.flowLayoutPanel1.Controls.Add(this.comboBox1);
             this.flowLayoutPanel1.Controls.Add(this.comboBox2);
             this.flowLayoutPanel1.Controls.Add(this.buttonLoad);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 35);
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 441);
             // 
             // dxGantt1
             // 
             this.dxGantt1.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
             | Wisej.Web.AnchorStyles.Left) 
             | Wisej.Web.AnchorStyles.Right)));
-            this.dxGantt1.Location = new System.Drawing.Point(37, 29);
+            this.dxGantt1.Location = new System.Drawing.Point(24, 38);
             this.dxGantt1.Name = "dxGantt1";
             this.dxGantt1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("dxGantt1.Options"))));
-            this.dxGantt1.Size = new System.Drawing.Size(1014, 500);
+            this.dxGantt1.Size = new System.Drawing.Size(840, 500);
             this.dxGantt1.TabIndex = 0;
             // 
             // comboBox1
@@ -185,14 +183,13 @@
             // 
             // dxGantt
             // 
-            this.MinimumSize = new System.Drawing.Size(1302, 694);
             this.Name = "dxGantt";
+            this.Size = new System.Drawing.Size(1302, 699);
             this.Load += new System.EventHandler(this.dxGantt_Load);
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

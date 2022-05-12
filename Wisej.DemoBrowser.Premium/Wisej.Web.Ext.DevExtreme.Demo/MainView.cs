@@ -51,7 +51,7 @@ namespace Wisej.Web.Ext.DevExtreme.Demo
 
 			var container = this.panelDemo;
 			container.Controls.Clear(true);
-			testPanel.Dock = DockStyle.Top;
+			testPanel.Dock = DockStyle.Fill;
 			testPanel.Parent = container;
 
 			labelDemo.Text = type.Name;
