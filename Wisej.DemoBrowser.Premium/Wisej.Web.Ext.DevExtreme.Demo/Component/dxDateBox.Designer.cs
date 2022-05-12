@@ -95,8 +95,8 @@
             this.flowLayoutPanel1.SetFillWeight(this.comboBoxStylingMode, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.comboBoxStylingMode, true);
             this.comboBoxStylingMode.Items.AddRange(new object[] {
-            "outlined",
             "underlined",
+            "outlined",
             "filled"});
             this.comboBoxStylingMode.Label.Size = 50;
             this.comboBoxStylingMode.Label.SizeType = Wisej.Web.SizeType.Percent;
