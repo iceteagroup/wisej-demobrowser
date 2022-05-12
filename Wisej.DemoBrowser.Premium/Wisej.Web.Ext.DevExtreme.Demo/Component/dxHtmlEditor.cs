@@ -50,7 +50,6 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
         private void dxHtmlEditor_Load(object sender, EventArgs e)
         {
 			this.comboBox1.SelectedIndex = 0;
-			this.userComboBox1.SelectedIndex = 0;
 
 		}
 	}
