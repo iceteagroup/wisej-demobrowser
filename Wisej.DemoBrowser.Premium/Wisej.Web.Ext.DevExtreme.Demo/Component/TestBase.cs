@@ -83,10 +83,10 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
             // 
             this.flowLayoutPanel1.AutoScroll = true;
             this.flowLayoutPanel1.Dock = Wisej.Web.DockStyle.Fill;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 38);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 35);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.ScrollBars = Wisej.Web.ScrollBars.Vertical;
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 467);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 470);
             this.flowLayoutPanel1.TabIndex = 2;
             // 
             // spacer1
@@ -156,6 +156,7 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
             this.buttonBuy.TabIndex = 19;
             this.buttonBuy.Text = "Demo";
             this.buttonBuy.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonBuy.Click += new System.EventHandler(this.buttonDemo_Click);
             // 
             // lineMenuDivider3
             // 
@@ -180,6 +181,7 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
             this.buttonFreeTrial.TabIndex = 18;
             this.buttonFreeTrial.Text = "API";
             this.buttonFreeTrial.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonFreeTrial.Click += new System.EventHandler(this.buttonApi_Click);
             // 
             // buttonContact
             // 
@@ -195,6 +197,7 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
             this.buttonContact.TabIndex = 17;
             this.buttonContact.Text = "Docs";
             this.buttonContact.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonContact.Click += new System.EventHandler(this.buttonDocs_Click);
             // 
             // lineMenuDivider2
             // 

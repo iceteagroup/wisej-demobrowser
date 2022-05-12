@@ -81,6 +81,7 @@
             | Wisej.Web.AnchorStyles.Right)));
             this.dxDiagram1.Location = new System.Drawing.Point(16, 13);
             this.dxDiagram1.Name = "dxDiagram1";
+            this.dxDiagram1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"autoZoomMode\":\"fitWidth\"}")));
             this.dxDiagram1.Size = new System.Drawing.Size(856, 550);
             this.dxDiagram1.TabIndex = 0;
             // 
