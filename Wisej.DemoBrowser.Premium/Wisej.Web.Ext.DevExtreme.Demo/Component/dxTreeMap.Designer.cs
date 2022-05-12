@@ -32,7 +32,6 @@
             this.dxTreeMap1 = new Wisej.Web.Ext.DevExtreme.dxTreeMap();
             this.checkBox1 = new Wisej.Web.CheckBox();
             this.comboBox1 = new Wisej.Web.ComboBox();
-            this.comboBox3 = new Wisej.Web.ComboBox();
             this.comboBox2 = new Wisej.Web.ComboBox();
             this.groupBox1.SuspendLayout();
             this.panel.SuspendLayout();
@@ -66,7 +65,6 @@
             this.flowLayoutPanel1.Controls.Add(this.checkBox1);
             this.flowLayoutPanel1.Controls.Add(this.comboBox1);
             this.flowLayoutPanel1.Controls.Add(this.comboBox2);
-            this.flowLayoutPanel1.Controls.Add(this.comboBox3);
             // 
             // dxTreeMap1
             // 
@@ -113,27 +111,6 @@
             this.comboBox1.Size = new System.Drawing.Size(212, 60);
             this.comboBox1.TabIndex = 21;
             this.comboBox1.Text = "leftTopRightBottom";
-            // 
-            // comboBox3
-            // 
-            this.comboBox3.AutoSize = false;
-            this.comboBox3.DropDownStyle = Wisej.Web.ComboBoxStyle.DropDownList;
-            this.flowLayoutPanel1.SetFillWeight(this.comboBox3, 1);
-            this.flowLayoutPanel1.SetFlowBreak(this.comboBox3, true);
-            this.comboBox3.Items.AddRange(new object[] {
-            "undefined",
-            "multiple",
-            "none",
-            "single"});
-            this.comboBox3.Label.Size = 50;
-            this.comboBox3.Label.SizeType = Wisej.Web.SizeType.Percent;
-            this.comboBox3.LabelText = "Selection Mode";
-            this.comboBox3.Location = new System.Drawing.Point(3, 218);
-            this.comboBox3.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(212, 60);
-            this.comboBox3.TabIndex = 22;
-            this.comboBox3.Text = "undefined";
             // 
             // comboBox2
             // 
@@ -183,7 +160,6 @@
 		private DevExtreme.dxTreeMap dxTreeMap1;
 		private ComboBox comboBox1;
 		private CheckBox checkBox1;
-		private ComboBox comboBox3;
 		private ComboBox comboBox2;
 	}
 }

@@ -29,7 +29,6 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
 			{
 				palette = this.comboBox2.SelectedItem
 			};
-			this.dxTreeMap1.Options.selectionMode = this.comboBox3.SelectedItem;
 
 			this.dxTreeMap1.Update();
 		}
@@ -38,7 +37,6 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
         {
 			this.comboBox1.SelectedIndex = 0;
 			this.comboBox2.SelectedIndex = 0;
-			this.comboBox3.SelectedIndex = 0;
 		}
 	}
 }
