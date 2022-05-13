@@ -27,11 +27,13 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
         private Button buttonFreeTrial;
         private Button buttonContact;
         private Line lineMenuDivider2;
+        private Panel panel1;
         private System.ComponentModel.IContainer components;
 
 		private void InitializeComponent()
 		{
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TestBase));
             this.linkDocs = new Wisej.Web.LinkLabel();
             this.imageList1 = new Wisej.Web.ImageList(this.components);
             this.groupBox1 = new Wisej.Web.GroupBox();
@@ -46,7 +48,9 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
             this.buttonFreeTrial = new Wisej.Web.Button();
             this.buttonContact = new Wisej.Web.Button();
             this.lineMenuDivider2 = new Wisej.Web.Line();
+            this.panel1 = new Wisej.Web.Panel();
             this.groupBox1.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // linkDocs
@@ -83,10 +87,10 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
             // 
             this.flowLayoutPanel1.AutoScroll = true;
             this.flowLayoutPanel1.Dock = Wisej.Web.DockStyle.Fill;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 35);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 38);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.ScrollBars = Wisej.Web.ScrollBars.Vertical;
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 470);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 467);
             this.flowLayoutPanel1.TabIndex = 2;
             // 
             // spacer1
@@ -134,7 +138,7 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
             this.panel.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
             | Wisej.Web.AnchorStyles.Left) 
             | Wisej.Web.AnchorStyles.Right)));
-            this.panel.BorderStyle = Wisej.Web.BorderStyle.Dashed;
+            this.panel.BorderStyle = Wisej.Web.BorderStyle.Solid;
             this.panel.Location = new System.Drawing.Point(358, 86);
             this.panel.Name = "panel";
             this.panel.Padding = new Wisej.Web.Padding(8);
@@ -145,12 +149,14 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
             // buttonBuy
             // 
             this.buttonBuy.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Right)));
-            this.buttonBuy.AppearanceKey = "button-menu-demo";
+            this.buttonBuy.BackColor = System.Drawing.Color.Transparent;
+            this.buttonBuy.BorderStyle = Wisej.Web.BorderStyle.None;
             this.buttonBuy.Cursor = Wisej.Web.Cursors.Hand;
             this.buttonBuy.Focusable = false;
             this.buttonBuy.Font = new System.Drawing.Font("@menuDemo", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.buttonBuy.ImageSource = "Images\\Icon Buy.png";
-            this.buttonBuy.Location = new System.Drawing.Point(1117, 16);
+            this.buttonBuy.ForeColor = System.Drawing.Color.FromName("@buttonText");
+            this.buttonBuy.ImageSource = "resource.wx/Wisej.Ext.MaterialDesign/black-envelope-email-symbol.svg";
+            this.buttonBuy.Location = new System.Drawing.Point(329, 3);
             this.buttonBuy.Name = "buttonBuy";
             this.buttonBuy.Size = new System.Drawing.Size(131, 57);
             this.buttonBuy.TabIndex = 19;
@@ -161,21 +167,23 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
             // lineMenuDivider3
             // 
             this.lineMenuDivider3.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Right)));
-            this.lineMenuDivider3.Location = new System.Drawing.Point(1105, 7);
+            this.lineMenuDivider3.Location = new System.Drawing.Point(312, 6);
             this.lineMenuDivider3.Name = "lineMenuDivider3";
             this.lineMenuDivider3.Orientation = Wisej.Web.Orientation.Vertical;
             this.lineMenuDivider3.Padding = new Wisej.Web.Padding(0, 15, 0, 15);
-            this.lineMenuDivider3.Size = new System.Drawing.Size(5, 74);
+            this.lineMenuDivider3.Size = new System.Drawing.Size(5, 54);
             // 
             // buttonFreeTrial
             // 
             this.buttonFreeTrial.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Right)));
-            this.buttonFreeTrial.AppearanceKey = "button-menu-demo";
+            this.buttonFreeTrial.BackColor = System.Drawing.Color.Transparent;
+            this.buttonFreeTrial.BorderStyle = Wisej.Web.BorderStyle.None;
             this.buttonFreeTrial.Cursor = Wisej.Web.Cursors.Hand;
             this.buttonFreeTrial.Focusable = false;
             this.buttonFreeTrial.Font = new System.Drawing.Font("@menuDemo", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.buttonFreeTrial.ImageSource = "Images\\Icon Free Trial.png";
-            this.buttonFreeTrial.Location = new System.Drawing.Point(959, 16);
+            this.buttonFreeTrial.ForeColor = System.Drawing.Color.FromName("@buttonText");
+            this.buttonFreeTrial.ImageSource = "resource.wx/Wisej.Ext.MaterialDesign/add-to-queue-button.svg";
+            this.buttonFreeTrial.Location = new System.Drawing.Point(172, 3);
             this.buttonFreeTrial.Name = "buttonFreeTrial";
             this.buttonFreeTrial.Size = new System.Drawing.Size(140, 57);
             this.buttonFreeTrial.TabIndex = 18;
@@ -186,12 +194,14 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
             // buttonContact
             // 
             this.buttonContact.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Right)));
-            this.buttonContact.AppearanceKey = "button-menu-demo";
+            this.buttonContact.BackColor = System.Drawing.Color.Transparent;
+            this.buttonContact.BorderStyle = Wisej.Web.BorderStyle.None;
             this.buttonContact.Cursor = Wisej.Web.Cursors.Hand;
             this.buttonContact.Focusable = false;
             this.buttonContact.Font = new System.Drawing.Font("@menuDemo", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.buttonContact.ImageSource = "Images\\Icon Contact.png";
-            this.buttonContact.Location = new System.Drawing.Point(799, 16);
+            this.buttonContact.ForeColor = System.Drawing.Color.FromName("@buttonText");
+            this.buttonContact.ImageSource = "resource.wx/Wisej.Ext.MaterialDesign/add-label-button.svg";
+            this.buttonContact.Location = new System.Drawing.Point(12, 3);
             this.buttonContact.Name = "buttonContact";
             this.buttonContact.Size = new System.Drawing.Size(135, 57);
             this.buttonContact.TabIndex = 17;
@@ -202,19 +212,30 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
             // lineMenuDivider2
             // 
             this.lineMenuDivider2.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Right)));
-            this.lineMenuDivider2.Location = new System.Drawing.Point(938, 7);
+            this.lineMenuDivider2.Location = new System.Drawing.Point(151, 6);
             this.lineMenuDivider2.Name = "lineMenuDivider2";
             this.lineMenuDivider2.Orientation = Wisej.Web.Orientation.Vertical;
             this.lineMenuDivider2.Padding = new Wisej.Web.Padding(0, 15, 0, 15);
-            this.lineMenuDivider2.Size = new System.Drawing.Size(5, 74);
+            this.lineMenuDivider2.Size = new System.Drawing.Size(5, 54);
+            // 
+            // panel1
+            // 
+            this.panel1.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Right)));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(255, 255, 255);
+            this.panel1.Controls.Add(this.lineMenuDivider3);
+            this.panel1.Controls.Add(this.buttonBuy);
+            this.panel1.Controls.Add(this.lineMenuDivider2);
+            this.panel1.Controls.Add(this.buttonFreeTrial);
+            this.panel1.Controls.Add(this.buttonContact);
+            this.panel1.CssStyle = resources.GetString("panel1.CssStyle");
+            this.panel1.Location = new System.Drawing.Point(785, 20);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(463, 67);
+            this.panel1.TabIndex = 22;
             // 
             // TestBase
             // 
-            this.Controls.Add(this.buttonBuy);
-            this.Controls.Add(this.lineMenuDivider3);
-            this.Controls.Add(this.buttonFreeTrial);
-            this.Controls.Add(this.buttonContact);
-            this.Controls.Add(this.lineMenuDivider2);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.linkDocs);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.linkDemo);
@@ -223,6 +244,7 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
             this.Name = "TestBase";
             this.Size = new System.Drawing.Size(1299, 699);
             this.groupBox1.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
 		}

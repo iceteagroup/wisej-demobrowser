@@ -517,7 +517,7 @@
             this.listBoxDemos.ItemHeight = 35;
             this.listBoxDemos.Location = new System.Drawing.Point(47, 16);
             this.listBoxDemos.Name = "listBoxDemos";
-            this.listBoxDemos.Size = new System.Drawing.Size(278, 784);
+            this.listBoxDemos.Size = new System.Drawing.Size(278, 612);
             this.listBoxDemos.TabIndex = 0;
             this.listBoxDemos.ValueMember = "Name";
             this.listBoxDemos.SelectedIndexChanged += new System.EventHandler(this.listBoxDemos_SelectedIndexChanged);
@@ -536,7 +536,7 @@
             this.panelComponents.Name = "panelComponents";
             this.panelComponents.Padding = new Wisej.Web.Padding(47, 16, 16, 16);
             this.panelComponents.ShowHeader = true;
-            this.panelComponents.Size = new System.Drawing.Size(341, 856);
+            this.panelComponents.Size = new System.Drawing.Size(341, 684);
             this.panelComponents.TabIndex = 22;
             this.panelComponents.TabStop = true;
             this.panelComponents.Text = "DevExtreme Components";
@@ -548,9 +548,10 @@
             this.panelDemo.HeaderBackColor = System.Drawing.Color.FromArgb(245, 146, 30);
             this.panelDemo.HeaderSize = 40;
             this.panelDemo.Location = new System.Drawing.Point(341, 263);
+            this.panelDemo.MinimumSize = new System.Drawing.Size(872, 0);
             this.panelDemo.Name = "panelDemo";
             this.panelDemo.ShowCloseButton = false;
-            this.panelDemo.Size = new System.Drawing.Size(1386, 669);
+            this.panelDemo.Size = new System.Drawing.Size(1386, 497);
             this.panelDemo.TabIndex = 23;
             this.panelDemo.TabStop = true;
             this.panelDemo.Text = "Test";
@@ -564,7 +565,7 @@
             this.Controls.Add(this.panelComponents);
             this.Controls.Add(this.flexLayoutPanelMenu);
             this.Name = "MainView";
-            this.Size = new System.Drawing.Size(1727, 932);
+            this.Size = new System.Drawing.Size(1727, 760);
             this.Text = "DevExtreme Integration Tests";
             this.Load += new System.EventHandler(this.MainView_Load);
             this.flowLayoutPanel1.ResumeLayout(false);
