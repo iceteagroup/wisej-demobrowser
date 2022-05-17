@@ -37,11 +37,9 @@
             this.spacer1 = new Wisej.Web.Spacer();
             this.buttonUpdate = new Wisej.Web.Button();
             this.linkDemo = new Wisej.Web.LinkLabel();
-            this.linkAPI = new Wisej.Web.LinkLabel();
-            this.label3 = new Wisej.Web.Label();
-            this.label2 = new Wisej.Web.Label();
-            this.label1 = new Wisej.Web.Label();
+            this.linkApi = new Wisej.Web.LinkLabel();
             this.panel = new Wisej.Web.Panel();
+            this.buttonLinks = new Wisej.Web.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -53,14 +51,13 @@
             // 
             this.linkDocs.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.linkDocs.ImageList = this.imageList2;
-            this.linkDocs.ImageSource = "resource.wx/Wisej.Ext.MaterialDesign/link-button.svg";
-            this.linkDocs.Location = new System.Drawing.Point(109, 25);
+            this.linkDocs.Location = new System.Drawing.Point(51, 7);
             this.linkDocs.Name = "linkDocs";
-            this.linkDocs.Size = new System.Drawing.Size(704, 24);
+            this.linkDocs.Size = new System.Drawing.Size(818, 24);
             this.linkDocs.TabIndex = 8;
             this.linkDocs.Text = "https://docs.webix.com/";
             this.linkDocs.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.linkDocs.LinkClicked += new Wisej.Web.LinkLabelLinkClickedEventHandler(this.link_LinkClicked);
+            this.linkDocs.Visible = false;
             // 
             // imageList2
             // 
@@ -73,10 +70,10 @@
             this.groupBox1.Controls.Add(this.flowLayoutPanel1);
             this.groupBox1.Controls.Add(this.spacer1);
             this.groupBox1.Controls.Add(this.buttonUpdate);
-            this.groupBox1.Location = new System.Drawing.Point(51, 166);
+            this.groupBox1.Location = new System.Drawing.Point(51, 75);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new Wisej.Web.Padding(16);
-            this.groupBox1.Size = new System.Drawing.Size(250, 560);
+            this.groupBox1.Size = new System.Drawing.Size(250, 589);
             this.groupBox1.TabIndex = 11;
             this.groupBox1.Text = "Properties";
             // 
@@ -86,20 +83,20 @@
             this.flowLayoutPanel1.Dock = Wisej.Web.DockStyle.Fill;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 38);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 434);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 463);
             this.flowLayoutPanel1.TabIndex = 1;
             // 
             // spacer1
             // 
             this.spacer1.Dock = Wisej.Web.DockStyle.Bottom;
-            this.spacer1.Location = new System.Drawing.Point(16, 472);
+            this.spacer1.Location = new System.Drawing.Point(16, 501);
             this.spacer1.Name = "spacer1";
             this.spacer1.Size = new System.Drawing.Size(218, 20);
             // 
             // buttonUpdate
             // 
             this.buttonUpdate.Dock = Wisej.Web.DockStyle.Bottom;
-            this.buttonUpdate.Location = new System.Drawing.Point(16, 492);
+            this.buttonUpdate.Location = new System.Drawing.Point(16, 521);
             this.buttonUpdate.Name = "buttonUpdate";
             this.buttonUpdate.Size = new System.Drawing.Size(218, 52);
             this.buttonUpdate.TabIndex = 0;
@@ -109,57 +106,25 @@
             // 
             this.linkDemo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.linkDemo.ImageList = this.imageList2;
-            this.linkDemo.ImageSource = "resource.wx/Wisej.Ext.MaterialDesign/link-button.svg";
-            this.linkDemo.Location = new System.Drawing.Point(109, 85);
+            this.linkDemo.Location = new System.Drawing.Point(51, 51);
             this.linkDemo.Name = "linkDemo";
-            this.linkDemo.Size = new System.Drawing.Size(704, 24);
+            this.linkDemo.Size = new System.Drawing.Size(818, 24);
             this.linkDemo.TabIndex = 10;
             this.linkDemo.Text = "https://webix.com/demos/";
             this.linkDemo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.linkDemo.LinkClicked += new Wisej.Web.LinkLabelLinkClickedEventHandler(this.link_LinkClicked);
+            this.linkDemo.Visible = false;
             // 
-            // linkAPI
+            // linkApi
             // 
-            this.linkAPI.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.linkAPI.ImageList = this.imageList2;
-            this.linkAPI.ImageSource = "resource.wx/Wisej.Ext.MaterialDesign/link-button.svg";
-            this.linkAPI.Location = new System.Drawing.Point(109, 55);
-            this.linkAPI.Name = "linkAPI";
-            this.linkAPI.Size = new System.Drawing.Size(704, 24);
-            this.linkAPI.TabIndex = 9;
-            this.linkAPI.Text = "https://docs.webix.com/api__toc__ui.html";
-            this.linkAPI.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.linkAPI.LinkClicked += new Wisej.Web.LinkLabelLinkClickedEventHandler(this.link_LinkClicked);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(51, 88);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(56, 22);
-            this.label3.TabIndex = 15;
-            this.label3.Text = "DEMO:";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(51, 58);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(33, 22);
-            this.label2.TabIndex = 14;
-            this.label2.Text = "API:";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(51, 28);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(52, 22);
-            this.label1.TabIndex = 13;
-            this.label1.Text = "DOCS:";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.linkApi.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.linkApi.ImageList = this.imageList2;
+            this.linkApi.Location = new System.Drawing.Point(51, 29);
+            this.linkApi.Name = "linkApi";
+            this.linkApi.Size = new System.Drawing.Size(818, 24);
+            this.linkApi.TabIndex = 9;
+            this.linkApi.Text = "https://docs.webix.com/api__toc__ui.html";
+            this.linkApi.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.linkApi.Visible = false;
             // 
             // panel
             // 
@@ -167,28 +132,36 @@
             | Wisej.Web.AnchorStyles.Left) 
             | Wisej.Web.AnchorStyles.Right)));
             this.panel.BorderStyle = Wisej.Web.BorderStyle.Solid;
-            this.panel.Location = new System.Drawing.Point(358, 166);
+            this.panel.Location = new System.Drawing.Point(358, 86);
             this.panel.Name = "panel";
             this.panel.Padding = new Wisej.Web.Padding(8);
-            this.panel.Size = new System.Drawing.Size(1091, 560);
+            this.panel.Size = new System.Drawing.Size(890, 578);
             this.panel.TabIndex = 12;
             this.panel.TabStop = true;
             // 
+            // buttonLinks
+            // 
+            this.buttonLinks.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Right)));
+            this.buttonLinks.BackgroundImageSource = "Images/icons-panel.png";
+            this.buttonLinks.Focusable = false;
+            this.buttonLinks.Location = new System.Drawing.Point(1072, 22);
+            this.buttonLinks.Name = "buttonLinks";
+            this.buttonLinks.Size = new System.Drawing.Size(176, 58);
+            this.buttonLinks.TabIndex = 18;
+            this.buttonLinks.MouseClick += new Wisej.Web.MouseEventHandler(this.buttonLinks_MouseClick);
+            // 
             // ViewBase
             // 
+            this.Controls.Add(this.buttonLinks);
             this.Controls.Add(this.linkDocs);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.linkDemo);
-            this.Controls.Add(this.linkAPI);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.linkApi);
             this.Controls.Add(this.panel);
             this.Name = "ViewBase";
-            this.Size = new System.Drawing.Size(1500, 750);
+            this.Size = new System.Drawing.Size(1299, 699);
             this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 
@@ -199,12 +172,10 @@
         protected GroupBox groupBox1;
         protected Button buttonUpdate;
         protected LinkLabel linkDemo;
-        protected LinkLabel linkAPI;
-        private Label label3;
-        private Label label2;
-        private Label label1;
+        protected LinkLabel linkApi;
         protected Panel panel;
         protected FlowLayoutPanel flowLayoutPanel1;
         private Spacer spacer1;
+        private Button buttonLinks;
     }
 }

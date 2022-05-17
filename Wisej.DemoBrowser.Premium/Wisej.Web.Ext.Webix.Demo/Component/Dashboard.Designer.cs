@@ -44,7 +44,7 @@
             // 
             // linkAPI
             // 
-            this.linkAPI.Text = "https://docs.webix.com/api__refs__ui.dashboard.html";
+            this.linkApi.Text = "https://docs.webix.com/api__refs__ui.dashboard.html";
             // 
             // panel
             // 

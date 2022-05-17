@@ -50,7 +50,7 @@
             // 
             // linkAPI
             // 
-            this.linkAPI.Text = "https://ej2.syncfusion.com/javascript/documentation/api/linear-gauge/";
+            this.linkApi.Text = "https://ej2.syncfusion.com/javascript/documentation/api/linear-gauge/";
             // 
             // buttonUpdate
             // 

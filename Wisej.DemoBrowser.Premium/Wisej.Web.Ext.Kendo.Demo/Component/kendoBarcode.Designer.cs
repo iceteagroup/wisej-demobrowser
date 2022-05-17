@@ -32,14 +32,30 @@
             this.checkBox1 = new Wisej.Web.CheckBox();
             this.textBox1 = new Wisej.Web.TextBox();
             this.comboBox1 = new Wisej.Web.ComboBox();
+            this.panel.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.flowLayoutPanelProperties.SuspendLayout();
-            this.panel.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // panel
+            // 
+            this.panel.Controls.Add(this.kendoBarcode1);
             // 
             // buttonUpdate
             // 
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
+            // 
+            // linkDemo
+            // 
+            this.linkDemo.Text = "https://demos.telerik.com/kendo-ui/barcode/index";
+            // 
+            // linkApi
+            // 
+            this.linkApi.Text = "https://docs.telerik.com/kendo-ui/api/javascript/dataviz/ui/barcode";
+            // 
+            // linkDocs
+            // 
+            this.linkDocs.Text = "https://docs.telerik.com/kendo-ui/controls/barcodes/barcode/overview";
             // 
             // flowLayoutPanelProperties
             // 
@@ -47,26 +63,10 @@
             this.flowLayoutPanelProperties.Controls.Add(this.comboBox1);
             this.flowLayoutPanelProperties.Controls.Add(this.textBox1);
             // 
-            // panel
-            // 
-            this.panel.Controls.Add(this.kendoBarcode1);
-            // 
-            // linkDemo
-            // 
-            this.linkDemo.Text = "https://demos.telerik.com/kendo-ui/barcode/index";
-            // 
-            // linkAPI
-            // 
-            this.linkAPI.Text = "https://docs.telerik.com/kendo-ui/api/javascript/dataviz/ui/barcode";
-            // 
-            // linkDocs
-            // 
-            this.linkDocs.Text = "https://docs.telerik.com/kendo-ui/controls/barcodes/barcode/overview";
-            // 
             // kendoBarcode1
             // 
             this.kendoBarcode1.Anchor = Wisej.Web.AnchorStyles.None;
-            this.kendoBarcode1.Location = new System.Drawing.Point(311, 134);
+            this.kendoBarcode1.Location = new System.Drawing.Point(211, 143);
             this.kendoBarcode1.Name = "kendoBarcode1";
             this.kendoBarcode1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"value\":\"WWW.WISEJ.COM/\",\"type\":\"code39\"}")));
             this.kendoBarcode1.Size = new System.Drawing.Size(466, 290);
@@ -139,13 +139,11 @@
             // 
             // kendoBarcode
             // 
-            this.MinimumSize = new System.Drawing.Size(902, 526);
             this.Name = "kendoBarcode";
+            this.panel.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.flowLayoutPanelProperties.ResumeLayout(false);
-            this.panel.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

@@ -56,9 +56,9 @@
             // 
             this.linkDemo.Text = "https://demos.telerik.com/kendo-ui/map/index";
             // 
-            // linkAPI
+            // linkApi
             // 
-            this.linkAPI.Text = "https://docs.telerik.com/kendo-ui/api/javascript/dataviz/ui/map";
+            this.linkApi.Text = "https://docs.telerik.com/kendo-ui/api/javascript/dataviz/ui/map";
             // 
             // linkDocs
             // 
@@ -209,17 +209,17 @@
             this.kendoMap1.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
             | Wisej.Web.AnchorStyles.Left) 
             | Wisej.Web.AnchorStyles.Right)));
-            this.kendoMap1.Location = new System.Drawing.Point(23, 27);
+            this.kendoMap1.Location = new System.Drawing.Point(26, 36);
             this.kendoMap1.Name = "kendoMap1";
             this.kendoMap1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("kendoMap1.Options"))));
-            this.kendoMap1.Size = new System.Drawing.Size(1042, 504);
+            this.kendoMap1.Size = new System.Drawing.Size(836, 504);
             this.kendoMap1.TabIndex = 0;
             this.kendoMap1.Text = "kendoMap1";
             // 
             // kendoMap
             // 
-            this.MinimumSize = new System.Drawing.Size(907, 720);
             this.Name = "kendoMap";
+            this.Size = new System.Drawing.Size(1299, 720);
             this.panel.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.flowLayoutPanelProperties.ResumeLayout(false);
@@ -227,7 +227,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

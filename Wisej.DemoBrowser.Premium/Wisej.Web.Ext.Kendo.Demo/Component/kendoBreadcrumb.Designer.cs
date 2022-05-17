@@ -48,9 +48,9 @@
             // 
             this.linkDemo.Text = "https://demos.telerik.com/kendo-ui/breadcrumb/index";
             // 
-            // linkAPI
+            // linkApi
             // 
-            this.linkAPI.Text = "https://docs.telerik.com/kendo-ui/api/javascript/ui/breadcrumb";
+            this.linkApi.Text = "https://docs.telerik.com/kendo-ui/api/javascript/ui/breadcrumb";
             // 
             // linkDocs
             // 
@@ -63,8 +63,8 @@
             // 
             // kendoBreadcrumb1
             // 
-            this.kendoBreadcrumb1.Anchor = Wisej.Web.AnchorStyles.None;
-            this.kendoBreadcrumb1.Location = new System.Drawing.Point(156, 137);
+            this.kendoBreadcrumb1.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Left | Wisej.Web.AnchorStyles.Right)));
+            this.kendoBreadcrumb1.Location = new System.Drawing.Point(56, 146);
             this.kendoBreadcrumb1.Name = "kendoBreadcrumb1";
             this.kendoBreadcrumb1.Size = new System.Drawing.Size(776, 284);
             this.kendoBreadcrumb1.TabIndex = 0;
@@ -95,7 +95,6 @@
             // 
             // kendoBreadcrumb
             // 
-            this.MinimumSize = new System.Drawing.Size(840, 503);
             this.Name = "kendoBreadcrumb";
             this.Load += new System.EventHandler(this.kendoBreadcrumb_Load);
             this.panel.ResumeLayout(false);
@@ -103,7 +102,6 @@
             this.flowLayoutPanelProperties.ResumeLayout(false);
             this.flowLayoutPanelProperties.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

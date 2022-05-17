@@ -54,9 +54,9 @@
             // 
             this.linkDemo.Text = "https://demos.telerik.com/kendo-ui/autocomplete/index";
             // 
-            // linkAPI
+            // linkApi
             // 
-            this.linkAPI.Text = "https://docs.telerik.com/kendo-ui/api/javascript/ui/autocomplete";
+            this.linkApi.Text = "https://docs.telerik.com/kendo-ui/api/javascript/ui/autocomplete";
             // 
             // linkDocs
             // 
@@ -74,7 +74,7 @@
             // kendoAutoComplete1
             // 
             this.kendoAutoComplete1.Anchor = Wisej.Web.AnchorStyles.None;
-            this.kendoAutoComplete1.Location = new System.Drawing.Point(394, 259);
+            this.kendoAutoComplete1.Location = new System.Drawing.Point(294, 268);
             this.kendoAutoComplete1.Name = "kendoAutoComplete1";
             this.kendoAutoComplete1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("kendoAutoComplete1.Options"))));
             this.kendoAutoComplete1.Size = new System.Drawing.Size(300, 40);
@@ -179,14 +179,12 @@
             // 
             // kendoAutoComplete
             // 
-            this.MinimumSize = new System.Drawing.Size(760, 670);
             this.Name = "kendoAutoComplete";
             this.panel.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.flowLayoutPanelProperties.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

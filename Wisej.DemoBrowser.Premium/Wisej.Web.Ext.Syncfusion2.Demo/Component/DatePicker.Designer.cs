@@ -44,7 +44,7 @@
             // 
             // linkAPI
             // 
-            this.linkAPI.Text = "https://ej2.syncfusion.com/javascript/documentation/api/datepicker/";
+            this.linkApi.Text = "https://ej2.syncfusion.com/javascript/documentation/api/datepicker/";
             // 
             // buttonUpdate
             // 

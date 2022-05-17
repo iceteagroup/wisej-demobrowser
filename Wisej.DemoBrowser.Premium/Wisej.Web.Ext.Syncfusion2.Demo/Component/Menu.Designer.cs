@@ -42,7 +42,7 @@
             // 
             // linkAPI
             // 
-            this.linkAPI.Text = "https://ej2.syncfusion.com/javascript/documentation/api/menu/";
+            this.linkApi.Text = "https://ej2.syncfusion.com/javascript/documentation/api/menu/";
             // 
             // buttonUpdate
             // 

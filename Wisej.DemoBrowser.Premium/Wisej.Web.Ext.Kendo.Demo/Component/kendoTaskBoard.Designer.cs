@@ -53,7 +53,7 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
             // 
             // linkAPI
             // 
-            this.linkAPI.Text = "https://docs.telerik.com/kendo-ui/api/javascript/ui/taskboard";
+            this.linkApi.Text = "https://docs.telerik.com/kendo-ui/api/javascript/ui/taskboard";
             // 
             // linkDocs
             // 
@@ -134,7 +134,6 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
             // 
             // kendoTaskBoard
             // 
-            this.MinimumSize = new System.Drawing.Size(818, 518);
             this.Name = "kendoTaskBoard";
             this.Load += new System.EventHandler(this.kendoTaskBoard_Load);
             this.panel.ResumeLayout(false);

@@ -41,7 +41,7 @@
             // 
             // linkAPI
             // 
-            this.linkAPI.Text = "https://ej2.syncfusion.com/javascript/documentation/api/range-navigator";
+            this.linkApi.Text = "https://ej2.syncfusion.com/javascript/documentation/api/range-navigator";
             // 
             // panel
             // 

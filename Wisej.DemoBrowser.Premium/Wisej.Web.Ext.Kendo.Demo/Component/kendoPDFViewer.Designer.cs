@@ -52,7 +52,7 @@
             // 
             // linkAPI
             // 
-            this.linkAPI.Text = "https://docs.telerik.com/kendo-ui/api/javascript/ui/pdfviewer";
+            this.linkApi.Text = "https://docs.telerik.com/kendo-ui/api/javascript/ui/pdfviewer";
             // 
             // linkDocs
             // 
@@ -138,7 +138,6 @@
             // 
             // kendoPDFViewer
             // 
-            this.MinimumSize = new System.Drawing.Size(886, 537);
             this.Name = "kendoPDFViewer";
             this.panel.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);

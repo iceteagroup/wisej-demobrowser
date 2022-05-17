@@ -50,9 +50,9 @@
             // 
             this.linkDemo.Text = "https://demos.telerik.com/kendo-ui/daterangepicker/index";
             // 
-            // linkAPI
+            // linkApi
             // 
-            this.linkAPI.Text = "https://docs.telerik.com/kendo-ui/api/javascript/ui/daterangepicker";
+            this.linkApi.Text = "https://docs.telerik.com/kendo-ui/api/javascript/ui/daterangepicker";
             // 
             // linkDocs
             // 
@@ -68,11 +68,10 @@
             // kendoDateRangePicker1
             // 
             this.kendoDateRangePicker1.Anchor = Wisej.Web.AnchorStyles.None;
-            this.kendoDateRangePicker1.Location = new System.Drawing.Point(342, 209);
+            this.kendoDateRangePicker1.Location = new System.Drawing.Point(268, 259);
             this.kendoDateRangePicker1.Name = "kendoDateRangePicker1";
-            this.kendoDateRangePicker1.Size = new System.Drawing.Size(404, 140);
+            this.kendoDateRangePicker1.Size = new System.Drawing.Size(353, 59);
             this.kendoDateRangePicker1.TabIndex = 0;
-            this.kendoDateRangePicker1.Text = "kendoDateRangePicker1";
             // 
             // dateTimePickerMin
             // 
@@ -129,7 +128,6 @@
             // 
             // kendoDateRangePicker
             // 
-            this.MinimumSize = new System.Drawing.Size(823, 510);
             this.Name = "kendoDateRangePicker";
             this.Load += new System.EventHandler(this.kendoDateRangePicker_Load);
             this.panel.ResumeLayout(false);
@@ -137,7 +135,6 @@
             this.flowLayoutPanelProperties.ResumeLayout(false);
             this.flowLayoutPanelProperties.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

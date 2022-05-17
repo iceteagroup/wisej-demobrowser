@@ -56,7 +56,7 @@
             // 
             // linkAPI
             // 
-            this.linkAPI.Text = "https://docs.telerik.com/kendo-ui/api/javascript/ui/rating";
+            this.linkApi.Text = "https://docs.telerik.com/kendo-ui/api/javascript/ui/rating";
             // 
             // linkDocs
             // 
@@ -187,7 +187,6 @@
             // 
             // kendoRating
             // 
-            this.MinimumSize = new System.Drawing.Size(864, 677);
             this.Name = "kendoRating";
             this.panel.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);

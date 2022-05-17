@@ -52,9 +52,9 @@
             // 
             this.linkDemo.Text = "https://demos.telerik.com/kendo-ui/treelist/index";
             // 
-            // linkAPI
+            // linkApi
             // 
-            this.linkAPI.Text = "https://docs.telerik.com/kendo-ui/api/javascript/ui/treelist";
+            this.linkApi.Text = "https://docs.telerik.com/kendo-ui/api/javascript/ui/treelist";
             // 
             // linkDocs
             // 
@@ -73,7 +73,7 @@
             this.kendoTreeList1.Location = new System.Drawing.Point(8, 8);
             this.kendoTreeList1.Name = "kendoTreeList1";
             this.kendoTreeList1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("kendoTreeList1.Options"))));
-            this.kendoTreeList1.Size = new System.Drawing.Size(1073, 542);
+            this.kendoTreeList1.Size = new System.Drawing.Size(872, 560);
             this.kendoTreeList1.TabIndex = 0;
             this.kendoTreeList1.Text = "kendoTreeList1";
             widgetTemplate1.Id = "photo-template";
@@ -145,7 +145,6 @@
             // 
             // kendoTreeList
             // 
-            this.MinimumSize = new System.Drawing.Size(907, 497);
             this.Name = "kendoTreeList";
             this.Load += new System.EventHandler(this.kendoTreeList_Load);
             this.panel.ResumeLayout(false);
@@ -153,7 +152,6 @@
             this.flowLayoutPanelProperties.ResumeLayout(false);
             this.flowLayoutPanelProperties.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

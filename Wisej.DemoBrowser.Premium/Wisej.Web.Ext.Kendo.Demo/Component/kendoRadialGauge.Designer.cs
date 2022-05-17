@@ -42,24 +42,18 @@
             // panel
             // 
             this.panel.Controls.Add(this.kendoRadialGauge1);
-            this.panel.Size = new System.Drawing.Size(470, 314);
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Size = new System.Drawing.Size(250, 314);
             // 
             // buttonUpdate
             // 
-            this.buttonUpdate.Location = new System.Drawing.Point(16, 246);
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
             // linkDemo
             // 
             this.linkDemo.Text = "https://demos.telerik.com/kendo-ui/radial-gauge/index";
             // 
-            // linkAPI
+            // linkApi
             // 
-            this.linkAPI.Text = "https://docs.telerik.com/kendo-ui/api/javascript/dataviz/ui/radialgauge";
+            this.linkApi.Text = "https://docs.telerik.com/kendo-ui/api/javascript/dataviz/ui/radialgauge";
             // 
             // linkDocs
             // 
@@ -70,7 +64,6 @@
             this.flowLayoutPanelProperties.Controls.Add(this.checkBox1);
             this.flowLayoutPanelProperties.Controls.Add(this.numericUpDown1);
             this.flowLayoutPanelProperties.Controls.Add(this.button1);
-            this.flowLayoutPanelProperties.Size = new System.Drawing.Size(218, 188);
             // 
             // kendoRadialGauge1
             // 
@@ -80,7 +73,7 @@
             this.kendoRadialGauge1.Location = new System.Drawing.Point(51, 34);
             this.kendoRadialGauge1.Name = "kendoRadialGauge1";
             this.kendoRadialGauge1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("kendoRadialGauge1.Options"))));
-            this.kendoRadialGauge1.Size = new System.Drawing.Size(365, 244);
+            this.kendoRadialGauge1.Size = new System.Drawing.Size(785, 508);
             this.kendoRadialGauge1.TabIndex = 0;
             this.kendoRadialGauge1.Text = "kendoRadialGauge1";
             // 
@@ -136,15 +129,12 @@
             // 
             // kendoRadialGauge
             // 
-            this.MinimumSize = new System.Drawing.Size(879, 504);
             this.Name = "kendoRadialGauge";
-            this.Size = new System.Drawing.Size(879, 504);
             this.panel.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.flowLayoutPanelProperties.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

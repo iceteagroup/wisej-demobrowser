@@ -44,7 +44,7 @@
             // 
             // linkAPI
             // 
-            this.linkAPI.Text = "https://ej2.syncfusion.com/javascript/documentation/api/document-editor-container" +
+            this.linkApi.Text = "https://ej2.syncfusion.com/javascript/documentation/api/document-editor-container" +
     "";
             // 
             // buttonUpdate

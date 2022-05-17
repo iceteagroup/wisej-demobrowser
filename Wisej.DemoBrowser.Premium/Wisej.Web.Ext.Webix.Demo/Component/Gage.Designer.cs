@@ -43,7 +43,7 @@
             // 
             // linkAPI
             // 
-            this.linkAPI.Text = "https://docs.webix.com/api__refs__ui.gage.html";
+            this.linkApi.Text = "https://docs.webix.com/api__refs__ui.gage.html";
             // 
             // panel
             // 

@@ -46,7 +46,7 @@
             // 
             // linkAPI
             // 
-            this.linkAPI.Text = "https://ej2.syncfusion.com/javascript/documentation/api/color-picker/";
+            this.linkApi.Text = "https://ej2.syncfusion.com/javascript/documentation/api/color-picker/";
             // 
             // buttonUpdate
             // 

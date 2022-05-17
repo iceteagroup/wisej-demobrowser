@@ -54,9 +54,9 @@
             // 
             this.linkDemo.Text = "https://demos.telerik.com/kendo-ui/pivotgrid/index";
             // 
-            // linkAPI
+            // linkApi
             // 
-            this.linkAPI.Text = "https://docs.telerik.com/kendo-ui/api/javascript/ui/pivotgrid";
+            this.linkApi.Text = "https://docs.telerik.com/kendo-ui/api/javascript/ui/pivotgrid";
             // 
             // linkDocs
             // 
@@ -128,13 +128,11 @@
             // 
             // kendoPivotGrid1
             // 
-            this.kendoPivotGrid1.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
-            | Wisej.Web.AnchorStyles.Left) 
-            | Wisej.Web.AnchorStyles.Right)));
-            this.kendoPivotGrid1.Location = new System.Drawing.Point(31, 23);
+            this.kendoPivotGrid1.Dock = Wisej.Web.DockStyle.Fill;
+            this.kendoPivotGrid1.Location = new System.Drawing.Point(8, 8);
             this.kendoPivotGrid1.Name = "kendoPivotGrid1";
             this.kendoPivotGrid1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("kendoPivotGrid1.Options"))));
-            this.kendoPivotGrid1.Size = new System.Drawing.Size(1027, 511);
+            this.kendoPivotGrid1.Size = new System.Drawing.Size(872, 560);
             this.kendoPivotGrid1.TabIndex = 0;
             this.kendoPivotGrid1.Text = "kendoPivotGrid1";
             this.kendoPivotGrid1.WebRequest += new Wisej.Web.WebRequestHandler(this.kendoPivotGrid1_WebRequest);
@@ -176,14 +174,12 @@
             // 
             // kendoPivotGrid
             // 
-            this.MinimumSize = new System.Drawing.Size(887, 615);
             this.Name = "kendoPivotGrid";
             this.panel.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.flowLayoutPanelProperties.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownColumnWidth)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

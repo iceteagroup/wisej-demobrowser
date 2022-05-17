@@ -54,9 +54,9 @@
             // 
             this.linkDemo.Text = "https://demos.telerik.com/kendo-ui/spreadsheet/index";
             // 
-            // linkAPI
+            // linkApi
             // 
-            this.linkAPI.Text = "https://docs.telerik.com/kendo-ui/api/javascript/ui/spreadsheet";
+            this.linkApi.Text = "https://docs.telerik.com/kendo-ui/api/javascript/ui/spreadsheet";
             // 
             // linkDocs
             // 
@@ -95,12 +95,10 @@
             // 
             // kendoSpreadsheet1
             // 
-            this.kendoSpreadsheet1.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
-            | Wisej.Web.AnchorStyles.Left) 
-            | Wisej.Web.AnchorStyles.Right)));
-            this.kendoSpreadsheet1.Location = new System.Drawing.Point(18, 18);
+            this.kendoSpreadsheet1.Dock = Wisej.Web.DockStyle.Fill;
+            this.kendoSpreadsheet1.Location = new System.Drawing.Point(8, 8);
             this.kendoSpreadsheet1.Name = "kendoSpreadsheet1";
-            this.kendoSpreadsheet1.Size = new System.Drawing.Size(1052, 522);
+            this.kendoSpreadsheet1.Size = new System.Drawing.Size(872, 560);
             this.kendoSpreadsheet1.TabIndex = 0;
             this.kendoSpreadsheet1.Text = "kendoSpreadsheet1";
             this.kendoSpreadsheet1.WebRequest += new Wisej.Web.WebRequestHandler(this.kendoSpreadsheet1_WebRequest);
@@ -171,7 +169,6 @@
             // 
             // kendoSpreadsheet
             // 
-            this.MinimumSize = new System.Drawing.Size(900, 610);
             this.Name = "kendoSpreadsheet";
             this.Load += new System.EventHandler(this.kendoSpreadsheet_Load);
             this.panel.ResumeLayout(false);
@@ -180,7 +177,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

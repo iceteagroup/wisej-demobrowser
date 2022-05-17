@@ -48,9 +48,9 @@
             // 
             this.linkDemo.Text = "https://demos.telerik.com/kendo-ui/multiselect/index";
             // 
-            // linkAPI
+            // linkApi
             // 
-            this.linkAPI.Text = "https://docs.telerik.com/kendo-ui/api/javascript/ui/multiselect";
+            this.linkApi.Text = "https://docs.telerik.com/kendo-ui/api/javascript/ui/multiselect";
             // 
             // linkDocs
             // 
@@ -64,7 +64,7 @@
             // kendoMultiSelect1
             // 
             this.kendoMultiSelect1.Anchor = Wisej.Web.AnchorStyles.None;
-            this.kendoMultiSelect1.Location = new System.Drawing.Point(394, 259);
+            this.kendoMultiSelect1.Location = new System.Drawing.Point(294, 268);
             this.kendoMultiSelect1.Name = "kendoMultiSelect1";
             this.kendoMultiSelect1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"dataTextField\":\"text\",\"dataValueField\":\"value\",\"dataSource\":[{\"text\":\"Item1\",\"v" +
         "alue\":\"1\"},{\"text\":\"Item2\",\"value\":\"2\"}]}")));
@@ -100,13 +100,11 @@
             // 
             // kendoMultiSelect
             // 
-            this.MinimumSize = new System.Drawing.Size(755, 440);
             this.Name = "kendoMultiSelect";
             this.panel.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.flowLayoutPanelProperties.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

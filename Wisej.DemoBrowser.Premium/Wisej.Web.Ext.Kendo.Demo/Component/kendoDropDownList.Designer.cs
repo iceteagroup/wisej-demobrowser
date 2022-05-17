@@ -57,9 +57,9 @@
             // 
             this.linkDemo.Text = "https://demos.telerik.com/kendo-ui/dropdownlist/index";
             // 
-            // linkAPI
+            // linkApi
             // 
-            this.linkAPI.Text = "https://docs.telerik.com/kendo-ui/api/javascript/ui/dropdownlist";
+            this.linkApi.Text = "https://docs.telerik.com/kendo-ui/api/javascript/ui/dropdownlist";
             // 
             // linkDocs
             // 
@@ -94,7 +94,7 @@
             this.flowLayoutPanel1.Controls.Add(this.kendoDropDownListColor);
             this.flowLayoutPanel1.Controls.Add(this.label6);
             this.flowLayoutPanel1.Controls.Add(this.kendoDropDownListSize);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(362, 101);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(262, 110);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Padding = new Wisej.Web.Padding(16);
             this.flowLayoutPanel1.Size = new System.Drawing.Size(364, 356);
@@ -208,7 +208,6 @@
             // 
             // kendoDropDownList
             // 
-            this.MinimumSize = new System.Drawing.Size(793, 567);
             this.Name = "kendoDropDownList";
             this.Load += new System.EventHandler(this.kendoDropDownList_Load);
             this.panel.ResumeLayout(false);
@@ -219,7 +218,6 @@
             this.flowLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

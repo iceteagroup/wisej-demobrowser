@@ -48,9 +48,9 @@
             // 
             this.linkDemo.Text = "https://demos.telerik.com/kendo-ui/qrcode/index";
             // 
-            // linkAPI
+            // linkApi
             // 
-            this.linkAPI.Text = "https://docs.telerik.com/kendo-ui/api/javascript/dataviz/ui/qrcode";
+            this.linkApi.Text = "https://docs.telerik.com/kendo-ui/api/javascript/dataviz/ui/qrcode";
             // 
             // linkDocs
             // 
@@ -64,7 +64,7 @@
             // kendoQRCode1
             // 
             this.kendoQRCode1.Anchor = Wisej.Web.AnchorStyles.None;
-            this.kendoQRCode1.Location = new System.Drawing.Point(418, 152);
+            this.kendoQRCode1.Location = new System.Drawing.Point(318, 161);
             this.kendoQRCode1.Name = "kendoQRCode1";
             this.kendoQRCode1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"value\":\"http://www.wisej.com/\",\"color\":\"#e15613\",\"background\":\"transparent\"}")));
             this.kendoQRCode1.Size = new System.Drawing.Size(253, 254);
@@ -103,13 +103,11 @@
             // 
             // kendoQRCode
             // 
-            this.MinimumSize = new System.Drawing.Size(684, 470);
             this.Name = "kendoQRCode";
             this.panel.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.flowLayoutPanelProperties.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

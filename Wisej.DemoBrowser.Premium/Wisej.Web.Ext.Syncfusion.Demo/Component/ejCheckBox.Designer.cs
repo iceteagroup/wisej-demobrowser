@@ -69,7 +69,7 @@
             // 
             // linkAPI
             // 
-            this.linkAPI.Text = "https://help.syncfusion.com/api/js/ejcheckbox";
+            this.linkApi.Text = "https://help.syncfusion.com/api/js/ejcheckbox";
             // 
             // panel
             // 

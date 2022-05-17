@@ -49,9 +49,9 @@
             // 
             this.linkDemo.Text = "https://demos.telerik.com/kendo-ui/multiviewcalendar/index";
             // 
-            // linkAPI
+            // linkApi
             // 
-            this.linkAPI.Text = "https://docs.telerik.com/kendo-ui/api/javascript/ui/multiviewcalendar";
+            this.linkApi.Text = "https://docs.telerik.com/kendo-ui/api/javascript/ui/multiviewcalendar";
             // 
             // linkDocs
             // 
@@ -66,9 +66,10 @@
             // kendoMultiViewCalendar1
             // 
             this.kendoMultiViewCalendar1.Anchor = Wisej.Web.AnchorStyles.None;
-            this.kendoMultiViewCalendar1.Location = new System.Drawing.Point(196, 96);
+            this.kendoMultiViewCalendar1.Location = new System.Drawing.Point(164, 105);
+            this.kendoMultiViewCalendar1.MinimumSize = new System.Drawing.Size(561, 367);
             this.kendoMultiViewCalendar1.Name = "kendoMultiViewCalendar1";
-            this.kendoMultiViewCalendar1.Size = new System.Drawing.Size(697, 367);
+            this.kendoMultiViewCalendar1.Size = new System.Drawing.Size(561, 367);
             this.kendoMultiViewCalendar1.TabIndex = 0;
             this.kendoMultiViewCalendar1.Text = "kendoMultiViewCalendar1";
             // 
@@ -110,14 +111,12 @@
             // 
             // kendoMultiViewCalendar
             // 
-            this.MinimumSize = new System.Drawing.Size(1116, 579);
             this.Name = "kendoMultiViewCalendar";
             this.panel.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.flowLayoutPanelProperties.ResumeLayout(false);
             this.flowLayoutPanelProperties.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

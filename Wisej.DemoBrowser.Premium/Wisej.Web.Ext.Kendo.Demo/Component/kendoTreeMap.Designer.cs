@@ -50,9 +50,9 @@
             // 
             this.linkDemo.Text = "https://demos.telerik.com/kendo-ui/treemap/index";
             // 
-            // linkAPI
+            // linkApi
             // 
-            this.linkAPI.Text = "https://docs.telerik.com/kendo-ui/api/javascript/dataviz/ui/treemap";
+            this.linkApi.Text = "https://docs.telerik.com/kendo-ui/api/javascript/dataviz/ui/treemap";
             // 
             // linkDocs
             // 
@@ -66,13 +66,11 @@
             // 
             // kendoTreeMap1
             // 
-            this.kendoTreeMap1.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
-            | Wisej.Web.AnchorStyles.Left) 
-            | Wisej.Web.AnchorStyles.Right)));
-            this.kendoTreeMap1.Location = new System.Drawing.Point(44, 32);
+            this.kendoTreeMap1.Dock = Wisej.Web.DockStyle.Fill;
+            this.kendoTreeMap1.Location = new System.Drawing.Point(8, 8);
             this.kendoTreeMap1.Name = "kendoTreeMap1";
             this.kendoTreeMap1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("kendoTreeMap1.Options"))));
-            this.kendoTreeMap1.Size = new System.Drawing.Size(1001, 495);
+            this.kendoTreeMap1.Size = new System.Drawing.Size(872, 560);
             this.kendoTreeMap1.TabIndex = 0;
             this.kendoTreeMap1.Text = "kendoTreeMap1";
             // 
@@ -94,6 +92,7 @@
             // 
             // checkedListBoxColors
             // 
+            this.checkedListBoxColors.CheckOnClick = true;
             this.flowLayoutPanelProperties.SetFillWeight(this.checkedListBoxColors, 1);
             this.flowLayoutPanelProperties.SetFlowBreak(this.checkedListBoxColors, true);
             this.checkedListBoxColors.Items.AddRange(new object[] {
@@ -127,14 +126,12 @@
             // 
             // kendoTreeMap
             // 
-            this.MinimumSize = new System.Drawing.Size(961, 582);
             this.Name = "kendoTreeMap";
             this.panel.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.flowLayoutPanelProperties.ResumeLayout(false);
             this.flowLayoutPanelProperties.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

@@ -64,8 +64,8 @@
             // 
             // linkAPI
             // 
-            this.linkAPI.TabIndex = 5;
-            this.linkAPI.Text = "http://www.igniteui.com/help/api/2019.2/ui.igzoombar";
+            this.linkApi.TabIndex = 5;
+            this.linkApi.Text = "http://www.igniteui.com/help/api/2019.2/ui.igzoombar";
             // 
             // linkDocs
             // 

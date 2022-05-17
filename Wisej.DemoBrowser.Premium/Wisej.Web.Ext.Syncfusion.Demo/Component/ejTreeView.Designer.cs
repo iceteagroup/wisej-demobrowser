@@ -60,8 +60,8 @@
             // 
             // linkAPI
             // 
-            this.linkAPI.TabIndex = 5;
-            this.linkAPI.Text = "https://help.syncfusion.com/api/js/ejtreeview";
+            this.linkApi.TabIndex = 5;
+            this.linkApi.Text = "https://help.syncfusion.com/api/js/ejtreeview";
             // 
             // panel
             // 

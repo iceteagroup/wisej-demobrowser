@@ -43,7 +43,7 @@
             // 
             // linkAPI
             // 
-            this.linkAPI.Text = "https://ej2.syncfusion.com/javascript/documentation/api/sparkline";
+            this.linkApi.Text = "https://ej2.syncfusion.com/javascript/documentation/api/sparkline";
             // 
             // buttonUpdate
             // 
