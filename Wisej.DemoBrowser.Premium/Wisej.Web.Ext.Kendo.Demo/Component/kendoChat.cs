@@ -70,7 +70,7 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 
 		private void kendoChat1_actionClick(object sender, WidgetEventArgs e)
 		{
-			var message = e.Data;
+			var message = e.Data.text;
 
 			var response = $"{message} is a great pick!";
 
