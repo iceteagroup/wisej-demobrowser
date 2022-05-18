@@ -43,7 +43,7 @@
             // 
             // linkAPI
             // 
-            this.linkAPI.Text = "https://ej2.syncfusion.com/javascript/documentation/api/query-builder/";
+            this.linkApi.Text = "https://ej2.syncfusion.com/javascript/documentation/api/query-builder/";
             // 
             // buttonUpdate
             // 

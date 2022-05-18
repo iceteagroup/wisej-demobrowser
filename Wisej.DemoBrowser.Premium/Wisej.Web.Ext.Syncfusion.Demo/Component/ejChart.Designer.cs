@@ -53,7 +53,7 @@
             // 
             // linkAPI
             // 
-            this.linkAPI.Text = "https://help.syncfusion.com/api/js/ejchart";
+            this.linkApi.Text = "https://help.syncfusion.com/api/js/ejchart";
             // 
             // panel
             // 

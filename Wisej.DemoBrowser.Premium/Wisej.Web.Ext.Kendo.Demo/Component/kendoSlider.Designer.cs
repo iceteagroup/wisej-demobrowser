@@ -52,9 +52,9 @@
             // 
             this.linkDemo.Text = "https://demos.telerik.com/kendo-ui/slider/index";
             // 
-            // linkAPI
+            // linkApi
             // 
-            this.linkAPI.Text = "https://docs.telerik.com/kendo-ui/api/javascript/ui/slider";
+            this.linkApi.Text = "https://docs.telerik.com/kendo-ui/api/javascript/ui/slider";
             // 
             // linkDocs
             // 
@@ -69,7 +69,7 @@
             // kendoSlider1
             // 
             this.kendoSlider1.Anchor = Wisej.Web.AnchorStyles.None;
-            this.kendoSlider1.Location = new System.Drawing.Point(374, 85);
+            this.kendoSlider1.Location = new System.Drawing.Point(274, 94);
             this.kendoSlider1.Name = "kendoSlider1";
             this.kendoSlider1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"showButtons\":true,\"increaseButtonTitle\":\"Right\",\"decreaseButtonTitle\":\"Left\",\"m" +
         "in\":-20,\"max\":20,\"smallStep\":2,\"largeStep\":1,\"orientation\":\"horizontal\"}")));
@@ -80,7 +80,7 @@
             // kendoSlider2
             // 
             this.kendoSlider2.Anchor = Wisej.Web.AnchorStyles.None;
-            this.kendoSlider2.Location = new System.Drawing.Point(528, 133);
+            this.kendoSlider2.Location = new System.Drawing.Point(428, 142);
             this.kendoSlider2.Name = "kendoSlider2";
             this.kendoSlider2.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"orientation\":\"vertical\",\"min\":-20,\"max\":20,\"smallStep\":1,\"largeStep\":20,\"showBu" +
         "ttons\":true}")));
@@ -148,7 +148,6 @@
             // 
             // kendoSlider
             // 
-            this.MinimumSize = new System.Drawing.Size(787, 603);
             this.Name = "kendoSlider";
             this.panel.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
@@ -156,7 +155,6 @@
             this.flowLayoutPanelProperties.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownValue)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

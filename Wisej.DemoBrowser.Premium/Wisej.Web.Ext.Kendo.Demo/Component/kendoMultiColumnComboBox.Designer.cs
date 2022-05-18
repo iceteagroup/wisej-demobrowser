@@ -52,9 +52,9 @@
             // 
             this.linkDemo.Text = "https://demos.telerik.com/kendo-ui/multicolumncombobox/index";
             // 
-            // linkAPI
+            // linkApi
             // 
-            this.linkAPI.Text = "https://docs.telerik.com/kendo-ui/api/javascript/ui/multicolumncombobox";
+            this.linkApi.Text = "https://docs.telerik.com/kendo-ui/api/javascript/ui/multicolumncombobox";
             // 
             // linkDocs
             // 
@@ -71,7 +71,7 @@
             // kendoMultiColumnComboBox1
             // 
             this.kendoMultiColumnComboBox1.Anchor = Wisej.Web.AnchorStyles.None;
-            this.kendoMultiColumnComboBox1.Location = new System.Drawing.Point(394, 259);
+            this.kendoMultiColumnComboBox1.Location = new System.Drawing.Point(294, 268);
             this.kendoMultiColumnComboBox1.Name = "kendoMultiColumnComboBox1";
             this.kendoMultiColumnComboBox1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("kendoMultiColumnComboBox1.Options"))));
             this.kendoMultiColumnComboBox1.Size = new System.Drawing.Size(300, 40);
@@ -151,13 +151,11 @@
             // 
             // kendoMultiColumnComboBox
             // 
-            this.MinimumSize = new System.Drawing.Size(732, 614);
             this.Name = "kendoMultiColumnComboBox";
             this.panel.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.flowLayoutPanelProperties.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

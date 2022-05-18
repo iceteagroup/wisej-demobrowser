@@ -62,10 +62,10 @@
             this.linkDemo.TabIndex = 6;
             this.linkDemo.Text = "https://www.igniteui.com/zoombar/overview";
             // 
-            // linkAPI
+            // linkApi
             // 
-            this.linkAPI.TabIndex = 5;
-            this.linkAPI.Text = "http://www.igniteui.com/help/api/2019.2/ui.igzoombar";
+            this.linkApi.TabIndex = 5;
+            this.linkApi.Text = "http://www.igniteui.com/help/api/2019.2/ui.igzoombar";
             // 
             // linkDocs
             // 
@@ -83,10 +83,10 @@
             this.igDataChart1.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
             | Wisej.Web.AnchorStyles.Left) 
             | Wisej.Web.AnchorStyles.Right)));
-            this.igDataChart1.Location = new System.Drawing.Point(35, 26);
+            this.igDataChart1.Location = new System.Drawing.Point(32, 36);
             this.igDataChart1.Name = "igDataChart1";
             this.igDataChart1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("igDataChart1.Options"))));
-            this.igDataChart1.Size = new System.Drawing.Size(1019, 436);
+            this.igDataChart1.Size = new System.Drawing.Size(824, 436);
             this.igDataChart1.TabIndex = 0;
             this.igDataChart1.Text = "igDataChart1";
             this.igDataChart1.WidgetTemplates = new Wisej.Web.Ext.Ignite.igBase.WidgetTemplate[0];
@@ -96,9 +96,9 @@
             // 
             this.panel1.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Bottom | Wisej.Web.AnchorStyles.Left) 
             | Wisej.Web.AnchorStyles.Right)));
-            this.panel1.Location = new System.Drawing.Point(35, 473);
+            this.panel1.Location = new System.Drawing.Point(32, 483);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1020, 57);
+            this.panel1.Size = new System.Drawing.Size(825, 57);
             this.panel1.TabIndex = 1;
             // 
             // numericUpDown1
@@ -155,7 +155,6 @@
             // 
             // igZoombar
             // 
-            this.MinimumSize = new System.Drawing.Size(831, 554);
             this.Name = "igZoombar";
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
@@ -165,7 +164,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

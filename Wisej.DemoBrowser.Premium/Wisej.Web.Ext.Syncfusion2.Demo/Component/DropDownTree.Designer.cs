@@ -43,7 +43,7 @@
             // 
             // linkAPI
             // 
-            this.linkAPI.Text = "https://ej2.syncfusion.com/javascript/documentation/api/drop-down-tree/";
+            this.linkApi.Text = "https://ej2.syncfusion.com/javascript/documentation/api/drop-down-tree/";
             // 
             // buttonUpdate
             // 

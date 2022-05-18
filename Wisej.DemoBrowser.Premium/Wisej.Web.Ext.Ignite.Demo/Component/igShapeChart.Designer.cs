@@ -60,10 +60,10 @@
             this.linkDemo.TabIndex = 6;
             this.linkDemo.Text = "https://www.igniteui.com/shape-chart/overview";
             // 
-            // linkAPI
+            // linkApi
             // 
-            this.linkAPI.TabIndex = 5;
-            this.linkAPI.Text = "http://www.igniteui.com/help/api/2019.2/ui.igSparkline";
+            this.linkApi.TabIndex = 5;
+            this.linkApi.Text = "http://www.igniteui.com/help/api/2019.2/ui.igSparkline";
             // 
             // linkDocs
             // 
@@ -79,13 +79,11 @@
             // 
             // igShapeChart1
             // 
-            this.igShapeChart1.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
-            | Wisej.Web.AnchorStyles.Left) 
-            | Wisej.Web.AnchorStyles.Right)));
-            this.igShapeChart1.Location = new System.Drawing.Point(31, 20);
+            this.igShapeChart1.Dock = Wisej.Web.DockStyle.Fill;
+            this.igShapeChart1.Location = new System.Drawing.Point(8, 8);
             this.igShapeChart1.Name = "igShapeChart1";
             this.igShapeChart1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("igShapeChart1.Options"))));
-            this.igShapeChart1.Size = new System.Drawing.Size(1027, 518);
+            this.igShapeChart1.Size = new System.Drawing.Size(872, 560);
             this.igShapeChart1.TabIndex = 0;
             this.igShapeChart1.Text = "igShapeChart1";
             widgetFunction1.Name = "SetDensityData";
@@ -170,14 +168,12 @@
             // 
             // igShapeChart
             // 
-            this.MinimumSize = new System.Drawing.Size(909, 568);
             this.Name = "igShapeChart";
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

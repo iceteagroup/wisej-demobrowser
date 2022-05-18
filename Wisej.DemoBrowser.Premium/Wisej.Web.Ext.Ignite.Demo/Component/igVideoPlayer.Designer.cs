@@ -60,10 +60,10 @@
             this.linkDemo.TabIndex = 6;
             this.linkDemo.Text = "https://www.igniteui.com/video-player/overview";
             // 
-            // linkAPI
+            // linkApi
             // 
-            this.linkAPI.TabIndex = 5;
-            this.linkAPI.Text = "http://www.igniteui.com/help/api/2019.2/ui.igvideoplayer";
+            this.linkApi.TabIndex = 5;
+            this.linkApi.Text = "http://www.igniteui.com/help/api/2019.2/ui.igvideoplayer";
             // 
             // linkDocs
             // 
@@ -161,26 +161,22 @@
             // 
             // igVideoPlayer1
             // 
-            this.igVideoPlayer1.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
-            | Wisej.Web.AnchorStyles.Left) 
-            | Wisej.Web.AnchorStyles.Right)));
             this.igVideoPlayer1.CssStyle = ".ui-igplayer-bookmark-list {\r\n    padding-bottom: 4px;\r\n}";
-            this.igVideoPlayer1.Location = new System.Drawing.Point(27, 26);
+            this.igVideoPlayer1.Dock = Wisej.Web.DockStyle.Fill;
+            this.igVideoPlayer1.Location = new System.Drawing.Point(8, 8);
             this.igVideoPlayer1.Name = "igVideoPlayer1";
             this.igVideoPlayer1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("igVideoPlayer1.Options"))));
-            this.igVideoPlayer1.Size = new System.Drawing.Size(1035, 505);
+            this.igVideoPlayer1.Size = new System.Drawing.Size(872, 560);
             this.igVideoPlayer1.TabIndex = 0;
             this.igVideoPlayer1.WidgetTemplates = new Wisej.Web.Ext.Ignite.igBase.WidgetTemplate[0];
             // 
             // igVideoPlayer
             // 
-            this.MinimumSize = new System.Drawing.Size(833, 652);
             this.Name = "igVideoPlayer";
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

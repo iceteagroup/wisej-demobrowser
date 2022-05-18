@@ -64,10 +64,10 @@
             this.linkDemo.TabIndex = 6;
             this.linkDemo.Text = "https://www.igniteui.com/rating/overview";
             // 
-            // linkAPI
+            // linkApi
             // 
-            this.linkAPI.TabIndex = 5;
-            this.linkAPI.Text = "http://www.igniteui.com/help/api/2019.2/ui.igrating";
+            this.linkApi.TabIndex = 5;
+            this.linkApi.Text = "http://www.igniteui.com/help/api/2019.2/ui.igrating";
             // 
             // linkDocs
             // 
@@ -78,13 +78,11 @@
             // 
             this.flowLayoutPanel1.Controls.Add(this.numericUpDown1);
             this.flowLayoutPanel1.Controls.Add(this.comboBoxPrecision);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 35);
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 441);
             // 
             // igRating1
             // 
             this.igRating1.Anchor = Wisej.Web.AnchorStyles.None;
-            this.igRating1.Location = new System.Drawing.Point(468, 194);
+            this.igRating1.Location = new System.Drawing.Point(368, 203);
             this.igRating1.Name = "igRating1";
             this.igRating1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"value\":3}")));
             this.igRating1.Size = new System.Drawing.Size(204, 40);
@@ -109,7 +107,7 @@
             0,
             0});
             this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(212, 46);
+            this.numericUpDown1.Size = new System.Drawing.Size(212, 57);
             this.numericUpDown1.TabIndex = 0;
             this.numericUpDown1.Value = new decimal(new int[] {
             1,
@@ -121,7 +119,7 @@
             // 
             this.pictureBox1.Anchor = Wisej.Web.AnchorStyles.None;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(236, 158);
+            this.pictureBox1.Location = new System.Drawing.Point(136, 167);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(226, 242);
             this.pictureBox1.SizeMode = Wisej.Web.PictureBoxSizeMode.Zoom;
@@ -130,7 +128,7 @@
             // 
             this.label4.Anchor = Wisej.Web.AnchorStyles.None;
             this.label4.Font = new System.Drawing.Font("default", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.label4.Location = new System.Drawing.Point(468, 158);
+            this.label4.Location = new System.Drawing.Point(368, 167);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(171, 39);
             this.label4.TabIndex = 0;
@@ -139,7 +137,7 @@
             // label5
             // 
             this.label5.Anchor = Wisej.Web.AnchorStyles.None;
-            this.label5.Location = new System.Drawing.Point(468, 240);
+            this.label5.Location = new System.Drawing.Point(368, 249);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(385, 160);
             this.label5.TabIndex = 2;
@@ -157,14 +155,13 @@
             "half",
             "whole"});
             this.comboBoxPrecision.LabelText = "Precision";
-            this.comboBoxPrecision.Location = new System.Drawing.Point(3, 55);
+            this.comboBoxPrecision.Location = new System.Drawing.Point(3, 66);
             this.comboBoxPrecision.Name = "comboBoxPrecision";
-            this.comboBoxPrecision.Size = new System.Drawing.Size(212, 46);
+            this.comboBoxPrecision.Size = new System.Drawing.Size(212, 57);
             this.comboBoxPrecision.TabIndex = 5;
             // 
             // igRating
             // 
-            this.MinimumSize = new System.Drawing.Size(1037, 448);
             this.Name = "igRating";
             this.Load += new System.EventHandler(this.igRating_Load);
             this.groupBox1.ResumeLayout(false);
@@ -174,7 +171,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

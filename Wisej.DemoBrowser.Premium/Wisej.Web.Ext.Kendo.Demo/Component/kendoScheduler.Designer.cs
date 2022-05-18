@@ -52,9 +52,9 @@
             // 
             this.linkDemo.Text = "https://demos.telerik.com/kendo-ui/scheduler/index";
             // 
-            // linkAPI
+            // linkApi
             // 
-            this.linkAPI.Text = "https://docs.telerik.com/kendo-ui/api/javascript/ui/scheduler";
+            this.linkApi.Text = "https://docs.telerik.com/kendo-ui/api/javascript/ui/scheduler";
             // 
             // linkDocs
             // 
@@ -142,23 +142,21 @@
             this.kendoScheduler1.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
             | Wisej.Web.AnchorStyles.Left) 
             | Wisej.Web.AnchorStyles.Right)));
-            this.kendoScheduler1.Location = new System.Drawing.Point(18, 28);
+            this.kendoScheduler1.Location = new System.Drawing.Point(26, 38);
             this.kendoScheduler1.Name = "kendoScheduler1";
             this.kendoScheduler1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("kendoScheduler1.Options"))));
-            this.kendoScheduler1.Size = new System.Drawing.Size(1052, 501);
+            this.kendoScheduler1.Size = new System.Drawing.Size(836, 501);
             this.kendoScheduler1.TabIndex = 0;
             this.kendoScheduler1.Text = "kendoScheduler1";
             this.kendoScheduler1.WebRequest += new Wisej.Web.WebRequestHandler(this.kendoScheduler1_WebRequest);
             // 
             // kendoScheduler
             // 
-            this.MinimumSize = new System.Drawing.Size(996, 649);
             this.Name = "kendoScheduler";
             this.panel.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.flowLayoutPanelProperties.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

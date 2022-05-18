@@ -49,7 +49,7 @@
             // 
             // linkAPI
             // 
-            this.linkAPI.Text = "https://ej2.syncfusion.com/javascript/documentation/api/multi-select/";
+            this.linkApi.Text = "https://ej2.syncfusion.com/javascript/documentation/api/multi-select/";
             // 
             // buttonUpdate
             // 

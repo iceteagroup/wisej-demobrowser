@@ -24,19 +24,13 @@ namespace Wisej.Web.Ext.Ignite.Demo.Component
 
 		private void button1_Click(object sender, EventArgs e)
 		{
-
-			// Doesn't work because Names are in quotes
 			this.igPieChart1.Instance.addItem(new {
-				Label = this.textBox1.Text,
-				Budget = this.numericUpDown1.Value
+				label = this.textBox1.Text,
+				budget = this.numericUpDown1.Value
 			});
 
-
 			this.igPieChart1.Update();
-
-			// Works
-			//this.igPieChart1.Call("AddItem");
-	}
+		}
 
 		private void buttonUpdate_Click(object sender, EventArgs e)
 		{

@@ -52,7 +52,7 @@
             // 
             // linkAPI
             // 
-            this.linkAPI.Text = "https://docs.telerik.com/kendo-ui/api/javascript/ui/pivotgridv2";
+            this.linkApi.Text = "https://docs.telerik.com/kendo-ui/api/javascript/ui/pivotgridv2";
             // 
             // linkDocs
             // 
@@ -109,7 +109,6 @@
             // 
             // kendoPivotGridV2
             // 
-            this.MinimumSize = new System.Drawing.Size(1264, 676);
             this.Name = "kendoPivotGridV2";
             this.panel.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);

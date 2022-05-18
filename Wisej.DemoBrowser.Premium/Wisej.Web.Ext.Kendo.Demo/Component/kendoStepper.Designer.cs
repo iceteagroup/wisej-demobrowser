@@ -45,9 +45,9 @@
             // 
             this.linkDemo.Text = "https://demos.telerik.com/kendo-ui/stepper/index";
             // 
-            // linkAPI
+            // linkApi
             // 
-            this.linkAPI.Text = "https://docs.telerik.com/kendo-ui/api/javascript/ui/stepper";
+            this.linkApi.Text = "https://docs.telerik.com/kendo-ui/api/javascript/ui/stepper";
             // 
             // linkDocs
             // 
@@ -61,10 +61,10 @@
             // kendoStepper1
             // 
             this.kendoStepper1.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Left | Wisej.Web.AnchorStyles.Right)));
-            this.kendoStepper1.Location = new System.Drawing.Point(40, 245);
+            this.kendoStepper1.Location = new System.Drawing.Point(26, 243);
             this.kendoStepper1.Name = "kendoStepper1";
             this.kendoStepper1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("kendoStepper1.Options"))));
-            this.kendoStepper1.Size = new System.Drawing.Size(1009, 91);
+            this.kendoStepper1.Size = new System.Drawing.Size(837, 91);
             this.kendoStepper1.TabIndex = 0;
             this.kendoStepper1.Text = "kendoStepper1";
             // 
@@ -91,14 +91,12 @@
             // 
             // kendoStepper
             // 
-            this.MinimumSize = new System.Drawing.Size(1091, 426);
             this.Name = "kendoStepper";
             this.panel.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.flowLayoutPanelProperties.ResumeLayout(false);
             this.flowLayoutPanelProperties.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

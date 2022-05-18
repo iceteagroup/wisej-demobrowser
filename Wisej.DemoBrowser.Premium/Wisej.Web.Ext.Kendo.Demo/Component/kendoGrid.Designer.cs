@@ -55,9 +55,9 @@
             // 
             this.linkDemo.Text = "https://demos.telerik.com/kendo-ui/grid/index";
             // 
-            // linkAPI
+            // linkApi
             // 
-            this.linkAPI.Text = "https://docs.telerik.com/kendo-ui/api/javascript/ui/grid";
+            this.linkApi.Text = "https://docs.telerik.com/kendo-ui/api/javascript/ui/grid";
             // 
             // linkDocs
             // 
@@ -113,10 +113,10 @@
             this.kendoGrid1.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
             | Wisej.Web.AnchorStyles.Left) 
             | Wisej.Web.AnchorStyles.Right)));
-            this.kendoGrid1.Location = new System.Drawing.Point(23, 23);
+            this.kendoGrid1.Location = new System.Drawing.Point(17, 33);
             this.kendoGrid1.Name = "kendoGrid1";
             this.kendoGrid1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("kendoGrid1.Options"))));
-            this.kendoGrid1.Size = new System.Drawing.Size(1041, 510);
+            this.kendoGrid1.Size = new System.Drawing.Size(854, 510);
             this.kendoGrid1.TabIndex = 0;
             this.kendoGrid1.Text = "kendoGrid1";
             widgetFunction1.Name = "onDataBound";
@@ -174,7 +174,6 @@
             // 
             // kendoGrid
             // 
-            this.MinimumSize = new System.Drawing.Size(1057, 654);
             this.Name = "kendoGrid";
             this.Load += new System.EventHandler(this.kendoGrid_Load);
             this.panel.ResumeLayout(false);
@@ -182,7 +181,6 @@
             this.flowLayoutPanelProperties.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

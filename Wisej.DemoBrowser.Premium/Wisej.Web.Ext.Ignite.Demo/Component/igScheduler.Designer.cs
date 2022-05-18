@@ -29,7 +29,7 @@
 		private void InitializeComponent()
 		{
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(igScheduler));
-            Wisej.Web.Ext.Ignite.igBase.WidgetFunction widgetFunction3 = new Wisej.Web.Ext.Ignite.igBase.WidgetFunction();
+            Wisej.Web.Ext.Ignite.igBase.WidgetFunction widgetFunction1 = new Wisej.Web.Ext.Ignite.igBase.WidgetFunction();
             this.igScheduler1 = new Wisej.Web.Ext.Ignite.igScheduler();
             this.buttonLoad = new Wisej.Web.Upload();
             this.dateTimePicker1 = new Wisej.Web.DateTimePicker();
@@ -61,10 +61,10 @@
             this.linkDemo.TabIndex = 6;
             this.linkDemo.Text = "https://www.igniteui.com/scheduler/overview";
             // 
-            // linkAPI
+            // linkApi
             // 
-            this.linkAPI.TabIndex = 5;
-            this.linkAPI.Text = "http://www.igniteui.com/help/api/2019.2/ui.igScheduler";
+            this.linkApi.TabIndex = 5;
+            this.linkApi.Text = "http://www.igniteui.com/help/api/2019.2/ui.igScheduler";
             // 
             // linkDocs
             // 
@@ -79,19 +79,17 @@
             // 
             // igScheduler1
             // 
-            this.igScheduler1.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
-            | Wisej.Web.AnchorStyles.Left) 
-            | Wisej.Web.AnchorStyles.Right)));
-            this.igScheduler1.Location = new System.Drawing.Point(21, 16);
+            this.igScheduler1.Dock = Wisej.Web.DockStyle.Fill;
+            this.igScheduler1.Location = new System.Drawing.Point(8, 8);
             this.igScheduler1.Name = "igScheduler1";
             this.igScheduler1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("igScheduler1.Options"))));
-            this.igScheduler1.Size = new System.Drawing.Size(1048, 528);
+            this.igScheduler1.Size = new System.Drawing.Size(872, 560);
             this.igScheduler1.TabIndex = 0;
             this.igScheduler1.Text = "igScheduler1";
-            widgetFunction3.Name = "loadData";
-            widgetFunction3.Source = resources.GetString("widgetFunction3.Source");
+            widgetFunction1.Name = "loadData";
+            widgetFunction1.Source = resources.GetString("widgetFunction1.Source");
             this.igScheduler1.WidgetFunctions = new Wisej.Web.Ext.Ignite.igBase.WidgetFunction[] {
-        widgetFunction3};
+        widgetFunction1};
             // 
             // buttonLoad
             // 
@@ -173,7 +171,6 @@
             // 
             // igScheduler
             // 
-            this.MinimumSize = new System.Drawing.Size(1009, 669);
             this.Name = "igScheduler";
             this.Load += new System.EventHandler(this.igScheduler_Load);
             this.groupBox1.ResumeLayout(false);
@@ -183,7 +180,6 @@
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

@@ -117,9 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="igBulletGraph4.Options" xml:space="preserve">
-    <value>{"ranges":[{"brush":"#11364D","name":"bad","startValue":0,"endValue":50},{"brush":"#164F6D","name":"acceptable","startValue":50,"endValue":70},{"brush":"#20789F","name":"good","startValue":70,"endValue":100}],"maximumValue":100,"value":55,"targetValue":73,"valueBrush":"#B3E0F7","targetValueBrush":"#B3E0F7","targetValueOutline":"#B3E0F7","formatLabel":"formatLabel"}</value>
-  </data>
   <data name="igBulletGraph3.Options" xml:space="preserve">
     <value>{"ranges":[{"brush":"#566509","name":"bad","startValue":0,"endValue":250},{"brush":"#7F950C","name":"acceptable","startValue":250,"endValue":300},{"brush":"#AABF31","name":"good","startValue":300,"endValue":500}],"minimumValue":0,"maximumValue":500,"value":350,"targetValue":400,"formatLabel":"formatLabel","valueInnerExtent":0.35,"valueOuterExtent":0.8}</value>
   </data>

@@ -77,7 +77,7 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
             // kendoCaptcha1
             // 
             this.kendoCaptcha1.Anchor = Wisej.Web.AnchorStyles.None;
-            this.kendoCaptcha1.Location = new System.Drawing.Point(358, 179);
+            this.kendoCaptcha1.Location = new System.Drawing.Point(258, 188);
             this.kendoCaptcha1.Name = "kendoCaptcha1";
             this.kendoCaptcha1.Size = new System.Drawing.Size(373, 201);
             this.kendoCaptcha1.TabIndex = 0;
@@ -86,13 +86,11 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
             // 
             // kendoCaptcha
             // 
-            this.MinimumSize = new System.Drawing.Size(802, 423);
             this.Name = "kendoCaptcha";
             this.panel.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.flowLayoutPanelProperties.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

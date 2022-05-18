@@ -59,7 +59,7 @@
             // 
             // linkAPI
             // 
-            this.linkAPI.Text = "https://help.syncfusion.com/api/js/ejautocomplete";
+            this.linkApi.Text = "https://help.syncfusion.com/api/js/ejautocomplete";
             // 
             // panel
             // 

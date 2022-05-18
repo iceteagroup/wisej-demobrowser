@@ -54,10 +54,10 @@
             // 
             this.linkDemo.TabIndex = 6;
             // 
-            // linkAPI
+            // linkApi
             // 
-            this.linkAPI.TabIndex = 5;
-            this.linkAPI.Text = "https://www.igniteui.com/help/api/2019.2/ui.igcolorpicker";
+            this.linkApi.TabIndex = 5;
+            this.linkApi.Text = "https://www.igniteui.com/help/api/2019.2/ui.igcolorpicker";
             // 
             // linkDocs
             // 
@@ -71,7 +71,7 @@
             // 
             this.label4.Anchor = Wisej.Web.AnchorStyles.None;
             this.label4.BorderStyle = Wisej.Web.BorderStyle.Solid;
-            this.label4.Location = new System.Drawing.Point(444, 350);
+            this.label4.Location = new System.Drawing.Point(344, 359);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(201, 33);
             this.label4.TabIndex = 1;
@@ -81,7 +81,7 @@
             // igColorPicker1
             // 
             this.igColorPicker1.Anchor = Wisej.Web.AnchorStyles.None;
-            this.igColorPicker1.Location = new System.Drawing.Point(444, 175);
+            this.igColorPicker1.Location = new System.Drawing.Point(344, 184);
             this.igColorPicker1.Name = "igColorPicker1";
             this.igColorPicker1.Size = new System.Drawing.Size(201, 159);
             this.igColorPicker1.TabIndex = 0;
@@ -100,13 +100,11 @@
             // 
             // igColorPicker
             // 
-            this.MinimumSize = new System.Drawing.Size(663, 427);
             this.Name = "igColorPicker";
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

@@ -40,52 +40,35 @@
             // panel
             // 
             this.panel.Controls.Add(this.kendoTimeline1);
-            this.panel.Location = new System.Drawing.Point(346, 158);
-            this.panel.Size = new System.Drawing.Size(1092, 560);
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Location = new System.Drawing.Point(39, 158);
-            this.groupBox1.Size = new System.Drawing.Size(251, 560);
             // 
             // buttonUpdate
             // 
-            this.buttonUpdate.Size = new System.Drawing.Size(219, 52);
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
             // linkDemo
             // 
-            this.linkDemo.Location = new System.Drawing.Point(98, 92);
-            this.linkDemo.Size = new System.Drawing.Size(1214, 24);
             this.linkDemo.Text = "https://demos.telerik.com/kendo-ui/timeline/index";
             // 
-            // linkAPI
+            // linkApi
             // 
-            this.linkAPI.Location = new System.Drawing.Point(97, 62);
-            this.linkAPI.Size = new System.Drawing.Size(1214, 24);
-            this.linkAPI.Text = "https://docs.telerik.com/kendo-ui/api/javascript/ui/timeline";
+            this.linkApi.Text = "https://docs.telerik.com/kendo-ui/api/javascript/ui/timeline";
             // 
             // linkDocs
             // 
-            this.linkDocs.Location = new System.Drawing.Point(97, 32);
-            this.linkDocs.Size = new System.Drawing.Size(1214, 24);
             this.linkDocs.Text = "https://docs.telerik.com/kendo-ui/controls/navigation/timeline/overview";
             // 
             // flowLayoutPanelProperties
             // 
             this.flowLayoutPanelProperties.Controls.Add(this.checkBoxShowDateLabel);
             this.flowLayoutPanelProperties.Controls.Add(this.comboBoxOrientation);
-            this.flowLayoutPanelProperties.Size = new System.Drawing.Size(219, 434);
             // 
             // kendoTimeline1
             // 
-            this.kendoTimeline1.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
-            | Wisej.Web.AnchorStyles.Left) 
-            | Wisej.Web.AnchorStyles.Right)));
-            this.kendoTimeline1.Location = new System.Drawing.Point(99, 13);
+            this.kendoTimeline1.Dock = Wisej.Web.DockStyle.Fill;
+            this.kendoTimeline1.Location = new System.Drawing.Point(8, 8);
             this.kendoTimeline1.Name = "kendoTimeline1";
             this.kendoTimeline1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("kendoTimeline1.Options"))));
-            this.kendoTimeline1.Size = new System.Drawing.Size(892, 532);
+            this.kendoTimeline1.Size = new System.Drawing.Size(872, 560);
             this.kendoTimeline1.TabIndex = 0;
             this.kendoTimeline1.Text = "kendoTimeline1";
             // 
@@ -101,7 +84,7 @@
             this.comboBoxOrientation.Location = new System.Drawing.Point(3, 48);
             this.comboBoxOrientation.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.comboBoxOrientation.Name = "comboBoxOrientation";
-            this.comboBoxOrientation.Size = new System.Drawing.Size(213, 57);
+            this.comboBoxOrientation.Size = new System.Drawing.Size(212, 57);
             this.comboBoxOrientation.TabIndex = 0;
             // 
             // checkBoxShowDateLabel
@@ -120,14 +103,13 @@
             // 
             // kendoTimeline
             // 
-            this.MinimumSize = new System.Drawing.Size(1320, 618);
             this.Name = "kendoTimeline";
+            this.Size = new System.Drawing.Size(1320, 699);
             this.panel.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.flowLayoutPanelProperties.ResumeLayout(false);
             this.flowLayoutPanelProperties.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

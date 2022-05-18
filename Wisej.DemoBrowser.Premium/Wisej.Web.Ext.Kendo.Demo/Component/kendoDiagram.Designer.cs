@@ -47,7 +47,7 @@
             // 
             // linkAPI
             // 
-            this.linkAPI.Text = "https://docs.telerik.com/kendo-ui/api/javascript/dataviz/ui/diagram";
+            this.linkApi.Text = "https://docs.telerik.com/kendo-ui/api/javascript/dataviz/ui/diagram";
             // 
             // linkDocs
             // 
@@ -101,7 +101,6 @@
             // 
             // kendoDiagram
             // 
-            this.MinimumSize = new System.Drawing.Size(889, 665);
             this.Name = "kendoDiagram";
             this.panel.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);

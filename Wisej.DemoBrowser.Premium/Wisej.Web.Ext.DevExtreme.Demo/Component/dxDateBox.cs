@@ -26,7 +26,6 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
 			this.dxDateBox1.Options.type = this.comboBox2.SelectedItem;
 			this.dxDateBox1.Options.showAnalogClock = this.checkBox4.Checked;
 			this.dxDateBox1.Options.acceptCustomValue = this.checkBox1.Checked;
-			this.dxDateBox1.Options.stylingMode = this.comboBoxStylingMode.SelectedItem;
 
 			this.dxDateBox1.Update();
 		}

@@ -58,10 +58,10 @@
             this.linkDemo.TabIndex = 6;
             this.linkDemo.Text = "https://www.igniteui.com/html-editor/overview";
             // 
-            // linkAPI
+            // linkApi
             // 
-            this.linkAPI.TabIndex = 5;
-            this.linkAPI.Text = "http://www.igniteui.com/help/api/2019.2/ui.ightmleditor";
+            this.linkApi.TabIndex = 5;
+            this.linkApi.Text = "http://www.igniteui.com/help/api/2019.2/ui.ightmleditor";
             // 
             // linkDocs
             // 
@@ -78,12 +78,10 @@
             // 
             // igHtmlEditor1
             // 
-            this.igHtmlEditor1.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
-            | Wisej.Web.AnchorStyles.Left) 
-            | Wisej.Web.AnchorStyles.Right)));
-            this.igHtmlEditor1.Location = new System.Drawing.Point(21, 26);
+            this.igHtmlEditor1.Dock = Wisej.Web.DockStyle.Fill;
+            this.igHtmlEditor1.Location = new System.Drawing.Point(8, 8);
             this.igHtmlEditor1.Name = "igHtmlEditor1";
-            this.igHtmlEditor1.Size = new System.Drawing.Size(1047, 506);
+            this.igHtmlEditor1.Size = new System.Drawing.Size(872, 560);
             this.igHtmlEditor1.TabIndex = 0;
             // 
             // buttonLoad
@@ -162,7 +160,6 @@
             this.panel.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

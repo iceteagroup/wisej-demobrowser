@@ -54,7 +54,7 @@
             // 
             // linkAPI
             // 
-            this.linkAPI.Text = "https://docs.telerik.com/kendo-ui/api/javascript/dataviz/ui/chart";
+            this.linkApi.Text = "https://docs.telerik.com/kendo-ui/api/javascript/dataviz/ui/chart";
             // 
             // linkDocs
             // 
@@ -156,7 +156,6 @@
             // 
             // kendoChart
             // 
-            this.MinimumSize = new System.Drawing.Size(812, 623);
             this.Name = "kendoChart";
             this.panel.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);

@@ -49,9 +49,9 @@
             // 
             this.linkDemo.Text = "https://demos.telerik.com/kendo-ui/filemanager/index";
             // 
-            // linkAPI
+            // linkApi
             // 
-            this.linkAPI.Text = "https://docs.telerik.com/kendo-ui/api/javascript/ui/filemanager";
+            this.linkApi.Text = "https://docs.telerik.com/kendo-ui/api/javascript/ui/filemanager";
             // 
             // linkDocs
             // 
@@ -68,7 +68,7 @@
             this.kendoFileManager1.Location = new System.Drawing.Point(8, 8);
             this.kendoFileManager1.Name = "kendoFileManager1";
             this.kendoFileManager1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("kendoFileManager1.Options"))));
-            this.kendoFileManager1.Size = new System.Drawing.Size(1073, 542);
+            this.kendoFileManager1.Size = new System.Drawing.Size(872, 560);
             this.kendoFileManager1.TabIndex = 0;
             this.kendoFileManager1.Text = "kendoFileManager1";
             this.kendoFileManager1.WebRequest += new Wisej.Web.WebRequestHandler(this.kendoFileManager1_WebRequest);
@@ -100,7 +100,6 @@
             // 
             // kendoFileManager
             // 
-            this.MinimumSize = new System.Drawing.Size(1088, 473);
             this.Name = "kendoFileManager";
             this.Load += new System.EventHandler(this.kendoFileManager_Load);
             this.panel.ResumeLayout(false);
@@ -108,7 +107,6 @@
             this.flowLayoutPanelProperties.ResumeLayout(false);
             this.flowLayoutPanelProperties.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

@@ -31,15 +31,12 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(dxGallery));
             this.dxGallery1 = new Wisej.Web.Ext.DevExtreme.dxGallery();
             this.checkBox1 = new Wisej.Web.CheckBox();
-            this.numericUpDown1 = new Wisej.Web.NumericUpDown();
-            this.checkBox3 = new Wisej.Web.CheckBox();
             this.checkBox5 = new Wisej.Web.CheckBox();
             this.checkBox6 = new Wisej.Web.CheckBox();
             this.checkBox7 = new Wisej.Web.CheckBox();
             this.groupBox1.SuspendLayout();
             this.panel.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
             // 
             // linkDocs
@@ -66,11 +63,9 @@
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.Controls.Add(this.checkBox1);
-            this.flowLayoutPanel1.Controls.Add(this.checkBox3);
             this.flowLayoutPanel1.Controls.Add(this.checkBox5);
             this.flowLayoutPanel1.Controls.Add(this.checkBox6);
             this.flowLayoutPanel1.Controls.Add(this.checkBox7);
-            this.flowLayoutPanel1.Controls.Add(this.numericUpDown1);
             // 
             // dxGallery1
             // 
@@ -96,49 +91,15 @@
             this.checkBox1.TabIndex = 8;
             this.checkBox1.Text = "Loop";
             // 
-            // numericUpDown1
-            // 
-            this.flowLayoutPanel1.SetFillWeight(this.numericUpDown1, 1);
-            this.flowLayoutPanel1.SetFlowBreak(this.numericUpDown1, true);
-            this.numericUpDown1.LabelText = "Animation Duration";
-            this.numericUpDown1.Location = new System.Drawing.Point(3, 248);
-            this.numericUpDown1.Margin = new Wisej.Web.Padding(3, 8, 3, 3);
-            this.numericUpDown1.Maximum = new decimal(new int[] {
-            10000,
-            0,
-            0,
-            0});
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(212, 46);
-            this.numericUpDown1.TabIndex = 10;
-            this.numericUpDown1.Value = new decimal(new int[] {
-            400,
-            0,
-            0,
-            0});
-            // 
-            // checkBox3
-            // 
-            this.checkBox3.Appearance = Wisej.Web.Appearance.Switch;
-            this.checkBox3.AutoSize = false;
-            this.checkBox3.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.flowLayoutPanel1.SetFillWeight(this.checkBox3, 1);
-            this.flowLayoutPanel1.SetFlowBreak(this.checkBox3, true);
-            this.checkBox3.Location = new System.Drawing.Point(3, 52);
-            this.checkBox3.Margin = new Wisej.Web.Padding(3, 8, 3, 3);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(212, 38);
-            this.checkBox3.TabIndex = 11;
-            this.checkBox3.Text = "Animation Enabled";
-            // 
             // checkBox5
             // 
             this.checkBox5.Appearance = Wisej.Web.Appearance.Switch;
             this.checkBox5.AutoSize = false;
             this.checkBox5.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.checkBox5.Checked = true;
             this.flowLayoutPanel1.SetFillWeight(this.checkBox5, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.checkBox5, true);
-            this.checkBox5.Location = new System.Drawing.Point(3, 101);
+            this.checkBox5.Location = new System.Drawing.Point(3, 52);
             this.checkBox5.Margin = new Wisej.Web.Padding(3, 8, 3, 3);
             this.checkBox5.Name = "checkBox5";
             this.checkBox5.Size = new System.Drawing.Size(212, 38);
@@ -150,9 +111,10 @@
             this.checkBox6.Appearance = Wisej.Web.Appearance.Switch;
             this.checkBox6.AutoSize = false;
             this.checkBox6.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.checkBox6.Checked = true;
             this.flowLayoutPanel1.SetFillWeight(this.checkBox6, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.checkBox6, true);
-            this.checkBox6.Location = new System.Drawing.Point(3, 150);
+            this.checkBox6.Location = new System.Drawing.Point(3, 101);
             this.checkBox6.Margin = new Wisej.Web.Padding(3, 8, 3, 3);
             this.checkBox6.Name = "checkBox6";
             this.checkBox6.Size = new System.Drawing.Size(212, 38);
@@ -166,7 +128,7 @@
             this.checkBox7.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.flowLayoutPanel1.SetFillWeight(this.checkBox7, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.checkBox7, true);
-            this.checkBox7.Location = new System.Drawing.Point(3, 199);
+            this.checkBox7.Location = new System.Drawing.Point(3, 150);
             this.checkBox7.Margin = new Wisej.Web.Padding(3, 8, 3, 3);
             this.checkBox7.Name = "checkBox7";
             this.checkBox7.Size = new System.Drawing.Size(212, 38);
@@ -180,8 +142,6 @@
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
-            this.flowLayoutPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
 
 		}
@@ -190,10 +150,8 @@
 
 		private DevExtreme.dxGallery dxGallery1;
         private CheckBox checkBox1;
-		private NumericUpDown numericUpDown1;
 		private CheckBox checkBox7;
 		private CheckBox checkBox6;
 		private CheckBox checkBox5;
-		private CheckBox checkBox3;
 	}
 }

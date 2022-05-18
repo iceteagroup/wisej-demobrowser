@@ -50,9 +50,9 @@
             // 
             this.linkDemo.Text = "https://demos.telerik.com/kendo-ui/financial/index";
             // 
-            // linkAPI
+            // linkApi
             // 
-            this.linkAPI.Text = "https://docs.telerik.com/kendo-ui/api/javascript/dataviz/ui/stock-chart";
+            this.linkApi.Text = "https://docs.telerik.com/kendo-ui/api/javascript/dataviz/ui/stock-chart";
             // 
             // linkDocs
             // 
@@ -66,13 +66,11 @@
             // 
             // kendoStockChart1
             // 
-            this.kendoStockChart1.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
-            | Wisej.Web.AnchorStyles.Left) 
-            | Wisej.Web.AnchorStyles.Right)));
-            this.kendoStockChart1.Location = new System.Drawing.Point(23, 20);
+            this.kendoStockChart1.Dock = Wisej.Web.DockStyle.Fill;
+            this.kendoStockChart1.Location = new System.Drawing.Point(8, 8);
             this.kendoStockChart1.Name = "kendoStockChart1";
             this.kendoStockChart1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("kendoStockChart1.Options"))));
-            this.kendoStockChart1.Size = new System.Drawing.Size(1042, 518);
+            this.kendoStockChart1.Size = new System.Drawing.Size(872, 560);
             this.kendoStockChart1.TabIndex = 0;
             this.kendoStockChart1.Text = "kendoStockChart1";
             this.kendoStockChart1.WebRequest += new Wisej.Web.WebRequestHandler(this.kendoStockChart1_WebRequest);
@@ -110,7 +108,6 @@
             // 
             // kendoStockChart
             // 
-            this.MinimumSize = new System.Drawing.Size(830, 504);
             this.Name = "kendoStockChart";
             this.Load += new System.EventHandler(this.kendoStockChart_Load);
             this.panel.ResumeLayout(false);
@@ -118,7 +115,6 @@
             this.flowLayoutPanelProperties.ResumeLayout(false);
             this.flowLayoutPanelProperties.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

@@ -22,11 +22,7 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
         protected Panel panel;
         protected FlowLayoutPanel flowLayoutPanel1;
         private Spacer spacer1;
-        private Button buttonBuy;
-        private Line lineMenuDivider3;
-        private Button buttonFreeTrial;
-        private Button buttonContact;
-        private Line lineMenuDivider2;
+        private Button buttonLinks;
         private System.ComponentModel.IContainer components;
 
 		private void InitializeComponent()
@@ -41,11 +37,7 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
             this.linkDemo = new Wisej.Web.LinkLabel();
             this.linkApi = new Wisej.Web.LinkLabel();
             this.panel = new Wisej.Web.Panel();
-            this.buttonBuy = new Wisej.Web.Button();
-            this.lineMenuDivider3 = new Wisej.Web.Line();
-            this.buttonFreeTrial = new Wisej.Web.Button();
-            this.buttonContact = new Wisej.Web.Button();
-            this.lineMenuDivider2 = new Wisej.Web.Line();
+            this.buttonLinks = new Wisej.Web.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -83,10 +75,10 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
             // 
             this.flowLayoutPanel1.AutoScroll = true;
             this.flowLayoutPanel1.Dock = Wisej.Web.DockStyle.Fill;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 35);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 38);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.ScrollBars = Wisej.Web.ScrollBars.Vertical;
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 470);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 467);
             this.flowLayoutPanel1.TabIndex = 2;
             // 
             // spacer1
@@ -134,7 +126,7 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
             this.panel.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
             | Wisej.Web.AnchorStyles.Left) 
             | Wisej.Web.AnchorStyles.Right)));
-            this.panel.BorderStyle = Wisej.Web.BorderStyle.Dashed;
+            this.panel.BorderStyle = Wisej.Web.BorderStyle.Solid;
             this.panel.Location = new System.Drawing.Point(358, 86);
             this.panel.Name = "panel";
             this.panel.Padding = new Wisej.Web.Padding(8);
@@ -142,79 +134,20 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
             this.panel.TabIndex = 12;
             this.panel.TabStop = true;
             // 
-            // buttonBuy
+            // buttonLinks
             // 
-            this.buttonBuy.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Right)));
-            this.buttonBuy.AppearanceKey = "button-menu-demo";
-            this.buttonBuy.Cursor = Wisej.Web.Cursors.Hand;
-            this.buttonBuy.Focusable = false;
-            this.buttonBuy.Font = new System.Drawing.Font("@menuDemo", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.buttonBuy.ImageSource = "Images\\Icon Buy.png";
-            this.buttonBuy.Location = new System.Drawing.Point(1117, 16);
-            this.buttonBuy.Name = "buttonBuy";
-            this.buttonBuy.Size = new System.Drawing.Size(131, 57);
-            this.buttonBuy.TabIndex = 19;
-            this.buttonBuy.Text = "Demo";
-            this.buttonBuy.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonBuy.Click += new System.EventHandler(this.buttonDemo_Click);
-            // 
-            // lineMenuDivider3
-            // 
-            this.lineMenuDivider3.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Right)));
-            this.lineMenuDivider3.Location = new System.Drawing.Point(1105, 7);
-            this.lineMenuDivider3.Name = "lineMenuDivider3";
-            this.lineMenuDivider3.Orientation = Wisej.Web.Orientation.Vertical;
-            this.lineMenuDivider3.Padding = new Wisej.Web.Padding(0, 15, 0, 15);
-            this.lineMenuDivider3.Size = new System.Drawing.Size(5, 74);
-            // 
-            // buttonFreeTrial
-            // 
-            this.buttonFreeTrial.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Right)));
-            this.buttonFreeTrial.AppearanceKey = "button-menu-demo";
-            this.buttonFreeTrial.Cursor = Wisej.Web.Cursors.Hand;
-            this.buttonFreeTrial.Focusable = false;
-            this.buttonFreeTrial.Font = new System.Drawing.Font("@menuDemo", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.buttonFreeTrial.ImageSource = "Images\\Icon Free Trial.png";
-            this.buttonFreeTrial.Location = new System.Drawing.Point(959, 16);
-            this.buttonFreeTrial.Name = "buttonFreeTrial";
-            this.buttonFreeTrial.Size = new System.Drawing.Size(140, 57);
-            this.buttonFreeTrial.TabIndex = 18;
-            this.buttonFreeTrial.Text = "API";
-            this.buttonFreeTrial.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonFreeTrial.Click += new System.EventHandler(this.buttonApi_Click);
-            // 
-            // buttonContact
-            // 
-            this.buttonContact.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Right)));
-            this.buttonContact.AppearanceKey = "button-menu-demo";
-            this.buttonContact.Cursor = Wisej.Web.Cursors.Hand;
-            this.buttonContact.Focusable = false;
-            this.buttonContact.Font = new System.Drawing.Font("@menuDemo", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.buttonContact.ImageSource = "Images\\Icon Contact.png";
-            this.buttonContact.Location = new System.Drawing.Point(799, 16);
-            this.buttonContact.Name = "buttonContact";
-            this.buttonContact.Size = new System.Drawing.Size(135, 57);
-            this.buttonContact.TabIndex = 17;
-            this.buttonContact.Text = "Docs";
-            this.buttonContact.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonContact.Click += new System.EventHandler(this.buttonDocs_Click);
-            // 
-            // lineMenuDivider2
-            // 
-            this.lineMenuDivider2.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Right)));
-            this.lineMenuDivider2.Location = new System.Drawing.Point(938, 7);
-            this.lineMenuDivider2.Name = "lineMenuDivider2";
-            this.lineMenuDivider2.Orientation = Wisej.Web.Orientation.Vertical;
-            this.lineMenuDivider2.Padding = new Wisej.Web.Padding(0, 15, 0, 15);
-            this.lineMenuDivider2.Size = new System.Drawing.Size(5, 74);
+            this.buttonLinks.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Right)));
+            this.buttonLinks.BackgroundImageSource = "Images/icons-panel.png";
+            this.buttonLinks.Focusable = false;
+            this.buttonLinks.Location = new System.Drawing.Point(1072, 20);
+            this.buttonLinks.Name = "buttonLinks";
+            this.buttonLinks.Size = new System.Drawing.Size(176, 58);
+            this.buttonLinks.TabIndex = 13;
+            this.buttonLinks.MouseClick += new Wisej.Web.MouseEventHandler(this.buttonLinks_MouseClick);
             // 
             // TestBase
             // 
-            this.Controls.Add(this.buttonBuy);
-            this.Controls.Add(this.lineMenuDivider3);
-            this.Controls.Add(this.buttonFreeTrial);
-            this.Controls.Add(this.buttonContact);
-            this.Controls.Add(this.lineMenuDivider2);
+            this.Controls.Add(this.buttonLinks);
             this.Controls.Add(this.linkDocs);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.linkDemo);
@@ -227,19 +160,15 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
 
 		}
 
-		private void buttonDemo_Click(object sender, EventArgs e)
-		{
-			Application.Navigate(this.linkDemo.Text, "DevExtreme");
-		}
-
-        private void buttonDocs_Click(object sender, EventArgs e)
+        private void buttonLinks_MouseClick(object sender, MouseEventArgs e)
         {
-            Application.Navigate(this.linkDocs.Text, "DevExtreme");
-        }
-
-        private void buttonApi_Click(object sender, EventArgs e)
-        {
-            Application.Navigate(this.linkApi.Text, "DevExtreme");
+            var width = this.buttonLinks.Width;
+            if (e.X <= width * (1F/3F))
+                Application.Navigate(this.linkApi.Text, "DevExtreme");
+            else if (e.X <= width * (2F/3F))
+                Application.Navigate(this.linkDocs.Text, "DevExtreme");
+            else
+                Application.Navigate(this.linkDemo.Text, "DevExtreme");
         }
     }
 }

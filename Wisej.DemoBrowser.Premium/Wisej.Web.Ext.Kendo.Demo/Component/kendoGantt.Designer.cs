@@ -60,9 +60,9 @@
             // 
             this.linkDemo.Text = "https://demos.telerik.com/kendo-ui/gantt/index";
             // 
-            // linkAPI
+            // linkApi
             // 
-            this.linkAPI.Text = "https://docs.telerik.com/kendo-ui/api/javascript/ui/gantt";
+            this.linkApi.Text = "https://docs.telerik.com/kendo-ui/api/javascript/ui/gantt";
             // 
             // linkDocs
             // 
@@ -77,8 +77,7 @@
             this.flowLayoutPanelProperties.Controls.Add(this.checkBox5);
             this.flowLayoutPanelProperties.Controls.Add(this.numericUpDown1);
             this.flowLayoutPanelProperties.Controls.Add(this.buttonPDF);
-            this.flowLayoutPanelProperties.Location = new System.Drawing.Point(16, 31);
-            this.flowLayoutPanelProperties.Size = new System.Drawing.Size(218, 436);
+            this.flowLayoutPanelProperties.Size = new System.Drawing.Size(218, 429);
             // 
             // checkBox1
             // 
@@ -188,10 +187,10 @@
             this.kendoGantt1.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
             | Wisej.Web.AnchorStyles.Left) 
             | Wisej.Web.AnchorStyles.Right)));
-            this.kendoGantt1.Location = new System.Drawing.Point(23, 21);
+            this.kendoGantt1.Location = new System.Drawing.Point(26, 31);
             this.kendoGantt1.Name = "kendoGantt1";
             this.kendoGantt1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("kendoGantt1.Options"))));
-            this.kendoGantt1.Size = new System.Drawing.Size(1042, 515);
+            this.kendoGantt1.Size = new System.Drawing.Size(837, 515);
             this.kendoGantt1.TabIndex = 0;
             this.kendoGantt1.Text = "kendoGantt1";
             this.kendoGantt1.WebRequest += new Wisej.Web.WebRequestHandler(this.kendoGantt1_WebRequest);
@@ -199,14 +198,13 @@
             // 
             // kendoGantt
             // 
-            this.MinimumSize = new System.Drawing.Size(1161, 737);
             this.Name = "kendoGantt";
+            this.Size = new System.Drawing.Size(1299, 737);
             this.panel.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.flowLayoutPanelProperties.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

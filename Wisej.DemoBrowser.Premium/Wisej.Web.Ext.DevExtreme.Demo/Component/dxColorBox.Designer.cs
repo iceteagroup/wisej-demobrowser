@@ -81,7 +81,7 @@
             this.dxColorBox1.Anchor = Wisej.Web.AnchorStyles.None;
             this.dxColorBox1.Location = new System.Drawing.Point(269, 271);
             this.dxColorBox1.Name = "dxColorBox1";
-            this.dxColorBox1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"value\":\"#f05b41\",\"editAlphaChannel\":true}")));
+            this.dxColorBox1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"value\":\"#f05b41\",\"editAlphaChannel\":true,\"stylingMode\":\"outlined\"}")));
             this.dxColorBox1.Size = new System.Drawing.Size(350, 35);
             this.dxColorBox1.TabIndex = 0;
             // 
@@ -95,7 +95,7 @@
             this.flowLayoutPanel1.SetFlowBreak(this.checkBox1, true);
             this.checkBox1.Location = new System.Drawing.Point(3, 3);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(191, 53);
+            this.checkBox1.Size = new System.Drawing.Size(212, 40);
             this.checkBox1.TabIndex = 0;
             this.checkBox1.Text = "Accept Custom Value";
             // 
@@ -107,10 +107,10 @@
             this.checkBox2.Checked = true;
             this.flowLayoutPanel1.SetFillWeight(this.checkBox2, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.checkBox2, true);
-            this.checkBox2.Location = new System.Drawing.Point(3, 75);
+            this.checkBox2.Location = new System.Drawing.Point(3, 62);
             this.checkBox2.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(191, 58);
+            this.checkBox2.Size = new System.Drawing.Size(212, 40);
             this.checkBox2.TabIndex = 1;
             this.checkBox2.Text = "Active State Enabled";
             // 
@@ -126,10 +126,10 @@
             this.comboBox1.Label.Size = 50;
             this.comboBox1.Label.SizeType = Wisej.Web.SizeType.Percent;
             this.comboBox1.LabelText = "Apply Value Mode";
-            this.comboBox1.Location = new System.Drawing.Point(3, 399);
-            this.comboBox1.Margin = new Wisej.Web.Padding(3, 26, 3, 3);
+            this.comboBox1.Location = new System.Drawing.Point(3, 298);
+            this.comboBox1.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(191, 60);
+            this.comboBox1.Size = new System.Drawing.Size(212, 60);
             this.comboBox1.TabIndex = 5;
             this.comboBox1.Text = "useButtons";
             // 
@@ -141,10 +141,10 @@
             this.checkBox3.Checked = true;
             this.flowLayoutPanel1.SetFillWeight(this.checkBox3, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.checkBox3, true);
-            this.checkBox3.Location = new System.Drawing.Point(3, 162);
-            this.checkBox3.Margin = new Wisej.Web.Padding(3, 26, 3, 3);
+            this.checkBox3.Location = new System.Drawing.Point(3, 121);
+            this.checkBox3.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(191, 38);
+            this.checkBox3.Size = new System.Drawing.Size(212, 40);
             this.checkBox3.TabIndex = 2;
             this.checkBox3.Text = "Input is Valid";
             // 
@@ -155,10 +155,10 @@
             this.checkBox4.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.flowLayoutPanel1.SetFillWeight(this.checkBox4, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.checkBox4, true);
-            this.checkBox4.Location = new System.Drawing.Point(3, 229);
-            this.checkBox4.Margin = new Wisej.Web.Padding(3, 26, 3, 3);
+            this.checkBox4.Location = new System.Drawing.Point(3, 180);
+            this.checkBox4.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(191, 54);
+            this.checkBox4.Size = new System.Drawing.Size(212, 40);
             this.checkBox4.TabIndex = 3;
             this.checkBox4.Text = "Show Clear Button";
             // 
@@ -170,10 +170,10 @@
             this.checkBox5.Checked = true;
             this.flowLayoutPanel1.SetFillWeight(this.checkBox5, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.checkBox5, true);
-            this.checkBox5.Location = new System.Drawing.Point(3, 312);
-            this.checkBox5.Margin = new Wisej.Web.Padding(3, 26, 3, 3);
+            this.checkBox5.Location = new System.Drawing.Point(3, 239);
+            this.checkBox5.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(191, 58);
+            this.checkBox5.Size = new System.Drawing.Size(212, 40);
             this.checkBox5.TabIndex = 4;
             this.checkBox5.Text = "DropDown Button";
             // 
@@ -181,8 +181,8 @@
             // 
             this.buttonGetValue.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Left) 
             | Wisej.Web.AnchorStyles.Right)));
-            this.buttonGetValue.Location = new System.Drawing.Point(3, 488);
-            this.buttonGetValue.Margin = new Wisej.Web.Padding(3, 26, 3, 3);
+            this.buttonGetValue.Location = new System.Drawing.Point(3, 377);
+            this.buttonGetValue.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.buttonGetValue.Name = "buttonGetValue";
             this.buttonGetValue.Size = new System.Drawing.Size(212, 35);
             this.buttonGetValue.TabIndex = 16;

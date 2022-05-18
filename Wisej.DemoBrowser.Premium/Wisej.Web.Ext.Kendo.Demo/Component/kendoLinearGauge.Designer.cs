@@ -52,9 +52,9 @@
             // 
             this.linkDemo.Text = "https://demos.telerik.com/kendo-ui/linear-gauge/index";
             // 
-            // linkAPI
+            // linkApi
             // 
-            this.linkAPI.Text = "https://docs.telerik.com/kendo-ui/api/javascript/dataviz/ui/lineargauge";
+            this.linkApi.Text = "https://docs.telerik.com/kendo-ui/api/javascript/dataviz/ui/lineargauge";
             // 
             // linkDocs
             // 
@@ -68,11 +68,13 @@
             // 
             // kendoLinearGauge1
             // 
-            this.kendoLinearGauge1.Dock = Wisej.Web.DockStyle.Fill;
-            this.kendoLinearGauge1.Location = new System.Drawing.Point(16, 16);
+            this.kendoLinearGauge1.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
+            | Wisej.Web.AnchorStyles.Left) 
+            | Wisej.Web.AnchorStyles.Right)));
+            this.kendoLinearGauge1.Location = new System.Drawing.Point(18, 25);
             this.kendoLinearGauge1.Name = "kendoLinearGauge1";
             this.kendoLinearGauge1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("kendoLinearGauge1.Options"))));
-            this.kendoLinearGauge1.Size = new System.Drawing.Size(1057, 526);
+            this.kendoLinearGauge1.Size = new System.Drawing.Size(853, 526);
             this.kendoLinearGauge1.TabIndex = 0;
             this.kendoLinearGauge1.Text = "kendoLinearGauge1";
             // 
@@ -120,7 +122,6 @@
             // 
             // kendoLinearGauge
             // 
-            this.MinimumSize = new System.Drawing.Size(820, 516);
             this.Name = "kendoLinearGauge";
             this.panel.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
@@ -128,7 +129,6 @@
             this.flowLayoutPanelProperties.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

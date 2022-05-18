@@ -51,8 +51,7 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 
 			var sparklinesClimate = this.panelClimate.Controls.Where(c => c is Kendo.kendoSparkline);
 			var sparklinesTemperature = this.panelTemperature.Controls.Where(c => c is Kendo.kendoSparkline);
-			var sparklinesConditioner = this.panelConditioner.Controls.Where(c => c is Kendo.kendoSparkline);
-			var sparklines = sparklinesClimate.Union(sparklinesTemperature).Union(sparklinesConditioner);
+			var sparklines = sparklinesClimate.Union(sparklinesTemperature);
 
 			foreach (Kendo.kendoSparkline sparkline in sparklines)
             {

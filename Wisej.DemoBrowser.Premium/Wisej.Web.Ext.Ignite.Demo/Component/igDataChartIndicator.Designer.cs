@@ -36,16 +36,11 @@
             this.checkBox1 = new Wisej.Web.CheckBox();
             this.checkBox2 = new Wisej.Web.CheckBox();
             this.numericUpDown1 = new Wisej.Web.NumericUpDown();
-            this.panel.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            this.panel.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // panel
-            // 
-            this.panel.Controls.Add(this.igDataChart1);
-            this.panel.TabIndex = 7;
             // 
             // groupBox1
             // 
@@ -56,6 +51,26 @@
             this.buttonUpdate.TabIndex = 6;
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
+            // panel
+            // 
+            this.panel.Controls.Add(this.igDataChart1);
+            this.panel.TabIndex = 7;
+            // 
+            // linkDemo
+            // 
+            this.linkDemo.TabIndex = 6;
+            this.linkDemo.Text = "https://www.igniteui.com/data-chart/charts-financial-indicators";
+            // 
+            // linkApi
+            // 
+            this.linkApi.TabIndex = 5;
+            this.linkApi.Text = "http://www.igniteui.com/help/api/2019.2/ui.igDataChart";
+            // 
+            // linkDocs
+            // 
+            this.linkDocs.TabIndex = 4;
+            this.linkDocs.Text = "http://www.igniteui.com/help/igdatachart-landing-page";
+            // 
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.Controls.Add(this.checkBox1);
@@ -65,30 +80,13 @@
             this.flowLayoutPanel1.Controls.Add(this.buttonLoad);
             this.flowLayoutPanel1.Controls.Add(this.buttonExportImage);
             // 
-            // linkDemo
-            // 
-            this.linkDemo.TabIndex = 6;
-            this.linkDemo.Text = "https://www.igniteui.com/data-chart/charts-financial-indicators";
-            // 
-            // linkAPI
-            // 
-            this.linkAPI.TabIndex = 5;
-            this.linkAPI.Text = "http://www.igniteui.com/help/api/2019.2/ui.igDataChart";
-            // 
-            // linkDocs
-            // 
-            this.linkDocs.TabIndex = 4;
-            this.linkDocs.Text = "http://www.igniteui.com/help/igdatachart-landing-page";
-            // 
             // igDataChart1
             // 
-            this.igDataChart1.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
-            | Wisej.Web.AnchorStyles.Left) 
-            | Wisej.Web.AnchorStyles.Right)));
-            this.igDataChart1.Location = new System.Drawing.Point(19, 27);
+            this.igDataChart1.Dock = Wisej.Web.DockStyle.Fill;
+            this.igDataChart1.Location = new System.Drawing.Point(8, 8);
             this.igDataChart1.Name = "igDataChart1";
             this.igDataChart1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("igDataChart1.Options"))));
-            this.igDataChart1.Size = new System.Drawing.Size(1051, 504);
+            this.igDataChart1.Size = new System.Drawing.Size(872, 560);
             this.igDataChart1.TabIndex = 0;
             this.igDataChart1.Text = "igDataChart1";
             // 
@@ -177,15 +175,13 @@
             // 
             // igDataChartIndicator
             // 
-            this.MinimumSize = new System.Drawing.Size(893, 636);
             this.Name = "igDataChartIndicator";
-            this.panel.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
+            this.panel.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

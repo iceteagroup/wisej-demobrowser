@@ -49,9 +49,9 @@
             // 
             this.linkDemo.Text = "https://demos.telerik.com/kendo-ui/calendar/index";
             // 
-            // linkAPI
+            // linkApi
             // 
-            this.linkAPI.Text = "https://docs.telerik.com/kendo-ui/api/javascript/ui/calendar";
+            this.linkApi.Text = "https://docs.telerik.com/kendo-ui/api/javascript/ui/calendar";
             // 
             // linkDocs
             // 
@@ -66,7 +66,7 @@
             // kendoCalendar1
             // 
             this.kendoCalendar1.Anchor = Wisej.Web.AnchorStyles.None;
-            this.kendoCalendar1.Location = new System.Drawing.Point(304, 87);
+            this.kendoCalendar1.Location = new System.Drawing.Point(204, 96);
             this.kendoCalendar1.Name = "kendoCalendar1";
             this.kendoCalendar1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"componentType\":\"modern\"}")));
             this.kendoCalendar1.Size = new System.Drawing.Size(480, 384);
@@ -111,7 +111,6 @@
             // 
             // kendoCalendar
             // 
-            this.MinimumSize = new System.Drawing.Size(906, 593);
             this.Name = "kendoCalendar";
             this.Load += new System.EventHandler(this.kendoCalendar_Load);
             this.panel.ResumeLayout(false);
@@ -119,7 +118,6 @@
             this.flowLayoutPanelProperties.ResumeLayout(false);
             this.flowLayoutPanelProperties.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

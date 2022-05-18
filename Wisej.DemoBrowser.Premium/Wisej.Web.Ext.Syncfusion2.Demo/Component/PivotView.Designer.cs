@@ -45,7 +45,7 @@
             // 
             // linkAPI
             // 
-            this.linkAPI.Text = "https://ej2.syncfusion.com/javascript/documentation/api/pivotview/";
+            this.linkApi.Text = "https://ej2.syncfusion.com/javascript/documentation/api/pivotview/";
             // 
             // buttonUpdate
             // 

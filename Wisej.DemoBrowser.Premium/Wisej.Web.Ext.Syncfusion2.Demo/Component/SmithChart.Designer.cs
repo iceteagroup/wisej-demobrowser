@@ -45,7 +45,7 @@
             // 
             // linkAPI
             // 
-            this.linkAPI.Text = "https://ej2.syncfusion.com/javascript/documentation/api/smithchart/";
+            this.linkApi.Text = "https://ej2.syncfusion.com/javascript/documentation/api/smithchart/";
             // 
             // buttonUpdate
             // 

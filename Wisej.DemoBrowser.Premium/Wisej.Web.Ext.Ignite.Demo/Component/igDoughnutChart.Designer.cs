@@ -64,10 +64,10 @@
             this.linkDemo.TabIndex = 6;
             this.linkDemo.Text = "https://www.igniteui.com/doughnut-chart/overview";
             // 
-            // linkAPI
+            // linkApi
             // 
-            this.linkAPI.TabIndex = 5;
-            this.linkAPI.Text = "http://www.igniteui.com/help/api/2019.2/ui.igdoughnutchart";
+            this.linkApi.TabIndex = 5;
+            this.linkApi.Text = "http://www.igniteui.com/help/api/2019.2/ui.igdoughnutchart";
             // 
             // linkDocs
             // 
@@ -82,14 +82,12 @@
             // 
             // igDoughnutChart1
             // 
-            this.igDoughnutChart1.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
-            | Wisej.Web.AnchorStyles.Left) 
-            | Wisej.Web.AnchorStyles.Right)));
-            this.igDoughnutChart1.Location = new System.Drawing.Point(23, 19);
+            this.igDoughnutChart1.Dock = Wisej.Web.DockStyle.Fill;
+            this.igDoughnutChart1.Location = new System.Drawing.Point(8, 8);
             this.igDoughnutChart1.Margin = new Wisej.Web.Padding(3, 8, 3, 3);
             this.igDoughnutChart1.Name = "igDoughnutChart1";
             this.igDoughnutChart1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("igDoughnutChart1.Options"))));
-            this.igDoughnutChart1.Size = new System.Drawing.Size(1043, 519);
+            this.igDoughnutChart1.Size = new System.Drawing.Size(872, 560);
             this.igDoughnutChart1.TabIndex = 0;
             this.igDoughnutChart1.Text = "igDoughnutChart1";
             widgetFunction1.Name = "formatLabel";
@@ -190,7 +188,6 @@
             // 
             // igDoughnutChart
             // 
-            this.MinimumSize = new System.Drawing.Size(914, 710);
             this.Name = "igDoughnutChart";
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
@@ -201,7 +198,6 @@
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

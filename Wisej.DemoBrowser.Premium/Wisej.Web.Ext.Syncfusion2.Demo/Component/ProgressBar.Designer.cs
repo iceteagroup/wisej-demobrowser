@@ -51,7 +51,7 @@
             // 
             // linkAPI
             // 
-            this.linkAPI.Text = "https://ej2.syncfusion.com/javascript/documentation/api/progressbar";
+            this.linkApi.Text = "https://ej2.syncfusion.com/javascript/documentation/api/progressbar";
             // 
             // buttonUpdate
             // 

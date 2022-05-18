@@ -42,7 +42,7 @@
             // 
             // linkAPI
             // 
-            this.linkAPI.Text = "https://ej2.syncfusion.com/javascript/documentation/api/toolbar/";
+            this.linkApi.Text = "https://ej2.syncfusion.com/javascript/documentation/api/toolbar/";
             // 
             // buttonUpdate
             // 

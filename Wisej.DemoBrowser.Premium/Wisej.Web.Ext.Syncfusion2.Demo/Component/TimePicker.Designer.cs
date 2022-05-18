@@ -47,7 +47,7 @@
             // 
             // linkAPI
             // 
-            this.linkAPI.Text = "https://ej2.syncfusion.com/javascript/documentation/api/timepicker/";
+            this.linkApi.Text = "https://ej2.syncfusion.com/javascript/documentation/api/timepicker/";
             // 
             // buttonUpdate
             // 

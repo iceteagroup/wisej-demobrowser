@@ -57,10 +57,10 @@
             this.linkDemo.TabIndex = 6;
             this.linkDemo.Text = "https://www.igniteui.com/editors/time-picker";
             // 
-            // linkAPI
+            // linkApi
             // 
-            this.linkAPI.TabIndex = 5;
-            this.linkAPI.Text = "http://www.igniteui.com/help/api/2019.2/ui.igtimepicker";
+            this.linkApi.TabIndex = 5;
+            this.linkApi.Text = "http://www.igniteui.com/help/api/2019.2/ui.igtimepicker";
             // 
             // linkDocs
             // 
@@ -77,7 +77,7 @@
             // igTimePicker1
             // 
             this.igTimePicker1.Anchor = Wisej.Web.AnchorStyles.None;
-            this.igTimePicker1.Location = new System.Drawing.Point(394, 259);
+            this.igTimePicker1.Location = new System.Drawing.Point(294, 268);
             this.igTimePicker1.Name = "igTimePicker1";
             this.igTimePicker1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"value\":\"15:00\"}")));
             this.igTimePicker1.Size = new System.Drawing.Size(300, 40);
@@ -143,14 +143,12 @@
             // 
             // igTimePicker
             // 
-            this.MinimumSize = new System.Drawing.Size(782, 566);
             this.Name = "igTimePicker";
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

@@ -59,8 +59,8 @@
             // 
             // linkAPI
             // 
-            this.linkAPI.TabIndex = 2;
-            this.linkAPI.Text = "https://help.syncfusion.com/api/js/ejpivottreemap";
+            this.linkApi.TabIndex = 2;
+            this.linkApi.Text = "https://help.syncfusion.com/api/js/ejpivottreemap";
             // 
             // panel
             // 
@@ -110,7 +110,7 @@
             this.Controls.Add(this.label4);
             this.Name = "ejPivotTreeMap";
             this.Controls.SetChildIndex(this.linkDocs, 0);
-            this.Controls.SetChildIndex(this.linkAPI, 0);
+            this.Controls.SetChildIndex(this.linkApi, 0);
             this.Controls.SetChildIndex(this.linkDemo, 0);
             this.Controls.SetChildIndex(this.groupBox1, 0);
             this.Controls.SetChildIndex(this.panel, 0);

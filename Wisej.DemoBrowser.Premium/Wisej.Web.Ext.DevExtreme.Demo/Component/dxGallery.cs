@@ -24,11 +24,9 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
 		private void buttonUpdate_Click(object sender, EventArgs e)
 		{
 			this.dxGallery1.Options.loop = this.checkBox1.Checked;
-			this.dxGallery1.Options.animationEnabled = this.checkBox3.Checked;
 			this.dxGallery1.Options.showIndicator = this.checkBox5.Checked;
 			this.dxGallery1.Options.showNavButtons = this.checkBox6.Checked;
 			this.dxGallery1.Options.swipeEnabled = this.checkBox7.Checked;
-			this.dxGallery1.Options.animationDuration = this.numericUpDown1.Value;
 
 			this.dxGallery1.Update();
 		}

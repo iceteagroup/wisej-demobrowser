@@ -53,7 +53,7 @@
             // 
             // linkAPI
             // 
-            this.linkAPI.Text = "https://docs.telerik.com/kendo-ui/api/javascript/ui/mediaplayer";
+            this.linkApi.Text = "https://docs.telerik.com/kendo-ui/api/javascript/ui/mediaplayer";
             // 
             // linkDocs
             // 
@@ -127,7 +127,6 @@
             // 
             // kendoMediaPlayer
             // 
-            this.MinimumSize = new System.Drawing.Size(885, 522);
             this.Name = "kendoMediaPlayer";
             this.panel.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);

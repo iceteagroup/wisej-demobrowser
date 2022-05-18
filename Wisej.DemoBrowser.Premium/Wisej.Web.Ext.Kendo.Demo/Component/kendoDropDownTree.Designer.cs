@@ -52,9 +52,9 @@
             // 
             this.linkDemo.Text = "https://demos.telerik.com/kendo-ui/dropdowntree/index";
             // 
-            // linkAPI
+            // linkApi
             // 
-            this.linkAPI.Text = "https://docs.telerik.com/kendo-ui/api/javascript/ui/dropdowntree";
+            this.linkApi.Text = "https://docs.telerik.com/kendo-ui/api/javascript/ui/dropdowntree";
             // 
             // linkDocs
             // 
@@ -145,7 +145,7 @@
             // 
             this.kendoDropDownTree1.Anchor = Wisej.Web.AnchorStyles.None;
             this.kendoDropDownTree1.AutoSize = false;
-            this.kendoDropDownTree1.Location = new System.Drawing.Point(394, 259);
+            this.kendoDropDownTree1.Location = new System.Drawing.Point(294, 268);
             this.kendoDropDownTree1.Name = "kendoDropDownTree1";
             this.kendoDropDownTree1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("kendoDropDownTree1.Options"))));
             this.kendoDropDownTree1.TabIndex = 0;
@@ -153,7 +153,6 @@
             // 
             // kendoDropDownTree
             // 
-            this.MinimumSize = new System.Drawing.Size(723, 448);
             this.Name = "kendoDropDownTree";
             this.Load += new System.EventHandler(this.kendoDropDownTree_Load);
             this.panel.ResumeLayout(false);
@@ -161,7 +160,6 @@
             this.flowLayoutPanelProperties.ResumeLayout(false);
             this.flowLayoutPanelProperties.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

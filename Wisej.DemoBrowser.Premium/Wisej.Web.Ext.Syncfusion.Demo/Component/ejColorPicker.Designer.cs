@@ -53,8 +53,8 @@
             // 
             // linkAPI
             // 
-            this.linkAPI.TabIndex = 5;
-            this.linkAPI.Text = "https://help.syncfusion.com/api/js/ejcolorpicker";
+            this.linkApi.TabIndex = 5;
+            this.linkApi.Text = "https://help.syncfusion.com/api/js/ejcolorpicker";
             // 
             // panel
             // 

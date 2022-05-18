@@ -60,10 +60,10 @@
             this.linkDemo.TabIndex = 6;
             this.linkDemo.Text = "https://www.igniteui.com/tree-grid/overview";
             // 
-            // linkAPI
+            // linkApi
             // 
-            this.linkAPI.TabIndex = 5;
-            this.linkAPI.Text = "http://www.igniteui.com/help/api/2019.2/ui.igTreeGrid";
+            this.linkApi.TabIndex = 5;
+            this.linkApi.Text = "http://www.igniteui.com/help/api/2019.2/ui.igTreeGrid";
             // 
             // linkDocs
             // 
@@ -103,14 +103,12 @@
             // 
             // igTreeGrid1
             // 
-            this.igTreeGrid1.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
-            | Wisej.Web.AnchorStyles.Left) 
-            | Wisej.Web.AnchorStyles.Right)));
             this.igTreeGrid1.AutoGenerateColumns = false;
-            this.igTreeGrid1.Location = new System.Drawing.Point(22, 24);
+            this.igTreeGrid1.Dock = Wisej.Web.DockStyle.Fill;
+            this.igTreeGrid1.Location = new System.Drawing.Point(8, 8);
             this.igTreeGrid1.Name = "igTreeGrid1";
             this.igTreeGrid1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("igTreeGrid1.Options"))));
-            this.igTreeGrid1.Size = new System.Drawing.Size(1045, 510);
+            this.igTreeGrid1.Size = new System.Drawing.Size(872, 560);
             this.igTreeGrid1.TabIndex = 0;
             this.igTreeGrid1.Text = "igTreeGrid1";
             widgetFunction1.Name = "customDropValidation";
@@ -164,13 +162,11 @@
             // 
             // igTreeGrid
             // 
-            this.MinimumSize = new System.Drawing.Size(1156, 586);
             this.Name = "igTreeGrid";
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

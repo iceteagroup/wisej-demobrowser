@@ -29,7 +29,7 @@
 		private void InitializeComponent()
 		{
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(igMap));
-            Wisej.Web.Ext.Ignite.igBase.WidgetTemplate widgetTemplate2 = new Wisej.Web.Ext.Ignite.igBase.WidgetTemplate();
+            Wisej.Web.Ext.Ignite.igBase.WidgetTemplate widgetTemplate1 = new Wisej.Web.Ext.Ignite.igBase.WidgetTemplate();
             this.igMap1 = new Wisej.Web.Ext.Ignite.igMap();
             this.textBox2 = new Wisej.Web.TextBox();
             this.button1 = new Wisej.Web.Button();
@@ -61,10 +61,10 @@
             this.linkDemo.TabIndex = 6;
             this.linkDemo.Text = "https://www.igniteui.com/map/overview";
             // 
-            // linkAPI
+            // linkApi
             // 
-            this.linkAPI.TabIndex = 5;
-            this.linkAPI.Text = "http://www.igniteui.com/help/api/2019.2/ui.igmap";
+            this.linkApi.TabIndex = 5;
+            this.linkApi.Text = "http://www.igniteui.com/help/api/2019.2/ui.igmap";
             // 
             // linkDocs
             // 
@@ -81,20 +81,18 @@
             // 
             // igMap1
             // 
-            this.igMap1.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
-            | Wisej.Web.AnchorStyles.Left) 
-            | Wisej.Web.AnchorStyles.Right)));
-            this.igMap1.Location = new System.Drawing.Point(21, 21);
+            this.igMap1.Dock = Wisej.Web.DockStyle.Fill;
+            this.igMap1.Location = new System.Drawing.Point(8, 8);
             this.igMap1.Name = "igMap1";
             this.igMap1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("igMap1.Options"))));
-            this.igMap1.Size = new System.Drawing.Size(1046, 516);
+            this.igMap1.Size = new System.Drawing.Size(872, 560);
             this.igMap1.TabIndex = 0;
             this.igMap1.Text = "igMap1";
-            widgetTemplate2.Id = "tooltipTemplate";
-            widgetTemplate2.Template = resources.GetString("widgetTemplate2.Template");
-            widgetTemplate2.Type = "text/x-jquery-tmpl";
+            widgetTemplate1.Id = "tooltipTemplate";
+            widgetTemplate1.Template = resources.GetString("widgetTemplate1.Template");
+            widgetTemplate1.Type = "text/x-jquery-tmpl";
             this.igMap1.WidgetTemplates = new Wisej.Web.Ext.Ignite.igBase.WidgetTemplate[] {
-        widgetTemplate2};
+        widgetTemplate1};
             // 
             // textBox2
             // 
@@ -172,7 +170,6 @@
             // 
             // igMap
             // 
-            this.MinimumSize = new System.Drawing.Size(994, 653);
             this.Name = "igMap";
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
@@ -181,7 +178,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 
