@@ -55,7 +55,7 @@
             this.linkDemo.TabIndex = 6;
             this.linkDemo.Text = "https://www.igniteui.com/barcode/overview";
             // 
-            // linkAPI
+            // linkApi
             // 
             this.linkApi.TabIndex = 5;
             this.linkApi.Text = "http://www.igniteui.com/help/api/2019.2/ui.igQrCodeBarcode";
@@ -104,7 +104,7 @@
             // 
             this.igQRCodeBarcode1.Anchor = Wisej.Web.AnchorStyles.None;
             this.igQRCodeBarcode1.Data = "1234567890";
-            this.igQRCodeBarcode1.Location = new System.Drawing.Point(360, 108);
+            this.igQRCodeBarcode1.Location = new System.Drawing.Point(260, 117);
             this.igQRCodeBarcode1.Name = "igQRCodeBarcode1";
             this.igQRCodeBarcode1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"data\":\"1234567890\",\"encodingMode\":\"numeric\"}")));
             this.igQRCodeBarcode1.Size = new System.Drawing.Size(368, 342);
@@ -118,7 +118,6 @@
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

@@ -60,7 +60,7 @@
             this.linkDemo.TabIndex = 6;
             this.linkDemo.Text = "https://www.igniteui.com/category-chart/overview";
             // 
-            // linkAPI
+            // linkApi
             // 
             this.linkApi.TabIndex = 5;
             this.linkApi.Text = "http://www.igniteui.com/help/api/2019.2/ui.igcategorychart";
@@ -92,13 +92,11 @@
             // 
             // igCategoryChart1
             // 
-            this.igCategoryChart1.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
-            | Wisej.Web.AnchorStyles.Left) 
-            | Wisej.Web.AnchorStyles.Right)));
-            this.igCategoryChart1.Location = new System.Drawing.Point(17, 23);
+            this.igCategoryChart1.Dock = Wisej.Web.DockStyle.Fill;
+            this.igCategoryChart1.Location = new System.Drawing.Point(8, 8);
             this.igCategoryChart1.Name = "igCategoryChart1";
             this.igCategoryChart1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("igCategoryChart1.Options"))));
-            this.igCategoryChart1.Size = new System.Drawing.Size(1054, 496);
+            this.igCategoryChart1.Size = new System.Drawing.Size(872, 560);
             this.igCategoryChart1.TabIndex = 0;
             this.igCategoryChart1.Text = "igCategoryChart1";
             widgetFunction1.Name = "yAxisFormatLabel";
@@ -166,7 +164,6 @@
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

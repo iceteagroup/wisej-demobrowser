@@ -58,7 +58,7 @@
             this.linkDemo.TabIndex = 6;
             this.linkDemo.Text = "https://www.igniteui.com/radial-gauge/overview";
             // 
-            // linkAPI
+            // linkApi
             // 
             this.linkApi.TabIndex = 5;
             this.linkApi.Text = "http://www.igniteui.com/help/api/2019.2/ui.igRadialGauge";
@@ -77,13 +77,11 @@
             // 
             // igRadialGauge1
             // 
-            this.igRadialGauge1.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
-            | Wisej.Web.AnchorStyles.Left) 
-            | Wisej.Web.AnchorStyles.Right)));
-            this.igRadialGauge1.Location = new System.Drawing.Point(50, 29);
+            this.igRadialGauge1.Dock = Wisej.Web.DockStyle.Fill;
+            this.igRadialGauge1.Location = new System.Drawing.Point(8, 8);
             this.igRadialGauge1.Name = "igRadialGauge1";
             this.igRadialGauge1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"transitionDuration\":250,\"isNeedleDraggingEnabled\":true}")));
-            this.igRadialGauge1.Size = new System.Drawing.Size(989, 500);
+            this.igRadialGauge1.Size = new System.Drawing.Size(872, 560);
             this.igRadialGauge1.TabIndex = 0;
             this.igRadialGauge1.Text = "igRadialGauge1";
             this.igRadialGauge1.WidgetFunctions = new Wisej.Web.Ext.Ignite.igBase.WidgetFunction[0];
@@ -148,7 +146,6 @@
             this.flowLayoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

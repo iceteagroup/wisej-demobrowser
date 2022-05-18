@@ -61,7 +61,7 @@
             this.linkDemo.TabIndex = 6;
             this.linkDemo.Text = "https://www.igniteui.com/financial-chart/overview";
             // 
-            // linkAPI
+            // linkApi
             // 
             this.linkApi.TabIndex = 5;
             this.linkApi.Text = "http://www.igniteui.com/help/api/2019.2/ui.igfinancialchart";
@@ -82,13 +82,11 @@
             // 
             // igFinancialChart1
             // 
-            this.igFinancialChart1.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
-            | Wisej.Web.AnchorStyles.Left) 
-            | Wisej.Web.AnchorStyles.Right)));
-            this.igFinancialChart1.Location = new System.Drawing.Point(19, 23);
+            this.igFinancialChart1.Dock = Wisej.Web.DockStyle.Fill;
+            this.igFinancialChart1.Location = new System.Drawing.Point(8, 8);
             this.igFinancialChart1.Name = "igFinancialChart1";
             this.igFinancialChart1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"chartType\":\"candle\",\"zoomSliderType\":\"candle\",\"transitionDuration\":250}")));
-            this.igFinancialChart1.Size = new System.Drawing.Size(1050, 512);
+            this.igFinancialChart1.Size = new System.Drawing.Size(872, 560);
             this.igFinancialChart1.TabIndex = 0;
             this.igFinancialChart1.Text = "igFinancialChart1";
             widgetFunction1.Name = "loadTheData";
@@ -210,7 +208,6 @@
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

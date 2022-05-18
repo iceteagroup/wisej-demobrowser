@@ -59,7 +59,7 @@
             this.linkDemo.TabIndex = 6;
             this.linkDemo.Text = "https://www.igniteui.com/grid/overview";
             // 
-            // linkAPI
+            // linkApi
             // 
             this.linkApi.TabIndex = 5;
             this.linkApi.Text = "https://www.igniteui.com/help/api/2019.2/ui.iggrid";
@@ -147,13 +147,11 @@
             // 
             // igGrid1
             // 
-            this.igGrid1.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
-            | Wisej.Web.AnchorStyles.Left) 
-            | Wisej.Web.AnchorStyles.Right)));
-            this.igGrid1.Location = new System.Drawing.Point(19, 25);
+            this.igGrid1.Dock = Wisej.Web.DockStyle.Fill;
+            this.igGrid1.Location = new System.Drawing.Point(8, 8);
             this.igGrid1.Name = "igGrid1";
             this.igGrid1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("igGrid1.Options"))));
-            this.igGrid1.Size = new System.Drawing.Size(1050, 508);
+            this.igGrid1.Size = new System.Drawing.Size(872, 560);
             this.igGrid1.TabIndex = 0;
             this.igGrid1.Text = "igGrid1";
             // 
@@ -164,7 +162,6 @@
             this.panel.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

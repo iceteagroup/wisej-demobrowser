@@ -59,7 +59,7 @@
             this.linkDemo.TabIndex = 6;
             this.linkDemo.Text = "https://www.igniteui.com/sparkline/overview";
             // 
-            // linkAPI
+            // linkApi
             // 
             this.linkApi.TabIndex = 5;
             this.linkApi.Text = "https://www.igniteui.com/help/api/2019.2/ui.igsparkline";
@@ -83,11 +83,11 @@
             | Wisej.Web.AnchorStyles.Left) 
             | Wisej.Web.AnchorStyles.Right)));
             this.igSparkline1.BorderStyle = Wisej.Web.BorderStyle.Solid;
-            this.igSparkline1.Location = new System.Drawing.Point(21, 120);
+            this.igSparkline1.Location = new System.Drawing.Point(23, 130);
             this.igSparkline1.Name = "igSparkline1";
             this.igSparkline1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"valueMemberPath\":\"ExtendedPrice\",\"tooltipTemplate\":\"Low:${Low}<br>High:${High}\"" +
         "}")));
-            this.igSparkline1.Size = new System.Drawing.Size(1046, 317);
+            this.igSparkline1.Size = new System.Drawing.Size(843, 317);
             this.igSparkline1.TabIndex = 0;
             this.igSparkline1.Text = "igSparkline1";
             // 
@@ -130,6 +130,7 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(212, 57);
             this.comboBox1.TabIndex = 1;
+            this.comboBox1.Text = "line";
             // 
             // numericUpDown1
             // 
@@ -189,7 +190,6 @@
             this.flowLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

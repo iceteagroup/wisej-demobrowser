@@ -58,7 +58,7 @@
             this.linkDemo.TabIndex = 6;
             this.linkDemo.Text = "https://www.igniteui.com/editors/date-editor";
             // 
-            // linkAPI
+            // linkApi
             // 
             this.linkApi.TabIndex = 5;
             this.linkApi.Text = "http://www.igniteui.com/help/api/2019.2/ui.igdateeditor";
@@ -79,7 +79,7 @@
             // igDateEditor1
             // 
             this.igDateEditor1.Anchor = Wisej.Web.AnchorStyles.None;
-            this.igDateEditor1.Location = new System.Drawing.Point(394, 259);
+            this.igDateEditor1.Location = new System.Drawing.Point(294, 268);
             this.igDateEditor1.Name = "igDateEditor1";
             this.igDateEditor1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"dateInputFormat\":\"dateTime\",\"value\":\"2020-01-01\",\"dataMode\":\"date\"}")));
             this.igDateEditor1.Size = new System.Drawing.Size(300, 40);
@@ -172,7 +172,6 @@
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

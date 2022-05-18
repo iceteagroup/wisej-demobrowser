@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="igPieChart1.Options" xml:space="preserve">
-    <value>{"dataSource":[{"Budget":60,"Label":"Administration"},{"Budget":40,"Label":"Sales"},{"Budget":60,"Label":"IT"},{"Budget":40,"Label":"Marketing"},{"Budget":60,"Label":"Development"},{"Budget":20,"Label":"Support"}],"valueMemberPath":"Budget","labelMemberPath":"Label","explodedSlices":[2,3],"radiusFactor":0.6,"labelsPosition":"outsideEnd","leaderLineType":"arc","labelExtent":40}</value>
+    <value>{"dataSource":[{"budget":60,"label":"Administration"},{"budget":40,"label":"Sales"},{"budget":60,"label":"IT"},{"budget":40,"label":"Marketing"},{"budget":60,"label":"Development"},{"budget":20,"label":"Support"}],"valueMemberPath":"budget","labelMemberPath":"label","explodedSlices":[2,3],"radiusFactor":0.6,"labelsPosition":"outsideEnd","leaderLineType":"arc","labelExtent":40}</value>
   </data>
   <metadata name="$this.RulerSnapLines" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>

@@ -30,16 +30,13 @@
 		{
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(igFunnelChart));
             Wisej.Web.Ext.Ignite.igBase.WidgetFunction widgetFunction1 = new Wisej.Web.Ext.Ignite.igBase.WidgetFunction();
-            Wisej.Web.Ext.Ignite.igBase.WidgetFunction widgetFunction2 = new Wisej.Web.Ext.Ignite.igBase.WidgetFunction();
-            this.label4 = new Wisej.Web.Label();
-            this.label5 = new Wisej.Web.Label();
             this.comboBox1 = new Wisej.Web.ComboBox();
             this.checkBox2 = new Wisej.Web.CheckBox();
-            this.igFunnelChart2 = new Wisej.Web.Ext.Ignite.igFunnelChart();
-            this.igFunnelChart1 = new Wisej.Web.Ext.Ignite.igFunnelChart();
             this.checkBox3 = new Wisej.Web.CheckBox();
             this.numericUpDown1 = new Wisej.Web.NumericUpDown();
             this.numericUpDown2 = new Wisej.Web.NumericUpDown();
+            this.label4 = new Wisej.Web.Label();
+            this.igFunnelChart1 = new Wisej.Web.Ext.Ignite.igFunnelChart();
             this.groupBox1.SuspendLayout();
             this.panel.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
@@ -58,18 +55,18 @@
             // 
             // panel
             // 
-            this.panel.Controls.Add(this.label5);
             this.panel.Controls.Add(this.label4);
-            this.panel.Controls.Add(this.igFunnelChart2);
             this.panel.Controls.Add(this.igFunnelChart1);
+            this.panel.Size = new System.Drawing.Size(895, 578);
             this.panel.TabIndex = 7;
+            this.panel.Text = " ";
             // 
             // linkDemo
             // 
             this.linkDemo.TabIndex = 6;
             this.linkDemo.Text = "https://www.igniteui.com/funnel-chart/overview";
             // 
-            // linkAPI
+            // linkApi
             // 
             this.linkApi.TabIndex = 5;
             this.linkApi.Text = "https://www.igniteui.com/help/api/2019.2/ui.igFunnelChart";
@@ -86,28 +83,6 @@
             this.flowLayoutPanel1.Controls.Add(this.numericUpDown1);
             this.flowLayoutPanel1.Controls.Add(this.numericUpDown2);
             this.flowLayoutPanel1.Controls.Add(this.comboBox1);
-            // 
-            // label4
-            // 
-            this.label4.Anchor = Wisej.Web.AnchorStyles.None;
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("default", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.label4.Location = new System.Drawing.Point(308, 70);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(89, 18);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "Funnel Chart";
-            // 
-            // label5
-            // 
-            this.label5.Anchor = Wisej.Web.AnchorStyles.None;
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("default", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.label5.Location = new System.Drawing.Point(665, 70);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(147, 18);
-            this.label5.TabIndex = 2;
-            this.label5.Text = "Inverted Funnel Chart";
             // 
             // comboBox1
             // 
@@ -136,35 +111,6 @@
             this.checkBox2.Size = new System.Drawing.Size(212, 38);
             this.checkBox2.TabIndex = 0;
             this.checkBox2.Text = "Use Bezier Curve";
-            // 
-            // igFunnelChart2
-            // 
-            this.igFunnelChart2.Anchor = Wisej.Web.AnchorStyles.None;
-            this.igFunnelChart2.Location = new System.Drawing.Point(546, 92);
-            this.igFunnelChart2.Name = "igFunnelChart2";
-            this.igFunnelChart2.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("igFunnelChart2.Options"))));
-            this.igFunnelChart2.Size = new System.Drawing.Size(380, 402);
-            this.igFunnelChart2.TabIndex = 3;
-            this.igFunnelChart2.Text = "igFunnelChart2";
-            widgetFunction1.Name = "clickSlice";
-            widgetFunction1.Source = "App.MainView.showAlert(arguments[1][\"item\"]);";
-            this.igFunnelChart2.WidgetFunctions = new Wisej.Web.Ext.Ignite.igBase.WidgetFunction[] {
-        widgetFunction1};
-            // 
-            // igFunnelChart1
-            // 
-            this.igFunnelChart1.Anchor = Wisej.Web.AnchorStyles.None;
-            this.igFunnelChart1.Location = new System.Drawing.Point(162, 92);
-            this.igFunnelChart1.Name = "igFunnelChart1";
-            this.igFunnelChart1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("igFunnelChart1.Options"))));
-            this.igFunnelChart1.Size = new System.Drawing.Size(380, 402);
-            this.igFunnelChart1.TabIndex = 1;
-            this.igFunnelChart1.Text = "igFunnelChart1";
-            widgetFunction2.Name = "clickSlice";
-            widgetFunction2.Source = "App.MainView.showAlert(arguments[1][\"item\"]);";
-            this.igFunnelChart1.WidgetFunctions = new Wisej.Web.Ext.Ignite.igBase.WidgetFunction[] {
-        widgetFunction2};
-            this.igFunnelChart1.WidgetTemplates = new Wisej.Web.Ext.Ignite.igBase.WidgetTemplate[0];
             // 
             // checkBox3
             // 
@@ -228,6 +174,32 @@
             0,
             131072});
             // 
+            // label4
+            // 
+            this.label4.Anchor = Wisej.Web.AnchorStyles.None;
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("default", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.label4.Location = new System.Drawing.Point(402, 97);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(89, 18);
+            this.label4.TabIndex = 0;
+            this.label4.Text = "Funnel Chart";
+            // 
+            // igFunnelChart1
+            // 
+            this.igFunnelChart1.Anchor = Wisej.Web.AnchorStyles.None;
+            this.igFunnelChart1.Location = new System.Drawing.Point(256, 131);
+            this.igFunnelChart1.Name = "igFunnelChart1";
+            this.igFunnelChart1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("igFunnelChart1.Options"))));
+            this.igFunnelChart1.Size = new System.Drawing.Size(380, 349);
+            this.igFunnelChart1.TabIndex = 1;
+            this.igFunnelChart1.Text = "igFunnelChart1";
+            widgetFunction1.Name = "clickSlice";
+            widgetFunction1.Source = "App.MainView.showAlert(arguments[1][\"item\"]);";
+            this.igFunnelChart1.WidgetFunctions = new Wisej.Web.Ext.Ignite.igBase.WidgetFunction[] {
+        widgetFunction1};
+            this.igFunnelChart1.WidgetTemplates = new Wisej.Web.Ext.Ignite.igBase.WidgetTemplate[0];
+            // 
             // igFunnelChart
             // 
             this.Name = "igFunnelChart";
@@ -239,20 +211,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 
 		#endregion
-
-		private Ignite.igFunnelChart igFunnelChart1;
-		private Ignite.igFunnelChart igFunnelChart2;
-		private Label label5;
-		private Label label4;
 		private CheckBox checkBox2;
 		private ComboBox comboBox1;
 		private CheckBox checkBox3;
 		private NumericUpDown numericUpDown1;
 		private NumericUpDown numericUpDown2;
-	}
+        private Label label4;
+        private Ignite.igFunnelChart igFunnelChart1;
+    }
 }

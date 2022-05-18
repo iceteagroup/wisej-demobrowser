@@ -61,7 +61,7 @@
             this.linkDemo.TabIndex = 6;
             this.linkDemo.Text = "https://www.igniteui.com/tree/overview";
             // 
-            // linkAPI
+            // linkApi
             // 
             this.linkApi.TabIndex = 5;
             this.linkApi.Text = "http://www.igniteui.com/help/api/2019.2/ui.igtree";
@@ -80,7 +80,7 @@
             // igTree2
             // 
             this.igTree2.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom)));
-            this.igTree2.Location = new System.Drawing.Point(546, 19);
+            this.igTree2.Location = new System.Drawing.Point(446, 28);
             this.igTree2.Name = "igTree2";
             this.igTree2.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("igTree2.Options"))));
             this.igTree2.Size = new System.Drawing.Size(252, 521);
@@ -94,7 +94,7 @@
             // igTree1
             // 
             this.igTree1.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom)));
-            this.igTree1.Location = new System.Drawing.Point(290, 19);
+            this.igTree1.Location = new System.Drawing.Point(190, 28);
             this.igTree1.Name = "igTree1";
             this.igTree1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("igTree1.Options"))));
             this.igTree1.Size = new System.Drawing.Size(250, 521);
@@ -156,7 +156,6 @@
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

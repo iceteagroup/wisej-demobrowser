@@ -61,7 +61,7 @@
             this.linkDemo.TabIndex = 6;
             this.linkDemo.Text = "https://www.igniteui.com/spreadsheet/overview";
             // 
-            // linkAPI
+            // linkApi
             // 
             this.linkApi.TabIndex = 5;
             this.linkApi.Text = "https://www.igniteui.com/help/api/2019.2/ui.igSpreadsheet";
@@ -153,12 +153,10 @@
             // 
             // igSpreadsheet1
             // 
-            this.igSpreadsheet1.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
-            | Wisej.Web.AnchorStyles.Left) 
-            | Wisej.Web.AnchorStyles.Right)));
-            this.igSpreadsheet1.Location = new System.Drawing.Point(18, 18);
+            this.igSpreadsheet1.Dock = Wisej.Web.DockStyle.Fill;
+            this.igSpreadsheet1.Location = new System.Drawing.Point(8, 8);
             this.igSpreadsheet1.Name = "igSpreadsheet1";
-            this.igSpreadsheet1.Size = new System.Drawing.Size(1050, 520);
+            this.igSpreadsheet1.Size = new System.Drawing.Size(872, 560);
             this.igSpreadsheet1.TabIndex = 0;
             this.igSpreadsheet1.Text = "igSpreadsheet1";
             this.igSpreadsheet1.WidgetFunctions = new Wisej.Web.Ext.Ignite.igBase.WidgetFunction[0];
@@ -203,7 +201,6 @@
             this.flowLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 
