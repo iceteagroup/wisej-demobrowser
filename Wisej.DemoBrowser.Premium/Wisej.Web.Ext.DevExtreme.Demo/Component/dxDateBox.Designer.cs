@@ -29,7 +29,6 @@
 		private void InitializeComponent()
 		{
             this.dxDateBox1 = new Wisej.Web.Ext.DevExtreme.dxDateBox();
-            this.comboBoxStylingMode = new Wisej.Web.ComboBox();
             this.checkBox1 = new Wisej.Web.CheckBox();
             this.comboBox2 = new Wisej.Web.ComboBox();
             this.checkBox4 = new Wisej.Web.CheckBox();
@@ -68,7 +67,6 @@
             // 
             this.flowLayoutPanel1.Controls.Add(this.checkBox1);
             this.flowLayoutPanel1.Controls.Add(this.checkBox4);
-            this.flowLayoutPanel1.Controls.Add(this.comboBoxStylingMode);
             this.flowLayoutPanel1.Controls.Add(this.comboBox2);
             // 
             // dxDateBox1
@@ -76,28 +74,9 @@
             this.dxDateBox1.Anchor = Wisej.Web.AnchorStyles.None;
             this.dxDateBox1.Location = new System.Drawing.Point(269, 271);
             this.dxDateBox1.Name = "dxDateBox1";
-            this.dxDateBox1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"type\":\"date\"}")));
+            this.dxDateBox1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"type\":\"date\",\"stylingMode\":\"outlined\"}")));
             this.dxDateBox1.Size = new System.Drawing.Size(350, 35);
             this.dxDateBox1.TabIndex = 0;
-            // 
-            // comboBoxStylingMode
-            // 
-            this.comboBoxStylingMode.AutoSize = false;
-            this.comboBoxStylingMode.DropDownStyle = Wisej.Web.ComboBoxStyle.DropDownList;
-            this.flowLayoutPanel1.SetFillWeight(this.comboBoxStylingMode, 1);
-            this.flowLayoutPanel1.SetFlowBreak(this.comboBoxStylingMode, true);
-            this.comboBoxStylingMode.Items.AddRange(new object[] {
-            "outlined",
-            "filled"});
-            this.comboBoxStylingMode.Label.Size = 50;
-            this.comboBoxStylingMode.Label.SizeType = Wisej.Web.SizeType.Percent;
-            this.comboBoxStylingMode.LabelText = "Styling mode";
-            this.comboBoxStylingMode.Location = new System.Drawing.Point(3, 117);
-            this.comboBoxStylingMode.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
-            this.comboBoxStylingMode.Name = "comboBoxStylingMode";
-            this.comboBoxStylingMode.Size = new System.Drawing.Size(212, 60);
-            this.comboBoxStylingMode.TabIndex = 4;
-            this.comboBoxStylingMode.Text = "outlined";
             // 
             // checkBox1
             // 
@@ -126,7 +105,7 @@
             this.comboBox2.Label.Size = 50;
             this.comboBox2.Label.SizeType = Wisej.Web.SizeType.Percent;
             this.comboBox2.LabelText = "Type";
-            this.comboBox2.Location = new System.Drawing.Point(3, 196);
+            this.comboBox2.Location = new System.Drawing.Point(3, 117);
             this.comboBox2.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(212, 60);
@@ -162,7 +141,6 @@
 		#endregion
 
 		private DevExtreme.dxDateBox dxDateBox1;
-		private ComboBox comboBoxStylingMode;
 		private CheckBox checkBox4;
 		private ComboBox comboBox2;
 		private CheckBox checkBox1;

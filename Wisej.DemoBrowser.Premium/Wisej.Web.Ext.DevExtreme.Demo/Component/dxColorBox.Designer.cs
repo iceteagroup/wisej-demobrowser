@@ -75,15 +75,13 @@
             this.flowLayoutPanel1.Controls.Add(this.checkBox5);
             this.flowLayoutPanel1.Controls.Add(this.comboBox1);
             this.flowLayoutPanel1.Controls.Add(this.buttonGetValue);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 38);
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 467);
             // 
             // dxColorBox1
             // 
             this.dxColorBox1.Anchor = Wisej.Web.AnchorStyles.None;
             this.dxColorBox1.Location = new System.Drawing.Point(269, 271);
             this.dxColorBox1.Name = "dxColorBox1";
-            this.dxColorBox1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"value\":\"#f05b41\",\"editAlphaChannel\":true}")));
+            this.dxColorBox1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"value\":\"#f05b41\",\"editAlphaChannel\":true,\"stylingMode\":\"outlined\"}")));
             this.dxColorBox1.Size = new System.Drawing.Size(350, 35);
             this.dxColorBox1.TabIndex = 0;
             // 

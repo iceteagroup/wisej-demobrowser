@@ -159,7 +159,6 @@
             // 
             // igCategoryChart
             // 
-            this.MinimumSize = new System.Drawing.Size(804, 629);
             this.Name = "igCategoryChart";
             this.Load += new System.EventHandler(this.igCategoryChart_Load);
             this.groupBox1.ResumeLayout(false);

@@ -66,8 +66,6 @@
             this.flowLayoutPanel1.Controls.Add(this.checkBox5);
             this.flowLayoutPanel1.Controls.Add(this.checkBox6);
             this.flowLayoutPanel1.Controls.Add(this.checkBox7);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 38);
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 467);
             // 
             // dxGallery1
             // 
@@ -98,6 +96,7 @@
             this.checkBox5.Appearance = Wisej.Web.Appearance.Switch;
             this.checkBox5.AutoSize = false;
             this.checkBox5.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.checkBox5.Checked = true;
             this.flowLayoutPanel1.SetFillWeight(this.checkBox5, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.checkBox5, true);
             this.checkBox5.Location = new System.Drawing.Point(3, 52);
@@ -112,6 +111,7 @@
             this.checkBox6.Appearance = Wisej.Web.Appearance.Switch;
             this.checkBox6.AutoSize = false;
             this.checkBox6.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.checkBox6.Checked = true;
             this.flowLayoutPanel1.SetFillWeight(this.checkBox6, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.checkBox6, true);
             this.checkBox6.Location = new System.Drawing.Point(3, 101);

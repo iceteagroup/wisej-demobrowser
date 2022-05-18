@@ -150,7 +150,6 @@
             // 
             // igTree
             // 
-            this.MinimumSize = new System.Drawing.Size(940, 507);
             this.Name = "igTree";
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);

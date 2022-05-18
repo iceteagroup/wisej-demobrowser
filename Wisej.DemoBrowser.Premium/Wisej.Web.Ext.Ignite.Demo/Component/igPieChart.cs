@@ -31,12 +31,8 @@ namespace Wisej.Web.Ext.Ignite.Demo.Component
 				Budget = this.numericUpDown1.Value
 			});
 
-
 			this.igPieChart1.Update();
-
-			// Works
-			//this.igPieChart1.Call("AddItem");
-	}
+		}
 
 		private void buttonUpdate_Click(object sender, EventArgs e)
 		{

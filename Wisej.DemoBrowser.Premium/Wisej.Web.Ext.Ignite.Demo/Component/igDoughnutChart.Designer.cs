@@ -190,7 +190,6 @@
             // 
             // igDoughnutChart
             // 
-            this.MinimumSize = new System.Drawing.Size(914, 710);
             this.Name = "igDoughnutChart";
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);

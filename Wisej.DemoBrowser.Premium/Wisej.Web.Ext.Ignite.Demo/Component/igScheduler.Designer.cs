@@ -173,7 +173,6 @@
             // 
             // igScheduler
             // 
-            this.MinimumSize = new System.Drawing.Size(1009, 669);
             this.Name = "igScheduler";
             this.Load += new System.EventHandler(this.igScheduler_Load);
             this.groupBox1.ResumeLayout(false);

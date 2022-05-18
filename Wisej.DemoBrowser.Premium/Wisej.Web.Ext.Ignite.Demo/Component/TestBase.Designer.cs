@@ -89,6 +89,7 @@
             this.panel.BorderStyle = Wisej.Web.BorderStyle.Solid;
             this.panel.Location = new System.Drawing.Point(358, 86);
             this.panel.Name = "panel";
+            this.panel.Padding = new Wisej.Web.Padding(8);
             this.panel.Size = new System.Drawing.Size(890, 578);
             this.panel.TabIndex = 5;
             this.panel.TabStop = true;

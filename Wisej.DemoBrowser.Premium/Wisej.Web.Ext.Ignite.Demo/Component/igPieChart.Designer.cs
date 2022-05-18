@@ -29,7 +29,7 @@
 		private void InitializeComponent()
 		{
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(igPieChart));
-            Wisej.Web.Ext.Ignite.igBase.WidgetFunction widgetFunction2 = new Wisej.Web.Ext.Ignite.igBase.WidgetFunction();
+            Wisej.Web.Ext.Ignite.igBase.WidgetFunction widgetFunction1 = new Wisej.Web.Ext.Ignite.igBase.WidgetFunction();
             this.igPieChart1 = new Wisej.Web.Ext.Ignite.igPieChart();
             this.groupBox2 = new Wisej.Web.GroupBox();
             this.button1 = new Wisej.Web.Button();
@@ -64,7 +64,7 @@
             this.linkDemo.TabIndex = 6;
             this.linkDemo.Text = "https://www.igniteui.com/pie-chart/overview";
             // 
-            // linkAPI
+            // linkApi
             // 
             this.linkApi.TabIndex = 5;
             this.linkApi.Text = "http://www.igniteui.com/help/api/2019.2/ui.igPieChart";
@@ -83,19 +83,17 @@
             // 
             // igPieChart1
             // 
-            this.igPieChart1.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
-            | Wisej.Web.AnchorStyles.Left) 
-            | Wisej.Web.AnchorStyles.Right)));
-            this.igPieChart1.Location = new System.Drawing.Point(18, 18);
+            this.igPieChart1.Dock = Wisej.Web.DockStyle.Fill;
+            this.igPieChart1.Location = new System.Drawing.Point(8, 8);
             this.igPieChart1.Name = "igPieChart1";
             this.igPieChart1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("igPieChart1.Options"))));
-            this.igPieChart1.Size = new System.Drawing.Size(1053, 522);
+            this.igPieChart1.Size = new System.Drawing.Size(872, 560);
             this.igPieChart1.TabIndex = 0;
             this.igPieChart1.Text = "igPieChart1";
-            widgetFunction2.Name = "AddItem";
-            widgetFunction2.Source = "this.Instance.addItem({\r\n    Label: \"Test\",\r\n    Budget: 50\r\n});";
+            widgetFunction1.Name = "AddItem";
+            widgetFunction1.Source = "this.Instance.addItem({\r\n    Label: \"Test\",\r\n    Budget: 50\r\n});";
             this.igPieChart1.WidgetFunctions = new Wisej.Web.Ext.Ignite.igBase.WidgetFunction[] {
-        widgetFunction2};
+        widgetFunction1};
             // 
             // groupBox2
             // 
@@ -141,6 +139,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(200, 57);
             this.textBox1.TabIndex = 0;
+            this.textBox1.Text = "Human Resources";
             // 
             // checkBox2
             // 
@@ -190,7 +189,6 @@
             // 
             // igPieChart
             // 
-            this.MinimumSize = new System.Drawing.Size(910, 701);
             this.Name = "igPieChart";
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
@@ -200,7 +198,6 @@
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

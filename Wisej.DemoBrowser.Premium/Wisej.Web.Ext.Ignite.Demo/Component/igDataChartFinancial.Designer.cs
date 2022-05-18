@@ -165,7 +165,6 @@
             // 
             // igDataChartFinancial
             // 
-            this.MinimumSize = new System.Drawing.Size(932, 594);
             this.Name = "igDataChartFinancial";
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);

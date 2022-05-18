@@ -196,7 +196,6 @@
             // 
             // igSpreadsheet
             // 
-            this.MinimumSize = new System.Drawing.Size(828, 675);
             this.Name = "igSpreadsheet";
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);

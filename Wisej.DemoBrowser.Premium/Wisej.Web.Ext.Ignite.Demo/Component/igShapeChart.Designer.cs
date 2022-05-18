@@ -170,7 +170,6 @@
             // 
             // igShapeChart
             // 
-            this.MinimumSize = new System.Drawing.Size(909, 568);
             this.Name = "igShapeChart";
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);

@@ -141,7 +141,6 @@
             // 
             // igRadialGauge
             // 
-            this.MinimumSize = new System.Drawing.Size(1014, 559);
             this.Name = "igRadialGauge";
             this.Load += new System.EventHandler(this.igRadialGauge_Load);
             this.groupBox1.ResumeLayout(false);

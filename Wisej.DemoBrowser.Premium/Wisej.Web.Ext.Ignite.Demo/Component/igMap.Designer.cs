@@ -172,7 +172,6 @@
             // 
             // igMap
             // 
-            this.MinimumSize = new System.Drawing.Size(994, 653);
             this.Name = "igMap";
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);

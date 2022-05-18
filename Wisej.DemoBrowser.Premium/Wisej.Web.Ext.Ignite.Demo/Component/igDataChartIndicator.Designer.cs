@@ -177,7 +177,6 @@
             // 
             // igDataChartIndicator
             // 
-            this.MinimumSize = new System.Drawing.Size(893, 636);
             this.Name = "igDataChartIndicator";
             this.panel.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);

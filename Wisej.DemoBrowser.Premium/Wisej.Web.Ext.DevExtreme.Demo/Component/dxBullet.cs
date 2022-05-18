@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Drawing;
 using Wisej.Web;
 
 namespace Wisej.Web.Ext.DevExtreme.Demo.Component
@@ -8,6 +9,37 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
 		public dxBullet()
 		{
 			InitializeComponent();
+		}
+
+		private void dxBullet_Load(object sender, EventArgs e)
+		{
+			this.dxBullet1.Options = new
+			{
+				value = 23,
+				target = 20,
+				color = Color.DarkRed
+			};
+
+			this.dxBullet2.Options = new
+			{
+				value = 24,
+				target = 22,
+				color = Color.DarkOrange
+			};
+
+			this.dxBullet3.Options = new
+			{
+				value = 35,
+				target = 24,
+				color = Color.DarkGreen
+			};
+
+			this.dxBullet4.Options = new
+			{
+				value = 29,
+				target = 25,
+				color = Color.DarkBlue
+			};
 		}
 
 		private void buttonUpdate_Click(object sender, EventArgs e)

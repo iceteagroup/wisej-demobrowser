@@ -56,6 +56,7 @@
             // panel
             // 
             this.panel.Controls.Add(this.igDataChart1);
+            this.panel.Padding = new Wisej.Web.Padding(8);
             this.panel.TabIndex = 7;
             // 
             // linkDemo
@@ -63,7 +64,7 @@
             this.linkDemo.TabIndex = 6;
             this.linkDemo.Text = "https://www.igniteui.com/data-chart/overview";
             // 
-            // linkAPI
+            // linkApi
             // 
             this.linkApi.TabIndex = 5;
             this.linkApi.Text = "http://www.igniteui.com/help/api/2019.2/ui.igDataChart";
@@ -84,13 +85,11 @@
             // 
             // igDataChart1
             // 
-            this.igDataChart1.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
-            | Wisej.Web.AnchorStyles.Left) 
-            | Wisej.Web.AnchorStyles.Right)));
-            this.igDataChart1.Location = new System.Drawing.Point(25, 15);
+            this.igDataChart1.Dock = Wisej.Web.DockStyle.Fill;
+            this.igDataChart1.Location = new System.Drawing.Point(8, 8);
             this.igDataChart1.Name = "igDataChart1";
             this.igDataChart1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("igDataChart1.Options"))));
-            this.igDataChart1.Size = new System.Drawing.Size(1039, 528);
+            this.igDataChart1.Size = new System.Drawing.Size(872, 560);
             this.igDataChart1.TabIndex = 0;
             this.igDataChart1.Text = "igDataChart1";
             // 
@@ -192,7 +191,6 @@
             // 
             // igDataChart
             // 
-            this.MinimumSize = new System.Drawing.Size(926, 712);
             this.Name = "igDataChart";
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
@@ -201,7 +199,6 @@
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

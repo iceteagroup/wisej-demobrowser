@@ -47,6 +47,7 @@
             this.dxBullet4 = new Wisej.Web.Ext.DevExtreme.dxBullet();
             this.label13 = new Wisej.Web.Label();
             this.label4 = new Wisej.Web.Label();
+            this.panel5 = new Wisej.Web.Panel();
             this.groupBox1.SuspendLayout();
             this.panel.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
@@ -57,6 +58,7 @@
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
+            this.panel5.SuspendLayout();
             this.SuspendLayout();
             // 
             // linkDocs
@@ -84,11 +86,7 @@
             // 
             // panel
             // 
-            this.panel.Controls.Add(this.label4);
-            this.panel.Controls.Add(this.panel4);
-            this.panel.Controls.Add(this.panel3);
-            this.panel.Controls.Add(this.panel2);
-            this.panel.Controls.Add(this.panel1);
+            this.panel.Controls.Add(this.panel5);
             this.panel.TabIndex = 7;
             // 
             // flowLayoutPanel1
@@ -188,7 +186,7 @@
             this.panel1.Anchor = Wisej.Web.AnchorStyles.None;
             this.panel1.Controls.Add(this.dxBullet1);
             this.panel1.Controls.Add(this.label10);
-            this.panel1.Location = new System.Drawing.Point(270, 223);
+            this.panel1.Location = new System.Drawing.Point(54, 97);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(348, 27);
             this.panel1.TabIndex = 1;
@@ -199,7 +197,6 @@
             this.dxBullet1.Dock = Wisej.Web.DockStyle.Fill;
             this.dxBullet1.Location = new System.Drawing.Point(75, 0);
             this.dxBullet1.Name = "dxBullet1";
-            this.dxBullet1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"value\":23,\"target\":20,\"color\":\"#ebdd8f\"}")));
             this.dxBullet1.Size = new System.Drawing.Size(273, 27);
             this.dxBullet1.TabIndex = 7;
             // 
@@ -220,7 +217,7 @@
             this.panel2.Anchor = Wisej.Web.AnchorStyles.None;
             this.panel2.Controls.Add(this.dxBullet2);
             this.panel2.Controls.Add(this.label11);
-            this.panel2.Location = new System.Drawing.Point(270, 284);
+            this.panel2.Location = new System.Drawing.Point(54, 154);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(348, 27);
             this.panel2.TabIndex = 8;
@@ -231,7 +228,6 @@
             this.dxBullet2.Dock = Wisej.Web.DockStyle.Fill;
             this.dxBullet2.Location = new System.Drawing.Point(75, 0);
             this.dxBullet2.Name = "dxBullet2";
-            this.dxBullet2.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"value\":24,\"target\":22,\"color\":\"#e55253\"}")));
             this.dxBullet2.Size = new System.Drawing.Size(273, 27);
             this.dxBullet2.TabIndex = 7;
             // 
@@ -252,7 +248,7 @@
             this.panel3.Anchor = Wisej.Web.AnchorStyles.None;
             this.panel3.Controls.Add(this.dxBullet3);
             this.panel3.Controls.Add(this.label12);
-            this.panel3.Location = new System.Drawing.Point(270, 331);
+            this.panel3.Location = new System.Drawing.Point(54, 211);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(348, 27);
             this.panel3.TabIndex = 9;
@@ -263,7 +259,6 @@
             this.dxBullet3.Dock = Wisej.Web.DockStyle.Fill;
             this.dxBullet3.Location = new System.Drawing.Point(75, 0);
             this.dxBullet3.Name = "dxBullet3";
-            this.dxBullet3.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"value\":35,\"target\":24,\"color\":\"#ebdd8f\"}")));
             this.dxBullet3.Size = new System.Drawing.Size(273, 27);
             this.dxBullet3.TabIndex = 8;
             // 
@@ -284,7 +279,7 @@
             this.panel4.Anchor = Wisej.Web.AnchorStyles.None;
             this.panel4.Controls.Add(this.dxBullet4);
             this.panel4.Controls.Add(this.label13);
-            this.panel4.Location = new System.Drawing.Point(270, 394);
+            this.panel4.Location = new System.Drawing.Point(54, 268);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(348, 27);
             this.panel4.TabIndex = 8;
@@ -295,7 +290,6 @@
             this.dxBullet4.Dock = Wisej.Web.DockStyle.Fill;
             this.dxBullet4.Location = new System.Drawing.Point(75, 0);
             this.dxBullet4.Name = "dxBullet4";
-            this.dxBullet4.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"value\":29,\"target\":25,\"color\":\"#e55253\"}")));
             this.dxBullet4.Size = new System.Drawing.Size(273, 27);
             this.dxBullet4.TabIndex = 9;
             // 
@@ -315,16 +309,31 @@
             // 
             this.label4.Anchor = Wisej.Web.AnchorStyles.None;
             this.label4.Font = new System.Drawing.Font("windowTitle", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.label4.Location = new System.Drawing.Point(270, 156);
+            this.label4.Location = new System.Drawing.Point(54, 26);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(348, 45);
             this.label4.TabIndex = 10;
             this.label4.Text = "June Statistics";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // panel5
+            // 
+            this.panel5.Anchor = Wisej.Web.AnchorStyles.None;
+            this.panel5.BorderStyle = Wisej.Web.BorderStyle.Dashed;
+            this.panel5.Controls.Add(this.label4);
+            this.panel5.Controls.Add(this.panel4);
+            this.panel5.Controls.Add(this.panel3);
+            this.panel5.Controls.Add(this.panel2);
+            this.panel5.Controls.Add(this.panel1);
+            this.panel5.Location = new System.Drawing.Point(215, 125);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(458, 327);
+            this.panel5.TabIndex = 11;
+            // 
             // dxBullet
             // 
             this.Name = "dxBullet";
+            this.Load += new System.EventHandler(this.dxBullet_Load);
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
@@ -340,6 +349,7 @@
             this.panel3.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
+            this.panel5.ResumeLayout(false);
             this.ResumeLayout(false);
 
 		}
@@ -364,5 +374,6 @@
 		private DevExtreme.dxBullet dxBullet1;
 		private Label label10;
 		private Label label4;
-	}
+        private Panel panel5;
+    }
 }

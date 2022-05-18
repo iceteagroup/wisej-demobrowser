@@ -203,7 +203,6 @@
             // 
             // igFinancialChart
             // 
-            this.MinimumSize = new System.Drawing.Size(850, 735);
             this.Name = "igFinancialChart";
             this.Load += new System.EventHandler(this.igFinancialChart_Load);
             this.groupBox1.ResumeLayout(false);

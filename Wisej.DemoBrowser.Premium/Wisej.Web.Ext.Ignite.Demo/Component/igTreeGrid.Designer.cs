@@ -164,7 +164,6 @@
             // 
             // igTreeGrid
             // 
-            this.MinimumSize = new System.Drawing.Size(1156, 586);
             this.Name = "igTreeGrid";
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);

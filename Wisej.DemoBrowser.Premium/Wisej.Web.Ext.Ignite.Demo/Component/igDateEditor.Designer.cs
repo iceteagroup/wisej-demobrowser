@@ -166,7 +166,6 @@
             // 
             // igDateEditor
             // 
-            this.MinimumSize = new System.Drawing.Size(738, 644);
             this.Name = "igDateEditor";
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);

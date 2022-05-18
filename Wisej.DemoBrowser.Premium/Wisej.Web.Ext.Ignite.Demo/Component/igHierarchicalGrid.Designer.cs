@@ -179,7 +179,6 @@
             // 
             // igHierarchicalGrid
             // 
-            this.MinimumSize = new System.Drawing.Size(1234, 660);
             this.Name = "igHierarchicalGrid";
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
