@@ -18,6 +18,10 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 			this.kendoChart1.Instance.onSelect += new WidgetEventHandler(kendoChart1_WidgetEvent);
 		}
 
+		private void kendoChart_Load(object sender, EventArgs e)
+		{
+		}
+
 		private void kendoChart1_WidgetEvent(object sender, WidgetEventArgs e)
 		{
 			AlertBox.Show(
@@ -27,38 +31,37 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 			Application.Play(MessageBoxIcon.Information);
 		}
 
-		private void buttonExport_Click(object sender, EventArgs e)
+		private async void buttonExport_Click(object sender, EventArgs e)
 		{
-			var format = this.comboBox1.SelectedItem.ToString();
+			var base64 = "";
+			var format = this.comboBox1.SelectedItem.ToString().ToLower();
 			switch (format)
 			{
-				case "SVG":
-				case "PNG":
-					this.kendoChart1.Call("exportImageData", format);
+				case "svg":
+					base64 = await this.kendoChart1.Instance.exportSVGAsync();
 					break;
-				
-				case "PDF":
-					this.kendoChart1.Instance.saveAsPDF();
+				case "png":
+					base64 = await this.kendoChart1.Instance.exportImageAsync();
+					break;
+				case "pdf":
+					base64 = await this.kendoChart1.Instance.exportPDFAsync();
 					break;
 			}
+
+			ProcessFile(base64, $"kendoChart.{format}");
 		}
 
-		private void kendoChart1_WebRequest(object sender, WebRequestEventArgs e)
+		private void ProcessFile(string base64Data, string fileName)
 		{
-			switch (e.Request.QueryString["action"])
+			if (string.IsNullOrEmpty(base64Data))
+				return;
+
+			var base64 = base64Data.Split(new[] { ',' })[1];
+			var bytes = Convert.FromBase64String(base64);
+			using (var ms = new MemoryStream(bytes))
 			{
-				case "export":
-					HandleFile(e.Response, e.Request.Form["contentType"], e.Request.Form["base64"], e.Request.Form["fileName"]);
-					break;
-
+				Application.Download(ms, fileName);
 			}
-		}
-
-		private void HandleFile(HttpResponse response, string contentType, string base64Data, string fileName)
-		{
-			var bytes = Convert.FromBase64String(base64Data);
-			response.AppendHeader("Content-Disposition", $"attachment; filename={fileName}");
-			response.OutputStream.Write(bytes, 0, bytes.Length);
 		}
 
 		private void buttonUpdate_Click(object sender, EventArgs e)

@@ -29,7 +29,7 @@
 		private void InitializeComponent()
 		{
             this.components = new System.ComponentModel.Container();
-            Wisej.Web.Ext.Kendo.kendoBase.WidgetFunction widgetFunction2 = new Wisej.Web.Ext.Kendo.kendoBase.WidgetFunction();
+            Wisej.Web.Ext.Kendo.kendoBase.WidgetFunction widgetFunction1 = new Wisej.Web.Ext.Kendo.kendoBase.WidgetFunction();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(kendoChat));
             this.buttonGetUser = new Wisej.Web.Button();
             this.buttonApplyColor = new Wisej.Web.Button();
@@ -102,10 +102,10 @@
             this.kendoChat1.Size = new System.Drawing.Size(808, 513);
             this.kendoChat1.TabIndex = 0;
             this.kendoChat1.Text = "kendoChat1";
-            widgetFunction2.Name = "applyColor";
-            widgetFunction2.Source = resources.GetString("widgetFunction2.Source");
+            widgetFunction1.Name = "applyColor";
+            widgetFunction1.Source = resources.GetString("widgetFunction1.Source");
             this.kendoChat1.WidgetFunctions = new Wisej.Web.Ext.Kendo.kendoBase.WidgetFunction[] {
-        widgetFunction2};
+        widgetFunction1};
             // 
             // textBoxMessage
             // 

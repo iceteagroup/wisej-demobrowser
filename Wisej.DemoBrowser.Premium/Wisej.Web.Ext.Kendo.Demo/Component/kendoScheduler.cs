@@ -7,7 +7,7 @@ using Wisej.Web;
 
 namespace Wisej.Web.Ext.Kendo.Demo.Component
 {
-	public partial class kendoScheduler : Wisej.Web.Ext.Kendo.Demo.Component.TestBase
+	public partial class kendoScheduler : TestBase
 	{
 		public kendoScheduler()
 		{
@@ -18,6 +18,16 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 			this.kendoScheduler1.Instance.onChange += new WidgetEventHandler(kendoScheduler1_WidgetEvent);
 			this.kendoScheduler1.Instance.onEdit += new WidgetEventHandler(kendoScheduler1_WidgetEvent);
 			this.kendoScheduler1.Instance.onSave += new WidgetEventHandler(kendoScheduler1_WidgetEvent);
+		}
+
+		private void kendoScheduler_Load(object sender, EventArgs e)
+		{
+			var serviceUrl = this.kendoScheduler1.GetServiceURL();
+			this.kendoScheduler1.Options.pdf = new
+			{
+				forceProxy = true,
+				proxyURL = $"{serviceUrl}?action=export"
+			};
 		}
 
 		private void kendoScheduler1_WidgetEvent(object sender, WidgetEventArgs e)
@@ -50,15 +60,15 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 		{
 			var bytes = Convert.FromBase64String(base64Data);
 			response.AppendHeader("Content-Disposition", $"attachment; filename={fileName}");
-			response.OutputStream.Write(bytes, 0, bytes.Length);
+			response.BinaryWrite(bytes);
 		}
 
-        private void buttonUpdate_Click(object sender, EventArgs e)
-        {
+		private void buttonUpdate_Click(object sender, EventArgs e)
+		{
 			this.kendoScheduler1.Options.snap = this.checkBoxSnap.Checked;
 			this.kendoScheduler1.Options.allDaySlot = this.checkBoxAllDay.Checked;
 			this.kendoScheduler1.Options.editable = this.checkBoxEditable.Checked;
 			this.kendoScheduler1.Options.showWorkHours = this.checkBoxShowWorkHours.Checked;
-        }
-    }
+		}
+	}
 }

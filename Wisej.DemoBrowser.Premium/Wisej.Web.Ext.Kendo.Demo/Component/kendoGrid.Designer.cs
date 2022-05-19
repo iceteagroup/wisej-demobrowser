@@ -110,16 +110,14 @@
             // 
             // kendoGrid1
             // 
-            this.kendoGrid1.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
-            | Wisej.Web.AnchorStyles.Left) 
-            | Wisej.Web.AnchorStyles.Right)));
-            this.kendoGrid1.Location = new System.Drawing.Point(17, 33);
+            this.kendoGrid1.Dock = Wisej.Web.DockStyle.Fill;
+            this.kendoGrid1.Location = new System.Drawing.Point(8, 8);
             this.kendoGrid1.Name = "kendoGrid1";
             this.kendoGrid1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("kendoGrid1.Options"))));
-            this.kendoGrid1.Size = new System.Drawing.Size(854, 510);
+            this.kendoGrid1.Size = new System.Drawing.Size(872, 560);
             this.kendoGrid1.TabIndex = 0;
             this.kendoGrid1.Text = "kendoGrid1";
-            widgetFunction1.Name = "onDataBound";
+            widgetFunction1.Name = "getDataSource";
             widgetFunction1.Source = resources.GetString("widgetFunction1.Source");
             this.kendoGrid1.WidgetFunctions = new Wisej.Web.Ext.Kendo.kendoBase.WidgetFunction[] {
         widgetFunction1};

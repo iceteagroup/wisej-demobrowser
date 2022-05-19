@@ -1,10 +1,11 @@
 ﻿using System;
 using System.IO;
 using System.Net;
+using Wisej.Core;
 
 namespace Wisej.Web.Ext.Kendo.Demo.Component
 {
-	public partial class kendoSpreadsheet : Wisej.Web.Ext.Kendo.Demo.Component.TestBase
+	public partial class kendoSpreadsheet : TestBase
 	{
 		public kendoSpreadsheet()
 		{
@@ -16,10 +17,22 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 
 		private void kendoSpreadsheet_Load(object sender, EventArgs e)
 		{
+			var serviceUrl = this.kendoSpreadsheet1.GetServiceURL();
+			this.kendoSpreadsheet1.Options.excel = new
+			{
+				forceProxy = true,
+				proxyURL = $"{serviceUrl}?export=pdf"
+			};
+			this.kendoSpreadsheet1.Options.pdf = new
+			{
+				forceProxy = true,
+				proxyURL = $"{serviceUrl}?export=pdf"
+			};
+
 			using (var fs = new FileStream(Application.MapPath("Data/Spreadsheet/sample.xlsx"), FileMode.Open))
-            {
+			{
 				using (var ms = new MemoryStream())
-                {
+				{
 					fs.CopyTo(ms);
 					ms.Position = 0;
 
@@ -44,31 +57,15 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 
 		private void kendoSpreadsheet1_WebRequest(object sender, WebRequestEventArgs e)
 		{
-			switch (e.Request.QueryString["export"])
-			{
-				case "pdf":
-				case "excel":
-					SaveFile(e.Request.Form["fileName"], e.Request.Form["contentType"], e.Request.Form["base64"]);
-					break;
+			var base64 = e.Request["base64"];
+			var fileName = e.Request["fileName"];
+			var contentType = e.Request["contentType"];
+			var bytes = Convert.FromBase64String(base64);
+			
+			e.Response.BinaryWrite(bytes);
+			e.Response.AppendHeader("Content-Disposition", $"attachment; filename={fileName}");
 
-				default:
-					break;
-
-			}
-
-			e.Response.StatusCode = (int)HttpStatusCode.NotModified;
-		}
-
-		private void SaveFile(string fileName, string contentType, string base64Data)
-		{
-			AlertBox.Show($"Received {fileName} on the server.");
-
-			var data = Convert.FromBase64String(base64Data);
-
-			using (var ms = new MemoryStream(data))
-			{
-				Application.Download(ms, fileName);
-			}
+			e.Response.ContentType = contentType;
 		}
 
 		private void buttonPDF_Click(object sender, EventArgs e)

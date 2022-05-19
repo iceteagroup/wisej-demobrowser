@@ -52,7 +52,7 @@
             // 
             this.linkDemo.Text = "https://demos.telerik.com/kendo-ui/chart-api/index";
             // 
-            // linkAPI
+            // linkApi
             // 
             this.linkApi.Text = "https://docs.telerik.com/kendo-ui/api/javascript/dataviz/ui/chart";
             // 
@@ -74,10 +74,9 @@
             this.kendoChart1.Location = new System.Drawing.Point(8, 8);
             this.kendoChart1.Name = "kendoChart1";
             this.kendoChart1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("kendoChart1.Options"))));
-            this.kendoChart1.Size = new System.Drawing.Size(1073, 542);
+            this.kendoChart1.Size = new System.Drawing.Size(872, 560);
             this.kendoChart1.TabIndex = 0;
             this.kendoChart1.Text = "kendoChart1";
-            this.kendoChart1.WebRequest += new Wisej.Web.WebRequestHandler(this.kendoChart1_WebRequest);
             // 
             // comboBox1
             // 
@@ -157,11 +156,11 @@
             // kendoChart
             // 
             this.Name = "kendoChart";
+            this.Load += new System.EventHandler(this.kendoChart_Load);
             this.panel.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.flowLayoutPanelProperties.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

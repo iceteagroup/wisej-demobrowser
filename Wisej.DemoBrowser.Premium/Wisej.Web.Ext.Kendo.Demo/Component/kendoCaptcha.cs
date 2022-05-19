@@ -15,6 +15,15 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 			this.kendoCaptcha1.Instance.onChange += new WidgetEventHandler(kendoCaptcha1_WidgetEvent);
 		}
 
+		private void kendoCaptcha_Load(object sender, EventArgs e)
+		{
+			var serviceUrl = this.kendoCaptcha1.GetServiceURL();
+
+			this.kendoCaptcha1.Options.handler = $"{serviceUrl}?action=handler";
+			this.kendoCaptcha1.Options.audioHandler = $"{serviceUrl}?action=validationHandler";
+			this.kendoCaptcha1.Options.validationHandler = $"{serviceUrl}?action=validationHandler";
+		}
+
 		/// <summary>
 		/// Process incoming data requests from the client.
 		/// </summary>
@@ -93,17 +102,17 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 			this.kendoCaptcha1.Update();
 		}
 
-		private async void button1_Click(object sender, EventArgs e)
+		private async void buttonValidate_Click(object sender, EventArgs e)
 		{
-			var success = await this.kendoCaptcha1.Validate();
+			var success = await this.kendoCaptcha1.Instance.validateAsync();
 			
 			if (success)
-				AlertBox.Show("Success!", MessageBoxIcon.Information);
+				AlertBox.Show("Validation Succeeded", MessageBoxIcon.Information);
 			else
-				AlertBox.Show("Failed.", MessageBoxIcon.Error);
+				AlertBox.Show("Validation Failed", MessageBoxIcon.Error);
 		}
 
-		private void button2_Click(object sender, EventArgs e)
+		private void buttonReset_Click(object sender, EventArgs e)
 		{
 			this.kendoCaptcha1.Instance.reset();
 		}

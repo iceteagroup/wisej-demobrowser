@@ -175,6 +175,7 @@
             // kendoPivotGrid
             // 
             this.Name = "kendoPivotGrid";
+            this.Load += new System.EventHandler(this.kendoPivotGrid_Load);
             this.panel.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.flowLayoutPanelProperties.ResumeLayout(false);
