@@ -12,10 +12,10 @@ namespace Wisej.Web.Ext.Ignite.Demo.Component
 
 		private void buttonUpdate_Click(object sender, EventArgs e)
 		{
-			this.igBulletGraph1.MinimumValue = (double)this.numericUpDown1.Value;
-			this.igBulletGraph1.MaximumValue = (double)this.numericUpDown2.Value;
-			this.igBulletGraph1.ValueInnerExtent = (double)this.numericUpDown3.Value;
-			this.igBulletGraph1.ValueOuterExtent = (double)this.numericUpDown4.Value;
+			this.igBulletGraph1.Options.minimumValue = (double)this.numericUpDown1.Value;
+			this.igBulletGraph1.Options.maximumValue = (double)this.numericUpDown2.Value;
+			this.igBulletGraph1.Options.valueInnerExtent = (double)this.numericUpDown3.Value;
+			this.igBulletGraph1.Options.valueOuterExtent = (double)this.numericUpDown4.Value;
 
 			this.igBulletGraph1.Update();
 		}

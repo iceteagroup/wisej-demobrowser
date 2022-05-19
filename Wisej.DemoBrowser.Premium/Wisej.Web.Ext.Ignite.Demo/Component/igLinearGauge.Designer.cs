@@ -28,10 +28,10 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-            Wisej.Web.Ext.Ignite.igBase.WidgetFunction widgetFunction6 = new Wisej.Web.Ext.Ignite.igBase.WidgetFunction();
-            Wisej.Web.Ext.Ignite.igBase.WidgetFunction widgetFunction5 = new Wisej.Web.Ext.Ignite.igBase.WidgetFunction();
+            Wisej.Web.Ext.Ignite.igBase.WidgetFunction widgetFunction3 = new Wisej.Web.Ext.Ignite.igBase.WidgetFunction();
+            Wisej.Web.Ext.Ignite.igBase.WidgetFunction widgetFunction2 = new Wisej.Web.Ext.Ignite.igBase.WidgetFunction();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(igLinearGauge));
-            Wisej.Web.Ext.Ignite.igBase.WidgetFunction widgetFunction4 = new Wisej.Web.Ext.Ignite.igBase.WidgetFunction();
+            Wisej.Web.Ext.Ignite.igBase.WidgetFunction widgetFunction1 = new Wisej.Web.Ext.Ignite.igBase.WidgetFunction();
             this.igLinearGauge1 = new Wisej.Web.Ext.Ignite.igLinearGauge();
             this.label4 = new Wisej.Web.Label();
             this.label5 = new Wisej.Web.Label();
@@ -110,10 +110,10 @@
             this.igLinearGauge1.Size = new System.Drawing.Size(843, 60);
             this.igLinearGauge1.TabIndex = 2;
             this.igLinearGauge1.Value = 40D;
-            widgetFunction6.Name = "formatLabel";
-            widgetFunction6.Source = "var evt = arguments[0];\r\nvar ui  = arguments[1];\r\n\r\nui.label += \"%\";";
+            widgetFunction3.Name = "formatLabel";
+            widgetFunction3.Source = "var evt = arguments[0];\r\nvar ui  = arguments[1];\r\n\r\nui.label += \"%\";";
             this.igLinearGauge1.WidgetFunctions = new Wisej.Web.Ext.Ignite.igBase.WidgetFunction[] {
-        widgetFunction6};
+        widgetFunction3};
             // 
             // label4
             // 
@@ -176,10 +176,10 @@
             this.igLinearGauge2.Size = new System.Drawing.Size(843, 60);
             this.igLinearGauge2.TabIndex = 4;
             this.igLinearGauge2.Value = 35D;
-            widgetFunction5.Name = "formatLabel";
-            widgetFunction5.Source = "var evt = arguments[0];\r\nvar ui  = arguments[1];\r\n\r\nui.label += \"%\";";
+            widgetFunction2.Name = "formatLabel";
+            widgetFunction2.Source = "var evt = arguments[0];\r\nvar ui  = arguments[1];\r\n\r\nui.label += \"%\";";
             this.igLinearGauge2.WidgetFunctions = new Wisej.Web.Ext.Ignite.igBase.WidgetFunction[] {
-        widgetFunction5};
+        widgetFunction2};
             // 
             // igLinearGauge3
             // 
@@ -190,10 +190,10 @@
             this.igLinearGauge3.Size = new System.Drawing.Size(843, 60);
             this.igLinearGauge3.TabIndex = 6;
             this.igLinearGauge3.Value = 25D;
-            widgetFunction4.Name = "formatLabel";
-            widgetFunction4.Source = "var evt = arguments[0];\r\nvar ui  = arguments[1];\r\n\r\nui.label += \"%\";";
+            widgetFunction1.Name = "formatLabel";
+            widgetFunction1.Source = "var evt = arguments[0];\r\nvar ui  = arguments[1];\r\n\r\nui.label += \"%\";";
             this.igLinearGauge3.WidgetFunctions = new Wisej.Web.Ext.Ignite.igBase.WidgetFunction[] {
-        widgetFunction4};
+        widgetFunction1};
             // 
             // numericUpDown1
             // 

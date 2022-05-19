@@ -124,7 +124,7 @@
     <value>{"ranges":[{"brush":"#ABD652","name":"bad","startValue":0,"endValue":45},{"brush":"#739F19","name":"acceptable","startValue":45,"endValue":65},{"brush":"#527211","name":"good","startValue":65,"endValue":100}],"value":35,"labelExtent":0.76,"tickStartExtent":0.5,"minorTickEndExtent":0.54,"minorTickStartExtent":0.65,"needleStrokeThickness":2}</value>
   </data>
   <data name="igLinearGauge1.Options" xml:space="preserve">
-    <value>{"ranges":[{"brush":"#FDB881","name":"bad","startValue":0,"endValue":20},{"brush":"#F18B36","name":"acceptable","startValue":20,"endValue":35},{"brush":"#D2660D","name":"good","startValue":35,"endValue":100}],"value":40,"needleStrokeThickness":2,"formatLabel":"formatLabel","isNeedleDraggingEnabled":true}</value>
+    <value>{"ranges":[{"brush":"#FDB881","name":"bad","startValue":0,"endValue":20},{"brush":"#F18B36","name":"acceptable","startValue":20,"endValue":35},{"brush":"#D2660D","name":"good","startValue":35,"endValue":100}],"value":40,"needleStrokeThickness":2,"formatLabel":"()=&gt;formatLabel","isNeedleDraggingEnabled":true}</value>
   </data>
   <metadata name="$this.RulerSnapLines" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>

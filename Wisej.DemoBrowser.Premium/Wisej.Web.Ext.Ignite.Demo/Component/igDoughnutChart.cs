@@ -32,7 +32,7 @@ namespace Wisej.Web.Ext.Ignite.Demo.Component
 
 		private void buttonAddItem_Click(object sender, EventArgs e)
 		{
-			this.igDoughnutChart1.AddItem(new 
+			this.igDoughnutChart1.Instance.addItem(new 
 			{ 
 				CountryName = this.textBox1.Text, 
 				Pop1990 = this.numericUpDown1.Value 

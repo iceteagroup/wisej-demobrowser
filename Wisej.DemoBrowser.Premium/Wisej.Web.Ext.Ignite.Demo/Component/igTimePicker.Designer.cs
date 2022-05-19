@@ -82,7 +82,6 @@
             this.igTimePicker1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"value\":\"15:00\"}")));
             this.igTimePicker1.Size = new System.Drawing.Size(300, 40);
             this.igTimePicker1.TabIndex = 0;
-            this.igTimePicker1.Value = "15:00";
             // 
             // comboBox1
             // 

@@ -87,7 +87,7 @@
             this.comboBox1.Location = new System.Drawing.Point(3, 138);
             this.comboBox1.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(212, 57);
+            this.comboBox1.Size = new System.Drawing.Size(212, 50);
             this.comboBox1.TabIndex = 3;
             // 
             // igCategoryChart1
@@ -109,7 +109,7 @@
             this.buttonLoad.AllowedFileTypes = ".json";
             this.buttonLoad.HideValue = true;
             this.buttonLoad.ImageSource = "icon-file";
-            this.buttonLoad.Location = new System.Drawing.Point(3, 214);
+            this.buttonLoad.Location = new System.Drawing.Point(3, 207);
             this.buttonLoad.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.buttonLoad.Name = "buttonLoad";
             this.buttonLoad.Size = new System.Drawing.Size(42, 42);
@@ -120,7 +120,7 @@
             // 
             this.buttonSave.Display = Wisej.Web.Display.Icon;
             this.buttonSave.ImageSource = "icon-save";
-            this.buttonSave.Location = new System.Drawing.Point(51, 214);
+            this.buttonSave.Location = new System.Drawing.Point(51, 207);
             this.buttonSave.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.buttonSave.Name = "buttonSave";
             this.buttonSave.Size = new System.Drawing.Size(42, 42);

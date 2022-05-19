@@ -87,7 +87,6 @@
             this.igRating1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"value\":3}")));
             this.igRating1.Size = new System.Drawing.Size(204, 40);
             this.igRating1.TabIndex = 1;
-            this.igRating1.Value = 3;
             // 
             // numericUpDown1
             // 

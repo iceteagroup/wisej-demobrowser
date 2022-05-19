@@ -46,7 +46,7 @@ namespace Wisej.Web.Ext.Ignite.Demo.Component
 		private void buttonAdd_Click(object sender, EventArgs e)
 		{
 			var rand = new Random();
-			this.igDataChart1.AddItem(new
+			this.igDataChart1.Instance.addItem(new
 			{
 				CountryName = this.textBoxCountry.Text,
 				Pop1995 = rand.Next(300, 1000),

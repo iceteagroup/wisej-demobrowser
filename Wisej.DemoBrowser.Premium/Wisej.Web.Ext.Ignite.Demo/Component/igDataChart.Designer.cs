@@ -56,7 +56,6 @@
             // panel
             // 
             this.panel.Controls.Add(this.igDataChart1);
-            this.panel.Padding = new Wisej.Web.Padding(8);
             this.panel.TabIndex = 7;
             // 
             // linkDemo
@@ -129,7 +128,8 @@
             // 
             // buttonAdd
             // 
-            this.buttonAdd.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Bottom | Wisej.Web.AnchorStyles.Left)));
+            this.buttonAdd.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Bottom | Wisej.Web.AnchorStyles.Left) 
+            | Wisej.Web.AnchorStyles.Right)));
             this.buttonAdd.Location = new System.Drawing.Point(7, 93);
             this.buttonAdd.Name = "buttonAdd";
             this.buttonAdd.Size = new System.Drawing.Size(199, 35);
@@ -170,6 +170,8 @@
             // 
             // textBoxCountry
             // 
+            this.textBoxCountry.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Left) 
+            | Wisej.Web.AnchorStyles.Right)));
             this.textBoxCountry.LabelText = "Name";
             this.textBoxCountry.Location = new System.Drawing.Point(7, 28);
             this.textBoxCountry.Name = "textBoxCountry";

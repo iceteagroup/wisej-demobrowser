@@ -24,15 +24,13 @@ namespace Wisej.Web.Ext.Ignite.Demo.Component
 
 		private void button1_Click(object sender, EventArgs e)
 		{
-			var item = new
+			this.igMap1.Instance.insertItem(new
 			{
-				Latitude = this.numericUpDown1.Value,
-				Longitude = this.numericUpDown2.Value,
-				Name = textBox1.Text,
-				Country = textBox2.Text
-			};
-
-			this.igMap1.Instance.insertItem(item, 0, "worldCities");
+				latitude = this.numericUpDown1.Value,
+				longitude = this.numericUpDown2.Value,
+				name = textBox1.Text,
+				country = textBox2.Text
+			}, 0, "worldCities");
 		}
 	}
 }

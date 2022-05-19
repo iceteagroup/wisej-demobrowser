@@ -90,7 +90,6 @@
             this.igMap1.Text = "igMap1";
             widgetTemplate1.Id = "tooltipTemplate";
             widgetTemplate1.Template = resources.GetString("widgetTemplate1.Template");
-            widgetTemplate1.Type = "text/x-jquery-tmpl";
             this.igMap1.WidgetTemplates = new Wisej.Web.Ext.Ignite.igBase.WidgetTemplate[] {
         widgetTemplate1};
             // 
@@ -104,7 +103,7 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(212, 57);
             this.textBox2.TabIndex = 1;
-            this.textBox2.Text = "Disney Land";
+            this.textBox2.Text = "Disneyland";
             // 
             // button1
             // 
@@ -166,7 +165,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(212, 57);
             this.textBox1.TabIndex = 0;
-            this.textBox1.Text = "MyCountry";
+            this.textBox1.Text = "Ancient Sanctum";
             // 
             // igMap
             // 

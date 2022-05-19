@@ -15,12 +15,12 @@ namespace Wisej.Web.Ext.Ignite.Demo.Component
 
 		private void button1_Click(object sender, EventArgs e)
 		{
-			this.igVideoPlayer1.Play();
+			this.igVideoPlayer1.Instance.play();
 		}
 
 		private void button2_Click(object sender, EventArgs e)
 		{
-			this.igVideoPlayer1.Pause();
+			this.igVideoPlayer1.Instance.pause();
 		}
 
 		private void igVideoPlayer_WidgetEvent(object sender, WidgetEventArgs e)

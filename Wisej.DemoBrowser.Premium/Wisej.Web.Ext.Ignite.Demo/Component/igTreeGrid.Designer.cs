@@ -103,7 +103,6 @@
             // 
             // igTreeGrid1
             // 
-            this.igTreeGrid1.AutoGenerateColumns = false;
             this.igTreeGrid1.Dock = Wisej.Web.DockStyle.Fill;
             this.igTreeGrid1.Location = new System.Drawing.Point(8, 8);
             this.igTreeGrid1.Name = "igTreeGrid1";

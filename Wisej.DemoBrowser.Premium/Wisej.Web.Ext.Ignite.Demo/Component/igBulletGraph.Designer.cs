@@ -98,14 +98,10 @@
             // 
             this.igBulletGraph1.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Left | Wisej.Web.AnchorStyles.Right)));
             this.igBulletGraph1.Location = new System.Drawing.Point(26, 158);
-            this.igBulletGraph1.MaximumValue = 10000D;
             this.igBulletGraph1.Name = "igBulletGraph1";
             this.igBulletGraph1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("igBulletGraph1.Options"))));
             this.igBulletGraph1.Size = new System.Drawing.Size(836, 72);
             this.igBulletGraph1.TabIndex = 1;
-            this.igBulletGraph1.Value = 6500;
-            this.igBulletGraph1.ValueInnerExtent = 0.5D;
-            this.igBulletGraph1.ValueOuterExtent = 0.65D;
             widgetFunction3.Name = "formatLabel";
             widgetFunction3.Source = "var evt = arguments[0];\r\nvar ui  = arguments[1];\r\n\r\nui.label += \"K\";";
             this.igBulletGraph1.WidgetFunctions = new Wisej.Web.Ext.Ignite.igBase.WidgetFunction[] {
@@ -115,14 +111,10 @@
             // 
             this.igBulletGraph2.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Left | Wisej.Web.AnchorStyles.Right)));
             this.igBulletGraph2.Location = new System.Drawing.Point(26, 263);
-            this.igBulletGraph2.MaximumValue = 10000D;
             this.igBulletGraph2.Name = "igBulletGraph2";
             this.igBulletGraph2.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("igBulletGraph2.Options"))));
             this.igBulletGraph2.Size = new System.Drawing.Size(836, 72);
             this.igBulletGraph2.TabIndex = 3;
-            this.igBulletGraph2.Value = 5000;
-            this.igBulletGraph2.ValueInnerExtent = 0.5D;
-            this.igBulletGraph2.ValueOuterExtent = 0.65D;
             widgetFunction2.Name = "formatLabel";
             widgetFunction2.Source = "var evt = arguments[0];\r\nvar ui  = arguments[1];\r\n\r\nui.label += \"K\";";
             this.igBulletGraph2.WidgetFunctions = new Wisej.Web.Ext.Ignite.igBase.WidgetFunction[] {
@@ -255,14 +247,10 @@
             // 
             this.igBulletGraph3.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Left | Wisej.Web.AnchorStyles.Right)));
             this.igBulletGraph3.Location = new System.Drawing.Point(26, 368);
-            this.igBulletGraph3.MaximumValue = 500D;
             this.igBulletGraph3.Name = "igBulletGraph3";
             this.igBulletGraph3.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("igBulletGraph3.Options"))));
             this.igBulletGraph3.Size = new System.Drawing.Size(836, 72);
             this.igBulletGraph3.TabIndex = 5;
-            this.igBulletGraph3.Value = 350;
-            this.igBulletGraph3.ValueInnerExtent = 0.35D;
-            this.igBulletGraph3.ValueOuterExtent = 0.8D;
             widgetFunction1.Name = "formatLabel";
             widgetFunction1.Source = "var evt = arguments[0];\r\nvar ui  = arguments[1];\r\n\r\nui.label += \"K\";";
             this.igBulletGraph3.WidgetFunctions = new Wisej.Web.Ext.Ignite.igBase.WidgetFunction[] {

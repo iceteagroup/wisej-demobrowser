@@ -98,6 +98,7 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(212, 57);
             this.comboBox1.TabIndex = 4;
+            this.comboBox1.Text = "uniform";
             // 
             // checkBox2
             // 
@@ -198,7 +199,6 @@
             widgetFunction1.Source = "App.MainView.showAlert(arguments[1][\"item\"]);";
             this.igFunnelChart1.WidgetFunctions = new Wisej.Web.Ext.Ignite.igBase.WidgetFunction[] {
         widgetFunction1};
-            this.igFunnelChart1.WidgetTemplates = new Wisej.Web.Ext.Ignite.igBase.WidgetTemplate[0];
             // 
             // igFunnelChart
             // 
