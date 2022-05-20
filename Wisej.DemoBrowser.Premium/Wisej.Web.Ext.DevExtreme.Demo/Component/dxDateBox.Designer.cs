@@ -68,6 +68,8 @@
             this.flowLayoutPanel1.Controls.Add(this.checkBox1);
             this.flowLayoutPanel1.Controls.Add(this.checkBox4);
             this.flowLayoutPanel1.Controls.Add(this.comboBox2);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 35);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 470);
             // 
             // dxDateBox1
             // 

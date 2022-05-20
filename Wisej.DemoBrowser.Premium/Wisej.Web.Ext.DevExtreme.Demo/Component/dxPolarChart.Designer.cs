@@ -28,7 +28,6 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(dxPolarChart));
             this.dxPolarChart1 = new Wisej.Web.Ext.DevExtreme.dxPolarChart();
             this.checkBox1 = new Wisej.Web.CheckBox();
             this.numericUpDown1 = new Wisej.Web.NumericUpDown();
@@ -72,6 +71,8 @@
             this.flowLayoutPanel1.Controls.Add(this.checkBox4);
             this.flowLayoutPanel1.Controls.Add(this.numericUpDown1);
             this.flowLayoutPanel1.Controls.Add(this.buttonExport);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 35);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 470);
             // 
             // dxPolarChart1
             // 
@@ -80,7 +81,6 @@
             | Wisej.Web.AnchorStyles.Right)));
             this.dxPolarChart1.Location = new System.Drawing.Point(34, 17);
             this.dxPolarChart1.Name = "dxPolarChart1";
-            this.dxPolarChart1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("dxPolarChart1.Options"))));
             this.dxPolarChart1.Size = new System.Drawing.Size(821, 525);
             this.dxPolarChart1.TabIndex = 0;
             // 
@@ -111,7 +111,7 @@
             0,
             0});
             this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(212, 57);
+            this.numericUpDown1.Size = new System.Drawing.Size(212, 46);
             this.numericUpDown1.TabIndex = 12;
             this.numericUpDown1.Value = new decimal(new int[] {
             1000,
@@ -151,7 +151,7 @@
             // 
             this.buttonExport.Display = Wisej.Web.Display.Icon;
             this.buttonExport.ImageSource = "resource.wx/Wisej.Ext.MaterialDesign/google-drive-image.svg";
-            this.buttonExport.Location = new System.Drawing.Point(3, 307);
+            this.buttonExport.Location = new System.Drawing.Point(3, 296);
             this.buttonExport.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.buttonExport.Name = "buttonExport";
             this.buttonExport.Size = new System.Drawing.Size(42, 42);
@@ -175,6 +175,7 @@
             // dxPolarChart
             // 
             this.Name = "dxPolarChart";
+            this.Load += new System.EventHandler(this.dxPolarChart_Load);
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);

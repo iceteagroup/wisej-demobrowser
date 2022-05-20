@@ -51,6 +51,91 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
         {
 			this.comboBox1.SelectedIndex = 0;
 
+			this.dxHtmlEditor1.Options = new
+			{
+				toolbar = new
+                {
+					items = new object[]
+                    {
+						"undo",
+						"redo",
+						"separator",
+						new
+                        {
+							formatName = "size",
+							formatValues = new string[]
+                            {
+								"8pt",
+								"10pt",
+								"12pt",
+								"14pt",
+								"18pt",
+								"24pt",
+								"36pt"
+							}
+						},
+						new
+						{
+							formatName = "font",
+							formatValues = new string[]
+							{
+								"Arial",
+								"Courier New",
+								"Georgia",
+								"Impact",
+								"Lucida Console",
+								"Tahoma",
+								"Times New Roman",
+								"Verdana"
+							}
+						},
+						"separator",
+						"bold",
+						"italic",
+						"strike",
+						"underline",
+						"separator",
+						"alignLeft",
+						"alignCenter",
+						"alignRight",
+						"alignJustify",
+						"separator",
+						new
+						{
+							formatName = "header",
+							formatValues = new object[]
+							{
+								false,
+								1,
+								2,
+								3,
+								4,
+								5
+							}
+						},
+						"separator",
+						"orderedList",
+						"bulletList",
+						"separator",
+						"color",
+						"background",
+						"separator",
+						"link",
+						"image",
+						"separator",
+						"clear",
+						"codeBlock",
+						"blockquote"
+					},
+					mediaResizing = new
+                    {
+						enabled = true
+                    },
+					value = "dxHtmlEditor1"
+				}
+			};
+
+			this.dxHtmlEditor1.Update();
 		}
 	}
 }

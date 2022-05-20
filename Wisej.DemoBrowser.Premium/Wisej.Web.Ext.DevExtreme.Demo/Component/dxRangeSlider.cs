@@ -30,5 +30,16 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
 
 			this.dxRangeSlider1.Update();
 		}
-	}
+
+        private void dxRangeSlider_Load(object sender, EventArgs e)
+        {
+			this.dxRangeSlider1.Options = new
+			{
+				 startName = "st",
+				 endName = "csa"
+			};
+
+			this.dxRangeSlider1.Update();
+        }
+    }
 }

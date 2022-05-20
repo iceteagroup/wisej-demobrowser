@@ -28,7 +28,7 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
 		{
 			// Guarantees the existence of Options.itemView.
 			this.dxFileManager1.Options.itemView = new { mode = this.comboBox1.SelectedItem, showFolders = this.checkBox1.Checked };
-			this.dxFileManager1.Options.allowedFileExtensions = checkedListBox1.CheckedItems;
+			this.dxFileManager1.Options.allowedFileExtensions = this.checkedListBox1.CheckedItems;
 			this.dxFileManager1.Options.activeStateEnabled = this.checkBox2.Checked;
 
 			this.dxFileManager1.Update();
@@ -147,7 +147,21 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
 					}
 				}
 			};
-			this.dxFileManager1.Options.fileSystemProvider = data;
+
+			this.dxFileManager1.Options = new
+			{
+				fileSystemProvider = data,
+				name = "fileManager",
+				currentPathcurrentPath = "Documents",
+				permissions = new
+                {
+					create = true,
+					copy = true,
+					move = true,
+					remove = true,
+					rename = true,
+                }
+			};
 
 			this.dxFileManager1.Update();
 

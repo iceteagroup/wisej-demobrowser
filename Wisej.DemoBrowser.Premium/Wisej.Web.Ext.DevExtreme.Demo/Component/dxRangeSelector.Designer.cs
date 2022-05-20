@@ -77,14 +77,14 @@
             this.flowLayoutPanel1.Controls.Add(this.numericUpDown1);
             this.flowLayoutPanel1.Controls.Add(this.numericUpDown2);
             this.flowLayoutPanel1.Controls.Add(this.buttonExport);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 35);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 470);
             // 
             // dxRangeSelector1
             // 
             this.dxRangeSelector1.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Left | Wisej.Web.AnchorStyles.Right)));
             this.dxRangeSelector1.Location = new System.Drawing.Point(15, 211);
             this.dxRangeSelector1.Name = "dxRangeSelector1";
-            this.dxRangeSelector1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"value\":{\"startValue\":\"40000\",\"endValue\":\"80000\",\"length\":\"day\"},\"title\":\"Select" +
-        " House Price Range\"}")));
             this.dxRangeSelector1.Size = new System.Drawing.Size(859, 121);
             this.dxRangeSelector1.TabIndex = 0;
             // 
@@ -121,7 +121,7 @@
             // 
             this.buttonExport.Display = Wisej.Web.Display.Icon;
             this.buttonExport.ImageSource = "resource.wx/Wisej.Ext.MaterialDesign/google-drive-image.svg";
-            this.buttonExport.Location = new System.Drawing.Point(3, 328);
+            this.buttonExport.Location = new System.Drawing.Point(3, 306);
             this.buttonExport.Margin = new Wisej.Web.Padding(3, 12, 3, 3);
             this.buttonExport.Name = "buttonExport";
             this.buttonExport.Size = new System.Drawing.Size(42, 42);
@@ -141,7 +141,7 @@
             0,
             0});
             this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(212, 57);
+            this.numericUpDown1.Size = new System.Drawing.Size(212, 46);
             this.numericUpDown1.TabIndex = 30;
             this.numericUpDown1.Value = new decimal(new int[] {
             40000,
@@ -154,7 +154,7 @@
             this.flowLayoutPanel1.SetFillWeight(this.numericUpDown2, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.numericUpDown2, true);
             this.numericUpDown2.LabelText = "End Value";
-            this.numericUpDown2.Location = new System.Drawing.Point(3, 256);
+            this.numericUpDown2.Location = new System.Drawing.Point(3, 245);
             this.numericUpDown2.Margin = new Wisej.Web.Padding(3, 12, 3, 3);
             this.numericUpDown2.Maximum = new decimal(new int[] {
             100000,
@@ -162,7 +162,7 @@
             0,
             0});
             this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(212, 57);
+            this.numericUpDown2.Size = new System.Drawing.Size(212, 46);
             this.numericUpDown2.TabIndex = 31;
             this.numericUpDown2.Value = new decimal(new int[] {
             80000,

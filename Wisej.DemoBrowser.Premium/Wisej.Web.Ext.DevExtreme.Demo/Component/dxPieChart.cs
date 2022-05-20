@@ -40,6 +40,77 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
 			this.comboBox1.SelectedIndex = 0;
 			this.comboBox3.SelectedIndex = 0;
 
+			this.dxPieChart1.Options = new
+			{
+				palette = "bright",
+				dataSource = new object[]
+                {
+					new
+                    {
+						country = "Russia",
+						area = 12
+                    },
+					new
+					{
+						country = "Canada",
+						area = 7
+					},
+					new
+					{
+						country = "USA",
+						area = 7
+					},
+					new
+					{
+						country = "China",
+						area = 7
+					},
+					new
+					{
+						country = "Brazil",
+						area = 6
+					},
+					new
+					{
+						country = "Auatralia",
+						area = 5
+					},
+					new
+					{
+						country = "India",
+						area = 2
+					},
+					new
+					{
+						country = "Other",
+						area = 55
+					}
+				},
+				series = new object[]
+                {
+					new
+                    {
+						argumentField = "country",
+						valueField = "area",
+						label = new
+                        {
+							visible = true,
+							connector = new
+                            {
+								visible = true,
+								width = 1
+                            }
+                        }
+					}
+                },
+				title = "Area of Countries",
+				export = new
+                {
+					enabled = true
+                }
+			};
+
+			this.dxPieChart1.Update();
 		}
 	}
 }

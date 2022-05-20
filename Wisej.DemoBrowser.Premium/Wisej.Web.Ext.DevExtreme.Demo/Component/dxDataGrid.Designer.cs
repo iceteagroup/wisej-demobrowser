@@ -28,8 +28,8 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(dxDataGrid));
             Wisej.Web.Ext.DevExtreme.dxBase.WidgetFunction widgetFunction1 = new Wisej.Web.Ext.DevExtreme.dxBase.WidgetFunction();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(dxDataGrid));
             this.dxDataGrid1 = new Wisej.Web.Ext.DevExtreme.dxDataGrid();
             this.checkBox2 = new Wisej.Web.CheckBox();
             this.checkBox1 = new Wisej.Web.CheckBox();
@@ -80,6 +80,8 @@
             this.flowLayoutPanel1.Controls.Add(this.checkBox6);
             this.flowLayoutPanel1.Controls.Add(this.buttonLoad);
             this.flowLayoutPanel1.Controls.Add(this.buttonExport);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 35);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 470);
             // 
             // dxDataGrid1
             // 
@@ -88,7 +90,6 @@
             | Wisej.Web.AnchorStyles.Right)));
             this.dxDataGrid1.Location = new System.Drawing.Point(27, 28);
             this.dxDataGrid1.Name = "dxDataGrid1";
-            this.dxDataGrid1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("dxDataGrid1.Options"))));
             this.dxDataGrid1.Size = new System.Drawing.Size(835, 521);
             this.dxDataGrid1.TabIndex = 0;
             widgetFunction1.Name = "discountCellTemplate";

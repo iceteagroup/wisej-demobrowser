@@ -117,15 +117,11 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="dxPieChart1.Options" xml:space="preserve">
-    <value>{"palette":"bright","dataSource":[{"country":"Russia","area":12},{"country":"Canada","area":7},{"country":"USA","area":7},{"country":"China","area":7},{"country":"Brazil","area":6},{"country":"Australia","area":5},{"country":"India","area":2},{"country":"Others","area":55}],"series":[{"argumentField":"country","valueField":"area","label":{"visible":true,"connector":{"visible":true,"width":1}}}],"title":"Area of Countries","export":{"enabled":true}}</value>
-  </data>
   <metadata name="$this.RulerSnapLines" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0
-        dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EHAQAAAAABAAAAAQAAAAQU
-        U3lzdGVtLkRyYXdpbmcuUG9pbnQCAAAABf3///8UU3lzdGVtLkRyYXdpbmcuUG9pbnQCAAAAAXgBeQAA
-        CAgCAAAAAAAAANQAAAAL
+        dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EHAQAAAAABAAAAAAAAAAQU
+        U3lzdGVtLkRyYXdpbmcuUG9pbnQCAAAACw==
 </value>
   </metadata>
 </root>

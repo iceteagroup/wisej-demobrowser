@@ -30,5 +30,30 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
 
 			this.dxGallery1.Update();
 		}
-	}
+
+        private void dxGallery_Load(object sender, EventArgs e)
+        {
+			this.dxGallery1.Options = new
+			{
+				dataSource = new string[]
+                {
+					"Images/Gallery/1.jpg",
+					"Images/Gallery/2.jpg",
+					"Images/Gallery/3.jpg",
+					"Images/Gallery/4.jpg",
+					"Images/Gallery/5.jpg",
+					"Images/Gallery/6.jpg",
+					"Images/Gallery/7.jpg",
+					"Images/Gallery/8.jpg",
+					"Images/Gallery/9.jpg"
+				},
+				stretchImages = true,
+				loop = true,
+				showNavButtons = true,
+				showIndicator = true
+			};
+
+			this.dxGallery1.Update();
+        }
+    }
 }

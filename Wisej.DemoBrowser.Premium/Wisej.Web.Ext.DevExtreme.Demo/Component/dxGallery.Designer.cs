@@ -28,7 +28,6 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(dxGallery));
             this.dxGallery1 = new Wisej.Web.Ext.DevExtreme.dxGallery();
             this.checkBox1 = new Wisej.Web.CheckBox();
             this.checkBox5 = new Wisej.Web.CheckBox();
@@ -66,6 +65,8 @@
             this.flowLayoutPanel1.Controls.Add(this.checkBox5);
             this.flowLayoutPanel1.Controls.Add(this.checkBox6);
             this.flowLayoutPanel1.Controls.Add(this.checkBox7);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 35);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 470);
             // 
             // dxGallery1
             // 
@@ -73,7 +74,6 @@
             this.dxGallery1.BorderStyle = Wisej.Web.BorderStyle.Solid;
             this.dxGallery1.Location = new System.Drawing.Point(166, 103);
             this.dxGallery1.Name = "dxGallery1";
-            this.dxGallery1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("dxGallery1.Options"))));
             this.dxGallery1.Size = new System.Drawing.Size(556, 371);
             this.dxGallery1.TabIndex = 0;
             // 
@@ -139,6 +139,7 @@
             // 
             this.Name = "dxGallery";
             this.Size = new System.Drawing.Size(1299, 722);
+            this.Load += new System.EventHandler(this.dxGallery_Load);
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);

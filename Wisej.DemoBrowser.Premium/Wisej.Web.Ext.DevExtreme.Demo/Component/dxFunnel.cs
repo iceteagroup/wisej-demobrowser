@@ -61,6 +61,76 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
         {
 			this.comboBox1.SelectedIndex = 0;
 			this.comboBox2.SelectedIndex = 0;
+
+			this.dxFunnel1.Options = new
+			{
+				algorithm = "dynamicSlope",
+				sortData = false,
+				argumentField = "argument",
+				valueField = "value",
+				palette = "Soft Pastel",
+				dataSource = new object[]
+				{ 
+					new
+                    {
+						argument = "Downloaded a Trial",
+						value = 6879
+					},
+					new
+					{
+						argument = "Visited the Website",
+						value = 9152
+					},
+					new
+					{
+						argument = "Contacted Support",
+						value = 5121
+					},
+					new
+					{
+						argument = "Renewed",
+						value = 1670
+					},
+					new
+					{
+						argument = "Subscribed",
+						value = 2224
+					}
+				},
+				title = new
+                {
+					text = "Website Conversions",
+					margin = new
+                    {
+						bottom = 30
+                    }
+				},
+				export = new
+                {
+					enabled = true
+                },
+				tooltip = new
+                {
+					enabled = true,
+					format = "fixedPoint"
+				},
+				item = new
+                {
+					border = new
+                    {
+						visible = true
+                    }
+                },
+				label = new
+                {
+					visible = true,
+					position = "inside",
+					backgroundColor = "none",
+					customizeText = "customizeText"
+				}
+			};
+
+			this.dxFunnel1.Update();
 		}
 	}
 }

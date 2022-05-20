@@ -30,5 +30,51 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
 
 			this.dxDropDownButton1.Update();
 		}
-	}
+
+        private void dxDropDownButton_Load(object sender, EventArgs e)
+        {
+			this.dxDropDownButton1.Options = new
+			{
+				items = new object[]
+                {
+					new
+                    {
+						id = 1,
+						name = "Profile",
+						icon = "user"
+                    },
+					new
+					{
+						id = 2,
+						name = "Friends",
+						icon = "group"
+					},
+					new
+					{
+						id = 3,
+						name = "Exit",
+						icon = "runner"
+					},
+					new
+					{
+						id = 4,
+						name = "Messages",
+						icon = "email",
+						badge = "5"
+					}
+
+				},
+				onItemClick = "notify",
+				onButtonClick = "notifyProfile",
+				splitButton = true,
+				icon = "Images//DropDownButton//coach-woman.png",
+				displayExpr = "name",
+				keyExpr = "id",
+				useSelectMode = true,
+				text = "Eleanor Doe"
+			};
+
+			this.dxDropDownButton1.Update();
+        }
+    }
 }

@@ -28,7 +28,6 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(dxTreeMap));
             this.dxTreeMap1 = new Wisej.Web.Ext.DevExtreme.dxTreeMap();
             this.checkBox1 = new Wisej.Web.CheckBox();
             this.comboBox1 = new Wisej.Web.ComboBox();
@@ -65,6 +64,8 @@
             this.flowLayoutPanel1.Controls.Add(this.checkBox1);
             this.flowLayoutPanel1.Controls.Add(this.comboBox1);
             this.flowLayoutPanel1.Controls.Add(this.comboBox2);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 35);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 470);
             // 
             // dxTreeMap1
             // 
@@ -73,7 +74,6 @@
             | Wisej.Web.AnchorStyles.Right)));
             this.dxTreeMap1.Location = new System.Drawing.Point(29, 40);
             this.dxTreeMap1.Name = "dxTreeMap1";
-            this.dxTreeMap1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("dxTreeMap1.Options"))));
             this.dxTreeMap1.Size = new System.Drawing.Size(831, 497);
             this.dxTreeMap1.TabIndex = 0;
             this.dxTreeMap1.WidgetFunctions = new Wisej.Web.Ext.DevExtreme.dxBase.WidgetFunction[0];
@@ -147,6 +147,7 @@
             // dxTreeMap
             // 
             this.Name = "dxTreeMap";
+            this.Load += new System.EventHandler(this.dxTreeMap_Load);
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);

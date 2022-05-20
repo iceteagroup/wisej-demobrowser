@@ -12,9 +12,6 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
 			InitializeComponent();
 
 			this.dxRangeSelector1.Instance.onValueChanged += new WidgetEventHandler(dxRangeSelector1_WidgetEvent);
-
-			this.dxRangeSelector1.Options.scale = new { startValue = 15000, endValue = 150000, minorTickInterval = 500, tickInterval = 15000, label = new { format = "currency" } };
-			this.dxRangeSelector1.Options.slideMarker = new { format = "currency" };
 		}
 
 		private void dxRangeSelector1_WidgetEvent(object sender, WidgetEventArgs e)
@@ -69,6 +66,21 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
         private void dxRangeSelector_Load(object sender, EventArgs e)
         {
 			this.comboBox1.SelectedIndex = 0;
+
+			this.dxRangeSelector1.Options = new
+			{
+				scale = new { startValue = 15000, endValue = 150000, minorTickInterval = 500, tickInterval = 15000, label = new { format = "currency" } },
+				slideMarker = new { format = "currency" },
+				value = new
+                {
+					startValue = "40000",
+					endValue = "80000",
+					length = "day"
+				},
+				title = "Select House Price Range"
+			};
+
+			this.dxRangeSelector1.Update();
 		}
 	}
 }

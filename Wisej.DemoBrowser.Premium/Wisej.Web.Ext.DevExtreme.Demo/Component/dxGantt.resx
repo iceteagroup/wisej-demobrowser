@@ -117,9 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="dxGantt1.Options" xml:space="preserve">
-    <value>{"tasks":{},"dependencies":{},"resources":{},"resourceAssignments":{},"editing":{"enabled":true},"columns":[{"dataField":"title","caption":"Subject","width":300},{"dataField":"start","caption":"Start Date"},{"dataField":"end","caption":"End Date"}],"scaleType":"weeks","taskListWidth":500}</value>
-  </data>
   <metadata name="$this.RulerSnapLines" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0

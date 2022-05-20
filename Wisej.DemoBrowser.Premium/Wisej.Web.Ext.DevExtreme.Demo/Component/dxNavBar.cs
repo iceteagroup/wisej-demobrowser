@@ -113,6 +113,31 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
         private void dxNavBar_Load(object sender, EventArgs e)
         {
 			this.comboBox1.SelectedIndex = 0;
+
+			this.dxNavBar1.Options = new
+			{
+				dataSource = new object[]
+                {
+                    new
+                    {
+						text = "Contacts",
+						icon = "user"
+                    },
+                    new
+                    {
+						text = "Missed",
+						icon = "clock",
+						badge = 3
+                    },
+					new
+                    {
+						text = "Favorites",
+						icon = "favorites"
+                    }
+                }
+			};
+
+			this.dxNavBar1.Update();
 		}
 	}
 }

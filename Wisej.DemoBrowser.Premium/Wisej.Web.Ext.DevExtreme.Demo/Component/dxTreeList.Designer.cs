@@ -28,7 +28,6 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(dxTreeList));
             this.dxTreeList1 = new Wisej.Web.Ext.DevExtreme.dxTreeList();
             this.checkBox1 = new Wisej.Web.CheckBox();
             this.checkBox3 = new Wisej.Web.CheckBox();
@@ -76,6 +75,8 @@
             this.flowLayoutPanel1.Controls.Add(this.checkBox6);
             this.flowLayoutPanel1.Controls.Add(this.checkBox7);
             this.flowLayoutPanel1.Controls.Add(this.comboBox1);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 35);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 470);
             // 
             // dxTreeList1
             // 
@@ -84,7 +85,6 @@
             | Wisej.Web.AnchorStyles.Right)));
             this.dxTreeList1.Location = new System.Drawing.Point(43, 44);
             this.dxTreeList1.Name = "dxTreeList1";
-            this.dxTreeList1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("dxTreeList1.Options"))));
             this.dxTreeList1.Size = new System.Drawing.Size(803, 489);
             this.dxTreeList1.TabIndex = 0;
             // 

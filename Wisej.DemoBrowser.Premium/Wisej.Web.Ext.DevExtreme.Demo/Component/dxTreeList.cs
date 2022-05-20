@@ -39,6 +39,56 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
         private void dxTreeList_Load(object sender, EventArgs e)
         {
 			this.comboBox1.SelectedIndex = 0;
+			this.dxTreeList1.Options = new
+			{
+				autoExpandAll = true,
+				columns = new string[3] { "position", "fullName", "email" },
+				dataSource = new object[]
+				{
+					new 
+					{
+						id =  1,
+						parentId =  0,
+						fullName = "John Heart",
+						position =  "CEO",
+						email =  "jheart@dx-email.com"
+					},
+					new 
+					{
+						id =  2,
+						parentId =  1,
+						fullName = "Samantha Bright",
+						position =  "COO",
+						email =  "samanthab@dx-email.com"
+					},
+					new 
+					{
+						id =  3,
+						parentId =  1,
+						fullName = "Arthur Miller",
+						position =  "CTO",
+						email =  "arthurm@dx-email.com"
+					},
+					new 
+					{
+						id =  4,
+						parentId =  1,
+						fullName = "Robert Reagan",
+						position =  "CMO",
+						email =  "robertr@dx-email.com"
+					},
+					new 
+					{
+						id =  5,
+						parentId =  2,
+						fullName = "Greta Sims",
+						position =  "HR Manager",
+						email =  "gretas@dx-email.com"
+					}
+				},
+				showRowLines = true
+			};
+			this.dxTreeList1.Update();
 		}
 	}
 }

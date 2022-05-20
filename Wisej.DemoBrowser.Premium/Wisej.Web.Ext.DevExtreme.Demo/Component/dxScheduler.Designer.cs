@@ -28,7 +28,6 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(dxScheduler));
             this.dxScheduler1 = new Wisej.Web.Ext.DevExtreme.dxScheduler();
             this.comboBoxCurrentView = new Wisej.Web.ComboBox();
             this.checkBoxAllowAdding = new Wisej.Web.CheckBox();
@@ -70,6 +69,8 @@
             this.flowLayoutPanel1.Controls.Add(this.checkBoxAllowDragging);
             this.flowLayoutPanel1.Controls.Add(this.checkBoxAllowResizing);
             this.flowLayoutPanel1.Controls.Add(this.checkBoxAllowUpdating);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 35);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 470);
             // 
             // dxScheduler1
             // 
@@ -78,7 +79,6 @@
             | Wisej.Web.AnchorStyles.Right)));
             this.dxScheduler1.Location = new System.Drawing.Point(19, 26);
             this.dxScheduler1.Name = "dxScheduler1";
-            this.dxScheduler1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("dxScheduler1.Options"))));
             this.dxScheduler1.Size = new System.Drawing.Size(850, 524);
             this.dxScheduler1.TabIndex = 0;
             // 
@@ -102,7 +102,7 @@
             this.comboBoxCurrentView.LabelText = "Current View";
             this.comboBoxCurrentView.Location = new System.Drawing.Point(3, 3);
             this.comboBoxCurrentView.Name = "comboBoxCurrentView";
-            this.comboBoxCurrentView.Size = new System.Drawing.Size(212, 57);
+            this.comboBoxCurrentView.Size = new System.Drawing.Size(212, 46);
             this.comboBoxCurrentView.TabIndex = 0;
             // 
             // checkBoxAllowAdding
@@ -115,7 +115,7 @@
             this.checkBoxAllowAdding.Checked = true;
             this.flowLayoutPanel1.SetFillWeight(this.checkBoxAllowAdding, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.checkBoxAllowAdding, true);
-            this.checkBoxAllowAdding.Location = new System.Drawing.Point(3, 79);
+            this.checkBoxAllowAdding.Location = new System.Drawing.Point(3, 68);
             this.checkBoxAllowAdding.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBoxAllowAdding.Name = "checkBoxAllowAdding";
             this.checkBoxAllowAdding.Size = new System.Drawing.Size(212, 26);
@@ -132,7 +132,7 @@
             this.checkBoxAllowDeleting.Checked = true;
             this.flowLayoutPanel1.SetFillWeight(this.checkBoxAllowDeleting, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.checkBoxAllowDeleting, true);
-            this.checkBoxAllowDeleting.Location = new System.Drawing.Point(3, 124);
+            this.checkBoxAllowDeleting.Location = new System.Drawing.Point(3, 113);
             this.checkBoxAllowDeleting.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBoxAllowDeleting.Name = "checkBoxAllowDeleting";
             this.checkBoxAllowDeleting.Size = new System.Drawing.Size(212, 26);
@@ -149,7 +149,7 @@
             this.checkBoxAllowDragging.Checked = true;
             this.flowLayoutPanel1.SetFillWeight(this.checkBoxAllowDragging, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.checkBoxAllowDragging, true);
-            this.checkBoxAllowDragging.Location = new System.Drawing.Point(3, 169);
+            this.checkBoxAllowDragging.Location = new System.Drawing.Point(3, 158);
             this.checkBoxAllowDragging.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBoxAllowDragging.Name = "checkBoxAllowDragging";
             this.checkBoxAllowDragging.Size = new System.Drawing.Size(212, 26);
@@ -166,7 +166,7 @@
             this.checkBoxAllowResizing.Checked = true;
             this.flowLayoutPanel1.SetFillWeight(this.checkBoxAllowResizing, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.checkBoxAllowResizing, true);
-            this.checkBoxAllowResizing.Location = new System.Drawing.Point(3, 214);
+            this.checkBoxAllowResizing.Location = new System.Drawing.Point(3, 203);
             this.checkBoxAllowResizing.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBoxAllowResizing.Name = "checkBoxAllowResizing";
             this.checkBoxAllowResizing.Size = new System.Drawing.Size(212, 26);
@@ -183,7 +183,7 @@
             this.checkBoxAllowUpdating.Checked = true;
             this.flowLayoutPanel1.SetFillWeight(this.checkBoxAllowUpdating, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.checkBoxAllowUpdating, true);
-            this.checkBoxAllowUpdating.Location = new System.Drawing.Point(3, 259);
+            this.checkBoxAllowUpdating.Location = new System.Drawing.Point(3, 248);
             this.checkBoxAllowUpdating.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBoxAllowUpdating.Name = "checkBoxAllowUpdating";
             this.checkBoxAllowUpdating.Size = new System.Drawing.Size(212, 26);

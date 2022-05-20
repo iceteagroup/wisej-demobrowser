@@ -117,9 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="dxDataGrid1.Options" xml:space="preserve">
-    <value>{"paging":{"pageSize":10},"pager":{"showPageSizeSelector":true,"allowedPageSizes":[10,25,50,100]},"selection":{"mode":"single"},"hoverStateEnabled":true,"remoteOperations":false,"searchPanel":{"visible":true,"highlightCaseSensitive":true},"groupPanel":{"visible":true},"grouping":{"autoExpandAll":true},"showBorders":true,"columns":[{"dataField":"Product","groupIndex":0},{"dataField":"Amount","caption":"Sale Amount","dataType":"number","format":"currency","alignment":"right"},{"dataField":"Discount","caption":"Discount %","dataType":"number","format":"percent","alignment":"right","allowGrouping":false,"cellTemplate":"discountCellTemplate","cssClass":"bullet"},{"dataField":"SaleDate","dataType":"date"},{"dataField":"Region","dataType":"string"},{"dataField":"Sector","dataType":"string"},{"dataField":"Channel","dataType":"string"},{"dataField":"Customer","dataType":"string","width":150}]}</value>
-  </data>
   <data name="widgetFunction1.Source" xml:space="preserve">
     <value>var container = arguments[0];
 var options   = arguments[1];
@@ -156,9 +153,8 @@ var options   = arguments[1];
   <metadata name="$this.RulerSnapLines" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0
-        dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EHAQAAAAABAAAAAQAAAAQU
-        U3lzdGVtLkRyYXdpbmcuUG9pbnQCAAAABf3///8UU3lzdGVtLkRyYXdpbmcuUG9pbnQCAAAAAXgBeQAA
-        CAgCAAAAAAAAANQAAAAL
+        dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EHAQAAAAABAAAAAAAAAAQU
+        U3lzdGVtLkRyYXdpbmcuUG9pbnQCAAAACw==
 </value>
   </metadata>
 </root>

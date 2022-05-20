@@ -28,7 +28,6 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(dxPivotGrid));
             this.dxPivotGrid1 = new Wisej.Web.Ext.DevExtreme.dxPivotGrid();
             this.checkBox4 = new Wisej.Web.CheckBox();
             this.checkBox7 = new Wisej.Web.CheckBox();
@@ -70,6 +69,8 @@
             this.flowLayoutPanel1.Controls.Add(this.checkBox7);
             this.flowLayoutPanel1.Controls.Add(this.checkBox8);
             this.flowLayoutPanel1.Controls.Add(this.checkBox9);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 35);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 470);
             // 
             // dxPivotGrid1
             // 
@@ -78,7 +79,6 @@
             | Wisej.Web.AnchorStyles.Right)));
             this.dxPivotGrid1.Location = new System.Drawing.Point(23, 24);
             this.dxPivotGrid1.Name = "dxPivotGrid1";
-            this.dxPivotGrid1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("dxPivotGrid1.Options"))));
             this.dxPivotGrid1.Size = new System.Drawing.Size(842, 527);
             this.dxPivotGrid1.TabIndex = 0;
             // 
@@ -142,6 +142,7 @@
             // 
             this.AutoScroll = true;
             this.Name = "dxPivotGrid";
+            this.Load += new System.EventHandler(this.dxPivotGrid_Load);
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);

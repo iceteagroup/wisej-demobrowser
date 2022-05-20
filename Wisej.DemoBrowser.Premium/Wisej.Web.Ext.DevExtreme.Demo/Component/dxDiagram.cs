@@ -37,6 +37,12 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
 			this.comboBox1.SelectedIndex = 0;
 			this.comboBox2.SelectedIndex = 0;
 
+			this.dxDiagram1.Options = new
+			{
+				autoZoomMode = "fitWidth"
+			};
+
+			this.dxDiagram1.Update();
 		}
 	}
 }

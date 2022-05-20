@@ -25,5 +25,18 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
 
 			this.dxLinearGauge1.Update();
 		}
-	}
+
+        private void dxLinearGauge_Load(object sender, EventArgs e)
+        {
+			this.dxLinearGauge1.Options = new
+			{
+				rangeContainer = new
+                {
+					backgroundColor = "#8FBC8F"
+				}
+			};
+
+			this.dxLinearGauge1.Update();
+        }
+    }
 }

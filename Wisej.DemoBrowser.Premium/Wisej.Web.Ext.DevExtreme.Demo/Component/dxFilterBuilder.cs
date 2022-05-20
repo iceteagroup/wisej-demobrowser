@@ -50,5 +50,70 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
 
 			Application.Play(MessageBoxIcon.Information);
 		}
+
+        private void dxFilterBuilder_Load(object sender, EventArgs e)
+        {
+			dynamic data = 
+			this.dxFilterBuilder1.Options = new
+			{
+				fields = new object[]
+                {
+					new
+                    {
+						caption = "ID",
+						width = 50,
+						dataField = "Product_ID",
+						dataType = "number"
+                    },
+                    new
+                    {
+						dataField = "Product_Name",
+						dataType = "string"
+                    },
+                    new
+                    {
+						caption = "Cost",
+						dataField = "Product_Cost",
+						dataType = "number",
+						format = "currency"
+                    },
+					new
+					{
+						caption = "Sale Price",
+						dataField = "Product_Sale_Price",
+						dataType = "number",
+						format = "currency"
+					},
+					new
+					{
+						caption = "Retail Price",
+						dataField = "Product_Retail_Price",
+						dataType = "number",
+						format = "currency"
+					},
+					new
+					{
+						caption = "Inventory",
+						dataField = "Product_Current_Inventory",
+						dataType = "number",
+					},
+					
+				},
+				value = new object[]
+				{
+					new object[]{ "Product_Current_Inventory", "<>", 0 },
+					"or",
+					new object[]{ 
+						new object[]{ "Product_Name", "contains", "HD" },
+						"and",
+						new object[]{ "Product_Cost", "<", 200 },
+					},
+
+				},
+				groupOperations = new string[] {"and","or","notAnd","notOr"}
+			};
+
+			this.dxFilterBuilder1.Update();
+        }
     }
 }

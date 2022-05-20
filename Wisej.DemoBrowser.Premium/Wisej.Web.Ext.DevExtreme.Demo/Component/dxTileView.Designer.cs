@@ -28,8 +28,8 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(dxTileView));
             Wisej.Web.Ext.DevExtreme.dxBase.WidgetEventHandler widgetEventHandler1 = new Wisej.Web.Ext.DevExtreme.dxBase.WidgetEventHandler();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(dxTileView));
             this.dxTileView1 = new Wisej.Web.Ext.DevExtreme.dxTileView();
             this.numericUpDownItemMargin = new Wisej.Web.NumericUpDown();
             this.numericUpDownBaseItemHeight = new Wisej.Web.NumericUpDown();
@@ -68,6 +68,8 @@
             this.flowLayoutPanel1.Controls.Add(this.numericUpDownItemMargin);
             this.flowLayoutPanel1.Controls.Add(this.numericUpDownBaseItemHeight);
             this.flowLayoutPanel1.Controls.Add(this.numericUpDownBaseItemWidth);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 35);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 470);
             // 
             // dxTileView1
             // 
@@ -75,7 +77,6 @@
             this.dxTileView1.CssStyle = ".img { width: 500px; }";
             this.dxTileView1.Location = new System.Drawing.Point(120, 128);
             this.dxTileView1.Name = "dxTileView1";
-            this.dxTileView1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("dxTileView1.Options"))));
             this.dxTileView1.Size = new System.Drawing.Size(649, 320);
             this.dxTileView1.TabIndex = 0;
             widgetEventHandler1.Name = "itemTemplate";
@@ -96,7 +97,7 @@
             0,
             0});
             this.numericUpDownItemMargin.Name = "numericUpDownItemMargin";
-            this.numericUpDownItemMargin.Size = new System.Drawing.Size(212, 57);
+            this.numericUpDownItemMargin.Size = new System.Drawing.Size(212, 46);
             this.numericUpDownItemMargin.TabIndex = 30;
             this.numericUpDownItemMargin.Value = new decimal(new int[] {
             8,
@@ -109,10 +110,10 @@
             this.flowLayoutPanel1.SetFillWeight(this.numericUpDownBaseItemHeight, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.numericUpDownBaseItemHeight, true);
             this.numericUpDownBaseItemHeight.LabelText = "Base Item Height";
-            this.numericUpDownBaseItemHeight.Location = new System.Drawing.Point(3, 92);
+            this.numericUpDownBaseItemHeight.Location = new System.Drawing.Point(3, 81);
             this.numericUpDownBaseItemHeight.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.numericUpDownBaseItemHeight.Name = "numericUpDownBaseItemHeight";
-            this.numericUpDownBaseItemHeight.Size = new System.Drawing.Size(212, 57);
+            this.numericUpDownBaseItemHeight.Size = new System.Drawing.Size(212, 46);
             this.numericUpDownBaseItemHeight.TabIndex = 32;
             this.numericUpDownBaseItemHeight.Value = new decimal(new int[] {
             75,
@@ -125,10 +126,10 @@
             this.flowLayoutPanel1.SetFillWeight(this.numericUpDownBaseItemWidth, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.numericUpDownBaseItemWidth, true);
             this.numericUpDownBaseItemWidth.LabelText = "Base Item Width";
-            this.numericUpDownBaseItemWidth.Location = new System.Drawing.Point(3, 168);
+            this.numericUpDownBaseItemWidth.Location = new System.Drawing.Point(3, 146);
             this.numericUpDownBaseItemWidth.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.numericUpDownBaseItemWidth.Name = "numericUpDownBaseItemWidth";
-            this.numericUpDownBaseItemWidth.Size = new System.Drawing.Size(212, 57);
+            this.numericUpDownBaseItemWidth.Size = new System.Drawing.Size(212, 46);
             this.numericUpDownBaseItemWidth.TabIndex = 33;
             this.numericUpDownBaseItemWidth.Value = new decimal(new int[] {
             75,
@@ -140,6 +141,7 @@
             // 
             this.Name = "dxTileView";
             this.Size = new System.Drawing.Size(1299, 726);
+            this.Load += new System.EventHandler(this.dxTileView_Load);
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);

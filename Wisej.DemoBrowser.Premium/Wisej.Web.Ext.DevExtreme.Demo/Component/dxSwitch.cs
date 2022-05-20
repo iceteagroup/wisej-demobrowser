@@ -28,5 +28,17 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
 
 			this.dxSwitch1.Update();
         }
+
+        private void dxSwitch_Load(object sender, EventArgs e)
+        {
+			this.dxSwitch1.Options = new
+			{
+				switchedOnText = "on",
+				switchedOffText = "off",
+				isValid = false
+			};
+
+			this.dxSwitch1.Update();
+        }
     }
 }

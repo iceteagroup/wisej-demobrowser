@@ -10,10 +10,7 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
 		{
 			InitializeComponent();
 
-			this.dxGantt1.Options.tasks.dataSource = Wisej.Core.WisejSerializer.Parse(File.ReadAllText(Application.MapPath("Data/Gantt/tasks.json")));
-			this.dxGantt1.Options.dependencies.dataSource = Wisej.Core.WisejSerializer.Parse(File.ReadAllText(Application.MapPath("Data/Gantt/dependencies.json")));
-			this.dxGantt1.Options.resources.dataSource = Wisej.Core.WisejSerializer.Parse(File.ReadAllText(Application.MapPath("Data/Gantt/resources.json")));
-			this.dxGantt1.Options.resourceAssignments.dataSource = Wisej.Core.WisejSerializer.Parse(File.ReadAllText(Application.MapPath("Data/Gantt/resourceAssignments.json")));
+			
 
 			this.dxGantt1.Instance.onSelectionChanged += new WidgetEventHandler(dxGantt1_WidgetEvent);
 		}
@@ -41,6 +38,50 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
 
         private void dxGantt_Load(object sender, EventArgs e)
         {
+			
+			this.dxGantt1.Options = new
+			{
+				editing = new
+                {
+					enabled = true
+                },
+				columns = new object[]
+                {
+                    new
+                    {
+						dataField = "title",
+						caption = "Subject",
+						width = 300
+					},
+					new 
+					{
+						dataField = "start",
+						caption = "Start Date"
+					},
+					new
+					{
+						dataField = "end",
+						caption = "End Date"
+					}
+				},
+				scaleType = "weeks",
+				taskListWidth = 500,
+				tasks = new {},
+				dependencies = new {},
+				resources = new {},
+				resourceAssignments = new {}
+			};
+
+
+
+			this.dxGantt1.Update();
+
+			this.dxGantt1.Options.tasks.dataSource = Wisej.Core.WisejSerializer.Parse(File.ReadAllText(Application.MapPath("Data/Gantt/tasks.json")));
+			this.dxGantt1.Options.dependencies.dataSource = Wisej.Core.WisejSerializer.Parse(File.ReadAllText(Application.MapPath("Data/Gantt/dependencies.json")));
+			this.dxGantt1.Options.resources.dataSource = Wisej.Core.WisejSerializer.Parse(File.ReadAllText(Application.MapPath("Data/Gantt/resources.json")));
+			this.dxGantt1.Options.resourceAssignments.dataSource = Wisej.Core.WisejSerializer.Parse(File.ReadAllText(Application.MapPath("Data/Gantt/resourceAssignments.json")));
+
+
 			this.comboBox1.SelectedIndex = 0;
 			this.comboBox2.SelectedIndex = 4;
 

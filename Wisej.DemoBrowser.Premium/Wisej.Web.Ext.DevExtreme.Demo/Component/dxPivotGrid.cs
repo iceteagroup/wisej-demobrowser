@@ -9,13 +9,6 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
 		public dxPivotGrid()
 		{
 			InitializeComponent();
-
-			this.dxPivotGrid1.Options.dataSource = new
-			{
-				fields = this.dxPivotGrid1.Options.dataSource.fields,
-				store = JSON.Parse(File.ReadAllText(Application.MapPath("Data/PivotGrid/sales.json")))
-			};
-			this.dxPivotGrid1.Update();
 		}
 
 		private void dxPivotGrid1_WidgetEvent(object sender, WidgetEventArgs e)
@@ -36,5 +29,49 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
 
 			this.dxPivotGrid1.Update();
 		}
-	}
+
+        private void dxPivotGrid_Load(object sender, EventArgs e)
+        {
+			this.dxPivotGrid1.Options.dataSource = new
+			{
+				fields = new object[]
+                {
+                    new
+                    {
+						caption = "Region",
+						width = 120,
+						dataField = "region",
+						area = "row"
+					},
+					new
+					{
+						caption = "City",
+						width = 150,
+						dataField = "city",
+						area = "row"
+					},
+					new
+					{
+						dataField = "date",
+						dataType = "date",
+						area = "column"
+					},
+					new
+					{
+						caption = "Sales",
+						dataField = "amount",
+						dataType = "number",
+						summaryType = "sum",
+						format = "currency",
+						area = "data"
+					},
+
+				},
+				store = JSON.Parse(File.ReadAllText(Application.MapPath("Data/PivotGrid/sales.json")))
+			};
+			this.dxPivotGrid1.Update();
+
+			this.dxPivotGrid1.Update();
+        }
+    }
 }

@@ -33,6 +33,67 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
         private void dxLookup_Load(object sender, EventArgs e)
         {
 			this.comboBox1.SelectedIndex = 0;
+
+			this.dxLookup1.Options = new
+			{
+				stylingMode = "outlined",
+				items = new object[]
+                {
+                    "John Heart",
+                    "Samantha Bright",
+                    "Arthur Miller",
+                    "Robert Reagan",
+                    "Greta Sims",
+                    "Brett Wade",
+                    "Sandra Johnson",
+                    "Ed Holmes",
+                    "Barb Banks",
+                    "Kevin Carter",
+                    "Cindy Stanwick",
+                    "Sammy Hill",
+                    "Davey Jones",
+                    "Victor Norris",
+                    "Mary Stern",
+                    "Robin Cosworth",
+                    "Kelly Rodriguez",
+                    "James Anderson",
+                    "Antony Remmen",
+                    "Olivia Peyton",
+                    "Taylor Riley",
+                    "Amelia Harper",
+                    "Wally Hobbs",
+                    "Brad Jameson",
+                    "Karen Goodson",
+                    "Marcus Orbison",
+                    "Sandy Bright",
+                    "Morgan Kennedy",
+                    "Violet Bailey",
+                    "Ken Samuelson",
+                    "Nat Maguiree",
+                    "Bart Arnaz",
+                    "Leah Simpson",
+                    "Arnie Schwartz",
+                    "Billy Zimmer",
+                    "Samantha Piper",
+                    "Maggie Boxter",
+                    "Terry Bradley",
+                    "Gabe Jones",
+                    "Lucy Ball",
+                    "Jim Packard",
+                    "Hannah Brookly",
+                    "Harv Mudd",
+                    "Clark Morgan",
+                    "Todd Hoffman",
+                    "Jackie Garmin",
+                    "Lincoln Bartlett",
+                    "Brad Farkus",
+                    "Jenny Hobbs",
+                    "Dallas Lou",
+                    "Stu Pizaro"
+                }
+			};
+
+			this.dxLookup1.Update();
 		}
 	}
 }

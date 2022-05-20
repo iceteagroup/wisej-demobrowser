@@ -25,8 +25,14 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
 		private void buttonUpdate_Click(object sender, EventArgs e)
 		{
 			this.dxCircularGauge1.Instance.value((int)this.numericUpDown1.Value);
-			this.dxCircularGauge1.Options.scale.label.visible = this.checkBox1.Checked;
-			this.dxCircularGauge1.Options.scale.tickInterval = this.trackBar1.Value;
+			this.dxCircularGauge1.Options.scale = new
+            {
+				label = new
+                {
+					visible = this.checkBox1.Checked
+				},
+				tickInterval = this.trackBar1.Value
+			};
 			this.dxCircularGauge1.Options.geometry = new {
 				startAngle = this.numericUpDown2.Value,
 				endAngle = this.numericUpDown3.Value
@@ -37,9 +43,49 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
 
 		private void dxCircularGauge_Load(object sender, EventArgs e)
 		{
-			this.dxCircularGauge1.Options.containerBackgroundColor = "blue";
+		
+			this.dxCircularGauge1.Options = new
+			{
+				containerBackgroundColor = "blue",
+				scale = new
+				{
+					startValue = 50,
+					endValue = 150,
+					tickInterval = 10,
+					label = new
+					{
+						useRangeColors = true
+					}
+				},
+				rangeContainer = new
+                {
+					ranges = buildRanges(),
+					palette = "pastel"
+                },
+				title = new
+                {
+					text = "Temperature of the Liquid in the Boiler",
+					font = new
+                    {
+						size = 28
+                    }
+				},
+				export = new
+                {
+					enabled = true
+                },
+				value = 100,
+				tooltip = new
+                {
+					enabled = true,
+					font = new
+                    {
+						color = "#DCD0FF",
+						size = 40
+                    }
+                }
+			};
 
-			this.dxCircularGauge1.Options.rangeContainer.ranges = buildRanges();
 			this.dxCircularGauge1.Update();
 		}
 

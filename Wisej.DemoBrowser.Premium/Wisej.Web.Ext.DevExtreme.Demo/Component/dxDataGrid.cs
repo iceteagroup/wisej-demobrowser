@@ -38,6 +38,94 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
 			=> this.dxDataGrid1.Instance.exportToExcel(false);
 
 		private void dxDataGrid_Load(object sender, EventArgs e)
-			=> this.dxDataGrid1.Options.dataSource = JSON.Parse(File.ReadAllText(Application.MapPath("Data/DataGrid/data.json")));
+		{
+
+			this.dxDataGrid1.Options = new
+			{
+				paging = new
+                {
+					pageSize = 10
+                },
+				pager = new
+				{
+					showPageSizeSelector = true,
+					allowedPageSizes = new int[] {10,25,50,100}
+				},
+				selection = new
+                {
+					mode = "single"
+                },
+				hoverStateEnabled = true,
+				remoteOperations = false,
+				searchPanel = new
+                {
+					visible = true,
+					highlightCaseSensitive = true
+				},
+				groupPanel = new
+                {
+					visible = true
+                },
+				grouping = new
+                {
+					autoExpandAll = true
+				},
+				showBorders = true,
+				columns = new object[] {
+                    new
+                    {
+						dataField = "Product",
+						groupIndex = 0
+                    },
+                    new
+                    {
+						dataField = "Amount",
+						caption = "Sale Amount",
+						dataType = "number",
+						format = "currency",
+						alignment = "right"
+					},
+					new
+					{
+						dataField = "Discount",
+						caption = "Discount %",
+						dataType = "number",
+						format = "percent",
+						alignment = "right",
+						allowGrouping = true,
+						cellTemplate = "discountCellTemplate",
+						cssClass = "bullet"
+					},
+                    new
+                    {
+						dataField = "SaleDate",
+						dataType = "date"
+                    },
+					new
+					{
+						dataField = "Region",
+						dataType = "string"
+					},
+					new
+					{
+						dataField = "Sector",
+						dataType = "string"
+					},
+					new
+					{
+						dataField = "Channel",
+						dataType = "string"
+					},
+					new
+					{
+						dataField = "Customer",
+						dataType = "string",
+						width = 150
+					}
+				},
+				dataSource = JSON.Parse(File.ReadAllText(Application.MapPath("Data/DataGrid/data.json")))
+			};
+			this.dxDataGrid1.Update();
+		}
 	}
 }

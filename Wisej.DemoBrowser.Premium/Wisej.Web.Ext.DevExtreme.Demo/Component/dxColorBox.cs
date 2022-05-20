@@ -44,6 +44,15 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
         private void dxColorBox_Load(object sender, EventArgs e)
         {
 			this.comboBox1.SelectedIndex = 0;
+
+			this.dxColorBox1.Options = new
+			{
+				value = "#f05b41",
+				editAlphaChannel = true,
+				stylingMode = "outlined"
+			};
+
+			this.dxColorBox1.Update();
         }
     }
 }

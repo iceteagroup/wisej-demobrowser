@@ -28,7 +28,6 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(dxFilterBuilder));
             this.dxFilterBuilder1 = new Wisej.Web.Ext.DevExtreme.dxFilterBuilder();
             this.buttonGetFilterExpression = new Wisej.Web.Button();
             this.tagTextBoxGroupOperation = new Wisej.Web.TagTextBox();
@@ -64,13 +63,14 @@
             this.flowLayoutPanel1.Controls.Add(this.tagTextBoxGroupOperation);
             this.flowLayoutPanel1.Controls.Add(this.label4);
             this.flowLayoutPanel1.Controls.Add(this.buttonGetFilterExpression);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 35);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 470);
             // 
             // dxFilterBuilder1
             // 
             this.dxFilterBuilder1.Anchor = Wisej.Web.AnchorStyles.None;
             this.dxFilterBuilder1.Location = new System.Drawing.Point(140, 103);
             this.dxFilterBuilder1.Name = "dxFilterBuilder1";
-            this.dxFilterBuilder1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("dxFilterBuilder1.Options"))));
             this.dxFilterBuilder1.Size = new System.Drawing.Size(608, 370);
             this.dxFilterBuilder1.TabIndex = 0;
             // 
@@ -78,7 +78,7 @@
             // 
             this.buttonGetFilterExpression.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Left) 
             | Wisej.Web.AnchorStyles.Right)));
-            this.buttonGetFilterExpression.Location = new System.Drawing.Point(3, 183);
+            this.buttonGetFilterExpression.Location = new System.Drawing.Point(3, 174);
             this.buttonGetFilterExpression.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.buttonGetFilterExpression.Name = "buttonGetFilterExpression";
             this.buttonGetFilterExpression.Size = new System.Drawing.Size(212, 35);
@@ -94,14 +94,14 @@
             this.tagTextBoxGroupOperation.Location = new System.Drawing.Point(3, 16);
             this.tagTextBoxGroupOperation.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.tagTextBoxGroupOperation.Name = "tagTextBoxGroupOperation";
-            this.tagTextBoxGroupOperation.Size = new System.Drawing.Size(212, 55);
+            this.tagTextBoxGroupOperation.Size = new System.Drawing.Size(212, 46);
             this.tagTextBoxGroupOperation.TabIndex = 17;
             // 
             // label4
             // 
             this.label4.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Left) 
             | Wisej.Web.AnchorStyles.Right)));
-            this.label4.Location = new System.Drawing.Point(3, 90);
+            this.label4.Location = new System.Drawing.Point(3, 81);
             this.label4.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(212, 74);
@@ -111,6 +111,7 @@
             // dxFilterBuilder
             // 
             this.Name = "dxFilterBuilder";
+            this.Load += new System.EventHandler(this.dxFilterBuilder_Load);
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);

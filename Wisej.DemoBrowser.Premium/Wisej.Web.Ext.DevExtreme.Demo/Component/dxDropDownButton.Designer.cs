@@ -28,7 +28,6 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(dxDropDownButton));
             Wisej.Web.Ext.DevExtreme.dxBase.WidgetFunction widgetFunction1 = new Wisej.Web.Ext.DevExtreme.dxBase.WidgetFunction();
             Wisej.Web.Ext.DevExtreme.dxBase.WidgetFunction widgetFunction2 = new Wisej.Web.Ext.DevExtreme.dxBase.WidgetFunction();
             this.dxDropDownButton1 = new Wisej.Web.Ext.DevExtreme.dxDropDownButton();
@@ -77,13 +76,14 @@
             this.flowLayoutPanel1.Controls.Add(this.checkBox3);
             this.flowLayoutPanel1.Controls.Add(this.checkBox4);
             this.flowLayoutPanel1.Controls.Add(this.checkBox5);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 35);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 470);
             // 
             // dxDropDownButton1
             // 
             this.dxDropDownButton1.Anchor = Wisej.Web.AnchorStyles.None;
             this.dxDropDownButton1.Location = new System.Drawing.Point(269, 268);
             this.dxDropDownButton1.Name = "dxDropDownButton1";
-            this.dxDropDownButton1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("dxDropDownButton1.Options"))));
             this.dxDropDownButton1.Size = new System.Drawing.Size(350, 40);
             this.dxDropDownButton1.TabIndex = 0;
             widgetFunction1.Name = "notify";
@@ -172,6 +172,7 @@
             // dxDropDownButton
             // 
             this.Name = "dxDropDownButton";
+            this.Load += new System.EventHandler(this.dxDropDownButton_Load);
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);

@@ -37,6 +37,152 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
         {
 			this.comboBox1.SelectedIndex = 0;
 			this.comboBox2.SelectedIndex = 0;
+
+			this.dxMenu1.Options = new
+			{
+				hideSubmenuOnMouseLeave =false,
+				displayExpr = "name",
+				dataSource = new object[]
+                {
+					new
+                    {
+						id = 1,
+						name = "Video Players",
+						items = new object[]
+                        {
+							new
+                            {
+								id = "1_1",
+								name = "HD Video Player",
+								price = 220,
+								icon = "Images/Menu/1.png",
+							},
+							new
+							{
+								id = "1_2",
+								name = "SuperHD Video Player",
+								price = 270,
+								icon = "Images/Menu/2.png",
+							}
+						}
+                    },
+					new
+                    {
+						id = 2,
+						name = "Televisions",
+						items = new object[]
+						{
+							new
+							{
+								id = "2_1",
+								name = "SuperLCD 42",
+								price = 1200,
+								icon = "Images/Menu/7.png",
+							},
+							new
+							{
+								id = "2_2",
+								name = "SuperLCD 42",
+								price = 1450,
+								icon = "Images/Menu/2.png",
+							},
+							new
+							{
+								id = "2_3",
+								name = "SuperLCD 50",
+								price = 1600,
+								icon = "Images/Menu/4.png",
+							},
+							new
+							{
+								id = "2_4",
+								name = "SuperLCD 55 (Not availaable)",
+								price = 1350,
+								icon = "Images/Menu/6.png",
+								diabled = true
+							},
+							new
+							{
+								id = "2_5",
+								name = "SuperLCD 70",
+								price = 4000,
+								icon = "Images/Menu/9.png",
+							}
+						}
+					},
+					new
+					{
+						id = 3,
+						name = "Monitors",
+						items = new object[]
+						{
+							new
+							{
+								id = "3_1",
+								name = "19\"",
+								items = new object[]
+                                {
+									new
+									{
+										id = "3_1_1",
+										name = "DesktopLCD 19",
+										price = 160,
+										icon = "Images/Menu/10.png",
+									}
+								}
+
+							},
+							new
+							{
+								id = "3_2",
+								name = "21\"",
+								items = new object[]
+								{
+									new
+									{
+										id = "3_2_1",
+										name = "DesktopLCD 21",
+										price = 170,
+										icon = "Images/Menu/12.png",
+									},
+									new
+									{
+										id = "3_2_2",
+										name = "DesktopLCD 21",
+										price = 175,
+										icon = "Images/Menu/13.png",
+									}
+								}
+
+							},
+						}
+					},
+					new
+					{
+						id = 4,
+						name = "Projectors",
+						items = new object[]
+						{
+							new
+							{
+								id = "4_1",
+								name = "Projector Plus",
+								price = 550,
+								icon = "Images/Menu/14.png",
+							},
+							new
+							{
+								id = "4_2",
+								name = "Projector PlusHD",
+								price = 750,
+								icon = "Images/Menu/2.png",
+							}
+						}
+					},
+				}
+			};
+
+			this.dxMenu1.Update();
 		}
 	}
 }

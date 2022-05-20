@@ -71,6 +71,82 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
 			this.comboBox1.SelectedIndex = 0;
 			this.comboBox2.SelectedIndex = 0;
 
+			this.dxSankey1.Options = new
+			{
+				dataSource = new object[]
+                {
+                    new
+                    {
+						source = "Spain",
+						target = "United States of America",
+						weight = 2
+					},
+					new
+					{
+						source = "Germany",
+						target = "United States of America",
+						weight = 8
+					},
+					new
+					{
+						source = "France",
+						target = "United States of America",
+						weight = 4
+					},
+					new
+					{
+						source = "Germany",
+						target = "Great Britain",
+						weight = 2
+					},
+					new
+					{
+						source = "France",
+						target = "Great Britain",
+						weight = 4
+					},
+					new
+					{
+						source = "United States of America",
+						target = "Australia",
+						weight = 6
+					},
+					new
+					{
+						source = "United States of America",
+						target = "New Zealand",
+						weight = 5
+					},
+					new
+					{
+						source = "United States of America",
+						target = "Japan",
+						weight = 3
+					},
+					new
+					{
+						source = "Great Britain",
+						target = "New Zealand",
+						weight = 4
+					},
+					new
+					{
+						source = "Great Britain",
+						target = "Japan",
+						weight = 1
+					}
+				},
+				sourceField = "source",
+				targetField = "target",
+				weightField = "weight",
+				title = "Commodity Turnover in 2017",
+				link = new
+                {
+					colorMode = "gradient"
+                }
+			};
+
+			this.dxSankey1.Update();
 		}
 	}
 }

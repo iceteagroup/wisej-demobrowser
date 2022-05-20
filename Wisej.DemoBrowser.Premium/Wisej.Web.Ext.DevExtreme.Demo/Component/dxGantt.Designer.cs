@@ -28,7 +28,6 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(dxGantt));
             this.dxGantt1 = new Wisej.Web.Ext.DevExtreme.dxGantt();
             this.comboBox1 = new Wisej.Web.ComboBox();
             this.comboBox2 = new Wisej.Web.ComboBox();
@@ -70,6 +69,8 @@
             this.flowLayoutPanel1.Controls.Add(this.comboBox1);
             this.flowLayoutPanel1.Controls.Add(this.comboBox2);
             this.flowLayoutPanel1.Controls.Add(this.buttonLoad);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 35);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 470);
             // 
             // dxGantt1
             // 
@@ -78,7 +79,6 @@
             | Wisej.Web.AnchorStyles.Right)));
             this.dxGantt1.Location = new System.Drawing.Point(24, 38);
             this.dxGantt1.Name = "dxGantt1";
-            this.dxGantt1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("dxGantt1.Options"))));
             this.dxGantt1.Size = new System.Drawing.Size(840, 500);
             this.dxGantt1.TabIndex = 0;
             // 

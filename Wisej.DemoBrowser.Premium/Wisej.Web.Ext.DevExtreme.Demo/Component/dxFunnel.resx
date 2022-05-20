@@ -117,9 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="dxFunnel1.Options" xml:space="preserve">
-    <value>{"algorithm":"dynamicSlope","dataSource":[{"argument":"Downloaded a Trial","value":6879},{"argument":"Visited the Website","value":9152},{"argument":"Contacted Support","value":5121},{"argument":"Renewed","value":1670},{"argument":"Subscribed","value":2224}],"sortData":false,"title":{"text":"Website Conversions","margin":{"bottom":30}},"argumentField":"argument","valueField":"value","palette":"Soft Pastel","export":{"enabled":true},"tooltip":{"enabled":true,"format":"fixedPoint"},"item":{"border":{"visible":true}},"label":{"visible":true,"position":"inside","backgroundColor":"none","customizeText":"customizeText"}}</value>
-  </data>
   <metadata name="$this.RulerSnapLines" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0

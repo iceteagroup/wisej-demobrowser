@@ -184,8 +184,6 @@
             this.dxCalendar1.Location = new System.Drawing.Point(256, 118);
             this.dxCalendar1.MaximumSize = new System.Drawing.Size(581, 467);
             this.dxCalendar1.Name = "dxCalendar1";
-            this.dxCalendar1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"activeStateEnabled\":false,\"value\":\"2020-01-01\",\"firstDayOfWeek\":0,\"zoomLevel\":\"" +
-        "month\"}")));
             this.dxCalendar1.Size = new System.Drawing.Size(377, 341);
             this.dxCalendar1.TabIndex = 0;
             // 

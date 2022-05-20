@@ -32,7 +32,15 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
 
         private void dxDateBox_Load(object sender, EventArgs e)
         {
-			this.comboBox2.SelectedIndex = 0; 
+			this.comboBox2.SelectedIndex = 0;
+
+			this.dxDateBox1.Options = new
+			{
+				type = "date",
+				stylingMode = "outlined"
+			};
+
+			this.dxDateBox1.Update();
         }
     }
 }

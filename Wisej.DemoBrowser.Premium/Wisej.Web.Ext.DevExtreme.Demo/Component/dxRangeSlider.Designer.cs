@@ -67,13 +67,14 @@
             this.flowLayoutPanel1.Controls.Add(this.checkBox2);
             this.flowLayoutPanel1.Controls.Add(this.numericUpDown1);
             this.flowLayoutPanel1.Controls.Add(this.numericUpDown2);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 35);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 470);
             // 
             // dxRangeSlider1
             // 
             this.dxRangeSlider1.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Left | Wisej.Web.AnchorStyles.Right)));
             this.dxRangeSlider1.Location = new System.Drawing.Point(164, 259);
             this.dxRangeSlider1.Name = "dxRangeSlider1";
-            this.dxRangeSlider1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"startName\":\"st\",\"endName\":\"csa\"}")));
             this.dxRangeSlider1.Size = new System.Drawing.Size(559, 59);
             this.dxRangeSlider1.TabIndex = 0;
             // 
@@ -90,7 +91,7 @@
             0,
             0});
             this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(212, 57);
+            this.numericUpDown1.Size = new System.Drawing.Size(212, 46);
             this.numericUpDown1.TabIndex = 1;
             this.numericUpDown1.Value = new decimal(new int[] {
             40,
@@ -103,7 +104,7 @@
             this.flowLayoutPanel1.SetFillWeight(this.numericUpDown2, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.numericUpDown2, true);
             this.numericUpDown2.LabelText = "End";
-            this.numericUpDown2.Location = new System.Drawing.Point(3, 193);
+            this.numericUpDown2.Location = new System.Drawing.Point(3, 182);
             this.numericUpDown2.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.numericUpDown2.Maximum = new decimal(new int[] {
             1000,
@@ -111,7 +112,7 @@
             0,
             0});
             this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(212, 57);
+            this.numericUpDown2.Size = new System.Drawing.Size(212, 46);
             this.numericUpDown2.TabIndex = 2;
             this.numericUpDown2.Value = new decimal(new int[] {
             60,
@@ -152,6 +153,7 @@
             // 
             this.Name = "dxRangeSlider";
             this.Size = new System.Drawing.Size(1299, 724);
+            this.Load += new System.EventHandler(this.dxRangeSlider_Load);
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);

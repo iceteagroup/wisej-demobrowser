@@ -62,5 +62,77 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
 				}
 			}
 		}
-	}
+
+        private void dxPolarChart_Load(object sender, EventArgs e)
+        {
+
+			this.dxPolarChart1.Options = new
+			{
+				series = new object[]
+                {
+                    new
+                    {
+						type = "scatter"
+                    }
+                },
+				negativesAsZeroes = false,
+				legend = new
+                {
+					visible = false
+                },
+				argumentAxis = new
+                {
+					inverted = true,
+					startAngle = 90,
+					tickInterval = 30
+                },
+				export = new
+                {
+					enabled = true
+                },
+				title = "Rose in Polar Coordinates",
+				dataSource = new object[]
+                {
+                    new
+                    {
+						arg = "Monday",
+						val = 3
+                    },
+					new
+					{
+						arg = "Tuesday",
+						val = 2
+					},
+					new
+					{
+						arg = "Wednesday",
+						val = 3
+					},
+					new
+					{
+						arg = "Thursday",
+						val = -4
+					},
+					new
+					{
+						arg = "Friday",
+						val = 6
+					},
+					new
+					{
+						arg = "Saturday",
+						val = 11
+					},
+					new
+					{
+						arg = "Sunday",
+						val = 4
+					}
+
+				}
+			};
+
+			this.dxPolarChart1.Update();
+        }
+    }
 }

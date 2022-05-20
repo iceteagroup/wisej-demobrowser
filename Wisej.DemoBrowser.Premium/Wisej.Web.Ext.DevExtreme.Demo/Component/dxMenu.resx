@@ -117,9 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="dxMenu1.Options" xml:space="preserve">
-    <value>{"hideSubmenuOnMouseLeave":false,"displayExpr":"name","dataSource":[{"id":"1","name":"Video Players","items":[{"id":"1_1","name":"HD Video Player","price":220,"icon":"Images/Menu/1.png"},{"id":"1_2","name":"SuperHD Video Player","icon":"Images/Menu/2.png","price":270}]},{"id":"2","name":"Televisions","items":[{"id":"2_1","name":"SuperLCD 42","icon":"Images/Menu/7.png","price":1200},{"id":"2_2","name":"SuperLED 42","icon":"Images/Menu/5.png","price":1450},{"id":"2_3","name":"SuperLED 50","icon":"Images/Menu/4.png","price":1600},{"id":"2_4","name":"SuperLCD 55 (Not available)","icon":"Images/Menu/6.png","price":1350,"disabled":true},{"id":"2_5","name":"SuperLCD 70","icon":"Images/Menu/9.png","price":4000}]},{"id":"3","name":"Monitors","items":[{"id":"3_1","name":"19\"","items":[{"id":"3_1_1","name":"DesktopLCD 19","icon":"Images/Menu/10.png","price":160}]},{"id":"3_2","name":"21\"","items":[{"id":"3_2_1","name":"DesktopLCD 21","icon":"Images/Menu/12.png","price":170},{"id":"3_2_2","name":"DesktopLED 21","icon":"Images/Menu/13.png","price":175}]}]},{"id":"4","name":"Projectors","items":[{"id":"4_1","name":"Projector Plus","icon":"Images/Menu/14.png","price":550},{"id":"4_2","name":"Projector PlusHD","icon":"Images/Menu/15.png","price":750}]}]}</value>
-  </data>
   <metadata name="$this.RulerSnapLines" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0

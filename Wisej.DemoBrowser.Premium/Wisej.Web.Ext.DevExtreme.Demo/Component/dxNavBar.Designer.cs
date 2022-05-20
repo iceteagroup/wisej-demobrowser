@@ -73,14 +73,14 @@
             this.flowLayoutPanel1.Controls.Add(this.checkBox1);
             this.flowLayoutPanel1.Controls.Add(this.comboBox1);
             this.flowLayoutPanel1.Controls.Add(this.buttonChangeSelectedIndex);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 35);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 470);
             // 
             // dxNavBar1
             // 
             this.dxNavBar1.Dock = Wisej.Web.DockStyle.Bottom;
             this.dxNavBar1.Location = new System.Drawing.Point(8, 504);
             this.dxNavBar1.Name = "dxNavBar1";
-            this.dxNavBar1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"dataSource\":[{\"text\":\"Contacts\",\"icon\":\"user\"},{\"text\":\"Missed\",\"icon\":\"clock\"," +
-        "\"badge\":3},{\"text\":\"Favorites\",\"icon\":\"favorites\"}]}")));
             this.dxNavBar1.Size = new System.Drawing.Size(872, 64);
             this.dxNavBar1.TabIndex = 2;
             this.dxNavBar1.WidgetFunctions = new Wisej.Web.Ext.DevExtreme.dxBase.WidgetFunction[0];
@@ -109,7 +109,7 @@
             this.linkLabelEmail.AutoSize = true;
             this.linkLabelEmail.Location = new System.Drawing.Point(105, 75);
             this.linkLabelEmail.Name = "linkLabelEmail";
-            this.linkLabelEmail.Size = new System.Drawing.Size(45, 22);
+            this.linkLabelEmail.Size = new System.Drawing.Size(45, 19);
             this.linkLabelEmail.TabIndex = 3;
             this.linkLabelEmail.Text = "Email";
             // 
@@ -118,7 +118,7 @@
             this.labelCategory.AutoSize = true;
             this.labelCategory.Location = new System.Drawing.Point(105, 43);
             this.labelCategory.Name = "labelCategory";
-            this.labelCategory.Size = new System.Drawing.Size(73, 22);
+            this.labelCategory.Size = new System.Drawing.Size(70, 19);
             this.labelCategory.TabIndex = 2;
             this.labelCategory.Text = "Outgoing";
             // 
@@ -128,7 +128,7 @@
             this.labelName.Font = new System.Drawing.Font("default", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.labelName.Location = new System.Drawing.Point(105, 8);
             this.labelName.Name = "labelName";
-            this.labelName.Size = new System.Drawing.Size(90, 28);
+            this.labelName.Size = new System.Drawing.Size(90, 23);
             this.labelName.TabIndex = 1;
             this.labelName.Text = "John Doe";
             // 

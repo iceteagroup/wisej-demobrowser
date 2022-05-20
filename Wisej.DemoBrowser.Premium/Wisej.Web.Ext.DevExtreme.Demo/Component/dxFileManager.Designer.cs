@@ -28,7 +28,6 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(dxFileManager));
             this.dxFileManager1 = new Wisej.Web.Ext.DevExtreme.dxFileManager();
             this.comboBox1 = new Wisej.Web.ComboBox();
             this.checkBox1 = new Wisej.Web.CheckBox();
@@ -70,8 +69,8 @@
             this.flowLayoutPanel1.Controls.Add(this.userComboBox1);
             this.flowLayoutPanel1.Controls.Add(this.comboBox1);
             this.flowLayoutPanel1.Controls.Add(this.checkedListBox1);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 38);
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 467);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 35);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 470);
             // 
             // dxFileManager1
             // 
@@ -80,7 +79,6 @@
             | Wisej.Web.AnchorStyles.Right)));
             this.dxFileManager1.Location = new System.Drawing.Point(11, 11);
             this.dxFileManager1.Name = "dxFileManager1";
-            this.dxFileManager1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("dxFileManager1.Options"))));
             this.dxFileManager1.Size = new System.Drawing.Size(866, 550);
             this.dxFileManager1.TabIndex = 0;
             // 

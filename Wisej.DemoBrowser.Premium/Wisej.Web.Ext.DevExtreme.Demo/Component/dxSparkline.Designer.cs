@@ -80,6 +80,8 @@
             // 
             this.flowLayoutPanel1.Controls.Add(this.button1);
             this.flowLayoutPanel1.Controls.Add(this.label10);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 35);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 470);
             // 
             // tableLayoutPanel1
             // 
@@ -176,7 +178,6 @@
             this.dxSparkline1.Location = new System.Drawing.Point(232, 164);
             this.dxSparkline1.Margin = new Wisej.Web.Padding(16);
             this.dxSparkline1.Name = "dxSparkline1";
-            this.dxSparkline1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("dxSparkline1.Options"))));
             this.dxSparkline1.Size = new System.Drawing.Size(184, 38);
             this.dxSparkline1.TabIndex = 4;
             // 
@@ -185,9 +186,9 @@
             this.label7.Anchor = Wisej.Web.AnchorStyles.None;
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("@defaultBold", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.label7.Location = new System.Drawing.Point(259, 50);
+            this.label7.Location = new System.Drawing.Point(262, 51);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(130, 22);
+            this.label7.Size = new System.Drawing.Size(123, 19);
             this.label7.TabIndex = 4;
             this.label7.Text = "Oil (USD/barrel)";
             // 
@@ -236,9 +237,9 @@
             this.label8.Anchor = Wisej.Web.AnchorStyles.None;
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("@defaultBold", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.label8.Location = new System.Drawing.Point(449, 50);
+            this.label8.Location = new System.Drawing.Point(454, 51);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(181, 22);
+            this.label8.Size = new System.Drawing.Size(172, 19);
             this.label8.TabIndex = 10;
             this.label8.Text = "Gold (USD/troy ounce)";
             // 
@@ -259,9 +260,9 @@
             this.label9.Anchor = Wisej.Web.AnchorStyles.None;
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("@defaultBold", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.label9.Location = new System.Drawing.Point(661, 50);
+            this.label9.Location = new System.Drawing.Point(666, 51);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(189, 22);
+            this.label9.Size = new System.Drawing.Size(179, 19);
             this.label9.TabIndex = 13;
             this.label9.Text = "Silver (USD/troy ounce)";
             // 
@@ -309,6 +310,7 @@
             // dxSparkline
             // 
             this.Name = "dxSparkline";
+            this.Load += new System.EventHandler(this.dxSparkline_Load);
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);

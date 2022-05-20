@@ -28,7 +28,6 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(dxFunnel));
             Wisej.Web.Ext.DevExtreme.dxBase.WidgetFunction widgetFunction1 = new Wisej.Web.Ext.DevExtreme.dxBase.WidgetFunction();
             this.dxFunnel1 = new Wisej.Web.Ext.DevExtreme.dxFunnel();
             this.comboBox1 = new Wisej.Web.ComboBox();
@@ -80,14 +79,14 @@
             this.flowLayoutPanel1.Controls.Add(this.comboBox2);
             this.flowLayoutPanel1.Controls.Add(this.buttonLoad);
             this.flowLayoutPanel1.Controls.Add(this.buttonExport);
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 478);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 35);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 481);
             // 
             // dxFunnel1
             // 
             this.dxFunnel1.Anchor = Wisej.Web.AnchorStyles.None;
             this.dxFunnel1.Location = new System.Drawing.Point(230, 94);
             this.dxFunnel1.Name = "dxFunnel1";
-            this.dxFunnel1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("dxFunnel1.Options"))));
             this.dxFunnel1.Size = new System.Drawing.Size(429, 398);
             this.dxFunnel1.TabIndex = 0;
             widgetFunction1.Name = "customizeText";

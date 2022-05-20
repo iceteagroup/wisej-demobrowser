@@ -28,7 +28,6 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(dxHtmlEditor));
             this.dxHtmlEditor1 = new Wisej.Web.Ext.DevExtreme.dxHtmlEditor();
             this.comboBox1 = new Wisej.Web.ComboBox();
             this.checkBox1 = new Wisej.Web.CheckBox();
@@ -68,6 +67,8 @@
             this.flowLayoutPanel1.Controls.Add(this.userComboBox1);
             this.flowLayoutPanel1.Controls.Add(this.comboBox1);
             this.flowLayoutPanel1.Controls.Add(this.checkedListBox1);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 35);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 470);
             // 
             // dxHtmlEditor1
             // 
@@ -76,7 +77,6 @@
             | Wisej.Web.AnchorStyles.Right)));
             this.dxHtmlEditor1.Location = new System.Drawing.Point(25, 23);
             this.dxHtmlEditor1.Name = "dxHtmlEditor1";
-            this.dxHtmlEditor1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("dxHtmlEditor1.Options"))));
             this.dxHtmlEditor1.Size = new System.Drawing.Size(839, 531);
             this.dxHtmlEditor1.TabIndex = 0;
             // 

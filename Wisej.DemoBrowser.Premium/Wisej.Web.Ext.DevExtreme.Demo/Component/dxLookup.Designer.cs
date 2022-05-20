@@ -28,7 +28,6 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(dxLookup));
             this.dxLookup1 = new Wisej.Web.Ext.DevExtreme.dxLookup();
             this.comboBox1 = new Wisej.Web.ComboBox();
             this.checkBox2 = new Wisej.Web.CheckBox();
@@ -67,13 +66,14 @@
             this.flowLayoutPanel1.Controls.Add(this.checkBox4);
             this.flowLayoutPanel1.Controls.Add(this.checkBox5);
             this.flowLayoutPanel1.Controls.Add(this.comboBox1);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 35);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 470);
             // 
             // dxLookup1
             // 
             this.dxLookup1.Anchor = Wisej.Web.AnchorStyles.None;
             this.dxLookup1.Location = new System.Drawing.Point(269, 271);
             this.dxLookup1.Name = "dxLookup1";
-            this.dxLookup1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("dxLookup1.Options"))));
             this.dxLookup1.Size = new System.Drawing.Size(350, 35);
             this.dxLookup1.TabIndex = 0;
             // 

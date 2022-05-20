@@ -28,7 +28,6 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(dxChart));
             Wisej.Web.Ext.DevExtreme.dxBase.WidgetFunction widgetFunction1 = new Wisej.Web.Ext.DevExtreme.dxBase.WidgetFunction();
             this.dxChart1 = new Wisej.Web.Ext.DevExtreme.dxChart();
             this.checkBox1 = new Wisej.Web.CheckBox();
@@ -81,7 +80,7 @@
             this.flowLayoutPanel1.Controls.Add(this.buttonLoad);
             this.flowLayoutPanel1.Controls.Add(this.label4);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 35);
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 441);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 470);
             // 
             // dxChart1
             // 
@@ -90,7 +89,6 @@
             | Wisej.Web.AnchorStyles.Right)));
             this.dxChart1.Location = new System.Drawing.Point(31, 37);
             this.dxChart1.Name = "dxChart1";
-            this.dxChart1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("dxChart1.Options"))));
             this.dxChart1.Size = new System.Drawing.Size(826, 503);
             this.dxChart1.TabIndex = 0;
             widgetFunction1.Name = "getDataSourceItems";

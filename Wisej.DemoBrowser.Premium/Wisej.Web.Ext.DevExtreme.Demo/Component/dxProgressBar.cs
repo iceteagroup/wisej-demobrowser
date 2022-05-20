@@ -28,5 +28,5 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
 
 			this.dxProgressBar1.Update();
 		}
-	}
+    }
 }

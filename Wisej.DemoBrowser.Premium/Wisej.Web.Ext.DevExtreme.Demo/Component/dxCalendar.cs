@@ -36,6 +36,16 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
         {
 			this.comboBox1.SelectedIndex = 0;
 			this.comboBox2.SelectedIndex = 0;
+
+			this.dxCalendar1.Options = new
+			{
+				value = "2020-01-01",
+				zoomLevel = "century",
+				firstDayOfWeek = 0,
+				activeStateEnabled = false
+			};
+
+			this.dxCalendar1.Update();
         }
     }
 }
