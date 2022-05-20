@@ -58,7 +58,7 @@
             this.linkDemo.Text = "https://js.syncfusion.com/demos/web/#!/flatlight/pivotgrid/relational/defaultfunc" +
     "tionalities";
             // 
-            // linkAPI
+            // linkApi
             // 
             this.linkApi.TabIndex = 5;
             this.linkApi.Text = "https://help.syncfusion.com/api/js/ejpivotgrid";
@@ -83,7 +83,7 @@
             this.ejPivotGrid1.Location = new System.Drawing.Point(8, 8);
             this.ejPivotGrid1.Name = "ejPivotGrid1";
             this.ejPivotGrid1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("ejPivotGrid1.Options"))));
-            this.ejPivotGrid1.Size = new System.Drawing.Size(1073, 542);
+            this.ejPivotGrid1.Size = new System.Drawing.Size(872, 560);
             this.ejPivotGrid1.TabIndex = 0;
             this.ejPivotGrid1.Text = "ejPivotGrid1";
             // 
@@ -97,7 +97,7 @@
             this.flowLayoutPanelProperties.SetFlowBreak(this.checkBox1, true);
             this.checkBox1.Location = new System.Drawing.Point(3, 3);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(212, 38);
+            this.checkBox1.Size = new System.Drawing.Size(212, 30);
             this.checkBox1.TabIndex = 0;
             this.checkBox1.Text = "Enable Cell Click";
             // 
@@ -109,7 +109,7 @@
             this.checkBox2.Checked = true;
             this.flowLayoutPanelProperties.SetFillWeight(this.checkBox2, 1);
             this.flowLayoutPanelProperties.SetFlowBreak(this.checkBox2, true);
-            this.checkBox2.Location = new System.Drawing.Point(3, 60);
+            this.checkBox2.Location = new System.Drawing.Point(3, 52);
             this.checkBox2.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.Size = new System.Drawing.Size(212, 44);
@@ -124,10 +124,10 @@
             this.checkBox4.Checked = true;
             this.flowLayoutPanelProperties.SetFillWeight(this.checkBox4, 1);
             this.flowLayoutPanelProperties.SetFlowBreak(this.checkBox4, true);
-            this.checkBox4.Location = new System.Drawing.Point(3, 197);
+            this.checkBox4.Location = new System.Drawing.Point(3, 189);
             this.checkBox4.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(212, 38);
+            this.checkBox4.Size = new System.Drawing.Size(212, 30);
             this.checkBox4.TabIndex = 3;
             this.checkBox4.Text = "Column Grand Total";
             // 
@@ -139,7 +139,7 @@
             this.checkBoxShow3.Checked = true;
             this.flowLayoutPanelProperties.SetFillWeight(this.checkBoxShow3, 1);
             this.flowLayoutPanelProperties.SetFlowBreak(this.checkBoxShow3, true);
-            this.checkBoxShow3.Location = new System.Drawing.Point(3, 123);
+            this.checkBoxShow3.Location = new System.Drawing.Point(3, 115);
             this.checkBoxShow3.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBoxShow3.Name = "checkBoxShow3";
             this.checkBoxShow3.Size = new System.Drawing.Size(212, 55);
@@ -150,7 +150,7 @@
             // 
             this.buttonSave.Display = Wisej.Web.Display.Icon;
             this.buttonSave.ImageSource = "icon-save";
-            this.buttonSave.Location = new System.Drawing.Point(51, 254);
+            this.buttonSave.Location = new System.Drawing.Point(51, 238);
             this.buttonSave.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.buttonSave.Name = "buttonSave";
             this.buttonSave.Size = new System.Drawing.Size(42, 42);
@@ -163,7 +163,7 @@
             this.buttonLoad.AllowedFileTypes = ".json";
             this.buttonLoad.HideValue = true;
             this.buttonLoad.ImageSource = "icon-file";
-            this.buttonLoad.Location = new System.Drawing.Point(3, 254);
+            this.buttonLoad.Location = new System.Drawing.Point(3, 238);
             this.buttonLoad.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.buttonLoad.Name = "buttonLoad";
             this.buttonLoad.Size = new System.Drawing.Size(42, 42);
@@ -177,7 +177,6 @@
             this.panel.ResumeLayout(false);
             this.flowLayoutPanelProperties.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

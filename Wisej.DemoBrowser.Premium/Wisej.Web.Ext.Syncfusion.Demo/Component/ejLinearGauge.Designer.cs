@@ -58,7 +58,7 @@
             this.linkDemo.Text = "https://js.syncfusion.com/demos/web/#!/flatlight/lineargauge/DefaultFunctionaliti" +
     "es";
             // 
-            // linkAPI
+            // linkApi
             // 
             this.linkApi.TabIndex = 5;
             this.linkApi.Text = "https://help.syncfusion.com/api/js/ejlineargauge";
@@ -78,13 +78,11 @@
             // 
             // ejLinearGauge1
             // 
-            this.ejLinearGauge1.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
-            | Wisej.Web.AnchorStyles.Left) 
-            | Wisej.Web.AnchorStyles.Right)));
-            this.ejLinearGauge1.Location = new System.Drawing.Point(69, 17);
+            this.ejLinearGauge1.Dock = Wisej.Web.DockStyle.Fill;
+            this.ejLinearGauge1.Location = new System.Drawing.Point(8, 8);
             this.ejLinearGauge1.Name = "ejLinearGauge1";
             this.ejLinearGauge1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("ejLinearGauge1.Options"))));
-            this.ejLinearGauge1.Size = new System.Drawing.Size(950, 523);
+            this.ejLinearGauge1.Size = new System.Drawing.Size(872, 560);
             this.ejLinearGauge1.TabIndex = 0;
             this.ejLinearGauge1.Text = "ejLinearGauge1";
             // 
@@ -180,7 +178,6 @@
             this.flowLayoutPanelProperties.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownVal)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

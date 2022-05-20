@@ -57,7 +57,7 @@
             this.linkDemo.TabIndex = 6;
             this.linkDemo.Text = "https://js.syncfusion.com/demos/web/#!/bootstrap/treemap/FlatCollection";
             // 
-            // linkAPI
+            // linkApi
             // 
             this.linkApi.TabIndex = 5;
             this.linkApi.Text = "https://help.syncfusion.com/api/js/ejtreemap#members";
@@ -81,7 +81,7 @@
             this.ejTreeMap1.Location = new System.Drawing.Point(8, 8);
             this.ejTreeMap1.Name = "ejTreeMap1";
             this.ejTreeMap1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("ejTreeMap1.Options"))));
-            this.ejTreeMap1.Size = new System.Drawing.Size(1073, 542);
+            this.ejTreeMap1.Size = new System.Drawing.Size(872, 560);
             this.ejTreeMap1.TabIndex = 0;
             this.ejTreeMap1.Text = "ejTreeMap1";
             widgetTemplate1.Id = "headertemplate";
@@ -124,7 +124,7 @@
             this.checkBox3.Location = new System.Drawing.Point(3, 52);
             this.checkBox3.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(212, 45);
+            this.checkBox3.Size = new System.Drawing.Size(212, 30);
             this.checkBox3.TabIndex = 1;
             this.checkBox3.Text = "Highlight on Selection";
             // 
@@ -142,7 +142,7 @@
             this.comboBox1.Label.Size = 50;
             this.comboBox1.Label.SizeType = Wisej.Web.SizeType.Percent;
             this.comboBox1.LabelText = "Items Layout Mode";
-            this.comboBox1.Location = new System.Drawing.Point(3, 116);
+            this.comboBox1.Location = new System.Drawing.Point(3, 101);
             this.comboBox1.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(212, 60);
@@ -161,7 +161,7 @@
             this.comboBox2.Label.Size = 50;
             this.comboBox2.Label.SizeType = Wisej.Web.SizeType.Percent;
             this.comboBox2.LabelText = "Group Selection Mode";
-            this.comboBox2.Location = new System.Drawing.Point(3, 195);
+            this.comboBox2.Location = new System.Drawing.Point(3, 180);
             this.comboBox2.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(212, 60);
@@ -175,7 +175,6 @@
             this.panel.ResumeLayout(false);
             this.flowLayoutPanelProperties.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

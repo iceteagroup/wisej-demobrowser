@@ -54,7 +54,7 @@
             this.linkDemo.TabIndex = 6;
             this.linkDemo.Text = "N/A";
             // 
-            // linkAPI
+            // linkApi
             // 
             this.linkApi.TabIndex = 5;
             this.linkApi.Text = "https://help.syncfusion.com/api/js/ejmaskedit";
@@ -68,9 +68,9 @@
             // flowLayoutPanelProperties
             // 
             this.flowLayoutPanelProperties.Controls.Add(this.checkBox1);
+            this.flowLayoutPanelProperties.Controls.Add(this.checkBox2);
             this.flowLayoutPanelProperties.Controls.Add(this.comboBox1);
             this.flowLayoutPanelProperties.Controls.Add(this.textBox1);
-            this.flowLayoutPanelProperties.Controls.Add(this.checkBox2);
             // 
             // comboBox1
             // 
@@ -84,7 +84,7 @@
             this.comboBox1.Label.Size = 50;
             this.comboBox1.Label.SizeType = Wisej.Web.SizeType.Percent;
             this.comboBox1.LabelText = "Input Mode";
-            this.comboBox1.Location = new System.Drawing.Point(3, 79);
+            this.comboBox1.Location = new System.Drawing.Point(3, 101);
             this.comboBox1.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(212, 60);
@@ -99,7 +99,7 @@
             this.textBox1.Label.Size = 50;
             this.textBox1.Label.SizeType = Wisej.Web.SizeType.Percent;
             this.textBox1.LabelText = "Custom Character";
-            this.textBox1.Location = new System.Drawing.Point(3, 158);
+            this.textBox1.Location = new System.Drawing.Point(3, 180);
             this.textBox1.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.textBox1.MaxLength = 1;
             this.textBox1.Name = "textBox1";
@@ -116,7 +116,7 @@
             this.flowLayoutPanelProperties.SetFlowBreak(this.checkBox1, true);
             this.checkBox1.Location = new System.Drawing.Point(3, 3);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(212, 57);
+            this.checkBox1.Size = new System.Drawing.Size(212, 30);
             this.checkBox1.TabIndex = 0;
             this.checkBox1.Text = "Hide Prompt on Leave";
             // 
@@ -128,10 +128,10 @@
             this.checkBox2.Checked = true;
             this.flowLayoutPanelProperties.SetFillWeight(this.checkBox2, 1);
             this.flowLayoutPanelProperties.SetFlowBreak(this.checkBox2, true);
-            this.checkBox2.Location = new System.Drawing.Point(3, 237);
+            this.checkBox2.Location = new System.Drawing.Point(3, 52);
             this.checkBox2.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(212, 31);
+            this.checkBox2.Size = new System.Drawing.Size(212, 30);
             this.checkBox2.TabIndex = 1;
             this.checkBox2.Text = "Show Prompt Char";
             // 
@@ -139,7 +139,7 @@
             // 
             this.label4.Anchor = Wisej.Web.AnchorStyles.None;
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(394, 234);
+            this.label4.Location = new System.Drawing.Point(294, 257);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(135, 22);
             this.label4.TabIndex = 2;
@@ -148,9 +148,9 @@
             // ejMaskEdit1
             // 
             this.ejMaskEdit1.Anchor = Wisej.Web.AnchorStyles.None;
-            this.ejMaskEdit1.Location = new System.Drawing.Point(394, 262);
+            this.ejMaskEdit1.Location = new System.Drawing.Point(294, 285);
             this.ejMaskEdit1.Name = "ejMaskEdit1";
-            this.ejMaskEdit1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"watermarkText\":\"Enter password\",\"inputMode\":\"Password\"}")));
+            this.ejMaskEdit1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"watermarkText\":\"Enter password\",\"inputMode\":\"Password\",\"value\":\"ejMaskEdit1\"}")));
             this.ejMaskEdit1.Size = new System.Drawing.Size(300, 35);
             this.ejMaskEdit1.TabIndex = 3;
             this.ejMaskEdit1.Text = "ejMaskEdit1";
@@ -163,7 +163,6 @@
             this.panel.PerformLayout();
             this.flowLayoutPanelProperties.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

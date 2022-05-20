@@ -35,12 +35,18 @@
             this.numericUpDownCompMeasureVal = new Wisej.Web.NumericUpDown();
             this.comboBox1 = new Wisej.Web.ComboBox();
             this.checkBox1 = new Wisej.Web.CheckBox();
-            this.groupBox1.SuspendLayout();
             this.panel.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.flowLayoutPanelProperties.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownVal)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCompMeasureVal)).BeginInit();
             this.SuspendLayout();
+            // 
+            // panel
+            // 
+            this.panel.Controls.Add(this.ejBulletGraph2);
+            this.panel.Controls.Add(this.ejBulletGraph1);
+            this.panel.TabIndex = 7;
             // 
             // linkDocs
             // 
@@ -59,16 +65,10 @@
             this.linkDemo.Text = "https://js.syncfusion.com/demos/web/#!/bootstrap/bulletgraph/DefaultFunctionaliti" +
     "es";
             // 
-            // linkAPI
+            // linkApi
             // 
             this.linkApi.TabIndex = 5;
             this.linkApi.Text = "https://help.syncfusion.com/api/js/ejbulletgraph";
-            // 
-            // panel
-            // 
-            this.panel.Controls.Add(this.ejBulletGraph2);
-            this.panel.Controls.Add(this.ejBulletGraph1);
-            this.panel.TabIndex = 7;
             // 
             // flowLayoutPanelProperties
             // 
@@ -80,7 +80,7 @@
             // ejBulletGraph1
             // 
             this.ejBulletGraph1.Anchor = Wisej.Web.AnchorStyles.None;
-            this.ejBulletGraph1.Location = new System.Drawing.Point(241, 171);
+            this.ejBulletGraph1.Location = new System.Drawing.Point(141, 180);
             this.ejBulletGraph1.Name = "ejBulletGraph1";
             this.ejBulletGraph1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("ejBulletGraph1.Options"))));
             this.ejBulletGraph1.Size = new System.Drawing.Size(607, 83);
@@ -90,7 +90,7 @@
             // ejBulletGraph2
             // 
             this.ejBulletGraph2.Anchor = Wisej.Web.AnchorStyles.None;
-            this.ejBulletGraph2.Location = new System.Drawing.Point(241, 305);
+            this.ejBulletGraph2.Location = new System.Drawing.Point(141, 314);
             this.ejBulletGraph2.Name = "ejBulletGraph2";
             this.ejBulletGraph2.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("ejBulletGraph2.Options"))));
             this.ejBulletGraph2.Size = new System.Drawing.Size(607, 83);
@@ -180,13 +180,12 @@
             // ejBulletGraph
             // 
             this.Name = "ejBulletGraph";
-            this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
             this.flowLayoutPanelProperties.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownVal)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCompMeasureVal)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

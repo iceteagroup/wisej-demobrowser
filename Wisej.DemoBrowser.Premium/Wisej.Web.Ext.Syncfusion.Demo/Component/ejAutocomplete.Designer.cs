@@ -57,7 +57,7 @@
             this.linkDemo.Text = "https://js.syncfusion.com/demos/web/#!/bootstrap/autocomplete/DefaultFunctionalit" +
     "ies";
             // 
-            // linkAPI
+            // linkApi
             // 
             this.linkApi.Text = "https://help.syncfusion.com/api/js/ejautocomplete";
             // 
@@ -78,7 +78,7 @@
             // ejAutocomplete1
             // 
             this.ejAutocomplete1.Anchor = Wisej.Web.AnchorStyles.None;
-            this.ejAutocomplete1.Location = new System.Drawing.Point(394, 264);
+            this.ejAutocomplete1.Location = new System.Drawing.Point(294, 273);
             this.ejAutocomplete1.Name = "ejAutocomplete1";
             this.ejAutocomplete1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("ejAutocomplete1.Options"))));
             this.ejAutocomplete1.Size = new System.Drawing.Size(300, 30);
@@ -94,7 +94,7 @@
             this.button1.Location = new System.Drawing.Point(3, 295);
             this.button1.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(212, 40);
+            this.button1.Size = new System.Drawing.Size(212, 35);
             this.button1.TabIndex = 1;
             this.button1.Text = "Get TextBox Value";
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -190,7 +190,6 @@
             this.panel.ResumeLayout(false);
             this.flowLayoutPanelProperties.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

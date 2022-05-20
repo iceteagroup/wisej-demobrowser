@@ -57,7 +57,7 @@
             this.linkDemo.Text = "https://js.syncfusion.com/demos/web/#!/flatlight/datetimepicker/defaultfunctional" +
     "ities";
             // 
-            // linkAPI
+            // linkApi
             // 
             this.linkApi.TabIndex = 5;
             this.linkApi.Text = "https://help.syncfusion.com/api/js/ejdatetimepicker";
@@ -78,7 +78,7 @@
             // ejDateTimePicker1
             // 
             this.ejDateTimePicker1.Anchor = Wisej.Web.AnchorStyles.None;
-            this.ejDateTimePicker1.Location = new System.Drawing.Point(394, 262);
+            this.ejDateTimePicker1.Location = new System.Drawing.Point(294, 271);
             this.ejDateTimePicker1.Name = "ejDateTimePicker1";
             this.ejDateTimePicker1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"value\":null}")));
             this.ejDateTimePicker1.Size = new System.Drawing.Size(300, 35);
@@ -178,7 +178,6 @@
             this.flowLayoutPanelProperties.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

@@ -59,7 +59,7 @@
             this.linkDemo.TabIndex = 6;
             this.linkDemo.Text = "https://js.syncfusion.com/demos/web/#!/bootstrap/treegrid/DefaultFunctionalities";
             // 
-            // linkAPI
+            // linkApi
             // 
             this.linkApi.TabIndex = 5;
             this.linkApi.Text = "https://help.syncfusion.com/api/js/ejtreegrid";
@@ -86,7 +86,7 @@
             this.ejTreeGrid1.Location = new System.Drawing.Point(8, 8);
             this.ejTreeGrid1.Name = "ejTreeGrid1";
             this.ejTreeGrid1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("ejTreeGrid1.Options"))));
-            this.ejTreeGrid1.Size = new System.Drawing.Size(1073, 542);
+            this.ejTreeGrid1.Size = new System.Drawing.Size(872, 560);
             this.ejTreeGrid1.TabIndex = 0;
             this.ejTreeGrid1.Text = "ejTreeGrid1";
             // 
@@ -122,10 +122,10 @@
             // 
             this.flowLayoutPanelProperties.SetFillWeight(this.buttonGetSelectedCells, 1);
             this.flowLayoutPanelProperties.SetFlowBreak(this.buttonGetSelectedCells, true);
-            this.buttonGetSelectedCells.Location = new System.Drawing.Point(3, 386);
+            this.buttonGetSelectedCells.Location = new System.Drawing.Point(3, 352);
             this.buttonGetSelectedCells.Margin = new Wisej.Web.Padding(3, 12, 3, 3);
             this.buttonGetSelectedCells.Name = "buttonGetSelectedCells";
-            this.buttonGetSelectedCells.Size = new System.Drawing.Size(212, 30);
+            this.buttonGetSelectedCells.Size = new System.Drawing.Size(212, 35);
             this.buttonGetSelectedCells.TabIndex = 7;
             this.buttonGetSelectedCells.Text = "Get Selected Cells";
             this.buttonGetSelectedCells.Click += new System.EventHandler(this.buttonGetSelectedCells_Click);
@@ -154,7 +154,7 @@
             this.checkBox4.Location = new System.Drawing.Point(3, 155);
             this.checkBox4.Margin = new Wisej.Web.Padding(3, 12, 3, 3);
             this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(212, 47);
+            this.checkBox4.Size = new System.Drawing.Size(212, 30);
             this.checkBox4.TabIndex = 3;
             this.checkBox4.Text = "Allow Column Resize";
             // 
@@ -165,10 +165,10 @@
             this.checkBox5.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.flowLayoutPanelProperties.SetFillWeight(this.checkBox5, 1);
             this.flowLayoutPanelProperties.SetFlowBreak(this.checkBox5, true);
-            this.checkBox5.Location = new System.Drawing.Point(3, 217);
+            this.checkBox5.Location = new System.Drawing.Point(3, 200);
             this.checkBox5.Margin = new Wisej.Web.Padding(3, 12, 3, 3);
             this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(212, 47);
+            this.checkBox5.Size = new System.Drawing.Size(212, 30);
             this.checkBox5.TabIndex = 4;
             this.checkBox5.Text = "Allow Drag and Drop";
             // 
@@ -179,7 +179,7 @@
             this.checkBox6.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.flowLayoutPanelProperties.SetFillWeight(this.checkBox6, 1);
             this.flowLayoutPanelProperties.SetFlowBreak(this.checkBox6, true);
-            this.checkBox6.Location = new System.Drawing.Point(3, 279);
+            this.checkBox6.Location = new System.Drawing.Point(3, 245);
             this.checkBox6.Margin = new Wisej.Web.Padding(3, 12, 3, 3);
             this.checkBox6.Name = "checkBox6";
             this.checkBox6.Size = new System.Drawing.Size(212, 30);
@@ -194,7 +194,7 @@
             this.checkBox7.Checked = true;
             this.flowLayoutPanelProperties.SetFillWeight(this.checkBox7, 1);
             this.flowLayoutPanelProperties.SetFlowBreak(this.checkBox7, true);
-            this.checkBox7.Location = new System.Drawing.Point(3, 324);
+            this.checkBox7.Location = new System.Drawing.Point(3, 290);
             this.checkBox7.Margin = new Wisej.Web.Padding(3, 12, 3, 3);
             this.checkBox7.Name = "checkBox7";
             this.checkBox7.Size = new System.Drawing.Size(212, 47);
@@ -208,7 +208,6 @@
             this.panel.ResumeLayout(false);
             this.flowLayoutPanelProperties.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

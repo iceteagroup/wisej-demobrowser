@@ -57,7 +57,7 @@
             this.linkDemo.TabIndex = 6;
             this.linkDemo.Text = "https://js.syncfusion.com/demos/web/#!/bootstrap/knockout/PivotChart";
             // 
-            // linkAPI
+            // linkApi
             // 
             this.linkApi.TabIndex = 5;
             this.linkApi.Text = "https://help.syncfusion.com/api/js/ejpivotchart";
@@ -82,7 +82,7 @@
             this.ejPivotChart1.Dock = Wisej.Web.DockStyle.Fill;
             this.ejPivotChart1.Location = new System.Drawing.Point(8, 8);
             this.ejPivotChart1.Name = "ejPivotChart1";
-            this.ejPivotChart1.Size = new System.Drawing.Size(1073, 542);
+            this.ejPivotChart1.Size = new System.Drawing.Size(872, 560);
             this.ejPivotChart1.TabIndex = 0;
             this.ejPivotChart1.Text = "ejPivotChart1";
             // 
@@ -91,7 +91,7 @@
             this.buttonLoad.AllowedFileTypes = ".xlsx";
             this.buttonLoad.HideValue = true;
             this.buttonLoad.ImageSource = "icon-file";
-            this.buttonLoad.Location = new System.Drawing.Point(3, 275);
+            this.buttonLoad.Location = new System.Drawing.Point(3, 259);
             this.buttonLoad.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.buttonLoad.Name = "buttonLoad";
             this.buttonLoad.Size = new System.Drawing.Size(42, 42);
@@ -102,7 +102,7 @@
             // 
             this.buttonExportExcel.Display = Wisej.Web.Display.Icon;
             this.buttonExportExcel.ImageSource = "resource.wx/Wisej.Ext.MaterialDesign/microsoft-excel-logo.svg";
-            this.buttonExportExcel.Location = new System.Drawing.Point(51, 275);
+            this.buttonExportExcel.Location = new System.Drawing.Point(51, 259);
             this.buttonExportExcel.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.buttonExportExcel.Name = "buttonExportExcel";
             this.buttonExportExcel.Size = new System.Drawing.Size(42, 42);
@@ -113,7 +113,7 @@
             // 
             this.buttonSaveJson.Display = Wisej.Web.Display.Icon;
             this.buttonSaveJson.ImageSource = "icon-save";
-            this.buttonSaveJson.Location = new System.Drawing.Point(99, 275);
+            this.buttonSaveJson.Location = new System.Drawing.Point(99, 259);
             this.buttonSaveJson.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.buttonSaveJson.Name = "buttonSaveJson";
             this.buttonSaveJson.Size = new System.Drawing.Size(42, 42);
@@ -129,7 +129,7 @@
             this.flowLayoutPanelProperties.SetFlowBreak(this.checkBox1, true);
             this.checkBox1.Location = new System.Drawing.Point(3, 3);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(212, 38);
+            this.checkBox1.Size = new System.Drawing.Size(212, 30);
             this.checkBox1.TabIndex = 0;
             this.checkBox1.Text = "Enable 3D";
             // 
@@ -141,7 +141,7 @@
             this.numericUpDownRotation.Label.Size = 50;
             this.numericUpDownRotation.Label.SizeType = Wisej.Web.SizeType.Percent;
             this.numericUpDownRotation.LabelText = "Rotation";
-            this.numericUpDownRotation.Location = new System.Drawing.Point(3, 196);
+            this.numericUpDownRotation.Location = new System.Drawing.Point(3, 180);
             this.numericUpDownRotation.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.numericUpDownRotation.Maximum = new decimal(new int[] {
             360,
@@ -159,10 +159,10 @@
             this.checkBox2.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.flowLayoutPanelProperties.SetFillWeight(this.checkBox2, 1);
             this.flowLayoutPanelProperties.SetFlowBreak(this.checkBox2, true);
-            this.checkBox2.Location = new System.Drawing.Point(3, 60);
+            this.checkBox2.Location = new System.Drawing.Point(3, 52);
             this.checkBox2.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(212, 38);
+            this.checkBox2.Size = new System.Drawing.Size(212, 30);
             this.checkBox2.TabIndex = 1;
             this.checkBox2.Text = "Enable Scrollbar";
             // 
@@ -193,7 +193,7 @@
             this.comboBox1.Label.Size = 50;
             this.comboBox1.Label.SizeType = Wisej.Web.SizeType.Percent;
             this.comboBox1.LabelText = "Common Series Type";
-            this.comboBox1.Location = new System.Drawing.Point(3, 117);
+            this.comboBox1.Location = new System.Drawing.Point(3, 101);
             this.comboBox1.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(212, 60);
@@ -209,7 +209,6 @@
             this.flowLayoutPanelProperties.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownRotation)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

@@ -25,11 +25,11 @@ namespace Wisej.Web.Ext.Syncfusion.Demo.Component
 
 		private void buttonUpdate_Click(object sender, EventArgs e)
 		{
-			this.ejNumericTextbox1.Options.decimalPlaces = this.numericUpDown1.Value;
-			this.ejNumericTextbox1.Options.showRoundedCorner = this.checkBox1.Checked;
-			this.ejNumericTextbox1.Options.enableStrictMode = this.checkBox2.Checked;
 			this.ejNumericTextbox1.Options.showSpinButton = this.checkBox3.Checked;
 			this.ejNumericTextbox1.Options.validateOnType = this.checkBox4.Checked;
+			this.ejNumericTextbox1.Options.decimalPlaces = this.numericUpDown1.Value;
+			this.ejNumericTextbox1.Options.enableStrictMode = this.checkBox2.Checked;
+			this.ejNumericTextbox1.Options.showRoundedCorner = this.checkBox1.Checked;
 
 			this.ejNumericTextbox1.Update();
 		}

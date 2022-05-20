@@ -86,7 +86,7 @@
             this.linkDemo.TabIndex = 6;
             this.linkDemo.Text = "https://js.syncfusion.com/demos/web/#!/flatlight/rating/DefaultFunctionalities";
             // 
-            // linkAPI
+            // linkApi
             // 
             this.linkApi.TabIndex = 5;
             this.linkApi.Text = "https://help.syncfusion.com/api/js/ejrating";
@@ -113,7 +113,7 @@
             this.tabControl1.Location = new System.Drawing.Point(8, 8);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.PageInsets = new Wisej.Web.Padding(1, 40, 1, 1);
-            this.tabControl1.Size = new System.Drawing.Size(1073, 542);
+            this.tabControl1.Size = new System.Drawing.Size(872, 560);
             this.tabControl1.TabIndex = 0;
             // 
             // tabPage1
@@ -126,14 +126,14 @@
             this.tabPage1.Controls.Add(this.ejRating1);
             this.tabPage1.Location = new System.Drawing.Point(1, 40);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Size = new System.Drawing.Size(1071, 501);
+            this.tabPage1.Size = new System.Drawing.Size(870, 519);
             this.tabPage1.Text = "Man of Steel";
             // 
             // pictureBox1
             // 
             this.pictureBox1.Anchor = Wisej.Web.AnchorStyles.Top;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(350, 61);
+            this.pictureBox1.Location = new System.Drawing.Point(249, 61);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(92, 135);
             this.pictureBox1.SizeMode = Wisej.Web.PictureBoxSizeMode.Zoom;
@@ -141,7 +141,7 @@
             // label7
             // 
             this.label7.Anchor = Wisej.Web.AnchorStyles.Top;
-            this.label7.Location = new System.Drawing.Point(456, 170);
+            this.label7.Location = new System.Drawing.Point(355, 170);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(392, 56);
             this.label7.TabIndex = 10;
@@ -151,7 +151,7 @@
             // 
             this.label6.Anchor = Wisej.Web.AnchorStyles.Top;
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(456, 148);
+            this.label6.Location = new System.Drawing.Point(355, 148);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(87, 22);
             this.label6.TabIndex = 9;
@@ -161,7 +161,7 @@
             // 
             this.label5.Anchor = Wisej.Web.AnchorStyles.Top;
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(456, 93);
+            this.label5.Location = new System.Drawing.Point(355, 93);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(56, 22);
             this.label5.TabIndex = 8;
@@ -172,7 +172,7 @@
             this.label4.Anchor = Wisej.Web.AnchorStyles.Top;
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("default", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.label4.Location = new System.Drawing.Point(456, 67);
+            this.label4.Location = new System.Drawing.Point(355, 67);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(104, 22);
             this.label4.TabIndex = 7;
@@ -181,7 +181,7 @@
             // ejRating1
             // 
             this.ejRating1.Anchor = Wisej.Web.AnchorStyles.Top;
-            this.ejRating1.Location = new System.Drawing.Point(456, 115);
+            this.ejRating1.Location = new System.Drawing.Point(355, 115);
             this.ejRating1.Name = "ejRating1";
             this.ejRating1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"value\":4}")));
             this.ejRating1.Size = new System.Drawing.Size(144, 27);
@@ -198,14 +198,14 @@
             this.tabPage2.Controls.Add(this.ejRating2);
             this.tabPage2.Location = new System.Drawing.Point(1, 40);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Size = new System.Drawing.Size(1071, 501);
+            this.tabPage2.Size = new System.Drawing.Size(870, 519);
             this.tabPage2.Text = "World War Z";
             // 
             // pictureBox2
             // 
             this.pictureBox2.Anchor = Wisej.Web.AnchorStyles.Top;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(350, 61);
+            this.pictureBox2.Location = new System.Drawing.Point(250, 61);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(92, 135);
             this.pictureBox2.SizeMode = Wisej.Web.PictureBoxSizeMode.Zoom;
@@ -213,7 +213,7 @@
             // label8
             // 
             this.label8.Anchor = Wisej.Web.AnchorStyles.Top;
-            this.label8.Location = new System.Drawing.Point(456, 170);
+            this.label8.Location = new System.Drawing.Point(356, 170);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(358, 82);
             this.label8.TabIndex = 16;
@@ -224,7 +224,7 @@
             // 
             this.label9.Anchor = Wisej.Web.AnchorStyles.Top;
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(456, 148);
+            this.label9.Location = new System.Drawing.Point(356, 148);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(87, 22);
             this.label9.TabIndex = 15;
@@ -234,7 +234,7 @@
             // 
             this.label10.Anchor = Wisej.Web.AnchorStyles.Top;
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(456, 93);
+            this.label10.Location = new System.Drawing.Point(356, 93);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(56, 22);
             this.label10.TabIndex = 14;
@@ -245,7 +245,7 @@
             this.label11.Anchor = Wisej.Web.AnchorStyles.Top;
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("default", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.label11.Location = new System.Drawing.Point(456, 67);
+            this.label11.Location = new System.Drawing.Point(356, 67);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(102, 22);
             this.label11.TabIndex = 13;
@@ -254,7 +254,7 @@
             // ejRating2
             // 
             this.ejRating2.Anchor = Wisej.Web.AnchorStyles.Top;
-            this.ejRating2.Location = new System.Drawing.Point(456, 115);
+            this.ejRating2.Location = new System.Drawing.Point(356, 115);
             this.ejRating2.Name = "ejRating2";
             this.ejRating2.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"value\":4}")));
             this.ejRating2.Size = new System.Drawing.Size(144, 27);
@@ -271,14 +271,14 @@
             this.tabPage3.Controls.Add(this.ejRating3);
             this.tabPage3.Location = new System.Drawing.Point(1, 40);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(1071, 501);
+            this.tabPage3.Size = new System.Drawing.Size(870, 519);
             this.tabPage3.Text = "Monsters University";
             // 
             // pictureBox3
             // 
             this.pictureBox3.Anchor = Wisej.Web.AnchorStyles.Top;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(350, 59);
+            this.pictureBox3.Location = new System.Drawing.Point(250, 59);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(92, 135);
             this.pictureBox3.SizeMode = Wisej.Web.PictureBoxSizeMode.Zoom;
@@ -286,7 +286,7 @@
             // label12
             // 
             this.label12.Anchor = Wisej.Web.AnchorStyles.Top;
-            this.label12.Location = new System.Drawing.Point(456, 170);
+            this.label12.Location = new System.Drawing.Point(356, 170);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(366, 94);
             this.label12.TabIndex = 16;
@@ -297,7 +297,7 @@
             // 
             this.label13.Anchor = Wisej.Web.AnchorStyles.Top;
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(456, 148);
+            this.label13.Location = new System.Drawing.Point(356, 148);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(87, 22);
             this.label13.TabIndex = 15;
@@ -307,7 +307,7 @@
             // 
             this.label14.Anchor = Wisej.Web.AnchorStyles.Top;
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(456, 93);
+            this.label14.Location = new System.Drawing.Point(356, 93);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(56, 22);
             this.label14.TabIndex = 14;
@@ -318,7 +318,7 @@
             this.label15.Anchor = Wisej.Web.AnchorStyles.Top;
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("default", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.label15.Location = new System.Drawing.Point(456, 67);
+            this.label15.Location = new System.Drawing.Point(356, 67);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(166, 22);
             this.label15.TabIndex = 13;
@@ -327,7 +327,7 @@
             // ejRating3
             // 
             this.ejRating3.Anchor = Wisej.Web.AnchorStyles.Top;
-            this.ejRating3.Location = new System.Drawing.Point(456, 115);
+            this.ejRating3.Location = new System.Drawing.Point(356, 115);
             this.ejRating3.Name = "ejRating3";
             this.ejRating3.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"value\":4}")));
             this.ejRating3.Size = new System.Drawing.Size(144, 27);
@@ -342,7 +342,7 @@
             this.numericUpDown1.Label.Size = 50;
             this.numericUpDown1.Label.SizeType = Wisej.Web.SizeType.Percent;
             this.numericUpDown1.LabelText = "Max Value";
-            this.numericUpDown1.Location = new System.Drawing.Point(3, 130);
+            this.numericUpDown1.Location = new System.Drawing.Point(3, 122);
             this.numericUpDown1.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.numericUpDown1.Maximum = new decimal(new int[] {
             5,
@@ -366,7 +366,7 @@
             this.numericUpDown2.Label.Size = 50;
             this.numericUpDown2.Label.SizeType = Wisej.Web.SizeType.Percent;
             this.numericUpDown2.LabelText = "Increment Step";
-            this.numericUpDown2.Location = new System.Drawing.Point(3, 209);
+            this.numericUpDown2.Location = new System.Drawing.Point(3, 201);
             this.numericUpDown2.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.numericUpDown2.Maximum = new decimal(new int[] {
             5,
@@ -393,7 +393,7 @@
             this.checkBox1.Location = new System.Drawing.Point(3, 73);
             this.checkBox1.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(212, 38);
+            this.checkBox1.Size = new System.Drawing.Size(212, 30);
             this.checkBox1.TabIndex = 1;
             this.checkBox1.Text = "Allow Reset";
             // 
@@ -410,7 +410,7 @@
             this.comboBox1.Label.Size = 50;
             this.comboBox1.Label.SizeType = Wisej.Web.SizeType.Percent;
             this.comboBox1.LabelText = "Precision";
-            this.comboBox1.Location = new System.Drawing.Point(3, 288);
+            this.comboBox1.Location = new System.Drawing.Point(3, 280);
             this.comboBox1.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(212, 60);
@@ -446,7 +446,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

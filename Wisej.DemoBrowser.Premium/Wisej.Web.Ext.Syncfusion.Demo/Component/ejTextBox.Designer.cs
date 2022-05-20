@@ -62,7 +62,7 @@
             this.linkDemo.TabIndex = 6;
             this.linkDemo.Text = "https://js.syncfusion.com/demos/web/#!/bootstrap/editors/DefaultFunctionalities";
             // 
-            // linkAPI
+            // linkApi
             // 
             this.linkApi.TabIndex = 5;
             this.linkApi.Text = "https://help.syncfusion.com/api/js/ejtextboxes";
@@ -89,18 +89,18 @@
             // ejNumericTextbox1
             // 
             this.ejNumericTextbox1.Anchor = Wisej.Web.AnchorStyles.None;
-            this.ejNumericTextbox1.Location = new System.Drawing.Point(394, 197);
+            this.ejNumericTextbox1.Location = new System.Drawing.Point(294, 209);
             this.ejNumericTextbox1.Name = "ejNumericTextbox1";
-            this.ejNumericTextbox1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"name\":\"numeric\",\"value\":35,\"minValue\":0,\"width\":\"100%\"}")));
+            this.ejNumericTextbox1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"name\":\"numeric\",\"value\":\"123\",\"minValue\":0,\"width\":\"100%\"}")));
             this.ejNumericTextbox1.Size = new System.Drawing.Size(300, 30);
             this.ejNumericTextbox1.TabIndex = 1;
-            this.ejNumericTextbox1.Text = "ejNumericTextbox1";
+            this.ejNumericTextbox1.Text = "123";
             // 
             // label4
             // 
             this.label4.Anchor = Wisej.Web.AnchorStyles.None;
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(394, 169);
+            this.label4.Location = new System.Drawing.Point(294, 181);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(85, 22);
             this.label4.TabIndex = 0;
@@ -109,18 +109,18 @@
             // ejPercentageTextbox1
             // 
             this.ejPercentageTextbox1.Anchor = Wisej.Web.AnchorStyles.None;
-            this.ejPercentageTextbox1.Location = new System.Drawing.Point(394, 275);
+            this.ejPercentageTextbox1.Location = new System.Drawing.Point(294, 287);
             this.ejPercentageTextbox1.Name = "ejPercentageTextbox1";
-            this.ejPercentageTextbox1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"name\":\"percentage\",\"value\":3,\"minValue\":0,\"width\":\"100%\"}")));
+            this.ejPercentageTextbox1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"name\":\"percentage\",\"value\":\"11\",\"minValue\":0,\"width\":\"100%\"}")));
             this.ejPercentageTextbox1.Size = new System.Drawing.Size(300, 30);
             this.ejPercentageTextbox1.TabIndex = 1;
-            this.ejPercentageTextbox1.Text = "ejPercentageTextbox1";
+            this.ejPercentageTextbox1.Text = "11";
             // 
             // label5
             // 
             this.label5.Anchor = Wisej.Web.AnchorStyles.None;
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(394, 247);
+            this.label5.Location = new System.Drawing.Point(294, 259);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(88, 22);
             this.label5.TabIndex = 0;
@@ -129,10 +129,10 @@
             // ejMaskEdit1
             // 
             this.ejMaskEdit1.Anchor = Wisej.Web.AnchorStyles.None;
-            this.ejMaskEdit1.Location = new System.Drawing.Point(394, 353);
+            this.ejMaskEdit1.Location = new System.Drawing.Point(294, 365);
             this.ejMaskEdit1.Name = "ejMaskEdit1";
-            this.ejMaskEdit1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"name\":\"mask\",\"inputMode\":\"Text\",\"value\":\"4242422424\",\"maskFormat\":\"99 999-99999" +
-        "\",\"width\":\"100%\"}")));
+            this.ejMaskEdit1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"name\":\"mask\",\"inputMode\":\"Text\",\"value\":\"ejMaskEdit1\",\"maskFormat\":\"99 999-9999" +
+        "9\",\"width\":\"100%\"}")));
             this.ejMaskEdit1.Size = new System.Drawing.Size(300, 30);
             this.ejMaskEdit1.TabIndex = 1;
             this.ejMaskEdit1.Text = "ejMaskEdit1";
@@ -141,7 +141,7 @@
             // 
             this.label7.Anchor = Wisej.Web.AnchorStyles.None;
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(394, 325);
+            this.label7.Location = new System.Drawing.Point(294, 337);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(119, 22);
             this.label7.TabIndex = 0;
@@ -157,7 +157,7 @@
             this.checkBox1.Location = new System.Drawing.Point(3, 89);
             this.checkBox1.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(212, 47);
+            this.checkBox1.Size = new System.Drawing.Size(212, 30);
             this.checkBox1.TabIndex = 1;
             this.checkBox1.Text = "Show Rounded Corner";
             // 
@@ -168,10 +168,10 @@
             this.checkBox2.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.flowLayoutPanelProperties.SetFillWeight(this.checkBox2, 1);
             this.flowLayoutPanelProperties.SetFlowBreak(this.checkBox2, true);
-            this.checkBox2.Location = new System.Drawing.Point(3, 155);
+            this.checkBox2.Location = new System.Drawing.Point(3, 138);
             this.checkBox2.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(212, 38);
+            this.checkBox2.Size = new System.Drawing.Size(212, 30);
             this.checkBox2.TabIndex = 2;
             this.checkBox2.Text = "Enable Strict Mode";
             // 
@@ -182,10 +182,10 @@
             this.checkBox3.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.flowLayoutPanelProperties.SetFillWeight(this.checkBox3, 1);
             this.flowLayoutPanelProperties.SetFlowBreak(this.checkBox3, true);
-            this.checkBox3.Location = new System.Drawing.Point(3, 212);
+            this.checkBox3.Location = new System.Drawing.Point(3, 187);
             this.checkBox3.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(212, 38);
+            this.checkBox3.Size = new System.Drawing.Size(212, 30);
             this.checkBox3.TabIndex = 3;
             this.checkBox3.Text = "Show Spin Button";
             // 
@@ -196,10 +196,10 @@
             this.checkBox4.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.flowLayoutPanelProperties.SetFillWeight(this.checkBox4, 1);
             this.flowLayoutPanelProperties.SetFlowBreak(this.checkBox4, true);
-            this.checkBox4.Location = new System.Drawing.Point(3, 269);
+            this.checkBox4.Location = new System.Drawing.Point(3, 236);
             this.checkBox4.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(212, 38);
+            this.checkBox4.Size = new System.Drawing.Size(212, 30);
             this.checkBox4.TabIndex = 4;
             this.checkBox4.Text = "Validate on Type";
             // 
@@ -211,7 +211,7 @@
             this.numericUpDown1.Label.Size = 50;
             this.numericUpDown1.Label.SizeType = Wisej.Web.SizeType.Percent;
             this.numericUpDown1.LabelText = "Decimal Places";
-            this.numericUpDown1.Location = new System.Drawing.Point(3, 326);
+            this.numericUpDown1.Location = new System.Drawing.Point(3, 285);
             this.numericUpDown1.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.numericUpDown1.Maximum = new decimal(new int[] {
             50,
@@ -241,7 +241,6 @@
             this.flowLayoutPanelProperties.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

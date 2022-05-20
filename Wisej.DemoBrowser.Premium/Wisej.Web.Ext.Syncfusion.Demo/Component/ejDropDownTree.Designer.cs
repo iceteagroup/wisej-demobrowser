@@ -57,7 +57,7 @@
             this.linkDemo.Text = "https://js.syncfusion.com/demos/web/#!/flatlight/dropdowntree/DefaultFunctionalit" +
     "ies";
             // 
-            // linkAPI
+            // linkApi
             // 
             this.linkApi.TabIndex = 5;
             this.linkApi.Text = "https://help.syncfusion.com/api/js/ejdropdowntree";
@@ -77,7 +77,7 @@
             // ejDropDownTree1
             // 
             this.ejDropDownTree1.Anchor = Wisej.Web.AnchorStyles.None;
-            this.ejDropDownTree1.Location = new System.Drawing.Point(394, 262);
+            this.ejDropDownTree1.Location = new System.Drawing.Point(294, 271);
             this.ejDropDownTree1.Name = "ejDropDownTree1";
             this.ejDropDownTree1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("ejDropDownTree1.Options"))));
             this.ejDropDownTree1.Size = new System.Drawing.Size(300, 35);
@@ -163,7 +163,6 @@
             this.flowLayoutPanelProperties.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPopupHeight)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

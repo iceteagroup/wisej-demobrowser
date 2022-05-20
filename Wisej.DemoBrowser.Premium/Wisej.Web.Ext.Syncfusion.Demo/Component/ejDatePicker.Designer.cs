@@ -57,7 +57,7 @@
             this.linkDemo.Text = "https://js.syncfusion.com/demos/web/#!/flatlight/datepicker/defaultfunctionalitie" +
     "s";
             // 
-            // linkAPI
+            // linkApi
             // 
             this.linkApi.TabIndex = 5;
             this.linkApi.Text = "https://help.syncfusion.com/api/js/ejdatepicker";
@@ -79,7 +79,7 @@
             // ejDatePicker1
             // 
             this.ejDatePicker1.Anchor = Wisej.Web.AnchorStyles.None;
-            this.ejDatePicker1.Location = new System.Drawing.Point(394, 262);
+            this.ejDatePicker1.Location = new System.Drawing.Point(294, 271);
             this.ejDatePicker1.Name = "ejDatePicker1";
             this.ejDatePicker1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"value\":null,\"showOtherMonths\":true,\"enableStrictMode\":true}")));
             this.ejDatePicker1.Size = new System.Drawing.Size(300, 35);
@@ -180,7 +180,6 @@
             this.panel.ResumeLayout(false);
             this.flowLayoutPanelProperties.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

@@ -60,7 +60,7 @@
             this.linkDemo.Text = "https://js.syncfusion.com/demos/web/#!/flatlight/diagram/GettingStarted/SymbolPal" +
     "ette";
             // 
-            // linkAPI
+            // linkApi
             // 
             this.linkApi.TabIndex = 5;
             this.linkApi.Text = "https://help.syncfusion.com/api/js/ejslider";
@@ -85,7 +85,7 @@
             this.ejSymbolPalette1.Name = "ejSymbolPalette1";
             this.ejSymbolPalette1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("ejSymbolPalette1.Options"))));
             this.ejSymbolPalette1.ResizableEdges = Wisej.Web.AnchorStyles.Right;
-            this.ejSymbolPalette1.Size = new System.Drawing.Size(250, 542);
+            this.ejSymbolPalette1.Size = new System.Drawing.Size(250, 560);
             this.ejSymbolPalette1.TabIndex = 0;
             this.ejSymbolPalette1.Text = "ejSymbolPalette1";
             widgetTemplate1.Id = "svgTemplate";
@@ -98,7 +98,7 @@
             this.ejDiagram1.Dock = Wisej.Web.DockStyle.Fill;
             this.ejDiagram1.Location = new System.Drawing.Point(258, 8);
             this.ejDiagram1.Name = "ejDiagram1";
-            this.ejDiagram1.Size = new System.Drawing.Size(823, 542);
+            this.ejDiagram1.Size = new System.Drawing.Size(622, 560);
             this.ejDiagram1.TabIndex = 1;
             this.ejDiagram1.Text = "ejDiagram1";
             this.ejDiagram1.Appear += new System.EventHandler(this.ejDiagram1_Appear);
@@ -128,7 +128,7 @@
             this.checkBox2.Location = new System.Drawing.Point(3, 76);
             this.checkBox2.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(212, 38);
+            this.checkBox2.Size = new System.Drawing.Size(212, 30);
             this.checkBox2.TabIndex = 1;
             this.checkBox2.Text = "Allow Drag";
             // 
@@ -140,7 +140,7 @@
             this.numericUpDown1.Label.Size = 50;
             this.numericUpDown1.Label.SizeType = Wisej.Web.SizeType.Percent;
             this.numericUpDown1.LabelText = "Preview Height";
-            this.numericUpDown1.Location = new System.Drawing.Point(3, 133);
+            this.numericUpDown1.Location = new System.Drawing.Point(3, 125);
             this.numericUpDown1.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.numericUpDown1.Maximum = new decimal(new int[] {
             200,
@@ -164,7 +164,7 @@
             this.numericUpDown2.Label.Size = 50;
             this.numericUpDown2.Label.SizeType = Wisej.Web.SizeType.Percent;
             this.numericUpDown2.LabelText = "Header Height";
-            this.numericUpDown2.Location = new System.Drawing.Point(3, 212);
+            this.numericUpDown2.Location = new System.Drawing.Point(3, 204);
             this.numericUpDown2.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.numericUpDown2.Name = "numericUpDown2";
             this.numericUpDown2.Size = new System.Drawing.Size(212, 60);
@@ -184,7 +184,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

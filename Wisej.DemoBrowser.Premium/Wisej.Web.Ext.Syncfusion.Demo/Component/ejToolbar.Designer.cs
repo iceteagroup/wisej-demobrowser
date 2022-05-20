@@ -53,7 +53,7 @@
             this.linkDemo.TabIndex = 6;
             this.linkDemo.Text = "https://js.syncfusion.com/demos/web/#!/bootstrap/toolbar/defaultfunctionalities";
             // 
-            // linkAPI
+            // linkApi
             // 
             this.linkApi.TabIndex = 5;
             this.linkApi.Text = "https://help.syncfusion.com/api/js/ejtoolbar";
@@ -76,7 +76,7 @@
             this.ejToolbar1.Name = "ejToolbar1";
             this.ejToolbar1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"width\":\"auto\",\"dataSource\":[{\"id\":\"1\",\"text\":\"File\"},{\"id\":\"2\",\"text\":\"Edit\"},{" +
         "\"id\":\"3\",\"text\":\"View\"},{\"id\":\"4\",\"text\":\"Window\"}]}")));
-            this.ejToolbar1.Size = new System.Drawing.Size(1073, 27);
+            this.ejToolbar1.Size = new System.Drawing.Size(872, 27);
             this.ejToolbar1.TabIndex = 0;
             this.ejToolbar1.Text = "ejToolbar1";
             // 
@@ -100,9 +100,10 @@
             this.checkBox2.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.flowLayoutPanelProperties.SetFillWeight(this.checkBox2, 1);
             this.flowLayoutPanelProperties.SetFlowBreak(this.checkBox2, true);
-            this.checkBox2.Location = new System.Drawing.Point(3, 39);
+            this.checkBox2.Location = new System.Drawing.Point(3, 52);
+            this.checkBox2.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(212, 49);
+            this.checkBox2.Size = new System.Drawing.Size(212, 30);
             this.checkBox2.TabIndex = 1;
             this.checkBox2.Text = "Show Rounded Corner";
             // 
@@ -113,7 +114,6 @@
             this.panel.ResumeLayout(false);
             this.flowLayoutPanelProperties.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

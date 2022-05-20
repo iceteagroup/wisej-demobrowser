@@ -56,7 +56,7 @@
             this.linkDemo.TabIndex = 6;
             this.linkDemo.Text = "https://js.syncfusion.com/demos/web/#!/flatlight/schedule/RecurrenceEditor";
             // 
-            // linkAPI
+            // linkApi
             // 
             this.linkApi.TabIndex = 5;
             this.linkApi.Text = "https://help.syncfusion.com/api/js/ejrecurrenceeditor";
@@ -81,7 +81,7 @@
             this.ejRecurrenceEditor1.Location = new System.Drawing.Point(8, 8);
             this.ejRecurrenceEditor1.Name = "ejRecurrenceEditor1";
             this.ejRecurrenceEditor1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"selectedRecurrenceType\":1,\"isResponsive\":true}")));
-            this.ejRecurrenceEditor1.Size = new System.Drawing.Size(1073, 542);
+            this.ejRecurrenceEditor1.Size = new System.Drawing.Size(872, 560);
             this.ejRecurrenceEditor1.TabIndex = 0;
             this.ejRecurrenceEditor1.Text = "ejRecurrenceEditor1";
             // 
@@ -89,10 +89,10 @@
             // 
             this.flowLayoutPanelProperties.SetFillWeight(this.buttonGenerateRule, 1);
             this.flowLayoutPanelProperties.SetFlowBreak(this.buttonGenerateRule, true);
-            this.buttonGenerateRule.Location = new System.Drawing.Point(3, 297);
+            this.buttonGenerateRule.Location = new System.Drawing.Point(3, 289);
             this.buttonGenerateRule.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.buttonGenerateRule.Name = "buttonGenerateRule";
-            this.buttonGenerateRule.Size = new System.Drawing.Size(212, 40);
+            this.buttonGenerateRule.Size = new System.Drawing.Size(212, 35);
             this.buttonGenerateRule.TabIndex = 4;
             this.buttonGenerateRule.Text = "Generate Rule";
             this.buttonGenerateRule.Click += new System.EventHandler(this.buttonGenerateRule_Click);
@@ -107,7 +107,7 @@
             this.flowLayoutPanelProperties.SetFlowBreak(this.checkBox1, true);
             this.checkBox1.Location = new System.Drawing.Point(3, 3);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(212, 38);
+            this.checkBox1.Size = new System.Drawing.Size(212, 30);
             this.checkBox1.TabIndex = 0;
             this.checkBox1.Text = "Enable Spinners";
             // 
@@ -120,7 +120,7 @@
             this.dateTimePicker1.Label.Size = 50;
             this.dateTimePicker1.Label.SizeType = Wisej.Web.SizeType.Percent;
             this.dateTimePicker1.LabelText = "Max Date";
-            this.dateTimePicker1.Location = new System.Drawing.Point(3, 60);
+            this.dateTimePicker1.Location = new System.Drawing.Point(3, 52);
             this.dateTimePicker1.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(212, 60);
@@ -136,7 +136,7 @@
             this.dateTimePicker2.Label.Size = 50;
             this.dateTimePicker2.Label.SizeType = Wisej.Web.SizeType.Percent;
             this.dateTimePicker2.LabelText = "MinDate";
-            this.dateTimePicker2.Location = new System.Drawing.Point(3, 139);
+            this.dateTimePicker2.Location = new System.Drawing.Point(3, 131);
             this.dateTimePicker2.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(212, 60);
@@ -151,7 +151,7 @@
             this.numericUpDown1.Label.Size = 50;
             this.numericUpDown1.Label.SizeType = Wisej.Web.SizeType.Percent;
             this.numericUpDown1.LabelText = "Selected Recurrence Type";
-            this.numericUpDown1.Location = new System.Drawing.Point(3, 218);
+            this.numericUpDown1.Location = new System.Drawing.Point(3, 210);
             this.numericUpDown1.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.numericUpDown1.Maximum = new decimal(new int[] {
             4,
@@ -180,7 +180,6 @@
             this.flowLayoutPanelProperties.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

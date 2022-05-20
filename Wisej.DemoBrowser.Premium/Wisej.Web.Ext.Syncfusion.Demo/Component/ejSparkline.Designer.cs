@@ -54,7 +54,7 @@
             this.linkDemo.Text = "https://js.syncfusion.com/demos/web/#!/flatlight/sparkline/DefaultFunctionalities" +
     "";
             // 
-            // linkAPI
+            // linkApi
             // 
             this.linkApi.TabIndex = 5;
             this.linkApi.Text = "https://help.syncfusion.com/api/js/ejsparkline";
@@ -78,7 +78,7 @@
             this.ejSparkline1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"isResponsive\":true,\"dataSource\":[2,6,-1,1,12,5,-2,7,-3,5,8,10],\"negativePointCo" +
         "lor\":\"red\",\"highPointColor\":\"blue\",\"tooltip\":{\"visible\":true,\"font\":{\"size\":\"12p" +
         "x\"}},\"type\":\"column\"}")));
-            this.ejSparkline1.Size = new System.Drawing.Size(1073, 542);
+            this.ejSparkline1.Size = new System.Drawing.Size(872, 560);
             this.ejSparkline1.TabIndex = 0;
             this.ejSparkline1.Text = "ejSparkline1";
             // 
@@ -96,7 +96,7 @@
             this.comboBox1.Label.Size = 50;
             this.comboBox1.Label.SizeType = Wisej.Web.SizeType.Percent;
             this.comboBox1.LabelText = "Chart Type";
-            this.comboBox1.Location = new System.Drawing.Point(3, 117);
+            this.comboBox1.Location = new System.Drawing.Point(3, 101);
             this.comboBox1.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(212, 60);
@@ -112,7 +112,7 @@
             this.flowLayoutPanelProperties.SetFlowBreak(this.checkBox2, true);
             this.checkBox2.Location = new System.Drawing.Point(3, 3);
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(212, 38);
+            this.checkBox2.Size = new System.Drawing.Size(212, 30);
             this.checkBox2.TabIndex = 0;
             this.checkBox2.Text = "Marker Visible";
             // 
@@ -123,10 +123,10 @@
             this.checkBox3.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.flowLayoutPanelProperties.SetFillWeight(this.checkBox3, 1);
             this.flowLayoutPanelProperties.SetFlowBreak(this.checkBox3, true);
-            this.checkBox3.Location = new System.Drawing.Point(3, 60);
+            this.checkBox3.Location = new System.Drawing.Point(3, 52);
             this.checkBox3.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(212, 38);
+            this.checkBox3.Size = new System.Drawing.Size(212, 30);
             this.checkBox3.TabIndex = 1;
             this.checkBox3.Text = "Axis Line Visible";
             // 
@@ -137,7 +137,6 @@
             this.panel.ResumeLayout(false);
             this.flowLayoutPanelProperties.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

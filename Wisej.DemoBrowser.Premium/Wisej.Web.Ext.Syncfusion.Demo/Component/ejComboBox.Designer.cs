@@ -53,7 +53,7 @@
             this.linkDemo.TabIndex = 6;
             this.linkDemo.Text = "https://js.syncfusion.com/demos/web/#!/bootstrap/combobox/DefaultFunctionalities";
             // 
-            // linkAPI
+            // linkApi
             // 
             this.linkApi.TabIndex = 5;
             this.linkApi.Text = "https://help.syncfusion.com/api/js/ejcombobox";
@@ -71,7 +71,7 @@
             // ejComboBox1
             // 
             this.ejComboBox1.Anchor = Wisej.Web.AnchorStyles.None;
-            this.ejComboBox1.Location = new System.Drawing.Point(394, 262);
+            this.ejComboBox1.Location = new System.Drawing.Point(294, 271);
             this.ejComboBox1.Name = "ejComboBox1";
             this.ejComboBox1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("ejComboBox1.Options"))));
             this.ejComboBox1.Size = new System.Drawing.Size(300, 35);
@@ -114,7 +114,6 @@
             this.panel.ResumeLayout(false);
             this.flowLayoutPanelProperties.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 
