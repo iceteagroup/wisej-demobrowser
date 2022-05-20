@@ -31,12 +31,5 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
 
 			this.dxDiagram1.Update();
 		}
-
-        private void dxDiagram_Load(object sender, EventArgs e)
-        {
-			this.comboBox1.SelectedIndex = 0;
-			this.comboBox2.SelectedIndex = 0;
-
-		}
 	}
 }

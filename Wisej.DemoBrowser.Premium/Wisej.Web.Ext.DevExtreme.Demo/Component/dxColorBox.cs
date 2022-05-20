@@ -23,12 +23,12 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
 
 		private void buttonUpdate_Click(object sender, EventArgs e)
 		{
-			this.dxColorBox1.Options.acceptCustomValue = this.checkBox1.Checked;
-			this.dxColorBox1.Options.activeStateEnabled = this.checkBox2.Checked;
-			this.dxColorBox1.Options.isValid = this.checkBox3.Checked;
-			this.dxColorBox1.Options.showClearButton = this.checkBox4.Checked;
-			this.dxColorBox1.Options.showDropDownButton = this.checkBox5.Checked;
-			this.dxColorBox1.Options.applyValueMode = this.comboBox1.SelectedItem;
+			this.dxColorBox1.Options.isValid = this.checkBoxValidInput.Checked;
+			this.dxColorBox1.Options.showClearButton = this.checkBoxClearButton.Checked;
+			this.dxColorBox1.Options.applyValueMode = this.comboBoxValueMode.SelectedItem;
+			this.dxColorBox1.Options.acceptCustomValue = this.checkBoxCustomValue.Checked;
+			this.dxColorBox1.Options.showDropDownButton = this.checkBoxDropDownButton.Checked;
+			this.dxColorBox1.Options.activeStateEnabled = this.checkBoxActiveStateEnabled.Checked;
 
 			this.dxColorBox1.Update();
 		}
@@ -40,10 +40,5 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
 
 			Application.Play(MessageBoxIcon.Information);
 		}
-
-        private void dxColorBox_Load(object sender, EventArgs e)
-        {
-			this.comboBox1.SelectedIndex = 0;
-        }
     }
 }

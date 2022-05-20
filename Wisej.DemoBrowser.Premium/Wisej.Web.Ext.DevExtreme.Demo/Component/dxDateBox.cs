@@ -29,10 +29,5 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
 
 			this.dxDateBox1.Update();
 		}
-
-        private void dxDateBox_Load(object sender, EventArgs e)
-        {
-			this.comboBox2.SelectedIndex = 0; 
-        }
     }
 }
