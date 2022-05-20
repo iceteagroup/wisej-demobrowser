@@ -45,7 +45,7 @@
             this.linkDocs.Text = "https://ej2.syncfusion.com/javascript/documentation/bullet-chart/es5-getting-star" +
     "ted/";
             // 
-            // linkAPI
+            // linkApi
             // 
             this.linkApi.Text = "https://ej2.syncfusion.com/javascript/documentation/api/bullet-chart/overview/";
             // 
@@ -68,12 +68,11 @@
             // 
             // bulletChart1
             // 
-            this.bulletChart1.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Left) 
-            | Wisej.Web.AnchorStyles.Right)));
-            this.bulletChart1.Location = new System.Drawing.Point(8, 8);
+            this.bulletChart1.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Left | Wisej.Web.AnchorStyles.Right)));
+            this.bulletChart1.Location = new System.Drawing.Point(52, 228);
             this.bulletChart1.Name = "bulletChart1";
             this.bulletChart1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("bulletChart1.Options"))));
-            this.bulletChart1.Size = new System.Drawing.Size(1073, 121);
+            this.bulletChart1.Size = new System.Drawing.Size(785, 121);
             this.bulletChart1.TabIndex = 0;
             this.bulletChart1.Text = "bulletChart1";
             // 
@@ -90,7 +89,7 @@
             0,
             0});
             this.numericUpDownValue.Name = "numericUpDownValue";
-            this.numericUpDownValue.Size = new System.Drawing.Size(212, 46);
+            this.numericUpDownValue.Size = new System.Drawing.Size(212, 57);
             this.numericUpDownValue.TabIndex = 1;
             this.numericUpDownValue.Value = new decimal(new int[] {
             270,
@@ -104,7 +103,7 @@
             this.flowLayoutPanel1.SetFillWeight(this.numericUpDownTarget, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.numericUpDownTarget, true);
             this.numericUpDownTarget.LabelText = "Target";
-            this.numericUpDownTarget.Location = new System.Drawing.Point(3, 68);
+            this.numericUpDownTarget.Location = new System.Drawing.Point(3, 79);
             this.numericUpDownTarget.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.numericUpDownTarget.Maximum = new decimal(new int[] {
             300,
@@ -112,7 +111,7 @@
             0,
             0});
             this.numericUpDownTarget.Name = "numericUpDownTarget";
-            this.numericUpDownTarget.Size = new System.Drawing.Size(212, 46);
+            this.numericUpDownTarget.Size = new System.Drawing.Size(212, 57);
             this.numericUpDownTarget.TabIndex = 2;
             this.numericUpDownTarget.Value = new decimal(new int[] {
             250,
@@ -130,7 +129,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownValue)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownTarget)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

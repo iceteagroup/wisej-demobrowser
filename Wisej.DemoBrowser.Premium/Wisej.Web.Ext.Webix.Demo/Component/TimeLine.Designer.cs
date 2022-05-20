@@ -48,7 +48,7 @@
             // 
             this.linkDemo.Text = "https://snippet.webix.com/gallery?search=#timeline";
             // 
-            // linkAPI
+            // linkApi
             // 
             this.linkApi.Text = "https://docs.webix.com/api__refs__ui.timeline.html";
             // 
@@ -62,13 +62,11 @@
             // 
             // timeLine1
             // 
-            this.timeLine1.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
-            | Wisej.Web.AnchorStyles.Left) 
-            | Wisej.Web.AnchorStyles.Right)));
-            this.timeLine1.Location = new System.Drawing.Point(56, 61);
+            this.timeLine1.Dock = Wisej.Web.DockStyle.Fill;
+            this.timeLine1.Location = new System.Drawing.Point(8, 8);
             this.timeLine1.Name = "timeLine1";
             this.timeLine1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("timeLine1.Options"))));
-            this.timeLine1.Size = new System.Drawing.Size(977, 436);
+            this.timeLine1.Size = new System.Drawing.Size(872, 560);
             this.timeLine1.TabIndex = 11;
             this.timeLine1.Text = "timeLine1";
             // 
@@ -82,7 +80,7 @@
             this.comboBoxLayout.LabelText = "Layout";
             this.comboBoxLayout.Location = new System.Drawing.Point(3, 3);
             this.comboBoxLayout.Name = "comboBoxLayout";
-            this.comboBoxLayout.Size = new System.Drawing.Size(212, 46);
+            this.comboBoxLayout.Size = new System.Drawing.Size(212, 57);
             this.comboBoxLayout.TabIndex = 1;
             // 
             // TimeLine
@@ -94,7 +92,6 @@
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

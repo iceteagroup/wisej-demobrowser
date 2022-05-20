@@ -33,31 +33,19 @@
             this.checkBoxAllowScroll = new Wisej.Web.CheckBox();
             this.checkBoxAllowSelect = new Wisej.Web.CheckBox();
             this.numericUpDownZoomLevel = new Wisej.Web.NumericUpDown();
-            this.groupBox1.SuspendLayout();
             this.panel.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownZoomLevel)).BeginInit();
             this.SuspendLayout();
             // 
-            // linkDocs
+            // panel
             // 
-            this.linkDocs.Text = "https://docs.webix.com/desktop__diagram.html#overview";
+            this.panel.Controls.Add(this.diagram1);
             // 
             // buttonUpdate
             // 
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
-            // 
-            // linkDemo
-            // 
-            this.linkDemo.Text = "https://snippet.webix.com/gallery/diagram";
-            // 
-            // linkAPI
-            // 
-            this.linkApi.Text = "https://docs.webix.com/api__refs__ui.diagram.html";
-            // 
-            // panel
-            // 
-            this.panel.Controls.Add(this.diagram1);
             // 
             // flowLayoutPanel1
             // 
@@ -65,13 +53,25 @@
             this.flowLayoutPanel1.Controls.Add(this.checkBoxAllowSelect);
             this.flowLayoutPanel1.Controls.Add(this.numericUpDownZoomLevel);
             // 
+            // linkDocs
+            // 
+            this.linkDocs.Text = "https://docs.webix.com/desktop__diagram.html#overview";
+            // 
+            // linkDemo
+            // 
+            this.linkDemo.Text = "https://snippet.webix.com/gallery/diagram";
+            // 
+            // linkApi
+            // 
+            this.linkApi.Text = "https://docs.webix.com/api__refs__ui.diagram.html";
+            // 
             // diagram1
             // 
             this.diagram1.Dock = Wisej.Web.DockStyle.Fill;
             this.diagram1.Location = new System.Drawing.Point(8, 8);
             this.diagram1.Name = "diagram1";
             this.diagram1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("diagram1.Options"))));
-            this.diagram1.Size = new System.Drawing.Size(1073, 542);
+            this.diagram1.Size = new System.Drawing.Size(872, 560);
             this.diagram1.TabIndex = 0;
             this.diagram1.Text = "diagram1";
             // 
@@ -142,16 +142,14 @@
             // 
             // Diagram
             // 
-            this.MinimumSize = new System.Drawing.Size(1500, 750);
             this.Name = "Diagram";
             this.Load += new System.EventHandler(this.Diagram_Load);
-            this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownZoomLevel)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 

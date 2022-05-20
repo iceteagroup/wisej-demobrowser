@@ -48,7 +48,7 @@
             // 
             this.linkDemo.Text = "https://snippet.webix.com/gallery?search=#chart";
             // 
-            // linkAPI
+            // linkApi
             // 
             this.linkApi.Text = "https://docs.webix.com/api__refs__ui.chart.html";
             // 
@@ -62,13 +62,11 @@
             // 
             // chart1
             // 
-            this.chart1.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
-            | Wisej.Web.AnchorStyles.Left) 
-            | Wisej.Web.AnchorStyles.Right)));
-            this.chart1.Location = new System.Drawing.Point(36, 16);
+            this.chart1.Dock = Wisej.Web.DockStyle.Fill;
+            this.chart1.Location = new System.Drawing.Point(8, 8);
             this.chart1.Name = "chart1";
             this.chart1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("chart1.Options"))));
-            this.chart1.Size = new System.Drawing.Size(1016, 526);
+            this.chart1.Size = new System.Drawing.Size(872, 560);
             this.chart1.TabIndex = 0;
             this.chart1.Text = "chart1";
             // 
@@ -98,7 +96,6 @@
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

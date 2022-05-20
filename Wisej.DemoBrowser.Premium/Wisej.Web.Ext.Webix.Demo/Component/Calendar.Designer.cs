@@ -52,7 +52,7 @@
             // 
             this.linkDemo.Text = "https://snippet.webix.com/gallery?search=#calendar";
             // 
-            // linkAPI
+            // linkApi
             // 
             this.linkApi.Text = "https://docs.webix.com/api__refs__ui.calendar.html";
             // 
@@ -68,13 +68,11 @@
             this.flowLayoutPanel1.Controls.Add(this.checkBoxWeekNumber);
             this.flowLayoutPanel1.Controls.Add(this.dateTimePickerMinDate);
             this.flowLayoutPanel1.Controls.Add(this.dateTimePickerMaxDate);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 38);
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 434);
             // 
             // calendar1
             // 
             this.calendar1.Anchor = Wisej.Web.AnchorStyles.None;
-            this.calendar1.Location = new System.Drawing.Point(294, 79);
+            this.calendar1.Location = new System.Drawing.Point(194, 88);
             this.calendar1.Name = "calendar1";
             this.calendar1.Size = new System.Drawing.Size(500, 400);
             this.calendar1.TabIndex = 0;
@@ -176,7 +174,6 @@
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

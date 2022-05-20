@@ -49,7 +49,7 @@
             // 
             this.linkDemo.Text = "https://snippet.webix.com/gallery?search=#timeboard";
             // 
-            // linkAPI
+            // linkApi
             // 
             this.linkApi.Text = "https://docs.webix.com/api__refs__ui.timeboard.html";
             // 
@@ -62,13 +62,11 @@
             this.flowLayoutPanel1.Controls.Add(this.checkBoxShowTwelve);
             this.flowLayoutPanel1.Controls.Add(this.checkBoxShowSeconds);
             this.flowLayoutPanel1.Controls.Add(this.checkBoxEnableStringResult);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 38);
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 434);
             // 
             // timeBoard1
             // 
             this.timeBoard1.Anchor = Wisej.Web.AnchorStyles.None;
-            this.timeBoard1.Location = new System.Drawing.Point(294, 188);
+            this.timeBoard1.Location = new System.Drawing.Point(194, 197);
             this.timeBoard1.Name = "timeBoard1";
             this.timeBoard1.Size = new System.Drawing.Size(500, 183);
             this.timeBoard1.TabIndex = 11;
@@ -128,7 +126,6 @@
             this.panel.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

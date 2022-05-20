@@ -43,7 +43,7 @@
             // 
             this.linkDocs.Text = "https://ej2.syncfusion.com/javascript/documentation/kanban/getting-started/";
             // 
-            // linkAPI
+            // linkApi
             // 
             this.linkApi.Text = "https://ej2.syncfusion.com/javascript/documentation/api/kanban/";
             // 
@@ -72,7 +72,7 @@
             this.kanban1.Location = new System.Drawing.Point(8, 8);
             this.kanban1.Name = "kanban1";
             this.kanban1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("kanban1.Options"))));
-            this.kanban1.Size = new System.Drawing.Size(1073, 542);
+            this.kanban1.Size = new System.Drawing.Size(872, 560);
             this.kanban1.TabIndex = 0;
             this.kanban1.Text = "kanban1";
             // 
@@ -136,7 +136,6 @@
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

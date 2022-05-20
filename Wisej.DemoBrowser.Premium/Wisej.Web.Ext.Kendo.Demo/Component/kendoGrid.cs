@@ -33,7 +33,6 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 
 			this.kendoGrid1.Options.dataSource = new
 			{
-				type = "jsonp",
 				transport = new
 				{
 					read = $"{this.kendoGrid1.GetServiceURL()}?action=read"

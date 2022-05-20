@@ -42,7 +42,7 @@
             // 
             this.linkDemo.Text = "https://snippet.webix.com/gallery/query";
             // 
-            // linkAPI
+            // linkApi
             // 
             this.linkApi.Text = "https://docs.webix.com/api__refs__ui.query.html";
             // 
@@ -53,7 +53,7 @@
             // query1
             // 
             this.query1.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom)));
-            this.query1.Location = new System.Drawing.Point(296, 8);
+            this.query1.Location = new System.Drawing.Point(196, 17);
             this.query1.Name = "query1";
             this.query1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("query1.Options"))));
             this.query1.Size = new System.Drawing.Size(496, 542);
@@ -67,7 +67,6 @@
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 

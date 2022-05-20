@@ -44,7 +44,7 @@
             this.linkDocs.Text = "https://ej2.syncfusion.com/javascript/documentation/treeview/es5-getting-started/" +
     "";
             // 
-            // linkAPI
+            // linkApi
             // 
             this.linkApi.Text = "https://ej2.syncfusion.com/javascript/documentation/api/treeview/";
             // 
@@ -91,7 +91,7 @@
             this.comboBoxExpandOn.Location = new System.Drawing.Point(3, 132);
             this.comboBoxExpandOn.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.comboBoxExpandOn.Name = "comboBoxExpandOn";
-            this.comboBoxExpandOn.Size = new System.Drawing.Size(212, 46);
+            this.comboBoxExpandOn.Size = new System.Drawing.Size(212, 57);
             this.comboBoxExpandOn.TabIndex = 1;
             // 
             // checkBoxDragAndDrop
@@ -140,7 +140,6 @@
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

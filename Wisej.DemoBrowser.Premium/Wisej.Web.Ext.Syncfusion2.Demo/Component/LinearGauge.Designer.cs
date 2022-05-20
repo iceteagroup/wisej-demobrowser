@@ -32,7 +32,7 @@
             this.linearGauge1 = new Wisej.Web.Ext.Syncfusion2.LinearGauge();
             this.numericUpDown1 = new Wisej.Web.NumericUpDown();
             this.numericUpDownMajorTick = new Wisej.Web.NumericUpDown();
-            this.numericUpDownMinorType = new Wisej.Web.NumericUpDown();
+            this.numericUpDownMinorTick = new Wisej.Web.NumericUpDown();
             this.comboBoxOrientation = new Wisej.Web.ComboBox();
             this.comboBoxContainerType = new Wisej.Web.ComboBox();
             this.groupBox1.SuspendLayout();
@@ -40,7 +40,7 @@
             this.flowLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMajorTick)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMinorType)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMinorTick)).BeginInit();
             this.SuspendLayout();
             // 
             // linkDocs
@@ -48,7 +48,7 @@
             this.linkDocs.Text = "https://ej2.syncfusion.com/javascript/documentation/linear-gauge/es5-getting-star" +
     "ted/";
             // 
-            // linkAPI
+            // linkApi
             // 
             this.linkApi.Text = "https://ej2.syncfusion.com/javascript/documentation/api/linear-gauge/";
             // 
@@ -63,7 +63,7 @@
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.Controls.Add(this.numericUpDownMajorTick);
-            this.flowLayoutPanel1.Controls.Add(this.numericUpDownMinorType);
+            this.flowLayoutPanel1.Controls.Add(this.numericUpDownMinorTick);
             this.flowLayoutPanel1.Controls.Add(this.numericUpDown1);
             this.flowLayoutPanel1.Controls.Add(this.comboBoxOrientation);
             this.flowLayoutPanel1.Controls.Add(this.comboBoxContainerType);
@@ -78,7 +78,7 @@
             this.linearGauge1.Location = new System.Drawing.Point(8, 8);
             this.linearGauge1.Name = "linearGauge1";
             this.linearGauge1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("linearGauge1.Options"))));
-            this.linearGauge1.Size = new System.Drawing.Size(1073, 542);
+            this.linearGauge1.Size = new System.Drawing.Size(872, 560);
             this.linearGauge1.TabIndex = 0;
             this.linearGauge1.Text = "linearGauge1";
             // 
@@ -122,23 +122,23 @@
             // 
             // numericUpDownMinorType
             // 
-            this.numericUpDownMinorType.AutoSize = false;
-            this.flowLayoutPanel1.SetFillWeight(this.numericUpDownMinorType, 1);
-            this.flowLayoutPanel1.SetFlowBreak(this.numericUpDownMinorType, true);
-            this.numericUpDownMinorType.Label.Padding = new Wisej.Web.Padding(0, 0, 0, 2);
-            this.numericUpDownMinorType.Label.Size = 50;
-            this.numericUpDownMinorType.Label.SizeType = Wisej.Web.SizeType.Percent;
-            this.numericUpDownMinorType.LabelText = "Minor Tick";
-            this.numericUpDownMinorType.Location = new System.Drawing.Point(112, 3);
-            this.numericUpDownMinorType.Minimum = new decimal(new int[] {
+            this.numericUpDownMinorTick.AutoSize = false;
+            this.flowLayoutPanel1.SetFillWeight(this.numericUpDownMinorTick, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.numericUpDownMinorTick, true);
+            this.numericUpDownMinorTick.Label.Padding = new Wisej.Web.Padding(0, 0, 0, 2);
+            this.numericUpDownMinorTick.Label.Size = 50;
+            this.numericUpDownMinorTick.Label.SizeType = Wisej.Web.SizeType.Percent;
+            this.numericUpDownMinorTick.LabelText = "Minor Tick";
+            this.numericUpDownMinorTick.Location = new System.Drawing.Point(112, 3);
+            this.numericUpDownMinorTick.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.numericUpDownMinorType.Name = "numericUpDownMinorType";
-            this.numericUpDownMinorType.Size = new System.Drawing.Size(103, 60);
-            this.numericUpDownMinorType.TabIndex = 4;
-            this.numericUpDownMinorType.Value = new decimal(new int[] {
+            this.numericUpDownMinorTick.Name = "numericUpDownMinorType";
+            this.numericUpDownMinorTick.Size = new System.Drawing.Size(103, 60);
+            this.numericUpDownMinorTick.TabIndex = 4;
+            this.numericUpDownMinorTick.Value = new decimal(new int[] {
             1,
             0,
             0,
@@ -148,6 +148,7 @@
             // 
             this.comboBoxOrientation.DropDownStyle = Wisej.Web.ComboBoxStyle.DropDownList;
             this.flowLayoutPanel1.SetFillWeight(this.comboBoxOrientation, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.comboBoxOrientation, true);
             this.comboBoxOrientation.Items.AddRange(new object[] {
             "Vertical",
             "Horizontal"});
@@ -155,22 +156,23 @@
             this.comboBoxOrientation.Location = new System.Drawing.Point(3, 161);
             this.comboBoxOrientation.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.comboBoxOrientation.Name = "comboBoxOrientation";
-            this.comboBoxOrientation.Size = new System.Drawing.Size(103, 57);
+            this.comboBoxOrientation.Size = new System.Drawing.Size(212, 57);
             this.comboBoxOrientation.TabIndex = 5;
             // 
             // comboBoxContainerType
             // 
+            this.comboBoxContainerType.DropDownStyle = Wisej.Web.ComboBoxStyle.DropDownList;
             this.flowLayoutPanel1.SetFillWeight(this.comboBoxContainerType, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.comboBoxContainerType, true);
             this.comboBoxContainerType.Items.AddRange(new object[] {
             "Thermometer",
             "Normal",
             "RoundedRectangle"});
-            this.comboBoxContainerType.LabelText = "Contain Type";
-            this.comboBoxContainerType.Location = new System.Drawing.Point(112, 161);
+            this.comboBoxContainerType.LabelText = "Container Type";
+            this.comboBoxContainerType.Location = new System.Drawing.Point(3, 237);
             this.comboBoxContainerType.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.comboBoxContainerType.Name = "comboBoxContainerType";
-            this.comboBoxContainerType.Size = new System.Drawing.Size(103, 57);
+            this.comboBoxContainerType.Size = new System.Drawing.Size(212, 57);
             this.comboBoxContainerType.TabIndex = 6;
             // 
             // LinearGauge
@@ -182,9 +184,8 @@
             this.flowLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMajorTick)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMinorType)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMinorTick)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 
@@ -194,7 +195,7 @@
 		private NumericUpDown numericUpDown1;
         private ComboBox comboBoxContainerType;
         private ComboBox comboBoxOrientation;
-        private NumericUpDown numericUpDownMinorType;
+        private NumericUpDown numericUpDownMinorTick;
         private NumericUpDown numericUpDownMajorTick;
     }
 }

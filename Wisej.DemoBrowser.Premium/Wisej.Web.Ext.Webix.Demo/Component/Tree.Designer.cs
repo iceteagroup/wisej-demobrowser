@@ -51,7 +51,7 @@
             // 
             this.linkDemo.Text = "https://snippet.webix.com/gallery?search=#tree";
             // 
-            // linkAPI
+            // linkApi
             // 
             this.linkApi.Text = "https://docs.webix.com/api__refs__ui.tree.html";
             // 
@@ -65,13 +65,11 @@
             this.flowLayoutPanel1.Controls.Add(this.checkBoxMultiSelect);
             this.flowLayoutPanel1.Controls.Add(this.checkBoxEnableSelect);
             this.flowLayoutPanel1.Controls.Add(this.checkBoxEnableThreeState);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 38);
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 434);
             // 
             // tree1
             // 
             this.tree1.Anchor = Wisej.Web.AnchorStyles.None;
-            this.tree1.Location = new System.Drawing.Point(418, 162);
+            this.tree1.Location = new System.Drawing.Point(318, 171);
             this.tree1.Name = "tree1";
             this.tree1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("tree1.Options"))));
             this.tree1.Size = new System.Drawing.Size(253, 235);
@@ -150,7 +148,6 @@
             this.panel.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

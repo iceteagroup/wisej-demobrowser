@@ -49,7 +49,7 @@
             // 
             this.linkDemo.Text = "https://snippet.webix.com/gallery?search=#colorpicker";
             // 
-            // linkAPI
+            // linkApi
             // 
             this.linkApi.Text = "https://docs.webix.com/api__refs__ui.colorpicker.html";
             // 
@@ -66,7 +66,7 @@
             // colorPicker1
             // 
             this.colorPicker1.Anchor = Wisej.Web.AnchorStyles.None;
-            this.colorPicker1.Location = new System.Drawing.Point(394, 259);
+            this.colorPicker1.Location = new System.Drawing.Point(294, 268);
             this.colorPicker1.Name = "colorPicker1";
             this.colorPicker1.Size = new System.Drawing.Size(300, 40);
             this.colorPicker1.TabIndex = 11;
@@ -127,7 +127,6 @@
             this.panel.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

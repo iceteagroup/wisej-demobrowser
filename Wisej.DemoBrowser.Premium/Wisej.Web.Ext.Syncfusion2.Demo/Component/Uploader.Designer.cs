@@ -43,7 +43,7 @@
             this.linkDocs.Text = "https://ej2.syncfusion.com/javascript/documentation/uploader/es5-getting-started/" +
     "";
             // 
-            // linkAPI
+            // linkApi
             // 
             this.linkApi.Text = "https://ej2.syncfusion.com/javascript/documentation/api/uploader/";
             // 
@@ -60,8 +60,6 @@
             // 
             this.flowLayoutPanel1.Controls.Add(this.checkBoxMultiple);
             this.flowLayoutPanel1.Controls.Add(this.checkBoxSequentiallUpload);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 45);
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 441);
             // 
             // linkDemo
             // 
@@ -122,7 +120,6 @@
             this.flowLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

@@ -42,7 +42,7 @@
             this.linkDocs.Text = "https://ej2.syncfusion.com/javascript/documentation/datetimepicker/es5-getting-st" +
     "arted/";
             // 
-            // linkAPI
+            // linkApi
             // 
             this.linkApi.Text = "https://ej2.syncfusion.com/javascript/documentation/api/datetimepicker/";
             // 
@@ -79,6 +79,7 @@
             this.comboBoxFormat.Name = "comboBoxFormat";
             this.comboBoxFormat.Size = new System.Drawing.Size(212, 57);
             this.comboBoxFormat.TabIndex = 11;
+            this.comboBoxFormat.Text = "dd-MMM-yy hh:mm a";
             // 
             // dateTimePickerEnd
             // 
@@ -106,12 +107,12 @@
             // dateTimePicker1
             // 
             this.dateTimePicker1.Anchor = Wisej.Web.AnchorStyles.None;
-            this.dateTimePicker1.Location = new System.Drawing.Point(369, 259);
+            this.dateTimePicker1.Location = new System.Drawing.Point(269, 268);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"format\":\"dd-MMM-yy hh:mm a\"}")));
+            this.dateTimePicker1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"format\":\"dd-MMM-yy hh:mm a\",\"value\":\"\"}")));
             this.dateTimePicker1.Size = new System.Drawing.Size(350, 40);
             this.dateTimePicker1.TabIndex = 0;
-            this.dateTimePicker1.Text = "dateTimePicker1";
+            this.dateTimePicker1.Text = "";
             // 
             // DateTimePicker
             // 
@@ -121,7 +122,6 @@
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

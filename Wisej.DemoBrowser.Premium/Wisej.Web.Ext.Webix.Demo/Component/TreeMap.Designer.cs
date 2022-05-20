@@ -49,7 +49,7 @@
             // 
             this.linkDemo.Text = "https://snippet.webix.com/gallery?search=#treemap";
             // 
-            // linkAPI
+            // linkApi
             // 
             this.linkApi.Text = "https://docs.webix.com/api__refs__ui.treemap.html";
             // 
@@ -61,13 +61,11 @@
             // 
             this.flowLayoutPanel1.Controls.Add(this.checkBoxEnableSelect);
             this.flowLayoutPanel1.Controls.Add(this.checkBoxEnableMultiSelect);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 38);
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 434);
             // 
             // treeMap1
             // 
             this.treeMap1.Anchor = Wisej.Web.AnchorStyles.None;
-            this.treeMap1.Location = new System.Drawing.Point(294, 79);
+            this.treeMap1.Location = new System.Drawing.Point(194, 88);
             this.treeMap1.Name = "treeMap1";
             this.treeMap1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("treeMap1.Options"))));
             this.treeMap1.Size = new System.Drawing.Size(500, 400);
@@ -115,7 +113,6 @@
             this.panel.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

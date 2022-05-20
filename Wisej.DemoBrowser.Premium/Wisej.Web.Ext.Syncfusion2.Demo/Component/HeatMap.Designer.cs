@@ -48,7 +48,7 @@
             this.linkDocs.Text = "https://ej2.syncfusion.com/javascript/documentation/heatmap-chart/getting-started" +
     "/";
             // 
-            // linkAPI
+            // linkApi
             // 
             this.linkApi.Text = "https://ej2.syncfusion.com/javascript/documentation/api/heatmap/";
             // 
@@ -78,7 +78,7 @@
             this.heatMap1.Location = new System.Drawing.Point(8, 8);
             this.heatMap1.Name = "heatMap1";
             this.heatMap1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("heatMap1.Options"))));
-            this.heatMap1.Size = new System.Drawing.Size(1073, 542);
+            this.heatMap1.Size = new System.Drawing.Size(872, 560);
             this.heatMap1.TabIndex = 0;
             this.heatMap1.Text = "heatMap1";
             // 
@@ -99,7 +99,7 @@
             this.buttonFromColor.BackColor = System.Drawing.Color.FromArgb(18, 215, 182);
             this.flowLayoutPanel1.SetFillWeight(this.buttonFromColor, 1);
             this.buttonFromColor.ForeColor = System.Drawing.Color.White;
-            this.buttonFromColor.Location = new System.Drawing.Point(3, 114);
+            this.buttonFromColor.Location = new System.Drawing.Point(3, 117);
             this.buttonFromColor.Name = "buttonFromColor";
             this.buttonFromColor.Size = new System.Drawing.Size(103, 27);
             this.buttonFromColor.TabIndex = 9;
@@ -112,7 +112,7 @@
             this.flowLayoutPanel1.SetFillWeight(this.buttonToColor, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.buttonToColor, true);
             this.buttonToColor.ForeColor = System.Drawing.Color.White;
-            this.buttonToColor.Location = new System.Drawing.Point(112, 114);
+            this.buttonToColor.Location = new System.Drawing.Point(112, 117);
             this.buttonToColor.Name = "buttonToColor";
             this.buttonToColor.Size = new System.Drawing.Size(103, 27);
             this.buttonToColor.TabIndex = 10;
@@ -127,7 +127,7 @@
             this.label4.Location = new System.Drawing.Point(3, 89);
             this.label4.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(212, 19);
+            this.label4.Size = new System.Drawing.Size(212, 22);
             this.label4.TabIndex = 11;
             this.label4.Text = "Palette Settings";
             // 
@@ -152,7 +152,6 @@
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

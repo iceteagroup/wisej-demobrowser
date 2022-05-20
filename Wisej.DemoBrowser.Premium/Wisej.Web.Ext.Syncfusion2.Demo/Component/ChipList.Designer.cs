@@ -42,7 +42,7 @@
             // 
             this.linkDocs.Text = "https://ej2.syncfusion.com/javascript/documentation/chips/getting-started/";
             // 
-            // linkAPI
+            // linkApi
             // 
             this.linkApi.Text = "https://ej2.syncfusion.com/javascript/documentation/api/chips/chipList/";
             // 
@@ -68,7 +68,7 @@
             // chipList1
             // 
             this.chipList1.Anchor = Wisej.Web.AnchorStyles.None;
-            this.chipList1.Location = new System.Drawing.Point(359, 260);
+            this.chipList1.Location = new System.Drawing.Point(259, 269);
             this.chipList1.Name = "chipList1";
             this.chipList1.Size = new System.Drawing.Size(371, 39);
             this.chipList1.TabIndex = 0;
@@ -80,6 +80,7 @@
             this.flowLayoutPanel1.SetFillWeight(this.comboBoxSelection, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.comboBoxSelection, true);
             this.comboBoxSelection.Items.AddRange(new object[] {
+            "None",
             "Input chip",
             "Choice chip",
             "Filter chip",
@@ -88,8 +89,9 @@
             this.comboBoxSelection.Location = new System.Drawing.Point(3, 46);
             this.comboBoxSelection.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.comboBoxSelection.Name = "comboBoxSelection";
-            this.comboBoxSelection.Size = new System.Drawing.Size(212, 46);
+            this.comboBoxSelection.Size = new System.Drawing.Size(212, 57);
             this.comboBoxSelection.TabIndex = 1;
+            this.comboBoxSelection.Text = "None";
             // 
             // checkBoxDelete
             // 
@@ -108,10 +110,10 @@
             this.flowLayoutPanel1.SetFillWeight(this.textBoxAvatarText, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.textBoxAvatarText, true);
             this.textBoxAvatarText.LabelText = "Avatar Text";
-            this.textBoxAvatarText.Location = new System.Drawing.Point(3, 111);
+            this.textBoxAvatarText.Location = new System.Drawing.Point(3, 122);
             this.textBoxAvatarText.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.textBoxAvatarText.Name = "textBoxAvatarText";
-            this.textBoxAvatarText.Size = new System.Drawing.Size(212, 46);
+            this.textBoxAvatarText.Size = new System.Drawing.Size(212, 57);
             this.textBoxAvatarText.TabIndex = 3;
             // 
             // label4
@@ -119,7 +121,7 @@
             this.label4.AllowHtml = true;
             this.flowLayoutPanel1.SetFillWeight(this.label4, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.label4, true);
-            this.label4.Location = new System.Drawing.Point(3, 176);
+            this.label4.Location = new System.Drawing.Point(3, 198);
             this.label4.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(212, 55);
@@ -135,7 +137,6 @@
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

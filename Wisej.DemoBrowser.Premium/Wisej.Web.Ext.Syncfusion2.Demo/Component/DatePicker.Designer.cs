@@ -42,7 +42,7 @@
             this.linkDocs.Text = "https://ej2.syncfusion.com/javascript/documentation/datepicker/es5-getting-starte" +
     "d/";
             // 
-            // linkAPI
+            // linkApi
             // 
             this.linkApi.Text = "https://ej2.syncfusion.com/javascript/documentation/api/datepicker/";
             // 
@@ -95,23 +95,25 @@
             this.comboBoxFormat.Items.AddRange(new object[] {
             "dd-MMMM-yy",
             "yyyy-MM-dd",
-            "dd-MMMM"});
+            "dd-MMMM",
+            "dd/MM/YYYY",
+            "dd-MMM-yy"});
             this.comboBoxFormat.LabelText = "Date Format";
             this.comboBoxFormat.Location = new System.Drawing.Point(3, 155);
             this.comboBoxFormat.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.comboBoxFormat.Name = "comboBoxFormat";
             this.comboBoxFormat.Size = new System.Drawing.Size(212, 57);
             this.comboBoxFormat.TabIndex = 5;
+            this.comboBoxFormat.Text = "dd-MMM-yy";
             // 
             // datePicker1
             // 
             this.datePicker1.Anchor = Wisej.Web.AnchorStyles.None;
-            this.datePicker1.Location = new System.Drawing.Point(369, 259);
+            this.datePicker1.Location = new System.Drawing.Point(269, 268);
             this.datePicker1.Name = "datePicker1";
-            this.datePicker1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"format\":\"dd-MMM-yy\",\"value\":\"01/01/2022\"}")));
+            this.datePicker1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"format\":\"dd-MMM-yy\",\"value\":null}")));
             this.datePicker1.Size = new System.Drawing.Size(350, 40);
             this.datePicker1.TabIndex = 0;
-            this.datePicker1.Text = "01/01/2022";
             // 
             // DatePicker
             // 
@@ -121,7 +123,6 @@
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 
