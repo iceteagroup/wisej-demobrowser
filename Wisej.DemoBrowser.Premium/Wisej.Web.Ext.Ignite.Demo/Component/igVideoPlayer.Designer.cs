@@ -128,7 +128,7 @@
             this.checkBoxAutoPlay.Name = "checkBoxAutoPlay";
             this.checkBoxAutoPlay.Size = new System.Drawing.Size(212, 38);
             this.checkBoxAutoPlay.TabIndex = 1;
-            this.checkBoxAutoPlay.Text = "AutoPlay";
+            this.checkBoxAutoPlay.Text = "Auto Play";
             // 
             // checkBoxBrowserControls
             // 
