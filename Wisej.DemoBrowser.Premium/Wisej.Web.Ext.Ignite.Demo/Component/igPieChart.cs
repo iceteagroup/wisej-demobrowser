@@ -13,6 +13,24 @@ namespace Wisej.Web.Ext.Ignite.Demo.Component
 			this.igPieChart1.Instance.onLabelClick += new WidgetEventHandler(igPieChart_WidgetEvent);
 		}
 
+		private void igPieChart_Load(object sender, EventArgs e)
+		{
+			this.igPieChart1.Options.dataSource = new dynamic[]{new {budget = 60, label="Administration", },
+				new {budget = 40, label="Sales", },
+				new {budget = 60, label="IT", },
+				new {budget = 40, label="Marketing", },
+				new {budget = 60, label="Development", },
+				new {budget = 20, label="Support", },
+			};
+			this.igPieChart1.Options.valueMemberPath = "budget";
+			this.igPieChart1.Options.labelMemberPath = "label";
+			this.igPieChart1.Options.radiusFactor = 0.6;
+			this.igPieChart1.Options.labelsPosition = "outsideEnd";
+			this.igPieChart1.Options.leaderLineType = "arc";
+			this.igPieChart1.Options.labelExtent = 40;
+			this.igPieChart1.Options.explodedSlices = new int[] { 2, 3 };
+		}
+
 		private void igPieChart_WidgetEvent(object sender, WidgetEventArgs e)
 		{
 			AlertBox.Show(
@@ -40,5 +58,7 @@ namespace Wisej.Web.Ext.Ignite.Demo.Component
 
 			this.igPieChart1.Update();
 		}
+
+
 	}
 }

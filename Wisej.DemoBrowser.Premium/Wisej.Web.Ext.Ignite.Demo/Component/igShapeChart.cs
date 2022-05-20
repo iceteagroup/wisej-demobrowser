@@ -12,6 +12,33 @@ namespace Wisej.Web.Ext.Ignite.Demo.Component
 			this.igShapeChart1.Instance.onSeriesPointerUp += new WidgetEventHandler(igShapeChart_WidgetEvent);
 		}
 
+		private void igShapeChart_Load(object sender, EventArgs e)
+		{
+			this.igShapeChart1.Options.transitionDuration = 250;
+			this.igShapeChart1.Options.xAxisInterval = 20;
+			this.igShapeChart1.Options.yAxisInterval = 20;
+			this.igShapeChart1.Options.xAxisMinimumValue = 0;
+			this.igShapeChart1.Options.yAxisMinimumValue = 0;
+			this.igShapeChart1.Options.xAxisMaximumValue = 100;
+			this.igShapeChart1.Options.yAxisMaximumValue = 100;
+			this.igShapeChart1.Options.xAxisTickLength = 5;
+			this.igShapeChart1.Options.yAxisTickLength = 5;
+			this.igShapeChart1.Options.xAxisTickStrokeThickness = 1;
+			this.igShapeChart1.Options.yAxisTickStrokeThickness = 1;
+			this.igShapeChart1.Options.xAxisTickStroke = "gray";
+			this.igShapeChart1.Options.yAxisTickStroke = "gray";
+			this.igShapeChart1.Options.thickness = 2;
+			this.igShapeChart1.Options.isHorizontalZoomEnabled = true;
+			this.igShapeChart1.Options.isVerticalZoomEnabled = true;
+			this.igShapeChart1.Options.markerTypes = new string[]{"circle"};
+			this.igShapeChart1.Options.chartType = "point";
+			this.igShapeChart1.Options.title = "point";
+			this.igShapeChart1.Options.dataSource = new dynamic[]{new {X = 20, Y = 20, R = 10, Value = 10, },
+				new {X = 20, Y = 80, R = 30, Value = 10, },
+				new {X = 80, Y = 80, R = 30, Value = 90, },
+				new {X = 80, Y = 20, R = 10, Value = 90, },
+			};
+		}
 		private void buttonUpdate_Click(object sender, EventArgs e)
 		{
 			this.igShapeChart1.Options.title = this.comboBox1.SelectedItem;
@@ -47,5 +74,7 @@ namespace Wisej.Web.Ext.Ignite.Demo.Component
 
 			Application.Play(MessageBoxIcon.Information);
 		}
+
+		
 	}
 }

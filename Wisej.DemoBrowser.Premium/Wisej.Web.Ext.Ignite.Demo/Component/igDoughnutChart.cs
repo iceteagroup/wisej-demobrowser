@@ -12,6 +12,25 @@ namespace Wisej.Web.Ext.Ignite.Demo.Component
 			this.igDoughnutChart1.Instance.onSliceClick += new WidgetEventHandler(igDoughnutChart_WidgetEvent);
 		}
 
+		private void igDoughnutChart_Load(object sender, EventArgs e)
+		{
+			igDoughnutChart1.Options.series = new dynamic[]
+			{
+				new
+				{
+					name = "Pop1990", labelMemberPath = "CountryName", valueMemberPath = "Pop1990", dataSource =
+						new dynamic[]
+						{
+							new {CountryName = "China", Pop1990 = 1141},
+							new {CountryName = "India", Pop1990 = 849},
+							new {CountryName = "United States", Pop1990 = 250},
+							new {CountryName = "Indonesia", Pop1990 = 178},
+							new {CountryName = "Brazil", Pop1990 = 150}
+						},
+					labelsPosition = "bestFit"
+				}
+			};
+		}
 		private void igDoughnutChart_WidgetEvent(object sender, WidgetEventArgs e)
 		{
 			AlertBox.Show(
@@ -38,5 +57,7 @@ namespace Wisej.Web.Ext.Ignite.Demo.Component
 				Pop1990 = this.numericUpDown1.Value 
 			}, 0);
 		}
+
+		
 	}
 }

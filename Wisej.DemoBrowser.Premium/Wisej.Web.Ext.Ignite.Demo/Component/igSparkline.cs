@@ -13,6 +13,9 @@ namespace Wisej.Web.Ext.Ignite.Demo.Component
 		private void igSparkline_Load(object sender, EventArgs e)
 		{
 			this.igSparkline1.Options.dataSource = JSON.Parse(File.ReadAllText(Application.MapPath("Data/Sparkline/data.json")));
+
+			this.igSparkline1.Options.valueMemberPath = "ExtendedPrice";
+			this.igSparkline1.Options.tooltipTemplate = "Low:${Low}<br>High:${High}";
 		}
 
 		private void buttonLoad_Uploaded(object sender, UploadedEventArgs e)

@@ -117,9 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="igCategoryChart1.Options" xml:space="preserve">
-    <value>{"title":"Population per Country","dataSource":[{"Year":"1995","China":1297,"India":920,"United States":266},{"Year":"2005","China":1216,"India":1090,"United States":295},{"Year":"2010","China":1271,"India":1131,"United States":314},{"Year":"2015","China":1361,"India":1251,"United States":322},{"Year":"2020","China":1381,"India":1341,"United States":342},{"Year":"2025","China":1394,"India":1466,"United States":361}],"yAxisFormatLabel":"()=&gt;yAxisFormatLabel","chartType":"auto"}</value>
-  </data>
   <metadata name="$this.RulerSnapLines" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0
