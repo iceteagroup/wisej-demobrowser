@@ -37,12 +37,12 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 
         private async void buttonPDF_Click(object sender, EventArgs e)
         {
-			var dataUrl = await this.kendoSparkline1.ExportPDFAsync();
+			var dataUrl = await this.kendoSparkline1.Instance.exportPDFAsync();
 			var base64 = dataUrl.Replace("data:application/pdf;base64,", "");
 			var bytes = Convert.FromBase64String(base64);
 
 			using (var ms = new MemoryStream(bytes))
-				Application.Download(ms, "kendoStockChart.pdf");
+				Application.Download(ms, "kendoSparkline.pdf");
 		}
 
         private void buttonUpdate_Click(object sender, EventArgs e)

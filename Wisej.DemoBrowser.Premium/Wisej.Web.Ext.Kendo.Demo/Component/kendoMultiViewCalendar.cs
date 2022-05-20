@@ -13,6 +13,12 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 			this.kendoMultiViewCalendar1.Instance.onNavigate += new WidgetEventHandler(kendoMultiViewCalendar1_WidgetEvent);
 		}
 
+		private void kendoMultiViewCalendar_Load(object sender, EventArgs e)
+		{
+			this.dateTimePickerMaxDate.Value = DateTime.Now.AddYears(100);
+			this.dateTimePickerMinDate.Value = DateTime.Now.AddYears(-100);
+		}
+
 		private async void kendoMultiViewCalendar1_WidgetEvent(object sender, WidgetEventArgs e)
 		{
 			switch (e.Type)
@@ -33,21 +39,12 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 			Application.Play(MessageBoxIcon.Information);
 		}
 
-        private async void buttonUpdate_Click(object sender, EventArgs e)
-        {
-			if(this.dateTimePickerMaxDate.Value <= this.dateTimePickerMinDate.Value)
-            {
-				AlertBox.Show("Max date must be greather than min date",
-					MessageBoxIcon.Error);
-
-				Application.Play(MessageBoxIcon.Error);
-
-				return;
-            }
+		private async void buttonUpdate_Click(object sender, EventArgs e)
+		{
 			await this.kendoMultiViewCalendar1.Instance.minAsync(dateTimePickerMinDate.Value);
 			await this.kendoMultiViewCalendar1.Instance.maxAsync(dateTimePickerMaxDate.Value);
 
 			this.kendoMultiViewCalendar1.Update();
-        }
+		}
     }
 }

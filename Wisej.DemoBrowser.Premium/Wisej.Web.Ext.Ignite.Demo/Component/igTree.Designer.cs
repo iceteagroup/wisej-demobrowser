@@ -28,8 +28,8 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(igTree));
             Wisej.Web.Ext.Ignite.igBase.WidgetFunction widgetFunction1 = new Wisej.Web.Ext.Ignite.igBase.WidgetFunction();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(igTree));
             Wisej.Web.Ext.Ignite.igBase.WidgetFunction widgetFunction2 = new Wisej.Web.Ext.Ignite.igBase.WidgetFunction();
             this.igTree2 = new Wisej.Web.Ext.Ignite.igTree();
             this.igTree1 = new Wisej.Web.Ext.Ignite.igTree();
@@ -82,7 +82,6 @@
             this.igTree2.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom)));
             this.igTree2.Location = new System.Drawing.Point(446, 28);
             this.igTree2.Name = "igTree2";
-            this.igTree2.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("igTree2.Options"))));
             this.igTree2.Size = new System.Drawing.Size(252, 521);
             this.igTree2.TabIndex = 1;
             this.igTree2.Text = "igTree2";
@@ -151,6 +150,7 @@
             // igTree
             // 
             this.Name = "igTree";
+            this.Load += new System.EventHandler(this.igTree_Load);
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);

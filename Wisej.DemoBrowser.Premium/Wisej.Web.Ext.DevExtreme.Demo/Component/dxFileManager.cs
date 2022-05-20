@@ -164,8 +164,7 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
 			};
 
 			this.dxFileManager1.Update();
-
-			this.comboBox1.SelectedIndex = 0;
 		}
+
 	}
 }

@@ -47,13 +47,8 @@
             // 
             this.panel.Controls.Add(this.kendoGantt1);
             // 
-            // groupBox1
-            // 
-            this.groupBox1.Size = new System.Drawing.Size(250, 555);
-            // 
             // buttonUpdate
             // 
-            this.buttonUpdate.Location = new System.Drawing.Point(16, 487);
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
             // linkDemo
@@ -77,7 +72,6 @@
             this.flowLayoutPanelProperties.Controls.Add(this.checkBox5);
             this.flowLayoutPanelProperties.Controls.Add(this.numericUpDown1);
             this.flowLayoutPanelProperties.Controls.Add(this.buttonPDF);
-            this.flowLayoutPanelProperties.Size = new System.Drawing.Size(218, 429);
             // 
             // checkBox1
             // 
@@ -200,6 +194,7 @@
             // 
             this.Name = "kendoGantt";
             this.Size = new System.Drawing.Size(1299, 737);
+            this.Load += new System.EventHandler(this.kendoGantt_Load);
             this.panel.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.flowLayoutPanelProperties.ResumeLayout(false);

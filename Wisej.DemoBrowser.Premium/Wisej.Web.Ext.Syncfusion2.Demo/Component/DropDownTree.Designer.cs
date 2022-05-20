@@ -41,7 +41,7 @@
             this.linkDocs.Text = "https://ej2.syncfusion.com/javascript/documentation/drop-down-tree/es5-getting-st" +
     "arted/";
             // 
-            // linkAPI
+            // linkApi
             // 
             this.linkApi.Text = "https://ej2.syncfusion.com/javascript/documentation/api/drop-down-tree/";
             // 
@@ -76,6 +76,7 @@
             this.comboBoxNode.Name = "comboBoxNode";
             this.comboBoxNode.Size = new System.Drawing.Size(212, 57);
             this.comboBoxNode.TabIndex = 2;
+            this.comboBoxNode.Text = "Boot";
             // 
             // tagTextBoxSubNodeDataSource
             // 
@@ -95,7 +96,7 @@
             // dropDownTree1
             // 
             this.dropDownTree1.Anchor = Wisej.Web.AnchorStyles.None;
-            this.dropDownTree1.Location = new System.Drawing.Point(369, 259);
+            this.dropDownTree1.Location = new System.Drawing.Point(269, 268);
             this.dropDownTree1.Name = "dropDownTree1";
             this.dropDownTree1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"fields\":{\"dataSource\":[{\"id\":\"1\",\"name\":\"Boot\"},{\"id\":\"2\",\"name\":\"FileManager\"}" +
         ",{\"id\":\"3\",\"name\":\"System32\"}],\"value\":\"id\",\"text\":\"name\",\"child\":\"subChild\",\"ex" +
@@ -112,7 +113,6 @@
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

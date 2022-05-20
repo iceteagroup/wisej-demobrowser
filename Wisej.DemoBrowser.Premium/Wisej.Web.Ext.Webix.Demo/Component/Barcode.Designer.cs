@@ -41,7 +41,7 @@
             // 
             this.linkDemo.Text = "https://snippet.webix.com/gallery?search=#barcode";
             // 
-            // linkAPI
+            // linkApi
             // 
             this.linkApi.Text = "https://docs.webix.com/api__refs__ui.barcode.html";
             // 
@@ -49,15 +49,10 @@
             // 
             this.panel.Controls.Add(this.barcode1);
             // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 38);
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 434);
-            // 
             // barcode1
             // 
             this.barcode1.Anchor = Wisej.Web.AnchorStyles.None;
-            this.barcode1.Location = new System.Drawing.Point(294, 79);
+            this.barcode1.Location = new System.Drawing.Point(194, 88);
             this.barcode1.Name = "barcode1";
             this.barcode1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"type\":\"ean13\",\"value\":\"123456789012\"}")));
             this.barcode1.Size = new System.Drawing.Size(500, 400);
@@ -72,7 +67,6 @@
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

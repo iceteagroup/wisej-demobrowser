@@ -46,13 +46,8 @@
             this.linkDocs.TabIndex = 4;
             this.linkDocs.Text = "https://help.syncfusion.com/js/fileexplorer/overview";
             // 
-            // groupBox1
-            // 
-            this.groupBox1.Size = new System.Drawing.Size(250, 590);
-            // 
             // buttonUpdate
             // 
-            this.buttonUpdate.Location = new System.Drawing.Point(16, 522);
             this.buttonUpdate.TabIndex = 8;
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
@@ -63,7 +58,7 @@
             this.linkDemo.Text = "https://js.syncfusion.com/demos/web/#!/bootstrap/fileexplorer/DefaultFunctionalit" +
     "ies";
             // 
-            // linkAPI
+            // linkApi
             // 
             this.linkApi.TabIndex = 5;
             this.linkApi.Text = "https://help.syncfusion.com/api/js/ejfileexplorer";
@@ -71,7 +66,6 @@
             // panel
             // 
             this.panel.Controls.Add(this.ejFileExplorer1);
-            this.panel.Size = new System.Drawing.Size(1091, 590);
             this.panel.TabIndex = 7;
             // 
             // flowLayoutPanelProperties
@@ -83,14 +77,13 @@
             this.flowLayoutPanelProperties.Controls.Add(this.checkBox6);
             this.flowLayoutPanelProperties.Controls.Add(this.checkBox7);
             this.flowLayoutPanelProperties.Controls.Add(this.comboBox1);
-            this.flowLayoutPanelProperties.Size = new System.Drawing.Size(218, 464);
             // 
             // ejFileExplorer1
             // 
             this.ejFileExplorer1.Dock = Wisej.Web.DockStyle.Fill;
             this.ejFileExplorer1.Location = new System.Drawing.Point(8, 8);
             this.ejFileExplorer1.Name = "ejFileExplorer1";
-            this.ejFileExplorer1.Size = new System.Drawing.Size(1073, 572);
+            this.ejFileExplorer1.Size = new System.Drawing.Size(872, 560);
             this.ejFileExplorer1.TabIndex = 0;
             this.ejFileExplorer1.Text = "ejFileExplorer1";
             this.ejFileExplorer1.WebRequest += new Wisej.Web.WebRequestHandler(this.ejFileExplorer1_WebRequest);
@@ -207,13 +200,11 @@
             // ejFileExplorer
             // 
             this.Name = "ejFileExplorer";
-            this.Size = new System.Drawing.Size(1500, 780);
             this.Load += new System.EventHandler(this.ejFileExplorer_Load);
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
             this.flowLayoutPanelProperties.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

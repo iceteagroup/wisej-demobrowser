@@ -46,13 +46,19 @@
             this.label7 = new Wisej.Web.Label();
             this.checkBox2 = new Wisej.Web.CheckBox();
             this.checkBox1 = new Wisej.Web.CheckBox();
-            this.groupBox1.SuspendLayout();
             this.panel.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.flowLayoutPanelProperties.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // panel
+            // 
+            this.panel.Controls.Add(this.panel3);
+            this.panel.Controls.Add(this.panel2);
+            this.panel.Controls.Add(this.panel1);
             // 
             // linkDocs
             // 
@@ -67,15 +73,9 @@
             this.linkDemo.Size = new System.Drawing.Size(510, 24);
             this.linkDemo.Text = "https://js.syncfusion.com/demos/web/#!/bootstrap/button/checkboxes";
             // 
-            // linkAPI
+            // linkApi
             // 
             this.linkApi.Text = "https://help.syncfusion.com/api/js/ejcheckbox";
-            // 
-            // panel
-            // 
-            this.panel.Controls.Add(this.panel3);
-            this.panel.Controls.Add(this.panel2);
-            this.panel.Controls.Add(this.panel1);
             // 
             // flowLayoutPanelProperties
             // 
@@ -91,7 +91,7 @@
             this.panel1.Controls.Add(this.ejCheckBox1);
             this.panel1.Controls.Add(this.ejCheckBox2);
             this.panel1.CssStyle = "text-align: center;";
-            this.panel1.Location = new System.Drawing.Point(369, 133);
+            this.panel1.Location = new System.Drawing.Point(269, 142);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(350, 71);
             this.panel1.TabIndex = 9;
@@ -100,7 +100,7 @@
             // 
             this.ejCheckBox6.Location = new System.Drawing.Point(260, 35);
             this.ejCheckBox6.Name = "ejCheckBox6";
-            this.ejCheckBox6.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"text\":\"Bike Riding\"}")));
+            this.ejCheckBox6.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"text\":\"Bike Riding\",\"value\":\"ejCheckBox6\"}")));
             this.ejCheckBox6.Size = new System.Drawing.Size(88, 23);
             this.ejCheckBox6.TabIndex = 5;
             this.ejCheckBox6.Text = "ejCheckBox6";
@@ -120,7 +120,7 @@
             this.ejCheckBox1.CssStyle = ".text-align: center";
             this.ejCheckBox1.Location = new System.Drawing.Point(3, 35);
             this.ejCheckBox1.Name = "ejCheckBox1";
-            this.ejCheckBox1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"text\":\"Music\"}")));
+            this.ejCheckBox1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"text\":\"Music\",\"value\":\"ejCheckBox1\"}")));
             this.ejCheckBox1.Size = new System.Drawing.Size(59, 23);
             this.ejCheckBox1.TabIndex = 4;
             this.ejCheckBox1.Text = "ejCheckBox1";
@@ -129,7 +129,7 @@
             // 
             this.ejCheckBox2.Location = new System.Drawing.Point(139, 35);
             this.ejCheckBox2.Name = "ejCheckBox2";
-            this.ejCheckBox2.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"text\":\"Sports\"}")));
+            this.ejCheckBox2.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"text\":\"Sports\",\"value\":\"ejCheckBox2\"}")));
             this.ejCheckBox2.Size = new System.Drawing.Size(60, 23);
             this.ejCheckBox2.TabIndex = 2;
             this.ejCheckBox2.Text = "ejCheckBox2";
@@ -142,7 +142,7 @@
             this.panel2.Controls.Add(this.ejCheckBox4);
             this.panel2.Controls.Add(this.ejCheckBox5);
             this.panel2.CssStyle = "text-align: center;";
-            this.panel2.Location = new System.Drawing.Point(369, 244);
+            this.panel2.Location = new System.Drawing.Point(269, 253);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(350, 71);
             this.panel2.TabIndex = 10;
@@ -151,7 +151,7 @@
             // 
             this.ejCheckBox3.Location = new System.Drawing.Point(260, 35);
             this.ejCheckBox3.Name = "ejCheckBox3";
-            this.ejCheckBox3.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"text\":\"Bing\"}")));
+            this.ejCheckBox3.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"text\":\"Bing\",\"value\":\"ejCheckBox3\"}")));
             this.ejCheckBox3.Size = new System.Drawing.Size(48, 23);
             this.ejCheckBox3.TabIndex = 5;
             this.ejCheckBox3.Text = "ejCheckBox3";
@@ -171,7 +171,7 @@
             this.ejCheckBox4.CssStyle = ".text-align: center";
             this.ejCheckBox4.Location = new System.Drawing.Point(3, 35);
             this.ejCheckBox4.Name = "ejCheckBox4";
-            this.ejCheckBox4.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"text\":\"Google\"}")));
+            this.ejCheckBox4.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"text\":\"Google\",\"value\":\"ejCheckBox4\"}")));
             this.ejCheckBox4.Size = new System.Drawing.Size(64, 23);
             this.ejCheckBox4.TabIndex = 4;
             this.ejCheckBox4.Text = "ejCheckBox4";
@@ -180,7 +180,7 @@
             // 
             this.ejCheckBox5.Location = new System.Drawing.Point(139, 35);
             this.ejCheckBox5.Name = "ejCheckBox5";
-            this.ejCheckBox5.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"text\":\"Yahoo\"}")));
+            this.ejCheckBox5.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"text\":\"Yahoo\",\"value\":\"ejCheckBox5\"}")));
             this.ejCheckBox5.Size = new System.Drawing.Size(59, 23);
             this.ejCheckBox5.TabIndex = 2;
             this.ejCheckBox5.Text = "ejCheckBox5";
@@ -193,7 +193,7 @@
             this.panel3.Controls.Add(this.ejCheckBox8);
             this.panel3.Controls.Add(this.ejCheckBox9);
             this.panel3.CssStyle = "text-align: center;";
-            this.panel3.Location = new System.Drawing.Point(369, 355);
+            this.panel3.Location = new System.Drawing.Point(269, 364);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(350, 71);
             this.panel3.TabIndex = 11;
@@ -202,7 +202,7 @@
             // 
             this.ejCheckBox7.Location = new System.Drawing.Point(260, 35);
             this.ejCheckBox7.Name = "ejCheckBox7";
-            this.ejCheckBox7.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"size\":\"medium\",\"text\":\"Instagram\",\"enableTriState\":true}")));
+            this.ejCheckBox7.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"size\":\"medium\",\"text\":\"Instagram\",\"enableTriState\":true,\"value\":\"ejCheckBox7\"}")));
             this.ejCheckBox7.Size = new System.Drawing.Size(87, 33);
             this.ejCheckBox7.TabIndex = 5;
             this.ejCheckBox7.Text = "ejCheckBox7";
@@ -222,7 +222,7 @@
             this.ejCheckBox8.CssStyle = ".text-align: center";
             this.ejCheckBox8.Location = new System.Drawing.Point(3, 35);
             this.ejCheckBox8.Name = "ejCheckBox8";
-            this.ejCheckBox8.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"size\":\"medium\",\"text\":\"Facebook\",\"enableTriState\":true}")));
+            this.ejCheckBox8.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"size\":\"medium\",\"text\":\"Facebook\",\"enableTriState\":true,\"value\":\"ejCheckBox8\"}")));
             this.ejCheckBox8.Size = new System.Drawing.Size(85, 33);
             this.ejCheckBox8.TabIndex = 4;
             this.ejCheckBox8.Text = "ejCheckBox8";
@@ -231,7 +231,7 @@
             // 
             this.ejCheckBox9.Location = new System.Drawing.Point(139, 35);
             this.ejCheckBox9.Name = "ejCheckBox9";
-            this.ejCheckBox9.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"size\":\"medium\",\"text\":\"Twitter\",\"enableTriState\":true}")));
+            this.ejCheckBox9.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"size\":\"medium\",\"text\":\"Twitter\",\"enableTriState\":true,\"value\":\"ejCheckBox9\"}")));
             this.ejCheckBox9.Size = new System.Drawing.Size(70, 33);
             this.ejCheckBox9.TabIndex = 2;
             this.ejCheckBox9.Text = "ejCheckBox9";
@@ -277,8 +277,8 @@
             // ejCheckBox
             // 
             this.Name = "ejCheckBox";
-            this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
             this.flowLayoutPanelProperties.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -287,7 +287,6 @@
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

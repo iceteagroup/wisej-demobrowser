@@ -45,7 +45,7 @@
             // 
             this.linkDocs.Text = "https://ej2.syncfusion.com/javascript/documentation/gantt/es5-getting-started/";
             // 
-            // linkAPI
+            // linkApi
             // 
             this.linkApi.Text = "https://ej2.syncfusion.com/javascript/documentation/api/gantt/";
             // 
@@ -77,7 +77,7 @@
             this.gantt1.Location = new System.Drawing.Point(8, 8);
             this.gantt1.Name = "gantt1";
             this.gantt1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"dataSource\":[]}")));
-            this.gantt1.Size = new System.Drawing.Size(1073, 542);
+            this.gantt1.Size = new System.Drawing.Size(872, 560);
             this.gantt1.TabIndex = 0;
             this.gantt1.Text = "gantt1";
             // 
@@ -154,12 +154,13 @@
             "day",
             "hour",
             "minute"});
-            this.comboBoxDuration.LabelText = "Duration unit";
+            this.comboBoxDuration.LabelText = "Duration Unit";
             this.comboBoxDuration.Location = new System.Drawing.Point(3, 261);
             this.comboBoxDuration.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.comboBoxDuration.Name = "comboBoxDuration";
-            this.comboBoxDuration.Size = new System.Drawing.Size(212, 46);
+            this.comboBoxDuration.Size = new System.Drawing.Size(212, 57);
             this.comboBoxDuration.TabIndex = 6;
+            this.comboBoxDuration.Text = "day";
             // 
             // checkBoxShowColumn
             // 
@@ -183,7 +184,6 @@
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

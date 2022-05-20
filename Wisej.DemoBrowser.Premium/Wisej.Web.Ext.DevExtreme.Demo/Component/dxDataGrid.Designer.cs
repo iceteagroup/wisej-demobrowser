@@ -85,10 +85,8 @@
             // 
             // dxDataGrid1
             // 
-            this.dxDataGrid1.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
-            | Wisej.Web.AnchorStyles.Left) 
-            | Wisej.Web.AnchorStyles.Right)));
-            this.dxDataGrid1.Location = new System.Drawing.Point(27, 28);
+            this.dxDataGrid1.Dock = Wisej.Web.DockStyle.Fill;
+            this.dxDataGrid1.Location = new System.Drawing.Point(8, 8);
             this.dxDataGrid1.Name = "dxDataGrid1";
             this.dxDataGrid1.Size = new System.Drawing.Size(835, 521);
             this.dxDataGrid1.TabIndex = 0;

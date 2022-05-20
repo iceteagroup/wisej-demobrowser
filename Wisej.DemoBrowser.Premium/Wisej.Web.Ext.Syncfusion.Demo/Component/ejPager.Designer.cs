@@ -33,11 +33,17 @@
             this.ejRotator1 = new Wisej.Web.Ext.Syncfusion.ejRotator();
             this.buttonGoToFirstPage = new Wisej.Web.Button();
             this.numericSelectedPage = new Wisej.Web.NumericUpDown();
-            this.groupBox1.SuspendLayout();
             this.panel.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.flowLayoutPanelProperties.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericSelectedPage)).BeginInit();
             this.SuspendLayout();
+            // 
+            // panel
+            // 
+            this.panel.Controls.Add(this.ejRotator1);
+            this.panel.Controls.Add(this.ejPager1);
+            this.panel.TabIndex = 7;
             // 
             // linkDocs
             // 
@@ -55,16 +61,10 @@
             this.linkDemo.TabIndex = 6;
             this.linkDemo.Text = "https://js.syncfusion.com/demos/web/#!/bootstrap/pager/DefaultFunctionalities";
             // 
-            // linkAPI
+            // linkApi
             // 
             this.linkApi.TabIndex = 5;
             this.linkApi.Text = "https://help.syncfusion.com/api/js/ejpager";
-            // 
-            // panel
-            // 
-            this.panel.Controls.Add(this.ejRotator1);
-            this.panel.Controls.Add(this.ejPager1);
-            this.panel.TabIndex = 7;
             // 
             // flowLayoutPanelProperties
             // 
@@ -74,7 +74,7 @@
             // ejPager1
             // 
             this.ejPager1.Anchor = Wisej.Web.AnchorStyles.None;
-            this.ejPager1.Location = new System.Drawing.Point(229, 434);
+            this.ejPager1.Location = new System.Drawing.Point(129, 443);
             this.ejPager1.Name = "ejPager1";
             this.ejPager1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"pageSize\":1,\"totalPages\":6,\"totalRecordsCount\":6,\"pageCount\":3,\"isResponsive\":t" +
         "rue}")));
@@ -85,7 +85,7 @@
             // ejRotator1
             // 
             this.ejRotator1.Anchor = Wisej.Web.AnchorStyles.None;
-            this.ejRotator1.Location = new System.Drawing.Point(229, 81);
+            this.ejRotator1.Location = new System.Drawing.Point(129, 90);
             this.ejRotator1.Name = "ejRotator1";
             this.ejRotator1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("ejRotator1.Options"))));
             this.ejRotator1.Size = new System.Drawing.Size(630, 347);
@@ -130,12 +130,11 @@
             // ejPager
             // 
             this.Name = "ejPager";
-            this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
             this.flowLayoutPanelProperties.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.numericSelectedPage)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

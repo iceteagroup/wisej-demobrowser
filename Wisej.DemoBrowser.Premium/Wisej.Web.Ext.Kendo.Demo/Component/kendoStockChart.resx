@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="kendoStockChart1.Options" xml:space="preserve">
-    <value>{"dataSource":{"transport":{"read":{"url":"../content/dataviz/js/boeing-stock.json","dataType":"json"}},"schema":{"model":{"fields":{"Date":{"type":"date"}}}}},"title":{"text":"The Boeing Company\nNYSE:BA"},"dateField":"Date","series":[{"type":"candlestick","openField":"Open","highField":"High","lowField":"Low","closeField":"Close"}],"categoryAxis":{"labels":{"rotation":"auto"}},"navigator":{"series":{"type":"area","field":"Close"},"select":{"from":"2009/02/05","to":"2011/10/07"},"categoryAxis":{"labels":{"rotation":"auto"}}}}</value>
+    <value>{"title":{"text":"The Boeing Company\nNYSE:BA"},"dateField":"Date","series":[{"type":"candlestick","openField":"Open","highField":"High","lowField":"Low","closeField":"Close"}],"categoryAxis":{"labels":{"rotation":"auto"}},"navigator":{"series":{"type":"area","field":"Close"},"select":{"from":"2009/02/05","to":"2011/10/07"},"categoryAxis":{"labels":{"rotation":"auto"}}}}</value>
   </data>
   <metadata name="$this.RulerSnapLines" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>

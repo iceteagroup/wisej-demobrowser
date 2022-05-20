@@ -64,11 +64,11 @@
             // kendoMultiSelect1
             // 
             this.kendoMultiSelect1.Anchor = Wisej.Web.AnchorStyles.None;
-            this.kendoMultiSelect1.Location = new System.Drawing.Point(294, 268);
+            this.kendoMultiSelect1.Location = new System.Drawing.Point(294, 241);
             this.kendoMultiSelect1.Name = "kendoMultiSelect1";
             this.kendoMultiSelect1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"dataTextField\":\"text\",\"dataValueField\":\"value\",\"dataSource\":[{\"text\":\"Item1\",\"v" +
         "alue\":\"1\"},{\"text\":\"Item2\",\"value\":\"2\"}]}")));
-            this.kendoMultiSelect1.Size = new System.Drawing.Size(300, 40);
+            this.kendoMultiSelect1.Size = new System.Drawing.Size(300, 94);
             this.kendoMultiSelect1.TabIndex = 0;
             this.kendoMultiSelect1.Text = "kendoMultiSelect1";
             // 

@@ -61,7 +61,7 @@
             this.linkDemo.TabIndex = 6;
             this.linkDemo.Text = "https://js.syncfusion.com/demos/web/#!/flatlight/sunburst/Default";
             // 
-            // linkAPI
+            // linkApi
             // 
             this.linkApi.TabIndex = 5;
             this.linkApi.Text = "https://help.syncfusion.com/api/js/ejsunburstchart";
@@ -86,7 +86,7 @@
             this.ejSunburstChart1.Location = new System.Drawing.Point(8, 8);
             this.ejSunburstChart1.Name = "ejSunburstChart1";
             this.ejSunburstChart1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("ejSunburstChart1.Options"))));
-            this.ejSunburstChart1.Size = new System.Drawing.Size(1073, 542);
+            this.ejSunburstChart1.Size = new System.Drawing.Size(872, 560);
             this.ejSunburstChart1.TabIndex = 0;
             this.ejSunburstChart1.Text = "ejSunburstChart1";
             // 
@@ -98,7 +98,7 @@
             this.numericUpDown1.Label.Size = 50;
             this.numericUpDown1.Label.SizeType = Wisej.Web.SizeType.Percent;
             this.numericUpDown1.LabelText = "Start Angle";
-            this.numericUpDown1.Location = new System.Drawing.Point(3, 131);
+            this.numericUpDown1.Location = new System.Drawing.Point(3, 123);
             this.numericUpDown1.Margin = new Wisej.Web.Padding(3, 12, 3, 3);
             this.numericUpDown1.Maximum = new decimal(new int[] {
             360,
@@ -117,7 +117,7 @@
             this.numericUpDown2.Label.Size = 50;
             this.numericUpDown2.Label.SizeType = Wisej.Web.SizeType.Percent;
             this.numericUpDown2.LabelText = "End Angle";
-            this.numericUpDown2.Location = new System.Drawing.Point(3, 206);
+            this.numericUpDown2.Location = new System.Drawing.Point(3, 198);
             this.numericUpDown2.Margin = new Wisej.Web.Padding(3, 12, 3, 3);
             this.numericUpDown2.Maximum = new decimal(new int[] {
             360,
@@ -147,7 +147,7 @@
             this.numericUpDown3.Label.Size = 50;
             this.numericUpDown3.Label.SizeType = Wisej.Web.SizeType.Percent;
             this.numericUpDown3.LabelText = "Radius";
-            this.numericUpDown3.Location = new System.Drawing.Point(3, 281);
+            this.numericUpDown3.Location = new System.Drawing.Point(3, 273);
             this.numericUpDown3.Margin = new Wisej.Web.Padding(3, 12, 3, 3);
             this.numericUpDown3.Maximum = new decimal(new int[] {
             1,
@@ -177,7 +177,7 @@
             this.numericUpDown4.Label.Size = 50;
             this.numericUpDown4.Label.SizeType = Wisej.Web.SizeType.Percent;
             this.numericUpDown4.LabelText = "Inner Radius";
-            this.numericUpDown4.Location = new System.Drawing.Point(3, 356);
+            this.numericUpDown4.Location = new System.Drawing.Point(3, 348);
             this.numericUpDown4.Margin = new Wisej.Web.Padding(3, 12, 3, 3);
             this.numericUpDown4.Maximum = new decimal(new int[] {
             1,
@@ -203,7 +203,7 @@
             this.flowLayoutPanelProperties.SetFlowBreak(this.checkBox1, true);
             this.checkBox1.Location = new System.Drawing.Point(3, 3);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(212, 38);
+            this.checkBox1.Size = new System.Drawing.Size(212, 30);
             this.checkBox1.TabIndex = 0;
             this.checkBox1.Text = "Legend Visible";
             // 
@@ -221,7 +221,7 @@
             this.comboBox1.Label.Size = 50;
             this.comboBox1.Label.SizeType = Wisej.Web.SizeType.Percent;
             this.comboBox1.LabelText = "Legend Position";
-            this.comboBox1.Location = new System.Drawing.Point(3, 56);
+            this.comboBox1.Location = new System.Drawing.Point(3, 48);
             this.comboBox1.Margin = new Wisej.Web.Padding(3, 12, 3, 3);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(212, 60);
@@ -239,7 +239,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

@@ -153,6 +153,7 @@
             // kendoScheduler
             // 
             this.Name = "kendoScheduler";
+            this.Load += new System.EventHandler(this.kendoScheduler_Load);
             this.panel.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.flowLayoutPanelProperties.ResumeLayout(false);

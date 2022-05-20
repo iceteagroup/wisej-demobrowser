@@ -58,7 +58,7 @@
             this.linkDemo.Text = "https://js.syncfusion.com/demos/web/#!/bootstrap/timepicker/defaultfunctionalitie" +
     "s";
             // 
-            // linkAPI
+            // linkApi
             // 
             this.linkApi.TabIndex = 5;
             this.linkApi.Text = "https://help.syncfusion.com/api/js/ejtimepicker";
@@ -81,7 +81,7 @@
             // ejTimePicker1
             // 
             this.ejTimePicker1.Anchor = Wisej.Web.AnchorStyles.None;
-            this.ejTimePicker1.Location = new System.Drawing.Point(394, 264);
+            this.ejTimePicker1.Location = new System.Drawing.Point(294, 273);
             this.ejTimePicker1.Name = "ejTimePicker1";
             this.ejTimePicker1.Size = new System.Drawing.Size(300, 30);
             this.ejTimePicker1.TabIndex = 0;
@@ -91,10 +91,10 @@
             // 
             this.flowLayoutPanelProperties.SetFillWeight(this.buttonGetTime, 1);
             this.flowLayoutPanelProperties.SetFlowBreak(this.buttonGetTime, true);
-            this.buttonGetTime.Location = new System.Drawing.Point(3, 241);
+            this.buttonGetTime.Location = new System.Drawing.Point(3, 199);
             this.buttonGetTime.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.buttonGetTime.Name = "buttonGetTime";
-            this.buttonGetTime.Size = new System.Drawing.Size(212, 40);
+            this.buttonGetTime.Size = new System.Drawing.Size(212, 35);
             this.buttonGetTime.TabIndex = 4;
             this.buttonGetTime.Text = "Get Time";
             this.buttonGetTime.Click += new System.EventHandler(this.buttonGetTime_Click);
@@ -103,10 +103,10 @@
             // 
             this.flowLayoutPanelProperties.SetFillWeight(this.buttonTimeNow, 1);
             this.flowLayoutPanelProperties.SetFlowBreak(this.buttonTimeNow, true);
-            this.buttonTimeNow.Location = new System.Drawing.Point(3, 300);
+            this.buttonTimeNow.Location = new System.Drawing.Point(3, 253);
             this.buttonTimeNow.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.buttonTimeNow.Name = "buttonTimeNow";
-            this.buttonTimeNow.Size = new System.Drawing.Size(212, 40);
+            this.buttonTimeNow.Size = new System.Drawing.Size(212, 35);
             this.buttonTimeNow.TabIndex = 5;
             this.buttonTimeNow.Text = "Time Now";
             this.buttonTimeNow.Click += new System.EventHandler(this.buttonTimeNow_Click);
@@ -115,10 +115,10 @@
             // 
             this.flowLayoutPanelProperties.SetFillWeight(this.buttonShowHidePopup, 1);
             this.flowLayoutPanelProperties.SetFlowBreak(this.buttonShowHidePopup, true);
-            this.buttonShowHidePopup.Location = new System.Drawing.Point(3, 359);
+            this.buttonShowHidePopup.Location = new System.Drawing.Point(3, 307);
             this.buttonShowHidePopup.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.buttonShowHidePopup.Name = "buttonShowHidePopup";
-            this.buttonShowHidePopup.Size = new System.Drawing.Size(212, 40);
+            this.buttonShowHidePopup.Size = new System.Drawing.Size(212, 35);
             this.buttonShowHidePopup.TabIndex = 6;
             this.buttonShowHidePopup.Text = "Show / Hide Popup";
             this.buttonShowHidePopup.Click += new System.EventHandler(this.buttonShowHidePopup_Click);
@@ -133,7 +133,7 @@
             this.flowLayoutPanelProperties.SetFlowBreak(this.checkBoxEnabled, true);
             this.checkBoxEnabled.Location = new System.Drawing.Point(3, 3);
             this.checkBoxEnabled.Name = "checkBoxEnabled";
-            this.checkBoxEnabled.Size = new System.Drawing.Size(212, 38);
+            this.checkBoxEnabled.Size = new System.Drawing.Size(212, 30);
             this.checkBoxEnabled.TabIndex = 0;
             this.checkBoxEnabled.Text = "Enabled";
             // 
@@ -144,10 +144,10 @@
             this.checkBox1.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.flowLayoutPanelProperties.SetFillWeight(this.checkBox1, 1);
             this.flowLayoutPanelProperties.SetFlowBreak(this.checkBox1, true);
-            this.checkBox1.Location = new System.Drawing.Point(3, 60);
+            this.checkBox1.Location = new System.Drawing.Point(3, 52);
             this.checkBox1.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(212, 38);
+            this.checkBox1.Size = new System.Drawing.Size(212, 30);
             this.checkBox1.TabIndex = 1;
             this.checkBox1.Text = "Enable Strict Mode";
             // 
@@ -159,10 +159,10 @@
             this.checkBox2.Checked = true;
             this.flowLayoutPanelProperties.SetFillWeight(this.checkBox2, 1);
             this.flowLayoutPanelProperties.SetFlowBreak(this.checkBox2, true);
-            this.checkBox2.Location = new System.Drawing.Point(3, 117);
+            this.checkBox2.Location = new System.Drawing.Point(3, 101);
             this.checkBox2.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(212, 38);
+            this.checkBox2.Size = new System.Drawing.Size(212, 30);
             this.checkBox2.TabIndex = 2;
             this.checkBox2.Text = "Show Popup button";
             // 
@@ -173,10 +173,10 @@
             this.checkBox3.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.flowLayoutPanelProperties.SetFillWeight(this.checkBox3, 1);
             this.flowLayoutPanelProperties.SetFlowBreak(this.checkBox3, true);
-            this.checkBox3.Location = new System.Drawing.Point(3, 174);
+            this.checkBox3.Location = new System.Drawing.Point(3, 150);
             this.checkBox3.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(212, 48);
+            this.checkBox3.Size = new System.Drawing.Size(212, 30);
             this.checkBox3.TabIndex = 3;
             this.checkBox3.Text = "Show Rounded Corner";
             // 
@@ -187,7 +187,6 @@
             this.panel.ResumeLayout(false);
             this.flowLayoutPanelProperties.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

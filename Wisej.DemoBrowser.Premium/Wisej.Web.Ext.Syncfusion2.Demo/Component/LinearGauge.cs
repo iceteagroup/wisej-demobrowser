@@ -25,16 +25,21 @@ namespace Wisej.Web.Ext.Syncfusion2.Demo.Component
 		{
 			this.linearGauge1.Instance.setPointerValue(0, 0, this.numericUpDown1.Value);
 
-			if(this.numericUpDownMinorType.Value >= this.numericUpDownMajorTick.Value)
+			if(this.numericUpDownMinorTick.Value >= this.numericUpDownMajorTick.Value)
             {
 				return;
             }
 
-			this.linearGauge1.Options.orientation = this.comboBoxOrientation.Text;
-			this.linearGauge1.Options.container.type = this.comboBoxContainerType.Text;
-			this.linearGauge1.Options.majorTicks.interval = Convert.ToInt32(this.numericUpDownMajorTick.Value);
-			this.linearGauge1.Options.minorTicks.interval = Convert.ToInt32(this.numericUpDownMinorType.Value);
-
+			this.linearGauge1.Options.orientation = this.comboBoxOrientation.SelectedItem;
+			this.linearGauge1.Options.container = new { type = this.comboBoxContainerType.SelectedItem };
+			this.linearGauge1.Options.majorTicks = new
+			{
+				interval = Convert.ToInt32(this.numericUpDownMajorTick.Value),
+			};
+			this.linearGauge1.Options.minorTicks = new
+			{
+				interval = Convert.ToInt32(this.numericUpDownMinorTick.Value)
+			};
 			this.linearGauge1.Update();
 		}
     }

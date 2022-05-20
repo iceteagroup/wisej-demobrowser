@@ -28,6 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DropDownList));
             this.tagTextBoxDataSource = new Wisej.Web.TagTextBox();
             this.checkBoxSearchable = new Wisej.Web.CheckBox();
             this.comboBoxSortOrder = new Wisej.Web.ComboBox();
@@ -42,7 +43,7 @@
             this.linkDocs.Text = "https://ej2.syncfusion.com/javascript/documentation/drop-down-list/es5-getting-st" +
     "arted/";
             // 
-            // linkAPI
+            // linkApi
             // 
             this.linkApi.Text = "https://ej2.syncfusion.com/javascript/documentation/api/drop-down-list/";
             // 
@@ -69,15 +70,15 @@
             this.tagTextBoxDataSource.AutoSize = false;
             this.flowLayoutPanel1.SetFillWeight(this.tagTextBoxDataSource, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.tagTextBoxDataSource, true);
-            this.tagTextBoxDataSource.LabelText = "Data source";
-            this.tagTextBoxDataSource.Location = new System.Drawing.Point(3, 111);
+            this.tagTextBoxDataSource.LabelText = "Data Source";
+            this.tagTextBoxDataSource.Location = new System.Drawing.Point(3, 122);
             this.tagTextBoxDataSource.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.tagTextBoxDataSource.MaxTagCount = 10;
             this.tagTextBoxDataSource.Multiline = true;
             this.tagTextBoxDataSource.Name = "tagTextBoxDataSource";
-            this.tagTextBoxDataSource.Size = new System.Drawing.Size(212, 120);
+            this.tagTextBoxDataSource.Size = new System.Drawing.Size(212, 239);
             this.tagTextBoxDataSource.TabIndex = 1;
-            this.tagTextBoxDataSource.Text = "data1,data2\r\n";
+            this.tagTextBoxDataSource.Text = resources.GetString("tagTextBoxDataSource.Text");
             // 
             // checkBoxSearchable
             // 
@@ -104,14 +105,15 @@
             this.comboBoxSortOrder.Location = new System.Drawing.Point(3, 46);
             this.comboBoxSortOrder.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.comboBoxSortOrder.Name = "comboBoxSortOrder";
-            this.comboBoxSortOrder.Size = new System.Drawing.Size(212, 46);
+            this.comboBoxSortOrder.Size = new System.Drawing.Size(212, 57);
             this.comboBoxSortOrder.TabIndex = 3;
             // 
             // dropDownList1
             // 
             this.dropDownList1.Anchor = Wisej.Web.AnchorStyles.None;
-            this.dropDownList1.Location = new System.Drawing.Point(369, 259);
+            this.dropDownList1.Location = new System.Drawing.Point(269, 268);
             this.dropDownList1.Name = "dropDownList1";
+            this.dropDownList1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("dropDownList1.Options"))));
             this.dropDownList1.Size = new System.Drawing.Size(350, 40);
             this.dropDownList1.TabIndex = 0;
             this.dropDownList1.Text = "dropDownList1";
@@ -124,7 +126,6 @@
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

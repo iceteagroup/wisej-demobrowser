@@ -31,5 +31,5 @@ namespace Wisej.Web.Ext.Syncfusion2.Demo.Component
 
 			Application.Play(MessageBoxIcon.Information);
 		}
-	}
+    }
 }

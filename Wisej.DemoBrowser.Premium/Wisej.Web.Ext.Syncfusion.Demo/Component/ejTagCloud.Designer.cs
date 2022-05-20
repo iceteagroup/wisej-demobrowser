@@ -57,7 +57,7 @@
             this.linkDemo.TabIndex = 6;
             this.linkDemo.Text = "https://js.syncfusion.com/demos/web/#!/flatlight/tagcloud/DefaultFunctionalities";
             // 
-            // linkAPI
+            // linkApi
             // 
             this.linkApi.TabIndex = 5;
             this.linkApi.Text = "https://help.syncfusion.com/api/js/ejtagcloud";
@@ -80,7 +80,7 @@
             this.ejTagCloud1.Location = new System.Drawing.Point(8, 8);
             this.ejTagCloud1.Name = "ejTagCloud1";
             this.ejTagCloud1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("ejTagCloud1.Options"))));
-            this.ejTagCloud1.Size = new System.Drawing.Size(1073, 542);
+            this.ejTagCloud1.Size = new System.Drawing.Size(872, 560);
             this.ejTagCloud1.TabIndex = 0;
             this.ejTagCloud1.Text = "ejTagCloud1";
             // 
@@ -97,7 +97,7 @@
             this.numericUpDownMinimumFontSize.Label.Size = 50;
             this.numericUpDownMinimumFontSize.Label.SizeType = Wisej.Web.SizeType.Percent;
             this.numericUpDownMinimumFontSize.LabelText = "Minimum Font Size";
-            this.numericUpDownMinimumFontSize.Location = new System.Drawing.Point(3, 60);
+            this.numericUpDownMinimumFontSize.Location = new System.Drawing.Point(3, 52);
             this.numericUpDownMinimumFontSize.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.numericUpDownMinimumFontSize.Maximum = new decimal(new int[] {
             40,
@@ -131,7 +131,7 @@
             this.numericUpDownMaximumFontSize.Label.Size = 50;
             this.numericUpDownMaximumFontSize.Label.SizeType = Wisej.Web.SizeType.Percent;
             this.numericUpDownMaximumFontSize.LabelText = "Maximum Font Size";
-            this.numericUpDownMaximumFontSize.Location = new System.Drawing.Point(3, 139);
+            this.numericUpDownMaximumFontSize.Location = new System.Drawing.Point(3, 131);
             this.numericUpDownMaximumFontSize.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.numericUpDownMaximumFontSize.Maximum = new decimal(new int[] {
             60,
@@ -164,7 +164,7 @@
             this.comboBoxFormat.Label.Size = 50;
             this.comboBoxFormat.Label.SizeType = Wisej.Web.SizeType.Percent;
             this.comboBoxFormat.LabelText = "Format";
-            this.comboBoxFormat.Location = new System.Drawing.Point(3, 218);
+            this.comboBoxFormat.Location = new System.Drawing.Point(3, 210);
             this.comboBoxFormat.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.comboBoxFormat.Name = "comboBoxFormat";
             this.comboBoxFormat.Size = new System.Drawing.Size(212, 60);
@@ -181,7 +181,7 @@
             this.flowLayoutPanelProperties.SetFlowBreak(this.checkBox1, true);
             this.checkBox1.Location = new System.Drawing.Point(3, 3);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(212, 38);
+            this.checkBox1.Size = new System.Drawing.Size(212, 30);
             this.checkBox1.TabIndex = 0;
             this.checkBox1.Text = "Show Title";
             // 
@@ -194,7 +194,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMinimumFontSize)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMaximumFontSize)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

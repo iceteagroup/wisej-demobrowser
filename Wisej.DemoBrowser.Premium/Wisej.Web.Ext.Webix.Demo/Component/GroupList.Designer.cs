@@ -49,7 +49,7 @@
             // 
             this.linkDemo.Text = "https://snippet.webix.com/gallery?search=#grouplist";
             // 
-            // linkAPI
+            // linkApi
             // 
             this.linkApi.Text = "https://docs.webix.com/api__refs__ui.grouplist.html";
             // 
@@ -61,13 +61,11 @@
             // 
             this.flowLayoutPanel1.Controls.Add(this.checkBoxEnableSelect);
             this.flowLayoutPanel1.Controls.Add(this.checkBoxEnableDragAndDrop);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 38);
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 434);
             // 
             // groupList1
             // 
             this.groupList1.Anchor = Wisej.Web.AnchorStyles.None;
-            this.groupList1.Location = new System.Drawing.Point(294, 79);
+            this.groupList1.Location = new System.Drawing.Point(194, 88);
             this.groupList1.Name = "groupList1";
             this.groupList1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("groupList1.Options"))));
             this.groupList1.Size = new System.Drawing.Size(500, 400);
@@ -113,7 +111,6 @@
             this.panel.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

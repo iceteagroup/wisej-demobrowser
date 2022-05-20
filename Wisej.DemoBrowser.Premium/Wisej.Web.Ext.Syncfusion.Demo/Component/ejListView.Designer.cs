@@ -60,7 +60,7 @@
             this.linkDemo.TabIndex = 6;
             this.linkDemo.Text = "https://js.syncfusion.com/demos/web/#!/flatlight/listview/DefaultFunctionalities";
             // 
-            // linkAPI
+            // linkApi
             // 
             this.linkApi.TabIndex = 5;
             this.linkApi.Text = "https://help.syncfusion.com/api/js/ejlistview";
@@ -85,7 +85,7 @@
             this.ejListView1.Location = new System.Drawing.Point(8, 8);
             this.ejListView1.Name = "ejListView1";
             this.ejListView1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("ejListView1.Options"))));
-            this.ejListView1.Size = new System.Drawing.Size(1073, 542);
+            this.ejListView1.Size = new System.Drawing.Size(872, 560);
             this.ejListView1.TabIndex = 0;
             this.ejListView1.Text = "ejListView1";
             // 
@@ -114,10 +114,10 @@
             // 
             this.flowLayoutPanelProperties.SetFillWeight(this.buttonGetSelectedItems, 1);
             this.flowLayoutPanelProperties.SetFlowBreak(this.buttonGetSelectedItems, true);
-            this.buttonGetSelectedItems.Location = new System.Drawing.Point(3, 296);
+            this.buttonGetSelectedItems.Location = new System.Drawing.Point(3, 272);
             this.buttonGetSelectedItems.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.buttonGetSelectedItems.Name = "buttonGetSelectedItems";
-            this.buttonGetSelectedItems.Size = new System.Drawing.Size(212, 40);
+            this.buttonGetSelectedItems.Size = new System.Drawing.Size(212, 35);
             this.buttonGetSelectedItems.TabIndex = 4;
             this.buttonGetSelectedItems.Text = "Get Selected Items";
             this.buttonGetSelectedItems.Click += new System.EventHandler(this.buttonGetSelectedItems_Click);
@@ -126,10 +126,10 @@
             // 
             this.flowLayoutPanelProperties.SetFillWeight(this.buttonClearSelected, 1);
             this.flowLayoutPanelProperties.SetFlowBreak(this.buttonClearSelected, true);
-            this.buttonClearSelected.Location = new System.Drawing.Point(3, 355);
+            this.buttonClearSelected.Location = new System.Drawing.Point(3, 326);
             this.buttonClearSelected.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.buttonClearSelected.Name = "buttonClearSelected";
-            this.buttonClearSelected.Size = new System.Drawing.Size(212, 40);
+            this.buttonClearSelected.Size = new System.Drawing.Size(212, 35);
             this.buttonClearSelected.TabIndex = 5;
             this.buttonClearSelected.Text = "Clear Selected Items";
             this.buttonClearSelected.Click += new System.EventHandler(this.buttonClearSelected_Click);
@@ -140,7 +140,7 @@
             this.panel1.Controls.Add(this.buttonAddNewItem);
             this.flowLayoutPanelProperties.SetFillWeight(this.panel1, 1);
             this.flowLayoutPanelProperties.SetFlowBreak(this.panel1, true);
-            this.panel1.Location = new System.Drawing.Point(3, 174);
+            this.panel1.Location = new System.Drawing.Point(3, 150);
             this.panel1.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(212, 103);
@@ -157,7 +157,7 @@
             this.flowLayoutPanelProperties.SetFlowBreak(this.checkBox1, true);
             this.checkBox1.Location = new System.Drawing.Point(3, 3);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(212, 38);
+            this.checkBox1.Size = new System.Drawing.Size(212, 30);
             this.checkBox1.TabIndex = 0;
             this.checkBox1.Text = "Enable CheckMark";
             // 
@@ -168,10 +168,10 @@
             this.checkBox2.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.flowLayoutPanelProperties.SetFillWeight(this.checkBox2, 1);
             this.flowLayoutPanelProperties.SetFlowBreak(this.checkBox2, true);
-            this.checkBox2.Location = new System.Drawing.Point(3, 60);
+            this.checkBox2.Location = new System.Drawing.Point(3, 52);
             this.checkBox2.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(212, 38);
+            this.checkBox2.Size = new System.Drawing.Size(212, 30);
             this.checkBox2.TabIndex = 1;
             this.checkBox2.Text = "Enable Filtering";
             // 
@@ -182,10 +182,10 @@
             this.checkBox3.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.flowLayoutPanelProperties.SetFillWeight(this.checkBox3, 1);
             this.flowLayoutPanelProperties.SetFlowBreak(this.checkBox3, true);
-            this.checkBox3.Location = new System.Drawing.Point(3, 117);
+            this.checkBox3.Location = new System.Drawing.Point(3, 101);
             this.checkBox3.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(212, 38);
+            this.checkBox3.Size = new System.Drawing.Size(212, 30);
             this.checkBox3.TabIndex = 2;
             this.checkBox3.Text = "Enable Group List";
             // 
@@ -197,7 +197,6 @@
             this.flowLayoutPanelProperties.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

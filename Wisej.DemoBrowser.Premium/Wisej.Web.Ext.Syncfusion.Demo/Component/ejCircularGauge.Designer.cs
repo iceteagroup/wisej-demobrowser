@@ -61,7 +61,7 @@
             this.linkDemo.Text = "https://js.syncfusion.com/demos/web/#!/flatlight/radialgauge/defaultfunctionaliti" +
     "es";
             // 
-            // linkAPI
+            // linkApi
             // 
             this.linkApi.TabIndex = 5;
             this.linkApi.Text = "https://help.syncfusion.com/api/js/ejcirculargauge";
@@ -86,7 +86,7 @@
             this.ejCircularGauge1.Location = new System.Drawing.Point(8, 8);
             this.ejCircularGauge1.Name = "ejCircularGauge1";
             this.ejCircularGauge1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("ejCircularGauge1.Options"))));
-            this.ejCircularGauge1.Size = new System.Drawing.Size(1073, 542);
+            this.ejCircularGauge1.Size = new System.Drawing.Size(872, 560);
             this.ejCircularGauge1.TabIndex = 0;
             this.ejCircularGauge1.Text = "ejCircularGauge1";
             this.ejCircularGauge1.Value = 50;
@@ -183,7 +183,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.trackBarDistanceFromScale)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarSize)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

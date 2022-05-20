@@ -15,6 +15,29 @@ namespace Wisej.Web.Ext.Ignite.Demo.Component
 			this.igRadialGauge1.Instance.onValueChanged += new WidgetEventHandler(igRadialGauge_WidgetEvent);
 		}
 
+		private void igRadialGauge_Load(object sender, EventArgs e)
+		{
+			this.igRadialGauge1.Options.ranges = new dynamic[] {
+				new { name = "range1",
+					brush = "rgba(154, 189, 41, 1)",
+					startValue = 70,
+					endValue = 100,
+					outerStartExtent = 0.55,
+					outerEndExtent = 0.65
+				},
+				new { name = "range2",
+					brush = "rgba(100, 145, 41, 1)",
+					startValue = 40,
+					endValue = 50,
+					outerStartExtent = 0.55,
+					outerEndExtent = 0.65
+				},
+			};
+
+			this.igRadialGauge1.Options.transitionDuration = 250;
+			this.igRadialGauge1.Options.isNeedleDraggingEnabled = true;
+		}
+
 		private void buttonUpdate_Click(object sender, EventArgs e)
 		{
 			this.igRadialGauge1.Options.value = (int)this.numericUpDown1.Value;
@@ -79,26 +102,6 @@ namespace Wisej.Web.Ext.Ignite.Demo.Component
 				MessageBoxIcon.Information);
 
 			Application.Play(MessageBoxIcon.Information);
-		}
-
-		private void igRadialGauge_Load(object sender, EventArgs e)
-		{
-			this.igRadialGauge1.Options.ranges = new Object[] {
-				new { name = "range1", 
-					brush = "rgba(154, 189, 41, 1)",
-					startValue = 70,
-					endValue = 100,
-					outerStartExtent = 0.55,
-					outerEndExtent = 0.65
-				},
-				new { name = "range2",
-					brush = "rgba(100, 145, 41, 1)",
-					startValue = 40,
-					endValue = 50,
-					outerStartExtent = 0.55,
-					outerEndExtent = 0.65
-				},
-			};
 		}
 	}
 }

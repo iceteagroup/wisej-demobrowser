@@ -60,7 +60,7 @@
             this.linkDemo.Text = "https://js.syncfusion.com/demos/web/#!/bootstrap/dropdownlist/defaultfunctionalit" +
     "ies";
             // 
-            // linkAPI
+            // linkApi
             // 
             this.linkApi.TabIndex = 5;
             this.linkApi.Text = "https://help.syncfusion.com/api/js/ejdropdownlist";
@@ -84,7 +84,7 @@
             // ejDropDownList1
             // 
             this.ejDropDownList1.Anchor = Wisej.Web.AnchorStyles.None;
-            this.ejDropDownList1.Location = new System.Drawing.Point(394, 229);
+            this.ejDropDownList1.Location = new System.Drawing.Point(294, 238);
             this.ejDropDownList1.Name = "ejDropDownList1";
             this.ejDropDownList1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("ejDropDownList1.Options"))));
             this.ejDropDownList1.Size = new System.Drawing.Size(300, 30);
@@ -150,7 +150,7 @@
             // ejDropDownList2
             // 
             this.ejDropDownList2.Anchor = Wisej.Web.AnchorStyles.None;
-            this.ejDropDownList2.Location = new System.Drawing.Point(394, 299);
+            this.ejDropDownList2.Location = new System.Drawing.Point(294, 308);
             this.ejDropDownList2.Name = "ejDropDownList2";
             this.ejDropDownList2.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("ejDropDownList2.Options"))));
             this.ejDropDownList2.Size = new System.Drawing.Size(300, 30);
@@ -202,7 +202,6 @@
             this.panel.ResumeLayout(false);
             this.flowLayoutPanelProperties.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

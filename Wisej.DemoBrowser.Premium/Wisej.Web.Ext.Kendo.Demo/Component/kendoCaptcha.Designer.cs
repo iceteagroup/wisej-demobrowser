@@ -29,8 +29,8 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 		/// </summary>
 		private void InitializeComponent()
 		{
-            this.button1 = new Wisej.Web.Button();
-            this.button2 = new Wisej.Web.Button();
+            this.buttonValidate = new Wisej.Web.Button();
+            this.buttonReset = new Wisej.Web.Button();
             this.kendoCaptcha1 = new Wisej.Web.Ext.Kendo.kendoCaptcha();
             this.panel.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -48,31 +48,31 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
             // 
             // flowLayoutPanelProperties
             // 
-            this.flowLayoutPanelProperties.Controls.Add(this.button1);
-            this.flowLayoutPanelProperties.Controls.Add(this.button2);
+            this.flowLayoutPanelProperties.Controls.Add(this.buttonValidate);
+            this.flowLayoutPanelProperties.Controls.Add(this.buttonReset);
             // 
-            // button1
+            // buttonValidate
             // 
-            this.flowLayoutPanelProperties.SetFillWeight(this.button1, 1);
-            this.flowLayoutPanelProperties.SetFlowBreak(this.button1, true);
-            this.button1.Location = new System.Drawing.Point(3, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(212, 35);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Validate";
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.flowLayoutPanelProperties.SetFillWeight(this.buttonValidate, 1);
+            this.flowLayoutPanelProperties.SetFlowBreak(this.buttonValidate, true);
+            this.buttonValidate.Location = new System.Drawing.Point(3, 3);
+            this.buttonValidate.Name = "buttonValidate";
+            this.buttonValidate.Size = new System.Drawing.Size(212, 35);
+            this.buttonValidate.TabIndex = 1;
+            this.buttonValidate.Text = "Validate";
+            this.buttonValidate.Click += new System.EventHandler(this.buttonValidate_Click);
             // 
-            // button2
+            // buttonReset
             // 
-            this.flowLayoutPanelProperties.SetFillWeight(this.button2, 1);
-            this.flowLayoutPanelProperties.SetFlowBreak(this.button2, true);
-            this.button2.Location = new System.Drawing.Point(3, 57);
-            this.button2.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(212, 40);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Reset";
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.flowLayoutPanelProperties.SetFillWeight(this.buttonReset, 1);
+            this.flowLayoutPanelProperties.SetFlowBreak(this.buttonReset, true);
+            this.buttonReset.Location = new System.Drawing.Point(3, 57);
+            this.buttonReset.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
+            this.buttonReset.Name = "buttonReset";
+            this.buttonReset.Size = new System.Drawing.Size(212, 40);
+            this.buttonReset.TabIndex = 2;
+            this.buttonReset.Text = "Reset";
+            this.buttonReset.Click += new System.EventHandler(this.buttonReset_Click);
             // 
             // kendoCaptcha1
             // 
@@ -87,6 +87,7 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
             // kendoCaptcha
             // 
             this.Name = "kendoCaptcha";
+            this.Load += new System.EventHandler(this.kendoCaptcha_Load);
             this.panel.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.flowLayoutPanelProperties.ResumeLayout(false);
@@ -97,7 +98,7 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 		#endregion
 
 		private Kendo.kendoCaptcha kendoCaptcha1;
-		private Button button2;
-		private Button button1;
+		private Button buttonReset;
+		private Button buttonValidate;
 	}
 }

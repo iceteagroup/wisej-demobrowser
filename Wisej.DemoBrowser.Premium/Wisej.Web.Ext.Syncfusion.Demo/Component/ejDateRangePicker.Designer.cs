@@ -55,7 +55,7 @@
             this.linkDemo.Text = "https://js.syncfusion.com/demos/web/#!/flatlight/daterangepicker/defaultfunctiona" +
     "lities";
             // 
-            // linkAPI
+            // linkApi
             // 
             this.linkApi.TabIndex = 5;
             this.linkApi.Text = "https://help.syncfusion.com/api/js/ejdaterangepicker";
@@ -75,7 +75,7 @@
             // ejDateRangePicker1
             // 
             this.ejDateRangePicker1.Anchor = Wisej.Web.AnchorStyles.None;
-            this.ejDateRangePicker1.Location = new System.Drawing.Point(394, 262);
+            this.ejDateRangePicker1.Location = new System.Drawing.Point(294, 271);
             this.ejDateRangePicker1.Name = "ejDateRangePicker1";
             this.ejDateRangePicker1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"value\":null}")));
             this.ejDateRangePicker1.Size = new System.Drawing.Size(300, 35);
@@ -150,7 +150,6 @@
             this.panel.ResumeLayout(false);
             this.flowLayoutPanelProperties.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

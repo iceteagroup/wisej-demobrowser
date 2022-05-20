@@ -48,7 +48,7 @@
             // 
             this.linkDemo.Text = "https://snippet.webix.com/gallery?search=#sidebar";
             // 
-            // linkAPI
+            // linkApi
             // 
             this.linkApi.Text = "https://docs.webix.com/api__refs__ui.sidebar.html";
             // 
@@ -60,13 +60,11 @@
             // 
             this.flowLayoutPanel1.Controls.Add(this.checkBoxCollapsed);
             this.flowLayoutPanel1.Controls.Add(this.checkBoxEnableMultiOpen);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 38);
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 434);
             // 
             // sidebar1
             // 
             this.sidebar1.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom)));
-            this.sidebar1.Location = new System.Drawing.Point(437, 79);
+            this.sidebar1.Location = new System.Drawing.Point(337, 88);
             this.sidebar1.Name = "sidebar1";
             this.sidebar1.Size = new System.Drawing.Size(215, 400);
             this.sidebar1.TabIndex = 0;
@@ -111,7 +109,6 @@
             this.panel.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

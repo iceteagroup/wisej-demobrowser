@@ -11,6 +11,10 @@ namespace Wisej.Web.Ext.Ignite.Demo.Component
 
 			this.igTimePicker1.Instance.onValueChanged += new WidgetEventHandler(igTimePicker_WidgetEvent);
 		}
+		private void igTimePicker_Load(object sender, EventArgs e)
+		{
+			this.igTimePicker1.Options.value = "15:00";
+		}
 
 		private void igTimePicker_WidgetEvent(object sender, WidgetEventArgs e)
 		{
@@ -30,5 +34,7 @@ namespace Wisej.Web.Ext.Ignite.Demo.Component
 
 			this.igTimePicker1.Update();
 		}
+
+	
 	}
 }

@@ -13,15 +13,27 @@ namespace Wisej.Web.Ext.Ignite.Demo.Component
 
 		private void igCategoryChart_Load(object sender, EventArgs e)
 		{
-			this.comboBox1.DataSource = Enum.GetNames(typeof(Ignite.igCategoryChart.ChartTypes));
-			this.comboBox1.SelectedItem = "auto";
+
+			//igCategoryChart Configuration
+			this.igCategoryChart1.Options.title = "Population per Country";
+			this.igCategoryChart1.Options.dataSource = new dynamic[]
+			{
+				new {Year = "1995", China = 1297, India = 920, UnitedStates = 266},
+				new {Year = "2005", China = 1216, India = 1090, UnitedStates = 295},
+				new {Year = "2010", China = 1271, India = 1131, UnitedStates = 314},
+				new {Year = "2015", China = 1361, India = 1251, UnitedStates = 322},
+				new {Year = "2020", China = 1381, India = 1341, UnitedStates = 342},
+				new {Year = "2025", China = 1394, India = 1466, UnitedStates = 361},
+			};
+			this.igCategoryChart1.Options.yAxisFormatLabel = "yAxisFormatLabel";
+			this.igCategoryChart1.Options.chartType = "auto";
 		}
 
 		private void buttonUpdate_Click(object sender, EventArgs e)
 		{
-			this.igCategoryChart1.ChartType = (Ignite.igCategoryChart.ChartTypes)Enum.Parse(typeof(Ignite.igCategoryChart.ChartTypes), ((string)this.comboBox1.SelectedItem));
-			this.igCategoryChart1.Options.finalValueAnnotationsVisible = this.checkBox2.Checked;
+			this.igCategoryChart1.Options.chartType = this.comboBox1.SelectedItem;
 			this.igCategoryChart1.Options.isItemHighlightingEnabled = this.checkBox3.Checked;
+			this.igCategoryChart1.Options.finalValueAnnotationsVisible = this.checkBox2.Checked;
 
 			this.igCategoryChart1.Update();
 		}

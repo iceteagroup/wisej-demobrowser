@@ -48,7 +48,7 @@
             // 
             this.linkDemo.Text = "https://snippet.webix.com/gallery?search=#colorboard";
             // 
-            // linkAPI
+            // linkApi
             // 
             this.linkApi.Text = "https://docs.webix.com/api__refs__ui.colorboard.html";
             // 
@@ -64,7 +64,7 @@
             // colorBoard1
             // 
             this.colorBoard1.Anchor = Wisej.Web.AnchorStyles.None;
-            this.colorBoard1.Location = new System.Drawing.Point(294, 79);
+            this.colorBoard1.Location = new System.Drawing.Point(194, 88);
             this.colorBoard1.Name = "colorBoard1";
             this.colorBoard1.Size = new System.Drawing.Size(500, 400);
             this.colorBoard1.TabIndex = 0;
@@ -110,7 +110,6 @@
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

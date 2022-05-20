@@ -31,10 +31,16 @@
             this.ejColorPicker1 = new Wisej.Web.Ext.Syncfusion.ejColorPicker();
             this.textBoxColor = new Wisej.Web.TextBox();
             this.label4 = new Wisej.Web.Label();
-            this.groupBox1.SuspendLayout();
             this.panel.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.flowLayoutPanelProperties.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // panel
+            // 
+            this.panel.Controls.Add(this.label4);
+            this.panel.Controls.Add(this.ejColorPicker1);
+            this.panel.TabIndex = 7;
             // 
             // linkDocs
             // 
@@ -51,16 +57,10 @@
             this.linkDemo.TabIndex = 6;
             this.linkDemo.Text = "https://js.syncfusion.com/demos/web/#!/bootstrap/colorpicker";
             // 
-            // linkAPI
+            // linkApi
             // 
             this.linkApi.TabIndex = 5;
             this.linkApi.Text = "https://help.syncfusion.com/api/js/ejcolorpicker";
-            // 
-            // panel
-            // 
-            this.panel.Controls.Add(this.label4);
-            this.panel.Controls.Add(this.ejColorPicker1);
-            this.panel.TabIndex = 7;
             // 
             // flowLayoutPanelProperties
             // 
@@ -69,7 +69,7 @@
             // ejColorPicker1
             // 
             this.ejColorPicker1.Anchor = Wisej.Web.AnchorStyles.None;
-            this.ejColorPicker1.Location = new System.Drawing.Point(394, 262);
+            this.ejColorPicker1.Location = new System.Drawing.Point(294, 285);
             this.ejColorPicker1.Name = "ejColorPicker1";
             this.ejColorPicker1.Size = new System.Drawing.Size(300, 35);
             this.ejColorPicker1.TabIndex = 1;
@@ -93,7 +93,7 @@
             // 
             this.label4.Anchor = Wisej.Web.AnchorStyles.None;
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(394, 233);
+            this.label4.Location = new System.Drawing.Point(294, 256);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(105, 22);
             this.label4.TabIndex = 0;
@@ -102,12 +102,11 @@
             // ejColorPicker
             // 
             this.Name = "ejColorPicker";
-            this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
             this.panel.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
             this.flowLayoutPanelProperties.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 

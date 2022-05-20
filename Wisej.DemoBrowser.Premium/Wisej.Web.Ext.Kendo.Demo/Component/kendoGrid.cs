@@ -16,8 +16,28 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 
 		private void kendoGrid_Load(object sender, EventArgs e)
 		{
+			var serviceUrl = this.kendoGrid1.GetServiceURL();
+
 			this.kendoGrid1.Options.editable = true;
 			this.kendoGrid1.Options.toolbar = new[] { "Save" };
+			this.kendoGrid1.Options.pdf = new
+			{
+				forceProxy = true,
+				proxyURL = $"{serviceUrl}?action=export"
+			};
+			this.kendoGrid1.Options.excel = new
+			{
+				forceProxy = true,
+				proxyURL = $"{serviceUrl}?action=export"
+			};
+
+			this.kendoGrid1.Options.dataSource = new
+			{
+				transport = new
+				{
+					read = $"{this.kendoGrid1.GetServiceURL()}?action=read"
+				}
+			};
 		}
 
 		private void buttonPDF_Click(object sender, EventArgs e)
@@ -34,6 +54,10 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 		{
 			switch (e.Request.QueryString["action"])
 			{
+				case "read":
+					e.Response.ContentType = "json";
+					e.Response.Write(ProcessLoadData());
+					break;
 				case "export":
 					// prepare for download.
 					this.ExportDocument(e.Request.Form["base64"], e.Request.Form["fileName"], e.Response);
@@ -41,11 +65,17 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 			}
 		}
 
+		private object ProcessLoadData()
+        {
+			return File.ReadAllText(Application.MapPath("Data/Grid/ProductDetails.json"));
+        }
+
 		private void ExportDocument(string base64Data, string fileName, HttpResponse response)
 		{
 			var bytes = Convert.FromBase64String(base64Data);
+
 			response.AppendHeader("Content-Disposition", $"attachment; filename={fileName}");
-			response.OutputStream.Write(bytes, 0, bytes.Length);
+			response.BinaryWrite(bytes);
 		}
 
 		private void buttonUpdate_Click(object sender, EventArgs e)

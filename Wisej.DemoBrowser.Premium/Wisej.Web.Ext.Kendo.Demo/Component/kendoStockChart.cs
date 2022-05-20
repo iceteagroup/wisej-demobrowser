@@ -16,14 +16,14 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 
 		private void kendoStockChart_Load(object sender, EventArgs e)
 		{
-			var postbackUrl = ((Widget)this.kendoStockChart1).GetPostbackURL();
+			var serviceUrl = this.kendoStockChart1.GetServiceURL();
 			this.kendoStockChart1.Options.dataSource = new
 			{
 				transport = new
 				{
 					read = new
 					{
-						url = $"./{postbackUrl}&action=load",
+						url = $"./{serviceUrl}?action=load",
 						dataType = "json"
 					}
 				},
@@ -64,7 +64,7 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 
 		private async void buttonExportPDF_Click(object sender, EventArgs e)
 		{
-			var dataUrl = await this.kendoStockChart1.ExportPDFAsync();
+			var dataUrl = await this.kendoStockChart1.Instance.exportPDFAsync();
 			var base64 = dataUrl.Replace("data:application/pdf;base64,", "");
 			var bytes = Convert.FromBase64String(base64);
 
@@ -84,7 +84,7 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 
         private void buttonUpdate_Click(object sender, EventArgs e)
         {
-			this.kendoStockChart1.Options.title = this.textBoxTitle.Text;
+			this.kendoStockChart1.Options.title.text = this.textBoxTitle.Text;
         }
     }
 }

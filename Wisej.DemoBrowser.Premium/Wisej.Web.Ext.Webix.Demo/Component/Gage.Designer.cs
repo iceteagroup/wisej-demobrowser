@@ -41,7 +41,7 @@
             // 
             this.linkDemo.Text = "https://snippet.webix.com/gallery?search=#gage";
             // 
-            // linkAPI
+            // linkApi
             // 
             this.linkApi.Text = "https://docs.webix.com/api__refs__ui.gage.html";
             // 
@@ -52,7 +52,7 @@
             // gage1
             // 
             this.gage1.Anchor = Wisej.Web.AnchorStyles.None;
-            this.gage1.Location = new System.Drawing.Point(294, 79);
+            this.gage1.Location = new System.Drawing.Point(194, 88);
             this.gage1.Name = "gage1";
             this.gage1.Size = new System.Drawing.Size(500, 400);
             this.gage1.TabIndex = 0;
@@ -64,7 +64,6 @@
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

@@ -45,7 +45,7 @@
             this.linkDocs.Text = "https://ej2.syncfusion.com/javascript/documentation/file-manager/es5-getting-star" +
     "ted/";
             // 
-            // linkAPI
+            // linkApi
             // 
             this.linkApi.Text = "https://ej2.syncfusion.com/javascript/documentation/api/file-manager/";
             // 
@@ -75,7 +75,7 @@
             this.fileManager1.Location = new System.Drawing.Point(8, 8);
             this.fileManager1.Name = "fileManager1";
             this.fileManager1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("fileManager1.Options"))));
-            this.fileManager1.Size = new System.Drawing.Size(1073, 542);
+            this.fileManager1.Size = new System.Drawing.Size(872, 560);
             this.fileManager1.TabIndex = 0;
             this.fileManager1.Text = "fileManager1";
             this.fileManager1.WebRequest += new Wisej.Web.WebRequestHandler(this.fileManager1_WebRequest);
@@ -142,7 +142,7 @@
             this.comboBoxView.Location = new System.Drawing.Point(3, 175);
             this.comboBoxView.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.comboBoxView.Name = "comboBoxView";
-            this.comboBoxView.Size = new System.Drawing.Size(212, 46);
+            this.comboBoxView.Size = new System.Drawing.Size(212, 57);
             this.comboBoxView.TabIndex = 5;
             // 
             // FileManager
@@ -154,7 +154,6 @@
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

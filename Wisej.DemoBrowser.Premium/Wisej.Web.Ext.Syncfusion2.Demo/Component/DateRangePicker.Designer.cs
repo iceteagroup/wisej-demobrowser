@@ -42,7 +42,7 @@
             this.linkDocs.Text = "https://ej2.syncfusion.com/javascript/documentation/daterangepicker/es5-getting-s" +
     "tarted/";
             // 
-            // linkAPI
+            // linkApi
             // 
             this.linkApi.Text = "https://ej2.syncfusion.com/javascript/documentation/api/daterangepicker/";
             // 
@@ -67,12 +67,11 @@
             // dateRangePicker1
             // 
             this.dateRangePicker1.Anchor = Wisej.Web.AnchorStyles.None;
-            this.dateRangePicker1.Location = new System.Drawing.Point(369, 259);
+            this.dateRangePicker1.Location = new System.Drawing.Point(269, 268);
             this.dateRangePicker1.Name = "dateRangePicker1";
             this.dateRangePicker1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"format\":\"dd\'/\'MMM\'/\'yy hh:mm a\"}")));
             this.dateRangePicker1.Size = new System.Drawing.Size(350, 40);
             this.dateRangePicker1.TabIndex = 0;
-            this.dateRangePicker1.Text = "dateRangePicker1";
             // 
             // comboBoxFormat
             // 
@@ -121,7 +120,6 @@
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

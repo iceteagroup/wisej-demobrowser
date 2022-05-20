@@ -53,7 +53,7 @@
             this.linkDemo.TabIndex = 6;
             this.linkDemo.Text = "https://js.syncfusion.com/demos/web/#!/bootstrap/barcode/qrbarcode";
             // 
-            // linkAPI
+            // linkApi
             // 
             this.linkApi.TabIndex = 5;
             this.linkApi.Text = "https://help.syncfusion.com/api/js/ejbarcode";
@@ -69,8 +69,6 @@
             this.flowLayoutPanelProperties.Controls.Add(this.textBox2);
             this.flowLayoutPanelProperties.Controls.Add(this.textBox3);
             this.flowLayoutPanelProperties.Controls.Add(this.comboBox1);
-            this.flowLayoutPanelProperties.Location = new System.Drawing.Point(16, 35);
-            this.flowLayoutPanelProperties.Size = new System.Drawing.Size(218, 437);
             // 
             // textBox3
             // 
@@ -90,7 +88,7 @@
             // ejBarcode1
             // 
             this.ejBarcode1.Anchor = Wisej.Web.AnchorStyles.None;
-            this.ejBarcode1.Location = new System.Drawing.Point(344, 79);
+            this.ejBarcode1.Location = new System.Drawing.Point(244, 88);
             this.ejBarcode1.Name = "ejBarcode1";
             this.ejBarcode1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"text\":\"HTTP://WISEJ.COM\",\"value\":\"HTTP://WISEJ.COM\"}")));
             this.ejBarcode1.Size = new System.Drawing.Size(400, 400);
@@ -162,7 +160,6 @@
             this.panel.ResumeLayout(false);
             this.flowLayoutPanelProperties.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

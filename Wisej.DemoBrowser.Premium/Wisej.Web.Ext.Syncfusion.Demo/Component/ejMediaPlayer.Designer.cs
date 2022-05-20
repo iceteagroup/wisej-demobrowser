@@ -61,7 +61,7 @@
             this.linkDemo.Text = "https://js.syncfusion.com/demos/web/#!/bootstrap/mediaplayer/DefaultFunctionaliti" +
     "es";
             // 
-            // linkAPI
+            // linkApi
             // 
             this.linkApi.TabIndex = 5;
             this.linkApi.Text = "https://help.syncfusion.com/api/js/ejmediaplayer";
@@ -73,8 +73,8 @@
             // 
             // flowLayoutPanelProperties
             // 
-            this.flowLayoutPanelProperties.Controls.Add(this.flowLayoutPanel1);
             this.flowLayoutPanelProperties.Controls.Add(this.comboBoxRenderMode);
+            this.flowLayoutPanelProperties.Controls.Add(this.flowLayoutPanel1);
             // 
             // ejMediaPlayer1
             // 
@@ -82,7 +82,7 @@
             this.ejMediaPlayer1.Location = new System.Drawing.Point(8, 8);
             this.ejMediaPlayer1.Name = "ejMediaPlayer1";
             this.ejMediaPlayer1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("ejMediaPlayer1.Options"))));
-            this.ejMediaPlayer1.Size = new System.Drawing.Size(1073, 542);
+            this.ejMediaPlayer1.Size = new System.Drawing.Size(872, 560);
             this.ejMediaPlayer1.TabIndex = 0;
             this.ejMediaPlayer1.Text = "ejMediaPlayer1";
             // 
@@ -99,7 +99,8 @@
             this.flowLayoutPanel1.Controls.Add(this.buttonMute);
             this.flowLayoutPanelProperties.SetFillWeight(this.flowLayoutPanel1, 1);
             this.flowLayoutPanelProperties.SetFlowBreak(this.flowLayoutPanel1, true);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(3, 3);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(3, 82);
+            this.flowLayoutPanel1.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(212, 96);
             this.flowLayoutPanel1.TabIndex = 0;
@@ -185,8 +186,7 @@
             this.comboBoxRenderMode.Label.Size = 50;
             this.comboBoxRenderMode.Label.SizeType = Wisej.Web.SizeType.Percent;
             this.comboBoxRenderMode.LabelText = "Render Mode";
-            this.comboBoxRenderMode.Location = new System.Drawing.Point(3, 118);
-            this.comboBoxRenderMode.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
+            this.comboBoxRenderMode.Location = new System.Drawing.Point(3, 3);
             this.comboBoxRenderMode.Name = "comboBoxRenderMode";
             this.comboBoxRenderMode.Size = new System.Drawing.Size(212, 60);
             this.comboBoxRenderMode.TabIndex = 1;
@@ -201,7 +201,6 @@
             this.flowLayoutPanelProperties.PerformLayout();
             this.flowLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

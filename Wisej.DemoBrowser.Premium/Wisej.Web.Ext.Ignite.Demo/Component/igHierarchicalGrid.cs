@@ -102,7 +102,7 @@ namespace Wisej.Web.Ext.Ignite.Demo.Component
 
 		private void button1_Click(object sender, EventArgs e)
 		{
-			this.igHierarchicalGrid1.AddItem(new
+			this.igHierarchicalGrid1.Instance.addItem(new
 			{
 				OrderID = 102554,
 				CustomerID = "FISH",

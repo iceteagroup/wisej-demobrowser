@@ -117,6 +117,42 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="dropDownList1.Options" xml:space="preserve">
+    <value>{"dataSource":["Aberdeen","Abilene","Akron","Albany","Albuquerque","Alexandria","Allentown","Amarillo","Anaheim","Anchorage","Ann Arbor","Antioch","Apple Valley","Appleton","Arlington","Arvada","Asheville","Athens","Atlanta","Atlantic City","Augusta","Aurora","Austin","Bakersfield","Baltimore","Barnstable","Baton Rouge","Beaumont","Bel Air","Bellevue","Berkeley"]}</value>
+  </data>
+  <data name="tagTextBoxDataSource.Text" xml:space="preserve">
+    <value>Aberdeen,
+        Abilene,
+        Akron,
+        Albany,
+        Albuquerque,
+        Alexandria,
+        Allentown,
+        Amarillo,
+        Anaheim,
+        Anchorage,
+        Ann Arbor,
+        Antioch,
+        Apple Valley,
+        Appleton,
+        Arlington,
+        Arvada,
+        Asheville,
+        Athens,
+        Atlanta,
+        Atlantic City,
+        Augusta,
+        Aurora,
+        Austin,
+        Bakersfield,
+        Baltimore,
+        Barnstable,
+        Baton Rouge,
+        Beaumont,
+        Bel Air,
+        Bellevue,
+        Berkeley</value>
+  </data>
   <metadata name="$this.RulerSnapLines" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0

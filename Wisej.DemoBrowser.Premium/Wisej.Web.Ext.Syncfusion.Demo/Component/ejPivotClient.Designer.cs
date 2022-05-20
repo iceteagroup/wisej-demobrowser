@@ -55,7 +55,7 @@
             this.linkDemo.Text = "https://js.syncfusion.com/demos/web/#!/bootstrap/pivotclient/Relational/DefaultFu" +
     "nctionalities";
             // 
-            // linkAPI
+            // linkApi
             // 
             this.linkApi.TabIndex = 5;
             this.linkApi.Text = "https://help.syncfusion.com/api/js/ejpivotclient";
@@ -98,7 +98,7 @@
             this.comboBox1.Label.Size = 50;
             this.comboBox1.Label.SizeType = Wisej.Web.SizeType.Percent;
             this.comboBox1.LabelText = "Chart Type";
-            this.comboBox1.Location = new System.Drawing.Point(3, 117);
+            this.comboBox1.Location = new System.Drawing.Point(3, 101);
             this.comboBox1.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(212, 60);
@@ -115,7 +115,7 @@
             this.flowLayoutPanelProperties.SetFlowBreak(this.checkBox1, true);
             this.checkBox1.Location = new System.Drawing.Point(3, 3);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(212, 38);
+            this.checkBox1.Size = new System.Drawing.Size(212, 30);
             this.checkBox1.TabIndex = 0;
             this.checkBox1.Text = "Enable Cell Click";
             // 
@@ -127,21 +127,19 @@
             this.checkBox2.Checked = true;
             this.flowLayoutPanelProperties.SetFillWeight(this.checkBox2, 1);
             this.flowLayoutPanelProperties.SetFlowBreak(this.checkBox2, true);
-            this.checkBox2.Location = new System.Drawing.Point(3, 60);
+            this.checkBox2.Location = new System.Drawing.Point(3, 52);
             this.checkBox2.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(212, 38);
+            this.checkBox2.Size = new System.Drawing.Size(212, 30);
             this.checkBox2.TabIndex = 1;
             this.checkBox2.Text = "Enable Splitter";
             // 
             // ejPivotClient1
             // 
-            this.ejPivotClient1.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
-            | Wisej.Web.AnchorStyles.Left) 
-            | Wisej.Web.AnchorStyles.Right)));
-            this.ejPivotClient1.Location = new System.Drawing.Point(12, 16);
+            this.ejPivotClient1.Dock = Wisej.Web.DockStyle.Fill;
+            this.ejPivotClient1.Location = new System.Drawing.Point(8, 8);
             this.ejPivotClient1.Name = "ejPivotClient1";
-            this.ejPivotClient1.Size = new System.Drawing.Size(1065, 525);
+            this.ejPivotClient1.Size = new System.Drawing.Size(872, 560);
             this.ejPivotClient1.TabIndex = 0;
             this.ejPivotClient1.Text = "ejPivotClient1";
             widgetEventHandler1.Name = "renderSuccess";
@@ -158,7 +156,6 @@
             this.panel.ResumeLayout(false);
             this.flowLayoutPanelProperties.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

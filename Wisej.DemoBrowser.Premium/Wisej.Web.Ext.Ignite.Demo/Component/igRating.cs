@@ -12,6 +12,12 @@ namespace Wisej.Web.Ext.Ignite.Demo.Component
 			this.igRating1.Instance.onValueChange += new WidgetEventHandler(igRating_WidgetEvent);
 		}
 
+		private void igRating_Load(object sender, EventArgs e)
+		{
+			this.comboBoxPrecision.SelectedIndex = 0;
+			this.igRating1.Options.value = 3;
+		}
+
 		private void igRating_WidgetEvent(object sender, WidgetEventArgs e)
 		{
 			AlertBox.Show(
@@ -29,9 +35,6 @@ namespace Wisej.Web.Ext.Ignite.Demo.Component
 			this.igRating1.Update();
 		}
 
-        private void igRating_Load(object sender, EventArgs e)
-        {
-			this.comboBoxPrecision.SelectedIndex = 0;
-        }
+      
     }
 }

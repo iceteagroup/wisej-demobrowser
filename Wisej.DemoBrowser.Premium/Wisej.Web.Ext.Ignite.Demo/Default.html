@@ -77,6 +77,28 @@
             transition: width 3s, left 3s;
             position: absolute;
         }
+
+        #tooltipTable {
+            font-family: Verdana, Arial, Helvetica, sans-serif;
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+            #tooltipTable td, #tooltipTable th {
+                font-size: 9px;
+                border: 1px solid #b51c1c;
+                padding: 3px 7px 2px 7px;
+            }
+
+            #tooltipTable th {
+                font-weight: bold;
+                font-size: 11px;
+                text-align: left;
+                padding-top: 5px;
+                padding-bottom: 4px;
+                background-color: #b51c1c;
+                color: #ffffff;
+            }
     </style>
 </head>
 <body style="padding: 0px; margin: 0px">
@@ -106,9 +128,5 @@
             document.getElementById("strike").remove();
         }
     </script>
-
-    <div id="template" style="display:none">
-        Hello, World
-    </div>
 </body>
 </html>

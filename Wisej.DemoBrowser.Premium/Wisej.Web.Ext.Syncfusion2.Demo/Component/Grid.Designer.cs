@@ -44,7 +44,7 @@
             // 
             this.linkDocs.Text = "https://ej2.syncfusion.com/javascript/documentation/grid/getting-started/";
             // 
-            // linkAPI
+            // linkApi
             // 
             this.linkApi.Text = "https://ej2.syncfusion.com/javascript/documentation/api/grid/";
             // 
@@ -74,7 +74,7 @@
             this.grid1.Location = new System.Drawing.Point(8, 8);
             this.grid1.Name = "grid1";
             this.grid1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("grid1.Options"))));
-            this.grid1.Size = new System.Drawing.Size(1073, 542);
+            this.grid1.Size = new System.Drawing.Size(872, 560);
             this.grid1.TabIndex = 0;
             this.grid1.Text = "grid1";
             // 
@@ -144,8 +144,9 @@
             this.comboBoxGridLine.Location = new System.Drawing.Point(3, 175);
             this.comboBoxGridLine.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.comboBoxGridLine.Name = "comboBoxGridLine";
-            this.comboBoxGridLine.Size = new System.Drawing.Size(212, 46);
+            this.comboBoxGridLine.Size = new System.Drawing.Size(212, 57);
             this.comboBoxGridLine.TabIndex = 5;
+            this.comboBoxGridLine.Text = "Default";
             // 
             // Grid
             // 
@@ -155,7 +156,6 @@
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

@@ -29,6 +29,7 @@
 		private void InitializeComponent()
 		{
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(kendoTreeList));
+            Wisej.Web.Ext.Kendo.kendoBase.WidgetFunction widgetFunction1 = new Wisej.Web.Ext.Kendo.kendoBase.WidgetFunction();
             Wisej.Web.Ext.Kendo.kendoBase.WidgetTemplate widgetTemplate1 = new Wisej.Web.Ext.Kendo.kendoBase.WidgetTemplate();
             this.kendoTreeList1 = new Wisej.Web.Ext.Kendo.kendoTreeList();
             this.comboBoxEditMode = new Wisej.Web.ComboBox();
@@ -76,11 +77,14 @@
             this.kendoTreeList1.Size = new System.Drawing.Size(872, 560);
             this.kendoTreeList1.TabIndex = 0;
             this.kendoTreeList1.Text = "kendoTreeList1";
+            widgetFunction1.Name = "getPhotoTemplate";
+            widgetFunction1.Source = "return $(\"#photo-template\").html();";
+            this.kendoTreeList1.WidgetFunctions = new Wisej.Web.Ext.Kendo.kendoBase.WidgetFunction[] {
+        widgetFunction1};
             widgetTemplate1.Id = "photo-template";
-            widgetTemplate1.Template = "<div class=\'employee-photo\'\r\n                style=\'background-image: url(./Image" +
-    "s/TreeList/#:data.EmployeeID#.jpg);\'></div>\r\n           <div class=\'employee-nam" +
-    "e\'>#: FirstName #</div>";
-            widgetTemplate1.Type = "text/x-kendo-template";
+            widgetTemplate1.Template = "<div class=\'employee-photo\'\r\n     style=\'background-image: url(./Images/TreeList/" +
+    "#:data.EmployeeID#.jpg);\'></div>\r\n<div class=\'employee-name\'>#: FirstName #</div" +
+    ">";
             this.kendoTreeList1.WidgetTemplates = new Wisej.Web.Ext.Kendo.kendoBase.WidgetTemplate[] {
         widgetTemplate1};
             // 

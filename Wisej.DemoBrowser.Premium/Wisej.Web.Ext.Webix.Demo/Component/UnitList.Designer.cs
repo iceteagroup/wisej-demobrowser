@@ -42,7 +42,7 @@
             // 
             this.linkDemo.Text = "https://snippet.webix.com/gallery?search=#unitlist";
             // 
-            // linkAPI
+            // linkApi
             // 
             this.linkApi.Text = "https://docs.webix.com/api__refs__ui.unitlist.html";
             // 
@@ -53,7 +53,7 @@
             // unitList1
             // 
             this.unitList1.Anchor = Wisej.Web.AnchorStyles.None;
-            this.unitList1.Location = new System.Drawing.Point(294, 79);
+            this.unitList1.Location = new System.Drawing.Point(194, 88);
             this.unitList1.Name = "unitList1";
             this.unitList1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("unitList1.Options"))));
             this.unitList1.Size = new System.Drawing.Size(500, 400);
@@ -67,7 +67,6 @@
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

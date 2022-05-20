@@ -12,6 +12,24 @@ namespace Wisej.Web.Ext.Ignite.Demo.Component
 			this.igFunnelChart1.Instance.onSliceClicked += new WidgetEventHandler(igFunnelChart1_WidgetEvent);
 		}
 
+		private void igFunnelChart_Load(object sender, EventArgs e)
+		{
+			this.igFunnelChart1.Options.tooltipTemplate = "<span>Budget: $${Budget}<br>Dept: ${Department}</span>";
+			this.igFunnelChart1.Options.transitionDuration = 250;
+			this.igFunnelChart1.Options.valueMemberPath = "Budget";
+			this.igFunnelChart1.Options.innerLabelMemberPath = "Budget";
+			this.igFunnelChart1.Options.innerLabelVisibility = "visible";
+			this.igFunnelChart1.Options.outerLabelMemberPath = "Department";
+			this.igFunnelChart1.Options.outerLabelVisibility = "visible";
+			this.igFunnelChart1.Options.dataSource = new dynamic[]{new {Budget = 30, Department="Administration", },
+				new {Budget = 50, Department="Sales", },
+				new {Budget = 60, Department="IT", },
+				new {Budget = 50, Department="Marketing", },
+				new {Budget = 100, Department="Development", },
+				new {Budget = 20, Department="Support", },
+			};
+		}
+
 		private void igFunnelChart1_WidgetEvent(object sender, WidgetEventArgs e)
 		{
 			AlertBox.Show(

@@ -40,7 +40,7 @@
             // 
             this.linkDocs.Text = "https://ej2.syncfusion.com/javascript/documentation/chart/es5-getting-started/";
             // 
-            // linkAPI
+            // linkApi
             // 
             this.linkApi.Text = "https://ej2.syncfusion.com/javascript/documentation/api/chart/overview/";
             // 
@@ -55,6 +55,8 @@
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.Controls.Add(this.comboBoxChartType);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 45);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 470);
             // 
             // linkDemo
             // 
@@ -66,7 +68,7 @@
             this.chart1.Location = new System.Drawing.Point(8, 8);
             this.chart1.Name = "chart1";
             this.chart1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("chart1.Options"))));
-            this.chart1.Size = new System.Drawing.Size(1073, 542);
+            this.chart1.Size = new System.Drawing.Size(872, 560);
             this.chart1.TabIndex = 0;
             this.chart1.Text = "chart1";
             // 
@@ -82,7 +84,7 @@
             this.comboBoxChartType.LabelText = "Chart Type";
             this.comboBoxChartType.Location = new System.Drawing.Point(3, 3);
             this.comboBoxChartType.Name = "comboBoxChartType";
-            this.comboBoxChartType.Size = new System.Drawing.Size(212, 46);
+            this.comboBoxChartType.Size = new System.Drawing.Size(212, 50);
             this.comboBoxChartType.TabIndex = 1;
             // 
             // Chart
@@ -93,7 +95,6 @@
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

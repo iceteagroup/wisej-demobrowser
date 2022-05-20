@@ -12,7 +12,13 @@ namespace Wisej.Web.Ext.Ignite.Demo.Component
 			this.igDateEditor1.Instance.onValueChanged += new WidgetEventHandler(igDateEditor1_WidgetEvent);
 		}
 
-        private void buttonUpdate_Click(object sender, EventArgs e)
+		private void igDateEditor_Load(object sender, EventArgs e)
+		{
+			this.igDateEditor1.Options.dateInputFormat = "dateTime";
+			this.igDateEditor1.Options.value = "2020-01-01";
+			this.igDateEditor1.Options.dataMode = "date";
+		}
+		private void buttonUpdate_Click(object sender, EventArgs e)
 		{
 			this.igDateEditor1.Options.dataMode = this.comboBoxDataMode.SelectedItem;
 			this.igDateEditor1.Options.revertIfNotValid = this.checkBoxRevertIfNotValid.Checked;

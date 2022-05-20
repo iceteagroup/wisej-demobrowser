@@ -74,7 +74,7 @@
             this.linkDemo.TabIndex = 6;
             this.linkDemo.Text = "https://js.syncfusion.com/demos/web/#!/flatlight/tileview/DefaultFunctionalities";
             // 
-            // linkAPI
+            // linkApi
             // 
             this.linkApi.TabIndex = 5;
             this.linkApi.Text = "https://help.syncfusion.com/api/js/ejtile";
@@ -165,7 +165,7 @@
             this.flowLayoutPanel2.Dock = Wisej.Web.DockStyle.Fill;
             this.flowLayoutPanel2.Location = new System.Drawing.Point(8, 8);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(1073, 542);
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(872, 560);
             this.flowLayoutPanel2.TabIndex = 0;
             this.flowLayoutPanel2.TabStop = true;
             // 
@@ -212,7 +212,7 @@
             // 
             // ejTile10
             // 
-            this.ejTile10.Location = new System.Drawing.Point(805, 5);
+            this.ejTile10.Location = new System.Drawing.Point(5, 165);
             this.ejTile10.Margin = new Wisej.Web.Padding(5);
             this.ejTile10.Name = "ejTile10";
             this.ejTile10.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"imageUrl\":\"Images/Tile/camera.png\",\"tileSize\":\"medium\",\"text\":\"Camera\"}")));
@@ -222,7 +222,7 @@
             // 
             // ejTile11
             // 
-            this.ejTile11.Location = new System.Drawing.Point(5, 165);
+            this.ejTile11.Location = new System.Drawing.Point(165, 165);
             this.ejTile11.Margin = new Wisej.Web.Padding(5);
             this.ejTile11.Name = "ejTile11";
             this.ejTile11.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"imageUrl\":\"Images/Tile/sports.png\",\"tileSize\":\"wide\",\"imagePosition\":\"fill\",\"te" +
@@ -233,7 +233,7 @@
             // 
             // ejTile6
             // 
-            this.ejTile6.Location = new System.Drawing.Point(325, 165);
+            this.ejTile6.Location = new System.Drawing.Point(485, 165);
             this.ejTile6.Margin = new Wisej.Web.Padding(5);
             this.ejTile6.Name = "ejTile6";
             this.ejTile6.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("ejTile6.Options"))));
@@ -243,7 +243,7 @@
             // 
             // ejTile12
             // 
-            this.ejTile12.Location = new System.Drawing.Point(645, 165);
+            this.ejTile12.Location = new System.Drawing.Point(5, 325);
             this.ejTile12.Margin = new Wisej.Web.Padding(5);
             this.ejTile12.Name = "ejTile12";
             this.ejTile12.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"imageUrl\":\"Images/Tile/music.png\",\"tileSize\":\"medium\",\"imagePosition\":\"center\"," +
@@ -254,7 +254,7 @@
             // 
             // ejTile13
             // 
-            this.ejTile13.Location = new System.Drawing.Point(805, 165);
+            this.ejTile13.Location = new System.Drawing.Point(165, 325);
             this.ejTile13.Margin = new Wisej.Web.Padding(5);
             this.ejTile13.Name = "ejTile13";
             this.ejTile13.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"imageUrl\":\"Images/Tile/alerts.png\",\"tileSize\":\"medium\",\"imagePosition\":\"center\"" +
@@ -274,7 +274,7 @@
             this.checkBox1.Location = new System.Drawing.Point(3, 70);
             this.checkBox1.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(212, 38);
+            this.checkBox1.Size = new System.Drawing.Size(212, 30);
             this.checkBox1.TabIndex = 1;
             this.checkBox1.Text = "Live Tile";
             // 
@@ -286,7 +286,7 @@
             this.numericUpDown1.Label.Size = 50;
             this.numericUpDown1.Label.SizeType = Wisej.Web.SizeType.Percent;
             this.numericUpDown1.LabelText = "Badge";
-            this.numericUpDown1.Location = new System.Drawing.Point(3, 256);
+            this.numericUpDown1.Location = new System.Drawing.Point(3, 217);
             this.numericUpDown1.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.numericUpDown1.Name = "numericUpDown1";
             this.numericUpDown1.Size = new System.Drawing.Size(212, 60);
@@ -315,10 +315,10 @@
             this.checkBox2.Checked = true;
             this.flowLayoutPanelProperties.SetFillWeight(this.checkBox2, 1);
             this.flowLayoutPanelProperties.SetFlowBreak(this.checkBox2, true);
-            this.checkBox2.Location = new System.Drawing.Point(3, 127);
+            this.checkBox2.Location = new System.Drawing.Point(3, 119);
             this.checkBox2.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(212, 38);
+            this.checkBox2.Size = new System.Drawing.Size(212, 30);
             this.checkBox2.TabIndex = 2;
             this.checkBox2.Text = "Allow Selection";
             // 
@@ -342,7 +342,7 @@
             this.comboBox1.Label.Size = 50;
             this.comboBox1.Label.SizeType = Wisej.Web.SizeType.Percent;
             this.comboBox1.LabelText = "Image Position";
-            this.comboBox1.Location = new System.Drawing.Point(3, 335);
+            this.comboBox1.Location = new System.Drawing.Point(3, 296);
             this.comboBox1.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(212, 60);
@@ -356,10 +356,10 @@
             this.checkBox3.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.flowLayoutPanelProperties.SetFillWeight(this.checkBox3, 1);
             this.flowLayoutPanelProperties.SetFlowBreak(this.checkBox3, true);
-            this.checkBox3.Location = new System.Drawing.Point(3, 184);
+            this.checkBox3.Location = new System.Drawing.Point(3, 168);
             this.checkBox3.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(212, 53);
+            this.checkBox3.Size = new System.Drawing.Size(212, 30);
             this.checkBox3.TabIndex = 3;
             this.checkBox3.Text = "Show Rounded Corner";
             // 
@@ -374,7 +374,6 @@
             this.flowLayoutPanel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

@@ -48,7 +48,7 @@
             // 
             this.linkDemo.Text = "https://snippet.webix.com/gallery?search=#colorselector";
             // 
-            // linkAPI
+            // linkApi
             // 
             this.linkApi.Text = "https://docs.webix.com/api__refs__ui.colorselect.html";
             // 
@@ -60,13 +60,11 @@
             // 
             this.flowLayoutPanel1.Controls.Add(this.checkBoxBorderless);
             this.flowLayoutPanel1.Controls.Add(this.buttonGetSelectedColor);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 35);
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 437);
             // 
             // colorSelect1
             // 
             this.colorSelect1.Anchor = Wisej.Web.AnchorStyles.None;
-            this.colorSelect1.Location = new System.Drawing.Point(294, 79);
+            this.colorSelect1.Location = new System.Drawing.Point(194, 88);
             this.colorSelect1.Name = "colorSelect1";
             this.colorSelect1.Size = new System.Drawing.Size(500, 400);
             this.colorSelect1.TabIndex = 0;
@@ -105,7 +103,6 @@
             this.panel.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

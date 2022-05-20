@@ -34,7 +34,7 @@ namespace Wisej.Web.Ext.Ignite.Demo.Component
 			{
 				var text = streamReader.ReadToEnd();
 
-				this.igHtmlEditor1.SetContent(text, true);
+				this.igHtmlEditor1.Instance.setContent(text, "html");
 			}
 		}
 
