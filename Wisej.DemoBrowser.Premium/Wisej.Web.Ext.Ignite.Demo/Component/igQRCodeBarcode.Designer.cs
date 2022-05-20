@@ -103,7 +103,6 @@
 			// igQRCodeBarcode1
 			// 
 			this.igQRCodeBarcode1.Anchor = Wisej.Web.AnchorStyles.None;
-			this.igQRCodeBarcode1.Data = "1234567890";
 			this.igQRCodeBarcode1.Location = new System.Drawing.Point(260, 117);
 			this.igQRCodeBarcode1.Name = "igQRCodeBarcode1";
 			this.igQRCodeBarcode1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"data\":\"1234567890\",\"encodingMode\":\"numeric\"}")));
