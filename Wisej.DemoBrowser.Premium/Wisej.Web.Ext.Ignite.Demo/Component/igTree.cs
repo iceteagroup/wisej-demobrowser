@@ -456,10 +456,6 @@ namespace Wisej.Web.Ext.Ignite.Demo.Component
 			igTree2.Options.dataSourceType = "json";
 			igTree2.Options.initialExpandDepth = 0;
 			igTree2.Options.pathSeparator = ".";
-
-
-			igTree1.Options = JSON.Stringify(igTree1.Options);
-			MessageBox.Show(igTree1.Options.ToString());
 		}
 
 		private void igTree_WidgetEvent(object sender, WidgetEventArgs e)
