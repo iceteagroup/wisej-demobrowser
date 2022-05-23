@@ -52,7 +52,7 @@
             this.linkDocs.Text = "https://ej2.syncfusion.com/javascript/documentation/progress-button/es5-getting-s" +
     "tarted/";
             // 
-            // linkAPI
+            // linkApi
             // 
             this.linkApi.Text = "https://ej2.syncfusion.com/javascript/documentation/api/progress-button";
             // 
@@ -74,9 +74,9 @@
             // 
             // flowLayoutPanel1
             // 
-            this.flowLayoutPanel1.Controls.Add(this.numericUpDownDuration);
             this.flowLayoutPanel1.Controls.Add(this.checkBoxProgress);
             this.flowLayoutPanel1.Controls.Add(this.checkBoxIsToggle);
+            this.flowLayoutPanel1.Controls.Add(this.numericUpDownDuration);
             this.flowLayoutPanel1.Controls.Add(this.label4);
             // 
             // linkDemo
@@ -86,7 +86,7 @@
             // progressButton1
             // 
             this.progressButton1.Anchor = Wisej.Web.AnchorStyles.None;
-            this.progressButton1.Location = new System.Drawing.Point(328, 157);
+            this.progressButton1.Location = new System.Drawing.Point(228, 162);
             this.progressButton1.Name = "progressButton1";
             this.progressButton1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"content\":\"Spin Left\"}")));
             this.progressButton1.Size = new System.Drawing.Size(120, 80);
@@ -96,7 +96,7 @@
             // progressButton2
             // 
             this.progressButton2.Anchor = Wisej.Web.AnchorStyles.None;
-            this.progressButton2.Location = new System.Drawing.Point(484, 157);
+            this.progressButton2.Location = new System.Drawing.Point(384, 162);
             this.progressButton2.Name = "progressButton2";
             this.progressButton2.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"content\":\"Spin Right\",\"spinSettings\":{\"position\":\"Right\"}}")));
             this.progressButton2.Size = new System.Drawing.Size(120, 80);
@@ -106,7 +106,7 @@
             // progressButton3
             // 
             this.progressButton3.Anchor = Wisej.Web.AnchorStyles.None;
-            this.progressButton3.Location = new System.Drawing.Point(640, 157);
+            this.progressButton3.Location = new System.Drawing.Point(540, 162);
             this.progressButton3.Name = "progressButton3";
             this.progressButton3.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"content\":\"Spin Top\",\"spinSettings\":{\"position\":\"Top\"}}")));
             this.progressButton3.Size = new System.Drawing.Size(120, 80);
@@ -116,7 +116,7 @@
             // progressButton4
             // 
             this.progressButton4.Anchor = Wisej.Web.AnchorStyles.None;
-            this.progressButton4.Location = new System.Drawing.Point(328, 243);
+            this.progressButton4.Location = new System.Drawing.Point(228, 248);
             this.progressButton4.Name = "progressButton4";
             this.progressButton4.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"content\":\"Spin Bottom\",\"spinSettings\":{\"position\":\"Bottom\"}}")));
             this.progressButton4.Size = new System.Drawing.Size(120, 80);
@@ -126,7 +126,7 @@
             // progressButton5
             // 
             this.progressButton5.Anchor = Wisej.Web.AnchorStyles.None;
-            this.progressButton5.Location = new System.Drawing.Point(484, 243);
+            this.progressButton5.Location = new System.Drawing.Point(384, 248);
             this.progressButton5.Name = "progressButton5";
             this.progressButton5.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"content\":\"Zoom Out\",\"animationSettings\":{\"effect\":\"ZoomOut\"},\"spinSettings\":{\"p" +
         "osition\":\"Center\"}}")));
@@ -137,7 +137,7 @@
             // progressButton6
             // 
             this.progressButton6.Anchor = Wisej.Web.AnchorStyles.None;
-            this.progressButton6.Location = new System.Drawing.Point(640, 243);
+            this.progressButton6.Location = new System.Drawing.Point(540, 248);
             this.progressButton6.Name = "progressButton6";
             this.progressButton6.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"content\":\"Slide Left\",\"enableProgress\":true,\"animationSettings\":{\"effect\":\"Slid" +
         "eLeft\"},\"spinSettings\":{\"position\":\"Center\"},\"cssClass\":\"e-flat e-success\"}")));
@@ -148,7 +148,7 @@
             // progressButton7
             // 
             this.progressButton7.Anchor = Wisej.Web.AnchorStyles.None;
-            this.progressButton7.Location = new System.Drawing.Point(329, 329);
+            this.progressButton7.Location = new System.Drawing.Point(229, 334);
             this.progressButton7.Name = "progressButton7";
             this.progressButton7.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"content\":\"Slide Right\",\"enableProgress\":true,\"animationSettings\":{\"effect\":\"Sli" +
         "deRight\"},\"spinSettings\":{\"position\":\"Center\"},\"cssClass\":\"e-flat e-success\"}")));
@@ -159,7 +159,7 @@
             // progressButton8
             // 
             this.progressButton8.Anchor = Wisej.Web.AnchorStyles.None;
-            this.progressButton8.Location = new System.Drawing.Point(484, 329);
+            this.progressButton8.Location = new System.Drawing.Point(384, 334);
             this.progressButton8.Name = "progressButton8";
             this.progressButton8.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"content\":\"Zoom In\",\"enableProgress\":true,\"animationSettings\":{\"effect\":\"ZoomIn\"" +
         "},\"spinSettings\":{\"position\":\"Center\"},\"cssClass\":\"e-round-corner e-danger\"}")));
@@ -170,7 +170,7 @@
             // progressButton9
             // 
             this.progressButton9.Anchor = Wisej.Web.AnchorStyles.None;
-            this.progressButton9.Location = new System.Drawing.Point(640, 329);
+            this.progressButton9.Location = new System.Drawing.Point(540, 334);
             this.progressButton9.Name = "progressButton9";
             this.progressButton9.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"content\":\"Download\",\"duration\":4000,\"enableProgress\":true,\"cssClass\":\"e-hide-sp" +
         "inner e-progress-top\",\"iconCss\":\"e-btn-sb-icons e-download-icon\"}")));
@@ -183,14 +183,15 @@
             this.flowLayoutPanel1.SetFillWeight(this.numericUpDownDuration, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.numericUpDownDuration, true);
             this.numericUpDownDuration.LabelText = "Duration";
-            this.numericUpDownDuration.Location = new System.Drawing.Point(3, 3);
+            this.numericUpDownDuration.Location = new System.Drawing.Point(3, 89);
+            this.numericUpDownDuration.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.numericUpDownDuration.Maximum = new decimal(new int[] {
             10000,
             0,
             0,
             0});
             this.numericUpDownDuration.Name = "numericUpDownDuration";
-            this.numericUpDownDuration.Size = new System.Drawing.Size(212, 46);
+            this.numericUpDownDuration.Size = new System.Drawing.Size(212, 57);
             this.numericUpDownDuration.TabIndex = 1;
             this.numericUpDownDuration.Value = new decimal(new int[] {
             2000,
@@ -204,8 +205,7 @@
             this.checkBoxProgress.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.flowLayoutPanel1.SetFillWeight(this.checkBoxProgress, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.checkBoxProgress, true);
-            this.checkBoxProgress.Location = new System.Drawing.Point(3, 68);
-            this.checkBoxProgress.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
+            this.checkBoxProgress.Location = new System.Drawing.Point(3, 3);
             this.checkBoxProgress.Name = "checkBoxProgress";
             this.checkBoxProgress.Size = new System.Drawing.Size(212, 24);
             this.checkBoxProgress.TabIndex = 2;
@@ -217,12 +217,12 @@
             this.checkBoxIsToggle.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.flowLayoutPanel1.SetFillWeight(this.checkBoxIsToggle, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.checkBoxIsToggle, true);
-            this.checkBoxIsToggle.Location = new System.Drawing.Point(3, 111);
+            this.checkBoxIsToggle.Location = new System.Drawing.Point(3, 46);
             this.checkBoxIsToggle.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBoxIsToggle.Name = "checkBoxIsToggle";
             this.checkBoxIsToggle.Size = new System.Drawing.Size(212, 24);
             this.checkBoxIsToggle.TabIndex = 3;
-            this.checkBoxIsToggle.Text = "Is Toggle";
+            this.checkBoxIsToggle.Text = "Enable Toggle";
             // 
             // label4
             // 
@@ -230,7 +230,7 @@
             this.label4.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Bottom | Wisej.Web.AnchorStyles.Left)));
             this.flowLayoutPanel1.SetFillWeight(this.label4, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.label4, true);
-            this.label4.Location = new System.Drawing.Point(3, 154);
+            this.label4.Location = new System.Drawing.Point(3, 165);
             this.label4.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(212, 81);
@@ -246,7 +246,6 @@
             this.flowLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownDuration)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

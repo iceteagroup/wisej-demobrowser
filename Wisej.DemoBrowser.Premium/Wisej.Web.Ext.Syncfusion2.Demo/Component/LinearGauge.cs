@@ -24,22 +24,11 @@ namespace Wisej.Web.Ext.Syncfusion2.Demo.Component
 		private void buttonUpdate_Click(object sender, EventArgs e)
 		{
 			this.linearGauge1.Instance.setPointerValue(0, 0, this.numericUpDown1.Value);
-
-			if(this.numericUpDownMinorTick.Value >= this.numericUpDownMajorTick.Value)
-            {
-				return;
-            }
-
 			this.linearGauge1.Options.orientation = this.comboBoxOrientation.SelectedItem;
+			this.linearGauge1.Options.axes[0].majorTicks.interval = this.numericUpDownMajorTick.Value;
+			this.linearGauge1.Options.axes[0].minorTicks.interval = this.numericUpDownMinorTick.Value;
 			this.linearGauge1.Options.container = new { type = this.comboBoxContainerType.SelectedItem };
-			this.linearGauge1.Options.majorTicks = new
-			{
-				interval = Convert.ToInt32(this.numericUpDownMajorTick.Value),
-			};
-			this.linearGauge1.Options.minorTicks = new
-			{
-				interval = Convert.ToInt32(this.numericUpDownMinorTick.Value)
-			};
+
 			this.linearGauge1.Update();
 		}
     }

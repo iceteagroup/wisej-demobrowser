@@ -37,7 +37,7 @@
             // 
             this.linkDocs.Text = "https://ej2.syncfusion.com/javascript/documentation/diagram/es5-getting-started/";
             // 
-            // linkAPI
+            // linkApi
             // 
             this.linkApi.Text = "https://ej2.syncfusion.com/javascript/documentation/api/diagram/";
             // 
@@ -58,7 +58,7 @@
             this.diagram1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"nodes\":[{\"name\":\"Start\",\"offsetX\":300,\"offsetY\":50,\"width\":140,\"height\":50,\"ann" +
         "otations\":[{\"id\":\"label1\",\"content\":\"Start\"}],\"shape\":{\"type\":\"Flow\",\"shape\":\"Te" +
         "rminator\"}}]}")));
-            this.diagram1.Size = new System.Drawing.Size(1073, 542);
+            this.diagram1.Size = new System.Drawing.Size(872, 560);
             this.diagram1.TabIndex = 0;
             this.diagram1.Text = "diagram1";
             // 
@@ -68,7 +68,6 @@
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

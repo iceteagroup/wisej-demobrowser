@@ -40,7 +40,7 @@
             // 
             this.linkDocs.Text = "https://ej2.syncfusion.com/javascript/documentation/toolbar/getting-started/";
             // 
-            // linkAPI
+            // linkApi
             // 
             this.linkApi.Text = "https://ej2.syncfusion.com/javascript/documentation/api/toolbar/";
             // 
@@ -68,7 +68,7 @@
             this.toolbar1.Name = "toolbar1";
             this.toolbar1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"items\":[{\"text\":\"Cut\"},{\"text\":\"Copy\"},{\"text\":\"Paste\"},{\"type\":\"Separator\"},{\"" +
         "text\":\"Bold\"},{\"text\":\"Italic\"},{\"text\":\"Underline\"}]}")));
-            this.toolbar1.Size = new System.Drawing.Size(1073, 52);
+            this.toolbar1.Size = new System.Drawing.Size(872, 52);
             this.toolbar1.TabIndex = 0;
             this.toolbar1.Text = "toolbar1";
             // 
@@ -86,8 +86,9 @@
             this.comboBoxOverflowMode.Location = new System.Drawing.Point(3, 46);
             this.comboBoxOverflowMode.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.comboBoxOverflowMode.Name = "comboBoxOverflowMode";
-            this.comboBoxOverflowMode.Size = new System.Drawing.Size(212, 46);
+            this.comboBoxOverflowMode.Size = new System.Drawing.Size(212, 57);
             this.comboBoxOverflowMode.TabIndex = 1;
+            this.comboBoxOverflowMode.Text = "Scrollable";
             // 
             // checkBoxEnableCollision
             // 
@@ -110,7 +111,6 @@
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

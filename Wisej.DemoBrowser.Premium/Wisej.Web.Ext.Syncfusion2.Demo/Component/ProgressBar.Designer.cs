@@ -37,29 +37,12 @@
             this.checkBoxIsIndeterminate = new Wisej.Web.CheckBox();
             this.checkBoxIsStriped = new Wisej.Web.CheckBox();
             this.comboBoxType = new Wisej.Web.ComboBox();
+            this.flowLayoutPanel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.panel.SuspendLayout();
-            this.flowLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownAnimationDuration)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownAnimationDelay)).BeginInit();
             this.SuspendLayout();
-            // 
-            // linkDocs
-            // 
-            this.linkDocs.Text = "https://ej2.syncfusion.com/javascript/documentation/progress-bar/es5-getting-star" +
-    "ted/";
-            // 
-            // linkAPI
-            // 
-            this.linkApi.Text = "https://ej2.syncfusion.com/javascript/documentation/api/progressbar";
-            // 
-            // buttonUpdate
-            // 
-            this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
-            // 
-            // panel
-            // 
-            this.panel.Controls.Add(this.progressBar1);
             // 
             // flowLayoutPanel1
             // 
@@ -72,17 +55,36 @@
             this.flowLayoutPanel1.Controls.Add(this.numericUpDownAnimationDelay);
             this.flowLayoutPanel1.Controls.Add(this.numericUpDownAnimationDuration);
             // 
+            // linkDocs
+            // 
+            this.linkDocs.Text = "https://ej2.syncfusion.com/javascript/documentation/progress-bar/es5-getting-star" +
+    "ted/";
+            // 
+            // linkApi
+            // 
+            this.linkApi.Text = "https://ej2.syncfusion.com/javascript/documentation/api/progressbar";
+            // 
+            // buttonUpdate
+            // 
+            this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
+            // 
+            // panel
+            // 
+            this.panel.Controls.Add(this.progressBar1);
+            // 
             // linkDemo
             // 
             this.linkDemo.Text = "https://ej2.syncfusion.com/demos/#/bootstrap5/progress-bar/linear.html";
             // 
             // progressBar1
             // 
-            this.progressBar1.Location = new System.Drawing.Point(107, 261);
+            this.progressBar1.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Left) 
+            | Wisej.Web.AnchorStyles.Right)));
+            this.progressBar1.Location = new System.Drawing.Point(91, 270);
             this.progressBar1.Name = "progressBar1";
             this.progressBar1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"value\":70,\"trackThickness\":15,\"progressThickness\":15,\"showProgressValue\":true,\"" +
         "height\":\"30\",\"animation\":{\"enable\":true,\"duration\":2000,\"delay\":0}}")));
-            this.progressBar1.Size = new System.Drawing.Size(874, 36);
+            this.progressBar1.Size = new System.Drawing.Size(706, 36);
             this.progressBar1.TabIndex = 0;
             this.progressBar1.Text = "progressBar1";
             // 
@@ -109,14 +111,14 @@
             0,
             0});
             this.numericUpDownAnimationDuration.LabelText = "Duration";
-            this.numericUpDownAnimationDuration.Location = new System.Drawing.Point(3, 324);
+            this.numericUpDownAnimationDuration.Location = new System.Drawing.Point(3, 346);
             this.numericUpDownAnimationDuration.Maximum = new decimal(new int[] {
             10000,
             0,
             0,
             0});
             this.numericUpDownAnimationDuration.Name = "numericUpDownAnimationDuration";
-            this.numericUpDownAnimationDuration.Size = new System.Drawing.Size(212, 46);
+            this.numericUpDownAnimationDuration.Size = new System.Drawing.Size(212, 57);
             this.numericUpDownAnimationDuration.TabIndex = 2;
             this.numericUpDownAnimationDuration.Value = new decimal(new int[] {
             2000,
@@ -128,9 +130,9 @@
             // 
             this.numericUpDownAnimationDelay.Dock = Wisej.Web.DockStyle.Top;
             this.numericUpDownAnimationDelay.LabelText = "Delay";
-            this.numericUpDownAnimationDelay.Location = new System.Drawing.Point(3, 272);
+            this.numericUpDownAnimationDelay.Location = new System.Drawing.Point(3, 283);
             this.numericUpDownAnimationDelay.Name = "numericUpDownAnimationDelay";
-            this.numericUpDownAnimationDelay.Size = new System.Drawing.Size(212, 46);
+            this.numericUpDownAnimationDelay.Size = new System.Drawing.Size(212, 57);
             this.numericUpDownAnimationDelay.TabIndex = 1;
             // 
             // checkBoxPieProgress
@@ -202,20 +204,20 @@
             this.comboBoxType.Location = new System.Drawing.Point(3, 220);
             this.comboBoxType.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.comboBoxType.Name = "comboBoxType";
-            this.comboBoxType.Size = new System.Drawing.Size(212, 46);
+            this.comboBoxType.Size = new System.Drawing.Size(212, 57);
             this.comboBoxType.TabIndex = 9;
+            this.comboBoxType.Text = "Linear";
             // 
             // ProgressBar
             // 
             this.Name = "ProgressBar";
-            this.groupBox1.ResumeLayout(false);
-            this.panel.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.panel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownAnimationDuration)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownAnimationDelay)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

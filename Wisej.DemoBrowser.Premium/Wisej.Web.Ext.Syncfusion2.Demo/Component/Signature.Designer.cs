@@ -58,7 +58,7 @@
             // signature1
             // 
             this.signature1.Anchor = Wisej.Web.AnchorStyles.None;
-            this.signature1.Location = new System.Drawing.Point(177, 119);
+            this.signature1.Location = new System.Drawing.Point(77, 128);
             this.signature1.Name = "signature1";
             this.signature1.Size = new System.Drawing.Size(735, 320);
             this.signature1.TabIndex = 0;
@@ -68,10 +68,10 @@
             // 
             this.flowLayoutPanel1.SetFillWeight(this.buttonUndo, 1);
             this.buttonUndo.ImageSource = "icon-undo";
-            this.buttonUndo.Location = new System.Drawing.Point(3, 135);
+            this.buttonUndo.Location = new System.Drawing.Point(3, 133);
             this.buttonUndo.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.buttonUndo.Name = "buttonUndo";
-            this.buttonUndo.Size = new System.Drawing.Size(66, 50);
+            this.buttonUndo.Size = new System.Drawing.Size(66, 60);
             this.buttonUndo.TabIndex = 1;
             this.buttonUndo.Text = "Undo";
             this.buttonUndo.TextImageRelation = Wisej.Web.TextImageRelation.ImageAboveText;
@@ -81,10 +81,10 @@
             // 
             this.flowLayoutPanel1.SetFillWeight(this.buttonRedo, 1);
             this.buttonRedo.ImageSource = "icon-redo";
-            this.buttonRedo.Location = new System.Drawing.Point(75, 135);
+            this.buttonRedo.Location = new System.Drawing.Point(75, 133);
             this.buttonRedo.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.buttonRedo.Name = "buttonRedo";
-            this.buttonRedo.Size = new System.Drawing.Size(67, 50);
+            this.buttonRedo.Size = new System.Drawing.Size(67, 60);
             this.buttonRedo.TabIndex = 2;
             this.buttonRedo.Text = "Redo";
             this.buttonRedo.TextImageRelation = Wisej.Web.TextImageRelation.ImageAboveText;
@@ -95,10 +95,10 @@
             this.flowLayoutPanel1.SetFillWeight(this.buttonSave, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.buttonSave, true);
             this.buttonSave.ImageSource = "icon-save";
-            this.buttonSave.Location = new System.Drawing.Point(148, 135);
+            this.buttonSave.Location = new System.Drawing.Point(148, 133);
             this.buttonSave.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.buttonSave.Name = "buttonSave";
-            this.buttonSave.Size = new System.Drawing.Size(67, 50);
+            this.buttonSave.Size = new System.Drawing.Size(67, 60);
             this.buttonSave.TabIndex = 3;
             this.buttonSave.Text = "Save";
             this.buttonSave.TextImageRelation = Wisej.Web.TextImageRelation.ImageAboveText;
@@ -122,7 +122,7 @@
             this.buttonClear.Location = new System.Drawing.Point(3, 79);
             this.buttonClear.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.buttonClear.Name = "buttonClear";
-            this.buttonClear.Size = new System.Drawing.Size(212, 37);
+            this.buttonClear.Size = new System.Drawing.Size(212, 35);
             this.buttonClear.TabIndex = 5;
             this.buttonClear.Text = "Clear";
             this.buttonClear.Click += new System.EventHandler(this.buttonClear_Click);
@@ -135,7 +135,6 @@
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

@@ -42,7 +42,7 @@
             // 
             this.linkDocs.Text = "https://ej2.syncfusion.com/javascript/documentation/treegrid/getting-started/";
             // 
-            // linkAPI
+            // linkApi
             // 
             this.linkApi.Text = "https://ej2.syncfusion.com/javascript/documentation/api/treegrid/";
             // 
@@ -70,7 +70,7 @@
             this.treeGrid1.Location = new System.Drawing.Point(8, 8);
             this.treeGrid1.Name = "treeGrid1";
             this.treeGrid1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("treeGrid1.Options"))));
-            this.treeGrid1.Size = new System.Drawing.Size(1073, 542);
+            this.treeGrid1.Size = new System.Drawing.Size(872, 560);
             this.treeGrid1.TabIndex = 0;
             this.treeGrid1.Text = "treeGrid1";
             // 
@@ -122,7 +122,6 @@
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

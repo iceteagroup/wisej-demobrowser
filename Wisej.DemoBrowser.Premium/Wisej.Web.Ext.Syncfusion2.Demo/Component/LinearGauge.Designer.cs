@@ -93,9 +93,19 @@
             this.numericUpDown1.LabelText = "Value";
             this.numericUpDown1.Location = new System.Drawing.Point(3, 82);
             this.numericUpDown1.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
+            this.numericUpDown1.Maximum = new decimal(new int[] {
+            180,
+            0,
+            0,
+            0});
             this.numericUpDown1.Name = "numericUpDown1";
             this.numericUpDown1.Size = new System.Drawing.Size(212, 60);
             this.numericUpDown1.TabIndex = 1;
+            this.numericUpDown1.Value = new decimal(new int[] {
+            90,
+            0,
+            0,
+            0});
             // 
             // numericUpDownMajorTick
             // 
@@ -115,12 +125,12 @@
             this.numericUpDownMajorTick.Size = new System.Drawing.Size(103, 60);
             this.numericUpDownMajorTick.TabIndex = 3;
             this.numericUpDownMajorTick.Value = new decimal(new int[] {
-            1,
+            20,
             0,
             0,
             0});
             // 
-            // numericUpDownMinorType
+            // numericUpDownMinorTick
             // 
             this.numericUpDownMinorTick.AutoSize = false;
             this.flowLayoutPanel1.SetFillWeight(this.numericUpDownMinorTick, 1);
@@ -130,16 +140,11 @@
             this.numericUpDownMinorTick.Label.SizeType = Wisej.Web.SizeType.Percent;
             this.numericUpDownMinorTick.LabelText = "Minor Tick";
             this.numericUpDownMinorTick.Location = new System.Drawing.Point(112, 3);
-            this.numericUpDownMinorTick.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numericUpDownMinorTick.Name = "numericUpDownMinorType";
+            this.numericUpDownMinorTick.Name = "numericUpDownMinorTick";
             this.numericUpDownMinorTick.Size = new System.Drawing.Size(103, 60);
             this.numericUpDownMinorTick.TabIndex = 4;
             this.numericUpDownMinorTick.Value = new decimal(new int[] {
-            1,
+            10,
             0,
             0,
             0});
@@ -158,6 +163,7 @@
             this.comboBoxOrientation.Name = "comboBoxOrientation";
             this.comboBoxOrientation.Size = new System.Drawing.Size(212, 57);
             this.comboBoxOrientation.TabIndex = 5;
+            this.comboBoxOrientation.Text = "Vertical";
             // 
             // comboBoxContainerType
             // 
@@ -174,6 +180,7 @@
             this.comboBoxContainerType.Name = "comboBoxContainerType";
             this.comboBoxContainerType.Size = new System.Drawing.Size(212, 57);
             this.comboBoxContainerType.TabIndex = 6;
+            this.comboBoxContainerType.Text = "Thermometer";
             // 
             // LinearGauge
             // 

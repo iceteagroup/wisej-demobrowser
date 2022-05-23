@@ -47,7 +47,7 @@
             this.linkDocs.Text = "https://ej2.syncfusion.com/javascript/documentation/multi-select/es5-getting-star" +
     "ted/";
             // 
-            // linkAPI
+            // linkApi
             // 
             this.linkApi.Text = "https://ej2.syncfusion.com/javascript/documentation/api/multi-select/";
             // 
@@ -77,7 +77,7 @@
             // multiSelect1
             // 
             this.multiSelect1.Anchor = Wisej.Web.AnchorStyles.None;
-            this.multiSelect1.Location = new System.Drawing.Point(369, 259);
+            this.multiSelect1.Location = new System.Drawing.Point(269, 268);
             this.multiSelect1.Name = "multiSelect1";
             this.multiSelect1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"dataSource\":[\"Badminton\",\"Cricket\",\"Football\",\"Golf\",\"Tennis\"]}")));
             this.multiSelect1.Size = new System.Drawing.Size(350, 40);
@@ -162,8 +162,9 @@
             this.comboBoxMode.Location = new System.Drawing.Point(3, 304);
             this.comboBoxMode.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.comboBoxMode.Name = "comboBoxMode";
-            this.comboBoxMode.Size = new System.Drawing.Size(212, 46);
+            this.comboBoxMode.Size = new System.Drawing.Size(212, 57);
             this.comboBoxMode.TabIndex = 8;
+            this.comboBoxMode.Text = "Default";
             // 
             // checkBoxClearButton
             // 
@@ -199,7 +200,6 @@
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

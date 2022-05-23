@@ -41,7 +41,7 @@
             this.linkDocs.Text = "https://ej2.syncfusion.com/javascript/documentation/sparkline/es5-getting-started" +
     "/";
             // 
-            // linkAPI
+            // linkApi
             // 
             this.linkApi.Text = "https://ej2.syncfusion.com/javascript/documentation/api/sparkline";
             // 
@@ -65,7 +65,7 @@
             // 
             this.sparkline1.Anchor = Wisej.Web.AnchorStyles.None;
             this.sparkline1.BorderStyle = Wisej.Web.BorderStyle.Solid;
-            this.sparkline1.Location = new System.Drawing.Point(185, 71);
+            this.sparkline1.Location = new System.Drawing.Point(85, 80);
             this.sparkline1.Name = "sparkline1";
             this.sparkline1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("sparkline1.Options"))));
             this.sparkline1.Size = new System.Drawing.Size(719, 416);
@@ -98,7 +98,6 @@
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

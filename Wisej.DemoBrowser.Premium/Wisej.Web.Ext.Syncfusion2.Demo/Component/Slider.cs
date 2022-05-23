@@ -23,7 +23,7 @@ namespace Wisej.Web.Ext.Syncfusion2.Demo.Component
 
         private void buttonUpdate_Click(object sender, EventArgs e)
         {
-
+			this.slider1.Options["readonly"] = this.checkBoxReadOnly.Checked;
 			this.slider1.Options.orientation = this.comboBoxOrientation.Text;
 			this.slider1.Options.showButtons = this.checkBoxShowButton.Checked;
 			this.slider1.Update();

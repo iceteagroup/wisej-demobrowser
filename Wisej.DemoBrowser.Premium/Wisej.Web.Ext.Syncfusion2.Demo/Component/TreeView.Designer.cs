@@ -69,8 +69,9 @@
             // 
             // treeView1
             // 
+            this.treeView1.Anchor = Wisej.Web.AnchorStyles.None;
             this.treeView1.BorderStyle = Wisej.Web.BorderStyle.Solid;
-            this.treeView1.Location = new System.Drawing.Point(394, 134);
+            this.treeView1.Location = new System.Drawing.Point(294, 143);
             this.treeView1.Name = "treeView1";
             this.treeView1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("treeView1.Options"))));
             this.treeView1.Size = new System.Drawing.Size(300, 290);

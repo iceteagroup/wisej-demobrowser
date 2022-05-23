@@ -13,7 +13,6 @@ namespace Wisej.Web.Ext.Syncfusion2.Demo.Component
         private void buttonUpdate_Click(object sender, EventArgs e)
         {
 			this.treeMap1.Options.renderDirection = this.comboBoxRenderDirection.Text;
-			this.treeMap1.Options.useGroupingSeparator = this.checkBoxGroupingSeparator.Checked;
 
 			this.treeMap1.Update();
         }

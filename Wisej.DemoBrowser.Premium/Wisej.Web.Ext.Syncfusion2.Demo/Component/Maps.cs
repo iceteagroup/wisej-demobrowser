@@ -110,7 +110,7 @@ namespace Wisej.Web.Ext.Syncfusion2.Demo.Component
 			};
 		}
 
-		private void button1_Click(object sender, EventArgs e)
+		private void buttonAddMarker_Click(object sender, EventArgs e)
 		{
 			// adds a new marker to the map.
 			this.maps1.Instance.addMarker(0, new[] 
@@ -119,17 +119,11 @@ namespace Wisej.Web.Ext.Syncfusion2.Demo.Component
 				{
 					dataSource = new[] {
 						new {
-							city = "Chicago",
-							latitude = 41.1881832,
-							longitude = -87.623177,
+							city = "My Marker",
+							latitude = this.numericUpDownLat.Value,
+							longitude = this.numericUpDownLon.Value,
 							population = "2.706M"
 						},
-						new {
-							city = "Gary",
-							latitude = 41.5885903,
-							longitude = -87.3978775,
-							population = "75,282"
-						}
 					},
 					visible = true,
 					shape = "Circle",
@@ -153,7 +147,12 @@ namespace Wisej.Web.Ext.Syncfusion2.Demo.Component
 
 		private void buttonUpdate_Click(object sender, EventArgs e)
 		{
-			this.maps1.Instance.refresh();
+			this.maps1.Update();
 		}
-	}
+
+        private void buttonPrint_Click(object sender, EventArgs e)
+        {
+			this.maps1.Instance.print();
+        }
+    }
 }

@@ -68,8 +68,8 @@
             // 
             // uploader1
             // 
-            this.uploader1.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom)));
-            this.uploader1.Location = new System.Drawing.Point(303, 333);
+            this.uploader1.Anchor = Wisej.Web.AnchorStyles.None;
+            this.uploader1.Location = new System.Drawing.Point(203, 342);
             this.uploader1.Name = "uploader1";
             this.uploader1.Size = new System.Drawing.Size(482, 177);
             this.uploader1.TabIndex = 0;
@@ -103,9 +103,9 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Anchor = Wisej.Web.AnchorStyles.Top;
+            this.pictureBox1.Anchor = Wisej.Web.AnchorStyles.None;
             this.pictureBox1.BorderStyle = Wisej.Web.BorderStyle.Dashed;
-            this.pictureBox1.Location = new System.Drawing.Point(303, 49);
+            this.pictureBox1.Location = new System.Drawing.Point(203, 58);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(482, 262);
             this.pictureBox1.SizeMode = Wisej.Web.PictureBoxSizeMode.Zoom;

@@ -28,9 +28,12 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-            this.comboBoxNode = new Wisej.Web.ComboBox();
-            this.tagTextBoxSubNodeDataSource = new Wisej.Web.TagTextBox();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DropDownTree));
             this.dropDownTree1 = new Wisej.Web.Ext.Syncfusion2.DropDownTree();
+            this.checkBoxFiltering = new Wisej.Web.CheckBox();
+            this.checkBoxMultiSelection = new Wisej.Web.CheckBox();
+            this.textBoxPlaceholder = new Wisej.Web.TextBox();
+            this.checkBoxReadOnly = new Wisej.Web.CheckBox();
             this.groupBox1.SuspendLayout();
             this.panel.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
@@ -55,55 +58,74 @@
             // 
             // flowLayoutPanel1
             // 
-            this.flowLayoutPanel1.Controls.Add(this.comboBoxNode);
-            this.flowLayoutPanel1.Controls.Add(this.tagTextBoxSubNodeDataSource);
+            this.flowLayoutPanel1.Controls.Add(this.checkBoxFiltering);
+            this.flowLayoutPanel1.Controls.Add(this.checkBoxMultiSelection);
+            this.flowLayoutPanel1.Controls.Add(this.checkBoxReadOnly);
+            this.flowLayoutPanel1.Controls.Add(this.textBoxPlaceholder);
             // 
             // linkDemo
             // 
             this.linkDemo.Text = "https://ej2.syncfusion.com/demos/#/bootstrap5/drop-down-tree/default.html";
-            // 
-            // comboBoxNode
-            // 
-            this.comboBoxNode.DropDownStyle = Wisej.Web.ComboBoxStyle.DropDownList;
-            this.flowLayoutPanel1.SetFillWeight(this.comboBoxNode, 1);
-            this.flowLayoutPanel1.SetFlowBreak(this.comboBoxNode, true);
-            this.comboBoxNode.Items.AddRange(new object[] {
-            "Boot",
-            "FileManager",
-            "System32"});
-            this.comboBoxNode.LabelText = "Node";
-            this.comboBoxNode.Location = new System.Drawing.Point(3, 3);
-            this.comboBoxNode.Name = "comboBoxNode";
-            this.comboBoxNode.Size = new System.Drawing.Size(212, 57);
-            this.comboBoxNode.TabIndex = 2;
-            this.comboBoxNode.Text = "Boot";
-            // 
-            // tagTextBoxSubNodeDataSource
-            // 
-            this.tagTextBoxSubNodeDataSource.AutoSize = false;
-            this.flowLayoutPanel1.SetFillWeight(this.tagTextBoxSubNodeDataSource, 1);
-            this.flowLayoutPanel1.SetFlowBreak(this.tagTextBoxSubNodeDataSource, true);
-            this.tagTextBoxSubNodeDataSource.LabelText = "Sub-Node Items";
-            this.tagTextBoxSubNodeDataSource.Location = new System.Drawing.Point(3, 79);
-            this.tagTextBoxSubNodeDataSource.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
-            this.tagTextBoxSubNodeDataSource.MaxLength = 10;
-            this.tagTextBoxSubNodeDataSource.MaxTagCount = 10;
-            this.tagTextBoxSubNodeDataSource.Multiline = true;
-            this.tagTextBoxSubNodeDataSource.Name = "tagTextBoxSubNodeDataSource";
-            this.tagTextBoxSubNodeDataSource.Size = new System.Drawing.Size(212, 142);
-            this.tagTextBoxSubNodeDataSource.TabIndex = 3;
             // 
             // dropDownTree1
             // 
             this.dropDownTree1.Anchor = Wisej.Web.AnchorStyles.None;
             this.dropDownTree1.Location = new System.Drawing.Point(269, 268);
             this.dropDownTree1.Name = "dropDownTree1";
-            this.dropDownTree1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"fields\":{\"dataSource\":[{\"id\":\"1\",\"name\":\"Boot\"},{\"id\":\"2\",\"name\":\"FileManager\"}" +
-        ",{\"id\":\"3\",\"name\":\"System32\"}],\"value\":\"id\",\"text\":\"name\",\"child\":\"subChild\",\"ex" +
-        "panded\":\"expanded\"}}")));
+            this.dropDownTree1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("dropDownTree1.Options"))));
             this.dropDownTree1.Size = new System.Drawing.Size(350, 40);
             this.dropDownTree1.TabIndex = 0;
             this.dropDownTree1.Text = "dropDownTree1";
+            // 
+            // checkBoxFiltering
+            // 
+            this.checkBoxFiltering.Appearance = Wisej.Web.Appearance.Switch;
+            this.checkBoxFiltering.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.flowLayoutPanel1.SetFillWeight(this.checkBoxFiltering, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.checkBoxFiltering, true);
+            this.checkBoxFiltering.Location = new System.Drawing.Point(3, 3);
+            this.checkBoxFiltering.Name = "checkBoxFiltering";
+            this.checkBoxFiltering.Size = new System.Drawing.Size(212, 24);
+            this.checkBoxFiltering.TabIndex = 0;
+            this.checkBoxFiltering.Text = "Filtering";
+            // 
+            // checkBoxMultiSelection
+            // 
+            this.checkBoxMultiSelection.Appearance = Wisej.Web.Appearance.Switch;
+            this.checkBoxMultiSelection.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.flowLayoutPanel1.SetFillWeight(this.checkBoxMultiSelection, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.checkBoxMultiSelection, true);
+            this.checkBoxMultiSelection.Location = new System.Drawing.Point(3, 46);
+            this.checkBoxMultiSelection.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
+            this.checkBoxMultiSelection.Name = "checkBoxMultiSelection";
+            this.checkBoxMultiSelection.Size = new System.Drawing.Size(212, 24);
+            this.checkBoxMultiSelection.TabIndex = 1;
+            this.checkBoxMultiSelection.Text = "Multi Selection";
+            // 
+            // textBoxPlaceholder
+            // 
+            this.flowLayoutPanel1.SetFillWeight(this.textBoxPlaceholder, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.textBoxPlaceholder, true);
+            this.textBoxPlaceholder.LabelText = "Placeholder";
+            this.textBoxPlaceholder.Location = new System.Drawing.Point(3, 132);
+            this.textBoxPlaceholder.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
+            this.textBoxPlaceholder.Name = "textBoxPlaceholder";
+            this.textBoxPlaceholder.Size = new System.Drawing.Size(212, 57);
+            this.textBoxPlaceholder.TabIndex = 2;
+            this.textBoxPlaceholder.Text = "Select a folder or file";
+            // 
+            // checkBoxReadOnly
+            // 
+            this.checkBoxReadOnly.Appearance = Wisej.Web.Appearance.Switch;
+            this.checkBoxReadOnly.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.flowLayoutPanel1.SetFillWeight(this.checkBoxReadOnly, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.checkBoxReadOnly, true);
+            this.checkBoxReadOnly.Location = new System.Drawing.Point(3, 89);
+            this.checkBoxReadOnly.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
+            this.checkBoxReadOnly.Name = "checkBoxReadOnly";
+            this.checkBoxReadOnly.Size = new System.Drawing.Size(212, 24);
+            this.checkBoxReadOnly.TabIndex = 3;
+            this.checkBoxReadOnly.Text = "Read Only";
             // 
             // DropDownTree
             // 
@@ -119,7 +141,9 @@
 		#endregion
 
 		private Syncfusion2.DropDownTree dropDownTree1;
-        private ComboBox comboBoxNode;
-        private TagTextBox tagTextBoxSubNodeDataSource;
+        private CheckBox checkBoxFiltering;
+        private CheckBox checkBoxMultiSelection;
+        private TextBox textBoxPlaceholder;
+        private CheckBox checkBoxReadOnly;
     }
 }

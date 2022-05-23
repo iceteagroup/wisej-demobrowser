@@ -4,7 +4,7 @@ using Wisej.Web;
 
 namespace Wisej.Web.Ext.Syncfusion2.Demo.Component
 {
-	public partial class ColorPicker : Wisej.Web.Ext.Syncfusion2.Demo.Component.TestBase
+	public partial class ColorPicker : TestBase
 	{
 		public ColorPicker()
 		{
@@ -16,16 +16,15 @@ namespace Wisej.Web.Ext.Syncfusion2.Demo.Component
 		private async void colorPicker1_WidgetEvent(object sender, WidgetEventArgs e)
 		{
 			var color = await this.colorPicker1.Instance.getValueAsync();
+
 			AlertBox.Show($"Color: {color}");
+			this.panelColorValue.BackColor = ColorTranslator.FromHtml(color);
 		}
 
-        private async void buttonUpdate_Click(object sender, EventArgs e)
+		private void buttonUpdate_Click(object sender, EventArgs e)
         {
-			var value = await this.colorPicker1.Instance.getValueAsync();
-
 			this.colorPicker1.Options.mode = this.comboBoxMode.Text;
 			this.colorPicker1.Options.inline = this.checkBoxInline.Checked;
-			this.panelColorValue.BackColor = ColorTranslator.FromHtml($"{value}");
 			this.colorPicker1.Options.showButtons = this.checkBoxShowButton.Checked;
 			
 			this.colorPicker1.Update();

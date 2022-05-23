@@ -18,19 +18,12 @@ namespace Wisej.Web.Ext.Syncfusion2.Demo.Component
 
 		private void DocumentEditor_Load(object sender, EventArgs e)
 		{
-			//var defaultFile = "Sample1.docx";
-			//var samplesPath = Application.MapPath("Data/DocumentEditor");
-			//using (var fs = new FileStream(Path.Combine(samplesPath, defaultFile), FileMode.Open))
-			//{
-			//	var sfdt = ProcessDocument(fs, "docx");
-			//	this.documentEditor1.Call("openFile", sfdt);
-			//}
+			var samplesPath = Application.MapPath("Data/DocumentEditor");
+			var samples = Directory.GetFiles(samplesPath)
+				.Select(x => Path.GetFileName(x)).ToArray();
 
-			//var samples = Directory.GetFiles(samplesPath)
-			//	.Select(x => Path.GetFileName(x)).ToArray();
-
-			//this.comboBoxDataSource.DataSource = samples;
-			//this.comboBoxDataSource.SelectedItem = defaultFile;
+			this.comboBoxDataSource.DataSource = samples;
+			this.comboBoxDataSource.SelectedIndex = 0;
 		}
 
 		private async void buttonSave_Click(object sender, EventArgs e)
@@ -48,7 +41,7 @@ namespace Wisej.Web.Ext.Syncfusion2.Demo.Component
 			using (var fs = new FileStream(path, FileMode.Open))
 			{
 				var sfdt = ProcessDocument(fs, "docx");
-				this.documentEditor1.Call("openFile", sfdt);
+				this.documentEditor1.Instance.documentEditor.open(sfdt);
 			}
 		}
 
@@ -103,10 +96,12 @@ namespace Wisej.Web.Ext.Syncfusion2.Demo.Component
 		private string ProcessDocument(Stream stream, string format)
 		{
 			stream.Position = 0;
+
 			var type = (FormatType)Enum.Parse(typeof(FormatType), format.Replace(".", ""), true);
 			var document = WordDocument.Load(stream, type);
 			var sfdt = JsonConvert.SerializeObject(document);
 			document.Dispose();
+
 			return sfdt;
 		}
 	}

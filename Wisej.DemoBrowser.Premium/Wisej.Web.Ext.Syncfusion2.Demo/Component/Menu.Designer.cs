@@ -40,7 +40,7 @@
             // 
             this.linkDocs.Text = "https://ej2.syncfusion.com/javascript/documentation/menu/es5-getting-started/";
             // 
-            // linkAPI
+            // linkApi
             // 
             this.linkApi.Text = "https://ej2.syncfusion.com/javascript/documentation/api/menu/";
             // 
@@ -62,13 +62,11 @@
             // 
             // menu1
             // 
-            this.menu1.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
-            | Wisej.Web.AnchorStyles.Left) 
-            | Wisej.Web.AnchorStyles.Right)));
-            this.menu1.Location = new System.Drawing.Point(8, 10);
+            this.menu1.Dock = Wisej.Web.DockStyle.Fill;
+            this.menu1.Location = new System.Drawing.Point(8, 8);
             this.menu1.Name = "menu1";
             this.menu1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("menu1.Options"))));
-            this.menu1.Size = new System.Drawing.Size(1070, 539);
+            this.menu1.Size = new System.Drawing.Size(872, 560);
             this.menu1.TabIndex = 0;
             this.menu1.Text = "menu1";
             // 
@@ -85,6 +83,7 @@
             this.comboBoxOrientation.Name = "comboBoxOrientation";
             this.comboBoxOrientation.Size = new System.Drawing.Size(212, 57);
             this.comboBoxOrientation.TabIndex = 2;
+            this.comboBoxOrientation.Text = "Horizontal";
             // 
             // Menu
             // 
@@ -94,7 +93,6 @@
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 
