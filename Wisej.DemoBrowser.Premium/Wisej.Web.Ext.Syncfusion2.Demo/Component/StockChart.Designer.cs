@@ -28,11 +28,14 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StockChart));
             this.stockChart1 = new Wisej.Web.Ext.Syncfusion2.StockChart();
-            this.checkBoxIsTranspoed = new Wisej.Web.CheckBox();
-            this.checkBoxIsSelect = new Wisej.Web.CheckBox();
+            this.checkBoxIsTransposed = new Wisej.Web.CheckBox();
+            this.checkBoxIsSelecEnableRtl = new Wisej.Web.CheckBox();
+            this.checkBoxMultiSelect = new Wisej.Web.CheckBox();
             this.groupBox1.SuspendLayout();
             this.panel.SuspendLayout();
+            this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // linkDocs
@@ -40,17 +43,9 @@
             this.linkDocs.Text = "https://ej2.syncfusion.com/javascript/documentation/stock-chart/es5-getting-start" +
     "ed/";
             // 
-            // linkAPI
+            // linkApi
             // 
             this.linkApi.Text = "https://ej2.syncfusion.com/javascript/documentation/api/stock-chart/";
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.checkBoxIsSelect);
-            this.groupBox1.Controls.Add(this.checkBoxIsTranspoed);
-            this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
-            this.groupBox1.Controls.SetChildIndex(this.checkBoxIsTranspoed, 0);
-            this.groupBox1.Controls.SetChildIndex(this.checkBoxIsSelect, 0);
             // 
             // buttonUpdate
             // 
@@ -60,50 +55,74 @@
             // 
             this.panel.Controls.Add(this.stockChart1);
             // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Controls.Add(this.checkBoxIsSelecEnableRtl);
+            this.flowLayoutPanel1.Controls.Add(this.checkBoxIsTransposed);
+            this.flowLayoutPanel1.Controls.Add(this.checkBoxMultiSelect);
+            // 
             // stockChart1
             // 
             this.stockChart1.Dock = Wisej.Web.DockStyle.Fill;
             this.stockChart1.Location = new System.Drawing.Point(8, 8);
             this.stockChart1.Name = "stockChart1";
-            this.stockChart1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"title\":\"Sales Analysis\",\"series\":[{\"name\":\"Sales\",\"type\":\"Candle\"}]}")));
-            this.stockChart1.Size = new System.Drawing.Size(1073, 542);
+            this.stockChart1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("stockChart1.Options"))));
+            this.stockChart1.Size = new System.Drawing.Size(872, 560);
             this.stockChart1.TabIndex = 0;
             this.stockChart1.Text = "stockChart1";
             // 
-            // checkBoxIsTranspoed
+            // checkBoxIsTransposed
             // 
-            this.checkBoxIsTranspoed.Appearance = Wisej.Web.Appearance.Switch;
-            this.checkBoxIsTranspoed.Location = new System.Drawing.Point(16, 33);
-            this.checkBoxIsTranspoed.Name = "checkBoxIsTranspoed";
-            this.checkBoxIsTranspoed.Size = new System.Drawing.Size(131, 24);
-            this.checkBoxIsTranspoed.TabIndex = 1;
-            this.checkBoxIsTranspoed.Text = "Is transposed";
+            this.checkBoxIsTransposed.Appearance = Wisej.Web.Appearance.Switch;
+            this.flowLayoutPanel1.SetFillWeight(this.checkBoxIsTransposed, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.checkBoxIsTransposed, true);
+            this.checkBoxIsTransposed.Location = new System.Drawing.Point(3, 46);
+            this.checkBoxIsTransposed.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
+            this.checkBoxIsTransposed.Name = "checkBoxIsTransposed";
+            this.checkBoxIsTransposed.Size = new System.Drawing.Size(212, 24);
+            this.checkBoxIsTransposed.TabIndex = 1;
+            this.checkBoxIsTransposed.Text = "Transposed";
             // 
-            // checkBoxIsSelect
+            // checkBoxIsSelecEnableRtl
             // 
-            this.checkBoxIsSelect.Appearance = Wisej.Web.Appearance.Switch;
-            this.checkBoxIsSelect.Location = new System.Drawing.Point(16, 66);
-            this.checkBoxIsSelect.Name = "checkBoxIsSelect";
-            this.checkBoxIsSelect.Size = new System.Drawing.Size(100, 24);
-            this.checkBoxIsSelect.TabIndex = 2;
-            this.checkBoxIsSelect.Text = "Is select";
+            this.checkBoxIsSelecEnableRtl.Appearance = Wisej.Web.Appearance.Switch;
+            this.flowLayoutPanel1.SetFillWeight(this.checkBoxIsSelecEnableRtl, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.checkBoxIsSelecEnableRtl, true);
+            this.checkBoxIsSelecEnableRtl.Location = new System.Drawing.Point(3, 3);
+            this.checkBoxIsSelecEnableRtl.Name = "checkBoxIsSelecEnableRtl";
+            this.checkBoxIsSelecEnableRtl.Size = new System.Drawing.Size(212, 24);
+            this.checkBoxIsSelecEnableRtl.TabIndex = 2;
+            this.checkBoxIsSelecEnableRtl.Text = "Enable Right-To-Left";
+            // 
+            // checkBoxMultiSelect
+            // 
+            this.checkBoxMultiSelect.Appearance = Wisej.Web.Appearance.Switch;
+            this.flowLayoutPanel1.SetFillWeight(this.checkBoxMultiSelect, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.checkBoxMultiSelect, true);
+            this.checkBoxMultiSelect.Location = new System.Drawing.Point(3, 89);
+            this.checkBoxMultiSelect.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
+            this.checkBoxMultiSelect.Name = "checkBoxMultiSelect";
+            this.checkBoxMultiSelect.Size = new System.Drawing.Size(212, 24);
+            this.checkBoxMultiSelect.TabIndex = 3;
+            this.checkBoxMultiSelect.Text = "Multi Select";
             // 
             // StockChart
             // 
             this.Name = "StockChart";
             this.Load += new System.EventHandler(this.StockChart_Load);
             this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.panel.ResumeLayout(false);
+            this.flowLayoutPanel1.ResumeLayout(false);
+            this.flowLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 
 		#endregion
 
 		private Syncfusion2.StockChart stockChart1;
-        private CheckBox checkBoxIsSelect;
-        private CheckBox checkBoxIsTranspoed;
+        private CheckBox checkBoxIsSelecEnableRtl;
+        private CheckBox checkBoxIsTransposed;
+        private CheckBox checkBoxMultiSelect;
     }
 }

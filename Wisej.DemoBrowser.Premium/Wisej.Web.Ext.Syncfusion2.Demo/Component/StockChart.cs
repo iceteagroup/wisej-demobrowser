@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using Wisej.Web;
 
 namespace Wisej.Web.Ext.Syncfusion2.Demo.Component
@@ -12,24 +13,20 @@ namespace Wisej.Web.Ext.Syncfusion2.Demo.Component
 
 		private void StockChart_Load(object sender, EventArgs e)
 		{
-			this.stockChart1.Options.series[0].dataSource = new[]
-			{
-				new
-				{
-					x = DateTime.Now,
-					open = 85.9757,
-					high = 90.6657,
-					low = 85.7685,
-					close = 90.5257,
-					volume = 660187068
-				}
-			};
+			this.stockChart1.Options.series[0].dataSource = GetData();
 		}
+
+		private dynamic GetData()
+        {
+			var text = File.ReadAllText(Application.MapPath("Data/Stocks/data.json"));
+			return JSON.Parse(text).data;
+        }
 
         private void buttonUpdate_Click(object sender, EventArgs e)
         {
-			this.stockChart1.Options.isSelect = this.checkBoxIsSelect.Checked;
-			this.stockChart1.Options.isTransposed = this.checkBoxIsTranspoed.Checked;
+			this.stockChart1.Options.isTransposed = this.checkBoxIsTransposed.Checked;
+			this.stockChart1.Options.isMultiSelect = this.checkBoxMultiSelect.Checked;
+			this.stockChart1.Options.enableRtl = this.checkBoxIsSelecEnableRtl.Checked;
 
 			this.stockChart1.Update();
         }

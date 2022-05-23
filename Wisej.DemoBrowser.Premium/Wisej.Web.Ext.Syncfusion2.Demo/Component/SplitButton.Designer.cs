@@ -31,7 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SplitButton));
             this.splitButton1 = new Wisej.Web.Ext.Syncfusion2.SplitButton();
             this.checkBoxDisabled = new Wisej.Web.CheckBox();
-            this.comboBoxIconPosition = new Wisej.Web.ComboBox();
             this.groupBox1.SuspendLayout();
             this.panel.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
@@ -42,7 +41,7 @@
             this.linkDocs.Text = "https://ej2.syncfusion.com/javascript/documentation/split-button/es5-getting-star" +
     "ted/";
             // 
-            // linkAPI
+            // linkApi
             // 
             this.linkApi.Text = "https://ej2.syncfusion.com/javascript/documentation/api/split-button/";
             // 
@@ -57,7 +56,6 @@
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.Controls.Add(this.checkBoxDisabled);
-            this.flowLayoutPanel1.Controls.Add(this.comboBoxIconPosition);
             // 
             // linkDemo
             // 
@@ -66,7 +64,7 @@
             // splitButton1
             // 
             this.splitButton1.Anchor = Wisej.Web.AnchorStyles.None;
-            this.splitButton1.Location = new System.Drawing.Point(481, 256);
+            this.splitButton1.Location = new System.Drawing.Point(381, 265);
             this.splitButton1.Name = "splitButton1";
             this.splitButton1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("splitButton1.Options"))));
             this.splitButton1.Size = new System.Drawing.Size(126, 47);
@@ -85,18 +83,6 @@
             this.checkBoxDisabled.TabIndex = 1;
             this.checkBoxDisabled.Text = "Disabled";
             // 
-            // comboBoxIconPosition
-            // 
-            this.comboBoxIconPosition.DropDownStyle = Wisej.Web.ComboBoxStyle.DropDownList;
-            this.flowLayoutPanel1.SetFillWeight(this.comboBoxIconPosition, 1);
-            this.flowLayoutPanel1.SetFlowBreak(this.comboBoxIconPosition, true);
-            this.comboBoxIconPosition.LabelText = "Icon Position";
-            this.comboBoxIconPosition.Location = new System.Drawing.Point(3, 46);
-            this.comboBoxIconPosition.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
-            this.comboBoxIconPosition.Name = "comboBoxIconPosition";
-            this.comboBoxIconPosition.Size = new System.Drawing.Size(212, 46);
-            this.comboBoxIconPosition.TabIndex = 2;
-            // 
             // SplitButton
             // 
             this.Name = "SplitButton";
@@ -105,14 +91,12 @@
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 
 		#endregion
 
 		private Syncfusion2.SplitButton splitButton1;
-        private ComboBox comboBoxIconPosition;
         private CheckBox checkBoxDisabled;
     }
 }

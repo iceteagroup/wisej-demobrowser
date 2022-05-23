@@ -30,14 +30,15 @@
 		{
             this.timePicker1 = new Wisej.Web.Ext.Syncfusion2.TimePicker();
             this.comboBoxHourFormat = new Wisej.Web.ComboBox();
-            this.numericUpDownFrom = new Wisej.Web.NumericUpDown();
-            this.numericUpDownTo = new Wisej.Web.NumericUpDown();
             this.checkBoxOpenOnFocus = new Wisej.Web.CheckBox();
+            this.textBoxMinimum = new Wisej.Web.TextBox();
+            this.contextMenu1 = new Wisej.Web.ContextMenu();
+            this.contextMenu2 = new Wisej.Web.ContextMenu();
+            this.contextMenu3 = new Wisej.Web.ContextMenu();
+            this.textBoxMaximum = new Wisej.Web.TextBox();
             this.groupBox1.SuspendLayout();
             this.panel.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownFrom)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownTo)).BeginInit();
             this.SuspendLayout();
             // 
             // linkDocs
@@ -45,7 +46,7 @@
             this.linkDocs.Text = "https://ej2.syncfusion.com/javascript/documentation/timepicker/es5-getting-starte" +
     "d/";
             // 
-            // linkAPI
+            // linkApi
             // 
             this.linkApi.Text = "https://ej2.syncfusion.com/javascript/documentation/api/timepicker/";
             // 
@@ -60,8 +61,8 @@
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.Controls.Add(this.checkBoxOpenOnFocus);
-            this.flowLayoutPanel1.Controls.Add(this.numericUpDownFrom);
-            this.flowLayoutPanel1.Controls.Add(this.numericUpDownTo);
+            this.flowLayoutPanel1.Controls.Add(this.textBoxMinimum);
+            this.flowLayoutPanel1.Controls.Add(this.textBoxMaximum);
             this.flowLayoutPanel1.Controls.Add(this.comboBoxHourFormat);
             // 
             // linkDemo
@@ -71,11 +72,11 @@
             // timePicker1
             // 
             this.timePicker1.Anchor = Wisej.Web.AnchorStyles.None;
-            this.timePicker1.Location = new System.Drawing.Point(369, 259);
+            this.timePicker1.Location = new System.Drawing.Point(269, 268);
             this.timePicker1.Name = "timePicker1";
             this.timePicker1.Size = new System.Drawing.Size(350, 40);
             this.timePicker1.TabIndex = 0;
-            this.timePicker1.Text = "timePicker1";
+            this.timePicker1.Text = "";
             // 
             // comboBoxHourFormat
             // 
@@ -86,48 +87,11 @@
             "hh:mm a",
             "HH:mm"});
             this.comboBoxHourFormat.LabelText = "Hour Format";
-            this.comboBoxHourFormat.Location = new System.Drawing.Point(3, 176);
+            this.comboBoxHourFormat.Location = new System.Drawing.Point(3, 198);
             this.comboBoxHourFormat.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.comboBoxHourFormat.Name = "comboBoxHourFormat";
-            this.comboBoxHourFormat.Size = new System.Drawing.Size(212, 46);
+            this.comboBoxHourFormat.Size = new System.Drawing.Size(212, 57);
             this.comboBoxHourFormat.TabIndex = 14;
-            // 
-            // numericUpDownFrom
-            // 
-            this.flowLayoutPanel1.SetFillWeight(this.numericUpDownFrom, 1);
-            this.flowLayoutPanel1.SetFlowBreak(this.numericUpDownFrom, true);
-            this.numericUpDownFrom.LabelText = "From (Hours)";
-            this.numericUpDownFrom.Location = new System.Drawing.Point(3, 46);
-            this.numericUpDownFrom.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
-            this.numericUpDownFrom.Maximum = new decimal(new int[] {
-            23,
-            0,
-            0,
-            0});
-            this.numericUpDownFrom.Name = "numericUpDownFrom";
-            this.numericUpDownFrom.Size = new System.Drawing.Size(212, 46);
-            this.numericUpDownFrom.TabIndex = 15;
-            this.numericUpDownFrom.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
-            // numericUpDownTo
-            // 
-            this.flowLayoutPanel1.SetFillWeight(this.numericUpDownTo, 1);
-            this.flowLayoutPanel1.SetFlowBreak(this.numericUpDownTo, true);
-            this.numericUpDownTo.LabelText = "To";
-            this.numericUpDownTo.Location = new System.Drawing.Point(3, 111);
-            this.numericUpDownTo.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
-            this.numericUpDownTo.Maximum = new decimal(new int[] {
-            23,
-            0,
-            0,
-            0});
-            this.numericUpDownTo.Name = "numericUpDownTo";
-            this.numericUpDownTo.Size = new System.Drawing.Size(212, 46);
-            this.numericUpDownTo.TabIndex = 17;
             // 
             // checkBoxOpenOnFocus
             // 
@@ -139,7 +103,43 @@
             this.checkBoxOpenOnFocus.Name = "checkBoxOpenOnFocus";
             this.checkBoxOpenOnFocus.Size = new System.Drawing.Size(212, 24);
             this.checkBoxOpenOnFocus.TabIndex = 18;
-            this.checkBoxOpenOnFocus.Text = "Open on focus";
+            this.checkBoxOpenOnFocus.Text = "Open on Focus";
+            // 
+            // textBoxMinimum
+            // 
+            this.flowLayoutPanel1.SetFillWeight(this.textBoxMinimum, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.textBoxMinimum, true);
+            this.textBoxMinimum.InputType.Type = Wisej.Web.TextBoxType.Time;
+            this.textBoxMinimum.LabelText = "Minimum (Hours)";
+            this.textBoxMinimum.Location = new System.Drawing.Point(3, 46);
+            this.textBoxMinimum.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
+            this.textBoxMinimum.Name = "textBoxMinimum";
+            this.textBoxMinimum.Size = new System.Drawing.Size(212, 57);
+            this.textBoxMinimum.TabIndex = 19;
+            // 
+            // contextMenu1
+            // 
+            this.contextMenu1.Name = "contextMenu1";
+            // 
+            // contextMenu2
+            // 
+            this.contextMenu2.Name = "contextMenu2";
+            // 
+            // contextMenu3
+            // 
+            this.contextMenu3.Name = "contextMenu3";
+            // 
+            // textBoxMaximum
+            // 
+            this.flowLayoutPanel1.SetFillWeight(this.textBoxMaximum, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.textBoxMaximum, true);
+            this.textBoxMaximum.InputType.Type = Wisej.Web.TextBoxType.Time;
+            this.textBoxMaximum.LabelText = "Maximum (Hours)";
+            this.textBoxMaximum.Location = new System.Drawing.Point(3, 122);
+            this.textBoxMaximum.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
+            this.textBoxMaximum.Name = "textBoxMaximum";
+            this.textBoxMaximum.Size = new System.Drawing.Size(212, 57);
+            this.textBoxMaximum.TabIndex = 20;
             // 
             // TimePicker
             // 
@@ -148,19 +148,19 @@
             this.panel.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownFrom)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownTo)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 
 		#endregion
 
 		private Syncfusion2.TimePicker timePicker1;
-        private NumericUpDown numericUpDownTo;
-        private NumericUpDown numericUpDownFrom;
         private ComboBox comboBoxHourFormat;
         private CheckBox checkBoxOpenOnFocus;
+        private TextBox textBoxMinimum;
+        private TextBox textBoxMaximum;
+        private ContextMenu contextMenu1;
+        private ContextMenu contextMenu2;
+        private ContextMenu contextMenu3;
     }
 }

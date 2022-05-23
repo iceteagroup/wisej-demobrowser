@@ -44,7 +44,7 @@
             // 
             this.linkDocs.Text = "https://ej2.syncfusion.com/javascript/documentation/schedule/getting-started/";
             // 
-            // linkAPI
+            // linkApi
             // 
             this.linkApi.Text = "https://ej2.syncfusion.com/javascript/documentation/api/schedule";
             // 
@@ -75,7 +75,7 @@
             this.schedule1.Location = new System.Drawing.Point(8, 8);
             this.schedule1.Name = "schedule1";
             this.schedule1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"selectedDate\":\"2021-01-15\",\"eventSettings\":{\"dataSource\":[]}}")));
-            this.schedule1.Size = new System.Drawing.Size(1073, 542);
+            this.schedule1.Size = new System.Drawing.Size(872, 560);
             this.schedule1.TabIndex = 0;
             this.schedule1.Text = "schedule1";
             // 
@@ -91,8 +91,9 @@
             this.comboBoxCalendarMode.Location = new System.Drawing.Point(3, 175);
             this.comboBoxCalendarMode.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.comboBoxCalendarMode.Name = "comboBoxCalendarMode";
-            this.comboBoxCalendarMode.Size = new System.Drawing.Size(212, 46);
+            this.comboBoxCalendarMode.Size = new System.Drawing.Size(212, 57);
             this.comboBoxCalendarMode.TabIndex = 1;
+            this.comboBoxCalendarMode.Text = "Gregorian";
             // 
             // checkBoxDragAndDrop
             // 
@@ -151,11 +152,12 @@
             "TimelineMonth",
             "TimelineYear"});
             this.comboBoxCurrentView.LabelText = "Current View";
-            this.comboBoxCurrentView.Location = new System.Drawing.Point(3, 240);
+            this.comboBoxCurrentView.Location = new System.Drawing.Point(3, 251);
             this.comboBoxCurrentView.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.comboBoxCurrentView.Name = "comboBoxCurrentView";
-            this.comboBoxCurrentView.Size = new System.Drawing.Size(212, 46);
+            this.comboBoxCurrentView.Size = new System.Drawing.Size(212, 57);
             this.comboBoxCurrentView.TabIndex = 5;
+            this.comboBoxCurrentView.Text = "Week";
             // 
             // checkBoxAdaptativeUI
             // 
@@ -179,7 +181,6 @@
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

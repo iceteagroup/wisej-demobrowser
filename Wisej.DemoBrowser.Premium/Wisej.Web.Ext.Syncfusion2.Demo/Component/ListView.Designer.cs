@@ -43,7 +43,7 @@
             // 
             this.linkDocs.Text = "https://ej2.syncfusion.com/javascript/documentation/listview/getting-started/";
             // 
-            // linkAPI
+            // linkApi
             // 
             this.linkApi.Text = "https://ej2.syncfusion.com/javascript/documentation/api/list-view/";
             // 
@@ -72,7 +72,7 @@
             this.listView1.Location = new System.Drawing.Point(8, 8);
             this.listView1.Name = "listView1";
             this.listView1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("listView1.Options"))));
-            this.listView1.Size = new System.Drawing.Size(1073, 542);
+            this.listView1.Size = new System.Drawing.Size(872, 560);
             this.listView1.TabIndex = 0;
             this.listView1.Text = "listView1";
             // 
@@ -115,8 +115,9 @@
             this.comboBoxPosition.Location = new System.Drawing.Point(3, 89);
             this.comboBoxPosition.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.comboBoxPosition.Name = "comboBoxPosition";
-            this.comboBoxPosition.Size = new System.Drawing.Size(212, 46);
+            this.comboBoxPosition.Size = new System.Drawing.Size(212, 57);
             this.comboBoxPosition.TabIndex = 4;
+            this.comboBoxPosition.Text = "Right";
             // 
             // comboBoxSortOrder
             // 
@@ -128,10 +129,10 @@
             "Ascending",
             "Descending"});
             this.comboBoxSortOrder.LabelText = "Sort Order";
-            this.comboBoxSortOrder.Location = new System.Drawing.Point(3, 154);
+            this.comboBoxSortOrder.Location = new System.Drawing.Point(3, 165);
             this.comboBoxSortOrder.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.comboBoxSortOrder.Name = "comboBoxSortOrder";
-            this.comboBoxSortOrder.Size = new System.Drawing.Size(212, 46);
+            this.comboBoxSortOrder.Size = new System.Drawing.Size(212, 57);
             this.comboBoxSortOrder.TabIndex = 5;
             // 
             // ListView
@@ -142,7 +143,6 @@
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

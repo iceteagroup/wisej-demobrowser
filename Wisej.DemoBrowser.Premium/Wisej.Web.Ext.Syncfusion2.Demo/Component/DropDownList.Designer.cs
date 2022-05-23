@@ -101,7 +101,7 @@
             "None",
             "Ascending",
             "Descending"});
-            this.comboBoxSortOrder.LabelText = "Sort order";
+            this.comboBoxSortOrder.LabelText = "Sort Order";
             this.comboBoxSortOrder.Location = new System.Drawing.Point(3, 46);
             this.comboBoxSortOrder.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.comboBoxSortOrder.Name = "comboBoxSortOrder";

@@ -31,6 +31,7 @@
             this.slider1 = new Wisej.Web.Ext.Syncfusion2.Slider();
             this.comboBoxOrientation = new Wisej.Web.ComboBox();
             this.checkBoxShowButton = new Wisej.Web.CheckBox();
+            this.checkBoxReadOnly = new Wisej.Web.CheckBox();
             this.groupBox1.SuspendLayout();
             this.panel.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
@@ -41,7 +42,7 @@
             this.linkDocs.Text = "https://ej2.syncfusion.com/javascript/documentation/range-slider/getting-started/" +
     "";
             // 
-            // linkAPI
+            // linkApi
             // 
             this.linkApi.Text = "https://ej2.syncfusion.com/javascript/documentation/api/slider/";
             // 
@@ -55,6 +56,7 @@
             // 
             // flowLayoutPanel1
             // 
+            this.flowLayoutPanel1.Controls.Add(this.checkBoxReadOnly);
             this.flowLayoutPanel1.Controls.Add(this.checkBoxShowButton);
             this.flowLayoutPanel1.Controls.Add(this.comboBoxOrientation);
             // 
@@ -65,7 +67,7 @@
             // slider1
             // 
             this.slider1.Anchor = Wisej.Web.AnchorStyles.None;
-            this.slider1.Location = new System.Drawing.Point(173, 247);
+            this.slider1.Location = new System.Drawing.Point(73, 256);
             this.slider1.Name = "slider1";
             this.slider1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"type\":\"Range\",\"value\":[30,70],\"tooltip\":{\"isVisible\":true,\"placement\":\"Before\"," +
         "\"showOn\":\"Focus\"}}")));
@@ -82,11 +84,12 @@
             "Vertical",
             "Horizontal"});
             this.comboBoxOrientation.LabelText = "Orientation";
-            this.comboBoxOrientation.Location = new System.Drawing.Point(3, 46);
+            this.comboBoxOrientation.Location = new System.Drawing.Point(3, 89);
             this.comboBoxOrientation.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.comboBoxOrientation.Name = "comboBoxOrientation";
-            this.comboBoxOrientation.Size = new System.Drawing.Size(212, 46);
+            this.comboBoxOrientation.Size = new System.Drawing.Size(212, 57);
             this.comboBoxOrientation.TabIndex = 1;
+            this.comboBoxOrientation.Text = "Horizontal";
             // 
             // checkBoxShowButton
             // 
@@ -94,11 +97,24 @@
             this.checkBoxShowButton.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.flowLayoutPanel1.SetFillWeight(this.checkBoxShowButton, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.checkBoxShowButton, true);
-            this.checkBoxShowButton.Location = new System.Drawing.Point(3, 3);
+            this.checkBoxShowButton.Location = new System.Drawing.Point(3, 46);
+            this.checkBoxShowButton.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBoxShowButton.Name = "checkBoxShowButton";
             this.checkBoxShowButton.Size = new System.Drawing.Size(212, 24);
             this.checkBoxShowButton.TabIndex = 2;
             this.checkBoxShowButton.Text = "Show Buttons";
+            // 
+            // checkBoxReadOnly
+            // 
+            this.checkBoxReadOnly.Appearance = Wisej.Web.Appearance.Switch;
+            this.checkBoxReadOnly.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.flowLayoutPanel1.SetFillWeight(this.checkBoxReadOnly, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.checkBoxReadOnly, true);
+            this.checkBoxReadOnly.Location = new System.Drawing.Point(3, 3);
+            this.checkBoxReadOnly.Name = "checkBoxReadOnly";
+            this.checkBoxReadOnly.Size = new System.Drawing.Size(212, 24);
+            this.checkBoxReadOnly.TabIndex = 3;
+            this.checkBoxReadOnly.Text = "Read Only";
             // 
             // Slider
             // 
@@ -108,7 +124,6 @@
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 
@@ -117,5 +132,6 @@
 		private Syncfusion2.Slider slider1;
         private CheckBox checkBoxShowButton;
         private ComboBox comboBoxOrientation;
+        private CheckBox checkBoxReadOnly;
     }
 }

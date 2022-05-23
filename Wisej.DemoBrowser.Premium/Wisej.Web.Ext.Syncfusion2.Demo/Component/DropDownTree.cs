@@ -10,34 +10,26 @@ namespace Wisej.Web.Ext.Syncfusion2.Demo.Component
 		{
 			InitializeComponent();
 
-            this.dropDownTree1.Instance.onChange += new WidgetEventHandler(dropDownTree1_WidgetEvent);
+			this.dropDownTree1.Instance.onChange += new WidgetEventHandler(dropDownTree1_WidgetEvent);
 		}
 
-        private void buttonUpdate_Click(object sender, EventArgs e)
-        {
-			List<object> subNodes = new List<object>();
-            foreach (var item in tagTextBoxSubNodeDataSource.Text.Split(','))
-            {
-                subNodes.Add(new
-                {
-                    id = Guid.NewGuid().ToString(),
-                    name = item,
-                });
-            }
+		private void buttonUpdate_Click(object sender, EventArgs e)
+		{
+			this.dropDownTree1.Options.placeholder = this.textBoxPlaceholder.Text;
+			this.dropDownTree1.Options["readonly"] = this.checkBoxReadOnly.Checked;
+			this.dropDownTree1.Options.allowFiltering = this.checkBoxFiltering.Checked;
+			this.dropDownTree1.Options.allowMultiSelection = this.checkBoxMultiSelection.Checked;
+		   
+			this.dropDownTree1.Update();
+		}
 
-            if(comboBoxNode.SelectedIndex>=0)
-                this.dropDownTree1.Options.fields.dataSource[comboBoxNode.SelectedIndex].subChild = subNodes.ToArray();
+		private void dropDownTree1_WidgetEvent(object sender, WidgetEventArgs e)
+		{
+			AlertBox.Show(
+				$"<b>{e.Type}</b><br/>{JSON.Stringify(e.Data)}",
+				MessageBoxIcon.Information);
 
-            this.dropDownTree1.Update();
-        }
-
-        private void dropDownTree1_WidgetEvent(object sender, WidgetEventArgs e)
-        {
-            AlertBox.Show(
-                $"<b>{e.Type}</b><br/>{JSON.Stringify(e.Data)}",
-                MessageBoxIcon.Information);
-
-            Application.Play(MessageBoxIcon.Information);
-        }
-    }
+			Application.Play(MessageBoxIcon.Information);
+		}
+	}
 }

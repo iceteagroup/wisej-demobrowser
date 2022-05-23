@@ -44,7 +44,7 @@
             // 
             this.linkDocs.Text = "https://ej2.syncfusion.com/javascript/documentation/spreadsheet/getting-started/";
             // 
-            // linkAPI
+            // linkApi
             // 
             this.linkApi.Text = "https://ej2.syncfusion.com/javascript/documentation/api/spreadsheet";
             // 
@@ -75,7 +75,7 @@
             this.spreadsheet1.Location = new System.Drawing.Point(8, 8);
             this.spreadsheet1.Name = "spreadsheet1";
             this.spreadsheet1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"sheets\":[{\"name\":\"Sheet one\"},{\"name\":\"Sheet two\"}]}")));
-            this.spreadsheet1.Size = new System.Drawing.Size(1073, 542);
+            this.spreadsheet1.Size = new System.Drawing.Size(872, 560);
             this.spreadsheet1.TabIndex = 0;
             this.spreadsheet1.Text = "spreadsheet1";
             this.spreadsheet1.WebRequest += new Wisej.Web.WebRequestHandler(this.spreadsheet1_WebRequest);
@@ -84,10 +84,10 @@
             // 
             this.flowLayoutPanel1.SetFillWeight(this.button1, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.button1, true);
-            this.button1.Location = new System.Drawing.Point(3, 233);
+            this.button1.Location = new System.Drawing.Point(3, 244);
             this.button1.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(212, 40);
+            this.button1.Size = new System.Drawing.Size(212, 35);
             this.button1.TabIndex = 1;
             this.button1.Text = "Hide Headers";
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -140,7 +140,7 @@
             this.numericUpDownActiveSheetIndex.Location = new System.Drawing.Point(3, 168);
             this.numericUpDownActiveSheetIndex.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.numericUpDownActiveSheetIndex.Name = "numericUpDownActiveSheetIndex";
-            this.numericUpDownActiveSheetIndex.Size = new System.Drawing.Size(212, 46);
+            this.numericUpDownActiveSheetIndex.Size = new System.Drawing.Size(212, 57);
             this.numericUpDownActiveSheetIndex.TabIndex = 6;
             // 
             // Spreadsheet
@@ -153,7 +153,6 @@
             this.flowLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownActiveSheetIndex)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

@@ -63,8 +63,6 @@
             this.flowLayoutPanel1.Controls.Add(this.checkBoxInline);
             this.flowLayoutPanel1.Controls.Add(this.label4);
             this.flowLayoutPanel1.Controls.Add(this.panelColorValue);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 45);
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 441);
             // 
             // linkDemo
             // 
@@ -73,10 +71,10 @@
             // colorPicker1
             // 
             this.colorPicker1.Anchor = Wisej.Web.AnchorStyles.None;
-            this.colorPicker1.Location = new System.Drawing.Point(414, 265);
+            this.colorPicker1.Location = new System.Drawing.Point(273, 85);
             this.colorPicker1.Name = "colorPicker1";
-            this.colorPicker1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"value\":\"#000000\"}")));
-            this.colorPicker1.Size = new System.Drawing.Size(60, 47);
+            this.colorPicker1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"value\":\"#000000\",\"inline\":true}")));
+            this.colorPicker1.Size = new System.Drawing.Size(342, 406);
             this.colorPicker1.TabIndex = 0;
             this.colorPicker1.Text = "#000000";
             // 
@@ -95,6 +93,7 @@
             this.comboBoxMode.Name = "comboBoxMode";
             this.comboBoxMode.Size = new System.Drawing.Size(212, 57);
             this.comboBoxMode.TabIndex = 2;
+            this.comboBoxMode.Text = "Picker";
             // 
             // checkBoxShowButton
             // 
@@ -113,6 +112,7 @@
             // 
             this.checkBoxInline.Appearance = Wisej.Web.Appearance.Switch;
             this.checkBoxInline.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.checkBoxInline.Checked = true;
             this.flowLayoutPanel1.SetFillWeight(this.checkBoxInline, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.checkBoxInline, true);
             this.checkBoxInline.Location = new System.Drawing.Point(3, 122);

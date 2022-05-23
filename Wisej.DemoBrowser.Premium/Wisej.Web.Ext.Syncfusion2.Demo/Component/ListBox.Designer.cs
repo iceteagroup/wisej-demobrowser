@@ -43,7 +43,7 @@
             // 
             this.linkDocs.Text = "https://ej2.syncfusion.com/javascript/documentation/list-box/getting-started/";
             // 
-            // linkAPI
+            // linkApi
             // 
             this.linkApi.Text = "https://ej2.syncfusion.com/javascript/documentation/api/list-box/";
             // 
@@ -72,7 +72,7 @@
             this.listBox1.Location = new System.Drawing.Point(8, 8);
             this.listBox1.Name = "listBox1";
             this.listBox1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("listBox1.Options"))));
-            this.listBox1.Size = new System.Drawing.Size(1073, 542);
+            this.listBox1.Size = new System.Drawing.Size(872, 560);
             this.listBox1.TabIndex = 0;
             this.listBox1.Text = "listBox1";
             // 
@@ -116,7 +116,7 @@
             this.comboBoxFilterType.Location = new System.Drawing.Point(3, 89);
             this.comboBoxFilterType.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.comboBoxFilterType.Name = "comboBoxFilterType";
-            this.comboBoxFilterType.Size = new System.Drawing.Size(212, 46);
+            this.comboBoxFilterType.Size = new System.Drawing.Size(212, 57);
             this.comboBoxFilterType.TabIndex = 3;
             // 
             // comboBoxSortOrder
@@ -129,11 +129,12 @@
             "Ascending",
             "Descending"});
             this.comboBoxSortOrder.LabelText = "Sort Order";
-            this.comboBoxSortOrder.Location = new System.Drawing.Point(3, 154);
+            this.comboBoxSortOrder.Location = new System.Drawing.Point(3, 165);
             this.comboBoxSortOrder.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.comboBoxSortOrder.Name = "comboBoxSortOrder";
-            this.comboBoxSortOrder.Size = new System.Drawing.Size(212, 46);
+            this.comboBoxSortOrder.Size = new System.Drawing.Size(212, 57);
             this.comboBoxSortOrder.TabIndex = 4;
+            this.comboBoxSortOrder.Text = "Ascending";
             // 
             // ListBox
             // 
@@ -143,7 +144,6 @@
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

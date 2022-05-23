@@ -23,19 +23,10 @@ namespace Wisej.Web.Ext.Syncfusion2.Demo.Component
 
         private void buttonUpdate_Click(object sender, EventArgs e)
         {
-			if(this.numericUpDownTo.Value <= this.numericUpDownFrom.Value)
-            {
-				AlertBox.Show("Numeric 'To' must be greatter than 'From'",
-					MessageBoxIcon.Warning);
-
-				Application.Play(MessageBoxIcon.Warning);
-				return;
-            }
-
-			this.timePicker1.Options.fromat = this.comboBoxHourFormat.Text;
+			this.timePicker1.Options.format = this.comboBoxHourFormat.Text;
+			this.timePicker1.Options.max = DateTime.Parse(this.textBoxMaximum.Text);
+			this.timePicker1.Options.min = DateTime.Parse(this.textBoxMinimum.Text);
 			this.timePicker1.Options.openOnFocus = this.checkBoxOpenOnFocus.Checked;
-			this.timePicker1.Options.max = $"{Convert.ToInt32 (this.numericUpDownTo.Value)}:00";
-			this.timePicker1.Options.min = $"{Convert.ToInt32 (this.numericUpDownFrom.Value)}:00";
 
 			this.timePicker1.Update();
         }

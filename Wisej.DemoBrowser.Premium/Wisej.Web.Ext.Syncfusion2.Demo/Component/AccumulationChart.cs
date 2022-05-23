@@ -32,7 +32,7 @@ namespace Wisej.Web.Ext.Syncfusion2.Demo.Component
 			this.accumulationChart1.Options.series[0].explodeIndex = this.trackBarExplodeIndex.Value;
 			this.accumulationChart1.Options.series[0].explodeOffset = $"{this.numericUpDownExplodeOffset.Value}%";
 
-			this.accumulationChart1.Options.series[0].radius = $"{numericUpDownOuterRadius.Value}%";
+			this.accumulationChart1.Options.series[0].radius = $"{numericUpDownRadius.Value}%";
 
 			this.accumulationChart1.Update();
 		}

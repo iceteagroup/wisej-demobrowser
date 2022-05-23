@@ -43,7 +43,7 @@
             // 
             this.linkDocs.Text = "https://ej2.syncfusion.com/javascript/documentation/pivotview/getting-started/";
             // 
-            // linkAPI
+            // linkApi
             // 
             this.linkApi.Text = "https://ej2.syncfusion.com/javascript/documentation/api/pivotview/";
             // 
@@ -72,7 +72,7 @@
             this.pivotView1.Location = new System.Drawing.Point(8, 8);
             this.pivotView1.Name = "pivotView1";
             this.pivotView1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("pivotView1.Options"))));
-            this.pivotView1.Size = new System.Drawing.Size(1073, 542);
+            this.pivotView1.Size = new System.Drawing.Size(872, 560);
             this.pivotView1.TabIndex = 0;
             this.pivotView1.Text = "pivotView1";
             // 
@@ -139,7 +139,6 @@
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

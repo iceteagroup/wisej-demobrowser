@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="listBox1.Options" xml:space="preserve">
-    <value>{"dataSource":[{"text":"Hennessey Venom"},{"text":"Bugatti Chiron"},{"text":"Bugatti Veyron Super Sport"},{"text":"SSC Ultimate Aero"},{"text":"Koenigsegg CCR"},{"text":"McLaren F1"},{"text":"Aston Martin One- 77"},{"text":"Jaguar XJ220"},{"text":"McLaren P1"},{"text":"Ferrari LaFerrari"}],"allowFiltering":true,"filterType":"StartsWith","filterBarPlaceholder":"Search ..."}</value>
+    <value>{"dataSource":[{"text":"Hennessey Venom"},{"text":"Bugatti Chiron"},{"text":"Bugatti Veyron Super Sport"},{"text":"SSC Ultimate Aero"},{"text":"Koenigsegg CCR"},{"text":"McLaren F1"},{"text":"Aston Martin One- 77"},{"text":"Jaguar XJ220"},{"text":"McLaren P1"},{"text":"Ferrari LaFerrari"}],"allowFiltering":true,"filterType":"StartsWith","filterBarPlaceholder":"Search ...","sortOrder":"Ascending"}</value>
   </data>
   <metadata name="$this.RulerSnapLines" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>

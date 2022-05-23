@@ -69,7 +69,7 @@
             this.dateRangePicker1.Anchor = Wisej.Web.AnchorStyles.None;
             this.dateRangePicker1.Location = new System.Drawing.Point(269, 268);
             this.dateRangePicker1.Name = "dateRangePicker1";
-            this.dateRangePicker1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"format\":\"dd\'/\'MMM\'/\'yy hh:mm a\"}")));
+            this.dateRangePicker1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"format\":\"dd/MMM/yy hh:mm a\"}")));
             this.dateRangePicker1.Size = new System.Drawing.Size(350, 40);
             this.dateRangePicker1.TabIndex = 0;
             // 
@@ -79,15 +79,16 @@
             this.flowLayoutPanel1.SetFillWeight(this.comboBoxFormat, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.comboBoxFormat, true);
             this.comboBoxFormat.Items.AddRange(new object[] {
-            "dd\\\'\\/\\\'MMM\\\'\\/\\\'yy hh:mm a",
-            "yyyy\\\'\\/\\\'MM\\\'\\/\\\'dd HH:mm",
-            "dd\\\'\\/\\\'MMMM\\\'\\/\\\'yyyy"});
+            "dd/MMM/yy hh:mm a",
+            "yyyy/MM/dd HH:mm",
+            "dd/MMMM/yyyy"});
             this.comboBoxFormat.LabelText = "Date Format";
             this.comboBoxFormat.Location = new System.Drawing.Point(3, 155);
             this.comboBoxFormat.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.comboBoxFormat.Name = "comboBoxFormat";
             this.comboBoxFormat.Size = new System.Drawing.Size(212, 57);
             this.comboBoxFormat.TabIndex = 8;
+            this.comboBoxFormat.Text = "dd/MMM/yy hh:mm a";
             // 
             // dateTimePickerEnd
             // 

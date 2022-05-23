@@ -25,7 +25,6 @@ namespace Wisej.Web.Ext.Syncfusion2.Demo.Component
         private void buttonUpdate_Click(object sender, EventArgs e)
         {
 			this.splitButton1.Options.disabled = this.checkBoxDisabled.Checked;
-			this.splitButton1.Options.iconPosition = this.comboBoxIconPosition.Text;
 
 			this.splitButton1.Update();
         }

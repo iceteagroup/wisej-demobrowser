@@ -25,8 +25,9 @@ namespace Wisej.Web.Ext.Syncfusion2.Demo.Component
 
         private void buttonUpdate_Click(object sender, EventArgs e)
         {
-            this.smithChart1.Options.series[0].marker.shape = this.comboBoxShaprType.Text;
-            this.smithChart1.Options.series[1].marker.shape = this.comboBoxShaprType.Text;
+            this.smithChart1.Options.title.text = this.textBoxTitle.Text;
+            this.smithChart1.Options.series[0].marker.shape = this.comboBoxShapeType.Text;
+            this.smithChart1.Options.series[1].marker.shape = this.comboBoxShapeType.Text;
             this.smithChart1.Options.series[1].marker.visible = this.checkBoxMarkerVisible.Checked;
             this.smithChart1.Options.series[0].marker.visible = this.checkBoxMarkerVisible.Checked;
             this.smithChart1.Options.legendSettings.visible = this.checkBoxLegendVisibility.Checked;
