@@ -19,5 +19,14 @@ namespace Wisej.DemoBrowser.ListBox
 				BackColor = Color.Crimson
 			}.Show();
 		}
-	}
+
+        private void checkBoxReadOnly_CheckedChanged(object sender, EventArgs e)
+        {
+			var readOnly = this.checkBoxReadOnly.Checked;
+
+			this.listBoxHtml.ReadOnly = readOnly;
+			this.listBoxSpacing.ReadOnly = readOnly;
+			this.listBoxDefaultCities.ReadOnly = readOnly;
+		}
+    }
 }
