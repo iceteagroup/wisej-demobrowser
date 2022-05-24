@@ -120,7 +120,7 @@
   <metadata name="rotation1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
-  <data name="htmlPanel1.Html" xml:space="preserve">
+  <data name="htmlPanelDisplay.Html" xml:space="preserve">
     <value>&lt;center style="color: yellow"&gt;
 Episode 1
 &lt;h1&gt;The Web Developer Awakens&lt;/h1&gt;

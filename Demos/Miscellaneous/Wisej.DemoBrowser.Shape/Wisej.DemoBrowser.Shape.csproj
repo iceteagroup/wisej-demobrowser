@@ -20,7 +20,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="Appearance.cs">
+    <Compile Update="Features.cs">
       <SubType>UserControl</SubType>
     </Compile>
   </ItemGroup>

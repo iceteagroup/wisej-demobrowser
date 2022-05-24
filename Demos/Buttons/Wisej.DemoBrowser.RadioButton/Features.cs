@@ -21,5 +21,5 @@ namespace Wisej.DemoBrowser.RadioButton
 			if (radioButton.Checked)
 				AlertBox.Show($"Selected {radioButton.Text}");
 		}
-	}
+    }
 }

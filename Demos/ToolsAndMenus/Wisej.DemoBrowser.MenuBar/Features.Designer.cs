@@ -80,20 +80,20 @@
             this.checkedMenuItem8 = new Wisej.Web.CheckedMenuItem();
             this.label7 = new Wisej.Web.Label();
             this.menuBarCheck = new Wisej.Web.MenuBar();
-            this.menuBarTypes = new Wisej.Web.MenuBar();
-            this.menuItem33 = new Wisej.Web.MenuItem();
-            this.linkMenuItem1 = new Wisej.Web.LinkMenuItem();
             this.menuItemCheck = new Wisej.Web.MenuItem();
             this.checkedMenuItem9 = new Wisej.Web.CheckedMenuItem();
             this.checkedMenuItem10 = new Wisej.Web.CheckedMenuItem();
             this.checkedMenuItem11 = new Wisej.Web.CheckedMenuItem();
+            this.menuBarTypes = new Wisej.Web.MenuBar();
+            this.menuItem33 = new Wisej.Web.MenuItem();
+            this.linkMenuItem1 = new Wisej.Web.LinkMenuItem();
             this.label8 = new Wisej.Web.Label();
             this.SuspendLayout();
             // 
             // menuBarDefault
             // 
             this.menuBarDefault.Anchor = Wisej.Web.AnchorStyles.None;
-            this.menuBarDefault.Location = new System.Drawing.Point(105, 80);
+            this.menuBarDefault.Location = new System.Drawing.Point(280, 152);
             this.menuBarDefault.MenuItems.AddRange(new Wisej.Web.MenuItem[] {
             this.menuItem1,
             this.menuItem2,
@@ -101,7 +101,7 @@
             this.menuItem4,
             this.menuItem5});
             this.menuBarDefault.Name = "menuBarDefault";
-            this.menuBarDefault.Size = new System.Drawing.Size(315, 28);
+            this.menuBarDefault.Size = new System.Drawing.Size(315, 40);
             this.menuBarDefault.TabIndex = 0;
             this.menuBarDefault.TabStop = false;
             this.menuBarDefault.MenuItemClicked += new Wisej.Web.MenuItemEventHandler(this.menuBarDefault_MenuItemClicked);
@@ -250,7 +250,7 @@
             // 
             this.label2.Anchor = Wisej.Web.AnchorStyles.None;
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(105, 56);
+            this.label2.Location = new System.Drawing.Point(280, 128);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(46, 18);
             this.label2.TabIndex = 3;
@@ -260,7 +260,7 @@
             // 
             this.label3.Anchor = Wisej.Web.AnchorStyles.None;
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(105, 355);
+            this.label3.Location = new System.Drawing.Point(280, 283);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(38, 18);
             this.label3.TabIndex = 5;
@@ -269,7 +269,7 @@
             // menuBar3
             // 
             this.menuBar3.Anchor = Wisej.Web.AnchorStyles.None;
-            this.menuBar3.Location = new System.Drawing.Point(105, 379);
+            this.menuBar3.Location = new System.Drawing.Point(280, 307);
             this.menuBar3.MenuItems.AddRange(new Wisej.Web.MenuItem[] {
             this.menuItem24,
             this.menuItem25,
@@ -277,7 +277,7 @@
             this.menuItem27,
             this.menuItem28});
             this.menuBar3.Name = "menuBar3";
-            this.menuBar3.Size = new System.Drawing.Size(315, 28);
+            this.menuBar3.Size = new System.Drawing.Size(315, 40);
             this.menuBar3.TabIndex = 4;
             this.menuBar3.TabStop = false;
             // 
@@ -322,7 +322,7 @@
             // 
             this.label1.Anchor = Wisej.Web.AnchorStyles.None;
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(105, 216);
+            this.label1.Location = new System.Drawing.Point(280, 205);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(84, 18);
             this.label1.TabIndex = 7;
@@ -331,7 +331,7 @@
             // menuBar2
             // 
             this.menuBar2.Anchor = Wisej.Web.AnchorStyles.None;
-            this.menuBar2.Location = new System.Drawing.Point(105, 240);
+            this.menuBar2.Location = new System.Drawing.Point(280, 229);
             this.menuBar2.MenuItems.AddRange(new Wisej.Web.MenuItem[] {
             this.menuItem18,
             this.menuItem19,
@@ -340,7 +340,7 @@
             this.menuItem22,
             this.menuItem23});
             this.menuBar2.Name = "menuBar2";
-            this.menuBar2.Size = new System.Drawing.Size(315, 28);
+            this.menuBar2.Size = new System.Drawing.Size(315, 40);
             this.menuBar2.TabIndex = 6;
             this.menuBar2.TabStop = false;
             // 
@@ -390,7 +390,7 @@
             // 
             this.label4.Anchor = Wisej.Web.AnchorStyles.None;
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(585, 56);
+            this.label4.Location = new System.Drawing.Point(618, 128);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(70, 18);
             this.label4.TabIndex = 9;
@@ -399,13 +399,13 @@
             // menuBar4
             // 
             this.menuBar4.Anchor = Wisej.Web.AnchorStyles.None;
-            this.menuBar4.Location = new System.Drawing.Point(585, 80);
+            this.menuBar4.Location = new System.Drawing.Point(618, 152);
             this.menuBar4.MenuItems.AddRange(new Wisej.Web.MenuItem[] {
             this.menuItem6,
             this.menuItem11,
             this.menuItem12});
             this.menuBar4.Name = "menuBar4";
-            this.menuBar4.Size = new System.Drawing.Size(315, 28);
+            this.menuBar4.Size = new System.Drawing.Size(315, 40);
             this.menuBar4.TabIndex = 8;
             this.menuBar4.TabStop = false;
             // 
@@ -435,7 +435,7 @@
             // 
             this.label5.Anchor = Wisej.Web.AnchorStyles.None;
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(585, 216);
+            this.label5.Location = new System.Drawing.Point(618, 205);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(34, 18);
             this.label5.TabIndex = 11;
@@ -444,13 +444,13 @@
             // menuBar5
             // 
             this.menuBar5.Anchor = Wisej.Web.AnchorStyles.None;
-            this.menuBar5.Location = new System.Drawing.Point(585, 240);
+            this.menuBar5.Location = new System.Drawing.Point(618, 229);
             this.menuBar5.MenuItems.AddRange(new Wisej.Web.MenuItem[] {
             this.menuItem7,
             this.menuItem8,
             this.menuItem9});
             this.menuBar5.Name = "menuBar5";
-            this.menuBar5.Size = new System.Drawing.Size(315, 28);
+            this.menuBar5.Size = new System.Drawing.Size(315, 40);
             this.menuBar5.TabIndex = 10;
             this.menuBar5.TabStop = false;
             // 
@@ -519,7 +519,7 @@
             // 
             this.label7.Anchor = Wisej.Web.AnchorStyles.None;
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(1003, 56);
+            this.label7.Location = new System.Drawing.Point(618, 283);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(74, 18);
             this.label7.TabIndex = 15;
@@ -528,48 +528,19 @@
             // menuBarCheck
             // 
             this.menuBarCheck.Anchor = Wisej.Web.AnchorStyles.None;
-            this.menuBarCheck.Location = new System.Drawing.Point(1003, 80);
+            this.menuBarCheck.Location = new System.Drawing.Point(618, 307);
             this.menuBarCheck.MenuItems.AddRange(new Wisej.Web.MenuItem[] {
-            this.menuItemFavoriteColor, this.menuItemCheck});
+            this.menuItemFavoriteColor,
+            this.menuItemCheck});
             this.menuBarCheck.Name = "menuBarCheck";
-            this.menuBarCheck.Size = new System.Drawing.Size(315, 28);
+            this.menuBarCheck.Size = new System.Drawing.Size(315, 40);
             this.menuBarCheck.TabIndex = 14;
             this.menuBarCheck.TabStop = false;
-            // 
-            // menuBarTypes
-            // 
-            this.menuBarTypes.Anchor = Wisej.Web.AnchorStyles.None;
-            this.menuBarTypes.Location = new System.Drawing.Point(1003, 240);
-            this.menuBarTypes.MenuItems.AddRange(new Wisej.Web.MenuItem[] {
-            this.menuItem33,
-            this.linkMenuItem1,
-            });
-            this.menuBarTypes.Name = "menuBarTypes";
-            this.menuBarTypes.Size = new System.Drawing.Size(315, 28);
-            this.menuBarTypes.TabIndex = 16;
-            this.menuBarTypes.TabStop = false;
-            this.menuBarTypes.MenuItemClicked += new Wisej.Web.MenuItemEventHandler(this.menuBarTypes_MenuItemClicked);
-            // 
-            // menuItem33
-            // 
-            this.menuItem33.IconSource = "icon-file";
-            this.menuItem33.Index = 0;
-            this.menuItem33.Name = "menuItem33";
-            this.menuItem33.Text = "Default";
-            // 
-            // linkMenuItem1
-            // 
-            this.linkMenuItem1.HRef = "https://www.wisej.com";
-            this.linkMenuItem1.IconSource = "icon-file";
-            this.linkMenuItem1.Index = 1;
-            this.linkMenuItem1.Name = "linkMenuItem1";
-            this.linkMenuItem1.Target = "_blank";
-            this.linkMenuItem1.Text = "Link";
             // 
             // menuItemCheck
             // 
             this.menuItemCheck.IconSource = "checkbox";
-            this.menuItemCheck.Index = 2;
+            this.menuItemCheck.Index = 1;
             this.menuItemCheck.MenuItems.AddRange(new Wisej.Web.MenuItem[] {
             this.checkedMenuItem9,
             this.checkedMenuItem10,
@@ -595,11 +566,40 @@
             this.checkedMenuItem11.Name = "checkedMenuItem11";
             this.checkedMenuItem11.Text = "Oranges";
             // 
+            // menuBarTypes
+            // 
+            this.menuBarTypes.Anchor = Wisej.Web.AnchorStyles.None;
+            this.menuBarTypes.Location = new System.Drawing.Point(955, 152);
+            this.menuBarTypes.MenuItems.AddRange(new Wisej.Web.MenuItem[] {
+            this.menuItem33,
+            this.linkMenuItem1});
+            this.menuBarTypes.Name = "menuBarTypes";
+            this.menuBarTypes.Size = new System.Drawing.Size(188, 40);
+            this.menuBarTypes.TabIndex = 16;
+            this.menuBarTypes.TabStop = false;
+            this.menuBarTypes.MenuItemClicked += new Wisej.Web.MenuItemEventHandler(this.menuBarTypes_MenuItemClicked);
+            // 
+            // menuItem33
+            // 
+            this.menuItem33.IconSource = "icon-file";
+            this.menuItem33.Index = 0;
+            this.menuItem33.Name = "menuItem33";
+            this.menuItem33.Text = "Default";
+            // 
+            // linkMenuItem1
+            // 
+            this.linkMenuItem1.HRef = "https://www.wisej.com";
+            this.linkMenuItem1.IconSource = "icon-file";
+            this.linkMenuItem1.Index = 1;
+            this.linkMenuItem1.Name = "linkMenuItem1";
+            this.linkMenuItem1.Target = "_blank";
+            this.linkMenuItem1.Text = "Link";
+            // 
             // label8
             // 
             this.label8.Anchor = Wisej.Web.AnchorStyles.None;
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(1003, 216);
+            this.label8.Location = new System.Drawing.Point(955, 128);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(104, 18);
             this.label8.TabIndex = 17;
@@ -621,7 +621,7 @@
             this.Controls.Add(this.menuBar3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.menuBarDefault);
-            this.MinimumSize = new System.Drawing.Size(1240, 390);
+            this.MinimumSize = new System.Drawing.Size(873, 230);
             this.Name = "Features";
             this.ResumeLayout(false);
             this.PerformLayout();

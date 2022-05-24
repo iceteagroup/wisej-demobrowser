@@ -64,7 +64,7 @@
             // 
             // pbVip
             // 
-            this.pbVip.Anchor = Wisej.Web.AnchorStyles.None;
+            this.pbVip.Anchor = Wisej.Web.AnchorStyles.Right;
             this.pbVip.ImageSource = "resource.wx/Wisej.DemoBrowser.PropertyGrid/wisej.png";
             this.pbVip.Location = new System.Drawing.Point(535, 6);
             this.pbVip.Name = "pbVip";
@@ -89,13 +89,13 @@
             this.lblIssued.AutoSize = true;
             this.lblIssued.Location = new System.Drawing.Point(12, 266);
             this.lblIssued.Name = "lblIssued";
-            this.lblIssued.Size = new System.Drawing.Size(46, 15);
+            this.lblIssued.Size = new System.Drawing.Size(44, 18);
             this.lblIssued.TabIndex = 2;
             this.lblIssued.Text = "Issued:  ";
             // 
             // panel2
             // 
-            this.panel2.Anchor = Wisej.Web.AnchorStyles.None;
+            this.panel2.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Left | Wisej.Web.AnchorStyles.Right)));
             this.panel2.BackColor = System.Drawing.Color.White;
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.lblDob);
@@ -116,41 +116,41 @@
             // 
             // label2
             // 
-            this.label2.Anchor = Wisej.Web.AnchorStyles.None;
+            this.label2.Anchor = Wisej.Web.AnchorStyles.Left;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("@defaultBold", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.label2.Location = new System.Drawing.Point(3, 163);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(95, 15);
+            this.label2.Size = new System.Drawing.Size(92, 18);
             this.label2.TabIndex = 19;
             this.label2.Text = "Favorite color: ";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // lblDob
             // 
-            this.lblDob.Anchor = Wisej.Web.AnchorStyles.None;
+            this.lblDob.Anchor = Wisej.Web.AnchorStyles.Left;
             this.lblDob.AutoSize = true;
             this.lblDob.Font = new System.Drawing.Font("@defaultBold", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.lblDob.Location = new System.Drawing.Point(3, 124);
             this.lblDob.Name = "lblDob";
-            this.lblDob.Size = new System.Drawing.Size(38, 15);
+            this.lblDob.Size = new System.Drawing.Size(36, 18);
             this.lblDob.TabIndex = 17;
             this.lblDob.Text = "DOB: ";
             // 
             // lblDobTxt
             // 
-            this.lblDobTxt.Anchor = Wisej.Web.AnchorStyles.None;
+            this.lblDobTxt.Anchor = Wisej.Web.AnchorStyles.Left;
             this.lblDobTxt.AutoSize = true;
             this.lblDobTxt.Font = new System.Drawing.Font("@defaultBold", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.lblDobTxt.Location = new System.Drawing.Point(99, 124);
             this.lblDobTxt.Name = "lblDobTxt";
-            this.lblDobTxt.Size = new System.Drawing.Size(72, 15);
+            this.lblDobTxt.Size = new System.Drawing.Size(74, 18);
             this.lblDobTxt.TabIndex = 18;
             this.lblDobTxt.Text = "dateofbirth";
             // 
             // pnlFavColor
             // 
-            this.pnlFavColor.Anchor = Wisej.Web.AnchorStyles.None;
+            this.pnlFavColor.Anchor = Wisej.Web.AnchorStyles.Left;
             this.pnlFavColor.Location = new System.Drawing.Point(120, 157);
             this.pnlFavColor.Name = "pnlFavColor";
             this.pnlFavColor.Size = new System.Drawing.Size(27, 27);
@@ -159,97 +159,97 @@
             // 
             // lblFirstName
             // 
-            this.lblFirstName.Anchor = Wisej.Web.AnchorStyles.None;
+            this.lblFirstName.Anchor = Wisej.Web.AnchorStyles.Left;
             this.lblFirstName.AutoSize = true;
             this.lblFirstName.Font = new System.Drawing.Font("@defaultBold", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.lblFirstName.Location = new System.Drawing.Point(3, 8);
             this.lblFirstName.Name = "lblFirstName";
-            this.lblFirstName.Size = new System.Drawing.Size(76, 15);
+            this.lblFirstName.Size = new System.Drawing.Size(74, 18);
             this.lblFirstName.TabIndex = 8;
             this.lblFirstName.Text = "First Name: ";
             // 
             // lblFirstNameTxt
             // 
-            this.lblFirstNameTxt.Anchor = Wisej.Web.AnchorStyles.None;
+            this.lblFirstNameTxt.Anchor = Wisej.Web.AnchorStyles.Left;
             this.lblFirstNameTxt.AutoSize = true;
             this.lblFirstNameTxt.Font = new System.Drawing.Font("@defaultBold", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.lblFirstNameTxt.Location = new System.Drawing.Point(99, 8);
             this.lblFirstNameTxt.Name = "lblFirstNameTxt";
-            this.lblFirstNameTxt.Size = new System.Drawing.Size(63, 15);
+            this.lblFirstNameTxt.Size = new System.Drawing.Size(63, 18);
             this.lblFirstNameTxt.TabIndex = 9;
             this.lblFirstNameTxt.Text = "firstname";
             // 
             // lblLastName
             // 
-            this.lblLastName.Anchor = Wisej.Web.AnchorStyles.None;
+            this.lblLastName.Anchor = Wisej.Web.AnchorStyles.Left;
             this.lblLastName.AutoSize = true;
             this.lblLastName.Font = new System.Drawing.Font("@defaultBold", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.lblLastName.Location = new System.Drawing.Point(3, 37);
             this.lblLastName.Name = "lblLastName";
-            this.lblLastName.Size = new System.Drawing.Size(75, 15);
+            this.lblLastName.Size = new System.Drawing.Size(72, 18);
             this.lblLastName.TabIndex = 10;
             this.lblLastName.Text = "Last Name: ";
             // 
             // lblLastNameTxt
             // 
-            this.lblLastNameTxt.Anchor = Wisej.Web.AnchorStyles.None;
+            this.lblLastNameTxt.Anchor = Wisej.Web.AnchorStyles.Left;
             this.lblLastNameTxt.AutoSize = true;
             this.lblLastNameTxt.Font = new System.Drawing.Font("@defaultBold", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.lblLastNameTxt.Location = new System.Drawing.Point(99, 37);
             this.lblLastNameTxt.Name = "lblLastNameTxt";
-            this.lblLastNameTxt.Size = new System.Drawing.Size(61, 15);
+            this.lblLastNameTxt.Size = new System.Drawing.Size(60, 18);
             this.lblLastNameTxt.TabIndex = 11;
             this.lblLastNameTxt.Text = "lastname";
             // 
             // lblGender
             // 
-            this.lblGender.Anchor = Wisej.Web.AnchorStyles.None;
+            this.lblGender.Anchor = Wisej.Web.AnchorStyles.Left;
             this.lblGender.AutoSize = true;
             this.lblGender.Font = new System.Drawing.Font("@defaultBold", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.lblGender.Location = new System.Drawing.Point(3, 66);
             this.lblGender.Name = "lblGender";
-            this.lblGender.Size = new System.Drawing.Size(54, 15);
+            this.lblGender.Size = new System.Drawing.Size(52, 18);
             this.lblGender.TabIndex = 12;
             this.lblGender.Text = "Gender: ";
             // 
             // lblGenderTxt
             // 
-            this.lblGenderTxt.Anchor = Wisej.Web.AnchorStyles.None;
+            this.lblGenderTxt.Anchor = Wisej.Web.AnchorStyles.Left;
             this.lblGenderTxt.AutoSize = true;
             this.lblGenderTxt.Font = new System.Drawing.Font("@defaultBold", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.lblGenderTxt.Location = new System.Drawing.Point(99, 66);
             this.lblGenderTxt.Name = "lblGenderTxt";
-            this.lblGenderTxt.Size = new System.Drawing.Size(48, 15);
+            this.lblGenderTxt.Size = new System.Drawing.Size(48, 18);
             this.lblGenderTxt.TabIndex = 13;
             this.lblGenderTxt.Text = "gender";
             this.lblGenderTxt.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblAddress
             // 
-            this.lblAddress.Anchor = Wisej.Web.AnchorStyles.None;
+            this.lblAddress.Anchor = Wisej.Web.AnchorStyles.Left;
             this.lblAddress.AutoSize = true;
             this.lblAddress.Font = new System.Drawing.Font("@defaultBold", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.lblAddress.Location = new System.Drawing.Point(3, 95);
             this.lblAddress.Name = "lblAddress";
-            this.lblAddress.Size = new System.Drawing.Size(61, 15);
+            this.lblAddress.Size = new System.Drawing.Size(57, 18);
             this.lblAddress.TabIndex = 14;
             this.lblAddress.Text = "Address: ";
             // 
             // lblAddressTxt
             // 
-            this.lblAddressTxt.Anchor = Wisej.Web.AnchorStyles.None;
+            this.lblAddressTxt.Anchor = Wisej.Web.AnchorStyles.Left;
             this.lblAddressTxt.AutoEllipsis = true;
             this.lblAddressTxt.AutoSize = true;
             this.lblAddressTxt.Font = new System.Drawing.Font("@defaultBold", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.lblAddressTxt.Location = new System.Drawing.Point(99, 95);
             this.lblAddressTxt.Name = "lblAddressTxt";
-            this.lblAddressTxt.Size = new System.Drawing.Size(54, 15);
+            this.lblAddressTxt.Size = new System.Drawing.Size(51, 18);
             this.lblAddressTxt.TabIndex = 15;
             this.lblAddressTxt.Text = "address";
             // 
             // barcode1
             // 
-            this.barcode1.Anchor = Wisej.Web.AnchorStyles.None;
+            this.barcode1.Anchor = Wisej.Web.AnchorStyles.Left;
             this.barcode1.BarcodeType = Wisej.Web.Ext.Barcode.BarcodeType.QR;
             this.barcode1.Location = new System.Drawing.Point(12, 73);
             this.barcode1.Name = "barcode1";
@@ -262,7 +262,7 @@
             this.lblID.AutoSize = true;
             this.lblID.Location = new System.Drawing.Point(210, 266);
             this.lblID.Name = "lblID";
-            this.lblID.Size = new System.Drawing.Size(39, 15);
+            this.lblID.Size = new System.Drawing.Size(39, 18);
             this.lblID.TabIndex = 6;
             this.lblID.Text = "label2";
             this.lblID.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;

@@ -55,7 +55,7 @@
             this.errorProviderHtml.SetError(this.textBox1, "Error");
             this.errorProviderHtml.SetIconAlignment(this.textBox1, Wisej.Web.ErrorIconAlignment.BottomRight);
             this.textBox1.LabelText = "Default";
-            this.textBox1.Location = new System.Drawing.Point(325, 95);
+            this.textBox1.Location = new System.Drawing.Point(373, 119);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(175, 53);
             this.textBox1.TabIndex = 0;
@@ -66,7 +66,7 @@
             this.errorProviderHtml.SetError(this.textBox2, "<b>ErrorProvider</b> with <i>Animation</i>");
             this.errorProviderHtml.SetIconAlignment(this.textBox2, Wisej.Web.ErrorIconAlignment.BottomRight);
             this.textBox2.LabelText = "HTML";
-            this.textBox2.Location = new System.Drawing.Point(325, 211);
+            this.textBox2.Location = new System.Drawing.Point(373, 211);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(175, 53);
             this.textBox2.TabIndex = 1;
@@ -77,7 +77,7 @@
             this.errorProviderHtml.SetError(this.textBox6, "MiddleLeft");
             this.errorProviderHtml.SetIconAlignment(this.textBox6, Wisej.Web.ErrorIconAlignment.MiddleLeft);
             this.textBox6.LabelText = "MiddleLeft";
-            this.textBox6.Location = new System.Drawing.Point(923, 327);
+            this.textBox6.Location = new System.Drawing.Point(875, 303);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(175, 53);
             this.textBox6.TabIndex = 11;
@@ -88,7 +88,7 @@
             this.errorProviderHtml.SetError(this.textBox5, "TopRight");
             this.errorProviderHtml.SetIconAlignment(this.textBox5, Wisej.Web.ErrorIconAlignment.TopRight);
             this.textBox5.LabelText = "TopRight";
-            this.textBox5.Location = new System.Drawing.Point(923, 211);
+            this.textBox5.Location = new System.Drawing.Point(875, 211);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(175, 53);
             this.textBox5.TabIndex = 10;
@@ -99,7 +99,7 @@
             this.errorProviderHtml.SetError(this.textBox7, "TopLeft");
             this.errorProviderHtml.SetIconAlignment(this.textBox7, Wisej.Web.ErrorIconAlignment.TopLeft);
             this.textBox7.LabelText = "TopLeft";
-            this.textBox7.Location = new System.Drawing.Point(923, 95);
+            this.textBox7.Location = new System.Drawing.Point(875, 119);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(175, 53);
             this.textBox7.TabIndex = 9;
@@ -110,7 +110,7 @@
             this.errorProviderHtml.SetError(this.textBox8, "BottomRight");
             this.errorProviderHtml.SetIconAlignment(this.textBox8, Wisej.Web.ErrorIconAlignment.BottomRight);
             this.textBox8.LabelText = "BottomRight";
-            this.textBox8.Location = new System.Drawing.Point(624, 327);
+            this.textBox8.Location = new System.Drawing.Point(624, 303);
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(175, 53);
             this.textBox8.TabIndex = 8;
@@ -131,7 +131,7 @@
             this.textBox10.Anchor = Wisej.Web.AnchorStyles.None;
             this.errorProviderHtml.SetError(this.textBox10, "MiddleRight");
             this.textBox10.LabelText = "MiddleRight";
-            this.textBox10.Location = new System.Drawing.Point(624, 95);
+            this.textBox10.Location = new System.Drawing.Point(624, 119);
             this.textBox10.Name = "textBox10";
             this.textBox10.Size = new System.Drawing.Size(175, 53);
             this.textBox10.TabIndex = 6;
@@ -142,7 +142,7 @@
             this.errorProviderIcon.SetError(this.textBox4, "Custom Icon");
             this.errorProviderIcon.SetIconAlignment(this.textBox4, Wisej.Web.ErrorIconAlignment.BottomRight);
             this.textBox4.LabelText = "Custom Icon";
-            this.textBox4.Location = new System.Drawing.Point(325, 327);
+            this.textBox4.Location = new System.Drawing.Point(373, 303);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(175, 53);
             this.textBox4.TabIndex = 3;
@@ -163,7 +163,7 @@
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
-            this.MinimumSize = new System.Drawing.Size(791, 314);
+            this.MinimumSize = new System.Drawing.Size(685, 262);
             this.Name = "Features";
             ((System.ComponentModel.ISupportInitialize)(this.errorProviderHtml)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProviderIcon)).EndInit();

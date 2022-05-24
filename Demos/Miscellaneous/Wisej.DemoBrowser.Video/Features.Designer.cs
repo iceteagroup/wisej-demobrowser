@@ -33,13 +33,13 @@
             // 
             // videoDefault
             // 
-            this.videoDefault.Anchor = Wisej.Web.AnchorStyles.None;
             this.videoDefault.AutoPlay = true;
-            this.videoDefault.Location = new System.Drawing.Point(344, 22);
+            this.videoDefault.Dock = Wisej.Web.DockStyle.Fill;
+            this.videoDefault.Location = new System.Drawing.Point(16, 16);
             this.videoDefault.Muted = true;
             this.videoDefault.Name = "videoDefault";
             this.videoDefault.ObjectFit = Wisej.Web.ObjectFit.Cover;
-            this.videoDefault.Size = new System.Drawing.Size(735, 430);
+            this.videoDefault.Size = new System.Drawing.Size(1390, 442);
             this.videoDefault.SourceURL = "Media/sample.mp4";
             this.videoDefault.TabIndex = 0;
             this.videoDefault.Volume = 0D;
@@ -50,8 +50,8 @@
             // Features
             // 
             this.Controls.Add(this.videoDefault);
-            this.MinimumSize = new System.Drawing.Size(748, 443);
             this.Name = "Features";
+            this.Padding = new Wisej.Web.Padding(16);
             this.ResumeLayout(false);
 
 		}

@@ -1,14 +1,10 @@
 ﻿using System;
 using System.IO;
-using System.Reflection;
-using System.Linq;
 using Wisej.DemoBrowser.Common;
-using Wisej.Web;
-using System.Xml.Linq;
 
 namespace Wisej.DemoBrowser.HtmlPanel
 {
-	public partial class Features : DemoView
+    public partial class Features : DemoView
 	{
 		private string RESOURCE_URL = "Wisej.DemoBrowser.HtmlPanel.Sample.html";
 

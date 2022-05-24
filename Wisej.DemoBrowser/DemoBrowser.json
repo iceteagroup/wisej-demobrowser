@@ -230,13 +230,6 @@
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/ShapeArcPie.svg",
 				"docsUrl": "https://docs.wisej.com/docs/controls/content/shape",
 				"description-en": "The <b>Wisej.Web.Shape</b> control is used to create any kind of shape by modifying the various properties of the Shape control."
-			},
-			"Appearance": {
-				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Content/Wisej.DemoBrowser.Shape",
-				"assembly": "Appearance, Wisej.DemoBrowser.Shape.dll",
-				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/ShapeArcPie.svg",
-				"docsUrl": "https://docs.wisej.com/docs/controls/content/shape",
-				"description-en": "The <b>Wisej.Web.Shape</b> control is used to create any kind of shape by modifying the various properties of the Shape control."
 			}
 		}
 	},
