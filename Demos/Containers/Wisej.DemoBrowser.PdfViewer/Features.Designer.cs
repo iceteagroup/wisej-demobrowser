@@ -39,7 +39,7 @@
             | Wisej.Web.AnchorStyles.Right)));
             this.pdfViewer1.Location = new System.Drawing.Point(17, 46);
             this.pdfViewer1.Name = "pdfViewer1";
-            this.pdfViewer1.Size = new System.Drawing.Size(606, 412);
+            this.pdfViewer1.Size = new System.Drawing.Size(1387, 412);
             this.pdfViewer1.TabIndex = 0;
             // 
             // comboBoxViewerType
@@ -64,7 +64,6 @@
             this.Controls.Add(this.pdfViewer1);
             this.Name = "Features";
             this.Padding = new Wisej.Web.Padding(16);
-            this.Size = new System.Drawing.Size(641, 474);
             this.Load += new System.EventHandler(this.Features_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

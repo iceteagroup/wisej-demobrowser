@@ -62,7 +62,7 @@
             // buttonDefault
             // 
             this.buttonDefault.Anchor = Wisej.Web.AnchorStyles.None;
-            this.buttonDefault.Location = new System.Drawing.Point(17, 23);
+            this.buttonDefault.Location = new System.Drawing.Point(56, 23);
             this.buttonDefault.Name = "buttonDefault";
             this.buttonDefault.Size = new System.Drawing.Size(150, 35);
             this.buttonDefault.TabIndex = 0;
@@ -72,7 +72,7 @@
             // buttonError
             // 
             this.buttonError.Anchor = Wisej.Web.AnchorStyles.None;
-            this.buttonError.Location = new System.Drawing.Point(197, 23);
+            this.buttonError.Location = new System.Drawing.Point(236, 23);
             this.buttonError.Name = "buttonError";
             this.buttonError.Size = new System.Drawing.Size(150, 35);
             this.buttonError.TabIndex = 1;
@@ -82,7 +82,7 @@
             // buttonHand
             // 
             this.buttonHand.Anchor = Wisej.Web.AnchorStyles.None;
-            this.buttonHand.Location = new System.Drawing.Point(17, 80);
+            this.buttonHand.Location = new System.Drawing.Point(56, 80);
             this.buttonHand.Name = "buttonHand";
             this.buttonHand.Size = new System.Drawing.Size(150, 35);
             this.buttonHand.TabIndex = 2;
@@ -92,7 +92,7 @@
             // buttonInformation
             // 
             this.buttonInformation.Anchor = Wisej.Web.AnchorStyles.None;
-            this.buttonInformation.Location = new System.Drawing.Point(197, 80);
+            this.buttonInformation.Location = new System.Drawing.Point(236, 80);
             this.buttonInformation.Name = "buttonInformation";
             this.buttonInformation.Size = new System.Drawing.Size(150, 35);
             this.buttonInformation.TabIndex = 3;
@@ -102,7 +102,7 @@
             // buttonNone
             // 
             this.buttonNone.Anchor = Wisej.Web.AnchorStyles.None;
-            this.buttonNone.Location = new System.Drawing.Point(17, 137);
+            this.buttonNone.Location = new System.Drawing.Point(56, 137);
             this.buttonNone.Name = "buttonNone";
             this.buttonNone.Size = new System.Drawing.Size(150, 35);
             this.buttonNone.TabIndex = 4;
@@ -112,7 +112,7 @@
             // buttonQuestion
             // 
             this.buttonQuestion.Anchor = Wisej.Web.AnchorStyles.None;
-            this.buttonQuestion.Location = new System.Drawing.Point(197, 137);
+            this.buttonQuestion.Location = new System.Drawing.Point(236, 137);
             this.buttonQuestion.Name = "buttonQuestion";
             this.buttonQuestion.Size = new System.Drawing.Size(150, 35);
             this.buttonQuestion.TabIndex = 5;
@@ -122,7 +122,7 @@
             // buttonStop
             // 
             this.buttonStop.Anchor = Wisej.Web.AnchorStyles.None;
-            this.buttonStop.Location = new System.Drawing.Point(17, 194);
+            this.buttonStop.Location = new System.Drawing.Point(56, 194);
             this.buttonStop.Name = "buttonStop";
             this.buttonStop.Size = new System.Drawing.Size(150, 35);
             this.buttonStop.TabIndex = 6;
@@ -132,7 +132,7 @@
             // buttonWarning
             // 
             this.buttonWarning.Anchor = Wisej.Web.AnchorStyles.None;
-            this.buttonWarning.Location = new System.Drawing.Point(197, 194);
+            this.buttonWarning.Location = new System.Drawing.Point(236, 194);
             this.buttonWarning.Name = "buttonWarning";
             this.buttonWarning.Size = new System.Drawing.Size(150, 35);
             this.buttonWarning.TabIndex = 7;
@@ -142,7 +142,7 @@
             // buttonNoModal
             // 
             this.buttonNoModal.Anchor = Wisej.Web.AnchorStyles.None;
-            this.buttonNoModal.Location = new System.Drawing.Point(16, 23);
+            this.buttonNoModal.Location = new System.Drawing.Point(147, 23);
             this.buttonNoModal.Name = "buttonNoModal";
             this.buttonNoModal.Size = new System.Drawing.Size(150, 35);
             this.buttonNoModal.TabIndex = 8;
@@ -152,7 +152,7 @@
             // buttonKeepOnScreen
             // 
             this.buttonKeepOnScreen.Anchor = Wisej.Web.AnchorStyles.None;
-            this.buttonKeepOnScreen.Location = new System.Drawing.Point(16, 80);
+            this.buttonKeepOnScreen.Location = new System.Drawing.Point(147, 80);
             this.buttonKeepOnScreen.Name = "buttonKeepOnScreen";
             this.buttonKeepOnScreen.Size = new System.Drawing.Size(150, 35);
             this.buttonKeepOnScreen.TabIndex = 9;
@@ -162,7 +162,7 @@
             // buttonAllowHtml
             // 
             this.buttonAllowHtml.Anchor = Wisej.Web.AnchorStyles.None;
-            this.buttonAllowHtml.Location = new System.Drawing.Point(16, 137);
+            this.buttonAllowHtml.Location = new System.Drawing.Point(147, 137);
             this.buttonAllowHtml.Name = "buttonAllowHtml";
             this.buttonAllowHtml.Size = new System.Drawing.Size(150, 35);
             this.buttonAllowHtml.TabIndex = 10;
@@ -172,7 +172,7 @@
             // buttonCaption
             // 
             this.buttonCaption.Anchor = Wisej.Web.AnchorStyles.None;
-            this.buttonCaption.Location = new System.Drawing.Point(16, 194);
+            this.buttonCaption.Location = new System.Drawing.Point(147, 194);
             this.buttonCaption.Name = "buttonCaption";
             this.buttonCaption.Size = new System.Drawing.Size(150, 35);
             this.buttonCaption.TabIndex = 11;
@@ -182,7 +182,7 @@
             // buttonAbortRetryIgnore
             // 
             this.buttonAbortRetryIgnore.Anchor = Wisej.Web.AnchorStyles.None;
-            this.buttonAbortRetryIgnore.Location = new System.Drawing.Point(14, 23);
+            this.buttonAbortRetryIgnore.Location = new System.Drawing.Point(54, 23);
             this.buttonAbortRetryIgnore.Name = "buttonAbortRetryIgnore";
             this.buttonAbortRetryIgnore.Size = new System.Drawing.Size(150, 35);
             this.buttonAbortRetryIgnore.TabIndex = 12;
@@ -192,7 +192,7 @@
             // buttonOKCancel
             // 
             this.buttonOKCancel.Anchor = Wisej.Web.AnchorStyles.None;
-            this.buttonOKCancel.Location = new System.Drawing.Point(14, 80);
+            this.buttonOKCancel.Location = new System.Drawing.Point(54, 80);
             this.buttonOKCancel.Name = "buttonOKCancel";
             this.buttonOKCancel.Size = new System.Drawing.Size(150, 35);
             this.buttonOKCancel.TabIndex = 13;
@@ -202,7 +202,7 @@
             // buttonOK
             // 
             this.buttonOK.Anchor = Wisej.Web.AnchorStyles.None;
-            this.buttonOK.Location = new System.Drawing.Point(14, 137);
+            this.buttonOK.Location = new System.Drawing.Point(54, 137);
             this.buttonOK.Name = "buttonOK";
             this.buttonOK.Size = new System.Drawing.Size(150, 35);
             this.buttonOK.TabIndex = 14;
@@ -212,7 +212,7 @@
             // buttonCancel
             // 
             this.buttonCancel.Anchor = Wisej.Web.AnchorStyles.None;
-            this.buttonCancel.Location = new System.Drawing.Point(14, 194);
+            this.buttonCancel.Location = new System.Drawing.Point(54, 194);
             this.buttonCancel.Name = "buttonCancel";
             this.buttonCancel.Size = new System.Drawing.Size(150, 35);
             this.buttonCancel.TabIndex = 15;
@@ -222,7 +222,7 @@
             // buttonNo
             // 
             this.buttonNo.Anchor = Wisej.Web.AnchorStyles.None;
-            this.buttonNo.Location = new System.Drawing.Point(194, 23);
+            this.buttonNo.Location = new System.Drawing.Point(234, 23);
             this.buttonNo.Name = "buttonNo";
             this.buttonNo.Size = new System.Drawing.Size(150, 35);
             this.buttonNo.TabIndex = 16;
@@ -232,7 +232,7 @@
             // buttonRetryCancel
             // 
             this.buttonRetryCancel.Anchor = Wisej.Web.AnchorStyles.None;
-            this.buttonRetryCancel.Location = new System.Drawing.Point(194, 80);
+            this.buttonRetryCancel.Location = new System.Drawing.Point(234, 80);
             this.buttonRetryCancel.Name = "buttonRetryCancel";
             this.buttonRetryCancel.Size = new System.Drawing.Size(150, 35);
             this.buttonRetryCancel.TabIndex = 17;
@@ -242,7 +242,7 @@
             // buttonYes
             // 
             this.buttonYes.Anchor = Wisej.Web.AnchorStyles.None;
-            this.buttonYes.Location = new System.Drawing.Point(194, 137);
+            this.buttonYes.Location = new System.Drawing.Point(234, 137);
             this.buttonYes.Name = "buttonYes";
             this.buttonYes.Size = new System.Drawing.Size(150, 35);
             this.buttonYes.TabIndex = 18;
@@ -252,7 +252,7 @@
             // buttonYesNo
             // 
             this.buttonYesNo.Anchor = Wisej.Web.AnchorStyles.None;
-            this.buttonYesNo.Location = new System.Drawing.Point(194, 194);
+            this.buttonYesNo.Location = new System.Drawing.Point(234, 194);
             this.buttonYesNo.Name = "buttonYesNo";
             this.buttonYesNo.Size = new System.Drawing.Size(150, 35);
             this.buttonYesNo.TabIndex = 19;
@@ -262,7 +262,7 @@
             // buttonYesNoCancel
             // 
             this.buttonYesNoCancel.Anchor = Wisej.Web.AnchorStyles.None;
-            this.buttonYesNoCancel.Location = new System.Drawing.Point(14, 251);
+            this.buttonYesNoCancel.Location = new System.Drawing.Point(54, 251);
             this.buttonYesNoCancel.Name = "buttonYesNoCancel";
             this.buttonYesNoCancel.Size = new System.Drawing.Size(150, 35);
             this.buttonYesNoCancel.TabIndex = 20;
@@ -280,11 +280,13 @@
             this.panel1.Controls.Add(this.buttonHand);
             this.panel1.Controls.Add(this.buttonError);
             this.panel1.Controls.Add(this.buttonDefault);
-            this.panel1.Location = new System.Drawing.Point(373, 3);
+            this.flowLayoutPanel1.SetFillWeight(this.panel1, 1);
+            this.panel1.Location = new System.Drawing.Point(453, 3);
+            this.panel1.MinimumSize = new System.Drawing.Size(350, 0);
             this.panel1.Name = "panel1";
             this.panel1.ShowCloseButton = false;
             this.panel1.ShowHeader = true;
-            this.panel1.Size = new System.Drawing.Size(366, 341);
+            this.panel1.Size = new System.Drawing.Size(445, 341);
             this.panel1.TabIndex = 21;
             this.panel1.Text = "MessageBox Icons";
             // 
@@ -295,11 +297,13 @@
             this.panel2.Controls.Add(this.buttonAllowHtml);
             this.panel2.Controls.Add(this.buttonKeepOnScreen);
             this.panel2.Controls.Add(this.buttonNoModal);
-            this.panel2.Location = new System.Drawing.Point(745, 3);
+            this.flowLayoutPanel1.SetFillWeight(this.panel2, 1);
+            this.panel2.Location = new System.Drawing.Point(904, 3);
+            this.panel2.MinimumSize = new System.Drawing.Size(175, 0);
             this.panel2.Name = "panel2";
             this.panel2.ShowCloseButton = false;
             this.panel2.ShowHeader = true;
-            this.panel2.Size = new System.Drawing.Size(183, 341);
+            this.panel2.Size = new System.Drawing.Size(445, 341);
             this.panel2.TabIndex = 22;
             this.panel2.Text = "MessageBox Options";
             // 
@@ -315,11 +319,13 @@
             this.panel3.Controls.Add(this.buttonOK);
             this.panel3.Controls.Add(this.buttonOKCancel);
             this.panel3.Controls.Add(this.buttonAbortRetryIgnore);
+            this.flowLayoutPanel1.SetFillWeight(this.panel3, 1);
             this.panel3.Location = new System.Drawing.Point(3, 3);
+            this.panel3.MinimumSize = new System.Drawing.Size(350, 0);
             this.panel3.Name = "panel3";
             this.panel3.ShowCloseButton = false;
             this.panel3.ShowHeader = true;
-            this.panel3.Size = new System.Drawing.Size(364, 341);
+            this.panel3.Size = new System.Drawing.Size(444, 341);
             this.panel3.TabIndex = 23;
             this.panel3.Text = "MessageBox Buttons";
             // 
@@ -330,9 +336,9 @@
             this.flowLayoutPanel1.Controls.Add(this.panel3);
             this.flowLayoutPanel1.Controls.Add(this.panel1);
             this.flowLayoutPanel1.Controls.Add(this.panel2);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(67, 61);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(35, 61);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(1288, 347);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1352, 347);
             this.flowLayoutPanel1.TabIndex = 24;
             // 
             // Features

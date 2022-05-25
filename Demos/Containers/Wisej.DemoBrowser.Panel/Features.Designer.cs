@@ -54,7 +54,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Padding = new Wisej.Web.Padding(40);
             this.panel1.ShowHeader = true;
-            this.panel1.Size = new System.Drawing.Size(265, 220);
+            this.panel1.Size = new System.Drawing.Size(265, 434);
             this.panel1.TabIndex = 0;
             this.panel1.TabStop = true;
             this.panel1.Text = "Panel";
@@ -65,7 +65,7 @@
             this.label1.Dock = Wisej.Web.DockStyle.Fill;
             this.label1.Location = new System.Drawing.Point(40, 40);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(155, 138);
+            this.label1.Size = new System.Drawing.Size(155, 352);
             this.label1.TabIndex = 0;
             this.label1.Text = "HeaderPosition and HeaderAlignment Left with AutoShow OnPointerOver\r\n";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -83,7 +83,7 @@
             this.panel2.Name = "panel2";
             this.panel2.Padding = new Wisej.Web.Padding(40);
             this.panel2.ShowHeader = true;
-            this.panel2.Size = new System.Drawing.Size(265, 220);
+            this.panel2.Size = new System.Drawing.Size(265, 434);
             this.panel2.TabIndex = 1;
             this.panel2.TabStop = true;
             this.panel2.Text = "Panel";
@@ -94,7 +94,7 @@
             this.label3.Dock = Wisej.Web.DockStyle.Fill;
             this.label3.Location = new System.Drawing.Point(40, 40);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(155, 138);
+            this.label3.Size = new System.Drawing.Size(155, 352);
             this.label3.TabIndex = 2;
             this.label3.Text = "HeaderPosition and HeaderAlignment Right with AutoShow OnClick";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -110,7 +110,7 @@
             this.panel3.Name = "panel3";
             this.panel3.Padding = new Wisej.Web.Padding(40);
             this.panel3.ShowHeader = true;
-            this.panel3.Size = new System.Drawing.Size(300, 220);
+            this.panel3.Size = new System.Drawing.Size(300, 434);
             this.panel3.TabIndex = 2;
             this.panel3.TabStop = true;
             this.panel3.Text = "Collapse Left";
@@ -121,7 +121,7 @@
             this.label2.Dock = Wisej.Web.DockStyle.Fill;
             this.label2.Location = new System.Drawing.Point(40, 40);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(218, 110);
+            this.label2.Size = new System.Drawing.Size(218, 324);
             this.label2.TabIndex = 1;
             this.label2.Text = "HeaderAlignment Center and HeaderPosition Top with AutoShow OnClick";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -131,14 +131,14 @@
             this.spacer1.Dock = Wisej.Web.DockStyle.Left;
             this.spacer1.Location = new System.Drawing.Point(285, 20);
             this.spacer1.Name = "spacer1";
-            this.spacer1.Size = new System.Drawing.Size(20, 220);
+            this.spacer1.Size = new System.Drawing.Size(20, 434);
             // 
             // spacer2
             // 
             this.spacer2.Dock = Wisej.Web.DockStyle.Left;
             this.spacer2.Location = new System.Drawing.Point(570, 20);
             this.spacer2.Name = "spacer2";
-            this.spacer2.Size = new System.Drawing.Size(20, 220);
+            this.spacer2.Size = new System.Drawing.Size(20, 434);
             // 
             // Features
             // 
@@ -150,7 +150,6 @@
             this.MinimumSize = new System.Drawing.Size(896, 260);
             this.Name = "Features";
             this.Padding = new Wisej.Web.Padding(20, 20, 0, 20);
-            this.Size = new System.Drawing.Size(896, 260);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);

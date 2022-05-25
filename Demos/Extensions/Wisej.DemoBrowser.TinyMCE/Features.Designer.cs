@@ -45,7 +45,6 @@
             // Features
             // 
             this.Controls.Add(this.tinyMCE1);
-            this.MinimumSize = new System.Drawing.Size(968, 385);
             this.Name = "Features";
             this.ResumeLayout(false);
 

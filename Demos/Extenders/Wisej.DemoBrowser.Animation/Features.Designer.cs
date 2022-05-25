@@ -130,7 +130,7 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(11, 11);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(425, 138);
+            this.panel1.Size = new System.Drawing.Size(405, 138);
             this.panel1.TabIndex = 0;
             // 
             // label3
@@ -172,9 +172,9 @@
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.label6);
-            this.panel2.Location = new System.Drawing.Point(442, 11);
+            this.panel2.Location = new System.Drawing.Point(422, 11);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(425, 138);
+            this.panel2.Size = new System.Drawing.Size(405, 138);
             this.panel2.TabIndex = 1;
             // 
             // label4
@@ -216,9 +216,9 @@
             this.panel3.Controls.Add(this.label7);
             this.panel3.Controls.Add(this.label8);
             this.panel3.Controls.Add(this.label9);
-            this.panel3.Location = new System.Drawing.Point(873, 11);
+            this.panel3.Location = new System.Drawing.Point(833, 11);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(425, 138);
+            this.panel3.Size = new System.Drawing.Size(405, 138);
             this.panel3.TabIndex = 2;
             // 
             // label7
@@ -262,7 +262,7 @@
             this.panel4.Controls.Add(this.label12);
             this.panel4.Location = new System.Drawing.Point(11, 155);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(425, 138);
+            this.panel4.Size = new System.Drawing.Size(405, 138);
             this.panel4.TabIndex = 3;
             // 
             // label10
@@ -304,9 +304,9 @@
             this.panel5.Controls.Add(this.label13);
             this.panel5.Controls.Add(this.label14);
             this.panel5.Controls.Add(this.label15);
-            this.panel5.Location = new System.Drawing.Point(442, 155);
+            this.panel5.Location = new System.Drawing.Point(422, 155);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(425, 138);
+            this.panel5.Size = new System.Drawing.Size(405, 138);
             this.panel5.TabIndex = 4;
             // 
             // label13
@@ -348,9 +348,9 @@
             this.panel6.Controls.Add(this.label16);
             this.panel6.Controls.Add(this.label17);
             this.panel6.Controls.Add(this.label18);
-            this.panel6.Location = new System.Drawing.Point(873, 155);
+            this.panel6.Location = new System.Drawing.Point(833, 155);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(425, 138);
+            this.panel6.Size = new System.Drawing.Size(405, 138);
             this.panel6.TabIndex = 5;
             // 
             // label16
@@ -394,7 +394,7 @@
             this.panel7.Controls.Add(this.label21);
             this.panel7.Location = new System.Drawing.Point(11, 299);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(425, 138);
+            this.panel7.Size = new System.Drawing.Size(405, 138);
             this.panel7.TabIndex = 6;
             // 
             // label19
@@ -436,9 +436,9 @@
             this.panel8.Controls.Add(this.label22);
             this.panel8.Controls.Add(this.label23);
             this.panel8.Controls.Add(this.label24);
-            this.panel8.Location = new System.Drawing.Point(442, 299);
+            this.panel8.Location = new System.Drawing.Point(422, 299);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(425, 138);
+            this.panel8.Size = new System.Drawing.Size(405, 138);
             this.panel8.TabIndex = 7;
             // 
             // label22
@@ -480,9 +480,9 @@
             this.panel9.Controls.Add(this.label25);
             this.panel9.Controls.Add(this.label26);
             this.panel9.Controls.Add(this.label27);
-            this.panel9.Location = new System.Drawing.Point(873, 299);
+            this.panel9.Location = new System.Drawing.Point(833, 299);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(425, 138);
+            this.panel9.Size = new System.Drawing.Size(405, 138);
             this.panel9.TabIndex = 8;
             // 
             // label25

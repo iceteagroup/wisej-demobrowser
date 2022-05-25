@@ -16,6 +16,7 @@
 	<ItemGroup>
 		<PackageReference Include="Wisej-3" Version="3.*-*" />
 		<PackageReference Include="Wisej-3-CKEditor" Version="3.*-*" />
+		<PackageReference Include="Microsoft.CSharp" Version ="4.7.0" />
 		<ProjectReference Include="..\..\..\Wisej.DemoBrowser.Common\Wisej.DemoBrowser.Common.csproj" />
 	</ItemGroup>
 

@@ -116,7 +116,7 @@
             // 
             this.Controls.Add(this.checkBoxCompact);
             this.Controls.Add(this.navigationBar1);
-            this.MinimumSize = new System.Drawing.Size(940, 400);
+            this.MinimumSize = new System.Drawing.Size(540, 300);
             this.Name = "Features";
             this.ResumeLayout(false);
 

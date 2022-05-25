@@ -301,6 +301,7 @@
             // Features
             // 
             this.AutoScroll = true;
+            this.AutoScrollMargin = new System.Drawing.Size(0, 20);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Name = "Features";
             this.flowLayoutPanel1.ResumeLayout(false);

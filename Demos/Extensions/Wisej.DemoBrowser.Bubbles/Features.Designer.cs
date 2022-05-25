@@ -95,7 +95,7 @@
             this.Controls.Add(this.textBox);
             this.Controls.Add(this.cmbBubbleStyle);
             this.Controls.Add(this.cmbBubblesAlignment);
-            this.MinimumSize = new System.Drawing.Size(978, 340);
+            this.MinimumSize = new System.Drawing.Size(788, 278);
             this.Name = "Features";
             this.Load += new System.EventHandler(this.Features_Load);
             this.ResumeLayout(false);
