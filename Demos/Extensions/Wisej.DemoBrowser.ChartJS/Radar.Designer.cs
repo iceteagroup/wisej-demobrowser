@@ -40,7 +40,7 @@
             // buttonAdd
             // 
             this.buttonAdd.Anchor = Wisej.Web.AnchorStyles.None;
-            this.buttonAdd.Location = new System.Drawing.Point(47, 143);
+            this.buttonAdd.Location = new System.Drawing.Point(59, 143);
             this.buttonAdd.Name = "buttonAdd";
             this.buttonAdd.Size = new System.Drawing.Size(168, 37);
             this.buttonAdd.TabIndex = 1;
@@ -50,7 +50,7 @@
             // button1
             // 
             this.button1.Anchor = Wisej.Web.AnchorStyles.None;
-            this.button1.Location = new System.Drawing.Point(47, 186);
+            this.button1.Location = new System.Drawing.Point(59, 186);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(168, 37);
             this.button1.TabIndex = 2;
@@ -60,10 +60,11 @@
             // chartJS1
             // 
             this.chartJS1.BackColor = System.Drawing.Color.White;
+            this.chartJS1.BorderStyle = Wisej.Web.BorderStyle.Dashed;
             this.chartJS1.ChartType = Wisej.Web.Ext.ChartJS.ChartType.Radar;
             this.flowLayoutPanel1.SetFillWeight(this.chartJS1, 3);
             this.chartJS1.Font = new System.Drawing.Font("default", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.chartJS1.Location = new System.Drawing.Point(272, 3);
+            this.chartJS1.Location = new System.Drawing.Point(295, 3);
             this.chartJS1.MinimumSize = new System.Drawing.Size(300, 0);
             this.chartJS1.Name = "chartJS1";
             this.chartJS1.Options.DataLabel.BackgroundColor = System.Drawing.Color.Empty;
@@ -73,7 +74,7 @@
             this.chartJS1.Options.DataLabel.TextAlign = Wisej.Web.Ext.ChartJS.DataLabelTextAlignment.Start;
             this.chartJS1.Options.DataLabel.TextShadowColor = System.Drawing.Color.Empty;
             this.chartJS1.Options.DataLabel.TextStrokeColor = System.Drawing.Color.Empty;
-            this.chartJS1.Size = new System.Drawing.Size(789, 366);
+            this.chartJS1.Size = new System.Drawing.Size(860, 366);
             this.chartJS1.TabIndex = 3;
             this.chartJS1.Text = "Radar Chart";
             this.chartJS1.ChartClick += new Wisej.Web.Ext.ChartJS.ChartClickEventHandler(this.chartJS1_ChartClick);
@@ -86,7 +87,7 @@
             this.panel1.Location = new System.Drawing.Point(3, 3);
             this.panel1.MinimumSize = new System.Drawing.Size(225, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(263, 366);
+            this.panel1.Size = new System.Drawing.Size(286, 366);
             this.panel1.TabIndex = 4;
             // 
             // flowLayoutPanel1
@@ -95,9 +96,9 @@
             this.flowLayoutPanel1.AutoSize = true;
             this.flowLayoutPanel1.Controls.Add(this.panel1);
             this.flowLayoutPanel1.Controls.Add(this.chartJS1);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(179, 49);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(132, 49);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(1064, 376);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1158, 376);
             this.flowLayoutPanel1.TabIndex = 5;
             // 
             // Radar

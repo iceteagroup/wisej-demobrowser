@@ -292,7 +292,7 @@
             this.flowLayoutPanel1.Controls.Add(this.button4);
             this.flowLayoutPanel1.Controls.Add(this.button2);
             this.flowLayoutPanel1.Controls.Add(this.buttonAlertBox);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(20, 90);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(20, 74);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Padding = new Wisej.Web.Padding(16);
             this.flowLayoutPanel1.Size = new System.Drawing.Size(1383, 263);
