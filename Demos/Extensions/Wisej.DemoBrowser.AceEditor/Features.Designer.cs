@@ -47,10 +47,11 @@
             this.aceEditor1.BorderStyle = Wisej.Web.BorderStyle.Dashed;
             this.flowLayoutPanel1.SetFillWeight(this.aceEditor1, 2);
             this.aceEditor1.Language = "xml";
-            this.aceEditor1.Location = new System.Drawing.Point(422, 3);
+            this.aceEditor1.Location = new System.Drawing.Point(509, 3);
+            this.aceEditor1.MaximumSize = new System.Drawing.Size(700, 0);
             this.aceEditor1.MinimumSize = new System.Drawing.Size(400, 0);
             this.aceEditor1.Name = "aceEditor1";
-            this.aceEditor1.Size = new System.Drawing.Size(825, 369);
+            this.aceEditor1.Size = new System.Drawing.Size(700, 350);
             this.aceEditor1.TabIndex = 0;
             this.aceEditor1.Text = "<test>hello</test>";
             // 
@@ -60,7 +61,7 @@
             this.checkBoxIndent.Appearance = Wisej.Web.Appearance.Switch;
             this.checkBoxIndent.AutoSize = false;
             this.checkBoxIndent.Checked = true;
-            this.checkBoxIndent.Location = new System.Drawing.Point(106, 9);
+            this.checkBoxIndent.Location = new System.Drawing.Point(150, 20);
             this.checkBoxIndent.Name = "checkBoxIndent";
             this.checkBoxIndent.Size = new System.Drawing.Size(200, 35);
             this.checkBoxIndent.TabIndex = 1;
@@ -73,7 +74,7 @@
             this.checkBoxGutter.Appearance = Wisej.Web.Appearance.Switch;
             this.checkBoxGutter.AutoSize = false;
             this.checkBoxGutter.Checked = true;
-            this.checkBoxGutter.Location = new System.Drawing.Point(106, 62);
+            this.checkBoxGutter.Location = new System.Drawing.Point(150, 65);
             this.checkBoxGutter.Name = "checkBoxGutter";
             this.checkBoxGutter.Size = new System.Drawing.Size(200, 35);
             this.checkBoxGutter.TabIndex = 2;
@@ -86,7 +87,7 @@
             this.checkBoxLineNumbers.Appearance = Wisej.Web.Appearance.Switch;
             this.checkBoxLineNumbers.AutoSize = false;
             this.checkBoxLineNumbers.Checked = true;
-            this.checkBoxLineNumbers.Location = new System.Drawing.Point(106, 115);
+            this.checkBoxLineNumbers.Location = new System.Drawing.Point(150, 110);
             this.checkBoxLineNumbers.Name = "checkBoxLineNumbers";
             this.checkBoxLineNumbers.Size = new System.Drawing.Size(200, 35);
             this.checkBoxLineNumbers.TabIndex = 3;
@@ -104,7 +105,7 @@
             "JavaScript",
             "CSharp"});
             this.comboBoxLanguage.LabelText = "Language";
-            this.comboBoxLanguage.Location = new System.Drawing.Point(106, 221);
+            this.comboBoxLanguage.Location = new System.Drawing.Point(150, 200);
             this.comboBoxLanguage.Name = "comboBoxLanguage";
             this.comboBoxLanguage.Size = new System.Drawing.Size(200, 60);
             this.comboBoxLanguage.TabIndex = 4;
@@ -117,7 +118,7 @@
             this.checkBoxPrintMargin.Appearance = Wisej.Web.Appearance.Switch;
             this.checkBoxPrintMargin.AutoSize = false;
             this.checkBoxPrintMargin.Checked = true;
-            this.checkBoxPrintMargin.Location = new System.Drawing.Point(106, 168);
+            this.checkBoxPrintMargin.Location = new System.Drawing.Point(150, 155);
             this.checkBoxPrintMargin.Name = "checkBoxPrintMargin";
             this.checkBoxPrintMargin.Size = new System.Drawing.Size(200, 35);
             this.checkBoxPrintMargin.TabIndex = 5;
@@ -171,7 +172,7 @@
             "vibrant_ink",
             "xcode"});
             this.comboBoxTheme.LabelText = "Theme";
-            this.comboBoxTheme.Location = new System.Drawing.Point(106, 299);
+            this.comboBoxTheme.Location = new System.Drawing.Point(150, 270);
             this.comboBoxTheme.Name = "comboBoxTheme";
             this.comboBoxTheme.Size = new System.Drawing.Size(200, 60);
             this.comboBoxTheme.TabIndex = 6;
@@ -188,9 +189,10 @@
             this.panel1.Controls.Add(this.checkBoxIndent);
             this.flowLayoutPanel1.SetFillWeight(this.panel1, 1);
             this.panel1.Location = new System.Drawing.Point(3, 3);
+            this.panel1.MaximumSize = new System.Drawing.Size(500, 0);
             this.panel1.MinimumSize = new System.Drawing.Size(300, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(413, 369);
+            this.panel1.Size = new System.Drawing.Size(500, 350);
             this.panel1.TabIndex = 7;
             // 
             // flowLayoutPanel1
@@ -199,9 +201,9 @@
             this.flowLayoutPanel1.AutoSize = true;
             this.flowLayoutPanel1.Controls.Add(this.panel1);
             this.flowLayoutPanel1.Controls.Add(this.aceEditor1);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(86, 50);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(89, 59);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(1250, 375);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1245, 356);
             this.flowLayoutPanel1.TabIndex = 8;
             // 
             // Features

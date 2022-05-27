@@ -40,21 +40,19 @@
             // 
             // panelWallpaper
             // 
-            this.panelWallpaper.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
-            | Wisej.Web.AnchorStyles.Left) 
-            | Wisej.Web.AnchorStyles.Right)));
             this.panelWallpaper.BorderStyle = Wisej.Web.BorderStyle.Solid;
-            this.panelWallpaper.Location = new System.Drawing.Point(220, 31);
+            this.panelWallpaper.Dock = Wisej.Web.DockStyle.Fill;
+            this.panelWallpaper.Location = new System.Drawing.Point(16, 16);
             this.panelWallpaper.Name = "panelWallpaper";
-            this.panelWallpaper.Size = new System.Drawing.Size(352, 293);
+            this.panelWallpaper.Size = new System.Drawing.Size(760, 322);
             this.panelWallpaper.TabIndex = 0;
             this.panelWallpaper.TabStop = true;
             // 
             // Features
             // 
             this.Controls.Add(this.panelWallpaper);
-            this.MinimumSize = new System.Drawing.Size(792, 354);
             this.Name = "Features";
+            this.Padding = new Wisej.Web.Padding(16);
             this.Size = new System.Drawing.Size(792, 354);
             this.ResumeLayout(false);
 

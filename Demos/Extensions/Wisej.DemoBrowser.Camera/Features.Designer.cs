@@ -43,10 +43,11 @@
             // 
             this.camera1.Anchor = Wisej.Web.AnchorStyles.Top;
             this.flowLayoutPanel1.SetFillWeight(this.camera1, 2);
-            this.camera1.Location = new System.Drawing.Point(385, 3);
+            this.camera1.Location = new System.Drawing.Point(438, 3);
+            this.camera1.MaximumSize = new System.Drawing.Size(700, 0);
             this.camera1.MinimumSize = new System.Drawing.Size(200, 0);
             this.camera1.Name = "camera1";
-            this.camera1.Size = new System.Drawing.Size(753, 367);
+            this.camera1.Size = new System.Drawing.Size(700, 367);
             this.camera1.TabIndex = 0;
             this.camera1.Text = "camera1";
             // 
@@ -57,7 +58,7 @@
             this.checkBoxVideo.AutoSize = false;
             this.checkBoxVideo.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.checkBoxVideo.Checked = true;
-            this.checkBoxVideo.Location = new System.Drawing.Point(88, 92);
+            this.checkBoxVideo.Location = new System.Drawing.Point(114, 92);
             this.checkBoxVideo.Name = "checkBoxVideo";
             this.checkBoxVideo.Size = new System.Drawing.Size(200, 35);
             this.checkBoxVideo.TabIndex = 1;
@@ -70,7 +71,7 @@
             this.checkBoxAudio.Appearance = Wisej.Web.Appearance.Switch;
             this.checkBoxAudio.AutoSize = false;
             this.checkBoxAudio.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.checkBoxAudio.Location = new System.Drawing.Point(88, 12);
+            this.checkBoxAudio.Location = new System.Drawing.Point(114, 12);
             this.checkBoxAudio.Name = "checkBoxAudio";
             this.checkBoxAudio.Size = new System.Drawing.Size(200, 35);
             this.checkBoxAudio.TabIndex = 2;
@@ -88,7 +89,7 @@
             "Left",
             "Right"});
             this.comboBoxFacingMode.LabelText = "Facing Mode";
-            this.comboBoxFacingMode.Location = new System.Drawing.Point(86, 172);
+            this.comboBoxFacingMode.Location = new System.Drawing.Point(112, 172);
             this.comboBoxFacingMode.Name = "comboBoxFacingMode";
             this.comboBoxFacingMode.Size = new System.Drawing.Size(200, 60);
             this.comboBoxFacingMode.TabIndex = 3;
@@ -107,7 +108,7 @@
             "ScaleDown",
             "None"});
             this.comboBoxObjectFit.LabelText = "Object Fit";
-            this.comboBoxObjectFit.Location = new System.Drawing.Point(86, 277);
+            this.comboBoxObjectFit.Location = new System.Drawing.Point(112, 277);
             this.comboBoxObjectFit.Name = "comboBoxObjectFit";
             this.comboBoxObjectFit.Size = new System.Drawing.Size(200, 60);
             this.comboBoxObjectFit.TabIndex = 4;
@@ -122,9 +123,10 @@
             this.panel1.Controls.Add(this.checkBoxVideo);
             this.flowLayoutPanel1.SetFillWeight(this.panel1, 1);
             this.panel1.Location = new System.Drawing.Point(3, 3);
+            this.panel1.MaximumSize = new System.Drawing.Size(700, 0);
             this.panel1.MinimumSize = new System.Drawing.Size(300, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(376, 367);
+            this.panel1.Size = new System.Drawing.Size(429, 367);
             this.panel1.TabIndex = 5;
             // 
             // flowLayoutPanel1

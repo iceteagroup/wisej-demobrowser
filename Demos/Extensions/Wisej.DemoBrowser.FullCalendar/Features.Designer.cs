@@ -40,9 +40,9 @@
             this.fullCalendar1.BackColor = System.Drawing.Color.White;
             this.fullCalendar1.EnableNativeContextMenu = true;
             this.fullCalendar1.EventLimit = 2;
-            this.fullCalendar1.Location = new System.Drawing.Point(258, 21);
+            this.fullCalendar1.Location = new System.Drawing.Point(19, 63);
             this.fullCalendar1.Name = "fullCalendar1";
-            this.fullCalendar1.Size = new System.Drawing.Size(1145, 433);
+            this.fullCalendar1.Size = new System.Drawing.Size(1384, 394);
             this.fullCalendar1.TabIndex = 0;
             this.fullCalendar1.Text = "fullCalendar1";
             this.fullCalendar1.EventClick += new Wisej.Web.Ext.FullCalendar.EventClickEventHandler(this.fullCalendar1_EventClick);
@@ -50,10 +50,11 @@
             // comboBoxView
             // 
             this.comboBoxView.DropDownStyle = Wisej.Web.ComboBoxStyle.DropDownList;
+            this.comboBoxView.Label.Position = Wisej.Web.LabelPosition.Left;
             this.comboBoxView.LabelText = "View Type";
             this.comboBoxView.Location = new System.Drawing.Point(19, 21);
             this.comboBoxView.Name = "comboBoxView";
-            this.comboBoxView.Size = new System.Drawing.Size(219, 53);
+            this.comboBoxView.Size = new System.Drawing.Size(219, 30);
             this.comboBoxView.TabIndex = 1;
             this.comboBoxView.Text = "Month";
             this.comboBoxView.SelectedIndexChanged += new System.EventHandler(this.comboBoxView_SelectedIndexChanged);
@@ -62,7 +63,6 @@
             // 
             this.Controls.Add(this.comboBoxView);
             this.Controls.Add(this.fullCalendar1);
-            this.MinimumSize = new System.Drawing.Size(708, 311);
             this.Name = "Features";
             this.Padding = new Wisej.Web.Padding(16);
             this.Load += new System.EventHandler(this.Features_Load);

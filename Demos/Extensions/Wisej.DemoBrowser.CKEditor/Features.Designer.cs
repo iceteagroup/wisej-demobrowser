@@ -43,12 +43,13 @@
             // 
             this.ckEditor1.Anchor = Wisej.Web.AnchorStyles.None;
             this.flowLayoutPanel1.SetFillWeight(this.ckEditor1, 2);
-            this.ckEditor1.Location = new System.Drawing.Point(430, 3);
+            this.ckEditor1.Location = new System.Drawing.Point(573, 3);
+            this.ckEditor1.MaximumSize = new System.Drawing.Size(700, 0);
             this.ckEditor1.MinimumSize = new System.Drawing.Size(400, 0);
             this.ckEditor1.Name = "ckEditor1";
             this.ckEditor1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("ckEditor1.Options"))));
             this.ckEditor1.ShowFooter = false;
-            this.ckEditor1.Size = new System.Drawing.Size(843, 346);
+            this.ckEditor1.Size = new System.Drawing.Size(700, 346);
             this.ckEditor1.TabIndex = 0;
             this.ckEditor1.Text = "ckEditor1";
             // 
@@ -58,7 +59,7 @@
             this.checkBoxToolbar.Appearance = Wisej.Web.Appearance.Switch;
             this.checkBoxToolbar.AutoSize = false;
             this.checkBoxToolbar.Checked = true;
-            this.checkBoxToolbar.Location = new System.Drawing.Point(110, 225);
+            this.checkBoxToolbar.Location = new System.Drawing.Point(182, 225);
             this.checkBoxToolbar.Name = "checkBoxToolbar";
             this.checkBoxToolbar.Size = new System.Drawing.Size(200, 35);
             this.checkBoxToolbar.TabIndex = 8;
@@ -71,7 +72,7 @@
             this.checkBoxFooter.Appearance = Wisej.Web.Appearance.Switch;
             this.checkBoxFooter.AutoSize = false;
             this.checkBoxFooter.Checked = true;
-            this.checkBoxFooter.Location = new System.Drawing.Point(110, 156);
+            this.checkBoxFooter.Location = new System.Drawing.Point(182, 156);
             this.checkBoxFooter.Name = "checkBoxFooter";
             this.checkBoxFooter.Size = new System.Drawing.Size(200, 35);
             this.checkBoxFooter.TabIndex = 7;
@@ -83,7 +84,7 @@
             this.checkBoxReadOnly.Anchor = Wisej.Web.AnchorStyles.None;
             this.checkBoxReadOnly.Appearance = Wisej.Web.Appearance.Switch;
             this.checkBoxReadOnly.AutoSize = false;
-            this.checkBoxReadOnly.Location = new System.Drawing.Point(110, 87);
+            this.checkBoxReadOnly.Location = new System.Drawing.Point(182, 87);
             this.checkBoxReadOnly.Name = "checkBoxReadOnly";
             this.checkBoxReadOnly.Size = new System.Drawing.Size(200, 35);
             this.checkBoxReadOnly.TabIndex = 6;
@@ -97,9 +98,10 @@
             this.panel1.Controls.Add(this.checkBoxFooter);
             this.flowLayoutPanel1.SetFillWeight(this.panel1, 1);
             this.panel1.Location = new System.Drawing.Point(3, 3);
+            this.panel1.MaximumSize = new System.Drawing.Size(800, 0);
             this.panel1.MinimumSize = new System.Drawing.Size(350, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(421, 346);
+            this.panel1.Size = new System.Drawing.Size(564, 346);
             this.panel1.TabIndex = 9;
             // 
             // flowLayoutPanel1
@@ -116,7 +118,6 @@
             // Features
             // 
             this.AutoScroll = true;
-            this.AutoScrollMargin = new System.Drawing.Size(0, 20);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Name = "Features";
             this.Size = new System.Drawing.Size(1422, 475);
