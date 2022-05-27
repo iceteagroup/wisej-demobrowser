@@ -166,15 +166,14 @@
             this.flowLayoutPanel1.Controls.Add(this.grpCheckBox);
             this.flowLayoutPanel1.Controls.Add(this.grpRegular);
             this.flowLayoutPanel1.Controls.Add(this.grpCollapsible);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(26, 73);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(185, 108);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(1369, 328);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1052, 166);
             this.flowLayoutPanel1.TabIndex = 4;
             // 
             // Features
             // 
             this.AutoScroll = true;
-            this.AutoScrollMargin = new System.Drawing.Size(0, 20);
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.flowLayoutPanel1);
             this.Name = "Features";
