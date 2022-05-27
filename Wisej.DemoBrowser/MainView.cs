@@ -47,7 +47,7 @@ namespace Wisej.DemoBrowser
 			this.treeViewComponents.Nodes.Clear();
 			PopulateTestList();
 
-			if (Application.Browser.Device == "Mobile")
+			if (Application.Browser.Device == "Mobile" || Application.Browser.Size.Width < 1200)
 				this.panelComponents.Collapsed = true;
 
 #if NETCOREAPP
@@ -60,7 +60,8 @@ namespace Wisej.DemoBrowser
 			if (!string.IsNullOrEmpty(hash))
 				SelectNode(hash);
 
-			this.panelComponents.ShowHeader = false;
+			if (!this.panelComponents.Collapsed)
+				this.panelComponents.ShowHeader = false;
 		}
 
 		/// <summary>
@@ -498,5 +499,5 @@ namespace Wisej.DemoBrowser
 		{
 			Application.Navigate("https://wisej.com/", "_blank");
 		}
-	}
+    }
 }
