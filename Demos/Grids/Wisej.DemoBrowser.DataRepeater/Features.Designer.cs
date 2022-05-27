@@ -29,14 +29,18 @@
         private void InitializeComponent()
         {
             this.dataRepeater1 = new Wisej.Web.DataRepeater();
+            this.panel1 = new Wisej.Web.Panel();
             this.buttonSelect = new Wisej.Web.Button();
-            this.labelPhone = new Wisej.Web.Label();
-            this.labelAddress = new Wisej.Web.Label();
             this.labelName = new Wisej.Web.Label();
             this.pictureBoxProfile = new Wisej.Web.PictureBox();
+            this.spacer1 = new Wisej.Web.Spacer();
+            this.checkBoxScrollbar = new Wisej.Web.CheckBox();
+            this.labelCompany = new Wisej.Web.Label();
+            this.labelEmail = new Wisej.Web.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataRepeater1)).BeginInit();
             this.dataRepeater1.ItemTemplate.SuspendLayout();
             this.dataRepeater1.SuspendLayout();
+            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxProfile)).BeginInit();
             this.SuspendLayout();
             // 
@@ -45,99 +49,146 @@
             this.dataRepeater1.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
             | Wisej.Web.AnchorStyles.Left) 
             | Wisej.Web.AnchorStyles.Right)));
-            this.dataRepeater1.ItemSize = new System.Drawing.Size(200, 72);
+            this.dataRepeater1.BorderStyle = Wisej.Web.BorderStyle.None;
+            this.dataRepeater1.CssStyle = "border-radius: 4px;";
+            this.dataRepeater1.ItemHeaderVisible = false;
+            this.dataRepeater1.ItemSize = new System.Drawing.Size(200, 94);
             // 
             // dataRepeater1.ItemTemplate
             // 
-            this.dataRepeater1.ItemTemplate.BackColor = System.Drawing.Color.White;
-            this.dataRepeater1.ItemTemplate.Controls.Add(this.buttonSelect);
-            this.dataRepeater1.ItemTemplate.Controls.Add(this.labelPhone);
-            this.dataRepeater1.ItemTemplate.Controls.Add(this.labelAddress);
-            this.dataRepeater1.ItemTemplate.Controls.Add(this.labelName);
-            this.dataRepeater1.ItemTemplate.Controls.Add(this.pictureBoxProfile);
-            this.dataRepeater1.ItemTemplate.Size = new System.Drawing.Size(1327, 72);
-            this.dataRepeater1.Location = new System.Drawing.Point(47, 22);
+            this.dataRepeater1.ItemTemplate.Controls.Add(this.panel1);
+            this.dataRepeater1.ItemTemplate.Controls.Add(this.spacer1);
+            this.dataRepeater1.ItemTemplate.CssStyle = "border-bottom: none;";
+            this.dataRepeater1.ItemTemplate.Size = new System.Drawing.Size(1024, 94);
+            this.dataRepeater1.Location = new System.Drawing.Point(199, 19);
             this.dataRepeater1.Name = "dataRepeater1";
             this.dataRepeater1.PrefetchItems = 25;
-            this.dataRepeater1.Size = new System.Drawing.Size(1329, 430);
+            this.dataRepeater1.ScrollBarVisible = false;
+            this.dataRepeater1.Size = new System.Drawing.Size(1024, 455);
             this.dataRepeater1.TabIndex = 0;
             this.dataRepeater1.Text = "dataRepeater1";
             this.dataRepeater1.VirtualMode = true;
             this.dataRepeater1.ItemUpdate += new Wisej.Web.DataRepeaterItemEventHandler(this.dataRepeater1_ItemUpdate);
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.labelEmail);
+            this.panel1.Controls.Add(this.labelCompany);
+            this.panel1.Controls.Add(this.buttonSelect);
+            this.panel1.Controls.Add(this.labelName);
+            this.panel1.Controls.Add(this.pictureBoxProfile);
+            this.panel1.CssStyle = "transition: background-color 0.2s ease;\r\nbox-shadow: rgba(0, 0, 0, 0.16) 0px 1px " +
+    "4px;";
+            this.panel1.Dock = Wisej.Web.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1024, 78);
+            this.panel1.TabIndex = 7;
+            this.panel1.MouseEnter += new System.EventHandler(this.panel1_MouseEnter);
+            this.panel1.MouseLeave += new System.EventHandler(this.panel1_MouseLeave);
+            // 
             // buttonSelect
             // 
             this.buttonSelect.AppearanceKey = "panel";
-            this.buttonSelect.BackColor = System.Drawing.Color.White;
+            this.buttonSelect.BackColor = System.Drawing.Color.Transparent;
             this.buttonSelect.BorderStyle = Wisej.Web.BorderStyle.None;
             this.buttonSelect.Cursor = Wisej.Web.Cursors.Hand;
             this.buttonSelect.Dock = Wisej.Web.DockStyle.Right;
             this.buttonSelect.ImageSource = "icon-right";
-            this.buttonSelect.Location = new System.Drawing.Point(1287, 0);
+            this.buttonSelect.Location = new System.Drawing.Point(971, 0);
             this.buttonSelect.Name = "buttonSelect";
-            this.buttonSelect.Size = new System.Drawing.Size(20, 72);
-            this.buttonSelect.TabIndex = 4;
+            this.buttonSelect.Size = new System.Drawing.Size(53, 78);
+            this.buttonSelect.TabIndex = 9;
             this.buttonSelect.Click += new System.EventHandler(this.buttonSelect_Click);
-            // 
-            // labelPhone
-            // 
-            this.labelPhone.AutoSize = true;
-            this.labelPhone.Location = new System.Drawing.Point(75, 27);
-            this.labelPhone.Name = "labelPhone";
-            this.labelPhone.Size = new System.Drawing.Size(41, 18);
-            this.labelPhone.TabIndex = 3;
-            this.labelPhone.Text = "Phone";
-            // 
-            // labelAddress
-            // 
-            this.labelAddress.AutoSize = true;
-            this.labelAddress.Location = new System.Drawing.Point(75, 48);
-            this.labelAddress.Name = "labelAddress";
-            this.labelAddress.Size = new System.Drawing.Size(51, 18);
-            this.labelAddress.TabIndex = 2;
-            this.labelAddress.Text = "Address";
             // 
             // labelName
             // 
+            this.labelName.Anonymous = true;
             this.labelName.AutoSize = true;
             this.labelName.Font = new System.Drawing.Font("@defaultBold", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.labelName.Location = new System.Drawing.Point(74, 6);
+            this.labelName.Location = new System.Drawing.Point(89, 7);
             this.labelName.Name = "labelName";
             this.labelName.Size = new System.Drawing.Size(116, 18);
-            this.labelName.TabIndex = 1;
+            this.labelName.TabIndex = 5;
             this.labelName.Text = "Name LastName 0";
             // 
             // pictureBoxProfile
             // 
-            this.pictureBoxProfile.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
-            | Wisej.Web.AnchorStyles.Left)));
+            this.pictureBoxProfile.Anonymous = true;
             this.pictureBoxProfile.CssStyle = "border-radius: 100px;\r\nborder: 2px solid gray;";
-            this.pictureBoxProfile.Location = new System.Drawing.Point(3, 3);
+            this.pictureBoxProfile.Location = new System.Drawing.Point(12, 7);
             this.pictureBoxProfile.Name = "pictureBoxProfile";
-            this.pictureBoxProfile.Size = new System.Drawing.Size(66, 66);
+            this.pictureBoxProfile.Size = new System.Drawing.Size(65, 65);
             this.pictureBoxProfile.SizeMode = Wisej.Web.PictureBoxSizeMode.Zoom;
+            // 
+            // spacer1
+            // 
+            this.spacer1.Dock = Wisej.Web.DockStyle.Bottom;
+            this.spacer1.Location = new System.Drawing.Point(0, 78);
+            this.spacer1.Name = "spacer1";
+            this.spacer1.Size = new System.Drawing.Size(1024, 16);
+            // 
+            // checkBoxScrollbar
+            // 
+            this.checkBoxScrollbar.Appearance = Wisej.Web.Appearance.Switch;
+            this.checkBoxScrollbar.Location = new System.Drawing.Point(19, 19);
+            this.checkBoxScrollbar.Name = "checkBoxScrollbar";
+            this.checkBoxScrollbar.Padding = new Wisej.Web.Padding(0, 0, 0, 16);
+            this.checkBoxScrollbar.Size = new System.Drawing.Size(144, 36);
+            this.checkBoxScrollbar.TabIndex = 1;
+            this.checkBoxScrollbar.Text = "Scrollbar Visible";
+            this.checkBoxScrollbar.CheckedChanged += new System.EventHandler(this.checkBoxScrollbar_CheckedChanged);
+            // 
+            // labelCompany
+            // 
+            this.labelCompany.Anonymous = true;
+            this.labelCompany.AutoSize = true;
+            this.labelCompany.Location = new System.Drawing.Point(89, 30);
+            this.labelCompany.Name = "labelCompany";
+            this.labelCompany.Size = new System.Drawing.Size(73, 18);
+            this.labelCompany.TabIndex = 11;
+            this.labelCompany.Text = "ACME Corp.";
+            // 
+            // labelEmail
+            // 
+            this.labelEmail.Anonymous = true;
+            this.labelEmail.AutoSize = true;
+            this.labelEmail.Location = new System.Drawing.Point(89, 54);
+            this.labelEmail.Name = "labelEmail";
+            this.labelEmail.Size = new System.Drawing.Size(85, 18);
+            this.labelEmail.TabIndex = 12;
+            this.labelEmail.Text = "Email Address";
             // 
             // Features
             // 
             this.Controls.Add(this.dataRepeater1);
+            this.Controls.Add(this.checkBoxScrollbar);
+            this.MinimumSize = new System.Drawing.Size(700, 0);
             this.Name = "Features";
+            this.Padding = new Wisej.Web.Padding(16, 16, 16, 0);
             this.Load += new System.EventHandler(this.Features_Load);
             this.dataRepeater1.ItemTemplate.ResumeLayout(false);
-            this.dataRepeater1.ItemTemplate.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataRepeater1)).EndInit();
             this.dataRepeater1.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxProfile)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
 		#endregion
 
 		private Web.DataRepeater dataRepeater1;
-		private Web.Label labelAddress;
-		private Web.Label labelName;
-		private Web.PictureBox pictureBoxProfile;
-		private Web.Label labelPhone;
-		private Web.Button buttonSelect;
-	}
+        private Web.Spacer spacer1;
+        private Web.Panel panel1;
+        private Web.Label labelName;
+        private Web.PictureBox pictureBoxProfile;
+        private Web.Button buttonSelect;
+        private Web.CheckBox checkBoxScrollbar;
+        private Web.Label labelEmail;
+        private Web.Label labelCompany;
+    }
 }

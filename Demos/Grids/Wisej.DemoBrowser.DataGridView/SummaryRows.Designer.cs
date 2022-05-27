@@ -65,9 +65,11 @@
             this.Column12,
             this.Column13});
             this.dataGridView1.Dock = Wisej.Web.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(5, 5);
+            this.dataGridView1.Location = new System.Drawing.Point(16, 16);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(1412, 464);
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.RowHeadersVisible = false;
+            this.dataGridView1.Size = new System.Drawing.Size(1390, 442);
             this.dataGridView1.TabIndex = 2;
             // 
             // Column0
@@ -79,6 +81,7 @@
             // 
             this.Column1.HeaderText = "Column1";
             this.Column1.Name = "Column1";
+            this.Column1.Width = 200;
             // 
             // Column2
             // 
@@ -144,7 +147,7 @@
             // 
             this.Controls.Add(this.dataGridView1);
             this.Name = "SummaryRows";
-            this.Padding = new Wisej.Web.Padding(5);
+            this.Padding = new Wisej.Web.Padding(16);
             this.Load += new System.EventHandler(this.SummaryRows_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

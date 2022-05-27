@@ -34,24 +34,26 @@
             this.columnHeader9 = new Wisej.Web.ColumnHeader();
             this.comboBoxView = new Wisej.Web.ComboBox();
             this.comboBoxSelectionMode = new Wisej.Web.ComboBox();
+            this.panel1 = new Wisej.Web.Panel();
+            this.flowLayoutPanel1 = new Wisej.Web.FlowLayoutPanel();
+            this.panel1.SuspendLayout();
+            this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // listViewDemo
             // 
-            this.listViewDemo.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
-            | Wisej.Web.AnchorStyles.Left) 
-            | Wisej.Web.AnchorStyles.Right)));
             this.listViewDemo.Columns.AddRange(new Wisej.Web.ColumnHeader[] {
             this.columnHeader7,
             this.columnHeader8,
             this.columnHeader9});
+            this.listViewDemo.CssStyle = "border-radius: 4px;";
+            this.flowLayoutPanel1.SetFillWeight(this.listViewDemo, 2);
             this.listViewDemo.ItemPadding = new Wisej.Web.Padding(8, 3, 3, 3);
-            this.listViewDemo.Location = new System.Drawing.Point(263, 15);
+            this.listViewDemo.Location = new System.Drawing.Point(391, 3);
+            this.listViewDemo.MinimumSize = new System.Drawing.Size(300, 0);
             this.listViewDemo.Name = "listViewDemo";
-            this.listViewDemo.Size = new System.Drawing.Size(1138, 444);
+            this.listViewDemo.Size = new System.Drawing.Size(763, 347);
             this.listViewDemo.TabIndex = 2;
-            this.listViewDemo.View = Wisej.Web.View.Details;
-            this.listViewDemo.VirtualListSize = 100;
             this.listViewDemo.VirtualMode = true;
             this.listViewDemo.RetrieveVirtualItem += new Wisej.Web.RetrieveVirtualItemEventHandler(this.listViewDemo_RetrieveVirtualItem);
             // 
@@ -75,6 +77,7 @@
             // 
             // comboBoxView
             // 
+            this.comboBoxView.Anchor = Wisej.Web.AnchorStyles.None;
             this.comboBoxView.DropDownStyle = Wisej.Web.ComboBoxStyle.DropDownList;
             this.comboBoxView.Items.AddRange(new object[] {
             "Details",
@@ -82,15 +85,16 @@
             "SmallIcon",
             "Tile"});
             this.comboBoxView.LabelText = "View";
-            this.comboBoxView.Location = new System.Drawing.Point(16, 15);
+            this.comboBoxView.Location = new System.Drawing.Point(91, 103);
             this.comboBoxView.Name = "comboBoxView";
-            this.comboBoxView.Size = new System.Drawing.Size(227, 53);
+            this.comboBoxView.Size = new System.Drawing.Size(200, 53);
             this.comboBoxView.TabIndex = 3;
-            this.comboBoxView.Text = "Details";
+            this.comboBoxView.Text = "LargeIcon";
             this.comboBoxView.SelectedIndexChanged += new System.EventHandler(this.comboBoxView_SelectedIndexChanged);
             // 
             // comboBoxSelectionMode
             // 
+            this.comboBoxSelectionMode.Anchor = Wisej.Web.AnchorStyles.None;
             this.comboBoxSelectionMode.DropDownStyle = Wisej.Web.ComboBoxStyle.DropDownList;
             this.comboBoxSelectionMode.Items.AddRange(new object[] {
             "None",
@@ -98,20 +102,45 @@
             "MultiSimple",
             "MultiExtended"});
             this.comboBoxSelectionMode.LabelText = "Selection Mode";
-            this.comboBoxSelectionMode.Location = new System.Drawing.Point(16, 103);
+            this.comboBoxSelectionMode.Location = new System.Drawing.Point(91, 191);
             this.comboBoxSelectionMode.Name = "comboBoxSelectionMode";
-            this.comboBoxSelectionMode.Size = new System.Drawing.Size(227, 53);
+            this.comboBoxSelectionMode.Size = new System.Drawing.Size(200, 53);
             this.comboBoxSelectionMode.TabIndex = 4;
             this.comboBoxSelectionMode.Text = "One";
             this.comboBoxSelectionMode.SelectedIndexChanged += new System.EventHandler(this.comboBoxSelectionMode_SelectedIndexChanged);
             // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.comboBoxSelectionMode);
+            this.panel1.Controls.Add(this.comboBoxView);
+            this.flowLayoutPanel1.SetFillWeight(this.panel1, 1);
+            this.panel1.Location = new System.Drawing.Point(3, 3);
+            this.panel1.MinimumSize = new System.Drawing.Size(250, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(382, 347);
+            this.panel1.TabIndex = 5;
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Left | Wisej.Web.AnchorStyles.Right)));
+            this.flowLayoutPanel1.AutoSize = true;
+            this.flowLayoutPanel1.Controls.Add(this.panel1);
+            this.flowLayoutPanel1.Controls.Add(this.listViewDemo);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(133, 57);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1157, 360);
+            this.flowLayoutPanel1.TabIndex = 6;
+            // 
             // Features
             // 
-            this.Controls.Add(this.comboBoxSelectionMode);
-            this.Controls.Add(this.comboBoxView);
-            this.Controls.Add(this.listViewDemo);
+            this.AutoScroll = true;
+            this.AutoScrollMargin = new System.Drawing.Size(0, 20);
+            this.Controls.Add(this.flowLayoutPanel1);
             this.Name = "Features";
             this.Load += new System.EventHandler(this.Features_Load);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.flowLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -124,5 +153,7 @@
         private Web.ColumnHeader columnHeader9;
         private Web.ComboBox comboBoxView;
         private Web.ComboBox comboBoxSelectionMode;
+        private Web.Panel panel1;
+        private Web.FlowLayoutPanel flowLayoutPanel1;
     }
 }

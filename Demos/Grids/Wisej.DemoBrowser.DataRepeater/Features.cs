@@ -1,6 +1,7 @@
 ﻿using Bogus;
 using System;
 using System.Collections.Generic;
+using System.Drawing;
 using Wisej.DemoBrowser.Common;
 using Wisej.Web;
 
@@ -21,15 +22,16 @@ namespace Wisej.DemoBrowser.DataRepeater
 		{
 			this.dataRepeater1.ItemCount = ITEM_COUNT;
 
-			var faker = new Faker();
 			for (int i = 0; i < ITEM_COUNT; i++)
 			{
+				var faker = new Faker();
 				this.users.Add(new
 				{
+					Address = faker.Person.Email,
 					Name = faker.Name.FullName(),
 					Phone = faker.Phone.PhoneNumber(),
-					Address = faker.Address.FullAddress(),
-					Picture = ImageHelper.GetRandomPerson()
+					Company = faker.Person.Company.Name,
+					Picture = ImageHelper.GetRandomPerson(),
 				});
 			}
 		}
@@ -42,13 +44,28 @@ namespace Wisej.DemoBrowser.DataRepeater
 
 		private void dataRepeater1_ItemUpdate(object sender, DataRepeaterItemEventArgs e)
 		{
-			var controls = e.DataRepeaterItem.Controls;
+			var controls = e.DataRepeaterItem.Controls["panel1"].Controls;
 			var item = this.users[e.DataRepeaterItem.ItemIndex];
 
 			controls["labelName"].Text = item.Name;
-			controls["labelPhone"].Text = item.Phone;
-			controls["labelAddress"].Text = item.Address;
+			controls["labelEmail"].Text = item.Address;
+			controls["labelCompany"].Text = item.Company;
 			((PictureBox)controls["pictureBoxProfile"]).ImageSource = item.Picture;
+		}
+
+        private void checkBoxScrollbar_CheckedChanged(object sender, EventArgs e)
+        {
+			this.dataRepeater1.ScrollBarVisible = this.checkBoxScrollbar.Checked;
+        }
+
+        private void panel1_MouseEnter(object sender, EventArgs e)
+        {
+			(sender as Panel).BackColor = Color.LightGray;
+        }
+
+        private void panel1_MouseLeave(object sender, EventArgs e)
+        {
+			(sender as Panel).BackColor = Color.White;
 		}
 	}
 }

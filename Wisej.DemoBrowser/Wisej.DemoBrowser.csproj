@@ -53,6 +53,7 @@
 		<None Remove="Images\strike.png" />
 		<None Remove="Images\wisej-logo.png" />
 		<None Remove="Images\wisej.png" />
+		<None Remove="Themes\CustomDataGrid.mixin.theme" />
 		<None Remove="Themes\DemoBrowser.mixin.theme" />
 		<None Remove="Themes\IconsListView.mixin.theme" />
 	</ItemGroup>
@@ -80,6 +81,7 @@
 	  <EmbeddedResource Include="Images\strike.png" />
 	  <EmbeddedResource Include="Images\wisej-logo.png" />
 	  <EmbeddedResource Include="Images\wisej.png" />
+	  <EmbeddedResource Include="Themes\CustomDataGrid.mixin.theme" />
 	  <EmbeddedResource Include="Themes\DemoBrowser.mixin.theme" />
 	  <EmbeddedResource Include="Themes\IconsListView.mixin.theme" />
 	</ItemGroup>

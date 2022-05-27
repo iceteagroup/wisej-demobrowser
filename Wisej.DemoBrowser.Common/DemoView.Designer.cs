@@ -33,6 +33,7 @@ namespace Wisej.DemoBrowser.Common
             // 
             // DemoView
             // 
+            this.AutoScrollMargin = new System.Drawing.Size(0, 20);
             this.BackColor = System.Drawing.Color.Transparent;
             this.Name = "DemoView";
             this.Size = new System.Drawing.Size(1422, 474);

@@ -1,0 +1,81 @@
+{
+	"name": "CustomDataGrid.mixin",
+	"colors": {
+		"table-row-background-even": "white"
+	},
+	"appearances": {
+		"table": {
+			"inherit": "table",
+			"states": {
+				"default": {
+					"properties": {
+						"rowHeight": 42,
+						"headerCellHeight": 42
+					}
+				}
+			},
+			"components": {
+				"column-button": {
+					"inherit": "table/column-button",
+					"components": {
+						"icon": {
+							"inherit": "icon-light",
+							"states": {
+								"default": {
+									"properties": {
+										"width": 16
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		},
+		"table-button-cell": {
+			"inherit": "table-button-cell",
+			"states": {
+				"default": {
+					"properties": {
+						"padding": 6
+					}
+				}
+			}
+		},
+		"table-cell": {
+			"inherit": "table-cell",
+			"states": {
+				"default": {
+					"styles": {
+						"colorRight": "transparent"
+					}
+				}
+			}
+		},
+		"table-header-cell": {
+			"inherit": "table-header-cell",
+			"states": {
+				"default": {
+					"styles": {
+						"color": "transparent"
+					}
+				}
+			}
+		},
+		"table-row": {
+			"inherit": "table-row",
+			"states": {
+				"default": {
+					"styles": {
+						"colorBottom": "transparent"
+					}
+				},
+				"odd": {
+					"styles": {
+						"backgroundColor": "#f4f6fd"
+					}
+				}
+			}
+		}
+	}
+}

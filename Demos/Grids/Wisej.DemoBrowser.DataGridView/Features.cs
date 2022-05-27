@@ -5,7 +5,7 @@ using Wisej.Web;
 
 namespace Wisej.DemoBrowser.DataGridView
 {
-    public partial class Features : DemoView
+	public partial class Features : DemoView
 	{
 		public Features()
 		{
@@ -15,25 +15,13 @@ namespace Wisej.DemoBrowser.DataGridView
 		private void ColumnTypes_Load(object sender, EventArgs e)
 		{
 			InitializeGenderBinding();
-			FillDataGrid();
-		}
-
-		private void Button_Click(object sender, EventArgs e)
-		{
-			AlertBox.Show("Button Clicked");
-		}
-
-		private void FillDataGrid()
-		{
-			var data = DataGenerator.GeneratePersonData(300);
-
-			personBindingSource.DataSource = data;
+			
+			personBindingSource.DataSource = DataGenerator.GeneratePersonData(300);
 		}
 
 		private void InitializeGenderBinding()
 		{
 			var gender = Enum.GetNames(typeof(PersonGender)).ToList();
-
 			genderBindingSource.DataSource = gender;
 		}
 		private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -41,8 +29,16 @@ namespace Wisej.DemoBrowser.DataGridView
 			if (e.ColumnIndex == -1)
 				return;
 
-			var dgv = (Web.DataGridView) sender;
-			if (dgv.Columns[e.ColumnIndex].Name == "colButton") dgv.Rows.RemoveAt(e.RowIndex);
+			if (this.dataGridView1.Columns[e.ColumnIndex].Name == "colButton")
+			{
+				var result = MessageBox.Show("Are you sure you would like to delete this user?",
+					caption: "Confirm Deletion",
+					buttons: MessageBoxButtons.YesNo,
+					icon: MessageBoxIcon.Warning);
+
+				if (result == DialogResult.Yes)
+					this.dataGridView1.Rows.RemoveAt(e.RowIndex);
+			}
 		}
 	}
 }

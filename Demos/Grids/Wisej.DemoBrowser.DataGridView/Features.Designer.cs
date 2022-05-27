@@ -30,23 +30,23 @@
         {
             this.components = new System.ComponentModel.Container();
             Wisej.Web.DataGridViewCellStyle dataGridViewCellStyle1 = new Wisej.Web.DataGridViewCellStyle();
+            Wisej.Web.DataGridViewCellStyle dataGridViewCellStyle5 = new Wisej.Web.DataGridViewCellStyle();
             Wisej.Web.DataGridViewCellStyle dataGridViewCellStyle2 = new Wisej.Web.DataGridViewCellStyle();
+            Wisej.Web.DataGridViewCellStyle dataGridViewCellStyle3 = new Wisej.Web.DataGridViewCellStyle();
+            Wisej.Web.DataGridViewCellStyle dataGridViewCellStyle4 = new Wisej.Web.DataGridViewCellStyle();
             this.dataGridView1 = new Wisej.Web.DataGridView();
-            this.colId = new Wisej.Web.DataGridViewTextBoxColumn();
+            this.Column0 = new Wisej.Web.DataGridViewTextBoxColumn();
             this.colAvatar = new Wisej.Web.DataGridViewImageColumn();
-            this.colDesignation = new Wisej.Web.DataGridViewTextBoxColumn();
             this.colFirstname = new Wisej.Web.DataGridViewTextBoxColumn();
             this.colLastname = new Wisej.Web.DataGridViewTextBoxColumn();
-            this.colUsername = new Wisej.Web.DataGridViewTextBoxColumn();
-            this.colAge = new Wisej.Web.DataGridViewTextBoxColumn();
+            this.colId = new Wisej.Web.DataGridViewTextBoxColumn();
+            this.colBirthday = new Wisej.Web.DataGridViewDateTimePickerColumn();
             this.colGender = new Wisej.Web.DataGridViewComboBoxColumn();
             this.genderBindingSource = new Wisej.Web.BindingSource(this.components);
             this.colCartid = new Wisej.Web.DataGridViewTextBoxColumn();
             this.colSSN = new Wisej.Web.DataGridViewMaskedTextBoxColumn();
-            this.colAddress = new Wisej.Web.DataGridViewTextBoxColumn();
-            this.colMail = new Wisej.Web.DataGridViewTextBoxColumn();
             this.colRating = new Wisej.Web.DataGridViewTextBoxColumn();
-            this.colProgress = new Wisej.DemoBrowser.DataGridView.DataGridViewProgressBarColumn();
+            this.colAccountActive = new Wisej.Web.DataGridViewCheckBoxColumn();
             this.colButton = new Wisej.Web.DataGridViewButtonColumn();
             this.personBindingSource = new Wisej.Web.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -56,82 +56,85 @@
             // 
             // dataGridView1
             // 
-            this.dataGridView1.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
-            | Wisej.Web.AnchorStyles.Left) 
-            | Wisej.Web.AnchorStyles.Right)));
             this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.CellBorderStyle = Wisej.Web.DataGridViewCellBorderStyle.None;
+            this.dataGridView1.ColumnHeadersBorderStyle = Wisej.Web.DataGridViewCellBorderStyle.Horizontal;
+            dataGridViewCellStyle1.Alignment = Wisej.Web.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("default", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridView1.ColumnHeadersHeight = 42;
             this.dataGridView1.Columns.AddRange(new Wisej.Web.DataGridViewColumn[] {
-            this.colId,
+            this.Column0,
             this.colAvatar,
-            this.colDesignation,
             this.colFirstname,
             this.colLastname,
-            this.colUsername,
-            this.colAge,
+            this.colId,
+            this.colBirthday,
             this.colGender,
             this.colCartid,
             this.colSSN,
-            this.colAddress,
-            this.colMail,
             this.colRating,
-            this.colProgress,
+            this.colAccountActive,
             this.colButton});
+            this.dataGridView1.CssStyle = "border-radius: 4px;";
             this.dataGridView1.DataSource = this.personBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(20, 31);
+            dataGridViewCellStyle5.Alignment = Wisej.Web.DataGridViewContentAlignment.MiddleCenter;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle5;
+            this.dataGridView1.Dock = Wisej.Web.DockStyle.Fill;
+            this.dataGridView1.Location = new System.Drawing.Point(16, 16);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(1382, 412);
+            this.dataGridView1.RowHeadersVisible = false;
+            this.dataGridView1.Size = new System.Drawing.Size(1390, 442);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellClick += new Wisej.Web.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
-            // colId
+            // Column0
             // 
-            this.colId.AllowHtml = true;
-            this.colId.DataPropertyName = "Id";
-            dataGridViewCellStyle1.Alignment = Wisej.Web.DataGridViewContentAlignment.MiddleCenter;
-            this.colId.DefaultCellStyle = dataGridViewCellStyle1;
-            this.colId.HeaderText = "ID";
-            this.colId.Name = "colId";
-            this.colId.Width = 50;
+            this.Column0.DataPropertyName = "UserName";
+            this.Column0.HeaderText = "Username";
+            this.Column0.Name = "Column0";
+            this.Column0.Width = 150;
             // 
             // colAvatar
             // 
             this.colAvatar.CellImageAlignment = Wisej.Web.DataGridViewContentAlignment.NotSet;
             this.colAvatar.DataPropertyName = "Avatar";
-            this.colAvatar.DefaultCellStyle = dataGridViewCellStyle2;
-            this.colAvatar.HeaderImageSource = "resource.wx/Wisej.Ext.VisualStudioIcons/User.svg";
             this.colAvatar.HeaderText = "Avatar";
             this.colAvatar.Name = "colAvatar";
-            // 
-            // colDesignation
-            // 
-            this.colDesignation.DataPropertyName = "Designation";
-            this.colDesignation.HeaderText = "Designation";
-            this.colDesignation.Name = "colDesignation";
-            this.colDesignation.Width = 200;
             // 
             // colFirstname
             // 
             this.colFirstname.DataPropertyName = "FirstName";
             this.colFirstname.HeaderText = "First Name";
             this.colFirstname.Name = "colFirstname";
+            this.colFirstname.Width = 150;
             // 
             // colLastname
             // 
             this.colLastname.DataPropertyName = "LastName";
             this.colLastname.HeaderText = "Last Name";
             this.colLastname.Name = "colLastname";
+            this.colLastname.Width = 150;
             // 
-            // colUsername
+            // colId
             // 
-            this.colUsername.DataPropertyName = "UserName";
-            this.colUsername.HeaderText = "User Name";
-            this.colUsername.Name = "colUsername";
+            this.colId.AllowHtml = true;
+            this.colId.DataPropertyName = "Id";
+            dataGridViewCellStyle2.Alignment = Wisej.Web.DataGridViewContentAlignment.MiddleCenter;
+            this.colId.DefaultCellStyle = dataGridViewCellStyle2;
+            this.colId.HeaderText = "ID";
+            this.colId.Name = "colId";
+            this.colId.Visible = false;
+            this.colId.Width = 50;
             // 
-            // colAge
+            // colBirthday
             // 
-            this.colAge.DataPropertyName = "Age";
-            this.colAge.HeaderText = "Age";
-            this.colAge.Name = "colAge";
+            this.colBirthday.DataPropertyName = "Birthday";
+            dataGridViewCellStyle3.Format = "G";
+            this.colBirthday.DefaultCellStyle = dataGridViewCellStyle3;
+            this.colBirthday.HeaderText = "Birthday";
+            this.colBirthday.Name = "colBirthday";
+            this.colBirthday.Width = 200;
             // 
             // colGender
             // 
@@ -152,37 +155,29 @@
             // 
             this.colSSN.DataPropertyName = "SSN";
             this.colSSN.HeaderText = "SSN";
-            this.colSSN.Mask = "___-__-____";
+            this.colSSN.Mask = "***-**-____";
             this.colSSN.Name = "colSSN";
-            // 
-            // colAddress
-            // 
-            this.colAddress.DataPropertyName = "Address";
-            this.colAddress.HeaderText = "Address";
-            this.colAddress.Name = "colAddress";
-            // 
-            // colMail
-            // 
-            this.colMail.DataPropertyName = "Mail";
-            this.colMail.HeaderImageSource = "resource.wx/Wisej.Ext.VisualStudioIcons/MailOpen.svg";
-            this.colMail.HeaderText = "Mail";
-            this.colMail.Name = "colMail";
+            this.colSSN.ReadOnly = true;
             // 
             // colRating
             // 
             this.colRating.AllowHtml = true;
             this.colRating.DataPropertyName = "Rating";
+            dataGridViewCellStyle4.Padding = new Wisej.Web.Padding(0, 0, 24, 0);
+            this.colRating.DefaultCellStyle = dataGridViewCellStyle4;
             this.colRating.HeaderImageSource = "resource.wx/Wisej.Ext.VisualStudioIcons/Rating.svg";
             this.colRating.HeaderText = "Rating";
             this.colRating.Name = "colRating";
+            this.colRating.Width = 150;
             // 
-            // colProgress
+            // colAccountActive
             // 
-            this.colProgress.DataPropertyName = "Progress";
-            this.colProgress.HeaderImageSource = "resource.wx/Wisej.Ext.VisualStudioIcons/ProgressBar.svg";
-            this.colProgress.HeaderText = "Progress";
-            this.colProgress.Name = "colProgress";
-            this.colProgress.SortMode = Wisej.Web.DataGridViewColumnSortMode.Automatic;
+            this.colAccountActive.DataPropertyName = "AccountActive";
+            this.colAccountActive.HeaderImageSource = "resource.wx/Wisej.Ext.VisualStudioIcons/CheckBox.svg";
+            this.colAccountActive.HeaderText = "Account Active";
+            this.colAccountActive.Name = "colAccountActive";
+            this.colAccountActive.ReadOnly = true;
+            this.colAccountActive.Width = 150;
             // 
             // colButton
             // 
@@ -199,6 +194,7 @@
             // 
             this.Controls.Add(this.dataGridView1);
             this.Name = "Features";
+            this.Padding = new Wisej.Web.Padding(16);
             this.Load += new System.EventHandler(this.ColumnTypes_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.genderBindingSource)).EndInit();
@@ -213,19 +209,16 @@
         private Web.BindingSource personBindingSource;
         private Web.DataGridViewTextBoxColumn colFirstname;
         private Web.DataGridViewTextBoxColumn colLastname;
-        private Web.DataGridViewTextBoxColumn colUsername;
-        private Web.DataGridViewTextBoxColumn colAge;
         private Web.DataGridViewComboBoxColumn colGender;
         private Web.DataGridViewTextBoxColumn colCartid;
         private Web.DataGridViewMaskedTextBoxColumn colSSN;
-        private Web.DataGridViewTextBoxColumn colAddress;
-        private Web.DataGridViewTextBoxColumn colDesignation;
-        private Web.DataGridViewTextBoxColumn colMail;
         private Web.DataGridViewTextBoxColumn colRating;
         private Web.DataGridViewButtonColumn colButton;
         private Web.DataGridViewTextBoxColumn colId;
-        private DataGridViewProgressBarColumn colProgress;
         private Web.BindingSource genderBindingSource;
         private Web.DataGridViewImageColumn colAvatar;
+        private Web.DataGridViewCheckBoxColumn colAccountActive;
+        private Web.DataGridViewTextBoxColumn Column0;
+        private Web.DataGridViewDateTimePickerColumn colBirthday;
     }
 }

@@ -554,7 +554,7 @@
 			"Summary Rows": {
 				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Grids/Wisej.DemoBrowser.DataGridView",
 				"assembly": "SummaryRows, Wisej.DemoBrowser.DataGridView.dll",
-				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/DataGridView.svg",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/Summary.svg",
 				"docsUrl": "https://docs.wisej.com/docs/controls/grids/datagridview",
 				"description-en": "Summary rows display table information aggregated to a single row."
 			}

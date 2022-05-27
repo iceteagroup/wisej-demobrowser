@@ -58,6 +58,8 @@ namespace Wisej.DemoBrowser.ListView
 
         private void Features_Load(object sender, EventArgs e)
 		{
+			this.listViewDemo.VirtualListSize = 100;
+
 			FillImageLists();
 			AttachImageLists();
 		}
