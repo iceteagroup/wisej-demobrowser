@@ -35,9 +35,9 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 		}
 
 		private void buttonUpdate_Click(object sender, EventArgs e)
-        {
+		{
 			if(this.dateTimePickerMax.Value <= this.dateTimePickerMin.Value)
-            {
+			{
 				AlertBox.Show("Max date must be greather than Min date",MessageBoxIcon.Error);
 				Application.Play(MessageBoxIcon.Error);
 				return;
@@ -48,6 +48,6 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 			this.kendoDateTimePicker1.Options.interval = this.numericUpDownInterval.Value;
 
 			this.kendoDateTimePicker1.Update();
-        }
-    }
+		}
+	}
 }

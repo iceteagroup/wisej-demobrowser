@@ -20,6 +20,77 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 
 		private void kendoChart_Load(object sender, EventArgs e)
 		{
+			this.kendoChart1.Options.theme = "material";
+
+			this.kendoChart1.Options.title = new
+			{
+				text = "Site Visitors Stats \n /thousands/"
+			};
+
+			this.kendoChart1.Options.legend = new
+			{
+				visible = false
+			};
+
+			this.kendoChart1.Options.seriesDefaults = new
+			{
+				type = "bar"
+			};
+
+			this.kendoChart1.Options.series = new[]
+			{
+				new
+				{
+					name = "Total Visits",
+					data = new int[]
+					{
+						56000,
+						63000,
+						74000,
+						91000,
+						117000,
+						138000
+					}
+				},
+				new
+				{
+					name = "Unique Visitors",
+					data = new int[]
+					{
+						52000,
+						34000,
+						23000,
+						48000,
+						67000,
+						83000
+					}
+				}
+			};
+
+			this.kendoChart1.Options.valuesAxis = new
+			{
+				max = 140000,
+				line = new {visible = false},
+				minorGridLines = new {visible = true},
+				labels = new {rotation = "auto"}
+			};
+
+			this.kendoChart1.Options.categoryAxis = new
+			{
+				labels = new {visible = true},
+				categories = new string[]
+				{
+					"Jan",
+					"Feb",
+					"Mar",
+					"Apr",
+					"May",
+					"Jun"
+				},
+				majorguidelines = new {visible = true}
+			};
+
+			this.kendoChart1.Options.tooltip = new {visible = true, template = "#= series.name #: #= value #"};
 		}
 
 		private void kendoChart1_WidgetEvent(object sender, WidgetEventArgs e)

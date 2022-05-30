@@ -13,6 +13,67 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 			this.kendoAutoComplete1.Instance.onSelect += new WidgetEventHandler(kendoAutoComplete1_WidgetEvent);
 		}
 
+		private void kendoAutoComplete_Load(object sender, EventArgs e)
+		{
+			this.kendoAutoComplete1.Options.dataSource = new string[]
+			{
+				"Albania",
+				"Andorra",
+				"Armenia",
+				"Austria",
+				"Azerbaijan",
+				"Belarus",
+				"Belgium",
+				"Bosnia & Herzegovina",
+				"Bulgaria",
+				"Croatia",
+				"Cyprus",
+				"Czech Republic",
+				"Denmark",
+				"Estonia",
+				"Finland",
+				"France",
+				"Georgia",
+				"Germany",
+				"Greece",
+				"Hungary",
+				"Iceland",
+				"Ireland",
+				"Italy",
+				"Kosovo",
+				"Latvia",
+				"Liechtenstein",
+				"Lithuania",
+				"Luxembourg",
+				"Macedonia",
+				"Malta",
+				"Moldova",
+				"Monaco",
+				"Montenegro",
+				"Netherlands",
+				"Norway",
+				"Poland",
+				"Portugal",
+				"Romania",
+				"Russia",
+				"San Marino",
+				"Serbia",
+				"Slovakia",
+				"Slovenia",
+				"Spain",
+				"Sweden",
+				"Switzerland",
+				"Turkey",
+				"Ukraine",
+				"United Kingdom",
+				"Vatican City"
+			};
+
+			this.kendoAutoComplete1.Options.filter = "startswith";
+			this.kendoAutoComplete1.Options.placeholder = "Select country...";
+			this.kendoAutoComplete1.Options.separator = ", ";
+
+		}
 		private void kendoAutoComplete1_WidgetEvent(object sender, WidgetEventArgs e)
 		{
 			AlertBox.Show(

@@ -17,6 +17,7 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 		{
 			this.dateTimePickerMin.Value = DateTime.Now.AddYears(-1);
 			this.dateTimePickerMax.Value = DateTime.Now.AddYears(1);
+			this.kendoCalendar1.Options.componentType = "modern";
 		}
 
 		private async void kendoCalendar1_WidgetEvent(object sender, WidgetEventArgs e)
@@ -33,11 +34,11 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 			Application.Play(MessageBoxIcon.Information);
 		}
 
-        private void buttonUpdate_Click(object sender, EventArgs e)
-        {
+		private void buttonUpdate_Click(object sender, EventArgs e)
+		{
 			this.kendoCalendar1.Options.min = this.dateTimePickerMin.Value;
 			this.kendoCalendar1.Options.max = this.dateTimePickerMax.Value;
 			this.kendoCalendar1.Options.weekNumber = this.checkBoxWeekNumber.Checked;
 		}
-    }
+	}
 }

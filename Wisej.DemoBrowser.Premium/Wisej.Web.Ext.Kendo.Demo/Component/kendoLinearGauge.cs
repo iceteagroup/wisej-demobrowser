@@ -10,6 +10,41 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 			InitializeComponent();
 		}
 
+		private void kendoLinearGauge_Load(object sender, EventArgs e)
+		{
+			this.kendoLinearGauge1.Options.pointer = new { value = 20 };
+
+			this.kendoLinearGauge1.Options.scale = new
+			{
+				majorUnit = 20,
+				minorUnit = 2,
+				min = -40,
+				max = 60,
+				vertical = true,
+				ranges = new[]
+				{
+					new
+					{
+						from = -40,
+						to = -20,
+						color = "#2798df"
+					},
+					new
+					{
+						from = 30,
+						to = 40,
+						color = "#ffc700"
+					},
+					new
+					{
+						from = 45,
+						to = 60,
+						color = "#c20000"
+					},
+				}
+			};
+		}
+
 		private void buttonUpdate_Click(object sender, EventArgs e)
 		{
 			this.kendoLinearGauge1.Options.transitions = this.checkBox1.Checked;
@@ -46,5 +81,6 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 		}
 		private int taskCount;
 
+		
 	}
 }

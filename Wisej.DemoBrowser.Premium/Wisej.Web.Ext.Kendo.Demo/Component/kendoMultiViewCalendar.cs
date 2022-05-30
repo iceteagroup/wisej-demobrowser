@@ -46,5 +46,5 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 
 			this.kendoMultiViewCalendar1.Update();
 		}
-    }
+	}
 }

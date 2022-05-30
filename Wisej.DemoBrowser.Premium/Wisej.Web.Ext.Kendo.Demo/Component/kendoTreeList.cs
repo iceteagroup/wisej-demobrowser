@@ -17,6 +17,53 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 
 		private void kendoTreeList_Load(object sender, EventArgs e)
 		{
+			this.kendoTreeList1.Options.editable = "inline";
+			this.kendoTreeList1.Options.columns = new object[]
+			{
+				new
+				{
+					field = "FirstName",
+					title = "First Name",
+					width = 280, template = "()=>getPhotoTemplate()"
+				},
+				new
+				{
+					field = "LastName",
+					title = "Last Name",
+					width = 160
+				},
+				new
+				{
+					field = "Position"
+				},
+				new
+				{
+					field = "Phone",
+					width = 200
+				},
+				new
+				{
+					field = "Extension",
+					width = 140
+				},
+				new
+				{
+					field = "Address"
+				},
+				new
+				{
+					title = "Edit",
+					command = new object[]
+					{
+						"edit"
+					},
+					width = 140
+				}
+			};
+			this.kendoTreeList1.Options.columnMenu = true;
+			this.kendoTreeList1.Options.selectable = true;
+
+
 			this.kendoTreeList1.Options.dataSource = new
 			{
 				data = LoadEmployees(),
@@ -68,8 +115,8 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 			}
 		}
 
-        private void buttonUpdate_Click(object sender, EventArgs e)
-        {
+		private void buttonUpdate_Click(object sender, EventArgs e)
+		{
 			this.kendoTreeList1.Options.resizable = this.checkBoxResizable.Checked;
 			this.kendoTreeList1.Options.columnMenu = this.checkBoxColumnMenu.Checked;
 			this.kendoTreeList1.Options.editable = this.comboBoxEditMode.SelectedItem;	
@@ -78,6 +125,6 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 				this.kendoTreeList1.Options.columns[i].filterable = this.checkBoxFiltrable.Checked;
 			
 			this.kendoTreeList1.Update();
-        }
-    }
+		}
+	}
 }

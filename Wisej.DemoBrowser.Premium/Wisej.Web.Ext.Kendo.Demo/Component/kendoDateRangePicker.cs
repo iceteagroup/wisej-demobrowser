@@ -33,13 +33,13 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 		}
 
 		protected override void OnLoad(EventArgs e)
-        {
-            base.OnLoad(e);
+		{
+			base.OnLoad(e);
 
 			this.comboBoxDepth.SelectedIndex = 0;
-        }
-        private async void buttonUpdate_Click(object sender, EventArgs e)
-        {
+		}
+		private async void buttonUpdate_Click(object sender, EventArgs e)
+		{
 			if (this.dateTimePickerMax.Value <= this.dateTimePickerMin.Value)
 			{
 				AlertBox.Show("Max date must be greather than Min date", MessageBoxIcon.Error);
@@ -55,5 +55,5 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 
 			this.kendoDateRangePicker1.Update();
 		}
-    }
+	}
 }

@@ -16,7 +16,56 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 
 		private void kendoStockChart_Load(object sender, EventArgs e)
 		{
-			var serviceUrl = this.kendoStockChart1.GetServiceURL();
+			this.kendoStockChart1.Options.title = new
+			{
+				text = "The Boeing Company NYSE:BA"
+			};
+
+			this.kendoStockChart1.Options.dateField = "Date";
+
+			this.kendoStockChart1.Options.series = new object[]
+			{
+				new
+				{
+					type = "candlestick",
+					openField = "Open",
+					highField = "High",
+					lowField = "Low",
+					closeField = "Close"
+				}
+			};
+
+			this.kendoStockChart1.Options.categoryAxis = new
+			{
+				labels = new
+				{
+					rotation = "auto"
+				}
+			};
+
+			this.kendoStockChart1.Options.navigator = new
+			{
+				series = new
+				{
+					type = "area",
+					field = "Close"
+				},
+				select = new
+				{
+					from = "2009/02/05",
+					to = "2011/10/07"
+				},
+				categoryAxis = new
+				{
+					labels = new
+					{
+						rotation = "auto"
+					}
+				}
+			};
+
+
+			var serviceUrl = kendoStockChart1.GetServiceURL();
 			this.kendoStockChart1.Options.dataSource = new
 			{
 				transport = new
@@ -56,8 +105,8 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 		private void kendoStockChart1_WidgetEvent(object sender, WidgetEventArgs e)
 		{
 			AlertBox.Show(
-					$"<b>{e.Type}</b><br/>{JSON.Stringify(e.Data)}",
-					MessageBoxIcon.Information);
+				$"<b>{e.Type}</b><br/>{JSON.Stringify(e.Data)}",
+				MessageBoxIcon.Information);
 
 			Application.Play(MessageBoxIcon.Information);
 		}
@@ -69,7 +118,9 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 			var bytes = Convert.FromBase64String(base64);
 
 			using (var ms = new MemoryStream(bytes))
+			{
 				Application.Download(ms, "kendoStockChart.pdf");
+			}
 		}
 
 		private async void buttonExportImage_Click(object sender, EventArgs e)
@@ -77,14 +128,16 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 			var dataUrl = await this.kendoStockChart1.Instance.imageDataURLAsync();
 			var base64 = dataUrl.Replace("data:image/png;base64,", "");
 			var bytes = Convert.FromBase64String(base64);
-			
+
 			using (var ms = new MemoryStream(bytes))
+			{
 				Application.Download(ms, "kendoStockChart.png");
+			}
 		}
 
-        private void buttonUpdate_Click(object sender, EventArgs e)
-        {
-			this.kendoStockChart1.Options.title.text = this.textBoxTitle.Text;
-        }
-    }
+		private void buttonUpdate_Click(object sender, EventArgs e)
+		{
+			this.kendoStockChart1.Options.title.text = textBoxTitle.Text;
+		}
+	}
 }

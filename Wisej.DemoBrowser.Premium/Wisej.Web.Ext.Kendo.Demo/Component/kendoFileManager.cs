@@ -19,6 +19,49 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 		private void kendoFileManager_Load(object sender, EventArgs e)
 		{
 			var serviceUrl = ((IWisejHandler)this.kendoFileManager1).GetServiceURL();
+
+			this.kendoFileManager1.Options.toolbar = new
+			{
+				items = new dynamic[]
+				{
+					new
+					{
+						name = "sortDirection"
+					},
+					new
+					{
+						name = "sortField"
+					},
+					new
+					{
+						name = "changeView"
+					},
+					new
+					{
+						name = "spacer"
+					},
+					new
+					{
+						name = "details"
+					},
+					new
+					{
+						name = "search"
+					}
+				}
+			};
+
+			this.kendoFileManager1.Options.contextMenu = new
+			{
+				items = new dynamic[]
+				{
+					new {name = "rename"}
+				}
+			};
+
+			this.kendoFileManager1.Options.draggable = true;
+			this.kendoFileManager1.Options.resizable = true;
+
 			this.kendoFileManager1.Options.dataSource = new
 			{
 				transport = new
@@ -31,16 +74,16 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 			};
 		}
 
-        private void kendoFileManager1_WebRequest(object sender, WebRequestEventArgs e)
-        {
+		private void kendoFileManager1_WebRequest(object sender, WebRequestEventArgs e)
+		{
 			e.Response.ContentType = "application/json";
 			switch (e.Request["action"])
-            {
+			{
 				case "create":
 					break;
 
 				case "read":
-                    e.Response.Write(GetFiles(e.Request["target"]));
+					e.Response.Write(GetFiles(e.Request["target"]));
 					break;
 
 				case "update":
@@ -50,11 +93,11 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 
 				default:
 					break;
-            }
-        }
+			}
+		}
 
 		private string GetFiles(string path)
-        {
+		{
 			var response = new List<dynamic>();
 			var basePath = Application.MapPath("Data/FileManager");
 			var currentPath = Application.MapPath($"Data/FileManager" + path ?? "");
@@ -86,7 +129,7 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 		private void kendoFileManager1_WidgetEvent(object sender, WidgetEventArgs e)
 		{
 			switch (e.Type)
-            {
+			{
 				case "open":
 					AlertBox.Show($"Open {e.Data.entry.path}");
 					break;
@@ -96,7 +139,7 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 					$"<b>{e.Type}</b><br/>{JSON.Stringify(e.Data)}",
 					MessageBoxIcon.Information);
 					break;
-            }
+			}
 
 			Application.Play(MessageBoxIcon.Information);
 		}
