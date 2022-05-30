@@ -22,15 +22,15 @@ namespace Wisej.DemoBrowser.DataRepeater
 		{
 			this.dataRepeater1.ItemCount = ITEM_COUNT;
 
+			var faker = new Faker();
 			for (int i = 0; i < ITEM_COUNT; i++)
 			{
-				var faker = new Faker();
 				this.users.Add(new
 				{
-					Address = faker.Person.Email,
 					Name = faker.Name.FullName(),
+					Address = faker.Internet.Email(),
 					Phone = faker.Phone.PhoneNumber(),
-					Company = faker.Person.Company.Name,
+					Company = faker.Company.CompanyName(),
 					Picture = ImageHelper.GetRandomPerson(),
 				});
 			}

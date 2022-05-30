@@ -30,13 +30,12 @@
         {
             this.dataRepeater1 = new Wisej.Web.DataRepeater();
             this.panel1 = new Wisej.Web.Panel();
+            this.labelEmail = new Wisej.Web.Label();
+            this.labelCompany = new Wisej.Web.Label();
             this.buttonSelect = new Wisej.Web.Button();
             this.labelName = new Wisej.Web.Label();
             this.pictureBoxProfile = new Wisej.Web.PictureBox();
-            this.spacer1 = new Wisej.Web.Spacer();
             this.checkBoxScrollbar = new Wisej.Web.CheckBox();
-            this.labelCompany = new Wisej.Web.Label();
-            this.labelEmail = new Wisej.Web.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataRepeater1)).BeginInit();
             this.dataRepeater1.ItemTemplate.SuspendLayout();
             this.dataRepeater1.SuspendLayout();
@@ -49,6 +48,7 @@
             this.dataRepeater1.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
             | Wisej.Web.AnchorStyles.Left) 
             | Wisej.Web.AnchorStyles.Right)));
+            this.dataRepeater1.BackgroundImageLayout = Wisej.Web.ImageLayout.Tile;
             this.dataRepeater1.BorderStyle = Wisej.Web.BorderStyle.None;
             this.dataRepeater1.CssStyle = "border-radius: 4px;";
             this.dataRepeater1.ItemHeaderVisible = false;
@@ -57,7 +57,6 @@
             // dataRepeater1.ItemTemplate
             // 
             this.dataRepeater1.ItemTemplate.Controls.Add(this.panel1);
-            this.dataRepeater1.ItemTemplate.Controls.Add(this.spacer1);
             this.dataRepeater1.ItemTemplate.CssStyle = "border-bottom: none;";
             this.dataRepeater1.ItemTemplate.Size = new System.Drawing.Size(1024, 94);
             this.dataRepeater1.Location = new System.Drawing.Point(199, 19);
@@ -72,6 +71,9 @@
             // 
             // panel1
             // 
+            this.panel1.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
+            | Wisej.Web.AnchorStyles.Left) 
+            | Wisej.Web.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(this.labelEmail);
             this.panel1.Controls.Add(this.labelCompany);
@@ -80,13 +82,32 @@
             this.panel1.Controls.Add(this.pictureBoxProfile);
             this.panel1.CssStyle = "transition: background-color 0.2s ease;\r\nbox-shadow: rgba(0, 0, 0, 0.16) 0px 1px " +
     "4px;";
-            this.panel1.Dock = Wisej.Web.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Location = new System.Drawing.Point(3, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1024, 78);
+            this.panel1.Size = new System.Drawing.Size(1016, 88);
             this.panel1.TabIndex = 7;
             this.panel1.MouseEnter += new System.EventHandler(this.panel1_MouseEnter);
             this.panel1.MouseLeave += new System.EventHandler(this.panel1_MouseLeave);
+            // 
+            // labelEmail
+            // 
+            this.labelEmail.Anonymous = true;
+            this.labelEmail.AutoSize = true;
+            this.labelEmail.Location = new System.Drawing.Point(89, 60);
+            this.labelEmail.Name = "labelEmail";
+            this.labelEmail.Size = new System.Drawing.Size(88, 15);
+            this.labelEmail.TabIndex = 12;
+            this.labelEmail.Text = "Email Address";
+            // 
+            // labelCompany
+            // 
+            this.labelCompany.Anonymous = true;
+            this.labelCompany.AutoSize = true;
+            this.labelCompany.Location = new System.Drawing.Point(89, 36);
+            this.labelCompany.Name = "labelCompany";
+            this.labelCompany.Size = new System.Drawing.Size(77, 15);
+            this.labelCompany.TabIndex = 11;
+            this.labelCompany.Text = "ACME Corp.";
             // 
             // buttonSelect
             // 
@@ -96,9 +117,9 @@
             this.buttonSelect.Cursor = Wisej.Web.Cursors.Hand;
             this.buttonSelect.Dock = Wisej.Web.DockStyle.Right;
             this.buttonSelect.ImageSource = "icon-right";
-            this.buttonSelect.Location = new System.Drawing.Point(971, 0);
+            this.buttonSelect.Location = new System.Drawing.Point(963, 0);
             this.buttonSelect.Name = "buttonSelect";
-            this.buttonSelect.Size = new System.Drawing.Size(53, 78);
+            this.buttonSelect.Size = new System.Drawing.Size(53, 88);
             this.buttonSelect.TabIndex = 9;
             this.buttonSelect.Click += new System.EventHandler(this.buttonSelect_Click);
             // 
@@ -107,9 +128,9 @@
             this.labelName.Anonymous = true;
             this.labelName.AutoSize = true;
             this.labelName.Font = new System.Drawing.Font("@defaultBold", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.labelName.Location = new System.Drawing.Point(89, 7);
+            this.labelName.Location = new System.Drawing.Point(89, 13);
             this.labelName.Name = "labelName";
-            this.labelName.Size = new System.Drawing.Size(116, 18);
+            this.labelName.Size = new System.Drawing.Size(116, 15);
             this.labelName.TabIndex = 5;
             this.labelName.Text = "Name LastName 0";
             // 
@@ -117,17 +138,10 @@
             // 
             this.pictureBoxProfile.Anonymous = true;
             this.pictureBoxProfile.CssStyle = "border-radius: 100px;\r\nborder: 2px solid gray;";
-            this.pictureBoxProfile.Location = new System.Drawing.Point(12, 7);
+            this.pictureBoxProfile.Location = new System.Drawing.Point(12, 12);
             this.pictureBoxProfile.Name = "pictureBoxProfile";
             this.pictureBoxProfile.Size = new System.Drawing.Size(65, 65);
             this.pictureBoxProfile.SizeMode = Wisej.Web.PictureBoxSizeMode.Zoom;
-            // 
-            // spacer1
-            // 
-            this.spacer1.Dock = Wisej.Web.DockStyle.Bottom;
-            this.spacer1.Location = new System.Drawing.Point(0, 78);
-            this.spacer1.Name = "spacer1";
-            this.spacer1.Size = new System.Drawing.Size(1024, 16);
             // 
             // checkBoxScrollbar
             // 
@@ -135,30 +149,10 @@
             this.checkBoxScrollbar.Location = new System.Drawing.Point(19, 19);
             this.checkBoxScrollbar.Name = "checkBoxScrollbar";
             this.checkBoxScrollbar.Padding = new Wisej.Web.Padding(0, 0, 0, 16);
-            this.checkBoxScrollbar.Size = new System.Drawing.Size(144, 36);
+            this.checkBoxScrollbar.Size = new System.Drawing.Size(146, 33);
             this.checkBoxScrollbar.TabIndex = 1;
             this.checkBoxScrollbar.Text = "Scrollbar Visible";
             this.checkBoxScrollbar.CheckedChanged += new System.EventHandler(this.checkBoxScrollbar_CheckedChanged);
-            // 
-            // labelCompany
-            // 
-            this.labelCompany.Anonymous = true;
-            this.labelCompany.AutoSize = true;
-            this.labelCompany.Location = new System.Drawing.Point(89, 30);
-            this.labelCompany.Name = "labelCompany";
-            this.labelCompany.Size = new System.Drawing.Size(73, 18);
-            this.labelCompany.TabIndex = 11;
-            this.labelCompany.Text = "ACME Corp.";
-            // 
-            // labelEmail
-            // 
-            this.labelEmail.Anonymous = true;
-            this.labelEmail.AutoSize = true;
-            this.labelEmail.Location = new System.Drawing.Point(89, 54);
-            this.labelEmail.Name = "labelEmail";
-            this.labelEmail.Size = new System.Drawing.Size(85, 18);
-            this.labelEmail.TabIndex = 12;
-            this.labelEmail.Text = "Email Address";
             // 
             // Features
             // 
@@ -182,7 +176,6 @@
 		#endregion
 
 		private Web.DataRepeater dataRepeater1;
-        private Web.Spacer spacer1;
         private Web.Panel panel1;
         private Web.Label labelName;
         private Web.PictureBox pictureBoxProfile;
