@@ -540,7 +540,7 @@
 				"assembly": "Features, Wisej.DemoBrowser.PropertyGrid.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/PropertySnippet.svg",
 				"docsUrl": "https://docs.wisej.com/docs/controls/lists/propertygrid",
-				"description-en": "The <b>Wisej.Web.PropertyGrid</b> provides a user interface for browsing the properties of an object.",
+				"description-en": "The <b>Wisej.Web.PropertyGrid</b> provides a user interface for browsing the properties of an object. This demo uses data binding to push property changes from the PropertyGrid to the card. Scanning the QR code will trigger an update on this page with information about the scanning device."
 			}
 		},
 		"DataGridView": {

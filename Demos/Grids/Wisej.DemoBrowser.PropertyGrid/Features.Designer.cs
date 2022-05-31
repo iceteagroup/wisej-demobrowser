@@ -30,18 +30,19 @@
         {
             this.propertyGrid1 = new Wisej.Web.PropertyGrid();
             this.personCard1 = new Wisej.DemoBrowser.PropertyGrid.PersonCard();
-            this.flowLayoutPanel1 = new Wisej.Web.FlowLayoutPanel();
-            this.flowLayoutPanel1.SuspendLayout();
+            this.panel1 = new Wisej.Web.Panel();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // propertyGrid1
             // 
-            this.flowLayoutPanel1.SetFillWeight(this.propertyGrid1, 1);
-            this.propertyGrid1.Location = new System.Drawing.Point(3, 3);
-            this.propertyGrid1.MaximumSize = new System.Drawing.Size(500, 0);
-            this.propertyGrid1.MinimumSize = new System.Drawing.Size(350, 0);
+            this.propertyGrid1.Dock = Wisej.Web.DockStyle.Right;
+            this.propertyGrid1.Location = new System.Drawing.Point(1098, 5);
             this.propertyGrid1.Name = "propertyGrid1";
-            this.propertyGrid1.Size = new System.Drawing.Size(350, 298);
+            this.propertyGrid1.NameFillWeight = 25F;
+            this.propertyGrid1.RowHeadersVisible = false;
+            this.propertyGrid1.SelectedObject = this.personCard1;
+            this.propertyGrid1.Size = new System.Drawing.Size(319, 464);
             this.propertyGrid1.TabIndex = 0;
             // 
             // 
@@ -50,42 +51,39 @@
             // 
             // personCard1
             // 
-            this.flowLayoutPanel1.SetFillWeight(this.personCard1, 2);
-            this.personCard1.Location = new System.Drawing.Point(359, 3);
+            this.personCard1.Anchor = Wisej.Web.AnchorStyles.None;
+            this.personCard1.Location = new System.Drawing.Point(305, 83);
             this.personCard1.MaximumSize = new System.Drawing.Size(700, 0);
             this.personCard1.MinimumSize = new System.Drawing.Size(400, 0);
             this.personCard1.Name = "personCard1";
-            this.personCard1.Size = new System.Drawing.Size(596, 298);
+            this.personCard1.Size = new System.Drawing.Size(482, 298);
             this.personCard1.TabIndex = 1;
             // 
-            // flowLayoutPanel1
+            // panel1
             // 
-            this.flowLayoutPanel1.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Left | Wisej.Web.AnchorStyles.Right)));
-            this.flowLayoutPanel1.AutoSize = true;
-            this.flowLayoutPanel1.Controls.Add(this.propertyGrid1);
-            this.flowLayoutPanel1.Controls.Add(this.personCard1);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(232, 83);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(958, 309);
-            this.flowLayoutPanel1.TabIndex = 0;
+            this.panel1.Controls.Add(this.personCard1);
+            this.panel1.Dock = Wisej.Web.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(5, 5);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1093, 464);
+            this.panel1.TabIndex = 2;
             // 
             // Features
             // 
-            this.AutoScroll = true;
-            this.AutoScrollMargin = new System.Drawing.Size(0, 20);
-            this.Controls.Add(this.flowLayoutPanel1);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.propertyGrid1);
+            this.MinimumSize = new System.Drawing.Size(811, 312);
             this.Name = "Features";
             this.Padding = new Wisej.Web.Padding(5);
             this.Load += new System.EventHandler(this.Features_Load);
-            this.flowLayoutPanel1.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
         private Web.PropertyGrid propertyGrid1;
         private PersonCard personCard1;
-        private Web.FlowLayoutPanel flowLayoutPanel1;
+        private Web.Panel panel1;
     }
 }
