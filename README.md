@@ -27,7 +27,7 @@
 ## About The Project
 ![Wisej.NET Demo Browser](https://user-images.githubusercontent.com/21205878/171468885-7c1ba463-b88f-4e3c-ad20-bf03593b3445.png)
 
-The Wisej.NET Demo Browser includes live examples of the entire Wisej.NET control suite. Each demo consists of relevant links to documentation source code.
+The Wisej.NET Demo Browser includes live examples of the entire Wisej.NET control suite. Each demo consists of relevant links to the documentation and source code.
 
 ## About Wisej.NET
 
