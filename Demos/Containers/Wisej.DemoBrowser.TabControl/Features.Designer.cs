@@ -80,7 +80,6 @@
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.CssClass = "shadow";
-            this.tabControl1.CssStyle = "border-radius: 4px;";
             this.tabControl1.Location = new System.Drawing.Point(3, 2);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.PageInsets = new Wisej.Web.Padding(0, 40, 0, 0);

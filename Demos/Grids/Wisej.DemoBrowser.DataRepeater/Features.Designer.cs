@@ -50,7 +50,7 @@
             | Wisej.Web.AnchorStyles.Right)));
             this.dataRepeater1.BackgroundImageLayout = Wisej.Web.ImageLayout.Tile;
             this.dataRepeater1.BorderStyle = Wisej.Web.BorderStyle.None;
-            this.dataRepeater1.CssStyle = "border-radius: 4px;";
+            this.dataRepeater1.CssClass = "shadow";
             this.dataRepeater1.ItemHeaderVisible = false;
             this.dataRepeater1.ItemSize = new System.Drawing.Size(200, 94);
             // 

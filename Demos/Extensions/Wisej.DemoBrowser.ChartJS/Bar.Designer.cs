@@ -41,8 +41,8 @@
             // 
             this.chartJS1.Anchor = Wisej.Web.AnchorStyles.None;
             this.chartJS1.BackColor = System.Drawing.Color.White;
-            this.chartJS1.BorderStyle = Wisej.Web.BorderStyle.Dashed;
             this.chartJS1.ChartType = Wisej.Web.Ext.ChartJS.ChartType.Bar;
+            this.chartJS1.CssClass = "shadow";
             this.flowLayoutPanel1.SetFillWeight(this.chartJS1, 3);
             this.chartJS1.Location = new System.Drawing.Point(295, 3);
             this.chartJS1.MinimumSize = new System.Drawing.Size(300, 0);

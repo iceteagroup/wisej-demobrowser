@@ -42,6 +42,7 @@
             // ckEditor1
             // 
             this.ckEditor1.Anchor = Wisej.Web.AnchorStyles.None;
+            this.ckEditor1.CssClass = "shadow";
             this.flowLayoutPanel1.SetFillWeight(this.ckEditor1, 2);
             this.ckEditor1.Location = new System.Drawing.Point(573, 3);
             this.ckEditor1.MaximumSize = new System.Drawing.Size(700, 0);

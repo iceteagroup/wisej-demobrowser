@@ -154,7 +154,7 @@
             this.panel10.Controls.Add(this.chartJS35);
             this.panel10.Controls.Add(this.label18);
             this.panel10.Controls.Add(this.label19);
-            this.panel10.CssStyle = "border-radius: 4px;\r\nbox-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;";
+            this.panel10.CssClass = "shadow";
             this.panel10.Dock = Wisej.Web.DockStyle.Fill;
             this.panel10.Location = new System.Drawing.Point(703, 288);
             this.panel10.Name = "panel10";
@@ -233,7 +233,7 @@
             this.panel8.BackColor = System.Drawing.Color.White;
             this.panel8.Controls.Add(this.justGage2);
             this.panel8.Controls.Add(this.label10);
-            this.panel8.CssStyle = "border-radius: 4px;\r\nbox-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;";
+            this.panel8.CssClass = "shadow";
             this.panel8.Dock = Wisej.Web.DockStyle.Fill;
             this.panel8.Location = new System.Drawing.Point(1228, 117);
             this.panel8.Name = "panel8";
@@ -269,7 +269,7 @@
             this.panel7.BackColor = System.Drawing.Color.White;
             this.panel7.Controls.Add(this.justGage1);
             this.panel7.Controls.Add(this.label2);
-            this.panel7.CssStyle = "border-radius: 4px;\r\nbox-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;";
+            this.panel7.CssClass = "shadow";
             this.panel7.Dock = Wisej.Web.DockStyle.Fill;
             this.panel7.Location = new System.Drawing.Point(1053, 117);
             this.panel7.Name = "panel7";
@@ -305,7 +305,7 @@
             this.chartJS31.BackColor = System.Drawing.Color.White;
             this.chartJS31.ChartType = Wisej.Web.Ext.ChartJS3.ChartType.Bar;
             this.tableLayoutPanel1.SetColumnSpan(this.chartJS31, 6);
-            this.chartJS31.CssStyle = "border-radius: 4px;\r\nbox-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;";
+            this.chartJS31.CssClass = "shadow";
             this.chartJS31.Dock = Wisej.Web.DockStyle.Fill;
             this.chartJS31.Labels = new string[] {
         "test"};
@@ -350,7 +350,7 @@
             this.tableLayoutPanel1.SetColumnSpan(this.panel1, 3);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.CssStyle = "border-radius: 4px;\r\nbox-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;";
+            this.panel1.CssClass = "shadow";
             this.panel1.Dock = Wisej.Web.DockStyle.Fill;
             this.panel1.ForeColor = System.Drawing.Color.FromArgb(32, 32, 32);
             this.panel1.Location = new System.Drawing.Point(878, 3);
@@ -391,7 +391,7 @@
             this.panel2.BackColor = System.Drawing.Color.White;
             this.panel2.Controls.Add(this.label7);
             this.panel2.Controls.Add(this.label4);
-            this.panel2.CssStyle = "border-radius: 4px;\r\nbox-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;";
+            this.panel2.CssClass = "shadow";
             this.panel2.Dock = Wisej.Web.DockStyle.Fill;
             this.panel2.ForeColor = System.Drawing.Color.FromArgb(32, 32, 32);
             this.panel2.Location = new System.Drawing.Point(3, 3);
@@ -431,7 +431,7 @@
             this.panel3.BackColor = System.Drawing.Color.White;
             this.panel3.Controls.Add(this.label8);
             this.panel3.Controls.Add(this.label5);
-            this.panel3.CssStyle = "border-radius: 4px;\r\nbox-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;";
+            this.panel3.CssClass = "shadow";
             this.panel3.Dock = Wisej.Web.DockStyle.Fill;
             this.panel3.ForeColor = System.Drawing.Color.FromArgb(32, 32, 32);
             this.panel3.Location = new System.Drawing.Point(178, 3);
@@ -471,7 +471,7 @@
             this.panel4.BackColor = System.Drawing.Color.White;
             this.panel4.Controls.Add(this.label9);
             this.panel4.Controls.Add(this.label6);
-            this.panel4.CssStyle = "border-radius: 4px;\r\nbox-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;";
+            this.panel4.CssClass = "shadow";
             this.panel4.Dock = Wisej.Web.DockStyle.Fill;
             this.panel4.ForeColor = System.Drawing.Color.FromArgb(32, 32, 32);
             this.panel4.Location = new System.Drawing.Point(353, 3);
@@ -511,7 +511,7 @@
             this.panel6.BackColor = System.Drawing.Color.White;
             this.panel6.Controls.Add(this.label12);
             this.panel6.Controls.Add(this.label13);
-            this.panel6.CssStyle = "border-radius: 4px;\r\nbox-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;";
+            this.panel6.CssClass = "shadow";
             this.panel6.Dock = Wisej.Web.DockStyle.Fill;
             this.panel6.ForeColor = System.Drawing.Color.FromArgb(32, 32, 32);
             this.panel6.Location = new System.Drawing.Point(528, 3);
@@ -551,7 +551,7 @@
             this.panel5.BackColor = System.Drawing.Color.White;
             this.panel5.Controls.Add(this.label14);
             this.panel5.Controls.Add(this.label15);
-            this.panel5.CssStyle = "border-radius: 4px;\r\nbox-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;";
+            this.panel5.CssClass = "shadow";
             this.panel5.Dock = Wisej.Web.DockStyle.Fill;
             this.panel5.ForeColor = System.Drawing.Color.FromArgb(32, 32, 32);
             this.panel5.Location = new System.Drawing.Point(703, 3);
@@ -593,7 +593,7 @@
             this.panel9.Controls.Add(this.chartJS34);
             this.panel9.Controls.Add(this.label17);
             this.panel9.Controls.Add(this.label16);
-            this.panel9.CssStyle = "border-radius: 4px;\r\nbox-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;";
+            this.panel9.CssClass = "shadow";
             this.panel9.Dock = Wisej.Web.DockStyle.Fill;
             this.panel9.Location = new System.Drawing.Point(3, 288);
             this.panel9.Name = "panel9";

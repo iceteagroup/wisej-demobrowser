@@ -53,10 +53,10 @@
             this.nudBorderLeftRadius = new Wisej.Web.NumericUpDown();
             this.label4 = new Wisej.Web.Label();
             this.flowLayoutPanel1 = new Wisej.Web.FlowLayoutPanel();
-            this.shape1 = new Wisej.Web.Shape();
-            this.panel5 = new Wisej.Web.Panel();
-            this.spacer1 = new Wisej.Web.Spacer();
             this.spacer2 = new Wisej.Web.Spacer();
+            this.spacer1 = new Wisej.Web.Spacer();
+            this.panel5 = new Wisej.Web.Panel();
+            this.shape1 = new Wisej.Web.Shape();
             this.spacer3 = new Wisej.Web.Spacer();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudBorderTopSize)).BeginInit();
@@ -77,13 +77,15 @@
             // panel1
             // 
             this.panel1.Anchor = Wisej.Web.AnchorStyles.None;
-            this.panel1.BorderStyle = Wisej.Web.BorderStyle.Dashed;
+            this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.btnBorderTopColor);
             this.panel1.Controls.Add(this.cmbBorderTopStyle);
             this.panel1.Controls.Add(this.nudBorderTopSize);
             this.panel1.Controls.Add(this.nudBorderTopRadius);
-            this.panel1.Location = new System.Drawing.Point(629, 3);
+            this.panel1.CssClass = "shadow";
+            this.panel1.Location = new System.Drawing.Point(665, 3);
+            this.panel1.Margin = new Wisej.Web.Padding(16, 3, 3, 3);
             this.panel1.MinimumSize = new System.Drawing.Size(145, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(165, 336);
@@ -93,7 +95,7 @@
             // 
             this.label1.Anchor = Wisej.Web.AnchorStyles.None;
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(33, 300);
+            this.label1.Location = new System.Drawing.Point(34, 301);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(96, 18);
             this.label1.TabIndex = 12;
@@ -102,9 +104,9 @@
             // btnBorderTopColor
             // 
             this.btnBorderTopColor.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Left | Wisej.Web.AnchorStyles.Right)));
-            this.btnBorderTopColor.Location = new System.Drawing.Point(21, 17);
+            this.btnBorderTopColor.Location = new System.Drawing.Point(21, 18);
             this.btnBorderTopColor.Name = "btnBorderTopColor";
-            this.btnBorderTopColor.Size = new System.Drawing.Size(120, 43);
+            this.btnBorderTopColor.Size = new System.Drawing.Size(122, 43);
             this.btnBorderTopColor.TabIndex = 11;
             this.btnBorderTopColor.Text = "Top Color";
             this.btnBorderTopColor.Click += new System.EventHandler(this.ChangeColor_Clicked);
@@ -114,9 +116,9 @@
             this.cmbBorderTopStyle.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Left | Wisej.Web.AnchorStyles.Right)));
             this.cmbBorderTopStyle.DropDownStyle = Wisej.Web.ComboBoxStyle.DropDownList;
             this.cmbBorderTopStyle.LabelText = "Style";
-            this.cmbBorderTopStyle.Location = new System.Drawing.Point(18, 81);
+            this.cmbBorderTopStyle.Location = new System.Drawing.Point(18, 82);
             this.cmbBorderTopStyle.Name = "cmbBorderTopStyle";
-            this.cmbBorderTopStyle.Size = new System.Drawing.Size(128, 53);
+            this.cmbBorderTopStyle.Size = new System.Drawing.Size(130, 53);
             this.cmbBorderTopStyle.TabIndex = 10;
             this.cmbBorderTopStyle.Text = "Solid";
             this.cmbBorderTopStyle.SelectedIndexChanged += new System.EventHandler(this.Style_SelectedIndexChanged);
@@ -125,14 +127,14 @@
             // 
             this.nudBorderTopSize.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Left | Wisej.Web.AnchorStyles.Right)));
             this.nudBorderTopSize.LabelText = "Size";
-            this.nudBorderTopSize.Location = new System.Drawing.Point(18, 145);
+            this.nudBorderTopSize.Location = new System.Drawing.Point(18, 146);
             this.nudBorderTopSize.Maximum = new decimal(new int[] {
             360,
             0,
             0,
             0});
             this.nudBorderTopSize.Name = "nudBorderTopSize";
-            this.nudBorderTopSize.Size = new System.Drawing.Size(128, 53);
+            this.nudBorderTopSize.Size = new System.Drawing.Size(130, 53);
             this.nudBorderTopSize.TabIndex = 9;
             this.nudBorderTopSize.ValueChanged += new System.EventHandler(this.Size_ValueChanged);
             // 
@@ -140,27 +142,29 @@
             // 
             this.nudBorderTopRadius.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Left | Wisej.Web.AnchorStyles.Right)));
             this.nudBorderTopRadius.LabelText = "Radius";
-            this.nudBorderTopRadius.Location = new System.Drawing.Point(18, 209);
+            this.nudBorderTopRadius.Location = new System.Drawing.Point(18, 210);
             this.nudBorderTopRadius.Maximum = new decimal(new int[] {
             360,
             0,
             0,
             0});
             this.nudBorderTopRadius.Name = "nudBorderTopRadius";
-            this.nudBorderTopRadius.Size = new System.Drawing.Size(128, 53);
+            this.nudBorderTopRadius.Size = new System.Drawing.Size(130, 53);
             this.nudBorderTopRadius.TabIndex = 8;
             this.nudBorderTopRadius.ValueChanged += new System.EventHandler(this.Radius_ValueChanged);
             // 
             // panel2
             // 
             this.panel2.Anchor = Wisej.Web.AnchorStyles.None;
-            this.panel2.BorderStyle = Wisej.Web.BorderStyle.Dashed;
+            this.panel2.BackColor = System.Drawing.Color.White;
             this.panel2.Controls.Add(this.btnBorderRightColor);
             this.panel2.Controls.Add(this.cmbBorderRightStyle);
             this.panel2.Controls.Add(this.nudBorderRightSize);
             this.panel2.Controls.Add(this.nudBorderRightRadius);
             this.panel2.Controls.Add(this.label2);
-            this.panel2.Location = new System.Drawing.Point(458, 3);
+            this.panel2.CssClass = "shadow";
+            this.panel2.Location = new System.Drawing.Point(481, 3);
+            this.panel2.Margin = new Wisej.Web.Padding(16, 3, 3, 3);
             this.panel2.MinimumSize = new System.Drawing.Size(145, 0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(165, 336);
@@ -169,9 +173,9 @@
             // btnBorderRightColor
             // 
             this.btnBorderRightColor.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Left | Wisej.Web.AnchorStyles.Right)));
-            this.btnBorderRightColor.Location = new System.Drawing.Point(21, 17);
+            this.btnBorderRightColor.Location = new System.Drawing.Point(21, 18);
             this.btnBorderRightColor.Name = "btnBorderRightColor";
-            this.btnBorderRightColor.Size = new System.Drawing.Size(120, 43);
+            this.btnBorderRightColor.Size = new System.Drawing.Size(122, 43);
             this.btnBorderRightColor.TabIndex = 16;
             this.btnBorderRightColor.Text = "Right Color";
             this.btnBorderRightColor.Click += new System.EventHandler(this.ChangeColor_Clicked);
@@ -181,9 +185,9 @@
             this.cmbBorderRightStyle.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Left | Wisej.Web.AnchorStyles.Right)));
             this.cmbBorderRightStyle.DropDownStyle = Wisej.Web.ComboBoxStyle.DropDownList;
             this.cmbBorderRightStyle.LabelText = "Style";
-            this.cmbBorderRightStyle.Location = new System.Drawing.Point(18, 81);
+            this.cmbBorderRightStyle.Location = new System.Drawing.Point(18, 82);
             this.cmbBorderRightStyle.Name = "cmbBorderRightStyle";
-            this.cmbBorderRightStyle.Size = new System.Drawing.Size(128, 53);
+            this.cmbBorderRightStyle.Size = new System.Drawing.Size(130, 53);
             this.cmbBorderRightStyle.TabIndex = 15;
             this.cmbBorderRightStyle.Text = "Solid";
             this.cmbBorderRightStyle.SelectedIndexChanged += new System.EventHandler(this.Style_SelectedIndexChanged);
@@ -192,14 +196,14 @@
             // 
             this.nudBorderRightSize.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Left | Wisej.Web.AnchorStyles.Right)));
             this.nudBorderRightSize.LabelText = "Size";
-            this.nudBorderRightSize.Location = new System.Drawing.Point(18, 145);
+            this.nudBorderRightSize.Location = new System.Drawing.Point(18, 146);
             this.nudBorderRightSize.Maximum = new decimal(new int[] {
             360,
             0,
             0,
             0});
             this.nudBorderRightSize.Name = "nudBorderRightSize";
-            this.nudBorderRightSize.Size = new System.Drawing.Size(128, 53);
+            this.nudBorderRightSize.Size = new System.Drawing.Size(130, 53);
             this.nudBorderRightSize.TabIndex = 14;
             this.nudBorderRightSize.ValueChanged += new System.EventHandler(this.Size_ValueChanged);
             // 
@@ -207,14 +211,14 @@
             // 
             this.nudBorderRightRadius.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Left | Wisej.Web.AnchorStyles.Right)));
             this.nudBorderRightRadius.LabelText = "Radius";
-            this.nudBorderRightRadius.Location = new System.Drawing.Point(18, 209);
+            this.nudBorderRightRadius.Location = new System.Drawing.Point(18, 210);
             this.nudBorderRightRadius.Maximum = new decimal(new int[] {
             360,
             0,
             0,
             0});
             this.nudBorderRightRadius.Name = "nudBorderRightRadius";
-            this.nudBorderRightRadius.Size = new System.Drawing.Size(128, 53);
+            this.nudBorderRightRadius.Size = new System.Drawing.Size(130, 53);
             this.nudBorderRightRadius.TabIndex = 13;
             this.nudBorderRightRadius.ValueChanged += new System.EventHandler(this.Radius_ValueChanged);
             // 
@@ -222,7 +226,7 @@
             // 
             this.label2.Anchor = Wisej.Web.AnchorStyles.None;
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(29, 300);
+            this.label2.Location = new System.Drawing.Point(30, 301);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(105, 18);
             this.label2.TabIndex = 12;
@@ -231,13 +235,15 @@
             // panel3
             // 
             this.panel3.Anchor = Wisej.Web.AnchorStyles.None;
-            this.panel3.BorderStyle = Wisej.Web.BorderStyle.Dashed;
+            this.panel3.BackColor = System.Drawing.Color.White;
             this.panel3.Controls.Add(this.btnBorderBottomColor);
             this.panel3.Controls.Add(this.cmbBorderBottomStyle);
             this.panel3.Controls.Add(this.nudBorderBottomSize);
             this.panel3.Controls.Add(this.nudBorderBottomRadius);
             this.panel3.Controls.Add(this.label3);
-            this.panel3.Location = new System.Drawing.Point(287, 3);
+            this.panel3.CssClass = "shadow";
+            this.panel3.Location = new System.Drawing.Point(297, 3);
+            this.panel3.Margin = new Wisej.Web.Padding(16, 3, 3, 3);
             this.panel3.MinimumSize = new System.Drawing.Size(145, 0);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(165, 336);
@@ -246,9 +252,9 @@
             // btnBorderBottomColor
             // 
             this.btnBorderBottomColor.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Left | Wisej.Web.AnchorStyles.Right)));
-            this.btnBorderBottomColor.Location = new System.Drawing.Point(21, 17);
+            this.btnBorderBottomColor.Location = new System.Drawing.Point(21, 18);
             this.btnBorderBottomColor.Name = "btnBorderBottomColor";
-            this.btnBorderBottomColor.Size = new System.Drawing.Size(120, 43);
+            this.btnBorderBottomColor.Size = new System.Drawing.Size(122, 43);
             this.btnBorderBottomColor.TabIndex = 16;
             this.btnBorderBottomColor.Text = "Bottom Color";
             this.btnBorderBottomColor.Click += new System.EventHandler(this.ChangeColor_Clicked);
@@ -258,9 +264,9 @@
             this.cmbBorderBottomStyle.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Left | Wisej.Web.AnchorStyles.Right)));
             this.cmbBorderBottomStyle.DropDownStyle = Wisej.Web.ComboBoxStyle.DropDownList;
             this.cmbBorderBottomStyle.LabelText = "Style";
-            this.cmbBorderBottomStyle.Location = new System.Drawing.Point(18, 81);
+            this.cmbBorderBottomStyle.Location = new System.Drawing.Point(18, 82);
             this.cmbBorderBottomStyle.Name = "cmbBorderBottomStyle";
-            this.cmbBorderBottomStyle.Size = new System.Drawing.Size(128, 53);
+            this.cmbBorderBottomStyle.Size = new System.Drawing.Size(130, 53);
             this.cmbBorderBottomStyle.TabIndex = 15;
             this.cmbBorderBottomStyle.Text = "Solid";
             this.cmbBorderBottomStyle.SelectedIndexChanged += new System.EventHandler(this.Style_SelectedIndexChanged);
@@ -269,14 +275,14 @@
             // 
             this.nudBorderBottomSize.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Left | Wisej.Web.AnchorStyles.Right)));
             this.nudBorderBottomSize.LabelText = "Size";
-            this.nudBorderBottomSize.Location = new System.Drawing.Point(18, 145);
+            this.nudBorderBottomSize.Location = new System.Drawing.Point(18, 146);
             this.nudBorderBottomSize.Maximum = new decimal(new int[] {
             360,
             0,
             0,
             0});
             this.nudBorderBottomSize.Name = "nudBorderBottomSize";
-            this.nudBorderBottomSize.Size = new System.Drawing.Size(128, 53);
+            this.nudBorderBottomSize.Size = new System.Drawing.Size(130, 53);
             this.nudBorderBottomSize.TabIndex = 14;
             this.nudBorderBottomSize.ValueChanged += new System.EventHandler(this.Size_ValueChanged);
             // 
@@ -284,14 +290,14 @@
             // 
             this.nudBorderBottomRadius.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Left | Wisej.Web.AnchorStyles.Right)));
             this.nudBorderBottomRadius.LabelText = "Radius";
-            this.nudBorderBottomRadius.Location = new System.Drawing.Point(18, 209);
+            this.nudBorderBottomRadius.Location = new System.Drawing.Point(18, 210);
             this.nudBorderBottomRadius.Maximum = new decimal(new int[] {
             360,
             0,
             0,
             0});
             this.nudBorderBottomRadius.Name = "nudBorderBottomRadius";
-            this.nudBorderBottomRadius.Size = new System.Drawing.Size(128, 53);
+            this.nudBorderBottomRadius.Size = new System.Drawing.Size(130, 53);
             this.nudBorderBottomRadius.TabIndex = 13;
             this.nudBorderBottomRadius.ValueChanged += new System.EventHandler(this.Radius_ValueChanged);
             // 
@@ -299,7 +305,7 @@
             // 
             this.label3.Anchor = Wisej.Web.AnchorStyles.None;
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(23, 300);
+            this.label3.Location = new System.Drawing.Point(24, 301);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(117, 18);
             this.label3.TabIndex = 12;
@@ -308,13 +314,15 @@
             // panel4
             // 
             this.panel4.Anchor = Wisej.Web.AnchorStyles.None;
-            this.panel4.BorderStyle = Wisej.Web.BorderStyle.Dashed;
+            this.panel4.BackColor = System.Drawing.Color.White;
             this.panel4.Controls.Add(this.btnBorderLeftColor);
             this.panel4.Controls.Add(this.cmbBorderLeftStyle);
             this.panel4.Controls.Add(this.nudBorderLeftSize);
             this.panel4.Controls.Add(this.nudBorderLeftRadius);
             this.panel4.Controls.Add(this.label4);
-            this.panel4.Location = new System.Drawing.Point(116, 3);
+            this.panel4.CssClass = "shadow";
+            this.panel4.Location = new System.Drawing.Point(113, 3);
+            this.panel4.Margin = new Wisej.Web.Padding(16, 3, 3, 3);
             this.panel4.MinimumSize = new System.Drawing.Size(145, 0);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(165, 336);
@@ -323,9 +331,9 @@
             // btnBorderLeftColor
             // 
             this.btnBorderLeftColor.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Left | Wisej.Web.AnchorStyles.Right)));
-            this.btnBorderLeftColor.Location = new System.Drawing.Point(23, 17);
+            this.btnBorderLeftColor.Location = new System.Drawing.Point(23, 18);
             this.btnBorderLeftColor.Name = "btnBorderLeftColor";
-            this.btnBorderLeftColor.Size = new System.Drawing.Size(118, 43);
+            this.btnBorderLeftColor.Size = new System.Drawing.Size(120, 43);
             this.btnBorderLeftColor.TabIndex = 16;
             this.btnBorderLeftColor.Text = "Left Color";
             this.btnBorderLeftColor.Click += new System.EventHandler(this.ChangeColor_Clicked);
@@ -335,9 +343,9 @@
             this.cmbBorderLeftStyle.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Left | Wisej.Web.AnchorStyles.Right)));
             this.cmbBorderLeftStyle.DropDownStyle = Wisej.Web.ComboBoxStyle.DropDownList;
             this.cmbBorderLeftStyle.LabelText = "Style";
-            this.cmbBorderLeftStyle.Location = new System.Drawing.Point(19, 81);
+            this.cmbBorderLeftStyle.Location = new System.Drawing.Point(19, 82);
             this.cmbBorderLeftStyle.Name = "cmbBorderLeftStyle";
-            this.cmbBorderLeftStyle.Size = new System.Drawing.Size(126, 53);
+            this.cmbBorderLeftStyle.Size = new System.Drawing.Size(128, 53);
             this.cmbBorderLeftStyle.TabIndex = 15;
             this.cmbBorderLeftStyle.Text = "Solid";
             this.cmbBorderLeftStyle.SelectedIndexChanged += new System.EventHandler(this.Style_SelectedIndexChanged);
@@ -346,14 +354,14 @@
             // 
             this.nudBorderLeftSize.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Left | Wisej.Web.AnchorStyles.Right)));
             this.nudBorderLeftSize.LabelText = "Size";
-            this.nudBorderLeftSize.Location = new System.Drawing.Point(19, 145);
+            this.nudBorderLeftSize.Location = new System.Drawing.Point(19, 146);
             this.nudBorderLeftSize.Maximum = new decimal(new int[] {
             360,
             0,
             0,
             0});
             this.nudBorderLeftSize.Name = "nudBorderLeftSize";
-            this.nudBorderLeftSize.Size = new System.Drawing.Size(126, 53);
+            this.nudBorderLeftSize.Size = new System.Drawing.Size(128, 53);
             this.nudBorderLeftSize.TabIndex = 14;
             this.nudBorderLeftSize.ValueChanged += new System.EventHandler(this.Size_ValueChanged);
             // 
@@ -361,14 +369,14 @@
             // 
             this.nudBorderLeftRadius.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Left | Wisej.Web.AnchorStyles.Right)));
             this.nudBorderLeftRadius.LabelText = "Radius";
-            this.nudBorderLeftRadius.Location = new System.Drawing.Point(19, 209);
+            this.nudBorderLeftRadius.Location = new System.Drawing.Point(19, 210);
             this.nudBorderLeftRadius.Maximum = new decimal(new int[] {
             360,
             0,
             0,
             0});
             this.nudBorderLeftRadius.Name = "nudBorderLeftRadius";
-            this.nudBorderLeftRadius.Size = new System.Drawing.Size(126, 53);
+            this.nudBorderLeftRadius.Size = new System.Drawing.Size(128, 53);
             this.nudBorderLeftRadius.TabIndex = 13;
             this.nudBorderLeftRadius.ValueChanged += new System.EventHandler(this.Radius_ValueChanged);
             // 
@@ -376,7 +384,7 @@
             // 
             this.label4.Anchor = Wisej.Web.AnchorStyles.None;
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(33, 300);
+            this.label4.Location = new System.Drawing.Point(34, 301);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(96, 18);
             this.label4.TabIndex = 12;
@@ -400,6 +408,29 @@
             this.flowLayoutPanel1.Size = new System.Drawing.Size(1331, 344);
             this.flowLayoutPanel1.TabIndex = 20;
             // 
+            // spacer2
+            // 
+            this.flowLayoutPanel1.SetFillWeight(this.spacer2, 1);
+            this.spacer2.Location = new System.Drawing.Point(3, 3);
+            this.spacer2.Name = "spacer2";
+            this.spacer2.Size = new System.Drawing.Size(91, 336);
+            // 
+            // spacer1
+            // 
+            this.flowLayoutPanel1.SetFillWeight(this.spacer1, 1);
+            this.spacer1.Location = new System.Drawing.Point(836, 3);
+            this.spacer1.Name = "spacer1";
+            this.spacer1.Size = new System.Drawing.Size(90, 336);
+            // 
+            // panel5
+            // 
+            this.panel5.Controls.Add(this.shape1);
+            this.panel5.Location = new System.Drawing.Point(932, 3);
+            this.panel5.MinimumSize = new System.Drawing.Size(300, 0);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(300, 336);
+            this.panel5.TabIndex = 30;
+            // 
             // shape1
             // 
             this.shape1.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Left | Wisej.Web.AnchorStyles.Right)));
@@ -421,35 +452,12 @@
             this.shape1.Name = "shape1";
             this.shape1.Size = new System.Drawing.Size(280, 209);
             // 
-            // panel5
-            // 
-            this.panel5.Controls.Add(this.shape1);
-            this.panel5.Location = new System.Drawing.Point(914, 3);
-            this.panel5.MinimumSize = new System.Drawing.Size(300, 0);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(300, 336);
-            this.panel5.TabIndex = 30;
-            // 
-            // spacer1
-            // 
-            this.flowLayoutPanel1.SetFillWeight(this.spacer1, 1);
-            this.spacer1.Location = new System.Drawing.Point(800, 3);
-            this.spacer1.Name = "spacer1";
-            this.spacer1.Size = new System.Drawing.Size(108, 336);
-            // 
-            // spacer2
-            // 
-            this.flowLayoutPanel1.SetFillWeight(this.spacer2, 1);
-            this.spacer2.Location = new System.Drawing.Point(3, 3);
-            this.spacer2.Name = "spacer2";
-            this.spacer2.Size = new System.Drawing.Size(107, 336);
-            // 
             // spacer3
             // 
             this.flowLayoutPanel1.SetFillWeight(this.spacer3, 1);
-            this.spacer3.Location = new System.Drawing.Point(1220, 3);
+            this.spacer3.Location = new System.Drawing.Point(1238, 3);
             this.spacer3.Name = "spacer3";
-            this.spacer3.Size = new System.Drawing.Size(108, 336);
+            this.spacer3.Size = new System.Drawing.Size(90, 336);
             // 
             // Features
             // 

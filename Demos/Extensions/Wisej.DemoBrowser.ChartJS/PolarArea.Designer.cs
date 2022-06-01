@@ -60,8 +60,8 @@
             // chartJS1
             // 
             this.chartJS1.BackColor = System.Drawing.Color.White;
-            this.chartJS1.BorderStyle = Wisej.Web.BorderStyle.Dashed;
             this.chartJS1.ChartType = Wisej.Web.Ext.ChartJS.ChartType.PolarArea;
+            this.chartJS1.CssClass = "shadow";
             this.flowLayoutPanel1.SetFillWeight(this.chartJS1, 3);
             this.chartJS1.Labels = new string[] {
         "Value 1"};

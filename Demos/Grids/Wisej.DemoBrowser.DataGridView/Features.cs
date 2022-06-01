@@ -12,11 +12,14 @@ namespace Wisej.DemoBrowser.DataGridView
 			InitializeComponent();
 		}
 
-		private void ColumnTypes_Load(object sender, EventArgs e)
+		private void Features_Load(object sender, EventArgs e)
 		{
 			InitializeGenderBinding();
 			
 			personBindingSource.DataSource = DataGenerator.GeneratePersonData(300);
+
+			this.comboBoxEditMode.Items.AddRange(Enum.GetNames(typeof(DataGridViewEditMode)));
+			this.comboBoxSelectionMode.Items.AddRange(Enum.GetNames(typeof(DataGridViewSelectionMode)));
 		}
 
 		private void InitializeGenderBinding()
@@ -24,6 +27,7 @@ namespace Wisej.DemoBrowser.DataGridView
 			var gender = Enum.GetNames(typeof(PersonGender)).ToList();
 			genderBindingSource.DataSource = gender;
 		}
+
 		private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
 		{
 			if (e.ColumnIndex == -1)
@@ -40,5 +44,21 @@ namespace Wisej.DemoBrowser.DataGridView
 					this.dataGridView1.Rows.RemoveAt(e.RowIndex);
 			}
 		}
-	}
+
+        private void comboBoxSelectionMode_SelectedIndexChanged(object sender, EventArgs e)
+        {
+			var text = this.comboBoxSelectionMode.SelectedItem.ToString();
+			var selectionMode = (DataGridViewSelectionMode)Enum.Parse(typeof(DataGridViewSelectionMode), text);
+
+			this.dataGridView1.SelectionMode = selectionMode;
+        }
+
+        private void comboBoxEditMode_SelectedIndexChanged(object sender, EventArgs e)
+        {
+			var text = this.comboBoxEditMode.SelectedItem.ToString();
+			var editMode = (DataGridViewEditMode)Enum.Parse(typeof(DataGridViewEditMode), text);
+
+			this.dataGridView1.EditMode = editMode;
+        }
+    }
 }

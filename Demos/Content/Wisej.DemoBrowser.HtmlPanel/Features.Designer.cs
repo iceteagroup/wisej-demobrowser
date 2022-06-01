@@ -48,7 +48,7 @@
             | Wisej.Web.AnchorStyles.Left) 
             | Wisej.Web.AnchorStyles.Right)));
             this.aceEditorSource.BorderStyle = Wisej.Web.BorderStyle.Solid;
-            this.aceEditorSource.CssStyle = "border-radius: 4px;";
+            this.aceEditorSource.CssClass = "shadow";
             this.aceEditorSource.Language = "html";
             this.aceEditorSource.Location = new System.Drawing.Point(17, 30);
             this.aceEditorSource.Name = "aceEditorSource";

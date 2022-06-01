@@ -44,7 +44,7 @@
             // aceEditor1
             // 
             this.aceEditor1.Anchor = Wisej.Web.AnchorStyles.None;
-            this.aceEditor1.BorderStyle = Wisej.Web.BorderStyle.Dashed;
+            this.aceEditor1.CssClass = "shadow";
             this.flowLayoutPanel1.SetFillWeight(this.aceEditor1, 2);
             this.aceEditor1.Language = "xml";
             this.aceEditor1.Location = new System.Drawing.Point(509, 3);

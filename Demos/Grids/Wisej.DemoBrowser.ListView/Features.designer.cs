@@ -47,7 +47,6 @@
             this.columnHeader8,
             this.columnHeader9});
             this.listViewDemo.CssClass = "shadow";
-            this.listViewDemo.CssStyle = "border-radius: 4px;";
             this.listViewDemo.Dock = Wisej.Web.DockStyle.Fill;
             this.listViewDemo.ItemPadding = new Wisej.Web.Padding(8, 3, 3, 3);
             this.listViewDemo.Location = new System.Drawing.Point(299, 16);

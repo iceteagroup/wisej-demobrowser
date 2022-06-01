@@ -60,8 +60,8 @@
             // chartJS1
             // 
             this.chartJS1.BackColor = System.Drawing.Color.White;
-            this.chartJS1.BorderStyle = Wisej.Web.BorderStyle.Dashed;
             this.chartJS1.ChartType = Wisej.Web.Ext.ChartJS.ChartType.Radar;
+            this.chartJS1.CssClass = "shadow";
             this.flowLayoutPanel1.SetFillWeight(this.chartJS1, 3);
             this.chartJS1.Font = new System.Drawing.Font("default", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.chartJS1.Location = new System.Drawing.Point(295, 3);

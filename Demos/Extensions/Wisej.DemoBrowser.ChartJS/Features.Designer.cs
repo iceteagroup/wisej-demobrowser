@@ -42,7 +42,7 @@
             // 
             this.chartJS1.Anchor = Wisej.Web.AnchorStyles.None;
             this.chartJS1.BackColor = System.Drawing.Color.White;
-            this.chartJS1.BorderStyle = Wisej.Web.BorderStyle.Dashed;
+            this.chartJS1.CssClass = "shadow";
             this.flowLayoutPanel1.SetFillWeight(this.chartJS1, 1);
             this.chartJS1.Labels = new string[] {
         "Jan",
@@ -79,8 +79,8 @@
             // 
             this.chartJS2.Anchor = Wisej.Web.AnchorStyles.None;
             this.chartJS2.BackColor = System.Drawing.Color.White;
-            this.chartJS2.BorderStyle = Wisej.Web.BorderStyle.Dashed;
             this.chartJS2.ChartType = Wisej.Web.Ext.ChartJS.ChartType.Bar;
+            this.chartJS2.CssClass = "shadow";
             this.flowLayoutPanel1.SetFillWeight(this.chartJS2, 1);
             this.chartJS2.Labels = new string[] {
         "Jan",
@@ -117,8 +117,8 @@
             // 
             this.chartJS4.Anchor = Wisej.Web.AnchorStyles.None;
             this.chartJS4.BackColor = System.Drawing.Color.White;
-            this.chartJS4.BorderStyle = Wisej.Web.BorderStyle.Dashed;
             this.chartJS4.ChartType = Wisej.Web.Ext.ChartJS.ChartType.Radar;
+            this.chartJS4.CssClass = "shadow";
             this.flowLayoutPanel1.SetFillWeight(this.chartJS4, 1);
             this.chartJS4.Labels = new string[] {
         "Jan",
