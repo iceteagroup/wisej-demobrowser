@@ -42,6 +42,7 @@
             this.fullCalendar1.EventLimit = 2;
             this.fullCalendar1.Location = new System.Drawing.Point(19, 63);
             this.fullCalendar1.Name = "fullCalendar1";
+            this.fullCalendar1.SchedulerLicenseKey = "GPL-My-Project-Is-Open-Source";
             this.fullCalendar1.Size = new System.Drawing.Size(1384, 394);
             this.fullCalendar1.TabIndex = 0;
             this.fullCalendar1.Text = "fullCalendar1";

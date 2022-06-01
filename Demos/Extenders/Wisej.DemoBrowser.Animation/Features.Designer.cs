@@ -124,10 +124,10 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(251, 48, 54, 65);
-            this.panel1.BorderStyle = Wisej.Web.BorderStyle.Solid;
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
+            this.panel1.CssClass = "shadow";
             this.panel1.Location = new System.Drawing.Point(11, 11);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(405, 138);
@@ -168,10 +168,10 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(251, 245, 105, 83);
-            this.panel2.BorderStyle = Wisej.Web.BorderStyle.Solid;
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.label6);
+            this.panel2.CssClass = "shadow";
             this.panel2.Location = new System.Drawing.Point(422, 11);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(405, 138);
@@ -212,10 +212,10 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(251, 0, 191, 239);
-            this.panel3.BorderStyle = Wisej.Web.BorderStyle.Solid;
             this.panel3.Controls.Add(this.label7);
             this.panel3.Controls.Add(this.label8);
             this.panel3.Controls.Add(this.label9);
+            this.panel3.CssClass = "shadow";
             this.panel3.Location = new System.Drawing.Point(833, 11);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(405, 138);
@@ -256,10 +256,10 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(251, 0, 166, 90);
-            this.panel4.BorderStyle = Wisej.Web.BorderStyle.Solid;
             this.panel4.Controls.Add(this.label10);
             this.panel4.Controls.Add(this.label11);
             this.panel4.Controls.Add(this.label12);
+            this.panel4.CssClass = "shadow";
             this.panel4.Location = new System.Drawing.Point(11, 155);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(405, 138);
@@ -300,10 +300,10 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(251, 185, 121, 202);
-            this.panel5.BorderStyle = Wisej.Web.BorderStyle.Solid;
             this.panel5.Controls.Add(this.label13);
             this.panel5.Controls.Add(this.label14);
             this.panel5.Controls.Add(this.label15);
+            this.panel5.CssClass = "shadow";
             this.panel5.Location = new System.Drawing.Point(422, 155);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(405, 138);
@@ -344,10 +344,10 @@
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.FromArgb(251, 235, 59, 130);
-            this.panel6.BorderStyle = Wisej.Web.BorderStyle.Solid;
             this.panel6.Controls.Add(this.label16);
             this.panel6.Controls.Add(this.label17);
             this.panel6.Controls.Add(this.label18);
+            this.panel6.CssClass = "shadow";
             this.panel6.Location = new System.Drawing.Point(833, 155);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(405, 138);
@@ -388,10 +388,10 @@
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.FromArgb(251, 108, 84, 29);
-            this.panel7.BorderStyle = Wisej.Web.BorderStyle.Solid;
             this.panel7.Controls.Add(this.label19);
             this.panel7.Controls.Add(this.label20);
             this.panel7.Controls.Add(this.label21);
+            this.panel7.CssClass = "shadow";
             this.panel7.Location = new System.Drawing.Point(11, 299);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(405, 138);
@@ -432,10 +432,10 @@
             // panel8
             // 
             this.panel8.BackColor = System.Drawing.Color.FromArgb(251, 0, 178, 158);
-            this.panel8.BorderStyle = Wisej.Web.BorderStyle.Solid;
             this.panel8.Controls.Add(this.label22);
             this.panel8.Controls.Add(this.label23);
             this.panel8.Controls.Add(this.label24);
+            this.panel8.CssClass = "shadow";
             this.panel8.Location = new System.Drawing.Point(422, 299);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(405, 138);
@@ -476,10 +476,10 @@
             // panel9
             // 
             this.panel9.BackColor = System.Drawing.Color.FromArgb(251, 63, 179, 191);
-            this.panel9.BorderStyle = Wisej.Web.BorderStyle.Solid;
             this.panel9.Controls.Add(this.label25);
             this.panel9.Controls.Add(this.label26);
             this.panel9.Controls.Add(this.label27);
+            this.panel9.CssClass = "shadow";
             this.panel9.Location = new System.Drawing.Point(833, 299);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(405, 138);

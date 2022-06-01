@@ -15,15 +15,19 @@
 
 	<ItemGroup>
 	  <None Remove="Images\person.jpg" />
+	  <None Remove="Images\wisej.png" />
 	</ItemGroup>
 
 	<ItemGroup>
 	  <EmbeddedResource Include="Images\person.jpg" />
+	  <EmbeddedResource Include="Images\wisej.png" />
 	</ItemGroup>
 
 	<ItemGroup>
 		<PackageReference Include="Wisej-3" Version="3.*-*" />
+		<PackageReference Include="Wisej-3-MaterialDesign" Version="3.*-*" />
 		<PackageReference Include="Wisej-3-NavigationBar" Version="3.*-*" />
+		<PackageReference Include="Wisej-3-ProgressCircle" Version="3.*-*" />
 		<ProjectReference Include="..\..\..\Wisej.DemoBrowser.Common\Wisej.DemoBrowser.Common.csproj" />
 	</ItemGroup>
 

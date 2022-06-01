@@ -57,6 +57,7 @@
             // dataGridView1
             // 
             this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.BorderStyle = Wisej.Web.BorderStyle.None;
             this.dataGridView1.CellBorderStyle = Wisej.Web.DataGridViewCellBorderStyle.None;
             this.dataGridView1.ColumnHeadersBorderStyle = Wisej.Web.DataGridViewCellBorderStyle.Horizontal;
             dataGridViewCellStyle1.Alignment = Wisej.Web.DataGridViewContentAlignment.MiddleCenter;
@@ -76,6 +77,7 @@
             this.colRating,
             this.colAccountActive,
             this.colButton});
+            this.dataGridView1.CssClass = "shadow";
             this.dataGridView1.CssStyle = "border-radius: 4px;";
             this.dataGridView1.DataSource = this.personBindingSource;
             dataGridViewCellStyle5.Alignment = Wisej.Web.DataGridViewContentAlignment.MiddleCenter;

@@ -28,7 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-            this.tinyMCE1 = new Wisej.Web.Ext.TinyMCE.TinyMCE();
+            this.tinyMCE1 = new Web.Ext.TinyMCE.TinyMCE();
             this.SuspendLayout();
             // 
             // tinyMCE1
@@ -40,13 +40,13 @@
             this.tinyMCE1.Name = "tinyMCE1";
             this.tinyMCE1.Size = new System.Drawing.Size(1000, 450);
             this.tinyMCE1.TabIndex = 0;
-            this.tinyMCE1.Text = "tinyMCE1";
             // 
             // Features
             // 
             this.Controls.Add(this.tinyMCE1);
             this.MinimumSize = new System.Drawing.Size(700, 0);
             this.Name = "Features";
+            this.Load += new System.EventHandler(this.Features_Load);
             this.ResumeLayout(false);
 
 		}

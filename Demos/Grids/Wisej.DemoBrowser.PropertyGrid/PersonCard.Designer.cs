@@ -275,7 +275,7 @@
             this.Controls.Add(this.lblIssued);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
-            this.CssStyle = "box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;";
+            this.CssClass = "shadow";
             this.Name = "PersonCard";
             this.Padding = new Wisej.Web.Padding(5);
             this.Size = new System.Drawing.Size(598, 306);

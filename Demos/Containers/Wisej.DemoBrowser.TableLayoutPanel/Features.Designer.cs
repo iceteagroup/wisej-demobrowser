@@ -46,8 +46,10 @@
             this.label18 = new Wisej.Web.Label();
             this.label19 = new Wisej.Web.Label();
             this.panel8 = new Wisej.Web.Panel();
+            this.justGage2 = new Wisej.Web.Ext.JustGage.JustGage();
             this.label10 = new Wisej.Web.Label();
             this.panel7 = new Wisej.Web.Panel();
+            this.justGage1 = new Wisej.Web.Ext.JustGage.JustGage();
             this.label2 = new Wisej.Web.Label();
             this.chartJS31 = new Wisej.Web.Ext.ChartJS3.ChartJS3();
             this.panel1 = new Wisej.Web.Panel();
@@ -72,8 +74,6 @@
             this.chartJS34 = new Wisej.Web.Ext.ChartJS3.ChartJS3();
             this.label17 = new Wisej.Web.Label();
             this.label16 = new Wisej.Web.Label();
-            this.justGage1 = new Wisej.Web.Ext.JustGage.JustGage();
-            this.justGage2 = new Wisej.Web.Ext.JustGage.JustGage();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel10.SuspendLayout();
             this.panel8.SuspendLayout();
@@ -242,6 +242,15 @@
             this.panel8.Size = new System.Drawing.Size(175, 165);
             this.panel8.TabIndex = 15;
             // 
+            // justGage2
+            // 
+            this.justGage2.Dock = Wisej.Web.DockStyle.Fill;
+            this.justGage2.Location = new System.Drawing.Point(8, 8);
+            this.justGage2.Name = "justGage2";
+            this.justGage2.Size = new System.Drawing.Size(159, 131);
+            this.justGage2.TabIndex = 7;
+            this.justGage2.Value = 25F;
+            // 
             // label10
             // 
             this.label10.AutoSize = true;
@@ -268,6 +277,15 @@
             this.tableLayoutPanel1.SetRowSpan(this.panel7, 3);
             this.panel7.Size = new System.Drawing.Size(169, 165);
             this.panel7.TabIndex = 14;
+            // 
+            // justGage1
+            // 
+            this.justGage1.Dock = Wisej.Web.DockStyle.Fill;
+            this.justGage1.Location = new System.Drawing.Point(8, 8);
+            this.justGage1.Name = "justGage1";
+            this.justGage1.Size = new System.Drawing.Size(153, 131);
+            this.justGage1.TabIndex = 7;
+            this.justGage1.Value = 13F;
             // 
             // label2
             // 
@@ -348,9 +366,9 @@
             this.label3.Dock = Wisej.Web.DockStyle.Fill;
             this.label3.Font = new System.Drawing.Font("defaultBold", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.label3.ForeColor = System.Drawing.Color.FromArgb(28, 78, 128);
-            this.label3.Location = new System.Drawing.Point(8, 35);
+            this.label3.Location = new System.Drawing.Point(8, 29);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(509, 65);
+            this.label3.Size = new System.Drawing.Size(509, 71);
             this.label3.TabIndex = 2;
             this.label3.Text = "17 :1";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -359,11 +377,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Dock = Wisej.Web.DockStyle.Top;
-            this.label1.Font = new System.Drawing.Font("defaultBold", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(28, 78, 128);
             this.label1.Location = new System.Drawing.Point(8, 8);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(509, 27);
+            this.label1.Size = new System.Drawing.Size(509, 21);
             this.label1.TabIndex = 0;
             this.label1.Text = "Lead Conversion Ratio";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -398,9 +416,8 @@
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
             this.label4.Dock = Wisej.Web.DockStyle.Top;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.label4.ForeColor = System.Drawing.Color.FromArgb(28, 78, 128);
             this.label4.Location = new System.Drawing.Point(16, 16);
             this.label4.Name = "label4";
@@ -439,9 +456,8 @@
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
             this.label5.Dock = Wisej.Web.DockStyle.Top;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.label5.ForeColor = System.Drawing.Color.FromArgb(28, 78, 128);
             this.label5.Location = new System.Drawing.Point(16, 16);
             this.label5.Name = "label5";
@@ -480,9 +496,8 @@
             // 
             // label6
             // 
-            this.label6.AutoSize = true;
             this.label6.Dock = Wisej.Web.DockStyle.Top;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.label6.ForeColor = System.Drawing.Color.FromArgb(28, 78, 128);
             this.label6.Location = new System.Drawing.Point(16, 16);
             this.label6.Name = "label6";
@@ -521,9 +536,8 @@
             // 
             // label13
             // 
-            this.label13.AutoSize = true;
             this.label13.Dock = Wisej.Web.DockStyle.Top;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.label13.ForeColor = System.Drawing.Color.FromArgb(28, 78, 128);
             this.label13.Location = new System.Drawing.Point(16, 16);
             this.label13.Name = "label13";
@@ -562,9 +576,8 @@
             // 
             // label15
             // 
-            this.label15.AutoSize = true;
             this.label15.Dock = Wisej.Web.DockStyle.Top;
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.label15.ForeColor = System.Drawing.Color.FromArgb(28, 78, 128);
             this.label15.Location = new System.Drawing.Point(16, 16);
             this.label15.Name = "label15";
@@ -653,24 +666,6 @@
             this.label16.TabIndex = 6;
             this.label16.Text = "Alaa";
             this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // justGage1
-            // 
-            this.justGage1.Dock = Wisej.Web.DockStyle.Fill;
-            this.justGage1.Location = new System.Drawing.Point(8, 8);
-            this.justGage1.Name = "justGage1";
-            this.justGage1.Size = new System.Drawing.Size(153, 131);
-            this.justGage1.TabIndex = 7;
-            this.justGage1.Value = 13F;
-            // 
-            // justGage2
-            // 
-            this.justGage2.Dock = Wisej.Web.DockStyle.Fill;
-            this.justGage2.Location = new System.Drawing.Point(8, 8);
-            this.justGage2.Name = "justGage2";
-            this.justGage2.Size = new System.Drawing.Size(159, 131);
-            this.justGage2.TabIndex = 7;
-            this.justGage2.Value = 25F;
             // 
             // Features
             // 

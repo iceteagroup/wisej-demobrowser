@@ -80,8 +80,8 @@
             this.panel1.Controls.Add(this.buttonSelect);
             this.panel1.Controls.Add(this.labelName);
             this.panel1.Controls.Add(this.pictureBoxProfile);
-            this.panel1.CssStyle = "transition: background-color 0.2s ease;\r\nbox-shadow: rgba(0, 0, 0, 0.16) 0px 1px " +
-    "4px;";
+            this.panel1.CssClass = "shadow";
+            this.panel1.CssStyle = "transition: background-color 0.2s ease;\r\n";
             this.panel1.Location = new System.Drawing.Point(3, 3);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1016, 88);
@@ -95,7 +95,7 @@
             this.labelEmail.AutoSize = true;
             this.labelEmail.Location = new System.Drawing.Point(89, 60);
             this.labelEmail.Name = "labelEmail";
-            this.labelEmail.Size = new System.Drawing.Size(88, 15);
+            this.labelEmail.Size = new System.Drawing.Size(85, 18);
             this.labelEmail.TabIndex = 12;
             this.labelEmail.Text = "Email Address";
             // 
@@ -105,7 +105,7 @@
             this.labelCompany.AutoSize = true;
             this.labelCompany.Location = new System.Drawing.Point(89, 36);
             this.labelCompany.Name = "labelCompany";
-            this.labelCompany.Size = new System.Drawing.Size(77, 15);
+            this.labelCompany.Size = new System.Drawing.Size(73, 18);
             this.labelCompany.TabIndex = 11;
             this.labelCompany.Text = "ACME Corp.";
             // 
@@ -130,7 +130,7 @@
             this.labelName.Font = new System.Drawing.Font("@defaultBold", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.labelName.Location = new System.Drawing.Point(89, 13);
             this.labelName.Name = "labelName";
-            this.labelName.Size = new System.Drawing.Size(116, 15);
+            this.labelName.Size = new System.Drawing.Size(116, 18);
             this.labelName.TabIndex = 5;
             this.labelName.Text = "Name LastName 0";
             // 
@@ -149,7 +149,7 @@
             this.checkBoxScrollbar.Location = new System.Drawing.Point(19, 19);
             this.checkBoxScrollbar.Name = "checkBoxScrollbar";
             this.checkBoxScrollbar.Padding = new Wisej.Web.Padding(0, 0, 0, 16);
-            this.checkBoxScrollbar.Size = new System.Drawing.Size(146, 33);
+            this.checkBoxScrollbar.Size = new System.Drawing.Size(144, 36);
             this.checkBoxScrollbar.TabIndex = 1;
             this.checkBoxScrollbar.Text = "Scrollbar Visible";
             this.checkBoxScrollbar.CheckedChanged += new System.EventHandler(this.checkBoxScrollbar_CheckedChanged);

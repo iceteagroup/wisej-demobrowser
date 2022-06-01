@@ -20,15 +20,15 @@ namespace Wisej.DemoBrowser.PropertyGrid
 		{
 			lblIssued.Text += DateTime.Now.ToShortDateString();
 
-			lblFirstNameTxt.DataBindings.Add(new Binding("Text", Person, "FirstName"));
-			lblLastNameTxt.DataBindings.Add(new Binding("Text", Person, "LastName"));
+			lblID.DataBindings.Add(new Binding("Text", Person, "Id"));
+			pbVip.DataBindings.Add(new Binding("Visible", Person, "IsVip"));
+			lblDobTxt.DataBindings.Add(new Binding("Text", Person, "Birthday"));
 			lblGenderTxt.DataBindings.Add(new Binding("Text", Person, "Gender"));
 			lblAddressTxt.DataBindings.Add(new Binding("Text", Person, "Address"));
-			lblID.DataBindings.Add(new Binding("Text", Person, "Id"));
+			lblLastNameTxt.DataBindings.Add(new Binding("Text", Person, "LastName"));
+			lblFirstNameTxt.DataBindings.Add(new Binding("Text", Person, "FirstName"));
 			pnlFavColor.DataBindings.Add(new Binding("BackColor", Person, "FavoriteColor"));
-			lblDobTxt.DataBindings.Add(new Binding("Text", Person, "Birthday"));
-			pbVip.DataBindings.Add(new Binding("Visible", Person, "IsVip"));
-
+			
 			var postback = $"{Application.StartupUrl}{this.GetPostbackURL()}";
 			barcode1.Text = $"{postback}&action=alert";
 		}
