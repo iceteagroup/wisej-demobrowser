@@ -8,10 +8,8 @@
 // style a new component.
 //
 {
-	"appearances":
-	{
-		"listview":
-		{
+	"appearances": {
+		"listview": {
 			"inherit": "listview",
 			"components": {
 				"item": {
@@ -30,6 +28,63 @@
 						"hovered": {
 							"styles": {
 								"backgroundColor": "#F7F8F8"
+							}
+						}
+					}
+				},
+				"grid-cell": {
+					"inherit": "listview/grid-cell",
+					"components": {
+						"icon": {
+							"states": {
+								"default": {
+									"styles": {
+										"radius": [100,100,100,100],
+										"backgroundPosition": [ "center", "center" ],
+										"backgroundSize": "cover"
+									},
+									"properties": {
+										"width": 32,
+										"margin": [ 0, 16, 0, 2 ]
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		},
+		"circlelistview": {
+			"inherit": "listview",
+			"components": {
+				"item": {
+					"inherit": "listview/item",
+					"states": {
+						"default": {
+							"styles": {
+								"radius": [ 8, 8, 8, 8 ]
+							},
+							"hovered": {
+								"styles": {
+									"backgroundColor": "transparent"
+								}
+							}
+						},
+						"hovered": {
+							"styles": {
+								"backgroundColor": "#F7F8F8"
+							}
+						}
+					},
+					"components": {
+						"icon": {
+							"inherit": "listview/item/icon",
+							"states": {
+								"default": {
+									"styles": {
+										"radius": [ 100, 100, 100, 100 ]
+									}
+								}
 							}
 						}
 					}

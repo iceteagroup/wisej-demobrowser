@@ -156,11 +156,12 @@ namespace Wisej.DemoBrowser
 						}
 						demoNode.Tag = new
 						{
-							Category = categoryName,
-							Control = controlName,
-							Info = demoContent,
 							Title = demoName,
-						};
+							Info = demoContent,
+							Control = controlName,
+							Category = categoryName,
+							Hash = $"#{categoryName}/{controlName}/{demoName}".Replace(" ", "%20")
+					};
 
 						// apply the "features" image.
 						var demoImageSource = ((dynamic)demo.Value)?.imageSource ?? "";
@@ -197,17 +198,21 @@ namespace Wisej.DemoBrowser
 			try
 			{
 				var nodePath = WebUtility.UrlDecode(path).Split(this.treeViewComponents.PathSeparator.ToCharArray());
-				var categoryNode = this.treeViewComponents.Nodes[nodePath[0]];
+				var categoryNode = this.CategoryNodes.First(n => n.Text == nodePath[0]);
 				var controlNode = categoryNode.Nodes[nodePath[1]];
-				TreeNode demoNode = controlNode;
+
+				TreeNode demoNode = null;
 				if (nodePath.Length > 2)
 					demoNode = controlNode.Nodes[nodePath[2]];
+
+				if (demoNode == null)
+					demoNode = controlNode;
 
 				this.treeViewComponents.SelectedNode = demoNode;
 			}
 			catch
 			{
-				Wisej.Web.AlertBox.Show("Unknown Demo.", MessageBoxIcon.Error, showProgressBar: true);
+				Web.AlertBox.Show("Unknown Demo.", MessageBoxIcon.Error, showProgressBar: true);
 			}
 		}
 
@@ -265,11 +270,11 @@ namespace Wisej.DemoBrowser
 
 				demoInstance.UserData.args = node.UserData.args;
 				demoInstance.Dock = DockStyle.Fill;
-				//demoInstance.AutoSize = true;
+
 				container.Controls.Add(demoInstance);
 
 				container.Text = title;
-				Application.Hash = node.FullPath;
+				Application.Hash = data.Hash;
 
 				this.labelNavigationControl.Text = control;
 				this.labelNaivgationCategory.Text = category;
@@ -412,31 +417,33 @@ namespace Wisej.DemoBrowser
 
 		private void SearchForPhrase(string phrase)
 		{
-			this.treeViewComponents.Nodes.Clear();
-
 			var isSearch = !String.IsNullOrEmpty(phrase.Trim(' '));
 			if (isSearch)
 			{
+				this.treeViewComponents.Nodes.Clear();
+
 				foreach (var node in this.CategoryNodes)
 					ProcessNodesContain(node.Nodes, phrase);
 
 				if (this.treeViewComponents.Nodes.Count > 0)
-				{
 					this.treeViewComponents.SelectedNode = this.treeViewComponents.Nodes[0];
-				}
 				else
-				{
 					this.treeViewComponents.SelectedNode = null;
-				}
 			}
 			else
 			{
-				this.treeViewComponents.Nodes.AddRange(this.CategoryNodes.ToArray());
+				ResetDemoList();
 			}
 
 			this.textBoxSearch.Tools["back"].Visible = isSearch;
 			this.textBoxSearch.Tools["clear"].Visible = isSearch;
 			this.textBoxSearch.Tools["forward"].Visible = isSearch;
+		}
+
+		private void ResetDemoList()
+        {
+			this.treeViewComponents.Nodes.Clear();
+			this.treeViewComponents.Nodes.AddRange(this.CategoryNodes.ToArray());
 		}
 
 		/// <summary>
@@ -499,5 +506,5 @@ namespace Wisej.DemoBrowser
 		{
 			Application.Navigate("https://wisej.com/", "_blank");
 		}
-    }
+	}
 }

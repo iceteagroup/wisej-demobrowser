@@ -98,6 +98,7 @@ namespace Wisej.DemoBrowser
             this.panelMenu.Controls.Add(this.pictureBoxLogo);
             this.panelMenu.Controls.Add(this.menuSlideBar);
             this.panelMenu.Controls.Add(this.rightPanel);
+            this.panelMenu.CssClass = "shadow";
             this.panelMenu.CssStyle = "z-index: 11;\r\nborder-width: 1px;\r\nborder-color: #DFDFDF;\r\nborder-bottom-style: so" +
     "lid;\r\nbox-shadow: 1px 0px 16px 0px #dedede;";
             this.panelMenu.Dock = Wisej.Web.DockStyle.Top;
