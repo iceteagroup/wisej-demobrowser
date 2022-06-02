@@ -12,6 +12,11 @@ namespace Wisej.Web.Ext.Syncfusion.Demo.Component
 			this.ejColorPicker1.Instance.onChange += new WidgetEventHandler(ejColorPicker1_WidgetEvent);
 		}
 
+		private void ejColorPicker_Load(object sender, EventArgs e)
+		{
+			this.ejColorPicker1.Options.value = "Choose Color";
+		}
+
 		private void ejColorPicker1_WidgetEvent(object sender, WidgetEventArgs e)
 		{
 			AlertBox.Show(

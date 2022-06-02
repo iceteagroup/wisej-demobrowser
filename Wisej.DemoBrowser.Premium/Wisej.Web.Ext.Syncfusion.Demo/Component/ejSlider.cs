@@ -3,13 +3,27 @@ using Wisej.Web;
 
 namespace Wisej.Web.Ext.Syncfusion.Demo.Component
 {
-	public partial class ejSlider : Wisej.Web.Ext.Syncfusion.Demo.Component.TestBase
+	public partial class ejSlider : TestBase
 	{
 		public ejSlider()
 		{
 			InitializeComponent();
 
 			this.ejSlider1.Instance.onChange += new WidgetEventHandler(ejSlider1_WidgetEvent);
+		}
+
+		private void ejSlider_Load(object sender, EventArgs e)
+		{
+			//ejSlider1
+			this.ejSlider1.Options.sliderType = "range";
+			this.ejSlider1.Options.values = new object[]
+			{
+				30, 60
+			};
+
+			//ejSlider2
+			this.ejSlider2.Options.value = 60;
+			this.ejSlider2.Options.sliderType = "minrange";
 		}
 
 		private void ejSlider1_WidgetEvent(object sender, WidgetEventArgs e)

@@ -7,13 +7,23 @@ using Wisej.Web;
 
 namespace Wisej.Web.Ext.Syncfusion.Demo.Component
 {
-	public partial class ejPdfViewer : Wisej.Web.Ext.Syncfusion.Demo.Component.TestBase
+	public partial class ejPdfViewer : TestBase
 	{
 		public ejPdfViewer()
 		{
 			InitializeComponent();
 
 			this.ejPdfViewer1.Instance.onHyperlinkClick += new WidgetEventHandler(ejPdfViewer1_WidgetEvent);
+		}
+
+		private void ejPdfViewer_Load(object sender, EventArgs e)
+		{
+			this.ejPdfViewer1.Options.documentPath = "Data/Wisej-Datasheet-V2.3.pdf";
+
+			this.ejPdfViewer1.Options.enableSignature = false;
+			this.ejPdfViewer1.Options.enableHighlightAnnotation = true;
+			this.ejPdfViewer1.Options.enableTextMarkupAnnotations = true;
+			this.ejPdfViewer1.Options.enableStrikethroughAnnotation = true;
 		}
 
 		private void ejPdfViewer1_WebRequest(object sender, WebRequestEventArgs e)
@@ -51,17 +61,20 @@ namespace Wisej.Web.Ext.Syncfusion.Demo.Component
 			var data = JSON.Parse(e.Request.InputStream);
 
 			string fileName = data.file;
-			if (!String.IsNullOrEmpty(fileName))
+			if (!string.IsNullOrEmpty(fileName))
 			{
 				helper.Load(Application.MapPath(fileName));
 				e.Response.Write(helper.ProcessPdf(ToDictionary(data)));
 
 				// remove the temp file.
 				if (fileName.StartsWith(Path.GetTempPath()))
-				{
-					try { File.Delete(fileName); }
-					catch { }
-				}
+					try
+					{
+						File.Delete(fileName);
+					}
+					catch
+					{
+					}
 			}
 			else
 			{
@@ -72,10 +85,7 @@ namespace Wisej.Web.Ext.Syncfusion.Demo.Component
 		private Dictionary<string, string> ToDictionary(DynamicObject data)
 		{
 			var result = new Dictionary<string, string>();
-			foreach (var field in data)
-			{
-				result[field.Name] = Convert.ToString(field.Value);
-			}
+			foreach (var field in data) result[field.Name] = Convert.ToString(field.Value);
 			return result;
 		}
 
@@ -88,7 +98,7 @@ namespace Wisej.Web.Ext.Syncfusion.Demo.Component
 			this.ejPdfViewer1.Options.enableTextSelection = this.checkBox3.Checked;
 			this.ejPdfViewer1.Options.enableHyperlink = this.checkBox4.Checked;
 
-			this.ejPdfViewer1.Instance.zoomTo((int)this.trackBar1.Value);
+			this.ejPdfViewer1.Instance.zoomTo((int) this.trackBar1.Value);
 			this.ejPdfViewer1.Update();
 		}
 
@@ -105,14 +115,6 @@ namespace Wisej.Web.Ext.Syncfusion.Demo.Component
 		private void ejPdfViewer1_Initialized(object sender, EventArgs e)
 		{
 			this.ejPdfViewer1.Instance.load("Data\\Wisej-Datasheet-V2.3.pdf");
-		}
-
-		private void ejPdfViewer_Load(object sender, EventArgs e)
-		{
-			this.ejPdfViewer1.Options.enableSignature = false;
-			this.ejPdfViewer1.Options.enableHighlightAnnotation = true;
-			this.ejPdfViewer1.Options.enableTextMarkupAnnotations = true;
-			this.ejPdfViewer1.Options.enableStrikethroughAnnotation = true;
 		}
 
 		private void ejPdfViewer1_WidgetEvent(object sender, WidgetEventArgs e)

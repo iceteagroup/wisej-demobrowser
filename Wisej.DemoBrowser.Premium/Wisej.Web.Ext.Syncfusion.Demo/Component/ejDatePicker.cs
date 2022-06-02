@@ -15,6 +15,13 @@ namespace Wisej.Web.Ext.Syncfusion.Demo.Component
 			this.ejDatePicker1.Instance.onChange += new WidgetEventHandler(ejDatePicker1_WidgetEvent);
 		}
 
+		private void ejDatePicker_Load(object sender, EventArgs e)
+		{
+			this.ejDatePicker1.Options.value = null;
+			this.ejDatePicker1.Options.showOtherMonths = true;
+			this.ejDatePicker1.Options.enableStrictMode = true;
+		}
+
 		private void ejDatePicker1_WidgetEvent(object sender, WidgetEventArgs e)
 		{
 			AlertBox.Show(

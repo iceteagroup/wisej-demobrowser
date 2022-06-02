@@ -14,6 +14,11 @@ namespace Wisej.Web.Ext.Syncfusion.Demo.Component
 			this.ejDateTimePicker1.Instance.onChange += new WidgetEventHandler(ejDateTimePicker1_WidgetEvent);
 		}
 
+		private void ejDateTimePicker_Load(object sender, EventArgs e)
+		{
+			this.ejDateTimePicker1.Options.value = null;
+		}
+
 		private void buttonUpdate_Click(object sender, EventArgs e)
 		{
 			this.ejDateTimePicker1.Options.startDay = this.numericUpDown1.Value;
@@ -33,7 +38,5 @@ namespace Wisej.Web.Ext.Syncfusion.Demo.Component
 
 			Application.Play(MessageBoxIcon.Information);
 		}
-
-		
 	}
 }

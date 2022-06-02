@@ -3,9 +3,9 @@ using Wisej.Web;
 
 namespace Wisej.Web.Ext.Syncfusion.Demo.Component
 {
-	public partial class ejMediaPlayer : Wisej.Web.Ext.Syncfusion.Demo.Component.TestBase
+	public partial class ejMediaPlayer : TestBase
 	{
-		bool isMute = false;
+		private bool isMute = false;
 
 		public ejMediaPlayer()
 		{
@@ -16,16 +16,54 @@ namespace Wisej.Web.Ext.Syncfusion.Demo.Component
 			this.ejMediaPlayer1.Instance.onActionBegin += new WidgetEventHandler(ejMediaPlayer1_WidgetEvent);
 		}
 
+		private void ejMediaPlayer_Load(object sender, EventArgs e)
+		{
+			this.ejMediaPlayer1.Options.showPlaylist = true;
+			this.ejMediaPlayer1.Options.renderMode = "basic";
+			this.ejMediaPlayer1.Options.playlistTitle = "Wisej";
+			this.ejMediaPlayer1.Options.source = new object[]
+			{
+				new
+				{
+					url = "https://www.youtube.com/watch?v=BfA_wIqjF_8",
+					author = "iceteagroup",
+					title = "HelloWorld",
+					posterUrl = "Images/MediaPlayer/mqdefault.jpg"
+				},
+				new
+				{
+					url = "https://www.youtube.com/watch?v=qp6cQOQFHWk",
+					author = "iceteagroup",
+					title = "Responsive Properties",
+					posterUrl = "Images/MediaPlayer/mqdefault.jpg"
+				},
+				new
+				{
+					url = "https://www.youtube.com/watch?v=5SzoJZF6rdQ",
+					author = "iceteagroup",
+					title = "Live Theme Builder",
+					posterUrl = "Images/MediaPlayer/mqdefault.jpg"
+				},
+				new
+				{
+					url = "https://www.youtube.com/watch?v=lqTszFkviRg",
+					posterUrl = "Images/MediaPlayer/mqdefault.jpg",
+					author = "iceteagroup",
+					title = "Tools Everywhere"
+				}
+			};
+		}
 		private void buttonMute_Click(object sender, EventArgs e)
 		{
-			if (isMute)
+			if (this.isMute)
 			{
 				this.ejMediaPlayer1.Instance.unmute();
-				isMute = false;
-			} else
+				this.isMute = false;
+			}
+			else
 			{
 				this.ejMediaPlayer1.Instance.mute();
-				isMute = true;
+				this.isMute = true;
 			}
 		}
 

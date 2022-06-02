@@ -6,7 +6,7 @@ using Wisej.Web;
 
 namespace Wisej.Web.Ext.Syncfusion.Demo.Component
 {
-	public partial class ejSignature : Wisej.Web.Ext.Syncfusion.Demo.Component.TestBase
+	public partial class ejSignature : TestBase
 	{
 		public ejSignature()
 		{
@@ -15,9 +15,14 @@ namespace Wisej.Web.Ext.Syncfusion.Demo.Component
 			this.ejSignature1.Instance.onChange += new WidgetEventHandler(ejSignature1_WidgetEvent);
 		}
 
+		private void ejSignature_Load(object sender, EventArgs e)
+		{
+			this.ejSignature1.Options.isResponsive = true;
+			this.ejSignature1.Options.strokeWidth = 3;
+		}
+
 		private void ejSignature1_WidgetEvent(object sender, WidgetEventArgs e)
 		{
-
 			Application.Play(MessageBoxIcon.Information);
 		}
 
