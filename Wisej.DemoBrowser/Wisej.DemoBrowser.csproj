@@ -105,6 +105,7 @@
 	  <ProjectReference Include="..\Demos\Buttons\Wisej.DemoBrowser.CheckBox\Wisej.DemoBrowser.CheckBox.csproj" />
 	  <ProjectReference Include="..\Demos\Buttons\Wisej.DemoBrowser.RadioButton\Wisej.DemoBrowser.RadioButton.csproj" />
 	  <ProjectReference Include="..\Demos\Buttons\Wisej.DemoBrowser.SplitButton\Wisej.DemoBrowser.SplitButton.csproj" />
+	  <ProjectReference Include="..\Demos\Containers\Wisej.DemoBrowser.Accordion\Wisej.DemoBrowser.Accordion.csproj" />
 	  <ProjectReference Include="..\Demos\Containers\Wisej.DemoBrowser.FlexLayoutPanel\Wisej.DemoBrowser.FlexLayoutPanel.csproj" />
 	  <ProjectReference Include="..\Demos\Containers\Wisej.DemoBrowser.FlowLayoutPanel\Wisej.DemoBrowser.FlowLayoutPanel.csproj" />
 	  <ProjectReference Include="..\Demos\Containers\Wisej.DemoBrowser.GroupBox\Wisej.DemoBrowser.GroupBox.csproj" />
@@ -127,6 +128,7 @@
 	  <ProjectReference Include="..\Demos\Editors\Wisej.DemoBrowser.MaskedTextBox\Wisej.DemoBrowser.MaskedTextBox.csproj" />
 	  <ProjectReference Include="..\Demos\Editors\Wisej.DemoBrowser.MonthCalendar\Wisej.DemoBrowser.MonthCalendar.csproj" />
 	  <ProjectReference Include="..\Demos\Editors\Wisej.DemoBrowser.NumericUpDown\Wisej.DemoBrowser.NumericUpDown.csproj" />
+	  <ProjectReference Include="..\Demos\Editors\Wisej.DemoBrowser.TagTextBox\Wisej.DemoBrowser.TagTextBox.csproj" />
 	  <ProjectReference Include="..\Demos\Editors\Wisej.DemoBrowser.TextBox\Wisej.DemoBrowser.TextBox.csproj" />
 	  <ProjectReference Include="..\Demos\Editors\Wisej.DemoBrowser.TreeView\Wisej.DemoBrowser.TreeView.csproj" />
 	  <ProjectReference Include="..\Demos\Editors\Wisej.DemoBrowser.Upload\Wisej.DemoBrowser.Upload.csproj" />

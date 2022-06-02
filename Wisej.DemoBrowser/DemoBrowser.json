@@ -108,6 +108,15 @@
 				"description-fr": "Le contrôle <b>Wisej.Web.CheckedListBox</b> est basé sur le contrôle ListBox mais inclut une case à cocher sur le côté gauche de chaque élément de liste."
 			}
 		},
+		"TagTextBox": {
+			"Features": {
+				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Editors/Wisej.DemoBrowser.TagTextBox",
+				"assembly": "Features, Wisej.DemoBrowser.TagTextBox.dll",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/Tag.svg",
+				"docsUrl": "https://docs.wisej.com/docs/controls/editors/tagtextbox",
+				"description-en": "The <b>Wisej.Web.TagTextBox</b> control represents a data field that displays a list of selectable and removable tags. The control recognizes tags as the user types and adds in front of the editable field."
+			}
+		},
 		"TreeView": {
 			"Features": {
 				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Editors/Wisej.DemoBrowser.TreeView",
@@ -234,6 +243,15 @@
 		}
 	},
 	"Containers": {
+		"Accordion": {
+			"Features": {
+				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Containers/Wisej.DemoBrowser.Accordion",
+				"assembly": "Features, Wisej.DemoBrowser.Accordion.dll",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/Accordion.svg",
+				"docsUrl": "https://docs.wisej.com/docs/controls/containers/accordion",
+				"description-en": "The <b>Wisej.Web.Accordion</b> control represents a collapsible set of AccordionPanel panels for presenting information in a limited amount of space."
+			}
+		},
 		"Panel": {
 			"Features": {
 				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Containers/Wisej.DemoBrowser.Panel",
@@ -299,15 +317,12 @@
 		},
 		"TableLayoutPanel": {
 			"Features": {
-				"sourceUrl":
-					"https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Containers/Wisej.DemoBrowser.TableLayoutPanel",
+				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Containers/Wisej.DemoBrowser.TableLayoutPanel",
 				"assembly": "Features, Wisej.DemoBrowser.TableLayoutPanel.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/TableLayoutPanel.svg",
 				"docsUrl": "https://docs.wisej.com/docs/controls/containers/tablelayoutpanel",
-				"description-en":
-					"The <b>Wisej.Web.FlowLayoutPanel</b> control represents a panel that dynamically lays out its contents in a grid composed of rows and columns.",
-				"description-fr":
-					"Le contrôle <b>Wisej.Web.TableLayoutPanel.dll</b> représente un panneau qui présente dynamiquement son contenu dans une grille composée de lignes et de colonnes."
+				"description-en": "The <b>Wisej.Web.FlowLayoutPanel</b> control represents a panel that dynamically lays out its contents in a grid composed of rows and columns.",
+				"description-fr": "Le contrôle <b>Wisej.Web.TableLayoutPanel.dll</b> représente un panneau qui présente dynamiquement son contenu dans une grille composée de lignes et de colonnes."
 			}
 		},
 		"PdfViewer": {
