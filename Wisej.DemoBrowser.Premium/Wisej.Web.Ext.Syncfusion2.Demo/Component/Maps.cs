@@ -25,6 +25,11 @@ namespace Wisej.Web.Ext.Syncfusion2.Demo.Component
 
         private void Maps_Load(object sender, EventArgs e)
 		{
+			this.maps1.Options.useGroupingSeparator = true;
+			this.maps1.Options.format = "n";
+			this.maps1.Options.allowPrint = true;
+
+
 			// load the map's json file.
 			var worldText = File.ReadAllText(Application.MapPath("Data/Maps/WorldMap_Countries.json"));
 			this.maps1.Options.layers = new[] {

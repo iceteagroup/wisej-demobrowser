@@ -18,9 +18,24 @@ namespace Wisej.Web.Ext.Syncfusion2.Demo.Component
 
 		private void DocumentEditor_Load(object sender, EventArgs e)
 		{
+			this.documentEditor1.Options.toolbarItems = new object[]
+			{
+				new
+				{
+					id = "save",
+					prefixIcon = "e-save",
+					text = "Save"
+				},
+				"Open", "Undo", "Redo", "Separator", "Image", "Table", "Hyperlink", "Bookmark", "Comments",
+				"TableOfContents", "Separator", "Header", "Footer", "PageSetup", "PageNumber", "Break", "Separator",
+				"Find", "Separator", "LocalClipboard", "RestrictEditing"
+			};
+			this.documentEditor1.Options.value = "documentEditor1";
+
+
 			var samplesPath = Application.MapPath("Data/DocumentEditor");
 			var samples = Directory.GetFiles(samplesPath)
-				.Select(x => Path.GetFileName(x)).ToArray();
+									.Select(x => Path.GetFileName(x)).ToArray();
 
 			this.comboBoxDataSource.DataSource = samples;
 			this.comboBoxDataSource.SelectedIndex = 0;
@@ -66,6 +81,7 @@ namespace Wisej.Web.Ext.Syncfusion2.Demo.Component
 						e.Response.ContentType = "text/plain";
 						e.Response.Write(ProcessDocument(file.InputStream, type));
 					}
+
 					break;
 
 				case "Export":
@@ -97,7 +113,7 @@ namespace Wisej.Web.Ext.Syncfusion2.Demo.Component
 		{
 			stream.Position = 0;
 
-			var type = (FormatType)Enum.Parse(typeof(FormatType), format.Replace(".", ""), true);
+			var type = (FormatType) Enum.Parse(typeof(FormatType), format.Replace(".", ""), true);
 			var document = WordDocument.Load(stream, type);
 			var sfdt = JsonConvert.SerializeObject(document);
 			document.Dispose();

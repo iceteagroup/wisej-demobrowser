@@ -13,6 +13,103 @@ namespace Wisej.Web.Ext.Syncfusion2.Demo.Component
 			this.chart1.Instance.onLegendClick += new WidgetEventHandler(chart1_WidgetEvent);
 		}
 
+		private void Chart_Load(object sender, EventArgs e)
+		{
+			this.chart1.Options.primaryXAxis = new
+			{
+				valueType = "Category"
+			};
+			this.chart1.Options.primaryYAxis = new
+			{
+				labelFormat = "${value}K"
+			};
+			this.chart1.Options.series = new object[]
+			{
+				new
+				{
+					dataSource = new object[]
+					{
+						new
+						{
+							month = "Jan",
+							sales = 35
+						},
+						new
+						{
+							month = "Feb",
+							sales = 28
+						},
+						new
+						{
+							month = "Mar",
+							sales = 34
+						},
+						new
+						{
+							month = "Apr",
+							sales = 32
+						},
+						new
+						{
+							month = "May",
+							sales = 40
+						},
+						new
+						{
+							month = "Jun",
+							sales = 32
+						},
+						new
+						{
+							month = "Jul",
+							sales = 35
+						},
+						new
+						{
+							month = "Aug",
+							sales = 55
+						},
+						new
+						{
+							month = "Sep",
+							sales = 38
+						},
+						new
+						{
+							month = "Oct",
+							sales = 30
+						},
+						new
+						{
+							month = "Nov",
+							sales = 25
+						},
+						new
+						{
+							month = "Dec",
+							sales = 32
+						}
+					},
+					xName = "month",
+					name = "Sales",
+					yName = "sales",
+					type = "Line",
+					marker = new
+					{
+						dataLabel = new
+						{
+							visible = true
+						}
+					}
+				}
+			};
+			this.chart1.Options.legendSettings = new
+			{
+				visible = true
+			};
+			this.chart1.Options.title = "Sales Analysis";
+		}
+
 		private void chart1_WidgetEvent(object sender, WidgetEventArgs e)
 		{
 			AlertBox.Show(
@@ -22,10 +119,10 @@ namespace Wisej.Web.Ext.Syncfusion2.Demo.Component
 			Application.Play(MessageBoxIcon.Information);
 		}
 
-        private void buttonUpdate_Click(object sender, EventArgs e)
-        {
-			this.chart1.Options.series[0].type = comboBoxChartType.Text;
+		private void buttonUpdate_Click(object sender, EventArgs e)
+		{
+			this.chart1.Options.series[0].type = this.comboBoxChartType.Text;
 			this.chart1.Update();
-        }
-    }
+		}
+	}
 }
