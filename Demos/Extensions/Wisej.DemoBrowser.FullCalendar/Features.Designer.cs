@@ -38,6 +38,7 @@
             | Wisej.Web.AnchorStyles.Left) 
             | Wisej.Web.AnchorStyles.Right)));
             this.fullCalendar1.BackColor = System.Drawing.Color.White;
+            this.fullCalendar1.CssClass = "shadow";
             this.fullCalendar1.EnableNativeContextMenu = true;
             this.fullCalendar1.EventLimit = 2;
             this.fullCalendar1.Location = new System.Drawing.Point(19, 63);
