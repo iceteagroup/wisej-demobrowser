@@ -30,16 +30,16 @@
 		{
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Features));
-            Wisej.Web.ImageListEntry imageListEntry21 = new Wisej.Web.ImageListEntry("resource.wx/Wisej.DemoBrowser.TreeView.Images.apple.png", "apple");
-            Wisej.Web.ImageListEntry imageListEntry22 = new Wisej.Web.ImageListEntry("resource.wx/Wisej.DemoBrowser.TreeView.Images.banana.png", "banana");
-            Wisej.Web.ImageListEntry imageListEntry23 = new Wisej.Web.ImageListEntry("resource.wx/Wisej.DemoBrowser.TreeView.Images.carrot.png", "carrot");
-            Wisej.Web.ImageListEntry imageListEntry24 = new Wisej.Web.ImageListEntry("resource.wx/Wisej.DemoBrowser.TreeView.Images.cucumber.png", "cucumber");
-            Wisej.Web.ImageListEntry imageListEntry25 = new Wisej.Web.ImageListEntry("resource.wx/Wisej.DemoBrowser.TreeView.Images.milk.png", "milk");
-            Wisej.Web.ImageListEntry imageListEntry26 = new Wisej.Web.ImageListEntry("resource.wx/Wisej.DemoBrowser.TreeView.Images.orange.png", "orange");
-            Wisej.Web.ImageListEntry imageListEntry27 = new Wisej.Web.ImageListEntry("resource.wx/Wisej.DemoBrowser.TreeView.Images.yogurt.png", "yogurt");
-            Wisej.Web.ImageListEntry imageListEntry28 = new Wisej.Web.ImageListEntry("resource.wx/Wisej.DemoBrowser.TreeView.Images.dairy.png", "dairy");
-            Wisej.Web.ImageListEntry imageListEntry29 = new Wisej.Web.ImageListEntry("resource.wx/Wisej.DemoBrowser.TreeView.Images.fruit.png", "fruit");
-            Wisej.Web.ImageListEntry imageListEntry30 = new Wisej.Web.ImageListEntry("resource.wx/Wisej.DemoBrowser.TreeView.Images.vegetables.png", "vegetables");
+            Wisej.Web.ImageListEntry imageListEntry31 = new Wisej.Web.ImageListEntry("resource.wx/Wisej.DemoBrowser.TreeView.Images.apple.png", "apple");
+            Wisej.Web.ImageListEntry imageListEntry32 = new Wisej.Web.ImageListEntry("resource.wx/Wisej.DemoBrowser.TreeView.Images.banana.png", "banana");
+            Wisej.Web.ImageListEntry imageListEntry33 = new Wisej.Web.ImageListEntry("resource.wx/Wisej.DemoBrowser.TreeView.Images.carrot.png", "carrot");
+            Wisej.Web.ImageListEntry imageListEntry34 = new Wisej.Web.ImageListEntry("resource.wx/Wisej.DemoBrowser.TreeView.Images.cucumber.png", "cucumber");
+            Wisej.Web.ImageListEntry imageListEntry35 = new Wisej.Web.ImageListEntry("resource.wx/Wisej.DemoBrowser.TreeView.Images.milk.png", "milk");
+            Wisej.Web.ImageListEntry imageListEntry36 = new Wisej.Web.ImageListEntry("resource.wx/Wisej.DemoBrowser.TreeView.Images.orange.png", "orange");
+            Wisej.Web.ImageListEntry imageListEntry37 = new Wisej.Web.ImageListEntry("resource.wx/Wisej.DemoBrowser.TreeView.Images.yogurt.png", "yogurt");
+            Wisej.Web.ImageListEntry imageListEntry38 = new Wisej.Web.ImageListEntry("resource.wx/Wisej.DemoBrowser.TreeView.Images.dairy.png", "dairy");
+            Wisej.Web.ImageListEntry imageListEntry39 = new Wisej.Web.ImageListEntry("resource.wx/Wisej.DemoBrowser.TreeView.Images.fruit.png", "fruit");
+            Wisej.Web.ImageListEntry imageListEntry40 = new Wisej.Web.ImageListEntry("resource.wx/Wisej.DemoBrowser.TreeView.Images.vegetables.png", "vegetables");
             this.accordion1 = new Wisej.Web.Accordion();
             this.accordionPanel1 = new Wisej.Web.AccordionPanel();
             this.label2 = new Wisej.Web.Label();
@@ -77,7 +77,7 @@
             this.accordion1.Controls.Add(this.accordionPanel4);
             this.accordion1.Location = new System.Drawing.Point(186, 36);
             this.accordion1.Name = "accordion1";
-            this.accordion1.SelectedIndex = 1;
+            this.accordion1.SelectedIndex = 0;
             this.accordion1.Size = new System.Drawing.Size(500, 293);
             this.accordion1.TabIndex = 0;
             this.accordion1.Selected += new Wisej.Web.AccordionEventHandler(this.accordion1_Selected);
@@ -88,8 +88,7 @@
             this.accordionPanel1.Controls.Add(this.label2);
             this.accordionPanel1.Location = new System.Drawing.Point(0, 0);
             this.accordionPanel1.Name = "accordionPanel1";
-            this.accordionPanel1.RestoreBounds = new System.Drawing.Rectangle(0, 0, 498, 207);
-            this.accordionPanel1.Size = new System.Drawing.Size(498, 28);
+            this.accordionPanel1.Size = new System.Drawing.Size(498, 207);
             this.accordionPanel1.Text = "What licenses are available?";
             // 
             // label2
@@ -106,10 +105,11 @@
             // accordionPanel2
             // 
             this.accordionPanel2.Controls.Add(this.label3);
-            this.accordionPanel2.Location = new System.Drawing.Point(0, 28);
+            this.accordionPanel2.Location = new System.Drawing.Point(0, 207);
             this.accordionPanel2.Name = "accordionPanel2";
             this.accordionPanel2.Padding = new Wisej.Web.Padding(8);
-            this.accordionPanel2.Size = new System.Drawing.Size(498, 207);
+            this.accordionPanel2.RestoreBounds = new System.Drawing.Rectangle(0, 207, 498, 207);
+            this.accordionPanel2.Size = new System.Drawing.Size(498, 28);
             this.accordionPanel2.Text = "How long do I get free upgrades?";
             // 
             // label3
@@ -171,16 +171,16 @@
             // imageList1
             // 
             this.imageList1.Images.AddRange(new Wisej.Web.ImageListEntry[] {
-            imageListEntry21,
-            imageListEntry22,
-            imageListEntry23,
-            imageListEntry24,
-            imageListEntry25,
-            imageListEntry26,
-            imageListEntry27,
-            imageListEntry28,
-            imageListEntry29,
-            imageListEntry30});
+            imageListEntry31,
+            imageListEntry32,
+            imageListEntry33,
+            imageListEntry34,
+            imageListEntry35,
+            imageListEntry36,
+            imageListEntry37,
+            imageListEntry38,
+            imageListEntry39,
+            imageListEntry40});
             // 
             // chkCollapsible
             // 
