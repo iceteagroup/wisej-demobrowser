@@ -39,6 +39,8 @@
             this.listViewIcons.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
             | Wisej.Web.AnchorStyles.Left) 
             | Wisej.Web.AnchorStyles.Right)));
+            this.listViewIcons.BorderStyle = Wisej.Web.BorderStyle.None;
+            this.listViewIcons.CssClass = "shadow";
             this.listViewIcons.LabelWrap = true;
             this.listViewIcons.LargeImageList = this.imageListIcons;
             this.listViewIcons.Location = new System.Drawing.Point(58, 26);

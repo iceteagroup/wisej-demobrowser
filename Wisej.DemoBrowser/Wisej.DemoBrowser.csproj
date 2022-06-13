@@ -169,10 +169,14 @@
 	  <ProjectReference Include="..\Demos\Grids\Wisej.DemoBrowser.ListView\Wisej.DemoBrowser.ListView.csproj" />
 	  <ProjectReference Include="..\Demos\Grids\Wisej.DemoBrowser.PropertyGrid\Wisej.DemoBrowser.PropertyGrid.csproj" />
 	  <ProjectReference Include="..\Demos\IconPacks\Wisej.DemoBrowser.BootstrapIcons\Wisej.DemoBrowser.BootstrapIcons.csproj" />
+	  <ProjectReference Include="..\Demos\IconPacks\Wisej.DemoBrowser.CssGgIcons\Wisej.DemoBrowser.CssGgIcons.csproj" />
 	  <ProjectReference Include="..\Demos\IconPacks\Wisej.DemoBrowser.ElegantIcons\Wisej.DemoBrowser.ElegantIcons.csproj" />
+	  <ProjectReference Include="..\Demos\IconPacks\Wisej.DemoBrowser.FeatherIcons\Wisej.DemoBrowser.FeatherIcons.csproj" />
 	  <ProjectReference Include="..\Demos\IconPacks\Wisej.DemoBrowser.FontAwsome\Wisej.DemoBrowser.FontAwsome.csproj" />
+	  <ProjectReference Include="..\Demos\IconPacks\Wisej.DemoBrowser.IonicIcons\Wisej.DemoBrowser.IonicIcons.csproj" />
 	  <ProjectReference Include="..\Demos\IconPacks\Wisej.DemoBrowser.MaterialDesign\Wisej.DemoBrowser.MaterialDesign.csproj" />
 	  <ProjectReference Include="..\Demos\IconPacks\Wisej.DemoBrowser.ModernUI\Wisej.DemoBrowser.ModernUI.csproj" />
+	  <ProjectReference Include="..\Demos\IconPacks\Wisej.DemoBrowser.TablerIcons\Wisej.DemoBrowser.TablerIcons.csproj" />
 	  <ProjectReference Include="..\Demos\IconPacks\Wisej.DemoBrowser.VaadinIcons\Wisej.DemoBrowser.VaadinIcons.csproj" />
 	  <ProjectReference Include="..\Demos\IconPacks\Wisej.DemoBrowser.VisualStudioIcons\Wisej.DemoBrowser.VisualStudioIcons.csproj" />
 	  <ProjectReference Include="..\Demos\Miscellaneous\Wisej.DemoBrowser.Audio\Wisej.DemoBrowser.Audio.csproj" />

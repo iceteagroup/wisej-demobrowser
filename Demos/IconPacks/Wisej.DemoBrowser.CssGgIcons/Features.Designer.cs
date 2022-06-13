@@ -1,4 +1,5 @@
-﻿namespace Wisej.DemoBrowser.ModernUi
+﻿namespace Wisej.DemoBrowser.CssGgIcons
+
 {
 	partial class Features
 	{

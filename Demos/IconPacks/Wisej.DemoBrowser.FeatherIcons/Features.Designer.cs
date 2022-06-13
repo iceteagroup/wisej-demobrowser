@@ -1,4 +1,4 @@
-﻿namespace Wisej.DemoBrowser.ModernUi
+﻿namespace Wisej.DemoBrowser.FeatherIcons
 {
 	partial class Features
 	{

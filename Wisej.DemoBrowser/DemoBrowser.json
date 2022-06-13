@@ -994,7 +994,7 @@
 		}
 	},
 	"Icon Packs": {
-		"Bootstrap Icons": {
+		"Bootstrap": {
 			"Features": {
 				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/IconPacks/Wisej.DemoBrowser.BootstrapIcons",
 				"assembly": "Features, Wisej.DemoBrowser.BootstrapIcons.dll",
@@ -1003,13 +1003,31 @@
 				"description-en": "Free, high quality, open source icon library with over 1,500 icons. Include them anyway you like—SVGs, SVG sprite, or web fonts. Use them with or without Bootstrap in any project."
 			}
 		},
-		"Elegant Icons": {
+		"CssGg": {
+			"Features": {
+				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/IconPacks/Wisej.DemoBrowser.CssGgIcons",
+				"assembly": "Features, Wisej.DemoBrowser.CssGgIcons.dll",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/PictureAndText.svg",
+				"docsUrl": "https://docs.wisej.com/extensions/icon-packs",
+				"description-en": "The complete <b>css.gg</b> icon pack."
+			}
+		},
+		"Elegant": {
 			"Features": {
 				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/IconPacks/Wisej.DemoBrowser.ElegantIcons",
 				"assembly": "Features, Wisej.DemoBrowser.ElegantIcons.dll",
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/PictureAndText.svg",
 				"docsUrl": "https://docs.wisej.com/extensions/icon-packs/eleganticons-iconpack",
 				"description-en": "The complete <b>Elegant Icons</b> icon pack from Elegant Themes."
+			}
+		},
+		"Feather": {
+			"Features": {
+				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/IconPacks/Wisej.DemoBrowser.FeatherIcons",
+				"assembly": "Features, Wisej.DemoBrowser.FeatherIcons.dll",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/PictureAndText.svg",
+				"docsUrl": "https://docs.wisej.com/extensions/icon-packs/",
+				"description-en": "<b>Feather</b> is a collection of simply beautiful open source icons. Each icon is designed on a 24x24 grid with an emphasis on simplicity, consistency, and flexibility."
 			}
 		},
 		"FontAwesome": {
@@ -1019,6 +1037,15 @@
 				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/PictureAndText.svg",
 				"docsUrl": "https://docs.wisej.com/extensions/icon-packs/fontawesome-iconpack",
 				"description-en": "The complete set of 600+ icons in <b>Font Awesome</b>."
+			}
+		},
+		"Ionic": {
+			"Features": {
+				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/IconPacks/Wisej.DemoBrowser.Ionic",
+				"assembly": "Features, Wisej.DemoBrowser.IonicIcons.dll",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/PictureAndText.svg",
+				"docsUrl": "https://docs.wisej.com/extensions/icon-packs",
+				"description-en": "Premium designed icons for use in web, iOS, Android, and desktop apps."
 			}
 		},
 		"Material Design": {
@@ -1039,6 +1066,15 @@
 				"description-en": "The complete set of <b>ModernUI icons</b>, featuring 1200+ icons for you to choose from."
 			}
 		},
+		"Tabler": {
+			"Features": {
+				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/IconPacks/Wisej.DemoBrowser.TablerIcons",
+				"assembly": "Features, Wisej.DemoBrowser.TablerIcons.dll",
+				"imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/PictureAndText.svg",
+				"docsUrl": "https://docs.wisej.com/extensions/icon-packs/",
+				"description-en": "<b>Tabler</b> icons are free and open source icons designed to make your website or app attractive, visually consistent and simply beautiful."
+			}
+		},
 		"Vaadin": {
 			"Features": {
 				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/IconPacks/Wisej.DemoBrowser.VaadinIcons",
@@ -1048,7 +1084,7 @@
 				"description-en": "<b>Vaadin Icons</b> is a set of 600+ icons designed for web applications. Free to use, anywhere!"
 			}
 		},
-		"Visual Studio Icons": {
+		"Visual Studio": {
 			"Features": {
 				"sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/IconPacks/Wisej.DemoBrowser.VisualStudioIcons",
 				"assembly": "Features, Wisej.DemoBrowser.VisualStudioIcons.dll",
