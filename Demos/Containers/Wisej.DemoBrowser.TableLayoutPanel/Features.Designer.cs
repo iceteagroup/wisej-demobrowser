@@ -198,6 +198,7 @@
             optionScalesAxesY1.Title.Color = System.Drawing.Color.FromArgb(234, 106, 71);
             this.chartJS35.Options.Scales.yAxes = new Wisej.Web.Ext.ChartJS3.OptionScalesAxesY[] {
         optionScalesAxesY1};
+            this.chartJS35.Padding = new Wisej.Web.Padding(8);
             this.chartJS35.Size = new System.Drawing.Size(692, 112);
             this.chartJS35.TabIndex = 5;
             this.chartJS35.Text = "chartJS35";
@@ -338,7 +339,7 @@
             optionScalesAxesY2.Title.Color = System.Drawing.Color.FromName("@controlText");
             this.chartJS31.Options.Scales.yAxes = new Wisej.Web.Ext.ChartJS3.OptionScalesAxesY[] {
         optionScalesAxesY2};
-            this.chartJS31.Padding = new Wisej.Web.Padding(8);
+            this.chartJS31.Padding = new Wisej.Web.Padding(16);
             this.tableLayoutPanel1.SetRowSpan(this.chartJS31, 3);
             this.chartJS31.Size = new System.Drawing.Size(1044, 165);
             this.chartJS31.TabIndex = 13;
@@ -637,6 +638,7 @@
             optionScalesAxesY3.Title.Color = System.Drawing.Color.FromName("@controlText");
             this.chartJS34.Options.Scales.yAxes = new Wisej.Web.Ext.ChartJS3.OptionScalesAxesY[] {
         optionScalesAxesY3};
+            this.chartJS34.Padding = new Wisej.Web.Padding(8);
             this.chartJS34.Size = new System.Drawing.Size(686, 112);
             this.chartJS34.TabIndex = 5;
             this.chartJS34.Text = "chartJS34";

@@ -37,7 +37,6 @@
             this.checkBox4 = new Wisej.Web.CheckBox();
             this.comboBox1 = new Wisej.Web.ComboBox();
             this.comboBoxChartType = new Wisej.Web.ComboBox();
-            this.label4 = new Wisej.Web.Label();
             this.groupBox1.SuspendLayout();
             this.panel.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
@@ -79,9 +78,6 @@
             this.flowLayoutPanel1.Controls.Add(this.comboBox1);
             this.flowLayoutPanel1.Controls.Add(this.comboBoxChartType);
             this.flowLayoutPanel1.Controls.Add(this.buttonLoad);
-            this.flowLayoutPanel1.Controls.Add(this.label4);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 35);
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 441);
             // 
             // dxChart1
             // 
@@ -132,7 +128,7 @@
             this.buttonLoad.AllowedFileTypes = ".json";
             this.buttonLoad.HideValue = true;
             this.buttonLoad.ImageSource = "icon-file";
-            this.buttonLoad.Location = new System.Drawing.Point(3, 286);
+            this.buttonLoad.Location = new System.Drawing.Point(3, 308);
             this.buttonLoad.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.buttonLoad.Name = "buttonLoad";
             this.buttonLoad.Size = new System.Drawing.Size(42, 42);
@@ -169,7 +165,7 @@
             this.comboBox1.Location = new System.Drawing.Point(3, 156);
             this.comboBox1.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(212, 46);
+            this.comboBox1.Size = new System.Drawing.Size(212, 57);
             this.comboBox1.TabIndex = 4;
             this.comboBox1.Text = "shift";
             // 
@@ -185,25 +181,13 @@
             "line"});
             this.comboBoxChartType.Label.Size = 50;
             this.comboBoxChartType.Label.SizeType = Wisej.Web.SizeType.Percent;
-            this.comboBoxChartType.LabelText = "Chart type";
-            this.comboBoxChartType.Location = new System.Drawing.Point(3, 221);
+            this.comboBoxChartType.LabelText = "Chart Type";
+            this.comboBoxChartType.Location = new System.Drawing.Point(3, 232);
             this.comboBoxChartType.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.comboBoxChartType.Name = "comboBoxChartType";
-            this.comboBoxChartType.Size = new System.Drawing.Size(212, 46);
+            this.comboBoxChartType.Size = new System.Drawing.Size(212, 57);
             this.comboBoxChartType.TabIndex = 7;
             this.comboBoxChartType.Text = "shift";
-            // 
-            // label4
-            // 
-            this.label4.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Left) 
-            | Wisej.Web.AnchorStyles.Right)));
-            this.label4.Location = new System.Drawing.Point(3, 347);
-            this.label4.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(212, 88);
-            this.label4.TabIndex = 8;
-            this.label4.Text = "Note. For more chart type and there usage, check doc";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // dxChart
             // 
@@ -226,6 +210,5 @@
 		private CheckBox checkBox4;
 		private ComboBox comboBox1;
         private ComboBox comboBoxChartType;
-        private Label label4;
     }
 }

@@ -28,6 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
+            Wisej.Web.Ext.DevExtreme.dxBase.WidgetFunction widgetFunction1 = new Wisej.Web.Ext.DevExtreme.dxBase.WidgetFunction();
             this.label9 = new Wisej.Web.Label();
             this.numericUpDown1 = new Wisej.Web.NumericUpDown();
             this.numericUpDown2 = new Wisej.Web.NumericUpDown();
@@ -67,6 +68,14 @@
             this.linkDocs.TabIndex = 4;
             this.linkDocs.Text = "https://js.devexpress.com/Documentation/Guide/Widgets/Bullet/Visual_Elements/";
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.label9);
+            this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
+            this.groupBox1.Controls.SetChildIndex(this.spacer1, 0);
+            this.groupBox1.Controls.SetChildIndex(this.label9, 0);
+            this.groupBox1.Controls.SetChildIndex(this.flowLayoutPanel1, 0);
+            // 
             // buttonUpdate
             // 
             this.buttonUpdate.TabIndex = 6;
@@ -91,29 +100,35 @@
             // 
             // flowLayoutPanel1
             // 
-            this.flowLayoutPanel1.Controls.Add(this.label9);
             this.flowLayoutPanel1.Controls.Add(this.checkBox1);
             this.flowLayoutPanel1.Controls.Add(this.checkBox2);
             this.flowLayoutPanel1.Controls.Add(this.numericUpDown1);
             this.flowLayoutPanel1.Controls.Add(this.numericUpDown2);
             this.flowLayoutPanel1.Controls.Add(this.numericUpDown3);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 407);
             // 
             // label9
             // 
-            this.flowLayoutPanel1.SetFillWeight(this.label9, 1);
-            this.flowLayoutPanel1.SetFlowBreak(this.label9, true);
-            this.label9.Location = new System.Drawing.Point(3, 3);
+            this.label9.BackColor = System.Drawing.Color.FromArgb(233, 124, 41);
+            this.label9.CssStyle = "border-radius: 4px;\r\nbox-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0" +
+    ", 0.06) 0px 1px 2px 0px;";
+            this.label9.Dock = Wisej.Web.DockStyle.Bottom;
+            this.label9.ForeColor = System.Drawing.Color.White;
+            this.label9.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label9.Location = new System.Drawing.Point(16, 445);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(212, 44);
+            this.label9.Padding = new Wisej.Web.Padding(8);
+            this.label9.Size = new System.Drawing.Size(218, 60);
             this.label9.TabIndex = 0;
-            this.label9.Text = "Note: changes only affect the top widget";
+            this.label9.Text = "Changes only affect the top bullet.";
+            this.label9.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // numericUpDown1
             // 
             this.flowLayoutPanel1.SetFillWeight(this.numericUpDown1, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.numericUpDown1, true);
             this.numericUpDown1.LabelText = "Value";
-            this.numericUpDown1.Location = new System.Drawing.Point(3, 180);
+            this.numericUpDown1.Location = new System.Drawing.Point(3, 130);
             this.numericUpDown1.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.numericUpDown1.Name = "numericUpDown1";
             this.numericUpDown1.Size = new System.Drawing.Size(212, 57);
@@ -129,7 +144,7 @@
             this.flowLayoutPanel1.SetFillWeight(this.numericUpDown2, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.numericUpDown2, true);
             this.numericUpDown2.LabelText = "Target";
-            this.numericUpDown2.Location = new System.Drawing.Point(3, 256);
+            this.numericUpDown2.Location = new System.Drawing.Point(3, 206);
             this.numericUpDown2.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.numericUpDown2.Name = "numericUpDown2";
             this.numericUpDown2.Size = new System.Drawing.Size(212, 57);
@@ -148,7 +163,7 @@
             this.checkBox1.Checked = true;
             this.flowLayoutPanel1.SetFillWeight(this.checkBox1, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.checkBox1, true);
-            this.checkBox1.Location = new System.Drawing.Point(3, 66);
+            this.checkBox1.Location = new System.Drawing.Point(3, 16);
             this.checkBox1.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(212, 38);
@@ -163,7 +178,7 @@
             this.checkBox2.Checked = true;
             this.flowLayoutPanel1.SetFillWeight(this.checkBox2, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.checkBox2, true);
-            this.checkBox2.Location = new System.Drawing.Point(3, 123);
+            this.checkBox2.Location = new System.Drawing.Point(3, 73);
             this.checkBox2.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.Size = new System.Drawing.Size(212, 38);
@@ -175,7 +190,7 @@
             this.flowLayoutPanel1.SetFillWeight(this.numericUpDown3, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.numericUpDown3, true);
             this.numericUpDown3.LabelText = "Start Scale Value";
-            this.numericUpDown3.Location = new System.Drawing.Point(3, 332);
+            this.numericUpDown3.Location = new System.Drawing.Point(3, 282);
             this.numericUpDown3.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.numericUpDown3.Name = "numericUpDown3";
             this.numericUpDown3.Size = new System.Drawing.Size(212, 57);
@@ -197,8 +212,13 @@
             this.dxBullet1.Dock = Wisej.Web.DockStyle.Fill;
             this.dxBullet1.Location = new System.Drawing.Point(75, 0);
             this.dxBullet1.Name = "dxBullet1";
+            this.dxBullet1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"val\":\"()=>test([1,2])\"}")));
             this.dxBullet1.Size = new System.Drawing.Size(273, 27);
             this.dxBullet1.TabIndex = 7;
+            widgetFunction1.Name = "test";
+            widgetFunction1.Source = "return arguments[0];";
+            this.dxBullet1.WidgetFunctions = new Wisej.Web.Ext.DevExtreme.dxBase.WidgetFunction[] {
+        widgetFunction1};
             // 
             // label10
             // 

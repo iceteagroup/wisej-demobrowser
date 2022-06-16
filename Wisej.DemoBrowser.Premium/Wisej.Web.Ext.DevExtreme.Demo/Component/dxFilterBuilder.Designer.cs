@@ -78,7 +78,7 @@
             // 
             this.buttonGetFilterExpression.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Left) 
             | Wisej.Web.AnchorStyles.Right)));
-            this.buttonGetFilterExpression.Location = new System.Drawing.Point(3, 183);
+            this.buttonGetFilterExpression.Location = new System.Drawing.Point(3, 185);
             this.buttonGetFilterExpression.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.buttonGetFilterExpression.Name = "buttonGetFilterExpression";
             this.buttonGetFilterExpression.Size = new System.Drawing.Size(212, 35);
@@ -94,14 +94,14 @@
             this.tagTextBoxGroupOperation.Location = new System.Drawing.Point(3, 16);
             this.tagTextBoxGroupOperation.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.tagTextBoxGroupOperation.Name = "tagTextBoxGroupOperation";
-            this.tagTextBoxGroupOperation.Size = new System.Drawing.Size(212, 55);
+            this.tagTextBoxGroupOperation.Size = new System.Drawing.Size(212, 57);
             this.tagTextBoxGroupOperation.TabIndex = 17;
             // 
             // label4
             // 
             this.label4.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Left) 
             | Wisej.Web.AnchorStyles.Right)));
-            this.label4.Location = new System.Drawing.Point(3, 90);
+            this.label4.Location = new System.Drawing.Point(3, 92);
             this.label4.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(212, 74);

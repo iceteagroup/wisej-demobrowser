@@ -23,6 +23,7 @@ namespace Wisej.Web.Ext.Syncfusion.Demo.Component
         protected FlowLayoutPanel flowLayoutPanelProperties;
         private Spacer spacer1;
         private Button buttonLinks;
+        private Panel panel1;
         private System.ComponentModel.IContainer components;
 
 		private void InitializeComponent()
@@ -38,6 +39,7 @@ namespace Wisej.Web.Ext.Syncfusion.Demo.Component
             this.linkApi = new Wisej.Web.LinkLabel();
             this.panel = new Wisej.Web.Panel();
             this.buttonLinks = new Wisej.Web.Button();
+            this.panel1 = new Wisej.Web.Panel();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -144,8 +146,18 @@ namespace Wisej.Web.Ext.Syncfusion.Demo.Component
             this.buttonLinks.TabIndex = 16;
             this.buttonLinks.MouseClick += new Wisej.Web.MouseEventHandler(this.buttonLinks_MouseClick);
             // 
+            // panel1
+            // 
+            this.panel1.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Right)));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(26, 40, 120);
+            this.panel1.Location = new System.Drawing.Point(576, 20);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(461, 57);
+            this.panel1.TabIndex = 17;
+            // 
             // TestBase
             // 
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.buttonLinks);
             this.Controls.Add(this.linkDocs);
             this.Controls.Add(this.groupBox1);

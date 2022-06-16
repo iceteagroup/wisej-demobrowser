@@ -18,7 +18,7 @@ namespace Wisej.Web.Ext.Syncfusion.Demo.Component
 
 		private void ejPdfViewer_Load(object sender, EventArgs e)
 		{
-			this.ejPdfViewer1.Options.documentPath = "Data/Wisej-Datasheet-V2.3.pdf";
+			this.ejPdfViewer1.Options.documentPath = "Data/Wisej-Datasheet.pdf";
 
 			this.ejPdfViewer1.Options.enableSignature = false;
 			this.ejPdfViewer1.Options.enableHighlightAnnotation = true;
@@ -114,7 +114,7 @@ namespace Wisej.Web.Ext.Syncfusion.Demo.Component
 
 		private void ejPdfViewer1_Initialized(object sender, EventArgs e)
 		{
-			this.ejPdfViewer1.Instance.load("Data\\Wisej-Datasheet-V2.3.pdf");
+			this.ejPdfViewer1.Instance.load("Data\\Wisej-Datasheet.pdf");
 		}
 
 		private void ejPdfViewer1_WidgetEvent(object sender, WidgetEventArgs e)
