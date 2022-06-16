@@ -14,6 +14,23 @@ namespace Wisej.DemoBrowser.TagTextBox
 			InitializeComponent();
 		}
 
+		private void Features_Load(object sender, EventArgs e)
+		{
+			var stateCodes = new[]
+			{
+				"AK", "AL", "AR", "AS", "AZ", "CA", "CO", "CT", "DC", "DE", "FL", "GA", "GU", "HI", "IA", "ID", "IL",
+				"IN", "KS", "KY", "LA", "MA", "MD", "ME", "MI", "MN", "MO", "MP", "MS", "MT", "NC", "ND", "NE", "NH",
+				"NJ", "NM", "NV", "NY", "OH", "OK", "OR", "PA", "PR", "RI", "SC", "SD", "TN", "TX", "UM", "UT", "VA",
+				"VI", "VT", "WA", "WI", "WV", "WY"
+			};
+
+			foreach (var code in stateCodes)
+			{
+				this.tagDefault.Text += $"{code},";
+				this.tagCustomRender.Text += $"{code},";
+			}
+		}
+
 		private void tagTextBox2_TagRender(object sender, TagTextBoxRenderEventArgs e)
 		{
 			switch (e.Text.Replace(",", string.Empty))
@@ -41,28 +58,12 @@ namespace Wisej.DemoBrowser.TagTextBox
 					break;
 				default:
 				{
-					e.BackColor = Color.FromArgb(this.random.Next(0, 255), this.random.Next(0, 255), this.random.Next(0, 255));
+					e.BackColor = Color.FromArgb(this.random.Next(0, 255), this.random.Next(0, 255),
+												this.random.Next(0, 255));
 
 					e.Html = e.Html = "<b>" + e.Text + "</b>";
 					break;
 				}
-			}
-		}
-
-		private void Features_Load(object sender, EventArgs e)
-		{
-			var stateCodes = new[]
-			{
-				"AK", "AL", "AR", "AS", "AZ", "CA", "CO", "CT", "DC", "DE", "FL", "GA", "GU", "HI", "IA", "ID", "IL",
-				"IN", "KS", "KY", "LA", "MA", "MD", "ME", "MI", "MN", "MO", "MP", "MS", "MT", "NC", "ND", "NE", "NH",
-				"NJ", "NM", "NV", "NY", "OH", "OK", "OR", "PA", "PR", "RI", "SC", "SD", "TN", "TX", "UM", "UT", "VA",
-				"VI", "VT", "WA", "WI", "WV", "WY"
-			};
-
-			foreach (var code in stateCodes)
-			{
-				this.tagDefault.Text += $"{code},";
-				this.tagCustomRender.Text += $"{code},";
 			}
 		}
 
@@ -84,6 +85,14 @@ namespace Wisej.DemoBrowser.TagTextBox
 		private void Tag_Selected(object sender, TagTextBoxEventArgs e)
 		{
 			AlertBox.Show($"{e.Text} Tag is Selected");
+		}
+
+		private void chkAutoSize_CheckedChanged(object sender, EventArgs e)
+		{
+			this.tagDefault.AutoSize = this.chkAutoSize.Checked;
+			this.tagAllowDuplicates.AutoSize = this.chkAutoSize.Checked;
+			this.tagAutoComplete.AutoSize = this.chkAutoSize.Checked;
+			this.tagCustomRender.AutoSize = this.chkAutoSize.Checked;
 		}
 	}
 }
