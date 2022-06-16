@@ -28,7 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-            Wisej.Web.Ext.DevExtreme.dxBase.WidgetFunction widgetFunction1 = new Wisej.Web.Ext.DevExtreme.dxBase.WidgetFunction();
+            Wisej.Web.Ext.DevExtreme.dxBase.WidgetFunction widgetFunction2 = new Wisej.Web.Ext.DevExtreme.dxBase.WidgetFunction();
             this.label9 = new Wisej.Web.Label();
             this.numericUpDown1 = new Wisej.Web.NumericUpDown();
             this.numericUpDown2 = new Wisej.Web.NumericUpDown();
@@ -100,11 +100,13 @@
             // 
             // flowLayoutPanel1
             // 
+            this.flowLayoutPanel1.AutoScrollMargin = new System.Drawing.Size(0, 8);
             this.flowLayoutPanel1.Controls.Add(this.checkBox1);
             this.flowLayoutPanel1.Controls.Add(this.checkBox2);
             this.flowLayoutPanel1.Controls.Add(this.numericUpDown1);
             this.flowLayoutPanel1.Controls.Add(this.numericUpDown2);
             this.flowLayoutPanel1.Controls.Add(this.numericUpDown3);
+            this.flowLayoutPanel1.Padding = new Wisej.Web.Padding(0, 0, 0, 8);
             this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 407);
             // 
             // label9
@@ -215,10 +217,10 @@
             this.dxBullet1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"val\":\"()=>test([1,2])\"}")));
             this.dxBullet1.Size = new System.Drawing.Size(273, 27);
             this.dxBullet1.TabIndex = 7;
-            widgetFunction1.Name = "test";
-            widgetFunction1.Source = "return arguments[0];";
+            widgetFunction2.Name = "test";
+            widgetFunction2.Source = "return arguments[0];";
             this.dxBullet1.WidgetFunctions = new Wisej.Web.Ext.DevExtreme.dxBase.WidgetFunction[] {
-        widgetFunction1};
+        widgetFunction2};
             // 
             // label10
             // 

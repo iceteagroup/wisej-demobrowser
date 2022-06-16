@@ -124,8 +124,8 @@
             this.comboBox1.Label.Size = 50;
             this.comboBox1.Label.SizeType = Wisej.Web.SizeType.Percent;
             this.comboBox1.LabelText = "Scroll Direction";
-            this.comboBox1.Location = new System.Drawing.Point(3, 209);
-            this.comboBox1.Margin = new Wisej.Web.Padding(3, 7, 3, 3);
+            this.comboBox1.Location = new System.Drawing.Point(3, 210);
+            this.comboBox1.Margin = new Wisej.Web.Padding(3, 8, 3, 3);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(212, 60);
             this.comboBox1.TabIndex = 18;
@@ -172,8 +172,8 @@
             this.comboBox2.Label.Size = 50;
             this.comboBox2.Label.SizeType = Wisej.Web.SizeType.Percent;
             this.comboBox2.LabelText = "Show CheckBoxes Mode";
-            this.comboBox2.Location = new System.Drawing.Point(3, 279);
-            this.comboBox2.Margin = new Wisej.Web.Padding(3, 7, 3, 3);
+            this.comboBox2.Location = new System.Drawing.Point(3, 281);
+            this.comboBox2.Margin = new Wisej.Web.Padding(3, 8, 3, 3);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(212, 60);
             this.comboBox2.TabIndex = 21;

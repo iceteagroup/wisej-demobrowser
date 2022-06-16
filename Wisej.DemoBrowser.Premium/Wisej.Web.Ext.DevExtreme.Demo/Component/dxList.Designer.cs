@@ -108,7 +108,8 @@
             this.comboBox1.Label.Size = 50;
             this.comboBox1.Label.SizeType = Wisej.Web.SizeType.Percent;
             this.comboBox1.LabelText = "Search Mode";
-            this.comboBox1.Location = new System.Drawing.Point(3, 156);
+            this.comboBox1.Location = new System.Drawing.Point(3, 195);
+            this.comboBox1.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(212, 60);
             this.comboBox1.TabIndex = 9;
@@ -121,7 +122,8 @@
             this.checkBox2.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.flowLayoutPanel1.SetFillWeight(this.checkBox2, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.checkBox2, true);
-            this.checkBox2.Location = new System.Drawing.Point(3, 54);
+            this.checkBox2.Location = new System.Drawing.Point(3, 67);
+            this.checkBox2.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.Size = new System.Drawing.Size(212, 45);
             this.checkBox2.TabIndex = 10;
@@ -143,7 +145,8 @@
             this.comboBox3.Label.Size = 50;
             this.comboBox3.Label.SizeType = Wisej.Web.SizeType.Percent;
             this.comboBox3.LabelText = "Item Delete Mode";
-            this.comboBox3.Location = new System.Drawing.Point(3, 222);
+            this.comboBox3.Location = new System.Drawing.Point(3, 274);
+            this.comboBox3.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(212, 60);
             this.comboBox3.TabIndex = 11;
@@ -163,7 +166,8 @@
             this.comboBox2.Label.Size = 50;
             this.comboBox2.Label.SizeType = Wisej.Web.SizeType.Percent;
             this.comboBox2.LabelText = "Selection Mode";
-            this.comboBox2.Location = new System.Drawing.Point(3, 288);
+            this.comboBox2.Location = new System.Drawing.Point(3, 353);
+            this.comboBox2.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(212, 60);
             this.comboBox2.TabIndex = 14;
@@ -177,7 +181,8 @@
             this.checkBox5.Checked = true;
             this.flowLayoutPanel1.SetFillWeight(this.checkBox5, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.checkBox5, true);
-            this.checkBox5.Location = new System.Drawing.Point(3, 105);
+            this.checkBox5.Location = new System.Drawing.Point(3, 131);
+            this.checkBox5.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBox5.Name = "checkBox5";
             this.checkBox5.Size = new System.Drawing.Size(212, 45);
             this.checkBox5.TabIndex = 15;

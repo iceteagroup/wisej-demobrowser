@@ -86,6 +86,7 @@
             // 
             // flowLayoutPanel1
             // 
+            this.flowLayoutPanel1.AutoScrollMargin = new System.Drawing.Size(0, 8);
             this.flowLayoutPanel1.Controls.Add(this.button1);
             this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 407);
             // 
@@ -301,7 +302,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(212, 35);
             this.button1.TabIndex = 1;
-            this.button1.Text = "Line color";
+            this.button1.Text = "Line Color";
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label1

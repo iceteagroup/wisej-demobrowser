@@ -78,7 +78,7 @@
             // 
             this.buttonGetFilterExpression.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Left) 
             | Wisej.Web.AnchorStyles.Right)));
-            this.buttonGetFilterExpression.Location = new System.Drawing.Point(3, 185);
+            this.buttonGetFilterExpression.Location = new System.Drawing.Point(3, 146);
             this.buttonGetFilterExpression.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.buttonGetFilterExpression.Name = "buttonGetFilterExpression";
             this.buttonGetFilterExpression.Size = new System.Drawing.Size(212, 35);
@@ -90,9 +90,8 @@
             // 
             this.tagTextBoxGroupOperation.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Left) 
             | Wisej.Web.AnchorStyles.Right)));
-            this.tagTextBoxGroupOperation.LabelText = "Group operation";
-            this.tagTextBoxGroupOperation.Location = new System.Drawing.Point(3, 16);
-            this.tagTextBoxGroupOperation.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
+            this.tagTextBoxGroupOperation.LabelText = "Group Operations";
+            this.tagTextBoxGroupOperation.Location = new System.Drawing.Point(3, 3);
             this.tagTextBoxGroupOperation.Name = "tagTextBoxGroupOperation";
             this.tagTextBoxGroupOperation.Size = new System.Drawing.Size(212, 57);
             this.tagTextBoxGroupOperation.TabIndex = 17;
@@ -101,12 +100,13 @@
             // 
             this.label4.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Left) 
             | Wisej.Web.AnchorStyles.Right)));
-            this.label4.Location = new System.Drawing.Point(3, 92);
+            this.label4.Location = new System.Drawing.Point(3, 79);
             this.label4.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(212, 74);
+            this.label4.Size = new System.Drawing.Size(212, 48);
             this.label4.TabIndex = 18;
-            this.label4.Text = "Accepted Values: \'and\' | \'or\' | \'notAnd\' | \'notOr\' more details in doc";
+            this.label4.Text = "Accepted Values: \'and\' | \'or\' | \'notAnd\' | \'notOr\'";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // dxFilterBuilder
             // 
