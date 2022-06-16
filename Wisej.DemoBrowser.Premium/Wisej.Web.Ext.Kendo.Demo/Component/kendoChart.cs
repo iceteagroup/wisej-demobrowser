@@ -75,20 +75,7 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 				labels = new {rotation = "auto"}
 			};
 
-			this.kendoChart1.Options.categoryAxis = new
-			{
-				labels = new {visible = true},
-				categories = new string[]
-				{
-					"Jan",
-					"Feb",
-					"Mar",
-					"Apr",
-					"May",
-					"Jun"
-				},
-				majorguidelines = new {visible = true}
-			};
+			
 
 			this.kendoChart1.Options.tooltip = new {visible = true, template = "#= series.name #: #= value #"};
 		}
@@ -135,11 +122,31 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 			}
 		}
 
+		private void AssignCategoryAxisLabels()
+		{
+			var categoryAxis = new
+			{
+				labels = new { visible = this.checkBox3.Checked },
+				categories = new string[]
+				{
+					"Jan",
+					"Feb",
+					"Mar",
+					"Apr",
+					"May",
+					"Jun"
+				},
+				majorguidelines = new { visible = this.checkBox1.Checked }
+			};
+			this.kendoChart1.Options.categoryAxis = categoryAxis;
+		}
+
 		private void buttonUpdate_Click(object sender, EventArgs e)
 		{
 			this.kendoChart1.Options.transitions = this.checkBox1.Checked;
 			this.kendoChart1.Options.pannable = this.checkBox2.Checked;
-			this.kendoChart1.Options.categoryAxis.labels.visible = this.checkBox3.Checked;
+
+			AssignCategoryAxisLabels();
 
 			this.kendoChart1.Update();
 		}
