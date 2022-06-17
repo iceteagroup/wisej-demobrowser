@@ -261,7 +261,7 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 					},
 					new
 					{
-						ProductID = 22, ProductName = "Gustaf's Kn�ckebr�d", SupplierID = 9, CategoryID = 5,
+						ProductID = 22, ProductName = "Gustaf's Knockebread", SupplierID = 9, CategoryID = 5,
 						QuantityPerUnit = "24 - 500 g pkgs.", UnitPrice = 21, UnitsInStock = 104, UnitsOnOrder = 0,
 						ReorderLevel = 25, Discontinued = false, Category = new
 						{
@@ -272,7 +272,7 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 					},
 					new
 					{
-						ProductID = 23, ProductName = "Tunnbr�d", SupplierID = 9, CategoryID = 5,
+						ProductID = 23, ProductName = "Tunnbread", SupplierID = 9, CategoryID = 5,
 						QuantityPerUnit = "12 - 250 g pkgs.", UnitPrice = 9, UnitsInStock = 61, UnitsOnOrder = 0,
 						ReorderLevel = 25, Discontinued = false, Category = new
 						{
@@ -283,7 +283,7 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 					},
 					new
 					{
-						ProductID = 24, ProductName = "Guaran� Fant�stica", SupplierID = 10, CategoryID = 1,
+						ProductID = 24, ProductName = "Guarana Fantastica", SupplierID = 10, CategoryID = 1,
 						QuantityPerUnit = "12 - 355 ml cans", UnitPrice = 4.5, UnitsInStock = 20, UnitsOnOrder = 0,
 						ReorderLevel = 0, Discontinued = true, Category = new
 						{
@@ -294,7 +294,7 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 					},
 					new
 					{
-						ProductID = 25, ProductName = "NuNuCa Nu�-Nougat-Creme", SupplierID = 11, CategoryID = 3,
+						ProductID = 25, ProductName = "NuNuCa Nuo-Nougat-Creme", SupplierID = 11, CategoryID = 3,
 						QuantityPerUnit = "20 - 450 g glasses", UnitPrice = 14, UnitsInStock = 76, UnitsOnOrder = 0,
 						ReorderLevel = 30, Discontinued = false, Category = new
 						{
@@ -305,7 +305,7 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 					},
 					new
 					{
-						ProductID = 26, ProductName = "Gumb�r Gummib�rchen", SupplierID = 11, CategoryID = 3,
+						ProductID = 26, ProductName = "Gumbar Gummiberchen", SupplierID = 11, CategoryID = 3,
 						QuantityPerUnit = "100 - 250 g bags", UnitPrice = 31.23, UnitsInStock = 15, UnitsOnOrder = 0,
 						ReorderLevel = 0, Discontinued = false, Category = new
 						{
@@ -327,7 +327,7 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 					},
 					new
 					{
-						ProductID = 28, ProductName = "R�ssle Sauerkraut", SupplierID = 12, CategoryID = 7,
+						ProductID = 28, ProductName = "Russle Sauerkraut", SupplierID = 12, CategoryID = 7,
 						QuantityPerUnit = "25 - 825 g cans", UnitPrice = 45.6, UnitsInStock = 26, UnitsOnOrder = 0,
 						ReorderLevel = 0, Discontinued = true, Category = new
 						{
@@ -338,7 +338,7 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 					},
 					new
 					{
-						ProductID = 29, ProductName = "Th�ringer Rostbratwurst", SupplierID = 12, CategoryID = 6,
+						ProductID = 29, ProductName = "Thuringer Rostbratwurst", SupplierID = 12, CategoryID = 6,
 						QuantityPerUnit = "50 bags x 30 sausgs.", UnitPrice = 123.79, UnitsInStock = 0,
 						UnitsOnOrder = 0,
 						ReorderLevel = 0, Discontinued = true, Category = new
@@ -439,7 +439,7 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 					},
 					new
 					{
-						ProductID = 38, ProductName = "C�te de Blaye", SupplierID = 18, CategoryID = 1,
+						ProductID = 38, ProductName = "Cote de Blaye", SupplierID = 18, CategoryID = 1,
 						QuantityPerUnit = "12 - 75 cl bottles", UnitPrice = 263.5, UnitsInStock = 17, UnitsOnOrder = 0,
 						ReorderLevel = 15, Discontinued = false, Category = new
 						{
