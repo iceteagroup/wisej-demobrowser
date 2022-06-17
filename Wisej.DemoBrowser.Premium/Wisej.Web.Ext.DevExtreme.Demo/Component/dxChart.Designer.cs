@@ -175,10 +175,10 @@
             this.flowLayoutPanel1.SetFillWeight(this.comboBoxChartType, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.comboBoxChartType, true);
             this.comboBoxChartType.Items.AddRange(new object[] {
-            "area",
-            "fullstackedspline",
-            "fullstackedsplinearea",
-            "line"});
+            "Area",
+            "FullStackedSpline",
+            "FullStackedSplineArea",
+            "Line"});
             this.comboBoxChartType.Label.Size = 50;
             this.comboBoxChartType.Label.SizeType = Wisej.Web.SizeType.Percent;
             this.comboBoxChartType.LabelText = "Chart Type";

@@ -163,10 +163,10 @@
             this.flowLayoutPanel1.SetFillWeight(this.comboBox2, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.comboBox2, true);
             this.comboBox2.Items.AddRange(new object[] {
-            "century",
-            "decade",
-            "month",
-            "year"});
+            "Century",
+            "Decade",
+            "Month",
+            "Year"});
             this.comboBox2.Label.Size = 50;
             this.comboBox2.Label.SizeType = Wisej.Web.SizeType.Percent;
             this.comboBox2.LabelText = "Zoom Level";
@@ -175,7 +175,7 @@
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(212, 60);
             this.comboBox2.TabIndex = 5;
-            this.comboBox2.Text = "month";
+            this.comboBox2.Text = "Month";
             // 
             // dxCalendar1
             // 
@@ -192,7 +192,6 @@
             // dxCalendar
             // 
             this.Name = "dxCalendar";
-            this.Load += new System.EventHandler(this.dxCalendar_Load);
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);

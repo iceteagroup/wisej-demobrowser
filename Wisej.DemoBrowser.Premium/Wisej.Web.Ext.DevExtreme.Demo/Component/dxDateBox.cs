@@ -23,9 +23,9 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
 
 		private void buttonUpdate_Click(object sender, EventArgs e)
 		{
-			this.dxDateBox1.Options.type = this.comboBox2.SelectedItem;
 			this.dxDateBox1.Options.showAnalogClock = this.checkBox4.Checked;
 			this.dxDateBox1.Options.acceptCustomValue = this.checkBox1.Checked;
+			this.dxDateBox1.Options.type = this.comboBox2.SelectedItem.ToString().ToLower();
 
 			this.dxDateBox1.Update();
 		}

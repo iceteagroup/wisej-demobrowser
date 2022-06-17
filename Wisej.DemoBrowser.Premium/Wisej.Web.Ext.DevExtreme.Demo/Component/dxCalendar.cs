@@ -27,15 +27,9 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
 			this.dxCalendar1.Options.focusStateEnabled = this.checkBox3.Checked;
 			this.dxCalendar1.Options.hoverStateEnabled = this.checkBox4.Checked;
 			this.dxCalendar1.Options.firstDayOfWeek = this.comboBox1.SelectedIndex;
-			this.dxCalendar1.Options.zoomLevel = this.comboBox2.SelectedItem;
+			this.dxCalendar1.Options.zoomLevel = this.comboBox2.SelectedItem.ToString().ToLower();
 
 			this.dxCalendar1.Update();
 		}
-
-        private void dxCalendar_Load(object sender, EventArgs e)
-        {
-			this.comboBox1.SelectedIndex = 0;
-			this.comboBox2.SelectedIndex = 0;
-        }
-    }
+	}
 }

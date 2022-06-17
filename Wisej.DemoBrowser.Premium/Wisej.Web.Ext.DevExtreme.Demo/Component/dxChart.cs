@@ -46,7 +46,7 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
 				panKey = this.comboBox1.SelectedItem,
 				valueAxis = "both"
 			};
-			this.dxChart1.Options.commonSeriesSettings.type = this.comboBoxChartType.SelectedItem.ToString();
+			this.dxChart1.Options.commonSeriesSettings.type = this.comboBoxChartType.SelectedItem.ToString().ToLower();
 		}
 
         private void dxChart_Load(object sender, EventArgs e)

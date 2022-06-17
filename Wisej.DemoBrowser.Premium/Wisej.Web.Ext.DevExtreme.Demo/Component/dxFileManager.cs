@@ -134,11 +134,14 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
        
         private void buttonUpdate_Click(object sender, EventArgs e)
 		{
-			// Guarantees the existence of Options.itemView.
-			this.dxFileManager1.Options.itemView = new { mode = this.comboBox1.SelectedItem, showFolders = this.checkBox1.Checked };
-			this.dxFileManager1.Options.allowedFileExtensions = checkedListBox1.CheckedItems;
+			this.dxFileManager1.Options.itemView = new
+			{
+				showFolders = this.checkBox1.Checked,
+				mode = this.comboBox1.SelectedItem.ToString().ToLower()
+			};
 			this.dxFileManager1.Options.activeStateEnabled = this.checkBox2.Checked;
-
+			this.dxFileManager1.Options.allowedFileExtensions = this.checkedListBox1.CheckedItems;
+			
 			this.dxFileManager1.Update();
 		}
 
@@ -146,9 +149,8 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
 		{
 			var comboString = "";
 			foreach (var checkedItem in checkedListBox1.CheckedItems)
-			{
 				comboString += $"{checkedItem}, ";
-			}
+			
 			this.userComboBox1.Text = comboString;
 		}
 	}
