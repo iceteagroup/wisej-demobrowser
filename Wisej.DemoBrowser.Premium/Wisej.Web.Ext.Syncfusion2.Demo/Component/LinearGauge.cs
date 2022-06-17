@@ -21,48 +21,29 @@ namespace Wisej.Web.Ext.Syncfusion2.Demo.Component
 				roundedCornerRadius = 5,
 				type = "Thermometer"
 			};
-			this.linearGauge1.Options.axes = new object[]
-			{
-				new
-				{
-					minimum = 0, maximum = 180, line = new
-					{
-						width = 0
-					},
-					majorTicks = new
-					{
-						interval = 20,
-						color = "#9e9e9e"
-					},
-					minorTicks = new
-					{
-						color = "#9e9e9e"
-					},
-					pointers = new object[]
-					{
-						new
-						{
-							value = 90, height = 13, width = 13, roundedCornerRadius = 5, type = "Bar",
-							color = "#f02828"
-						}
-					}
-				},
-				new
-				{
-					minimum = 0, maximum = 180, line = new
-					{
-						width = 0
-					},
-					majorTicks = new
-					{
-						interval = 20
-					},
-					opposedPosition = true, pointers = new object[]
-					{
-						new {width = 0}
-					}
-				}
-			};
+
+			this.linearGauge1.Options.axes[0].minimum = 0;
+			this.linearGauge1.Options.axes[0].maximum = 180;
+			this.linearGauge1.Options.axes[0].majorTicks.interval = 20;
+			this.linearGauge1.Options.axes[0].majorTicks.color = "#9e9e9e";
+
+			this.linearGauge1.Options.axes[0].minorTicks.color = "#9e9e9e";
+			this.linearGauge1.Options.axes[0].line.width = 0;
+
+			this.linearGauge1.Options.axes[0].pointers[0].value = 90;
+			this.linearGauge1.Options.axes[0].pointers[0].height = 13;
+			this.linearGauge1.Options.axes[0].pointers[0].roundedCornerRadius = 5;
+			this.linearGauge1.Options.axes[0].pointers[0].type = "Bar";
+			this.linearGauge1.Options.axes[0].pointers[0].color = "#f02828";
+
+			this.linearGauge1.Options.axes[1].minimum = 0;
+			this.linearGauge1.Options.axes[1].maximum = 180;
+			this.linearGauge1.Options.axes[1].majorTicks.interval = 20;
+
+			this.linearGauge1.Options.axes[1].line.width = 0;
+			this.linearGauge1.Options.axes[1].opposedPosition = true;
+
+			this.linearGauge1.Options.axes[1].pointers[0].width = 0;
 		}
 
 		private void linearGauge1_WidgetEvent(object sender, WidgetEventArgs e)

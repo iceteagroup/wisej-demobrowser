@@ -1,4 +1,5 @@
 ﻿using System;
+using Syncfusion.EJ2.Notifications;
 using Wisej.Web;
 
 namespace Wisej.Web.Ext.Syncfusion2.Demo.Component
@@ -17,12 +18,10 @@ namespace Wisej.Web.Ext.Syncfusion2.Demo.Component
 			this.progressBar1.Options.progressThickness = 15;
 			this.progressBar1.Options.showProgressValue = true;
 			this.progressBar1.Options.height = "30";
-			this.progressBar1.Options.animation = new
-			{
-				enable = true,
-				duration = 2000,
-				delay = 0
-			};
+
+			this.progressBar1.Options.animation.enable = true;
+			this.progressBar1.Options.animation.duration = 2000;
+			this.progressBar1.Options.animation.delay = 0;
 		}
 
 		private void checkBoxAnimationEnable_CheckedChanged(object sender, EventArgs e)

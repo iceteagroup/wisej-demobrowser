@@ -102,13 +102,13 @@ namespace Wisej.Web.Ext.Syncfusion2.Demo.Component
 					}
 				}
 			};
-			this.pivotView1.Options.groupingBarSettings = new
-			{
-				showFilterIcon = true,
-				showSortIcon = true,
-				showRemoveIcon = true,
-				showValueTypeIcon = true
-			};
+
+
+			this.pivotView1.Options.groupingBarSettings.showFilterIcon = true;
+			this.pivotView1.Options.groupingBarSettings.showSortIcon = true;
+			this.pivotView1.Options.groupingBarSettings.showRemoveIcon = true;
+			this.pivotView1.Options.groupingBarSettings.showValueTypeIcon = true;
+
 			this.pivotView1.Options.showFieldList = true;
 			this.pivotView1.Options.showGroupingBar = true;
 		}
