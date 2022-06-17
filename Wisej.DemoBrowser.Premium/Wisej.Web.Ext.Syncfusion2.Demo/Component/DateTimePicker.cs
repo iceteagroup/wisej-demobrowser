@@ -17,6 +17,9 @@ namespace Wisej.Web.Ext.Syncfusion2.Demo.Component
 		{
 			this.dateTimePicker1.Options.format = "dd-MMM-yy hh:mm a";
 			this.dateTimePicker1.Options.value = "";
+
+			this.dateTimePickerStart.Value = DateTime.Now.AddYears(-1);
+			this.dateTimePickerEnd.Value = DateTime.Now.AddYears(1);
 		}
 
 		private void dateTimePicker1_WidgetEvent(object sender, WidgetEventArgs e)

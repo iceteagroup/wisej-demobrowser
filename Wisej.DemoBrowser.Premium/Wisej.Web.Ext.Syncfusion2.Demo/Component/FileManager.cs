@@ -4,6 +4,7 @@ using Syncfusion.EJ2.FileManager.PhysicalFileProvider;
 using System;
 using System.IO;
 using System.Web.Mvc;
+using Wisej.Core;
 
 namespace Wisej.Web.Ext.Syncfusion2.Demo.Component
 {
@@ -43,6 +44,15 @@ namespace Wisej.Web.Ext.Syncfusion2.Demo.Component
 					"SelectAll"
 				},
 				visible = true
+			};
+
+			var serviceUrl = ((IWisejHandler)this.fileManager1).GetPostbackURL();
+			this.fileManager1.Options.ajaxSettings = new
+			{
+				uploadUrl = $"{serviceUrl}&action=Upload",
+				url = $"{serviceUrl}&action=FileOperations",
+				downloadUrl = $"{serviceUrl}&action=Download",
+				getImageUrl = $"{serviceUrl}&action=GetImage"
 			};
 
 			this.operation.RootFolder(Path.Combine(Application.StartupPath, "Playground"));
@@ -181,12 +191,11 @@ namespace Wisej.Web.Ext.Syncfusion2.Demo.Component
 
 		private void buttonUpdate_Click(object sender, EventArgs e)
 		{
-			this.fileManager1.Options.view = this.comboBoxView.Text;
-			this.fileManager1.Options.showThumbnail = this.checkBoxThumbnail.Checked;
-			this.fileManager1.Options.showHiddenItems = this.checkBoxHiddenItem.Checked;
-			this.fileManager1.Options.showFileExtension = this.checkBoxFileExtension.Checked;
-			this.fileManager1.Options.allowDragAndDrop = this.checkBoxMultipleSelection.Checked;
-
+			this.fileManager1.Options.view = this.comboBoxView.SelectedItem;
+			//this.fileManager1.Options.showFileExtension = this.checkBoxFileExtension.Checked;
+			//this.fileManager1.Options.allowDragAndDrop = this.checkBoxAllowDragAndDrop.Checked;
+			//this.fileManager1.Options.allowMultipleSelection = this.checkBoxMultipleSelection.Checked;
+			
 			this.fileManager1.Update();
 		}
 	}

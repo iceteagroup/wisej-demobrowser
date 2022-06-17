@@ -32,7 +32,6 @@ namespace Wisej.Web.Ext.Syncfusion2.Demo.Component
 			};
 			this.documentEditor1.Options.value = "documentEditor1";
 
-
 			var samplesPath = Application.MapPath("Data/DocumentEditor");
 			var samples = Directory.GetFiles(samplesPath)
 									.Select(x => Path.GetFileName(x)).ToArray();
@@ -120,5 +119,15 @@ namespace Wisej.Web.Ext.Syncfusion2.Demo.Component
 
 			return sfdt;
 		}
-	}
+
+        private void documentEditor1_Appear(object sender, EventArgs e)
+        {
+			var path = Application.MapPath($"Data/DocumentEditor/{this.comboBoxDataSource.SelectedItem}");
+			using (var fs = new FileStream(path, FileMode.Open))
+			{
+				var sfdt = ProcessDocument(fs, "docx");
+				this.documentEditor1.Instance.documentEditor.open(sfdt);
+			}
+		}
+    }
 }

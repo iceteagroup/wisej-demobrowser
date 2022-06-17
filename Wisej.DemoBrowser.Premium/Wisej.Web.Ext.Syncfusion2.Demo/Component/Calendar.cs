@@ -13,6 +13,12 @@ namespace Wisej.Web.Ext.Syncfusion2.Demo.Component
 			this.calendar1.Instance.onNavigated += new WidgetEventHandler(calendar1_WidgetEvent);
 		}
 
+		private void Calendar_Load(object sender, EventArgs e)
+		{
+			this.dateTimePickerEnd.Value = DateTime.Now.AddYears(1);
+			this.dateTimePickerStart.Value = DateTime.Now.AddYears(-1);
+		}
+
 		private void calendar1_WidgetEvent(object sender, WidgetEventArgs e)
 		{
 			AlertBox.Show(
@@ -24,19 +30,10 @@ namespace Wisej.Web.Ext.Syncfusion2.Demo.Component
 
 		private void buttonUpdate_Click(object sender, EventArgs e)
 		{
-			if (DateTime.Compare(this.dateTimePickerEnd.Value, this.dateTimePickerStart.Value) <= 0)
-			{
-				AlertBox.Show($"End Date must be later than Start date",
-							MessageBoxIcon.Warning);
-
-				Application.Play(MessageBoxIcon.Warning);
-				return;
-			}
-
 			this.calendar1.Options.max = this.dateTimePickerEnd.Value.ToShortDateString();
 			this.calendar1.Options.min = this.dateTimePickerStart.Value.ToShortDateString();
 
 			this.calendar1.Update();
 		}
-	}
+    }
 }

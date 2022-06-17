@@ -14,7 +14,7 @@ namespace Wisej.Web.Ext.Syncfusion2.Demo.Component
 
 		private void AccumulationChart_Load(object sender, EventArgs e)
 		{
-			SetAccumilationChartSeries();
+			SetAccumulationChartSeries();
 		}
 		private void accumulationChart1_WidgetEvent(object sender, WidgetEventArgs e)
 		{
@@ -26,7 +26,7 @@ namespace Wisej.Web.Ext.Syncfusion2.Demo.Component
 			Application.Play(MessageBoxIcon.Information);
 		}
 
-		private void SetAccumilationChartSeries()
+		private void SetAccumulationChartSeries()
 		{
 			var series = new
 			{
@@ -89,7 +89,7 @@ namespace Wisej.Web.Ext.Syncfusion2.Demo.Component
 				endAngle = this.trackBarPieAngle.Value,
 				innerRadius = "10%",
 				explode = true,
-				explodeOffset = "10%",
+				explodeOffset = "50%",
 				explodeIndex = this.trackBarExplodeIndex.Value,
 				radius = $"{this.numericUpDownExplodeOffset.Value}%"
 			};
@@ -105,7 +105,7 @@ namespace Wisej.Web.Ext.Syncfusion2.Demo.Component
 			this.accumulationChart1.Options.title = this.textBoxTitle.Text;
 			this.accumulationChart1.Options.subTitle = this.textBoxSubTitle.Text;
 
-			SetAccumilationChartSeries();
+			SetAccumulationChartSeries();
 
 			this.accumulationChart1.Update();
 		}

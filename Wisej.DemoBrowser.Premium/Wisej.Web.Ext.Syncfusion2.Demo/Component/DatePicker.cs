@@ -17,6 +17,9 @@ namespace Wisej.Web.Ext.Syncfusion2.Demo.Component
 		{
 			this.datePicker1.Options.format = "dd-MMM-yy";
 			this.datePicker1.Options.value = null;
+
+			this.dateTimePickerStart.Value = DateTime.Now.AddYears(-1);
+			this.dateTimePickerEnd.Value = DateTime.Now.AddYears(1);
 		}
 		private void datePicker1_WidgetEvent(object sender, WidgetEventArgs e)
 		{
@@ -29,15 +32,6 @@ namespace Wisej.Web.Ext.Syncfusion2.Demo.Component
 
         private void buttonUpdate_Click(object sender, EventArgs e)
         {
-			if (DateTime.Compare(dateTimePickerEnd.Value, dateTimePickerStart.Value) <= 0)
-			{
-				AlertBox.Show($"End Date must be later than Start date",
-					MessageBoxIcon.Warning);
-
-				Application.Play(MessageBoxIcon.Warning);
-				return;
-			}
-
 			this.datePicker1.Options.format = comboBoxFormat.Text;
 			this.datePicker1.Options.max = dateTimePickerEnd.Value.ToShortDateString();
 			this.datePicker1.Options.min = dateTimePickerStart.Value.ToShortDateString();
