@@ -17,7 +17,7 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 			this.kendoDateTimePicker1.Value = DateTime.Now;
 
 			this.dateTimePickerMin.Value = DateTime.Now.AddYears(-1);
-			this.dateTimePickerMin.Value = DateTime.Now.AddYears(1);
+			this.dateTimePickerMax.Value = DateTime.Now.AddYears(1);
 		}
 
 		private async void kendoDateTimePicker1_WidgetEvent(object sender, WidgetEventArgs e)

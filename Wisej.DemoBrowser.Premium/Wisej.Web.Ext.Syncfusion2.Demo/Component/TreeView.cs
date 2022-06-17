@@ -100,8 +100,8 @@ namespace Wisej.Web.Ext.Syncfusion2.Demo.Component
 
 		private void buttonUpdate_Click(object sender, EventArgs e)
 		{
-			this.treeView1.Options.expandOn = this.comboBoxExpandOn.Text;
 			this.treeView1.Options.allowEditing = this.checkBoxEditing.Checked;
+			this.treeView1.Options.expandOn = this.comboBoxExpandOn.SelectedItem;
 			this.treeView1.Options.showCheckBox = this.checkBoxShowCheckbox.Checked;
 			this.treeView1.Options.allowDragAndDrop = this.checkBoxDragAndDrop.Checked;
 
