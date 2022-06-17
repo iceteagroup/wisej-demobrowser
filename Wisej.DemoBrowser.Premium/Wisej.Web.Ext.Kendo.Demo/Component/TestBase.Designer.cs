@@ -168,8 +168,8 @@
 		protected LinkLabel linkApi;
 		protected LinkLabel linkDocs;
 		private ImageList imageList1;
-        private Spacer spacer1;
         public FlowLayoutPanel flowLayoutPanelProperties;
         private Button buttonLinks;
+        protected Spacer spacer1;
     }
 }
