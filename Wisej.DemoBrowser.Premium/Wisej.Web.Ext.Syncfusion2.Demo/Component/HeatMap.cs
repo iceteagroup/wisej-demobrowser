@@ -117,24 +117,15 @@ namespace Wisej.Web.Ext.Syncfusion2.Demo.Component
 			};
 
 			this.heatMap1.Options.dataSource = heatMapDataSource;
-			this.heatMap1.Options.paletteSettings = new
-			{
-				palette = new object[]
-				{
-					new
-					{
-						value = 0, color = "#11D7B6"
-					},
-					new
-					{
-						value = 100, color = "#126DD6"
-					}
-				}
-			};
-			this.heatMap1.Options.cellSettings = new
-			{
-				showLabel = false
-			};
+
+
+			this.heatMap1.Options.paletteSettings.palette[0].value = 0;
+			this.heatMap1.Options.paletteSettings.palette[0].color = "#11D7B6";
+
+			this.heatMap1.Options.paletteSettings.palette[1].value = 100;
+			this.heatMap1.Options.paletteSettings.palette[1].color = "#126DD6";
+
+			this.heatMap1.Options.cellSettings.showLabel = this.checkBoxCellLabel.Checked;
 		}
 
 		private void heatMap1_WidgetEvent(object sender, WidgetEventArgs e)

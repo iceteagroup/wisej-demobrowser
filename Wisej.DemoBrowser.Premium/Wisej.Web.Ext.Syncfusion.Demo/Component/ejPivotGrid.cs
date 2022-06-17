@@ -226,11 +226,9 @@ namespace Wisej.Web.Ext.Syncfusion.Demo.Component
 				}
 			};
 			this.ejPivotGrid1.Options.isResponsive = true;
-			this.ejPivotGrid1.Options.headerSettings = new
-			{
-				showRowItems = true,
-				showColumnItems = true
-			};
+
+			this.ejPivotGrid1.Options.headerSettings.showRowItems = this.checkBox2.Checked;
+			this.ejPivotGrid1.Options.headerSettings.showColumnItems = this.checkBoxShow3.Checked;
 		}
 		private void buttonUpdate_Click(object sender, EventArgs e)
 		{

@@ -18,10 +18,10 @@ namespace Wisej.Web.Ext.Syncfusion2.Demo.Component
 			{
 				enable = true
 			};
-			this.bulletChart1.Options.dataSource = new object[]
-			{
-				new {value = 270, target = 250}
-			};
+
+			this.bulletChart1.Options.dataSource[0].value = this.numericUpDownValue.Value;
+			this.bulletChart1.Options.dataSource[0].target = this.numericUpDownTarget.Value;
+
 			this.bulletChart1.Options.valueField = "value";
 			this.bulletChart1.Options.targetField = "target";
 			this.bulletChart1.Options.animation = new

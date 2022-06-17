@@ -57,16 +57,10 @@ namespace Wisej.Web.Ext.Syncfusion.Demo.Component
 			this.ejTile6.Options.imagePosition = "center";
 			this.ejTile6.Options.text = "Weather";
 			this.ejTile6.Options.imageUrl = "Images/Tile/weather.png";
-			this.ejTile6.Options.liveTile = new
-			{
-				updateInterval = 5000,
-				enabled = true,
-				type = "carousel",
-				imageUrl = new object[]
-				{
-					"images/tile/weather.png", "images/tile/weather_1.png", "images/tile/weather_2.png"
-				}
-			};
+			this.ejTile6.Options.liveTime.updateInterval = 5000;
+			this.ejTile6.Options.liveTime.enabled = true;
+			this.ejTile6.Options.liveTime.type = "carousel";
+			this.ejTile6.Options.liveTime.imageUrl = new string[] {"images/tile/weather.png", "images/tile/weather_1.png", "images/tile/weather_2.png"};
 
 			//ejTile7
 			this.ejTile7.Options.imageUrl = "Images/Tile/people_2.png";

@@ -75,7 +75,10 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 				labels = new {rotation = "auto"}
 			};
 
-			
+			SetCategoryAxisLabels();
+
+			this.kendoChart1.Options.transitions = this.checkBox1.Checked;
+			this.kendoChart1.Options.pannable = this.checkBox2.Checked;
 
 			this.kendoChart1.Options.tooltip = new {visible = true, template = "#= series.name #: #= value #"};
 		}
@@ -122,7 +125,7 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 			}
 		}
 
-		private void AssignCategoryAxisLabels()
+		private void SetCategoryAxisLabels()
 		{
 			var categoryAxis = new
 			{
@@ -136,7 +139,7 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 					"May",
 					"Jun"
 				},
-				majorguidelines = new { visible = this.checkBox1.Checked }
+				majorguidelines = new { visible = true }
 			};
 			this.kendoChart1.Options.categoryAxis = categoryAxis;
 		}
@@ -146,7 +149,7 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 			this.kendoChart1.Options.transitions = this.checkBox1.Checked;
 			this.kendoChart1.Options.pannable = this.checkBox2.Checked;
 
-			AssignCategoryAxisLabels();
+			SetCategoryAxisLabels();
 
 			this.kendoChart1.Update();
 		}

@@ -111,19 +111,15 @@ namespace Wisej.Web.Ext.Syncfusion.Demo.Component
 				}
 			};
 			this.ejChart1.Options.isResponsive = true;
-			this.ejChart1.Options.title = new
-			{
-				text = "Efficiency of oil-fired power production"
-			};
-			this.ejChart1.Options.legend = new
-			{
-				visible = true
-			};
+			this.ejChart1.Options.title.text = "Efficiency of oil-fired power production";
+
+			this.ejChart1.Options.legend.visible = true;
+			this.ejChart1.Options.legend.alignment = this.comboBoxLegendAlignment.SelectedItem;
 		}
 		private void buttonUpdate_Click(object sender, EventArgs e)
 		{
 			this.ejChart1.Options.title.text = this.textBoxTitle.Text;
-			this.ejChart1.Options.legend.alignment = this.comboBoxLegendAlignment.Text;
+			this.ejChart1.Options.legend.alignment = this.comboBoxLegendAlignment.SelectedItem;
 
 			this.ejChart1.Update();
 		}

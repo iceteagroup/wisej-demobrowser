@@ -16,10 +16,8 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 
 		private void kendoStockChart_Load(object sender, EventArgs e)
 		{
-			this.kendoStockChart1.Options.title = new
-			{
-				text = "The Boeing Company NYSE:BA"
-			};
+			this.kendoStockChart1.Options.title.text = "The Boeing Company NYSE:BA";
+			
 
 			this.kendoStockChart1.Options.dateField = "Date";
 
@@ -102,6 +100,11 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 			}
 		}
 
+		private void SetStockChartTitle()
+		{
+			string title = this.textBoxTitle.Text;
+			this.kendoStockChart1.Options.title.title = title;
+		}
 		private void kendoStockChart1_WidgetEvent(object sender, WidgetEventArgs e)
 		{
 			AlertBox.Show(

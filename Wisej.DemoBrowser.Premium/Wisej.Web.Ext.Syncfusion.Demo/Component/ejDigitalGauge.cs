@@ -17,20 +17,26 @@ namespace Wisej.Web.Ext.Syncfusion.Demo.Component
 		private void ejDigitalGauge_Load(object sender, EventArgs e)
 		{
 			this.ejDigitalGauge1.Options.isResponsive = true;
-			this.ejDigitalGauge1.Options.items = new dynamic[]
+			
+			SetDigitalGaugeItems();
+		}
+
+		private void SetDigitalGaugeItems()
+		{
+			var items = new dynamic[]
 			{
 				new
 				{
 					segmentSettings = new
 					{
 						width = 1,
-						spacing = 0,
+						spacing = this.trackBarSegmentSpacing.Value,
 						color = "#8c8c8c"
 					},
 					characterSettings = new
 					{
 						opacity = 0.8,
-						spacing = 2
+						spacing = this.trackBarCharSpacing.Value
 					},
 					value = "123456789",
 					position = new
@@ -40,13 +46,14 @@ namespace Wisej.Web.Ext.Syncfusion.Demo.Component
 					}
 				}
 			};
+			this.ejDigitalGauge1.Options.items = items;
 		}
 
 		private void buttonUpdate_Click(object sender, EventArgs e)
 		{
 			this.ejDigitalGauge1.Instance.setValue(0, this.textBox1.Text);
-			this.ejDigitalGauge1.Options.items[0].segmentSettings.spacing = this.trackBarSegmentSpacing.Value;
-			this.ejDigitalGauge1.Options.items[0].characterSettings.spacing = this.trackBarCharSpacing.Value;
+
+			SetDigitalGaugeItems();
 
 			this.ejDigitalGauge1.Update();
 		}

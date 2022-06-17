@@ -6,7 +6,7 @@ using Wisej.Web;
 
 namespace Wisej.Web.Ext.Kendo.Demo.Component
 {
-	public partial class kendoTreeList : Wisej.Web.Ext.Kendo.Demo.Component.TestBase
+	public partial class kendoTreeList : TestBase
 	{
 		public kendoTreeList()
 		{
@@ -17,52 +17,11 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 
 		private void kendoTreeList_Load(object sender, EventArgs e)
 		{
-			this.kendoTreeList1.Options.editable = "inline";
-			this.kendoTreeList1.Options.columns = new object[]
-			{
-				new
-				{
-					field = "FirstName",
-					title = "First Name",
-					width = 280, template = "()=>getPhotoTemplate()"
-				},
-				new
-				{
-					field = "LastName",
-					title = "Last Name",
-					width = 160
-				},
-				new
-				{
-					field = "Position"
-				},
-				new
-				{
-					field = "Phone",
-					width = 200
-				},
-				new
-				{
-					field = "Extension",
-					width = 140
-				},
-				new
-				{
-					field = "Address"
-				},
-				new
-				{
-					title = "Edit",
-					command = new object[]
-					{
-						"edit"
-					},
-					width = 140
-				}
-			};
-			this.kendoTreeList1.Options.columnMenu = true;
-			this.kendoTreeList1.Options.selectable = true;
+			this.kendoTreeList1.Options.resizable = this.checkBoxResizable.Checked;
+			this.kendoTreeList1.Options.columnMenu = this.checkBoxColumnMenu.Checked;
+			this.kendoTreeList1.Options.editable = this.comboBoxEditMode.SelectedItem;
 
+			SetTreeListColumns();
 
 			this.kendoTreeList1.Options.dataSource = new
 			{
@@ -96,18 +55,19 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 				}
 			};
 		}
+
 		private void kendoTreeList1_WidgetEvent(object sender, WidgetEventArgs e)
 		{
 			AlertBox.Show(
-					$"<b>{e.Type}</b><br/>{JSON.Stringify(e.Data)}",
-					MessageBoxIcon.Information);
+				$"<b>{e.Type}</b><br/>{JSON.Stringify(e.Data)}",
+				MessageBoxIcon.Information);
 
 			Application.Play(MessageBoxIcon.Information);
 		}
 
 		private DynamicObject[] LoadEmployees()
 		{
-			using (StreamReader reader = new StreamReader(Application.MapPath("Data/TreeList/Employees.json")))
+			using (var reader = new StreamReader(Application.MapPath("Data/TreeList/Employees.json")))
 			{
 				DynamicObject[] employees = JSON.Parse(reader.BaseStream).employees;
 
@@ -115,15 +75,69 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 			}
 		}
 
+		private void SetTreeListColumns()
+		{
+			var columns = new object[]
+			{
+				new
+				{
+					field = "FirstName",
+					title = "First Name",
+					width = 280, template = "()=>getPhotoTemplate()",
+					filterable = this.checkBoxFiltrable.Checked
+				},
+				new
+				{
+					field = "LastName",
+					title = "Last Name",
+					width = 160,
+					filterable = this.checkBoxFiltrable.Checked
+				},
+				new
+				{
+					field = "Position",
+					filterable = this.checkBoxFiltrable.Checked
+				},
+				new
+				{
+					field = "Phone",
+					width = 200,
+					filterable = this.checkBoxFiltrable.Checked
+				},
+				new
+				{
+					field = "Extension",
+					width = 140,
+					filterable = this.checkBoxFiltrable.Checked
+				},
+				new
+				{
+					field = "Address",
+					filterable = this.checkBoxFiltrable.Checked
+				},
+				new
+				{
+					title = "Edit",
+					command = new object[]
+					{
+						"edit"
+					},
+					width = 140,
+					filterable = this.checkBoxFiltrable.Checked
+				}
+			};
+
+			this.kendoTreeList1.Options.columns = columns;
+		}
+
 		private void buttonUpdate_Click(object sender, EventArgs e)
 		{
 			this.kendoTreeList1.Options.resizable = this.checkBoxResizable.Checked;
 			this.kendoTreeList1.Options.columnMenu = this.checkBoxColumnMenu.Checked;
-			this.kendoTreeList1.Options.editable = this.comboBoxEditMode.SelectedItem;	
-			
-			for (int i = 0; i < ((dynamic[])this.kendoTreeList1.Options.columns).Length; i++)
-				this.kendoTreeList1.Options.columns[i].filterable = this.checkBoxFiltrable.Checked;
-			
+			this.kendoTreeList1.Options.editable = this.comboBoxEditMode.SelectedItem;
+
+			SetTreeListColumns();
+
 			this.kendoTreeList1.Update();
 		}
 	}

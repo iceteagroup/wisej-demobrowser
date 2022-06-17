@@ -15,7 +15,34 @@ namespace Wisej.Web.Ext.Syncfusion.Demo.Component
 			this.ejCircularGauge1.Options.isResponsive = true;
 			this.ejCircularGauge1.Options.backgroundColor = "transparent";
 			this.ejCircularGauge1.Options.load = "loadGaugeTheme";
-			this.ejCircularGauge1.Options.scales = new object[]
+
+			SetCircularGaugeScales();
+		}
+
+		private void SetCircularGaugeScales()
+		{
+			var rangeCollection = new object[]
+			{
+				new {distanceFromScale = -30, startValue = 0, endValue = 70, size = this.trackBarSize.Value}, new
+				{
+					distanceFromScale = this.trackBarDistanceFromScale.Value, startValue = 70, endValue = 110,
+					backgroundColor = "#fc0606",
+					border = new
+					{
+						color = "#fc0606"
+					}
+				},
+				new
+				{
+					distanceFromScale = -30, startValue = 110, endValue = 120, backgroundColor = "#f5b43f",
+					border = new
+					{
+						color = "#f5b43f"
+					}
+				}
+			};
+
+			var scales = new object[]
 			{
 				new
 				{
@@ -55,43 +82,18 @@ namespace Wisej.Web.Ext.Syncfusion.Demo.Component
 							color = "#8c8c8c"
 						}
 					},
-					ranges = new object[]
-					{
-						new {distanceFromScale = -30, startValue = 0, endValue = 70}, new
-						{
-							distanceFromScale = -30, startValue = 70, endValue = 110, backgroundColor = "#fc0606",
-							border = new
-							{
-								color = "#fc0606"
-							}
-						},
-						new
-						{
-							distanceFromScale = -30, startValue = 110, endValue = 120, backgroundColor = "#f5b43f",
-							border = new
-							{
-								color = "#f5b43f"
-							}
-						}
-					}
+					ranges = rangeCollection,
+					showTicks = this.checkBoxShowTicks.Checked
 				}
 			};
+			this.ejCircularGauge1.Options.scales = scales;
 		}
 
 		private void buttonUpdate_Click(object sender, EventArgs e)
 		{
-			this.ejCircularGauge1.Value =
-				Convert.ToInt32(this.numericUpDownVal.Value);
+			this.ejCircularGauge1.Value = Convert.ToInt32(this.numericUpDownVal.Value);
 
-			var scales = this.ejCircularGauge1.Options.scales;
-			for (var i = 0; i < scales.Length; i++) scales[i].showTicks = this.checkBoxShowTicks.Checked;
-
-			var ranges = scales[0].ranges;
-			for (var i = 0; i < ranges.Length; i++)
-			{
-				ranges[i].distanceFromScale = this.trackBarDistanceFromScale.Value;
-				ranges[i].size = this.trackBarSize.Value;
-			}
+			SetCircularGaugeScales();
 
 			this.ejCircularGauge1.Update();
 		}

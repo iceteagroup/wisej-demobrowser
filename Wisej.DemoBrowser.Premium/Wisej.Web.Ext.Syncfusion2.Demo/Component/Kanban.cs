@@ -270,29 +270,20 @@ namespace Wisej.Web.Ext.Syncfusion2.Demo.Component
 				}
 			};
 			this.kanban1.Options.keyField = "Status";
-			this.kanban1.Options.columns = new object[]
-			{
-				new
-				{
-					headerText = "Backlog",
-					keyField = "Open"
-				},
-				new
-				{
-					headerText = "In Progress",
-					keyField = "InProgress"
-				},
-				new
-				{
-					headerText = "Testing",
-					keyField = "Testing"
-				},
-				new
-				{
-					headerText = "Done",
-					keyField = "Close"
-				}
-			};
+
+
+			this.kanban1.Options.columns[0].headerText = "Backlog";
+			this.kanban1.Options.columns[0].keyField = "Open";
+
+			this.kanban1.Options.columns[1].headerText = "In Progress";
+			this.kanban1.Options.columns[1].keyField = "InProgress";
+
+			this.kanban1.Options.columns[2].headerText = "Testing";
+			this.kanban1.Options.columns[2].keyField = "Testing";
+
+			this.kanban1.Options.columns[3].headerText = "Done";
+			this.kanban1.Options.columns[3].keyField = "Close";
+
 			this.kanban1.Options.cardSettings = new
 			{
 				contentField = "Summary",

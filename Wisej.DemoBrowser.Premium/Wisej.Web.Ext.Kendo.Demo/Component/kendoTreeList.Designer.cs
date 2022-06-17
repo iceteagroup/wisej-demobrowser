@@ -101,7 +101,7 @@
 			this.comboBoxEditMode.Location = new System.Drawing.Point(3, 151);
 			this.comboBoxEditMode.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
 			this.comboBoxEditMode.Name = "comboBoxEditMode";
-			this.comboBoxEditMode.Size = new System.Drawing.Size(212, 57);
+			this.comboBoxEditMode.Size = new System.Drawing.Size(212, 51);
 			this.comboBoxEditMode.TabIndex = 0;
 			this.comboBoxEditMode.Text = "inline";
 			// 

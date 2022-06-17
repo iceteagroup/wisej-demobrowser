@@ -199,13 +199,19 @@ namespace Wisej.Web.Ext.Syncfusion.Demo.Component
 					width = 75, textAlign = 0, priority = 4
 				}
 			};
-			this.ejGrid1.Options.editSettings = new
-			{
-				allowEditing = true,
-				allowAdding = true,
-				allowDeleting = true,
-				editMode = "batch"
-			};
+
+			this.ejGrid1.Options.editSettings.allowEditing = true;
+			this.ejGrid1.Options.editSettings.allowAdding = true;
+			this.ejGrid1.Options.editSettings.allowDeleting = true;
+			this.ejGrid1.Options.editSettings.editMode = "batch";
+
+			this.ejGrid1.Options.allowCellMerging = this.checkBox2.Checked;
+			this.ejGrid1.Options.allowGrouping = this.checkBox3.Checked;
+			this.ejGrid1.Options.allowKeyboardNavigation = this.checkBox4.Checked;
+			this.ejGrid1.Options.allowFiltering = this.checkBox5.Checked;
+			this.ejGrid1.Options.allowSorting = this.checkBox6.Checked;
+			this.ejGrid1.Options.allowMultiSorting = this.checkBox7.Checked;
+
 			this.ejGrid1.Options.toolbarSettings = new
 			{
 				showToolbar = true,

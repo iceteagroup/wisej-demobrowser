@@ -81,7 +81,40 @@ namespace Wisej.Web.Ext.Syncfusion.Demo.Component
 			this.ejCheckBox1.Options.enableTriState = this.checkBox2.Checked;
 			this.ejCheckBox1.Options.showRoundedCorner = this.checkBox1.Checked;
 
+			this.ejCheckBox2.Options.enableTriState = this.checkBox2.Checked;
+			this.ejCheckBox2.Options.showRoundedCorner = this.checkBox1.Checked;
+
+			this.ejCheckBox3.Options.enableTriState = this.checkBox2.Checked;
+			this.ejCheckBox3.Options.showRoundedCorner = this.checkBox1.Checked;
+
+			this.ejCheckBox4.Options.enableTriState = this.checkBox2.Checked;
+			this.ejCheckBox4.Options.showRoundedCorner = this.checkBox1.Checked;
+
+			this.ejCheckBox5.Options.enableTriState = this.checkBox2.Checked;
+			this.ejCheckBox5.Options.showRoundedCorner = this.checkBox1.Checked;
+
+			this.ejCheckBox6.Options.enableTriState = this.checkBox2.Checked;
+			this.ejCheckBox6.Options.showRoundedCorner = this.checkBox1.Checked;
+
+			this.ejCheckBox7.Options.enableTriState = this.checkBox2.Checked;
+			this.ejCheckBox7.Options.showRoundedCorner = this.checkBox1.Checked;
+
+			this.ejCheckBox8.Options.enableTriState = this.checkBox2.Checked;
+			this.ejCheckBox8.Options.showRoundedCorner = this.checkBox1.Checked;
+
+			this.ejCheckBox9.Options.enableTriState = this.checkBox2.Checked;
+			this.ejCheckBox9.Options.showRoundedCorner = this.checkBox1.Checked;
+
 			this.ejCheckBox1.Update();
+			this.ejCheckBox2.Update();
+			this.ejCheckBox3.Update();
+			this.ejCheckBox4.Update();
+			this.ejCheckBox5.Update();
+			this.ejCheckBox6.Update();
+			this.ejCheckBox7.Update();
+			this.ejCheckBox8.Update();
+			this.ejCheckBox9.Update();
+
 		}
 	}
 }
