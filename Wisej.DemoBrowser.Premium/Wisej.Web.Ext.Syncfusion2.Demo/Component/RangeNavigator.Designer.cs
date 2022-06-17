@@ -28,46 +28,46 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RangeNavigator));
-            this.rangeNavigator1 = new Wisej.Web.Ext.Syncfusion2.RangeNavigator();
-            this.groupBox1.SuspendLayout();
-            this.panel.SuspendLayout();
-            this.SuspendLayout();
-            // 
-            // linkDocs
-            // 
-            this.linkDocs.Text = "https://ej2.syncfusion.com/javascript/documentation/range-navigator/es5-getting-s" +
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RangeNavigator));
+			this.rangeNavigator1 = new Wisej.Web.Ext.Syncfusion2.RangeNavigator();
+			this.groupBox1.SuspendLayout();
+			this.panel.SuspendLayout();
+			this.SuspendLayout();
+			// 
+			// linkDocs
+			// 
+			this.linkDocs.Text = "https://ej2.syncfusion.com/javascript/documentation/range-navigator/es5-getting-s" +
     "tarted/";
-            // 
-            // linkAPI
-            // 
-            this.linkApi.Text = "https://ej2.syncfusion.com/javascript/documentation/api/range-navigator";
-            // 
-            // panel
-            // 
-            this.panel.Controls.Add(this.rangeNavigator1);
-            // 
-            // linkDemo
-            // 
-            this.linkDemo.Text = "https://ej2.syncfusion.com/demos/#/bootstrap5/range-navigator/default.html";
-            // 
-            // rangeNavigator1
-            // 
-            this.rangeNavigator1.Dock = Wisej.Web.DockStyle.Fill;
-            this.rangeNavigator1.Location = new System.Drawing.Point(8, 8);
-            this.rangeNavigator1.Name = "rangeNavigator1";
-            this.rangeNavigator1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("rangeNavigator1.Options"))));
-            this.rangeNavigator1.Size = new System.Drawing.Size(1073, 542);
-            this.rangeNavigator1.TabIndex = 0;
-            this.rangeNavigator1.Text = "rangeNavigator1";
-            // 
-            // RangeNavigator
-            // 
-            this.Name = "RangeNavigator";
-            this.groupBox1.ResumeLayout(false);
-            this.panel.ResumeLayout(false);
-            this.ResumeLayout(false);
-            this.PerformLayout();
+			// 
+			// linkApi
+			// 
+			this.linkApi.Text = "https://ej2.syncfusion.com/javascript/documentation/api/range-navigator";
+			// 
+			// panel
+			// 
+			this.panel.Controls.Add(this.rangeNavigator1);
+			// 
+			// linkDemo
+			// 
+			this.linkDemo.Text = "https://ej2.syncfusion.com/demos/#/bootstrap5/range-navigator/default.html";
+			// 
+			// rangeNavigator1
+			// 
+			this.rangeNavigator1.Dock = Wisej.Web.DockStyle.Fill;
+			this.rangeNavigator1.Location = new System.Drawing.Point(8, 8);
+			this.rangeNavigator1.Name = "rangeNavigator1";
+			this.rangeNavigator1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("rangeNavigator1.Options"))));
+			this.rangeNavigator1.Size = new System.Drawing.Size(872, 560);
+			this.rangeNavigator1.TabIndex = 0;
+			this.rangeNavigator1.Text = "rangeNavigator1";
+			// 
+			// RangeNavigator
+			// 
+			this.Name = "RangeNavigator";
+			this.Load += new System.EventHandler(this.RangeNavigator_Load);
+			this.groupBox1.ResumeLayout(false);
+			this.panel.ResumeLayout(false);
+			this.ResumeLayout(false);
 
 		}
 

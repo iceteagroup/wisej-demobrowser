@@ -89,8 +89,8 @@
             this.flowLayoutPanel1.SetFillWeight(this.comboBox1, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.comboBox1, true);
             this.comboBox1.Items.AddRange(new object[] {
-            "details",
-            "thumbnails"});
+            "Details",
+            "Thumbnails"});
             this.comboBox1.Label.Size = 50;
             this.comboBox1.Label.SizeType = Wisej.Web.SizeType.Percent;
             this.comboBox1.LabelText = "Item View Mode";

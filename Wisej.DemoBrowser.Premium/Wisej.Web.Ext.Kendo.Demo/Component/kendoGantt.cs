@@ -18,6 +18,47 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 
 		private void kendoGantt_Load(object sender, EventArgs e)
 		{
+			this.kendoGantt1.Options.rowHeight = 35;
+			this.kendoGantt1.Options.dataSource = new dynamic[]
+			{
+				new
+				{
+					id = 1, orderId = 0, parentId = "", title = "Planning", start = "2014/6/17 8:00",
+					end = "2014/6/17 10:00"
+				},
+				new
+				{
+					id = 2, orderId = 1, parentId = "", title = "Research", start = "2014/6/17 9:00",
+					end = "2014/6/17 10:30"
+				},
+				new
+				{
+					id = 3, orderId = 2, parentId = "", title = "Marketing", start = "2014/6/17 11:00",
+					end = "2014/6/17 13:00"
+				},
+				new
+				{
+					id = 4, orderId = 0, parentId = "", title = "Planning Phase 2", start = "2014/6/17 10:00",
+					end = "2014/6/17 12:00"
+				},
+				new
+				{
+					id = 5, orderId = 1, parentId = "", title = "Research Phase 2", start = "2014/6/17 10:30",
+					end = "2014/6/17 13:00"
+				},
+				new
+				{
+					id = 6, orderId = 2, parentId = "", title = "Marketing Phase 2", start = "2014/6/17 13:00",
+					end = "2014/6/17 15:00"
+				}
+			};
+
+			this.kendoGantt1.Options.tooltip = new
+			{
+				visible = true,
+				template = "#= task.title #<br>Begins: #= task.start #<br>Ends: #= task.end #"
+			};
+
 			this.kendoGantt1.Options.pdf = new
 			{
 				forceProxy = true,
@@ -65,5 +106,5 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 			var bytes = Convert.FromBase64String(base64);
 			e.Response.BinaryWrite(bytes);
 		}
-    }
+	}
 }

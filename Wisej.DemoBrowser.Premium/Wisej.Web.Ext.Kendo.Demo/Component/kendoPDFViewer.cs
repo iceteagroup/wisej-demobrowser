@@ -12,6 +12,15 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 			this.kendoPDFViewer1.Instance.onOpen += new WidgetEventHandler(kendoPDFViewer1_WidgetEvent);
 		}
 
+		private void kendoPDFViewer_Load(object sender, EventArgs e)
+		{
+			this.kendoPDFViewer1.Options.scale = "1";
+			this.kendoPDFViewer1.Options.pdfjsProcessing = new
+			{
+				file = "./Data/PDFViewer/wisej.pdf",
+			};
+		}
+
 		private void kendoPDFViewer1_WidgetEvent(object sender, WidgetEventArgs e)
 		{
 			AlertBox.Show(
@@ -21,12 +30,13 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 			Application.Play(MessageBoxIcon.Information);
 		}
 
-        private void buttonUpdate_Click(object sender, EventArgs e)
-        {
+		private void buttonUpdate_Click(object sender, EventArgs e)
+		{
 			this.kendoPDFViewer1.Instance.zoom(this.numericUpDownZoom.Value);
 			this.kendoPDFViewer1.Options.zoomRate = this.numericUpDownZoomRate.Value;
 
 			this.kendoPDFViewer1.Update();
-        }
-    }
+		}
+
+	}
 }

@@ -82,9 +82,9 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 			this.kendoSpreadsheet1.Update();
 		}
 
-        private async void buttonAddSheet_Click(object sender, EventArgs e)
-        {
+		private async void buttonAddSheet_Click(object sender, EventArgs e)
+		{
 			await this.kendoSpreadsheet1.Instance.insertSheetAsync();
 		}
-    }
+	}
 }

@@ -10,6 +10,11 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 			InitializeComponent();
 		}
 
+		private void kendoArcGauge_Load(object sender, EventArgs e)
+		{
+			this.kendoArcGauge1.Options.value = 50;
+			this.kendoArcGauge1.Options.centerTemplate = "<h1>#: value #%</h1>";
+		}
 		private void buttonUpdate_Click(object sender, EventArgs e)
 		{
 			kendoArcGauge1.Options.color = textBox1.Text;
@@ -49,5 +54,6 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 		}
 		private int taskCount;
 
+		
 	}
 }

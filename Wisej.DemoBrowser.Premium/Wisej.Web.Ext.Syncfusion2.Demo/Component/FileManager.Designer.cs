@@ -30,11 +30,10 @@
 		{
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FileManager));
             this.fileManager1 = new Wisej.Web.Ext.Syncfusion2.FileManager();
-            this.checkBoxHiddenItem = new Wisej.Web.CheckBox();
-            this.checkBoxThumbnail = new Wisej.Web.CheckBox();
             this.checkBoxFileExtension = new Wisej.Web.CheckBox();
             this.checkBoxMultipleSelection = new Wisej.Web.CheckBox();
             this.comboBoxView = new Wisej.Web.ComboBox();
+            this.checkBoxAllowDragAndDrop = new Wisej.Web.CheckBox();
             this.groupBox1.SuspendLayout();
             this.panel.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
@@ -59,8 +58,7 @@
             // 
             // flowLayoutPanel1
             // 
-            this.flowLayoutPanel1.Controls.Add(this.checkBoxHiddenItem);
-            this.flowLayoutPanel1.Controls.Add(this.checkBoxThumbnail);
+            this.flowLayoutPanel1.Controls.Add(this.checkBoxAllowDragAndDrop);
             this.flowLayoutPanel1.Controls.Add(this.checkBoxFileExtension);
             this.flowLayoutPanel1.Controls.Add(this.checkBoxMultipleSelection);
             this.flowLayoutPanel1.Controls.Add(this.comboBoxView);
@@ -80,38 +78,13 @@
             this.fileManager1.Text = "fileManager1";
             this.fileManager1.WebRequest += new Wisej.Web.WebRequestHandler(this.fileManager1_WebRequest);
             // 
-            // checkBoxHiddenItem
-            // 
-            this.checkBoxHiddenItem.Appearance = Wisej.Web.Appearance.Switch;
-            this.checkBoxHiddenItem.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.flowLayoutPanel1.SetFillWeight(this.checkBoxHiddenItem, 1);
-            this.flowLayoutPanel1.SetFlowBreak(this.checkBoxHiddenItem, true);
-            this.checkBoxHiddenItem.Location = new System.Drawing.Point(3, 3);
-            this.checkBoxHiddenItem.Name = "checkBoxHiddenItem";
-            this.checkBoxHiddenItem.Size = new System.Drawing.Size(212, 24);
-            this.checkBoxHiddenItem.TabIndex = 1;
-            this.checkBoxHiddenItem.Text = "Show Hidden Items";
-            // 
-            // checkBoxThumbnail
-            // 
-            this.checkBoxThumbnail.Appearance = Wisej.Web.Appearance.Switch;
-            this.checkBoxThumbnail.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.flowLayoutPanel1.SetFillWeight(this.checkBoxThumbnail, 1);
-            this.flowLayoutPanel1.SetFlowBreak(this.checkBoxThumbnail, true);
-            this.checkBoxThumbnail.Location = new System.Drawing.Point(3, 46);
-            this.checkBoxThumbnail.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
-            this.checkBoxThumbnail.Name = "checkBoxThumbnail";
-            this.checkBoxThumbnail.Size = new System.Drawing.Size(212, 24);
-            this.checkBoxThumbnail.TabIndex = 2;
-            this.checkBoxThumbnail.Text = "Show Thumbnails";
-            // 
             // checkBoxFileExtension
             // 
             this.checkBoxFileExtension.Appearance = Wisej.Web.Appearance.Switch;
             this.checkBoxFileExtension.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.flowLayoutPanel1.SetFillWeight(this.checkBoxFileExtension, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.checkBoxFileExtension, true);
-            this.checkBoxFileExtension.Location = new System.Drawing.Point(3, 89);
+            this.checkBoxFileExtension.Location = new System.Drawing.Point(3, 46);
             this.checkBoxFileExtension.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBoxFileExtension.Name = "checkBoxFileExtension";
             this.checkBoxFileExtension.Size = new System.Drawing.Size(212, 24);
@@ -124,7 +97,7 @@
             this.checkBoxMultipleSelection.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.flowLayoutPanel1.SetFillWeight(this.checkBoxMultipleSelection, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.checkBoxMultipleSelection, true);
-            this.checkBoxMultipleSelection.Location = new System.Drawing.Point(3, 132);
+            this.checkBoxMultipleSelection.Location = new System.Drawing.Point(3, 89);
             this.checkBoxMultipleSelection.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBoxMultipleSelection.Name = "checkBoxMultipleSelection";
             this.checkBoxMultipleSelection.Size = new System.Drawing.Size(212, 24);
@@ -133,17 +106,31 @@
             // 
             // comboBoxView
             // 
+            this.comboBoxView.DropDownStyle = Wisej.Web.ComboBoxStyle.DropDownList;
             this.flowLayoutPanel1.SetFillWeight(this.comboBoxView, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.comboBoxView, true);
             this.comboBoxView.Items.AddRange(new object[] {
             "LargeIcons",
             "Details"});
             this.comboBoxView.LabelText = "View";
-            this.comboBoxView.Location = new System.Drawing.Point(3, 175);
+            this.comboBoxView.Location = new System.Drawing.Point(3, 132);
             this.comboBoxView.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.comboBoxView.Name = "comboBoxView";
             this.comboBoxView.Size = new System.Drawing.Size(212, 57);
             this.comboBoxView.TabIndex = 5;
+            this.comboBoxView.Text = "LargeIcons";
+            // 
+            // checkBoxAllowDragAndDrop
+            // 
+            this.checkBoxAllowDragAndDrop.Appearance = Wisej.Web.Appearance.Switch;
+            this.checkBoxAllowDragAndDrop.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.flowLayoutPanel1.SetFillWeight(this.checkBoxAllowDragAndDrop, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.checkBoxAllowDragAndDrop, true);
+            this.checkBoxAllowDragAndDrop.Location = new System.Drawing.Point(3, 3);
+            this.checkBoxAllowDragAndDrop.Name = "checkBoxAllowDragAndDrop";
+            this.checkBoxAllowDragAndDrop.Size = new System.Drawing.Size(212, 24);
+            this.checkBoxAllowDragAndDrop.TabIndex = 6;
+            this.checkBoxAllowDragAndDrop.Text = "Allow Drag and Drop";
             // 
             // FileManager
             // 
@@ -162,8 +149,7 @@
 		private Syncfusion2.FileManager fileManager1;
         private CheckBox checkBoxMultipleSelection;
         private CheckBox checkBoxFileExtension;
-        private CheckBox checkBoxThumbnail;
-        private CheckBox checkBoxHiddenItem;
         private ComboBox comboBoxView;
+        private CheckBox checkBoxAllowDragAndDrop;
     }
 }

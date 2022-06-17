@@ -30,7 +30,6 @@
 		{
             this.label4 = new Wisej.Web.Label();
             this.ejSlider1 = new Wisej.Web.Ext.Syncfusion.ejSlider();
-            this.label6 = new Wisej.Web.Label();
             this.checkBox2 = new Wisej.Web.CheckBox();
             this.checkBox1 = new Wisej.Web.CheckBox();
             this.checkBox3 = new Wisej.Web.CheckBox();
@@ -38,6 +37,7 @@
             this.comboBox1 = new Wisej.Web.ComboBox();
             this.label5 = new Wisej.Web.Label();
             this.ejSlider2 = new Wisej.Web.Ext.Syncfusion.ejSlider();
+            this.label9 = new Wisej.Web.Label();
             this.groupBox1.SuspendLayout();
             this.panel.SuspendLayout();
             this.flowLayoutPanelProperties.SuspendLayout();
@@ -47,6 +47,14 @@
             // 
             this.linkDocs.TabIndex = 4;
             this.linkDocs.Text = "https://help.syncfusion.com/js/slider/overview";
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.label9);
+            this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
+            this.groupBox1.Controls.SetChildIndex(this.spacer1, 0);
+            this.groupBox1.Controls.SetChildIndex(this.label9, 0);
+            this.groupBox1.Controls.SetChildIndex(this.flowLayoutPanelProperties, 0);
             // 
             // buttonUpdate
             // 
@@ -75,12 +83,12 @@
             // 
             // flowLayoutPanelProperties
             // 
-            this.flowLayoutPanelProperties.Controls.Add(this.label6);
             this.flowLayoutPanelProperties.Controls.Add(this.checkBox2);
             this.flowLayoutPanelProperties.Controls.Add(this.checkBox1);
             this.flowLayoutPanelProperties.Controls.Add(this.checkBox3);
             this.flowLayoutPanelProperties.Controls.Add(this.checkBox4);
             this.flowLayoutPanelProperties.Controls.Add(this.comboBox1);
+            this.flowLayoutPanelProperties.Size = new System.Drawing.Size(218, 403);
             // 
             // label4
             // 
@@ -102,16 +110,6 @@
             this.ejSlider1.TabIndex = 1;
             this.ejSlider1.Text = "ejSlider1";
             // 
-            // label6
-            // 
-            this.flowLayoutPanelProperties.SetFillWeight(this.label6, 1);
-            this.flowLayoutPanelProperties.SetFlowBreak(this.label6, true);
-            this.label6.Location = new System.Drawing.Point(3, 3);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(212, 47);
-            this.label6.TabIndex = 0;
-            this.label6.Text = "Note: Property changes only affect the \"Range\" slider";
-            // 
             // checkBox2
             // 
             this.checkBox2.Appearance = Wisej.Web.Appearance.Switch;
@@ -119,8 +117,7 @@
             this.checkBox2.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.flowLayoutPanelProperties.SetFillWeight(this.checkBox2, 1);
             this.flowLayoutPanelProperties.SetFlowBreak(this.checkBox2, true);
-            this.checkBox2.Location = new System.Drawing.Point(3, 69);
-            this.checkBox2.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
+            this.checkBox2.Location = new System.Drawing.Point(3, 3);
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.Size = new System.Drawing.Size(212, 30);
             this.checkBox2.TabIndex = 1;
@@ -133,7 +130,7 @@
             this.checkBox1.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.flowLayoutPanelProperties.SetFillWeight(this.checkBox1, 1);
             this.flowLayoutPanelProperties.SetFlowBreak(this.checkBox1, true);
-            this.checkBox1.Location = new System.Drawing.Point(3, 118);
+            this.checkBox1.Location = new System.Drawing.Point(3, 52);
             this.checkBox1.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(212, 30);
@@ -147,7 +144,7 @@
             this.checkBox3.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.flowLayoutPanelProperties.SetFillWeight(this.checkBox3, 1);
             this.flowLayoutPanelProperties.SetFlowBreak(this.checkBox3, true);
-            this.checkBox3.Location = new System.Drawing.Point(3, 167);
+            this.checkBox3.Location = new System.Drawing.Point(3, 101);
             this.checkBox3.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBox3.Name = "checkBox3";
             this.checkBox3.Size = new System.Drawing.Size(212, 30);
@@ -162,7 +159,7 @@
             this.checkBox4.Checked = true;
             this.flowLayoutPanelProperties.SetFillWeight(this.checkBox4, 1);
             this.flowLayoutPanelProperties.SetFlowBreak(this.checkBox4, true);
-            this.checkBox4.Location = new System.Drawing.Point(3, 216);
+            this.checkBox4.Location = new System.Drawing.Point(3, 150);
             this.checkBox4.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBox4.Name = "checkBox4";
             this.checkBox4.Size = new System.Drawing.Size(212, 30);
@@ -182,7 +179,7 @@
             this.comboBox1.Label.Size = 50;
             this.comboBox1.Label.SizeType = Wisej.Web.SizeType.Percent;
             this.comboBox1.LabelText = "Slider Type";
-            this.comboBox1.Location = new System.Drawing.Point(3, 265);
+            this.comboBox1.Location = new System.Drawing.Point(3, 199);
             this.comboBox1.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(212, 60);
@@ -209,9 +206,26 @@
             this.ejSlider2.TabIndex = 3;
             this.ejSlider2.Text = "ejSlider2";
             // 
+            // label9
+            // 
+            this.label9.BackColor = System.Drawing.Color.FromArgb(26, 40, 120);
+            this.label9.CssStyle = "border-radius: 4px;\r\nbox-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0" +
+    ", 0.06) 0px 1px 2px 0px;";
+            this.label9.Dock = Wisej.Web.DockStyle.Bottom;
+            this.label9.ForeColor = System.Drawing.Color.White;
+            this.label9.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label9.Location = new System.Drawing.Point(16, 441);
+            this.label9.Name = "label9";
+            this.label9.Padding = new Wisej.Web.Padding(8);
+            this.label9.Size = new System.Drawing.Size(218, 60);
+            this.label9.TabIndex = 7;
+            this.label9.Text = "Changes only affect the \"Range\" slider.";
+            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // ejSlider
             // 
             this.Name = "ejSlider";
+            this.Load += new System.EventHandler(this.ejSlider_Load);
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
             this.panel.PerformLayout();
@@ -224,7 +238,6 @@
 
 		private Syncfusion.ejSlider ejSlider1;
 		private Label label4;
-		private Label label6;
 		private ComboBox comboBox1;
 		private CheckBox checkBox4;
 		private CheckBox checkBox3;
@@ -232,5 +245,6 @@
 		private CheckBox checkBox2;
 		private Label label5;
 		private Syncfusion.ejSlider ejSlider2;
-	}
+        private Label label9;
+    }
 }

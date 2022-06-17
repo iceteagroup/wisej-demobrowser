@@ -21,7 +21,7 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
         protected LinkLabel linkApi;
         protected Panel panel;
         protected FlowLayoutPanel flowLayoutPanel1;
-        private Spacer spacer1;
+        protected Spacer spacer1;
         private Button buttonLinks;
         private System.ComponentModel.IContainer components;
 

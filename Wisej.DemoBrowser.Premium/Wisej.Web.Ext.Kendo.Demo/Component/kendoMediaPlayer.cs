@@ -14,6 +14,19 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 			this.kendoMediaPlayer1.Instance.onPause += new WidgetEventHandler(kendoMediaPlayer1_WidgetEvent);
 		}
 
+		private void kendoMediaPlayer_Load(object sender, EventArgs e)
+		{
+			this.kendoMediaPlayer1.Options.autoPlay = "false";
+
+			this.kendoMediaPlayer1.Options.navigatable = "true";
+
+			this.kendoMediaPlayer1.Options.media = new
+			{
+				title = "Hello, World!",
+				source = "https://www.youtube.com/watch?v=BfA_wIqjF_8",
+			};
+
+		}
 		private void kendoMediaPlayer1_WidgetEvent(object sender, WidgetEventArgs e)
 		{
 			AlertBox.Show(
@@ -23,8 +36,8 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 			Application.Play(MessageBoxIcon.Information);
 		}
 
-        private async void buttonUpdate_Click(object sender, EventArgs e)
-        {
+		private async void buttonUpdate_Click(object sender, EventArgs e)
+		{
 
 			await this.kendoMediaPlayer1.Instance.muteAsync(this.checkBoxMute.Checked);
 
@@ -32,16 +45,16 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 				await this.kendoMediaPlayer1.Instance.volumeAsync(this.numericUpDownVolume.Value);
 
 			this.kendoMediaPlayer1.Update();
-        }
+		}
 
-        private void buttonPlay_Click(object sender, EventArgs e)
-        {
+		private void buttonPlay_Click(object sender, EventArgs e)
+		{
 			this.kendoMediaPlayer1.Instance.play();
-        }
+		}
 
-        private void buttonPause_Click(object sender, EventArgs e)
-        {
+		private void buttonPause_Click(object sender, EventArgs e)
+		{
 			this.kendoMediaPlayer1.Instance.pause();
-        }
-    }
+		}
+	}
 }

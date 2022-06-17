@@ -41,7 +41,7 @@
             // 
             this.textBox1.Anchor = Wisej.Web.AnchorStyles.None;
             this.textBox1.LabelText = "Text to Speech";
-            this.textBox1.Location = new System.Drawing.Point(493, 104);
+            this.textBox1.Location = new System.Drawing.Point(493, 103);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(437, 207);
@@ -52,7 +52,7 @@
             this.btnPlay.Anchor = Wisej.Web.AnchorStyles.None;
             this.btnPlay.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnPlay.ImageSource = "resource.wx/Wisej.Ext.MaterialDesign/play-rounded-button.svg";
-            this.btnPlay.Location = new System.Drawing.Point(604, 332);
+            this.btnPlay.Location = new System.Drawing.Point(604, 331);
             this.btnPlay.Name = "btnPlay";
             this.btnPlay.Size = new System.Drawing.Size(102, 40);
             this.btnPlay.TabIndex = 1;
@@ -66,7 +66,7 @@
             this.btnStop.Enabled = false;
             this.btnStop.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnStop.ImageSource = "resource.wx/Wisej.Ext.MaterialDesign/rounded-pause-button.svg";
-            this.btnStop.Location = new System.Drawing.Point(715, 332);
+            this.btnStop.Location = new System.Drawing.Point(715, 331);
             this.btnStop.Name = "btnStop";
             this.btnStop.Size = new System.Drawing.Size(102, 40);
             this.btnStop.TabIndex = 2;
@@ -86,7 +86,7 @@
             this.btnRecord.Anchor = Wisej.Web.AnchorStyles.None;
             this.btnRecord.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnRecord.ImageSource = "resource.wx/Wisej.Ext.MaterialDesign/record-voice-microphone-button.svg";
-            this.btnRecord.Location = new System.Drawing.Point(826, 332);
+            this.btnRecord.Location = new System.Drawing.Point(826, 331);
             this.btnRecord.Name = "btnRecord";
             this.btnRecord.Size = new System.Drawing.Size(102, 40);
             this.btnRecord.TabIndex = 3;
@@ -104,7 +104,7 @@
             "it-IT",
             "es-ES"});
             this.comboBoxLanguage.LabelText = "Language";
-            this.comboBoxLanguage.Location = new System.Drawing.Point(493, 317);
+            this.comboBoxLanguage.Location = new System.Drawing.Point(493, 316);
             this.comboBoxLanguage.Name = "comboBoxLanguage";
             this.comboBoxLanguage.Size = new System.Drawing.Size(102, 53);
             this.comboBoxLanguage.TabIndex = 4;
@@ -117,7 +117,7 @@
             this.Controls.Add(this.btnStop);
             this.Controls.Add(this.btnPlay);
             this.Controls.Add(this.textBox1);
-            this.MinimumSize = new System.Drawing.Size(449, 281);
+            this.MinimumSize = new System.Drawing.Size(450, 276);
             this.Name = "Features";
             this.Load += new System.EventHandler(this.Features_Load);
             this.ResumeLayout(false);

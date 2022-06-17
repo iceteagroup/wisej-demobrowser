@@ -13,6 +13,34 @@ namespace Wisej.Web.Ext.Syncfusion2.Demo.Component
 			this.splitButton1.Instance.onSelect += new WidgetEventHandler(splitButton1_WidgetEvent);
 		}
 
+		private void SplitButton_Load(object sender, EventArgs e)
+		{
+			this.splitButton1.Options.items = new object[]
+			{
+				new
+				{
+					text = "Paste",
+					iconCss = "e-btn-icons e-paste"
+				},
+				new
+				{
+					text = "Paste Special",
+					iconCss = "e-btn-icons e-paste-special"
+				},
+				new
+				{
+					text = "Paste as Formula",
+					iconCss = "e-btn-icons e-paste-formula"
+				},
+				new
+				{
+					text = "Paste as Hyperlink",
+					iconCss = "e-btn-icons e-paste-hyperlink"
+				}
+			};
+			this.splitButton1.Options.content = "Paste";
+		}
+
 		private void splitButton1_WidgetEvent(object sender, WidgetEventArgs e)
 		{
 			AlertBox.Show(
@@ -22,11 +50,11 @@ namespace Wisej.Web.Ext.Syncfusion2.Demo.Component
 			Application.Play(MessageBoxIcon.Information);
 		}
 
-        private void buttonUpdate_Click(object sender, EventArgs e)
-        {
+		private void buttonUpdate_Click(object sender, EventArgs e)
+		{
 			this.splitButton1.Options.disabled = this.checkBoxDisabled.Checked;
 
 			this.splitButton1.Update();
-        }
-    }
+		}
+	}
 }

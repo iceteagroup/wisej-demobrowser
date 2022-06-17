@@ -20,7 +20,7 @@ namespace Wisej.DemoBrowser.ChartJS
 
 		private void InitalizeCharts()
 		{
-			foreach (Wisej.Web.Ext.ChartJS.ChartJS chart in this.Controls)
+			foreach (Wisej.Web.Ext.ChartJS.ChartJS chart in this.flowLayoutPanel1.Controls)
 			{
 				if (chart.DataSets.Count == 0)
 					chart.DataSets.Add("Data Set");

@@ -9,6 +9,11 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 		{
 			InitializeComponent();
 		}
+		private void kendoBarcode_Load(object sender, EventArgs e)
+		{
+			this.kendoBarcode1.Options.value = "WWW.WISEJ.COM/";
+			this.kendoBarcode1.Options.type = "code39";
+		}
 
 		private void buttonUpdate_Click(object sender, EventArgs e)
 		{

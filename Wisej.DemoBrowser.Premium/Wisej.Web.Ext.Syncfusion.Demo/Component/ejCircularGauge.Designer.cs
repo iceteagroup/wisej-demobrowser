@@ -175,6 +175,7 @@
             // ejCircularGauge
             // 
             this.Name = "ejCircularGauge";
+            this.Load += new System.EventHandler(this.ejCircularGauge_Load);
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
             this.flowLayoutPanelProperties.ResumeLayout(false);

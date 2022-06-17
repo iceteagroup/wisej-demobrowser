@@ -94,6 +94,7 @@
             this.comboBoxExpandOn.Name = "comboBoxExpandOn";
             this.comboBoxExpandOn.Size = new System.Drawing.Size(212, 57);
             this.comboBoxExpandOn.TabIndex = 1;
+            this.comboBoxExpandOn.Text = "Auto";
             // 
             // checkBoxDragAndDrop
             // 
@@ -136,6 +137,7 @@
             // TreeView
             // 
             this.Name = "TreeView";
+            this.Load += new System.EventHandler(this.TreeView_Load);
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);

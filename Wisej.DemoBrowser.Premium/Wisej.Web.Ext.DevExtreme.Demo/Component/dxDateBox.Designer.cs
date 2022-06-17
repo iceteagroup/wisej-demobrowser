@@ -28,10 +28,10 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-            this.dxDateBox1 = new Wisej.Web.Ext.DevExtreme.dxDateBox();
             this.checkBox1 = new Wisej.Web.CheckBox();
             this.comboBox2 = new Wisej.Web.ComboBox();
             this.checkBox4 = new Wisej.Web.CheckBox();
+            this.dxDateBox1 = new Wisej.Web.Ext.DevExtreme.dxDateBox();
             this.groupBox1.SuspendLayout();
             this.panel.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
@@ -71,15 +71,6 @@
             this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 35);
             this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 470);
             // 
-            // dxDateBox1
-            // 
-            this.dxDateBox1.Anchor = Wisej.Web.AnchorStyles.None;
-            this.dxDateBox1.Location = new System.Drawing.Point(269, 271);
-            this.dxDateBox1.Name = "dxDateBox1";
-            this.dxDateBox1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"type\":\"date\",\"stylingMode\":\"outlined\"}")));
-            this.dxDateBox1.Size = new System.Drawing.Size(350, 35);
-            this.dxDateBox1.TabIndex = 0;
-            // 
             // checkBox1
             // 
             this.checkBox1.Appearance = Wisej.Web.Appearance.Switch;
@@ -101,9 +92,9 @@
             this.flowLayoutPanel1.SetFillWeight(this.comboBox2, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.comboBox2, true);
             this.comboBox2.Items.AddRange(new object[] {
-            "date",
-            "datetime",
-            "time"});
+            "Date",
+            "DateTime",
+            "Time"});
             this.comboBox2.Label.Size = 50;
             this.comboBox2.Label.SizeType = Wisej.Web.SizeType.Percent;
             this.comboBox2.LabelText = "Type";
@@ -129,6 +120,15 @@
             this.checkBox4.TabIndex = 3;
             this.checkBox4.Text = "Show Analog Clock";
             // 
+            // dxDateBox1
+            // 
+            this.dxDateBox1.Anchor = Wisej.Web.AnchorStyles.None;
+            this.dxDateBox1.Location = new System.Drawing.Point(269, 271);
+            this.dxDateBox1.Name = "dxDateBox1";
+            this.dxDateBox1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"type\":\"date\",\"stylingMode\":\"outlined\"}")));
+            this.dxDateBox1.Size = new System.Drawing.Size(350, 35);
+            this.dxDateBox1.TabIndex = 0;
+            // 
             // dxDateBox
             // 
             this.Name = "dxDateBox";
@@ -140,10 +140,9 @@
 		}
 
 		#endregion
-
-		private DevExtreme.dxDateBox dxDateBox1;
 		private CheckBox checkBox4;
 		private ComboBox comboBox2;
 		private CheckBox checkBox1;
+        private DevExtreme.dxDateBox dxDateBox1;
     }
 }

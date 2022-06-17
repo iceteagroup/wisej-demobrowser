@@ -28,18 +28,23 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.SuspendLayout();
-			// 
-			// googleMap1
-			// 
-			this.googleMap1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"zoom\":4,\"center\":{\"lat\":34,\"lng\":-40.605}}")));
-			this.googleMap1.Appear += new System.EventHandler(this.googleMap1_Appear);
-			// 
-			// Drawing
-			// 
-			this.Name = "Drawing";
-			this.Load += new System.EventHandler(this.Geometry_Load);
-			this.ResumeLayout(false);
+            this.SuspendLayout();
+            // 
+            // googleMap1
+            // 
+            this.googleMap1.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Left)));
+            this.googleMap1.Dock = Wisej.Web.DockStyle.Fill;
+            this.googleMap1.Location = new System.Drawing.Point(16, 16);
+            this.googleMap1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"zoom\":4,\"center\":{\"lat\":34,\"lng\":-40.605}}")));
+            this.googleMap1.Size = new System.Drawing.Size(1390, 442);
+            this.googleMap1.Appear += new System.EventHandler(this.googleMap1_Appear);
+            // 
+            // Geometry
+            // 
+            this.Name = "Geometry";
+            this.Padding = new Wisej.Web.Padding(16);
+            this.Load += new System.EventHandler(this.Geometry_Load);
+            this.ResumeLayout(false);
 
 		}
 

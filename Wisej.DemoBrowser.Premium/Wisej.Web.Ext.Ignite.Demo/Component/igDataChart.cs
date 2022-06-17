@@ -30,26 +30,32 @@ namespace Wisej.Web.Ext.Ignite.Demo.Component
 				new {name = "NameAxis", type = "categoryX", title = "Country", label = "CountryName"},
 				new {name = "PopulationAxis", type = "numericY", minimumValue = 0, title = "Millions of People"},
 			};
-			this.igDataChart1.Options.series = new dynamic[]
-			{
-				new
-				{
-					name = "2015 Population",
-					type = "column",
-					isHighlightingEnabled = true,
-					isTransitionInEnabled = true,
-					xAxis = "NameAxis",
-					yAxis = "PopulationAxis",
-					valueMemberPath = "Pop2015"
-				}
-			};
+
+			AssignDataChartSeries();
 		}
+
+		private void AssignDataChartSeries()
+		{
+			var series = new
+			{
+				name = "2015 Population",
+				type = "column",
+				isHighlightingEnabled = true,
+				isTransitionInEnabled = true,
+				xAxis = "NameAxis",
+				yAxis = "PopulationAxis",
+				valueMemberPath = this.comboBox2.SelectedItem
+			};
+			this.igDataChart1.Options.series = series;
+		}
+
 		private void buttonUpdate_Click(object sender, EventArgs e)
 		{
 			this.igDataChart1.Options.title = textBoxTitle.Text;
 			this.igDataChart1.Options.subtitle = textBoxSubtitle.Text;
-			this.igDataChart1.Options.series[0].valueMemberPath = this.comboBox2.SelectedItem;
 
+			AssignDataChartSeries();
+			
 			this.igDataChart1.Update();
 		}
 

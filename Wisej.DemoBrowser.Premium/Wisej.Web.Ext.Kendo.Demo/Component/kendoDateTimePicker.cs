@@ -17,7 +17,7 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 			this.kendoDateTimePicker1.Value = DateTime.Now;
 
 			this.dateTimePickerMin.Value = DateTime.Now.AddYears(-1);
-			this.dateTimePickerMin.Value = DateTime.Now.AddYears(1);
+			this.dateTimePickerMax.Value = DateTime.Now.AddYears(1);
 		}
 
 		private async void kendoDateTimePicker1_WidgetEvent(object sender, WidgetEventArgs e)
@@ -35,9 +35,9 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 		}
 
 		private void buttonUpdate_Click(object sender, EventArgs e)
-        {
+		{
 			if(this.dateTimePickerMax.Value <= this.dateTimePickerMin.Value)
-            {
+			{
 				AlertBox.Show("Max date must be greather than Min date",MessageBoxIcon.Error);
 				Application.Play(MessageBoxIcon.Error);
 				return;
@@ -48,6 +48,6 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 			this.kendoDateTimePicker1.Options.interval = this.numericUpDownInterval.Value;
 
 			this.kendoDateTimePicker1.Update();
-        }
-    }
+		}
+	}
 }

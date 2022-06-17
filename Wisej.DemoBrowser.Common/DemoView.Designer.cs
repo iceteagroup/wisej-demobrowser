@@ -29,14 +29,15 @@ namespace Wisej.DemoBrowser.Common
         /// </summary>
         private void InitializeComponent()
         {
-			this.SuspendLayout();
-			// 
-			// DemoView
-			// 
-			this.BackColor = System.Drawing.Color.Transparent;
-			this.Name = "DemoView";
-			this.Size = new System.Drawing.Size(1422, 474);
-			this.ResumeLayout(false);
+            this.SuspendLayout();
+            // 
+            // DemoView
+            // 
+            this.AutoScrollMargin = new System.Drawing.Size(0, 20);
+            this.BackColor = System.Drawing.Color.Transparent;
+            this.Name = "DemoView";
+            this.Size = new System.Drawing.Size(1422, 474);
+            this.ResumeLayout(false);
 
         }
 

@@ -20,6 +20,67 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 
 		private void kendoChart_Load(object sender, EventArgs e)
 		{
+			this.kendoChart1.Options.theme = "material";
+
+			this.kendoChart1.Options.title = new
+			{
+				text = "Site Visitors Stats \n /thousands/"
+			};
+
+			this.kendoChart1.Options.legend = new
+			{
+				visible = false
+			};
+
+			this.kendoChart1.Options.seriesDefaults = new
+			{
+				type = "bar"
+			};
+
+			this.kendoChart1.Options.series = new[]
+			{
+				new
+				{
+					name = "Total Visits",
+					data = new int[]
+					{
+						56000,
+						63000,
+						74000,
+						91000,
+						117000,
+						138000
+					}
+				},
+				new
+				{
+					name = "Unique Visitors",
+					data = new int[]
+					{
+						52000,
+						34000,
+						23000,
+						48000,
+						67000,
+						83000
+					}
+				}
+			};
+
+			this.kendoChart1.Options.valuesAxis = new
+			{
+				max = 140000,
+				line = new {visible = false},
+				minorGridLines = new {visible = true},
+				labels = new {rotation = "auto"}
+			};
+
+			SetCategoryAxisLabels();
+
+			this.kendoChart1.Options.transitions = this.checkBox1.Checked;
+			this.kendoChart1.Options.pannable = this.checkBox2.Checked;
+
+			this.kendoChart1.Options.tooltip = new {visible = true, template = "#= series.name #: #= value #"};
 		}
 
 		private void kendoChart1_WidgetEvent(object sender, WidgetEventArgs e)
@@ -64,11 +125,31 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 			}
 		}
 
+		private void SetCategoryAxisLabels()
+		{
+			var categoryAxis = new
+			{
+				labels = new { visible = this.checkBox3.Checked },
+				categories = new string[]
+				{
+					"Jan",
+					"Feb",
+					"Mar",
+					"Apr",
+					"May",
+					"Jun"
+				},
+				majorguidelines = new { visible = true }
+			};
+			this.kendoChart1.Options.categoryAxis = categoryAxis;
+		}
+
 		private void buttonUpdate_Click(object sender, EventArgs e)
 		{
 			this.kendoChart1.Options.transitions = this.checkBox1.Checked;
 			this.kendoChart1.Options.pannable = this.checkBox2.Checked;
-			this.kendoChart1.Options.categoryAxis.labels.visible = this.checkBox3.Checked;
+
+			SetCategoryAxisLabels();
 
 			this.kendoChart1.Update();
 		}

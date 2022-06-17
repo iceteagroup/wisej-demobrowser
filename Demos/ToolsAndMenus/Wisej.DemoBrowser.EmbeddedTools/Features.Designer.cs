@@ -48,7 +48,7 @@
             // 
             this.textBox1.Anchor = Wisej.Web.AnchorStyles.None;
             this.textBox1.LabelText = "Tool Position Right";
-            this.textBox1.Location = new System.Drawing.Point(231, 170);
+            this.textBox1.Location = new System.Drawing.Point(279, 125);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(247, 53);
             this.textBox1.TabIndex = 9;
@@ -61,7 +61,7 @@
             // 
             this.textBox2.Anchor = Wisej.Web.AnchorStyles.None;
             this.textBox2.LabelText = "Tool Position Left";
-            this.textBox2.Location = new System.Drawing.Point(231, 260);
+            this.textBox2.Location = new System.Drawing.Point(279, 213);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(247, 53);
             this.textBox2.TabIndex = 10;
@@ -75,7 +75,7 @@
             // 
             this.textBox3.Anchor = Wisej.Web.AnchorStyles.None;
             this.textBox3.LabelText = "Tool AutoHide";
-            this.textBox3.Location = new System.Drawing.Point(607, 161);
+            this.textBox3.Location = new System.Drawing.Point(588, 125);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(247, 53);
             this.textBox3.TabIndex = 11;
@@ -89,7 +89,7 @@
             // 
             this.textBox4.Anchor = Wisej.Web.AnchorStyles.None;
             this.textBox4.LabelText = "Multiple Tools";
-            this.textBox4.Location = new System.Drawing.Point(607, 261);
+            this.textBox4.Location = new System.Drawing.Point(279, 297);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(247, 53);
             this.textBox4.TabIndex = 12;
@@ -110,9 +110,10 @@
             "Item 1",
             "Item 2",
             "Item 3"});
-            this.checkedListBox1.Location = new System.Drawing.Point(945, 170);
+            this.checkedListBox1.LabelText = "CheckedListBox with Tool";
+            this.checkedListBox1.Location = new System.Drawing.Point(897, 125);
             this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(247, 88);
+            this.checkedListBox1.Size = new System.Drawing.Size(247, 225);
             this.checkedListBox1.TabIndex = 13;
             componentTool7.ImageSource = "checkbox";
             componentTool7.Position = Wisej.Web.LeftRightAlignment.Left;
@@ -129,9 +130,10 @@
             "Item 2",
             "Item 3",
             "Item 4"});
-            this.comboBox1.Location = new System.Drawing.Point(945, 284);
+            this.comboBox1.LabelText = "ComboBox with Tool";
+            this.comboBox1.Location = new System.Drawing.Point(588, 213);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(247, 30);
+            this.comboBox1.Size = new System.Drawing.Size(247, 53);
             this.comboBox1.TabIndex = 14;
             componentTool8.ImageSource = "icon-info";
             this.comboBox1.Tools.AddRange(new Wisej.Web.ComponentTool[] {
@@ -146,7 +148,7 @@
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
-            this.MinimumSize = new System.Drawing.Size(978, 340);
+            this.MinimumSize = new System.Drawing.Size(887, 240);
             this.Name = "Features";
             this.Load += new System.EventHandler(this.Features_Load);
             this.ResumeLayout(false);

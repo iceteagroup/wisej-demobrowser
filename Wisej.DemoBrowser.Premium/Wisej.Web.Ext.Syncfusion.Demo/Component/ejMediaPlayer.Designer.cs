@@ -195,6 +195,7 @@
             // ejMediaPlayer
             // 
             this.Name = "ejMediaPlayer";
+            this.Load += new System.EventHandler(this.ejMediaPlayer_Load);
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
             this.flowLayoutPanelProperties.ResumeLayout(false);

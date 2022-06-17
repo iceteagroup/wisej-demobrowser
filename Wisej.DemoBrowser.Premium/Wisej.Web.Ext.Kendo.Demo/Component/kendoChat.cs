@@ -21,6 +21,74 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 			this.kendoChat1.Instance.onPost += new WidgetEventHandler(kendoChat1_WidgetEvent);
 		}
 
+		private void kendoChat_Load(object sender, EventArgs e)
+		{
+
+			this.kendoChat1.Options.user = new
+			{
+				name = "Wisej User",
+				iconUrl = "Images/Chat/ANATR.jpg"
+			};
+			this.kendoChat1.Options.toolbar = new
+			{
+				toggable = true,
+				buttons = new
+				{
+					name = "sendimage",
+					iconClass = "k-icon k-i-image"
+				}
+			};
+
+
+			Application.StartTask(() => {
+
+				this.kendoChat1.Instance.renderMessage(new
+				{
+					type = "typing"
+				}, new
+				{
+					id = 2,
+					name = "Wisej Chat Bot",
+					iconUrl = "Images/Chat/ANTON.jpg"
+				});
+				Application.Update(this);
+
+				Thread.Sleep(1000);
+
+				this.kendoChat1.Instance.renderMessage(new
+				{
+					type = "text",
+					text = "Where would you like to go?"
+				}, new
+				{
+					id = 2,
+					name = "Wisej Chat Bot",
+					iconUrl = "Images/Chat/ANTON.jpg"
+				});
+				this.kendoChat1.Instance.renderSuggestedActions(new[] {
+					new {
+						title = "Chicago",
+						value = "Chicago"
+					},
+					new
+					{
+						title = "New York City",
+						value = "NYC"
+					},
+					new {
+						title = "Atlanta",
+						value = "Atlanta"
+					},
+					new
+					{
+						title = "Los Angeles",
+						value = "Los Angeles"
+					}
+				});
+				Application.Update(this);
+			});
+		}
+
 		private void kendoChat1_WidgetEvent(object sender, WidgetEventArgs e)
 		{
 			AlertBox.Show(
@@ -63,10 +131,10 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 			});
 		}
 
-        private void kendoChat1_toolClick(object sender, WidgetEventArgs e)
-        {
+		private void kendoChat1_toolClick(object sender, WidgetEventArgs e)
+		{
 			this.upload1.UploadFiles();
-        }
+		}
 
 		private void kendoChat1_actionClick(object sender, WidgetEventArgs e)
 		{
@@ -103,56 +171,7 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 			});
 		}
 
-		private void kendoChat_Load(object sender, EventArgs e)
-		{
-			Application.StartTask(() => {
-
-				this.kendoChat1.Instance.renderMessage(new
-				{
-					type = "typing"
-				}, new
-				{
-					id = 2,
-					name = "Wisej Chat Bot",
-					iconUrl = "Images/Chat/ANTON.jpg"
-				});
-				Application.Update(this);
-
-				Thread.Sleep(1000);
-
-				this.kendoChat1.Instance.renderMessage(new
-				{
-					type = "text",
-					text = "Where would you like to go?"
-				}, new
-				{
-					id = 2,
-					name = "Wisej Chat Bot",
-					iconUrl = "Images/Chat/ANTON.jpg"
-				});
-				this.kendoChat1.Instance.renderSuggestedActions(new[] {
-					new {
-						title = "Chicago",
-						value = "Chicago"
-					}, 
-					new
-					{
-						title = "New York City",
-						value = "NYC"
-					},
-					new {
-						title = "Atlanta",
-						value = "Atlanta"
-					},
-					new
-					{
-						title = "Los Angeles",
-						value = "Los Angeles"
-					}
-				});
-				Application.Update(this);
-			});
-		}
+		
 
 		private void buttonApplyColor_Click(object sender, EventArgs e)
 		{
@@ -165,27 +184,27 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 			this.kendoChat1.Call("reset");
 		}
 
-        private void buttonPost_Click(object sender, EventArgs e)
-        {
+		private void buttonPost_Click(object sender, EventArgs e)
+		{
 			this.kendoChat1.Instance.postMessage(this.textBoxMessage.Text);
 		}
 
-        private void upload1_Uploaded(object sender, UploadedEventArgs e)
-        {
+		private void upload1_Uploaded(object sender, UploadedEventArgs e)
+		{
 			var attachments = new List<dynamic>();
 
 			for (var i = 0; i < e.Files.Count; i++)
-            {
+			{
 				var file = e.Files[i];
 				var contentType = file.ContentType;
 
 				switch (contentType)
-                {
+				{
 					case "image/png":
 					case "image/jpg":
 					case "image/jpeg":
 						using (var ms = new MemoryStream())
-                        {
+						{
 							file.InputStream.CopyTo(ms);
 							ms.Position = 0;
 
@@ -207,14 +226,14 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 									subtitle = $"{file.ContentLength} bytes"
 								}
 							});
-                        }
+						}
 						break;
 
 					default:
 						AlertBox.Show($"Unsupported file {file.FileName}");
 						break;
-                }
-            }
+				}
+			}
 
 			this.kendoChat1.Instance.renderAttachments(new
 			{
@@ -222,5 +241,5 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 				attachmentLayout = "carousel"
 			});
 		}
-    }
+	}
 }

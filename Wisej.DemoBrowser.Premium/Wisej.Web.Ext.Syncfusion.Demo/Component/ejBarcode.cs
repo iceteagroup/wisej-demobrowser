@@ -10,6 +10,12 @@ namespace Wisej.Web.Ext.Syncfusion.Demo.Component
 			InitializeComponent();
 		}
 
+		private void ejBarcode_Load(object sender, EventArgs e)
+		{
+			this.ejBarcode1.Options.text = "HTTP://WISEJ.COM";
+			this.ejBarcode1.Options.value = "HTTP://WISEJ.COM";
+		}
+
 		private void buttonUpdate_Click(object sender, EventArgs e)
 		{
 			this.ejBarcode1.Options.text = this.textBox3.Text;

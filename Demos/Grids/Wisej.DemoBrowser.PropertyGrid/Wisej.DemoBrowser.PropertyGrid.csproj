@@ -20,7 +20,7 @@
 	<ItemGroup>
 		<PackageReference Include="Bogus" Version="34.0.2" />
 		<PackageReference Include="Wisej-3" Version="3.*-*" />
-		<PackageReference Include="Wisej-3-Barcode" Version="3.0.*-*" />
+		<PackageReference Include="Wisej-3-Barcode" Version="3.*-*" />
 		<ProjectReference Include="..\..\..\Wisej.DemoBrowser.Common\Wisej.DemoBrowser.Common.csproj" />
 	</ItemGroup>
 

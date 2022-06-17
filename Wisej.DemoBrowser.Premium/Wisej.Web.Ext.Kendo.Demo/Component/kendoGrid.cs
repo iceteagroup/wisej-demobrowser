@@ -4,7 +4,7 @@ using Wisej.Core;
 
 namespace Wisej.Web.Ext.Kendo.Demo.Component
 {
-    public partial class kendoGrid : TestBase
+	public partial class kendoGrid : TestBase
 	{
 		public kendoGrid()
 		{
@@ -17,6 +17,29 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 		private void kendoGrid_Load(object sender, EventArgs e)
 		{
 			var serviceUrl = this.kendoGrid1.GetServiceURL();
+
+			this.kendoGrid1.Options.columns = new dynamic[]
+			{
+				"ProductName",
+				new
+				{
+					field = "UnitPrice",
+					title = "Unit Price",
+					format = "{0:c}",
+					width = "130px"
+				},
+				new
+				{
+					field = "UnitsInStock",
+					title = "Units In Stock",
+					width = "130px"
+				},
+				new
+				{
+					field = "Discontinued",
+					width = "130px"
+				},
+			};
 
 			this.kendoGrid1.Options.editable = true;
 			this.kendoGrid1.Options.toolbar = new[] { "Save" };
@@ -66,9 +89,9 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 		}
 
 		private object ProcessLoadData()
-        {
+		{
 			return File.ReadAllText(Application.MapPath("Data/Grid/ProductDetails.json"));
-        }
+		}
 
 		private void ExportDocument(string base64Data, string fileName, HttpResponse response)
 		{
@@ -95,5 +118,5 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 
 			Application.Play(MessageBoxIcon.Information);
 		}
-    }
+	}
 }

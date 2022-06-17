@@ -17,7 +17,7 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
 			{
 				value = 23,
 				target = 20,
-				color = Color.DarkRed
+				color = Color.DarkRed,
 			};
 
 			this.dxBullet2.Options = new

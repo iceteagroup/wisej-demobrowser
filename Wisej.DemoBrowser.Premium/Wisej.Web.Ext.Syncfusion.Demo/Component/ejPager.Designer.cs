@@ -33,17 +33,11 @@
             this.ejRotator1 = new Wisej.Web.Ext.Syncfusion.ejRotator();
             this.buttonGoToFirstPage = new Wisej.Web.Button();
             this.numericSelectedPage = new Wisej.Web.NumericUpDown();
-            this.panel.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            this.panel.SuspendLayout();
             this.flowLayoutPanelProperties.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericSelectedPage)).BeginInit();
             this.SuspendLayout();
-            // 
-            // panel
-            // 
-            this.panel.Controls.Add(this.ejRotator1);
-            this.panel.Controls.Add(this.ejPager1);
-            this.panel.TabIndex = 7;
             // 
             // linkDocs
             // 
@@ -65,6 +59,13 @@
             // 
             this.linkApi.TabIndex = 5;
             this.linkApi.Text = "https://help.syncfusion.com/api/js/ejpager";
+            // 
+            // panel
+            // 
+            this.panel.Controls.Add(this.ejRotator1);
+            this.panel.Controls.Add(this.ejPager1);
+            this.panel.Padding = new Wisej.Web.Padding(0);
+            this.panel.TabIndex = 7;
             // 
             // flowLayoutPanelProperties
             // 
@@ -130,8 +131,9 @@
             // ejPager
             // 
             this.Name = "ejPager";
-            this.panel.ResumeLayout(false);
+            this.Load += new System.EventHandler(this.ejPager_Load);
             this.groupBox1.ResumeLayout(false);
+            this.panel.ResumeLayout(false);
             this.flowLayoutPanelProperties.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.numericSelectedPage)).EndInit();
             this.ResumeLayout(false);

@@ -61,7 +61,8 @@
             this.BackColor = System.Drawing.Color.FromArgb(255, 255, 255);
             this.Controls.Add(this.pictureBoxPhoto);
             this.Controls.Add(this.labelName);
-            this.CssStyle = "box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;\r\ntransition: left 1s, top 1s;";
+            this.CssClass = "shadow";
+            this.CssStyle = "transition: left 1s, top 1s;";
             this.Cursor = Wisej.Web.Cursors.Hand;
             this.Name = "PersonCard";
             this.Padding = new Wisej.Web.Padding(8);

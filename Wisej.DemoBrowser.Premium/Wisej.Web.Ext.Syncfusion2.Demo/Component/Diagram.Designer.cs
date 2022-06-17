@@ -28,46 +28,47 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-            this.diagram1 = new Wisej.Web.Ext.Syncfusion2.Diagram();
-            this.groupBox1.SuspendLayout();
-            this.panel.SuspendLayout();
-            this.SuspendLayout();
-            // 
-            // linkDocs
-            // 
-            this.linkDocs.Text = "https://ej2.syncfusion.com/javascript/documentation/diagram/es5-getting-started/";
-            // 
-            // linkApi
-            // 
-            this.linkApi.Text = "https://ej2.syncfusion.com/javascript/documentation/api/diagram/";
-            // 
-            // panel
-            // 
-            this.panel.Controls.Add(this.diagram1);
-            // 
-            // linkDemo
-            // 
-            this.linkDemo.Text = "https://ej2.syncfusion.com/demos/#/bootstrap5/diagram/default-functionalities.htm" +
+			this.diagram1 = new Wisej.Web.Ext.Syncfusion2.Diagram();
+			this.groupBox1.SuspendLayout();
+			this.panel.SuspendLayout();
+			this.SuspendLayout();
+			// 
+			// linkDocs
+			// 
+			this.linkDocs.Text = "https://ej2.syncfusion.com/javascript/documentation/diagram/es5-getting-started/";
+			// 
+			// linkApi
+			// 
+			this.linkApi.Text = "https://ej2.syncfusion.com/javascript/documentation/api/diagram/";
+			// 
+			// panel
+			// 
+			this.panel.Controls.Add(this.diagram1);
+			// 
+			// linkDemo
+			// 
+			this.linkDemo.Text = "https://ej2.syncfusion.com/demos/#/bootstrap5/diagram/default-functionalities.htm" +
     "l";
-            // 
-            // diagram1
-            // 
-            this.diagram1.Dock = Wisej.Web.DockStyle.Fill;
-            this.diagram1.Location = new System.Drawing.Point(8, 8);
-            this.diagram1.Name = "diagram1";
-            this.diagram1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"nodes\":[{\"name\":\"Start\",\"offsetX\":300,\"offsetY\":50,\"width\":140,\"height\":50,\"ann" +
+			// 
+			// diagram1
+			// 
+			this.diagram1.Dock = Wisej.Web.DockStyle.Fill;
+			this.diagram1.Location = new System.Drawing.Point(8, 8);
+			this.diagram1.Name = "diagram1";
+			this.diagram1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"nodes\":[{\"name\":\"Start\",\"offsetX\":300,\"offsetY\":50,\"width\":140,\"height\":50,\"ann" +
         "otations\":[{\"id\":\"label1\",\"content\":\"Start\"}],\"shape\":{\"type\":\"Flow\",\"shape\":\"Te" +
         "rminator\"}}]}")));
-            this.diagram1.Size = new System.Drawing.Size(872, 560);
-            this.diagram1.TabIndex = 0;
-            this.diagram1.Text = "diagram1";
-            // 
-            // Diagram
-            // 
-            this.Name = "Diagram";
-            this.groupBox1.ResumeLayout(false);
-            this.panel.ResumeLayout(false);
-            this.ResumeLayout(false);
+			this.diagram1.Size = new System.Drawing.Size(872, 560);
+			this.diagram1.TabIndex = 0;
+			this.diagram1.Text = "diagram1";
+			// 
+			// Diagram
+			// 
+			this.Name = "Diagram";
+			this.Load += new System.EventHandler(this.Diagram_Load);
+			this.groupBox1.ResumeLayout(false);
+			this.panel.ResumeLayout(false);
+			this.ResumeLayout(false);
 
 		}
 

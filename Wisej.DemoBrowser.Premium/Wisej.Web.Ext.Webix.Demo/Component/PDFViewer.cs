@@ -25,7 +25,7 @@ namespace Wisej.Web.Ext.Webix.Demo.Component
             switch (e.Request["action"])
             {
                 case "load":
-                    e.Response.BinaryWrite(File.ReadAllBytes(Application.MapPath("Data/Wisej-Datasheet-V2.2.pdf")));
+                    e.Response.BinaryWrite(File.ReadAllBytes(Application.MapPath("Data/Wisej-Datasheet.pdf")));
                     break;
             }
         }

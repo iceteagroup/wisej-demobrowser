@@ -58,9 +58,9 @@
             // 
             this.numericUpDown1.Anchor = Wisej.Web.AnchorStyles.None;
             this.numericUpDown1.LabelText = "Default";
-            this.numericUpDown1.Location = new System.Drawing.Point(179, 94);
+            this.numericUpDown1.Location = new System.Drawing.Point(379, 78);
             this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(200, 42);
+            this.numericUpDown1.Size = new System.Drawing.Size(200, 53);
             this.numericUpDown1.TabIndex = 0;
             // 
             // numericUpDown2
@@ -68,9 +68,9 @@
             this.numericUpDown2.Anchor = Wisej.Web.AnchorStyles.None;
             this.numericUpDown2.Label.Position = Wisej.Web.LabelPosition.Left;
             this.numericUpDown2.LabelText = "Left";
-            this.numericUpDown2.Location = new System.Drawing.Point(147, 222);
+            this.numericUpDown2.Location = new System.Drawing.Point(379, 182);
             this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(232, 22);
+            this.numericUpDown2.Size = new System.Drawing.Size(200, 30);
             this.numericUpDown2.TabIndex = 1;
             // 
             // numericUpDown3
@@ -79,9 +79,9 @@
             this.numericUpDown3.Label.Position = Wisej.Web.LabelPosition.Bottom;
             this.numericUpDown3.Label.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
             this.numericUpDown3.LabelText = "Buttom Left";
-            this.numericUpDown3.Location = new System.Drawing.Point(179, 327);
+            this.numericUpDown3.Location = new System.Drawing.Point(612, 99);
             this.numericUpDown3.Name = "numericUpDown3";
-            this.numericUpDown3.Size = new System.Drawing.Size(200, 42);
+            this.numericUpDown3.Size = new System.Drawing.Size(200, 53);
             this.numericUpDown3.TabIndex = 2;
             // 
             // numericUpDown4
@@ -89,9 +89,9 @@
             this.numericUpDown4.Anchor = Wisej.Web.AnchorStyles.None;
             this.numericUpDown4.Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.numericUpDown4.LabelText = "Center Align";
-            this.numericUpDown4.Location = new System.Drawing.Point(476, 94);
+            this.numericUpDown4.Location = new System.Drawing.Point(379, 344);
             this.numericUpDown4.Name = "numericUpDown4";
-            this.numericUpDown4.Size = new System.Drawing.Size(200, 42);
+            this.numericUpDown4.Size = new System.Drawing.Size(200, 53);
             this.numericUpDown4.TabIndex = 3;
             // 
             // numericUpDown5
@@ -99,9 +99,9 @@
             this.numericUpDown5.Anchor = Wisej.Web.AnchorStyles.None;
             this.numericUpDown5.Label.Position = Wisej.Web.LabelPosition.Right;
             this.numericUpDown5.LabelText = "Right";
-            this.numericUpDown5.Location = new System.Drawing.Point(476, 222);
+            this.numericUpDown5.Location = new System.Drawing.Point(379, 263);
             this.numericUpDown5.Name = "numericUpDown5";
-            this.numericUpDown5.Size = new System.Drawing.Size(245, 22);
+            this.numericUpDown5.Size = new System.Drawing.Size(200, 30);
             this.numericUpDown5.TabIndex = 4;
             // 
             // numericUpDown6
@@ -110,9 +110,9 @@
             this.numericUpDown6.Label.Position = Wisej.Web.LabelPosition.Bottom;
             this.numericUpDown6.Label.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.numericUpDown6.LabelText = "Bottom Center";
-            this.numericUpDown6.Location = new System.Drawing.Point(476, 327);
+            this.numericUpDown6.Location = new System.Drawing.Point(612, 182);
             this.numericUpDown6.Name = "numericUpDown6";
-            this.numericUpDown6.Size = new System.Drawing.Size(200, 42);
+            this.numericUpDown6.Size = new System.Drawing.Size(200, 53);
             this.numericUpDown6.TabIndex = 5;
             // 
             // numericUpDown7
@@ -120,9 +120,9 @@
             this.numericUpDown7.Anchor = Wisej.Web.AnchorStyles.None;
             this.numericUpDown7.Label.TextAlign = System.Drawing.ContentAlignment.TopRight;
             this.numericUpDown7.LabelText = "Right Align";
-            this.numericUpDown7.Location = new System.Drawing.Point(773, 94);
+            this.numericUpDown7.Location = new System.Drawing.Point(612, 344);
             this.numericUpDown7.Name = "numericUpDown7";
-            this.numericUpDown7.Size = new System.Drawing.Size(200, 42);
+            this.numericUpDown7.Size = new System.Drawing.Size(200, 53);
             this.numericUpDown7.TabIndex = 6;
             // 
             // numericUpDown8
@@ -130,9 +130,9 @@
             this.numericUpDown8.Anchor = Wisej.Web.AnchorStyles.None;
             this.numericUpDown8.Label.Position = Wisej.Web.LabelPosition.Inside;
             this.numericUpDown8.LabelText = "Inside";
-            this.numericUpDown8.Location = new System.Drawing.Point(773, 204);
+            this.numericUpDown8.Location = new System.Drawing.Point(612, 263);
             this.numericUpDown8.Name = "numericUpDown8";
-            this.numericUpDown8.Size = new System.Drawing.Size(200, 37);
+            this.numericUpDown8.Size = new System.Drawing.Size(200, 48);
             this.numericUpDown8.TabIndex = 7;
             // 
             // numericUpDown9
@@ -141,9 +141,9 @@
             this.numericUpDown9.Label.Position = Wisej.Web.LabelPosition.Bottom;
             this.numericUpDown9.Label.TextAlign = System.Drawing.ContentAlignment.BottomRight;
             this.numericUpDown9.LabelText = "Bottom Right";
-            this.numericUpDown9.Location = new System.Drawing.Point(773, 327);
+            this.numericUpDown9.Location = new System.Drawing.Point(843, 99);
             this.numericUpDown9.Name = "numericUpDown9";
-            this.numericUpDown9.Size = new System.Drawing.Size(200, 42);
+            this.numericUpDown9.Size = new System.Drawing.Size(200, 53);
             this.numericUpDown9.TabIndex = 8;
             // 
             // numericUpDown10
@@ -151,9 +151,9 @@
             this.numericUpDown10.Anchor = Wisej.Web.AnchorStyles.None;
             this.numericUpDown10.Label.Padding = new Wisej.Web.Padding(16, 0, 0, 5);
             this.numericUpDown10.LabelText = "Custom Padding";
-            this.numericUpDown10.Location = new System.Drawing.Point(1075, 94);
+            this.numericUpDown10.Location = new System.Drawing.Point(843, 240);
             this.numericUpDown10.Name = "numericUpDown10";
-            this.numericUpDown10.Size = new System.Drawing.Size(200, 42);
+            this.numericUpDown10.Size = new System.Drawing.Size(200, 53);
             this.numericUpDown10.TabIndex = 9;
             // 
             // numericUpDown11
@@ -161,9 +161,9 @@
             this.numericUpDown11.Anchor = Wisej.Web.AnchorStyles.None;
             this.numericUpDown11.Label.ForeColor = System.Drawing.Color.FromName("@activeCaption");
             this.numericUpDown11.LabelText = "Custom Color";
-            this.numericUpDown11.Location = new System.Drawing.Point(1075, 201);
+            this.numericUpDown11.Location = new System.Drawing.Point(843, 159);
             this.numericUpDown11.Name = "numericUpDown11";
-            this.numericUpDown11.Size = new System.Drawing.Size(200, 42);
+            this.numericUpDown11.Size = new System.Drawing.Size(200, 53);
             this.numericUpDown11.TabIndex = 10;
             // 
             // numericUpDown12
@@ -171,16 +171,15 @@
             this.numericUpDown12.Anchor = Wisej.Web.AnchorStyles.None;
             this.numericUpDown12.Label.AllowHtml = true;
             this.numericUpDown12.LabelText = "<b>Label</b> with <i>HTML</i>";
-            this.numericUpDown12.Location = new System.Drawing.Point(1075, 285);
+            this.numericUpDown12.Location = new System.Drawing.Point(843, 344);
             this.numericUpDown12.Name = "numericUpDown12";
-            this.numericUpDown12.Size = new System.Drawing.Size(200, 42);
+            this.numericUpDown12.Size = new System.Drawing.Size(200, 53);
             this.numericUpDown12.TabIndex = 11;
             // 
             // Labels
             // 
             this.Controls.Add(this.numericUpDown12);
             this.Controls.Add(this.numericUpDown11);
-            this.Controls.Add(this.numericUpDown10);
             this.Controls.Add(this.numericUpDown9);
             this.Controls.Add(this.numericUpDown8);
             this.Controls.Add(this.numericUpDown7);
@@ -190,7 +189,8 @@
             this.Controls.Add(this.numericUpDown3);
             this.Controls.Add(this.numericUpDown2);
             this.Controls.Add(this.numericUpDown1);
-            this.MinimumSize = new System.Drawing.Size(1189, 336);
+            this.Controls.Add(this.numericUpDown10);
+            this.MinimumSize = new System.Drawing.Size(673, 323);
             this.Name = "Labels";
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();

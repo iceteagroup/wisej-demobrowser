@@ -3,13 +3,33 @@ using Wisej.Web;
 
 namespace Wisej.Web.Ext.Syncfusion.Demo.Component
 {
-	public partial class ejSparkline : Wisej.Web.Ext.Syncfusion.Demo.Component.TestBase
+	public partial class ejSparkline : TestBase
 	{
 		public ejSparkline()
 		{
 			InitializeComponent();
 
 			this.ejSparkline1.Instance.onClick += new WidgetEventHandler(ejSparkline1_WidgetEvent);
+		}
+
+		private void ejSparkline_Load(object sender, EventArgs e)
+		{
+			this.ejSparkline1.Options.isResponsive = true;
+			this.ejSparkline1.Options.dataSource = new object[]
+			{
+				2, 6, -1, 1, 12, 5, -2, 7, -3, 5, 8, 10
+			};
+			this.ejSparkline1.Options.negativePointColor = "red";
+			this.ejSparkline1.Options.highPointColor = "blue";
+			this.ejSparkline1.Options.tooltip = new
+			{
+				visible = true,
+				font = new
+				{
+					size = "12px"
+				}
+			};
+			this.ejSparkline1.Options.type = "column";
 		}
 
 		private void ejSparkline1_WidgetEvent(object sender, WidgetEventArgs e)

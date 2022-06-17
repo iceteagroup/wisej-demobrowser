@@ -5,7 +5,7 @@ using Wisej.Web;
 
 namespace Wisej.Web.Ext.Syncfusion.Demo.Component
 {
-	public partial class ejListBox : Wisej.Web.Ext.Syncfusion.Demo.Component.TestBase
+	public partial class ejListBox : TestBase
 	{
 		public ejListBox()
 		{
@@ -15,10 +15,82 @@ namespace Wisej.Web.Ext.Syncfusion.Demo.Component
 			this.ejListBox1.Instance.onUnselect += new WidgetEventHandler(ejListBox1_WidgetEvent);
 		}
 
+		private void ejListBox_Load(object sender, EventArgs e)
+		{
+			this.ejListBox1.Options.allowDrag = true;
+			this.ejListBox1.Options.allowDrop = true;
+			this.ejListBox1.Options.dataSource = new object[]
+			{
+				new
+				{
+					bikeId = "bk1",
+					bikeName = "Apache RTR"
+				},
+				new
+				{
+					bikeId = "bk2",
+					bikeName = "CBR 150-R"
+				},
+				new
+				{
+					bikeId = "bk3",
+					bikeName = "CBZ Xtreme"
+				},
+				new
+				{
+					bikeId = "bk4",
+					bikeName = "Discover"
+				},
+				new
+				{
+					bikeId = "bk5",
+					bikeName = "Dazzler"
+				},
+				new
+				{
+					bikeId = "bk6",
+					bikeName = "Flame"
+				},
+				new
+				{
+					bikeId = "bk7",
+					bikeName = "Fazer"
+				},
+				new
+				{
+					bikeId = "bk8",
+					bikeName = "FZ-S"
+				},
+				new
+				{
+					bikeId = "bk9",
+					bikeName = "Pulsar"
+				},
+				new
+				{
+					bikeId = "bk10",
+					bikeName = "Shine"
+				},
+				new
+				{
+					bikeId = "bk11",
+					bikeName = "R15"
+				},
+				new
+				{
+					bikeId = "bk12",
+					bikeName = "Unicorn"
+				}
+			};
+			this.ejListBox1.Options.fields = new
+			{
+				id = "bikeId",
+				text = "bikeName"
+			};
+		}
 		private void buttonLoad_Uploaded(object sender, UploadedEventArgs e)
 		{
 			if (e.Files.Count == 1)
-			{
 				using (var stream = new StreamReader(e.Files[0].InputStream))
 				{
 					var json = stream.ReadToEnd();
@@ -26,13 +98,12 @@ namespace Wisej.Web.Ext.Syncfusion.Demo.Component
 
 					this.ejListBox1.Update();
 				}
-			}
 		}
 
 		private async void buttonSave_Click(object sender, EventArgs e)
 		{
 			var data = await this.ejListBox1.Instance.optionAsync("dataSource");
-			var json = Wisej.Core.WisejSerializer.Serialize(data);
+			var json = Core.WisejSerializer.Serialize(data);
 
 			Application.Download(new MemoryStream(Encoding.UTF8.GetBytes(json)), "listbox.json");
 		}

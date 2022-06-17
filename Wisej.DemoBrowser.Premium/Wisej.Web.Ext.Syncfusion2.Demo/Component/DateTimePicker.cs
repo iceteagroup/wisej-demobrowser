@@ -3,7 +3,7 @@ using Wisej.Web;
 
 namespace Wisej.Web.Ext.Syncfusion2.Demo.Component
 {
-	public partial class DateTimePicker : Wisej.Web.Ext.Syncfusion2.Demo.Component.TestBase
+	public partial class DateTimePicker : TestBase
 	{
 		public DateTimePicker()
 		{
@@ -11,6 +11,15 @@ namespace Wisej.Web.Ext.Syncfusion2.Demo.Component
 
 			this.dateTimePicker1.Instance.onChange += new WidgetEventHandler(dateTimePicker1_WidgetEvent);
 			this.dateTimePicker1.Instance.onNavigated += new WidgetEventHandler(dateTimePicker1_WidgetEvent);
+		}
+
+		private void DateTimePicker_Load(object sender, EventArgs e)
+		{
+			this.dateTimePicker1.Options.format = "dd-MMM-yy hh:mm a";
+			this.dateTimePicker1.Options.value = "";
+
+			this.dateTimePickerStart.Value = DateTime.Now.AddYears(-1);
+			this.dateTimePickerEnd.Value = DateTime.Now.AddYears(1);
 		}
 
 		private void dateTimePicker1_WidgetEvent(object sender, WidgetEventArgs e)
@@ -22,23 +31,23 @@ namespace Wisej.Web.Ext.Syncfusion2.Demo.Component
 			Application.Play(MessageBoxIcon.Information);
 		}
 
-        private void buttonUpdate_Click(object sender, EventArgs e)
-        {
-			if (DateTime.Compare(dateTimePickerEnd.Value, dateTimePickerStart.Value) <= 0)
+		private void buttonUpdate_Click(object sender, EventArgs e)
+		{
+			if (DateTime.Compare(this.dateTimePickerEnd.Value, this.dateTimePickerStart.Value) <= 0)
 			{
 				AlertBox.Show($"End Date must be later than Start date",
-					MessageBoxIcon.Warning);
+							MessageBoxIcon.Warning);
 
 				Application.Play(MessageBoxIcon.Warning);
 				return;
 			}
 
-			this.dateTimePicker1.Options.format = comboBoxFormat.Text;
-			this.dateTimePicker1.Options.startDate = dateTimePickerEnd.Value.ToShortDateString();
-			this.dateTimePicker1.Options.startDate = dateTimePickerStart.Value.ToShortDateString();
+			this.dateTimePicker1.Options.format = this.comboBoxFormat.Text;
+			this.dateTimePicker1.Options.startDate = this.dateTimePickerEnd.Value.ToShortDateString();
+			this.dateTimePicker1.Options.startDate = this.dateTimePickerStart.Value.ToShortDateString();
 
 
 			this.dateTimePicker1.Update();
 		}
-    }
+	}
 }

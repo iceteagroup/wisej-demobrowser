@@ -126,6 +126,7 @@
             this.trackBarPieAngle.Size = new System.Drawing.Size(212, 40);
             this.trackBarPieAngle.TabIndex = 3;
             this.trackBarPieAngle.TickStyle = Wisej.Web.TickStyle.None;
+            this.trackBarPieAngle.Value = 360;
             // 
             // label4
             // 
@@ -150,16 +151,11 @@
             this.numericUpDownExplodeOffset.LabelText = "Explode Offset (%)";
             this.numericUpDownExplodeOffset.Location = new System.Drawing.Point(3, 242);
             this.numericUpDownExplodeOffset.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
-            this.numericUpDownExplodeOffset.Maximum = new decimal(new int[] {
-            40,
-            0,
-            0,
-            0});
             this.numericUpDownExplodeOffset.Name = "numericUpDownExplodeOffset";
             this.numericUpDownExplodeOffset.Size = new System.Drawing.Size(212, 57);
             this.numericUpDownExplodeOffset.TabIndex = 11;
             this.numericUpDownExplodeOffset.Value = new decimal(new int[] {
-            10,
+            50,
             0,
             0,
             0});
@@ -218,6 +214,7 @@
             // AccumulationChart
             // 
             this.Name = "AccumulationChart";
+            this.Load += new System.EventHandler(this.AccumulationChart_Load);
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);

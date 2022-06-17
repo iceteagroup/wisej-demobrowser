@@ -15,6 +15,24 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 		private void kendoDropDownTree_Load(object sender, EventArgs e)
 		{
 			this.comboBoxTagMode.SelectedIndex = 0;
+
+			this.kendoDropDownTree1.Options.placeholder = "Select...";
+
+			this.kendoDropDownTree1.Options.dataSource = new dynamic[]
+			{
+				new
+				{
+					text = "Furniture", expanded = true, items = new dynamic[]
+					{
+						new {value = 1, text = "Tables & Chairs"},
+						new {value = 2, text = "Sofas"},
+						new {value = 3, text = "Occasional Furniture"},
+						new {value = 4, text = "Patio Furniture"}
+					}
+				}
+			};
+
+			this.kendoDropDownTree1.Options.autoSize = false;
 		}
 
 		private void kendoDropDownTree1_WidgetEvent(object sender, WidgetEventArgs e)
@@ -26,8 +44,8 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 			Application.Play(MessageBoxIcon.Information);
 		}
 
-        private void buttonUpdate_Click(object sender, EventArgs e)
-        {
+		private void buttonUpdate_Click(object sender, EventArgs e)
+		{
 			this.kendoDropDownTree1.AutoSize = this.checkBoxCheckBoxes.Checked;
 
 			this.kendoDropDownTree1.Options.placeholder = this.textBoxPlaceholder.Text;
@@ -40,11 +58,11 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 			this.kendoDropDownTree1.Options.tagMode = this.comboBoxTagMode.SelectedItem.ToString()?.ToLower();
 
 			this.kendoDropDownTree1.Update();
-        }
+		}
 
-        private void checkBoxCheckBoxes_CheckedChanged(object sender, EventArgs e)
-        {
+		private void checkBoxCheckBoxes_CheckedChanged(object sender, EventArgs e)
+		{
 			this.checkBoxCheckAll.Enabled = this.checkBoxCheckBoxes.Checked;
-        }
+		}
 	}
 }

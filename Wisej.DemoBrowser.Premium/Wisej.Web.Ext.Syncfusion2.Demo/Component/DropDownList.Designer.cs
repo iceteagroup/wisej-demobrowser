@@ -67,16 +67,14 @@
             // 
             // tagTextBoxDataSource
             // 
-            this.tagTextBoxDataSource.AutoSize = false;
             this.flowLayoutPanel1.SetFillWeight(this.tagTextBoxDataSource, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.tagTextBoxDataSource, true);
             this.tagTextBoxDataSource.LabelText = "Data Source";
             this.tagTextBoxDataSource.Location = new System.Drawing.Point(3, 122);
             this.tagTextBoxDataSource.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.tagTextBoxDataSource.MaxTagCount = 10;
-            this.tagTextBoxDataSource.Multiline = true;
             this.tagTextBoxDataSource.Name = "tagTextBoxDataSource";
-            this.tagTextBoxDataSource.Size = new System.Drawing.Size(212, 239);
+            this.tagTextBoxDataSource.Size = new System.Drawing.Size(212, 57);
             this.tagTextBoxDataSource.TabIndex = 1;
             this.tagTextBoxDataSource.Text = resources.GetString("tagTextBoxDataSource.Text");
             // 
@@ -121,6 +119,7 @@
             // DropDownList
             // 
             this.Name = "DropDownList";
+            this.Load += new System.EventHandler(this.DropDownList_Load);
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);

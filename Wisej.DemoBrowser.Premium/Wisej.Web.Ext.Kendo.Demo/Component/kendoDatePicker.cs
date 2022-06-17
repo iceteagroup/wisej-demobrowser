@@ -38,7 +38,7 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 		}
 
 		private void buttonUpdate_Click(object sender, EventArgs e)
-        {
+		{
 			var daysOfWeek = this.flowLayoutPanelProperties.Controls
 				.Where(c => c is CheckBox && ((CheckBox)c).Checked)
 				.Select(c => c.Text.Substring(0, 2).ToLower()).ToArray();
@@ -49,5 +49,5 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 
 			this.kendoDatePicker1.Update();
 		}
-    }
+	}
 }

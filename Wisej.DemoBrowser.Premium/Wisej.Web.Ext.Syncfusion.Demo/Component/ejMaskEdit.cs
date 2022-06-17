@@ -3,13 +3,20 @@ using Wisej.Web;
 
 namespace Wisej.Web.Ext.Syncfusion.Demo.Component
 {
-	public partial class ejMaskEdit : Wisej.Web.Ext.Syncfusion.Demo.Component.TestBase
+	public partial class ejMaskEdit : TestBase
 	{
 		public ejMaskEdit()
 		{
 			InitializeComponent();
 
 			this.ejMaskEdit1.Instance.onChange += new WidgetEventHandler(ejMaskEdit1_WidgetEvent);
+		}
+
+		private void ejMaskEdit_Load(object sender, EventArgs e)
+		{
+			this.ejMaskEdit1.Options.watermarkText = "Enter password";
+			this.ejMaskEdit1.Options.inputMode = "Password";
+			this.ejMaskEdit1.Options.value = "ejMaskEdit1";
 		}
 
 		private void buttonUpdate_Click(object sender, EventArgs e)

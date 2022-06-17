@@ -3,7 +3,7 @@ using Wisej.Web;
 
 namespace Wisej.Web.Ext.Syncfusion.Demo.Component
 {
-	public partial class ejTextBox : Wisej.Web.Ext.Syncfusion.Demo.Component.TestBase
+	public partial class ejTextBox : TestBase
 	{
 		public ejTextBox()
 		{
@@ -12,6 +12,28 @@ namespace Wisej.Web.Ext.Syncfusion.Demo.Component
 			this.ejMaskEdit1.Instance.onChange += new WidgetEventHandler(ejTextbox_WidgetEvent);
 			this.ejNumericTextbox1.Instance.onChange += new WidgetEventHandler(ejTextbox_WidgetEvent);
 			this.ejPercentageTextbox1.Instance.onChange += new WidgetEventHandler(ejTextbox_WidgetEvent);
+		}
+
+		private void ejTextBox_Load(object sender, EventArgs e)
+		{
+			//ejNumericTextBox1
+			this.ejNumericTextbox1.Options.name = "numeric";
+			this.ejNumericTextbox1.Options.value = "123";
+			this.ejNumericTextbox1.Options.minValue = 0;
+			this.ejNumericTextbox1.Options.width = "100%";
+
+			//ejPercentageTextbox1
+			this.ejPercentageTextbox1.Options.name = "percentage";
+			this.ejPercentageTextbox1.Options.value = "11";
+			this.ejPercentageTextbox1.Options.minValue = 0;
+			this.ejPercentageTextbox1.Options.width = "100%";
+
+			//ejMaskEdit1
+			this.ejMaskEdit1.Options.name = "mask";
+			this.ejMaskEdit1.Options.inputMode = "Text";
+			this.ejMaskEdit1.Options.value = "ejMaskEdit1";
+			this.ejMaskEdit1.Options.maskFormat = "99 999-99999";
+			this.ejMaskEdit1.Options.width = "100%";
 		}
 
 		private void ejTextbox_WidgetEvent(object sender, WidgetEventArgs e)

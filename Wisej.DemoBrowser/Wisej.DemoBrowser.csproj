@@ -31,8 +31,17 @@
 		<Content Update="Default.json">
 			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
 		</Content>
+		<Content Update="DemoBrowser.json">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Content>
 		<Content Update="Web.config">
 			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Content>
+		<Content Update="Web.Debug.config">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Content>
+		<Content Update="Web.Release.config">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
 		</Content>
 	</ItemGroup>
 
@@ -53,6 +62,7 @@
 		<None Remove="Images\strike.png" />
 		<None Remove="Images\wisej-logo.png" />
 		<None Remove="Images\wisej.png" />
+		<None Remove="Themes\CustomDataGrid.mixin.theme" />
 		<None Remove="Themes\DemoBrowser.mixin.theme" />
 		<None Remove="Themes\IconsListView.mixin.theme" />
 	</ItemGroup>
@@ -80,6 +90,7 @@
 	  <EmbeddedResource Include="Images\strike.png" />
 	  <EmbeddedResource Include="Images\wisej-logo.png" />
 	  <EmbeddedResource Include="Images\wisej.png" />
+	  <EmbeddedResource Include="Themes\CustomDataGrid.mixin.theme" />
 	  <EmbeddedResource Include="Themes\DemoBrowser.mixin.theme" />
 	  <EmbeddedResource Include="Themes\IconsListView.mixin.theme" />
 	</ItemGroup>
@@ -94,6 +105,7 @@
 	  <ProjectReference Include="..\Demos\Buttons\Wisej.DemoBrowser.CheckBox\Wisej.DemoBrowser.CheckBox.csproj" />
 	  <ProjectReference Include="..\Demos\Buttons\Wisej.DemoBrowser.RadioButton\Wisej.DemoBrowser.RadioButton.csproj" />
 	  <ProjectReference Include="..\Demos\Buttons\Wisej.DemoBrowser.SplitButton\Wisej.DemoBrowser.SplitButton.csproj" />
+	  <ProjectReference Include="..\Demos\Containers\Wisej.DemoBrowser.Accordion\Wisej.DemoBrowser.Accordion.csproj" />
 	  <ProjectReference Include="..\Demos\Containers\Wisej.DemoBrowser.FlexLayoutPanel\Wisej.DemoBrowser.FlexLayoutPanel.csproj" />
 	  <ProjectReference Include="..\Demos\Containers\Wisej.DemoBrowser.FlowLayoutPanel\Wisej.DemoBrowser.FlowLayoutPanel.csproj" />
 	  <ProjectReference Include="..\Demos\Containers\Wisej.DemoBrowser.GroupBox\Wisej.DemoBrowser.GroupBox.csproj" />
@@ -116,6 +128,7 @@
 	  <ProjectReference Include="..\Demos\Editors\Wisej.DemoBrowser.MaskedTextBox\Wisej.DemoBrowser.MaskedTextBox.csproj" />
 	  <ProjectReference Include="..\Demos\Editors\Wisej.DemoBrowser.MonthCalendar\Wisej.DemoBrowser.MonthCalendar.csproj" />
 	  <ProjectReference Include="..\Demos\Editors\Wisej.DemoBrowser.NumericUpDown\Wisej.DemoBrowser.NumericUpDown.csproj" />
+	  <ProjectReference Include="..\Demos\Editors\Wisej.DemoBrowser.TagTextBox\Wisej.DemoBrowser.TagTextBox.csproj" />
 	  <ProjectReference Include="..\Demos\Editors\Wisej.DemoBrowser.TextBox\Wisej.DemoBrowser.TextBox.csproj" />
 	  <ProjectReference Include="..\Demos\Editors\Wisej.DemoBrowser.TreeView\Wisej.DemoBrowser.TreeView.csproj" />
 	  <ProjectReference Include="..\Demos\Editors\Wisej.DemoBrowser.Upload\Wisej.DemoBrowser.Upload.csproj" />
@@ -156,10 +169,14 @@
 	  <ProjectReference Include="..\Demos\Grids\Wisej.DemoBrowser.ListView\Wisej.DemoBrowser.ListView.csproj" />
 	  <ProjectReference Include="..\Demos\Grids\Wisej.DemoBrowser.PropertyGrid\Wisej.DemoBrowser.PropertyGrid.csproj" />
 	  <ProjectReference Include="..\Demos\IconPacks\Wisej.DemoBrowser.BootstrapIcons\Wisej.DemoBrowser.BootstrapIcons.csproj" />
+	  <ProjectReference Include="..\Demos\IconPacks\Wisej.DemoBrowser.CssGgIcons\Wisej.DemoBrowser.CssGgIcons.csproj" />
 	  <ProjectReference Include="..\Demos\IconPacks\Wisej.DemoBrowser.ElegantIcons\Wisej.DemoBrowser.ElegantIcons.csproj" />
+	  <ProjectReference Include="..\Demos\IconPacks\Wisej.DemoBrowser.FeatherIcons\Wisej.DemoBrowser.FeatherIcons.csproj" />
 	  <ProjectReference Include="..\Demos\IconPacks\Wisej.DemoBrowser.FontAwsome\Wisej.DemoBrowser.FontAwsome.csproj" />
+	  <ProjectReference Include="..\Demos\IconPacks\Wisej.DemoBrowser.IonicIcons\Wisej.DemoBrowser.IonicIcons.csproj" />
 	  <ProjectReference Include="..\Demos\IconPacks\Wisej.DemoBrowser.MaterialDesign\Wisej.DemoBrowser.MaterialDesign.csproj" />
 	  <ProjectReference Include="..\Demos\IconPacks\Wisej.DemoBrowser.ModernUI\Wisej.DemoBrowser.ModernUI.csproj" />
+	  <ProjectReference Include="..\Demos\IconPacks\Wisej.DemoBrowser.TablerIcons\Wisej.DemoBrowser.TablerIcons.csproj" />
 	  <ProjectReference Include="..\Demos\IconPacks\Wisej.DemoBrowser.VaadinIcons\Wisej.DemoBrowser.VaadinIcons.csproj" />
 	  <ProjectReference Include="..\Demos\IconPacks\Wisej.DemoBrowser.VisualStudioIcons\Wisej.DemoBrowser.VisualStudioIcons.csproj" />
 	  <ProjectReference Include="..\Demos\Miscellaneous\Wisej.DemoBrowser.Audio\Wisej.DemoBrowser.Audio.csproj" />

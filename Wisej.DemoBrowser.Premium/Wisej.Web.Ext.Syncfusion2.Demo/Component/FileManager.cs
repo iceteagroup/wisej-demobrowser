@@ -4,16 +4,17 @@ using Syncfusion.EJ2.FileManager.PhysicalFileProvider;
 using System;
 using System.IO;
 using System.Web.Mvc;
+using Wisej.Core;
 
 namespace Wisej.Web.Ext.Syncfusion2.Demo.Component
 {
-    /// <summary>
-    /// File Manager Implementation.
-    /// See: https://github.com/SyncfusionExamples/ej2-aspmvc-file-provider/blob/73f10f29a61eee5a89f54c1c45bd429612ee1471/Controllers/FileManagerController.cs.
-    /// </summary>
-    public partial class FileManager : TestBase
+	/// <summary>
+	/// File Manager Implementation.
+	/// See: https://github.com/SyncfusionExamples/ej2-aspmvc-file-provider/blob/73f10f29a61eee5a89f54c1c45bd429612ee1471/Controllers/FileManagerController.cs.
+	/// </summary>
+	public partial class FileManager : TestBase
 	{
-		PhysicalFileProvider operation = new PhysicalFileProvider();
+		private PhysicalFileProvider operation = new PhysicalFileProvider();
 
 		public FileManager()
 		{
@@ -26,6 +27,34 @@ namespace Wisej.Web.Ext.Syncfusion2.Demo.Component
 
 		private void FileManager_Load(object sender, EventArgs e)
 		{
+			this.fileManager1.Options.allowDragAndDrop = true;
+			this.fileManager1.Options.contextMenuSettings = new
+			{
+				file = new object[]
+				{
+					"Open", "|", "Cut", "Copy", "|", "Delete", "Rename", "|", "Details"
+				},
+				folder = new object[]
+				{
+					"Open", "|", "Cut", "Copy", "Paste", "|", "Delete", "Rename", "|", "Details"
+				},
+				layout = new object[]
+				{
+					"SortBy", "View", "Refresh", "|", "Paste", "|", "NewFolder", "Upload", "|", "Details", "|",
+					"SelectAll"
+				},
+				visible = true
+			};
+
+			var serviceUrl = ((IWisejHandler)this.fileManager1).GetPostbackURL();
+			this.fileManager1.Options.ajaxSettings = new
+			{
+				uploadUrl = $"{serviceUrl}&action=Upload",
+				url = $"{serviceUrl}&action=FileOperations",
+				downloadUrl = $"{serviceUrl}&action=Download",
+				getImageUrl = $"{serviceUrl}&action=GetImage"
+			};
+
 			this.operation.RootFolder(Path.Combine(Application.StartupPath, "Playground"));
 		}
 
@@ -33,7 +62,9 @@ namespace Wisej.Web.Ext.Syncfusion2.Demo.Component
 		{
 			dynamic data = null;
 			using (var sr = new StreamReader(e.Request.InputStream))
+			{
 				data = JSON.Parse(sr.ReadToEnd());
+			}
 
 			switch (e.Request["action"])
 			{
@@ -71,7 +102,7 @@ namespace Wisej.Web.Ext.Syncfusion2.Demo.Component
 		/// <returns></returns>
 		private FileStreamResult ProcessDownloadOperation(string downloadInput)
 		{
-			FileManagerDirectoryContent args = JsonConvert.DeserializeObject<FileManagerDirectoryContent>(downloadInput);
+			var args = JsonConvert.DeserializeObject<FileManagerDirectoryContent>(downloadInput);
 			return this.operation.Download(args.Path, args.Names);
 		}
 
@@ -86,37 +117,44 @@ namespace Wisej.Web.Ext.Syncfusion2.Demo.Component
 			switch (action)
 			{
 				case "read":
-					return operation.ToCamelCase(operation.GetFiles(args.path, args.showHiddenItems));
+					return this.operation.ToCamelCase(this.operation.GetFiles(args.path, args.showHiddenItems));
 				case "delete":
-					return operation.ToCamelCase(operation.Delete(args.path, args.names));
+					return this.operation.ToCamelCase(this.operation.Delete(args.path, args.names));
 				case "details":
-					if (args.Names == null)
-					{
-						args.Names = new string[] { };
-					}
+					if (args.Names == null) args.Names = new string[] { };
 					var jsonData = JSON.Stringify(args.data);
 					var files = JsonConvert.DeserializeObject<FileManagerDirectoryContent[]>(jsonData);
-					return operation.ToCamelCase(operation.Details(args.path, args.names, files));
+					return this.operation.ToCamelCase(this.operation.Details(args.path, args.names, files));
 				case "create":
-					return ProcessErrorResponse("Cannot crerate files in this sample."); //operation.ToCamelCase(operation.Create(args.path, args.name));
+					return
+						ProcessErrorResponse(
+							"Cannot crerate files in this sample."); //operation.ToCamelCase(operation.Create(args.path, args.name));
 				case "search":
-					return operation.ToCamelCase(operation.Search(args.path, args.searchString, args.showHiddenItems, args.caseSensitive));
+					return this.operation.ToCamelCase(
+						this.operation.Search(args.path, args.searchString, args.showHiddenItems, args.caseSensitive));
 				case "copy":
-					return ProcessErrorResponse("Cannot copy files in this sample."); // operation.ToCamelCase(operation.Copy(args.path, args.targetPath, args.names, args.renameFiles, args.targetData));
+					return
+						ProcessErrorResponse(
+							"Cannot copy files in this sample."); // operation.ToCamelCase(operation.Copy(args.path, args.targetPath, args.names, args.renameFiles, args.targetData));
 				case "move":
 					//var renameFiles = JsonConvert.DeserializeObject<string[]>(JSON.Stringify(args.renameFiles));
 					//var targetData = JsonConvert.DeserializeObject<FileManagerDirectoryContent>(args.targetData.ToJSON());
-					return ProcessErrorResponse("Cannot copy files in this sample."); //return operation.ToCamelCase(operation.Move(args.path, args.targetPath, args.names, renameFiles, targetData));
+					return
+						ProcessErrorResponse(
+							"Cannot copy files in this sample."); //return operation.ToCamelCase(operation.Move(args.path, args.targetPath, args.names, renameFiles, targetData));
 				case "rename":
-					return ProcessErrorResponse("Cannot rewrite file names in this sample."); //operation.ToCamelCase(operation.Rename(args.path, args.name, args.newName));
+					return
+						ProcessErrorResponse(
+							"Cannot rewrite file names in this sample."); //operation.ToCamelCase(operation.Rename(args.path, args.name, args.newName));
 			}
+
 			return null;
 		}
 
-        private void fileManager1_WidgetEvent(object sender, WidgetEventArgs e)
-        {
+		private void fileManager1_WidgetEvent(object sender, WidgetEventArgs e)
+		{
 			switch (e.Type)
-            {
+			{
 				case "fileSelect":
 					AlertBox.Show($"{e.Data.action} {e.Data.fileDetails.name}");
 					break;
@@ -130,8 +168,8 @@ namespace Wisej.Web.Ext.Syncfusion2.Demo.Component
 						$"<b>{e.Type}</b><br/>{JSON.Stringify(e.Data)}",
 						MessageBoxIcon.Information);
 					break;
-            }
-        }
+			}
+		}
 
 		/// <summary>
 		/// Provides an error response.
@@ -146,20 +184,19 @@ namespace Wisej.Web.Ext.Syncfusion2.Demo.Component
 				{
 					Code = "400",
 					Message = response
-				},
+				}
 			};
-			return operation.ToCamelCase(error);
+			return this.operation.ToCamelCase(error);
 		}
 
-        private void buttonUpdate_Click(object sender, EventArgs e)
-        {
-			this.fileManager1.Options.view = this.comboBoxView.Text;
-			this.fileManager1.Options.showThumbnail = this.checkBoxThumbnail.Checked;
-			this.fileManager1.Options.showHiddenItems = this.checkBoxHiddenItem.Checked;
-			this.fileManager1.Options.showFileExtension = this.checkBoxFileExtension.Checked;
-			this.fileManager1.Options.allowDragAndDrop = this.checkBoxMultipleSelection.Checked;
-
+		private void buttonUpdate_Click(object sender, EventArgs e)
+		{
+			this.fileManager1.Options.view = this.comboBoxView.SelectedItem;
+			//this.fileManager1.Options.showFileExtension = this.checkBoxFileExtension.Checked;
+			//this.fileManager1.Options.allowDragAndDrop = this.checkBoxAllowDragAndDrop.Checked;
+			//this.fileManager1.Options.allowMultipleSelection = this.checkBoxMultipleSelection.Checked;
+			
 			this.fileManager1.Update();
-        }
-    }
+		}
+	}
 }

@@ -14,6 +14,8 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 
 		private void kendoTimePicker_Load(object sender, EventArgs e)
 		{
+			this.kendoTimePicker1.Options.value = "2022-05-09T04:31:03.826";
+
 			this.textBoxMinimum.Text = "00:00";
 			this.textBoxMaximum.Text = "23:59";
 		}
@@ -32,13 +34,13 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 			Application.Play(MessageBoxIcon.Information);
 		}
 
-        private void buttonUpdate_Click(object sender, EventArgs e)
-        {
+		private void buttonUpdate_Click(object sender, EventArgs e)
+		{
 			this.kendoTimePicker1.Options.min = this.textBoxMinimum.Text;
 			this.kendoTimePicker1.Options.max = this.textBoxMaximum.Text;
 			this.kendoTimePicker1.Options.fillMode = this.comboBoxFillMode.SelectedItem.ToString();
 
 			this.kendoTimePicker1.Update();
-        }
-    }
+		}
+	}
 }

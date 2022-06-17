@@ -37,6 +37,7 @@
             | Wisej.Web.AnchorStyles.Left) 
             | Wisej.Web.AnchorStyles.Right)));
             this.tinyEditor1.BackColor = System.Drawing.Color.White;
+            this.tinyEditor1.CssClass = "shadow";
             this.tinyEditor1.Location = new System.Drawing.Point(211, 12);
             this.tinyEditor1.Name = "tinyEditor1";
             this.tinyEditor1.Size = new System.Drawing.Size(1000, 450);
@@ -46,7 +47,7 @@
             // Features
             // 
             this.Controls.Add(this.tinyEditor1);
-            this.MinimumSize = new System.Drawing.Size(968, 385);
+            this.MinimumSize = new System.Drawing.Size(700, 0);
             this.Name = "Features";
             this.ResumeLayout(false);
 

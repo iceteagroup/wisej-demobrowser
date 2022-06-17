@@ -48,7 +48,7 @@
             this.dxSparkline5 = new Wisej.Web.Ext.DevExtreme.dxSparkline();
             this.colorDialog1 = new Wisej.Web.ColorDialog(this.components);
             this.button1 = new Wisej.Web.Button();
-            this.label10 = new Wisej.Web.Label();
+            this.label1 = new Wisej.Web.Label();
             this.groupBox1.SuspendLayout();
             this.panel.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
@@ -59,6 +59,14 @@
             // 
             this.linkDocs.Size = new System.Drawing.Size(986, 24);
             this.linkDocs.Text = "https://js.devexpress.com/Documentation/Guide/Widgets/Sparkline/Visual_Elements/";
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
+            this.groupBox1.Controls.SetChildIndex(this.spacer1, 0);
+            this.groupBox1.Controls.SetChildIndex(this.label1, 0);
+            this.groupBox1.Controls.SetChildIndex(this.flowLayoutPanel1, 0);
             // 
             // linkDemo
             // 
@@ -78,10 +86,9 @@
             // 
             // flowLayoutPanel1
             // 
+            this.flowLayoutPanel1.AutoScrollMargin = new System.Drawing.Size(0, 8);
             this.flowLayoutPanel1.Controls.Add(this.button1);
-            this.flowLayoutPanel1.Controls.Add(this.label10);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 35);
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 470);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 407);
             // 
             // tableLayoutPanel1
             // 
@@ -178,6 +185,7 @@
             this.dxSparkline1.Location = new System.Drawing.Point(232, 164);
             this.dxSparkline1.Margin = new Wisej.Web.Padding(16);
             this.dxSparkline1.Name = "dxSparkline1";
+            this.dxSparkline1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("dxSparkline1.Options"))));
             this.dxSparkline1.Size = new System.Drawing.Size(184, 38);
             this.dxSparkline1.TabIndex = 4;
             // 
@@ -186,9 +194,9 @@
             this.label7.Anchor = Wisej.Web.AnchorStyles.None;
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("@defaultBold", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.label7.Location = new System.Drawing.Point(262, 51);
+            this.label7.Location = new System.Drawing.Point(259, 50);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(123, 19);
+            this.label7.Size = new System.Drawing.Size(130, 22);
             this.label7.TabIndex = 4;
             this.label7.Text = "Oil (USD/barrel)";
             // 
@@ -237,9 +245,9 @@
             this.label8.Anchor = Wisej.Web.AnchorStyles.None;
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("@defaultBold", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.label8.Location = new System.Drawing.Point(454, 51);
+            this.label8.Location = new System.Drawing.Point(449, 50);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(172, 19);
+            this.label8.Size = new System.Drawing.Size(181, 22);
             this.label8.TabIndex = 10;
             this.label8.Text = "Gold (USD/troy ounce)";
             // 
@@ -260,9 +268,9 @@
             this.label9.Anchor = Wisej.Web.AnchorStyles.None;
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("@defaultBold", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.label9.Location = new System.Drawing.Point(666, 51);
+            this.label9.Location = new System.Drawing.Point(661, 50);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(179, 19);
+            this.label9.Size = new System.Drawing.Size(189, 22);
             this.label9.TabIndex = 13;
             this.label9.Text = "Silver (USD/troy ounce)";
             // 
@@ -292,25 +300,30 @@
             | Wisej.Web.AnchorStyles.Right)));
             this.button1.Location = new System.Drawing.Point(3, 3);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(212, 27);
+            this.button1.Size = new System.Drawing.Size(212, 35);
             this.button1.TabIndex = 1;
-            this.button1.Text = "Line color";
+            this.button1.Text = "Line Color";
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // label10
+            // label1
             // 
-            this.label10.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Left) 
-            | Wisej.Web.AnchorStyles.Right)));
-            this.label10.Location = new System.Drawing.Point(3, 36);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(212, 50);
-            this.label10.TabIndex = 2;
-            this.label10.Text = "Note. For 2010 Oil(USD/barrel)";
+            this.label1.BackColor = System.Drawing.Color.FromArgb(233, 124, 41);
+            this.label1.CssStyle = "border-radius: 4px;\r\nbox-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0" +
+    ", 0.06) 0px 1px 2px 0px;";
+            this.label1.Dock = Wisej.Web.DockStyle.Bottom;
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label1.Location = new System.Drawing.Point(16, 445);
+            this.label1.Name = "label1";
+            this.label1.Padding = new Wisej.Web.Padding(8);
+            this.label1.Size = new System.Drawing.Size(218, 60);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Changes only affect 2010 Oil (USD/barrel).";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // dxSparkline
             // 
             this.Name = "dxSparkline";
-            this.Load += new System.EventHandler(this.dxSparkline_Load);
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
@@ -340,6 +353,6 @@
 		private DevExtreme.dxSparkline dxSparkline5;
         private Button button1;
         private ColorDialog colorDialog1;
-        private Label label10;
+        private Label label1;
     }
 }

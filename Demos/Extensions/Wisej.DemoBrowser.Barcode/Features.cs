@@ -27,5 +27,5 @@ namespace Wisej.DemoBrowser.Barcode
 		{
 			this.barcode1.Text = this.textBoxValue.Text;
 		}
-	}
+    }
 }

@@ -103,6 +103,7 @@
             this.animation2.GetAnimation(this.flowLayoutPanel1).Event = "appear";
             this.animation2.GetAnimation(this.flowLayoutPanel1).Name = "slideRightIn";
             this.animation2.GetAnimation(this.flowLayoutPanel1).Timing = Wisej.Web.AnimationTiming.Linear;
+            this.flowLayoutPanel1.AutoScroll = true;
             this.flowLayoutPanel1.Controls.Add(this.panel1);
             this.flowLayoutPanel1.Controls.Add(this.panel2);
             this.flowLayoutPanel1.Controls.Add(this.panel3);
@@ -123,13 +124,13 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(251, 48, 54, 65);
-            this.panel1.BorderStyle = Wisej.Web.BorderStyle.Solid;
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
+            this.panel1.CssClass = "shadow";
             this.panel1.Location = new System.Drawing.Point(11, 11);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(433, 138);
+            this.panel1.Size = new System.Drawing.Size(405, 138);
             this.panel1.TabIndex = 0;
             // 
             // label3
@@ -167,13 +168,13 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(251, 245, 105, 83);
-            this.panel2.BorderStyle = Wisej.Web.BorderStyle.Solid;
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.label6);
-            this.panel2.Location = new System.Drawing.Point(450, 11);
+            this.panel2.CssClass = "shadow";
+            this.panel2.Location = new System.Drawing.Point(422, 11);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(433, 138);
+            this.panel2.Size = new System.Drawing.Size(405, 138);
             this.panel2.TabIndex = 1;
             // 
             // label4
@@ -211,13 +212,13 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(251, 0, 191, 239);
-            this.panel3.BorderStyle = Wisej.Web.BorderStyle.Solid;
             this.panel3.Controls.Add(this.label7);
             this.panel3.Controls.Add(this.label8);
             this.panel3.Controls.Add(this.label9);
-            this.panel3.Location = new System.Drawing.Point(889, 11);
+            this.panel3.CssClass = "shadow";
+            this.panel3.Location = new System.Drawing.Point(833, 11);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(433, 138);
+            this.panel3.Size = new System.Drawing.Size(405, 138);
             this.panel3.TabIndex = 2;
             // 
             // label7
@@ -255,13 +256,13 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(251, 0, 166, 90);
-            this.panel4.BorderStyle = Wisej.Web.BorderStyle.Solid;
             this.panel4.Controls.Add(this.label10);
             this.panel4.Controls.Add(this.label11);
             this.panel4.Controls.Add(this.label12);
+            this.panel4.CssClass = "shadow";
             this.panel4.Location = new System.Drawing.Point(11, 155);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(433, 138);
+            this.panel4.Size = new System.Drawing.Size(405, 138);
             this.panel4.TabIndex = 3;
             // 
             // label10
@@ -299,13 +300,13 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(251, 185, 121, 202);
-            this.panel5.BorderStyle = Wisej.Web.BorderStyle.Solid;
             this.panel5.Controls.Add(this.label13);
             this.panel5.Controls.Add(this.label14);
             this.panel5.Controls.Add(this.label15);
-            this.panel5.Location = new System.Drawing.Point(450, 155);
+            this.panel5.CssClass = "shadow";
+            this.panel5.Location = new System.Drawing.Point(422, 155);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(433, 138);
+            this.panel5.Size = new System.Drawing.Size(405, 138);
             this.panel5.TabIndex = 4;
             // 
             // label13
@@ -343,13 +344,13 @@
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.FromArgb(251, 235, 59, 130);
-            this.panel6.BorderStyle = Wisej.Web.BorderStyle.Solid;
             this.panel6.Controls.Add(this.label16);
             this.panel6.Controls.Add(this.label17);
             this.panel6.Controls.Add(this.label18);
-            this.panel6.Location = new System.Drawing.Point(889, 155);
+            this.panel6.CssClass = "shadow";
+            this.panel6.Location = new System.Drawing.Point(833, 155);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(433, 138);
+            this.panel6.Size = new System.Drawing.Size(405, 138);
             this.panel6.TabIndex = 5;
             // 
             // label16
@@ -387,13 +388,13 @@
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.FromArgb(251, 108, 84, 29);
-            this.panel7.BorderStyle = Wisej.Web.BorderStyle.Solid;
             this.panel7.Controls.Add(this.label19);
             this.panel7.Controls.Add(this.label20);
             this.panel7.Controls.Add(this.label21);
+            this.panel7.CssClass = "shadow";
             this.panel7.Location = new System.Drawing.Point(11, 299);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(433, 138);
+            this.panel7.Size = new System.Drawing.Size(405, 138);
             this.panel7.TabIndex = 6;
             // 
             // label19
@@ -431,13 +432,13 @@
             // panel8
             // 
             this.panel8.BackColor = System.Drawing.Color.FromArgb(251, 0, 178, 158);
-            this.panel8.BorderStyle = Wisej.Web.BorderStyle.Solid;
             this.panel8.Controls.Add(this.label22);
             this.panel8.Controls.Add(this.label23);
             this.panel8.Controls.Add(this.label24);
-            this.panel8.Location = new System.Drawing.Point(450, 299);
+            this.panel8.CssClass = "shadow";
+            this.panel8.Location = new System.Drawing.Point(422, 299);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(433, 138);
+            this.panel8.Size = new System.Drawing.Size(405, 138);
             this.panel8.TabIndex = 7;
             // 
             // label22
@@ -475,13 +476,13 @@
             // panel9
             // 
             this.panel9.BackColor = System.Drawing.Color.FromArgb(251, 63, 179, 191);
-            this.panel9.BorderStyle = Wisej.Web.BorderStyle.Solid;
             this.panel9.Controls.Add(this.label25);
             this.panel9.Controls.Add(this.label26);
             this.panel9.Controls.Add(this.label27);
-            this.panel9.Location = new System.Drawing.Point(889, 299);
+            this.panel9.CssClass = "shadow";
+            this.panel9.Location = new System.Drawing.Point(833, 299);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(433, 138);
+            this.panel9.Size = new System.Drawing.Size(405, 138);
             this.panel9.TabIndex = 8;
             // 
             // label25
@@ -546,35 +547,41 @@
             // 
             // navigationBarItem1
             // 
+            this.navigationBarItem1.BackColor = System.Drawing.Color.Transparent;
             this.navigationBarItem1.Icon = "file-pdf";
             this.navigationBarItem1.InfoTextBackColor = System.Drawing.Color.FromName("@window");
             this.navigationBarItem1.Name = "NavigationBarItem";
             // 
             // navigationBarItem2
             // 
+            this.navigationBarItem2.BackColor = System.Drawing.Color.Transparent;
             this.navigationBarItem2.Icon = "icon-search";
             this.navigationBarItem2.InfoTextBackColor = System.Drawing.Color.FromName("@window");
             this.navigationBarItem2.Name = "NavigationBarItem";
             // 
             // navigationBarItem3
             // 
+            this.navigationBarItem3.BackColor = System.Drawing.Color.Transparent;
             this.navigationBarItem3.Icon = "icon-preview";
             this.navigationBarItem3.InfoTextBackColor = System.Drawing.Color.FromName("@window");
             this.navigationBarItem3.Name = "NavigationBarItem";
             // 
             // navigationBarItem4
             // 
+            this.navigationBarItem4.BackColor = System.Drawing.Color.Transparent;
             this.navigationBarItem4.Icon = "icon-upload";
             this.navigationBarItem4.InfoTextBackColor = System.Drawing.Color.FromName("@window");
             this.navigationBarItem4.Name = "NavigationBarItem";
             // 
             // navigationBarItem5
             // 
+            this.navigationBarItem5.BackColor = System.Drawing.Color.Transparent;
             this.navigationBarItem5.Icon = "icon-saveas";
             this.navigationBarItem5.Name = "NavigationBarItem";
             // 
             // navigationBarItem6
             // 
+            this.navigationBarItem6.BackColor = System.Drawing.Color.Transparent;
             this.navigationBarItem6.Icon = "icon-new";
             this.navigationBarItem6.Name = "NavigationBarItem";
             // 

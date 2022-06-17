@@ -3,7 +3,7 @@ using Wisej.Web;
 
 namespace Wisej.Web.Ext.Syncfusion.Demo.Component
 {
-	public partial class ejDigitalGauge : Wisej.Web.Ext.Syncfusion.Demo.Component.TestBase
+	public partial class ejDigitalGauge : TestBase
 	{
 		public ejDigitalGauge()
 		{
@@ -14,11 +14,46 @@ namespace Wisej.Web.Ext.Syncfusion.Demo.Component
 			this.ejDigitalGauge1.Instance.onDoubleClick += new WidgetEventHandler(ejDigitalGauge1_WidgetEvent);
 		}
 
+		private void ejDigitalGauge_Load(object sender, EventArgs e)
+		{
+			this.ejDigitalGauge1.Options.isResponsive = true;
+			
+			SetDigitalGaugeItems();
+		}
+
+		private void SetDigitalGaugeItems()
+		{
+			var items = new dynamic[]
+			{
+				new
+				{
+					segmentSettings = new
+					{
+						width = 1,
+						spacing = this.trackBarSegmentSpacing.Value,
+						color = "#8c8c8c"
+					},
+					characterSettings = new
+					{
+						opacity = 0.8,
+						spacing = this.trackBarCharSpacing.Value
+					},
+					value = "123456789",
+					position = new
+					{
+						x = 52,
+						y = 52
+					}
+				}
+			};
+			this.ejDigitalGauge1.Options.items = items;
+		}
+
 		private void buttonUpdate_Click(object sender, EventArgs e)
 		{
-			this.ejDigitalGauge1.Instance.setValue(0,this.textBox1.Text);
-			this.ejDigitalGauge1.Options.items[0].segmentSettings.spacing = this.trackBarSegmentSpacing.Value;
-			this.ejDigitalGauge1.Options.items[0].characterSettings.spacing = this.trackBarCharSpacing.Value;
+			this.ejDigitalGauge1.Instance.setValue(0, this.textBox1.Text);
+
+			SetDigitalGaugeItems();
 
 			this.ejDigitalGauge1.Update();
 		}
@@ -31,5 +66,5 @@ namespace Wisej.Web.Ext.Syncfusion.Demo.Component
 
 			Application.Play(MessageBoxIcon.Information);
 		}
-    }
+	}
 }

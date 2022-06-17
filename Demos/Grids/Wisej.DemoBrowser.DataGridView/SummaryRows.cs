@@ -23,7 +23,6 @@ namespace Wisej.DemoBrowser.DataGridView
 			FillGroupSummaryGrid();
 		}
 
-
         private void FillGroupSummaryGrid()
         {
 			FillData(1);
@@ -51,10 +50,10 @@ namespace Wisej.DemoBrowser.DataGridView
 					grid[m + 2, index].Style = AmountStyle;
 				}
 			}
-
 		}
 
 		private static string[] Items = { "General Supplies", "Printer Ink", "Paper", "Postage" };
+
 		private static int[][] Values = {
 			new []{ 17, 20, 43, 42 },
 			new[] { 39, 21, 44, 30 },
@@ -76,9 +75,7 @@ namespace Wisej.DemoBrowser.DataGridView
 			DataGridViewRow[] totals = null;
 			var grid = this.dataGridView1;
 			for (var m = 0; m < 12; m++)
-			{
 				totals = grid.AddSummaryRows(SummaryType.Sum, SummaryRowPosition.Above, grid.Columns[0], grid.Columns[m + 2], TotalStyle);
-			}
 
 			// add total label and group headers
 			foreach (var t in totals)
@@ -134,8 +131,8 @@ namespace Wisej.DemoBrowser.DataGridView
 
 		private static DataGridViewCellStyle MonthStyle = new DataGridViewCellStyle()
 		{
-			BackColor = Color.FromArgb(250, 203, 89),
 			ForeColor = Color.White,
+			BackColor = Color.FromArgb(250, 203, 89),
 			Alignment = DataGridViewContentAlignment.MiddleCenter,
 			CssStyle = "border: 1px solid white"
 		};

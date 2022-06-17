@@ -112,7 +112,7 @@
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(212, 38);
             this.checkBox1.TabIndex = 13;
-            this.checkBox1.Text = "Show Optional Mark";
+            this.checkBox1.Text = "Optional Mark";
             // 
             // checkBox2
             // 
@@ -127,7 +127,7 @@
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.Size = new System.Drawing.Size(212, 38);
             this.checkBox2.TabIndex = 14;
-            this.checkBox2.Text = "Show Required Mark";
+            this.checkBox2.Text = "Required Mark";
             // 
             // checkBox3
             // 

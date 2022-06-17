@@ -1,45 +1,58 @@
 ﻿using System;
-using System.Windows.Forms;
-using Wisej.DemoBrowser.Common;
-using UserControl = Wisej.Web.UserControl;
+using Wisej.Core;
+using Wisej.Web;
 
 namespace Wisej.DemoBrowser.PropertyGrid
 {
-    public partial class PersonCard : UserControl
-    {
-        public Person Person
-        {
-            get => Person.Instance;
-        }
+	public partial class PersonCard : UserControl, IWisejHandler
+	{
+		public Person Person
+		{
+			get => Person.Instance;
+		}
 
-        public PersonCard()
-        {
-            InitializeComponent();
-        }
+		public PersonCard()
+		{
+			InitializeComponent();
+		}
 
-        private void PersonCard_Load(object sender, EventArgs e)
-        {
-            lblIssued.Text += DateTime.Now.ToShortDateString();
+		private void PersonCard_Load(object sender, EventArgs e)
+		{
+			lblIssued.Text += DateTime.Now.ToShortDateString();
 
-            lblFirstNameTxt.DataBindings.Add(new Binding("Text", Person, "FirstName"));
-            lblLastNameTxt.DataBindings.Add(new Binding("Text", Person, "LastName"));
-            lblGenderTxt.DataBindings.Add(new Binding("Text", Person, "Gender"));
-            lblAddressTxt.DataBindings.Add(new Binding("Text", Person, "Address"));
-            lblID.DataBindings.Add(new Binding("Text", Person, "Id"));
-            barcode1.DataBindings.Add(new Binding("Text", Person, "Details"));
-            pnlFavColor.DataBindings.Add(new Binding("BackColor", Person, "FavoriteColor"));
-            lblDobTxt.DataBindings.Add(new Binding("Text", Person, "Dob"));
-            pbVip.DataBindings.Add(new Binding("Visible", Person, "IsVip"));
-        }
+			lblID.DataBindings.Add(new Binding("Text", Person, "Id"));
+			pbVip.DataBindings.Add(new Binding("Visible", Person, "IsVip"));
+			lblDobTxt.DataBindings.Add(new Binding("Text", Person, "Birthday"));
+			lblGenderTxt.DataBindings.Add(new Binding("Text", Person, "Gender"));
+			lblAddressTxt.DataBindings.Add(new Binding("Text", Person, "Address"));
+			lblLastNameTxt.DataBindings.Add(new Binding("Text", Person, "LastName"));
+			lblFirstNameTxt.DataBindings.Add(new Binding("Text", Person, "FirstName"));
+			pnlFavColor.DataBindings.Add(new Binding("BackColor", Person, "FavoriteColor"));
+			
+			var postback = $"{Application.StartupUrl}{this.GetPostbackURL()}";
+			barcode1.Text = $"{postback}&action=alert";
+		}
 
-        private void pnlFavColor_PanelCollapsed(object sender, EventArgs e)
-        {
+        #region WisejHandler Implementation
 
-        }
+        public bool Compress => false;
 
-        private void label2_Click(object sender, EventArgs e)
-        {
+		public void ProcessRequest(HttpContext context)
+		{
+			switch (context.Request["action"])
+            {
+				case "alert":
+					context.Response.StatusCode = 200;
+					context.Response.ContentType = "text/html";
+					context.Response.Write($"Scanned {Person.FirstName} Successfully!");
 
-        }
-    }
+					new Toast($"{context.Request.UserHostName} Scanned {Person.FirstName}'s QR Code").Show();
+					Application.Update(this);
+					break;
+            }
+		}
+
+		#endregion
+
+	}
 }

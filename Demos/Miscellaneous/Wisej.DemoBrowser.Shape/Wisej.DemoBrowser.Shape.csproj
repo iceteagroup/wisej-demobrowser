@@ -12,7 +12,7 @@
 		<Reference Include="System.Windows.Forms" />
 	</ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Wisej-3" Version="3.0.*-*" />
+    <PackageReference Include="Wisej-3" Version="3.*-*" />
   </ItemGroup>
 
   <ItemGroup>
@@ -20,7 +20,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="Appearance.cs">
+    <Compile Update="Features.cs">
       <SubType>UserControl</SubType>
     </Compile>
   </ItemGroup>

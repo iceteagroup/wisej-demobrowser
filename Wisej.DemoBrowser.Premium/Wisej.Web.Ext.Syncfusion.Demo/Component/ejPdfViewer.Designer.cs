@@ -83,7 +83,7 @@
             this.ejPdfViewer1.Dock = Wisej.Web.DockStyle.Fill;
             this.ejPdfViewer1.Location = new System.Drawing.Point(8, 8);
             this.ejPdfViewer1.Name = "ejPdfViewer1";
-            this.ejPdfViewer1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"documentPath\":\"Data/Wisej-Datasheet-V2.3.pdf\"}")));
+            this.ejPdfViewer1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"documentPath\":\"Data/Wisej-Datasheet.pdf\"}")));
             this.ejPdfViewer1.Size = new System.Drawing.Size(872, 560);
             this.ejPdfViewer1.TabIndex = 0;
             this.ejPdfViewer1.Text = "ejPdfViewer1";
@@ -177,7 +177,7 @@
             this.checkBox3.Name = "checkBox3";
             this.checkBox3.Size = new System.Drawing.Size(212, 30);
             this.checkBox3.TabIndex = 2;
-            this.checkBox3.Text = "Enable Text Selection";
+            this.checkBox3.Text = "Text Selection";
             // 
             // checkBox4
             // 

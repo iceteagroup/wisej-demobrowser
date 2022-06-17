@@ -12,59 +12,181 @@ namespace Wisej.DemoBrowser.Shape
 
         private void Features_Load(object sender, EventArgs e)
         {
-            this.nudShapeRadius.Value = this.shape1.BorderStyle.Radius;
-            this.nudShapeRotation.Value = this.shape1.Rotation;
-            this.nudShapeSize.Value = this.shape1.BorderStyle.Size;
-            this.btnShapeColor.BackColor = this.shape1.BorderStyle.Color;
 
-            this.cmbShapeStyle.DataSource = Enum.GetNames(typeof(LineStyle));
-            this.cmbShapeStyle.SelectedIndex = 1;
+            //Fill Style ComboBoxes
+            cmbBorderTopStyle.DataSource = Enum.GetNames(typeof(LineStyle));
+            cmbBorderRightStyle.DataSource = Enum.GetNames(typeof(LineStyle));
+            cmbBorderBottomStyle.DataSource = Enum.GetNames(typeof(LineStyle));
+            cmbBorderLeftStyle.DataSource = Enum.GetNames(typeof(LineStyle));
+
+            cmbBorderTopStyle.SelectedIndex = 1;
+            cmbBorderRightStyle.SelectedIndex = 1;
+            cmbBorderBottomStyle.SelectedIndex = 1;
+            cmbBorderLeftStyle.SelectedIndex = 1;
+
+            //Size NumericUpDowns
+            nudBorderTopSize.Value = this.shape1.BorderStyleTop.Size;
+            nudBorderRightSize.Value = this.shape1.BorderStyleRight.Size;
+            nudBorderBottomSize.Value = this.shape1.BorderStyleBottom.Size;
+            nudBorderLeftSize.Value = this.shape1.BorderStyleLeft.Size;
+
+            //Radius NumericUpDowns
+            nudBorderTopRadius.Value = this.shape1.BorderStyleTop.Radius;
+            nudBorderRightRadius.Value = this.shape1.BorderStyleRight.Radius;
+            nudBorderBottomRadius.Value = this.shape1.BorderStyleBottom.Radius;
+            nudBorderLeftRadius.Value = this.shape1.BorderStyleLeft.Radius;
+
+            //Buttons BackColors
+            btnBorderTopColor.BackColor = this.shape1.BorderStyleTop.Color;
+            btnBorderRightColor.BackColor = this.shape1.BorderStyleRight.Color;
+            btnBorderBottomColor.BackColor = this.shape1.BorderStyleBottom.Color;
+            btnBorderLeftColor.BackColor = this.shape1.BorderStyleLeft.Color;
         }
 
-        private void nudShapeRotation_ValueChanged(object sender, EventArgs e)
+        private void ApplySize(NumericUpDown control)
         {
-            this.shape1.Rotation = (int)nudShapeRotation.Value;
+            switch (control.Name)
+            {
+                case "nudBorderTopSize":
+                    {
+                        this.shape1.BorderStyleTop.Size = (int)control.Value;
+                        break;
+                    }
+                case "nudBorderRightSize":
+                    {
+                        this.shape1.BorderStyleRight.Size = (int)control.Value;
+                        break;
+                    }
+                case "nudBorderBottomSize":
+                    {
+                        this.shape1.BorderStyleBottom.Size = (int)control.Value;
+                        break;
+                    }
+                case "nudBorderLeftSize":
+                    {
+                        this.shape1.BorderStyleLeft.Size = (int)control.Value;
+                        break;
+                    }
+                default: break;
+            }
         }
 
-        private void nudShapeSize_ValueChanged(object sender, EventArgs e)
+        private void ApplyRadius(NumericUpDown control)
         {
-            this.shape1.BorderStyle.Size = (int)nudShapeSize.Value;
+            switch (control.Name)
+            {
+                case "nudBorderTopRadius":
+                    {
+                        this.shape1.BorderStyleTop.Radius = (int)control.Value;
+                        break;
+                    }
+                case "nudBorderRightRadius":
+                    {
+                        this.shape1.BorderStyleRight.Radius = (int)control.Value;
+                        break;
+                    }
+                case "nudBorderBottomRadius":
+                    {
+                        this.shape1.BorderStyleBottom.Radius = (int)control.Value;
+                        break;
+                    }
+                case "nudBorderLeftRadius":
+                    {
+                        this.shape1.BorderStyleLeft.Radius = (int)control.Value;
+                        break;
+                    }
+                default: break;
+            }
         }
 
-        private void nudShapeRadius_ValueChanged(object sender, EventArgs e)
+        private void ApplyStyle(ComboBox control)
         {
-            this.shape1.BorderStyle.Radius = (int)nudShapeRadius.Value;
+            switch (control.Name)
+            {
+                case "cmbBorderTopStyle":
+                    {
+                        this.shape1.BorderStyleTop.Style = (LineStyle)Enum.Parse(typeof(LineStyle),control.SelectedIndex.ToString());
+                        break;
+                    }
+                case "cmbBorderRightStyle":
+                    {
+                        this.shape1.BorderStyleRight.Style = (LineStyle)Enum.Parse(typeof(LineStyle), control.SelectedIndex.ToString());
+                        break;
+                    }
+                case "cmbBorderBottomStyle":
+                    {
+                        this.shape1.BorderStyleBottom.Style = (LineStyle)Enum.Parse(typeof(LineStyle), control.SelectedIndex.ToString());
+                        break;
+                    }
+                case "cmbBorderLeftStyle":
+                    {
+                        this.shape1.BorderStyleLeft.Style = (LineStyle)Enum.Parse(typeof(LineStyle), control.SelectedIndex.ToString());
+                        break;
+                    }
+                default: break;
+            }
         }
 
-        private void cmbShapeStyle_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            this.shape1.BorderStyle.Style = (LineStyle)Enum.Parse(typeof(LineStyle),cmbShapeStyle.Text);
-        }
-
-        private void btnShapeColor_Click(object sender, EventArgs e)
+        private void ApplyColor(Button control)
         {
             using(ColorDialog colorDialog = new ColorDialog())
             {
-                
                 if(colorDialog.ShowDialog() == DialogResult.OK)
                 {
-                    this.btnShapeColor.BackColor = colorDialog.Color;
-                    this.shape1.BorderStyle.Color = colorDialog.Color;
+
+                    switch (control.Name)
+                    {
+                        case "btnBorderTopColor":
+                            {
+                                this.shape1.BorderStyleTop.Color = colorDialog.Color;
+                                control.BackColor = colorDialog.Color;
+                                break;
+                            }
+                        case "btnBorderRightColor":
+                            {
+                                this.shape1.BorderStyleRight.Color = colorDialog.Color;
+                                control.BackColor = colorDialog.Color;
+                                break;
+                            }
+                        case "btnBorderBottomColor":
+                            {
+                                this.shape1.BorderStyleBottom.Color = colorDialog.Color;
+                                control.BackColor = colorDialog.Color;
+                                break;
+                            }
+                        case "btnBorderLeftColor":
+                            {
+                                this.shape1.BorderStyleLeft.Color = colorDialog.Color;
+                                control.BackColor = colorDialog.Color;
+                                break;
+                            }
+                        default: break;
+                    }
+
                 }
+                
+
             }
         }
 
-        private void btnShapeBackColor_Click(object sender, EventArgs e)
+        private void Style_SelectedIndexChanged(object sender, EventArgs e)
         {
-            using (ColorDialog colorDialog = new ColorDialog())
-            {
+            ApplyStyle((ComboBox)sender);
+        }
 
-                if (colorDialog.ShowDialog() == DialogResult.OK)
-                {
-                    this.btnShapeBackColor.BackColor = colorDialog.Color;
-                    this.shape1.BackColor = colorDialog.Color;
-                }
-            }
+        private void Size_ValueChanged(object sender, EventArgs e)
+        {
+            ApplySize((NumericUpDown)sender);
+        }
+
+        private void Radius_ValueChanged(object sender, EventArgs e)
+        {
+            ApplyRadius((NumericUpDown)sender);
+        }
+
+        private void ChangeColor_Clicked(object sender, EventArgs e)
+        {
+            ApplyColor((Button)sender);
         }
     }
 }

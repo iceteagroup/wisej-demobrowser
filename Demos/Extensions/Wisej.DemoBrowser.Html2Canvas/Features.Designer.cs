@@ -113,7 +113,7 @@
             // 
             this.Controls.Add(this.buttonScreenshot);
             this.Controls.Add(this.pnlDemo);
-            this.MinimumSize = new System.Drawing.Size(970, 400);
+            this.MinimumSize = new System.Drawing.Size(700, 300);
             this.Name = "Features";
             this.Padding = new Wisej.Web.Padding(16, 0, 16, 16);
             this.Load += new System.EventHandler(this.Features_Load);

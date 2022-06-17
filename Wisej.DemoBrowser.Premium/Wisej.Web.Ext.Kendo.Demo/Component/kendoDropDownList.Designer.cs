@@ -36,8 +36,8 @@
             this.label6 = new Wisej.Web.Label();
             this.kendoDropDownListSize = new Wisej.Web.Ext.Kendo.kendoDropDownList();
             this.comboBoxFilter = new Wisej.Web.ComboBox();
-            this.label7 = new Wisej.Web.Label();
             this.checkBoxIgnoreCase = new Wisej.Web.CheckBox();
+            this.label1 = new Wisej.Web.Label();
             this.panel.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.flowLayoutPanelProperties.SuspendLayout();
@@ -48,6 +48,14 @@
             // panel
             // 
             this.panel.Controls.Add(this.flowLayoutPanel1);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
+            this.groupBox1.Controls.SetChildIndex(this.spacer1, 0);
+            this.groupBox1.Controls.SetChildIndex(this.label1, 0);
+            this.groupBox1.Controls.SetChildIndex(this.flowLayoutPanelProperties, 0);
             // 
             // buttonUpdate
             // 
@@ -69,7 +77,7 @@
             // 
             this.flowLayoutPanelProperties.Controls.Add(this.checkBoxIgnoreCase);
             this.flowLayoutPanelProperties.Controls.Add(this.comboBoxFilter);
-            this.flowLayoutPanelProperties.Controls.Add(this.label7);
+            this.flowLayoutPanelProperties.Size = new System.Drawing.Size(218, 403);
             // 
             // kendoDropDownListColor
             // 
@@ -181,18 +189,6 @@
             this.comboBoxFilter.TabIndex = 1;
             this.comboBoxFilter.Text = "startswith";
             // 
-            // label7
-            // 
-            this.label7.AllowHtml = true;
-            this.label7.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Left) 
-            | Wisej.Web.AnchorStyles.Right)));
-            this.label7.Location = new System.Drawing.Point(3, 122);
-            this.label7.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(212, 59);
-            this.label7.TabIndex = 2;
-            this.label7.Text = "<b>Note:</b> Changes only apply to Cap Color.";
-            // 
             // checkBoxIgnoreCase
             // 
             this.checkBoxIgnoreCase.Appearance = Wisej.Web.Appearance.Switch;
@@ -205,6 +201,22 @@
             this.checkBoxIgnoreCase.Size = new System.Drawing.Size(212, 24);
             this.checkBoxIgnoreCase.TabIndex = 3;
             this.checkBoxIgnoreCase.Text = "Ignore Case";
+            // 
+            // label1
+            // 
+            this.label1.BackColor = System.Drawing.Color.FromArgb(239, 116, 47);
+            this.label1.CssStyle = "border-radius: 4px;\r\nbox-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0" +
+    ", 0.06) 0px 1px 2px 0px;";
+            this.label1.Dock = Wisej.Web.DockStyle.Bottom;
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label1.Location = new System.Drawing.Point(16, 441);
+            this.label1.Name = "label1";
+            this.label1.Padding = new Wisej.Web.Padding(8);
+            this.label1.Size = new System.Drawing.Size(218, 60);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "Changes only apply to \"Cap Color\".";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // kendoDropDownList
             // 
@@ -231,7 +243,7 @@
 		private Label label6;
 		private Kendo.kendoDropDownList kendoDropDownListSize;
         private ComboBox comboBoxFilter;
-        private Label label7;
         private CheckBox checkBoxIgnoreCase;
+        private Label label1;
     }
 }

@@ -19,7 +19,7 @@ namespace Wisej.DemoBrowser.DataGridView
 		public Guid CartId { get; set; }
 		public string SSN { get; set; }
 		public string Address { get; set; }
-		public string Designation { get; set; }
+		public DateTime Birthday { get; set; }
 		public string Mail { get; set; }
 
 		public string Avatar { get; set; }
@@ -30,8 +30,9 @@ namespace Wisej.DemoBrowser.DataGridView
 		}
 
 		public int Progress { get; set; }
+        public bool AccountActive { get; internal set; }
 
-		public Person(int id, string ssn)
+        public Person(int id, string ssn)
 		{
 			Id = id;
 			SSN = ssn;

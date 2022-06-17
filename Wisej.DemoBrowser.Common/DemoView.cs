@@ -4,12 +4,12 @@ using Wisej.Web;
 
 namespace Wisej.DemoBrowser.Common
 {
-    [ToolboxItem(false)]
+	[ToolboxItem(false)]
 	public partial class DemoView : UserControl
-    {
+	{
 		public DemoView()
-        {
-            InitializeComponent();
-        }
+		{
+			InitializeComponent();
+		}
 	}
 }

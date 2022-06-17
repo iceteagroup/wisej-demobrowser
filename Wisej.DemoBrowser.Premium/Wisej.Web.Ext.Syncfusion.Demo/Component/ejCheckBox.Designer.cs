@@ -43,26 +43,28 @@
             this.label6 = new Wisej.Web.Label();
             this.ejCheckBox8 = new Wisej.Web.Ext.Syncfusion.ejCheckBox();
             this.ejCheckBox9 = new Wisej.Web.Ext.Syncfusion.ejCheckBox();
-            this.label7 = new Wisej.Web.Label();
             this.checkBox2 = new Wisej.Web.CheckBox();
             this.checkBox1 = new Wisej.Web.CheckBox();
-            this.panel.SuspendLayout();
+            this.label9 = new Wisej.Web.Label();
             this.groupBox1.SuspendLayout();
+            this.panel.SuspendLayout();
             this.flowLayoutPanelProperties.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panel
-            // 
-            this.panel.Controls.Add(this.panel3);
-            this.panel.Controls.Add(this.panel2);
-            this.panel.Controls.Add(this.panel1);
-            // 
             // linkDocs
             // 
             this.linkDocs.Text = "https://help.syncfusion.com/js/checkbox/overview";
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.label9);
+            this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
+            this.groupBox1.Controls.SetChildIndex(this.spacer1, 0);
+            this.groupBox1.Controls.SetChildIndex(this.label9, 0);
+            this.groupBox1.Controls.SetChildIndex(this.flowLayoutPanelProperties, 0);
             // 
             // buttonUpdate
             // 
@@ -77,11 +79,17 @@
             // 
             this.linkApi.Text = "https://help.syncfusion.com/api/js/ejcheckbox";
             // 
+            // panel
+            // 
+            this.panel.Controls.Add(this.panel3);
+            this.panel.Controls.Add(this.panel2);
+            this.panel.Controls.Add(this.panel1);
+            // 
             // flowLayoutPanelProperties
             // 
-            this.flowLayoutPanelProperties.Controls.Add(this.label7);
             this.flowLayoutPanelProperties.Controls.Add(this.checkBox2);
             this.flowLayoutPanelProperties.Controls.Add(this.checkBox1);
+            this.flowLayoutPanelProperties.Size = new System.Drawing.Size(218, 403);
             // 
             // panel1
             // 
@@ -236,16 +244,6 @@
             this.ejCheckBox9.TabIndex = 2;
             this.ejCheckBox9.Text = "ejCheckBox9";
             // 
-            // label7
-            // 
-            this.flowLayoutPanelProperties.SetFillWeight(this.label7, 1);
-            this.flowLayoutPanelProperties.SetFlowBreak(this.label7, true);
-            this.label7.Location = new System.Drawing.Point(3, 3);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(212, 45);
-            this.label7.TabIndex = 1;
-            this.label7.Text = "Note: Properties change \"Music\" CheckBox";
-            // 
             // checkBox2
             // 
             this.checkBox2.Appearance = Wisej.Web.Appearance.Switch;
@@ -253,7 +251,7 @@
             this.checkBox2.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.flowLayoutPanelProperties.SetFillWeight(this.checkBox2, 1);
             this.flowLayoutPanelProperties.SetFlowBreak(this.checkBox2, true);
-            this.checkBox2.Location = new System.Drawing.Point(3, 67);
+            this.checkBox2.Location = new System.Drawing.Point(3, 16);
             this.checkBox2.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.Size = new System.Drawing.Size(212, 29);
@@ -267,18 +265,35 @@
             this.checkBox1.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.flowLayoutPanelProperties.SetFillWeight(this.checkBox1, 1);
             this.flowLayoutPanelProperties.SetFlowBreak(this.checkBox1, true);
-            this.checkBox1.Location = new System.Drawing.Point(3, 115);
+            this.checkBox1.Location = new System.Drawing.Point(3, 64);
             this.checkBox1.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(212, 54);
             this.checkBox1.TabIndex = 7;
             this.checkBox1.Text = "Show Rounded Corner";
             // 
+            // label9
+            // 
+            this.label9.BackColor = System.Drawing.Color.FromArgb(26, 40, 120);
+            this.label9.CssStyle = "border-radius: 4px;\r\nbox-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0" +
+    ", 0.06) 0px 1px 2px 0px;";
+            this.label9.Dock = Wisej.Web.DockStyle.Bottom;
+            this.label9.ForeColor = System.Drawing.Color.White;
+            this.label9.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label9.Location = new System.Drawing.Point(16, 441);
+            this.label9.Name = "label9";
+            this.label9.Padding = new Wisej.Web.Padding(8);
+            this.label9.Size = new System.Drawing.Size(218, 60);
+            this.label9.TabIndex = 2;
+            this.label9.Text = "Changes only affect the \"Music\" checkbox.";
+            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // ejCheckBox
             // 
             this.Name = "ejCheckBox";
-            this.panel.ResumeLayout(false);
+            this.Load += new System.EventHandler(this.ejCheckBox_Load);
             this.groupBox1.ResumeLayout(false);
+            this.panel.ResumeLayout(false);
             this.flowLayoutPanelProperties.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -307,8 +322,8 @@
 		private Label label6;
 		private Syncfusion.ejCheckBox ejCheckBox8;
 		private Syncfusion.ejCheckBox ejCheckBox9;
-		private Label label7;
 		private CheckBox checkBox1;
 		private CheckBox checkBox2;
-	}
+        private Label label9;
+    }
 }

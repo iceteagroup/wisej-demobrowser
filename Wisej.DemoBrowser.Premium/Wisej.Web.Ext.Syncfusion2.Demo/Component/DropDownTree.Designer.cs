@@ -130,6 +130,7 @@
             // DropDownTree
             // 
             this.Name = "DropDownTree";
+            this.Load += new System.EventHandler(this.DropDownTree_Load);
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);

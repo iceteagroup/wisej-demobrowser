@@ -3,10 +3,10 @@ using Wisej.Web;
 
 namespace Wisej.Web.Ext.Syncfusion.Demo.Component
 {
-	public partial class ejTimePicker : Wisej.Web.Ext.Syncfusion.Demo.Component.TestBase
+	public partial class ejTimePicker : TestBase
 	{
-		bool isPopupShown = false;
-			
+		private bool isPopupShown = false;
+
 		public ejTimePicker()
 		{
 			InitializeComponent();
@@ -14,6 +14,11 @@ namespace Wisej.Web.Ext.Syncfusion.Demo.Component
 			this.ejTimePicker1.Instance.onOpen += new WidgetEventHandler(ejTimePicker1_WidgetEvent);
 			this.ejTimePicker1.Instance.onChange += new WidgetEventHandler(ejTimePicker1_WidgetEvent);
 			this.ejTimePicker1.Instance.onSelect += new WidgetEventHandler(ejTimePicker1_WidgetEvent);
+		}
+
+		private void ejTimePicker_Load(object sender, EventArgs e)
+		{
+			this.ejTimePicker1.Options.value = "ejTimePicker1";
 		}
 
 		private void buttonUpdate_Click(object sender, EventArgs e)
@@ -32,14 +37,15 @@ namespace Wisej.Web.Ext.Syncfusion.Demo.Component
 
 		private void buttonShowHidePopup_Click(object sender, EventArgs e)
 		{
-			if (isPopupShown)
+			if (this.isPopupShown)
 			{
 				this.ejTimePicker1.Instance.hide();
-				isPopupShown = false;
-			} else
+				this.isPopupShown = false;
+			}
+			else
 			{
 				this.ejTimePicker1.Instance.show();
-				isPopupShown = true;
+				this.isPopupShown = true;
 			}
 		}
 
@@ -56,5 +62,5 @@ namespace Wisej.Web.Ext.Syncfusion.Demo.Component
 
 			Application.Play(MessageBoxIcon.Information);
 		}
-    }
+	}
 }

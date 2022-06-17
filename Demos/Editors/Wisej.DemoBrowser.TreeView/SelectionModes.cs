@@ -20,5 +20,14 @@ namespace Wisej.DemoBrowser.TreeView
 				AlertBox.Show($"<b>Values:</b><br>{string.Join("<br>", titles)}");
 			}
 		}
-	}
+
+        private void comboBoxSelectionMode_SelectedIndexChanged(object sender, EventArgs e)
+        {
+			var modeText = this.comboBoxSelectionMode.SelectedItem.ToString();
+			var selectionMode = (SelectionMode) Enum.Parse(typeof(SelectionMode), modeText);
+
+			this.labelSelection.Text = modeText;
+			this.treeView1.SelectionMode = selectionMode;
+        }
+    }
 }

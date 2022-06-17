@@ -172,7 +172,7 @@
             "clear"});
             this.checkedListBox1.Location = new System.Drawing.Point(3, 262);
             this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(195, 170);
+            this.checkedListBox1.Size = new System.Drawing.Size(212, 170);
             this.checkedListBox1.TabIndex = 15;
             this.checkedListBox1.AfterItemCheck += new Wisej.Web.ItemCheckEventHandler(this.checkedListBox1_AfterItemCheck);
             // 

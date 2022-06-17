@@ -46,8 +46,10 @@
             this.label18 = new Wisej.Web.Label();
             this.label19 = new Wisej.Web.Label();
             this.panel8 = new Wisej.Web.Panel();
+            this.justGage2 = new Wisej.Web.Ext.JustGage.JustGage();
             this.label10 = new Wisej.Web.Label();
             this.panel7 = new Wisej.Web.Panel();
+            this.justGage1 = new Wisej.Web.Ext.JustGage.JustGage();
             this.label2 = new Wisej.Web.Label();
             this.chartJS31 = new Wisej.Web.Ext.ChartJS3.ChartJS3();
             this.panel1 = new Wisej.Web.Panel();
@@ -72,8 +74,6 @@
             this.chartJS34 = new Wisej.Web.Ext.ChartJS3.ChartJS3();
             this.label17 = new Wisej.Web.Label();
             this.label16 = new Wisej.Web.Label();
-            this.justGage1 = new Wisej.Web.Ext.JustGage.JustGage();
-            this.justGage2 = new Wisej.Web.Ext.JustGage.JustGage();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel10.SuspendLayout();
             this.panel8.SuspendLayout();
@@ -154,7 +154,7 @@
             this.panel10.Controls.Add(this.chartJS35);
             this.panel10.Controls.Add(this.label18);
             this.panel10.Controls.Add(this.label19);
-            this.panel10.CssStyle = "border-radius: 4px;\r\nbox-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;";
+            this.panel10.CssClass = "shadow";
             this.panel10.Dock = Wisej.Web.DockStyle.Fill;
             this.panel10.Location = new System.Drawing.Point(703, 288);
             this.panel10.Name = "panel10";
@@ -198,6 +198,7 @@
             optionScalesAxesY1.Title.Color = System.Drawing.Color.FromArgb(234, 106, 71);
             this.chartJS35.Options.Scales.yAxes = new Wisej.Web.Ext.ChartJS3.OptionScalesAxesY[] {
         optionScalesAxesY1};
+            this.chartJS35.Padding = new Wisej.Web.Padding(8);
             this.chartJS35.Size = new System.Drawing.Size(692, 112);
             this.chartJS35.TabIndex = 5;
             this.chartJS35.Text = "chartJS35";
@@ -233,7 +234,7 @@
             this.panel8.BackColor = System.Drawing.Color.White;
             this.panel8.Controls.Add(this.justGage2);
             this.panel8.Controls.Add(this.label10);
-            this.panel8.CssStyle = "border-radius: 4px;\r\nbox-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;";
+            this.panel8.CssClass = "shadow";
             this.panel8.Dock = Wisej.Web.DockStyle.Fill;
             this.panel8.Location = new System.Drawing.Point(1228, 117);
             this.panel8.Name = "panel8";
@@ -241,6 +242,15 @@
             this.tableLayoutPanel1.SetRowSpan(this.panel8, 3);
             this.panel8.Size = new System.Drawing.Size(175, 165);
             this.panel8.TabIndex = 15;
+            // 
+            // justGage2
+            // 
+            this.justGage2.Dock = Wisej.Web.DockStyle.Fill;
+            this.justGage2.Location = new System.Drawing.Point(8, 8);
+            this.justGage2.Name = "justGage2";
+            this.justGage2.Size = new System.Drawing.Size(159, 131);
+            this.justGage2.TabIndex = 7;
+            this.justGage2.Value = 25F;
             // 
             // label10
             // 
@@ -260,7 +270,7 @@
             this.panel7.BackColor = System.Drawing.Color.White;
             this.panel7.Controls.Add(this.justGage1);
             this.panel7.Controls.Add(this.label2);
-            this.panel7.CssStyle = "border-radius: 4px;\r\nbox-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;";
+            this.panel7.CssClass = "shadow";
             this.panel7.Dock = Wisej.Web.DockStyle.Fill;
             this.panel7.Location = new System.Drawing.Point(1053, 117);
             this.panel7.Name = "panel7";
@@ -268,6 +278,15 @@
             this.tableLayoutPanel1.SetRowSpan(this.panel7, 3);
             this.panel7.Size = new System.Drawing.Size(169, 165);
             this.panel7.TabIndex = 14;
+            // 
+            // justGage1
+            // 
+            this.justGage1.Dock = Wisej.Web.DockStyle.Fill;
+            this.justGage1.Location = new System.Drawing.Point(8, 8);
+            this.justGage1.Name = "justGage1";
+            this.justGage1.Size = new System.Drawing.Size(153, 131);
+            this.justGage1.TabIndex = 7;
+            this.justGage1.Value = 13F;
             // 
             // label2
             // 
@@ -287,7 +306,7 @@
             this.chartJS31.BackColor = System.Drawing.Color.White;
             this.chartJS31.ChartType = Wisej.Web.Ext.ChartJS3.ChartType.Bar;
             this.tableLayoutPanel1.SetColumnSpan(this.chartJS31, 6);
-            this.chartJS31.CssStyle = "border-radius: 4px;\r\nbox-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;";
+            this.chartJS31.CssClass = "shadow";
             this.chartJS31.Dock = Wisej.Web.DockStyle.Fill;
             this.chartJS31.Labels = new string[] {
         "test"};
@@ -320,7 +339,7 @@
             optionScalesAxesY2.Title.Color = System.Drawing.Color.FromName("@controlText");
             this.chartJS31.Options.Scales.yAxes = new Wisej.Web.Ext.ChartJS3.OptionScalesAxesY[] {
         optionScalesAxesY2};
-            this.chartJS31.Padding = new Wisej.Web.Padding(8);
+            this.chartJS31.Padding = new Wisej.Web.Padding(16);
             this.tableLayoutPanel1.SetRowSpan(this.chartJS31, 3);
             this.chartJS31.Size = new System.Drawing.Size(1044, 165);
             this.chartJS31.TabIndex = 13;
@@ -332,7 +351,7 @@
             this.tableLayoutPanel1.SetColumnSpan(this.panel1, 3);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.CssStyle = "border-radius: 4px;\r\nbox-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;";
+            this.panel1.CssClass = "shadow";
             this.panel1.Dock = Wisej.Web.DockStyle.Fill;
             this.panel1.ForeColor = System.Drawing.Color.FromArgb(32, 32, 32);
             this.panel1.Location = new System.Drawing.Point(878, 3);
@@ -348,9 +367,9 @@
             this.label3.Dock = Wisej.Web.DockStyle.Fill;
             this.label3.Font = new System.Drawing.Font("defaultBold", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.label3.ForeColor = System.Drawing.Color.FromArgb(28, 78, 128);
-            this.label3.Location = new System.Drawing.Point(8, 35);
+            this.label3.Location = new System.Drawing.Point(8, 29);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(509, 65);
+            this.label3.Size = new System.Drawing.Size(509, 71);
             this.label3.TabIndex = 2;
             this.label3.Text = "17 :1";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -359,11 +378,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Dock = Wisej.Web.DockStyle.Top;
-            this.label1.Font = new System.Drawing.Font("defaultBold", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(28, 78, 128);
             this.label1.Location = new System.Drawing.Point(8, 8);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(509, 27);
+            this.label1.Size = new System.Drawing.Size(509, 21);
             this.label1.TabIndex = 0;
             this.label1.Text = "Lead Conversion Ratio";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -373,7 +392,7 @@
             this.panel2.BackColor = System.Drawing.Color.White;
             this.panel2.Controls.Add(this.label7);
             this.panel2.Controls.Add(this.label4);
-            this.panel2.CssStyle = "border-radius: 4px;\r\nbox-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;";
+            this.panel2.CssClass = "shadow";
             this.panel2.Dock = Wisej.Web.DockStyle.Fill;
             this.panel2.ForeColor = System.Drawing.Color.FromArgb(32, 32, 32);
             this.panel2.Location = new System.Drawing.Point(3, 3);
@@ -398,9 +417,8 @@
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
             this.label4.Dock = Wisej.Web.DockStyle.Top;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.label4.ForeColor = System.Drawing.Color.FromArgb(28, 78, 128);
             this.label4.Location = new System.Drawing.Point(16, 16);
             this.label4.Name = "label4";
@@ -414,7 +432,7 @@
             this.panel3.BackColor = System.Drawing.Color.White;
             this.panel3.Controls.Add(this.label8);
             this.panel3.Controls.Add(this.label5);
-            this.panel3.CssStyle = "border-radius: 4px;\r\nbox-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;";
+            this.panel3.CssClass = "shadow";
             this.panel3.Dock = Wisej.Web.DockStyle.Fill;
             this.panel3.ForeColor = System.Drawing.Color.FromArgb(32, 32, 32);
             this.panel3.Location = new System.Drawing.Point(178, 3);
@@ -439,9 +457,8 @@
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
             this.label5.Dock = Wisej.Web.DockStyle.Top;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.label5.ForeColor = System.Drawing.Color.FromArgb(28, 78, 128);
             this.label5.Location = new System.Drawing.Point(16, 16);
             this.label5.Name = "label5";
@@ -455,7 +472,7 @@
             this.panel4.BackColor = System.Drawing.Color.White;
             this.panel4.Controls.Add(this.label9);
             this.panel4.Controls.Add(this.label6);
-            this.panel4.CssStyle = "border-radius: 4px;\r\nbox-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;";
+            this.panel4.CssClass = "shadow";
             this.panel4.Dock = Wisej.Web.DockStyle.Fill;
             this.panel4.ForeColor = System.Drawing.Color.FromArgb(32, 32, 32);
             this.panel4.Location = new System.Drawing.Point(353, 3);
@@ -480,9 +497,8 @@
             // 
             // label6
             // 
-            this.label6.AutoSize = true;
             this.label6.Dock = Wisej.Web.DockStyle.Top;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.label6.ForeColor = System.Drawing.Color.FromArgb(28, 78, 128);
             this.label6.Location = new System.Drawing.Point(16, 16);
             this.label6.Name = "label6";
@@ -496,7 +512,7 @@
             this.panel6.BackColor = System.Drawing.Color.White;
             this.panel6.Controls.Add(this.label12);
             this.panel6.Controls.Add(this.label13);
-            this.panel6.CssStyle = "border-radius: 4px;\r\nbox-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;";
+            this.panel6.CssClass = "shadow";
             this.panel6.Dock = Wisej.Web.DockStyle.Fill;
             this.panel6.ForeColor = System.Drawing.Color.FromArgb(32, 32, 32);
             this.panel6.Location = new System.Drawing.Point(528, 3);
@@ -521,9 +537,8 @@
             // 
             // label13
             // 
-            this.label13.AutoSize = true;
             this.label13.Dock = Wisej.Web.DockStyle.Top;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.label13.ForeColor = System.Drawing.Color.FromArgb(28, 78, 128);
             this.label13.Location = new System.Drawing.Point(16, 16);
             this.label13.Name = "label13";
@@ -537,7 +552,7 @@
             this.panel5.BackColor = System.Drawing.Color.White;
             this.panel5.Controls.Add(this.label14);
             this.panel5.Controls.Add(this.label15);
-            this.panel5.CssStyle = "border-radius: 4px;\r\nbox-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;";
+            this.panel5.CssClass = "shadow";
             this.panel5.Dock = Wisej.Web.DockStyle.Fill;
             this.panel5.ForeColor = System.Drawing.Color.FromArgb(32, 32, 32);
             this.panel5.Location = new System.Drawing.Point(703, 3);
@@ -562,9 +577,8 @@
             // 
             // label15
             // 
-            this.label15.AutoSize = true;
             this.label15.Dock = Wisej.Web.DockStyle.Top;
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.label15.ForeColor = System.Drawing.Color.FromArgb(28, 78, 128);
             this.label15.Location = new System.Drawing.Point(16, 16);
             this.label15.Name = "label15";
@@ -580,7 +594,7 @@
             this.panel9.Controls.Add(this.chartJS34);
             this.panel9.Controls.Add(this.label17);
             this.panel9.Controls.Add(this.label16);
-            this.panel9.CssStyle = "border-radius: 4px;\r\nbox-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;";
+            this.panel9.CssClass = "shadow";
             this.panel9.Dock = Wisej.Web.DockStyle.Fill;
             this.panel9.Location = new System.Drawing.Point(3, 288);
             this.panel9.Name = "panel9";
@@ -624,6 +638,7 @@
             optionScalesAxesY3.Title.Color = System.Drawing.Color.FromName("@controlText");
             this.chartJS34.Options.Scales.yAxes = new Wisej.Web.Ext.ChartJS3.OptionScalesAxesY[] {
         optionScalesAxesY3};
+            this.chartJS34.Padding = new Wisej.Web.Padding(8);
             this.chartJS34.Size = new System.Drawing.Size(686, 112);
             this.chartJS34.TabIndex = 5;
             this.chartJS34.Text = "chartJS34";
@@ -653,24 +668,6 @@
             this.label16.TabIndex = 6;
             this.label16.Text = "Alaa";
             this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // justGage1
-            // 
-            this.justGage1.Dock = Wisej.Web.DockStyle.Fill;
-            this.justGage1.Location = new System.Drawing.Point(8, 8);
-            this.justGage1.Name = "justGage1";
-            this.justGage1.Size = new System.Drawing.Size(153, 131);
-            this.justGage1.TabIndex = 7;
-            this.justGage1.Value = 13F;
-            // 
-            // justGage2
-            // 
-            this.justGage2.Dock = Wisej.Web.DockStyle.Fill;
-            this.justGage2.Location = new System.Drawing.Point(8, 8);
-            this.justGage2.Name = "justGage2";
-            this.justGage2.Size = new System.Drawing.Size(159, 131);
-            this.justGage2.TabIndex = 7;
-            this.justGage2.Value = 25F;
             // 
             // Features
             // 

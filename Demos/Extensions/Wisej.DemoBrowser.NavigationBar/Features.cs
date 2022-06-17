@@ -16,9 +16,9 @@ namespace Wisej.DemoBrowser.NavigationBar
 			AlertBox.Show($"Selected {this.navigationBar1.SelectedItem.Text}");
 		}
 
-		private void checkBoxCompact_CheckedChanged(object sender, EventArgs e)
+		private void buttonCollapse_Click(object sender, EventArgs e)
 		{
-			this.navigationBar1.CompactView = this.checkBoxCompact.Checked;
+			this.navigationBar1.CompactView = !this.navigationBar1.CompactView;
 		}
 	}
 }

@@ -12,6 +12,11 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 			this.kendoRating1.Instance.onChange += new WidgetEventHandler(kendoRating1_WidgetEvent);
 		}
 
+		private void kendoRating_Load(object sender, EventArgs e)
+		{
+			this.kendoRating1.Options.value = 3;
+		}
+
 		private void kendoRating1_WidgetEvent(object sender, WidgetEventArgs e)
 		{
 			AlertBox.Show(

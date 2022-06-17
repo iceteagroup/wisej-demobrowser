@@ -98,12 +98,15 @@
             this.menuItem64 = new Wisej.Web.MenuItem();
             this.menuItem65 = new Wisej.Web.MenuItem();
             this.menuItem66 = new Wisej.Web.MenuItem();
+            this.flowLayoutPanel1 = new Wisej.Web.FlowLayoutPanel();
+            this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // splitButtonCities
             // 
             this.splitButtonCities.Anchor = Wisej.Web.AnchorStyles.None;
-            this.splitButtonCities.Location = new System.Drawing.Point(15, 23);
+            this.splitButtonCities.Location = new System.Drawing.Point(712, 117);
+            this.splitButtonCities.Margin = new Wisej.Web.Padding(16);
             this.splitButtonCities.MenuItems.AddRange(new Wisej.Web.MenuItem[] {
             this.menuItem1,
             this.menuItem2,
@@ -158,7 +161,8 @@
             // 
             this.splitButtonHtml.AllowHtml = true;
             this.splitButtonHtml.Anchor = Wisej.Web.AnchorStyles.None;
-            this.splitButtonHtml.Location = new System.Drawing.Point(15, 121);
+            this.splitButtonHtml.Location = new System.Drawing.Point(480, 117);
+            this.splitButtonHtml.Margin = new Wisej.Web.Padding(16);
             this.splitButtonHtml.MenuItems.AddRange(new Wisej.Web.MenuItem[] {
             this.menuItem7,
             this.menuItem8,
@@ -211,7 +215,8 @@
             // splitButton2
             // 
             this.splitButton2.Anchor = Wisej.Web.AnchorStyles.None;
-            this.splitButton2.Location = new System.Drawing.Point(15, 219);
+            this.splitButton2.Location = new System.Drawing.Point(248, 107);
+            this.splitButton2.Margin = new Wisej.Web.Padding(16);
             this.splitButton2.MenuItems.AddRange(new Wisej.Web.MenuItem[] {
             this.menuItem13,
             this.menuItem14,
@@ -265,7 +270,8 @@
             // splitButtonRepeat
             // 
             this.splitButtonRepeat.Anchor = Wisej.Web.AnchorStyles.None;
-            this.splitButtonRepeat.Location = new System.Drawing.Point(15, 338);
+            this.splitButtonRepeat.Location = new System.Drawing.Point(16, 117);
+            this.splitButtonRepeat.Margin = new Wisej.Web.Padding(16);
             this.splitButtonRepeat.MenuItems.AddRange(new Wisej.Web.MenuItem[] {
             this.menuItem19,
             this.menuItem20,
@@ -321,7 +327,8 @@
             // 
             this.splitButton3.Anchor = Wisej.Web.AnchorStyles.None;
             this.splitButton3.ImageSource = "icon-info";
-            this.splitButton3.Location = new System.Drawing.Point(353, 135);
+            this.splitButton3.Location = new System.Drawing.Point(1023, 28);
+            this.splitButton3.Margin = new Wisej.Web.Padding(16);
             this.splitButton3.MenuItems.AddRange(new Wisej.Web.MenuItem[] {
             this.menuItem25,
             this.menuItem26,
@@ -376,7 +383,8 @@
             this.splitButton4.Anchor = Wisej.Web.AnchorStyles.None;
             this.splitButton4.Display = Wisej.Web.Display.Icon;
             this.splitButton4.ImageSource = "icon-info";
-            this.splitButton4.Location = new System.Drawing.Point(430, 226);
+            this.splitButton4.Location = new System.Drawing.Point(944, 28);
+            this.splitButton4.Margin = new Wisej.Web.Padding(16);
             this.splitButton4.MenuItems.AddRange(new Wisej.Web.MenuItem[] {
             this.menuItem31,
             this.menuItem32,
@@ -430,7 +438,8 @@
             // 
             this.splitButton6.Anchor = Wisej.Web.AnchorStyles.None;
             this.splitButton6.ImageSource = "icon-info";
-            this.splitButton6.Location = new System.Drawing.Point(692, 111);
+            this.splitButton6.Location = new System.Drawing.Point(712, 16);
+            this.splitButton6.Margin = new Wisej.Web.Padding(16);
             this.splitButton6.MenuItems.AddRange(new Wisej.Web.MenuItem[] {
             this.menuItem43,
             this.menuItem44,
@@ -485,7 +494,8 @@
             // 
             this.splitButton7.Anchor = Wisej.Web.AnchorStyles.None;
             this.splitButton7.ImageSource = "icon-info";
-            this.splitButton7.Location = new System.Drawing.Point(691, 19);
+            this.splitButton7.Location = new System.Drawing.Point(480, 28);
+            this.splitButton7.Margin = new Wisej.Web.Padding(16);
             this.splitButton7.MenuItems.AddRange(new Wisej.Web.MenuItem[] {
             this.menuItem49,
             this.menuItem50,
@@ -540,7 +550,8 @@
             // 
             this.splitButton8.Anchor = Wisej.Web.AnchorStyles.None;
             this.splitButton8.ImageSource = "icon-info";
-            this.splitButton8.Location = new System.Drawing.Point(692, 227);
+            this.splitButton8.Location = new System.Drawing.Point(248, 16);
+            this.splitButton8.Margin = new Wisej.Web.Padding(16);
             this.splitButton8.MenuItems.AddRange(new Wisej.Web.MenuItem[] {
             this.menuItem55,
             this.menuItem56,
@@ -595,7 +606,8 @@
             // 
             this.splitButton9.Anchor = Wisej.Web.AnchorStyles.None;
             this.splitButton9.ImageSource = "icon-info?color=#D6D6D6";
-            this.splitButton9.Location = new System.Drawing.Point(692, 343);
+            this.splitButton9.Location = new System.Drawing.Point(16, 28);
+            this.splitButton9.Margin = new Wisej.Web.Padding(16);
             this.splitButton9.MenuItems.AddRange(new Wisej.Web.MenuItem[] {
             this.menuItem61,
             this.menuItem62,
@@ -646,22 +658,34 @@
             this.menuItem66.Name = "menuItem66";
             this.menuItem66.Text = "Paris";
             // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Left | Wisej.Web.AnchorStyles.Right)));
+            this.flowLayoutPanel1.AutoSize = true;
+            this.flowLayoutPanel1.Controls.Add(this.splitButton9);
+            this.flowLayoutPanel1.Controls.Add(this.splitButton8);
+            this.flowLayoutPanel1.Controls.Add(this.splitButton7);
+            this.flowLayoutPanel1.Controls.Add(this.splitButton6);
+            this.flowLayoutPanel1.Controls.Add(this.splitButton4);
+            this.flowLayoutPanel1.Controls.Add(this.splitButton3);
+            this.flowLayoutPanel1.Controls.Add(this.splitButtonRepeat);
+            this.flowLayoutPanel1.Controls.Add(this.splitButton2);
+            this.flowLayoutPanel1.Controls.Add(this.splitButtonHtml);
+            this.flowLayoutPanel1.Controls.Add(this.splitButtonCities);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(59, 123);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1305, 201);
+            this.flowLayoutPanel1.TabIndex = 11;
+            // 
             // Features
             // 
-            this.Controls.Add(this.splitButton9);
-            this.Controls.Add(this.splitButton8);
-            this.Controls.Add(this.splitButton7);
-            this.Controls.Add(this.splitButton6);
-            this.Controls.Add(this.splitButton4);
-            this.Controls.Add(this.splitButton3);
-            this.Controls.Add(this.splitButtonRepeat);
-            this.Controls.Add(this.splitButton2);
-            this.Controls.Add(this.splitButtonHtml);
-            this.Controls.Add(this.splitButtonCities);
-            this.MinimumSize = new System.Drawing.Size(906, 397);
+            this.AutoScroll = true;
+            this.AutoScrollMargin = new System.Drawing.Size(0, 20);
+            this.Controls.Add(this.flowLayoutPanel1);
             this.Name = "Features";
-            this.Size = new System.Drawing.Size(906, 397);
+            this.flowLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
 		}
 
@@ -737,5 +761,6 @@
 		private Web.MenuItem menuItem64;
 		private Web.MenuItem menuItem65;
 		private Web.MenuItem menuItem66;
-	}
+        private Web.FlowLayoutPanel flowLayoutPanel1;
+    }
 }

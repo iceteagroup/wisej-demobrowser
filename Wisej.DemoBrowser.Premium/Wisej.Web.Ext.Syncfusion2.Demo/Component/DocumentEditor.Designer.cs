@@ -42,7 +42,7 @@
             this.linkDocs.Text = "https://ej2.syncfusion.com/javascript/documentation/document-editor/getting-start" +
     "ed/";
             // 
-            // linkAPI
+            // linkApi
             // 
             this.linkApi.Text = "https://ej2.syncfusion.com/javascript/documentation/api/document-editor-container" +
     "";
@@ -70,11 +70,12 @@
             this.documentEditor1.Location = new System.Drawing.Point(8, 8);
             this.documentEditor1.Name = "documentEditor1";
             this.documentEditor1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("documentEditor1.Options"))));
-            this.documentEditor1.Size = new System.Drawing.Size(1073, 542);
+            this.documentEditor1.Size = new System.Drawing.Size(872, 560);
             this.documentEditor1.TabIndex = 0;
             this.documentEditor1.Text = "documentEditor1";
             this.documentEditor1.WidgetEvents = new Wisej.Web.Ext.Syncfusion2.ej2Base.WidgetEventHandler[0];
             this.documentEditor1.WebRequest += new Wisej.Web.WebRequestHandler(this.documentEditor1_WebRequest);
+            this.documentEditor1.Appear += new System.EventHandler(this.documentEditor1_Appear);
             // 
             // buttonSave
             // 
@@ -110,7 +111,6 @@
             this.panel.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

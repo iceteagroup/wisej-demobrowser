@@ -59,14 +59,14 @@
             this.panel1.Dock = Wisej.Web.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(5, 5);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(582, 44);
+            this.panel1.Size = new System.Drawing.Size(588, 44);
             this.panel1.TabIndex = 0;
             // 
             // pbVip
             // 
-            this.pbVip.Anchor = Wisej.Web.AnchorStyles.None;
+            this.pbVip.Anchor = Wisej.Web.AnchorStyles.Right;
             this.pbVip.ImageSource = "resource.wx/Wisej.DemoBrowser.PropertyGrid/wisej.png";
-            this.pbVip.Location = new System.Drawing.Point(535, 6);
+            this.pbVip.Location = new System.Drawing.Point(541, 6);
             this.pbVip.Name = "pbVip";
             this.pbVip.Size = new System.Drawing.Size(37, 32);
             this.pbVip.SizeMode = Wisej.Web.PictureBoxSizeMode.Zoom;
@@ -79,9 +79,9 @@
             this.label1.ForeColor = System.Drawing.Color.MidnightBlue;
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(582, 44);
+            this.label1.Size = new System.Drawing.Size(588, 44);
             this.label1.TabIndex = 0;
-            this.label1.Text = "ID Card";
+            this.label1.Text = "Wisej.NET Identification Card";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblIssued
@@ -95,7 +95,7 @@
             // 
             // panel2
             // 
-            this.panel2.Anchor = Wisej.Web.AnchorStyles.None;
+            this.panel2.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Left | Wisej.Web.AnchorStyles.Right)));
             this.panel2.BackColor = System.Drawing.Color.White;
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.lblDob);
@@ -116,19 +116,18 @@
             // 
             // label2
             // 
-            this.label2.Anchor = Wisej.Web.AnchorStyles.None;
+            this.label2.Anchor = Wisej.Web.AnchorStyles.Left;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("@defaultBold", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.label2.Location = new System.Drawing.Point(3, 163);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(95, 15);
+            this.label2.Size = new System.Drawing.Size(97, 15);
             this.label2.TabIndex = 19;
-            this.label2.Text = "Favorite color: ";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            this.label2.Text = "Favorite Color: ";
             // 
             // lblDob
             // 
-            this.lblDob.Anchor = Wisej.Web.AnchorStyles.None;
+            this.lblDob.Anchor = Wisej.Web.AnchorStyles.Left;
             this.lblDob.AutoSize = true;
             this.lblDob.Font = new System.Drawing.Font("@defaultBold", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.lblDob.Location = new System.Drawing.Point(3, 124);
@@ -139,10 +138,10 @@
             // 
             // lblDobTxt
             // 
-            this.lblDobTxt.Anchor = Wisej.Web.AnchorStyles.None;
+            this.lblDobTxt.Anchor = Wisej.Web.AnchorStyles.Left;
             this.lblDobTxt.AutoSize = true;
             this.lblDobTxt.Font = new System.Drawing.Font("@defaultBold", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.lblDobTxt.Location = new System.Drawing.Point(99, 124);
+            this.lblDobTxt.Location = new System.Drawing.Point(106, 124);
             this.lblDobTxt.Name = "lblDobTxt";
             this.lblDobTxt.Size = new System.Drawing.Size(72, 15);
             this.lblDobTxt.TabIndex = 18;
@@ -150,16 +149,15 @@
             // 
             // pnlFavColor
             // 
-            this.pnlFavColor.Anchor = Wisej.Web.AnchorStyles.None;
-            this.pnlFavColor.Location = new System.Drawing.Point(120, 157);
+            this.pnlFavColor.Anchor = Wisej.Web.AnchorStyles.Left;
+            this.pnlFavColor.Location = new System.Drawing.Point(107, 157);
             this.pnlFavColor.Name = "pnlFavColor";
             this.pnlFavColor.Size = new System.Drawing.Size(27, 27);
             this.pnlFavColor.TabIndex = 16;
-            this.pnlFavColor.PanelCollapsed += new System.EventHandler(this.pnlFavColor_PanelCollapsed);
             // 
             // lblFirstName
             // 
-            this.lblFirstName.Anchor = Wisej.Web.AnchorStyles.None;
+            this.lblFirstName.Anchor = Wisej.Web.AnchorStyles.Left;
             this.lblFirstName.AutoSize = true;
             this.lblFirstName.Font = new System.Drawing.Font("@defaultBold", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.lblFirstName.Location = new System.Drawing.Point(3, 8);
@@ -170,10 +168,10 @@
             // 
             // lblFirstNameTxt
             // 
-            this.lblFirstNameTxt.Anchor = Wisej.Web.AnchorStyles.None;
+            this.lblFirstNameTxt.Anchor = Wisej.Web.AnchorStyles.Left;
             this.lblFirstNameTxt.AutoSize = true;
             this.lblFirstNameTxt.Font = new System.Drawing.Font("@defaultBold", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.lblFirstNameTxt.Location = new System.Drawing.Point(99, 8);
+            this.lblFirstNameTxt.Location = new System.Drawing.Point(106, 8);
             this.lblFirstNameTxt.Name = "lblFirstNameTxt";
             this.lblFirstNameTxt.Size = new System.Drawing.Size(63, 15);
             this.lblFirstNameTxt.TabIndex = 9;
@@ -181,7 +179,7 @@
             // 
             // lblLastName
             // 
-            this.lblLastName.Anchor = Wisej.Web.AnchorStyles.None;
+            this.lblLastName.Anchor = Wisej.Web.AnchorStyles.Left;
             this.lblLastName.AutoSize = true;
             this.lblLastName.Font = new System.Drawing.Font("@defaultBold", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.lblLastName.Location = new System.Drawing.Point(3, 37);
@@ -192,10 +190,10 @@
             // 
             // lblLastNameTxt
             // 
-            this.lblLastNameTxt.Anchor = Wisej.Web.AnchorStyles.None;
+            this.lblLastNameTxt.Anchor = Wisej.Web.AnchorStyles.Left;
             this.lblLastNameTxt.AutoSize = true;
             this.lblLastNameTxt.Font = new System.Drawing.Font("@defaultBold", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.lblLastNameTxt.Location = new System.Drawing.Point(99, 37);
+            this.lblLastNameTxt.Location = new System.Drawing.Point(106, 37);
             this.lblLastNameTxt.Name = "lblLastNameTxt";
             this.lblLastNameTxt.Size = new System.Drawing.Size(61, 15);
             this.lblLastNameTxt.TabIndex = 11;
@@ -203,7 +201,7 @@
             // 
             // lblGender
             // 
-            this.lblGender.Anchor = Wisej.Web.AnchorStyles.None;
+            this.lblGender.Anchor = Wisej.Web.AnchorStyles.Left;
             this.lblGender.AutoSize = true;
             this.lblGender.Font = new System.Drawing.Font("@defaultBold", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.lblGender.Location = new System.Drawing.Point(3, 66);
@@ -214,10 +212,10 @@
             // 
             // lblGenderTxt
             // 
-            this.lblGenderTxt.Anchor = Wisej.Web.AnchorStyles.None;
+            this.lblGenderTxt.Anchor = Wisej.Web.AnchorStyles.Left;
             this.lblGenderTxt.AutoSize = true;
             this.lblGenderTxt.Font = new System.Drawing.Font("@defaultBold", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.lblGenderTxt.Location = new System.Drawing.Point(99, 66);
+            this.lblGenderTxt.Location = new System.Drawing.Point(106, 66);
             this.lblGenderTxt.Name = "lblGenderTxt";
             this.lblGenderTxt.Size = new System.Drawing.Size(48, 15);
             this.lblGenderTxt.TabIndex = 13;
@@ -226,7 +224,7 @@
             // 
             // lblAddress
             // 
-            this.lblAddress.Anchor = Wisej.Web.AnchorStyles.None;
+            this.lblAddress.Anchor = Wisej.Web.AnchorStyles.Left;
             this.lblAddress.AutoSize = true;
             this.lblAddress.Font = new System.Drawing.Font("@defaultBold", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.lblAddress.Location = new System.Drawing.Point(3, 95);
@@ -237,11 +235,11 @@
             // 
             // lblAddressTxt
             // 
-            this.lblAddressTxt.Anchor = Wisej.Web.AnchorStyles.None;
+            this.lblAddressTxt.Anchor = Wisej.Web.AnchorStyles.Left;
             this.lblAddressTxt.AutoEllipsis = true;
             this.lblAddressTxt.AutoSize = true;
             this.lblAddressTxt.Font = new System.Drawing.Font("@defaultBold", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.lblAddressTxt.Location = new System.Drawing.Point(99, 95);
+            this.lblAddressTxt.Location = new System.Drawing.Point(106, 95);
             this.lblAddressTxt.Name = "lblAddressTxt";
             this.lblAddressTxt.Size = new System.Drawing.Size(54, 15);
             this.lblAddressTxt.TabIndex = 15;
@@ -249,7 +247,7 @@
             // 
             // barcode1
             // 
-            this.barcode1.Anchor = Wisej.Web.AnchorStyles.None;
+            this.barcode1.Anchor = Wisej.Web.AnchorStyles.Left;
             this.barcode1.BarcodeType = Wisej.Web.Ext.Barcode.BarcodeType.QR;
             this.barcode1.Location = new System.Drawing.Point(12, 73);
             this.barcode1.Name = "barcode1";
@@ -272,13 +270,12 @@
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImageLayout = Wisej.Web.ImageLayout.Center;
             this.BackgroundImageSource = "(none)";
-            this.BorderStyle = Wisej.Web.BorderStyle.Double;
             this.Controls.Add(this.lblID);
             this.Controls.Add(this.barcode1);
             this.Controls.Add(this.lblIssued);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
-            this.CssStyle = "border-radius:8px;";
+            this.CssClass = "shadow";
             this.Name = "PersonCard";
             this.Padding = new Wisej.Web.Padding(5);
             this.Size = new System.Drawing.Size(598, 306);

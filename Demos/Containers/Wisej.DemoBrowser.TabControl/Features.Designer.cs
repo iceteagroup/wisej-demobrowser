@@ -76,12 +76,14 @@
             // 
             this.tabControl1.AllowUserToMoveTabs = true;
             this.tabControl1.Anchor = Wisej.Web.AnchorStyles.None;
+            this.tabControl1.BorderStyle = Wisej.Web.BorderStyle.None;
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Location = new System.Drawing.Point(260, 38);
+            this.tabControl1.CssClass = "shadow";
+            this.tabControl1.Location = new System.Drawing.Point(3, 2);
             this.tabControl1.Name = "tabControl1";
-            this.tabControl1.PageInsets = new Wisej.Web.Padding(1, 40, 1, 1);
-            this.tabControl1.Size = new System.Drawing.Size(903, 399);
+            this.tabControl1.PageInsets = new Wisej.Web.Padding(0, 40, 0, 0);
+            this.tabControl1.Size = new System.Drawing.Size(765, 381);
             this.tabControl1.TabIndex = 0;
             // 
             // tabPage1
@@ -103,17 +105,18 @@
             this.tabPage1.Controls.Add(this.label2);
             this.tabPage1.Controls.Add(this.label1);
             this.tabPage1.Controls.Add(this.pictureBox1);
-            this.tabPage1.Location = new System.Drawing.Point(1, 40);
+            this.tabPage1.Location = new System.Drawing.Point(0, 40);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.ShowCloseButton = true;
-            this.tabPage1.Size = new System.Drawing.Size(901, 358);
+            this.tabPage1.Size = new System.Drawing.Size(765, 341);
             this.tabPage1.Text = "Doe, John";
             // 
             // label16
             // 
+            this.label16.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Right)));
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("windowTitle", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.label16.Location = new System.Drawing.Point(692, 85);
+            this.label16.Location = new System.Drawing.Point(556, 85);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(22, 22);
             this.label16.TabIndex = 16;
@@ -121,9 +124,10 @@
             // 
             // label15
             // 
+            this.label15.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Right)));
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("@windowTitle", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.label15.Location = new System.Drawing.Point(692, 41);
+            this.label15.Location = new System.Drawing.Point(556, 41);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(158, 22);
             this.label15.TabIndex = 15;
@@ -131,29 +135,32 @@
             // 
             // label14
             // 
+            this.label14.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Bottom | Wisej.Web.AnchorStyles.Right)));
             this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("windowTitle", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.label14.Location = new System.Drawing.Point(692, 296);
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.label14.Location = new System.Drawing.Point(556, 279);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(70, 22);
+            this.label14.Size = new System.Drawing.Size(72, 19);
             this.label14.TabIndex = 14;
             this.label14.Text = "Doe, Billy";
             // 
             // label13
             // 
+            this.label13.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Bottom | Wisej.Web.AnchorStyles.Right)));
             this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("windowTitle", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.label13.Location = new System.Drawing.Point(692, 250);
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.label13.Location = new System.Drawing.Point(556, 234);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(73, 22);
+            this.label13.Size = new System.Drawing.Size(77, 19);
             this.label13.TabIndex = 13;
             this.label13.Text = "Doe, Sally";
             // 
             // label12
             // 
+            this.label12.Anchor = Wisej.Web.AnchorStyles.Bottom;
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("windowTitle", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.label12.Location = new System.Drawing.Point(384, 250);
+            this.label12.Location = new System.Drawing.Point(316, 233);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(40, 22);
             this.label12.TabIndex = 12;
@@ -161,9 +168,10 @@
             // 
             // label11
             // 
+            this.label11.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Bottom | Wisej.Web.AnchorStyles.Right)));
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("@windowTitle", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.label11.Location = new System.Drawing.Point(692, 204);
+            this.label11.Location = new System.Drawing.Point(556, 187);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(95, 22);
             this.label11.TabIndex = 11;
@@ -171,9 +179,10 @@
             // 
             // label10
             // 
+            this.label10.Anchor = Wisej.Web.AnchorStyles.Bottom;
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("@windowTitle", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.label10.Location = new System.Drawing.Point(384, 204);
+            this.label10.Location = new System.Drawing.Point(316, 187);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(95, 22);
             this.label10.TabIndex = 10;
@@ -181,9 +190,10 @@
             // 
             // label9
             // 
+            this.label9.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Bottom | Wisej.Web.AnchorStyles.Left)));
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.label9.Location = new System.Drawing.Point(50, 296);
+            this.label9.Location = new System.Drawing.Point(50, 279);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(180, 19);
             this.label9.TabIndex = 9;
@@ -191,9 +201,10 @@
             // 
             // label8
             // 
+            this.label8.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Bottom | Wisej.Web.AnchorStyles.Left)));
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.label8.Location = new System.Drawing.Point(50, 250);
+            this.label8.Location = new System.Drawing.Point(50, 233);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(186, 19);
             this.label8.TabIndex = 8;
@@ -201,9 +212,10 @@
             // 
             // label7
             // 
+            this.label7.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Bottom | Wisej.Web.AnchorStyles.Left)));
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("@windowTitle", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.label7.Location = new System.Drawing.Point(50, 204);
+            this.label7.Location = new System.Drawing.Point(50, 187);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(79, 22);
             this.label7.TabIndex = 7;
@@ -297,27 +309,29 @@
             this.tabPage2.Controls.Add(this.label31);
             this.tabPage2.Controls.Add(this.label32);
             this.tabPage2.Controls.Add(this.pictureBox2);
-            this.tabPage2.Location = new System.Drawing.Point(1, 40);
+            this.tabPage2.Location = new System.Drawing.Point(0, 40);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.ShowCloseButton = true;
-            this.tabPage2.Size = new System.Drawing.Size(901, 358);
+            this.tabPage2.Size = new System.Drawing.Size(765, 341);
             this.tabPage2.Text = "Doe, Jane";
             // 
             // label17
             // 
+            this.label17.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Right)));
             this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("windowTitle", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.label17.Location = new System.Drawing.Point(692, 85);
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.label17.Location = new System.Drawing.Point(556, 89);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(22, 22);
+            this.label17.Size = new System.Drawing.Size(13, 19);
             this.label17.TabIndex = 33;
-            this.label17.Text = "11";
+            this.label17.Text = "9";
             // 
             // label18
             // 
+            this.label18.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Right)));
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("@windowTitle", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.label18.Location = new System.Drawing.Point(692, 41);
+            this.label18.Location = new System.Drawing.Point(556, 41);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(158, 22);
             this.label18.TabIndex = 32;
@@ -325,39 +339,43 @@
             // 
             // label19
             // 
+            this.label19.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Bottom | Wisej.Web.AnchorStyles.Right)));
             this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("windowTitle", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.label19.Location = new System.Drawing.Point(692, 296);
+            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.label19.Location = new System.Drawing.Point(556, 279);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(86, 22);
+            this.label19.Size = new System.Drawing.Size(72, 19);
             this.label19.TabIndex = 31;
-            this.label19.Text = "Doe, Darius";
+            this.label19.Text = "Doe, Billy";
             // 
             // label20
             // 
+            this.label20.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Bottom | Wisej.Web.AnchorStyles.Right)));
             this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("windowTitle", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.label20.Location = new System.Drawing.Point(692, 250);
+            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.label20.Location = new System.Drawing.Point(556, 234);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(96, 22);
+            this.label20.Size = new System.Drawing.Size(77, 19);
             this.label20.TabIndex = 30;
-            this.label20.Text = "Doe, Darleen";
+            this.label20.Text = "Doe, Sally";
             // 
             // label21
             // 
+            this.label21.Anchor = Wisej.Web.AnchorStyles.Bottom;
             this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("windowTitle", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.label21.Location = new System.Drawing.Point(384, 250);
+            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.label21.Location = new System.Drawing.Point(316, 236);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(77, 22);
+            this.label21.Size = new System.Drawing.Size(75, 19);
             this.label21.TabIndex = 29;
             this.label21.Text = "Marketing";
             // 
             // label22
             // 
+            this.label22.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Bottom | Wisej.Web.AnchorStyles.Right)));
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("@windowTitle", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.label22.Location = new System.Drawing.Point(692, 204);
+            this.label22.Location = new System.Drawing.Point(556, 187);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(95, 22);
             this.label22.TabIndex = 28;
@@ -365,9 +383,10 @@
             // 
             // label23
             // 
+            this.label23.Anchor = Wisej.Web.AnchorStyles.Bottom;
             this.label23.AutoSize = true;
             this.label23.Font = new System.Drawing.Font("@windowTitle", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.label23.Location = new System.Drawing.Point(384, 204);
+            this.label23.Location = new System.Drawing.Point(316, 187);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(95, 22);
             this.label23.TabIndex = 27;
@@ -375,19 +394,21 @@
             // 
             // label24
             // 
+            this.label24.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Bottom | Wisej.Web.AnchorStyles.Left)));
             this.label24.AutoSize = true;
             this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.label24.Location = new System.Drawing.Point(50, 296);
+            this.label24.Location = new System.Drawing.Point(50, 279);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(171, 19);
+            this.label24.Size = new System.Drawing.Size(180, 19);
             this.label24.TabIndex = 26;
-            this.label24.Text = "Oxford University, 2009";
+            this.label24.Text = "Harvard University, 2010";
             // 
             // label25
             // 
+            this.label25.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Bottom | Wisej.Web.AnchorStyles.Left)));
             this.label25.AutoSize = true;
             this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.label25.Location = new System.Drawing.Point(50, 250);
+            this.label25.Location = new System.Drawing.Point(50, 233);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(186, 19);
             this.label25.TabIndex = 25;
@@ -395,9 +416,10 @@
             // 
             // label26
             // 
+            this.label26.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Bottom | Wisej.Web.AnchorStyles.Left)));
             this.label26.AutoSize = true;
             this.label26.Font = new System.Drawing.Font("@windowTitle", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.label26.Location = new System.Drawing.Point(50, 204);
+            this.label26.Location = new System.Drawing.Point(50, 187);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(79, 22);
             this.label26.TabIndex = 24;
@@ -411,7 +433,7 @@
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(89, 19);
             this.label27.TabIndex = 23;
-            this.label27.Text = "xxx-xx-xx23";
+            this.label27.Text = "xxx-xx-xx34";
             // 
             // label28
             // 
@@ -466,7 +488,7 @@
             // pictureBox2
             // 
             this.pictureBox2.CssStyle = "border-radius: 100px;\r\nborder: 2px solid gray;";
-            this.pictureBox2.ImageSource = "resource.wx/Wisej.DemoBrowser.TabControl/JaneDoe.jpg";
+            this.pictureBox2.ImageSource = "resource.wx/Wisej.DemoBrowser.TabControl/Images/JaneDoe.jpg";
             this.pictureBox2.Location = new System.Drawing.Point(50, 44);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(135, 131);
@@ -475,8 +497,9 @@
             // Features
             // 
             this.Controls.Add(this.tabControl1);
-            this.MinimumSize = new System.Drawing.Size(940, 400);
+            this.MinimumSize = new System.Drawing.Size(771, 384);
             this.Name = "Features";
+            this.Size = new System.Drawing.Size(771, 384);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
@@ -493,39 +516,39 @@
 		private Web.TabControl tabControl1;
 		private Web.TabPage tabPage1;
 		private Web.TabPage tabPage2;
-		private Web.Label label16;
-		private Web.Label label15;
-		private Web.Label label14;
-		private Web.Label label13;
-		private Web.Label label12;
-		private Web.Label label11;
-		private Web.Label label10;
-		private Web.Label label9;
-		private Web.Label label8;
-		private Web.Label label7;
-		private Web.Label label6;
-		private Web.Label label5;
-		private Web.Label label4;
-		private Web.Label label3;
-		private Web.Label label2;
-		private Web.Label label1;
-		private Web.PictureBox pictureBox1;
-		private Web.Label label17;
-		private Web.Label label18;
-		private Web.Label label19;
-		private Web.Label label20;
-		private Web.Label label21;
-		private Web.Label label22;
-		private Web.Label label23;
-		private Web.Label label24;
-		private Web.Label label25;
-		private Web.Label label26;
-		private Web.Label label27;
-		private Web.Label label28;
-		private Web.Label label29;
-		private Web.Label label30;
-		private Web.Label label31;
-		private Web.Label label32;
-		private Web.PictureBox pictureBox2;
-	}
+        private Web.Label label16;
+        private Web.Label label15;
+        private Web.Label label14;
+        private Web.Label label13;
+        private Web.Label label12;
+        private Web.Label label11;
+        private Web.Label label10;
+        private Web.Label label9;
+        private Web.Label label8;
+        private Web.Label label7;
+        private Web.Label label6;
+        private Web.Label label5;
+        private Web.Label label4;
+        private Web.Label label3;
+        private Web.Label label2;
+        private Web.Label label1;
+        private Web.PictureBox pictureBox1;
+        private Web.Label label17;
+        private Web.Label label18;
+        private Web.Label label19;
+        private Web.Label label20;
+        private Web.Label label21;
+        private Web.Label label22;
+        private Web.Label label23;
+        private Web.Label label24;
+        private Web.Label label25;
+        private Web.Label label26;
+        private Web.Label label27;
+        private Web.Label label28;
+        private Web.Label label29;
+        private Web.Label label30;
+        private Web.Label label31;
+        private Web.Label label32;
+        private Web.PictureBox pictureBox2;
+    }
 }

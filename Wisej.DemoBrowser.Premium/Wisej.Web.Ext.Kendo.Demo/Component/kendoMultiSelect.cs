@@ -13,7 +13,17 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 
 			this.kendoMultiSelect1.Instance.onSelect += new WidgetEventHandler(kendoMultiSelect1_WidgetEvent);
 		}
+		private void kendoMultiSelect_Load(object sender, EventArgs e)
+		{
+			this.kendoMultiSelect1.Options.dataTextField = "text";
+			this.kendoMultiSelect1.Options.dataValueField = "value";
 
+			this.kendoMultiSelect1.Options.dataSource = new dynamic[]
+			{
+				new {text = "Item1", value = "1"},
+				new {text = "Item2", value = "2"}
+			};
+		}
 		private void kendoMultiSelect1_WidgetEvent(object sender, WidgetEventArgs e)
 		{
 			AlertBox.Show(
@@ -23,10 +33,10 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 			Application.Play(MessageBoxIcon.Information);
 		}
 
-        private async void buttonUpdate_Click(object sender, EventArgs e)
-        {
-            if (!string.IsNullOrEmpty(this.tagTextBoxDataSource.Text))
-            {
+		private async void buttonUpdate_Click(object sender, EventArgs e)
+		{
+			if (!string.IsNullOrEmpty(this.tagTextBoxDataSource.Text))
+			{
 				var data = this.tagTextBoxDataSource.Text.Split(',');
 				var items = data.Select(d => new
 				{
@@ -40,6 +50,8 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 			this.kendoMultiSelect1.Options.autoClose = this.checkBoxAutoClose.Checked;
 
 			this.kendoMultiSelect1.Update();
-        }
-    }
+		}
+
+		
+	}
 }

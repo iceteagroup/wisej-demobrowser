@@ -38,6 +38,7 @@
             this.checkBox5 = new Wisej.Web.CheckBox();
             this.checkBox6 = new Wisej.Web.CheckBox();
             this.label4 = new Wisej.Web.Label();
+            this.label9 = new Wisej.Web.Label();
             this.groupBox1.SuspendLayout();
             this.panel.SuspendLayout();
             this.flowLayoutPanelProperties.SuspendLayout();
@@ -47,6 +48,14 @@
             // 
             this.linkDocs.TabIndex = 4;
             this.linkDocs.Text = "https://help.syncfusion.com/js/dropdownlist/dropdownlist";
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.label9);
+            this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
+            this.groupBox1.Controls.SetChildIndex(this.spacer1, 0);
+            this.groupBox1.Controls.SetChildIndex(this.label9, 0);
+            this.groupBox1.Controls.SetChildIndex(this.flowLayoutPanelProperties, 0);
             // 
             // buttonUpdate
             // 
@@ -73,6 +82,7 @@
             // 
             // flowLayoutPanelProperties
             // 
+            this.flowLayoutPanelProperties.AutoScrollMargin = new System.Drawing.Size(0, 8);
             this.flowLayoutPanelProperties.Controls.Add(this.label4);
             this.flowLayoutPanelProperties.Controls.Add(this.checkBox1);
             this.flowLayoutPanelProperties.Controls.Add(this.checkBox2);
@@ -80,6 +90,7 @@
             this.flowLayoutPanelProperties.Controls.Add(this.checkBox4);
             this.flowLayoutPanelProperties.Controls.Add(this.checkBox5);
             this.flowLayoutPanelProperties.Controls.Add(this.checkBox6);
+            this.flowLayoutPanelProperties.Size = new System.Drawing.Size(218, 403);
             // 
             // ejDropDownList1
             // 
@@ -195,9 +206,26 @@
             this.label4.TabIndex = 0;
             this.label4.Text = "Note: The properties only affect the top list.";
             // 
+            // label9
+            // 
+            this.label9.BackColor = System.Drawing.Color.FromArgb(26, 40, 120);
+            this.label9.CssStyle = "border-radius: 4px;\r\nbox-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0" +
+    ", 0.06) 0px 1px 2px 0px;";
+            this.label9.Dock = Wisej.Web.DockStyle.Bottom;
+            this.label9.ForeColor = System.Drawing.Color.White;
+            this.label9.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label9.Location = new System.Drawing.Point(16, 441);
+            this.label9.Name = "label9";
+            this.label9.Padding = new Wisej.Web.Padding(8);
+            this.label9.Size = new System.Drawing.Size(218, 60);
+            this.label9.TabIndex = 8;
+            this.label9.Text = "Changes only affect the top drop down.";
+            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // ejDropDownList
             // 
             this.Name = "ejDropDownList";
+            this.Load += new System.EventHandler(this.ejDropDownList_Load);
             this.groupBox1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
             this.flowLayoutPanelProperties.ResumeLayout(false);
@@ -216,5 +244,6 @@
 		private CheckBox checkBox6;
 		private CheckBox checkBox5;
 		private Label label4;
-	}
+        private Label label9;
+    }
 }

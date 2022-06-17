@@ -16,7 +16,8 @@ namespace Wisej.DemoBrowser.ProgressBar
 		{
 			this.buttonTask.Enabled = false;
 
-			var progressBars = this.Controls.Where(c => c is Web.ProgressBar);
+			var progressBars = this.panel2.Controls.Where(c => c is Web.ProgressBar)
+				.Union(this.panel3.Controls.Where(c => c is Web.ProgressBar));
 			
 			foreach (Web.ProgressBar progressBar in progressBars)
 			{

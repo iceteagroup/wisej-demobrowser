@@ -3,7 +3,7 @@ using Wisej.Web;
 
 namespace Wisej.Web.Ext.Syncfusion.Demo.Component
 {
-	public partial class ejToolbar : Wisej.Web.Ext.Syncfusion.Demo.Component.TestBase
+	public partial class ejToolbar : TestBase
 	{
 		public ejToolbar()
 		{
@@ -11,6 +11,34 @@ namespace Wisej.Web.Ext.Syncfusion.Demo.Component
 
 			this.ejToolbar1.Instance.onClick += new WidgetEventHandler(ejToolbar1_WidgetEvent);
 			this.ejToolbar1.Instance.onItemHover += new WidgetEventHandler(ejToolbar1_WidgetEvent);
+		}
+
+		private void ejToolbar_Load(object sender, EventArgs e)
+		{
+			this.ejToolbar1.Options.width = "auto";
+			this.ejToolbar1.Options.dataSource = new object[]
+			{
+				new
+				{
+					id = "1",
+					text = "File"
+				},
+				new
+				{
+					id = "2",
+					text = "Edit"
+				},
+				new
+				{
+					id = "3",
+					text = "View"
+				},
+				new
+				{
+					id = "4",
+					text = "Window"
+				}
+			};
 		}
 
 		private void ejToolbar1_WidgetEvent(object sender, WidgetEventArgs e)

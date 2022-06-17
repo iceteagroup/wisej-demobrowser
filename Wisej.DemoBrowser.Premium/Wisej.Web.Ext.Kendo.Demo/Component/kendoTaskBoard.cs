@@ -52,8 +52,8 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 			Application.Play(MessageBoxIcon.Information);
 		}
 
-        private void buttonUpdate_Click(object sender, EventArgs e)
-        {
+		private void buttonUpdate_Click(object sender, EventArgs e)
+		{
 
 			this.kendoTaskBoard1.Options.toolbar = this.checkBoxToolbar.Checked;
 			this.kendoTaskBoard1.Options.editable = this.checkBoxEditable.Checked;
@@ -61,6 +61,6 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 			this.kendoTaskBoard1.Options.reorderable = this.checkBoxReorderable.Checked;
 
 			this.kendoTaskBoard1.Update();
-        }
-    }
+		}
+	}
 }

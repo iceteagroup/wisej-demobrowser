@@ -3,7 +3,7 @@ using Wisej.Web;
 
 namespace Wisej.Web.Ext.Syncfusion2.Demo.Component
 {
-	public partial class CircularGauge : Wisej.Web.Ext.Syncfusion2.Demo.Component.TestBase
+	public partial class CircularGauge : TestBase
 	{
 		public CircularGauge()
 		{
@@ -11,6 +11,22 @@ namespace Wisej.Web.Ext.Syncfusion2.Demo.Component
 
 			this.circularGauge1.Instance.onDragStart += new WidgetEventHandler(circularGauge1_WidgetEvent);
 			this.circularGauge1.Instance.onDragEnd += new WidgetEventHandler(circularGauge1_WidgetEvent);
+		}
+
+		private void CircularGauge_Load(object sender, EventArgs e)
+		{
+			this.circularGauge1.Options.enablePointerDrag = true;
+			this.circularGauge1.Options.enableRangeDrag = true;
+			this.circularGauge1.Options.axes = new object[]
+			{
+				new
+				{
+					pointers = new object[]
+					{
+						new {value = 35}
+					}
+				}
+			};
 		}
 
 		private void circularGauge1_WidgetEvent(object sender, WidgetEventArgs e)

@@ -6,13 +6,48 @@ using Wisej.Web;
 
 namespace Wisej.Web.Ext.Syncfusion.Demo.Component
 {
-	public partial class ejPivotChart : Wisej.Web.Ext.Syncfusion.Demo.Component.TestBase
+	public partial class ejPivotChart : TestBase
 	{
 		public ejPivotChart()
 		{
 			InitializeComponent();
 
 			this.ejPivotChart1.Instance.onDrillSuccess += new WidgetEventHandler(ejPivotChart1_WidgetEvent);
+		}
+
+		private void ejPivotChart_Load(object sender, EventArgs e)
+		{
+			// load the data source.
+			this.ejPivotChart1.Options.dataSource = new
+			{
+				data = GenerateDataSource(),
+				rows = new[]
+				{
+					new
+					{
+						fieldName = "Country",
+						fieldCaption = "Country"
+					}
+				},
+				columns = new[]
+				{
+					new
+					{
+						fieldName = "Product",
+						fieldCaption = "Product"
+					}
+				},
+				values = new[]
+				{
+					new
+					{
+						fieldName = "Amount",
+						fieldCaption = "Amount"
+					}
+				}
+			};
+
+			this.ejPivotChart1.Update();
 		}
 
 		private void ejPivotChart1_WidgetEvent(object sender, WidgetEventArgs e)
@@ -33,7 +68,7 @@ namespace Wisej.Web.Ext.Syncfusion.Demo.Component
 		private async void buttonSaveJson_Click(object sender, EventArgs e)
 		{
 			var data = await this.ejPivotChart1.Instance.optionAsync("dataSource");
-			var json = Wisej.Core.WisejSerializer.Serialize(data);
+			var json = Core.WisejSerializer.Serialize(data);
 
 			Application.Download(new MemoryStream(Encoding.UTF8.GetBytes(json)), "pivotchart.json");
 		}
@@ -41,7 +76,6 @@ namespace Wisej.Web.Ext.Syncfusion.Demo.Component
 		private void buttonLoad_Uploaded(object sender, UploadedEventArgs e)
 		{
 			if (e.Files.Count == 1)
-			{
 				using (var stream = new StreamReader(e.Files[0].InputStream))
 				{
 					var json = stream.ReadToEnd();
@@ -49,55 +83,19 @@ namespace Wisej.Web.Ext.Syncfusion.Demo.Component
 
 					this.ejPivotChart1.Update();
 				}
-			}
 		}
 
 		private void buttonUpdate_Click(object sender, EventArgs e)
 		{
 			this.ejPivotChart1.Options.enable3D = this.checkBox1.Checked;
-			this.ejPivotChart1.Options.zooming = new 
-			{ 
+			this.ejPivotChart1.Options.zooming = new
+			{
 				enableScrollbar = this.checkBox2.Checked
 			};
 			this.ejPivotChart1.Options.rotation = this.numericUpDownRotation.Value;
 			this.ejPivotChart1.Options.commonSeriesOptions = new
 			{
 				type = this.comboBox1.SelectedItem.ToString().ToLower()
-			};
-
-			this.ejPivotChart1.Update();
-		}
-
-		private void ejPivotChart_Load(object sender, EventArgs e)
-		{
-			// load the data source.
-			this.ejPivotChart1.Options.dataSource = new
-			{
-				data = GenerateDataSource(),
-				rows = new[] 
-				{
-					new 
-					{
-						fieldName = "Country",
-						fieldCaption = "Country"
-					}
-				},
-				columns = new[]
-				{
-					new 
-					{
-						fieldName = "Product",
-						fieldCaption = "Product"
-					}
-				},
-				values = new[] 
-				{
-					new
-					{
-						fieldName = "Amount",
-						fieldCaption = "Amount"
-					}
-				}
 			};
 
 			this.ejPivotChart1.Update();

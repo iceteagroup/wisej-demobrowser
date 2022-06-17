@@ -15,6 +15,11 @@ namespace Wisej.Web.Ext.Syncfusion.Demo.Component
 			this.ejDateRangePicker1.Instance.onChange += new WidgetEventHandler(ejDateRangePicker1_WidgetEvent);
 		}
 
+		private void ejDateRangePicker_Load(object sender, EventArgs e)
+		{
+			this.ejDateRangePicker1.Options.value = null;
+		}
+
 		private void buttonUpdate_Click(object sender, EventArgs e)
 		{
 			this.ejDateRangePicker1.Options.value = $"{DateTime.Parse(this.textBoxStartDay.Text).ToShortDateString()} - {DateTime.Parse(this.textBoxEndDay.Text).ToShortDateString()}";

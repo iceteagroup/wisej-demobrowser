@@ -42,8 +42,8 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 			this.kendoBreadcrumb1.Update();
 		}
 
-        private void buttonAdd_Click(object sender, EventArgs e)
-        {
+		private void buttonAdd_Click(object sender, EventArgs e)
+		{
 			this.items.Add(new
 			{
 				type = "item",
@@ -51,6 +51,6 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 			});
 
 			this.kendoBreadcrumb1.Instance.items(this.items);
-        }
-    }
+		}
+	}
 }

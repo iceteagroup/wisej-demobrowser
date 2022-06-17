@@ -28,173 +28,173 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.dateTimePickerDefault = new Wisej.Web.DateTimePicker();
-			this.dateTimePicker2 = new Wisej.Web.DateTimePicker();
-			this.dateTimePicker3 = new Wisej.Web.DateTimePicker();
-			this.dateTimePicker1 = new Wisej.Web.DateTimePicker();
-			this.dateTimePicker4 = new Wisej.Web.DateTimePicker();
-			this.dateTimePicker5 = new Wisej.Web.DateTimePicker();
-			this.dateTimePicker6 = new Wisej.Web.DateTimePicker();
-			this.dateTimePicker7 = new Wisej.Web.DateTimePicker();
-			this.dateTimePicker8 = new Wisej.Web.DateTimePicker();
-			this.dateTimePicker9 = new Wisej.Web.DateTimePicker();
-			this.dateTimePicker10 = new Wisej.Web.DateTimePicker();
-			this.dateTimePicker11 = new Wisej.Web.DateTimePicker();
-			this.SuspendLayout();
-			// 
-			// dateTimePickerDefault
-			// 
-			this.dateTimePickerDefault.Anchor = Wisej.Web.AnchorStyles.None;
-			this.dateTimePickerDefault.LabelText = "Default";
-			this.dateTimePickerDefault.Location = new System.Drawing.Point(152, 71);
-			this.dateTimePickerDefault.Name = "dateTimePickerDefault";
-			this.dateTimePickerDefault.Size = new System.Drawing.Size(250, 53);
-			this.dateTimePickerDefault.TabIndex = 0;
-			this.dateTimePickerDefault.Value = new System.DateTime(2022, 1, 6, 11, 2, 3, 766);
-			this.dateTimePickerDefault.CloseUp += new System.EventHandler(this.dateTimePickerDefault_CloseUp);
-			this.dateTimePickerDefault.ValueChanged += new System.EventHandler(this.dateTimePickerDefault_ValueChanged);
-			// 
-			// dateTimePicker2
-			// 
-			this.dateTimePicker2.Anchor = Wisej.Web.AnchorStyles.None;
-			this.dateTimePicker2.Format = Wisej.Web.DateTimePickerFormat.Short;
-			this.dateTimePicker2.LabelText = "Short";
-			this.dateTimePicker2.Location = new System.Drawing.Point(586, 71);
-			this.dateTimePicker2.Name = "dateTimePicker2";
-			this.dateTimePicker2.Size = new System.Drawing.Size(250, 53);
-			this.dateTimePicker2.TabIndex = 1;
-			this.dateTimePicker2.Value = new System.DateTime(2022, 1, 6, 11, 2, 4, 976);
-			// 
-			// dateTimePicker3
-			// 
-			this.dateTimePicker3.Anchor = Wisej.Web.AnchorStyles.None;
-			this.dateTimePicker3.LabelText = "Checkbox";
-			this.dateTimePicker3.Location = new System.Drawing.Point(152, 164);
-			this.dateTimePicker3.Name = "dateTimePicker3";
-			this.dateTimePicker3.ShowCheckBox = true;
-			this.dateTimePicker3.Size = new System.Drawing.Size(250, 53);
-			this.dateTimePicker3.TabIndex = 2;
-			this.dateTimePicker3.Value = new System.DateTime(2022, 1, 6, 11, 2, 5, 931);
-			// 
-			// dateTimePicker1
-			// 
-			this.dateTimePicker1.Anchor = Wisej.Web.AnchorStyles.None;
-			this.dateTimePicker1.Format = Wisej.Web.DateTimePickerFormat.Time;
-			this.dateTimePicker1.LabelText = "Time";
-			this.dateTimePicker1.Location = new System.Drawing.Point(586, 164);
-			this.dateTimePicker1.Name = "dateTimePicker1";
-			this.dateTimePicker1.Size = new System.Drawing.Size(250, 53);
-			this.dateTimePicker1.TabIndex = 3;
-			this.dateTimePicker1.Value = new System.DateTime(2022, 1, 6, 11, 2, 4, 976);
-			// 
-			// dateTimePicker4
-			// 
-			this.dateTimePicker4.Anchor = Wisej.Web.AnchorStyles.None;
-			this.dateTimePicker4.Format = Wisej.Web.DateTimePickerFormat.DateTime;
-			this.dateTimePicker4.LabelText = "DateTime";
-			this.dateTimePicker4.Location = new System.Drawing.Point(586, 257);
-			this.dateTimePicker4.Name = "dateTimePicker4";
-			this.dateTimePicker4.Size = new System.Drawing.Size(250, 53);
-			this.dateTimePicker4.TabIndex = 4;
-			this.dateTimePicker4.Value = new System.DateTime(2022, 1, 6, 11, 2, 4, 976);
-			// 
-			// dateTimePicker5
-			// 
-			this.dateTimePicker5.Anchor = Wisej.Web.AnchorStyles.None;
-			this.dateTimePicker5.CustomFormat = "\"Selected Date\" MMMM d";
-			this.dateTimePicker5.Format = Wisej.Web.DateTimePickerFormat.Custom;
-			this.dateTimePicker5.LabelText = "Custom";
-			this.dateTimePicker5.Location = new System.Drawing.Point(586, 350);
-			this.dateTimePicker5.Name = "dateTimePicker5";
-			this.dateTimePicker5.Size = new System.Drawing.Size(250, 53);
-			this.dateTimePicker5.TabIndex = 5;
-			this.dateTimePicker5.Value = new System.DateTime(2022, 1, 6, 11, 2, 4, 976);
-			// 
-			// dateTimePicker6
-			// 
-			this.dateTimePicker6.Anchor = Wisej.Web.AnchorStyles.None;
-			this.dateTimePicker6.LabelText = "UpDown";
-			this.dateTimePicker6.Location = new System.Drawing.Point(152, 257);
-			this.dateTimePicker6.Name = "dateTimePicker6";
-			this.dateTimePicker6.ShowUpDown = true;
-			this.dateTimePicker6.Size = new System.Drawing.Size(250, 53);
-			this.dateTimePicker6.TabIndex = 6;
-			this.dateTimePicker6.Value = new System.DateTime(2022, 1, 6, 11, 2, 5, 931);
-			// 
-			// dateTimePicker7
-			// 
-			this.dateTimePicker7.Anchor = Wisej.Web.AnchorStyles.None;
-			this.dateTimePicker7.LabelText = "No Calendar";
-			this.dateTimePicker7.Location = new System.Drawing.Point(152, 350);
-			this.dateTimePicker7.Name = "dateTimePicker7";
-			this.dateTimePicker7.ShowCalendar = false;
-			this.dateTimePicker7.ShowUpDown = true;
-			this.dateTimePicker7.Size = new System.Drawing.Size(250, 53);
-			this.dateTimePicker7.TabIndex = 7;
-			this.dateTimePicker7.Value = new System.DateTime(2022, 1, 6, 11, 2, 5, 931);
-			// 
-			// dateTimePicker8
-			// 
-			this.dateTimePicker8.Anchor = Wisej.Web.AnchorStyles.None;
-			this.dateTimePicker8.BorderStyle = Wisej.Web.BorderStyle.Dotted;
-			this.dateTimePicker8.LabelText = "Dotted";
-			this.dateTimePicker8.Location = new System.Drawing.Point(1020, 71);
-			this.dateTimePicker8.Name = "dateTimePicker8";
-			this.dateTimePicker8.Size = new System.Drawing.Size(250, 53);
-			this.dateTimePicker8.TabIndex = 8;
-			this.dateTimePicker8.Value = new System.DateTime(2022, 1, 6, 11, 2, 3, 766);
-			// 
-			// dateTimePicker9
-			// 
-			this.dateTimePicker9.Anchor = Wisej.Web.AnchorStyles.None;
-			this.dateTimePicker9.BorderStyle = Wisej.Web.BorderStyle.Dashed;
-			this.dateTimePicker9.LabelText = "Dashed";
-			this.dateTimePicker9.Location = new System.Drawing.Point(1020, 164);
-			this.dateTimePicker9.Name = "dateTimePicker9";
-			this.dateTimePicker9.Size = new System.Drawing.Size(250, 53);
-			this.dateTimePicker9.TabIndex = 9;
-			this.dateTimePicker9.Value = new System.DateTime(2022, 1, 6, 11, 2, 3, 766);
-			// 
-			// dateTimePicker10
-			// 
-			this.dateTimePicker10.Anchor = Wisej.Web.AnchorStyles.None;
-			this.dateTimePicker10.BorderStyle = Wisej.Web.BorderStyle.Double;
-			this.dateTimePicker10.LabelText = "Double";
-			this.dateTimePicker10.Location = new System.Drawing.Point(1020, 257);
-			this.dateTimePicker10.Name = "dateTimePicker10";
-			this.dateTimePicker10.Size = new System.Drawing.Size(250, 53);
-			this.dateTimePicker10.TabIndex = 10;
-			this.dateTimePicker10.Value = new System.DateTime(2022, 1, 6, 11, 2, 3, 766);
-			// 
-			// dateTimePicker11
-			// 
-			this.dateTimePicker11.Anchor = Wisej.Web.AnchorStyles.None;
-			this.dateTimePicker11.BorderStyle = Wisej.Web.BorderStyle.None;
-			this.dateTimePicker11.LabelText = "None";
-			this.dateTimePicker11.Location = new System.Drawing.Point(1020, 350);
-			this.dateTimePicker11.Name = "dateTimePicker11";
-			this.dateTimePicker11.Size = new System.Drawing.Size(250, 53);
-			this.dateTimePicker11.TabIndex = 11;
-			this.dateTimePicker11.Value = new System.DateTime(2022, 1, 6, 11, 2, 3, 766);
-			// 
-			// Features
-			// 
-			this.Controls.Add(this.dateTimePicker11);
-			this.Controls.Add(this.dateTimePicker10);
-			this.Controls.Add(this.dateTimePicker9);
-			this.Controls.Add(this.dateTimePicker8);
-			this.Controls.Add(this.dateTimePicker7);
-			this.Controls.Add(this.dateTimePicker6);
-			this.Controls.Add(this.dateTimePicker5);
-			this.Controls.Add(this.dateTimePicker4);
-			this.Controls.Add(this.dateTimePicker1);
-			this.Controls.Add(this.dateTimePicker3);
-			this.Controls.Add(this.dateTimePicker2);
-			this.Controls.Add(this.dateTimePickerDefault);
-			this.MinimumSize = new System.Drawing.Size(1170, 364);
-			this.Name = "Features";
-			this.ResumeLayout(false);
-			this.PerformLayout();
+            this.dateTimePickerDefault = new Wisej.Web.DateTimePicker();
+            this.dateTimePicker2 = new Wisej.Web.DateTimePicker();
+            this.dateTimePicker3 = new Wisej.Web.DateTimePicker();
+            this.dateTimePicker1 = new Wisej.Web.DateTimePicker();
+            this.dateTimePicker4 = new Wisej.Web.DateTimePicker();
+            this.dateTimePicker5 = new Wisej.Web.DateTimePicker();
+            this.dateTimePicker6 = new Wisej.Web.DateTimePicker();
+            this.dateTimePicker7 = new Wisej.Web.DateTimePicker();
+            this.dateTimePicker8 = new Wisej.Web.DateTimePicker();
+            this.dateTimePicker9 = new Wisej.Web.DateTimePicker();
+            this.dateTimePicker10 = new Wisej.Web.DateTimePicker();
+            this.dateTimePicker11 = new Wisej.Web.DateTimePicker();
+            this.SuspendLayout();
+            // 
+            // dateTimePickerDefault
+            // 
+            this.dateTimePickerDefault.Anchor = Wisej.Web.AnchorStyles.None;
+            this.dateTimePickerDefault.LabelText = "Default";
+            this.dateTimePickerDefault.Location = new System.Drawing.Point(272, 95);
+            this.dateTimePickerDefault.Name = "dateTimePickerDefault";
+            this.dateTimePickerDefault.Size = new System.Drawing.Size(250, 53);
+            this.dateTimePickerDefault.TabIndex = 0;
+            this.dateTimePickerDefault.Value = new System.DateTime(2022, 1, 6, 11, 2, 3, 766);
+            this.dateTimePickerDefault.CloseUp += new System.EventHandler(this.dateTimePickerDefault_CloseUp);
+            this.dateTimePickerDefault.ValueChanged += new System.EventHandler(this.dateTimePickerDefault_ValueChanged);
+            // 
+            // dateTimePicker2
+            // 
+            this.dateTimePicker2.Anchor = Wisej.Web.AnchorStyles.None;
+            this.dateTimePicker2.Format = Wisej.Web.DateTimePickerFormat.Short;
+            this.dateTimePicker2.LabelText = "Short";
+            this.dateTimePicker2.Location = new System.Drawing.Point(586, 95);
+            this.dateTimePicker2.Name = "dateTimePicker2";
+            this.dateTimePicker2.Size = new System.Drawing.Size(250, 53);
+            this.dateTimePicker2.TabIndex = 1;
+            this.dateTimePicker2.Value = new System.DateTime(2022, 1, 6, 11, 2, 4, 976);
+            // 
+            // dateTimePicker3
+            // 
+            this.dateTimePicker3.Anchor = Wisej.Web.AnchorStyles.None;
+            this.dateTimePicker3.LabelText = "Checkbox";
+            this.dateTimePicker3.Location = new System.Drawing.Point(272, 172);
+            this.dateTimePicker3.Name = "dateTimePicker3";
+            this.dateTimePicker3.ShowCheckBox = true;
+            this.dateTimePicker3.Size = new System.Drawing.Size(250, 53);
+            this.dateTimePicker3.TabIndex = 2;
+            this.dateTimePicker3.Value = new System.DateTime(2022, 1, 6, 11, 2, 5, 931);
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Anchor = Wisej.Web.AnchorStyles.None;
+            this.dateTimePicker1.Format = Wisej.Web.DateTimePickerFormat.Time;
+            this.dateTimePicker1.LabelText = "Time";
+            this.dateTimePicker1.Location = new System.Drawing.Point(586, 172);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(250, 53);
+            this.dateTimePicker1.TabIndex = 3;
+            this.dateTimePicker1.Value = new System.DateTime(2022, 1, 6, 11, 2, 4, 976);
+            // 
+            // dateTimePicker4
+            // 
+            this.dateTimePicker4.Anchor = Wisej.Web.AnchorStyles.None;
+            this.dateTimePicker4.Format = Wisej.Web.DateTimePickerFormat.DateTime;
+            this.dateTimePicker4.LabelText = "DateTime";
+            this.dateTimePicker4.Location = new System.Drawing.Point(586, 249);
+            this.dateTimePicker4.Name = "dateTimePicker4";
+            this.dateTimePicker4.Size = new System.Drawing.Size(250, 53);
+            this.dateTimePicker4.TabIndex = 4;
+            this.dateTimePicker4.Value = new System.DateTime(2022, 1, 6, 11, 2, 4, 976);
+            // 
+            // dateTimePicker5
+            // 
+            this.dateTimePicker5.Anchor = Wisej.Web.AnchorStyles.None;
+            this.dateTimePicker5.CustomFormat = "\"Selected Date\" MMMM d";
+            this.dateTimePicker5.Format = Wisej.Web.DateTimePickerFormat.Custom;
+            this.dateTimePicker5.LabelText = "Custom";
+            this.dateTimePicker5.Location = new System.Drawing.Point(586, 326);
+            this.dateTimePicker5.Name = "dateTimePicker5";
+            this.dateTimePicker5.Size = new System.Drawing.Size(250, 53);
+            this.dateTimePicker5.TabIndex = 5;
+            this.dateTimePicker5.Value = new System.DateTime(2022, 1, 6, 11, 2, 4, 976);
+            // 
+            // dateTimePicker6
+            // 
+            this.dateTimePicker6.Anchor = Wisej.Web.AnchorStyles.None;
+            this.dateTimePicker6.LabelText = "UpDown";
+            this.dateTimePicker6.Location = new System.Drawing.Point(272, 249);
+            this.dateTimePicker6.Name = "dateTimePicker6";
+            this.dateTimePicker6.ShowUpDown = true;
+            this.dateTimePicker6.Size = new System.Drawing.Size(250, 53);
+            this.dateTimePicker6.TabIndex = 6;
+            this.dateTimePicker6.Value = new System.DateTime(2022, 1, 6, 11, 2, 5, 931);
+            // 
+            // dateTimePicker7
+            // 
+            this.dateTimePicker7.Anchor = Wisej.Web.AnchorStyles.None;
+            this.dateTimePicker7.LabelText = "No Calendar";
+            this.dateTimePicker7.Location = new System.Drawing.Point(272, 326);
+            this.dateTimePicker7.Name = "dateTimePicker7";
+            this.dateTimePicker7.ShowCalendar = false;
+            this.dateTimePicker7.ShowUpDown = true;
+            this.dateTimePicker7.Size = new System.Drawing.Size(250, 53);
+            this.dateTimePicker7.TabIndex = 7;
+            this.dateTimePicker7.Value = new System.DateTime(2022, 1, 6, 11, 2, 5, 931);
+            // 
+            // dateTimePicker8
+            // 
+            this.dateTimePicker8.Anchor = Wisej.Web.AnchorStyles.None;
+            this.dateTimePicker8.BorderStyle = Wisej.Web.BorderStyle.Dotted;
+            this.dateTimePicker8.LabelText = "Dotted";
+            this.dateTimePicker8.Location = new System.Drawing.Point(900, 95);
+            this.dateTimePicker8.Name = "dateTimePicker8";
+            this.dateTimePicker8.Size = new System.Drawing.Size(250, 53);
+            this.dateTimePicker8.TabIndex = 8;
+            this.dateTimePicker8.Value = new System.DateTime(2022, 1, 6, 11, 2, 3, 766);
+            // 
+            // dateTimePicker9
+            // 
+            this.dateTimePicker9.Anchor = Wisej.Web.AnchorStyles.None;
+            this.dateTimePicker9.BorderStyle = Wisej.Web.BorderStyle.Dashed;
+            this.dateTimePicker9.LabelText = "Dashed";
+            this.dateTimePicker9.Location = new System.Drawing.Point(900, 172);
+            this.dateTimePicker9.Name = "dateTimePicker9";
+            this.dateTimePicker9.Size = new System.Drawing.Size(250, 53);
+            this.dateTimePicker9.TabIndex = 9;
+            this.dateTimePicker9.Value = new System.DateTime(2022, 1, 6, 11, 2, 3, 766);
+            // 
+            // dateTimePicker10
+            // 
+            this.dateTimePicker10.Anchor = Wisej.Web.AnchorStyles.None;
+            this.dateTimePicker10.BorderStyle = Wisej.Web.BorderStyle.Double;
+            this.dateTimePicker10.LabelText = "Double";
+            this.dateTimePicker10.Location = new System.Drawing.Point(900, 249);
+            this.dateTimePicker10.Name = "dateTimePicker10";
+            this.dateTimePicker10.Size = new System.Drawing.Size(250, 53);
+            this.dateTimePicker10.TabIndex = 10;
+            this.dateTimePicker10.Value = new System.DateTime(2022, 1, 6, 11, 2, 3, 766);
+            // 
+            // dateTimePicker11
+            // 
+            this.dateTimePicker11.Anchor = Wisej.Web.AnchorStyles.None;
+            this.dateTimePicker11.BorderStyle = Wisej.Web.BorderStyle.None;
+            this.dateTimePicker11.LabelText = "None";
+            this.dateTimePicker11.Location = new System.Drawing.Point(900, 326);
+            this.dateTimePicker11.Name = "dateTimePicker11";
+            this.dateTimePicker11.Size = new System.Drawing.Size(250, 53);
+            this.dateTimePicker11.TabIndex = 11;
+            this.dateTimePicker11.Value = new System.DateTime(2022, 1, 6, 11, 2, 3, 766);
+            // 
+            // Features
+            // 
+            this.Controls.Add(this.dateTimePicker11);
+            this.Controls.Add(this.dateTimePicker10);
+            this.Controls.Add(this.dateTimePicker9);
+            this.Controls.Add(this.dateTimePicker8);
+            this.Controls.Add(this.dateTimePicker7);
+            this.Controls.Add(this.dateTimePicker6);
+            this.Controls.Add(this.dateTimePicker5);
+            this.Controls.Add(this.dateTimePicker4);
+            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.dateTimePicker3);
+            this.Controls.Add(this.dateTimePicker2);
+            this.Controls.Add(this.dateTimePickerDefault);
+            this.MinimumSize = new System.Drawing.Size(885, 293);
+            this.Name = "Features";
+            this.ResumeLayout(false);
+            this.PerformLayout();
 
 		}
 

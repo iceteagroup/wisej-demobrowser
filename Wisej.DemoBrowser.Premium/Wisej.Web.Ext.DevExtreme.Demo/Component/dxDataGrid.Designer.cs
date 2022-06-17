@@ -202,7 +202,7 @@
             this.checkBox6.Name = "checkBox6";
             this.checkBox6.Size = new System.Drawing.Size(212, 38);
             this.checkBox6.TabIndex = 5;
-            this.checkBox6.Text = "Show search panel";
+            this.checkBox6.Text = "Show Search Panel";
             // 
             // dxDataGrid
             // 

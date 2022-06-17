@@ -31,12 +31,16 @@
             this.buttonAdd = new Wisej.Web.Button();
             this.button1 = new Wisej.Web.Button();
             this.chartJS1 = new Wisej.Web.Ext.ChartJS.ChartJS();
+            this.panel1 = new Wisej.Web.Panel();
+            this.flowLayoutPanel1 = new Wisej.Web.FlowLayoutPanel();
+            this.panel1.SuspendLayout();
+            this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // buttonAdd
             // 
-            this.buttonAdd.Anchor = Wisej.Web.AnchorStyles.Left;
-            this.buttonAdd.Location = new System.Drawing.Point(163, 197);
+            this.buttonAdd.Anchor = Wisej.Web.AnchorStyles.None;
+            this.buttonAdd.Location = new System.Drawing.Point(59, 143);
             this.buttonAdd.Name = "buttonAdd";
             this.buttonAdd.Size = new System.Drawing.Size(168, 37);
             this.buttonAdd.TabIndex = 1;
@@ -45,8 +49,8 @@
             // 
             // button1
             // 
-            this.button1.Anchor = Wisej.Web.AnchorStyles.Left;
-            this.button1.Location = new System.Drawing.Point(163, 240);
+            this.button1.Anchor = Wisej.Web.AnchorStyles.None;
+            this.button1.Location = new System.Drawing.Point(59, 186);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(168, 37);
             this.button1.TabIndex = 2;
@@ -55,11 +59,12 @@
             // 
             // chartJS1
             // 
-            this.chartJS1.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
-            | Wisej.Web.AnchorStyles.Left) 
-            | Wisej.Web.AnchorStyles.Right)));
+            this.chartJS1.BackColor = System.Drawing.Color.White;
             this.chartJS1.ChartType = Wisej.Web.Ext.ChartJS.ChartType.Pie;
-            this.chartJS1.Location = new System.Drawing.Point(409, 43);
+            this.chartJS1.CssClass = "shadow";
+            this.flowLayoutPanel1.SetFillWeight(this.chartJS1, 3);
+            this.chartJS1.Location = new System.Drawing.Point(295, 3);
+            this.chartJS1.MinimumSize = new System.Drawing.Size(300, 0);
             this.chartJS1.Name = "chartJS1";
             this.chartJS1.Options.DataLabel.BackgroundColor = System.Drawing.Color.Empty;
             this.chartJS1.Options.DataLabel.BorderColor = System.Drawing.Color.Empty;
@@ -68,20 +73,43 @@
             this.chartJS1.Options.DataLabel.TextAlign = Wisej.Web.Ext.ChartJS.DataLabelTextAlignment.Start;
             this.chartJS1.Options.DataLabel.TextShadowColor = System.Drawing.Color.Empty;
             this.chartJS1.Options.DataLabel.TextStrokeColor = System.Drawing.Color.Empty;
-            this.chartJS1.Size = new System.Drawing.Size(604, 389);
+            this.chartJS1.Size = new System.Drawing.Size(860, 366);
             this.chartJS1.TabIndex = 3;
             this.chartJS1.Text = "Pie Chart";
             this.chartJS1.ChartClick += new Wisej.Web.Ext.ChartJS.ChartClickEventHandler(this.chartJS1_ChartClick);
             // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.buttonAdd);
+            this.flowLayoutPanel1.SetFillWeight(this.panel1, 1);
+            this.panel1.Location = new System.Drawing.Point(3, 3);
+            this.panel1.MinimumSize = new System.Drawing.Size(225, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(286, 366);
+            this.panel1.TabIndex = 4;
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Left | Wisej.Web.AnchorStyles.Right)));
+            this.flowLayoutPanel1.AutoSize = true;
+            this.flowLayoutPanel1.Controls.Add(this.panel1);
+            this.flowLayoutPanel1.Controls.Add(this.chartJS1);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(132, 49);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1158, 376);
+            this.flowLayoutPanel1.TabIndex = 5;
+            // 
             // Pie
             // 
-            this.Controls.Add(this.chartJS1);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.buttonAdd);
-            this.MinimumSize = new System.Drawing.Size(1422, 474);
+            this.AutoScroll = true;
+            this.Controls.Add(this.flowLayoutPanel1);
             this.Name = "Pie";
             this.Load += new System.EventHandler(this.Pie_Load);
+            this.panel1.ResumeLayout(false);
+            this.flowLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
 		}
 
@@ -89,5 +117,7 @@
 		private Web.Button buttonAdd;
 		private Web.Button button1;
         private Web.Ext.ChartJS.ChartJS chartJS1;
+        private Web.Panel panel1;
+        private Web.FlowLayoutPanel flowLayoutPanel1;
     }
 }
