@@ -81,12 +81,12 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 		}
 		private int taskCount;
 
-		private void buttonUpdate_Click(object sender, EventArgs e)
+		private async void buttonUpdate_Click(object sender, EventArgs e)
 		{
 			this.kendoRadialGauge1.Options.transitions = this.checkBox1.Checked;
-			this.kendoRadialGauge1.Instance.value(this.numericUpDown1.Value);
+			this.kendoRadialGauge1.Instance.value(Convert.ToInt32(this.numericUpDown1.Value));
 
-			this.kendoRadialGauge1.Update();
+			Application.Update(this);
 		}
 	}
 }

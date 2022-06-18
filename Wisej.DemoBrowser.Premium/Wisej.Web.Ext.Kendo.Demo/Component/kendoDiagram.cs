@@ -1,6 +1,7 @@
 ﻿using System;
 using System.IO;
 using System.Net;
+using System.Text.RegularExpressions;
 using Wisej.Web;
 
 namespace Wisej.Web.Ext.Kendo.Demo.Component
@@ -90,20 +91,46 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 			Application.Play(MessageBoxIcon.Information);
 		}
 
-		private void buttonExport_Click(object sender, EventArgs e)
+		private async void buttonExport_Click(object sender, EventArgs e)
 		{
 			var format = comboBox1.SelectedItem.ToString();
+			string fileName;
+			dynamic data;
 
 			switch (format)
 			{
 				case "PDF":
+					fileName = "data.pdf";
+					data = await this.kendoDiagram1.Instance.exportPDFAsync();
 					break;
 
 				case "SVG":
+					fileName = "data.svg";
+					data = await this.kendoDiagram1.Instance.exportSVGAsync();
 					break;
 
 				case "PNG":
+					fileName = "data.png";
+					data = await this.kendoDiagram1.Instance.exportImageAsync();
 					break;
+				default:
+					fileName = "data.png";
+					data = await this.kendoDiagram1.Instance.exportImageAsync();
+					break;
+			}
+
+			using (MemoryStream ms = new MemoryStream(Convert.FromBase64String(((string)data).Split(',')[1])))
+			{
+				var sw = new StreamWriter(ms);
+				try
+				{
+
+					Application.Download(ms, fileName);
+				}
+				finally
+				{
+					sw.Dispose();
+				}
 			}
 		}
 

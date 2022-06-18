@@ -241,5 +241,15 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 				attachmentLayout = "carousel"
 			});
 		}
-	}
+
+        private async void buttonGetUser_Click(object sender, EventArgs e)
+        {
+			var currentUser = await this.kendoChat1.Instance.getUserAsync();
+			AlertBox.Show(
+				$"{JSON.Stringify(currentUser)}",
+				MessageBoxIcon.Information);
+
+			Application.Play(MessageBoxIcon.Information);
+		}
+    }
 }

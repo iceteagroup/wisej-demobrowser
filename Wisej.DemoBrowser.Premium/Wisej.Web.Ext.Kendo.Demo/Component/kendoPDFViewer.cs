@@ -34,6 +34,7 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 		{
 			this.kendoPDFViewer1.Instance.zoom(this.numericUpDownZoom.Value);
 			this.kendoPDFViewer1.Options.zoomRate = this.numericUpDownZoomRate.Value;
+			this.kendoPDFViewer1.Options.width = "95%";
 
 			this.kendoPDFViewer1.Update();
 		}

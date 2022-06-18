@@ -44,8 +44,12 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 				.Select(c => c.Text.Substring(0, 2).ToLower()).ToArray();
 				
 			this.kendoDatePicker1.Options.disableDates = daysOfWeek;
-			this.kendoDatePicker1.Options.min = this.dateTimePickerMin.Value;
-			this.kendoDatePicker1.Options.max = this.dateTimePickerMax.Value;
+
+			if(this.dateTimePickerMin.Value < this.dateTimePickerMax.Value)
+            {
+				this.kendoDatePicker1.Options.min = this.dateTimePickerMin.Value;
+				this.kendoDatePicker1.Options.max = this.dateTimePickerMax.Value;
+            }
 
 			this.kendoDatePicker1.Update();
 		}

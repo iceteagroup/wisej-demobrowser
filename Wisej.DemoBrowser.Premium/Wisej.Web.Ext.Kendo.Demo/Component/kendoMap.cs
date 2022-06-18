@@ -44,7 +44,6 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 
 		private void buttonUpdate_Click(object sender, EventArgs e)
 		{
-			this.kendoMap1.Options.pannable = this.checkBox1.Checked;
 			this.kendoMap1.Options.wraparound = this.checkBox2.Checked;
 			this.kendoMap1.Options.zoomable = this.checkBox3.Checked;
 			this.kendoMap1.Options.minZoom = this.numericUpDown1.Value;

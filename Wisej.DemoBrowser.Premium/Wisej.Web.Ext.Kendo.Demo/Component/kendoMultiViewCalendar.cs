@@ -44,6 +44,8 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 			await this.kendoMultiViewCalendar1.Instance.minAsync(dateTimePickerMinDate.Value);
 			await this.kendoMultiViewCalendar1.Instance.maxAsync(dateTimePickerMaxDate.Value);
 
+			this.kendoMultiViewCalendar1.Options.weekNumber = this.checkBoxWeekNumber.Checked;
+
 			this.kendoMultiViewCalendar1.Update();
 		}
 	}
