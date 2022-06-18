@@ -23,7 +23,7 @@ namespace Wisej.Web.Ext.Ignite.Demo.Component
 				new
 				{
 					headerText = "Image", key = "ImageUrl", dataType = "string", width = "15%",
-					template = "<img style=\"height:50px; \" src=\"${ ImageUrl} \"/>", },
+					template = "<img style=\"height:50px; \" src=\"${ImageUrl} \"/>", },
 				new {headerText = "Product Name", key = "ProductName", dataType = "string", width = "25%"},
 				new {headerText = "Category", key = "CategoryName", dataType = "string", width = "25%"},
 				new {headerText = "Units In Stock", key = "InStock", dataType = "number", width = "35%"}

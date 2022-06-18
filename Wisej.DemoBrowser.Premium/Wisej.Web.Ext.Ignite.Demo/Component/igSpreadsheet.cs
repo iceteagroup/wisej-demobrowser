@@ -11,6 +11,13 @@ namespace Wisej.Web.Ext.Ignite.Demo.Component
 
 			this.igSpreadsheet1.Instance.onExport += new WidgetEventHandler(igSpreadsheet1_WidgetEvent);
 			this.igSpreadsheet1.Instance.onActiveWorksheetChanged += new WidgetEventHandler(igSpreadsheet1_WidgetEvent);
+			this.igSpreadsheet1.Instance.onActiveCellChanged += new WidgetEventHandler(igSpreadsheet1_WidgetEvent);
+		}
+
+		private void igSpreadsheet_Load(object sender, EventArgs e)
+		{
+			this.igSpreadsheet1.Options.zoomLevel = this.numericUpDown1.Value;
+			this.igSpreadsheet1.Update();
 		}
 
 		private void buttonLoad_Uploaded(object sender, UploadedEventArgs e)
@@ -49,17 +56,22 @@ namespace Wisej.Web.Ext.Ignite.Demo.Component
 			{
 				case "export":
 					byte[] file = Convert.FromBase64String(e.Data);
-					using (MemoryStream stream = new MemoryStream(file))
+					using (var stream = new MemoryStream(file))
 					{
 						stream.Seek(0, SeekOrigin.Begin);
 						Application.Download(stream, "myExcel.xlsx");
 					}
+
+					break;
+
+				case "activeCellChanged":
+					this.textBox1.Text = e.Data.newValue;
+				
 					break;
 
 				default:
 
 					break;
-
 			}
 
 			AlertBox.Show(

@@ -14,6 +14,7 @@ namespace Wisej.Web.Ext.Ignite.Demo.Component
 		private void igTimePicker_Load(object sender, EventArgs e)
 		{
 			this.igTimePicker1.Options.value = "15:00";
+			this.comboBox1.SelectedIndex = 0;
 		}
 
 		private void igTimePicker_WidgetEvent(object sender, WidgetEventArgs e)

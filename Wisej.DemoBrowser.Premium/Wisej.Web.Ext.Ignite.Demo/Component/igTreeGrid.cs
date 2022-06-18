@@ -15,6 +15,7 @@ namespace Wisej.Web.Ext.Ignite.Demo.Component
 
 		private void igTreeGrid_Load(object sender, EventArgs e)
 		{
+
 			igTreeGrid1.Options.dataSource = new dynamic[]
 			{
 				new
@@ -115,7 +116,7 @@ namespace Wisej.Web.Ext.Ignite.Demo.Component
 			{
 				new
 				{
-					name = "Paging", mode = "allLevels", pageSize = 10, currentPageIndex = 0, contextRowMode = "parent"
+					name = "Paging", mode = "allLevels", pageSize = this.nudPageSize.Value, currentPageIndex = 0, contextRowMode = "parent"
 				}
 			};
 		}
@@ -157,7 +158,7 @@ namespace Wisej.Web.Ext.Ignite.Demo.Component
 			if (checkBox1.Checked)
 				igTreeGrid1.Options.features = new[]
 				{
-					new {name = "Paging", mode = "allLevels", pageSize = 13}
+					new {name = "Paging", mode = "allLevels", pageSize = this.nudPageSize.Value, currentPageIndex = 0, contextRowMode = "parent"}
 				};
 			else
 				igTreeGrid1.Options.features = new { };

@@ -29,16 +29,18 @@
 		private void InitializeComponent()
 		{
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(igTreeGrid));
-			Wisej.Web.Ext.Ignite.igBase.WidgetFunction widgetFunction1 = new Wisej.Web.Ext.Ignite.igBase.WidgetFunction();
+			Wisej.Web.Ext.Ignite.igBase.WidgetFunction widgetFunction2 = new Wisej.Web.Ext.Ignite.igBase.WidgetFunction();
 			this.buttonLoad = new Wisej.Web.Upload();
 			this.buttonExport = new Wisej.Web.Button();
 			this.igTreeGrid1 = new Wisej.Web.Ext.Ignite.igTreeGrid();
 			this.checkBox1 = new Wisej.Web.CheckBox();
 			this.checkBox3 = new Wisej.Web.CheckBox();
 			this.checkBox4 = new Wisej.Web.CheckBox();
+			this.nudPageSize = new Wisej.Web.NumericUpDown();
 			this.groupBox1.SuspendLayout();
 			this.panel.SuspendLayout();
 			this.flowLayoutPanel1.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.nudPageSize)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// groupBox1
@@ -75,15 +77,16 @@
 			this.flowLayoutPanel1.Controls.Add(this.checkBox1);
 			this.flowLayoutPanel1.Controls.Add(this.checkBox3);
 			this.flowLayoutPanel1.Controls.Add(this.checkBox4);
-			this.flowLayoutPanel1.Controls.Add(this.buttonLoad);
+			this.flowLayoutPanel1.Controls.Add(this.nudPageSize);
 			this.flowLayoutPanel1.Controls.Add(this.buttonExport);
+			this.flowLayoutPanel1.Controls.Add(this.buttonLoad);
 			// 
 			// buttonLoad
 			// 
 			this.buttonLoad.AllowedFileTypes = ".json";
 			this.buttonLoad.HideValue = true;
 			this.buttonLoad.ImageSource = "icon-file";
-			this.buttonLoad.Location = new System.Drawing.Point(3, 174);
+			this.buttonLoad.Location = new System.Drawing.Point(51, 231);
 			this.buttonLoad.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
 			this.buttonLoad.Name = "buttonLoad";
 			this.buttonLoad.Size = new System.Drawing.Size(42, 42);
@@ -94,7 +97,7 @@
 			// 
 			this.buttonExport.Display = Wisej.Web.Display.Icon;
 			this.buttonExport.ImageSource = "icon-save";
-			this.buttonExport.Location = new System.Drawing.Point(51, 174);
+			this.buttonExport.Location = new System.Drawing.Point(3, 231);
 			this.buttonExport.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
 			this.buttonExport.Name = "buttonExport";
 			this.buttonExport.Size = new System.Drawing.Size(42, 42);
@@ -110,10 +113,10 @@
 			this.igTreeGrid1.Size = new System.Drawing.Size(872, 560);
 			this.igTreeGrid1.TabIndex = 0;
 			this.igTreeGrid1.Text = "igTreeGrid1";
-			widgetFunction1.Name = "customDropValidation";
-			widgetFunction1.Source = resources.GetString("widgetFunction1.Source");
+			widgetFunction2.Name = "customDropValidation";
+			widgetFunction2.Source = resources.GetString("widgetFunction2.Source");
 			this.igTreeGrid1.WidgetFunctions = new Wisej.Web.Ext.Ignite.igBase.WidgetFunction[] {
-        widgetFunction1};
+        widgetFunction2};
 			// 
 			// checkBox1
 			// 
@@ -159,6 +162,21 @@
 			this.checkBox4.TabIndex = 3;
 			this.checkBox4.Text = "Enable Hover Styles";
 			// 
+			// nudPageSize
+			// 
+			this.flowLayoutPanel1.SetFillWeight(this.nudPageSize, 1);
+			this.flowLayoutPanel1.SetFlowBreak(this.nudPageSize, true);
+			this.nudPageSize.LabelText = "Page Size";
+			this.nudPageSize.Location = new System.Drawing.Point(3, 161);
+			this.nudPageSize.Name = "nudPageSize";
+			this.nudPageSize.Size = new System.Drawing.Size(212, 51);
+			this.nudPageSize.TabIndex = 6;
+			this.nudPageSize.Value = new decimal(new int[] {
+            13,
+            0,
+            0,
+            0});
+			// 
 			// igTreeGrid
 			// 
 			this.Name = "igTreeGrid";
@@ -166,6 +184,8 @@
 			this.groupBox1.ResumeLayout(false);
 			this.panel.ResumeLayout(false);
 			this.flowLayoutPanel1.ResumeLayout(false);
+			this.flowLayoutPanel1.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.nudPageSize)).EndInit();
 			this.ResumeLayout(false);
 
 		}
@@ -178,5 +198,6 @@
 		private CheckBox checkBox1;
 		private CheckBox checkBox3;
 		private CheckBox checkBox4;
+		private NumericUpDown nudPageSize;
 	}
 }

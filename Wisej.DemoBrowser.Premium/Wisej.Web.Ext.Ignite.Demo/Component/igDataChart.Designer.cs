@@ -97,7 +97,7 @@
 			this.textBoxTitle.LabelText = "Title";
 			this.textBoxTitle.Location = new System.Drawing.Point(3, 3);
 			this.textBoxTitle.Name = "textBoxTitle";
-			this.textBoxTitle.Size = new System.Drawing.Size(212, 57);
+			this.textBoxTitle.Size = new System.Drawing.Size(212, 51);
 			this.textBoxTitle.TabIndex = 0;
 			this.textBoxTitle.Text = "Population per Country";
 			// 
@@ -106,7 +106,7 @@
 			this.buttonLoad.AllowedFileTypes = ".json";
 			this.buttonLoad.HideValue = true;
 			this.buttonLoad.ImageSource = "icon-file";
-			this.buttonLoad.Location = new System.Drawing.Point(3, 388);
+			this.buttonLoad.Location = new System.Drawing.Point(3, 370);
 			this.buttonLoad.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
 			this.buttonLoad.Name = "buttonLoad";
 			this.buttonLoad.Size = new System.Drawing.Size(42, 42);
@@ -117,7 +117,7 @@
 			// 
 			this.buttonExportImage.Display = Wisej.Web.Display.Icon;
 			this.buttonExportImage.ImageSource = "resource.wx/Wisej.Ext.MaterialDesign/google-drive-image.svg";
-			this.buttonExportImage.Location = new System.Drawing.Point(51, 388);
+			this.buttonExportImage.Location = new System.Drawing.Point(51, 370);
 			this.buttonExportImage.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
 			this.buttonExportImage.Name = "buttonExportImage";
 			this.buttonExportImage.Size = new System.Drawing.Size(42, 42);
@@ -146,10 +146,10 @@
             "Pop2015",
             "Pop2025"});
 			this.comboBox2.LabelText = "Population Year";
-			this.comboBox2.Location = new System.Drawing.Point(3, 155);
+			this.comboBox2.Location = new System.Drawing.Point(3, 143);
 			this.comboBox2.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
 			this.comboBox2.Name = "comboBox2";
-			this.comboBox2.Size = new System.Drawing.Size(212, 57);
+			this.comboBox2.Size = new System.Drawing.Size(212, 51);
 			this.comboBox2.TabIndex = 0;
 			this.comboBox2.Text = "Pop2015";
 			// 
@@ -159,7 +159,7 @@
 			this.groupBox2.Controls.Add(this.buttonAdd);
 			this.flowLayoutPanel1.SetFillWeight(this.groupBox2, 1);
 			this.flowLayoutPanel1.SetFlowBreak(this.groupBox2, true);
-			this.groupBox2.Location = new System.Drawing.Point(3, 231);
+			this.groupBox2.Location = new System.Drawing.Point(3, 213);
 			this.groupBox2.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
 			this.groupBox2.Name = "groupBox2";
 			this.groupBox2.Size = new System.Drawing.Size(212, 138);
@@ -173,7 +173,7 @@
 			this.textBoxCountry.LabelText = "Name";
 			this.textBoxCountry.Location = new System.Drawing.Point(7, 28);
 			this.textBoxCountry.Name = "textBoxCountry";
-			this.textBoxCountry.Size = new System.Drawing.Size(199, 57);
+			this.textBoxCountry.Size = new System.Drawing.Size(199, 51);
 			this.textBoxCountry.TabIndex = 4;
 			this.textBoxCountry.Text = "Disneyland";
 			// 
@@ -182,10 +182,10 @@
 			this.flowLayoutPanel1.SetFillWeight(this.textBoxSubtitle, 1);
 			this.flowLayoutPanel1.SetFlowBreak(this.textBoxSubtitle, true);
 			this.textBoxSubtitle.LabelText = "Subtitle";
-			this.textBoxSubtitle.Location = new System.Drawing.Point(3, 79);
+			this.textBoxSubtitle.Location = new System.Drawing.Point(3, 73);
 			this.textBoxSubtitle.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
 			this.textBoxSubtitle.Name = "textBoxSubtitle";
-			this.textBoxSubtitle.Size = new System.Drawing.Size(212, 57);
+			this.textBoxSubtitle.Size = new System.Drawing.Size(212, 51);
 			this.textBoxSubtitle.TabIndex = 1;
 			this.textBoxSubtitle.Text = "Largest projected populations for 2015";
 			// 

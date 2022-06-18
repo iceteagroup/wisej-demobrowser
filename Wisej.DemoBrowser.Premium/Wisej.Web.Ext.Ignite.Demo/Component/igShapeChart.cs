@@ -31,8 +31,8 @@ namespace Wisej.Web.Ext.Ignite.Demo.Component
 			this.igShapeChart1.Options.isHorizontalZoomEnabled = true;
 			this.igShapeChart1.Options.isVerticalZoomEnabled = true;
 			this.igShapeChart1.Options.markerTypes = new string[]{"circle"};
-			this.igShapeChart1.Options.chartType = "point";
-			this.igShapeChart1.Options.title = "point";
+			this.igShapeChart1.Options.chartType = this.comboBox1.SelectedItem;
+			this.igShapeChart1.Options.title = this.comboBox1.SelectedItem;
 			this.igShapeChart1.Options.dataSource = new dynamic[]{new {X = 20, Y = 20, R = 10, Value = 10, },
 				new {X = 20, Y = 80, R = 30, Value = 10, },
 				new {X = 80, Y = 80, R = 30, Value = 90, },
