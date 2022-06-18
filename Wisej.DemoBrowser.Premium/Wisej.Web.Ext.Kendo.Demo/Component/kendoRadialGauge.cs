@@ -84,9 +84,12 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 		private async void buttonUpdate_Click(object sender, EventArgs e)
 		{
 			this.kendoRadialGauge1.Options.transitions = this.checkBox1.Checked;
-			this.kendoRadialGauge1.Instance.value(Convert.ToInt32(this.numericUpDown1.Value));
+			this.kendoRadialGauge1.Options.pointer = new
+			{
+				value = this.numericUpDown1.Value
+			};
 
-			Application.Update(this);
+			this.kendoRadialGauge1.Update();
 		}
 	}
 }
