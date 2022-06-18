@@ -28,7 +28,6 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(igVideoPlayer));
 			this.button1 = new Wisej.Web.Button();
 			this.button2 = new Wisej.Web.Button();
 			this.checkBoxAutoHide = new Wisej.Web.CheckBox();
@@ -165,7 +164,6 @@
 			this.igVideoPlayer1.Dock = Wisej.Web.DockStyle.Fill;
 			this.igVideoPlayer1.Location = new System.Drawing.Point(8, 8);
 			this.igVideoPlayer1.Name = "igVideoPlayer1";
-			this.igVideoPlayer1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("igVideoPlayer1.Options"))));
 			this.igVideoPlayer1.Size = new System.Drawing.Size(872, 560);
 			this.igVideoPlayer1.TabIndex = 0;
 			this.igVideoPlayer1.WidgetTemplates = new Wisej.Web.Ext.Ignite.igBase.WidgetTemplate[0];

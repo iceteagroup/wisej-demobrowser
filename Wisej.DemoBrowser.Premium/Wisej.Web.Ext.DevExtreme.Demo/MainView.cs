@@ -1,6 +1,7 @@
 ﻿
 using System;
 using System.Collections;
+using System.Drawing;
 using System.Globalization;
 using System.IO;
 using System.Linq;
@@ -60,7 +61,8 @@ namespace Wisej.Web.Ext.DevExtreme.Demo
 
         private void comboBoxDXTheme_SelectedIndexChanged(object sender, EventArgs e)
         {
-			dxBase.Theme = this.comboBoxDXTheme.Text;
+			dxBase.Theme = this.comboBoxDXTheme.SelectedItem.ToString();
+
 			Application.Reload();
 		}
 

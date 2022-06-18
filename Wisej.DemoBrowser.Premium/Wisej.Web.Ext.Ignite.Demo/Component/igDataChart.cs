@@ -4,7 +4,7 @@ using Wisej.Web;
 
 namespace Wisej.Web.Ext.Ignite.Demo.Component
 {
-	public partial class igDataChart : Wisej.Web.Ext.Ignite.Demo.Component.TestBase
+	public partial class igDataChart : TestBase
 	{
 		public igDataChart()
 		{
@@ -28,7 +28,7 @@ namespace Wisej.Web.Ext.Ignite.Demo.Component
 			this.igDataChart1.Options.axes = new dynamic[]
 			{
 				new {name = "NameAxis", type = "categoryX", title = "Country", label = "CountryName"},
-				new {name = "PopulationAxis", type = "numericY", minimumValue = 0, title = "Millions of People"},
+				new {name = "PopulationAxis", type = "numericY", minimumValue = 0, title = "Millions of People"}
 			};
 
 			AssignDataChartSeries();
@@ -36,26 +36,30 @@ namespace Wisej.Web.Ext.Ignite.Demo.Component
 
 		private void AssignDataChartSeries()
 		{
-			var series = new
+			var series = new[]
 			{
-				name = "2015 Population",
-				type = "column",
-				isHighlightingEnabled = true,
-				isTransitionInEnabled = true,
-				xAxis = "NameAxis",
-				yAxis = "PopulationAxis",
-				valueMemberPath = this.comboBox2.SelectedItem
+				new
+				{
+					name = "2015 Population",
+					type = "column",
+					isHighlightingEnabled = true,
+					isTransitionInEnabled = true,
+					xAxis = "NameAxis",
+					yAxis = "PopulationAxis",
+					valueMemberPath = this.comboBox2.SelectedItem
+				}
 			};
+
 			this.igDataChart1.Options.series = series;
 		}
 
 		private void buttonUpdate_Click(object sender, EventArgs e)
 		{
-			this.igDataChart1.Options.title = textBoxTitle.Text;
-			this.igDataChart1.Options.subtitle = textBoxSubtitle.Text;
+			this.igDataChart1.Options.title = this.textBoxTitle.Text;
+			this.igDataChart1.Options.subtitle = this.textBoxSubtitle.Text;
 
 			AssignDataChartSeries();
-			
+
 			this.igDataChart1.Update();
 		}
 
@@ -91,6 +95,8 @@ namespace Wisej.Web.Ext.Ignite.Demo.Component
 				Pop2015 = rand.Next(300, 1000),
 				Pop2025 = rand.Next(300, 1000)
 			});
+
+			this.igDataChart1.Update();
 		}
 	}
 }

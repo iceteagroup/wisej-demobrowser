@@ -21,7 +21,7 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 
 			this.kendoStockChart1.Options.dateField = "Date";
 
-			this.kendoStockChart1.Options.series = new object[]
+			this.kendoStockChart1.Options.series = new dynamic[]
 			{
 				new
 				{

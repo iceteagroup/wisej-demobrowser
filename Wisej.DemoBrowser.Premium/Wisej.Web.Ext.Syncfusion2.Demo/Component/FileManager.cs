@@ -192,9 +192,9 @@ namespace Wisej.Web.Ext.Syncfusion2.Demo.Component
 		private void buttonUpdate_Click(object sender, EventArgs e)
 		{
 			this.fileManager1.Options.view = this.comboBoxView.SelectedItem;
-			//this.fileManager1.Options.showFileExtension = this.checkBoxFileExtension.Checked;
-			//this.fileManager1.Options.allowDragAndDrop = this.checkBoxAllowDragAndDrop.Checked;
-			//this.fileManager1.Options.allowMultipleSelection = this.checkBoxMultipleSelection.Checked;
+			this.fileManager1.Options.showFileExtension = this.checkBoxFileExtension.Checked;
+			this.fileManager1.Options.allowDragAndDrop = this.checkBoxAllowDragAndDrop.Checked;
+			this.fileManager1.Options.allowMultipleSelection = this.checkBoxMultipleSelection.Checked;
 			
 			this.fileManager1.Update();
 		}
