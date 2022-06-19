@@ -59,9 +59,7 @@ namespace Wisej.Web.Ext.Ignite.Demo.Component
 			this.igVideoPlayer1.Options.showSeekTime = this.checkBoxShowSeekTime.Checked;
 			this.igVideoPlayer1.Options.browserControls = this.checkBoxBrowserControls.Checked;
 
-			AlertBox.Show($"{JSON.Stringify(this.igVideoPlayer1.Options.bookmarks)}");
-
-			this.igVideoPlayer1.Update();
+			this.igVideoPlayer1.Recreate();
 		}
 	}
 }

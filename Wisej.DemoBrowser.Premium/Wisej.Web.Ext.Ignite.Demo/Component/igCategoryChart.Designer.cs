@@ -82,11 +82,22 @@
 			this.comboBox1.DropDownStyle = Wisej.Web.ComboBoxStyle.DropDownList;
 			this.flowLayoutPanel1.SetFillWeight(this.comboBox1, 1);
 			this.flowLayoutPanel1.SetFlowBreak(this.comboBox1, true);
+			this.comboBox1.Items.AddRange(new object[] {
+            "auto",
+            "line",
+            "area",
+            "column",
+            "point",
+            "stepLine",
+            "stepArea",
+            "spline",
+            "splineArea",
+            "waterfall"});
 			this.comboBox1.LabelText = "Chart Type";
 			this.comboBox1.Location = new System.Drawing.Point(3, 138);
 			this.comboBox1.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
 			this.comboBox1.Name = "comboBox1";
-			this.comboBox1.Size = new System.Drawing.Size(212, 57);
+			this.comboBox1.Size = new System.Drawing.Size(212, 51);
 			this.comboBox1.TabIndex = 3;
 			// 
 			// igCategoryChart1
@@ -107,7 +118,7 @@
 			this.buttonLoad.AllowedFileTypes = ".json";
 			this.buttonLoad.HideValue = true;
 			this.buttonLoad.ImageSource = "icon-file";
-			this.buttonLoad.Location = new System.Drawing.Point(3, 214);
+			this.buttonLoad.Location = new System.Drawing.Point(3, 208);
 			this.buttonLoad.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
 			this.buttonLoad.Name = "buttonLoad";
 			this.buttonLoad.Size = new System.Drawing.Size(42, 42);
@@ -118,7 +129,7 @@
 			// 
 			this.buttonSave.Display = Wisej.Web.Display.Icon;
 			this.buttonSave.ImageSource = "icon-save";
-			this.buttonSave.Location = new System.Drawing.Point(51, 214);
+			this.buttonSave.Location = new System.Drawing.Point(51, 208);
 			this.buttonSave.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
 			this.buttonSave.Name = "buttonSave";
 			this.buttonSave.Size = new System.Drawing.Size(42, 42);

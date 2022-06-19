@@ -13,6 +13,7 @@ namespace Wisej.Web.Ext.Ignite.Demo.Component
 
 		private void igCategoryChart_Load(object sender, EventArgs e)
 		{
+			this.comboBox1.SelectedIndex = 0;
 
 			//igCategoryChart Configuration
 			this.igCategoryChart1.Options.title = "Population per Country";
@@ -26,7 +27,7 @@ namespace Wisej.Web.Ext.Ignite.Demo.Component
 				new {Year = "2025", China = 1394, India = 1466, UnitedStates = 361},
 			};
 			this.igCategoryChart1.Options.yAxisFormatLabel = "yAxisFormatLabel";
-			this.igCategoryChart1.Options.chartType = "auto";
+			this.igCategoryChart1.Options.chartType = this.comboBox1.SelectedItem;
 		}
 
 		private void buttonUpdate_Click(object sender, EventArgs e)

@@ -20,6 +20,8 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 		{
 			var serviceUrl = ((IWisejHandler)this.kendoFileManager1).GetServiceURL();
 
+			this.kendoFileManager1.Options.breadcrumb = this.checkBoxBreadcrumb.Checked;
+
 			this.kendoFileManager1.Options.toolbar = new
 			{
 				items = new dynamic[]

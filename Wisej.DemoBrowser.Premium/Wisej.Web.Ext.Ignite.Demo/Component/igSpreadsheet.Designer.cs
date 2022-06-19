@@ -195,7 +195,6 @@
 			// igSpreadsheet
 			// 
 			this.Name = "igSpreadsheet";
-			this.Load += new System.EventHandler(this.igSpreadsheet_Load);
 			this.groupBox1.ResumeLayout(false);
 			this.panel.ResumeLayout(false);
 			this.flowLayoutPanel1.ResumeLayout(false);

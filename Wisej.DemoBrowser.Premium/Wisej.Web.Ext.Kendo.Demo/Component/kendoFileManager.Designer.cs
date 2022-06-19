@@ -89,6 +89,7 @@
 			// 
 			this.checkBoxBreadcrumb.Appearance = Wisej.Web.Appearance.Switch;
 			this.checkBoxBreadcrumb.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+			this.checkBoxBreadcrumb.Checked = true;
 			this.flowLayoutPanelProperties.SetFillWeight(this.checkBoxBreadcrumb, 1);
 			this.flowLayoutPanelProperties.SetFlowBreak(this.checkBoxBreadcrumb, true);
 			this.checkBoxBreadcrumb.Location = new System.Drawing.Point(3, 46);

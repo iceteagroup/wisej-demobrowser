@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using Wisej.Web;
 
 namespace Wisej.Web.Ext.Ignite.Demo.Component
@@ -17,14 +19,9 @@ namespace Wisej.Web.Ext.Ignite.Demo.Component
 		{
 			this.igDataChart1.Options.title = "Population per Country";
 			this.igDataChart1.Options.subtitle = "Largest projected populations for 2015";
-			this.igDataChart1.Options.dataSource = new dynamic[]
-			{
-				new {CountryName = "China", Pop1995 = 1216, Pop2005 = 1297, Pop2015 = 1361, Pop2025 = 1394},
-				new {CountryName = "India", Pop1995 = 920, Pop2005 = 1090, Pop2015 = 1251, Pop2025 = 1396},
-				new {CountryName = "United States", Pop1995 = 266, Pop2005 = 295, Pop2015 = 322, Pop2025 = 351},
-				new {CountryName = "Indonesia", Pop1995 = 197, Pop2005 = 229, Pop2015 = 256, Pop2025 = 277},
-				new {CountryName = "Brazil", Pop1995 = 161, Pop2005 = 186, Pop2015 = 204, Pop2025 = 218}
-			};
+			
+			AssignDataSource();
+
 			this.igDataChart1.Options.axes = new dynamic[]
 			{
 				new {name = "NameAxis", type = "categoryX", title = "Country", label = "CountryName"},
@@ -51,6 +48,22 @@ namespace Wisej.Web.Ext.Ignite.Demo.Component
 			};
 
 			this.igDataChart1.Options.series = series;
+		}
+
+		private void AssignDataSource(object item = null)
+		{
+			IEnumerable<object> ds = new object[]
+			{
+				new {CountryName = "China", Pop1995 = 1216, Pop2005 = 1297, Pop2015 = 1361, Pop2025 = 1394},
+				new {CountryName = "India", Pop1995 = 920, Pop2005 = 1090, Pop2015 = 1251, Pop2025 = 1396},
+				new {CountryName = "United States", Pop1995 = 266, Pop2005 = 295, Pop2015 = 322, Pop2025 = 351},
+				new {CountryName = "Indonesia", Pop1995 = 197, Pop2005 = 229, Pop2015 = 256, Pop2025 = 277},
+				new {CountryName = "Brazil", Pop1995 = 161, Pop2005 = 186, Pop2015 = 204, Pop2025 = 218}
+			};
+
+			if (item != null) ds = ds.Append<object>(item);
+
+			this.igDataChart1.Options.dataSource = ds;
 		}
 
 		private void buttonUpdate_Click(object sender, EventArgs e)
@@ -87,14 +100,18 @@ namespace Wisej.Web.Ext.Ignite.Demo.Component
 		private void buttonAdd_Click(object sender, EventArgs e)
 		{
 			var rand = new Random();
-			this.igDataChart1.Instance.addItem(new
+
+			var item = new
 			{
 				CountryName = this.textBoxCountry.Text,
 				Pop1995 = rand.Next(300, 1000),
 				Pop2005 = rand.Next(300, 1000),
 				Pop2015 = rand.Next(300, 1000),
 				Pop2025 = rand.Next(300, 1000)
-			});
+			};
+
+			AssignDataChartSeries();
+			AssignDataSource(item);
 
 			this.igDataChart1.Update();
 		}

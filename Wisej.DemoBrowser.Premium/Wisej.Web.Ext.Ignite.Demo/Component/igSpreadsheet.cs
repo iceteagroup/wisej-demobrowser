@@ -14,12 +14,6 @@ namespace Wisej.Web.Ext.Ignite.Demo.Component
 			this.igSpreadsheet1.Instance.onActiveCellChanged += new WidgetEventHandler(igSpreadsheet1_WidgetEvent);
 		}
 
-		private void igSpreadsheet_Load(object sender, EventArgs e)
-		{
-			this.igSpreadsheet1.Options.zoomLevel = this.numericUpDown1.Value;
-			this.igSpreadsheet1.Update();
-		}
-
 		private void buttonLoad_Uploaded(object sender, UploadedEventArgs e)
 		{
 			// Save a temp file
@@ -66,7 +60,8 @@ namespace Wisej.Web.Ext.Ignite.Demo.Component
 
 				case "activeCellChanged":
 					this.textBox1.Text = e.Data.newValue;
-				
+					this.igSpreadsheet1.Options.zoomLevel = this.numericUpDown1.Value;
+					this.igSpreadsheet1.Update();
 					break;
 
 				default:

@@ -30,7 +30,7 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 		{
 			this.kendoRating1.Instance.value(this.numericUpDown1.Value);
 			this.kendoRating1.Options.min = this.numericUpDown2.Value;
-			this.kendoRating1.Options.max = this.numericUpDown3.Value > 0 ? this.numericUpDown3.Value - 1: this.numericUpDown3.Value;
+			this.kendoRating1.Options.max = this.numericUpDown3.Value > 0 ? this.numericUpDown3.Value : this.numericUpDown3.Value;
 			this.kendoRating1.Options.precision = this.comboBox1.SelectedItem;
 			this.kendoRating1.Options.selectValueOnFocus = this.checkBox1.Checked;
 
