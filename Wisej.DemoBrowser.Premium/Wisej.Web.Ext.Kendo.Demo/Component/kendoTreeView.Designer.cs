@@ -80,6 +80,7 @@
 			// 
 			this.checkBoxAllowDragAndDrop.Appearance = Wisej.Web.Appearance.Switch;
 			this.checkBoxAllowDragAndDrop.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+			this.checkBoxAllowDragAndDrop.Checked = true;
 			this.flowLayoutPanelProperties.SetFillWeight(this.checkBoxAllowDragAndDrop, 1);
 			this.flowLayoutPanelProperties.SetFlowBreak(this.checkBoxAllowDragAndDrop, true);
 			this.checkBoxAllowDragAndDrop.Location = new System.Drawing.Point(3, 3);
@@ -110,7 +111,7 @@
 			this.textBoxAppend.Location = new System.Drawing.Point(3, 89);
 			this.textBoxAppend.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
 			this.textBoxAppend.Name = "textBoxAppend";
-			this.textBoxAppend.Size = new System.Drawing.Size(212, 57);
+			this.textBoxAppend.Size = new System.Drawing.Size(212, 51);
 			this.textBoxAppend.TabIndex = 3;
 			this.textBoxAppend.Text = "Photos";
 			// 
@@ -118,7 +119,7 @@
 			// 
 			this.flowLayoutPanelProperties.SetFillWeight(this.buttonAppend, 1);
 			this.flowLayoutPanelProperties.SetFlowBreak(this.buttonAppend, true);
-			this.buttonAppend.Location = new System.Drawing.Point(3, 152);
+			this.buttonAppend.Location = new System.Drawing.Point(3, 146);
 			this.buttonAppend.Name = "buttonAppend";
 			this.buttonAppend.Size = new System.Drawing.Size(212, 37);
 			this.buttonAppend.TabIndex = 4;

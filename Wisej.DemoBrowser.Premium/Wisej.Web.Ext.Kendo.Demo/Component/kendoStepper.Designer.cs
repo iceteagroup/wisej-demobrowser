@@ -32,9 +32,11 @@
 			this.kendoStepper1 = new Wisej.Web.Ext.Kendo.kendoStepper();
 			this.buttonAddStep = new Wisej.Web.Button();
 			this.textBoxStepName = new Wisej.Web.TextBox();
+			this.nudIndex = new Wisej.Web.NumericUpDown();
 			this.panel.SuspendLayout();
 			this.groupBox1.SuspendLayout();
 			this.flowLayoutPanelProperties.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.nudIndex)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// panel
@@ -56,6 +58,7 @@
 			// flowLayoutPanelProperties
 			// 
 			this.flowLayoutPanelProperties.Controls.Add(this.textBoxStepName);
+			this.flowLayoutPanelProperties.Controls.Add(this.nudIndex);
 			this.flowLayoutPanelProperties.Controls.Add(this.buttonAddStep);
 			// 
 			// kendoStepper1
@@ -72,7 +75,7 @@
 			// 
 			this.buttonAddStep.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Left) 
             | Wisej.Web.AnchorStyles.Right)));
-			this.buttonAddStep.Location = new System.Drawing.Point(3, 66);
+			this.buttonAddStep.Location = new System.Drawing.Point(3, 117);
 			this.buttonAddStep.Name = "buttonAddStep";
 			this.buttonAddStep.Size = new System.Drawing.Size(212, 38);
 			this.buttonAddStep.TabIndex = 0;
@@ -86,8 +89,19 @@
 			this.textBoxStepName.LabelText = "Step Name";
 			this.textBoxStepName.Location = new System.Drawing.Point(3, 3);
 			this.textBoxStepName.Name = "textBoxStepName";
-			this.textBoxStepName.Size = new System.Drawing.Size(212, 57);
+			this.textBoxStepName.Size = new System.Drawing.Size(212, 51);
 			this.textBoxStepName.TabIndex = 1;
+			this.textBoxStepName.Text = "Begin";
+			// 
+			// nudIndex
+			// 
+			this.flowLayoutPanelProperties.SetFillWeight(this.nudIndex, 1);
+			this.flowLayoutPanelProperties.SetFlowBreak(this.nudIndex, true);
+			this.nudIndex.LabelText = "Index";
+			this.nudIndex.Location = new System.Drawing.Point(3, 60);
+			this.nudIndex.Name = "nudIndex";
+			this.nudIndex.Size = new System.Drawing.Size(212, 51);
+			this.nudIndex.TabIndex = 2;
 			// 
 			// kendoStepper
 			// 
@@ -97,6 +111,7 @@
 			this.groupBox1.ResumeLayout(false);
 			this.flowLayoutPanelProperties.ResumeLayout(false);
 			this.flowLayoutPanelProperties.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.nudIndex)).EndInit();
 			this.ResumeLayout(false);
 
 		}
@@ -106,5 +121,6 @@
 		private Kendo.kendoStepper kendoStepper1;
         private Button buttonAddStep;
         private TextBox textBoxStepName;
-    }
+		private NumericUpDown nudIndex;
+	}
 }

@@ -16,7 +16,7 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 		private void kendoMap_Load(object sender, EventArgs e)
 		{
 			this.kendoMap1.Options.center = new[] { 30.268107, -97.744821 };
-			this.kendoMap1.Options.zoom = 3;
+			this.kendoMap1.Options.zoom = this.numericUpDown3.Value;
 
 			this.kendoMap1.Options.layers = new dynamic[]
 			{

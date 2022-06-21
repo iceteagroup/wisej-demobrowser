@@ -128,6 +128,11 @@
 			this.numericUpDown2.Name = "numericUpDown2";
 			this.numericUpDown2.Size = new System.Drawing.Size(212, 60);
 			this.numericUpDown2.TabIndex = 4;
+			this.numericUpDown2.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
 			// 
 			// numericUpDown3
 			// 

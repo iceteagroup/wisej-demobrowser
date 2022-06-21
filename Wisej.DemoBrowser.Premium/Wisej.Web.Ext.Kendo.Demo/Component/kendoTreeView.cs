@@ -72,7 +72,7 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 					}
 				}
 			};
-			this.kendoTreeView1.Options.dragAndDrop = true;
+			this.kendoTreeView1.Options.dragAndDrop = this.checkBoxAllowDragAndDrop.Checked;
 			this.kendoTreeView1.Options.checkboxes = new
 			{
 				checkChildren = false,

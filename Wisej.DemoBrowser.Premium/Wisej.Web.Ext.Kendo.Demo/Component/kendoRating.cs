@@ -15,6 +15,7 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 		private void kendoRating_Load(object sender, EventArgs e)
 		{
 			this.kendoRating1.Options.value = 3;
+			this.kendoRating1.Options.min = this.numericUpDown2.Value;
 		}
 
 		private void kendoRating1_WidgetEvent(object sender, WidgetEventArgs e)
