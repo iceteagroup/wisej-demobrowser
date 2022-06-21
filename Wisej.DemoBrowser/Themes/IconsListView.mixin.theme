@@ -63,11 +63,6 @@
 						"default": {
 							"styles": {
 								"radius": [ 8, 8, 8, 8 ]
-							},
-							"hovered": {
-								"styles": {
-									"backgroundColor": "transparent"
-								}
 							}
 						},
 						"hovered": {
