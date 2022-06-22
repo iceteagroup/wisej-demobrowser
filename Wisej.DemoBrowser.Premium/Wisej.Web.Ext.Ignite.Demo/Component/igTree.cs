@@ -8,9 +8,9 @@ namespace Wisej.Web.Ext.Ignite.Demo.Component
 		{
 			InitializeComponent();
 
-			igTree1.Instance.onNodeClick += new WidgetEventHandler(igTree_WidgetEvent);
-			igTree1.Instance.onNodeExpanded += new WidgetEventHandler(igTree_WidgetEvent);
-			igTree1.Instance.onNodeCheckstateChanged += new WidgetEventHandler(igTree_WidgetEvent);
+			this.igTree1.Instance.onNodeClick += new WidgetEventHandler(igTree_WidgetEvent);
+			this.igTree1.Instance.onNodeExpanded += new WidgetEventHandler(igTree_WidgetEvent);
+			this.igTree1.Instance.onNodeCheckstateChanged += new WidgetEventHandler(igTree_WidgetEvent);
 		}
 
 		private void igTree_Load(object sender, EventArgs e)
@@ -241,7 +241,7 @@ namespace Wisej.Web.Ext.Ignite.Demo.Component
 				textKey = "Text",
 				valueKey = "Value",
 				imageUrlKey = "ImageUrl",
-				childDataProperty = "Folder",
+				childDataProperty = "Folder"
 			};
 
 			this.igTree1.Options.dragAndDropSettings =
@@ -249,7 +249,6 @@ namespace Wisej.Web.Ext.Ignite.Demo.Component
 				{
 					allowDrop = true,
 					customDropValidation = "()=>customDropValidation"
-
 				};
 
 
@@ -479,16 +478,15 @@ namespace Wisej.Web.Ext.Ignite.Demo.Component
 				textKey = "Text",
 				valueKey = "Value",
 				imageUrlKey = "ImageUrl",
-				childDataProperty = "Folder",
+				childDataProperty = "Folder"
 			};
 
 			this.igTree2.Options.dragAndDropSettings =
-			new
-			{
-				allowDrop = true,
-				customDropValidation = "()=>customDropValidation"
-
-			};
+				new
+				{
+					allowDrop = true,
+					customDropValidation = "()=>customDropValidation"
+				};
 		}
 
 		private void igTree_WidgetEvent(object sender, WidgetEventArgs e)
@@ -502,21 +500,24 @@ namespace Wisej.Web.Ext.Ignite.Demo.Component
 
 		private void buttonUpdate_Click(object sender, EventArgs e)
 		{
-			igTree1.Options.checkboxMode = comboBox1.SelectedItem;
-			igTree1.Options.singleBranchExpand = checkBox1.Checked;
+			this.igTree1.Options.checkboxMode = this.comboBox1.SelectedItem;
+			this.igTree1.Options.singleBranchExpand = this.checkBox1.Checked;
 
-			igTree1.Update();
+			this.igTree1.Update();
 
-			igTree2.Options.checkboxMode = comboBox1.SelectedItem;
-			igTree2.Options.singleBranchExpand = checkBox1.Checked;
+			this.igTree2.Options.checkboxMode = this.comboBox1.SelectedItem;
+			this.igTree2.Options.singleBranchExpand = this.checkBox1.Checked;
 
-			igTree2.Update();
+			this.igTree2.Update();
 		}
 
 		private void buttonClearSelection_Click(object sender, EventArgs e)
 		{
-			igTree1.Instance.clearSelection();
-			igTree2.Instance.clearSelection();
+			this.igTree1.Instance.clearSelection();
+			this.igTree2.Instance.clearSelection();
+
+			this.igTree1.Update();
+			this.igTree2.Update();
 		}
 	}
 }

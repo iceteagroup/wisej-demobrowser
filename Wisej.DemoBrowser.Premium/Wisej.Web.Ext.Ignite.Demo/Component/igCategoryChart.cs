@@ -33,10 +33,10 @@ namespace Wisej.Web.Ext.Ignite.Demo.Component
 		private void buttonUpdate_Click(object sender, EventArgs e)
 		{
 			this.igCategoryChart1.Options.chartType = this.comboBox1.SelectedItem;
-			this.igCategoryChart1.Options.isItemHighlightingEnabled = this.checkBox3.Checked;
-			this.igCategoryChart1.Options.finalValueAnnotationsVisible = this.checkBox2.Checked;
+			//this.igCategoryChart1.Options.isItemHighlightingEnabled = this.checkBox3.Checked;
+			//this.igCategoryChart1.Options.finalValueAnnotationsVisible = this.checkBox2.Checked;
 
-			this.igCategoryChart1.Update();
+			this.igCategoryChart1.Recreate();
 		}
 
 		private void buttonLoad_Uploaded(object sender, UploadedEventArgs e)

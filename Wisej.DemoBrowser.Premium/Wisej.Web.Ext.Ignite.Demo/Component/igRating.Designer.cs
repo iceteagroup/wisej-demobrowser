@@ -84,7 +84,6 @@
 			this.igRating1.Anchor = Wisej.Web.AnchorStyles.None;
 			this.igRating1.Location = new System.Drawing.Point(368, 203);
 			this.igRating1.Name = "igRating1";
-			this.igRating1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"value\":3}")));
 			this.igRating1.Size = new System.Drawing.Size(204, 40);
 			this.igRating1.TabIndex = 1;
 			// 
@@ -106,7 +105,7 @@
             0,
             0});
 			this.numericUpDown1.Name = "numericUpDown1";
-			this.numericUpDown1.Size = new System.Drawing.Size(212, 57);
+			this.numericUpDown1.Size = new System.Drawing.Size(212, 51);
 			this.numericUpDown1.TabIndex = 0;
 			this.numericUpDown1.Value = new decimal(new int[] {
             1,
@@ -154,9 +153,9 @@
             "half",
             "whole"});
 			this.comboBoxPrecision.LabelText = "Precision";
-			this.comboBoxPrecision.Location = new System.Drawing.Point(3, 66);
+			this.comboBoxPrecision.Location = new System.Drawing.Point(3, 60);
 			this.comboBoxPrecision.Name = "comboBoxPrecision";
-			this.comboBoxPrecision.Size = new System.Drawing.Size(212, 57);
+			this.comboBoxPrecision.Size = new System.Drawing.Size(212, 51);
 			this.comboBoxPrecision.TabIndex = 5;
 			// 
 			// igRating

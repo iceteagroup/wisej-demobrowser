@@ -98,10 +98,10 @@
 			this.flowLayoutPanel1.SetFillWeight(this.textBox2, 1);
 			this.flowLayoutPanel1.SetFlowBreak(this.textBox2, true);
 			this.textBox2.LabelText = "Country";
-			this.textBox2.Location = new System.Drawing.Point(3, 231);
+			this.textBox2.Location = new System.Drawing.Point(3, 213);
 			this.textBox2.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
 			this.textBox2.Name = "textBox2";
-			this.textBox2.Size = new System.Drawing.Size(212, 57);
+			this.textBox2.Size = new System.Drawing.Size(212, 51);
 			this.textBox2.TabIndex = 1;
 			this.textBox2.Text = "Disneyland";
 			// 
@@ -109,7 +109,7 @@
 			// 
 			this.flowLayoutPanel1.SetFillWeight(this.button1, 1);
 			this.flowLayoutPanel1.SetFlowBreak(this.button1, true);
-			this.button1.Location = new System.Drawing.Point(3, 307);
+			this.button1.Location = new System.Drawing.Point(3, 283);
 			this.button1.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
 			this.button1.Name = "button1";
 			this.button1.Size = new System.Drawing.Size(212, 35);
@@ -123,7 +123,7 @@
 			this.flowLayoutPanel1.SetFillWeight(this.numericUpDown2, 1);
 			this.flowLayoutPanel1.SetFlowBreak(this.numericUpDown2, true);
 			this.numericUpDown2.LabelText = "Longitude";
-			this.numericUpDown2.Location = new System.Drawing.Point(3, 155);
+			this.numericUpDown2.Location = new System.Drawing.Point(3, 143);
 			this.numericUpDown2.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
 			this.numericUpDown2.Minimum = new decimal(new int[] {
             500,
@@ -131,7 +131,7 @@
             0,
             -2147483648});
 			this.numericUpDown2.Name = "numericUpDown2";
-			this.numericUpDown2.Size = new System.Drawing.Size(212, 57);
+			this.numericUpDown2.Size = new System.Drawing.Size(212, 51);
 			this.numericUpDown2.TabIndex = 3;
 			this.numericUpDown2.Value = new decimal(new int[] {
             117918976,
@@ -145,10 +145,10 @@
 			this.flowLayoutPanel1.SetFillWeight(this.numericUpDown1, 1);
 			this.flowLayoutPanel1.SetFlowBreak(this.numericUpDown1, true);
 			this.numericUpDown1.LabelText = "Latitude";
-			this.numericUpDown1.Location = new System.Drawing.Point(3, 79);
+			this.numericUpDown1.Location = new System.Drawing.Point(3, 73);
 			this.numericUpDown1.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
 			this.numericUpDown1.Name = "numericUpDown1";
-			this.numericUpDown1.Size = new System.Drawing.Size(212, 57);
+			this.numericUpDown1.Size = new System.Drawing.Size(212, 51);
 			this.numericUpDown1.TabIndex = 2;
 			this.numericUpDown1.Value = new decimal(new int[] {
             33812511,
@@ -163,7 +163,7 @@
 			this.textBox1.LabelText = "Name";
 			this.textBox1.Location = new System.Drawing.Point(3, 3);
 			this.textBox1.Name = "textBox1";
-			this.textBox1.Size = new System.Drawing.Size(212, 57);
+			this.textBox1.Size = new System.Drawing.Size(212, 51);
 			this.textBox1.TabIndex = 0;
 			this.textBox1.Text = "Ancient Sanctum";
 			// 

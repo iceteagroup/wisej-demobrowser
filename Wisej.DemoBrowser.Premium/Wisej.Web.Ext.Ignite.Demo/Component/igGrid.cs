@@ -151,17 +151,17 @@ namespace Wisej.Web.Ext.Ignite.Demo.Component
 				},
 				new
 				{
-					ProductID = 24, ProductName = "Guaran� Fant�stica", CategoryName = "Beverages",
+					ProductID = 24, ProductName = "Guaraná Fantástica", CategoryName = "Beverages",
 					ImageUrl = "Images/Grid/1.jpg", InStock = 20
 				},
 				new
 				{
-					ProductID = 25, ProductName = "NuNuCa Nu�-Nougat-Creme", CategoryName = "Confections",
+					ProductID = 25, ProductName = "NNuNuCa Nuß-Nougat-Creme", CategoryName = "Confections",
 					ImageUrl = "Images/Grid/3.jpg", InStock = 76
 				},
 				new
 				{
-					ProductID = 26, ProductName = "Gumb�r Gummib�rchen", CategoryName = "Confections",
+					ProductID = 26, ProductName = "Gumbär Gummibärchen", CategoryName = "Confections",
 					ImageUrl = "Images/Grid/3.jpg", InStock = 15
 				},
 				new
@@ -171,12 +171,12 @@ namespace Wisej.Web.Ext.Ignite.Demo.Component
 				},
 				new
 				{
-					ProductID = 28, ProductName = "R�ssle Sauerkraut", CategoryName = "Produce",
+					ProductID = 28, ProductName = "Rössle Sauerkraut", CategoryName = "Produce",
 					ImageUrl = "Images/Grid/7.jpg", InStock = 26
 				},
 				new
 				{
-					ProductID = 29, ProductName = "Th�ringer Rostbratwurst", CategoryName = "Meat/Poultry",
+					ProductID = 29, ProductName = "Thüringer Rostbratwurst", CategoryName = "Meat/Poultry",
 					ImageUrl = "Images/Grid/6.jpg", InStock = 0
 				},
 				new

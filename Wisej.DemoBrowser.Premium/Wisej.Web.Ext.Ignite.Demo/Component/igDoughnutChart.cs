@@ -55,7 +55,9 @@ namespace Wisej.Web.Ext.Ignite.Demo.Component
 			{ 
 				CountryName = this.textBox1.Text, 
 				Pop1990 = this.numericUpDown1.Value 
-			}, 0);
+			});
+
+			this.igDoughnutChart1.Update();
 		}
 
 		

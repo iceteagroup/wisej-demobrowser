@@ -28,46 +28,46 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-            this.tagDefault = new Wisej.Web.TagTextBox();
-            this.tagCustomRender = new Wisej.Web.TagTextBox();
-            this.tagAutoComplete = new Wisej.Web.TagTextBox();
-            this.flowLayoutPanel1 = new Wisej.Web.FlowLayoutPanel();
-            this.tagAllowDuplicates = new Wisej.Web.TagTextBox();
-            this.chkAutoSize = new Wisej.Web.CheckBox();
-            this.flowLayoutPanel1.SuspendLayout();
-            this.SuspendLayout();
-            // 
-            // tagDefault
-            // 
-            this.tagDefault.Anchor = Wisej.Web.AnchorStyles.None;
-            this.flowLayoutPanel1.SetFillWeight(this.tagDefault, 1);
-            this.tagDefault.LabelText = "Default TagTextBox";
-            this.tagDefault.Location = new System.Drawing.Point(3, 3);
-            this.tagDefault.Name = "tagDefault";
-            this.tagDefault.Size = new System.Drawing.Size(287, 53);
-            this.tagDefault.TabIndex = 0;
-            this.tagDefault.TagRemoved += new Wisej.Web.TagTextBoxEventHandler(this.Tag_Removed);
-            this.tagDefault.TagRejected += new Wisej.Web.TagTextBoxEventHandler(this.Tag_Rejected);
-            this.tagDefault.TagSelected += new Wisej.Web.TagTextBoxEventHandler(this.Tag_Selected);
-            // 
-            // tagCustomRender
-            // 
-            this.tagCustomRender.Anchor = Wisej.Web.AnchorStyles.None;
-            this.flowLayoutPanel1.SetFillWeight(this.tagCustomRender, 1);
-            this.tagCustomRender.LabelText = "Custom Tag Rendering";
-            this.tagCustomRender.Location = new System.Drawing.Point(296, 3);
-            this.tagCustomRender.Name = "tagCustomRender";
-            this.tagCustomRender.Size = new System.Drawing.Size(286, 53);
-            this.tagCustomRender.TabIndex = 1;
-            this.tagCustomRender.TagRemoved += new Wisej.Web.TagTextBoxEventHandler(this.Tag_Removed);
-            this.tagCustomRender.TagRejected += new Wisej.Web.TagTextBoxEventHandler(this.Tag_Rejected);
-            this.tagCustomRender.TagSelected += new Wisej.Web.TagTextBoxEventHandler(this.Tag_Selected);
-            this.tagCustomRender.TagRender += new Wisej.Web.TagTextBoxRenderEventHandler(this.tagTextBox2_TagRender);
-            // 
-            // tagAutoComplete
-            // 
-            this.tagAutoComplete.Anchor = Wisej.Web.AnchorStyles.None;
-            this.tagAutoComplete.AutoCompleteList = new string[] {
+			this.tagDefault = new Wisej.Web.TagTextBox();
+			this.tagCustomRender = new Wisej.Web.TagTextBox();
+			this.tagAutoComplete = new Wisej.Web.TagTextBox();
+			this.flowLayoutPanel1 = new Wisej.Web.FlowLayoutPanel();
+			this.tagAllowDuplicates = new Wisej.Web.TagTextBox();
+			this.chkAutoSize = new Wisej.Web.CheckBox();
+			this.flowLayoutPanel1.SuspendLayout();
+			this.SuspendLayout();
+			// 
+			// tagDefault
+			// 
+			this.tagDefault.Anchor = Wisej.Web.AnchorStyles.None;
+			this.flowLayoutPanel1.SetFillWeight(this.tagDefault, 1);
+			this.tagDefault.LabelText = "Default TagTextBox";
+			this.tagDefault.Location = new System.Drawing.Point(3, 3);
+			this.tagDefault.Name = "tagDefault";
+			this.tagDefault.Size = new System.Drawing.Size(287, 42);
+			this.tagDefault.TabIndex = 0;
+			this.tagDefault.TagRemoved += new Wisej.Web.TagTextBoxEventHandler(this.Tag_Removed);
+			this.tagDefault.TagRejected += new Wisej.Web.TagTextBoxEventHandler(this.Tag_Rejected);
+			this.tagDefault.TagSelected += new Wisej.Web.TagTextBoxEventHandler(this.Tag_Selected);
+			// 
+			// tagCustomRender
+			// 
+			this.tagCustomRender.Anchor = Wisej.Web.AnchorStyles.None;
+			this.flowLayoutPanel1.SetFillWeight(this.tagCustomRender, 1);
+			this.tagCustomRender.LabelText = "Custom Tag Rendering";
+			this.tagCustomRender.Location = new System.Drawing.Point(296, 3);
+			this.tagCustomRender.Name = "tagCustomRender";
+			this.tagCustomRender.Size = new System.Drawing.Size(286, 42);
+			this.tagCustomRender.TabIndex = 1;
+			this.tagCustomRender.TagRemoved += new Wisej.Web.TagTextBoxEventHandler(this.Tag_Removed);
+			this.tagCustomRender.TagRejected += new Wisej.Web.TagTextBoxEventHandler(this.Tag_Rejected);
+			this.tagCustomRender.TagSelected += new Wisej.Web.TagTextBoxEventHandler(this.Tag_Selected);
+			this.tagCustomRender.TagRender += new Wisej.Web.TagTextBoxRenderEventHandler(this.tagTextBox2_TagRender);
+			// 
+			// tagAutoComplete
+			// 
+			this.tagAutoComplete.Anchor = Wisej.Web.AnchorStyles.None;
+			this.tagAutoComplete.AutoCompleteList = new string[] {
         "Alabama",
         "Alaska",
         "American Samoa",
@@ -125,68 +125,68 @@
         "West Virginia",
         "Wisconsin",
         "Wyoming"};
-            this.flowLayoutPanel1.SetFillWeight(this.tagAutoComplete, 1);
-            this.tagAutoComplete.LabelText = "Auto Complete";
-            this.tagAutoComplete.Location = new System.Drawing.Point(588, 3);
-            this.tagAutoComplete.Name = "tagAutoComplete";
-            this.tagAutoComplete.Size = new System.Drawing.Size(286, 53);
-            this.tagAutoComplete.TabIndex = 2;
-            this.tagAutoComplete.Text = "Alabama,\r\nAlaska,\r\nAmerican Samoa,\r\nArizona,";
-            this.tagAutoComplete.TagAdded += new Wisej.Web.TagTextBoxEventHandler(this.tagAutoComplete_TagAdded);
-            this.tagAutoComplete.TagRemoved += new Wisej.Web.TagTextBoxEventHandler(this.Tag_Removed);
-            this.tagAutoComplete.TagRejected += new Wisej.Web.TagTextBoxEventHandler(this.Tag_Rejected);
-            this.tagAutoComplete.TagSelected += new Wisej.Web.TagTextBoxEventHandler(this.Tag_Selected);
-            // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Left | Wisej.Web.AnchorStyles.Right)));
-            this.flowLayoutPanel1.AutoSize = true;
-            this.flowLayoutPanel1.Controls.Add(this.tagDefault);
-            this.flowLayoutPanel1.Controls.Add(this.tagCustomRender);
-            this.flowLayoutPanel1.Controls.Add(this.tagAutoComplete);
-            this.flowLayoutPanel1.Controls.Add(this.tagAllowDuplicates);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(202, 206);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(1169, 63);
-            this.flowLayoutPanel1.TabIndex = 3;
-            // 
-            // tagAllowDuplicates
-            // 
-            this.tagAllowDuplicates.AllowDuplicateTags = true;
-            this.tagAllowDuplicates.Anchor = Wisej.Web.AnchorStyles.None;
-            this.flowLayoutPanel1.SetFillWeight(this.tagAllowDuplicates, 1);
-            this.tagAllowDuplicates.LabelText = "AllowDuplicateTags";
-            this.tagAllowDuplicates.Location = new System.Drawing.Point(880, 3);
-            this.tagAllowDuplicates.Name = "tagAllowDuplicates";
-            this.tagAllowDuplicates.Size = new System.Drawing.Size(286, 53);
-            this.tagAllowDuplicates.TabIndex = 3;
-            this.tagAllowDuplicates.Text = "AA,\r\nAA,\r\nAL,\r\nAL,\r\nTX,\r\nTX,";
-            this.tagAllowDuplicates.TagRemoved += new Wisej.Web.TagTextBoxEventHandler(this.Tag_Rejected);
-            this.tagAllowDuplicates.TagSelected += new Wisej.Web.TagTextBoxEventHandler(this.Tag_Selected);
-            // 
-            // chkAutoSize
-            // 
-            this.chkAutoSize.Anchor = Wisej.Web.AnchorStyles.Left;
-            this.chkAutoSize.Checked = true;
-            this.chkAutoSize.Location = new System.Drawing.Point(44, 226);
-            this.chkAutoSize.Name = "chkAutoSize";
-            this.chkAutoSize.Size = new System.Drawing.Size(123, 23);
-            this.chkAutoSize.TabIndex = 4;
-            this.chkAutoSize.Text = "Enable AutoSize";
-            this.chkAutoSize.CheckedChanged += new System.EventHandler(this.chkAutoSize_CheckedChanged);
-            // 
-            // Features
-            // 
-            this.AutoScroll = true;
-            this.Controls.Add(this.chkAutoSize);
-            this.Controls.Add(this.flowLayoutPanel1);
-            this.MinimumSize = new System.Drawing.Size(903, 315);
-            this.Name = "Features";
-            this.Load += new System.EventHandler(this.Features_Load);
-            this.flowLayoutPanel1.ResumeLayout(false);
-            this.flowLayoutPanel1.PerformLayout();
-            this.ResumeLayout(false);
-            this.PerformLayout();
+			this.flowLayoutPanel1.SetFillWeight(this.tagAutoComplete, 1);
+			this.tagAutoComplete.LabelText = "Auto Complete";
+			this.tagAutoComplete.Location = new System.Drawing.Point(588, 3);
+			this.tagAutoComplete.Name = "tagAutoComplete";
+			this.tagAutoComplete.Size = new System.Drawing.Size(286, 42);
+			this.tagAutoComplete.TabIndex = 2;
+			this.tagAutoComplete.Text = "Alabama,\r\nAlaska,\r\nAmerican Samoa,\r\nArizona,";
+			this.tagAutoComplete.TagAdded += new Wisej.Web.TagTextBoxEventHandler(this.tagAutoComplete_TagAdded);
+			this.tagAutoComplete.TagRemoved += new Wisej.Web.TagTextBoxEventHandler(this.Tag_Removed);
+			this.tagAutoComplete.TagRejected += new Wisej.Web.TagTextBoxEventHandler(this.Tag_Rejected);
+			this.tagAutoComplete.TagSelected += new Wisej.Web.TagTextBoxEventHandler(this.Tag_Selected);
+			// 
+			// flowLayoutPanel1
+			// 
+			this.flowLayoutPanel1.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Left | Wisej.Web.AnchorStyles.Right)));
+			this.flowLayoutPanel1.AutoSize = true;
+			this.flowLayoutPanel1.Controls.Add(this.tagDefault);
+			this.flowLayoutPanel1.Controls.Add(this.tagCustomRender);
+			this.flowLayoutPanel1.Controls.Add(this.tagAutoComplete);
+			this.flowLayoutPanel1.Controls.Add(this.tagAllowDuplicates);
+			this.flowLayoutPanel1.Location = new System.Drawing.Point(202, 178);
+			this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+			this.flowLayoutPanel1.Size = new System.Drawing.Size(1169, 63);
+			this.flowLayoutPanel1.TabIndex = 3;
+			// 
+			// tagAllowDuplicates
+			// 
+			this.tagAllowDuplicates.AllowDuplicateTags = true;
+			this.tagAllowDuplicates.Anchor = Wisej.Web.AnchorStyles.None;
+			this.flowLayoutPanel1.SetFillWeight(this.tagAllowDuplicates, 1);
+			this.tagAllowDuplicates.LabelText = "AllowDuplicateTags";
+			this.tagAllowDuplicates.Location = new System.Drawing.Point(880, 3);
+			this.tagAllowDuplicates.Name = "tagAllowDuplicates";
+			this.tagAllowDuplicates.Size = new System.Drawing.Size(286, 42);
+			this.tagAllowDuplicates.TabIndex = 3;
+			this.tagAllowDuplicates.Text = "AA,\r\nAA,\r\nAL,\r\nAL,\r\nTX,\r\nTX,";
+			this.tagAllowDuplicates.TagRemoved += new Wisej.Web.TagTextBoxEventHandler(this.Tag_Rejected);
+			this.tagAllowDuplicates.TagSelected += new Wisej.Web.TagTextBoxEventHandler(this.Tag_Selected);
+			// 
+			// chkAutoSize
+			// 
+			this.chkAutoSize.Anchor = Wisej.Web.AnchorStyles.Left;
+			this.chkAutoSize.Checked = true;
+			this.chkAutoSize.Location = new System.Drawing.Point(44, 198);
+			this.chkAutoSize.Name = "chkAutoSize";
+			this.chkAutoSize.Size = new System.Drawing.Size(129, 22);
+			this.chkAutoSize.TabIndex = 4;
+			this.chkAutoSize.Text = "Enable AutoSize";
+			this.chkAutoSize.CheckedChanged += new System.EventHandler(this.chkAutoSize_CheckedChanged);
+			// 
+			// Features
+			// 
+			this.AutoScroll = true;
+			this.Controls.Add(this.chkAutoSize);
+			this.Controls.Add(this.flowLayoutPanel1);
+			this.MinimumSize = new System.Drawing.Size(903, 315);
+			this.Name = "Features";
+			this.Load += new System.EventHandler(this.Features_Load);
+			this.flowLayoutPanel1.ResumeLayout(false);
+			this.flowLayoutPanel1.PerformLayout();
+			this.ResumeLayout(false);
+			this.PerformLayout();
 
 		}
 

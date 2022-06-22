@@ -15,7 +15,7 @@ namespace Wisej.Web.Ext.Ignite.Demo.Component
 		private void igRating_Load(object sender, EventArgs e)
 		{
 			this.comboBoxPrecision.SelectedIndex = 0;
-			this.igRating1.Options.value = 3;
+			this.igRating1.Instance.value(this.numericUpDown1.Value);
 		}
 
 		private void igRating_WidgetEvent(object sender, WidgetEventArgs e)
@@ -29,10 +29,10 @@ namespace Wisej.Web.Ext.Ignite.Demo.Component
 
         private void buttonUpdate_Click(object sender, EventArgs e)
 		{
-			this.igRating1.Instance.value(this.numericUpDown1.Value);
+			this.igRating1.Options.value = this.numericUpDown1.Value;
 
 			this.igRating1.Options.precision = this.comboBoxPrecision.SelectedItem.ToString();
-			this.igRating1.Update();
+			this.igRating1.Recreate();
 		}
 
       
