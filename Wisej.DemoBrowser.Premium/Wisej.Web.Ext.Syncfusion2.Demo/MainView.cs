@@ -24,8 +24,6 @@ namespace Wisej.Web.Ext.Syncfusion2.Demo
 
 			if (hash != "")
 				this.listBoxDemos.SelectedIndex = this.listBoxDemos.FindString(hash);
-
-			ej2Base.Culture = new CultureInfo("en-US");
 		}
 
 		private void Application_HashChanged(object sender, HashChangedEventArgs e)

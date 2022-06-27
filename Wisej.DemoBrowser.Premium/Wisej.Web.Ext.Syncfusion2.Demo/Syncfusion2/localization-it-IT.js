@@ -11,6 +11,8 @@ for (var i = 0; i < files.length; i++) {
 	ajax.send();
 }
 
+ej.base.setCurrencyCode("EUR");
+
 // load culture text.
 ej.base.L10n.load({
     "it": {

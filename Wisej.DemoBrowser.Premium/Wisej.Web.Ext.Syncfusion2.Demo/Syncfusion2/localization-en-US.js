@@ -8,3 +8,5 @@ for (var i = 0; i < files.length; i++) {
 	};
 	ajax.send();
 }
+
+ej.base.setCurrencyCode("USD");

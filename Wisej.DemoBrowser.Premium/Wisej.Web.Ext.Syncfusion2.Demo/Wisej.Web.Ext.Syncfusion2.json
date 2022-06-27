@@ -20,7 +20,7 @@
 				"theme.css": "%root%/%theme%.css",
 
 				// also load local localization packages.
-				"localization.js": "Syncfusion2/localization-%locale%.js"
+				"localization.js": "Syncfusion2/localization-%culture%.js"
 			}
 		}
 	}

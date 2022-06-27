@@ -511,14 +511,14 @@
             this.comboBoxLanguage.DropDownStyle = Wisej.Web.ComboBoxStyle.DropDownList;
             this.comboBoxLanguage.Focusable = false;
             this.comboBoxLanguage.Items.AddRange(new object[] {
-            "en",
-            "de",
-            "it"});
+            "en-US",
+            "de-DE",
+            "it-IT"});
             this.comboBoxLanguage.Location = new System.Drawing.Point(978, 75);
             this.comboBoxLanguage.Name = "comboBoxLanguage";
             this.comboBoxLanguage.Size = new System.Drawing.Size(150, 40);
             this.comboBoxLanguage.TabIndex = 21;
-            this.comboBoxLanguage.Text = "en";
+            this.comboBoxLanguage.Text = "en-US";
             this.comboBoxLanguage.SelectedIndexChanged += new System.EventHandler(this.comboBoxLanguage_SelectedIndexChanged);
             // 
             // lineSeparator
