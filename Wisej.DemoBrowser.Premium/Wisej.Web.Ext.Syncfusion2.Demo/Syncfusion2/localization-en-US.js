@@ -1,12 +1,17 @@
-﻿var files = ["ca-gregorian.json", "numbers.json", "timeZoneNames.json"]
+﻿// load numbers, timezone, calendar, etc.
+var culture = "en-US";
+var currency = "USD";
+var base = "./Syncfusion2/cldr-data/" + culture + "/";
 
-for (var i = 0; i < files.length; i++) {
-	var val, ajax;
-	var ajax = new ej.base.Ajax('./Syncfusion2/cldr-data/en/' + files[i], 'GET', true);
-	ajax.onSuccess = function (value) {
-		ej.base.loadCldr(JSON.parse(value));
-	};
-	ajax.send();
-}
+$.when($.ajax({ url: base + "numbers.json" }),
+	$.ajax({ url: base + "ca-gregorian.json" }),
+	$.ajax({ url: base + "timeZoneNames.json" }))
+	.done(function (numbers, calendar, timeZone) {
 
-ej.base.setCurrencyCode("USD");
+		ej.base.loadCldr(numbers[0]);
+		ej.base.loadCldr(calendar[0]);
+		ej.base.loadCldr(timeZone[0]);
+
+		ej.base.setCulture(culture);
+		ej.base.setCurrencyCode(currency);
+	});

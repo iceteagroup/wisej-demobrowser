@@ -94,4 +94,8 @@
 	    <HintPath>Libs\Syncfusion.XlsIO.Base.dll</HintPath>
 	  </Reference>
 	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="Syncfusion2\cldr-data\" />
+	</ItemGroup>
 </Project>
