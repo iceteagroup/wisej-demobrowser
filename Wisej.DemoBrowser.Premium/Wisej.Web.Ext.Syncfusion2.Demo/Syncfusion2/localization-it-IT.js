@@ -15,7 +15,7 @@ ej.base.setCurrencyCode("EUR");
 
 // load culture text.
 ej.base.L10n.load({
-    "it": {
+    "it-IT": {
         "grid": {
             "EmptyRecord": "nessun dato da visualizzare",
             "True": "vero",

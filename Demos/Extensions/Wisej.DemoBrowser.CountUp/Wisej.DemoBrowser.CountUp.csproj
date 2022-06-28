@@ -14,8 +14,8 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Wisej-3" Version="3.*-*" />
-		<PackageReference Include="Wisej-3-CountUp" Version="3.*-*" />
+		<PackageReference Include="Wisej-3" Version="3.0.*" />
+		<PackageReference Include="Wisej-3-CountUp" Version="3.0.*" />
 		<ProjectReference Include="..\..\..\Wisej.DemoBrowser.Common\Wisej.DemoBrowser.Common.csproj" />
 	</ItemGroup>
 
