@@ -117,7 +117,7 @@ namespace Wisej.Web.Ext.Syncfusion2.Demo
 			Application.Navigate("/");
 		}
 
-		private void labelNaivgationCategory_Click(object sender, EventArgs e)
+		private void labelNaivgationPremium_Click(object sender, EventArgs e)
 		{
 			Application.Navigate("/#Premium/Overview/Features");
 		}

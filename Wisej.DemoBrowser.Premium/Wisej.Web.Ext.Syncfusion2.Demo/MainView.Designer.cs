@@ -50,7 +50,7 @@
             this.flowLayoutPanel1 = new Wisej.Web.FlowLayoutPanel();
             this.labelNavigationWisejDemos = new Wisej.Web.Label();
             this.labelNavigationSeparator1 = new Wisej.Web.Label();
-            this.labelNaivgationCategory = new Wisej.Web.Label();
+            this.labelNaivgationPremium = new Wisej.Web.Label();
             this.labelNavigationSeparator2 = new Wisej.Web.Label();
             this.labelNavigationDemo = new Wisej.Web.Label();
             this.labelTitle = new Wisej.Web.Label();
@@ -360,7 +360,7 @@
             // 
             this.flowLayoutPanel1.Controls.Add(this.labelNavigationWisejDemos);
             this.flowLayoutPanel1.Controls.Add(this.labelNavigationSeparator1);
-            this.flowLayoutPanel1.Controls.Add(this.labelNaivgationCategory);
+            this.flowLayoutPanel1.Controls.Add(this.labelNaivgationPremium);
             this.flowLayoutPanel1.Controls.Add(this.labelNavigationSeparator2);
             this.flowLayoutPanel1.Controls.Add(this.labelNavigationDemo);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(58, 12);
@@ -392,18 +392,18 @@
             this.labelNavigationSeparator1.TabIndex = 6;
             this.labelNavigationSeparator1.Text = ">";
             // 
-            // labelNaivgationCategory
+            // labelNaivgationPremium
             // 
-            this.labelNaivgationCategory.AutoSize = true;
-            this.labelNaivgationCategory.Cursor = Wisej.Web.Cursors.Hand;
-            this.labelNaivgationCategory.Font = new System.Drawing.Font("@default", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.labelNaivgationCategory.ForeColor = System.Drawing.Color.FromName("@demoPanelText-demo");
-            this.labelNaivgationCategory.Location = new System.Drawing.Point(130, 3);
-            this.labelNaivgationCategory.Name = "labelNaivgationCategory";
-            this.labelNaivgationCategory.Size = new System.Drawing.Size(73, 22);
-            this.labelNaivgationCategory.TabIndex = 7;
-            this.labelNaivgationCategory.Text = "Premium";
-            this.labelNaivgationCategory.Click += new System.EventHandler(this.labelNaivgationCategory_Click);
+            this.labelNaivgationPremium.AutoSize = true;
+            this.labelNaivgationPremium.Cursor = Wisej.Web.Cursors.Hand;
+            this.labelNaivgationPremium.Font = new System.Drawing.Font("@default", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.labelNaivgationPremium.ForeColor = System.Drawing.Color.FromName("@demoPanelText-demo");
+            this.labelNaivgationPremium.Location = new System.Drawing.Point(130, 3);
+            this.labelNaivgationPremium.Name = "labelNaivgationPremium";
+            this.labelNaivgationPremium.Size = new System.Drawing.Size(73, 22);
+            this.labelNaivgationPremium.TabIndex = 7;
+            this.labelNaivgationPremium.Text = "Premium";
+            this.labelNaivgationPremium.Click += new System.EventHandler(this.labelNaivgationPremium_Click);
             // 
             // labelNavigationSeparator2
             // 
@@ -535,7 +535,7 @@
         public FlowLayoutPanel flowLayoutPanel1;
         private Label labelNavigationWisejDemos;
         private Label labelNavigationSeparator1;
-        public Label labelNaivgationCategory;
+        public Label labelNaivgationPremium;
         private Label labelNavigationSeparator2;
         public Label labelNavigationDemo;
         public Label labelTitle;

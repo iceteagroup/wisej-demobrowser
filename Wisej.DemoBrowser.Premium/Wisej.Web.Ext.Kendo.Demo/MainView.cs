@@ -110,17 +110,12 @@ namespace Wisej.Web.Ext.Kendo.Demo
 
 		private void labelNavigationWisejDemos_Click(object sender, EventArgs e)
 		{
-			Application.Navigate("https://demo.wisej.com/DemoBrowser");
-		}
-
-		private void labelNaivgationCategory_Click(object sender, EventArgs e)
-		{
-			Application.Navigate("https://demo.wisej.com/DemoBrowser/#Extensions/Premium");
+			Application.Navigate("/");
 		}
 
 		private void labelNavigationPremium_Click(object sender, EventArgs e)
 		{
-			Application.Navigate("https://demo.wisej.com/DemoBrowser/#Extensions/Premium");
+			Application.Navigate("/#Premium/Overview/Features");
 		}
 	}
 }
