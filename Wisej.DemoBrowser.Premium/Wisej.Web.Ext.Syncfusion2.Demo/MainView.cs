@@ -114,17 +114,12 @@ namespace Wisej.Web.Ext.Syncfusion2.Demo
 
 		private void labelNavigationWisejDemos_Click(object sender, EventArgs e)
 		{
-			Application.Navigate("https://demo.wisej.com/DemoBrowser");
+			Application.Navigate("/");
 		}
 
 		private void labelNaivgationCategory_Click(object sender, EventArgs e)
 		{
-			Application.Navigate("https://demo.wisej.com/DemoBrowser/#Extensions/Premium");
-		}
-
-		private void labelNavigationPremium_Click(object sender, EventArgs e)
-		{
-			Application.Navigate("https://demo.wisej.com/DemoBrowser/#Extensions/Premium");
+			Application.Navigate("/#Premium/Overview/Features");
 		}
 	}
 }

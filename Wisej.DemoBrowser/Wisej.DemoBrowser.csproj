@@ -157,7 +157,6 @@
 	  <ProjectReference Include="..\Demos\Extensions\Wisej.DemoBrowser.Notification\Wisej.DemoBrowser.Notification.csproj" />
 	  <ProjectReference Include="..\Demos\Extensions\Wisej.DemoBrowser.OfficeViewer\Wisej.DemoBrowser.OfficeViewer.csproj" />
 	  <ProjectReference Include="..\Demos\Extensions\Wisej.DemoBrowser.Pannellum\Wisej.DemoBrowser.Pannellum.csproj" />
-	  <ProjectReference Include="..\Demos\Extensions\Wisej.DemoBrowser.Premium\Wisej.DemoBrowser.Premium.csproj" />
 	  <ProjectReference Include="..\Demos\Extensions\Wisej.DemoBrowser.ProgressCircle\Wisej.DemoBrowser.ProgressCircle.csproj" />
 	  <ProjectReference Include="..\Demos\Extensions\Wisej.DemoBrowser.RibbonBar\Wisej.DemoBrowser.RibbonBar.csproj" />
 	  <ProjectReference Include="..\Demos\Extensions\Wisej.DemoBrowser.Speech\Wisej.DemoBrowser.Speech.csproj" />
@@ -187,6 +186,7 @@
 	  <ProjectReference Include="..\Demos\Notifications\Wisej.DemoBrowser.MessageBox\Wisej.DemoBrowser.MessageBox.csproj" />
 	  <ProjectReference Include="..\Demos\Notifications\Wisej.DemoBrowser.ProgressBar\Wisej.DemoBrowser.ProgressBar.csproj" />
 	  <ProjectReference Include="..\Demos\Notifications\Wisej.DemoBrowser.Toast\Wisej.DemoBrowser.Toast.csproj" />
+	  <ProjectReference Include="..\Demos\Premium\Wisej.DemoBrowser.Premium\Wisej.DemoBrowser.Premium.csproj" />
 	  <ProjectReference Include="..\Demos\ToolsAndMenus\Wisej.DemoBrowser.ContextMenu\Wisej.DemoBrowser.ContextMenu.csproj" />
 	  <ProjectReference Include="..\Demos\ToolsAndMenus\Wisej.DemoBrowser.EmbeddedTools\Wisej.DemoBrowser.EmbeddedTools.csproj" />
 	  <ProjectReference Include="..\Demos\ToolsAndMenus\Wisej.DemoBrowser.MenuBar\Wisej.DemoBrowser.MenuBar.csproj" />

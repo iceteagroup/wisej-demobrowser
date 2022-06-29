@@ -149,8 +149,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wisej.DemoBrowser.iFramePan
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wisej.DemoBrowser.UserControl", "Demos\Containers\Wisej.DemoBrowser.UserControl\Wisej.DemoBrowser.UserControl.csproj", "{C0F8D897-46CB-4421-B13D-4D48D2AE3F55}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wisej.DemoBrowser.Premium", "Demos\Extensions\Wisej.DemoBrowser.Premium\Wisej.DemoBrowser.Premium.csproj", "{05BA42B0-5D11-4591-80E6-1E8A1A75EF7E}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wisej.DemoBrowser.Geolocation", "Demos\Extensions\Wisej.DemoBrowser.Geolocation\Wisej.DemoBrowser.Geolocation.csproj", "{2549B8CE-90F5-4136-A5C6-704163FF8752}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wisej.DemoBrowser.TinyMCE", "Demos\Extensions\Wisej.DemoBrowser.TinyMCE\Wisej.DemoBrowser.TinyMCE.csproj", "{183D559D-71DB-4D11-98CF-9D520CF5CEB5}"
@@ -217,13 +215,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wisej.DemoBrowser.Accordion
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wisej.DemoBrowser.TagTextBox", "Demos\Editors\Wisej.DemoBrowser.TagTextBox\Wisej.DemoBrowser.TagTextBox.csproj", "{58DF8747-8990-4DE4-8C6B-5CF8BABDB3C8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wisej.DemoBrowser.FeatherIcons", "Demos\IconPacks\Wisej.DemoBrowser.FeatherIcons\Wisej.DemoBrowser.FeatherIcons.csproj", "{62C86FDF-EDB9-4D3D-8A11-DE60AC5659BD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wisej.DemoBrowser.FeatherIcons", "Demos\IconPacks\Wisej.DemoBrowser.FeatherIcons\Wisej.DemoBrowser.FeatherIcons.csproj", "{62C86FDF-EDB9-4D3D-8A11-DE60AC5659BD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wisej.DemoBrowser.TablerIcons", "Demos\IconPacks\Wisej.DemoBrowser.TablerIcons\Wisej.DemoBrowser.TablerIcons.csproj", "{44C3CAE1-8FAA-48C2-BE46-7F4A822CF2EC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wisej.DemoBrowser.TablerIcons", "Demos\IconPacks\Wisej.DemoBrowser.TablerIcons\Wisej.DemoBrowser.TablerIcons.csproj", "{44C3CAE1-8FAA-48C2-BE46-7F4A822CF2EC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wisej.DemoBrowser.IonicIcons", "Demos\IconPacks\Wisej.DemoBrowser.IonicIcons\Wisej.DemoBrowser.IonicIcons.csproj", "{E648EE32-24C0-4426-9AFB-7B12AC887DE4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wisej.DemoBrowser.IonicIcons", "Demos\IconPacks\Wisej.DemoBrowser.IonicIcons\Wisej.DemoBrowser.IonicIcons.csproj", "{E648EE32-24C0-4426-9AFB-7B12AC887DE4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wisej.DemoBrowser.CssGgIcons", "Demos\IconPacks\Wisej.DemoBrowser.CssGgIcons\Wisej.DemoBrowser.CssGgIcons.csproj", "{343733B8-6380-46B4-810F-CF0A676EB3B2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wisej.DemoBrowser.CssGgIcons", "Demos\IconPacks\Wisej.DemoBrowser.CssGgIcons\Wisej.DemoBrowser.CssGgIcons.csproj", "{343733B8-6380-46B4-810F-CF0A676EB3B2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Premium", "Premium", "{2EAEA3F1-D794-40A5-97D7-3A882A5C80C8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wisej.DemoBrowser.Premium", "Demos\Premium\Wisej.DemoBrowser.Premium\Wisej.DemoBrowser.Premium.csproj", "{64B23789-1603-4398-AB06-85E0126F5A59}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -459,10 +461,6 @@ Global
 		{C0F8D897-46CB-4421-B13D-4D48D2AE3F55}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C0F8D897-46CB-4421-B13D-4D48D2AE3F55}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C0F8D897-46CB-4421-B13D-4D48D2AE3F55}.Release|Any CPU.Build.0 = Release|Any CPU
-		{05BA42B0-5D11-4591-80E6-1E8A1A75EF7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{05BA42B0-5D11-4591-80E6-1E8A1A75EF7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{05BA42B0-5D11-4591-80E6-1E8A1A75EF7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{05BA42B0-5D11-4591-80E6-1E8A1A75EF7E}.Release|Any CPU.Build.0 = Release|Any CPU
 		{2549B8CE-90F5-4136-A5C6-704163FF8752}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{2549B8CE-90F5-4136-A5C6-704163FF8752}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2549B8CE-90F5-4136-A5C6-704163FF8752}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -611,6 +609,10 @@ Global
 		{343733B8-6380-46B4-810F-CF0A676EB3B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{343733B8-6380-46B4-810F-CF0A676EB3B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{343733B8-6380-46B4-810F-CF0A676EB3B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64B23789-1603-4398-AB06-85E0126F5A59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64B23789-1603-4398-AB06-85E0126F5A59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64B23789-1603-4398-AB06-85E0126F5A59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64B23789-1603-4398-AB06-85E0126F5A59}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -682,7 +684,6 @@ Global
 		{5D683938-D848-4110-AE46-E4898F5325DE} = {DAB009C9-2764-4E1D-B181-911F1C83EB49}
 		{90199012-87D9-4550-B9DB-8FD443C6033D} = {9194B6DA-D1FB-4ABC-8983-A1FECDD6AE90}
 		{C0F8D897-46CB-4421-B13D-4D48D2AE3F55} = {9194B6DA-D1FB-4ABC-8983-A1FECDD6AE90}
-		{05BA42B0-5D11-4591-80E6-1E8A1A75EF7E} = {C51A27C9-479B-478F-8158-62189CA32E59}
 		{2549B8CE-90F5-4136-A5C6-704163FF8752} = {C51A27C9-479B-478F-8158-62189CA32E59}
 		{183D559D-71DB-4D11-98CF-9D520CF5CEB5} = {C51A27C9-479B-478F-8158-62189CA32E59}
 		{CF5C9CA6-8AE4-4971-9E73-63557C8D3016} = {C51A27C9-479B-478F-8158-62189CA32E59}
@@ -720,6 +721,8 @@ Global
 		{44C3CAE1-8FAA-48C2-BE46-7F4A822CF2EC} = {4E707CA1-F43B-4DA6-9260-72778A573939}
 		{E648EE32-24C0-4426-9AFB-7B12AC887DE4} = {4E707CA1-F43B-4DA6-9260-72778A573939}
 		{343733B8-6380-46B4-810F-CF0A676EB3B2} = {4E707CA1-F43B-4DA6-9260-72778A573939}
+		{2EAEA3F1-D794-40A5-97D7-3A882A5C80C8} = {9F6D8234-C001-4350-8206-8396FBCA9D7E}
+		{64B23789-1603-4398-AB06-85E0126F5A59} = {2EAEA3F1-D794-40A5-97D7-3A882A5C80C8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7FE19C61-811C-4966-BC10-2A1D53829B5A}

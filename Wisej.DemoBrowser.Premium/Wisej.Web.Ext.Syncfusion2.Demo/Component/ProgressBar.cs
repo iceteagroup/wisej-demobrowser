@@ -1,5 +1,4 @@
 ﻿using System;
-using Syncfusion.EJ2.Notifications;
 using Wisej.Web;
 
 namespace Wisej.Web.Ext.Syncfusion2.Demo.Component

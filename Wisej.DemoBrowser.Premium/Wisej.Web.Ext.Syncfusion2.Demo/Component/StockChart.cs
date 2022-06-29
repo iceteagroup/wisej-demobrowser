@@ -13,13 +13,21 @@ namespace Wisej.Web.Ext.Syncfusion2.Demo.Component
 
 		private void StockChart_Load(object sender, EventArgs e)
 		{
-			this.stockChart1.Options.series[0].dataSource = GetData();
+			this.stockChart1.Options.title = "AAPL Stock Price";
+			this.stockChart1.Options.series = new[]
+			{
+				new 
+				{
+					type = "Candle",
+					dataSource = GetData()
+				}
+			};
 		}
 
 		private dynamic GetData()
         {
 			var text = File.ReadAllText(Application.MapPath("Data/Stocks/data.json"));
-			return JSON.Parse(text).data;
+			return JSON.Parse(text).chartData;
         }
 
         private void buttonUpdate_Click(object sender, EventArgs e)
