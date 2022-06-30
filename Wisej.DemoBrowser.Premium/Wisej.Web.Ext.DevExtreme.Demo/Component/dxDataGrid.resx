@@ -117,39 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="widgetFunction1.Source" xml:space="preserve">
-    <value>var container = arguments[0];
-var options   = arguments[1];
-
- $("&lt;div/&gt;").dxBullet({
-        onIncidentOccurred: null,
-        size: {
-            width: 150,
-            height: 35
-        },
-        margin: {
-            top: 5,
-            bottom: 0,
-            left: 5
-        },
-        showTarget: false,
-        showZeroLevel: true,
-        value: options.value * 100,
-        startScaleValue: 0,
-        endScaleValue: 100,
-        tooltip: {
-            enabled: true,
-            font: {
-                size: 18
-            },
-            paddingTopBottom: 2,
-            customizeTooltip: function() {
-                return { text: options.text };
-            },
-            zIndex: 5
-        }
-    }).appendTo(container);</value>
-  </data>
   <metadata name="$this.RulerSnapLines" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0

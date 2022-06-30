@@ -79,20 +79,23 @@
             this.flowLayoutPanel1.Controls.Add(this.comboBox2);
             this.flowLayoutPanel1.Controls.Add(this.buttonLoad);
             this.flowLayoutPanel1.Controls.Add(this.buttonExport);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 35);
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 481);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 478);
+            // 
+            // spacer1
+            // 
+            this.spacer1.Location = new System.Drawing.Point(16, 516);
             // 
             // dxFunnel1
             // 
             this.dxFunnel1.Anchor = Wisej.Web.AnchorStyles.None;
-            this.dxFunnel1.Location = new System.Drawing.Point(230, 94);
+            this.dxFunnel1.Location = new System.Drawing.Point(182, 94);
             this.dxFunnel1.Name = "dxFunnel1";
-            this.dxFunnel1.Size = new System.Drawing.Size(429, 398);
+            this.dxFunnel1.Size = new System.Drawing.Size(525, 398);
             this.dxFunnel1.TabIndex = 0;
             widgetFunction1.Name = "customizeText";
             widgetFunction1.Source = "return \"<span style=\'font-size: 28px\'>\" +\r\n                    arguments[0].perce" +
     "ntText +\r\n                    \"</span><br/>\" +\r\n                    arguments[0]" +
-    ".item.argument;";
+    ".item.action;";
             this.dxFunnel1.WidgetFunctions = new Wisej.Web.Ext.DevExtreme.dxBase.WidgetFunction[] {
         widgetFunction1};
             // 

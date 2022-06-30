@@ -28,15 +28,14 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(dxChart));
             Wisej.Web.Ext.DevExtreme.dxBase.WidgetFunction widgetFunction1 = new Wisej.Web.Ext.DevExtreme.dxBase.WidgetFunction();
             this.dxChart1 = new Wisej.Web.Ext.DevExtreme.dxChart();
-            this.checkBox1 = new Wisej.Web.CheckBox();
-            this.checkBox2 = new Wisej.Web.CheckBox();
+            this.checkBoxAdjustOnZoom = new Wisej.Web.CheckBox();
+            this.checkBoxAutoHidePointMarkers = new Wisej.Web.CheckBox();
             this.buttonLoad = new Wisej.Web.Upload();
             this.checkBox4 = new Wisej.Web.CheckBox();
             this.comboBox1 = new Wisej.Web.ComboBox();
-            this.comboBoxChartType = new Wisej.Web.ComboBox();
+            this.checkBoxRotated = new Wisej.Web.CheckBox();
             this.groupBox1.SuspendLayout();
             this.panel.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
@@ -72,11 +71,11 @@
             // 
             // flowLayoutPanel1
             // 
-            this.flowLayoutPanel1.Controls.Add(this.checkBox1);
-            this.flowLayoutPanel1.Controls.Add(this.checkBox2);
+            this.flowLayoutPanel1.Controls.Add(this.checkBoxRotated);
+            this.flowLayoutPanel1.Controls.Add(this.checkBoxAdjustOnZoom);
+            this.flowLayoutPanel1.Controls.Add(this.checkBoxAutoHidePointMarkers);
             this.flowLayoutPanel1.Controls.Add(this.checkBox4);
             this.flowLayoutPanel1.Controls.Add(this.comboBox1);
-            this.flowLayoutPanel1.Controls.Add(this.comboBoxChartType);
             this.flowLayoutPanel1.Controls.Add(this.buttonLoad);
             // 
             // dxChart1
@@ -86,7 +85,6 @@
             | Wisej.Web.AnchorStyles.Right)));
             this.dxChart1.Location = new System.Drawing.Point(31, 37);
             this.dxChart1.Name = "dxChart1";
-            this.dxChart1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("dxChart1.Options"))));
             this.dxChart1.Size = new System.Drawing.Size(826, 503);
             this.dxChart1.TabIndex = 0;
             widgetFunction1.Name = "getDataSourceItems";
@@ -94,41 +92,42 @@
             this.dxChart1.WidgetFunctions = new Wisej.Web.Ext.DevExtreme.dxBase.WidgetFunction[] {
         widgetFunction1};
             // 
-            // checkBox1
+            // checkBoxAdjustOnZoom
             // 
-            this.checkBox1.Appearance = Wisej.Web.Appearance.Switch;
-            this.checkBox1.AutoSize = false;
-            this.checkBox1.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.checkBox1.Checked = true;
-            this.flowLayoutPanel1.SetFillWeight(this.checkBox1, 1);
-            this.flowLayoutPanel1.SetFlowBreak(this.checkBox1, true);
-            this.checkBox1.Location = new System.Drawing.Point(3, 3);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(212, 34);
-            this.checkBox1.TabIndex = 0;
-            this.checkBox1.Text = "Adjust on Zoom";
+            this.checkBoxAdjustOnZoom.Appearance = Wisej.Web.Appearance.Switch;
+            this.checkBoxAdjustOnZoom.AutoSize = false;
+            this.checkBoxAdjustOnZoom.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.checkBoxAdjustOnZoom.Checked = true;
+            this.flowLayoutPanel1.SetFillWeight(this.checkBoxAdjustOnZoom, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.checkBoxAdjustOnZoom, true);
+            this.checkBoxAdjustOnZoom.Location = new System.Drawing.Point(3, 56);
+            this.checkBoxAdjustOnZoom.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
+            this.checkBoxAdjustOnZoom.Name = "checkBoxAdjustOnZoom";
+            this.checkBoxAdjustOnZoom.Size = new System.Drawing.Size(212, 34);
+            this.checkBoxAdjustOnZoom.TabIndex = 0;
+            this.checkBoxAdjustOnZoom.Text = "Adjust on Zoom";
             // 
-            // checkBox2
+            // checkBoxAutoHidePointMarkers
             // 
-            this.checkBox2.Appearance = Wisej.Web.Appearance.Switch;
-            this.checkBox2.AutoSize = false;
-            this.checkBox2.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.checkBox2.Checked = true;
-            this.flowLayoutPanel1.SetFillWeight(this.checkBox2, 1);
-            this.flowLayoutPanel1.SetFlowBreak(this.checkBox2, true);
-            this.checkBox2.Location = new System.Drawing.Point(3, 56);
-            this.checkBox2.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(212, 31);
-            this.checkBox2.TabIndex = 1;
-            this.checkBox2.Text = "Hide Point Markers";
+            this.checkBoxAutoHidePointMarkers.Appearance = Wisej.Web.Appearance.Switch;
+            this.checkBoxAutoHidePointMarkers.AutoSize = false;
+            this.checkBoxAutoHidePointMarkers.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.checkBoxAutoHidePointMarkers.Checked = true;
+            this.flowLayoutPanel1.SetFillWeight(this.checkBoxAutoHidePointMarkers, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.checkBoxAutoHidePointMarkers, true);
+            this.checkBoxAutoHidePointMarkers.Location = new System.Drawing.Point(3, 109);
+            this.checkBoxAutoHidePointMarkers.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
+            this.checkBoxAutoHidePointMarkers.Name = "checkBoxAutoHidePointMarkers";
+            this.checkBoxAutoHidePointMarkers.Size = new System.Drawing.Size(212, 31);
+            this.checkBoxAutoHidePointMarkers.TabIndex = 1;
+            this.checkBoxAutoHidePointMarkers.Text = "Hide Point Markers";
             // 
             // buttonLoad
             // 
             this.buttonLoad.AllowedFileTypes = ".json";
             this.buttonLoad.HideValue = true;
             this.buttonLoad.ImageSource = "icon-file";
-            this.buttonLoad.Location = new System.Drawing.Point(3, 308);
+            this.buttonLoad.Location = new System.Drawing.Point(3, 285);
             this.buttonLoad.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.buttonLoad.Name = "buttonLoad";
             this.buttonLoad.Size = new System.Drawing.Size(42, 42);
@@ -142,7 +141,7 @@
             this.checkBox4.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.flowLayoutPanel1.SetFillWeight(this.checkBox4, 1);
             this.flowLayoutPanel1.SetFlowBreak(this.checkBox4, true);
-            this.checkBox4.Location = new System.Drawing.Point(3, 106);
+            this.checkBox4.Location = new System.Drawing.Point(3, 159);
             this.checkBox4.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.checkBox4.Name = "checkBox4";
             this.checkBox4.Size = new System.Drawing.Size(212, 31);
@@ -162,32 +161,25 @@
             this.comboBox1.Label.Size = 50;
             this.comboBox1.Label.SizeType = Wisej.Web.SizeType.Percent;
             this.comboBox1.LabelText = "Pan Key";
-            this.comboBox1.Location = new System.Drawing.Point(3, 156);
+            this.comboBox1.Location = new System.Drawing.Point(3, 209);
             this.comboBox1.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(212, 57);
             this.comboBox1.TabIndex = 4;
             this.comboBox1.Text = "shift";
             // 
-            // comboBoxChartType
+            // checkBoxRotated
             // 
-            this.comboBoxChartType.DropDownStyle = Wisej.Web.ComboBoxStyle.DropDownList;
-            this.flowLayoutPanel1.SetFillWeight(this.comboBoxChartType, 1);
-            this.flowLayoutPanel1.SetFlowBreak(this.comboBoxChartType, true);
-            this.comboBoxChartType.Items.AddRange(new object[] {
-            "Area",
-            "FullStackedSpline",
-            "FullStackedSplineArea",
-            "Line"});
-            this.comboBoxChartType.Label.Size = 50;
-            this.comboBoxChartType.Label.SizeType = Wisej.Web.SizeType.Percent;
-            this.comboBoxChartType.LabelText = "Chart Type";
-            this.comboBoxChartType.Location = new System.Drawing.Point(3, 232);
-            this.comboBoxChartType.Margin = new Wisej.Web.Padding(3, 16, 3, 3);
-            this.comboBoxChartType.Name = "comboBoxChartType";
-            this.comboBoxChartType.Size = new System.Drawing.Size(212, 57);
-            this.comboBoxChartType.TabIndex = 7;
-            this.comboBoxChartType.Text = "shift";
+            this.checkBoxRotated.Appearance = Wisej.Web.Appearance.Switch;
+            this.checkBoxRotated.AutoSize = false;
+            this.checkBoxRotated.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.flowLayoutPanel1.SetFillWeight(this.checkBoxRotated, 1);
+            this.flowLayoutPanel1.SetFlowBreak(this.checkBoxRotated, true);
+            this.checkBoxRotated.Location = new System.Drawing.Point(3, 3);
+            this.checkBoxRotated.Name = "checkBoxRotated";
+            this.checkBoxRotated.Size = new System.Drawing.Size(212, 34);
+            this.checkBoxRotated.TabIndex = 8;
+            this.checkBoxRotated.Text = "Rotated";
             // 
             // dxChart
             // 
@@ -204,11 +196,11 @@
 		#endregion
 
 		private DevExtreme.dxChart dxChart1;
-		private CheckBox checkBox2;
-		private CheckBox checkBox1;
+		private CheckBox checkBoxAutoHidePointMarkers;
+		private CheckBox checkBoxAdjustOnZoom;
 		private Upload buttonLoad;
 		private CheckBox checkBox4;
 		private ComboBox comboBox1;
-        private ComboBox comboBoxChartType;
+        private CheckBox checkBoxRotated;
     }
 }

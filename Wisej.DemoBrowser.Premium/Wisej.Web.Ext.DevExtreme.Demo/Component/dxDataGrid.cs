@@ -85,17 +85,6 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
 						format = "currency",
 						alignment = "right"
 					},
-					new
-					{
-						dataField = "Discount",
-						caption = "Discount %",
-						dataType = "number",
-						format = "percent",
-						alignment = "right",
-						allowGrouping = true,
-						cellTemplate = "discountCellTemplate",
-						cssClass = "bullet"
-					},
                     new
                     {
 						dataField = "SaleDate",

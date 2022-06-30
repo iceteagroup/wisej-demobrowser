@@ -80,8 +80,6 @@
             this.flowLayoutPanel1.Controls.Add(this.numericUpDown1);
             this.flowLayoutPanel1.Controls.Add(this.numericUpDown2);
             this.flowLayoutPanel1.Controls.Add(this.numericUpDown3);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 35);
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 470);
             // 
             // checkBox1
             // 
@@ -149,7 +147,7 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(5, 3);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(91, 19);
+            this.label4.Size = new System.Drawing.Size(75, 22);
             this.label4.TabIndex = 0;
             this.label4.Text = "Tick Interval";
             // 

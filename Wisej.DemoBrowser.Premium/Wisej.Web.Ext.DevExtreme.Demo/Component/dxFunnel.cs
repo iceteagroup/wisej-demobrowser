@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Drawing;
 using System.IO;
 using System.Text.RegularExpressions;
 using Wisej.Web;
@@ -13,6 +14,36 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
 
 			this.dxFunnel1.Instance.onItemClick += new WidgetEventHandler(dxFunnel1_WidgetEvent);
 			this.dxFunnel1.Instance.onLegendClick += new WidgetEventHandler(dxFunnel1_WidgetEvent);
+		}
+
+		private void dxFunnel_Load(object sender, EventArgs e)
+		{
+			this.dxFunnel1.Options.argumentField = "action";
+			this.dxFunnel1.Options.dataSource = new[]
+			{
+				new {
+					action = "Visited the Website",
+					users = 9152
+				},
+				new {
+					action = "Downloaded a Trial",
+					users = 6879
+				},
+				new {
+					action = "Contacted Support",
+					users = 5121
+				},
+				new {
+					action = "Subscribed",
+					users = 2224
+				},
+				new {
+					action = "Renewed",
+					users = 1670
+				}
+			};
+			this.dxFunnel1.Options.position = "inside";
+			this.dxFunnel1.Options.valueField = "users";
 		}
 
 		private void dxFunnel1_WidgetEvent(object sender, WidgetEventArgs e)
@@ -55,82 +86,6 @@ namespace Wisej.Web.Ext.DevExtreme.Demo.Component
 					sw.Dispose();
 				}
 			}
-		}
-
-        private void dxFunnel_Load(object sender, EventArgs e)
-        {
-			this.comboBox1.SelectedIndex = 0;
-			this.comboBox2.SelectedIndex = 0;
-
-			this.dxFunnel1.Options = new
-			{
-				algorithm = "dynamicSlope",
-				sortData = false,
-				argumentField = "argument",
-				valueField = "value",
-				palette = "Soft Pastel",
-				dataSource = new object[]
-				{ 
-					new
-                    {
-						argument = "Downloaded a Trial",
-						value = 6879
-					},
-					new
-					{
-						argument = "Visited the Website",
-						value = 9152
-					},
-					new
-					{
-						argument = "Contacted Support",
-						value = 5121
-					},
-					new
-					{
-						argument = "Renewed",
-						value = 1670
-					},
-					new
-					{
-						argument = "Subscribed",
-						value = 2224
-					}
-				},
-				title = new
-                {
-					text = "Website Conversions",
-					margin = new
-                    {
-						bottom = 30
-                    }
-				},
-				export = new
-                {
-					enabled = true
-                },
-				tooltip = new
-                {
-					enabled = true,
-					format = "fixedPoint"
-				},
-				item = new
-                {
-					border = new
-                    {
-						visible = true
-                    }
-                },
-				label = new
-                {
-					visible = true,
-					position = "inside",
-					backgroundColor = "none",
-					customizeText = "customizeText"
-				}
-			};
-
-			this.dxFunnel1.Update();
 		}
 	}
 }
