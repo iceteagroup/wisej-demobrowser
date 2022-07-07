@@ -195,6 +195,12 @@ namespace Wisej.DemoBrowser
 		/// <param name="path"></param>
 		private void SelectNode(string path)
 		{
+			if (string.IsNullOrEmpty(path))
+            {
+				this.treeViewComponents.SelectedNode = this.treeViewComponents.Nodes.First();
+				return;
+            }
+
 			try
 			{
 				var nodePath = WebUtility.UrlDecode(path).Split(this.treeViewComponents.PathSeparator.ToCharArray());
