@@ -30,6 +30,7 @@
 		{
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(igScheduler));
             Wisej.Web.Ext.Ignite.igBase.WidgetFunction widgetFunction1 = new Wisej.Web.Ext.Ignite.igBase.WidgetFunction();
+            Wisej.Web.Ext.Ignite.igBase.WidgetFunction widgetFunction2 = new Wisej.Web.Ext.Ignite.igBase.WidgetFunction();
             this.igScheduler1 = new Wisej.Web.Ext.Ignite.igScheduler();
             this.buttonLoad = new Wisej.Web.Upload();
             this.dateTimePicker1 = new Wisej.Web.DateTimePicker();
@@ -88,8 +89,12 @@
             this.igScheduler1.Text = "igScheduler1";
             widgetFunction1.Name = "loadData";
             widgetFunction1.Source = resources.GetString("widgetFunction1.Source");
+            widgetFunction2.Name = "getAppointmentsInRange";
+            widgetFunction2.Source = "var start = arguments[0];\r\nvar end   = arguments[1];\r\n\r\nreturn this.widget.getApp" +
+    "ointmentsInRange(start, end).map(entry => entry._e);";
             this.igScheduler1.WidgetFunctions = new Wisej.Web.Ext.Ignite.igBase.WidgetFunction[] {
-        widgetFunction1};
+        widgetFunction1,
+        widgetFunction2};
             // 
             // buttonLoad
             // 

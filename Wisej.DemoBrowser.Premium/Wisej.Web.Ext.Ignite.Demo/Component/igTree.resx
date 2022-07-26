@@ -117,7 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="widgetFunction1.Source" xml:space="preserve">
+  <data name="widgetFunction3.Source" xml:space="preserve">
     <value>var element = arguments[0];
 
 // Validates the drop target
@@ -130,7 +130,7 @@
 
                         return valid;</value>
   </data>
-  <data name="widgetFunction2.Source" xml:space="preserve">
+  <data name="widgetFunction4.Source" xml:space="preserve">
     <value>var element = arguments[0];
 
 // Validates the drop target

@@ -18,6 +18,9 @@ namespace Wisej.Web.Ext.Ignite.Demo.Component
 
 		private void igScheduler_Load(object sender, EventArgs e)
 		{
+			this.dateTimePicker1.Value = DateTime.Now.AddYears(-1);
+			this.dateTimePicker2.Value = DateTime.Now.AddYears(1);
+
 			igScheduler1.Options.selectedDate = "2022-04-13T05:58:18.909";
 
 			igScheduler1.Options.views = new string[] {"monthView", "agendaView"};
@@ -116,8 +119,8 @@ namespace Wisej.Web.Ext.Ignite.Demo.Component
 
 		private async void button1_Click(object sender, EventArgs e)
 		{
-			var start = dateTimePicker1.Value.ToJSON(false);
-			var end = dateTimePicker2.Value.ToJSON(false);
+			var start = dateTimePicker1.Value;
+			var end = dateTimePicker2.Value;
 
 			var data = await igScheduler1.CallAsync("getAppointmentsInRange", start, end);
 

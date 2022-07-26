@@ -500,24 +500,17 @@ namespace Wisej.Web.Ext.Ignite.Demo.Component
 
 		private void buttonUpdate_Click(object sender, EventArgs e)
 		{
+			this.igTree1.Options.dragAndDrop = this.checkBoxDragDrop.Checked;
 			this.igTree1.Options.checkboxMode = this.comboBox1.SelectedItem;
 			this.igTree1.Options.singleBranchExpand = this.checkBox1.Checked;
 
 			this.igTree1.Update();
 
+			this.igTree2.Options.dragAndDrop = this.checkBoxDragDrop.Checked;
 			this.igTree2.Options.checkboxMode = this.comboBox1.SelectedItem;
 			this.igTree2.Options.singleBranchExpand = this.checkBox1.Checked;
 
 			this.igTree2.Update();
 		}
-
-		private void buttonClearSelection_Click(object sender, EventArgs e)
-		{
-			this.igTree1.Instance.clearSelection();
-			this.igTree2.Instance.clearSelection();
-
-			this.igTree1.Update();
-			this.igTree2.Update();
-		}
-	}
+    }
 }
