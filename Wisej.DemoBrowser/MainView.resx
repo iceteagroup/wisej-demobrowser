@@ -230,8 +230,8 @@ textField.addListener("keydown", function (e) {
         NWY3ZjExZDUwYTNhBQEAAAAcV2lzZWouQmFzZS5SZXNwb25zaXZlUHJvZmlsZQMAAAAETmFtZQMkQWQE
         U2l6ZQEEBBhTeXN0ZW0uRHJhd2luZy5SZWN0YW5nbGUDAAAAE1N5c3RlbS5EcmF3aW5nLlNpemUDAAAA
         AgAAAAYEAAAABVBob25lBfv///8YU3lzdGVtLkRyYXdpbmcuUmVjdGFuZ2xlBAAAAAF4AXkFd2lkdGgG
-        aGVpZ2h0AAAAAAgICAgDAAAA6AQAAMoBAAAJAAAAOAAAAAX6////E1N5c3RlbS5EcmF3aW5nLlNpemUC
-        AAAABXdpZHRoBmhlaWdodAAACAgDAAAA3wQAAJIBAAAL
+        aGVpZ2h0AAAAAAgICAgDAAAAAQUAAMoBAAAAAAAABwAAAAX6////E1N5c3RlbS5EcmF3aW5nLlNpemUC
+        AAAABXdpZHRoBmhlaWdodAAACAgDAAAAAQUAAMMBAAAL
 </value>
   </data>
   <data name="panelDemo.ResponsiveProfiles1" mimetype="application/x-microsoft.net.object.binary.base64">
@@ -242,8 +242,8 @@ textField.addListener("keydown", function (e) {
         NWY3ZjExZDUwYTNhBQEAAAAcV2lzZWouQmFzZS5SZXNwb25zaXZlUHJvZmlsZQMAAAAETmFtZQMkQWQE
         U2l6ZQEEBBhTeXN0ZW0uRHJhd2luZy5SZWN0YW5nbGUDAAAAE1N5c3RlbS5EcmF3aW5nLlNpemUDAAAA
         AgAAAAYEAAAAEVBob25lIChMYW5kc2NhcGUpBfv///8YU3lzdGVtLkRyYXdpbmcuUmVjdGFuZ2xlBAAA
-        AAF4AXkFd2lkdGgGaGVpZ2h0AAAAAAgICAgDAAAA6AQAAM0BAAAJAAAACgAAAAX6////E1N5c3RlbS5E
-        cmF3aW5nLlNpemUCAAAABXdpZHRoBmhlaWdodAAACAgDAAAA3wQAAMMBAAAL
+        AAF4AXkFd2lkdGgGaGVpZ2h0AAAAAAgICAgDAAAAAQUAAMoBAAAAAAAACgAAAAX6////E1N5c3RlbS5E
+        cmF3aW5nLlNpemUCAAAABXdpZHRoBmhlaWdodAAACAgDAAAAAQUAAMABAAAL
 </value>
   </data>
   <data name="line6.ResponsiveProfiles" mimetype="application/x-microsoft.net.object.binary.base64">
@@ -254,8 +254,8 @@ textField.addListener("keydown", function (e) {
         NWY3ZjExZDUwYTNhBQEAAAAcV2lzZWouQmFzZS5SZXNwb25zaXZlUHJvZmlsZQMAAAAETmFtZQMkQWQE
         U2l6ZQEEBBhTeXN0ZW0uRHJhd2luZy5SZWN0YW5nbGUDAAAAE1N5c3RlbS5EcmF3aW5nLlNpemUDAAAA
         AgAAAAYEAAAAEVBob25lIChMYW5kc2NhcGUpBfv///8YU3lzdGVtLkRyYXdpbmcuUmVjdGFuZ2xlBAAA
-        AAF4AXkFd2lkdGgGaGVpZ2h0AAAAAAgICAgDAAAA6AQAANABAAAJAAAAywEAAAX6////E1N5c3RlbS5E
-        cmF3aW5nLlNpemUCAAAABXdpZHRoBmhlaWdodAAACAgDAAAA3wQAAAUAAAAL
+        AAF4AXkFd2lkdGgGaGVpZ2h0AAAAAAgICAgDAAAA6AQAAM0BAAAAAAAAyAEAAAX6////E1N5c3RlbS5E
+        cmF3aW5nLlNpemUCAAAABXdpZHRoBmhlaWdodAAACAgDAAAA6AQAAAUAAAAL
 </value>
   </data>
   <data name="line6.ResponsiveProfiles1" mimetype="application/x-microsoft.net.object.binary.base64">
@@ -266,8 +266,8 @@ textField.addListener("keydown", function (e) {
         NWY3ZjExZDUwYTNhBQEAAAAcV2lzZWouQmFzZS5SZXNwb25zaXZlUHJvZmlsZQMAAAAETmFtZQMkQWQE
         U2l6ZQEEBBhTeXN0ZW0uRHJhd2luZy5SZWN0YW5nbGUDAAAAE1N5c3RlbS5EcmF3aW5nLlNpemUDAAAA
         AgAAAAYEAAAABVBob25lBfv///8YU3lzdGVtLkRyYXdpbmcuUmVjdGFuZ2xlBAAAAAF4AXkFd2lkdGgG
-        aGVpZ2h0AAAAAAgICAgDAAAA6AQAAM0BAAAPAAAAyAEAAAX6////E1N5c3RlbS5EcmF3aW5nLlNpemUC
-        AAAABXdpZHRoBmhlaWdodAAACAgDAAAA2QQAAAUAAAAL
+        aGVpZ2h0AAAAAAgICAgDAAAAAQUAAM0BAAAAAAAAyAEAAAX6////E1N5c3RlbS5EcmF3aW5nLlNpemUC
+        AAAABXdpZHRoBmhlaWdodAAACAgDAAAAAQUAAAUAAAAL
 </value>
   </data>
   <data name="line4.ResponsiveProfiles" mimetype="application/x-microsoft.net.object.binary.base64">
@@ -278,8 +278,8 @@ textField.addListener("keydown", function (e) {
         NWY3ZjExZDUwYTNhBQEAAAAcV2lzZWouQmFzZS5SZXNwb25zaXZlUHJvZmlsZQMAAAAETmFtZQMkQWQE
         U2l6ZQEEBBhTeXN0ZW0uRHJhd2luZy5SZWN0YW5nbGUDAAAAE1N5c3RlbS5EcmF3aW5nLlNpemUDAAAA
         AgAAAAYEAAAAEVBob25lIChMYW5kc2NhcGUpBfv///8YU3lzdGVtLkRyYXdpbmcuUmVjdGFuZ2xlBAAA
-        AAF4AXkFd2lkdGgGaGVpZ2h0AAAAAAgICAgDAAAA6AQAAAUCAAAJAAAAAAIAAAX6////E1N5c3RlbS5E
-        cmF3aW5nLlNpemUCAAAABXdpZHRoBmhlaWdodAAACAgDAAAA3wQAAAUAAAAL
+        AAF4AXkFd2lkdGgGaGVpZ2h0AAAAAAgICAgDAAAAAQUAAAUCAAAAAAAAAAIAAAX6////E1N5c3RlbS5E
+        cmF3aW5nLlNpemUCAAAABXdpZHRoBmhlaWdodAAACAgDAAAAAQUAAAUAAAAL
 </value>
   </data>
   <data name="line4.ResponsiveProfiles1" mimetype="application/x-microsoft.net.object.binary.base64">
@@ -290,8 +290,8 @@ textField.addListener("keydown", function (e) {
         NWY3ZjExZDUwYTNhBQEAAAAcV2lzZWouQmFzZS5SZXNwb25zaXZlUHJvZmlsZQMAAAAETmFtZQMkQWQE
         U2l6ZQEEBBhTeXN0ZW0uRHJhd2luZy5SZWN0YW5nbGUDAAAAE1N5c3RlbS5EcmF3aW5nLlNpemUDAAAA
         AgAAAAYEAAAABVBob25lBfv///8YU3lzdGVtLkRyYXdpbmcuUmVjdGFuZ2xlBAAAAAF4AXkFd2lkdGgG
-        aGVpZ2h0AAAAAAgICAgDAAAA6AQAAAICAAAPAAAA/QEAAAX6////E1N5c3RlbS5EcmF3aW5nLlNpemUC
-        AAAABXdpZHRoBmhlaWdodAAACAgDAAAA2QQAAAUAAAAL
+        aGVpZ2h0AAAAAAgICAgDAAAAAQUAAAICAAAAAAAA/QEAAAX6////E1N5c3RlbS5EcmF3aW5nLlNpemUC
+        AAAABXdpZHRoBmhlaWdodAAACAgDAAAAAQUAAAUAAAAL
 </value>
   </data>
   <data name="buttonNext.ResponsiveProfiles" mimetype="application/x-microsoft.net.object.binary.base64">
@@ -303,7 +303,7 @@ textField.addListener("keydown", function (e) {
         TG9jYXRpb24BBAQYU3lzdGVtLkRyYXdpbmcuUmVjdGFuZ2xlAwAAABRTeXN0ZW0uRHJhd2luZy5Qb2lu
         dAMAAAACAAAABgQAAAARUGhvbmUgKExhbmRzY2FwZSkF+////xhTeXN0ZW0uRHJhd2luZy5SZWN0YW5n
         bGUEAAAAAXgBeQV3aWR0aAZoZWlnaHQAAAAACAgICAMAAACDAAAALQAAAAEAAAAFAAAABfr///8UU3lz
-        dGVtLkRyYXdpbmcuUG9pbnQCAAAAAXgBeQAACAgDAAAAXAQAAAUAAAAL
+        dGVtLkRyYXdpbmcuUG9pbnQCAAAAAXgBeQAACAgDAAAAfgQAAAUAAAAL
 </value>
   </data>
   <data name="buttonNext.ResponsiveProfiles1" mimetype="application/x-microsoft.net.object.binary.base64">
@@ -315,7 +315,7 @@ textField.addListener("keydown", function (e) {
         TG9jYXRpb24BBAQYU3lzdGVtLkRyYXdpbmcuUmVjdGFuZ2xlAwAAABRTeXN0ZW0uRHJhd2luZy5Qb2lu
         dAMAAAACAAAABgQAAAAFUGhvbmUF+////xhTeXN0ZW0uRHJhd2luZy5SZWN0YW5nbGUEAAAAAXgBeQV3
         aWR0aAZoZWlnaHQAAAAACAgICAMAAACDAAAALQAAAAEAAAAFAAAABfr///8UU3lzdGVtLkRyYXdpbmcu
-        UG9pbnQCAAAAAXgBeQAACAgDAAAAVgQAAAUAAAAL
+        UG9pbnQCAAAAAXgBeQAACAgDAAAAfgQAAAUAAAAL
 </value>
   </data>
   <data name="panel1.ResponsiveProfiles" mimetype="application/x-microsoft.net.object.binary.base64">
@@ -326,8 +326,8 @@ textField.addListener("keydown", function (e) {
         NWY3ZjExZDUwYTNhBQEAAAAcV2lzZWouQmFzZS5SZXNwb25zaXZlUHJvZmlsZQMAAAAETmFtZQMkQWQE
         U2l6ZQEEBBhTeXN0ZW0uRHJhd2luZy5SZWN0YW5nbGUDAAAAE1N5c3RlbS5EcmF3aW5nLlNpemUDAAAA
         AgAAAAYEAAAAEVBob25lIChMYW5kc2NhcGUpBfv///8YU3lzdGVtLkRyYXdpbmcuUmVjdGFuZ2xlBAAA
-        AAF4AXkFd2lkdGgGaGVpZ2h0AAAAAAgICAgDAAAA6AQAAAECAAAJAAAAzwEAAAX6////E1N5c3RlbS5E
-        cmF3aW5nLlNpemUCAAAABXdpZHRoBmhlaWdodAAACAgDAAAA3wQAADIAAAAL
+        AAF4AXkFd2lkdGgGaGVpZ2h0AAAAAAgICAgDAAAAAQUAAAECAAAAAAAAzwEAAAX6////E1N5c3RlbS5E
+        cmF3aW5nLlNpemUCAAAABXdpZHRoBmhlaWdodAAACAgDAAAAAQUAADIAAAAL
 </value>
   </data>
   <data name="panel1.ResponsiveProfiles1" mimetype="application/x-microsoft.net.object.binary.base64">
@@ -338,8 +338,8 @@ textField.addListener("keydown", function (e) {
         NWY3ZjExZDUwYTNhBQEAAAAcV2lzZWouQmFzZS5SZXNwb25zaXZlUHJvZmlsZQMAAAAETmFtZQMkQWQE
         U2l6ZQEEBBhTeXN0ZW0uRHJhd2luZy5SZWN0YW5nbGUDAAAAE1N5c3RlbS5EcmF3aW5nLlNpemUDAAAA
         AgAAAAYEAAAABVBob25lBfv///8YU3lzdGVtLkRyYXdpbmcuUmVjdGFuZ2xlBAAAAAF4AXkFd2lkdGgG
-        aGVpZ2h0AAAAAAgICAgDAAAA6AQAAP4BAAAPAAAAzAEAAAX6////E1N5c3RlbS5EcmF3aW5nLlNpemUC
-        AAAABXdpZHRoBmhlaWdodAAACAgDAAAA2QQAADIAAAAL
+        aGVpZ2h0AAAAAAgICAgDAAAAAQUAAP4BAAAAAAAAzAEAAAX6////E1N5c3RlbS5EcmF3aW5nLlNpemUC
+        AAAABXdpZHRoBmhlaWdodAAACAgDAAAAAQUAADIAAAAL
 </value>
   </data>
   <data name="panelDemoHost.ResponsiveProfiles" mimetype="application/x-microsoft.net.object.binary.base64">
@@ -362,8 +362,8 @@ textField.addListener("keydown", function (e) {
         NWY3ZjExZDUwYTNhBQEAAAAcV2lzZWouQmFzZS5SZXNwb25zaXZlUHJvZmlsZQMAAAAETmFtZQhMb2Nh
         dGlvbgRTaXplAQQEFFN5c3RlbS5EcmF3aW5nLlBvaW50AwAAABNTeXN0ZW0uRHJhd2luZy5TaXplAwAA
         AAIAAAAGBAAAABFQaG9uZSAoTGFuZHNjYXBlKQX7////FFN5c3RlbS5EcmF3aW5nLlBvaW50AgAAAAF4
-        AXkAAAgIAwAAACQAAACTAAAABfr///8TU3lzdGVtLkRyYXdpbmcuU2l6ZQIAAAAFd2lkdGgGaGVpZ2h0
-        AAAICAMAAADoBAAADgIAAAs=
+        AXkAAAgIAwAAACQAAACWAAAABfr///8TU3lzdGVtLkRyYXdpbmcuU2l6ZQIAAAAFd2lkdGgGaGVpZ2h0
+        AAAICAMAAAABBQAACwIAAAs=
 </value>
   </data>
   <data name="labelDescription.ResponsiveProfiles" mimetype="application/x-microsoft.net.object.binary.base64">
@@ -386,7 +386,7 @@ textField.addListener("keydown", function (e) {
         NWY3ZjExZDUwYTNhBQEAAAAcV2lzZWouQmFzZS5SZXNwb25zaXZlUHJvZmlsZQQAAAAETmFtZQdWaXNp
         YmxlCExvY2F0aW9uBFNpemUBAAQEARRTeXN0ZW0uRHJhd2luZy5Qb2ludAMAAAATU3lzdGVtLkRyYXdp
         bmcuU2l6ZQMAAAACAAAABgQAAAARUGhvbmUgKExhbmRzY2FwZSkABfv///8UU3lzdGVtLkRyYXdpbmcu
-        UG9pbnQCAAAAAXgBeQAACAgDAAAAJAAAAFEAAAAF+v///xNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3
+        UG9pbnQCAAAAAXgBeQAACAgDAAAAJAAAAFQAAAAF+v///xNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3
         aWR0aAZoZWlnaHQAAAgIAwAAAOgEAABCAAAACw==
 </value>
   </data>
@@ -417,7 +417,7 @@ textField.addListener("keydown", function (e) {
         BFNpemUITG9jYXRpb24BBAQEE1N5c3RlbS5EcmF3aW5nLkZvbnQDAAAAE1N5c3RlbS5EcmF3aW5nLlNp
         emUDAAAAFFN5c3RlbS5EcmF3aW5nLlBvaW50AwAAAAIAAAAGBAAAABFQaG9uZSAoTGFuZHNjYXBlKQkF
         AAAABfr///8TU3lzdGVtLkRyYXdpbmcuU2l6ZQIAAAAFd2lkdGgGaGVpZ2h0AAAICAMAAADfAAAAHAAA
-        AAX5////FFN5c3RlbS5EcmF3aW5nLlBvaW50AgAAAAF4AXkAAAgIAwAAADUAAAAIAAAABQUAAAATU3lz
+        AAX5////FFN5c3RlbS5EcmF3aW5nLlBvaW50AgAAAAF4AXkAAAgIAwAAADUAAAALAAAABQUAAAATU3lz
         dGVtLkRyYXdpbmcuRm9udAQAAAAETmFtZQRTaXplBVN0eWxlBFVuaXQBAAQECxhTeXN0ZW0uRHJhd2lu
         Zy5Gb250U3R5bGUDAAAAG1N5c3RlbS5EcmF3aW5nLkdyYXBoaWNzVW5pdAMAAAADAAAABggAAAAJQG1l
         bnVEZW1vAACgQQX3////GFN5c3RlbS5EcmF3aW5nLkZvbnRTdHlsZQEAAAAHdmFsdWVfXwAIAwAAAAAA
@@ -444,7 +444,7 @@ textField.addListener("keydown", function (e) {
         NWY3ZjExZDUwYTNhBQEAAAAcV2lzZWouQmFzZS5SZXNwb25zaXZlUHJvZmlsZQMAAAAETmFtZQRTaXpl
         B1BhZGRpbmcBBAQTU3lzdGVtLkRyYXdpbmcuU2l6ZQMAAAARV2lzZWouV2ViLlBhZGRpbmcCAAAAAgAA
         AAYEAAAAEVBob25lIChMYW5kc2NhcGUpBfv///8TU3lzdGVtLkRyYXdpbmcuU2l6ZQIAAAAFd2lkdGgG
-        aGVpZ2h0AAAICAMAAAAvAAAAHwAAAAX6////EVdpc2VqLldlYi5QYWRkaW5nBQAAAARfYWxsB19ib3R0
+        aGVpZ2h0AAAICAMAAAAvAAAAIgAAAAX6////EVdpc2VqLldlYi5QYWRkaW5nBQAAAARfYWxsB19ib3R0
         b20FX2xlZnQGX3JpZ2h0BF90b3AAAAAAAAEICAgIAgAAAAEEAAAABAAAAAQAAAAEAAAACw==
 </value>
   </data>
@@ -466,7 +466,7 @@ textField.addListener("keydown", function (e) {
         YXdpbmcsIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iMDNm
         NWY3ZjExZDUwYTNhBQEAAAAcV2lzZWouQmFzZS5SZXNwb25zaXZlUHJvZmlsZQIAAAAETmFtZQRTaXpl
         AQQTU3lzdGVtLkRyYXdpbmcuU2l6ZQMAAAACAAAABgQAAAARUGhvbmUgKExhbmRzY2FwZSkF+////xNT
-        eXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAwAAAOgEAAAnAAAACw==
+        eXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAwAAAAEFAAAqAAAACw==
 </value>
   </data>
   <data name="flowLayoutPanelDemoNavigation.ResponsiveProfiles" mimetype="application/x-microsoft.net.object.binary.base64">
