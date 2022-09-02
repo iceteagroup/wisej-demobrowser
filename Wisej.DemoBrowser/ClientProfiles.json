@@ -1,0 +1,38 @@
+﻿
+/**
+ * Client Profiles
+ *
+ * You can add additional profiles or modify the default ones by
+ * placing a ClientProfiles.json file in the /bin directory of the
+ * application.
+ *
+ * Or add it to the root files and set it to: "EmbeddedResource", or "Content" or "Copy if newer".
+ *
+ * Profiles with names matching the names in the default file will
+ * override the corresponding matching profile definition.
+ *
+   * Profile Properties:
+ *
+ *	name:            The name of the profile.
+ *	minWidth:        The minimum width of browser in pixels.
+ *	maxWidth:        The maximum width of browser in pixels.
+ *	minScreenWidth:  The minimum width of the device in pixels.
+ *	maxScreenWidth:  The maximum width of the device in pixels.
+ *	device:          A string or regular expression to match the name of the device returned by the client browser ("Mobile", "Tablet" or "Desktop").
+ *	userAgent:       A string or regular expression to match the user-agent string returned by the client browser.
+ *	landscape:       A boolean flag that indicates that the profile matches devices in landscape mode.
+ */
+{
+  "profiles": [
+    {
+      "name": "Phone",
+      "device": "Mobile",
+      "landscape": false
+    },
+    {
+      "name": "Tablet",
+      "device": "Tablet",
+      "landscape": false
+    }
+  ]
+}

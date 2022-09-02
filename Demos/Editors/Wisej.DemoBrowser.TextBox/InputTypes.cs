@@ -24,5 +24,10 @@ namespace Wisej.DemoBrowser.TextBox
 				BackColor = Color.Orange
 			}.Show();
 		}
-	}
+
+        private void InputTypes_Load(object sender, EventArgs e)
+        {
+
+        }
+    }
 }

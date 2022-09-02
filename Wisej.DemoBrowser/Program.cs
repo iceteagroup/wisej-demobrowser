@@ -12,9 +12,15 @@ namespace Wisej.DemoBrowser
 		{
 			Application.MainPage = new MainView();
 			Application.SessionTimeout += Application_SessionTimeout;
+            Application.ResponsiveProfileChanged += Application_ResponsiveProfileChanged;
 		}
 
-		private static void Application_SessionTimeout(object sender, System.ComponentModel.HandledEventArgs e)
+        private static void Application_ResponsiveProfileChanged(object sender, ResponsiveProfileChangedEventArgs e)
+        {
+			Wisej.Web.AlertBox.Show(e.CurrentProfile.Name);
+        }
+
+        private static void Application_SessionTimeout(object sender, System.ComponentModel.HandledEventArgs e)
 		{
 			e.Handled = true;
 		}

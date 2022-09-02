@@ -68,6 +68,10 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <_ContentIncludedByDefault Remove="ClientProfiles.json" />
+	</ItemGroup>
+
+	<ItemGroup>
 		<Content Include="Default.html">
 			<CopyToPublishDirectory>Always</CopyToPublishDirectory>
 		</Content>

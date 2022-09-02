@@ -108,16 +108,12 @@ namespace Wisej.Web.Ext.Syncfusion2.Demo.Component
 				{
 					horizontalGridlines = new
                     {
-						// Sets the line color of gridlines
 						lineColor = color,
-						// Defines the lineDashArray of gridlines
 						lineDashArray = "2 2"
 					},
 					verticalGridlines = new
 					{
-						// Sets the line color of gridlines
 						lineColor = color,
-						// Defines the lineDashArray of gridlines
 						lineDashArray = "2 2"
 					}
 				};
