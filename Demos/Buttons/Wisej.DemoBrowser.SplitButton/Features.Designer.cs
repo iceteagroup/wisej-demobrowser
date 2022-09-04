@@ -28,6 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Features));
             this.splitButtonCities = new Wisej.Web.SplitButton();
             this.menuItem1 = new Wisej.Web.MenuItem();
             this.menuItem2 = new Wisej.Web.MenuItem();
@@ -115,6 +116,8 @@
             this.menuItem5,
             this.menuItem6});
             this.splitButtonCities.Name = "splitButtonCities";
+            this.splitButtonCities.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("splitButtonCities.ResponsiveProfiles"))));
+            this.splitButtonCities.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("splitButtonCities.ResponsiveProfiles1"))));
             this.splitButtonCities.Size = new System.Drawing.Size(200, 35);
             this.splitButtonCities.TabIndex = 0;
             this.splitButtonCities.Text = "Default";
@@ -171,6 +174,8 @@
             this.menuItem11,
             this.menuItem12});
             this.splitButtonHtml.Name = "splitButtonHtml";
+            this.splitButtonHtml.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("splitButtonHtml.ResponsiveProfiles"))));
+            this.splitButtonHtml.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("splitButtonHtml.ResponsiveProfiles1"))));
             this.splitButtonHtml.Size = new System.Drawing.Size(200, 35);
             this.splitButtonHtml.TabIndex = 1;
             this.splitButtonHtml.Text = "Cities <b>with</b> HTML";
@@ -226,6 +231,8 @@
             this.menuItem18});
             this.splitButton2.Name = "splitButton2";
             this.splitButton2.Orientation = Wisej.Web.Orientation.Vertical;
+            this.splitButton2.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("splitButton2.ResponsiveProfiles"))));
+            this.splitButton2.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("splitButton2.ResponsiveProfiles1"))));
             this.splitButton2.Size = new System.Drawing.Size(200, 56);
             this.splitButton2.TabIndex = 2;
             this.splitButton2.Text = "Vertical";
@@ -281,6 +288,8 @@
             this.menuItem24});
             this.splitButtonRepeat.Name = "splitButtonRepeat";
             this.splitButtonRepeat.Repeat = true;
+            this.splitButtonRepeat.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("splitButtonRepeat.ResponsiveProfiles"))));
+            this.splitButtonRepeat.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("splitButtonRepeat.ResponsiveProfiles1"))));
             this.splitButtonRepeat.Size = new System.Drawing.Size(200, 35);
             this.splitButtonRepeat.TabIndex = 3;
             this.splitButtonRepeat.Text = "Repeat (0)";
@@ -337,6 +346,8 @@
             this.menuItem29,
             this.menuItem30});
             this.splitButton3.Name = "splitButton3";
+            this.splitButton3.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("splitButton3.ResponsiveProfiles"))));
+            this.splitButton3.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("splitButton3.ResponsiveProfiles1"))));
             this.splitButton3.Size = new System.Drawing.Size(200, 35);
             this.splitButton3.TabIndex = 4;
             this.splitButton3.Text = "Image and Text";
@@ -393,6 +404,8 @@
             this.menuItem35,
             this.menuItem36});
             this.splitButton4.Name = "splitButton4";
+            this.splitButton4.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("splitButton4.ResponsiveProfiles"))));
+            this.splitButton4.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("splitButton4.ResponsiveProfiles1"))));
             this.splitButton4.Size = new System.Drawing.Size(47, 35);
             this.splitButton4.TabIndex = 5;
             this.splitButton4.Text = "Default";
@@ -448,6 +461,8 @@
             this.menuItem47,
             this.menuItem48});
             this.splitButton6.Name = "splitButton6";
+            this.splitButton6.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("splitButton6.ResponsiveProfiles"))));
+            this.splitButton6.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("splitButton6.ResponsiveProfiles1"))));
             this.splitButton6.Size = new System.Drawing.Size(200, 59);
             this.splitButton6.TabIndex = 7;
             this.splitButton6.Text = "Image Above Text";
@@ -504,6 +519,8 @@
             this.menuItem53,
             this.menuItem54});
             this.splitButton7.Name = "splitButton7";
+            this.splitButton7.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("splitButton7.ResponsiveProfiles"))));
+            this.splitButton7.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("splitButton7.ResponsiveProfiles1"))));
             this.splitButton7.Size = new System.Drawing.Size(200, 35);
             this.splitButton7.TabIndex = 8;
             this.splitButton7.Text = "Text Before Image";
@@ -550,7 +567,6 @@
             // 
             this.splitButton8.Anchor = Wisej.Web.AnchorStyles.None;
             this.splitButton8.ImageSource = "icon-info";
-            this.splitButton8.Location = new System.Drawing.Point(248, 16);
             this.splitButton8.Margin = new Wisej.Web.Padding(16);
             this.splitButton8.MenuItems.AddRange(new Wisej.Web.MenuItem[] {
             this.menuItem55,
@@ -560,6 +576,7 @@
             this.menuItem59,
             this.menuItem60});
             this.splitButton8.Name = "splitButton8";
+            this.splitButton8.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("splitButton8.ResponsiveProfiles"))));
             this.splitButton8.Size = new System.Drawing.Size(200, 59);
             this.splitButton8.TabIndex = 9;
             this.splitButton8.Text = "Text Above Image";
@@ -606,7 +623,6 @@
             // 
             this.splitButton9.Anchor = Wisej.Web.AnchorStyles.None;
             this.splitButton9.ImageSource = "icon-info?color=#D6D6D6";
-            this.splitButton9.Location = new System.Drawing.Point(16, 28);
             this.splitButton9.Margin = new Wisej.Web.Padding(16);
             this.splitButton9.MenuItems.AddRange(new Wisej.Web.MenuItem[] {
             this.menuItem61,
@@ -616,6 +632,7 @@
             this.menuItem65,
             this.menuItem66});
             this.splitButton9.Name = "splitButton9";
+            this.splitButton9.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("splitButton9.ResponsiveProfiles"))));
             this.splitButton9.Size = new System.Drawing.Size(200, 35);
             this.splitButton9.TabIndex = 10;
             this.splitButton9.Text = "Overlay";
@@ -674,15 +691,18 @@
             this.flowLayoutPanel1.Controls.Add(this.splitButtonCities);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(59, 123);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("flowLayoutPanel1.ResponsiveProfiles"))));
+            this.flowLayoutPanel1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("flowLayoutPanel1.ResponsiveProfiles1"))));
             this.flowLayoutPanel1.Size = new System.Drawing.Size(1305, 201);
             this.flowLayoutPanel1.TabIndex = 11;
             // 
             // Features
             // 
             this.AutoScroll = true;
-            this.AutoScrollMargin = new System.Drawing.Size(0, 20);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Name = "Features";
+            this.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("$this.ResponsiveProfiles"))));
+            this.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("$this.ResponsiveProfiles1"))));
             this.flowLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
