@@ -15,5 +15,5 @@ namespace Wisej.DemoBrowser.CheckBox
 		{
 			new Toast($"Check Changed: {checkBoxDefault.Checked}").Show();
 		}
-	}
+    }
 }
