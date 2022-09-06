@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Features));
             this.dataRepeater1 = new Wisej.Web.DataRepeater();
             this.panel1 = new Wisej.Web.Panel();
             this.labelEmail = new Wisej.Web.Label();
@@ -58,10 +59,11 @@
             // 
             this.dataRepeater1.ItemTemplate.Controls.Add(this.panel1);
             this.dataRepeater1.ItemTemplate.CssStyle = "border-bottom: none;";
-            this.dataRepeater1.ItemTemplate.Size = new System.Drawing.Size(1024, 94);
+            this.dataRepeater1.ItemTemplate.Size = new System.Drawing.Size(668, 94);
             this.dataRepeater1.Location = new System.Drawing.Point(199, 19);
             this.dataRepeater1.Name = "dataRepeater1";
             this.dataRepeater1.PrefetchItems = 25;
+            this.dataRepeater1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("dataRepeater1.ResponsiveProfiles"))));
             this.dataRepeater1.ScrollBarVisible = false;
             this.dataRepeater1.Size = new System.Drawing.Size(1024, 455);
             this.dataRepeater1.TabIndex = 0;
@@ -84,6 +86,7 @@
             this.panel1.CssStyle = "transition: background-color 0.2s ease;\r\n";
             this.panel1.Location = new System.Drawing.Point(3, 3);
             this.panel1.Name = "panel1";
+            this.panel1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("panel1.ResponsiveProfiles"))));
             this.panel1.Size = new System.Drawing.Size(1016, 88);
             this.panel1.TabIndex = 7;
             this.panel1.MouseEnter += new System.EventHandler(this.panel1_MouseEnter);
@@ -95,7 +98,7 @@
             this.labelEmail.AutoSize = true;
             this.labelEmail.Location = new System.Drawing.Point(89, 60);
             this.labelEmail.Name = "labelEmail";
-            this.labelEmail.Size = new System.Drawing.Size(85, 18);
+            this.labelEmail.Size = new System.Drawing.Size(88, 15);
             this.labelEmail.TabIndex = 12;
             this.labelEmail.Text = "Email Address";
             // 
@@ -105,7 +108,7 @@
             this.labelCompany.AutoSize = true;
             this.labelCompany.Location = new System.Drawing.Point(89, 36);
             this.labelCompany.Name = "labelCompany";
-            this.labelCompany.Size = new System.Drawing.Size(73, 18);
+            this.labelCompany.Size = new System.Drawing.Size(77, 15);
             this.labelCompany.TabIndex = 11;
             this.labelCompany.Text = "ACME Corp.";
             // 
@@ -119,6 +122,7 @@
             this.buttonSelect.ImageSource = "icon-right";
             this.buttonSelect.Location = new System.Drawing.Point(963, 0);
             this.buttonSelect.Name = "buttonSelect";
+            this.buttonSelect.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("buttonSelect.ResponsiveProfiles"))));
             this.buttonSelect.Size = new System.Drawing.Size(53, 88);
             this.buttonSelect.TabIndex = 9;
             this.buttonSelect.Click += new System.EventHandler(this.buttonSelect_Click);
@@ -130,7 +134,7 @@
             this.labelName.Font = new System.Drawing.Font("@defaultBold", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.labelName.Location = new System.Drawing.Point(89, 13);
             this.labelName.Name = "labelName";
-            this.labelName.Size = new System.Drawing.Size(116, 18);
+            this.labelName.Size = new System.Drawing.Size(116, 15);
             this.labelName.TabIndex = 5;
             this.labelName.Text = "Name LastName 0";
             // 
@@ -149,7 +153,8 @@
             this.checkBoxScrollbar.Location = new System.Drawing.Point(19, 19);
             this.checkBoxScrollbar.Name = "checkBoxScrollbar";
             this.checkBoxScrollbar.Padding = new Wisej.Web.Padding(0, 0, 0, 16);
-            this.checkBoxScrollbar.Size = new System.Drawing.Size(144, 36);
+            this.checkBoxScrollbar.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("checkBoxScrollbar.ResponsiveProfiles"))));
+            this.checkBoxScrollbar.Size = new System.Drawing.Size(146, 33);
             this.checkBoxScrollbar.TabIndex = 1;
             this.checkBoxScrollbar.Text = "Scrollbar Visible";
             this.checkBoxScrollbar.CheckedChanged += new System.EventHandler(this.checkBoxScrollbar_CheckedChanged);
@@ -161,6 +166,7 @@
             this.MinimumSize = new System.Drawing.Size(700, 0);
             this.Name = "Features";
             this.Padding = new Wisej.Web.Padding(16, 16, 16, 0);
+            this.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("$this.ResponsiveProfiles"))));
             this.Load += new System.EventHandler(this.Features_Load);
             this.dataRepeater1.ItemTemplate.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataRepeater1)).EndInit();
