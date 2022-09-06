@@ -117,6 +117,330 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="dateTimePickerDefault.ResponsiveProfiles" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFJXaXNlai5GcmFtZXdvcmssIFZlcnNpb249My4wLjAuMCwgQ3Vs
+        dHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj0xN2JlZjM1ZTExYjg0MTcxDAMAAABRU3lzdGVtLkRy
+        YXdpbmcsIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iMDNm
+        NWY3ZjExZDUwYTNhBQEAAAAcV2lzZWouQmFzZS5SZXNwb25zaXZlUHJvZmlsZQUAAAAETmFtZQMkQWQI
+        TG9jYXRpb24GQW5jaG9yBFNpemUBBAQEBBhTeXN0ZW0uRHJhd2luZy5SZWN0YW5nbGUDAAAAFFN5c3Rl
+        bS5EcmF3aW5nLlBvaW50AwAAABZXaXNlai5XZWIuQW5jaG9yU3R5bGVzAgAAABNTeXN0ZW0uRHJhd2lu
+        Zy5TaXplAwAAAAIAAAAGBAAAAAVQaG9uZQX7////GFN5c3RlbS5EcmF3aW5nLlJlY3RhbmdsZQQAAAAB
+        eAF5BXdpZHRoBmhlaWdodAAAAAAICAgIAwAAAKMBAAB4AwAAhgAAAE4DAAAF+v///xRTeXN0ZW0uRHJh
+        d2luZy5Qb2ludAIAAAABeAF5AAAICAMAAAB3AAAALwAAAAX5////Fldpc2VqLldlYi5BbmNob3JTdHls
+        ZXMBAAAAB3ZhbHVlX18ACAIAAAAMAAAABfj///8TU3lzdGVtLkRyYXdpbmcuU2l6ZQIAAAAFd2lkdGgG
+        aGVpZ2h0AAAICAMAAAAdAQAAKgAAAAs=
+</value>
+  </data>
+  <data name="dateTimePickerDefault.ResponsiveProfiles1" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFJXaXNlai5GcmFtZXdvcmssIFZlcnNpb249My4wLjAuMCwgQ3Vs
+        dHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj0xN2JlZjM1ZTExYjg0MTcxDAMAAABRU3lzdGVtLkRy
+        YXdpbmcsIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iMDNm
+        NWY3ZjExZDUwYTNhBQEAAAAcV2lzZWouQmFzZS5SZXNwb25zaXZlUHJvZmlsZQMAAAAETmFtZQMkQWQI
+        TG9jYXRpb24BBAQYU3lzdGVtLkRyYXdpbmcuUmVjdGFuZ2xlAwAAABRTeXN0ZW0uRHJhd2luZy5Qb2lu
+        dAMAAAACAAAABgQAAAAGVGFibGV0Bfv///8YU3lzdGVtLkRyYXdpbmcuUmVjdGFuZ2xlBAAAAAF4AXkF
+        d2lkdGgGaGVpZ2h0AAAAAAgICAgDAAAA4gIAAL0BAADoAQAAkwEAAAX6////FFN5c3RlbS5EcmF3aW5n
+        LlBvaW50AgAAAAF4AXkAAAgIAwAAAJMAAAAdAAAACw==
+</value>
+  </data>
+  <data name="dateTimePicker2.ResponsiveProfiles" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFJXaXNlai5GcmFtZXdvcmssIFZlcnNpb249My4wLjAuMCwgQ3Vs
+        dHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj0xN2JlZjM1ZTExYjg0MTcxDAMAAABRU3lzdGVtLkRy
+        YXdpbmcsIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iMDNm
+        NWY3ZjExZDUwYTNhBQEAAAAcV2lzZWouQmFzZS5SZXNwb25zaXZlUHJvZmlsZQUAAAAETmFtZQMkQWQI
+        TG9jYXRpb24GQW5jaG9yBFNpemUBBAQEBBhTeXN0ZW0uRHJhd2luZy5SZWN0YW5nbGUDAAAAFFN5c3Rl
+        bS5EcmF3aW5nLlBvaW50AwAAABZXaXNlai5XZWIuQW5jaG9yU3R5bGVzAgAAABNTeXN0ZW0uRHJhd2lu
+        Zy5TaXplAwAAAAIAAAAGBAAAAAVQaG9uZQX7////GFN5c3RlbS5EcmF3aW5nLlJlY3RhbmdsZQQAAAAB
+        eAF5BXdpZHRoBmhlaWdodAAAAAAICAgIAwAAAKMBAABUAgAAhgAAACoCAAAF+v///xRTeXN0ZW0uRHJh
+        d2luZy5Qb2ludAIAAAABeAF5AAAICAMAAAB3AAAAUwEAAAX5////Fldpc2VqLldlYi5BbmNob3JTdHls
+        ZXMBAAAAB3ZhbHVlX18ACAIAAAAMAAAABfj///8TU3lzdGVtLkRyYXdpbmcuU2l6ZQIAAAAFd2lkdGgG
+        aGVpZ2h0AAAICAMAAAAdAQAAKgAAAAs=
+</value>
+  </data>
+  <data name="dateTimePicker2.ResponsiveProfiles1" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFJXaXNlai5GcmFtZXdvcmssIFZlcnNpb249My4wLjAuMCwgQ3Vs
+        dHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj0xN2JlZjM1ZTExYjg0MTcxDAMAAABRU3lzdGVtLkRy
+        YXdpbmcsIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iMDNm
+        NWY3ZjExZDUwYTNhBQEAAAAcV2lzZWouQmFzZS5SZXNwb25zaXZlUHJvZmlsZQMAAAAETmFtZQMkQWQI
+        TG9jYXRpb24BBAQYU3lzdGVtLkRyYXdpbmcuUmVjdGFuZ2xlAwAAABRTeXN0ZW0uRHJhd2luZy5Qb2lu
+        dAMAAAACAAAABgQAAAAGVGFibGV0Bfv///8YU3lzdGVtLkRyYXdpbmcuUmVjdGFuZ2xlBAAAAAF4AXkF
+        d2lkdGgGaGVpZ2h0AAAAAAgICAgDAAAAnwEAALgBAAClAAAAjgEAAAX6////FFN5c3RlbS5EcmF3aW5n
+        LlBvaW50AgAAAAF4AXkAAAgIAwAAANYBAAAiAAAACw==
+</value>
+  </data>
+  <data name="dateTimePicker3.ResponsiveProfiles" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFJXaXNlai5GcmFtZXdvcmssIFZlcnNpb249My4wLjAuMCwgQ3Vs
+        dHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj0xN2JlZjM1ZTExYjg0MTcxDAMAAABRU3lzdGVtLkRy
+        YXdpbmcsIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iMDNm
+        NWY3ZjExZDUwYTNhBQEAAAAcV2lzZWouQmFzZS5SZXNwb25zaXZlUHJvZmlsZQUAAAAETmFtZQMkQWQI
+        TG9jYXRpb24GQW5jaG9yBFNpemUBBAQEBBhTeXN0ZW0uRHJhd2luZy5SZWN0YW5nbGUDAAAAFFN5c3Rl
+        bS5EcmF3aW5nLlBvaW50AwAAABZXaXNlai5XZWIuQW5jaG9yU3R5bGVzAgAAABNTeXN0ZW0uRHJhd2lu
+        Zy5TaXplAwAAAAIAAAAGBAAAAAVQaG9uZQX7////GFN5c3RlbS5EcmF3aW5nLlJlY3RhbmdsZQQAAAAB
+        eAF5BXdpZHRoBmhlaWdodAAAAAAICAgIAwAAAKMBAAAvAwAAhgAAAAUDAAAF+v///xRTeXN0ZW0uRHJh
+        d2luZy5Qb2ludAIAAAABeAF5AAAICAMAAAB3AAAAeAAAAAX5////Fldpc2VqLldlYi5BbmNob3JTdHls
+        ZXMBAAAAB3ZhbHVlX18ACAIAAAAMAAAABfj///8TU3lzdGVtLkRyYXdpbmcuU2l6ZQIAAAAFd2lkdGgG
+        aGVpZ2h0AAAICAMAAAAdAQAAKgAAAAs=
+</value>
+  </data>
+  <data name="dateTimePicker3.ResponsiveProfiles1" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFJXaXNlai5GcmFtZXdvcmssIFZlcnNpb249My4wLjAuMCwgQ3Vs
+        dHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj0xN2JlZjM1ZTExYjg0MTcxDAMAAABRU3lzdGVtLkRy
+        YXdpbmcsIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iMDNm
+        NWY3ZjExZDUwYTNhBQEAAAAcV2lzZWouQmFzZS5SZXNwb25zaXZlUHJvZmlsZQMAAAAETmFtZQMkQWQI
+        TG9jYXRpb24BBAQYU3lzdGVtLkRyYXdpbmcuUmVjdGFuZ2xlAwAAABRTeXN0ZW0uRHJhd2luZy5Qb2lu
+        dAMAAAACAAAABgQAAAAGVGFibGV0Bfv///8YU3lzdGVtLkRyYXdpbmcuUmVjdGFuZ2xlBAAAAAF4AXkF
+        d2lkdGgGaGVpZ2h0AAAAAAgICAgDAAAA4gIAAHQBAADoAQAASgEAAAX6////FFN5c3RlbS5EcmF3aW5n
+        LlBvaW50AgAAAAF4AXkAAAgIAwAAAJMAAABmAAAACw==
+</value>
+  </data>
+  <data name="dateTimePicker1.ResponsiveProfiles" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFJXaXNlai5GcmFtZXdvcmssIFZlcnNpb249My4wLjAuMCwgQ3Vs
+        dHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj0xN2JlZjM1ZTExYjg0MTcxDAMAAABRU3lzdGVtLkRy
+        YXdpbmcsIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iMDNm
+        NWY3ZjExZDUwYTNhBQEAAAAcV2lzZWouQmFzZS5SZXNwb25zaXZlUHJvZmlsZQUAAAAETmFtZQMkQWQI
+        TG9jYXRpb24GQW5jaG9yBFNpemUBBAQEBBhTeXN0ZW0uRHJhd2luZy5SZWN0YW5nbGUDAAAAFFN5c3Rl
+        bS5EcmF3aW5nLlBvaW50AwAAABZXaXNlai5XZWIuQW5jaG9yU3R5bGVzAgAAABNTeXN0ZW0uRHJhd2lu
+        Zy5TaXplAwAAAAIAAAAGBAAAAAVQaG9uZQX7////GFN5c3RlbS5EcmF3aW5nLlJlY3RhbmdsZQQAAAAB
+        eAF5BXdpZHRoBmhlaWdodAAAAAAICAgIAwAAAKMBAAALAgAAhgAAAOEBAAAF+v///xRTeXN0ZW0uRHJh
+        d2luZy5Qb2ludAIAAAABeAF5AAAICAMAAAB3AAAAnAEAAAX5////Fldpc2VqLldlYi5BbmNob3JTdHls
+        ZXMBAAAAB3ZhbHVlX18ACAIAAAAMAAAABfj///8TU3lzdGVtLkRyYXdpbmcuU2l6ZQIAAAAFd2lkdGgG
+        aGVpZ2h0AAAICAMAAAAdAQAAKgAAAAs=
+</value>
+  </data>
+  <data name="dateTimePicker1.ResponsiveProfiles1" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFJXaXNlai5GcmFtZXdvcmssIFZlcnNpb249My4wLjAuMCwgQ3Vs
+        dHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj0xN2JlZjM1ZTExYjg0MTcxDAMAAABRU3lzdGVtLkRy
+        YXdpbmcsIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iMDNm
+        NWY3ZjExZDUwYTNhBQEAAAAcV2lzZWouQmFzZS5SZXNwb25zaXZlUHJvZmlsZQMAAAAETmFtZQMkQWQI
+        TG9jYXRpb24BBAQYU3lzdGVtLkRyYXdpbmcuUmVjdGFuZ2xlAwAAABRTeXN0ZW0uRHJhd2luZy5Qb2lu
+        dAMAAAACAAAABgQAAAAGVGFibGV0Bfv///8YU3lzdGVtLkRyYXdpbmcuUmVjdGFuZ2xlBAAAAAF4AXkF
+        d2lkdGgGaGVpZ2h0AAAAAAgICAgDAAAAnwEAAHABAAClAAAARgEAAAX6////FFN5c3RlbS5EcmF3aW5n
+        LlBvaW50AgAAAAF4AXkAAAgIAwAAANYBAABqAAAACw==
+</value>
+  </data>
+  <data name="dateTimePicker4.ResponsiveProfiles" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFJXaXNlai5GcmFtZXdvcmssIFZlcnNpb249My4wLjAuMCwgQ3Vs
+        dHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj0xN2JlZjM1ZTExYjg0MTcxDAMAAABRU3lzdGVtLkRy
+        YXdpbmcsIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iMDNm
+        NWY3ZjExZDUwYTNhBQEAAAAcV2lzZWouQmFzZS5SZXNwb25zaXZlUHJvZmlsZQUAAAAETmFtZQMkQWQI
+        TG9jYXRpb24GQW5jaG9yBFNpemUBBAQEBBhTeXN0ZW0uRHJhd2luZy5SZWN0YW5nbGUDAAAAFFN5c3Rl
+        bS5EcmF3aW5nLlBvaW50AwAAABZXaXNlai5XZWIuQW5jaG9yU3R5bGVzAgAAABNTeXN0ZW0uRHJhd2lu
+        Zy5TaXplAwAAAAIAAAAGBAAAAAVQaG9uZQX7////GFN5c3RlbS5EcmF3aW5nLlJlY3RhbmdsZQQAAAAB
+        eAF5BXdpZHRoBmhlaWdodAAAAAAICAgIAwAAAKMBAADCAQAAhgAAAJgBAAAF+v///xRTeXN0ZW0uRHJh
+        d2luZy5Qb2ludAIAAAABeAF5AAAICAMAAAB3AAAA5QEAAAX5////Fldpc2VqLldlYi5BbmNob3JTdHls
+        ZXMBAAAAB3ZhbHVlX18ACAIAAAAMAAAABfj///8TU3lzdGVtLkRyYXdpbmcuU2l6ZQIAAAAFd2lkdGgG
+        aGVpZ2h0AAAICAMAAAAdAQAAKgAAAAs=
+</value>
+  </data>
+  <data name="dateTimePicker4.ResponsiveProfiles1" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFJXaXNlai5GcmFtZXdvcmssIFZlcnNpb249My4wLjAuMCwgQ3Vs
+        dHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj0xN2JlZjM1ZTExYjg0MTcxDAMAAABRU3lzdGVtLkRy
+        YXdpbmcsIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iMDNm
+        NWY3ZjExZDUwYTNhBQEAAAAcV2lzZWouQmFzZS5SZXNwb25zaXZlUHJvZmlsZQMAAAAETmFtZQMkQWQI
+        TG9jYXRpb24BBAQYU3lzdGVtLkRyYXdpbmcuUmVjdGFuZ2xlAwAAABRTeXN0ZW0uRHJhd2luZy5Qb2lu
+        dAMAAAACAAAABgQAAAAGVGFibGV0Bfv///8YU3lzdGVtLkRyYXdpbmcuUmVjdGFuZ2xlBAAAAAF4AXkF
+        d2lkdGgGaGVpZ2h0AAAAAAgICAgDAAAAnwEAACgBAAClAAAA/gAAAAX6////FFN5c3RlbS5EcmF3aW5n
+        LlBvaW50AgAAAAF4AXkAAAgIAwAAANYBAACyAAAACw==
+</value>
+  </data>
+  <data name="dateTimePicker5.ResponsiveProfiles" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFJXaXNlai5GcmFtZXdvcmssIFZlcnNpb249My4wLjAuMCwgQ3Vs
+        dHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj0xN2JlZjM1ZTExYjg0MTcxDAMAAABRU3lzdGVtLkRy
+        YXdpbmcsIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iMDNm
+        NWY3ZjExZDUwYTNhBQEAAAAcV2lzZWouQmFzZS5SZXNwb25zaXZlUHJvZmlsZQUAAAAETmFtZQMkQWQI
+        TG9jYXRpb24GQW5jaG9yBFNpemUBBAQEBBhTeXN0ZW0uRHJhd2luZy5SZWN0YW5nbGUDAAAAFFN5c3Rl
+        bS5EcmF3aW5nLlBvaW50AwAAABZXaXNlai5XZWIuQW5jaG9yU3R5bGVzAgAAABNTeXN0ZW0uRHJhd2lu
+        Zy5TaXplAwAAAAIAAAAGBAAAAAVQaG9uZQX7////GFN5c3RlbS5EcmF3aW5nLlJlY3RhbmdsZQQAAAAB
+        eAF5BXdpZHRoBmhlaWdodAAAAAAICAgIAwAAAKMBAAB5AQAAhgAAAE8BAAAF+v///xRTeXN0ZW0uRHJh
+        d2luZy5Qb2ludAIAAAABeAF5AAAICAMAAAB3AAAALgIAAAX5////Fldpc2VqLldlYi5BbmNob3JTdHls
+        ZXMBAAAAB3ZhbHVlX18ACAIAAAAMAAAABfj///8TU3lzdGVtLkRyYXdpbmcuU2l6ZQIAAAAFd2lkdGgG
+        aGVpZ2h0AAAICAMAAAAdAQAAKgAAAAs=
+</value>
+  </data>
+  <data name="dateTimePicker5.ResponsiveProfiles1" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFJXaXNlai5GcmFtZXdvcmssIFZlcnNpb249My4wLjAuMCwgQ3Vs
+        dHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj0xN2JlZjM1ZTExYjg0MTcxDAMAAABRU3lzdGVtLkRy
+        YXdpbmcsIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iMDNm
+        NWY3ZjExZDUwYTNhBQEAAAAcV2lzZWouQmFzZS5SZXNwb25zaXZlUHJvZmlsZQMAAAAETmFtZQMkQWQI
+        TG9jYXRpb24BBAQYU3lzdGVtLkRyYXdpbmcuUmVjdGFuZ2xlAwAAABRTeXN0ZW0uRHJhd2luZy5Qb2lu
+        dAMAAAACAAAABgQAAAAGVGFibGV0Bfv///8YU3lzdGVtLkRyYXdpbmcuUmVjdGFuZ2xlBAAAAAF4AXkF
+        d2lkdGgGaGVpZ2h0AAAAAAgICAgDAAAAnwEAAOAAAAClAAAAtgAAAAX6////FFN5c3RlbS5EcmF3aW5n
+        LlBvaW50AgAAAAF4AXkAAAgIAwAAANYBAAD6AAAACw==
+</value>
+  </data>
+  <data name="dateTimePicker6.ResponsiveProfiles" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFJXaXNlai5GcmFtZXdvcmssIFZlcnNpb249My4wLjAuMCwgQ3Vs
+        dHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj0xN2JlZjM1ZTExYjg0MTcxDAMAAABRU3lzdGVtLkRy
+        YXdpbmcsIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iMDNm
+        NWY3ZjExZDUwYTNhBQEAAAAcV2lzZWouQmFzZS5SZXNwb25zaXZlUHJvZmlsZQUAAAAETmFtZQMkQWQI
+        TG9jYXRpb24GQW5jaG9yBFNpemUBBAQEBBhTeXN0ZW0uRHJhd2luZy5SZWN0YW5nbGUDAAAAFFN5c3Rl
+        bS5EcmF3aW5nLlBvaW50AwAAABZXaXNlai5XZWIuQW5jaG9yU3R5bGVzAgAAABNTeXN0ZW0uRHJhd2lu
+        Zy5TaXplAwAAAAIAAAAGBAAAAAVQaG9uZQX7////GFN5c3RlbS5EcmF3aW5nLlJlY3RhbmdsZQQAAAAB
+        eAF5BXdpZHRoBmhlaWdodAAAAAAICAgIAwAAAKMBAADmAgAAhgAAALwCAAAF+v///xRTeXN0ZW0uRHJh
+        d2luZy5Qb2ludAIAAAABeAF5AAAICAMAAAB3AAAAwQAAAAX5////Fldpc2VqLldlYi5BbmNob3JTdHls
+        ZXMBAAAAB3ZhbHVlX18ACAIAAAAMAAAABfj///8TU3lzdGVtLkRyYXdpbmcuU2l6ZQIAAAAFd2lkdGgG
+        aGVpZ2h0AAAICAMAAAAdAQAAKgAAAAs=
+</value>
+  </data>
+  <data name="dateTimePicker6.ResponsiveProfiles1" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFJXaXNlai5GcmFtZXdvcmssIFZlcnNpb249My4wLjAuMCwgQ3Vs
+        dHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj0xN2JlZjM1ZTExYjg0MTcxDAMAAABRU3lzdGVtLkRy
+        YXdpbmcsIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iMDNm
+        NWY3ZjExZDUwYTNhBQEAAAAcV2lzZWouQmFzZS5SZXNwb25zaXZlUHJvZmlsZQMAAAAETmFtZQMkQWQI
+        TG9jYXRpb24BBAQYU3lzdGVtLkRyYXdpbmcuUmVjdGFuZ2xlAwAAABRTeXN0ZW0uRHJhd2luZy5Qb2lu
+        dAMAAAACAAAABgQAAAAGVGFibGV0Bfv///8YU3lzdGVtLkRyYXdpbmcuUmVjdGFuZ2xlBAAAAAF4AXkF
+        d2lkdGgGaGVpZ2h0AAAAAAgICAgDAAAA4gIAACsBAADoAQAAAQEAAAX6////FFN5c3RlbS5EcmF3aW5n
+        LlBvaW50AgAAAAF4AXkAAAgIAwAAAJMAAACvAAAACw==
+</value>
+  </data>
+  <data name="dateTimePicker7.ResponsiveProfiles" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFJXaXNlai5GcmFtZXdvcmssIFZlcnNpb249My4wLjAuMCwgQ3Vs
+        dHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj0xN2JlZjM1ZTExYjg0MTcxDAMAAABRU3lzdGVtLkRy
+        YXdpbmcsIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iMDNm
+        NWY3ZjExZDUwYTNhBQEAAAAcV2lzZWouQmFzZS5SZXNwb25zaXZlUHJvZmlsZQUAAAAETmFtZQMkQWQI
+        TG9jYXRpb24GQW5jaG9yBFNpemUBBAQEBBhTeXN0ZW0uRHJhd2luZy5SZWN0YW5nbGUDAAAAFFN5c3Rl
+        bS5EcmF3aW5nLlBvaW50AwAAABZXaXNlai5XZWIuQW5jaG9yU3R5bGVzAgAAABNTeXN0ZW0uRHJhd2lu
+        Zy5TaXplAwAAAAIAAAAGBAAAAAVQaG9uZQX7////GFN5c3RlbS5EcmF3aW5nLlJlY3RhbmdsZQQAAAAB
+        eAF5BXdpZHRoBmhlaWdodAAAAAAICAgIAwAAAKMBAACdAgAAhgAAAHMCAAAF+v///xRTeXN0ZW0uRHJh
+        d2luZy5Qb2ludAIAAAABeAF5AAAICAMAAAB3AAAACgEAAAX5////Fldpc2VqLldlYi5BbmNob3JTdHls
+        ZXMBAAAAB3ZhbHVlX18ACAIAAAAMAAAABfj///8TU3lzdGVtLkRyYXdpbmcuU2l6ZQIAAAAFd2lkdGgG
+        aGVpZ2h0AAAICAMAAAAdAQAAKgAAAAs=
+</value>
+  </data>
+  <data name="dateTimePicker7.ResponsiveProfiles1" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFJXaXNlai5GcmFtZXdvcmssIFZlcnNpb249My4wLjAuMCwgQ3Vs
+        dHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj0xN2JlZjM1ZTExYjg0MTcxDAMAAABRU3lzdGVtLkRy
+        YXdpbmcsIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iMDNm
+        NWY3ZjExZDUwYTNhBQEAAAAcV2lzZWouQmFzZS5SZXNwb25zaXZlUHJvZmlsZQMAAAAETmFtZQMkQWQI
+        TG9jYXRpb24BBAQYU3lzdGVtLkRyYXdpbmcuUmVjdGFuZ2xlAwAAABRTeXN0ZW0uRHJhd2luZy5Qb2lu
+        dAMAAAACAAAABgQAAAAGVGFibGV0Bfv///8YU3lzdGVtLkRyYXdpbmcuUmVjdGFuZ2xlBAAAAAF4AXkF
+        d2lkdGgGaGVpZ2h0AAAAAAgICAgDAAAA4gIAAOIAAADoAQAAuAAAAAX6////FFN5c3RlbS5EcmF3aW5n
+        LlBvaW50AgAAAAF4AXkAAAgIAwAAAJMAAAD4AAAACw==
+</value>
+  </data>
+  <data name="dateTimePicker8.ResponsiveProfiles" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFJXaXNlai5GcmFtZXdvcmssIFZlcnNpb249My4wLjAuMCwgQ3Vs
+        dHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj0xN2JlZjM1ZTExYjg0MTcxDAMAAABRU3lzdGVtLkRy
+        YXdpbmcsIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iMDNm
+        NWY3ZjExZDUwYTNhBQEAAAAcV2lzZWouQmFzZS5SZXNwb25zaXZlUHJvZmlsZQUAAAAETmFtZQMkQWQI
+        TG9jYXRpb24GQW5jaG9yBFNpemUBBAQEBBhTeXN0ZW0uRHJhd2luZy5SZWN0YW5nbGUDAAAAFFN5c3Rl
+        bS5EcmF3aW5nLlBvaW50AwAAABZXaXNlai5XZWIuQW5jaG9yU3R5bGVzAgAAABNTeXN0ZW0uRHJhd2lu
+        Zy5TaXplAwAAAAIAAAAGBAAAAAVQaG9uZQX7////GFN5c3RlbS5EcmF3aW5nLlJlY3RhbmdsZQQAAAAB
+        eAF5BXdpZHRoBmhlaWdodAAAAAAICAgIAwAAAKMBAAAwAQAAhgAAAAYBAAAF+v///xRTeXN0ZW0uRHJh
+        d2luZy5Qb2ludAIAAAABeAF5AAAICAMAAAB3AAAAdwIAAAX5////Fldpc2VqLldlYi5BbmNob3JTdHls
+        ZXMBAAAAB3ZhbHVlX18ACAIAAAAMAAAABfj///8TU3lzdGVtLkRyYXdpbmcuU2l6ZQIAAAAFd2lkdGgG
+        aGVpZ2h0AAAICAMAAAAdAQAAKgAAAAs=
+</value>
+  </data>
+  <data name="dateTimePicker8.ResponsiveProfiles1" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFJXaXNlai5GcmFtZXdvcmssIFZlcnNpb249My4wLjAuMCwgQ3Vs
+        dHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj0xN2JlZjM1ZTExYjg0MTcxDAMAAABRU3lzdGVtLkRy
+        YXdpbmcsIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iMDNm
+        NWY3ZjExZDUwYTNhBQEAAAAcV2lzZWouQmFzZS5SZXNwb25zaXZlUHJvZmlsZQMAAAAETmFtZQMkQWQI
+        TG9jYXRpb24BBAQYU3lzdGVtLkRyYXdpbmcuUmVjdGFuZ2xlAwAAABRTeXN0ZW0uRHJhd2luZy5Qb2lu
+        dAMAAAACAAAABgQAAAAGVGFibGV0Bfv///8YU3lzdGVtLkRyYXdpbmcuUmVjdGFuZ2xlBAAAAAF4AXkF
+        d2lkdGgGaGVpZ2h0AAAAAAgICAgDAAAA4gIAAJkAAADoAQAAbwAAAAX6////FFN5c3RlbS5EcmF3aW5n
+        LlBvaW50AgAAAAF4AXkAAAgIAwAAAJMAAABBAQAACw==
+</value>
+  </data>
+  <data name="dateTimePicker9.ResponsiveProfiles" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFJXaXNlai5GcmFtZXdvcmssIFZlcnNpb249My4wLjAuMCwgQ3Vs
+        dHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj0xN2JlZjM1ZTExYjg0MTcxDAMAAABRU3lzdGVtLkRy
+        YXdpbmcsIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iMDNm
+        NWY3ZjExZDUwYTNhBQEAAAAcV2lzZWouQmFzZS5SZXNwb25zaXZlUHJvZmlsZQUAAAAETmFtZQMkQWQI
+        TG9jYXRpb24GQW5jaG9yBFNpemUBBAQEBBhTeXN0ZW0uRHJhd2luZy5SZWN0YW5nbGUDAAAAFFN5c3Rl
+        bS5EcmF3aW5nLlBvaW50AwAAABZXaXNlai5XZWIuQW5jaG9yU3R5bGVzAgAAABNTeXN0ZW0uRHJhd2lu
+        Zy5TaXplAwAAAAIAAAAGBAAAAAVQaG9uZQX7////GFN5c3RlbS5EcmF3aW5nLlJlY3RhbmdsZQQAAAAB
+        eAF5BXdpZHRoBmhlaWdodAAAAAAICAgIAwAAAKMBAADnAAAAhgAAAL0AAAAF+v///xRTeXN0ZW0uRHJh
+        d2luZy5Qb2ludAIAAAABeAF5AAAICAMAAAB3AAAAwAIAAAX5////Fldpc2VqLldlYi5BbmNob3JTdHls
+        ZXMBAAAAB3ZhbHVlX18ACAIAAAAMAAAABfj///8TU3lzdGVtLkRyYXdpbmcuU2l6ZQIAAAAFd2lkdGgG
+        aGVpZ2h0AAAICAMAAAAdAQAAKgAAAAs=
+</value>
+  </data>
+  <data name="dateTimePicker9.ResponsiveProfiles1" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFJXaXNlai5GcmFtZXdvcmssIFZlcnNpb249My4wLjAuMCwgQ3Vs
+        dHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj0xN2JlZjM1ZTExYjg0MTcxDAMAAABRU3lzdGVtLkRy
+        YXdpbmcsIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iMDNm
+        NWY3ZjExZDUwYTNhBQEAAAAcV2lzZWouQmFzZS5SZXNwb25zaXZlUHJvZmlsZQMAAAAETmFtZQMkQWQI
+        TG9jYXRpb24BBAQYU3lzdGVtLkRyYXdpbmcuUmVjdGFuZ2xlAwAAABRTeXN0ZW0uRHJhd2luZy5Qb2lu
+        dAMAAAACAAAABgQAAAAGVGFibGV0Bfv///8YU3lzdGVtLkRyYXdpbmcuUmVjdGFuZ2xlBAAAAAF4AXkF
+        d2lkdGgGaGVpZ2h0AAAAAAgICAgDAAAA4gIAAFAAAADoAQAAJgAAAAX6////FFN5c3RlbS5EcmF3aW5n
+        LlBvaW50AgAAAAF4AXkAAAgIAwAAAJMAAACKAQAACw==
+</value>
+  </data>
+  <data name="dateTimePicker10.ResponsiveProfiles" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFJXaXNlai5GcmFtZXdvcmssIFZlcnNpb249My4wLjAuMCwgQ3Vs
+        dHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj0xN2JlZjM1ZTExYjg0MTcxDAMAAABRU3lzdGVtLkRy
+        YXdpbmcsIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iMDNm
+        NWY3ZjExZDUwYTNhBQEAAAAcV2lzZWouQmFzZS5SZXNwb25zaXZlUHJvZmlsZQUAAAAETmFtZQMkQWQI
+        TG9jYXRpb24GQW5jaG9yBFNpemUBBAQEBBhTeXN0ZW0uRHJhd2luZy5SZWN0YW5nbGUDAAAAFFN5c3Rl
+        bS5EcmF3aW5nLlBvaW50AwAAABZXaXNlai5XZWIuQW5jaG9yU3R5bGVzAgAAABNTeXN0ZW0uRHJhd2lu
+        Zy5TaXplAwAAAAIAAAAGBAAAAAVQaG9uZQX7////GFN5c3RlbS5EcmF3aW5nLlJlY3RhbmdsZQQAAAAB
+        eAF5BXdpZHRoBmhlaWdodAAAAAAICAgIAwAAAKMBAACeAAAAhgAAAHQAAAAF+v///xRTeXN0ZW0uRHJh
+        d2luZy5Qb2ludAIAAAABeAF5AAAICAMAAAB3AAAACQMAAAX5////Fldpc2VqLldlYi5BbmNob3JTdHls
+        ZXMBAAAAB3ZhbHVlX18ACAIAAAAMAAAABfj///8TU3lzdGVtLkRyYXdpbmcuU2l6ZQIAAAAFd2lkdGgG
+        aGVpZ2h0AAAICAMAAAAdAQAAKgAAAAs=
+</value>
+  </data>
+  <data name="dateTimePicker10.ResponsiveProfiles1" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFJXaXNlai5GcmFtZXdvcmssIFZlcnNpb249My4wLjAuMCwgQ3Vs
+        dHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj0xN2JlZjM1ZTExYjg0MTcxDAMAAABRU3lzdGVtLkRy
+        YXdpbmcsIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iMDNm
+        NWY3ZjExZDUwYTNhBQEAAAAcV2lzZWouQmFzZS5SZXNwb25zaXZlUHJvZmlsZQMAAAAETmFtZQMkQWQI
+        TG9jYXRpb24BBAQYU3lzdGVtLkRyYXdpbmcuUmVjdGFuZ2xlAwAAABRTeXN0ZW0uRHJhd2luZy5Qb2lu
+        dAMAAAACAAAABgQAAAAGVGFibGV0Bfv///8YU3lzdGVtLkRyYXdpbmcuUmVjdGFuZ2xlBAAAAAF4AXkF
+        d2lkdGgGaGVpZ2h0AAAAAAgICAgDAAAAnwEAAJgAAAClAAAAbgAAAAX6////FFN5c3RlbS5EcmF3aW5n
+        LlBvaW50AgAAAAF4AXkAAAgIAwAAANYBAABCAQAACw==
+</value>
+  </data>
+  <data name="dateTimePicker11.ResponsiveProfiles" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFJXaXNlai5GcmFtZXdvcmssIFZlcnNpb249My4wLjAuMCwgQ3Vs
+        dHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj0xN2JlZjM1ZTExYjg0MTcxDAMAAABRU3lzdGVtLkRy
+        YXdpbmcsIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iMDNm
+        NWY3ZjExZDUwYTNhBQEAAAAcV2lzZWouQmFzZS5SZXNwb25zaXZlUHJvZmlsZQUAAAAETmFtZQMkQWQI
+        TG9jYXRpb24GQW5jaG9yBFNpemUBBAQEBBhTeXN0ZW0uRHJhd2luZy5SZWN0YW5nbGUDAAAAFFN5c3Rl
+        bS5EcmF3aW5nLlBvaW50AwAAABZXaXNlai5XZWIuQW5jaG9yU3R5bGVzAgAAABNTeXN0ZW0uRHJhd2lu
+        Zy5TaXplAwAAAAIAAAAGBAAAAAVQaG9uZQX7////GFN5c3RlbS5EcmF3aW5nLlJlY3RhbmdsZQQAAAAB
+        eAF5BXdpZHRoBmhlaWdodAAAAAAICAgIAwAAAKMBAABVAAAAhgAAACsAAAAF+v///xRTeXN0ZW0uRHJh
+        d2luZy5Qb2ludAIAAAABeAF5AAAICAMAAAB3AAAAUgMAAAX5////Fldpc2VqLldlYi5BbmNob3JTdHls
+        ZXMBAAAAB3ZhbHVlX18ACAIAAAAMAAAABfj///8TU3lzdGVtLkRyYXdpbmcuU2l6ZQIAAAAFd2lkdGgG
+        aGVpZ2h0AAAICAMAAAAdAQAAKgAAAAs=
+</value>
+  </data>
+  <data name="dateTimePicker11.ResponsiveProfiles1" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFJXaXNlai5GcmFtZXdvcmssIFZlcnNpb249My4wLjAuMCwgQ3Vs
+        dHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj0xN2JlZjM1ZTExYjg0MTcxDAMAAABRU3lzdGVtLkRy
+        YXdpbmcsIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iMDNm
+        NWY3ZjExZDUwYTNhBQEAAAAcV2lzZWouQmFzZS5SZXNwb25zaXZlUHJvZmlsZQMAAAAETmFtZQMkQWQI
+        TG9jYXRpb24BBAQYU3lzdGVtLkRyYXdpbmcuUmVjdGFuZ2xlAwAAABRTeXN0ZW0uRHJhd2luZy5Qb2lu
+        dAMAAAACAAAABgQAAAAGVGFibGV0Bfv///8YU3lzdGVtLkRyYXdpbmcuUmVjdGFuZ2xlBAAAAAF4AXkF
+        d2lkdGgGaGVpZ2h0AAAAAAgICAgDAAAAnwEAAFAAAAClAAAAJgAAAAX6////FFN5c3RlbS5EcmF3aW5n
+        LlBvaW50AgAAAAF4AXkAAAgIAwAAANYBAACKAQAACw==
+</value>
+  </data>
   <metadata name="$this.RulerSnapLines" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0
@@ -124,4 +448,26 @@
         U3lzdGVtLkRyYXdpbmcuUG9pbnQCAAAACw==
 </value>
   </metadata>
+  <data name="$this.ResponsiveProfiles" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFJXaXNlai5GcmFtZXdvcmssIFZlcnNpb249My4wLjAuMCwgQ3Vs
+        dHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj0xN2JlZjM1ZTExYjg0MTcxDAMAAABRU3lzdGVtLkRy
+        YXdpbmcsIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iMDNm
+        NWY3ZjExZDUwYTNhBQEAAAAcV2lzZWouQmFzZS5SZXNwb25zaXZlUHJvZmlsZQQAAAAETmFtZQRTaXpl
+        CExvY2F0aW9uC01pbmltdW1TaXplAQQEBBNTeXN0ZW0uRHJhd2luZy5TaXplAwAAABRTeXN0ZW0uRHJh
+        d2luZy5Qb2ludAMAAAATU3lzdGVtLkRyYXdpbmcuU2l6ZQMAAAACAAAABgQAAAAFUGhvbmUF+////xNT
+        eXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAwAAABoCAACnAwAABfr///8UU3lz
+        dGVtLkRyYXdpbmcuUG9pbnQCAAAAAXgBeQAACAgDAAAAGQAAABkAAAAB+f////v////lAQAAJQEAAAs=
+</value>
+  </data>
+  <data name="$this.ResponsiveProfiles1" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFJXaXNlai5GcmFtZXdvcmssIFZlcnNpb249My4wLjAuMCwgQ3Vs
+        dHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj0xN2JlZjM1ZTExYjg0MTcxDAMAAABRU3lzdGVtLkRy
+        YXdpbmcsIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iMDNm
+        NWY3ZjExZDUwYTNhBQEAAAAcV2lzZWouQmFzZS5SZXNwb25zaXZlUHJvZmlsZQIAAAAETmFtZQRTaXpl
+        AQQTU3lzdGVtLkRyYXdpbmcuU2l6ZQMAAAACAAAABgQAAAAGVGFibGV0Bfv///8TU3lzdGVtLkRyYXdp
+        bmcuU2l6ZQIAAAAFd2lkdGgGaGVpZ2h0AAAICAMAAAB1AwAA2gEAAAs=
+</value>
+  </data>
 </root>

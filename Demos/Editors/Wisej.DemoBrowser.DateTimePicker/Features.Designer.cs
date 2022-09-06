@@ -28,6 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Features));
             this.dateTimePickerDefault = new Wisej.Web.DateTimePicker();
             this.dateTimePicker2 = new Wisej.Web.DateTimePicker();
             this.dateTimePicker3 = new Wisej.Web.DateTimePicker();
@@ -48,7 +49,9 @@
             this.dateTimePickerDefault.LabelText = "Default";
             this.dateTimePickerDefault.Location = new System.Drawing.Point(272, 95);
             this.dateTimePickerDefault.Name = "dateTimePickerDefault";
-            this.dateTimePickerDefault.Size = new System.Drawing.Size(250, 53);
+            this.dateTimePickerDefault.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("dateTimePickerDefault.ResponsiveProfiles"))));
+            this.dateTimePickerDefault.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("dateTimePickerDefault.ResponsiveProfiles1"))));
+            this.dateTimePickerDefault.Size = new System.Drawing.Size(250, 42);
             this.dateTimePickerDefault.TabIndex = 0;
             this.dateTimePickerDefault.Value = new System.DateTime(2022, 1, 6, 11, 2, 3, 766);
             this.dateTimePickerDefault.CloseUp += new System.EventHandler(this.dateTimePickerDefault_CloseUp);
@@ -61,7 +64,9 @@
             this.dateTimePicker2.LabelText = "Short";
             this.dateTimePicker2.Location = new System.Drawing.Point(586, 95);
             this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(250, 53);
+            this.dateTimePicker2.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("dateTimePicker2.ResponsiveProfiles"))));
+            this.dateTimePicker2.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("dateTimePicker2.ResponsiveProfiles1"))));
+            this.dateTimePicker2.Size = new System.Drawing.Size(250, 42);
             this.dateTimePicker2.TabIndex = 1;
             this.dateTimePicker2.Value = new System.DateTime(2022, 1, 6, 11, 2, 4, 976);
             // 
@@ -71,8 +76,10 @@
             this.dateTimePicker3.LabelText = "Checkbox";
             this.dateTimePicker3.Location = new System.Drawing.Point(272, 172);
             this.dateTimePicker3.Name = "dateTimePicker3";
+            this.dateTimePicker3.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("dateTimePicker3.ResponsiveProfiles"))));
+            this.dateTimePicker3.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("dateTimePicker3.ResponsiveProfiles1"))));
             this.dateTimePicker3.ShowCheckBox = true;
-            this.dateTimePicker3.Size = new System.Drawing.Size(250, 53);
+            this.dateTimePicker3.Size = new System.Drawing.Size(250, 42);
             this.dateTimePicker3.TabIndex = 2;
             this.dateTimePicker3.Value = new System.DateTime(2022, 1, 6, 11, 2, 5, 931);
             // 
@@ -83,7 +90,9 @@
             this.dateTimePicker1.LabelText = "Time";
             this.dateTimePicker1.Location = new System.Drawing.Point(586, 172);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(250, 53);
+            this.dateTimePicker1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("dateTimePicker1.ResponsiveProfiles"))));
+            this.dateTimePicker1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("dateTimePicker1.ResponsiveProfiles1"))));
+            this.dateTimePicker1.Size = new System.Drawing.Size(250, 42);
             this.dateTimePicker1.TabIndex = 3;
             this.dateTimePicker1.Value = new System.DateTime(2022, 1, 6, 11, 2, 4, 976);
             // 
@@ -94,7 +103,9 @@
             this.dateTimePicker4.LabelText = "DateTime";
             this.dateTimePicker4.Location = new System.Drawing.Point(586, 249);
             this.dateTimePicker4.Name = "dateTimePicker4";
-            this.dateTimePicker4.Size = new System.Drawing.Size(250, 53);
+            this.dateTimePicker4.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("dateTimePicker4.ResponsiveProfiles"))));
+            this.dateTimePicker4.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("dateTimePicker4.ResponsiveProfiles1"))));
+            this.dateTimePicker4.Size = new System.Drawing.Size(250, 42);
             this.dateTimePicker4.TabIndex = 4;
             this.dateTimePicker4.Value = new System.DateTime(2022, 1, 6, 11, 2, 4, 976);
             // 
@@ -106,7 +117,9 @@
             this.dateTimePicker5.LabelText = "Custom";
             this.dateTimePicker5.Location = new System.Drawing.Point(586, 326);
             this.dateTimePicker5.Name = "dateTimePicker5";
-            this.dateTimePicker5.Size = new System.Drawing.Size(250, 53);
+            this.dateTimePicker5.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("dateTimePicker5.ResponsiveProfiles"))));
+            this.dateTimePicker5.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("dateTimePicker5.ResponsiveProfiles1"))));
+            this.dateTimePicker5.Size = new System.Drawing.Size(250, 42);
             this.dateTimePicker5.TabIndex = 5;
             this.dateTimePicker5.Value = new System.DateTime(2022, 1, 6, 11, 2, 4, 976);
             // 
@@ -116,8 +129,10 @@
             this.dateTimePicker6.LabelText = "UpDown";
             this.dateTimePicker6.Location = new System.Drawing.Point(272, 249);
             this.dateTimePicker6.Name = "dateTimePicker6";
+            this.dateTimePicker6.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("dateTimePicker6.ResponsiveProfiles"))));
+            this.dateTimePicker6.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("dateTimePicker6.ResponsiveProfiles1"))));
             this.dateTimePicker6.ShowUpDown = true;
-            this.dateTimePicker6.Size = new System.Drawing.Size(250, 53);
+            this.dateTimePicker6.Size = new System.Drawing.Size(250, 42);
             this.dateTimePicker6.TabIndex = 6;
             this.dateTimePicker6.Value = new System.DateTime(2022, 1, 6, 11, 2, 5, 931);
             // 
@@ -127,9 +142,11 @@
             this.dateTimePicker7.LabelText = "No Calendar";
             this.dateTimePicker7.Location = new System.Drawing.Point(272, 326);
             this.dateTimePicker7.Name = "dateTimePicker7";
+            this.dateTimePicker7.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("dateTimePicker7.ResponsiveProfiles"))));
+            this.dateTimePicker7.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("dateTimePicker7.ResponsiveProfiles1"))));
             this.dateTimePicker7.ShowCalendar = false;
             this.dateTimePicker7.ShowUpDown = true;
-            this.dateTimePicker7.Size = new System.Drawing.Size(250, 53);
+            this.dateTimePicker7.Size = new System.Drawing.Size(250, 42);
             this.dateTimePicker7.TabIndex = 7;
             this.dateTimePicker7.Value = new System.DateTime(2022, 1, 6, 11, 2, 5, 931);
             // 
@@ -140,7 +157,9 @@
             this.dateTimePicker8.LabelText = "Dotted";
             this.dateTimePicker8.Location = new System.Drawing.Point(900, 95);
             this.dateTimePicker8.Name = "dateTimePicker8";
-            this.dateTimePicker8.Size = new System.Drawing.Size(250, 53);
+            this.dateTimePicker8.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("dateTimePicker8.ResponsiveProfiles"))));
+            this.dateTimePicker8.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("dateTimePicker8.ResponsiveProfiles1"))));
+            this.dateTimePicker8.Size = new System.Drawing.Size(250, 42);
             this.dateTimePicker8.TabIndex = 8;
             this.dateTimePicker8.Value = new System.DateTime(2022, 1, 6, 11, 2, 3, 766);
             // 
@@ -151,7 +170,9 @@
             this.dateTimePicker9.LabelText = "Dashed";
             this.dateTimePicker9.Location = new System.Drawing.Point(900, 172);
             this.dateTimePicker9.Name = "dateTimePicker9";
-            this.dateTimePicker9.Size = new System.Drawing.Size(250, 53);
+            this.dateTimePicker9.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("dateTimePicker9.ResponsiveProfiles"))));
+            this.dateTimePicker9.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("dateTimePicker9.ResponsiveProfiles1"))));
+            this.dateTimePicker9.Size = new System.Drawing.Size(250, 42);
             this.dateTimePicker9.TabIndex = 9;
             this.dateTimePicker9.Value = new System.DateTime(2022, 1, 6, 11, 2, 3, 766);
             // 
@@ -162,7 +183,9 @@
             this.dateTimePicker10.LabelText = "Double";
             this.dateTimePicker10.Location = new System.Drawing.Point(900, 249);
             this.dateTimePicker10.Name = "dateTimePicker10";
-            this.dateTimePicker10.Size = new System.Drawing.Size(250, 53);
+            this.dateTimePicker10.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("dateTimePicker10.ResponsiveProfiles"))));
+            this.dateTimePicker10.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("dateTimePicker10.ResponsiveProfiles1"))));
+            this.dateTimePicker10.Size = new System.Drawing.Size(250, 42);
             this.dateTimePicker10.TabIndex = 10;
             this.dateTimePicker10.Value = new System.DateTime(2022, 1, 6, 11, 2, 3, 766);
             // 
@@ -173,7 +196,9 @@
             this.dateTimePicker11.LabelText = "None";
             this.dateTimePicker11.Location = new System.Drawing.Point(900, 326);
             this.dateTimePicker11.Name = "dateTimePicker11";
-            this.dateTimePicker11.Size = new System.Drawing.Size(250, 53);
+            this.dateTimePicker11.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("dateTimePicker11.ResponsiveProfiles"))));
+            this.dateTimePicker11.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("dateTimePicker11.ResponsiveProfiles1"))));
+            this.dateTimePicker11.Size = new System.Drawing.Size(250, 42);
             this.dateTimePicker11.TabIndex = 11;
             this.dateTimePicker11.Value = new System.DateTime(2022, 1, 6, 11, 2, 3, 766);
             // 
@@ -193,6 +218,8 @@
             this.Controls.Add(this.dateTimePickerDefault);
             this.MinimumSize = new System.Drawing.Size(885, 293);
             this.Name = "Features";
+            this.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("$this.ResponsiveProfiles"))));
+            this.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("$this.ResponsiveProfiles1"))));
             this.ResumeLayout(false);
             this.PerformLayout();
 

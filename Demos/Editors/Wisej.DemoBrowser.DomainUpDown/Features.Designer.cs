@@ -28,6 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Features));
             this.domainUpDownDefault = new Wisej.Web.DomainUpDown();
             this.domainUpDown2 = new Wisej.Web.DomainUpDown();
             this.domainUpDown3 = new Wisej.Web.DomainUpDown();
@@ -58,7 +59,9 @@
             this.domainUpDownDefault.LabelText = "Default";
             this.domainUpDownDefault.Location = new System.Drawing.Point(281, 83);
             this.domainUpDownDefault.Name = "domainUpDownDefault";
-            this.domainUpDownDefault.Size = new System.Drawing.Size(262, 53);
+            this.domainUpDownDefault.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("domainUpDownDefault.ResponsiveProfiles"))));
+            this.domainUpDownDefault.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("domainUpDownDefault.ResponsiveProfiles1"))));
+            this.domainUpDownDefault.Size = new System.Drawing.Size(262, 42);
             this.domainUpDownDefault.Sorted = true;
             this.domainUpDownDefault.TabIndex = 0;
             this.domainUpDownDefault.SelectedItemChanged += new System.EventHandler(this.domainUpDownDefault_SelectedItemChanged);
@@ -79,7 +82,9 @@
             this.domainUpDown2.LabelText = "Text Align Right";
             this.domainUpDown2.Location = new System.Drawing.Point(281, 168);
             this.domainUpDown2.Name = "domainUpDown2";
-            this.domainUpDown2.Size = new System.Drawing.Size(262, 53);
+            this.domainUpDown2.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("domainUpDown2.ResponsiveProfiles"))));
+            this.domainUpDown2.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("domainUpDown2.ResponsiveProfiles1"))));
+            this.domainUpDown2.Size = new System.Drawing.Size(262, 42);
             this.domainUpDown2.Sorted = true;
             this.domainUpDown2.TabIndex = 1;
             this.domainUpDown2.TextAlign = Wisej.Web.HorizontalAlignment.Right;
@@ -100,7 +105,9 @@
             this.domainUpDown3.LabelText = "Text Align Center";
             this.domainUpDown3.Location = new System.Drawing.Point(281, 253);
             this.domainUpDown3.Name = "domainUpDown3";
-            this.domainUpDown3.Size = new System.Drawing.Size(262, 53);
+            this.domainUpDown3.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("domainUpDown3.ResponsiveProfiles"))));
+            this.domainUpDown3.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("domainUpDown3.ResponsiveProfiles1"))));
+            this.domainUpDown3.Size = new System.Drawing.Size(262, 42);
             this.domainUpDown3.Sorted = true;
             this.domainUpDown3.TabIndex = 2;
             this.domainUpDown3.TextAlign = Wisej.Web.HorizontalAlignment.Center;
@@ -122,7 +129,9 @@
             this.domainUpDown4.LabelText = "Hidden UpDown Buttons";
             this.domainUpDown4.Location = new System.Drawing.Point(281, 338);
             this.domainUpDown4.Name = "domainUpDown4";
-            this.domainUpDown4.Size = new System.Drawing.Size(262, 53);
+            this.domainUpDown4.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("domainUpDown4.ResponsiveProfiles"))));
+            this.domainUpDown4.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("domainUpDown4.ResponsiveProfiles1"))));
+            this.domainUpDown4.Size = new System.Drawing.Size(262, 42);
             this.domainUpDown4.Sorted = true;
             this.domainUpDown4.TabIndex = 3;
             // 
@@ -143,7 +152,9 @@
             this.domainUpDown5.Location = new System.Drawing.Point(580, 83);
             this.domainUpDown5.Name = "domainUpDown5";
             this.domainUpDown5.ReadOnly = true;
-            this.domainUpDown5.Size = new System.Drawing.Size(262, 53);
+            this.domainUpDown5.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("domainUpDown5.ResponsiveProfiles"))));
+            this.domainUpDown5.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("domainUpDown5.ResponsiveProfiles1"))));
+            this.domainUpDown5.Size = new System.Drawing.Size(262, 42);
             this.domainUpDown5.Sorted = true;
             this.domainUpDown5.TabIndex = 4;
             this.domainUpDown5.Text = "Apple";
@@ -165,7 +176,9 @@
             this.domainUpDown6.Location = new System.Drawing.Point(580, 168);
             this.domainUpDown6.Name = "domainUpDown6";
             this.domainUpDown6.ReadOnly = true;
-            this.domainUpDown6.Size = new System.Drawing.Size(262, 53);
+            this.domainUpDown6.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("domainUpDown6.ResponsiveProfiles"))));
+            this.domainUpDown6.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("domainUpDown6.ResponsiveProfiles1"))));
+            this.domainUpDown6.Size = new System.Drawing.Size(262, 42);
             this.domainUpDown6.Sorted = true;
             this.domainUpDown6.TabIndex = 5;
             this.domainUpDown6.UpDownAlign = Wisej.Web.HorizontalAlignment.Center;
@@ -187,7 +200,9 @@
             this.domainUpDown7.Location = new System.Drawing.Point(580, 253);
             this.domainUpDown7.Name = "domainUpDown7";
             this.domainUpDown7.ReadOnly = true;
-            this.domainUpDown7.Size = new System.Drawing.Size(262, 53);
+            this.domainUpDown7.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("domainUpDown7.ResponsiveProfiles"))));
+            this.domainUpDown7.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("domainUpDown7.ResponsiveProfiles1"))));
+            this.domainUpDown7.Size = new System.Drawing.Size(262, 42);
             this.domainUpDown7.Sorted = true;
             this.domainUpDown7.TabIndex = 6;
             this.domainUpDown7.UpDownAlign = Wisej.Web.HorizontalAlignment.Left;
@@ -210,7 +225,9 @@
             this.domainUpDown8.Location = new System.Drawing.Point(580, 338);
             this.domainUpDown8.Name = "domainUpDown8";
             this.domainUpDown8.ReadOnly = true;
-            this.domainUpDown8.Size = new System.Drawing.Size(262, 53);
+            this.domainUpDown8.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("domainUpDown8.ResponsiveProfiles"))));
+            this.domainUpDown8.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("domainUpDown8.ResponsiveProfiles1"))));
+            this.domainUpDown8.Size = new System.Drawing.Size(262, 42);
             this.domainUpDown8.Sorted = true;
             this.domainUpDown8.TabIndex = 7;
             // 
@@ -231,7 +248,9 @@
             this.domainUpDown9.LabelText = "Dotted";
             this.domainUpDown9.Location = new System.Drawing.Point(879, 83);
             this.domainUpDown9.Name = "domainUpDown9";
-            this.domainUpDown9.Size = new System.Drawing.Size(262, 53);
+            this.domainUpDown9.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("domainUpDown9.ResponsiveProfiles"))));
+            this.domainUpDown9.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("domainUpDown9.ResponsiveProfiles1"))));
+            this.domainUpDown9.Size = new System.Drawing.Size(262, 42);
             this.domainUpDown9.Sorted = true;
             this.domainUpDown9.TabIndex = 8;
             // 
@@ -252,7 +271,9 @@
             this.domainUpDown10.LabelText = "Dashed";
             this.domainUpDown10.Location = new System.Drawing.Point(879, 168);
             this.domainUpDown10.Name = "domainUpDown10";
-            this.domainUpDown10.Size = new System.Drawing.Size(262, 53);
+            this.domainUpDown10.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("domainUpDown10.ResponsiveProfiles"))));
+            this.domainUpDown10.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("domainUpDown10.ResponsiveProfiles1"))));
+            this.domainUpDown10.Size = new System.Drawing.Size(262, 42);
             this.domainUpDown10.Sorted = true;
             this.domainUpDown10.TabIndex = 9;
             // 
@@ -273,7 +294,9 @@
             this.domainUpDown11.LabelText = "Double";
             this.domainUpDown11.Location = new System.Drawing.Point(879, 253);
             this.domainUpDown11.Name = "domainUpDown11";
-            this.domainUpDown11.Size = new System.Drawing.Size(262, 53);
+            this.domainUpDown11.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("domainUpDown11.ResponsiveProfiles"))));
+            this.domainUpDown11.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("domainUpDown11.ResponsiveProfiles1"))));
+            this.domainUpDown11.Size = new System.Drawing.Size(262, 42);
             this.domainUpDown11.Sorted = true;
             this.domainUpDown11.TabIndex = 10;
             // 
@@ -294,7 +317,9 @@
             this.domainUpDown12.LabelText = "None";
             this.domainUpDown12.Location = new System.Drawing.Point(879, 338);
             this.domainUpDown12.Name = "domainUpDown12";
-            this.domainUpDown12.Size = new System.Drawing.Size(262, 53);
+            this.domainUpDown12.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("domainUpDown12.ResponsiveProfiles"))));
+            this.domainUpDown12.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("domainUpDown12.ResponsiveProfiles1"))));
+            this.domainUpDown12.Size = new System.Drawing.Size(262, 42);
             this.domainUpDown12.Sorted = true;
             this.domainUpDown12.TabIndex = 11;
             // 
@@ -314,6 +339,8 @@
             this.Controls.Add(this.domainUpDownDefault);
             this.MinimumSize = new System.Drawing.Size(865, 316);
             this.Name = "Features";
+            this.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("$this.ResponsiveProfiles"))));
+            this.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("$this.ResponsiveProfiles1"))));
             this.ResumeLayout(false);
             this.PerformLayout();
 
