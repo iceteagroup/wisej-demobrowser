@@ -30,16 +30,16 @@
 		{
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Features));
-            Wisej.Web.ImageListEntry imageListEntry1 = new Wisej.Web.ImageListEntry("resource.wx/Wisej.DemoBrowser.TreeView.Images.apple.png", "apple");
-            Wisej.Web.ImageListEntry imageListEntry2 = new Wisej.Web.ImageListEntry("resource.wx/Wisej.DemoBrowser.TreeView.Images.banana.png", "banana");
-            Wisej.Web.ImageListEntry imageListEntry3 = new Wisej.Web.ImageListEntry("resource.wx/Wisej.DemoBrowser.TreeView.Images.carrot.png", "carrot");
-            Wisej.Web.ImageListEntry imageListEntry4 = new Wisej.Web.ImageListEntry("resource.wx/Wisej.DemoBrowser.TreeView.Images.cucumber.png", "cucumber");
-            Wisej.Web.ImageListEntry imageListEntry5 = new Wisej.Web.ImageListEntry("resource.wx/Wisej.DemoBrowser.TreeView.Images.milk.png", "milk");
-            Wisej.Web.ImageListEntry imageListEntry6 = new Wisej.Web.ImageListEntry("resource.wx/Wisej.DemoBrowser.TreeView.Images.orange.png", "orange");
-            Wisej.Web.ImageListEntry imageListEntry7 = new Wisej.Web.ImageListEntry("resource.wx/Wisej.DemoBrowser.TreeView.Images.yogurt.png", "yogurt");
-            Wisej.Web.ImageListEntry imageListEntry8 = new Wisej.Web.ImageListEntry("resource.wx/Wisej.DemoBrowser.TreeView.Images.dairy.png", "dairy");
-            Wisej.Web.ImageListEntry imageListEntry9 = new Wisej.Web.ImageListEntry("resource.wx/Wisej.DemoBrowser.TreeView.Images.fruit.png", "fruit");
-            Wisej.Web.ImageListEntry imageListEntry10 = new Wisej.Web.ImageListEntry("resource.wx/Wisej.DemoBrowser.TreeView.Images.vegetables.png", "vegetables");
+            Wisej.Web.ImageListEntry imageListEntry11 = new Wisej.Web.ImageListEntry("resource.wx/Wisej.DemoBrowser.TreeView.Images.apple.png", "apple");
+            Wisej.Web.ImageListEntry imageListEntry12 = new Wisej.Web.ImageListEntry("resource.wx/Wisej.DemoBrowser.TreeView.Images.banana.png", "banana");
+            Wisej.Web.ImageListEntry imageListEntry13 = new Wisej.Web.ImageListEntry("resource.wx/Wisej.DemoBrowser.TreeView.Images.carrot.png", "carrot");
+            Wisej.Web.ImageListEntry imageListEntry14 = new Wisej.Web.ImageListEntry("resource.wx/Wisej.DemoBrowser.TreeView.Images.cucumber.png", "cucumber");
+            Wisej.Web.ImageListEntry imageListEntry15 = new Wisej.Web.ImageListEntry("resource.wx/Wisej.DemoBrowser.TreeView.Images.milk.png", "milk");
+            Wisej.Web.ImageListEntry imageListEntry16 = new Wisej.Web.ImageListEntry("resource.wx/Wisej.DemoBrowser.TreeView.Images.orange.png", "orange");
+            Wisej.Web.ImageListEntry imageListEntry17 = new Wisej.Web.ImageListEntry("resource.wx/Wisej.DemoBrowser.TreeView.Images.yogurt.png", "yogurt");
+            Wisej.Web.ImageListEntry imageListEntry18 = new Wisej.Web.ImageListEntry("resource.wx/Wisej.DemoBrowser.TreeView.Images.dairy.png", "dairy");
+            Wisej.Web.ImageListEntry imageListEntry19 = new Wisej.Web.ImageListEntry("resource.wx/Wisej.DemoBrowser.TreeView.Images.fruit.png", "fruit");
+            Wisej.Web.ImageListEntry imageListEntry20 = new Wisej.Web.ImageListEntry("resource.wx/Wisej.DemoBrowser.TreeView.Images.vegetables.png", "vegetables");
             this.accordion1 = new Wisej.Web.Accordion();
             this.accordionPanel1 = new Wisej.Web.AccordionPanel();
             this.label2 = new Wisej.Web.Label();
@@ -77,6 +77,8 @@
             this.accordion1.Controls.Add(this.accordionPanel4);
             this.accordion1.Location = new System.Drawing.Point(186, 36);
             this.accordion1.Name = "accordion1";
+            this.accordion1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("accordion1.ResponsiveProfiles"))));
+            this.accordion1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("accordion1.ResponsiveProfiles1"))));
             this.accordion1.SelectedIndex = 0;
             this.accordion1.Size = new System.Drawing.Size(500, 293);
             this.accordion1.TabIndex = 0;
@@ -108,7 +110,7 @@
             this.accordionPanel2.Location = new System.Drawing.Point(0, 207);
             this.accordionPanel2.Name = "accordionPanel2";
             this.accordionPanel2.Padding = new Wisej.Web.Padding(8);
-            this.accordionPanel2.RestoreBounds = new System.Drawing.Rectangle(0, 207, 498, 207);
+            this.accordionPanel2.RestoreBounds = new System.Drawing.Rectangle(0, 207, 498, 28);
             this.accordionPanel2.Size = new System.Drawing.Size(498, 28);
             this.accordionPanel2.Text = "How long do I get free upgrades?";
             // 
@@ -130,7 +132,7 @@
             this.accordionPanel3.Location = new System.Drawing.Point(0, 235);
             this.accordionPanel3.Name = "accordionPanel3";
             this.accordionPanel3.Padding = new Wisej.Web.Padding(8);
-            this.accordionPanel3.RestoreBounds = new System.Drawing.Rectangle(0, 235, 498, 207);
+            this.accordionPanel3.RestoreBounds = new System.Drawing.Rectangle(0, 235, 498, 28);
             this.accordionPanel3.Size = new System.Drawing.Size(498, 28);
             this.accordionPanel3.Text = "What is the one-year renewal?";
             // 
@@ -151,7 +153,7 @@
             this.accordionPanel4.Location = new System.Drawing.Point(0, 263);
             this.accordionPanel4.Name = "accordionPanel4";
             this.accordionPanel4.Padding = new Wisej.Web.Padding(8);
-            this.accordionPanel4.RestoreBounds = new System.Drawing.Rectangle(0, 263, 498, 207);
+            this.accordionPanel4.RestoreBounds = new System.Drawing.Rectangle(0, 263, 498, 28);
             this.accordionPanel4.Size = new System.Drawing.Size(498, 28);
             this.accordionPanel4.Text = "Do you offer volume licensing?\n";
             // 
@@ -171,23 +173,25 @@
             // imageList1
             // 
             this.imageList1.Images.AddRange(new Wisej.Web.ImageListEntry[] {
-            imageListEntry1,
-            imageListEntry2,
-            imageListEntry3,
-            imageListEntry4,
-            imageListEntry5,
-            imageListEntry6,
-            imageListEntry7,
-            imageListEntry8,
-            imageListEntry9,
-            imageListEntry10});
+            imageListEntry11,
+            imageListEntry12,
+            imageListEntry13,
+            imageListEntry14,
+            imageListEntry15,
+            imageListEntry16,
+            imageListEntry17,
+            imageListEntry18,
+            imageListEntry19,
+            imageListEntry20});
             // 
             // chkCollapsible
             // 
             this.chkCollapsible.Anchor = Wisej.Web.AnchorStyles.None;
             this.chkCollapsible.Location = new System.Drawing.Point(84, 137);
             this.chkCollapsible.Name = "chkCollapsible";
-            this.chkCollapsible.Size = new System.Drawing.Size(93, 23);
+            this.chkCollapsible.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("chkCollapsible.ResponsiveProfiles"))));
+            this.chkCollapsible.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("chkCollapsible.ResponsiveProfiles1"))));
+            this.chkCollapsible.Size = new System.Drawing.Size(96, 22);
             this.chkCollapsible.TabIndex = 1;
             this.chkCollapsible.Text = "Collapsible";
             this.chkCollapsible.CheckedChanged += new System.EventHandler(this.chkCollapsible_CheckedChanged);
@@ -197,7 +201,9 @@
             this.chkSelectedOnTop.Anchor = Wisej.Web.AnchorStyles.None;
             this.chkSelectedOnTop.Location = new System.Drawing.Point(84, 180);
             this.chkSelectedOnTop.Name = "chkSelectedOnTop";
-            this.chkSelectedOnTop.Size = new System.Drawing.Size(123, 23);
+            this.chkSelectedOnTop.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("chkSelectedOnTop.ResponsiveProfiles"))));
+            this.chkSelectedOnTop.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("chkSelectedOnTop.ResponsiveProfiles1"))));
+            this.chkSelectedOnTop.Size = new System.Drawing.Size(127, 22);
             this.chkSelectedOnTop.TabIndex = 2;
             this.chkSelectedOnTop.Text = "Selected on Top";
             this.chkSelectedOnTop.CheckedChanged += new System.EventHandler(this.chkSelectedOnTop_CheckedChanged);
@@ -206,10 +212,12 @@
             // 
             this.label1.Anchor = Wisej.Web.AnchorStyles.None;
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("@windowTitle", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.label1.Font = new System.Drawing.Font("@windowTitle", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.label1.Location = new System.Drawing.Point(186, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(262, 22);
+            this.label1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("label1.ResponsiveProfiles"))));
+            this.label1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("label1.ResponsiveProfiles1"))));
+            this.label1.Size = new System.Drawing.Size(253, 19);
             this.label1.TabIndex = 3;
             this.label1.Text = "Frequently Asked Questions (FAQ)";
             // 
@@ -221,6 +229,8 @@
             this.panel1.Location = new System.Drawing.Point(3, 3);
             this.panel1.MinimumSize = new System.Drawing.Size(150, 0);
             this.panel1.Name = "panel1";
+            this.panel1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("panel1.ResponsiveProfiles"))));
+            this.panel1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("panel1.ResponsiveProfiles1"))));
             this.panel1.Size = new System.Drawing.Size(291, 341);
             this.panel1.TabIndex = 4;
             // 
@@ -232,6 +242,8 @@
             this.panel2.Location = new System.Drawing.Point(300, 3);
             this.panel2.MinimumSize = new System.Drawing.Size(500, 0);
             this.panel2.Name = "panel2";
+            this.panel2.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("panel2.ResponsiveProfiles"))));
+            this.panel2.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("panel2.ResponsiveProfiles1"))));
             this.panel2.Size = new System.Drawing.Size(872, 341);
             this.panel2.TabIndex = 5;
             // 
@@ -243,6 +255,8 @@
             this.flowLayoutPanel1.Controls.Add(this.panel2);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(124, 62);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("flowLayoutPanel1.ResponsiveProfiles"))));
+            this.flowLayoutPanel1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("flowLayoutPanel1.ResponsiveProfiles1"))));
             this.flowLayoutPanel1.Size = new System.Drawing.Size(1175, 351);
             this.flowLayoutPanel1.TabIndex = 6;
             // 
@@ -252,6 +266,8 @@
             this.Controls.Add(this.flowLayoutPanel1);
             this.MinimumSize = new System.Drawing.Size(903, 315);
             this.Name = "Features";
+            this.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("$this.ResponsiveProfiles"))));
+            this.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("$this.ResponsiveProfiles1"))));
             this.Load += new System.EventHandler(this.Features_Load);
             ((System.ComponentModel.ISupportInitialize)(this.accordion1)).EndInit();
             this.accordion1.ResumeLayout(false);
