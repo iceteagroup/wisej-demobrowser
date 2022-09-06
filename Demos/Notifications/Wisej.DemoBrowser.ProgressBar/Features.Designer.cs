@@ -28,6 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Features));
             this.progressBar1 = new Wisej.Web.ProgressBar();
             this.progressBar2 = new Wisej.Web.ProgressBar();
             this.progressBarSteps = new Wisej.Web.ProgressBar();
@@ -89,6 +90,7 @@
             this.buttonTask.Anchor = Wisej.Web.AnchorStyles.None;
             this.buttonTask.Location = new System.Drawing.Point(67, 202);
             this.buttonTask.Name = "buttonTask";
+            this.buttonTask.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("buttonTask.ResponsiveProfiles"))));
             this.buttonTask.Size = new System.Drawing.Size(137, 37);
             this.buttonTask.TabIndex = 3;
             this.buttonTask.Text = "Start Task";
@@ -165,6 +167,7 @@
             this.panel1.Location = new System.Drawing.Point(20, 20);
             this.panel1.Margin = new Wisej.Web.Padding(20);
             this.panel1.Name = "panel1";
+            this.panel1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("panel1.ResponsiveProfiles"))));
             this.panel1.Size = new System.Drawing.Size(270, 440);
             this.panel1.TabIndex = 9;
             // 
@@ -179,6 +182,7 @@
             this.panel2.Margin = new Wisej.Web.Padding(20);
             this.panel2.MinimumSize = new System.Drawing.Size(270, 440);
             this.panel2.Name = "panel2";
+            this.panel2.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("panel2.ResponsiveProfiles"))));
             this.panel2.Size = new System.Drawing.Size(330, 440);
             this.panel2.TabIndex = 10;
             // 
@@ -193,6 +197,7 @@
             this.panel3.Margin = new Wisej.Web.Padding(20);
             this.panel3.MinimumSize = new System.Drawing.Size(270, 440);
             this.panel3.Name = "panel3";
+            this.panel3.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("panel3.ResponsiveProfiles"))));
             this.panel3.Size = new System.Drawing.Size(330, 440);
             this.panel3.TabIndex = 11;
             // 
@@ -206,6 +211,7 @@
             this.flowLayoutPanel1.Controls.Add(this.panel3);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(19, 25);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("flowLayoutPanel1.ResponsiveProfiles"))));
             this.flowLayoutPanel1.Size = new System.Drawing.Size(1050, 480);
             this.flowLayoutPanel1.TabIndex = 12;
             // 
@@ -214,6 +220,7 @@
             this.AutoScroll = true;
             this.Controls.Add(this.flowLayoutPanel1);
             this.Name = "Features";
+            this.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("$this.ResponsiveProfiles"))));
             this.Size = new System.Drawing.Size(1101, 541);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);

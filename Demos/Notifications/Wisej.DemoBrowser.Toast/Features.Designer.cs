@@ -28,6 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Features));
             this.button1 = new Wisej.Web.Button();
             this.buttonAlignments = new Wisej.Web.Button();
             this.buttonAutoCloseDelay = new Wisej.Web.Button();
@@ -57,6 +58,7 @@
             this.buttonAlignments.Location = new System.Drawing.Point(970, 20);
             this.buttonAlignments.Margin = new Wisej.Web.Padding(20);
             this.buttonAlignments.Name = "buttonAlignments";
+            this.buttonAlignments.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("buttonAlignments.ResponsiveProfiles"))));
             this.buttonAlignments.Size = new System.Drawing.Size(150, 35);
             this.buttonAlignments.TabIndex = 1;
             this.buttonAlignments.Text = "Alignments";
@@ -69,6 +71,7 @@
             this.buttonAutoCloseDelay.Location = new System.Drawing.Point(780, 20);
             this.buttonAutoCloseDelay.Margin = new Wisej.Web.Padding(20);
             this.buttonAutoCloseDelay.Name = "buttonAutoCloseDelay";
+            this.buttonAutoCloseDelay.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("buttonAutoCloseDelay.ResponsiveProfiles"))));
             this.buttonAutoCloseDelay.Size = new System.Drawing.Size(150, 35);
             this.buttonAutoCloseDelay.TabIndex = 2;
             this.buttonAutoCloseDelay.Text = "Auto Close Delay";
@@ -81,6 +84,7 @@
             this.buttonHtml.Location = new System.Drawing.Point(590, 20);
             this.buttonHtml.Margin = new Wisej.Web.Padding(20);
             this.buttonHtml.Name = "buttonHtml";
+            this.buttonHtml.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("buttonHtml.ResponsiveProfiles"))));
             this.buttonHtml.Size = new System.Drawing.Size(150, 35);
             this.buttonHtml.TabIndex = 3;
             this.buttonHtml.Text = "HTML";
@@ -93,6 +97,7 @@
             this.buttonBackColor.Location = new System.Drawing.Point(400, 20);
             this.buttonBackColor.Margin = new Wisej.Web.Padding(20);
             this.buttonBackColor.Name = "buttonBackColor";
+            this.buttonBackColor.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("buttonBackColor.ResponsiveProfiles"))));
             this.buttonBackColor.Size = new System.Drawing.Size(150, 35);
             this.buttonBackColor.TabIndex = 4;
             this.buttonBackColor.Text = "Back Color";
@@ -105,6 +110,7 @@
             this.button2.Location = new System.Drawing.Point(210, 20);
             this.button2.Margin = new Wisej.Web.Padding(20);
             this.button2.Name = "button2";
+            this.button2.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("button2.ResponsiveProfiles"))));
             this.button2.Size = new System.Drawing.Size(150, 35);
             this.button2.TabIndex = 5;
             this.button2.Text = "Icon";
@@ -122,6 +128,7 @@
             this.flowLayoutPanel1.Controls.Add(this.buttonAlignments);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(59, 55);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("flowLayoutPanel1.ResponsiveProfiles"))));
             this.flowLayoutPanel1.Size = new System.Drawing.Size(1146, 75);
             this.flowLayoutPanel1.TabIndex = 6;
             // 
@@ -130,6 +137,7 @@
             this.AutoScroll = true;
             this.Controls.Add(this.flowLayoutPanel1);
             this.Name = "Features";
+            this.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("$this.ResponsiveProfiles"))));
             this.Size = new System.Drawing.Size(1245, 170);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
