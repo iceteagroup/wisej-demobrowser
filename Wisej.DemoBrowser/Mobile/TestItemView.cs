@@ -48,6 +48,9 @@ namespace Wisej.DemoBrowser
 
 		private void PopulateContentLabels(dynamic config)
 		{
+			this.labelContent1.Text = "";
+			this.labelContent2.Text = "";
+
 			switch (this.role)
 			{
 				case "category":

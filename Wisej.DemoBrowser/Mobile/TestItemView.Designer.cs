@@ -48,7 +48,7 @@
             this.labelTitle.Font = new System.Drawing.Font("@defaultBoldDemo", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.labelTitle.Location = new System.Drawing.Point(3, 49);
             this.labelTitle.Name = "labelTitle";
-            this.labelTitle.Size = new System.Drawing.Size(134, 22);
+            this.labelTitle.Size = new System.Drawing.Size(136, 22);
             this.labelTitle.TabIndex = 0;
             this.labelTitle.Text = "Features tes test";
             // 
@@ -75,7 +75,7 @@
             this.buttonMenu.InitScript = "this.setShowArrow(false);";
             this.buttonMenu.Location = new System.Drawing.Point(49, 3);
             this.buttonMenu.Name = "buttonMenu";
-            this.buttonMenu.Size = new System.Drawing.Size(88, 40);
+            this.buttonMenu.Size = new System.Drawing.Size(90, 40);
             this.buttonMenu.TabIndex = 2;
             // 
             // flowLayoutPanelMain
@@ -90,7 +90,7 @@
             this.flowLayoutPanelMain.FlowDirection = Wisej.Web.FlowDirection.RightToLeft;
             this.flowLayoutPanelMain.Location = new System.Drawing.Point(10, 10);
             this.flowLayoutPanelMain.Name = "flowLayoutPanelMain";
-            this.flowLayoutPanelMain.Size = new System.Drawing.Size(140, 148);
+            this.flowLayoutPanelMain.Size = new System.Drawing.Size(142, 148);
             this.flowLayoutPanelMain.TabIndex = 4;
             // 
             // labelContent1
@@ -103,7 +103,7 @@
             this.labelContent1.Location = new System.Drawing.Point(3, 80);
             this.labelContent1.Margin = new Wisej.Web.Padding(3, 6, 3, 3);
             this.labelContent1.Name = "labelContent1";
-            this.labelContent1.Size = new System.Drawing.Size(134, 18);
+            this.labelContent1.Size = new System.Drawing.Size(136, 18);
             this.labelContent1.TabIndex = 3;
             this.labelContent1.Text = "&bull; TextBox";
             // 
@@ -116,7 +116,7 @@
             this.flowLayoutPanelMain.SetFlowBreak(this.labelContent2, true);
             this.labelContent2.Location = new System.Drawing.Point(3, 104);
             this.labelContent2.Name = "labelContent2";
-            this.labelContent2.Size = new System.Drawing.Size(134, 18);
+            this.labelContent2.Size = new System.Drawing.Size(136, 18);
             this.labelContent2.TabIndex = 4;
             this.labelContent2.Text = "&bull; DateTimePicker";
             // 
@@ -127,7 +127,7 @@
             this.CssStyle = "border-radius: 8px;\r\nbox-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;";
             this.Margin = new Wisej.Web.Padding(10);
             this.Name = "TestItemView";
-            this.Padding = new Wisej.Web.Padding(10);
+            this.Padding = new Wisej.Web.Padding(10, 10, 8, 10);
             this.Size = new System.Drawing.Size(160, 168);
             this.Load += new System.EventHandler(this.AppItem_Load);
             this.Click += new System.EventHandler(this.AppItemView_Click);
