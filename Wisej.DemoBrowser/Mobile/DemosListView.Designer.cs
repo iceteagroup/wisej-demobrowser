@@ -28,48 +28,45 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-            this.labelTitle = new Wisej.Web.Label();
             this.flowLayoutPanelDemos = new Wisej.Web.FlowLayoutPanel();
             this.SuspendLayout();
             // 
+            // labelDescription
+            // 
+            this.labelDescription.Location = new System.Drawing.Point(16, 80);
+            this.labelDescription.Size = new System.Drawing.Size(1390, 85);
+            // 
             // labelTitle
             // 
-            this.labelTitle.CssStyle = "transition: font-size 0.25s;";
-            this.labelTitle.Dock = Wisej.Web.DockStyle.Top;
-            this.labelTitle.Font = new System.Drawing.Font("@condensedWindowTitle", 35F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.labelTitle.Location = new System.Drawing.Point(16, 0);
-            this.labelTitle.Name = "labelTitle";
-            this.labelTitle.Size = new System.Drawing.Size(1390, 128);
-            this.labelTitle.TabIndex = 19;
-            this.labelTitle.Text = "Wisej.NET Demos";
-            this.labelTitle.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.labelTitle.Size = new System.Drawing.Size(1390, 80);
             // 
             // flowLayoutPanelDemos
             // 
             this.flowLayoutPanelDemos.AutoScroll = true;
             this.flowLayoutPanelDemos.AutoScrollMargin = new System.Drawing.Size(0, 20);
             this.flowLayoutPanelDemos.Dock = Wisej.Web.DockStyle.Fill;
-            this.flowLayoutPanelDemos.Location = new System.Drawing.Point(16, 128);
+            this.flowLayoutPanelDemos.Location = new System.Drawing.Point(16, 165);
             this.flowLayoutPanelDemos.Name = "flowLayoutPanelDemos";
             this.flowLayoutPanelDemos.ScrollBars = Wisej.Web.ScrollBars.Hidden;
-            this.flowLayoutPanelDemos.Size = new System.Drawing.Size(1390, 346);
+            this.flowLayoutPanelDemos.Size = new System.Drawing.Size(1390, 309);
             this.flowLayoutPanelDemos.TabIndex = 20;
             this.flowLayoutPanelDemos.Scroll += new Wisej.Web.ScrollEventHandler(this.flowLayoutPanelApps_Scroll);
             // 
             // DemosListView
             // 
             this.Controls.Add(this.flowLayoutPanelDemos);
-            this.Controls.Add(this.labelTitle);
             this.Name = "DemosListView";
             this.Padding = new Wisej.Web.Padding(16, 0, 16, 0);
             this.Load += new System.EventHandler(this.DemosListView_Load);
+            this.Controls.SetChildIndex(this.labelDescription, 0);
+            this.Controls.SetChildIndex(this.flowLayoutPanelDemos, 0);
             this.ResumeLayout(false);
 
 		}
 
 		#endregion
 		private Web.FlowLayoutPanel flowLayoutPanelApps;
-		private Web.Label labelTitle;
 		private Web.FlowLayoutPanel flowLayoutPanelDemos;
     }
 }

@@ -1,5 +1,7 @@
-﻿using System;
+﻿using Microsoft.Ajax.Utilities;
+using System;
 using System.IO;
+using System.Text.RegularExpressions;
 using Wisej.Web;
 
 namespace Wisej.DemoBrowser
@@ -84,6 +86,17 @@ namespace Wisej.DemoBrowser
 			this.flowLayoutPanelDemos.Controls.Clear();
 			foreach (Core.DynamicObject.Member control in config)
 			{
+				if (control.Name == "Overview")
+				{
+					var categoryOverview = (dynamic) control.Value;
+                    var culture = Application.CurrentCulture.TwoLetterISOLanguageName;
+                    var description = categoryOverview[$"description-{culture}"] ?? categoryOverview["description-en"];
+
+					this.labelDescription.Text = description;
+
+					continue;
+				}
+
 				var demoNode = new TestItemView(control.Name, control.Value, "control")
 				{
 					Width = this._itemWidth
@@ -96,10 +109,17 @@ namespace Wisej.DemoBrowser
 
 		private void PopulateDemosList(dynamic config)
 		{
-			this.flowLayoutPanelDemos.Controls.Clear();
-			foreach (Core.DynamicObject.Member demo in config)
+			var overview = config["Features"];
+            var culture = Application.CurrentCulture.TwoLetterISOLanguageName;
+            var description = overview[$"description-{culture}"] ?? overview["description-en"];
+
+			this.labelDescription.Text = description;
+
+            this.flowLayoutPanelDemos.Controls.Clear();
+
+            foreach (Core.DynamicObject.Member demo in config)
 			{
-				var demoNode = new TestItemView(demo.Name, demo.Value, "demo")
+                var demoNode = new TestItemView(demo.Name, demo.Value, "demo")
 				{
 					Width = this._itemWidth
 				};
@@ -112,21 +132,9 @@ namespace Wisej.DemoBrowser
 		private void flowLayoutPanelApps_Scroll(object sender, ScrollEventArgs e)
 		{
 			if (e.NewValue == 0)
-				this.MaximizeTitle();
+				this.Maximize();
 			else
-				this.MinimizeTitle();
-		}
-
-		public void MinimizeTitle()
-		{
-			this.labelTitle.Height = 60;
-			this.labelTitle.Font = new System.Drawing.Font("@menuDemo", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-		}
-
-		public void MaximizeTitle()
-		{
-			this.labelTitle.Height = 128;
-			this.labelTitle.Font = new System.Drawing.Font("@condensedWindowTitle", 35F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+				this.Minimize();
 		}
 	}
 }

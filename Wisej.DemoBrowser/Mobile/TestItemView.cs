@@ -65,12 +65,7 @@ namespace Wisej.DemoBrowser
                     }
                     break;
 
-				case "demo":
-                    var culture = Application.CurrentCulture.TwoLetterISOLanguageName;
-                    var description = config[$"description-{culture}"] ?? config["description-en"];
-
-                    this.labelContent1.AutoSize = true;
-					this.labelContent1.Text = description;
+				default:
 					break;
 			}
         }
