@@ -1,6 +1,5 @@
 ﻿using System;
 using System.IO;
-using Wisej.DemoBrowser.Common;
 using Wisej.Web;
 
 namespace Wisej.DemoBrowser
