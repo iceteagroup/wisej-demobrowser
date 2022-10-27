@@ -10,11 +10,13 @@ namespace Wisej.DemoBrowser
 		/// </summary>
 		static void Main()
 		{
-			Application.MainPage = new MainView();
+			if (Application.Browser.Device == "Mobile")
+				Application.MainPage = new MainViewMobile();
+			else
+				Application.MainPage = new MainView();
+
 			Application.SessionTimeout += Application_SessionTimeout;
 		}
-
-        
 
         private static void Application_SessionTimeout(object sender, System.ComponentModel.HandledEventArgs e)
 		{
