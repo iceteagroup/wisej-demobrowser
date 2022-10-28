@@ -29,27 +29,18 @@
 		private void InitializeComponent()
 		{
             this.flowLayoutPanelDemos = new Wisej.Web.FlowLayoutPanel();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxIcon)).BeginInit();
             this.SuspendLayout();
-            // 
-            // labelDescription
-            // 
-            this.labelDescription.Location = new System.Drawing.Point(16, 80);
-            this.labelDescription.Size = new System.Drawing.Size(1390, 85);
-            // 
-            // labelTitle
-            // 
-            this.labelTitle.Location = new System.Drawing.Point(16, 0);
-            this.labelTitle.Size = new System.Drawing.Size(1390, 80);
             // 
             // flowLayoutPanelDemos
             // 
             this.flowLayoutPanelDemos.AutoScroll = true;
             this.flowLayoutPanelDemos.AutoScrollMargin = new System.Drawing.Size(0, 20);
             this.flowLayoutPanelDemos.Dock = Wisej.Web.DockStyle.Fill;
-            this.flowLayoutPanelDemos.Location = new System.Drawing.Point(16, 165);
+            this.flowLayoutPanelDemos.Location = new System.Drawing.Point(16, 180);
             this.flowLayoutPanelDemos.Name = "flowLayoutPanelDemos";
             this.flowLayoutPanelDemos.ScrollBars = Wisej.Web.ScrollBars.Hidden;
-            this.flowLayoutPanelDemos.Size = new System.Drawing.Size(1390, 309);
+            this.flowLayoutPanelDemos.Size = new System.Drawing.Size(1390, 294);
             this.flowLayoutPanelDemos.TabIndex = 20;
             this.flowLayoutPanelDemos.Scroll += new Wisej.Web.ScrollEventHandler(this.flowLayoutPanelApps_Scroll);
             // 
@@ -57,10 +48,10 @@
             // 
             this.Controls.Add(this.flowLayoutPanelDemos);
             this.Name = "DemosListView";
-            this.Padding = new Wisej.Web.Padding(16, 0, 16, 0);
             this.Load += new System.EventHandler(this.DemosListView_Load);
             this.Controls.SetChildIndex(this.labelDescription, 0);
             this.Controls.SetChildIndex(this.flowLayoutPanelDemos, 0);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxIcon)).EndInit();
             this.ResumeLayout(false);
 
 		}

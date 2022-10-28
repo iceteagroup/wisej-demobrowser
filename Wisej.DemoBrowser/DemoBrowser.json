@@ -2,7 +2,7 @@
   "Editors": {
     "Overview": {
       "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/TextBox.svg",
-      "description-en": "Wisej.NET provides a number of \"editor\" controls to allow the user to enter content into the application. Typically an editor control corresponds to an &lt;input&gt; element in the browser."
+      "description-en": "<b>Wisej.NET</b> provides a number of \"editor\" controls to allow the user to enter content into the application. Typically an editor control corresponds to an &lt;input&gt; element in the browser."
     },
     "TextBox": {
       "Features": {
@@ -203,7 +203,7 @@
   "Miscellaneous": {
     "Overview": {
       "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/PlayVideo.svg",
-      "description-en": "Wisej.NET provides controls for media playback in the browser like the <b>Video</b> and <b>Audio</b> controls and simple controls for drawing."
+      "description-en": "<b>Wisej.NET</b> provides controls for media playback in the browser like the <b>Video</b> and <b>Audio</b> controls and simple controls for drawing."
     },
     "Video": {
       "Features": {
@@ -248,7 +248,7 @@
   "Containers": {
     "Overview": {
       "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/Accordion.svg",
-      "description-en": "Wisej.NET provides controls that can be used to contain other controls. Child controls can be docked, anchored, and positioned in relation to the container control."
+      "description-en": "<b>Wisej.NET</b> provides controls that can be used to contain other controls. Child controls can be docked, anchored, and positioned in relation to the container control."
     },
     "Accordion": {
       "Features": {
@@ -354,7 +354,7 @@
   "Tools and Menus": {
     "Overview": {
       "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/DropdownMenu.svg",
-      "description-en": "Wisej.NET provides controls for implementing toolstrips, menus, and more. These controls are typically used to display a list of commands for a specified view or control."
+      "description-en": "<b>Wisej.NET</b> provides controls for implementing toolstrips, menus, and more. These controls are typically used to display a list of commands for a specified view or control."
     },
     "MenuBar": {
       "Features": {
@@ -474,7 +474,7 @@
   "Content": {
     "Overview": {
       "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/Label.svg",
-      "description-en": "Wisej.NET provides controls for displaying data such as a <b>Label</b> for text, <b>PictureBox</b> for images, <b>HtmlPanel</b> for html content, and more."
+      "description-en": "<b>Wisej.NET</b> provides controls for displaying data such as a <b>Label</b> for text, <b>PictureBox</b> for images, <b>HtmlPanel</b> for html content, and more."
     },
     "Label": {
       "Features": {
@@ -528,7 +528,7 @@
   "Buttons": {
     "Overview": {
       "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/Button.svg",
-      "description-en": "Wisej.NET provides multiple types of buttons for user input. The <b>Button</b>, <b>SplitButton</b>, <b>CheckBox</b>, and <b>RadioButton</b> can be used to accept user input."
+      "description-en": "<b>Wisej.NET</b> provides multiple types of buttons for user input. The <b>Button</b>, <b>SplitButton</b>, <b>CheckBox</b>, and <b>RadioButton</b> can be used to accept user input."
     },
     "Button": {
       "Features": {
@@ -574,7 +574,7 @@
   "Grids": {
     "Overview": {
       "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/Button.svg",
-      "description-en": "Wisej.NET provides several kind of controls able to manage data in lists. The <b>List</b> controls handle single items in the data list while the <b>Grid</b> controls can handle multiple properties of each item in the list."
+      "description-en": "<b>Wisej.NET</b> provides several kind of controls able to manage data in lists. The <b>List</b> controls handle single items in the data list while the <b>Grid</b> controls can handle multiple properties of each item in the list."
     },
     "PropertyGrid": {
       "Features": {
@@ -623,7 +623,7 @@
   "Notifications": {
     "Overview": {
       "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/Message.svg",
-      "description-en": "Wisej.NET provides several types of notifications that can be displayed to users including custom modal dialogs."
+      "description-en": "<b>Wisej.NET</b> provides several types of notifications that can be displayed to users including custom modal dialogs."
     },
     "MessageBox": {
       "Features": {
@@ -665,7 +665,7 @@
   "Extensions": {
     "Overview": {
       "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/HtmlTagEnd.svg",
-      "description-en": "Wisej.NET was designed to be extensible and open to all sorts of technologies from the start. Any existing JavaScript control can be wrapped to become a Wisej.NET C# or VB.NET control."
+      "description-en": "<b>Wisej.NET</b> was designed to be extensible and open to all sorts of technologies from the start. Any existing JavaScript control can be wrapped to become a Wisej.NET C# or VB.NET control."
     },
     "AceEditor": {
       "Features": {
@@ -673,7 +673,7 @@
         "assembly": "Features, Wisej.DemoBrowser.AceEditor.dll",
         "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/HtmlTagEnd.svg",
         "docsUrl": "https://docs.wisej.com/extensions/extensions/aceeditor/api/wisej.web.ext.aceeditor.aceeditor",
-        "description-en": "The <b>Ext.AceEditor</b> control is an embeddable code editor written in JavaScript. It matches the features and performance of native editors such as Sublime, Vim and TextMate. Ace is maintained as the primary editor for Cloud9 IDE and is the successor of the Mozilla Skywriter (Bespin) project."
+        "description-en": "The <b>AceEditor</b> control is an embeddable code editor written in JavaScript. It matches the features and performance of native editors such as Sublime, Vim and TextMate. Ace is maintained as the primary editor for Cloud9 IDE and is the successor of the Mozilla Skywriter (Bespin) project."
       }
     },
     "Barcode": {
@@ -682,7 +682,7 @@
         "assembly": "Features, Wisej.DemoBrowser.Barcode.dll",
         "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/CameraOutline.svg",
         "docsUrl": "https://docs.wisej.com/extensions/extensions/barcode",
-        "description-en": "The <b>Ext.Barcode</b> control uses ZXing.Net to generate Barcodes on the server and render them on the client. Supports: UPC-A, EAN-8, EAN-13, Code 39, Code 128, ITF, Codabar, Plessey, MSI, QR Code, PDF-417, Aztec, Data Matrix."
+        "description-en": "The <b>Barcode</b> control uses ZXing.Net to generate Barcodes on the server and render them on the client. Supports: UPC-A, EAN-8, EAN-13, Code 39, Code 128, ITF, Codabar, Plessey, MSI, QR Code, PDF-417, Aztec, Data Matrix."
       }
     },
     "BingWallpaper": {
@@ -691,7 +691,7 @@
         "assembly": "Features, Wisej.DemoBrowser.BingWallpaper.dll",
         "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/DynamicImage.svg",
         "docsUrl": "https://docs.wisej.com/extensions/extensions/bingwallpaper",
-        "description-en": "The <b>Ext.BingWallpaper</b> extender component enhances the Desktop control by adding Bing’s daily stunning wallpaper images. You can set the rotation interval, fade duration and number of images."
+        "description-en": "The <b>BingWallpaper</b> extender component enhances the Desktop control by adding Bing’s daily stunning wallpaper images. You can set the rotation interval, fade duration and number of images."
       }
     },
     "Bubbles": {
@@ -700,7 +700,7 @@
         "assembly": "Features, Wisej.DemoBrowser.Bubbles.dll",
         "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/BubbleChart.svg",
         "docsUrl": "https://docs.wisej.com/extensions/extensions/bubbles",
-        "description-en": "The <b>Ext.Bubbles</b> extender component enhances all Wisej components by providing additional properties and a useful bubble notification functionality. Every widget can display a popup animated and themed bubble when a value changes."
+        "description-en": "The <b>Bubbles</b> extender component enhances all Wisej components by providing additional properties and a useful bubble notification functionality. Every widget can display a popup animated and themed bubble when a value changes."
       }
     },
     "Camera": {
@@ -709,7 +709,7 @@
         "assembly": "Features, Wisej.DemoBrowser.Camera.dll",
         "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/CameraOutline.svg",
         "docsUrl": "https://docs.wisej.com/extensions/extensions/camera",
-        "description-en": "The <b>Ext.Camera</b> control makes it possible to take pictures with the device's camera and upload them to the server."
+        "description-en": "The <b>Camera</b> control makes it possible to take pictures with the device's camera and upload them to the server."
       }
     },
     "ChartJS": {
@@ -718,7 +718,7 @@
         "assembly": "Features, Wisej.DemoBrowser.ChartJS.dll",
         "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/Report.svg",
         "docsUrl": "https://docs.wisej.com/extensions/extensions/chartjs",
-        "description-en": "The <b>Ext.ChartJS</b> extension component uses the excellent ChartJS widget to render amazing charts in real time."
+        "description-en": "The <b>ChartJS</b> extension component uses the excellent ChartJS widget to render amazing charts in real time."
       },
       "Scatter": {
         "sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Extensions/Wisej.DemoBrowser.ChartJS",
@@ -784,7 +784,7 @@
         "assembly": "Features, Wisej.DemoBrowser.CKEditor.dll",
         "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/HtmlTagEnd.svg",
         "docsUrl": "https://docs.wisej.com/extensions/extensions/ckeditor/api/wisej.web.ext.ckeditor.ckeditor",
-        "description-en": "The <b>Ext.CKEditor</b> control (formerly FCKeditor) is an open source WYSIWYG text editor designed to bring common word processor features directly to web pages, simplifying their content creation."
+        "description-en": "The <b>CKEditor</b> control (formerly FCKeditor) is an open source WYSIWYG text editor designed to bring common word processor features directly to web pages, simplifying their content creation."
       }
     },
     "CoolClock": {
@@ -793,7 +793,7 @@
         "assembly": "Features, Wisej.DemoBrowser.CoolClock.dll",
         "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/Time.svg",
         "docsUrl": "https://docs.wisej.com/extensions/extensions/coolclock",
-        "description-en": "The <b>Ext.CoolClock</b> control renders amazing analog clocks as Real-Time widgets. Supports several skins, logarithmic scale, and several properties to configure the tick delay or hide the second’s hand."
+        "description-en": "The <b>CoolClock</b> control renders amazing analog clocks as Real-Time widgets. Supports several skins, logarithmic scale, and several properties to configure the tick delay or hide the second’s hand."
       }
     },
     "CountUp": {
@@ -802,7 +802,7 @@
         "assembly": "Features, Wisej.DemoBrowser.CountUp.dll",
         "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/Counter.svg",
         "docsUrl": "https://docs.wisej.com/extensions/extensions/countup",
-        "description-en": "The <b>Ext.CountUp</b> control uses the excellent CountUp.js widget that can be used to quickly create animations that display numerical data in a more interesting way."
+        "description-en": "The <b>CountUp</b> control uses the excellent CountUp.js widget that can be used to quickly create animations that display numerical data in a more interesting way."
       }
     },
     "FullCalendar": {
@@ -811,7 +811,7 @@
         "assembly": "Features, Wisej.DemoBrowser.FullCalendar.dll",
         "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/Calendar.svg",
         "docsUrl": "https://docs.wisej.com/extensions/extensions/fullcalendar",
-        "description-en": "The <b>Ext.FullCalendar</b> extension is an amazing full-size drag-n-drop event calendar. Supports multiple views, flexible events, custom styles, integrates with Google Calendars, and it’s completely integrated with Wisej."
+        "description-en": "The <b>FullCalendar</b> extension is an amazing full-size drag-n-drop event calendar. Supports multiple views, flexible events, custom styles, integrates with Google Calendars, and it’s completely integrated with Wisej."
       }
     },
     "Geolocation": {
@@ -829,7 +829,7 @@
         "assembly": "Features, Wisej.DemoBrowser.GoogleMaps.dll",
         "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/GeoLocation.svg",
         "docsUrl": "https://docs.wisej.com/extensions/extensions/googlemaps",
-        "description-en": "The <b>Ext.GoogleMaps</b> extension lets you control Google Maps as a fully integrated server control. The control fires events back to the server and the server can affect any visual aspect of the map."
+        "description-en": "The <b>GoogleMaps</b> extension lets you control Google Maps as a fully integrated server control. The control fires events back to the server and the server can affect any visual aspect of the map."
       },
       "HeatMap": {
         "sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Extensions/Wisej.DemoBrowser.GoogleMaps",
@@ -859,7 +859,7 @@
         "assembly": "Features, Wisej.DemoBrowser.Html2Canvas.dll",
         "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/CaptureFrame.svg",
         "docsUrl": "https://docs.wisej.com/extensions/extensions/html2canvas",
-        "description-en": "The <b>Ext.Html2Canvas</b> extension component uses the Html2Canvas library. This Wisej component can take a screenshot of a specific control or the entire browser and send the image back to the server."
+        "description-en": "The <b>Html2Canvas</b> extension component uses the Html2Canvas library. This Wisej component can take a screenshot of a specific control or the entire browser and send the image back to the server."
       }
     },
     "JustGage": {
@@ -868,7 +868,7 @@
         "assembly": "Features, Wisej.DemoBrowser.JustGage.dll",
         "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/Gauge.svg",
         "docsUrl": "https://docs.wisej.com/extensions/extensions/justgage",
-        "description-en": "The <b>Ext.JustGage</b> extension component uses the cool JustGage widget to render animated, nice and clean gauges. It is based on Raphaël library for vector drawing, so it’s completely resolution independent and self-adjusting."
+        "description-en": "The <b>JustGage</b> extension component uses the cool JustGage widget to render animated, nice and clean gauges. It is based on Raphaël library for vector drawing, so it’s completely resolution independent and self-adjusting."
       }
     },
     "jQueryKnob": {
@@ -877,7 +877,7 @@
         "assembly": "Features, Wisej.DemoBrowser.jQueryKnob.dll",
         "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/ProgressBar.svg",
         "docsUrl": "https://docs.wisej.com/extensions/extensions/jqueryknob",
-        "description-en": "The <b>Ext.jQueryKnob.Knob</b> control uses the amazing jQueryKnob widget to create a Wisej Real Time dial control that allows the user to rotate the dial to change its value or to type the value in the middle editor. The component allows you to set the value, range, line style, colors and more."
+        "description-en": "The <b>jQueryKnob.Knob</b> control uses the amazing jQueryKnob widget to create a Wisej Real Time dial control that allows the user to rotate the dial to change its value or to type the value in the middle editor. The component allows you to set the value, range, line style, colors and more."
       }
     },
     "jSequence": {
@@ -886,7 +886,7 @@
         "assembly": "Features, Wisej.DemoBrowser.jSequence.dll",
         "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/ShowDiagramPane.svg",
         "docsUrl": "https://docs.wisej.com/extensions/extensions/jsequence",
-        "description-en": "The <b>Ext.jSequence</b> control uses the jSequence widget to turn text into UML sequence diagram."
+        "description-en": "The <b>jSequence</b> control uses the jSequence widget to turn text into UML sequence diagram."
       }
     },
     "NavigationBar": {
@@ -895,7 +895,7 @@
         "assembly": "Features, Wisej.DemoBrowser.NavigationBar.dll",
         "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/AppForOfficeTaskPane.svg",
         "docsUrl": "https://docs.wisej.com/extensions/extensions/navigationbar",
-        "description-en": "The <b>Ext.NavigationBar</b> is a responsive vertical navigation bar that displays an application header with logo, child items, and a user panel with gravatar and other user information."
+        "description-en": "The <b>NavigationBar</b> is a responsive vertical navigation bar that displays an application header with logo, child items, and a user panel with gravatar and other user information."
       }
     },
     "Notification": {
@@ -913,7 +913,7 @@
         "assembly": "Features, Wisej.DemoBrowser.OfficeViewer.dll",
         "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/AppForOfficeTaskPane.svg",
         "docsUrl": "https://docs.wisej.com/extensions/extensions/officeviewer",
-        "description-en": "The <b>Ext.OfficeViewer</b> extension control uses Microsoft’s Office 365 Live Viewers to show Word, Excel or PowerPoint documents embedded in a Wisej application. You can view a file or a stream."
+        "description-en": "The <b>OfficeViewer</b> extension control uses Microsoft’s Office 365 Live Viewers to show Word, Excel or PowerPoint documents embedded in a Wisej application. You can view a file or a stream."
       }
     },
     "Pannellum": {
@@ -922,7 +922,7 @@
         "assembly": "Features, Wisej.DemoBrowser.Pannellum.dll",
         "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/ImageSlideshow.svg",
         "docsUrl": "https://docs.wisej.com/extensions/extensions/pannellum",
-        "description-en": "The <b>Ext.Pannellum</b> extension component uses the Pannellum library. Pannellum is a lightweight, free, and open source panorama viewer for the web."
+        "description-en": "The <b>Pannellum</b> extension component uses the Pannellum library. Pannellum is a lightweight, free, and open source panorama viewer for the web."
       },
       "Auto Rotate": {
         "sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Extensions/Wisej.DemoBrowser.Pannellum",
@@ -959,7 +959,7 @@
         "assembly": "Features, Wisej.DemoBrowser.ProgressCircle.dll",
         "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/ProgressBar.svg",
         "docsUrl": "https://docs.wisej.com/extensions/extensions/progresscircle",
-        "description-en": "The <b>Ext.ProgressCircle</b> control is entirely implemented on the server side as a derived class of Wisej.Web.Canvas. It draws on a HTML5 canvas element on the client directly from the server in real time. The component lets you set value, line style and thickness, fill color, font, etc."
+        "description-en": "The <b>ProgressCircle</b> control is entirely implemented on the server side as a derived class of Wisej.Web.Canvas. It draws on a HTML5 canvas element on the client directly from the server in real time. The component lets you set value, line style and thickness, fill color, font, etc."
       }
     },
     "RibbonBar": {
@@ -968,7 +968,7 @@
         "assembly": "Features, Wisej.DemoBrowser.RibbonBar.dll",
         "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/RibbonMenu.svg",
         "docsUrl": "https://docs.wisej.com/extensions/extensions/ribbonbar",
-        "description-en": "The <b>Ext.RibbonBar</b> extension component is a command bar that organizes the features of an application into a series of tabs at the top of the application main page or window."
+        "description-en": "The <b>RibbonBar</b> extension component is a command bar that organizes the features of an application into a series of tabs at the top of the application main page or window."
       }
     },
     "Speech": {
@@ -977,7 +977,7 @@
         "assembly": "Features, Wisej.DemoBrowser.Speech.dll",
         "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/Record.svg",
         "docsUrl": "https://docs.wisej.com/extensions/extensions/speech",
-        "description-en": "The <b>Ext.Speech</b> extender component enhances all Wisej components by providing additional speech synthesis and recognition features that allow a component to speak it’s content – or any text provided in code – and to receive text coming from speech recognition."
+        "description-en": "The <b>Speech</b> extender component enhances all Wisej components by providing additional speech synthesis and recognition features that allow a component to speak it’s content – or any text provided in code – and to receive text coming from speech recognition."
       }
     },
     "TinyEditor": {
@@ -986,7 +986,7 @@
         "assembly": "Features, Wisej.DemoBrowser.TinyEditor.dll",
         "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/HtmlTagEnd.svg",
         "docsUrl": "https://docs.wisej.com/extensions/extensions/tinyeditor/api/wisej.web.ext.tinyeditor.tinyeditor",
-        "description-en": "The <b>Ext.TinyEditor</b> control is a simple JavaScript WYSIWYG editor that is both lightweight (8KB) and standalone from: https://github.com/jessegreathouse/TinyEditor."
+        "description-en": "The <b>TinyEditor</b> control is a simple JavaScript WYSIWYG editor that is both lightweight (8KB) and standalone from: https://github.com/jessegreathouse/TinyEditor."
       }
     },
     "TinyMCE": {
@@ -995,7 +995,7 @@
         "assembly": "Features, Wisej.DemoBrowser.TinyMCE.dll",
         "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/HtmlTagEnd.svg",
         "docsUrl": "https://docs.wisej.com/extensions/extensions/tinymce",
-        "description-en": "The <b>Ext.TinyMCE</b> control (Tiny Moxiecode Content Editor) is a platform-independent, browser-based WYSIWYG editor control, written in JavaScript and released as open-source software under the LGPL by Ephox."
+        "description-en": "The <b>TinyMCE</b> control (Tiny Moxiecode Content Editor) is a platform-independent, browser-based WYSIWYG editor control, written in JavaScript and released as open-source software under the LGPL by Ephox."
       }
     },
     "TourPanel": {
@@ -1004,7 +1004,7 @@
         "assembly": "Features, Wisej.DemoBrowser.TourPanel.dll",
         "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/ModalPopup.svg",
         "docsUrl": "https://docs.wisej.com/extensions/extensions/tourpanel",
-        "description-en": "The <b>Ext.TourPanel</b> component can create a customized tour of an existing application highlighting specific targets and displaying HTML Text in steps."
+        "description-en": "The <b>TourPanel</b> component can create a customized tour of an existing application highlighting specific targets and displaying HTML Text in steps."
       }
     }
   },
