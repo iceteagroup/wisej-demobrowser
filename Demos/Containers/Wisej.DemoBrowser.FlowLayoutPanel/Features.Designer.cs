@@ -85,7 +85,7 @@
             this.flowLayoutPanel1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("flowLayoutPanel1.ResponsiveProfiles"))));
             this.flowLayoutPanel1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("flowLayoutPanel1.ResponsiveProfiles1"))));
             this.flowLayoutPanel1.ShowCloseButton = false;
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(432, 505);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(432, 471);
             this.flowLayoutPanel1.TabIndex = 7;
             this.flowLayoutPanel1.TabStop = true;
             this.flowLayoutPanel1.Text = "Inbox";
@@ -168,7 +168,7 @@
             this.flowLayoutPanel.Name = "flowLayoutPanel";
             this.flowLayoutPanel.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("flowLayoutPanel.ResponsiveProfiles"))));
             this.flowLayoutPanel.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("flowLayoutPanel.ResponsiveProfiles1"))));
-            this.flowLayoutPanel.Size = new System.Drawing.Size(431, 506);
+            this.flowLayoutPanel.Size = new System.Drawing.Size(431, 472);
             this.flowLayoutPanel.TabIndex = 8;
             this.flowLayoutPanel.TabStop = true;
             componentTool2.ImageSource = "resource.wx/Wisej.Ext.VaadinIcons/trash.svg";
@@ -225,10 +225,10 @@
             this.panel1.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom)));
             this.panel1.Controls.Add(this.flowLayoutPanel1);
             this.panel1.Controls.Add(this.comboBoxView);
-            this.panel1.Location = new System.Drawing.Point(67, 43);
+            this.panel1.Location = new System.Drawing.Point(67, 60);
             this.panel1.Name = "panel1";
             this.panel1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("panel1.ResponsiveProfiles"))));
-            this.panel1.Size = new System.Drawing.Size(450, 586);
+            this.panel1.Size = new System.Drawing.Size(450, 552);
             this.panel1.TabIndex = 10;
             // 
             // panel2
@@ -236,10 +236,10 @@
             this.panel2.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom)));
             this.panel2.Controls.Add(this.comboBoxView2);
             this.panel2.Controls.Add(this.flowLayoutPanel);
-            this.panel2.Location = new System.Drawing.Point(559, 43);
+            this.panel2.Location = new System.Drawing.Point(559, 60);
             this.panel2.Name = "panel2";
             this.panel2.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("panel2.ResponsiveProfiles"))));
-            this.panel2.Size = new System.Drawing.Size(450, 586);
+            this.panel2.Size = new System.Drawing.Size(450, 552);
             this.panel2.TabIndex = 11;
             // 
             // Features
