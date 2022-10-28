@@ -36,16 +36,16 @@
             this.checkBoxPrintMargin = new Wisej.Web.CheckBox();
             this.comboBoxTheme = new Wisej.Web.ComboBox();
             this.panel1 = new Wisej.Web.Panel();
-            this.flowLayoutPanel1 = new Wisej.Web.FlowLayoutPanel();
+            this.flowLayoutPanelMain = new Wisej.Web.FlowLayoutPanel();
             this.panel1.SuspendLayout();
-            this.flowLayoutPanel1.SuspendLayout();
+            this.flowLayoutPanelMain.SuspendLayout();
             this.SuspendLayout();
             // 
             // aceEditor1
             // 
             this.aceEditor1.Anchor = Wisej.Web.AnchorStyles.None;
             this.aceEditor1.CssClass = "shadow";
-            this.flowLayoutPanel1.SetFillWeight(this.aceEditor1, 2);
+            this.flowLayoutPanelMain.SetFillWeight(this.aceEditor1, 2);
             this.aceEditor1.Language = "xml";
             this.aceEditor1.Location = new System.Drawing.Point(509, 3);
             this.aceEditor1.MaximumSize = new System.Drawing.Size(700, 0);
@@ -187,7 +187,7 @@
             this.panel1.Controls.Add(this.checkBoxLineNumbers);
             this.panel1.Controls.Add(this.checkBoxGutter);
             this.panel1.Controls.Add(this.checkBoxIndent);
-            this.flowLayoutPanel1.SetFillWeight(this.panel1, 1);
+            this.flowLayoutPanelMain.SetFillWeight(this.panel1, 1);
             this.panel1.Location = new System.Drawing.Point(3, 3);
             this.panel1.MaximumSize = new System.Drawing.Size(500, 0);
             this.panel1.MinimumSize = new System.Drawing.Size(300, 0);
@@ -195,25 +195,25 @@
             this.panel1.Size = new System.Drawing.Size(500, 350);
             this.panel1.TabIndex = 7;
             // 
-            // flowLayoutPanel1
+            // flowLayoutPanelMain
             // 
-            this.flowLayoutPanel1.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Left | Wisej.Web.AnchorStyles.Right)));
-            this.flowLayoutPanel1.AutoSize = true;
-            this.flowLayoutPanel1.Controls.Add(this.panel1);
-            this.flowLayoutPanel1.Controls.Add(this.aceEditor1);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(89, 59);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(1245, 356);
-            this.flowLayoutPanel1.TabIndex = 8;
+            this.flowLayoutPanelMain.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Left | Wisej.Web.AnchorStyles.Right)));
+            this.flowLayoutPanelMain.AutoSize = true;
+            this.flowLayoutPanelMain.Controls.Add(this.panel1);
+            this.flowLayoutPanelMain.Controls.Add(this.aceEditor1);
+            this.flowLayoutPanelMain.Location = new System.Drawing.Point(89, 59);
+            this.flowLayoutPanelMain.Name = "flowLayoutPanelMain";
+            this.flowLayoutPanelMain.Size = new System.Drawing.Size(1245, 356);
+            this.flowLayoutPanelMain.TabIndex = 8;
             // 
             // Features
             // 
             this.AutoScroll = true;
-            this.Controls.Add(this.flowLayoutPanel1);
+            this.Controls.Add(this.flowLayoutPanelMain);
             this.Name = "Features";
             this.Load += new System.EventHandler(this.Features_Load);
             this.panel1.ResumeLayout(false);
-            this.flowLayoutPanel1.ResumeLayout(false);
+            this.flowLayoutPanelMain.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -229,6 +229,6 @@
 		private Web.CheckBox checkBoxPrintMargin;
 		private Web.ComboBox comboBoxTheme;
         private Web.Panel panel1;
-        private Web.FlowLayoutPanel flowLayoutPanel1;
+        private Web.FlowLayoutPanel flowLayoutPanelMain;
     }
 }

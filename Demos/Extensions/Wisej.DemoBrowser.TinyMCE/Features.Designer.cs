@@ -28,6 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Features));
             this.tinyMCE1 = new Wisej.Web.Ext.TinyMCE.TinyMCE();
             this.SuspendLayout();
             // 
@@ -39,6 +40,7 @@
             this.tinyMCE1.CssClass = "shadow";
             this.tinyMCE1.Location = new System.Drawing.Point(211, 12);
             this.tinyMCE1.Name = "tinyMCE1";
+            this.tinyMCE1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("tinyMCE1.ResponsiveProfiles"))));
             this.tinyMCE1.Size = new System.Drawing.Size(1000, 450);
             this.tinyMCE1.TabIndex = 0;
             // 

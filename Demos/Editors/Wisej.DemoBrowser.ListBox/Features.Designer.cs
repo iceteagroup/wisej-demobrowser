@@ -194,7 +194,7 @@
             this.checkBoxReadOnly.Name = "checkBoxReadOnly";
             this.checkBoxReadOnly.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("checkBoxReadOnly.ResponsiveProfiles"))));
             this.checkBoxReadOnly.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("checkBoxReadOnly.ResponsiveProfiles1"))));
-            this.checkBoxReadOnly.Size = new System.Drawing.Size(114, 24);
+            this.checkBoxReadOnly.Size = new System.Drawing.Size(112, 24);
             this.checkBoxReadOnly.TabIndex = 4;
             this.checkBoxReadOnly.Text = "Read Only";
             this.checkBoxReadOnly.CheckedChanged += new System.EventHandler(this.checkBoxReadOnly_CheckedChanged);
@@ -206,8 +206,6 @@
             this.Controls.Add(this.listBoxHtml);
             this.Controls.Add(this.listBoxDefaultCities);
             this.Name = "Features";
-            this.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("$this.ResponsiveProfiles"))));
-            this.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("$this.ResponsiveProfiles1"))));
             this.ResumeLayout(false);
             this.PerformLayout();
 

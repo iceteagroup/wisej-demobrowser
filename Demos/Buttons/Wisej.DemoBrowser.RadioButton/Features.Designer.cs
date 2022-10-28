@@ -44,11 +44,11 @@
             this.groupBox3 = new Wisej.Web.GroupBox();
             this.radioButton12 = new Wisej.Web.RadioButton();
             this.radioButton11 = new Wisej.Web.RadioButton();
-            this.flowLayoutPanelRadioButtons = new Wisej.Web.FlowLayoutPanel();
+            this.flowLayoutPanelMain = new Wisej.Web.FlowLayoutPanel();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
-            this.flowLayoutPanelRadioButtons.SuspendLayout();
+            this.flowLayoutPanelMain.SuspendLayout();
             this.SuspendLayout();
             // 
             // radioButton1
@@ -71,7 +71,7 @@
             this.groupBox1.Controls.Add(this.radioButton3);
             this.groupBox1.Controls.Add(this.radioButton2);
             this.groupBox1.Controls.Add(this.radioButton1);
-            this.flowLayoutPanelRadioButtons.SetFillWeight(this.groupBox1, 1);
+            this.flowLayoutPanelMain.SetFillWeight(this.groupBox1, 1);
             this.groupBox1.Location = new System.Drawing.Point(577, 16);
             this.groupBox1.Margin = new Wisej.Web.Padding(16);
             this.groupBox1.MinimumSize = new System.Drawing.Size(200, 0);
@@ -120,7 +120,7 @@
             this.groupBox2.Controls.Add(this.radioButton7);
             this.groupBox2.Controls.Add(this.radioButton5);
             this.groupBox2.Controls.Add(this.radioButton8);
-            this.flowLayoutPanelRadioButtons.SetFillWeight(this.groupBox2, 1);
+            this.flowLayoutPanelMain.SetFillWeight(this.groupBox2, 1);
             this.groupBox2.Location = new System.Drawing.Point(296, 16);
             this.groupBox2.Margin = new Wisej.Web.Padding(16);
             this.groupBox2.MinimumSize = new System.Drawing.Size(225, 0);
@@ -220,7 +220,7 @@
             this.groupBox3.Controls.Add(this.radioButton11);
             this.groupBox3.Controls.Add(this.radioButton6);
             this.groupBox3.Controls.Add(this.radioButton10);
-            this.flowLayoutPanelRadioButtons.SetFillWeight(this.groupBox3, 1);
+            this.flowLayoutPanelMain.SetFillWeight(this.groupBox3, 1);
             this.groupBox3.Location = new System.Drawing.Point(16, 16);
             this.groupBox3.Margin = new Wisej.Web.Padding(16);
             this.groupBox3.MinimumSize = new System.Drawing.Size(225, 0);
@@ -257,22 +257,22 @@
             this.radioButton11.TabIndex = 5;
             this.radioButton11.Text = "RadioButton Image";
             // 
-            // flowLayoutPanelRadioButtons
+            // flowLayoutPanelMain
             // 
-            this.flowLayoutPanelRadioButtons.AutoScroll = true;
-            this.flowLayoutPanelRadioButtons.AutoSize = true;
-            this.flowLayoutPanelRadioButtons.Controls.Add(this.groupBox3);
-            this.flowLayoutPanelRadioButtons.Controls.Add(this.groupBox2);
-            this.flowLayoutPanelRadioButtons.Controls.Add(this.groupBox1);
-            this.flowLayoutPanelRadioButtons.Location = new System.Drawing.Point(0, 0);
-            this.flowLayoutPanelRadioButtons.Name = "flowLayoutPanelRadioButtons";
-            this.flowLayoutPanelRadioButtons.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("flowLayoutPanelRadioButtons.ResponsiveProfiles"))));
-            this.flowLayoutPanelRadioButtons.Size = new System.Drawing.Size(842, 233);
-            this.flowLayoutPanelRadioButtons.TabIndex = 6;
+            this.flowLayoutPanelMain.AutoScroll = true;
+            this.flowLayoutPanelMain.AutoSize = true;
+            this.flowLayoutPanelMain.Controls.Add(this.groupBox3);
+            this.flowLayoutPanelMain.Controls.Add(this.groupBox2);
+            this.flowLayoutPanelMain.Controls.Add(this.groupBox1);
+            this.flowLayoutPanelMain.Location = new System.Drawing.Point(0, 0);
+            this.flowLayoutPanelMain.Name = "flowLayoutPanelMain";
+            this.flowLayoutPanelMain.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("flowLayoutPanelMain.ResponsiveProfiles"))));
+            this.flowLayoutPanelMain.Size = new System.Drawing.Size(842, 233);
+            this.flowLayoutPanelMain.TabIndex = 6;
             // 
             // Features
             // 
-            this.Controls.Add(this.flowLayoutPanelRadioButtons);
+            this.Controls.Add(this.flowLayoutPanelMain);
             this.Name = "Features";
             this.Size = new System.Drawing.Size(980, 743);
             this.Load += new System.EventHandler(this.RadioButton_Load);
@@ -280,7 +280,7 @@
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
-            this.flowLayoutPanelRadioButtons.ResumeLayout(false);
+            this.flowLayoutPanelMain.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -303,6 +303,6 @@
 		private Web.GroupBox groupBox3;
 		private Web.RadioButton radioButton12;
 		private Web.RadioButton radioButton11;
-        private Web.FlowLayoutPanel flowLayoutPanelRadioButtons;
+        private Web.FlowLayoutPanel flowLayoutPanelMain;
     }
 }

@@ -39,6 +39,7 @@
             Wisej.Web.TreeNode treeNode8 = new Wisej.Web.TreeNode();
             Wisej.Web.TreeNode treeNode9 = new Wisej.Web.TreeNode();
             Wisej.Web.TreeNode treeNode10 = new Wisej.Web.TreeNode();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Features));
             Wisej.Web.TreeNode treeNode11 = new Wisej.Web.TreeNode();
             Wisej.Web.TreeNode treeNode12 = new Wisej.Web.TreeNode();
             Wisej.Web.TreeNode treeNode13 = new Wisej.Web.TreeNode();
@@ -139,6 +140,7 @@
             treeNode5,
             treeNode8,
             treeNode10});
+            this.treeView1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("treeView1.ResponsiveProfiles"))));
             this.treeView1.Size = new System.Drawing.Size(262, 248);
             this.treeView1.TabIndex = 0;
             this.treeView1.AfterSelect += new Wisej.Web.TreeViewEventHandler(this.treeViewDefault_AfterSelect);
@@ -204,6 +206,7 @@
             treeNode11,
             treeNode15,
             treeNode18});
+            this.treeView2.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("treeView2.ResponsiveProfiles"))));
             this.treeView2.RightClickSelection = true;
             this.treeView2.SelectedImageIndex = 0;
             this.treeView2.Size = new System.Drawing.Size(262, 248);
@@ -269,6 +272,7 @@
             treeNode25,
             treeNode28,
             treeNode30});
+            this.treeView3.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("treeView3.ResponsiveProfiles"))));
             this.treeView3.ShowPlusMinus = false;
             this.treeView3.Size = new System.Drawing.Size(262, 248);
             this.treeView3.TabIndex = 2;
@@ -279,6 +283,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(13, 3);
             this.label1.Name = "label1";
+            this.label1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("label1.ResponsiveProfiles"))));
             this.label1.Size = new System.Drawing.Size(46, 18);
             this.label1.TabIndex = 3;
             this.label1.Text = "Default";
@@ -289,6 +294,7 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(9, 3);
             this.label2.Name = "label2";
+            this.label2.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("label2.ResponsiveProfiles"))));
             this.label2.Size = new System.Drawing.Size(123, 18);
             this.label2.TabIndex = 4;
             this.label2.Text = "Right-Click Selection";
@@ -299,6 +305,7 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(11, 3);
             this.label3.Name = "label3";
+            this.label3.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("label3.ResponsiveProfiles"))));
             this.label3.Size = new System.Drawing.Size(136, 18);
             this.label3.TabIndex = 5;
             this.label3.Text = "Hidden Arrows / HTML";
@@ -309,6 +316,7 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(9, 3);
             this.label4.Name = "label4";
+            this.label4.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("label4.ResponsiveProfiles"))));
             this.label4.Size = new System.Drawing.Size(73, 18);
             this.label4.TabIndex = 7;
             this.label4.Text = "Checkboxes";
@@ -375,6 +383,7 @@
             treeNode31,
             treeNode35,
             treeNode38});
+            this.treeView4.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("treeView4.ResponsiveProfiles"))));
             this.treeView4.RightClickSelection = true;
             this.treeView4.SelectedImageIndex = 0;
             this.treeView4.Size = new System.Drawing.Size(262, 248);
@@ -387,6 +396,7 @@
             this.panel1.Controls.Add(this.treeView1);
             this.panel1.Location = new System.Drawing.Point(19, 19);
             this.panel1.Name = "panel1";
+            this.panel1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("panel1.ResponsiveProfiles"))));
             this.panel1.Size = new System.Drawing.Size(287, 288);
             this.panel1.TabIndex = 9;
             // 
@@ -396,6 +406,7 @@
             this.panel2.Controls.Add(this.treeView2);
             this.panel2.Location = new System.Drawing.Point(898, 19);
             this.panel2.Name = "panel2";
+            this.panel2.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("panel2.ResponsiveProfiles"))));
             this.panel2.Size = new System.Drawing.Size(287, 288);
             this.panel2.TabIndex = 10;
             // 
@@ -405,6 +416,7 @@
             this.panel3.Controls.Add(this.label4);
             this.panel3.Location = new System.Drawing.Point(605, 19);
             this.panel3.Name = "panel3";
+            this.panel3.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("panel3.ResponsiveProfiles"))));
             this.panel3.Size = new System.Drawing.Size(287, 288);
             this.panel3.TabIndex = 11;
             // 
@@ -414,6 +426,7 @@
             this.panel4.Controls.Add(this.treeView3);
             this.panel4.Location = new System.Drawing.Point(312, 19);
             this.panel4.Name = "panel4";
+            this.panel4.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("panel4.ResponsiveProfiles"))));
             this.panel4.Size = new System.Drawing.Size(287, 288);
             this.panel4.TabIndex = 12;
             // 
@@ -428,6 +441,7 @@
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Padding = new Wisej.Web.Padding(16);
+            this.flowLayoutPanel1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("flowLayoutPanel1.ResponsiveProfiles"))));
             this.flowLayoutPanel1.Size = new System.Drawing.Size(1422, 474);
             this.flowLayoutPanel1.TabIndex = 13;
             // 

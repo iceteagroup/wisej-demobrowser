@@ -117,6 +117,13 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Wisej.NET is licensed &lt;b&gt;per Developer&lt;/b&gt; and &lt;b&gt;per Server&lt;/b&gt;. There are different license types available: Developer, Server, Mobile Packages, and options for Technology Partners. You can get a first impression with the Wisej Trial license or use the free Wisej Community license. &lt;a href="https://docs.wisej.com/docs/getting-started-1/license-activation"&gt;Read more&lt;/a&gt;.</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>While you can of course continue to use the same version for an &lt;b&gt;unlimited amount of time&lt;/b&gt;, you need to renew your license in case you want to upgrade to a later (after expiration) or the latest version.
+</value>
+  </data>
   <data name="accordion1.ResponsiveProfiles" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFJXaXNlai5GcmFtZXdvcmssIFZlcnNpb249My4wLjAuMCwgQ3Vs
@@ -139,13 +146,6 @@
         dAMAAAACAAAABgQAAAAGVGFibGV0Bfv///8YU3lzdGVtLkRyYXdpbmcuUmVjdGFuZ2xlBAAAAAF4AXkF
         d2lkdGgGaGVpZ2h0AAAAAAgICAgDAAAA9AEAAAUBAAAAAAAA4P///wX6////FFN5c3RlbS5EcmF3aW5n
         LlBvaW50AgAAAAF4AXkAAAgIAwAAAAAAAAD5////Cw==
-</value>
-  </data>
-  <data name="label2.Text" xml:space="preserve">
-    <value>Wisej.NET is licensed &lt;b&gt;per Developer&lt;/b&gt; and &lt;b&gt;per Server&lt;/b&gt;. There are different license types available: Developer, Server, Mobile Packages, and options for Technology Partners. You can get a first impression with the Wisej Trial license or use the free Wisej Community license. &lt;a href="https://docs.wisej.com/docs/getting-started-1/license-activation"&gt;Read more&lt;/a&gt;.</value>
-  </data>
-  <data name="label4.Text" xml:space="preserve">
-    <value>While you can of course continue to use the same version for an &lt;b&gt;unlimited amount of time&lt;/b&gt;, you need to renew your license in case you want to upgrade to a later (after expiration) or the latest version.
 </value>
   </data>
   <metadata name="imageList1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">

@@ -223,6 +223,7 @@
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Left | Wisej.Web.AnchorStyles.Right)));
+            this.flowLayoutPanel1.AutoScroll = true;
             this.flowLayoutPanel1.AutoSize = true;
             this.flowLayoutPanel1.Controls.Add(this.panelLeft);
             this.flowLayoutPanel1.Controls.Add(this.panelRight);
@@ -234,7 +235,6 @@
             // 
             // Features
             // 
-            this.AutoScroll = true;
             this.Controls.Add(this.flowLayoutPanel1);
             this.Name = "Features";
             this.Load += new System.EventHandler(this.Features_Load);

@@ -99,8 +99,8 @@
             this.menuItem64 = new Wisej.Web.MenuItem();
             this.menuItem65 = new Wisej.Web.MenuItem();
             this.menuItem66 = new Wisej.Web.MenuItem();
-            this.flowLayoutPanelButtons = new Wisej.Web.FlowLayoutPanel();
-            this.flowLayoutPanelButtons.SuspendLayout();
+            this.flowLayoutPanelMain = new Wisej.Web.FlowLayoutPanel();
+            this.flowLayoutPanelMain.SuspendLayout();
             this.SuspendLayout();
             // 
             // splitButtonCities
@@ -677,33 +677,33 @@
             this.menuItem66.Name = "menuItem66";
             this.menuItem66.Text = "Paris";
             // 
-            // flowLayoutPanelButtons
+            // flowLayoutPanelMain
             // 
-            this.flowLayoutPanelButtons.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Left | Wisej.Web.AnchorStyles.Right)));
-            this.flowLayoutPanelButtons.AutoScroll = true;
-            this.flowLayoutPanelButtons.AutoSize = true;
-            this.flowLayoutPanelButtons.Controls.Add(this.splitButton9);
-            this.flowLayoutPanelButtons.Controls.Add(this.splitButton8);
-            this.flowLayoutPanelButtons.Controls.Add(this.splitButton7);
-            this.flowLayoutPanelButtons.Controls.Add(this.splitButton6);
-            this.flowLayoutPanelButtons.Controls.Add(this.splitButton4);
-            this.flowLayoutPanelButtons.Controls.Add(this.splitButton3);
-            this.flowLayoutPanelButtons.Controls.Add(this.splitButtonRepeat);
-            this.flowLayoutPanelButtons.Controls.Add(this.splitButton2);
-            this.flowLayoutPanelButtons.Controls.Add(this.splitButtonHtml);
-            this.flowLayoutPanelButtons.Controls.Add(this.splitButtonCities);
-            this.flowLayoutPanelButtons.Location = new System.Drawing.Point(59, 123);
-            this.flowLayoutPanelButtons.Name = "flowLayoutPanelButtons";
-            this.flowLayoutPanelButtons.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("flowLayoutPanelButtons.ResponsiveProfiles"))));
-            this.flowLayoutPanelButtons.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("flowLayoutPanelButtons.ResponsiveProfiles1"))));
-            this.flowLayoutPanelButtons.Size = new System.Drawing.Size(1305, 201);
-            this.flowLayoutPanelButtons.TabIndex = 11;
+            this.flowLayoutPanelMain.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Left | Wisej.Web.AnchorStyles.Right)));
+            this.flowLayoutPanelMain.AutoScroll = true;
+            this.flowLayoutPanelMain.AutoSize = true;
+            this.flowLayoutPanelMain.Controls.Add(this.splitButton9);
+            this.flowLayoutPanelMain.Controls.Add(this.splitButton8);
+            this.flowLayoutPanelMain.Controls.Add(this.splitButton7);
+            this.flowLayoutPanelMain.Controls.Add(this.splitButton6);
+            this.flowLayoutPanelMain.Controls.Add(this.splitButton4);
+            this.flowLayoutPanelMain.Controls.Add(this.splitButton3);
+            this.flowLayoutPanelMain.Controls.Add(this.splitButtonRepeat);
+            this.flowLayoutPanelMain.Controls.Add(this.splitButton2);
+            this.flowLayoutPanelMain.Controls.Add(this.splitButtonHtml);
+            this.flowLayoutPanelMain.Controls.Add(this.splitButtonCities);
+            this.flowLayoutPanelMain.Location = new System.Drawing.Point(59, 123);
+            this.flowLayoutPanelMain.Name = "flowLayoutPanelMain";
+            this.flowLayoutPanelMain.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("flowLayoutPanelMain.ResponsiveProfiles"))));
+            this.flowLayoutPanelMain.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("flowLayoutPanelMain.ResponsiveProfiles1"))));
+            this.flowLayoutPanelMain.Size = new System.Drawing.Size(1305, 201);
+            this.flowLayoutPanelMain.TabIndex = 11;
             // 
             // Features
             // 
-            this.Controls.Add(this.flowLayoutPanelButtons);
+            this.Controls.Add(this.flowLayoutPanelMain);
             this.Name = "Features";
-            this.flowLayoutPanelButtons.ResumeLayout(false);
+            this.flowLayoutPanelMain.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -781,6 +781,6 @@
 		private Web.MenuItem menuItem64;
 		private Web.MenuItem menuItem65;
 		private Web.MenuItem menuItem66;
-        private Web.FlowLayoutPanel flowLayoutPanelButtons;
+        private Web.FlowLayoutPanel flowLayoutPanelMain;
     }
 }

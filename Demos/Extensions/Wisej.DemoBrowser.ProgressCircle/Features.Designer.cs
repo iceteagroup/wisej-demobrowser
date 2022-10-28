@@ -28,6 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Features));
             this.progressCircle1 = new Wisej.Web.Ext.ProgressCircle.ProgressCircle();
             this.checkBoxShowValue = new Wisej.Web.CheckBox();
             this.checkBoxFill = new Wisej.Web.CheckBox();
@@ -51,6 +52,7 @@
             this.progressCircle1.Location = new System.Drawing.Point(556, 3);
             this.progressCircle1.MinimumSize = new System.Drawing.Size(250, 0);
             this.progressCircle1.Name = "progressCircle1";
+            this.progressCircle1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("progressCircle1.ResponsiveProfiles"))));
             this.progressCircle1.Size = new System.Drawing.Size(547, 330);
             this.progressCircle1.Value = 10;
             // 
@@ -62,6 +64,7 @@
             this.checkBoxShowValue.Checked = true;
             this.checkBoxShowValue.Location = new System.Drawing.Point(173, 94);
             this.checkBoxShowValue.Name = "checkBoxShowValue";
+            this.checkBoxShowValue.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("checkBoxShowValue.ResponsiveProfiles"))));
             this.checkBoxShowValue.Size = new System.Drawing.Size(200, 35);
             this.checkBoxShowValue.TabIndex = 10;
             this.checkBoxShowValue.Text = "Show Value";
@@ -74,6 +77,7 @@
             this.checkBoxFill.AutoSize = false;
             this.checkBoxFill.Location = new System.Drawing.Point(173, 15);
             this.checkBoxFill.Name = "checkBoxFill";
+            this.checkBoxFill.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("checkBoxFill.ResponsiveProfiles"))));
             this.checkBoxFill.Size = new System.Drawing.Size(200, 35);
             this.checkBoxFill.TabIndex = 9;
             this.checkBoxFill.Text = "Fill Circle";
@@ -91,6 +95,7 @@
             this.comboBoxLineCap.LabelText = "Line Cap";
             this.comboBoxLineCap.Location = new System.Drawing.Point(173, 165);
             this.comboBoxLineCap.Name = "comboBoxLineCap";
+            this.comboBoxLineCap.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("comboBoxLineCap.ResponsiveProfiles"))));
             this.comboBoxLineCap.Size = new System.Drawing.Size(200, 60);
             this.comboBoxLineCap.TabIndex = 11;
             this.comboBoxLineCap.SelectedIndexChanged += new System.EventHandler(this.comboBoxLineCap_SelectedIndexChanged);
@@ -101,6 +106,7 @@
             this.trackBarProgress.Location = new System.Drawing.Point(173, 277);
             this.trackBarProgress.Maximum = 100;
             this.trackBarProgress.Name = "trackBarProgress";
+            this.trackBarProgress.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("trackBarProgress.ResponsiveProfiles"))));
             this.trackBarProgress.Size = new System.Drawing.Size(200, 34);
             this.trackBarProgress.TabIndex = 13;
             this.trackBarProgress.TickStyle = Wisej.Web.TickStyle.None;
@@ -112,6 +118,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(173, 253);
             this.label1.Name = "label1";
+            this.label1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("label1.ResponsiveProfiles"))));
             this.label1.Size = new System.Drawing.Size(54, 18);
             this.label1.TabIndex = 14;
             this.label1.Text = "Progress";
@@ -127,6 +134,7 @@
             this.panel1.Location = new System.Drawing.Point(3, 3);
             this.panel1.MinimumSize = new System.Drawing.Size(250, 0);
             this.panel1.Name = "panel1";
+            this.panel1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("panel1.ResponsiveProfiles"))));
             this.panel1.Size = new System.Drawing.Size(547, 331);
             this.panel1.TabIndex = 16;
             // 
@@ -138,6 +146,7 @@
             this.flowLayoutPanel1.Controls.Add(this.progressCircle1);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(158, 69);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("flowLayoutPanel1.ResponsiveProfiles"))));
             this.flowLayoutPanel1.Size = new System.Drawing.Size(1106, 337);
             this.flowLayoutPanel1.TabIndex = 17;
             // 

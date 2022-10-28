@@ -28,6 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Features));
             this.knob1 = new Wisej.Web.Ext.jQueryKnob.Knob();
             this.numericUpDownValue = new Wisej.Web.NumericUpDown();
             this.comboBoxKnobType = new Wisej.Web.ComboBox();
@@ -46,6 +47,7 @@
             this.knob1.Location = new System.Drawing.Point(608, 3);
             this.knob1.MinimumSize = new System.Drawing.Size(300, 0);
             this.knob1.Name = "knob1";
+            this.knob1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("knob1.ResponsiveProfiles"))));
             this.knob1.Size = new System.Drawing.Size(599, 297);
             this.knob1.TabIndex = 0;
             this.knob1.Text = "knob1";
@@ -57,6 +59,7 @@
             this.numericUpDownValue.LabelText = "Value";
             this.numericUpDownValue.Location = new System.Drawing.Point(199, 209);
             this.numericUpDownValue.Name = "numericUpDownValue";
+            this.numericUpDownValue.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("numericUpDownValue.ResponsiveProfiles"))));
             this.numericUpDownValue.Size = new System.Drawing.Size(200, 53);
             this.numericUpDownValue.TabIndex = 1;
             this.numericUpDownValue.Value = new decimal(new int[] {
@@ -76,6 +79,7 @@
             this.comboBoxKnobType.LabelText = "Knob Type";
             this.comboBoxKnobType.Location = new System.Drawing.Point(199, 122);
             this.comboBoxKnobType.Name = "comboBoxKnobType";
+            this.comboBoxKnobType.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("comboBoxKnobType.ResponsiveProfiles"))));
             this.comboBoxKnobType.Size = new System.Drawing.Size(200, 53);
             this.comboBoxKnobType.TabIndex = 2;
             this.comboBoxKnobType.Text = "Gauge";
@@ -91,6 +95,7 @@
             this.comboBoxCapStyle.LabelText = "Line Cap Style";
             this.comboBoxCapStyle.Location = new System.Drawing.Point(199, 35);
             this.comboBoxCapStyle.Name = "comboBoxCapStyle";
+            this.comboBoxCapStyle.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("comboBoxCapStyle.ResponsiveProfiles"))));
             this.comboBoxCapStyle.Size = new System.Drawing.Size(200, 53);
             this.comboBoxCapStyle.TabIndex = 3;
             this.comboBoxCapStyle.Text = "Butt";
@@ -105,23 +110,25 @@
             this.panel1.Location = new System.Drawing.Point(3, 3);
             this.panel1.MinimumSize = new System.Drawing.Size(225, 0);
             this.panel1.Name = "panel1";
+            this.panel1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("panel1.ResponsiveProfiles"))));
             this.panel1.Size = new System.Drawing.Size(599, 297);
             this.panel1.TabIndex = 4;
             // 
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Left | Wisej.Web.AnchorStyles.Right)));
+            this.flowLayoutPanel1.AutoScroll = true;
             this.flowLayoutPanel1.AutoSize = true;
             this.flowLayoutPanel1.Controls.Add(this.panel1);
             this.flowLayoutPanel1.Controls.Add(this.knob1);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(106, 85);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("flowLayoutPanel1.ResponsiveProfiles"))));
             this.flowLayoutPanel1.Size = new System.Drawing.Size(1210, 305);
             this.flowLayoutPanel1.TabIndex = 5;
             // 
             // Features
             // 
-            this.AutoScroll = true;
             this.Controls.Add(this.flowLayoutPanel1);
             this.Name = "Features";
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownValue)).EndInit();

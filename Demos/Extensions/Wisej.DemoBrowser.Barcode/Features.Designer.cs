@@ -28,24 +28,26 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Features));
             this.barcode1 = new Wisej.Web.Ext.Barcode.Barcode();
             this.checkBoxLabel = new Wisej.Web.CheckBox();
             this.comboBoxBarcodeType = new Wisej.Web.ComboBox();
             this.textBoxValue = new Wisej.Web.TextBox();
             this.panel1 = new Wisej.Web.Panel();
-            this.flowLayoutPanel1 = new Wisej.Web.FlowLayoutPanel();
+            this.flowLayoutPanelMain = new Wisej.Web.FlowLayoutPanel();
             this.panel1.SuspendLayout();
-            this.flowLayoutPanel1.SuspendLayout();
+            this.flowLayoutPanelMain.SuspendLayout();
             this.SuspendLayout();
             // 
             // barcode1
             // 
             this.barcode1.Anchor = Wisej.Web.AnchorStyles.None;
             this.barcode1.BarcodeType = Wisej.Web.Ext.Barcode.BarcodeType.Code_128;
-            this.flowLayoutPanel1.SetFillWeight(this.barcode1, 1);
+            this.flowLayoutPanelMain.SetFillWeight(this.barcode1, 1);
             this.barcode1.Location = new System.Drawing.Point(503, 3);
             this.barcode1.MinimumSize = new System.Drawing.Size(300, 0);
             this.barcode1.Name = "barcode1";
+            this.barcode1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("barcode1.ResponsiveProfiles"))));
             this.barcode1.Size = new System.Drawing.Size(494, 318);
             this.barcode1.TabIndex = 4;
             this.barcode1.Text = "1234567890";
@@ -58,6 +60,7 @@
             this.checkBoxLabel.Checked = true;
             this.checkBoxLabel.Location = new System.Drawing.Point(160, 49);
             this.checkBoxLabel.Name = "checkBoxLabel";
+            this.checkBoxLabel.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("checkBoxLabel.ResponsiveProfiles"))));
             this.checkBoxLabel.Size = new System.Drawing.Size(175, 35);
             this.checkBoxLabel.TabIndex = 3;
             this.checkBoxLabel.Text = "Show Label";
@@ -85,6 +88,7 @@
             this.comboBoxBarcodeType.LabelText = "Barcode Type";
             this.comboBoxBarcodeType.Location = new System.Drawing.Point(160, 120);
             this.comboBoxBarcodeType.Name = "comboBoxBarcodeType";
+            this.comboBoxBarcodeType.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("comboBoxBarcodeType.ResponsiveProfiles"))));
             this.comboBoxBarcodeType.Size = new System.Drawing.Size(175, 60);
             this.comboBoxBarcodeType.TabIndex = 5;
             this.comboBoxBarcodeType.Text = "Code_128";
@@ -96,6 +100,7 @@
             this.textBoxValue.LabelText = "Value";
             this.textBoxValue.Location = new System.Drawing.Point(160, 216);
             this.textBoxValue.Name = "textBoxValue";
+            this.textBoxValue.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("textBoxValue.ResponsiveProfiles"))));
             this.textBoxValue.Size = new System.Drawing.Size(175, 53);
             this.textBoxValue.TabIndex = 6;
             this.textBoxValue.Text = "1234567890";
@@ -106,32 +111,34 @@
             this.panel1.Controls.Add(this.textBoxValue);
             this.panel1.Controls.Add(this.comboBoxBarcodeType);
             this.panel1.Controls.Add(this.checkBoxLabel);
-            this.flowLayoutPanel1.SetFillWeight(this.panel1, 1);
+            this.flowLayoutPanelMain.SetFillWeight(this.panel1, 1);
             this.panel1.Location = new System.Drawing.Point(3, 3);
             this.panel1.MinimumSize = new System.Drawing.Size(200, 0);
             this.panel1.Name = "panel1";
+            this.panel1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("panel1.ResponsiveProfiles"))));
             this.panel1.Size = new System.Drawing.Size(494, 318);
             this.panel1.TabIndex = 7;
             // 
-            // flowLayoutPanel1
+            // flowLayoutPanelMain
             // 
-            this.flowLayoutPanel1.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Left | Wisej.Web.AnchorStyles.Right)));
-            this.flowLayoutPanel1.AutoSize = true;
-            this.flowLayoutPanel1.Controls.Add(this.panel1);
-            this.flowLayoutPanel1.Controls.Add(this.barcode1);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(211, 75);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(1000, 324);
-            this.flowLayoutPanel1.TabIndex = 8;
+            this.flowLayoutPanelMain.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Left | Wisej.Web.AnchorStyles.Right)));
+            this.flowLayoutPanelMain.AutoScroll = true;
+            this.flowLayoutPanelMain.AutoSize = true;
+            this.flowLayoutPanelMain.Controls.Add(this.panel1);
+            this.flowLayoutPanelMain.Controls.Add(this.barcode1);
+            this.flowLayoutPanelMain.Location = new System.Drawing.Point(211, 75);
+            this.flowLayoutPanelMain.Name = "flowLayoutPanelMain";
+            this.flowLayoutPanelMain.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("flowLayoutPanelMain.ResponsiveProfiles"))));
+            this.flowLayoutPanelMain.Size = new System.Drawing.Size(1000, 324);
+            this.flowLayoutPanelMain.TabIndex = 8;
             // 
             // Features
             // 
-            this.AutoScroll = true;
-            this.Controls.Add(this.flowLayoutPanel1);
+            this.Controls.Add(this.flowLayoutPanelMain);
             this.Name = "Features";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.flowLayoutPanel1.ResumeLayout(false);
+            this.flowLayoutPanelMain.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -143,7 +150,7 @@
 		private Web.CheckBox checkBoxLabel;
 		private Web.ComboBox comboBoxBarcodeType;
 		private Web.TextBox textBoxValue;
-        private Web.FlowLayoutPanel flowLayoutPanel1;
+        private Web.FlowLayoutPanel flowLayoutPanelMain;
         private Web.Panel panel1;
     }
 }
