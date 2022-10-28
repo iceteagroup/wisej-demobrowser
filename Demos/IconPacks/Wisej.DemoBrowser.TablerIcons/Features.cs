@@ -26,8 +26,19 @@ namespace Wisej.DemoBrowser.TablerIcons
 
 		private void listViewIcons_Appear(object sender, EventArgs e)
 		{
-			this.listViewIcons.ItemSize = new System.Drawing.Size((this.listViewIcons.Width / 10) - 2, 115);
-		}
+            if (Application.Browser.Device == "Mobile")
+            {
+                // ScreenSize is different on Android vs. iOS.
+                var screenSize = Application.Browser.ScreenSize;
+                var screenWidth = Math.Min(screenSize.Width, screenSize.Height);
+
+                this.listViewIcons.ItemSize = new System.Drawing.Size(screenWidth / 3 - 20, 115);
+            }
+            else
+            {
+                this.listViewIcons.ItemSize = new System.Drawing.Size((this.listViewIcons.Width / 10) - 2, 115);
+            }
+        }
 
 		private void listViewIcons_RetrieveVirtualItem(object sender, RetrieveVirtualItemEventArgs e)
 		{

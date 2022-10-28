@@ -28,15 +28,17 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Features));
             this.audioDefault = new Wisej.Web.Audio();
             this.SuspendLayout();
             // 
             // audioDefault
             // 
             this.audioDefault.Anchor = Wisej.Web.AnchorStyles.None;
-            this.audioDefault.Location = new System.Drawing.Point(442, 210);
+            this.audioDefault.Location = new System.Drawing.Point(544, 210);
             this.audioDefault.Name = "audioDefault";
-            this.audioDefault.Size = new System.Drawing.Size(538, 55);
+            this.audioDefault.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("audioDefault.ResponsiveProfiles"))));
+            this.audioDefault.Size = new System.Drawing.Size(334, 55);
             this.audioDefault.SourceURL = "Media/sample.mp3";
             this.audioDefault.TabIndex = 0;
             this.audioDefault.Volume = 0.5D;
@@ -48,7 +50,6 @@
             // 
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.audioDefault);
-            this.MinimumSize = new System.Drawing.Size(623, 119);
             this.Name = "Features";
             this.ResumeLayout(false);
 

@@ -30,6 +30,7 @@
 		private void InitializeComponent()
 		{
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Features));
             this.listViewIcons = new Wisej.Web.ListView();
             this.imageListIcons = new Wisej.Web.ImageList(this.components);
             this.SuspendLayout();
@@ -45,6 +46,8 @@
             this.listViewIcons.LargeImageList = this.imageListIcons;
             this.listViewIcons.Location = new System.Drawing.Point(58, 26);
             this.listViewIcons.Name = "listViewIcons";
+            this.listViewIcons.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("listViewIcons.ResponsiveProfiles"))));
+            this.listViewIcons.Scrollable = false;
             this.listViewIcons.SelectionMode = Wisej.Web.SelectionMode.None;
             this.listViewIcons.Size = new System.Drawing.Size(1307, 423);
             this.listViewIcons.TabIndex = 0;

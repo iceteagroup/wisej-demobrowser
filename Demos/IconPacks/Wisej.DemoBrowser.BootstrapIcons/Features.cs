@@ -18,13 +18,25 @@ namespace Wisej.DemoBrowser.BootstrapIcons
 		private void Features_Load(object sender, EventArgs e)
 		{
 			this.fields = typeof(Ext.BootstrapIcons.Icons).GetFields();
-			var imageEntries = fields.Select(item => new ImageListEntry((string)item.GetValue(null))).ToArray();			this.imageListIcons.Images.AddRange(imageEntries);
+			var imageEntries = fields.Select(item => new ImageListEntry((string)item.GetValue(null))).ToArray();			
+			this.imageListIcons.Images.AddRange(imageEntries);
 			this.listViewIcons.VirtualListSize = imageEntries.Length;
 		}
 
 		private void listViewIcons_Appear(object sender, EventArgs e)
 		{
-			this.listViewIcons.ItemSize = new System.Drawing.Size((this.listViewIcons.Width / 10) - 2, 115);
+			if (Application.Browser.Device == "Mobile")
+			{
+                // ScreenSize is different on Android vs. iOS.
+                var screenSize = Application.Browser.ScreenSize;
+                var screenWidth = Math.Min(screenSize.Width, screenSize.Height);
+
+                this.listViewIcons.ItemSize = new System.Drawing.Size(screenWidth / 3 - 20, 115);
+            }
+            else
+			{
+                this.listViewIcons.ItemSize = new System.Drawing.Size((this.listViewIcons.Width / 10) - 2, 115);
+            }
 		}
 
 		private void listViewIcons_RetrieveVirtualItem(object sender, RetrieveVirtualItemEventArgs e)
