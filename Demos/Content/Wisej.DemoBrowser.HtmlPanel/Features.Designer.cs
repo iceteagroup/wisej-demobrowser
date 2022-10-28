@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Features));
             this.aceEditorSource = new Wisej.Web.Ext.AceEditor.AceEditor();
             this.label2 = new Wisej.Web.Label();
             this.buttonApply = new Wisej.Web.Button();
@@ -52,6 +53,7 @@
             this.aceEditorSource.Language = "html";
             this.aceEditorSource.Location = new System.Drawing.Point(17, 30);
             this.aceEditorSource.Name = "aceEditorSource";
+            this.aceEditorSource.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("aceEditorSource.ResponsiveProfiles"))));
             this.aceEditorSource.ShowGutter = false;
             this.aceEditorSource.ShowLineNumbers = false;
             this.aceEditorSource.ShowPrintMargin = false;
@@ -73,6 +75,7 @@
             this.buttonApply.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Bottom | Wisej.Web.AnchorStyles.Right)));
             this.buttonApply.Location = new System.Drawing.Point(381, 310);
             this.buttonApply.Name = "buttonApply";
+            this.buttonApply.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("buttonApply.ResponsiveProfiles"))));
             this.buttonApply.Size = new System.Drawing.Size(156, 37);
             this.buttonApply.TabIndex = 7;
             this.buttonApply.Text = "Apply";
@@ -83,6 +86,7 @@
             this.buttonReset.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Bottom | Wisej.Web.AnchorStyles.Right)));
             this.buttonReset.Location = new System.Drawing.Point(219, 310);
             this.buttonReset.Name = "buttonReset";
+            this.buttonReset.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("buttonReset.ResponsiveProfiles"))));
             this.buttonReset.Size = new System.Drawing.Size(156, 37);
             this.buttonReset.TabIndex = 8;
             this.buttonReset.Text = "Reset";
@@ -96,19 +100,22 @@
             this.panel1.Controls.Add(this.aceEditorSource);
             this.flowLayoutPanel1.SetFillWeight(this.panel1, 1);
             this.panel1.Location = new System.Drawing.Point(3, 3);
-            this.panel1.MinimumSize = new System.Drawing.Size(500, 0);
+            this.panel1.MinimumSize = new System.Drawing.Size(300, 0);
             this.panel1.Name = "panel1";
+            this.panel1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("panel1.ResponsiveProfiles"))));
             this.panel1.Size = new System.Drawing.Size(551, 359);
             this.panel1.TabIndex = 10;
             // 
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Left | Wisej.Web.AnchorStyles.Right)));
+            this.flowLayoutPanel1.AutoScroll = true;
             this.flowLayoutPanel1.AutoSize = true;
             this.flowLayoutPanel1.Controls.Add(this.panel1);
             this.flowLayoutPanel1.Controls.Add(this.panel3);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(155, 55);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("flowLayoutPanel1.ResponsiveProfiles"))));
             this.flowLayoutPanel1.ScrollBars = Wisej.Web.ScrollBars.Hidden;
             this.flowLayoutPanel1.Size = new System.Drawing.Size(1113, 365);
             this.flowLayoutPanel1.TabIndex = 12;
@@ -119,8 +126,9 @@
             this.panel3.Controls.Add(this.htmlPanelPreview);
             this.flowLayoutPanel1.SetFillWeight(this.panel3, 1);
             this.panel3.Location = new System.Drawing.Point(560, 3);
-            this.panel3.MinimumSize = new System.Drawing.Size(500, 0);
+            this.panel3.MinimumSize = new System.Drawing.Size(300, 0);
             this.panel3.Name = "panel3";
+            this.panel3.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("panel3.ResponsiveProfiles"))));
             this.panel3.Size = new System.Drawing.Size(550, 359);
             this.panel3.TabIndex = 12;
             // 
@@ -143,14 +151,13 @@
             this.htmlPanelPreview.Focusable = false;
             this.htmlPanelPreview.Location = new System.Drawing.Point(19, 35);
             this.htmlPanelPreview.Name = "htmlPanelPreview";
+            this.htmlPanelPreview.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("htmlPanelPreview.ResponsiveProfiles"))));
             this.htmlPanelPreview.Size = new System.Drawing.Size(513, 312);
             this.htmlPanelPreview.TabIndex = 11;
             this.htmlPanelPreview.TabStop = false;
             // 
             // Features
             // 
-            this.AutoScroll = true;
-            this.AutoScrollMargin = new System.Drawing.Size(0, 20);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Name = "Features";
             this.Load += new System.EventHandler(this.Features_Load);

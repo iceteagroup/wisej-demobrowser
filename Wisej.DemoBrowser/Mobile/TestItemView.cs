@@ -65,6 +65,13 @@ namespace Wisej.DemoBrowser
                     }
                     break;
 
+				case "demo":
+					this.labelContent1.Anonymous = false;
+                    this.labelContent2.Anonymous = false;
+
+                    this.labelContent1.Text = $"&bull; <a style='text-decoration: none;' href='{config.docsUrl}' target='_blank'>Docs</a>";
+                    this.labelContent2.Text = $"&bull; <a style='text-decoration: none;' href='{config.sourceUrl}' target='_blank'>Source</a>";
+					break;
 				default:
 					break;
 			}

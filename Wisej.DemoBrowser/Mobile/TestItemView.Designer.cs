@@ -97,13 +97,12 @@
             // 
             this.labelContent1.AllowHtml = true;
             this.labelContent1.Anonymous = true;
-            this.labelContent1.AutoSize = true;
             this.flowLayoutPanelMain.SetFillWeight(this.labelContent1, 1);
             this.flowLayoutPanelMain.SetFlowBreak(this.labelContent1, true);
             this.labelContent1.Location = new System.Drawing.Point(3, 80);
             this.labelContent1.Margin = new Wisej.Web.Padding(3, 6, 3, 3);
             this.labelContent1.Name = "labelContent1";
-            this.labelContent1.Size = new System.Drawing.Size(136, 18);
+            this.labelContent1.Size = new System.Drawing.Size(136, 25);
             this.labelContent1.TabIndex = 3;
             this.labelContent1.Text = "&bull; TextBox";
             // 
@@ -111,12 +110,11 @@
             // 
             this.labelContent2.AllowHtml = true;
             this.labelContent2.Anonymous = true;
-            this.labelContent2.AutoSize = true;
             this.flowLayoutPanelMain.SetFillWeight(this.labelContent2, 1);
             this.flowLayoutPanelMain.SetFlowBreak(this.labelContent2, true);
-            this.labelContent2.Location = new System.Drawing.Point(3, 104);
+            this.labelContent2.Location = new System.Drawing.Point(3, 111);
             this.labelContent2.Name = "labelContent2";
-            this.labelContent2.Size = new System.Drawing.Size(136, 18);
+            this.labelContent2.Size = new System.Drawing.Size(136, 25);
             this.labelContent2.TabIndex = 4;
             this.labelContent2.Text = "&bull; DateTimePicker";
             // 
@@ -133,7 +131,6 @@
             this.Click += new System.EventHandler(this.AppItemView_Click);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxIcon)).EndInit();
             this.flowLayoutPanelMain.ResumeLayout(false);
-            this.flowLayoutPanelMain.PerformLayout();
             this.ResumeLayout(false);
 
 		}

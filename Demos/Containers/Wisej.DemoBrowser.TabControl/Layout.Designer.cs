@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Layout));
             this.tabControl = new Wisej.Web.TabControl();
             this.tabPage1 = new Wisej.Web.TabPage();
             this.labelPage1Text = new Wisej.Web.Label();
@@ -56,6 +57,7 @@
             this.tabControl.Name = "tabControl";
             this.tabControl.Orientation = Wisej.Web.Orientation.Vertical;
             this.tabControl.PageInsets = new Wisej.Web.Padding(1, 1, 1, 77);
+            this.tabControl.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("tabControl.ResponsiveProfiles"))));
             this.tabControl.Size = new System.Drawing.Size(798, 332);
             this.tabControl.TabIndex = 8;
             // 
@@ -64,15 +66,17 @@
             this.tabPage1.Controls.Add(this.labelPage1Text);
             this.tabPage1.Location = new System.Drawing.Point(1, 1);
             this.tabPage1.Name = "tabPage1";
+            this.tabPage1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("tabPage1.ResponsiveProfiles"))));
             this.tabPage1.Size = new System.Drawing.Size(796, 254);
             this.tabPage1.Text = "Tab Page 1";
             // 
-            // labelText
+            // labelPage1Text
             // 
             this.labelPage1Text.AutoSize = true;
             this.labelPage1Text.Dock = Wisej.Web.DockStyle.Fill;
             this.labelPage1Text.Location = new System.Drawing.Point(0, 0);
-            this.labelPage1Text.Name = "labelText";
+            this.labelPage1Text.Name = "labelPage1Text";
+            this.labelPage1Text.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("labelPage1Text.ResponsiveProfiles"))));
             this.labelPage1Text.Size = new System.Drawing.Size(796, 254);
             this.labelPage1Text.TabIndex = 4;
             this.labelPage1Text.Text = "TabPage aligned to the Bottom and oriented Vertically";
@@ -83,15 +87,17 @@
             this.tabPage2.Controls.Add(this.labelPage2Text);
             this.tabPage2.Location = new System.Drawing.Point(1, 1);
             this.tabPage2.Name = "tabPage2";
+            this.tabPage2.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("tabPage2.ResponsiveProfiles"))));
             this.tabPage2.Size = new System.Drawing.Size(796, 254);
             this.tabPage2.Text = "Tab Page 2";
             // 
-            // label15
+            // labelPage2Text
             // 
             this.labelPage2Text.AutoSize = true;
             this.labelPage2Text.Dock = Wisej.Web.DockStyle.Fill;
             this.labelPage2Text.Location = new System.Drawing.Point(0, 0);
-            this.labelPage2Text.Name = "label15";
+            this.labelPage2Text.Name = "labelPage2Text";
+            this.labelPage2Text.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("labelPage2Text.ResponsiveProfiles"))));
             this.labelPage2Text.Size = new System.Drawing.Size(796, 254);
             this.labelPage2Text.TabIndex = 5;
             this.labelPage2Text.Text = "Tabs bottom aligned & oriented vertically";
@@ -107,6 +113,7 @@
             this.comboBoxOrientation.LabelText = "Tab Orientation";
             this.comboBoxOrientation.Location = new System.Drawing.Point(102, 88);
             this.comboBoxOrientation.Name = "comboBoxOrientation";
+            this.comboBoxOrientation.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("comboBoxOrientation.ResponsiveProfiles"))));
             this.comboBoxOrientation.Size = new System.Drawing.Size(195, 53);
             this.comboBoxOrientation.TabIndex = 9;
             this.comboBoxOrientation.Text = "Vertical";
@@ -124,6 +131,7 @@
             this.comboBoxAlignment.LabelText = "Tab Alignment";
             this.comboBoxAlignment.Location = new System.Drawing.Point(102, 191);
             this.comboBoxAlignment.Name = "comboBoxAlignment";
+            this.comboBoxAlignment.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("comboBoxAlignment.ResponsiveProfiles"))));
             this.comboBoxAlignment.Size = new System.Drawing.Size(195, 53);
             this.comboBoxAlignment.TabIndex = 10;
             this.comboBoxAlignment.Text = "Bottom";
@@ -137,24 +145,25 @@
             this.panel1.Location = new System.Drawing.Point(3, 3);
             this.panel1.MinimumSize = new System.Drawing.Size(275, 0);
             this.panel1.Name = "panel1";
+            this.panel1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("panel1.ResponsiveProfiles"))));
             this.panel1.Size = new System.Drawing.Size(399, 332);
             this.panel1.TabIndex = 11;
             // 
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Left | Wisej.Web.AnchorStyles.Right)));
+            this.flowLayoutPanel1.AutoScroll = true;
             this.flowLayoutPanel1.AutoSize = true;
             this.flowLayoutPanel1.Controls.Add(this.panel1);
             this.flowLayoutPanel1.Controls.Add(this.tabControl);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(107, 67);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("flowLayoutPanel1.ResponsiveProfiles"))));
             this.flowLayoutPanel1.Size = new System.Drawing.Size(1209, 340);
             this.flowLayoutPanel1.TabIndex = 12;
             // 
             // Layout
             // 
-            this.AutoScroll = true;
-            this.AutoScrollMargin = new System.Drawing.Size(0, 20);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Name = "Layout";
             this.tabControl.ResumeLayout(false);
