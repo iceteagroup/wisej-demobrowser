@@ -1013,7 +1013,7 @@
       "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/HtmlTagEnd.svg",
       "description-en": "Wisej.NET was designed to be extensible and open to all sorts of technologies from the start. Any existing JavaScript control can be wrapped to become a Wisej.NET C# or VB.NET control."
     },
-    "All Integrations": {
+    "All": {
       "Features": {
         "sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Wisej.DemoBrowser.Premium",
         "assembly": "Features, Wisej.DemoBrowser.Premium.dll",

@@ -113,6 +113,9 @@ namespace Wisej.DemoBrowser
 					var controlName = control.Name;
 					var demos = (dynamic)control.Value;
 
+					if (controlName == "Overview")
+						continue;
+
 					var controlNode = new TreeNode
 					{
 						Name = controlName,

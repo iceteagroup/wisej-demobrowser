@@ -52,8 +52,8 @@
             this.menuItem9 = new Wisej.Web.MenuItem();
             this.menuItem10 = new Wisej.Web.MenuItem();
             this.buttonRepeat = new Wisej.Web.Button();
-            this.flowLayoutPanel1 = new Wisej.Web.FlowLayoutPanel();
-            this.flowLayoutPanel1.SuspendLayout();
+            this.flowLayoutPanelButtons = new Wisej.Web.FlowLayoutPanel();
+            this.flowLayoutPanelButtons.SuspendLayout();
             this.SuspendLayout();
             // 
             // buttonAlertBox
@@ -300,42 +300,40 @@
             this.buttonRepeat.Text = "Repeat (0)";
             this.buttonRepeat.Click += new System.EventHandler(this.buttonRepeat_Click);
             // 
-            // flowLayoutPanel1
+            // flowLayoutPanelButtons
             // 
-            this.flowLayoutPanel1.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Left | Wisej.Web.AnchorStyles.Right)));
-            this.flowLayoutPanel1.AutoScroll = true;
-            this.flowLayoutPanel1.AutoSize = true;
-            this.flowLayoutPanel1.Controls.Add(this.buttonRepeat);
-            this.flowLayoutPanel1.Controls.Add(this.splitButton2);
-            this.flowLayoutPanel1.Controls.Add(this.splitButton1);
-            this.flowLayoutPanel1.Controls.Add(this.button10);
-            this.flowLayoutPanel1.Controls.Add(this.buttonNativeAlert);
-            this.flowLayoutPanel1.Controls.Add(this.button8);
-            this.flowLayoutPanel1.Controls.Add(this.button7);
-            this.flowLayoutPanel1.Controls.Add(this.button3);
-            this.flowLayoutPanel1.Controls.Add(this.buttonToast);
-            this.flowLayoutPanel1.Controls.Add(this.buttonMessageBox);
-            this.flowLayoutPanel1.Controls.Add(this.button4);
-            this.flowLayoutPanel1.Controls.Add(this.button2);
-            this.flowLayoutPanel1.Controls.Add(this.buttonAlertBox);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(20, 74);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Padding = new Wisej.Web.Padding(16);
-            this.flowLayoutPanel1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("flowLayoutPanel1.ResponsiveProfiles"))));
-            this.flowLayoutPanel1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("flowLayoutPanel1.ResponsiveProfiles1"))));
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(1383, 263);
-            this.flowLayoutPanel1.TabIndex = 14;
+            this.flowLayoutPanelButtons.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Left | Wisej.Web.AnchorStyles.Right)));
+            this.flowLayoutPanelButtons.AutoScroll = true;
+            this.flowLayoutPanelButtons.Controls.Add(this.buttonRepeat);
+            this.flowLayoutPanelButtons.Controls.Add(this.splitButton2);
+            this.flowLayoutPanelButtons.Controls.Add(this.splitButton1);
+            this.flowLayoutPanelButtons.Controls.Add(this.button10);
+            this.flowLayoutPanelButtons.Controls.Add(this.buttonNativeAlert);
+            this.flowLayoutPanelButtons.Controls.Add(this.button8);
+            this.flowLayoutPanelButtons.Controls.Add(this.button7);
+            this.flowLayoutPanelButtons.Controls.Add(this.button3);
+            this.flowLayoutPanelButtons.Controls.Add(this.buttonToast);
+            this.flowLayoutPanelButtons.Controls.Add(this.buttonMessageBox);
+            this.flowLayoutPanelButtons.Controls.Add(this.button4);
+            this.flowLayoutPanelButtons.Controls.Add(this.button2);
+            this.flowLayoutPanelButtons.Controls.Add(this.buttonAlertBox);
+            this.flowLayoutPanelButtons.Location = new System.Drawing.Point(20, 74);
+            this.flowLayoutPanelButtons.Name = "flowLayoutPanelButtons";
+            this.flowLayoutPanelButtons.Padding = new Wisej.Web.Padding(16);
+            this.flowLayoutPanelButtons.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("flowLayoutPanelButtons.ResponsiveProfiles"))));
+            this.flowLayoutPanelButtons.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("flowLayoutPanelButtons.ResponsiveProfiles1"))));
+            this.flowLayoutPanelButtons.Size = new System.Drawing.Size(1383, 263);
+            this.flowLayoutPanelButtons.TabIndex = 14;
             // 
             // Features
             // 
             this.AutoScroll = true;
-            this.Controls.Add(this.flowLayoutPanel1);
+            this.Controls.Add(this.flowLayoutPanelButtons);
             this.Name = "Features";
             this.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("$this.ResponsiveProfiles"))));
             this.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("$this.ResponsiveProfiles1"))));
-            this.flowLayoutPanel1.ResumeLayout(false);
+            this.flowLayoutPanelButtons.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 
@@ -364,6 +362,6 @@
 		private Web.MenuItem menuItem9;
 		private Web.MenuItem menuItem10;
 		private Web.Button buttonRepeat;
-        private Web.FlowLayoutPanel flowLayoutPanel1;
+        private Web.FlowLayoutPanel flowLayoutPanelButtons;
     }
 }
