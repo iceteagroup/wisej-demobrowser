@@ -120,18 +120,93 @@
   <metadata name="contextMenuButton.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
+  <data name="buttonDefault.ResponsiveProfiles" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFJXaXNlai5GcmFtZXdvcmssIFZlcnNpb249My4wLjAuMCwgQ3Vs
+        dHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj0xN2JlZjM1ZTExYjg0MTcxDAMAAABRU3lzdGVtLkRy
+        YXdpbmcsIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iMDNm
+        NWY3ZjExZDUwYTNhBQEAAAAcV2lzZWouQmFzZS5SZXNwb25zaXZlUHJvZmlsZQYAAAAETmFtZQMkQWQI
+        TG9jYXRpb24EU2l6ZQZBbmNob3IEVGV4dAEEBAQEARhTeXN0ZW0uRHJhd2luZy5SZWN0YW5nbGUDAAAA
+        FFN5c3RlbS5EcmF3aW5nLlBvaW50AwAAABNTeXN0ZW0uRHJhd2luZy5TaXplAwAAABZXaXNlai5XZWIu
+        QW5jaG9yU3R5bGVzAgAAAAIAAAAGBAAAAAVQaG9uZQX7////GFN5c3RlbS5EcmF3aW5nLlJlY3Rhbmds
+        ZQQAAAABeAF5BXdpZHRoBmhlaWdodAAAAAAICAgIAwAAABoCAABKAgAAPQAAAB0CAAAF+v///xRTeXN0
+        ZW0uRHJhd2luZy5Qb2ludAIAAAABeAF5AAAICAMAAAA+AAAAcgAAAAX5////E1N5c3RlbS5EcmF3aW5n
+        LlNpemUCAAAABXdpZHRoBmhlaWdodAAACAgDAAAA3QEAAC0AAAAF+P///xZXaXNlai5XZWIuQW5jaG9y
+        U3R5bGVzAQAAAAd2YWx1ZV9fAAgCAAAADAAAAAYJAAAAEkhvbGQgVGFwIChEZWZhdWx0KQs=
+</value>
+  </data>
   <metadata name="contextMenuChecked.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>177, 17</value>
   </metadata>
+  <data name="buttonCheckedContextMenu.ResponsiveProfiles" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFJXaXNlai5GcmFtZXdvcmssIFZlcnNpb249My4wLjAuMCwgQ3Vs
+        dHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj0xN2JlZjM1ZTExYjg0MTcxDAMAAABRU3lzdGVtLkRy
+        YXdpbmcsIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iMDNm
+        NWY3ZjExZDUwYTNhBQEAAAAcV2lzZWouQmFzZS5SZXNwb25zaXZlUHJvZmlsZQUAAAAETmFtZQMkQWQI
+        TG9jYXRpb24EU2l6ZQZBbmNob3IBBAQEBBhTeXN0ZW0uRHJhd2luZy5SZWN0YW5nbGUDAAAAFFN5c3Rl
+        bS5EcmF3aW5nLlBvaW50AwAAABNTeXN0ZW0uRHJhd2luZy5TaXplAwAAABZXaXNlai5XZWIuQW5jaG9y
+        U3R5bGVzAgAAAAIAAAAGBAAAAAVQaG9uZQX7////GFN5c3RlbS5EcmF3aW5nLlJlY3RhbmdsZQQAAAAB
+        eAF5BXdpZHRoBmhlaWdodAAAAAAICAgIAwAAABoCAADfAQAAPQAAALIBAAAF+v///xRTeXN0ZW0uRHJh
+        d2luZy5Qb2ludAIAAAABeAF5AAAICAMAAAA+AAAA3QAAAAX5////E1N5c3RlbS5EcmF3aW5nLlNpemUC
+        AAAABXdpZHRoBmhlaWdodAAACAgDAAAA3QEAAC0AAAAF+P///xZXaXNlai5XZWIuQW5jaG9yU3R5bGVz
+        AQAAAAd2YWx1ZV9fAAgCAAAADAAAAAs=
+</value>
+  </data>
   <metadata name="contextMenuNested.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>347, 17</value>
   </metadata>
+  <data name="button1.ResponsiveProfiles" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFJXaXNlai5GcmFtZXdvcmssIFZlcnNpb249My4wLjAuMCwgQ3Vs
+        dHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj0xN2JlZjM1ZTExYjg0MTcxDAMAAABRU3lzdGVtLkRy
+        YXdpbmcsIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iMDNm
+        NWY3ZjExZDUwYTNhBQEAAAAcV2lzZWouQmFzZS5SZXNwb25zaXZlUHJvZmlsZQUAAAAETmFtZQMkQWQI
+        TG9jYXRpb24EU2l6ZQZBbmNob3IBBAQEBBhTeXN0ZW0uRHJhd2luZy5SZWN0YW5nbGUDAAAAFFN5c3Rl
+        bS5EcmF3aW5nLlBvaW50AwAAABNTeXN0ZW0uRHJhd2luZy5TaXplAwAAABZXaXNlai5XZWIuQW5jaG9y
+        U3R5bGVzAgAAAAIAAAAGBAAAAAVQaG9uZQX7////GFN5c3RlbS5EcmF3aW5nLlJlY3RhbmdsZQQAAAAB
+        eAF5BXdpZHRoBmhlaWdodAAAAAAICAgIAwAAABoCAAB0AQAAPQAAAEcBAAAF+v///xRTeXN0ZW0uRHJh
+        d2luZy5Qb2ludAIAAAABeAF5AAAICAMAAAA+AAAASAEAAAX5////E1N5c3RlbS5EcmF3aW5nLlNpemUC
+        AAAABXdpZHRoBmhlaWdodAAACAgDAAAA3QEAAC0AAAAF+P///xZXaXNlai5XZWIuQW5jaG9yU3R5bGVz
+        AQAAAAd2YWx1ZV9fAAgCAAAADAAAAAs=
+</value>
+  </data>
   <metadata name="contextMenuLinks.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>509, 17</value>
   </metadata>
+  <data name="button2.ResponsiveProfiles" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFJXaXNlai5GcmFtZXdvcmssIFZlcnNpb249My4wLjAuMCwgQ3Vs
+        dHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj0xN2JlZjM1ZTExYjg0MTcxDAMAAABRU3lzdGVtLkRy
+        YXdpbmcsIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iMDNm
+        NWY3ZjExZDUwYTNhBQEAAAAcV2lzZWouQmFzZS5SZXNwb25zaXZlUHJvZmlsZQUAAAAETmFtZQMkQWQI
+        TG9jYXRpb24EU2l6ZQZBbmNob3IBBAQEBBhTeXN0ZW0uRHJhd2luZy5SZWN0YW5nbGUDAAAAFFN5c3Rl
+        bS5EcmF3aW5nLlBvaW50AwAAABNTeXN0ZW0uRHJhd2luZy5TaXplAwAAABZXaXNlai5XZWIuQW5jaG9y
+        U3R5bGVzAgAAAAIAAAAGBAAAAAVQaG9uZQX7////GFN5c3RlbS5EcmF3aW5nLlJlY3RhbmdsZQQAAAAB
+        eAF5BXdpZHRoBmhlaWdodAAAAAAICAgIAwAAABoCAAAJAQAAPQAAANwAAAAF+v///xRTeXN0ZW0uRHJh
+        d2luZy5Qb2ludAIAAAABeAF5AAAICAMAAAA+AAAAswEAAAX5////E1N5c3RlbS5EcmF3aW5nLlNpemUC
+        AAAABXdpZHRoBmhlaWdodAAACAgDAAAA3QEAAC0AAAAF+P///xZXaXNlai5XZWIuQW5jaG9yU3R5bGVz
+        AQAAAAd2YWx1ZV9fAAgCAAAADAAAAAs=
+</value>
+  </data>
   <metadata name="contextMenuHTML.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>660, 17</value>
   </metadata>
+  <data name="button3.ResponsiveProfiles" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFJXaXNlai5GcmFtZXdvcmssIFZlcnNpb249My4wLjAuMCwgQ3Vs
+        dHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj0xN2JlZjM1ZTExYjg0MTcxDAMAAABRU3lzdGVtLkRy
+        YXdpbmcsIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iMDNm
+        NWY3ZjExZDUwYTNhBQEAAAAcV2lzZWouQmFzZS5SZXNwb25zaXZlUHJvZmlsZQUAAAAETmFtZQMkQWQI
+        TG9jYXRpb24EU2l6ZQZBbmNob3IBBAQEBBhTeXN0ZW0uRHJhd2luZy5SZWN0YW5nbGUDAAAAFFN5c3Rl
+        bS5EcmF3aW5nLlBvaW50AwAAABNTeXN0ZW0uRHJhd2luZy5TaXplAwAAABZXaXNlai5XZWIuQW5jaG9y
+        U3R5bGVzAgAAAAIAAAAGBAAAAAVQaG9uZQX7////GFN5c3RlbS5EcmF3aW5nLlJlY3RhbmdsZQQAAAAB
+        eAF5BXdpZHRoBmhlaWdodAAAAAAICAgIAwAAABoCAACeAAAAPQAAAHEAAAAF+v///xRTeXN0ZW0uRHJh
+        d2luZy5Qb2ludAIAAAABeAF5AAAICAMAAAA+AAAAHgIAAAX5////E1N5c3RlbS5EcmF3aW5nLlNpemUC
+        AAAABXdpZHRoBmhlaWdodAAACAgDAAAA3QEAAC0AAAAF+P///xZXaXNlai5XZWIuQW5jaG9yU3R5bGVz
+        AQAAAAd2YWx1ZV9fAAgCAAAADAAAAAs=
+</value>
+  </data>
   <metadata name="$this.RulerSnapLines" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0

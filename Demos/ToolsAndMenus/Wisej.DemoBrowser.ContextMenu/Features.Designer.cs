@@ -28,6 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Features));
             this.contextMenuButton = new Wisej.Web.ContextMenu();
             this.menuItem1 = new Wisej.Web.MenuItem();
             this.menuItem2 = new Wisej.Web.MenuItem();
@@ -110,6 +111,7 @@
             this.buttonDefault.ContextMenu = this.contextMenuButton;
             this.buttonDefault.Location = new System.Drawing.Point(483, 160);
             this.buttonDefault.Name = "buttonDefault";
+            this.buttonDefault.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("buttonDefault.ResponsiveProfiles"))));
             this.buttonDefault.Size = new System.Drawing.Size(200, 35);
             this.buttonDefault.TabIndex = 0;
             this.buttonDefault.Text = "Right-Click (Default)";
@@ -120,6 +122,7 @@
             this.buttonCheckedContextMenu.ContextMenu = this.contextMenuChecked;
             this.buttonCheckedContextMenu.Location = new System.Drawing.Point(483, 220);
             this.buttonCheckedContextMenu.Name = "buttonCheckedContextMenu";
+            this.buttonCheckedContextMenu.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("buttonCheckedContextMenu.ResponsiveProfiles"))));
             this.buttonCheckedContextMenu.Size = new System.Drawing.Size(200, 35);
             this.buttonCheckedContextMenu.TabIndex = 1;
             this.buttonCheckedContextMenu.Text = "Checked Items";
@@ -178,6 +181,7 @@
             this.button1.ContextMenu = this.contextMenuNested;
             this.button1.Location = new System.Drawing.Point(483, 280);
             this.button1.Name = "button1";
+            this.button1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("button1.ResponsiveProfiles"))));
             this.button1.Size = new System.Drawing.Size(200, 35);
             this.button1.TabIndex = 2;
             this.button1.Text = "Nested";
@@ -230,6 +234,7 @@
             this.button2.ContextMenu = this.contextMenuLinks;
             this.button2.Location = new System.Drawing.Point(739, 192);
             this.button2.Name = "button2";
+            this.button2.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("button2.ResponsiveProfiles"))));
             this.button2.Size = new System.Drawing.Size(200, 35);
             this.button2.TabIndex = 3;
             this.button2.Text = "Links";
@@ -313,6 +318,7 @@
             this.button3.ContextMenu = this.contextMenuHTML;
             this.button3.Location = new System.Drawing.Point(739, 250);
             this.button3.Name = "button3";
+            this.button3.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("button3.ResponsiveProfiles"))));
             this.button3.Size = new System.Drawing.Size(200, 35);
             this.button3.TabIndex = 4;
             this.button3.Text = "HTML";
@@ -324,7 +330,6 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.buttonCheckedContextMenu);
             this.Controls.Add(this.buttonDefault);
-            this.MinimumSize = new System.Drawing.Size(485, 200);
             this.Name = "Features";
             this.ResumeLayout(false);
 

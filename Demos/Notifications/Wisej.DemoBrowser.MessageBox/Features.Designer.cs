@@ -63,7 +63,7 @@
             // buttonDefault
             // 
             this.buttonDefault.Anchor = Wisej.Web.AnchorStyles.None;
-            this.buttonDefault.Location = new System.Drawing.Point(56, 23);
+            this.buttonDefault.Location = new System.Drawing.Point(53, 23);
             this.buttonDefault.Name = "buttonDefault";
             this.buttonDefault.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("buttonDefault.ResponsiveProfiles"))));
             this.buttonDefault.Size = new System.Drawing.Size(150, 35);
@@ -74,7 +74,7 @@
             // buttonError
             // 
             this.buttonError.Anchor = Wisej.Web.AnchorStyles.None;
-            this.buttonError.Location = new System.Drawing.Point(236, 23);
+            this.buttonError.Location = new System.Drawing.Point(233, 23);
             this.buttonError.Name = "buttonError";
             this.buttonError.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("buttonError.ResponsiveProfiles"))));
             this.buttonError.Size = new System.Drawing.Size(150, 35);
@@ -85,7 +85,7 @@
             // buttonHand
             // 
             this.buttonHand.Anchor = Wisej.Web.AnchorStyles.None;
-            this.buttonHand.Location = new System.Drawing.Point(56, 80);
+            this.buttonHand.Location = new System.Drawing.Point(53, 80);
             this.buttonHand.Name = "buttonHand";
             this.buttonHand.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("buttonHand.ResponsiveProfiles"))));
             this.buttonHand.Size = new System.Drawing.Size(150, 35);
@@ -96,7 +96,7 @@
             // buttonInformation
             // 
             this.buttonInformation.Anchor = Wisej.Web.AnchorStyles.None;
-            this.buttonInformation.Location = new System.Drawing.Point(236, 80);
+            this.buttonInformation.Location = new System.Drawing.Point(233, 80);
             this.buttonInformation.Name = "buttonInformation";
             this.buttonInformation.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("buttonInformation.ResponsiveProfiles"))));
             this.buttonInformation.Size = new System.Drawing.Size(150, 35);
@@ -107,7 +107,7 @@
             // buttonNone
             // 
             this.buttonNone.Anchor = Wisej.Web.AnchorStyles.None;
-            this.buttonNone.Location = new System.Drawing.Point(56, 137);
+            this.buttonNone.Location = new System.Drawing.Point(53, 137);
             this.buttonNone.Name = "buttonNone";
             this.buttonNone.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("buttonNone.ResponsiveProfiles"))));
             this.buttonNone.Size = new System.Drawing.Size(150, 35);
@@ -118,7 +118,7 @@
             // buttonQuestion
             // 
             this.buttonQuestion.Anchor = Wisej.Web.AnchorStyles.None;
-            this.buttonQuestion.Location = new System.Drawing.Point(236, 137);
+            this.buttonQuestion.Location = new System.Drawing.Point(233, 137);
             this.buttonQuestion.Name = "buttonQuestion";
             this.buttonQuestion.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("buttonQuestion.ResponsiveProfiles"))));
             this.buttonQuestion.Size = new System.Drawing.Size(150, 35);
@@ -129,7 +129,7 @@
             // buttonStop
             // 
             this.buttonStop.Anchor = Wisej.Web.AnchorStyles.None;
-            this.buttonStop.Location = new System.Drawing.Point(56, 194);
+            this.buttonStop.Location = new System.Drawing.Point(53, 194);
             this.buttonStop.Name = "buttonStop";
             this.buttonStop.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("buttonStop.ResponsiveProfiles"))));
             this.buttonStop.Size = new System.Drawing.Size(150, 35);
@@ -140,7 +140,7 @@
             // buttonWarning
             // 
             this.buttonWarning.Anchor = Wisej.Web.AnchorStyles.None;
-            this.buttonWarning.Location = new System.Drawing.Point(236, 194);
+            this.buttonWarning.Location = new System.Drawing.Point(233, 194);
             this.buttonWarning.Name = "buttonWarning";
             this.buttonWarning.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("buttonWarning.ResponsiveProfiles"))));
             this.buttonWarning.Size = new System.Drawing.Size(150, 35);
@@ -151,7 +151,7 @@
             // buttonNoModal
             // 
             this.buttonNoModal.Anchor = Wisej.Web.AnchorStyles.None;
-            this.buttonNoModal.Location = new System.Drawing.Point(147, 23);
+            this.buttonNoModal.Location = new System.Drawing.Point(144, 23);
             this.buttonNoModal.Name = "buttonNoModal";
             this.buttonNoModal.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("buttonNoModal.ResponsiveProfiles"))));
             this.buttonNoModal.Size = new System.Drawing.Size(150, 35);
@@ -162,7 +162,7 @@
             // buttonKeepOnScreen
             // 
             this.buttonKeepOnScreen.Anchor = Wisej.Web.AnchorStyles.None;
-            this.buttonKeepOnScreen.Location = new System.Drawing.Point(147, 80);
+            this.buttonKeepOnScreen.Location = new System.Drawing.Point(144, 80);
             this.buttonKeepOnScreen.Name = "buttonKeepOnScreen";
             this.buttonKeepOnScreen.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("buttonKeepOnScreen.ResponsiveProfiles"))));
             this.buttonKeepOnScreen.Size = new System.Drawing.Size(150, 35);
@@ -173,7 +173,7 @@
             // buttonAllowHtml
             // 
             this.buttonAllowHtml.Anchor = Wisej.Web.AnchorStyles.None;
-            this.buttonAllowHtml.Location = new System.Drawing.Point(147, 137);
+            this.buttonAllowHtml.Location = new System.Drawing.Point(144, 137);
             this.buttonAllowHtml.Name = "buttonAllowHtml";
             this.buttonAllowHtml.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("buttonAllowHtml.ResponsiveProfiles"))));
             this.buttonAllowHtml.Size = new System.Drawing.Size(150, 35);
@@ -184,7 +184,7 @@
             // buttonCaption
             // 
             this.buttonCaption.Anchor = Wisej.Web.AnchorStyles.None;
-            this.buttonCaption.Location = new System.Drawing.Point(147, 194);
+            this.buttonCaption.Location = new System.Drawing.Point(144, 194);
             this.buttonCaption.Name = "buttonCaption";
             this.buttonCaption.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("buttonCaption.ResponsiveProfiles"))));
             this.buttonCaption.Size = new System.Drawing.Size(150, 35);
@@ -195,7 +195,7 @@
             // buttonAbortRetryIgnore
             // 
             this.buttonAbortRetryIgnore.Anchor = Wisej.Web.AnchorStyles.None;
-            this.buttonAbortRetryIgnore.Location = new System.Drawing.Point(54, 23);
+            this.buttonAbortRetryIgnore.Location = new System.Drawing.Point(51, 23);
             this.buttonAbortRetryIgnore.Name = "buttonAbortRetryIgnore";
             this.buttonAbortRetryIgnore.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("buttonAbortRetryIgnore.ResponsiveProfiles"))));
             this.buttonAbortRetryIgnore.Size = new System.Drawing.Size(150, 35);
@@ -206,7 +206,7 @@
             // buttonOKCancel
             // 
             this.buttonOKCancel.Anchor = Wisej.Web.AnchorStyles.None;
-            this.buttonOKCancel.Location = new System.Drawing.Point(54, 80);
+            this.buttonOKCancel.Location = new System.Drawing.Point(51, 80);
             this.buttonOKCancel.Name = "buttonOKCancel";
             this.buttonOKCancel.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("buttonOKCancel.ResponsiveProfiles"))));
             this.buttonOKCancel.Size = new System.Drawing.Size(150, 35);
@@ -217,7 +217,7 @@
             // buttonOK
             // 
             this.buttonOK.Anchor = Wisej.Web.AnchorStyles.None;
-            this.buttonOK.Location = new System.Drawing.Point(54, 137);
+            this.buttonOK.Location = new System.Drawing.Point(51, 137);
             this.buttonOK.Name = "buttonOK";
             this.buttonOK.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("buttonOK.ResponsiveProfiles"))));
             this.buttonOK.Size = new System.Drawing.Size(150, 35);
@@ -228,7 +228,7 @@
             // buttonCancel
             // 
             this.buttonCancel.Anchor = Wisej.Web.AnchorStyles.None;
-            this.buttonCancel.Location = new System.Drawing.Point(54, 194);
+            this.buttonCancel.Location = new System.Drawing.Point(51, 194);
             this.buttonCancel.Name = "buttonCancel";
             this.buttonCancel.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("buttonCancel.ResponsiveProfiles"))));
             this.buttonCancel.Size = new System.Drawing.Size(150, 35);
@@ -239,7 +239,7 @@
             // buttonNo
             // 
             this.buttonNo.Anchor = Wisej.Web.AnchorStyles.None;
-            this.buttonNo.Location = new System.Drawing.Point(234, 23);
+            this.buttonNo.Location = new System.Drawing.Point(231, 23);
             this.buttonNo.Name = "buttonNo";
             this.buttonNo.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("buttonNo.ResponsiveProfiles"))));
             this.buttonNo.Size = new System.Drawing.Size(150, 35);
@@ -250,7 +250,7 @@
             // buttonRetryCancel
             // 
             this.buttonRetryCancel.Anchor = Wisej.Web.AnchorStyles.None;
-            this.buttonRetryCancel.Location = new System.Drawing.Point(234, 80);
+            this.buttonRetryCancel.Location = new System.Drawing.Point(231, 80);
             this.buttonRetryCancel.Name = "buttonRetryCancel";
             this.buttonRetryCancel.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("buttonRetryCancel.ResponsiveProfiles"))));
             this.buttonRetryCancel.Size = new System.Drawing.Size(150, 35);
@@ -261,7 +261,7 @@
             // buttonYes
             // 
             this.buttonYes.Anchor = Wisej.Web.AnchorStyles.None;
-            this.buttonYes.Location = new System.Drawing.Point(234, 137);
+            this.buttonYes.Location = new System.Drawing.Point(231, 137);
             this.buttonYes.Name = "buttonYes";
             this.buttonYes.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("buttonYes.ResponsiveProfiles"))));
             this.buttonYes.Size = new System.Drawing.Size(150, 35);
@@ -272,7 +272,7 @@
             // buttonYesNo
             // 
             this.buttonYesNo.Anchor = Wisej.Web.AnchorStyles.None;
-            this.buttonYesNo.Location = new System.Drawing.Point(234, 194);
+            this.buttonYesNo.Location = new System.Drawing.Point(231, 194);
             this.buttonYesNo.Name = "buttonYesNo";
             this.buttonYesNo.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("buttonYesNo.ResponsiveProfiles"))));
             this.buttonYesNo.Size = new System.Drawing.Size(150, 35);
@@ -283,7 +283,7 @@
             // buttonYesNoCancel
             // 
             this.buttonYesNoCancel.Anchor = Wisej.Web.AnchorStyles.None;
-            this.buttonYesNoCancel.Location = new System.Drawing.Point(54, 251);
+            this.buttonYesNoCancel.Location = new System.Drawing.Point(51, 251);
             this.buttonYesNoCancel.Name = "buttonYesNoCancel";
             this.buttonYesNoCancel.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("buttonYesNoCancel.ResponsiveProfiles"))));
             this.buttonYesNoCancel.Size = new System.Drawing.Size(150, 35);
@@ -303,13 +303,13 @@
             this.panel1.Controls.Add(this.buttonError);
             this.panel1.Controls.Add(this.buttonDefault);
             this.flowLayoutPanel1.SetFillWeight(this.panel1, 1);
-            this.panel1.Location = new System.Drawing.Point(453, 3);
+            this.panel1.Location = new System.Drawing.Point(448, 3);
             this.panel1.MinimumSize = new System.Drawing.Size(350, 0);
             this.panel1.Name = "panel1";
             this.panel1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("panel1.ResponsiveProfiles"))));
             this.panel1.ShowCloseButton = false;
             this.panel1.ShowHeader = true;
-            this.panel1.Size = new System.Drawing.Size(445, 341);
+            this.panel1.Size = new System.Drawing.Size(439, 341);
             this.panel1.TabIndex = 21;
             this.panel1.Text = "MessageBox Icons";
             // 
@@ -321,13 +321,13 @@
             this.panel2.Controls.Add(this.buttonKeepOnScreen);
             this.panel2.Controls.Add(this.buttonNoModal);
             this.flowLayoutPanel1.SetFillWeight(this.panel2, 1);
-            this.panel2.Location = new System.Drawing.Point(904, 3);
+            this.panel2.Location = new System.Drawing.Point(893, 3);
             this.panel2.MinimumSize = new System.Drawing.Size(175, 0);
             this.panel2.Name = "panel2";
             this.panel2.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("panel2.ResponsiveProfiles"))));
             this.panel2.ShowCloseButton = false;
             this.panel2.ShowHeader = true;
-            this.panel2.Size = new System.Drawing.Size(445, 341);
+            this.panel2.Size = new System.Drawing.Size(439, 341);
             this.panel2.TabIndex = 22;
             this.panel2.Text = "MessageBox Options";
             // 
@@ -350,13 +350,14 @@
             this.panel3.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("panel3.ResponsiveProfiles"))));
             this.panel3.ShowCloseButton = false;
             this.panel3.ShowHeader = true;
-            this.panel3.Size = new System.Drawing.Size(444, 341);
+            this.panel3.Size = new System.Drawing.Size(439, 341);
             this.panel3.TabIndex = 23;
             this.panel3.Text = "MessageBox Buttons";
             // 
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Left | Wisej.Web.AnchorStyles.Right)));
+            this.flowLayoutPanel1.AutoScroll = true;
             this.flowLayoutPanel1.AutoSize = true;
             this.flowLayoutPanel1.Controls.Add(this.panel3);
             this.flowLayoutPanel1.Controls.Add(this.panel1);
@@ -369,10 +370,8 @@
             // 
             // Features
             // 
-            this.AutoScroll = true;
             this.Controls.Add(this.flowLayoutPanel1);
             this.Name = "Features";
-            this.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("$this.ResponsiveProfiles"))));
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
