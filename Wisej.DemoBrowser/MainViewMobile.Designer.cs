@@ -75,7 +75,7 @@
             this.panelContainer.Font = new System.Drawing.Font("@defaultDemo", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.panelContainer.Location = new System.Drawing.Point(0, 30);
             this.panelContainer.Name = "panelContainer";
-            this.panelContainer.Size = new System.Drawing.Size(1714, 616);
+            this.panelContainer.Size = new System.Drawing.Size(1714, 787);
             this.panelContainer.TabIndex = 23;
             // 
             // MainViewMobile
@@ -85,7 +85,7 @@
             this.Controls.Add(this.panelContainer);
             this.Controls.Add(this.panelControls);
             this.Name = "MainViewMobile";
-            this.Size = new System.Drawing.Size(1714, 646);
+            this.Size = new System.Drawing.Size(1714, 817);
             this.Load += new System.EventHandler(this.MainViewMobile_Load);
             this.panelControls.ResumeLayout(false);
             this.panelControls.PerformLayout();

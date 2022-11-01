@@ -39,6 +39,7 @@
             Wisej.Web.ImageListEntry imageListEntry8 = new Wisej.Web.ImageListEntry("resource.wx/Wisej.DemoBrowser.TreeView.Images.dairy.png", "dairy");
             Wisej.Web.ImageListEntry imageListEntry9 = new Wisej.Web.ImageListEntry("resource.wx/Wisej.DemoBrowser.TreeView.Images.fruit.png", "fruit");
             Wisej.Web.ImageListEntry imageListEntry10 = new Wisej.Web.ImageListEntry("resource.wx/Wisej.DemoBrowser.TreeView.Images.vegetables.png", "vegetables");
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SelectionModes));
             Wisej.Web.TreeNode treeNode1 = new Wisej.Web.TreeNode();
             Wisej.Web.TreeNode treeNode2 = new Wisej.Web.TreeNode();
             Wisej.Web.TreeNode treeNode3 = new Wisej.Web.TreeNode();
@@ -75,6 +76,7 @@
             this.labelSelection.AutoSize = true;
             this.labelSelection.Location = new System.Drawing.Point(697, 101);
             this.labelSelection.Name = "labelSelection";
+            this.labelSelection.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("labelSelection.ResponsiveProfiles"))));
             this.labelSelection.Size = new System.Drawing.Size(28, 18);
             this.labelSelection.TabIndex = 12;
             this.labelSelection.Text = "One";
@@ -118,6 +120,7 @@
             treeNode5,
             treeNode8,
             treeNode10});
+            this.treeView1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("treeView1.ResponsiveProfiles"))));
             this.treeView1.Size = new System.Drawing.Size(262, 248);
             this.treeView1.TabIndex = 9;
             this.treeView1.AfterSelect += new Wisej.Web.TreeViewEventHandler(this.treeView_AfterSelect);
@@ -134,6 +137,7 @@
             this.comboBoxSelectionMode.LabelText = "Selection Mode";
             this.comboBoxSelectionMode.Location = new System.Drawing.Point(464, 212);
             this.comboBoxSelectionMode.Name = "comboBoxSelectionMode";
+            this.comboBoxSelectionMode.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("comboBoxSelectionMode.ResponsiveProfiles"))));
             this.comboBoxSelectionMode.Size = new System.Drawing.Size(190, 53);
             this.comboBoxSelectionMode.TabIndex = 13;
             this.comboBoxSelectionMode.Text = "One";
@@ -144,7 +148,6 @@
             this.Controls.Add(this.comboBoxSelectionMode);
             this.Controls.Add(this.treeView1);
             this.Controls.Add(this.labelSelection);
-            this.MinimumSize = new System.Drawing.Size(513, 282);
             this.Name = "SelectionModes";
             this.ResumeLayout(false);
             this.PerformLayout();
