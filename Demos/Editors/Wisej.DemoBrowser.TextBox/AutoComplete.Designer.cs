@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AutoComplete));
             this.textBoxAutoCompleteMode = new Wisej.Web.TextBox();
             this.comboBoxAutoCompleteMode = new Wisej.Web.ComboBox();
             this.textBoxAutoCompleteList = new Wisej.Web.TextBox();
@@ -39,6 +40,7 @@
             this.textBoxAutoCompleteMode.LabelText = "Default";
             this.textBoxAutoCompleteMode.Location = new System.Drawing.Point(662, 263);
             this.textBoxAutoCompleteMode.Name = "textBoxAutoCompleteMode";
+            this.textBoxAutoCompleteMode.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("textBoxAutoCompleteMode.ResponsiveProfiles"))));
             this.textBoxAutoCompleteMode.Size = new System.Drawing.Size(304, 53);
             this.textBoxAutoCompleteMode.TabIndex = 0;
             // 
@@ -49,6 +51,7 @@
             this.comboBoxAutoCompleteMode.LabelText = "Auto Complete Mode";
             this.comboBoxAutoCompleteMode.Location = new System.Drawing.Point(456, 263);
             this.comboBoxAutoCompleteMode.Name = "comboBoxAutoCompleteMode";
+            this.comboBoxAutoCompleteMode.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("comboBoxAutoCompleteMode.ResponsiveProfiles"))));
             this.comboBoxAutoCompleteMode.Size = new System.Drawing.Size(178, 53);
             this.comboBoxAutoCompleteMode.TabIndex = 1;
             this.comboBoxAutoCompleteMode.Text = "Default";
@@ -359,6 +362,7 @@
             this.textBoxAutoCompleteList.LabelText = "Auto Complete List";
             this.textBoxAutoCompleteList.Location = new System.Drawing.Point(662, 158);
             this.textBoxAutoCompleteList.Name = "textBoxAutoCompleteList";
+            this.textBoxAutoCompleteList.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("textBoxAutoCompleteList.ResponsiveProfiles"))));
             this.textBoxAutoCompleteList.Size = new System.Drawing.Size(304, 53);
             this.textBoxAutoCompleteList.TabIndex = 2;
             this.textBoxAutoCompleteList.Watermark = "Select a City";
@@ -368,7 +372,6 @@
             this.Controls.Add(this.textBoxAutoCompleteList);
             this.Controls.Add(this.comboBoxAutoCompleteMode);
             this.Controls.Add(this.textBoxAutoCompleteMode);
-            this.MinimumSize = new System.Drawing.Size(537, 164);
             this.Name = "AutoComplete";
             this.Load += new System.EventHandler(this.AutoComplete_Load);
             this.ResumeLayout(false);

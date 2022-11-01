@@ -117,6 +117,51 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="textBoxAutoCompleteMode.ResponsiveProfiles" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFJXaXNlai5GcmFtZXdvcmssIFZlcnNpb249My4wLjAuMCwgQ3Vs
+        dHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj0xN2JlZjM1ZTExYjg0MTcxDAMAAABRU3lzdGVtLkRy
+        YXdpbmcsIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iMDNm
+        NWY3ZjExZDUwYTNhBQEAAAAcV2lzZWouQmFzZS5SZXNwb25zaXZlUHJvZmlsZQUAAAAETmFtZQMkQWQI
+        TG9jYXRpb24GQW5jaG9yBFNpemUBBAQEBBhTeXN0ZW0uRHJhd2luZy5SZWN0YW5nbGUDAAAAFFN5c3Rl
+        bS5EcmF3aW5nLlBvaW50AwAAABZXaXNlai5XZWIuQW5jaG9yU3R5bGVzAgAAABNTeXN0ZW0uRHJhd2lu
+        Zy5TaXplAwAAAAIAAAAGBAAAAAVQaG9uZQX7////GFN5c3RlbS5EcmF3aW5nLlJlY3RhbmdsZQQAAAAB
+        eAF5BXdpZHRoBmhlaWdodAAAAAAICAgIAwAAACsCAAAxAQAALQAAAPwAAAAF+v///xRTeXN0ZW0uRHJh
+        d2luZy5Qb2ludAIAAAABeAF5AAAICAMAAAAtAAAAiwEAAAX5////Fldpc2VqLldlYi5BbmNob3JTdHls
+        ZXMBAAAAB3ZhbHVlX18ACAIAAAAMAAAABfj///8TU3lzdGVtLkRyYXdpbmcuU2l6ZQIAAAAFd2lkdGgG
+        aGVpZ2h0AAAICAMAAAD+AQAANQAAAAs=
+</value>
+  </data>
+  <data name="comboBoxAutoCompleteMode.ResponsiveProfiles" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFJXaXNlai5GcmFtZXdvcmssIFZlcnNpb249My4wLjAuMCwgQ3Vs
+        dHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj0xN2JlZjM1ZTExYjg0MTcxDAMAAABRU3lzdGVtLkRy
+        YXdpbmcsIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iMDNm
+        NWY3ZjExZDUwYTNhBQEAAAAcV2lzZWouQmFzZS5SZXNwb25zaXZlUHJvZmlsZQUAAAAETmFtZQMkQWQI
+        TG9jYXRpb24GQW5jaG9yBFNpemUBBAQEBBhTeXN0ZW0uRHJhd2luZy5SZWN0YW5nbGUDAAAAFFN5c3Rl
+        bS5EcmF3aW5nLlBvaW50AwAAABZXaXNlai5XZWIuQW5jaG9yU3R5bGVzAgAAABNTeXN0ZW0uRHJhd2lu
+        Zy5TaXplAwAAAAIAAAAGBAAAAAVQaG9uZQX7////GFN5c3RlbS5EcmF3aW5nLlJlY3RhbmdsZQQAAAAB
+        eAF5BXdpZHRoBmhlaWdodAAAAAAICAgIAwAAACsCAACCAQAALQAAAE0BAAAF+v///xRTeXN0ZW0uRHJh
+        d2luZy5Qb2ludAIAAAABeAF5AAAICAMAAAAtAAAAOgEAAAX5////Fldpc2VqLldlYi5BbmNob3JTdHls
+        ZXMBAAAAB3ZhbHVlX18ACAIAAAAMAAAABfj///8TU3lzdGVtLkRyYXdpbmcuU2l6ZQIAAAAFd2lkdGgG
+        aGVpZ2h0AAAICAMAAAD+AQAANQAAAAs=
+</value>
+  </data>
+  <data name="textBoxAutoCompleteList.ResponsiveProfiles" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFJXaXNlai5GcmFtZXdvcmssIFZlcnNpb249My4wLjAuMCwgQ3Vs
+        dHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj0xN2JlZjM1ZTExYjg0MTcxDAMAAABRU3lzdGVtLkRy
+        YXdpbmcsIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iMDNm
+        NWY3ZjExZDUwYTNhBQEAAAAcV2lzZWouQmFzZS5SZXNwb25zaXZlUHJvZmlsZQUAAAAETmFtZQMkQWQI
+        TG9jYXRpb24EU2l6ZQZBbmNob3IBBAQEBBhTeXN0ZW0uRHJhd2luZy5SZWN0YW5nbGUDAAAAFFN5c3Rl
+        bS5EcmF3aW5nLlBvaW50AwAAABNTeXN0ZW0uRHJhd2luZy5TaXplAwAAABZXaXNlai5XZWIuQW5jaG9y
+        U3R5bGVzAgAAAAIAAAAGBAAAAAVQaG9uZQX7////GFN5c3RlbS5EcmF3aW5nLlJlY3RhbmdsZQQAAAAB
+        eAF5BXdpZHRoBmhlaWdodAAAAAAICAgIAwAAACsCAAA+AgAALQAAAAkCAAAF+v///xRTeXN0ZW0uRHJh
+        d2luZy5Qb2ludAIAAAABeAF5AAAICAMAAAAtAAAAfgAAAAX5////E1N5c3RlbS5EcmF3aW5nLlNpemUC
+        AAAABXdpZHRoBmhlaWdodAAACAgDAAAA/gEAADUAAAAF+P///xZXaXNlai5XZWIuQW5jaG9yU3R5bGVz
+        AQAAAAd2YWx1ZV9fAAgCAAAADAAAAAs=
+</value>
+  </data>
   <metadata name="$this.RulerSnapLines" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0
