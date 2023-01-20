@@ -113,7 +113,7 @@
 	<ItemGroup>
 		<PackageReference Include="Microsoft.AspNet.Mvc" Version="5.2.9" />
 		<PackageReference Include="Newtonsoft.Json" Version="13.0.2-beta1" />
-		<PackageReference Include="Wisej-3" Version="3.0.*" />
+		<PackageReference Include="Wisej-3" Version="3.2.0-test.4" />
 		<PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
 		<PackageReference Include="Wisej-3-Syncfusion2" Version="3.0.*-*" />
 		<PackageReference Include="Wisej-3-MaterialDesign" Version="3.0.*" />
