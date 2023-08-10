@@ -703,7 +703,13 @@
         "assembly": "Features, Wisej.DemoBrowser.BingWallpaper.dll",
         "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/DynamicImage.svg",
         "docsUrl": "https://docs.wisej.com/extensions/extensions/bingwallpaper",
-        "description-en": "The <b>BingWallpaper</b> extender component enhances the Desktop control by adding Bing’s daily stunning wallpaper images. You can set the rotation interval, fade duration and number of images."
+        "description-en": "The <b>BingWallpaper</b> extender component enhances the Desktop control by adding Bing’s daily stunning wallpaper images. You can set the rotation interval, fade duration and number of images.",
+        "relevantLinks": [
+          {
+            "title": "BingWallpaper Extension",
+            "url": "https://www.nuget.org/packages/Wisej-3-BingWallpaper"
+          }
+        ]
       }
     },
     "Bubbles": {
@@ -712,7 +718,13 @@
         "assembly": "Features, Wisej.DemoBrowser.Bubbles.dll",
         "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/BubbleChart.svg",
         "docsUrl": "https://docs.wisej.com/extensions/extensions/bubbles",
-        "description-en": "The <b>Bubbles</b> extender component enhances all Wisej components by providing additional properties and a useful bubble notification functionality. Every widget can display a popup animated and themed bubble when a value changes."
+        "description-en": "The <b>Bubbles</b> extender component enhances all Wisej components by providing additional properties and a useful bubble notification functionality. Every widget can display a popup animated and themed bubble when a value changes.",
+        "relevantLinks": [
+          {
+            "title": "Bubbles Extension",
+            "url": "https://www.nuget.org/packages/Wisej-3-Bubbles"
+          }
+        ]
       }
     },
     "Camera": {
