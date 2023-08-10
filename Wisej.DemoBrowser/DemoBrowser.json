@@ -748,65 +748,118 @@
         "assembly": "Features, Wisej.DemoBrowser.ChartJS.dll",
         "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/Report.svg",
         "docsUrl": "https://docs.wisej.com/extensions/extensions/chartjs",
-        "description-en": "The <b>ChartJS</b> extension component uses the excellent ChartJS widget to render amazing charts in real time."
+        "description-en": "The <b>ChartJS</b> extension component uses the excellent ChartJS widget to render amazing charts in real time.",
+        "relevantLinks": [
+          {
+            "title": "ChartJS",
+            "url": "https://www.nuget.org/packages/Wisej-3-ChartJS"
+          }
+        ]
       },
       "Scatter": {
         "sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Extensions/Wisej.DemoBrowser.ChartJS",
         "assembly": "Scatter, Wisej.DemoBrowser.ChartJS.dll",
         "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/Report.svg",
         "docsUrl": "https://docs.wisej.com/extensions/extensions/chartjs",
-        "description-en": "Scatter charts are based on basic line charts with the x axis changed to a linear axis. To use a scatter chart, data must be passed as objects containing X and Y properties."
+        "description-en": "Scatter charts are based on basic line charts with the x axis changed to a linear axis. To use a scatter chart, data must be passed as objects containing X and Y properties.",
+        "relevantLinks": [
+          {
+            "title": "ChartJS",
+            "url": "https://www.nuget.org/packages/Wisej-3-ChartJS"
+          }
+        ]
       },
       "Bar": {
         "sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Extensions/Wisej.DemoBrowser.ChartJS",
         "assembly": "Bar, Wisej.DemoBrowser.ChartJS.dll",
         "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/Report.svg",
         "docsUrl": "https://docs.wisej.com/extensions/extensions/chartjs",
-        "description-en": "A bar chart is a visual representation of data values as vertical bars. It can be used to display trend data or to compare multiple data sets side by side."
+        "description-en": "A bar chart is a visual representation of data values as vertical bars. It can be used to display trend data or to compare multiple data sets side by side.",
+        "relevantLinks": [
+          {
+            "title": "ChartJS",
+            "url": "https://www.nuget.org/packages/Wisej-3-ChartJS"
+          }
+        ]
       },
       "Line": {
         "sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Extensions/Wisej.DemoBrowser.ChartJS",
         "assembly": "Line, Wisej.DemoBrowser.ChartJS.dll",
         "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/Report.svg",
         "docsUrl": "https://docs.wisej.com/extensions/extensions/chartjs",
-        "description-en": "A line chart is a visual representation of data points plotted on a line. It's frequently used to display trend data or to compare two data sets."
+        "description-en": "A line chart is a visual representation of data points plotted on a line. It's frequently used to display trend data or to compare two data sets.",
+        "relevantLinks": [
+          {
+            "title": "ChartJS",
+            "url": "https://www.nuget.org/packages/Wisej-3-ChartJS"
+          }
+        ]
       },
       "Radar": {
         "sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Extensions/Wisej.DemoBrowser.ChartJS",
         "assembly": "Radar, Wisej.DemoBrowser.ChartJS.dll",
         "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/Report.svg",
         "docsUrl": "https://docs.wisej.com/extensions/extensions/chartjs",
-        "description-en": "A radar chart is a visual representation of several data points and their fluctuation. They're frequently used to compare the points of two or more data sets."
+        "description-en": "A radar chart is a visual representation of several data points and their fluctuation. They're frequently used to compare the points of two or more data sets.",
+        "relevantLinks": [
+          {
+            "title": "ChartJS",
+            "url": "https://www.nuget.org/packages/Wisej-3-ChartJS"
+          }
+        ]
       },
       "Polar Area": {
         "sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Extensions/Wisej.DemoBrowser.ChartJS",
         "assembly": "PolarArea, Wisej.DemoBrowser.ChartJS.dll",
         "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/Report.svg",
         "docsUrl": "https://docs.wisej.com/extensions/extensions/chartjs",
-        "description-en": "Polar area charts are similar to pie charts, except that each segment has the same angle and the radius varies depending on the value. This sort of chart is frequently used when we wish to display comparison data in the same way that a pie chart does, but with the addition of a scale of values for context."
+        "description-en": "Polar area charts are similar to pie charts, except that each segment has the same angle and the radius varies depending on the value. This sort of chart is frequently used when we wish to display comparison data in the same way that a pie chart does, but with the addition of a scale of values for context.",
+        "relevantLinks": [
+          {
+            "title": "ChartJS",
+            "url": "https://www.nuget.org/packages/Wisej-3-ChartJS"
+          }
+        ]
       },
       "Pie": {
         "sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Extensions/Wisej.DemoBrowser.ChartJS",
         "assembly": "Pie, Wisej.DemoBrowser.ChartJS.dll",
         "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/Report.svg",
         "docsUrl": "https://docs.wisej.com/extensions/extensions/chartjs",
-        "description-en": "The most widely used charts are pie and doughnut charts. They're broken into segments, with each segment's arc indicating the proportionate value of each piece of data."
+        "description-en": "The most widely used charts are pie and doughnut charts. They're broken into segments, with each segment's arc indicating the proportionate value of each piece of data.",
+        "relevantLinks": [
+          {
+            "title": "ChartJS",
+            "url": "https://www.nuget.org/packages/Wisej-3-ChartJS"
+          }
+        ]
       },
       "Doughnut": {
         "sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Extensions/Wisej.DemoBrowser.ChartJS",
         "assembly": "Doughnut, Wisej.DemoBrowser.ChartJS.dll",
         "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/Report.svg",
         "docsUrl": "https://docs.wisej.com/extensions/extensions/chartjs",
-        "description-en": "The most widely used charts are pie and doughnut charts. They're broken into segments, with each segment's arc indicating the proportionate value of each piece of data."
+        "description-en": "The most widely used charts are pie and doughnut charts. They're broken into segments, with each segment's arc indicating the proportionate value of each piece of data.",
+        "relevantLinks": [
+          {
+            "title": "ChartJS",
+            "url": "https://www.nuget.org/packages/Wisej-3-ChartJS"
+          }
+        ]
       },
       "Bubble": {
         "sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Extensions/Wisej.DemoBrowser.ChartJS",
         "assembly": "Bubble, Wisej.DemoBrowser.ChartJS.dll",
         "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/Report.svg",
         "docsUrl": "https://docs.wisej.com/extensions/extensions/chartjs",
-        "description-en": "A bubble chart is a type of graph that shows three dimensions of data at once. The first two dimensions, as well as the associated horizontal and vertical axes, determine the bubble's placement. The size of the individual bubbles represents the third dimension."
+        "description-en": "A bubble chart is a type of graph that shows three dimensions of data at once. The first two dimensions, as well as the associated horizontal and vertical axes, determine the bubble's placement. The size of the individual bubbles represents the third dimension.",
+        "relevantLinks": [
+          {
+            "title": "ChartJS",
+            "url": "https://www.nuget.org/packages/Wisej-3-ChartJS"
+          }
+        ]
       }
-
     },
     "CKEditor": {
       "Features": {
