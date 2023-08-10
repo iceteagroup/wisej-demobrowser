@@ -673,7 +673,13 @@
         "assembly": "Features, Wisej.DemoBrowser.AceEditor.dll",
         "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/HtmlTagEnd.svg",
         "docsUrl": "https://docs.wisej.com/extensions/extensions/aceeditor/api/wisej.web.ext.aceeditor.aceeditor",
-        "description-en": "The <b>AceEditor</b> control is an embeddable code editor written in JavaScript. It matches the features and performance of native editors such as Sublime, Vim and TextMate. Ace is maintained as the primary editor for Cloud9 IDE and is the successor of the Mozilla Skywriter (Bespin) project."
+        "description-en": "The <b>AceEditor</b> control is an embeddable code editor written in JavaScript. It matches the features and performance of native editors such as Sublime, Vim and TextMate. Ace is maintained as the primary editor for Cloud9 IDE and is the successor of the Mozilla Skywriter (Bespin) project.",
+        "relevantLinks": [
+          {
+            "title": "AceEditor Extension",
+            "url": "https://www.nuget.org/packages/Wisej-3-AceEditor"
+          }
+        ]
       }
     },
     "Barcode": {
