@@ -682,7 +682,13 @@
         "assembly": "Features, Wisej.DemoBrowser.Barcode.dll",
         "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/CameraOutline.svg",
         "docsUrl": "https://docs.wisej.com/extensions/extensions/barcode",
-        "description-en": "The <b>Barcode</b> control uses ZXing.Net to generate Barcodes on the server and render them on the client. Supports: UPC-A, EAN-8, EAN-13, Code 39, Code 128, ITF, Codabar, Plessey, MSI, QR Code, PDF-417, Aztec, Data Matrix."
+        "description-en": "The <b>Barcode</b> control uses ZXing.Net to generate Barcodes on the server and render them on the client. Supports: UPC-A, EAN-8, EAN-13, Code 39, Code 128, ITF, Codabar, Plessey, MSI, QR Code, PDF-417, Aztec, Data Matrix.",
+        "relevantLinks": [
+          {
+            "title": "Barcode Extension",
+            "url": "https://www.nuget.org/packages/Wisej-3-Barcode"
+          }
+        ]
       }
     },
     "BingWallpaper": {
