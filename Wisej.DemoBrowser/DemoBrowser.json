@@ -733,7 +733,13 @@
         "assembly": "Features, Wisej.DemoBrowser.Camera.dll",
         "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/CameraOutline.svg",
         "docsUrl": "https://docs.wisej.com/extensions/extensions/camera",
-        "description-en": "The <b>Camera</b> control makes it possible to take pictures with the device's camera and upload them to the server."
+        "description-en": "The <b>Camera</b> control makes it possible to take pictures with the device's camera and upload them to the server.",
+        "relevantLinks": [
+          {
+            "title": "Camera Extension",
+            "url": "https://www.nuget.org/packages/Wisej-3-Camera"
+          }
+        ]
       }
     },
     "ChartJS": {
