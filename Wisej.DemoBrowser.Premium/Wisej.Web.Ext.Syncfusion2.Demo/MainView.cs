@@ -42,7 +42,7 @@ namespace Wisej.Web.Ext.Syncfusion2.Demo
 
 		private void listBoxDemos_SelectedIndexChanged(object sender, EventArgs e)
 		{
-			var list = (Wisej.Web.ListBox)sender;
+			var list = (Web.ListBox)sender;
 			var type = (Type)((dynamic)list.SelectedItem).Type;
 			var testPanel = (TestBase)Activator.CreateInstance(type);
 

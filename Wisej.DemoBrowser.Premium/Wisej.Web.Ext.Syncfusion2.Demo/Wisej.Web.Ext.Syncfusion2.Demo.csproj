@@ -92,9 +92,6 @@
 		<Content Update="Web.Release.config">
 		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
 		</Content>
-		<Content Update="Wisej.Web.Ext.Syncfusion2.json">
-		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-		</Content>
 	</ItemGroup>
 
 	<ItemGroup>
@@ -113,10 +110,10 @@
 	<ItemGroup>
 		<PackageReference Include="Microsoft.AspNet.Mvc" Version="5.2.9" />
 		<PackageReference Include="Newtonsoft.Json" Version="13.0.2-beta1" />
-		<PackageReference Include="Wisej-3" Version="3.0.*" />
+		<PackageReference Include="Wisej-3" Version="3.2.*-*" />
 		<PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
-		<PackageReference Include="Wisej-3-Syncfusion2" Version="3.0.*-*" />
-		<PackageReference Include="Wisej-3-MaterialDesign" Version="3.0.*" />
+		<PackageReference Include="Wisej-3-MaterialDesign" Version="3.2.*-*" />
+		<PackageReference Include="Wisej-3-Syncfusion2" Version="3.2.*-*" />
 	</ItemGroup>
 
 	<ItemGroup Condition="'$(TargetFramework)'=='net48'">

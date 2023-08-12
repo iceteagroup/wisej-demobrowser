@@ -24,6 +24,8 @@ namespace Wisej.Web.Ext.Syncfusion.Demo.Component
 			this.ejPdfViewer1.Options.enableHighlightAnnotation = true;
 			this.ejPdfViewer1.Options.enableTextMarkupAnnotations = true;
 			this.ejPdfViewer1.Options.enableStrikethroughAnnotation = true;
+
+			//this.ejPdfViewer1.Instance.load("Data\\Wisej-Datasheet.pdf");
 		}
 
 		private void ejPdfViewer1_WebRequest(object sender, WebRequestEventArgs e)
@@ -110,11 +112,6 @@ namespace Wisej.Web.Ext.Syncfusion.Demo.Component
 				e.Files[0].SaveAs(tempPath);
 				this.ejPdfViewer1.Instance.load(tempPath);
 			}
-		}
-
-		private void ejPdfViewer1_Initialized(object sender, EventArgs e)
-		{
-			this.ejPdfViewer1.Instance.load("Data\\Wisej-Datasheet.pdf");
 		}
 
 		private void ejPdfViewer1_WidgetEvent(object sender, WidgetEventArgs e)

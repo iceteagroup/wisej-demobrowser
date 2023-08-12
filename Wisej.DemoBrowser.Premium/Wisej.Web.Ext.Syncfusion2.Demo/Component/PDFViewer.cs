@@ -17,15 +17,15 @@ namespace Wisej.Web.Ext.Syncfusion2.Demo.Component
 		{
 			InitializeComponent();
 
-			this.pdfViewer1.Instance.onHyperlinkClick += new WidgetEventHandler(pdfViewer1_WidgetEvent);
+            this.pdfViewer1.Instance.load("Wisej.pdf", null);
+            this.pdfViewer1.Instance.onHyperlinkClick += new WidgetEventHandler(pdfViewer1_WidgetEvent);
 		}
 
 		private void pdfViewer1_Appear(object sender, EventArgs e)
 		{
-			this.pdfViewer1.Instance.load("Wisej.pdf", null);
-		}
+        }
 
-		private void pdfViewer1_WebRequest(object sender, WebRequestEventArgs e)
+        private void pdfViewer1_WebRequest(object sender, WebRequestEventArgs e)
 		{
 			// decode payload.
 			dynamic payload = null;
@@ -168,5 +168,9 @@ namespace Wisej.Web.Ext.Syncfusion2.Demo.Component
 
 			Application.Play(MessageBoxIcon.Information);
 		}
-	}
+
+        private void PDFViewer_Load(object sender, EventArgs e)
+        {
+        }
+    }
 }
