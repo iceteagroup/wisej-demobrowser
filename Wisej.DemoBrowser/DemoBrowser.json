@@ -1383,103 +1383,169 @@
       "description-en": "Wisej.NET was designed to be extensible and open to all sorts of technologies from the start. Any existing JavaScript control can be wrapped to become a Wisej.NET C# or VB.NET control."
     },
     "Bootstrap": {
-      "Features": {
-        "sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/IconPacks/Wisej.DemoBrowser.BootstrapIcons",
-        "assembly": "Features, Wisej.DemoBrowser.BootstrapIcons.dll",
-        "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/PictureAndText.svg",
-        "docsUrl": "https://docs.wisej.com/extensions/icon-packs/bootstrapicons",
-        "description-en": "Free, high quality, open source icon library with over 1,500 icons. Include them anyway you like—SVGs, SVG sprite, or web fonts. Use them with or without Bootstrap in any project."
-      }
+        "Features": {
+            "sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/IconPacks/Wisej.DemoBrowser.BootstrapIcons",
+            "assembly": "Features, Wisej.DemoBrowser.BootstrapIcons.dll",
+            "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/PictureAndText.svg",
+            "docsUrl": "https://docs.wisej.com/extensions/icon-packs/bootstrapicons",
+            "description-en": "Free, high quality, open source icon library with over 1,500 icons. Include them anyway you like—SVGs, SVG sprite, or web fonts. Use them with or without Bootstrap in any project.",
+            "relevantLinks": [
+                {
+                    "title": "Bootstrap Icons",
+                    "url": "https://www.nuget.org/packages/Wisej-3-BootstrapIcons"
+                }
+            ]
+        }
     },
     "CssGg": {
-      "Features": {
-        "sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/IconPacks/Wisej.DemoBrowser.CssGgIcons",
-        "assembly": "Features, Wisej.DemoBrowser.CssGgIcons.dll",
-        "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/PictureAndText.svg",
-        "docsUrl": "https://docs.wisej.com/extensions/icon-packs",
-        "description-en": "The complete <b>css.gg</b> icon pack."
-      }
+        "Features": {
+            "sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/IconPacks/Wisej.DemoBrowser.CssGgIcons",
+            "assembly": "Features, Wisej.DemoBrowser.CssGgIcons.dll",
+            "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/PictureAndText.svg",
+            "docsUrl": "https://docs.wisej.com/extensions/icon-packs",
+            "description-en": "The complete <b>css.gg</b> icon pack.",
+            "relevantLinks": [
+                {
+                    "title": "CssGg Icons",
+                    "url": "https://www.nuget.org/packages/Wisej-3-CssGgIcons"
+                }
+            ]
+        }
     },
     "Elegant": {
-      "Features": {
-        "sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/IconPacks/Wisej.DemoBrowser.ElegantIcons",
-        "assembly": "Features, Wisej.DemoBrowser.ElegantIcons.dll",
-        "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/PictureAndText.svg",
-        "docsUrl": "https://docs.wisej.com/extensions/icon-packs/eleganticons-iconpack",
-        "description-en": "The complete <b>Elegant Icons</b> icon pack from Elegant Themes."
-      }
+        "Features": {
+            "sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/IconPacks/Wisej.DemoBrowser.ElegantIcons",
+            "assembly": "Features, Wisej.DemoBrowser.ElegantIcons.dll",
+            "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/PictureAndText.svg",
+            "docsUrl": "https://docs.wisej.com/extensions/icon-packs/eleganticons-iconpack",
+            "description-en": "The complete <b>Elegant Icons</b> icon pack from Elegant Themes.",
+            "relevantLinks": [
+                {
+                    "title": "Elegant Icons",
+                    "url": "https://www.nuget.org/packages/Wisej-3-ElegantIcons"
+                }
+            ]
+        }
     },
     "Feather": {
-      "Features": {
-        "sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/IconPacks/Wisej.DemoBrowser.FeatherIcons",
-        "assembly": "Features, Wisej.DemoBrowser.FeatherIcons.dll",
-        "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/PictureAndText.svg",
-        "docsUrl": "https://docs.wisej.com/extensions/icon-packs/",
-        "description-en": "<b>Feather</b> is a collection of simply beautiful open source icons. Each icon is designed on a 24x24 grid with an emphasis on simplicity, consistency, and flexibility."
-      }
+        "Features": {
+            "sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/IconPacks/Wisej.DemoBrowser.FeatherIcons",
+            "assembly": "Features, Wisej.DemoBrowser.FeatherIcons.dll",
+            "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/PictureAndText.svg",
+            "docsUrl": "https://docs.wisej.com/extensions/icon-packs/",
+            "description-en": "<b>Feather</b> is a collection of simply beautiful open source icons. Each icon is designed on a 24x24 grid with an emphasis on simplicity, consistency, and flexibility.",
+            "relevantLinks": [
+                {
+                    "title": "Feather Icons",
+                    "url": "https://www.nuget.org/packages/Wisej-3-FeatherIcons"
+                }
+            ]
+        }
     },
     "FontAwesome": {
-      "Features": {
-        "sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/IconPacks/Wisej.DemoBrowser.FontAwsome",
-        "assembly": "Features, Wisej.DemoBrowser.FontAwsome.dll",
-        "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/PictureAndText.svg",
-        "docsUrl": "https://docs.wisej.com/extensions/icon-packs/fontawesome-iconpack",
-        "description-en": "The complete set of 600+ icons in <b>Font Awesome</b>."
-      }
+        "Features": {
+            "sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/IconPacks/Wisej.DemoBrowser.FontAwsome",
+            "assembly": "Features, Wisej.DemoBrowser.FontAwsome.dll",
+            "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/PictureAndText.svg",
+            "docsUrl": "https://docs.wisej.com/extensions/icon-packs/fontawesome-iconpack",
+            "description-en": "The complete set of 600+ icons in <b>Font Awesome</b>.",
+            "relevantLinks": [
+                {
+                    "title": "FontAwesome Icons",
+                    "url": "https://www.nuget.org/packages/Wisej-3-FontAwesome"
+                }
+            ]
+        }
     },
     "Ionic": {
-      "Features": {
-        "sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/IconPacks/Wisej.DemoBrowser.Ionic",
-        "assembly": "Features, Wisej.DemoBrowser.IonicIcons.dll",
-        "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/PictureAndText.svg",
-        "docsUrl": "https://docs.wisej.com/extensions/icon-packs",
-        "description-en": "Premium designed icons for use in web, iOS, Android, and desktop apps."
-      }
+        "Features": {
+            "sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/IconPacks/Wisej.DemoBrowser.Ionic",
+            "assembly": "Features, Wisej.DemoBrowser.IonicIcons.dll",
+            "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/PictureAndText.svg",
+            "docsUrl": "https://docs.wisej.com/extensions/icon-packs",
+            "description-en": "Premium designed icons for use in web, iOS, Android, and desktop apps.",
+            "relevantLinks": [
+                {
+                    "title": "Ionic Icons",
+                    "url": "https://www.nuget.org/packages/Wisej-3-IonicIcons"
+                }
+            ]
+        }
     },
     "Material Design": {
-      "Features": {
-        "sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/IconPacks/Wisej.DemoBrowser.MaterialDesign",
-        "assembly": "Features, Wisej.DemoBrowser.MaterialDesign.dll",
-        "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/PictureAndText.svg",
-        "docsUrl": "https://docs.wisej.com/extensions/icon-packs/materialdesign-iconpack",
-        "description-en": "<b>Material design system icons</b> are simple, modern, friendly, and sometimes quirky. Each icon is created using our design guidelines to depict in simple and minimal forms the universal concepts used commonly throughout a UI."
-      }
+        "Features": {
+            "sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/IconPacks/Wisej.DemoBrowser.MaterialDesign",
+            "assembly": "Features, Wisej.DemoBrowser.MaterialDesign.dll",
+            "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/PictureAndText.svg",
+            "docsUrl": "https://docs.wisej.com/extensions/icon-packs/materialdesign-iconpack",
+            "description-en": "<b>Material design system icons</b> are simple, modern, friendly, and sometimes quirky. Each icon is created using our design guidelines to depict in simple and minimal forms the universal concepts used commonly throughout a UI.",
+            "relevantLinks": [
+                {
+                    "title": "MaterialDesign Icons",
+                    "url": "https://www.nuget.org/packages/Wisej-3-MaterialDesign"
+                }
+            ]
+        }
     },
     "ModernUI": {
-      "Features": {
-        "sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/IconPacks/Wisej.DemoBrowser.ModernUI",
-        "assembly": "Features, Wisej.DemoBrowser.ModernUi.dll",
-        "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/PictureAndText.svg",
-        "docsUrl": "https://docs.wisej.com/extensions/icon-packs/modernui-iconpack",
-        "description-en": "The complete set of <b>ModernUI icons</b>, featuring 1200+ icons for you to choose from."
-      }
+        "Features": {
+            "sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/IconPacks/Wisej.DemoBrowser.ModernUI",
+            "assembly": "Features, Wisej.DemoBrowser.ModernUi.dll",
+            "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/PictureAndText.svg",
+            "docsUrl": "https://docs.wisej.com/extensions/icon-packs/modernui-iconpack",
+            "description-en": "The complete set of <b>ModernUI icons</b>, featuring 1200+ icons for you to choose from.",
+            "relevantLinks": [
+                {
+                    "title": "ModernUI Icons",
+                    "url": "https://www.nuget.org/packages/Wisej-3-ModernUI"
+                }
+            ]
+        }
     },
     "Tabler": {
-      "Features": {
-        "sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/IconPacks/Wisej.DemoBrowser.TablerIcons",
-        "assembly": "Features, Wisej.DemoBrowser.TablerIcons.dll",
-        "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/PictureAndText.svg",
-        "docsUrl": "https://docs.wisej.com/extensions/icon-packs/",
-        "description-en": "<b>Tabler</b> icons are free and open source icons designed to make your website or app attractive, visually consistent and simply beautiful."
-      }
+        "Features": {
+            "sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/IconPacks/Wisej.DemoBrowser.TablerIcons",
+            "assembly": "Features, Wisej.DemoBrowser.TablerIcons.dll",
+            "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/PictureAndText.svg",
+            "docsUrl": "https://docs.wisej.com/extensions/icon-packs/",
+            "description-en": "<b>Tabler</b> icons are free and open source icons designed to make your website or app attractive, visually consistent and simply beautiful.",
+            "relevantLinks": [
+                {
+                    "title": "Tabler Icons",
+                    "url": "https://www.nuget.org/packages/Wisej-3-TablerIcons"
+                }
+            ]
+        }
     },
     "Vaadin": {
-      "Features": {
-        "sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/IconPacks/Wisej.DemoBrowser.VaadinIcons",
-        "assembly": "Features, Wisej.DemoBrowser.VaadinIcons.dll",
-        "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/PictureAndText.svg",
-        "docsUrl": "https://docs.wisej.com/extensions/icon-packs/vaadinicons-iconpack",
-        "description-en": "<b>Vaadin Icons</b> is a set of 600+ icons designed for web applications. Free to use, anywhere!"
-      }
+        "Features": {
+            "sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/IconPacks/Wisej.DemoBrowser.VaadinIcons",
+            "assembly": "Features, Wisej.DemoBrowser.VaadinIcons.dll",
+            "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/PictureAndText.svg",
+            "docsUrl": "https://docs.wisej.com/extensions/icon-packs/vaadinicons-iconpack",
+            "description-en": "<b>Vaadin Icons</b> is a set of 600+ icons designed for web applications. Free to use, anywhere!",
+            "relevantLinks": [
+                {
+                    "title": "Vaadin Icons",
+                    "url": "https://www.nuget.org/packages/Wisej-3-VaadinIcons"
+                }
+            ]
+        }
     },
     "Visual Studio": {
-      "Features": {
-        "sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/IconPacks/Wisej.DemoBrowser.VisualStudioIcons",
-        "assembly": "Features, Wisej.DemoBrowser.VisualStudioIcons.dll",
-        "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/PictureAndText.svg",
-        "docsUrl": "https://docs.wisej.com/extensions/icon-packs/visualstudioicons-iconpack",
-        "description-en": "The <b>Visual Studio Icon Library</b> contains application 4600+ icons that appear in Microsoft Visual Studio, Microsoft Windows, the Office system and other Microsoft software."
-      }
+        "Features": {
+            "sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/IconPacks/Wisej.DemoBrowser.VisualStudioIcons",
+            "assembly": "Features, Wisej.DemoBrowser.VisualStudioIcons.dll",
+            "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/PictureAndText.svg",
+            "docsUrl": "https://docs.wisej.com/extensions/icon-packs/visualstudioicons-iconpack",
+            "description-en": "The <b>Visual Studio Icon Library</b> contains application 4600+ icons that appear in Microsoft Visual Studio, Microsoft Windows, the Office system and other Microsoft software.",
+            "relevantLinks": [
+                {
+                    "title": "Visual Studio Icons",
+                    "url": "https://www.nuget.org/packages/Wisej-3-VisualStudioIcons"
+                }
+            ]
+        }
     }
   }
 }
