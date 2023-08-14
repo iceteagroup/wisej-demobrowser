@@ -877,22 +877,34 @@
         }
     },
     "CoolClock": {
-      "Features": {
-        "sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Extensions/Wisej.DemoBrowser.CoolClock",
-        "assembly": "Features, Wisej.DemoBrowser.CoolClock.dll",
-        "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/Time.svg",
-        "docsUrl": "https://docs.wisej.com/extensions/extensions/coolclock",
-        "description-en": "The <b>CoolClock</b> control renders amazing analog clocks as Real-Time widgets. Supports several skins, logarithmic scale, and several properties to configure the tick delay or hide the second’s hand."
-      }
+        "Features": {
+            "sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Extensions/Wisej.DemoBrowser.CoolClock",
+            "assembly": "Features, Wisej.DemoBrowser.CoolClock.dll",
+            "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/Time.svg",
+            "docsUrl": "https://docs.wisej.com/extensions/extensions/coolclock",
+            "description-en": "The <b>CoolClock</b> control renders amazing analog clocks as Real-Time widgets. Supports several skins, logarithmic scale, and several properties to configure the tick delay or hide the second’s hand.",
+            "relevantLinks": [
+                {
+                    "title": "CoolClock",
+                    "url": "https://www.nuget.org/packages/Wisej-3-CoolClock"
+                }
+            ]
+        }
     },
     "CountUp": {
-      "Features": {
-        "sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Extensions/Wisej.DemoBrowser.CountUp",
-        "assembly": "Features, Wisej.DemoBrowser.CountUp.dll",
-        "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/Counter.svg",
-        "docsUrl": "https://docs.wisej.com/extensions/extensions/countup",
-        "description-en": "The <b>CountUp</b> control uses the excellent CountUp.js widget that can be used to quickly create animations that display numerical data in a more interesting way."
-      }
+        "Features": {
+            "sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Extensions/Wisej.DemoBrowser.CountUp",
+            "assembly": "Features, Wisej.DemoBrowser.CountUp.dll",
+            "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/Counter.svg",
+            "docsUrl": "https://docs.wisej.com/extensions/extensions/countup",
+            "description-en": "The <b>CountUp</b> control uses the excellent CountUp.js widget that can be used to quickly create animations that display numerical data in a more interesting way.",
+            "relevantLinks": [
+                {
+                    "title": "CountUp",
+                    "url": "https://www.nuget.org/packages/Wisej-3-CountUp"
+                }
+            ]
+        }
     },
     "FullCalendar": {
       "Features": {
