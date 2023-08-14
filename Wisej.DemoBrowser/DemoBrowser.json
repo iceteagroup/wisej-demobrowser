@@ -991,13 +991,23 @@
         }
     },
     "Html2Canvas": {
-      "Features": {
-        "sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Extensions/Wisej.DemoBrowser.Html2Canvas",
-        "assembly": "Features, Wisej.DemoBrowser.Html2Canvas.dll",
-        "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/CaptureFrame.svg",
-        "docsUrl": "https://docs.wisej.com/extensions/extensions/html2canvas",
-        "description-en": "The <b>Html2Canvas</b> extension component uses the Html2Canvas library. This Wisej component can take a screenshot of a specific control or the entire browser and send the image back to the server."
-      }
+        "Features": {
+            "sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Extensions/Wisej.DemoBrowser.Html2Canvas",
+            "assembly": "Features, Wisej.DemoBrowser.Html2Canvas.dll",
+            "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/CaptureFrame.svg",
+            "docsUrl": "https://docs.wisej.com/extensions/extensions/html2canvas",
+            "description-en": "The <b>Html2Canvas</b> extension component uses the Html2Canvas library. This Wisej component can take a screenshot of a specific control or the entire browser and send the image back to the server.",
+            "relevantLinks": [
+                {
+                    "title": "Html2Canvas",
+                    "url": "https://www.nuget.org/packages/Wisej-3-Html2Canvas"
+                },
+                {
+                    "title": "ChartJS",
+                    "url": "https://www.nuget.org/packages/Wisej-3-ChartJS"
+                }
+            ]
+        }
     },
     "JustGage": {
       "Features": {
