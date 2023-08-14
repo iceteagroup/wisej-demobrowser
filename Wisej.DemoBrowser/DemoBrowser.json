@@ -907,52 +907,88 @@
         }
     },
     "FullCalendar": {
-      "Features": {
-        "sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Extensions/Wisej.DemoBrowser.FullCalendar",
-        "assembly": "Features, Wisej.DemoBrowser.FullCalendar.dll",
-        "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/Calendar.svg",
-        "docsUrl": "https://docs.wisej.com/extensions/extensions/fullcalendar",
-        "description-en": "The <b>FullCalendar</b> extension is an amazing full-size drag-n-drop event calendar. Supports multiple views, flexible events, custom styles, integrates with Google Calendars, and it’s completely integrated with Wisej."
-      }
+        "Features": {
+            "sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Extensions/Wisej.DemoBrowser.FullCalendar",
+            "assembly": "Features, Wisej.DemoBrowser.FullCalendar.dll",
+            "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/Calendar.svg",
+            "docsUrl": "https://docs.wisej.com/extensions/extensions/fullcalendar",
+            "description-en": "The <b>FullCalendar</b> extension is an amazing full-size drag-n-drop event calendar. Supports multiple views, flexible events, custom styles, integrates with Google Calendars, and it’s completely integrated with Wisej.",
+            "relevantLinks": [
+                {
+                    "title": "FullCalendar",
+                    "url": "https://www.nuget.org/packages/Wisej-3-FullCalendar"
+                }
+            ]
+        }
     },
     "Geolocation": {
-      "Features": {
-        "sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Extensions/Wisej.DemoBrowser.Geolocation",
-        "assembly": "Features, Wisej.DemoBrowser.Geolocation.dll",
-        "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/GeoLocation.svg",
-        "docsUrl": "https://docs.wisej.com/extensions/extensions/geolocation/api/wisej.ext.geolocation.geolocation",
-        "description-en": "The <b>Wisej.Ext.Geolocation</b> component represents an object able to programmatically obtain the position of the device."
-      }
+        "Features": {
+            "sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Extensions/Wisej.DemoBrowser.Geolocation",
+            "assembly": "Features, Wisej.DemoBrowser.Geolocation.dll",
+            "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/GeoLocation.svg",
+            "docsUrl": "https://docs.wisej.com/extensions/extensions/geolocation/api/wisej.ext.geolocation.geolocation",
+            "description-en": "The <b>Wisej.Ext.Geolocation</b> component represents an object able to programmatically obtain the position of the device.",
+            "relevantLinks": [
+                {
+                    "title": "Geolocation",
+                    "url": "https://www.nuget.org/packages/Wisej-3-Geolocation"
+                }
+            ]
+        }
     },
     "GoogleMaps": {
-      "Features": {
-        "sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Extensions/Wisej.DemoBrowser.GoogleMaps",
-        "assembly": "Features, Wisej.DemoBrowser.GoogleMaps.dll",
-        "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/GeoLocation.svg",
-        "docsUrl": "https://docs.wisej.com/extensions/extensions/googlemaps",
-        "description-en": "The <b>GoogleMaps</b> extension lets you control Google Maps as a fully integrated server control. The control fires events back to the server and the server can affect any visual aspect of the map."
-      },
-      "HeatMap": {
-        "sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Extensions/Wisej.DemoBrowser.GoogleMaps",
-        "assembly": "HeatMap, Wisej.DemoBrowser.GoogleMaps.dll",
-        "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/GeoLocation.svg",
-        "docsUrl": "https://docs.wisej.com/extensions/extensions/googlemaps",
-        "description-en": "A heatmap is a visualization used to depict the intensity of data at geographical points. When the Heatmap Layer is enabled, a colored overlay will appear on top of the map. By default, areas of higher intensity will be colored red, and areas of lower intensity will appear green."
-      },
-      "Tilt": {
-        "sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Extensions/Wisej.DemoBrowser.GoogleMaps",
-        "assembly": "Tilt, Wisej.DemoBrowser.GoogleMaps.dll",
-        "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/GeoLocation.svg",
-        "docsUrl": "https://docs.wisej.com/extensions/extensions/googlemaps",
-        "description-en": "With WebGL Overlay View you can add content to your maps using WebGL directly, or popular Graphics libraries like Three.js. WebGL Overlay View provides direct access to the same WebGL rendering context Google Maps Platform uses to render the vector basemap."
-      },
-      "Geometry": {
-        "sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Extensions/Wisej.DemoBrowser.GoogleMaps",
-        "assembly": "Geometry, Wisej.DemoBrowser.GoogleMaps.dll",
-        "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/GeoLocation.svg",
-        "docsUrl": "https://docs.wisej.com/extensions/extensions/googlemaps",
-        "description-en": "The Maps JavaScript API geometry library provides utility functions for the computation of geometric data on the surface of the Earth."
-      }
+        "Features": {
+            "sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Extensions/Wisej.DemoBrowser.GoogleMaps",
+            "assembly": "Features, Wisej.DemoBrowser.GoogleMaps.dll",
+            "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/GeoLocation.svg",
+            "docsUrl": "https://docs.wisej.com/extensions/extensions/googlemaps",
+            "description-en": "The <b>GoogleMaps</b> extension lets you control Google Maps as a fully integrated server control. The control fires events back to the server and the server can affect any visual aspect of the map.",
+            "relevantLinks": [
+                {
+                    "title": "GoogleMaps",
+                    "url": "https://www.nuget.org/packages/Wisej-3-GoogleMaps"
+                }
+            ]
+        },
+        "HeatMap": {
+            "sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Extensions/Wisej.DemoBrowser.GoogleMaps",
+            "assembly": "HeatMap, Wisej.DemoBrowser.GoogleMaps.dll",
+            "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/GeoLocation.svg",
+            "docsUrl": "https://docs.wisej.com/extensions/extensions/googlemaps",
+            "description-en": "A heatmap is a visualization used to depict the intensity of data at geographical points. When the Heatmap Layer is enabled, a colored overlay will appear on top of the map. By default, areas of higher intensity will be colored red, and areas of lower intensity will appear green.",
+            "relevantLinks": [
+                {
+                    "title": "GoogleMaps",
+                    "url": "https://www.nuget.org/packages/Wisej-3-GoogleMaps"
+                }
+            ]
+        },
+        "Tilt": {
+            "sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Extensions/Wisej.DemoBrowser.GoogleMaps",
+            "assembly": "Tilt, Wisej.DemoBrowser.GoogleMaps.dll",
+            "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/GeoLocation.svg",
+            "docsUrl": "https://docs.wisej.com/extensions/extensions/googlemaps",
+            "description-en": "With WebGL Overlay View you can add content to your maps using WebGL directly, or popular Graphics libraries like Three.js. WebGL Overlay View provides direct access to the same WebGL rendering context Google Maps Platform uses to render the vector basemap.",
+            "relevantLinks": [
+                {
+                    "title": "GoogleMaps",
+                    "url": "https://www.nuget.org/packages/Wisej-3-GoogleMaps"
+                }
+            ]
+        },
+        "Geometry": {
+            "sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Extensions/Wisej.DemoBrowser.GoogleMaps",
+            "assembly": "Geometry, Wisej.DemoBrowser.GoogleMaps.dll",
+            "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/GeoLocation.svg",
+            "docsUrl": "https://docs.wisej.com/extensions/extensions/googlemaps",
+            "description-en": "The Maps JavaScript API geometry library provides utility functions for the computation of geometric data on the surface of the Earth.",
+            "relevantLinks": [
+                {
+                    "title": "GoogleMaps",
+                    "url": "https://www.nuget.org/packages/Wisej-3-GoogleMaps"
+                }
+            ]
+        }
     },
     "Html2Canvas": {
       "Features": {
