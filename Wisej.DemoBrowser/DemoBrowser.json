@@ -1271,58 +1271,110 @@
       "description-en": "Wisej.NET was designed to be extensible and open to all sorts of technologies from the start. Any existing JavaScript control can be wrapped to become a Wisej.NET C# or VB.NET control."
     },
     "All": {
-      "Features": {
-        "sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Wisej.DemoBrowser.Premium",
-        "assembly": "Features, Wisej.DemoBrowser.Premium.dll",
-        "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/PictureAndText.svg",
-        "docsUrl": "https://docs.wisej.com/extensions/premium-extensions/overview",
-        "description-en": "Wisej Professional and Enterprise licenses include access to premium extensions. Control libraries from the following vendors have been wrapped in Wisej to provide developers a seamless integration of any type of control."
-      }
+        "Features": {
+            "sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Wisej.DemoBrowser.Premium",
+            "assembly": "Features, Wisej.DemoBrowser.Premium.dll",
+            "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/PictureAndText.svg",
+            "docsUrl": "https://docs.wisej.com/extensions/premium-extensions/overview",
+            "description-en": "Wisej Professional and Enterprise licenses include access to premium extensions. Control libraries from the following vendors have been wrapped in Wisej to provide developers a seamless integration of any type of control.",
+            "relevantLinks": [
+                {
+                    "title": "Kendo UI",
+                    "url": "https://www.nuget.org/packages/Wisej-3-Kendo"
+                },
+                {
+                    "title": "DevExtreme",
+                    "url": "https://www.nuget.org/packages/Wisej-3-DevExtreme"
+                },
+                {
+                    "title": "Syncfusion EJ1",
+                    "url": "https://www.nuget.org/packages/Wisej-3-Syncfusion"
+                },
+                {
+                    "title": "Syncfusion EJ2",
+                    "url": "https://www.nuget.org/packages/Wisej-3-Syncfusion2"
+                },
+                {
+                    "title": "Ignite UI",
+                    "url": "https://www.nuget.org/packages/Wisej-3-Ignite"
+                }
+            ]
+        }
     },
     "Kendo UI": {
-      "Features": {
-        "sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Wisej.DemoBrowser.Premium",
-        "assembly": "Kendo, Wisej.DemoBrowser.Premium.dll",
-        "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/PictureAndText.svg",
-        "docsUrl": "https://docs.wisej.com/extensions/premium-extensions/overview",
-        "description-en": "Wisej Professional and Enterprise licenses include access to premium extensions. Control libraries from the following vendors have been wrapped in Wisej to provide developers a seamless integration of any type of control."
-      }
+        "Features": {
+            "sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Wisej.DemoBrowser.Premium",
+            "assembly": "Kendo, Wisej.DemoBrowser.Premium.dll",
+            "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/PictureAndText.svg",
+            "docsUrl": "https://docs.wisej.com/extensions/premium-extensions/overview",
+            "description-en": "Wisej Professional and Enterprise licenses include access to premium extensions. Control libraries from the following vendors have been wrapped in Wisej to provide developers a seamless integration of any type of control.",
+            "relevantLinks": [
+                {
+                    "title": "Kendo UI",
+                    "url": "https://www.nuget.org/packages/Wisej-3-Kendo"
+                }
+            ]
+        }
     },
     "Syncfusion EJ1": {
-      "Features": {
-        "sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Wisej.DemoBrowser.Premium",
-        "assembly": "Syncfusion, Wisej.DemoBrowser.Premium.dll",
-        "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/PictureAndText.svg",
-        "docsUrl": "https://docs.wisej.com/extensions/premium-extensions/overview",
-        "description-en": "Wisej Professional and Enterprise licenses include access to premium extensions. Control libraries from the following vendors have been wrapped in Wisej to provide developers a seamless integration of any type of control."
-      }
+        "Features": {
+            "sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Wisej.DemoBrowser.Premium",
+            "assembly": "Syncfusion, Wisej.DemoBrowser.Premium.dll",
+            "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/PictureAndText.svg",
+            "docsUrl": "https://docs.wisej.com/extensions/premium-extensions/overview",
+            "description-en": "Wisej Professional and Enterprise licenses include access to premium extensions. Control libraries from the following vendors have been wrapped in Wisej to provide developers a seamless integration of any type of control.",
+            "relevantLinks": [
+                {
+                    "title": "Syncfusion EJ1",
+                    "url": "https://www.nuget.org/packages/Wisej-3-Syncfusion"
+                }
+            ]
+        }
     },
     "Syncfusion EJ2": {
-      "Features": {
-        "sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Wisej.DemoBrowser.Premium",
-        "assembly": "Syncfusion2, Wisej.DemoBrowser.Premium.dll",
-        "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/PictureAndText.svg",
-        "docsUrl": "https://docs.wisej.com/extensions/premium-extensions/overview",
-        "description-en": "Wisej Professional and Enterprise licenses include access to premium extensions. Control libraries from the following vendors have been wrapped in Wisej to provide developers a seamless integration of any type of control."
-      }
+        "Features": {
+            "sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Wisej.DemoBrowser.Premium",
+            "assembly": "Syncfusion2, Wisej.DemoBrowser.Premium.dll",
+            "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/PictureAndText.svg",
+            "docsUrl": "https://docs.wisej.com/extensions/premium-extensions/overview",
+            "description-en": "Wisej Professional and Enterprise licenses include access to premium extensions. Control libraries from the following vendors have been wrapped in Wisej to provide developers a seamless integration of any type of control.",
+            "relevantLinks": [
+                {
+                    "title": "Syncfusion EJ2",
+                    "url": "https://www.nuget.org/packages/Wisej-3-Syncfusion2"
+                }
+            ]
+        }
     },
     "DevExtreme": {
-      "Features": {
-        "sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Wisej.DemoBrowser.Premium",
-        "assembly": "DevExtreme, Wisej.DemoBrowser.Premium.dll",
-        "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/PictureAndText.svg",
-        "docsUrl": "https://docs.wisej.com/extensions/premium-extensions/overview",
-        "description-en": "Wisej Professional and Enterprise licenses include access to premium extensions. Control libraries from the following vendors have been wrapped in Wisej to provide developers a seamless integration of any type of control."
-      }
+        "Features": {
+            "sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Wisej.DemoBrowser.Premium",
+            "assembly": "DevExtreme, Wisej.DemoBrowser.Premium.dll",
+            "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/PictureAndText.svg",
+            "docsUrl": "https://docs.wisej.com/extensions/premium-extensions/overview",
+            "description-en": "Wisej Professional and Enterprise licenses include access to premium extensions. Control libraries from the following vendors have been wrapped in Wisej to provide developers a seamless integration of any type of control.",
+            "relevantLinks": [
+                {
+                    "title": "DevExtreme",
+                    "url": "https://www.nuget.org/packages/Wisej-3-DevExtreme"
+                }
+            ]
+        }
     },
     "Ignite UI": {
-      "Features": {
-        "sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Wisej.DemoBrowser.Premium",
-        "assembly": "Ignite, Wisej.DemoBrowser.Premium.dll",
-        "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/PictureAndText.svg",
-        "docsUrl": "https://docs.wisej.com/extensions/premium-extensions/overview",
-        "description-en": "Wisej Professional and Enterprise licenses include access to premium extensions. Control libraries from the following vendors have been wrapped in Wisej to provide developers a seamless integration of any type of control."
-      }
+        "Features": {
+            "sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Wisej.DemoBrowser.Premium",
+            "assembly": "Ignite, Wisej.DemoBrowser.Premium.dll",
+            "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/PictureAndText.svg",
+            "docsUrl": "https://docs.wisej.com/extensions/premium-extensions/overview",
+            "description-en": "Wisej Professional and Enterprise licenses include access to premium extensions. Control libraries from the following vendors have been wrapped in Wisej to provide developers a seamless integration of any type of control.",
+            "relevantLinks": [
+                {
+                    "title": "Ignite UI",
+                    "url": "https://www.nuget.org/packages/Wisej-3-Ignite"
+                }
+            ]
+        }
     }
   },
   "Icon Packs": {
