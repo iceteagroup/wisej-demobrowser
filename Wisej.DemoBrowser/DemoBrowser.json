@@ -862,13 +862,19 @@
       }
     },
     "CKEditor": {
-      "Features": {
-        "sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Extensions/Wisej.DemoBrowser.CKEditor",
-        "assembly": "Features, Wisej.DemoBrowser.CKEditor.dll",
-        "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/HtmlTagEnd.svg",
-        "docsUrl": "https://docs.wisej.com/extensions/extensions/ckeditor/api/wisej.web.ext.ckeditor.ckeditor",
-        "description-en": "The <b>CKEditor</b> control (formerly FCKeditor) is an open source WYSIWYG text editor designed to bring common word processor features directly to web pages, simplifying their content creation."
-      }
+        "Features": {
+            "sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Extensions/Wisej.DemoBrowser.CKEditor",
+            "assembly": "Features, Wisej.DemoBrowser.CKEditor.dll",
+            "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/HtmlTagEnd.svg",
+            "docsUrl": "https://docs.wisej.com/extensions/extensions/ckeditor/api/wisej.web.ext.ckeditor.ckeditor",
+            "description-en": "The <b>CKEditor</b> control (formerly FCKeditor) is an open source WYSIWYG text editor designed to bring common word processor features directly to web pages, simplifying their content creation.",
+            "relevantLinks": [
+                {
+                    "title": "CKEditor",
+                    "url": "https://www.nuget.org/packages/Wisej-3-CKEditor"
+                }
+            ]
+        }
     },
     "CoolClock": {
       "Features": {
