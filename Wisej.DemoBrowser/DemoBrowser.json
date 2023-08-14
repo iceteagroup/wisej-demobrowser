@@ -1010,122 +1010,214 @@
         }
     },
     "JustGage": {
-      "Features": {
-        "sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Extensions/Wisej.DemoBrowser.JustGage",
-        "assembly": "Features, Wisej.DemoBrowser.JustGage.dll",
-        "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/Gauge.svg",
-        "docsUrl": "https://docs.wisej.com/extensions/extensions/justgage",
-        "description-en": "The <b>JustGage</b> extension component uses the cool JustGage widget to render animated, nice and clean gauges. It is based on Raphaël library for vector drawing, so it’s completely resolution independent and self-adjusting."
-      }
+        "Features": {
+            "sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Extensions/Wisej.DemoBrowser.JustGage",
+            "assembly": "Features, Wisej.DemoBrowser.JustGage.dll",
+            "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/Gauge.svg",
+            "docsUrl": "https://docs.wisej.com/extensions/extensions/justgage",
+            "description-en": "The <b>JustGage</b> extension component uses the cool JustGage widget to render animated, nice and clean gauges. It is based on Raphaël library for vector drawing, so it’s completely resolution independent and self-adjusting.",
+            "relevantLinks": [
+                {
+                    "title": "JustGage",
+                    "url": "https://www.nuget.org/packages/Wisej-3-JustGage"
+                }
+            ]
+        }
     },
     "jQueryKnob": {
-      "Features": {
-        "sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Extensions/Wisej.DemoBrowser.jQueryKnob",
-        "assembly": "Features, Wisej.DemoBrowser.jQueryKnob.dll",
-        "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/ProgressBar.svg",
-        "docsUrl": "https://docs.wisej.com/extensions/extensions/jqueryknob",
-        "description-en": "The <b>jQueryKnob.Knob</b> control uses the amazing jQueryKnob widget to create a Wisej Real Time dial control that allows the user to rotate the dial to change its value or to type the value in the middle editor. The component allows you to set the value, range, line style, colors and more."
-      }
+        "Features": {
+            "sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Extensions/Wisej.DemoBrowser.jQueryKnob",
+            "assembly": "Features, Wisej.DemoBrowser.jQueryKnob.dll",
+            "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/ProgressBar.svg",
+            "docsUrl": "https://docs.wisej.com/extensions/extensions/jqueryknob",
+            "description-en": "The <b>jQueryKnob.Knob</b> control uses the amazing jQueryKnob widget to create a Wisej Real Time dial control that allows the user to rotate the dial to change its value or to type the value in the middle editor. The component allows you to set the value, range, line style, colors and more.",
+            "relevantLinks": [
+                {
+                    "title": "jQueryKnob",
+                    "url": "https://www.nuget.org/packages/Wisej-3-jQueryKnob"
+                }
+            ]
+        }
     },
     "jSequence": {
-      "Features": {
-        "sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Extensions/Wisej.DemoBrowser.jSequence",
-        "assembly": "Features, Wisej.DemoBrowser.jSequence.dll",
-        "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/ShowDiagramPane.svg",
-        "docsUrl": "https://docs.wisej.com/extensions/extensions/jsequence",
-        "description-en": "The <b>jSequence</b> control uses the jSequence widget to turn text into UML sequence diagram."
-      }
+        "Features": {
+            "sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Extensions/Wisej.DemoBrowser.jSequence",
+            "assembly": "Features, Wisej.DemoBrowser.jSequence.dll",
+            "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/ShowDiagramPane.svg",
+            "docsUrl": "https://docs.wisej.com/extensions/extensions/jsequence",
+            "description-en": "The <b>jSequence</b> control uses the jSequence widget to turn text into UML sequence diagram.",
+            "relevantLinks": [
+                {
+                    "title": "jSequence",
+                    "url": "https://www.nuget.org/packages/Wisej-3-jSequence"
+                }
+            ]
+        }
     },
     "NavigationBar": {
-      "Features": {
-        "sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Extensions/Wisej.DemoBrowser.NavigationBar",
-        "assembly": "Features, Wisej.DemoBrowser.NavigationBar.dll",
-        "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/AppForOfficeTaskPane.svg",
-        "docsUrl": "https://docs.wisej.com/extensions/extensions/navigationbar",
-        "description-en": "The <b>NavigationBar</b> is a responsive vertical navigation bar that displays an application header with logo, child items, and a user panel with gravatar and other user information."
-      }
+        "Features": {
+            "sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Extensions/Wisej.DemoBrowser.NavigationBar",
+            "assembly": "Features, Wisej.DemoBrowser.NavigationBar.dll",
+            "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/AppForOfficeTaskPane.svg",
+            "docsUrl": "https://docs.wisej.com/extensions/extensions/navigationbar",
+            "description-en": "The <b>NavigationBar</b> is a responsive vertical navigation bar that displays an application header with logo, child items, and a user panel with gravatar and other user information.",
+            "relevantLinks": [
+                {
+                    "title": "NavigationBar",
+                    "url": "https://www.nuget.org/packages/Wisej-3-NavigationBar"
+                },
+                {
+                    "title": "ProgressCircle",
+                    "url": "https://www.nuget.org/packages/Wisej-3-ProgressCircle"
+                },
+                {
+                    "title": "MaterialDesign",
+                    "url": "https://www.nuget.org/packages/Wisej-3-MaterialDesign"
+                }
+            ]
+        }
     },
     "Notification": {
-      "Features": {
-        "sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Extensions/Wisej.DemoBrowser.Notification",
-        "assembly": "Features, Wisej.DemoBrowser.Notification.dll",
-        "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/PushNotification.svg",
-        "docsUrl": "https://docs.wisej.com/extensions/extensions/notification",
-        "description-en": "The <b>Wisej.Ext.Notification</b> component adds desktop notifications to Wisej applications. With this component your web apps can pop notifications on the user’s desktop even when the browser is minimized."
-      }
+        "Features": {
+            "sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Extensions/Wisej.DemoBrowser.Notification",
+            "assembly": "Features, Wisej.DemoBrowser.Notification.dll",
+            "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/PushNotification.svg",
+            "docsUrl": "https://docs.wisej.com/extensions/extensions/notification",
+            "description-en": "The <b>Wisej.Ext.Notification</b> component adds desktop notifications to Wisej applications. With this component your web apps can pop notifications on the user’s desktop even when the browser is minimized.",
+            "relevantLinks": [
+                {
+                    "title": "Notification",
+                    "url": "https://www.nuget.org/packages/Wisej-3-Notification"
+                }
+            ]
+        }
     },
     "OfficeViewer": {
-      "Features": {
-        "sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Extensions/Wisej.DemoBrowser.OfficeViewer",
-        "assembly": "Features, Wisej.DemoBrowser.OfficeViewer.dll",
-        "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/AppForOfficeTaskPane.svg",
-        "docsUrl": "https://docs.wisej.com/extensions/extensions/officeviewer",
-        "description-en": "The <b>OfficeViewer</b> extension control uses Microsoft’s Office 365 Live Viewers to show Word, Excel or PowerPoint documents embedded in a Wisej application. You can view a file or a stream."
-      }
+        "Features": {
+            "sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Extensions/Wisej.DemoBrowser.OfficeViewer",
+            "assembly": "Features, Wisej.DemoBrowser.OfficeViewer.dll",
+            "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/AppForOfficeTaskPane.svg",
+            "docsUrl": "https://docs.wisej.com/extensions/extensions/officeviewer",
+            "description-en": "The <b>OfficeViewer</b> extension control uses Microsoft’s Office 365 Live Viewers to show Word, Excel or PowerPoint documents embedded in a Wisej application. You can view a file or a stream.",
+            "relevantLinks": [
+                {
+                    "title": "OfficeViewer",
+                    "url": "https://www.nuget.org/packages/Wisej-3-OfficeViewer"
+                }
+            ]
+        }
     },
     "Pannellum": {
-      "Features": {
-        "sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Extensions/Wisej.DemoBrowser.Pannellum",
-        "assembly": "Features, Wisej.DemoBrowser.Pannellum.dll",
-        "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/ImageSlideshow.svg",
-        "docsUrl": "https://docs.wisej.com/extensions/extensions/pannellum",
-        "description-en": "The <b>Pannellum</b> extension component uses the Pannellum library. Pannellum is a lightweight, free, and open source panorama viewer for the web."
-      },
-      "Auto Rotate": {
-        "sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Extensions/Wisej.DemoBrowser.Pannellum",
-        "assembly": "AutoRotate, Wisej.DemoBrowser.Pannellum.dll",
-        "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/ImageSlideshow.svg",
-        "docsUrl": "https://docs.wisej.com/extensions/extensions/pannellum",
-        "description-en": "Once the panorama has been loaded, make it rotate automatically."
-      },
-      "Cube Map": {
-        "sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Extensions/Wisej.DemoBrowser.Pannellum",
-        "assembly": "CubeMap, Wisej.DemoBrowser.Pannellum.dll",
-        "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/ImageSlideshow.svg",
-        "docsUrl": "https://docs.wisej.com/extensions/extensions/pannellum",
-        "description-en": "Show a panoramic of a cube map"
-      },
-      "Hot Spots": {
-        "sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Extensions/Wisej.DemoBrowser.Pannellum",
-        "assembly": "HotSpots, Wisej.DemoBrowser.Pannellum.dll",
-        "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/ImageSlideshow.svg",
-        "docsUrl": "https://docs.wisej.com/extensions/extensions/pannellum",
-        "description-en": "Hot spots can be used to display additional information on the panorama."
-      },
-      "Multiresolution": {
-        "sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Extensions/Wisej.DemoBrowser.Pannellum",
-        "assembly": "Multires, Wisej.DemoBrowser.Pannellum.dll",
-        "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/ImageSlideshow.svg",
-        "docsUrl": "https://docs.wisej.com/extensions/extensions/pannellum",
-        "description-en": "You can display a high resolution panoramas with the <b>Multiresolution</b> feature"
-      }
+        "Features": {
+            "sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Extensions/Wisej.DemoBrowser.Pannellum",
+            "assembly": "Features, Wisej.DemoBrowser.Pannellum.dll",
+            "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/ImageSlideshow.svg",
+            "docsUrl": "https://docs.wisej.com/extensions/extensions/pannellum",
+            "description-en": "The <b>Pannellum</b> extension component uses the Pannellum library. Pannellum is a lightweight, free, and open source panorama viewer for the web.",
+            "relevantLinks": [
+                {
+                    "title": "Pannellum",
+                    "url": "https://www.nuget.org/packages/Wisej-3-Pannellum"
+                }
+            ]
+        },
+        "Auto Rotate": {
+            "sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Extensions/Wisej.DemoBrowser.Pannellum",
+            "assembly": "AutoRotate, Wisej.DemoBrowser.Pannellum.dll",
+            "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/ImageSlideshow.svg",
+            "docsUrl": "https://docs.wisej.com/extensions/extensions/pannellum",
+            "description-en": "Once the panorama has been loaded, make it rotate automatically.",
+            "relevantLinks": [
+                {
+                    "title": "Pannellum",
+                    "url": "https://www.nuget.org/packages/Wisej-3-Pannellum"
+                }
+            ]
+        },
+        "Cube Map": {
+            "sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Extensions/Wisej.DemoBrowser.Pannellum",
+            "assembly": "CubeMap, Wisej.DemoBrowser.Pannellum.dll",
+            "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/ImageSlideshow.svg",
+            "docsUrl": "https://docs.wisej.com/extensions/extensions/pannellum",
+            "description-en": "Show a panoramic of a cube map",
+            "relevantLinks": [
+                {
+                    "title": "Pannellum",
+                    "url": "https://www.nuget.org/packages/Wisej-3-Pannellum"
+                }
+            ]
+        },
+        "Hot Spots": {
+            "sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Extensions/Wisej.DemoBrowser.Pannellum",
+            "assembly": "HotSpots, Wisej.DemoBrowser.Pannellum.dll",
+            "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/ImageSlideshow.svg",
+            "docsUrl": "https://docs.wisej.com/extensions/extensions/pannellum",
+            "description-en": "Hot spots can be used to display additional information on the panorama.",
+            "relevantLinks": [
+                {
+                    "title": "Pannellum",
+                    "url": "https://www.nuget.org/packages/Wisej-3-Pannellum"
+                }
+            ]
+        },
+        "Multiresolution": {
+            "sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Extensions/Wisej.DemoBrowser.Pannellum",
+            "assembly": "Multires, Wisej.DemoBrowser.Pannellum.dll",
+            "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/ImageSlideshow.svg",
+            "docsUrl": "https://docs.wisej.com/extensions/extensions/pannellum",
+            "description-en": "You can display a high resolution panoramas with the <b>Multiresolution</b> feature",
+            "relevantLinks": [
+                {
+                    "title": "Pannellum",
+                    "url": "https://www.nuget.org/packages/Wisej-3-Pannellum"
+                }
+            ]
+        }
     },
     "ProgressCircle": {
-      "Features": {
-        "sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Extensions/Wisej.DemoBrowser.ProgressCircle",
-        "assembly": "Features, Wisej.DemoBrowser.ProgressCircle.dll",
-        "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/ProgressBar.svg",
-        "docsUrl": "https://docs.wisej.com/extensions/extensions/progresscircle",
-        "description-en": "The <b>ProgressCircle</b> control is entirely implemented on the server side as a derived class of Wisej.Web.Canvas. It draws on a HTML5 canvas element on the client directly from the server in real time. The component lets you set value, line style and thickness, fill color, font, etc."
-      }
+        "Features": {
+            "sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Extensions/Wisej.DemoBrowser.ProgressCircle",
+            "assembly": "Features, Wisej.DemoBrowser.ProgressCircle.dll",
+            "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/ProgressBar.svg",
+            "docsUrl": "https://docs.wisej.com/extensions/extensions/progresscircle",
+            "description-en": "The <b>ProgressCircle</b> control is entirely implemented on the server side as a derived class of Wisej.Web.Canvas. It draws on a HTML5 canvas element on the client directly from the server in real time. The component lets you set value, line style and thickness, fill color, font, etc.",
+            "relevantLinks": [
+                {
+                    "title": "ProgressCircle",
+                    "url": "https://www.nuget.org/packages/Wisej-3-ProgressCircle"
+                }
+            ]
+        }
     },
     "RibbonBar": {
-      "Features": {
-        "sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Extensions/Wisej.DemoBrowser.RibbonBar",
-        "assembly": "Features, Wisej.DemoBrowser.RibbonBar.dll",
-        "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/RibbonMenu.svg",
-        "docsUrl": "https://docs.wisej.com/extensions/extensions/ribbonbar",
-        "description-en": "The <b>RibbonBar</b> extension component is a command bar that organizes the features of an application into a series of tabs at the top of the application main page or window."
-      }
+        "Features": {
+            "sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Extensions/Wisej.DemoBrowser.RibbonBar",
+            "assembly": "Features, Wisej.DemoBrowser.RibbonBar.dll",
+            "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/RibbonMenu.svg",
+            "docsUrl": "https://docs.wisej.com/extensions/extensions/ribbonbar",
+            "description-en": "The <b>RibbonBar</b> extension component is a command bar that organizes the features of an application into a series of tabs at the top of the application main page or window.",
+            "relevantLinks": [
+                {
+                    "title": "RibbonBar",
+                    "url": "https://www.nuget.org/packages/Wisej-3-RibbonBar"
+                }
+            ]
+        }
     },
     "Speech": {
-      "Features": {
-        "sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Extensions/Wisej.DemoBrowser.Speech",
-        "assembly": "Features, Wisej.DemoBrowser.Speech.dll",
-        "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/Record.svg",
-        "docsUrl": "https://docs.wisej.com/extensions/extensions/speech",
-        "description-en": "The <b>Speech</b> extender component enhances all Wisej components by providing additional speech synthesis and recognition features that allow a component to speak it’s content – or any text provided in code – and to receive text coming from speech recognition."
-      }
+        "Features": {
+            "sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Extensions/Wisej.DemoBrowser.Speech",
+            "assembly": "Features, Wisej.DemoBrowser.Speech.dll",
+            "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/Record.svg",
+            "docsUrl": "https://docs.wisej.com/extensions/extensions/speech",
+            "description-en": "The <b>Speech</b> extender component enhances all Wisej components by providing additional speech synthesis and recognition features that allow a component to speak it’s content – or any text provided in code – and to receive text coming from speech recognition.",
+            "relevantLinks": [
+                {
+                    "title": "Speech",
+                    "url": "https://www.nuget.org/packages/Wisej-3-Speech"
+                }
+            ]
+        }
     },
     "TinyEditor": {
       "Features": {
