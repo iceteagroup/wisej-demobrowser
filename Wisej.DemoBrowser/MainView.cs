@@ -4,6 +4,7 @@ using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Net;
+using Wisej.Core;
 using Wisej.Web;
 
 namespace Wisej.DemoBrowser
@@ -291,6 +292,13 @@ namespace Wisej.DemoBrowser
 				this.labelNavigationDemo.Text = title ?? demoInstance.Name;
 				this.pictureBoxControl.ImageSource = info?.imageSource ?? "";
 				this.labelTitle.Text = $"{control} {title ?? demoInstance.Name}";
+
+				this.buttonRelevantLinks.MenuItems.Clear();
+				if (info.relevantLinks is DynamicObject[] relevantLinks)
+				{
+					var links = relevantLinks.Select(r => new MenuItem(((dynamic)r).title) { Tag = r });
+					this.buttonRelevantLinks.MenuItems.AddRange(links.ToArray());
+				}
 			}
 		}
 
@@ -514,6 +522,11 @@ namespace Wisej.DemoBrowser
 		private void pictureBoxLogo_Click(object sender, EventArgs e)
 		{
 			Application.Navigate("https://wisej.com/", "_blank");
+		}
+
+		private void buttonRelevantLinks_ItemClicked(object sender, MenuButtonItemClickedEventArgs e)
+		{
+			Application.Navigate(((dynamic)e.Item.Tag).url, "_blank");
 		}
 	}
 }

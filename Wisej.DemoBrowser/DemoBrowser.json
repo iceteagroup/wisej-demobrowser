@@ -676,7 +676,7 @@
         "description-en": "The <b>AceEditor</b> control is an embeddable code editor written in JavaScript. It matches the features and performance of native editors such as Sublime, Vim and TextMate. Ace is maintained as the primary editor for Cloud9 IDE and is the successor of the Mozilla Skywriter (Bespin) project.",
         "relevantLinks": [
           {
-            "title": "AceEditor Extension",
+            "title": "AceEditor on NuGet",
             "url": "https://www.nuget.org/packages/Wisej-3-AceEditor"
           }
         ]
@@ -691,7 +691,7 @@
         "description-en": "The <b>Barcode</b> control uses ZXing.Net to generate Barcodes on the server and render them on the client. Supports: UPC-A, EAN-8, EAN-13, Code 39, Code 128, ITF, Codabar, Plessey, MSI, QR Code, PDF-417, Aztec, Data Matrix.",
         "relevantLinks": [
           {
-            "title": "Barcode Extension",
+            "title": "Barcode on NuGet",
             "url": "https://www.nuget.org/packages/Wisej-3-Barcode"
           }
         ]
@@ -706,7 +706,7 @@
         "description-en": "The <b>BingWallpaper</b> extender component enhances the Desktop control by adding Bing’s daily stunning wallpaper images. You can set the rotation interval, fade duration and number of images.",
         "relevantLinks": [
           {
-            "title": "BingWallpaper Extension",
+            "title": "BingWallpaper on NuGet",
             "url": "https://www.nuget.org/packages/Wisej-3-BingWallpaper"
           }
         ]
@@ -721,7 +721,7 @@
         "description-en": "The <b>Bubbles</b> extender component enhances all Wisej components by providing additional properties and a useful bubble notification functionality. Every widget can display a popup animated and themed bubble when a value changes.",
         "relevantLinks": [
           {
-            "title": "Bubbles Extension",
+            "title": "Bubbles on NuGet",
             "url": "https://www.nuget.org/packages/Wisej-3-Bubbles"
           }
         ]
@@ -736,7 +736,7 @@
         "description-en": "The <b>Camera</b> control makes it possible to take pictures with the device's camera and upload them to the server.",
         "relevantLinks": [
           {
-            "title": "Camera Extension",
+            "title": "Camera on NuGet",
             "url": "https://www.nuget.org/packages/Wisej-3-Camera"
           }
         ]
@@ -751,7 +751,7 @@
         "description-en": "The <b>ChartJS</b> extension component uses the excellent ChartJS widget to render amazing charts in real time.",
         "relevantLinks": [
           {
-            "title": "ChartJS",
+            "title": "ChartJS on NuGet",
             "url": "https://www.nuget.org/packages/Wisej-3-ChartJS"
           }
         ]
@@ -764,7 +764,7 @@
         "description-en": "Scatter charts are based on basic line charts with the x axis changed to a linear axis. To use a scatter chart, data must be passed as objects containing X and Y properties.",
         "relevantLinks": [
           {
-            "title": "ChartJS",
+            "title": "ChartJS on NuGet",
             "url": "https://www.nuget.org/packages/Wisej-3-ChartJS"
           }
         ]
@@ -777,7 +777,7 @@
         "description-en": "A bar chart is a visual representation of data values as vertical bars. It can be used to display trend data or to compare multiple data sets side by side.",
         "relevantLinks": [
           {
-            "title": "ChartJS",
+            "title": "ChartJS on NuGet",
             "url": "https://www.nuget.org/packages/Wisej-3-ChartJS"
           }
         ]
@@ -790,7 +790,7 @@
         "description-en": "A line chart is a visual representation of data points plotted on a line. It's frequently used to display trend data or to compare two data sets.",
         "relevantLinks": [
           {
-            "title": "ChartJS",
+            "title": "ChartJS on NuGet",
             "url": "https://www.nuget.org/packages/Wisej-3-ChartJS"
           }
         ]
@@ -803,7 +803,7 @@
         "description-en": "A radar chart is a visual representation of several data points and their fluctuation. They're frequently used to compare the points of two or more data sets.",
         "relevantLinks": [
           {
-            "title": "ChartJS",
+            "title": "ChartJS on NuGet",
             "url": "https://www.nuget.org/packages/Wisej-3-ChartJS"
           }
         ]
@@ -816,7 +816,7 @@
         "description-en": "Polar area charts are similar to pie charts, except that each segment has the same angle and the radius varies depending on the value. This sort of chart is frequently used when we wish to display comparison data in the same way that a pie chart does, but with the addition of a scale of values for context.",
         "relevantLinks": [
           {
-            "title": "ChartJS",
+            "title": "ChartJS on NuGet",
             "url": "https://www.nuget.org/packages/Wisej-3-ChartJS"
           }
         ]
@@ -829,7 +829,7 @@
         "description-en": "The most widely used charts are pie and doughnut charts. They're broken into segments, with each segment's arc indicating the proportionate value of each piece of data.",
         "relevantLinks": [
           {
-            "title": "ChartJS",
+            "title": "ChartJS on NuGet",
             "url": "https://www.nuget.org/packages/Wisej-3-ChartJS"
           }
         ]
@@ -842,7 +842,7 @@
         "description-en": "The most widely used charts are pie and doughnut charts. They're broken into segments, with each segment's arc indicating the proportionate value of each piece of data.",
         "relevantLinks": [
           {
-            "title": "ChartJS",
+            "title": "ChartJS on NuGet",
             "url": "https://www.nuget.org/packages/Wisej-3-ChartJS"
           }
         ]
@@ -855,7 +855,7 @@
         "description-en": "A bubble chart is a type of graph that shows three dimensions of data at once. The first two dimensions, as well as the associated horizontal and vertical axes, determine the bubble's placement. The size of the individual bubbles represents the third dimension.",
         "relevantLinks": [
           {
-            "title": "ChartJS",
+            "title": "ChartJS on NuGet",
             "url": "https://www.nuget.org/packages/Wisej-3-ChartJS"
           }
         ]
@@ -870,7 +870,7 @@
             "description-en": "The <b>CKEditor</b> control (formerly FCKeditor) is an open source WYSIWYG text editor designed to bring common word processor features directly to web pages, simplifying their content creation.",
             "relevantLinks": [
                 {
-                    "title": "CKEditor",
+                    "title": "CKEditor on NuGet",
                     "url": "https://www.nuget.org/packages/Wisej-3-CKEditor"
                 }
             ]
@@ -885,7 +885,7 @@
             "description-en": "The <b>CoolClock</b> control renders amazing analog clocks as Real-Time widgets. Supports several skins, logarithmic scale, and several properties to configure the tick delay or hide the second’s hand.",
             "relevantLinks": [
                 {
-                    "title": "CoolClock",
+                    "title": "CoolClock on NuGet",
                     "url": "https://www.nuget.org/packages/Wisej-3-CoolClock"
                 }
             ]
@@ -900,7 +900,7 @@
             "description-en": "The <b>CountUp</b> control uses the excellent CountUp.js widget that can be used to quickly create animations that display numerical data in a more interesting way.",
             "relevantLinks": [
                 {
-                    "title": "CountUp",
+                    "title": "CountUp on NuGet",
                     "url": "https://www.nuget.org/packages/Wisej-3-CountUp"
                 }
             ]
@@ -915,7 +915,7 @@
             "description-en": "The <b>FullCalendar</b> extension is an amazing full-size drag-n-drop event calendar. Supports multiple views, flexible events, custom styles, integrates with Google Calendars, and it’s completely integrated with Wisej.",
             "relevantLinks": [
                 {
-                    "title": "FullCalendar",
+                    "title": "FullCalendar on NuGet",
                     "url": "https://www.nuget.org/packages/Wisej-3-FullCalendar"
                 }
             ]
@@ -930,7 +930,7 @@
             "description-en": "The <b>Wisej.Ext.Geolocation</b> component represents an object able to programmatically obtain the position of the device.",
             "relevantLinks": [
                 {
-                    "title": "Geolocation",
+                    "title": "Geolocation on NuGet",
                     "url": "https://www.nuget.org/packages/Wisej-3-Geolocation"
                 }
             ]
@@ -945,7 +945,7 @@
             "description-en": "The <b>GoogleMaps</b> extension lets you control Google Maps as a fully integrated server control. The control fires events back to the server and the server can affect any visual aspect of the map.",
             "relevantLinks": [
                 {
-                    "title": "GoogleMaps",
+                    "title": "GoogleMaps on NuGet",
                     "url": "https://www.nuget.org/packages/Wisej-3-GoogleMaps"
                 }
             ]
@@ -958,7 +958,7 @@
             "description-en": "A heatmap is a visualization used to depict the intensity of data at geographical points. When the Heatmap Layer is enabled, a colored overlay will appear on top of the map. By default, areas of higher intensity will be colored red, and areas of lower intensity will appear green.",
             "relevantLinks": [
                 {
-                    "title": "GoogleMaps",
+                    "title": "GoogleMaps on NuGet",
                     "url": "https://www.nuget.org/packages/Wisej-3-GoogleMaps"
                 }
             ]
@@ -971,7 +971,7 @@
             "description-en": "With WebGL Overlay View you can add content to your maps using WebGL directly, or popular Graphics libraries like Three.js. WebGL Overlay View provides direct access to the same WebGL rendering context Google Maps Platform uses to render the vector basemap.",
             "relevantLinks": [
                 {
-                    "title": "GoogleMaps",
+                    "title": "GoogleMaps on NuGet",
                     "url": "https://www.nuget.org/packages/Wisej-3-GoogleMaps"
                 }
             ]
@@ -984,7 +984,7 @@
             "description-en": "The Maps JavaScript API geometry library provides utility functions for the computation of geometric data on the surface of the Earth.",
             "relevantLinks": [
                 {
-                    "title": "GoogleMaps",
+                    "title": "GoogleMaps on NuGet",
                     "url": "https://www.nuget.org/packages/Wisej-3-GoogleMaps"
                 }
             ]
@@ -999,11 +999,11 @@
             "description-en": "The <b>Html2Canvas</b> extension component uses the Html2Canvas library. This Wisej component can take a screenshot of a specific control or the entire browser and send the image back to the server.",
             "relevantLinks": [
                 {
-                    "title": "Html2Canvas",
+                    "title": "Html2Canvas on NuGet",
                     "url": "https://www.nuget.org/packages/Wisej-3-Html2Canvas"
                 },
                 {
-                    "title": "ChartJS",
+                    "title": "ChartJS on NuGet",
                     "url": "https://www.nuget.org/packages/Wisej-3-ChartJS"
                 }
             ]
@@ -1018,7 +1018,7 @@
             "description-en": "The <b>JustGage</b> extension component uses the cool JustGage widget to render animated, nice and clean gauges. It is based on Raphaël library for vector drawing, so it’s completely resolution independent and self-adjusting.",
             "relevantLinks": [
                 {
-                    "title": "JustGage",
+                    "title": "JustGage on NuGet",
                     "url": "https://www.nuget.org/packages/Wisej-3-JustGage"
                 }
             ]
@@ -1033,7 +1033,7 @@
             "description-en": "The <b>jQueryKnob.Knob</b> control uses the amazing jQueryKnob widget to create a Wisej Real Time dial control that allows the user to rotate the dial to change its value or to type the value in the middle editor. The component allows you to set the value, range, line style, colors and more.",
             "relevantLinks": [
                 {
-                    "title": "jQueryKnob",
+                    "title": "jQueryKnob on NuGet",
                     "url": "https://www.nuget.org/packages/Wisej-3-jQueryKnob"
                 }
             ]
@@ -1048,7 +1048,7 @@
             "description-en": "The <b>jSequence</b> control uses the jSequence widget to turn text into UML sequence diagram.",
             "relevantLinks": [
                 {
-                    "title": "jSequence",
+                    "title": "jSequence on NuGet",
                     "url": "https://www.nuget.org/packages/Wisej-3-jSequence"
                 }
             ]
@@ -1063,15 +1063,15 @@
             "description-en": "The <b>NavigationBar</b> is a responsive vertical navigation bar that displays an application header with logo, child items, and a user panel with gravatar and other user information.",
             "relevantLinks": [
                 {
-                    "title": "NavigationBar",
+                    "title": "NavigationBar on NuGet",
                     "url": "https://www.nuget.org/packages/Wisej-3-NavigationBar"
                 },
                 {
-                    "title": "ProgressCircle",
+                    "title": "ProgressCircle on NuGet",
                     "url": "https://www.nuget.org/packages/Wisej-3-ProgressCircle"
                 },
                 {
-                    "title": "MaterialDesign",
+                    "title": "MaterialDesign on NuGet",
                     "url": "https://www.nuget.org/packages/Wisej-3-MaterialDesign"
                 }
             ]
@@ -1086,7 +1086,7 @@
             "description-en": "The <b>Wisej.Ext.Notification</b> component adds desktop notifications to Wisej applications. With this component your web apps can pop notifications on the user’s desktop even when the browser is minimized.",
             "relevantLinks": [
                 {
-                    "title": "Notification",
+                    "title": "Notification on NuGet",
                     "url": "https://www.nuget.org/packages/Wisej-3-Notification"
                 }
             ]
@@ -1101,7 +1101,7 @@
             "description-en": "The <b>OfficeViewer</b> extension control uses Microsoft’s Office 365 Live Viewers to show Word, Excel or PowerPoint documents embedded in a Wisej application. You can view a file or a stream.",
             "relevantLinks": [
                 {
-                    "title": "OfficeViewer",
+                    "title": "OfficeViewer on NuGet",
                     "url": "https://www.nuget.org/packages/Wisej-3-OfficeViewer"
                 }
             ]
@@ -1116,7 +1116,7 @@
             "description-en": "The <b>Pannellum</b> extension component uses the Pannellum library. Pannellum is a lightweight, free, and open source panorama viewer for the web.",
             "relevantLinks": [
                 {
-                    "title": "Pannellum",
+                    "title": "Pannellum on NuGet",
                     "url": "https://www.nuget.org/packages/Wisej-3-Pannellum"
                 }
             ]
@@ -1129,7 +1129,7 @@
             "description-en": "Once the panorama has been loaded, make it rotate automatically.",
             "relevantLinks": [
                 {
-                    "title": "Pannellum",
+                    "title": "Pannellum on NuGet",
                     "url": "https://www.nuget.org/packages/Wisej-3-Pannellum"
                 }
             ]
@@ -1142,7 +1142,7 @@
             "description-en": "Show a panoramic of a cube map",
             "relevantLinks": [
                 {
-                    "title": "Pannellum",
+                    "title": "Pannellum on NuGet",
                     "url": "https://www.nuget.org/packages/Wisej-3-Pannellum"
                 }
             ]
@@ -1155,7 +1155,7 @@
             "description-en": "Hot spots can be used to display additional information on the panorama.",
             "relevantLinks": [
                 {
-                    "title": "Pannellum",
+                    "title": "Pannellum on NuGet",
                     "url": "https://www.nuget.org/packages/Wisej-3-Pannellum"
                 }
             ]
@@ -1168,7 +1168,7 @@
             "description-en": "You can display a high resolution panoramas with the <b>Multiresolution</b> feature",
             "relevantLinks": [
                 {
-                    "title": "Pannellum",
+                    "title": "Pannellum on NuGet",
                     "url": "https://www.nuget.org/packages/Wisej-3-Pannellum"
                 }
             ]
@@ -1183,7 +1183,7 @@
             "description-en": "The <b>ProgressCircle</b> control is entirely implemented on the server side as a derived class of Wisej.Web.Canvas. It draws on a HTML5 canvas element on the client directly from the server in real time. The component lets you set value, line style and thickness, fill color, font, etc.",
             "relevantLinks": [
                 {
-                    "title": "ProgressCircle",
+                    "title": "ProgressCircle on NuGet",
                     "url": "https://www.nuget.org/packages/Wisej-3-ProgressCircle"
                 }
             ]
@@ -1198,7 +1198,7 @@
             "description-en": "The <b>RibbonBar</b> extension component is a command bar that organizes the features of an application into a series of tabs at the top of the application main page or window.",
             "relevantLinks": [
                 {
-                    "title": "RibbonBar",
+                    "title": "RibbonBar on NuGet",
                     "url": "https://www.nuget.org/packages/Wisej-3-RibbonBar"
                 }
             ]
@@ -1213,7 +1213,7 @@
             "description-en": "The <b>Speech</b> extender component enhances all Wisej components by providing additional speech synthesis and recognition features that allow a component to speak it’s content – or any text provided in code – and to receive text coming from speech recognition.",
             "relevantLinks": [
                 {
-                    "title": "Speech",
+                    "title": "Speech on NuGet",
                     "url": "https://www.nuget.org/packages/Wisej-3-Speech"
                 }
             ]
@@ -1228,7 +1228,7 @@
             "description-en": "The <b>TinyEditor</b> control is a simple JavaScript WYSIWYG editor that is both lightweight (8KB) and standalone from: https://github.com/jessegreathouse/TinyEditor.",
             "relevantLinks": [
                 {
-                    "title": "TinyEditor",
+                    "title": "TinyEditor on NuGet",
                     "url": "https://www.nuget.org/packages/Wisej-3-TinyEditor"
                 }
             ]
@@ -1243,7 +1243,7 @@
             "description-en": "The <b>TinyMCE</b> control (Tiny Moxiecode Content Editor) is a platform-independent, browser-based WYSIWYG editor control, written in JavaScript and released as open-source software under the LGPL by Ephox.",
             "relevantLinks": [
                 {
-                    "title": "TinyMCE",
+                    "title": "TinyMCE on NuGet",
                     "url": "https://www.nuget.org/packages/Wisej-3-TinyMCE"
                 }
             ]
@@ -1258,7 +1258,7 @@
             "description-en": "The <b>TourPanel</b> component can create a customized tour of an existing application highlighting specific targets and displaying HTML Text in steps.",
             "relevantLinks": [
                 {
-                    "title": "TourPanel",
+                    "title": "TourPanel on NuGet",
                     "url": "https://www.nuget.org/packages/Wisej-3-TourPanel"
                 }
             ]
@@ -1279,23 +1279,23 @@
             "description-en": "Wisej Professional and Enterprise licenses include access to premium extensions. Control libraries from the following vendors have been wrapped in Wisej to provide developers a seamless integration of any type of control.",
             "relevantLinks": [
                 {
-                    "title": "Kendo UI",
+                    "title": "Kendo UI on NuGet",
                     "url": "https://www.nuget.org/packages/Wisej-3-Kendo"
                 },
                 {
-                    "title": "DevExtreme",
+                    "title": "DevExtreme on NuGet",
                     "url": "https://www.nuget.org/packages/Wisej-3-DevExtreme"
                 },
                 {
-                    "title": "Syncfusion EJ1",
+                    "title": "Syncfusion EJ1 on NuGet",
                     "url": "https://www.nuget.org/packages/Wisej-3-Syncfusion"
                 },
                 {
-                    "title": "Syncfusion EJ2",
+                    "title": "Syncfusion EJ2 on NuGet",
                     "url": "https://www.nuget.org/packages/Wisej-3-Syncfusion2"
                 },
                 {
-                    "title": "Ignite UI",
+                    "title": "Ignite UI on NuGet",
                     "url": "https://www.nuget.org/packages/Wisej-3-Ignite"
                 }
             ]
@@ -1310,7 +1310,7 @@
             "description-en": "Wisej Professional and Enterprise licenses include access to premium extensions. Control libraries from the following vendors have been wrapped in Wisej to provide developers a seamless integration of any type of control.",
             "relevantLinks": [
                 {
-                    "title": "Kendo UI",
+                    "title": "Kendo UI on NuGet",
                     "url": "https://www.nuget.org/packages/Wisej-3-Kendo"
                 }
             ]
@@ -1325,7 +1325,7 @@
             "description-en": "Wisej Professional and Enterprise licenses include access to premium extensions. Control libraries from the following vendors have been wrapped in Wisej to provide developers a seamless integration of any type of control.",
             "relevantLinks": [
                 {
-                    "title": "Syncfusion EJ1",
+                    "title": "Syncfusion EJ1 on NuGet",
                     "url": "https://www.nuget.org/packages/Wisej-3-Syncfusion"
                 }
             ]
@@ -1340,7 +1340,7 @@
             "description-en": "Wisej Professional and Enterprise licenses include access to premium extensions. Control libraries from the following vendors have been wrapped in Wisej to provide developers a seamless integration of any type of control.",
             "relevantLinks": [
                 {
-                    "title": "Syncfusion EJ2",
+                    "title": "Syncfusion EJ2 on NuGet",
                     "url": "https://www.nuget.org/packages/Wisej-3-Syncfusion2"
                 }
             ]
@@ -1355,7 +1355,7 @@
             "description-en": "Wisej Professional and Enterprise licenses include access to premium extensions. Control libraries from the following vendors have been wrapped in Wisej to provide developers a seamless integration of any type of control.",
             "relevantLinks": [
                 {
-                    "title": "DevExtreme",
+                    "title": "DevExtreme on NuGet",
                     "url": "https://www.nuget.org/packages/Wisej-3-DevExtreme"
                 }
             ]
@@ -1370,7 +1370,7 @@
             "description-en": "Wisej Professional and Enterprise licenses include access to premium extensions. Control libraries from the following vendors have been wrapped in Wisej to provide developers a seamless integration of any type of control.",
             "relevantLinks": [
                 {
-                    "title": "Ignite UI",
+                    "title": "Ignite UI on NuGet",
                     "url": "https://www.nuget.org/packages/Wisej-3-Ignite"
                 }
             ]
@@ -1391,7 +1391,7 @@
             "description-en": "Free, high quality, open source icon library with over 1,500 icons. Include them anyway you like—SVGs, SVG sprite, or web fonts. Use them with or without Bootstrap in any project.",
             "relevantLinks": [
                 {
-                    "title": "Bootstrap Icons",
+                    "title": "Bootstrap Icons on NuGet",
                     "url": "https://www.nuget.org/packages/Wisej-3-BootstrapIcons"
                 }
             ]
@@ -1406,7 +1406,7 @@
             "description-en": "The complete <b>css.gg</b> icon pack.",
             "relevantLinks": [
                 {
-                    "title": "CssGg Icons",
+                    "title": "CssGg Icons on NuGet",
                     "url": "https://www.nuget.org/packages/Wisej-3-CssGgIcons"
                 }
             ]
@@ -1421,7 +1421,7 @@
             "description-en": "The complete <b>Elegant Icons</b> icon pack from Elegant Themes.",
             "relevantLinks": [
                 {
-                    "title": "Elegant Icons",
+                    "title": "Elegant Icons on NuGet",
                     "url": "https://www.nuget.org/packages/Wisej-3-ElegantIcons"
                 }
             ]
@@ -1436,7 +1436,7 @@
             "description-en": "<b>Feather</b> is a collection of simply beautiful open source icons. Each icon is designed on a 24x24 grid with an emphasis on simplicity, consistency, and flexibility.",
             "relevantLinks": [
                 {
-                    "title": "Feather Icons",
+                    "title": "Feather Icons on NuGet",
                     "url": "https://www.nuget.org/packages/Wisej-3-FeatherIcons"
                 }
             ]
@@ -1451,7 +1451,7 @@
             "description-en": "The complete set of 600+ icons in <b>Font Awesome</b>.",
             "relevantLinks": [
                 {
-                    "title": "FontAwesome Icons",
+                    "title": "FontAwesome Icons on NuGet",
                     "url": "https://www.nuget.org/packages/Wisej-3-FontAwesome"
                 }
             ]
@@ -1466,7 +1466,7 @@
             "description-en": "Premium designed icons for use in web, iOS, Android, and desktop apps.",
             "relevantLinks": [
                 {
-                    "title": "Ionic Icons",
+                    "title": "Ionic Icons on NuGet",
                     "url": "https://www.nuget.org/packages/Wisej-3-IonicIcons"
                 }
             ]
@@ -1481,7 +1481,7 @@
             "description-en": "<b>Material design system icons</b> are simple, modern, friendly, and sometimes quirky. Each icon is created using our design guidelines to depict in simple and minimal forms the universal concepts used commonly throughout a UI.",
             "relevantLinks": [
                 {
-                    "title": "MaterialDesign Icons",
+                    "title": "MaterialDesign Icons on NuGet",
                     "url": "https://www.nuget.org/packages/Wisej-3-MaterialDesign"
                 }
             ]
@@ -1496,7 +1496,7 @@
             "description-en": "The complete set of <b>ModernUI icons</b>, featuring 1200+ icons for you to choose from.",
             "relevantLinks": [
                 {
-                    "title": "ModernUI Icons",
+                    "title": "ModernUI Icons on NuGet",
                     "url": "https://www.nuget.org/packages/Wisej-3-ModernUI"
                 }
             ]
@@ -1511,7 +1511,7 @@
             "description-en": "<b>Tabler</b> icons are free and open source icons designed to make your website or app attractive, visually consistent and simply beautiful.",
             "relevantLinks": [
                 {
-                    "title": "Tabler Icons",
+                    "title": "Tabler Icons on NuGet",
                     "url": "https://www.nuget.org/packages/Wisej-3-TablerIcons"
                 }
             ]
@@ -1526,7 +1526,7 @@
             "description-en": "<b>Vaadin Icons</b> is a set of 600+ icons designed for web applications. Free to use, anywhere!",
             "relevantLinks": [
                 {
-                    "title": "Vaadin Icons",
+                    "title": "Vaadin Icons on NuGet",
                     "url": "https://www.nuget.org/packages/Wisej-3-VaadinIcons"
                 }
             ]
@@ -1541,7 +1541,7 @@
             "description-en": "The <b>Visual Studio Icon Library</b> contains application 4600+ icons that appear in Microsoft Visual Studio, Microsoft Windows, the Office system and other Microsoft software.",
             "relevantLinks": [
                 {
-                    "title": "Visual Studio Icons",
+                    "title": "Visual Studio Icons on NuGet",
                     "url": "https://www.nuget.org/packages/Wisej-3-VisualStudioIcons"
                 }
             ]
