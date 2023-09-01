@@ -10,10 +10,10 @@ namespace Wisej.Web.Ext.DevExpressDashboard.Demo
 		/// </summary>
 		static void Main()
 		{
-			Application.MainPage = new MainView();
-
 			//create temp folder (will be deleted when user closes application)
 			System.IO.Directory.CreateDirectory("./Temp");
+
+			Application.MainPage = new MainView();
 
 			//delete temp folder when user closes application
 			Application.ApplicationExit += new System.EventHandler(DeleteTempFolder);

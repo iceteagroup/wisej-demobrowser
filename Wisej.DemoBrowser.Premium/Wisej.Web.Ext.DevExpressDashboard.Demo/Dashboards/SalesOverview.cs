@@ -1,4 +1,5 @@
-﻿using DevExpress.DashboardCommon;
+﻿using DevExpress.CodeParser;
+using DevExpress.DashboardCommon;
 using DevExpress.DashboardWeb;
 using DevExpress.DataAccess.Json;
 using DevExpress.DataAccess.Web;
@@ -29,6 +30,11 @@ namespace Wisej.Web.Ext.DevExpressDashboard.Demo.Dashboards
 			var storage = CreateDataSourceStorage();
 
 			this._configurator.SetDataSourceStorage(storage);
+
+			//copy the dashboard xml file to the temp folder so that it is loaded as the first dashboard
+			System.IO.File.Copy(Application.MapPath("Data/Dashboards/dashboard1.xml"), Application.MapPath("Temp/dashboard1.xml"),true);
+
+			//set the folder to store the dashboards in
 			this._configurator.SetDashboardStorage(new DashboardFileStorage(Application.MapPath("Temp")));
 		}
 
