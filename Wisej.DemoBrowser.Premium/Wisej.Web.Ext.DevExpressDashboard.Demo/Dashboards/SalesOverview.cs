@@ -29,7 +29,7 @@ namespace Wisej.Web.Ext.DevExpressDashboard.Demo.Dashboards
 			var storage = CreateDataSourceStorage();
 
 			this._configurator.SetDataSourceStorage(storage);
-			this._configurator.SetDashboardStorage(new DashboardFileStorage(Application.MapPath("Data/Dashboards")));
+			this._configurator.SetDashboardStorage(new DashboardFileStorage(Application.MapPath("Temp")));
 		}
 
 		private DataSourceInMemoryStorage CreateDataSourceStorage()

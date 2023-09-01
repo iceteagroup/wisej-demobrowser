@@ -21,7 +21,7 @@ namespace Wisej.Web.Ext.DevExpressDashboard.Demo
 
 		static void DeleteTempFolder(object sender, System.EventArgs e)
 		{
-			System.IO.Directory.Delete("./Temp");
+			System.IO.Directory.Delete("./Temp",true);
 		}
 
 		//
