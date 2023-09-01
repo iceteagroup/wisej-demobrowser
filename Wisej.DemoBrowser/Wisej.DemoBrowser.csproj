@@ -57,6 +57,7 @@
 		<None Remove="Images\Icon Buy.png" />
 		<None Remove="Images\Icon Contact.png" />
 		<None Remove="Images\Icon Free Trial.png" />
+		<None Remove="Images\link-icon.png" />
 		<None Remove="Images\search.png" />
 		<None Remove="Images\splash.png" />
 		<None Remove="Images\strike.png" />
@@ -89,6 +90,7 @@
 	  <EmbeddedResource Include="Images\Icon Buy.png" />
 	  <EmbeddedResource Include="Images\Icon Contact.png" />
 	  <EmbeddedResource Include="Images\Icon Free Trial.png" />
+	  <EmbeddedResource Include="Images\link-icon.png" />
 	  <EmbeddedResource Include="Images\search.png" />
 	  <EmbeddedResource Include="Images\splash.png" />
 	  <EmbeddedResource Include="Images\strike.png" />

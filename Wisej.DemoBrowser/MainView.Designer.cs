@@ -331,7 +331,7 @@ namespace Wisej.DemoBrowser
 			this.panelComponents.ResizableEdges = Wisej.Web.AnchorStyles.Right;
 			this.panelComponents.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("panelComponents.ResponsiveProfiles"))));
 			this.panelComponents.ShowHeader = true;
-			this.panelComponents.Size = new System.Drawing.Size(345, 578);
+			this.panelComponents.Size = new System.Drawing.Size(345, 605);
 			this.panelComponents.TabIndex = 1;
 			this.panelComponents.TabStop = true;
 			this.panelComponents.Text = "Components";
@@ -440,7 +440,7 @@ namespace Wisej.DemoBrowser
 			this.treeViewComponents.PathSeparator = "/";
 			this.treeViewComponents.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("treeViewComponents.ResponsiveProfiles"))));
 			this.treeViewComponents.SelectedImageIndex = 0;
-			this.treeViewComponents.Size = new System.Drawing.Size(268, 438);
+			this.treeViewComponents.Size = new System.Drawing.Size(268, 465);
 			this.treeViewComponents.TabIndex = 1;
 			this.treeViewComponents.AfterSelect += new Wisej.Web.TreeViewEventHandler(this.treeViewComponents_AfterSelect);
 			// 
@@ -455,7 +455,7 @@ namespace Wisej.DemoBrowser
 			this.panelMain.Name = "panelMain";
 			this.panelMain.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("panelMain.ResponsiveProfiles"))));
 			this.panelMain.ShowCloseButton = false;
-			this.panelMain.Size = new System.Drawing.Size(1427, 578);
+			this.panelMain.Size = new System.Drawing.Size(1427, 605);
 			this.panelMain.TabIndex = 2;
 			this.panelMain.TabStop = true;
 			this.panelMain.Text = "Test";
@@ -463,7 +463,7 @@ namespace Wisej.DemoBrowser
 			// panelLinks
 			// 
 			this.panelLinks.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Right)));
-			this.panelLinks.BackColor = System.Drawing.Color.FromName("@controlText");
+			this.panelLinks.BackColor = System.Drawing.Color.FromArgb(97, 105, 108);
 			this.panelLinks.BorderStyle = Wisej.Web.BorderStyle.Solid;
 			this.panelLinks.Controls.Add(this.buttonRelevantLinks);
 			this.panelLinks.Controls.Add(this.line1);
@@ -484,7 +484,7 @@ namespace Wisej.DemoBrowser
 			this.buttonRelevantLinks.AppearanceKey = "button-demo";
 			this.buttonRelevantLinks.BackColor = System.Drawing.Color.Transparent;
 			this.buttonRelevantLinks.BackgroundImageLayout = Wisej.Web.ImageLayout.Center;
-			this.buttonRelevantLinks.BackgroundImageSource = "Images/link.png";
+			this.buttonRelevantLinks.BackgroundImageSource = "Images/link-icon.png?color=white";
 			this.buttonRelevantLinks.Dock = Wisej.Web.DockStyle.Top;
 			this.buttonRelevantLinks.Focusable = false;
 			this.buttonRelevantLinks.InitScript = "this.getChildControl(\"arrow\").setWidth(0);\r\nthis.getChildControl(\"arrow\").setHeig" +
@@ -493,7 +493,7 @@ namespace Wisej.DemoBrowser
 			this.buttonRelevantLinks.Name = "buttonRelevantLinks";
 			this.buttonRelevantLinks.Size = new System.Drawing.Size(62, 55);
 			this.buttonRelevantLinks.TabIndex = 4;
-			this.buttonRelevantLinks.ItemClicked += new Wisej.Web.MenuButtonItemClickedEventHandler(this.buttonRelevantLinks_ItemClicked);
+			this.buttonRelevantLinks.Click += new System.EventHandler(this.buttonRelevantLinks_Click);
 			// 
 			// line1
 			// 
@@ -551,7 +551,7 @@ namespace Wisej.DemoBrowser
 			this.panelDemoInfo.Padding = new Wisej.Web.Padding(36, 12, 85, 12);
 			this.panelDemoInfo.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("panelDemoInfo.ResponsiveProfiles"))));
 			this.panelDemoInfo.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("panelDemoInfo.ResponsiveProfiles1"))));
-			this.panelDemoInfo.Size = new System.Drawing.Size(1427, 578);
+			this.panelDemoInfo.Size = new System.Drawing.Size(1427, 605);
 			this.panelDemoInfo.TabIndex = 28;
 			// 
 			// panelDemoHost
@@ -565,7 +565,7 @@ namespace Wisej.DemoBrowser
 			this.panelDemoHost.Name = "panelDemoHost";
 			this.panelDemoHost.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("panelDemoHost.ResponsiveProfiles"))));
 			this.panelDemoHost.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("panelDemoHost.ResponsiveProfiles1"))));
-			this.panelDemoHost.Size = new System.Drawing.Size(1306, 407);
+			this.panelDemoHost.Size = new System.Drawing.Size(1306, 434);
 			this.panelDemoHost.TabIndex = 27;
 			// 
 			// panelDemo
@@ -580,7 +580,7 @@ namespace Wisej.DemoBrowser
 			this.panelDemo.Name = "panelDemo";
 			this.panelDemo.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("panelDemo.ResponsiveProfiles"))));
 			this.panelDemo.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("panelDemo.ResponsiveProfiles1"))));
-			this.panelDemo.Size = new System.Drawing.Size(1306, 332);
+			this.panelDemo.Size = new System.Drawing.Size(1306, 359);
 			this.panelDemo.TabIndex = 21;
 			this.panelDemo.TabStop = true;
 			// 
@@ -751,7 +751,7 @@ namespace Wisej.DemoBrowser
 			this.labelNavigationSeparator1.ForeColor = System.Drawing.Color.FromName("@highlightText-demo");
 			this.labelNavigationSeparator1.Location = new System.Drawing.Point(110, 3);
 			this.labelNavigationSeparator1.Name = "labelNavigationSeparator1";
-			this.labelNavigationSeparator1.Size = new System.Drawing.Size(12, 15);
+			this.labelNavigationSeparator1.Size = new System.Drawing.Size(14, 18);
 			this.labelNavigationSeparator1.TabIndex = 6;
 			this.labelNavigationSeparator1.Text = ">";
 			// 
@@ -760,7 +760,7 @@ namespace Wisej.DemoBrowser
 			this.labelNaivgationCategory.AutoSize = true;
 			this.labelNaivgationCategory.Font = new System.Drawing.Font("@defaultDemo", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
 			this.labelNaivgationCategory.ForeColor = System.Drawing.Color.FromName("@demoPanelText-demo");
-			this.labelNaivgationCategory.Location = new System.Drawing.Point(128, 3);
+			this.labelNaivgationCategory.Location = new System.Drawing.Point(130, 3);
 			this.labelNaivgationCategory.Name = "labelNaivgationCategory";
 			this.labelNaivgationCategory.Size = new System.Drawing.Size(57, 22);
 			this.labelNaivgationCategory.TabIndex = 7;
@@ -771,9 +771,9 @@ namespace Wisej.DemoBrowser
 			this.labelNavigationSeparator2.AutoSize = true;
 			this.labelNavigationSeparator2.Font = new System.Drawing.Font("@defaultBold", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
 			this.labelNavigationSeparator2.ForeColor = System.Drawing.Color.FromName("@highlightText-demo");
-			this.labelNavigationSeparator2.Location = new System.Drawing.Point(191, 3);
+			this.labelNavigationSeparator2.Location = new System.Drawing.Point(193, 3);
 			this.labelNavigationSeparator2.Name = "labelNavigationSeparator2";
-			this.labelNavigationSeparator2.Size = new System.Drawing.Size(12, 15);
+			this.labelNavigationSeparator2.Size = new System.Drawing.Size(14, 18);
 			this.labelNavigationSeparator2.TabIndex = 8;
 			this.labelNavigationSeparator2.Text = ">";
 			// 
@@ -782,7 +782,7 @@ namespace Wisej.DemoBrowser
 			this.labelNavigationControl.AutoSize = true;
 			this.labelNavigationControl.Font = new System.Drawing.Font("@defaultDemo", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
 			this.labelNavigationControl.ForeColor = System.Drawing.Color.FromName("@demoPanelText-demo");
-			this.labelNavigationControl.Location = new System.Drawing.Point(209, 3);
+			this.labelNavigationControl.Location = new System.Drawing.Point(213, 3);
 			this.labelNavigationControl.Name = "labelNavigationControl";
 			this.labelNavigationControl.Size = new System.Drawing.Size(87, 22);
 			this.labelNavigationControl.TabIndex = 10;
@@ -793,9 +793,9 @@ namespace Wisej.DemoBrowser
 			this.labelNavigationSeparator3.AutoSize = true;
 			this.labelNavigationSeparator3.Font = new System.Drawing.Font("@defaultBold", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
 			this.labelNavigationSeparator3.ForeColor = System.Drawing.Color.FromName("@highlightText-demo");
-			this.labelNavigationSeparator3.Location = new System.Drawing.Point(302, 3);
+			this.labelNavigationSeparator3.Location = new System.Drawing.Point(306, 3);
 			this.labelNavigationSeparator3.Name = "labelNavigationSeparator3";
-			this.labelNavigationSeparator3.Size = new System.Drawing.Size(12, 15);
+			this.labelNavigationSeparator3.Size = new System.Drawing.Size(14, 18);
 			this.labelNavigationSeparator3.TabIndex = 11;
 			this.labelNavigationSeparator3.Text = ">";
 			// 
@@ -804,7 +804,7 @@ namespace Wisej.DemoBrowser
 			this.labelNavigationDemo.AutoSize = true;
 			this.labelNavigationDemo.Font = new System.Drawing.Font("@defaultBoldDemo", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
 			this.labelNavigationDemo.ForeColor = System.Drawing.Color.FromName("@highlightText-demo");
-			this.labelNavigationDemo.Location = new System.Drawing.Point(320, 3);
+			this.labelNavigationDemo.Location = new System.Drawing.Point(326, 3);
 			this.labelNavigationDemo.Name = "labelNavigationDemo";
 			this.labelNavigationDemo.Size = new System.Drawing.Size(123, 22);
 			this.labelNavigationDemo.TabIndex = 9;
@@ -812,13 +812,13 @@ namespace Wisej.DemoBrowser
 			// 
 			// MainView
 			// 
-			this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
+			this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 19F);
 			this.AutoScaleMode = Wisej.Web.AutoScaleMode.Font;
 			this.Controls.Add(this.panelMain);
 			this.Controls.Add(this.panelComponents);
 			this.Controls.Add(this.panelMenu);
 			this.Name = "MainView";
-			this.Size = new System.Drawing.Size(1772, 655);
+			this.Size = new System.Drawing.Size(1772, 682);
 			this.Text = "Wisej Demo Browser";
 			this.Load += new System.EventHandler(this.MainView_Load);
 			this.panelMenu.ResumeLayout(false);

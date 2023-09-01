@@ -5,6 +5,7 @@ using System.IO;
 using System.Linq;
 using System.Net;
 using Wisej.Core;
+using Wisej.DemoBrowser.Controls;
 using Wisej.Web;
 
 namespace Wisej.DemoBrowser
@@ -293,12 +294,7 @@ namespace Wisej.DemoBrowser
 				this.pictureBoxControl.ImageSource = info?.imageSource ?? "";
 				this.labelTitle.Text = $"{control} {title ?? demoInstance.Name}";
 
-				this.buttonRelevantLinks.MenuItems.Clear();
-				if (info.relevantLinks is DynamicObject[] relevantLinks)
-				{
-					var links = relevantLinks.Select(r => new MenuItem(((dynamic)r).title) { Tag = r });
-					this.buttonRelevantLinks.MenuItems.AddRange(links.ToArray());
-				}
+				this.buttonRelevantLinks.Tag = info.relevantLinks;
 			}
 		}
 
@@ -524,9 +520,18 @@ namespace Wisej.DemoBrowser
 			Application.Navigate("https://wisej.com/", "_blank");
 		}
 
-		private void buttonRelevantLinks_ItemClicked(object sender, MenuButtonItemClickedEventArgs e)
+		private void buttonRelevantLinks_Click(object sender, EventArgs e)
 		{
-			Application.Navigate(((dynamic)e.Item.Tag).url, "_blank");
+			if (this._popup == null)
+				this._popup = new LinksPopup();
+
+			var links = (DynamicObject[])this.buttonRelevantLinks.Tag;
+			if (links != null && links.Length > 0)
+			{
+				this._popup.Populate(links);
+				this._popup.ShowPopup(this.buttonRelevantLinks);
+			}
 		}
+		private LinksPopup _popup = null;
 	}
 }

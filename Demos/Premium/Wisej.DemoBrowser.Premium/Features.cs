@@ -35,5 +35,10 @@ namespace Wisej.DemoBrowser.Premium
 		{
 			Application.Navigate($"/Ignite");
 		}
-    }
+
+		private void panelDashboard_Click(object sender, EventArgs e)
+		{
+			Application.Navigate("/DxDashboard");
+		}
+	}
 }
