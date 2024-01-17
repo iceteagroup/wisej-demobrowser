@@ -227,6 +227,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Premium", "Premium", "{2EAE
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wisej.DemoBrowser.Premium", "Demos\Premium\Wisej.DemoBrowser.Premium\Wisej.DemoBrowser.Premium.csproj", "{64B23789-1603-4398-AB06-85E0126F5A59}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wisej.DemoBrowser.Signature", "Demos\Extensions\Wisej.DemoBrowser.Signature\Wisej.DemoBrowser.Signature.csproj", "{77192649-282B-426D-BBE8-C96AD1B6B0D0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -613,6 +615,10 @@ Global
 		{64B23789-1603-4398-AB06-85E0126F5A59}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{64B23789-1603-4398-AB06-85E0126F5A59}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{64B23789-1603-4398-AB06-85E0126F5A59}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77192649-282B-426D-BBE8-C96AD1B6B0D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77192649-282B-426D-BBE8-C96AD1B6B0D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77192649-282B-426D-BBE8-C96AD1B6B0D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77192649-282B-426D-BBE8-C96AD1B6B0D0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -723,6 +729,7 @@ Global
 		{343733B8-6380-46B4-810F-CF0A676EB3B2} = {4E707CA1-F43B-4DA6-9260-72778A573939}
 		{2EAEA3F1-D794-40A5-97D7-3A882A5C80C8} = {9F6D8234-C001-4350-8206-8396FBCA9D7E}
 		{64B23789-1603-4398-AB06-85E0126F5A59} = {2EAEA3F1-D794-40A5-97D7-3A882A5C80C8}
+		{77192649-282B-426D-BBE8-C96AD1B6B0D0} = {C51A27C9-479B-478F-8158-62189CA32E59}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7FE19C61-811C-4966-BC10-2A1D53829B5A}
