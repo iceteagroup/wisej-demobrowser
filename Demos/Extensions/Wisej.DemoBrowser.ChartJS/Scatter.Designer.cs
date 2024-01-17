@@ -57,7 +57,6 @@
             this.chartJS1.Options.DataLabel.TextStrokeColor = System.Drawing.Color.Empty;
             optionsAxisGridLines1.ZeroLineColor = System.Drawing.Color.Empty;
             optionScalesAxesX1.GridLines = optionsAxisGridLines1;
-            optionScalesAxesX1.id = null;
             optionScalesAxesX1.Type = Wisej.Web.Ext.ChartJS.ScaleType.Linear;
             this.chartJS1.Options.Scales.xAxes = new Wisej.Web.Ext.ChartJS.OptionScalesAxesX[] {
         optionScalesAxesX1};

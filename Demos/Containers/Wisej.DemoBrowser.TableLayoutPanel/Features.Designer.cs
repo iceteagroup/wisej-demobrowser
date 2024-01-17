@@ -184,7 +184,7 @@
             optionsAxisGrid1.Display = false;
             optionsAxisGrid1.ZeroLineColor = System.Drawing.Color.Empty;
             optionScalesAxesX1.Grid = optionsAxisGrid1;
-            optionScalesAxesX1.id = null;
+
             optionScalesAxesX1.Ticks.Color = System.Drawing.Color.FromArgb(234, 106, 71);
             optionScalesAxesX1.Title.Color = System.Drawing.Color.FromArgb(234, 106, 71);
             this.chartJS35.Options.Scales.xAxes = new Wisej.Web.Ext.ChartJS3.OptionScalesAxesX[] {
@@ -193,7 +193,7 @@
             optionsAxisGrid2.Display = false;
             optionsAxisGrid2.ZeroLineColor = System.Drawing.Color.Empty;
             optionScalesAxesY1.Grid = optionsAxisGrid2;
-            optionScalesAxesY1.id = null;
+
             optionScalesAxesY1.Ticks.Color = System.Drawing.Color.FromArgb(234, 106, 71);
             optionScalesAxesY1.Title.Color = System.Drawing.Color.FromArgb(234, 106, 71);
             this.chartJS35.Options.Scales.yAxes = new Wisej.Web.Ext.ChartJS3.OptionScalesAxesY[] {
@@ -325,7 +325,7 @@
             optionsAxisGrid3.Display = false;
             optionsAxisGrid3.ZeroLineColor = System.Drawing.Color.Empty;
             optionScalesAxesX2.Grid = optionsAxisGrid3;
-            optionScalesAxesX2.id = null;
+
             optionScalesAxesX2.Ticks.Color = System.Drawing.Color.FromName("@controlText");
             optionScalesAxesX2.Title.Color = System.Drawing.Color.FromName("@controlText");
             this.chartJS31.Options.Scales.xAxes = new Wisej.Web.Ext.ChartJS3.OptionScalesAxesX[] {
@@ -334,7 +334,7 @@
             optionsAxisGrid4.Display = false;
             optionsAxisGrid4.ZeroLineColor = System.Drawing.Color.Empty;
             optionScalesAxesY2.Grid = optionsAxisGrid4;
-            optionScalesAxesY2.id = null;
+
             optionScalesAxesY2.Ticks.Color = System.Drawing.Color.FromName("@controlText");
             optionScalesAxesY2.Title.Color = System.Drawing.Color.FromName("@controlText");
             this.chartJS31.Options.Scales.yAxes = new Wisej.Web.Ext.ChartJS3.OptionScalesAxesY[] {
@@ -624,7 +624,7 @@
             optionsAxisGrid5.Display = false;
             optionsAxisGrid5.ZeroLineColor = System.Drawing.Color.Empty;
             optionScalesAxesX3.Grid = optionsAxisGrid5;
-            optionScalesAxesX3.id = null;
+
             optionScalesAxesX3.Ticks.Color = System.Drawing.Color.FromName("@controlText");
             optionScalesAxesX3.Title.Color = System.Drawing.Color.FromName("@controlText");
             this.chartJS34.Options.Scales.xAxes = new Wisej.Web.Ext.ChartJS3.OptionScalesAxesX[] {
@@ -633,7 +633,7 @@
             optionsAxisGrid6.Display = false;
             optionsAxisGrid6.ZeroLineColor = System.Drawing.Color.Empty;
             optionScalesAxesY3.Grid = optionsAxisGrid6;
-            optionScalesAxesY3.id = null;
+
             optionScalesAxesY3.Ticks.Color = System.Drawing.Color.FromName("@controlText");
             optionScalesAxesY3.Title.Color = System.Drawing.Color.FromName("@controlText");
             this.chartJS34.Options.Scales.yAxes = new Wisej.Web.Ext.ChartJS3.OptionScalesAxesY[] {
