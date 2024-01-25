@@ -1,0 +1,146 @@
+
+[
+	{
+		"Id": "7c7f2b30-9456-442c-b9f8-2113daa4cddd",
+		"Timestamp": "2023-08-04T10:29:37.379",
+		"User": {
+			"Id": "1",
+			"Name": "User 1",
+			"ImageSource": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/644.jpg",
+			"BubbleColor": null
+		},
+		"Content": "<table>   <tr>     <th>Company</th>     <th>Contact</th>     <th>Country</th>   </tr>   <tr>     <td>Alfreds Futterkiste</td>     <td>Maria Anders</td>     <td>Germany</td>   </tr>   <tr>     <td>Centro comercial Moctezuma</td>     <td>Francisco Chang</td>     <td>Mexico</td>   </tr>   <tr>     <td>Ernst Handel</td>     <td>Roland Mendel</td>     <td>Austria</td>   </tr>   <tr>     <td>Island Trading</td>     <td>Helen Bennett</td>     <td>UK</td>   </tr>   <tr>     <td>Laughing Bacchus Winecellars</td>     <td>Yoshi Tannamuri</td>     <td>Canada</td>   </tr>   <tr>     <td>Magazzini Alimentari Riuniti</td>     <td>Giovanni Rovelli</td>     <td>Italy</td>   </tr> </table>",
+		"ContentType": null,
+		"UserData": null
+	},
+	{
+		"Id": "bb658240-5826-4133-9d15-c22e058c5abb",
+		"Timestamp": "2023-08-04T10:54:12.557",
+		"User": {
+			"Id": "1",
+			"Name": "User 1",
+			"ImageSource": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/248.jpg",
+			"BubbleColor": null
+		},
+		"Content": "<h1>My First Heading</h1> <p>My first paragraph.</p>",
+		"ContentType": null,
+		"UserData": null
+	},
+	{
+		"Id": "254e9176-9bbb-4245-9a84-214d0181975e",
+		"Timestamp": "2023-08-04T10:54:19.368",
+		"User": {
+			"Id": "1",
+			"Name": "User 1",
+			"ImageSource": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/248.jpg",
+			"BubbleColor": null
+		},
+		"Content": "<h1>This is heading 1</h1> <h2>This is heading 2</h2> <h3>This is heading 3</h3>",
+		"ContentType": null,
+		"UserData": null
+	},
+	{
+		"Id": "2f802cb7-5336-4bdd-ad53-99f079f7d7b8",
+		"Timestamp": "2023-08-04T10:59:00.526",
+		"User": {
+			"Id": "1",
+			"Name": "User 1",
+			"ImageSource": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/310.jpg",
+			"BubbleColor": null
+		},
+		"Content": "test",
+		"ContentType": null,
+		"UserData": null
+	},
+	{
+		"Id": "2bf9ff54-801a-420b-9c48-15096e03e568",
+		"Timestamp": "2023-08-04T10:59:07.467",
+		"User": {
+			"Id": "2",
+			"Name": "User 2",
+			"ImageSource": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/321.jpg",
+			"BubbleColor": null
+		},
+		"Content": "test",
+		"ContentType": null,
+		"UserData": null
+	},
+	{
+		"Id": "2ed640cf-3c65-4f7b-8c7c-c163f59ca047",
+		"Timestamp": "2023-08-04T10:59:16.292",
+		"User": {
+			"Id": "1",
+			"Name": "User 1",
+			"ImageSource": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/310.jpg",
+			"BubbleColor": null
+		},
+		"Content": "ok",
+		"ContentType": null,
+		"UserData": null
+	},
+	{
+		"Id": "bfff19fd-94a3-4d17-934a-627e4493afcc",
+		"Timestamp": "2023-08-04T10:59:23.739",
+		"User": {
+			"Id": "1",
+			"Name": "User 1",
+			"ImageSource": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/310.jpg",
+			"BubbleColor": null
+		},
+		"Content": "test test",
+		"ContentType": null,
+		"UserData": null
+	},
+	{
+		"Id": "95b76307-142a-4b4d-9069-76f655aaac14",
+		"Timestamp": "2024-01-21T14:35:50.100",
+		"User": {
+			"Id": "1",
+			"Name": "User 1",
+			"ImageSource": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1003.jpg",
+			"BubbleColor": null
+		},
+		"Content": "Hello",
+		"ContentType": null,
+		"UserData": null
+	},
+	{
+		"Id": "e021c36b-5b33-43f2-9f5b-c22dd94e713b",
+		"Timestamp": "2024-01-21T14:38:02.366",
+		"User": {
+			"Id": "1",
+			"Name": "User 1",
+			"ImageSource": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1160.jpg",
+			"BubbleColor": null
+		},
+		"Content": "1/21/2024 2:38:02 PM",
+		"ContentType": "date",
+		"UserData": null
+	},
+	{
+		"Id": "13ea939e-c250-4e56-88f2-5373b8238f60",
+		"Timestamp": "2024-01-21T14:38:06.775",
+		"User": {
+			"Id": "1",
+			"Name": "User 1",
+			"ImageSource": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1160.jpg",
+			"BubbleColor": null
+		},
+		"Content": "A/B/C/D/E/F",
+		"ContentType": "options",
+		"UserData": null
+	},
+	{
+		"Id": "481dcb39-a50b-439a-b598-7ff5325ef8bd",
+		"Timestamp": "2024-01-21T14:38:14.836",
+		"User": {
+			"Id": "1",
+			"Name": "User 1",
+			"ImageSource": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1160.jpg",
+			"BubbleColor": null
+		},
+		"Content": "J:\\Wisej.Web.Ext.ChatControl.Test\\TempFiles\\fiche-evaluation-progavancé.pdf",
+		"ContentType": "file",
+		"UserData": null
+	}
+]
