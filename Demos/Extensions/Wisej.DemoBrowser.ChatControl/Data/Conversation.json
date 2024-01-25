@@ -129,18 +129,5 @@
 		"Content": "A/B/C/D/E/F",
 		"ContentType": "options",
 		"UserData": null
-	},
-	{
-		"Id": "481dcb39-a50b-439a-b598-7ff5325ef8bd",
-		"Timestamp": "2024-01-21T14:38:14.836",
-		"User": {
-			"Id": "1",
-			"Name": "User 1",
-			"ImageSource": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1160.jpg",
-			"BubbleColor": null
-		},
-		"Content": "J:\\Wisej.Web.Ext.ChatControl.Test\\TempFiles\\fiche-evaluation-progavancé.pdf",
-		"ContentType": "file",
-		"UserData": null
 	}
 ]

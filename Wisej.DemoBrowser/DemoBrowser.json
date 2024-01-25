@@ -712,21 +712,21 @@
         ]
       }
     },
-    //"Chat": {
-    //  "Features": {
-    //    "sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Extensions/Wisej.DemoBrowser.BingWallpaper",
-    //    "assembly": "Features, Wisej.DemoBrowser.ChatControl.dll",
-    //    "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/DynamicImage.svg",
-    //    "docsUrl": "https://docs.wisej.com/extensions/extensions/bingwallpaper",
-    //    "description-en": "The <b>BingWallpaper</b> extender component enhances the Desktop control by adding Bing’s daily stunning wallpaper images. You can set the rotation interval, fade duration and number of images.",
-    //    "relevantLinks": [
-    //      {
-    //        "title": "BingWallpaper on NuGet",
-    //        "url": "https://www.nuget.org/packages/Wisej-3-BingWallpaper"
-    //      }
-    //    ]
-    //  }
-    //},
+    "Chat": {
+      "Features": {
+        "sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Extensions/Wisej.DemoBrowser.ChatControl",
+        "assembly": "Features, Wisej.DemoBrowser.ChatControl.dll",
+        "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/SendTestMail.svg",
+        "docsUrl": "https://docs.wisej.com/extensions/extensions/ChatControl",
+        "description-en": "The <b>ChatControl</b> extension control enables users to integrate a Chat box component into their applications",
+        "relevantLinks": [
+          {
+            "title": "ChatControl on NuGet",
+            "url": "https://www.nuget.org/packages/Wisej-3-Chat"
+          }
+        ]
+      }
+    },
     "Bubbles": {
       "Features": {
         "sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Extensions/Wisej.DemoBrowser.Bubbles",

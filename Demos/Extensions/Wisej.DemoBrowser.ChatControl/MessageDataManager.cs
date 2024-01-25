@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using System.Reflection;
 using Newtonsoft.Json;
 using Wisej.Core;
 using Wisej.Web;
@@ -9,29 +10,35 @@ namespace Wisej.DemoBrowser.ChatControl
 {
 	public class MessageDataManager
 	{
+        private static Stream ResourceStream => Assembly.GetExecutingAssembly().GetManifestResourceStream("Wisej.DemoBrowser.ChatControl.Data.Conversation.json");
 
-		private static string PATH = Application.MapPath("Data/Conversation.json");
-
-		public static Message[] GetDefaultMessages()
+        public static Message[] GetDefaultMessages()
 		{
             // Read text from embedded resource.
-            // 
-            var text = File.ReadAllText(PATH);
+            var text = Application.Session["Messages"] != null ? Application.Session["Messages"] : ReadText(ResourceStream);
 
             return JsonConvert.DeserializeObject<Message[]>(text);
-		}
+        }
 
-		public static void Save(Message message)
-		{
-			var text = File.ReadAllText(PATH);
-			var json = (object[])WisejSerializer.Parse(text);
-			var newJson = new dynamic[json.Length + 1];
+        private static string ReadText(Stream stream)
+        {
+            using (StreamReader reader = new StreamReader(stream))
+            {
+                return reader.ReadToEnd();
+            }
+        }
 
-			Array.Copy(json, newJson, json.Length);
+        public static void Save(Message message)
+        {
+            var text = Application.Session["Messages"] != null ? Application.Session["Messages"] : ReadText(ResourceStream);
+            var json = (object[])WisejSerializer.Parse(text);
+            var newJson = new dynamic[json.Length + 1];
 
-			newJson[newJson.Length - 1] = message;
+            Array.Copy(json, newJson, json.Length);
 
-			File.WriteAllText(PATH, WisejSerializer.Serialize(newJson, WisejSerializerOptions.Formatted));
-		}
+            newJson[newJson.Length - 1] = message;
+
+            Application.Session["Messages"] = WisejSerializer.Serialize(newJson, WisejSerializerOptions.Formatted);
+        }
 	}
 }

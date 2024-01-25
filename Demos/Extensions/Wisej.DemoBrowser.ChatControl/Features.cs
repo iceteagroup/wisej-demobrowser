@@ -26,10 +26,6 @@ namespace Wisej.DemoBrowser.ChatControl
 
         private Web.Panel panel1;
         private Web.Button buttonExport;
-        private Web.Button buttonSettings;
-        private Web.MenuItem clear;
-        private Web.MenuItem leftColor;
-        private Web.MenuItem rightColor;
         private Web.Panel panel2;
         private Web.FlexLayoutPanel flexLayoutPanelUsers;
         private Web.Label label1;
@@ -43,10 +39,6 @@ namespace Wisej.DemoBrowser.ChatControl
             Wisej.Web.ComponentTool componentTool3 = new Wisej.Web.ComponentTool();
             this.panel1 = new Wisej.Web.Panel();
             this.buttonExport = new Wisej.Web.Button();
-            this.buttonSettings = new Wisej.Web.Button();
-            this.clear = new Wisej.Web.MenuItem();
-            this.leftColor = new Wisej.Web.MenuItem();
-            this.rightColor = new Wisej.Web.MenuItem();
             this.panel2 = new Wisej.Web.Panel();
             this.flexLayoutPanelUsers = new Wisej.Web.FlexLayoutPanel();
             this.label1 = new Wisej.Web.Label();
@@ -60,7 +52,6 @@ namespace Wisej.DemoBrowser.ChatControl
             // 
             this.panel1.BackColor = System.Drawing.Color.FromName("@window");
             this.panel1.Controls.Add(this.buttonExport);
-            this.panel1.Controls.Add(this.buttonSettings);
             this.panel1.CssStyle = "border-radius: 0px;";
             this.panel1.Dock = Wisej.Web.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -74,47 +65,12 @@ namespace Wisej.DemoBrowser.ChatControl
             this.buttonExport.Dock = Wisej.Web.DockStyle.Top;
             this.buttonExport.Focusable = false;
             this.buttonExport.ImageSource = "file-zip";
-            this.buttonExport.Location = new System.Drawing.Point(0, 37);
+            this.buttonExport.Location = new System.Drawing.Point(0, 0);
             this.buttonExport.Name = "buttonExport";
             this.buttonExport.Padding = new Wisej.Web.Padding(8, 0, 8, 0);
             this.buttonExport.Size = new System.Drawing.Size(50, 39);
             this.buttonExport.TabIndex = 2;
-            // 
-            // buttonSettings
-            // 
-            this.buttonSettings.BackColor = System.Drawing.Color.FromName("@window");
-            this.buttonSettings.Dock = Wisej.Web.DockStyle.Top;
-            this.buttonSettings.Focusable = false;
-            this.buttonSettings.ImageSource = "icon-settings";
-            this.buttonSettings.Location = new System.Drawing.Point(0, 0);
-            this.buttonSettings.MenuItems.AddRange(new Wisej.Web.MenuItem[]
-            {
-                this.clear,
-                this.leftColor,
-                this.rightColor
-            });
-            this.buttonSettings.Name = "buttonSettings";
-            this.buttonSettings.Padding = new Wisej.Web.Padding(8, 0, 8, 0);
-            this.buttonSettings.Size = new System.Drawing.Size(50, 37);
-            this.buttonSettings.TabIndex = 0;
-            // 
-            // clear
-            // 
-            this.clear.Index = 0;
-            this.clear.Name = "clear";
-            this.clear.Text = "Clear";
-            // 
-            // leftColor
-            // 
-            this.leftColor.Index = 1;
-            this.leftColor.Name = "leftColor";
-            this.leftColor.Text = "Left Bubble Color";
-            // 
-            // rightColor
-            // 
-            this.rightColor.Index = 2;
-            this.rightColor.Name = "rightColor";
-            this.rightColor.Text = "Right Bubble Color";
+            this.buttonExport.Click += new System.EventHandler(this.buttonExport_Click);
             // 
             // panel2
             // 
@@ -174,6 +130,13 @@ namespace Wisej.DemoBrowser.ChatControl
                 componentTool2,
                 componentTool3
             });
+            this.chatBox1.SendMessage += new Wisej.Web.Ext.ChatControl.SendMessageEventHandler(this.chatBox1_SendMessage);
+            this.chatBox1.TypingStart += new System.EventHandler(this.chatBox1_TypingStart);
+            this.chatBox1.TypingEnd += new System.EventHandler(this.chatBox1_TypingEnd);
+            this.chatBox1.MessageActionInvoke += new System.EventHandler<object>(this.chatBox1_MessageActionInvoke);
+            this.chatBox1.ToolClick += new Wisej.Web.ToolClickEventHandler(this.chatBox1_ToolClick);
+            this.chatBox1.FormatMessage += new Wisej.Web.Ext.ChatControl.FormatMessageEventHandler(this.chatBox1_FormatMessage);
+            this.chatBox1.Disposed += new System.EventHandler(this.ChatWindow_Disposed);
             // 
             // upload1
             // 
@@ -184,6 +147,7 @@ namespace Wisej.DemoBrowser.ChatControl
             this.upload1.TabIndex = 7;
             this.upload1.Text = "upload1";
             this.upload1.Visible = false;
+            this.upload1.Uploaded += new Wisej.Web.UploadedEventHandler(this.upload1_Uploaded);
             // 
             // Features
             // 
