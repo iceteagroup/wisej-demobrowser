@@ -1249,6 +1249,21 @@
         ]
       }
     },
+    "Tesseract": {
+      "Features": {
+        "sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Extensions/Wisej.DemoBrowser.Tesseract",
+        "assembly": "Features, Wisej.DemoBrowser.Tesseract.dll",
+        "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/CameraOutline.svg",
+        "docsUrl": "https://docs.wisej.com/extensions/extensions/tesseract/api/tesseract",
+        "description-en": "The <b>Tesseract</b> extension provides a wrapper for Tesseract.JS, a JavaScript library for real-time character detection: https://tesseract.projectnaptha.com/.",
+        "relevantLinks": [
+          {
+            "title": "Tesseract on NuGet",
+            "url": "https://www.nuget.org/packages/Wisej-3-Tesseract"
+          }
+        ]
+      }
+    },
     "TinyEditor": {
       "Features": {
         "sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Extensions/Wisej.DemoBrowser.TinyEditor",

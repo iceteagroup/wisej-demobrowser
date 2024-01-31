@@ -168,6 +168,7 @@
 	  <ProjectReference Include="..\Demos\Extensions\Wisej.DemoBrowser.RibbonBar\Wisej.DemoBrowser.RibbonBar.csproj" />
 	  <ProjectReference Include="..\Demos\Extensions\Wisej.DemoBrowser.Signature\Wisej.DemoBrowser.Signature.csproj" />
 	  <ProjectReference Include="..\Demos\Extensions\Wisej.DemoBrowser.Speech\Wisej.DemoBrowser.Speech.csproj" />
+		<ProjectReference Include="..\Demos\Extensions\Wisej.DemoBrowser.Tesseract\Wisej.DemoBrowser.Tesseract.csproj" />
 	  <ProjectReference Include="..\Demos\Extensions\Wisej.DemoBrowser.TinyEditor\Wisej.DemoBrowser.TinyEditor.csproj" />
 	  <ProjectReference Include="..\Demos\Extensions\Wisej.DemoBrowser.TinyMCE\Wisej.DemoBrowser.TinyMCE.csproj" />
 	  <ProjectReference Include="..\Demos\Extensions\Wisej.DemoBrowser.TourPanel\Wisej.DemoBrowser.TourPanel.csproj" />
