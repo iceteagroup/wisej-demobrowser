@@ -29,7 +29,6 @@
 		private void InitializeComponent()
 		{
 			this.components = new System.ComponentModel.Container();
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Features));
 			this.pictureBox1 = new Wisej.Web.PictureBox();
 			this.buttonScan1 = new Wisej.Web.Button();
 			this.button2 = new Wisej.Web.Button();
@@ -44,29 +43,34 @@
 			this.tabPage4 = new Wisej.Web.TabPage();
 			this.camera1 = new Wisej.Web.Ext.Camera.Camera();
 			this.tesseract1 = new Wisej.Ext.Tesseract.Tesseract(this.components);
+			this.flowLayoutPanel1 = new Wisej.Web.FlowLayoutPanel();
+			this.panel1 = new Wisej.Web.Panel();
+			this.textBox_scanResult = new Wisej.Web.TextBox();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
 			this.tabControl1.SuspendLayout();
 			this.tabPage1.SuspendLayout();
 			this.tabPage2.SuspendLayout();
 			this.tabPage3.SuspendLayout();
 			this.tabPage4.SuspendLayout();
+			this.flowLayoutPanel1.SuspendLayout();
+			this.panel1.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// pictureBox1
 			// 
-			this.pictureBox1.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Left | Wisej.Web.AnchorStyles.Right)));
-			this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-			this.pictureBox1.Location = new System.Drawing.Point(23, 25);
+			this.pictureBox1.Anchor = Wisej.Web.AnchorStyles.None;
+			this.pictureBox1.ImageSource = "ImagesToScan\\frogText.png";
+			this.pictureBox1.Location = new System.Drawing.Point(3, 3);
 			this.pictureBox1.Name = "pictureBox1";
-			this.pictureBox1.Size = new System.Drawing.Size(654, 313);
+			this.pictureBox1.Size = new System.Drawing.Size(489, 345);
 			this.pictureBox1.SizeMode = Wisej.Web.PictureBoxSizeMode.Zoom;
 			// 
 			// buttonScan1
 			// 
 			this.buttonScan1.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Left | Wisej.Web.AnchorStyles.Right)));
-			this.buttonScan1.Location = new System.Drawing.Point(722, 125);
+			this.buttonScan1.Location = new System.Drawing.Point(65, 93);
 			this.buttonScan1.Name = "buttonScan1";
-			this.buttonScan1.Size = new System.Drawing.Size(256, 37);
+			this.buttonScan1.Size = new System.Drawing.Size(457, 37);
 			this.buttonScan1.TabIndex = 0;
 			this.buttonScan1.Text = "Scan Picturebox Image for Text";
 			this.buttonScan1.Click += new System.EventHandler(this.buttonScan1_Click);
@@ -104,10 +108,11 @@
             "webDevelopment.jpg",
             "wisej-logo.png"});
 			this.comboBox1.LabelText = "Select image...";
-			this.comboBox1.Location = new System.Drawing.Point(722, 42);
+			this.comboBox1.Location = new System.Drawing.Point(65, 18);
 			this.comboBox1.Name = "comboBox1";
-			this.comboBox1.Size = new System.Drawing.Size(237, 53);
+			this.comboBox1.Size = new System.Drawing.Size(457, 53);
 			this.comboBox1.TabIndex = 8;
+			this.comboBox1.SelectedItemChanged += new System.EventHandler(this.comboBox1_SelectedItemChanged);
 			// 
 			// tabControl1
 			// 
@@ -124,9 +129,7 @@
 			// 
 			// tabPage1
 			// 
-			this.tabPage1.Controls.Add(this.comboBox1);
-			this.tabPage1.Controls.Add(this.buttonScan1);
-			this.tabPage1.Controls.Add(this.pictureBox1);
+			this.tabPage1.Controls.Add(this.flowLayoutPanel1);
 			this.tabPage1.Location = new System.Drawing.Point(1, 40);
 			this.tabPage1.Name = "tabPage1";
 			this.tabPage1.Size = new System.Drawing.Size(1101, 364);
@@ -174,20 +177,54 @@
 			this.camera1.TabIndex = 0;
 			this.camera1.Text = "camera1";
 			// 
+			// flowLayoutPanel1
+			// 
+			this.flowLayoutPanel1.AutoScroll = true;
+			this.flowLayoutPanel1.Controls.Add(this.pictureBox1);
+			this.flowLayoutPanel1.Controls.Add(this.panel1);
+			this.flowLayoutPanel1.Dock = Wisej.Web.DockStyle.Fill;
+			this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+			this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+			this.flowLayoutPanel1.Size = new System.Drawing.Size(1101, 364);
+			this.flowLayoutPanel1.TabIndex = 10;
+			// 
+			// panel1
+			// 
+			this.panel1.Anchor = Wisej.Web.AnchorStyles.None;
+			this.panel1.Controls.Add(this.textBox_scanResult);
+			this.panel1.Controls.Add(this.comboBox1);
+			this.panel1.Controls.Add(this.buttonScan1);
+			this.panel1.Location = new System.Drawing.Point(498, 4);
+			this.panel1.Name = "panel1";
+			this.panel1.Size = new System.Drawing.Size(600, 343);
+			this.panel1.TabIndex = 11;
+			// 
+			// textBox_scanResult
+			// 
+			this.textBox_scanResult.LabelText = "Result:";
+			this.textBox_scanResult.Location = new System.Drawing.Point(74, 174);
+			this.textBox_scanResult.Multiline = true;
+			this.textBox_scanResult.Name = "textBox_scanResult";
+			this.textBox_scanResult.Size = new System.Drawing.Size(447, 141);
+			this.textBox_scanResult.TabIndex = 9;
+			// 
 			// Features
 			// 
 			this.AutoScroll = true;
 			this.Controls.Add(this.tabControl1);
 			this.Name = "Features";
 			this.Size = new System.Drawing.Size(1152, 474);
+			this.Load += new System.EventHandler(this.Features_Load);
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
 			this.tabControl1.ResumeLayout(false);
 			this.tabPage1.ResumeLayout(false);
-			this.tabPage1.PerformLayout();
 			this.tabPage2.ResumeLayout(false);
 			this.tabPage2.PerformLayout();
 			this.tabPage3.ResumeLayout(false);
 			this.tabPage4.ResumeLayout(false);
+			this.flowLayoutPanel1.ResumeLayout(false);
+			this.panel1.ResumeLayout(false);
+			this.panel1.PerformLayout();
 			this.ResumeLayout(false);
 
 		}
@@ -207,5 +244,8 @@
 		private Web.Upload upload1;
 		private Web.Ext.Camera.Camera camera1;
 		private Ext.Tesseract.Tesseract tesseract1;
+		private Web.FlowLayoutPanel flowLayoutPanel1;
+		private Web.Panel panel1;
+		private Web.TextBox textBox_scanResult;
 	}
 }

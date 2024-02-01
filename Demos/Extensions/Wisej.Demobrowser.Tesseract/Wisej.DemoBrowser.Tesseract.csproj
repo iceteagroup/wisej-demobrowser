@@ -14,14 +14,22 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="ImagesToScan\frogText.png" />
+	  <None Remove="ImagesToScan\webDevelopment.jpg" />
+	  <None Remove="ImagesToScan\wisej-logo.png" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <EmbeddedResource Include="ImagesToScan\frogText.png" />
+	  <EmbeddedResource Include="ImagesToScan\webDevelopment.jpg" />
+	  <EmbeddedResource Include="ImagesToScan\wisej-logo.png" />
+	</ItemGroup>
+
+	<ItemGroup>
 		<PackageReference Include="Wisej-3" Version="3.5.*-*" />
 		<PackageReference Include="Wisej-3-Camera" Version="3.5.*-*" />
 		<PackageReference Include="Wisej-3-Tesseract" Version="3.5.4" />
 		<ProjectReference Include="..\..\..\Wisej.DemoBrowser.Common\Wisej.DemoBrowser.Common.csproj" />
-	</ItemGroup>
-
-	<ItemGroup>
-	  <Folder Include="ImagesToScan\" />
 	</ItemGroup>
 
 	<ItemGroup>
