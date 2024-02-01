@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Drawing;
 using System.Linq;
+using Wisej.Core;
 using Wisej.Demobrowser.Tesseract.Properties;
 using Wisej.DemoBrowser.Common;
 using Wisej.Web;
@@ -63,6 +64,42 @@ namespace Wisej.DemoBrowser.Camera
 			//AlertBox.Show(scannedText.Text);
 			//AlertBox.Show(scannedText.Confidence.ToString());
 			//AlertBox.Show(scannedText.Words[1]);
+		}
+
+		private void LoadImage(HttpPostedFile file)
+		{
+			this.upload1.Value = file.FileName;
+			pictureBoxUploadedImage.Image = new Bitmap(Image.FromStream(file.InputStream));
+		}
+
+		private void upload1_Uploaded(object sender, UploadedEventArgs e)
+		{
+			if (e.Files.Count == 0)
+				return;
+
+			LoadImage(e.Files[0]);
+		}
+
+
+
+		private async void buttonScan3_Click(object sender, EventArgs e)
+		{
+			if (pictureBoxUploadedImage.Image != null)
+			{
+				string scannedText = await tesseract1.ScanImageAsync(pictureBoxUploadedImage.Image);
+				AlertBox.Show(scannedText);
+				textBox3.Text = scannedText;
+			}
+			else
+			{
+				AlertBox.Show("Please upload an image");
+			}
+			
+		}
+
+		private void tesseract1_TextRecognized(object sender, Ext.Tesseract.TextRecognizedEventArgs e)
+		{
+			AlertBox.Show("Text recognized from camera");
 		}
 	}
 }

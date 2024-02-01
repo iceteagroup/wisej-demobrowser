@@ -42,6 +42,9 @@
 			this.tabPage2 = new Wisej.Web.TabPage();
 			this.textBox2 = new Wisej.Web.TextBox();
 			this.tabPage3 = new Wisej.Web.TabPage();
+			this.pictureBoxUploadedImage = new Wisej.Web.PictureBox();
+			this.textBox3 = new Wisej.Web.TextBox();
+			this.buttonScan3 = new Wisej.Web.Button();
 			this.upload1 = new Wisej.Web.Upload();
 			this.tabPage4 = new Wisej.Web.TabPage();
 			this.camera1 = new Wisej.Web.Ext.Camera.Camera();
@@ -53,12 +56,14 @@
 			this.panel1.SuspendLayout();
 			this.tabPage2.SuspendLayout();
 			this.tabPage3.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBoxUploadedImage)).BeginInit();
 			this.tabPage4.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// pictureBox1
 			// 
 			this.pictureBox1.Anchor = Wisej.Web.AnchorStyles.None;
+			this.pictureBox1.BorderStyle = Wisej.Web.BorderStyle.Solid;
 			this.pictureBox1.ImageSource = "ImagesToScan\\frogText.png";
 			this.pictureBox1.Location = new System.Drawing.Point(3, 3);
 			this.pictureBox1.Name = "pictureBox1";
@@ -181,19 +186,48 @@
 			// 
 			// tabPage3
 			// 
+			this.tabPage3.Controls.Add(this.pictureBoxUploadedImage);
+			this.tabPage3.Controls.Add(this.textBox3);
+			this.tabPage3.Controls.Add(this.buttonScan3);
 			this.tabPage3.Controls.Add(this.upload1);
 			this.tabPage3.Location = new System.Drawing.Point(1, 40);
 			this.tabPage3.Name = "tabPage3";
 			this.tabPage3.Size = new System.Drawing.Size(1101, 364);
 			this.tabPage3.Text = "Uploaded Image";
 			// 
+			// pictureBoxUploadedImage
+			// 
+			this.pictureBoxUploadedImage.BorderStyle = Wisej.Web.BorderStyle.Solid;
+			this.pictureBoxUploadedImage.Location = new System.Drawing.Point(3, 21);
+			this.pictureBoxUploadedImage.Name = "pictureBoxUploadedImage";
+			this.pictureBoxUploadedImage.Size = new System.Drawing.Size(317, 230);
+			// 
+			// textBox3
+			// 
+			this.textBox3.LabelText = "Result:";
+			this.textBox3.Location = new System.Drawing.Point(338, 161);
+			this.textBox3.Multiline = true;
+			this.textBox3.Name = "textBox3";
+			this.textBox3.Size = new System.Drawing.Size(296, 156);
+			this.textBox3.TabIndex = 2;
+			// 
+			// buttonScan3
+			// 
+			this.buttonScan3.Location = new System.Drawing.Point(338, 70);
+			this.buttonScan3.Name = "buttonScan3";
+			this.buttonScan3.Size = new System.Drawing.Size(296, 37);
+			this.buttonScan3.TabIndex = 1;
+			this.buttonScan3.Text = "Scan uploaded image";
+			this.buttonScan3.Click += new System.EventHandler(this.buttonScan3_Click);
+			// 
 			// upload1
 			// 
-			this.upload1.Location = new System.Drawing.Point(72, 65);
+			this.upload1.Location = new System.Drawing.Point(3, 268);
 			this.upload1.Name = "upload1";
-			this.upload1.Size = new System.Drawing.Size(296, 192);
+			this.upload1.Size = new System.Drawing.Size(317, 77);
 			this.upload1.TabIndex = 0;
 			this.upload1.Text = "upload1";
+			this.upload1.Uploaded += new Wisej.Web.UploadedEventHandler(this.upload1_Uploaded);
 			// 
 			// tabPage4
 			// 
@@ -211,6 +245,11 @@
 			this.camera1.TabIndex = 0;
 			this.camera1.Text = "camera1";
 			// 
+			// tesseract1
+			// 
+			this.tesseract1.Camera = this.camera1;
+			this.tesseract1.TextRecognized += new System.EventHandler<Wisej.Ext.Tesseract.TextRecognizedEventArgs>(this.tesseract1_TextRecognized);
+			// 
 			// Features
 			// 
 			this.AutoScroll = true;
@@ -227,6 +266,8 @@
 			this.tabPage2.ResumeLayout(false);
 			this.tabPage2.PerformLayout();
 			this.tabPage3.ResumeLayout(false);
+			this.tabPage3.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBoxUploadedImage)).EndInit();
 			this.tabPage4.ResumeLayout(false);
 			this.ResumeLayout(false);
 
@@ -250,5 +291,8 @@
 		private Web.Panel panel1;
 		private Web.TextBox textBox_scanResult;
 		private Web.TextBox textBox2;
+		private Web.TextBox textBox3;
+		private Web.Button buttonScan3;
+		private Web.PictureBox pictureBoxUploadedImage;
 	}
 }
