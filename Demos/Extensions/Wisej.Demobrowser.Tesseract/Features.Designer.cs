@@ -31,29 +31,29 @@
 			this.components = new System.ComponentModel.Container();
 			this.pictureBox1 = new Wisej.Web.PictureBox();
 			this.buttonScan1 = new Wisej.Web.Button();
-			this.button2 = new Wisej.Web.Button();
+			this.buttonScan2 = new Wisej.Web.Button();
 			this.textBox1 = new Wisej.Web.TextBox();
-			this.label2 = new Wisej.Web.Label();
 			this.comboBox1 = new Wisej.Web.ComboBox();
 			this.tabControl1 = new Wisej.Web.TabControl();
 			this.tabPage1 = new Wisej.Web.TabPage();
+			this.flowLayoutPanel1 = new Wisej.Web.FlowLayoutPanel();
+			this.panel1 = new Wisej.Web.Panel();
+			this.textBox_scanResult = new Wisej.Web.TextBox();
 			this.tabPage2 = new Wisej.Web.TabPage();
+			this.textBox2 = new Wisej.Web.TextBox();
 			this.tabPage3 = new Wisej.Web.TabPage();
 			this.upload1 = new Wisej.Web.Upload();
 			this.tabPage4 = new Wisej.Web.TabPage();
 			this.camera1 = new Wisej.Web.Ext.Camera.Camera();
 			this.tesseract1 = new Wisej.Ext.Tesseract.Tesseract(this.components);
-			this.flowLayoutPanel1 = new Wisej.Web.FlowLayoutPanel();
-			this.panel1 = new Wisej.Web.Panel();
-			this.textBox_scanResult = new Wisej.Web.TextBox();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
 			this.tabControl1.SuspendLayout();
 			this.tabPage1.SuspendLayout();
+			this.flowLayoutPanel1.SuspendLayout();
+			this.panel1.SuspendLayout();
 			this.tabPage2.SuspendLayout();
 			this.tabPage3.SuspendLayout();
 			this.tabPage4.SuspendLayout();
-			this.flowLayoutPanel1.SuspendLayout();
-			this.panel1.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// pictureBox1
@@ -68,20 +68,21 @@
 			// buttonScan1
 			// 
 			this.buttonScan1.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Left | Wisej.Web.AnchorStyles.Right)));
-			this.buttonScan1.Location = new System.Drawing.Point(65, 93);
+			this.buttonScan1.Location = new System.Drawing.Point(57, 62);
 			this.buttonScan1.Name = "buttonScan1";
-			this.buttonScan1.Size = new System.Drawing.Size(457, 37);
+			this.buttonScan1.Size = new System.Drawing.Size(265, 37);
 			this.buttonScan1.TabIndex = 0;
 			this.buttonScan1.Text = "Scan Picturebox Image for Text";
 			this.buttonScan1.Click += new System.EventHandler(this.buttonScan1_Click);
 			// 
-			// button2
+			// buttonScan2
 			// 
-			this.button2.Location = new System.Drawing.Point(22, 200);
-			this.button2.Name = "button2";
-			this.button2.Size = new System.Drawing.Size(255, 37);
-			this.button2.TabIndex = 1;
-			this.button2.Text = "Scan Image from url";
+			this.buttonScan2.Location = new System.Drawing.Point(22, 200);
+			this.buttonScan2.Name = "buttonScan2";
+			this.buttonScan2.Size = new System.Drawing.Size(255, 37);
+			this.buttonScan2.TabIndex = 1;
+			this.buttonScan2.Text = "Scan Image from url";
+			this.buttonScan2.Click += new System.EventHandler(this.buttonScan2_Click);
 			// 
 			// textBox1
 			// 
@@ -90,15 +91,8 @@
 			this.textBox1.Name = "textBox1";
 			this.textBox1.Size = new System.Drawing.Size(255, 53);
 			this.textBox1.TabIndex = 2;
-			// 
-			// label2
-			// 
-			this.label2.AutoSize = true;
-			this.label2.Location = new System.Drawing.Point(417, 68);
-			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(39, 18);
-			this.label2.TabIndex = 1;
-			this.label2.Text = "label2";
+			this.textBox1.Text = "https://s3.studylib.net/store/data/025365095_1-9146f77868962fe355e4af075f9ab64b-7" +
+    "68x994.png";
 			// 
 			// comboBox1
 			// 
@@ -108,9 +102,9 @@
             "webDevelopment.jpg",
             "wisej-logo.png"});
 			this.comboBox1.LabelText = "Select image...";
-			this.comboBox1.Location = new System.Drawing.Point(65, 18);
+			this.comboBox1.Location = new System.Drawing.Point(57, 3);
 			this.comboBox1.Name = "comboBox1";
-			this.comboBox1.Size = new System.Drawing.Size(457, 53);
+			this.comboBox1.Size = new System.Drawing.Size(265, 53);
 			this.comboBox1.TabIndex = 8;
 			this.comboBox1.SelectedItemChanged += new System.EventHandler(this.comboBox1_SelectedItemChanged);
 			// 
@@ -135,15 +129,55 @@
 			this.tabPage1.Size = new System.Drawing.Size(1101, 364);
 			this.tabPage1.Text = "Picturebox Image";
 			// 
+			// flowLayoutPanel1
+			// 
+			this.flowLayoutPanel1.AutoScroll = true;
+			this.flowLayoutPanel1.Controls.Add(this.pictureBox1);
+			this.flowLayoutPanel1.Controls.Add(this.panel1);
+			this.flowLayoutPanel1.Dock = Wisej.Web.DockStyle.Fill;
+			this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+			this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+			this.flowLayoutPanel1.Size = new System.Drawing.Size(1101, 364);
+			this.flowLayoutPanel1.TabIndex = 10;
+			// 
+			// panel1
+			// 
+			this.panel1.Anchor = Wisej.Web.AnchorStyles.None;
+			this.panel1.Controls.Add(this.textBox_scanResult);
+			this.panel1.Controls.Add(this.comboBox1);
+			this.panel1.Controls.Add(this.buttonScan1);
+			this.panel1.Location = new System.Drawing.Point(498, 4);
+			this.panel1.Name = "panel1";
+			this.panel1.Size = new System.Drawing.Size(408, 343);
+			this.panel1.TabIndex = 11;
+			// 
+			// textBox_scanResult
+			// 
+			this.textBox_scanResult.LabelText = "Result:";
+			this.textBox_scanResult.Location = new System.Drawing.Point(3, 105);
+			this.textBox_scanResult.Multiline = true;
+			this.textBox_scanResult.Name = "textBox_scanResult";
+			this.textBox_scanResult.Size = new System.Drawing.Size(402, 235);
+			this.textBox_scanResult.TabIndex = 9;
+			// 
 			// tabPage2
 			// 
-			this.tabPage2.Controls.Add(this.label2);
-			this.tabPage2.Controls.Add(this.button2);
+			this.tabPage2.Controls.Add(this.textBox2);
+			this.tabPage2.Controls.Add(this.buttonScan2);
 			this.tabPage2.Controls.Add(this.textBox1);
 			this.tabPage2.Location = new System.Drawing.Point(1, 40);
 			this.tabPage2.Name = "tabPage2";
 			this.tabPage2.Size = new System.Drawing.Size(1101, 364);
 			this.tabPage2.Text = "Image Url";
+			// 
+			// textBox2
+			// 
+			this.textBox2.LabelText = "Result:";
+			this.textBox2.Location = new System.Drawing.Point(353, 46);
+			this.textBox2.Multiline = true;
+			this.textBox2.Name = "textBox2";
+			this.textBox2.Size = new System.Drawing.Size(367, 280);
+			this.textBox2.TabIndex = 3;
 			// 
 			// tabPage3
 			// 
@@ -177,37 +211,6 @@
 			this.camera1.TabIndex = 0;
 			this.camera1.Text = "camera1";
 			// 
-			// flowLayoutPanel1
-			// 
-			this.flowLayoutPanel1.AutoScroll = true;
-			this.flowLayoutPanel1.Controls.Add(this.pictureBox1);
-			this.flowLayoutPanel1.Controls.Add(this.panel1);
-			this.flowLayoutPanel1.Dock = Wisej.Web.DockStyle.Fill;
-			this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-			this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-			this.flowLayoutPanel1.Size = new System.Drawing.Size(1101, 364);
-			this.flowLayoutPanel1.TabIndex = 10;
-			// 
-			// panel1
-			// 
-			this.panel1.Anchor = Wisej.Web.AnchorStyles.None;
-			this.panel1.Controls.Add(this.textBox_scanResult);
-			this.panel1.Controls.Add(this.comboBox1);
-			this.panel1.Controls.Add(this.buttonScan1);
-			this.panel1.Location = new System.Drawing.Point(498, 4);
-			this.panel1.Name = "panel1";
-			this.panel1.Size = new System.Drawing.Size(600, 343);
-			this.panel1.TabIndex = 11;
-			// 
-			// textBox_scanResult
-			// 
-			this.textBox_scanResult.LabelText = "Result:";
-			this.textBox_scanResult.Location = new System.Drawing.Point(74, 174);
-			this.textBox_scanResult.Multiline = true;
-			this.textBox_scanResult.Name = "textBox_scanResult";
-			this.textBox_scanResult.Size = new System.Drawing.Size(447, 141);
-			this.textBox_scanResult.TabIndex = 9;
-			// 
 			// Features
 			// 
 			this.AutoScroll = true;
@@ -218,13 +221,13 @@
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
 			this.tabControl1.ResumeLayout(false);
 			this.tabPage1.ResumeLayout(false);
+			this.flowLayoutPanel1.ResumeLayout(false);
+			this.panel1.ResumeLayout(false);
+			this.panel1.PerformLayout();
 			this.tabPage2.ResumeLayout(false);
 			this.tabPage2.PerformLayout();
 			this.tabPage3.ResumeLayout(false);
 			this.tabPage4.ResumeLayout(false);
-			this.flowLayoutPanel1.ResumeLayout(false);
-			this.panel1.ResumeLayout(false);
-			this.panel1.PerformLayout();
 			this.ResumeLayout(false);
 
 		}
@@ -232,10 +235,9 @@
 		#endregion
 		private Web.PictureBox pictureBox1;
 		private Web.TextBox textBox1;
-		private Web.Button button2;
+		private Web.Button buttonScan2;
 		private Web.Button buttonScan1;
 		private Web.ComboBox comboBox1;
-		private Web.Label label2;
 		private Web.TabControl tabControl1;
 		private Web.TabPage tabPage1;
 		private Web.TabPage tabPage2;
@@ -247,5 +249,6 @@
 		private Web.FlowLayoutPanel flowLayoutPanel1;
 		private Web.Panel panel1;
 		private Web.TextBox textBox_scanResult;
+		private Web.TextBox textBox2;
 	}
 }

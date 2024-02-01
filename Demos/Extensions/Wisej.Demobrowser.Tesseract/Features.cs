@@ -53,5 +53,16 @@ namespace Wisej.DemoBrowser.Camera
 			SetPictureBoxImage(pictureBoxImage);
 
 		}
+
+		//Note that this method must be async so that we can call ScanImageAsync
+		private async void buttonScan2_Click(object sender, EventArgs e)
+		{
+			var scannedText = await tesseract1.ScanImageAsync(textBox1.Text);
+			AlertBox.Show(scannedText);
+			textBox2.Text = scannedText;
+			//AlertBox.Show(scannedText.Text);
+			//AlertBox.Show(scannedText.Confidence.ToString());
+			//AlertBox.Show(scannedText.Words[1]);
+		}
 	}
 }
