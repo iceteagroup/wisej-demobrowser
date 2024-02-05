@@ -22,34 +22,34 @@ namespace Wisej.DemoBrowser.ChartJS
 			AddDataSet();
 		}
 
-		private void AddDataSet()
-		{
-			this.chartJS1.DataSets.Add(new LineDataSet()
-			{
-				Label = $"Line Data Set {this.chartJS1.DataSets.Count + 1}",
-				Data = new[]
-				{
-					new { x = rand.Next(100), y = rand.Next(100) },
-					new { x = rand.Next(100), y = rand.Next(100) },
-					new { x = rand.Next(100), y = rand.Next(100) },
-					new { x = rand.Next(100), y = rand.Next(100) },
-					new { x = rand.Next(100), y = rand.Next(100) },
-					new { x = rand.Next(100), y = rand.Next(100) },
-					new { x = rand.Next(100), y = rand.Next(100) },
-					new { x = rand.Next(100), y = rand.Next(100) },
-					new { x = rand.Next(100), y = rand.Next(100) },
-					new { x = rand.Next(100), y = rand.Next(100) },
-					new { x = rand.Next(100), y = rand.Next(100) },
-					new { x = rand.Next(100), y = rand.Next(100) }
-				},
-				BackgroundColor = Color.FromArgb(rand.Next(255), rand.Next(255), rand.Next(255))
-			});
-		}
+        private void AddDataSet()
+        {
+            this.chartJS1.DataSets.Add(new LineDataSet()
+            {
+                Label = $"Line Data Set {this.chartJS1.DataSets.Count + 1}",
+                Data = new[]
+                {
+                    new { x = rand.Next(100), y = rand.Next(100) },
+                    new { x = rand.Next(100), y = rand.Next(100) },
+                    new { x = rand.Next(100), y = rand.Next(100) },
+                    new { x = rand.Next(100), y = rand.Next(100) },
+                    new { x = rand.Next(100), y = rand.Next(100) },
+                    new { x = rand.Next(100), y = rand.Next(100) },
+                    new { x = rand.Next(100), y = rand.Next(100) },
+                    new { x = rand.Next(100), y = rand.Next(100) },
+                    new { x = rand.Next(100), y = rand.Next(100) },
+                    new { x = rand.Next(100), y = rand.Next(100) },
+                    new { x = rand.Next(100), y = rand.Next(100) },
+                    new { x = rand.Next(100), y = rand.Next(100) }
+                },
+                BackgroundColor = Color.FromArgb(rand.Next(255), rand.Next(255), rand.Next(255))
+            });
+        }
 
-		private void buttonAdd_Click(object sender, EventArgs e)
-		{
-			AddDataSet();
-		}
+        private void buttonAdd_Click(object sender, EventArgs e)
+        {
+            AddDataSet();
+        }
 
 		private void chartJS1_ChartClick(object sender, ChartClickEventArgs e)
 		{
