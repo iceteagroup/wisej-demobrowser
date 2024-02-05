@@ -55,11 +55,13 @@
             this.camera1 = new Wisej.Web.Ext.Camera.Camera();
             this.tesseract1 = new Wisej.Ext.Tesseract.Tesseract(this.components);
             this.animation1 = new Wisej.Web.Animation(this.components);
+            this.textBox_scanResult = new Wisej.Web.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.panel4.SuspendLayout();
             this.flowLayoutPanel3.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -157,6 +159,7 @@
             // 
             // panel4
             // 
+            this.panel4.Controls.Add(this.textBox_scanResult);
             this.panel4.Dock = Wisej.Web.DockStyle.Fill;
             this.panel4.Location = new System.Drawing.Point(0, 39);
             this.panel4.Name = "panel4";
@@ -313,6 +316,16 @@
             this.tesseract1.Camera = this.camera1;
             this.tesseract1.TextRecognized += new System.EventHandler<Wisej.Ext.Tesseract.TextRecognizedEventArgs>(this.tesseract1_TextRecognized);
             // 
+            // textBox_scanResult
+            // 
+            this.textBox_scanResult.Dock = Wisej.Web.DockStyle.Fill;
+            this.textBox_scanResult.LabelText = "Result:";
+            this.textBox_scanResult.Location = new System.Drawing.Point(0, 0);
+            this.textBox_scanResult.Multiline = true;
+            this.textBox_scanResult.Name = "textBox_scanResult";
+            this.textBox_scanResult.Size = new System.Drawing.Size(600, 304);
+            this.textBox_scanResult.TabIndex = 0;
+            // 
             // Features
             // 
             this.AutoScroll = true;
@@ -325,6 +338,8 @@
             this.tabPage1.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
             this.flowLayoutPanel3.ResumeLayout(false);
             this.flowLayoutPanel3.PerformLayout();
             this.tabPage2.ResumeLayout(false);
@@ -369,5 +384,6 @@
         private Web.FlowLayoutPanel flowLayoutPanel3;
         private Web.ComboBox comboBox1;
         private Web.Panel panel4;
+        private Web.TextBox textBox_scanResult;
     }
 }
