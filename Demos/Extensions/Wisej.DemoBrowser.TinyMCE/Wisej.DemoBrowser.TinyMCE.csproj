@@ -22,8 +22,8 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Wisej-3" Version="3.5.5-preview.1" />
-		<PackageReference Include="Wisej-3-TinyMCE" Version="3.5.5-preview.1" />
+		<PackageReference Include="Wisej-3" Version="3.5.*-*" />
+		<PackageReference Include="Wisej-3-TinyMCE" Version="3.5.*-*" />
 		<PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
 		<ProjectReference Include="..\..\..\Wisej.DemoBrowser.Common\Wisej.DemoBrowser.Common.csproj" />
 	</ItemGroup>
