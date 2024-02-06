@@ -53,12 +53,13 @@ namespace Wisej.DemoBrowser.Camera
         private void LoadImage(HttpPostedFile file)
         {
             this.upload1.Value = file.FileName;
-            pictureBoxUploadedImage.Image = new Bitmap(Image.FromStream(file.InputStream));
+            pictureBox_upload.Image = new Bitmap(Image.FromStream(file.InputStream));
         }
 
         private void tesseract1_TextRecognized(object sender, Ext.Tesseract.TextRecognizedEventArgs e)
         {
             AlertBox.Show("Text recognized from camera");
+            textBox_camera.Text = e.Text;
         }
 
 		private void comboBox_picturebox_SelectedItemChanged_1(object sender, EventArgs e)
@@ -69,11 +70,11 @@ namespace Wisej.DemoBrowser.Camera
 
 		private async void button_upload_Click(object sender, EventArgs e)
 		{
-			if (pictureBoxUploadedImage.Image != null)
+			if (pictureBox_upload.Image != null)
 			{
-				var scannedText = await tesseract1.ScanImageAsync(pictureBoxUploadedImage.Image);
+				var scannedText = await tesseract1.ScanImageAsync(pictureBox_upload.Image);
 				AlertBox.Show(scannedText.Text);
-				textBox3.Text = scannedText.Text;
+				textBox_upload.Text = scannedText.Text;
 			}
 			else
 			{
