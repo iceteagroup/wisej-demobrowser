@@ -19,9 +19,9 @@ namespace Wisej.DemoBrowser.Camera
         //Note that this method must be async so that we can call ScanImageAsync
         private async void buttonScan1_Click(object sender, EventArgs e)
         {
-            string scannedText = await tesseract1.ScanImageAsync(pictureBox1.Image);
-            AlertBox.Show(scannedText);
-            textBox_scanResult.Text = scannedText;
+            var scanResult = await tesseract1.ScanImageAsync(pictureBox1.Image);
+            AlertBox.Show(scanResult.Text);
+            textBox_scanResult.Text = scanResult.Text;
         }
 
         private void comboBox1_SelectedItemChanged(object sender, EventArgs e)
@@ -58,9 +58,8 @@ namespace Wisej.DemoBrowser.Camera
         private async void buttonScan2_Click(object sender, EventArgs e)
         {
             var scannedText = await tesseract1.ScanImageAsync(textBox1.Text);
-            AlertBox.Show(scannedText);
-            textBox2.Text = scannedText;
-            //AlertBox.Show(scannedText.Text);
+            textBox2.Text = scannedText.Text;
+            AlertBox.Show(scannedText.Text);
             //AlertBox.Show(scannedText.Confidence.ToString());
             //AlertBox.Show(scannedText.Words[1]);
         }
@@ -84,9 +83,9 @@ namespace Wisej.DemoBrowser.Camera
         {
             if (pictureBoxUploadedImage.Image != null)
             {
-                string scannedText = await tesseract1.ScanImageAsync(pictureBoxUploadedImage.Image);
-                AlertBox.Show(scannedText);
-                textBox3.Text = scannedText;
+                var scannedText = await tesseract1.ScanImageAsync(pictureBoxUploadedImage.Image);
+                AlertBox.Show(scannedText.Text);
+                textBox3.Text = scannedText.Text;
             }
             else
             {
