@@ -16,20 +16,6 @@ namespace Wisej.DemoBrowser.Camera
             InitializeComponent();
         }
 
-        //Note that this method must be async so that we can call ScanImageAsync
-        private async void buttonScan1_Click(object sender, EventArgs e)
-        {
-            var scanResult = await tesseract1.ScanImageAsync(pictureBox1.Image);
-            AlertBox.Show(scanResult.Text);
-            textBox_scanResult.Text = scanResult.Text;
-        }
-
-        private void comboBox1_SelectedItemChanged(object sender, EventArgs e)
-        {
-            string pictureBoxImage = comboBox1.SelectedItem.ToString();
-            SetPictureBoxImage(pictureBoxImage);
-        }
-
         private void SetPictureBoxImage(string imageString)
         {
             //Get access to the assembly. 
@@ -42,23 +28,23 @@ namespace Wisej.DemoBrowser.Camera
                 System.IO.Stream resource = assembly.GetManifestResourceStream(resourceName);
                 Image imageFromStream = Image.FromStream(resource);
                 //set the image of the picturebox
-                pictureBox1.Image = imageFromStream;
+                pictureBox_picturebox.Image = imageFromStream;
             }
         }
 
         private void Features_Load(object sender, EventArgs e)
         {
             //Initial setup for "Picturebox Image" tab
-            comboBox1.SelectedItem = comboBox1.Items[0];
-            string pictureBoxImage = comboBox1.SelectedItem.ToString();
+            comboBox_picturebox.SelectedItem = comboBox_picturebox.Items[0];
+            string pictureBoxImage = comboBox_picturebox.SelectedItem.ToString();
             SetPictureBoxImage(pictureBoxImage);
         }
 
         //Note that this method must be async so that we can call ScanImageAsync
-        private async void buttonScan2_Click(object sender, EventArgs e)
+        private async void buttonScan_url_Click(object sender, EventArgs e)
         {
-            var scannedText = await tesseract1.ScanImageAsync(textBox1.Text);
-            textBox2.Text = scannedText.Text;
+            var scannedText = await tesseract1.ScanImageAsync(textBox_url.Text);
+            textBox_url2.Text = scannedText.Text;
             AlertBox.Show(scannedText.Text);
             //AlertBox.Show(scannedText.Confidence.ToString());
             //AlertBox.Show(scannedText.Words[1]);
@@ -70,32 +56,45 @@ namespace Wisej.DemoBrowser.Camera
             pictureBoxUploadedImage.Image = new Bitmap(Image.FromStream(file.InputStream));
         }
 
-        private void upload1_Uploaded(object sender, UploadedEventArgs e)
-        {
-            if (e.Files.Count == 0)
-                return;
-
-            LoadImage(e.Files[0]);
-        }
-
-
-        private async void buttonScan3_Click(object sender, EventArgs e)
-        {
-            if (pictureBoxUploadedImage.Image != null)
-            {
-                var scannedText = await tesseract1.ScanImageAsync(pictureBoxUploadedImage.Image);
-                AlertBox.Show(scannedText.Text);
-                textBox3.Text = scannedText.Text;
-            }
-            else
-            {
-                AlertBox.Show("Please upload an image");
-            }
-        }
-
         private void tesseract1_TextRecognized(object sender, Ext.Tesseract.TextRecognizedEventArgs e)
         {
             AlertBox.Show("Text recognized from camera");
         }
-    }
+
+		private void comboBox_picturebox_SelectedItemChanged_1(object sender, EventArgs e)
+		{
+			string pictureBoxImage = comboBox_picturebox.SelectedItem.ToString();
+			SetPictureBoxImage(pictureBoxImage);
+		}
+
+		private async void button_upload_Click(object sender, EventArgs e)
+		{
+			if (pictureBoxUploadedImage.Image != null)
+			{
+				var scannedText = await tesseract1.ScanImageAsync(pictureBoxUploadedImage.Image);
+				AlertBox.Show(scannedText.Text);
+				textBox3.Text = scannedText.Text;
+			}
+			else
+			{
+				AlertBox.Show("Please upload an image");
+			}
+		}
+
+		private void upload1_Uploaded_1(object sender, UploadedEventArgs e)
+		{
+			if (e.Files.Count == 0)
+				return;
+
+			LoadImage(e.Files[0]);
+		}
+
+		//Note that this method must be async so that we can call ScanImageAsync
+		private async void buttonScan_picturebox_Click(object sender, EventArgs e)
+		{
+			var scannedText = await tesseract1.ScanImageAsync(pictureBox_picturebox.Image);
+			AlertBox.Show(scannedText.Text);
+			textBox_picturebox.Text = scannedText.Text;
+		}
+	}
 }
