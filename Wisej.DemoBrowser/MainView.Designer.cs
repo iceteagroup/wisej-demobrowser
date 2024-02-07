@@ -116,7 +116,7 @@ namespace Wisej.DemoBrowser
 			this.panelMenu.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("panelMenu.ResponsiveProfiles"))));
 			this.panelMenu.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("panelMenu.ResponsiveProfiles1"))));
 			this.panelMenu.ShowCloseButton = false;
-			this.panelMenu.Size = new System.Drawing.Size(1152, 77);
+			this.panelMenu.Size = new System.Drawing.Size(3040, 77);
 			this.panelMenu.Spacing = 0;
 			this.panelMenu.TabIndex = 0;
 			this.panelMenu.TabStop = true;
@@ -140,11 +140,11 @@ namespace Wisej.DemoBrowser
 			this.menuSlideBar.Controls.Add(this.buttonMWW);
 			this.panelMenu.SetFillWeight(this.menuSlideBar, 1);
 			this.menuSlideBar.Location = new System.Drawing.Point(229, 3);
-			this.menuSlideBar.MinimumSize = new System.Drawing.Size(220, 0);
+			this.menuSlideBar.MinimumSize = new System.Drawing.Size(260, 0);
 			this.menuSlideBar.Name = "menuSlideBar";
 			this.menuSlideBar.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("menuSlideBar.ResponsiveProfiles"))));
 			this.menuSlideBar.ScrollStep = 50;
-			this.menuSlideBar.Size = new System.Drawing.Size(313, 71);
+			this.menuSlideBar.Size = new System.Drawing.Size(2201, 71);
 			this.menuSlideBar.Spacing = 20;
 			this.menuSlideBar.TabIndex = 0;
 			// 
@@ -156,9 +156,9 @@ namespace Wisej.DemoBrowser
 			this.buttonDocs.Font = new System.Drawing.Font("@menuDemo", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
 			this.buttonDocs.Location = new System.Drawing.Point(3, 3);
 			this.buttonDocs.Name = "buttonDocs";
-			this.buttonDocs.Size = new System.Drawing.Size(176, 65);
+			this.buttonDocs.Size = new System.Drawing.Size(218, 65);
 			this.buttonDocs.TabIndex = 0;
-			this.buttonDocs.Text = "Wisej Documentation";
+			this.buttonDocs.Text = "Wisej.NET Documentation";
 			this.buttonDocs.Click += new System.EventHandler(this.buttonDocs_Click);
 			// 
 			// buttonAPI
@@ -167,11 +167,11 @@ namespace Wisej.DemoBrowser
 			this.buttonAPI.Dock = Wisej.Web.DockStyle.Left;
 			this.buttonAPI.Focusable = false;
 			this.buttonAPI.Font = new System.Drawing.Font("@menuDemo", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-			this.buttonAPI.Location = new System.Drawing.Point(205, 3);
+			this.buttonAPI.Location = new System.Drawing.Point(247, 3);
 			this.buttonAPI.Name = "buttonAPI";
-			this.buttonAPI.Size = new System.Drawing.Size(81, 65);
+			this.buttonAPI.Size = new System.Drawing.Size(114, 65);
 			this.buttonAPI.TabIndex = 1;
-			this.buttonAPI.Text = "Wisej API";
+			this.buttonAPI.Text = "Wisej.NET API";
 			this.buttonAPI.Click += new System.EventHandler(this.buttonAPI_Click);
 			// 
 			// buttonSupport
@@ -180,7 +180,7 @@ namespace Wisej.DemoBrowser
 			this.buttonSupport.Dock = Wisej.Web.DockStyle.Left;
 			this.buttonSupport.Focusable = false;
 			this.buttonSupport.Font = new System.Drawing.Font("@menuDemo", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-			this.buttonSupport.Location = new System.Drawing.Point(312, 3);
+			this.buttonSupport.Location = new System.Drawing.Point(387, 3);
 			this.buttonSupport.Name = "buttonSupport";
 			this.buttonSupport.Size = new System.Drawing.Size(77, 65);
 			this.buttonSupport.TabIndex = 2;
@@ -193,7 +193,7 @@ namespace Wisej.DemoBrowser
 			this.buttonMWW.Dock = Wisej.Web.DockStyle.Left;
 			this.buttonMWW.Focusable = false;
 			this.buttonMWW.Font = new System.Drawing.Font("@menuDemo", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-			this.buttonMWW.Location = new System.Drawing.Point(415, 3);
+			this.buttonMWW.Location = new System.Drawing.Point(490, 3);
 			this.buttonMWW.Name = "buttonMWW";
 			this.buttonMWW.Size = new System.Drawing.Size(161, 65);
 			this.buttonMWW.TabIndex = 3;
@@ -210,7 +210,7 @@ namespace Wisej.DemoBrowser
 			this.rightPanel.Controls.Add(this.lineMenuDivider3);
 			this.rightPanel.Controls.Add(this.buttonBuy);
 			this.rightPanel.LayoutStyle = Wisej.Web.FlexLayoutStyle.Horizontal;
-			this.rightPanel.Location = new System.Drawing.Point(548, 3);
+			this.rightPanel.Location = new System.Drawing.Point(2436, 3);
 			this.rightPanel.Name = "rightPanel";
 			this.rightPanel.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("rightPanel.ResponsiveProfiles"))));
 			this.rightPanel.Size = new System.Drawing.Size(601, 71);
@@ -331,7 +331,7 @@ namespace Wisej.DemoBrowser
 			this.panelComponents.ResizableEdges = Wisej.Web.AnchorStyles.Right;
 			this.panelComponents.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("panelComponents.ResponsiveProfiles"))));
 			this.panelComponents.ShowHeader = true;
-			this.panelComponents.Size = new System.Drawing.Size(345, 473);
+			this.panelComponents.Size = new System.Drawing.Size(345, 283);
 			this.panelComponents.TabIndex = 1;
 			this.panelComponents.TabStop = true;
 			this.panelComponents.Text = "Components";
@@ -440,7 +440,7 @@ namespace Wisej.DemoBrowser
 			this.treeViewComponents.PathSeparator = "/";
 			this.treeViewComponents.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("treeViewComponents.ResponsiveProfiles"))));
 			this.treeViewComponents.SelectedImageIndex = 0;
-			this.treeViewComponents.Size = new System.Drawing.Size(268, 333);
+			this.treeViewComponents.Size = new System.Drawing.Size(268, 143);
 			this.treeViewComponents.TabIndex = 1;
 			this.treeViewComponents.AfterSelect += new Wisej.Web.TreeViewEventHandler(this.treeViewComponents_AfterSelect);
 			// 
@@ -455,7 +455,7 @@ namespace Wisej.DemoBrowser
 			this.panelMain.Name = "panelMain";
 			this.panelMain.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("panelMain.ResponsiveProfiles"))));
 			this.panelMain.ShowCloseButton = false;
-			this.panelMain.Size = new System.Drawing.Size(807, 473);
+			this.panelMain.Size = new System.Drawing.Size(2695, 283);
 			this.panelMain.TabIndex = 2;
 			this.panelMain.TabStop = true;
 			this.panelMain.Text = "Test";
@@ -472,7 +472,7 @@ namespace Wisej.DemoBrowser
 			this.panelLinks.Controls.Add(this.buttonSourceCode);
 			this.panelLinks.CssStyle = "border-width: 1px;\r\nborder-color: #D2D8DB;\r\nborder-right-style: none;\r\nborder-rad" +
     "ius: 6px 0px 0px 6px;\r\n";
-			this.panelLinks.Location = new System.Drawing.Point(743, 71);
+			this.panelLinks.Location = new System.Drawing.Point(2631, 71);
 			this.panelLinks.Name = "panelLinks";
 			this.panelLinks.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("panelLinks.ResponsiveProfiles"))));
 			this.panelLinks.Size = new System.Drawing.Size(64, 190);
@@ -551,7 +551,7 @@ namespace Wisej.DemoBrowser
 			this.panelDemoInfo.Padding = new Wisej.Web.Padding(36, 12, 85, 12);
 			this.panelDemoInfo.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("panelDemoInfo.ResponsiveProfiles"))));
 			this.panelDemoInfo.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("panelDemoInfo.ResponsiveProfiles1"))));
-			this.panelDemoInfo.Size = new System.Drawing.Size(807, 473);
+			this.panelDemoInfo.Size = new System.Drawing.Size(2695, 283);
 			this.panelDemoInfo.TabIndex = 28;
 			// 
 			// panelDemoHost
@@ -565,7 +565,7 @@ namespace Wisej.DemoBrowser
 			this.panelDemoHost.Name = "panelDemoHost";
 			this.panelDemoHost.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("panelDemoHost.ResponsiveProfiles"))));
 			this.panelDemoHost.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("panelDemoHost.ResponsiveProfiles1"))));
-			this.panelDemoHost.Size = new System.Drawing.Size(686, 290);
+			this.panelDemoHost.Size = new System.Drawing.Size(2574, 100);
 			this.panelDemoHost.TabIndex = 27;
 			// 
 			// panelDemo
@@ -580,7 +580,7 @@ namespace Wisej.DemoBrowser
 			this.panelDemo.Name = "panelDemo";
 			this.panelDemo.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("panelDemo.ResponsiveProfiles"))));
 			this.panelDemo.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("panelDemo.ResponsiveProfiles1"))));
-			this.panelDemo.Size = new System.Drawing.Size(686, 215);
+			this.panelDemo.Size = new System.Drawing.Size(2574, 25);
 			this.panelDemo.TabIndex = 21;
 			this.panelDemo.TabStop = true;
 			// 
@@ -593,7 +593,7 @@ namespace Wisej.DemoBrowser
 			this.line6.Name = "line6";
 			this.line6.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("line6.ResponsiveProfiles"))));
 			this.line6.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("line6.ResponsiveProfiles1"))));
-			this.line6.Size = new System.Drawing.Size(686, 5);
+			this.line6.Size = new System.Drawing.Size(2574, 5);
 			// 
 			// line4
 			// 
@@ -604,7 +604,7 @@ namespace Wisej.DemoBrowser
 			this.line4.Name = "line4";
 			this.line4.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("line4.ResponsiveProfiles"))));
 			this.line4.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("line4.ResponsiveProfiles1"))));
-			this.line4.Size = new System.Drawing.Size(686, 5);
+			this.line4.Size = new System.Drawing.Size(2574, 5);
 			// 
 			// panel1
 			// 
@@ -617,7 +617,7 @@ namespace Wisej.DemoBrowser
 			this.panel1.Name = "panel1";
 			this.panel1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("panel1.ResponsiveProfiles"))));
 			this.panel1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("panel1.ResponsiveProfiles1"))));
-			this.panel1.Size = new System.Drawing.Size(686, 50);
+			this.panel1.Size = new System.Drawing.Size(2574, 50);
 			this.panel1.TabIndex = 25;
 			this.panel1.TabStop = true;
 			// 
@@ -642,7 +642,7 @@ namespace Wisej.DemoBrowser
 			this.buttonNext.Focusable = false;
 			this.buttonNext.Font = new System.Drawing.Font("@defaultDemo", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
 			this.buttonNext.ImageSource = "icon-right";
-			this.buttonNext.Location = new System.Drawing.Point(555, 5);
+			this.buttonNext.Location = new System.Drawing.Point(2443, 5);
 			this.buttonNext.Name = "buttonNext";
 			this.buttonNext.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("buttonNext.ResponsiveProfiles"))));
 			this.buttonNext.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("buttonNext.ResponsiveProfiles1"))));
@@ -666,7 +666,7 @@ namespace Wisej.DemoBrowser
 			this.labelDescription.Padding = new Wisej.Web.Padding(0, 16, 0, 0);
 			this.labelDescription.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("labelDescription.ResponsiveProfiles"))));
 			this.labelDescription.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("labelDescription.ResponsiveProfiles1"))));
-			this.labelDescription.Size = new System.Drawing.Size(686, 66);
+			this.labelDescription.Size = new System.Drawing.Size(2574, 66);
 			this.labelDescription.TabIndex = 15;
 			this.labelDescription.Text = "You can use Wisej to display your data however you want. This demo demonstrates h" +
     "ow you can present data with just a simple array.";
@@ -683,7 +683,7 @@ namespace Wisej.DemoBrowser
 			this.panelDemoTitle.Padding = new Wisej.Web.Padding(0, 8, 0, 0);
 			this.panelDemoTitle.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("panelDemoTitle.ResponsiveProfiles"))));
 			this.panelDemoTitle.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("panelDemoTitle.ResponsiveProfiles1"))));
-			this.panelDemoTitle.Size = new System.Drawing.Size(686, 63);
+			this.panelDemoTitle.Size = new System.Drawing.Size(2574, 63);
 			this.panelDemoTitle.TabIndex = 26;
 			// 
 			// labelTitle
@@ -732,7 +732,7 @@ namespace Wisej.DemoBrowser
 			this.flowLayoutPanelDemoNavigation.Name = "flowLayoutPanelDemoNavigation";
 			this.flowLayoutPanelDemoNavigation.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("flowLayoutPanelDemoNavigation.ResponsiveProfiles"))));
 			this.flowLayoutPanelDemoNavigation.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("flowLayoutPanelDemoNavigation.ResponsiveProfiles1"))));
-			this.flowLayoutPanelDemoNavigation.Size = new System.Drawing.Size(686, 30);
+			this.flowLayoutPanelDemoNavigation.Size = new System.Drawing.Size(2574, 30);
 			this.flowLayoutPanelDemoNavigation.TabIndex = 12;
 			this.flowLayoutPanelDemoNavigation.TabStop = true;
 			// 
@@ -820,7 +820,7 @@ namespace Wisej.DemoBrowser
 			this.Controls.Add(this.panelComponents);
 			this.Controls.Add(this.panelMenu);
 			this.Name = "MainView";
-			this.Size = new System.Drawing.Size(1152, 550);
+			this.Size = new System.Drawing.Size(3040, 360);
 			this.Text = "Wisej Demo Browser";
 			this.Load += new System.EventHandler(this.MainView_Load);
 			this.panelMenu.ResumeLayout(false);
