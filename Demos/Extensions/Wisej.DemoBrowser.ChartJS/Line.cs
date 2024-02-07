@@ -42,7 +42,11 @@ namespace Wisej.DemoBrowser.ChartJS
                     new { x = rand.Next(100), y = rand.Next(100) },
                     new { x = rand.Next(100), y = rand.Next(100) }
                 },
-                BackgroundColor = Color.FromArgb(rand.Next(255), rand.Next(255), rand.Next(255))
+                Formatted = new[]
+                {
+                    "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"
+                },
+                BackgroundColor = Color.FromArgb(rand.Next(255), rand.Next(255), rand.Next(255)),
             });
         }
 

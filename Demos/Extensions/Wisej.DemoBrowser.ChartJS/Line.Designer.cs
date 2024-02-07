@@ -42,16 +42,27 @@
             this.chartJS1.BackColor = System.Drawing.Color.White;
             this.chartJS1.CssClass = "shadow";
             this.flowLayoutPanel1.SetFillWeight(this.chartJS1, 3);
+            this.chartJS1.Labels = new string[] {
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12"};
             this.chartJS1.Location = new System.Drawing.Point(295, 3);
             this.chartJS1.MinimumSize = new System.Drawing.Size(300, 0);
             this.chartJS1.Name = "chartJS1";
-            this.chartJS1.Options.DataLabel.BackgroundColor = System.Drawing.Color.Empty;
-            this.chartJS1.Options.DataLabel.BorderColor = System.Drawing.Color.Empty;
             this.chartJS1.Options.DataLabel.Color = System.Drawing.Color.Black;
-            this.chartJS1.Options.DataLabel.Opacity = 1F;
-            this.chartJS1.Options.DataLabel.TextAlign = Wisej.Web.Ext.ChartJS.DataLabelTextAlignment.Start;
-            this.chartJS1.Options.DataLabel.TextShadowColor = System.Drawing.Color.Empty;
-            this.chartJS1.Options.DataLabel.TextStrokeColor = System.Drawing.Color.Empty;
+            this.chartJS1.Options.DataLabel.Font = new System.Drawing.Font("@default", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.chartJS1.Options.Legend.Labels.Font = new System.Drawing.Font("@default", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.chartJS1.Options.Title.Font = new System.Drawing.Font("@default", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.chartJS1.Options.Title.FontColor = System.Drawing.Color.FromName("@controlText");
             this.chartJS1.Size = new System.Drawing.Size(860, 366);
             this.chartJS1.TabIndex = 0;
             this.chartJS1.Text = "Line Chart";
