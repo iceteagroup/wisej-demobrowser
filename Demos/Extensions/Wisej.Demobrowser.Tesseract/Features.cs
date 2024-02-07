@@ -50,12 +50,6 @@ namespace Wisej.DemoBrowser.Camera
             //AlertBox.Show(scannedText.Words[1]);
         }
 
-        private void LoadImage(HttpPostedFile file)
-        {
-            this.upload1.Value = file.FileName;
-            pictureBox_upload.Image = new Bitmap(Image.FromStream(file.InputStream));
-        }
-
         private void tesseract1_TextRecognized(object sender, Ext.Tesseract.TextRecognizedEventArgs e)
         {
             AlertBox.Show("Text recognized from camera");
@@ -68,26 +62,25 @@ namespace Wisej.DemoBrowser.Camera
 			SetPictureBoxImage(pictureBoxImage);
 		}
 
-		private async void button_upload_Click(object sender, EventArgs e)
+		private void LoadImage(HttpPostedFile file)
 		{
+			this.upload1.Value = file.FileName;
+			pictureBox_upload.Image = new Bitmap(Image.FromStream(file.InputStream));
+		}
+
+		private async void upload1_Uploaded_1(object sender, UploadedEventArgs e)
+		{
+			if (e.Files.Count == 0)
+				return;
+
+			LoadImage(e.Files[0]);
+
 			if (pictureBox_upload.Image != null)
 			{
 				var scannedText = await tesseract1.ScanImageAsync(pictureBox_upload.Image);
 				AlertBox.Show(scannedText.Text);
 				textBox_upload.Text = scannedText.Text;
 			}
-			else
-			{
-				AlertBox.Show("Please upload an image");
-			}
-		}
-
-		private void upload1_Uploaded_1(object sender, UploadedEventArgs e)
-		{
-			if (e.Files.Count == 0)
-				return;
-
-			LoadImage(e.Files[0]);
 		}
 
 		//Note that this method must be async so that we can call ScanImageAsync

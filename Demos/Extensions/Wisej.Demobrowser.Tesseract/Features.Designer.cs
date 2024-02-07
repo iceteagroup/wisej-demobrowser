@@ -50,7 +50,6 @@
 			this.textBox_upload = new Wisej.Web.TextBox();
 			this.flexLayoutPanel_upload = new Wisej.Web.FlexLayoutPanel();
 			this.pictureBox_upload = new Wisej.Web.PictureBox();
-			this.button_upload = new Wisej.Web.Button();
 			this.upload1 = new Wisej.Web.Upload();
 			this.tabPage_camera = new Wisej.Web.TabPage();
 			this.flexLayoutPanel1 = new Wisej.Web.FlexLayoutPanel();
@@ -281,7 +280,6 @@
 			// flexLayoutPanel_upload
 			// 
 			this.flexLayoutPanel_upload.Controls.Add(this.pictureBox_upload);
-			this.flexLayoutPanel_upload.Controls.Add(this.button_upload);
 			this.flexLayoutPanel_upload.Controls.Add(this.upload1);
 			this.flexLayoutPanel_upload.Dock = Wisej.Web.DockStyle.Left;
 			this.flexLayoutPanel_upload.Location = new System.Drawing.Point(3, 3);
@@ -294,20 +292,11 @@
 			this.pictureBox_upload.BorderStyle = Wisej.Web.BorderStyle.Solid;
 			this.pictureBox_upload.Location = new System.Drawing.Point(7, 12);
 			this.pictureBox_upload.Name = "pictureBox_upload";
-			this.pictureBox_upload.Size = new System.Drawing.Size(317, 230);
-			// 
-			// button_upload
-			// 
-			this.button_upload.Location = new System.Drawing.Point(7, 315);
-			this.button_upload.Name = "button_upload";
-			this.button_upload.Size = new System.Drawing.Size(317, 37);
-			this.button_upload.TabIndex = 4;
-			this.button_upload.Text = "Scan uploaded image";
-			this.button_upload.Click += new System.EventHandler(this.button_upload_Click);
+			this.pictureBox_upload.Size = new System.Drawing.Size(317, 296);
 			// 
 			// upload1
 			// 
-			this.upload1.Location = new System.Drawing.Point(7, 259);
+			this.upload1.Location = new System.Drawing.Point(5, 314);
 			this.upload1.Name = "upload1";
 			this.upload1.Size = new System.Drawing.Size(317, 42);
 			this.upload1.TabIndex = 3;
@@ -412,7 +401,6 @@
 		private Web.Panel panel_picturebox1;
         private Web.FlexLayoutPanel flexLayoutPanel_upload;
         private Web.PictureBox pictureBox_upload;
-        private Web.Button button_upload;
         private Web.Upload upload1;
         private Web.Panel panel_upload;
         private Web.TextBox textBox_upload;
