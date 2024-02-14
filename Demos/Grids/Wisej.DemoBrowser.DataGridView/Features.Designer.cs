@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Wisej.Web.DataGridViewCellStyle dataGridViewCellStyle11 = new Wisej.Web.DataGridViewCellStyle();
-            Wisej.Web.DataGridViewCellStyle dataGridViewCellStyle15 = new Wisej.Web.DataGridViewCellStyle();
-            Wisej.Web.DataGridViewCellStyle dataGridViewCellStyle12 = new Wisej.Web.DataGridViewCellStyle();
-            Wisej.Web.DataGridViewCellStyle dataGridViewCellStyle13 = new Wisej.Web.DataGridViewCellStyle();
-            Wisej.Web.DataGridViewCellStyle dataGridViewCellStyle14 = new Wisej.Web.DataGridViewCellStyle();
+            Wisej.Web.DataGridViewCellStyle dataGridViewCellStyle1 = new Wisej.Web.DataGridViewCellStyle();
+            Wisej.Web.DataGridViewCellStyle dataGridViewCellStyle5 = new Wisej.Web.DataGridViewCellStyle();
+            Wisej.Web.DataGridViewCellStyle dataGridViewCellStyle2 = new Wisej.Web.DataGridViewCellStyle();
+            Wisej.Web.DataGridViewCellStyle dataGridViewCellStyle3 = new Wisej.Web.DataGridViewCellStyle();
+            Wisej.Web.DataGridViewCellStyle dataGridViewCellStyle4 = new Wisej.Web.DataGridViewCellStyle();
             this.dataGridView1 = new Wisej.Web.DataGridView();
             this.Column0 = new Wisej.Web.DataGridViewTextBoxColumn();
             this.colAvatar = new Wisej.Web.DataGridViewImageColumn();
@@ -64,9 +64,9 @@
             this.dataGridView1.BorderStyle = Wisej.Web.BorderStyle.None;
             this.dataGridView1.CellBorderStyle = Wisej.Web.DataGridViewCellBorderStyle.None;
             this.dataGridView1.ColumnHeadersBorderStyle = Wisej.Web.DataGridViewCellBorderStyle.Horizontal;
-            dataGridViewCellStyle11.Alignment = Wisej.Web.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("default", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle1.Alignment = Wisej.Web.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("default", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.ColumnHeadersHeight = 42;
             this.dataGridView1.Columns.AddRange(new Wisej.Web.DataGridViewColumn[] {
             this.Column0,
@@ -83,8 +83,8 @@
             this.colButton});
             this.dataGridView1.CssClass = "shadow";
             this.dataGridView1.DataSource = this.personBindingSource;
-            dataGridViewCellStyle15.Alignment = Wisej.Web.DataGridViewContentAlignment.MiddleCenter;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle15;
+            dataGridViewCellStyle5.Alignment = Wisej.Web.DataGridViewContentAlignment.MiddleCenter;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle5;
             this.dataGridView1.Dock = Wisej.Web.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(16, 58);
             this.dataGridView1.Name = "dataGridView1";
@@ -92,26 +92,29 @@
             this.dataGridView1.Size = new System.Drawing.Size(1390, 400);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellClick += new Wisej.Web.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
+            this.dataGridView1.CellDoubleClick += new Wisej.Web.DataGridViewCellEventHandler(this.dataGridView1_CellDoubleClick);
             // 
             // Column0
             // 
             this.Column0.DataPropertyName = "UserName";
             this.Column0.HeaderText = "Username";
             this.Column0.Name = "Column0";
+            this.Column0.ValueType = typeof(string);
             this.Column0.Width = 150;
             // 
             // colAvatar
             // 
-            this.colAvatar.CellImageAlignment = Wisej.Web.DataGridViewContentAlignment.NotSet;
             this.colAvatar.DataPropertyName = "Avatar";
             this.colAvatar.HeaderText = "Avatar";
             this.colAvatar.Name = "colAvatar";
+            this.colAvatar.ValueType = typeof(string);
             // 
             // colFirstname
             // 
             this.colFirstname.DataPropertyName = "FirstName";
             this.colFirstname.HeaderText = "First Name";
             this.colFirstname.Name = "colFirstname";
+            this.colFirstname.ValueType = typeof(string);
             this.colFirstname.Width = 150;
             // 
             // colLastname
@@ -119,26 +122,29 @@
             this.colLastname.DataPropertyName = "LastName";
             this.colLastname.HeaderText = "Last Name";
             this.colLastname.Name = "colLastname";
+            this.colLastname.ValueType = typeof(string);
             this.colLastname.Width = 150;
             // 
             // colId
             // 
             this.colId.AllowHtml = true;
             this.colId.DataPropertyName = "Id";
-            dataGridViewCellStyle12.Alignment = Wisej.Web.DataGridViewContentAlignment.MiddleCenter;
-            this.colId.DefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle2.Alignment = Wisej.Web.DataGridViewContentAlignment.MiddleCenter;
+            this.colId.DefaultCellStyle = dataGridViewCellStyle2;
             this.colId.HeaderText = "ID";
             this.colId.Name = "colId";
+            this.colId.ValueType = typeof(int);
             this.colId.Visible = false;
             this.colId.Width = 50;
             // 
             // colBirthday
             // 
             this.colBirthday.DataPropertyName = "Birthday";
-            dataGridViewCellStyle13.Format = "G";
-            this.colBirthday.DefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle3.Format = "G";
+            this.colBirthday.DefaultCellStyle = dataGridViewCellStyle3;
             this.colBirthday.HeaderText = "Birthday";
             this.colBirthday.Name = "colBirthday";
+            this.colBirthday.ValueType = typeof(System.DateTime);
             this.colBirthday.Width = 200;
             // 
             // colGender
@@ -148,12 +154,14 @@
             this.colGender.DataSource = this.genderBindingSource;
             this.colGender.HeaderText = "Gender";
             this.colGender.Name = "colGender";
+            this.colGender.ValueType = typeof(Wisej.DemoBrowser.DataGridView.PersonGender);
             // 
             // colCartid
             // 
             this.colCartid.DataPropertyName = "CartId";
             this.colCartid.HeaderText = "Cart ID";
             this.colCartid.Name = "colCartid";
+            this.colCartid.ValueType = typeof(System.Guid);
             this.colCartid.Visible = false;
             // 
             // colSSN
@@ -163,16 +171,18 @@
             this.colSSN.Mask = "***-**-____";
             this.colSSN.Name = "colSSN";
             this.colSSN.ReadOnly = true;
+            this.colSSN.ValueType = typeof(string);
             // 
             // colRating
             // 
             this.colRating.AllowHtml = true;
             this.colRating.DataPropertyName = "Rating";
-            dataGridViewCellStyle14.Padding = new Wisej.Web.Padding(0, 0, 24, 0);
-            this.colRating.DefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle4.Padding = new Wisej.Web.Padding(0, 0, 24, 0);
+            this.colRating.DefaultCellStyle = dataGridViewCellStyle4;
             this.colRating.HeaderImageSource = "resource.wx/Wisej.Ext.VisualStudioIcons/Rating.svg";
             this.colRating.HeaderText = "Rating";
             this.colRating.Name = "colRating";
+            this.colRating.ValueType = typeof(string);
             this.colRating.Width = 150;
             // 
             // colAccountActive
@@ -182,6 +192,7 @@
             this.colAccountActive.HeaderText = "Account Active";
             this.colAccountActive.Name = "colAccountActive";
             this.colAccountActive.ReadOnly = true;
+            this.colAccountActive.ValueType = typeof(bool);
             this.colAccountActive.Width = 150;
             // 
             // colButton

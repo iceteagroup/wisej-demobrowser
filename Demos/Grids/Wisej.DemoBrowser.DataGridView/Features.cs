@@ -60,5 +60,10 @@ namespace Wisej.DemoBrowser.DataGridView
 
 			this.dataGridView1.EditMode = editMode;
         }
+
+        private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            MessageBox.Show($"You double clicked Cell {e.ColumnIndex}:{e.RowIndex}");
+        }
     }
 }
