@@ -695,6 +695,19 @@
             "url": "https://www.nuget.org/packages/Wisej-3-Barcode"
           }
         ]
+      },
+      "Scanner": {
+        "sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Extensions/Wisej.DemoBrowser.BarcodeReader",
+        "assembly": "Scanner, Wisej.DemoBrowser.Barcode.dll",
+        "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/CameraOutline.svg",
+        "docsUrl": "https://docs.wisej.com/extensions/extensions/barcode/api/wisej.web.ext.barcode.barcodereader",
+        "description-en": "A component for extending the functionality of the Wisej Camera to include barcode detection.",
+        "relevantLinks": [
+          {
+            "title": "Barcode on NuGet",
+            "url": "https://www.nuget.org/packages/Wisej-3-Barcode"
+          }
+        ]
       }
     },
     "BingWallpaper": {
