@@ -7,25 +7,30 @@ namespace Wisej.DemoBrowser.Barcode
 {
 	public partial class Scanner : DemoView
 	{
+		BarcodeReader reader = new BarcodeReader();
+
 		public Scanner()
 		{
 			InitializeComponent();
+
+			reader.Camera = camera1;
+			reader.ScanError += new ScanEventHandler(this.reader_ScanError);
+			reader.ScanSuccess += new ScanEventHandler(this.reader_ScanSuccess);
 		}
 
-		private void comboBoxBarcodeType_SelectedIndexChanged(object sender, EventArgs e)
+		private void button1_Click(object sender, EventArgs e)
 		{
-			var type = this.comboBoxBarcodeType.SelectedItem.ToString();
-			this.barcode1.BarcodeType = (BarcodeType)Enum.Parse(typeof(BarcodeType), type);
+			reader.ScanImage();
 		}
 
-		private void checkBoxLabel_CheckedChanged(object sender, EventArgs e)
+		private void reader_ScanError(object sender, ScanEventArgs e)
 		{
-			this.barcode1.ShowLabel = this.checkBoxLabel.Checked;
+			AlertBox.Show("Scan error. Was scan sucessful? "+e.Success);
 		}
 
-		private void textBoxValue_KeyPress(object sender, KeyPressEventArgs e)
+		private void reader_ScanSuccess(object sender, ScanEventArgs e)
 		{
-			this.barcode1.Text = this.textBoxValue.Text;
+			AlertBox.Show("Scanned. Was scan sucessful ? "+e.Success+" Data: "+e.Data);
 		}
-    }
+	}
 }

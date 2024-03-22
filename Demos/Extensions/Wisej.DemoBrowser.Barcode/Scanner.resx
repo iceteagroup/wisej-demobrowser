@@ -117,55 +117,20 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="textBoxValue.ResponsiveProfiles" mimetype="application/x-microsoft.net.object.binary.base64">
+  <data name="barcode1.ResponsiveProfiles" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFJXaXNlai5GcmFtZXdvcmssIFZlcnNpb249My4wLjAuMCwgQ3Vs
         dHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj0xN2JlZjM1ZTExYjg0MTcxDAMAAABRU3lzdGVtLkRy
         YXdpbmcsIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iMDNm
-        NWY3ZjExZDUwYTNhBQEAAAAcV2lzZWouQmFzZS5SZXNwb25zaXZlUHJvZmlsZQMAAAAETmFtZQMkQWQI
-        TG9jYXRpb24BBAQYU3lzdGVtLkRyYXdpbmcuUmVjdGFuZ2xlAwAAABRTeXN0ZW0uRHJhd2luZy5Qb2lu
-        dAMAAAACAAAABgQAAAAFUGhvbmUF+////xhTeXN0ZW0uRHJhd2luZy5SZWN0YW5nbGUEAAAAAXgBeQV3
-        aWR0aAZoZWlnaHQAAAAACAgICAMAAACAAQAAZgAAANEAAAAxAAAABfr///8UU3lzdGVtLkRyYXdpbmcu
-        UG9pbnQCAAAAAXgBeQAACAgDAAAA0gAAANgAAAAL
-</value>
-  </data>
-  <data name="comboBoxBarcodeType.ResponsiveProfiles" mimetype="application/x-microsoft.net.object.binary.base64">
-    <value>
-        AAEAAAD/////AQAAAAAAAAAMAgAAAFJXaXNlai5GcmFtZXdvcmssIFZlcnNpb249My4wLjAuMCwgQ3Vs
-        dHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj0xN2JlZjM1ZTExYjg0MTcxDAMAAABRU3lzdGVtLkRy
-        YXdpbmcsIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iMDNm
-        NWY3ZjExZDUwYTNhBQEAAAAcV2lzZWouQmFzZS5SZXNwb25zaXZlUHJvZmlsZQMAAAAETmFtZQMkQWQI
-        TG9jYXRpb24BBAQYU3lzdGVtLkRyYXdpbmcuUmVjdGFuZ2xlAwAAABRTeXN0ZW0uRHJhd2luZy5Qb2lu
-        dAMAAAACAAAABgQAAAAFUGhvbmUF+////xhTeXN0ZW0uRHJhd2luZy5SZWN0YW5nbGUEAAAAAXgBeQV3
-        aWR0aAZoZWlnaHQAAAAACAgICAMAAACAAQAAxgAAANEAAACKAAAABfr///8UU3lzdGVtLkRyYXdpbmcu
-        UG9pbnQCAAAAAXgBeQAACAgDAAAA0gAAAHgAAAAL
-</value>
-  </data>
-  <data name="checkBoxLabel.ResponsiveProfiles" mimetype="application/x-microsoft.net.object.binary.base64">
-    <value>
-        AAEAAAD/////AQAAAAAAAAAMAgAAAFJXaXNlai5GcmFtZXdvcmssIFZlcnNpb249My4wLjAuMCwgQ3Vs
-        dHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj0xN2JlZjM1ZTExYjg0MTcxDAMAAABRU3lzdGVtLkRy
-        YXdpbmcsIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iMDNm
-        NWY3ZjExZDUwYTNhBQEAAAAcV2lzZWouQmFzZS5SZXNwb25zaXZlUHJvZmlsZQMAAAAETmFtZQMkQWQI
-        TG9jYXRpb24BBAQYU3lzdGVtLkRyYXdpbmcuUmVjdGFuZ2xlAwAAABRTeXN0ZW0uRHJhd2luZy5Qb2lu
-        dAMAAAACAAAABgQAAAAFUGhvbmUF+////xhTeXN0ZW0uRHJhd2luZy5SZWN0YW5nbGUEAAAAAXgBeQV3
-        aWR0aAZoZWlnaHQAAAAACAgICAMAAACAAQAADQEAANEAAADqAAAABfr///8UU3lzdGVtLkRyYXdpbmcu
-        UG9pbnQCAAAAAXgBeQAACAgDAAAA0gAAADEAAAAL
-</value>
-  </data>
-  <data name="panel1.ResponsiveProfiles" mimetype="application/x-microsoft.net.object.binary.base64">
-    <value>
-        AAEAAAD/////AQAAAAAAAAAMAgAAAFJXaXNlai5GcmFtZXdvcmssIFZlcnNpb249My4wLjAuMCwgQ3Vs
-        dHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj0xN2JlZjM1ZTExYjg0MTcxDAMAAABRU3lzdGVtLkRy
-        YXdpbmcsIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iMDNm
-        NWY3ZjExZDUwYTNhBQEAAAAcV2lzZWouQmFzZS5SZXNwb25zaXZlUHJvZmlsZQQAAAAETmFtZQlGbG93
-        QnJlYWsEU2l6ZQpTY3JvbGxCYXJzAQQEBDJXaXNlai5CYXNlLlJlc3BvbnNpdmVQcm9maWxlK0V4dGVu
-        ZGVkUHJvcGVydHlWYWx1ZQIAAAATU3lzdGVtLkRyYXdpbmcuU2l6ZQMAAAAUV2lzZWouV2ViLlNjcm9s
-        bEJhcnMCAAAAAgAAAAYEAAAABVBob25lCQUAAAAF+v///xNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3
-        aWR0aAZoZWlnaHQAAAgIAwAAAFICAAA+AQAABfn///8UV2lzZWouV2ViLlNjcm9sbEJhcnMBAAAAB3Zh
-        bHVlX18ACAIAAAAEAAAABQUAAAAyV2lzZWouQmFzZS5SZXNwb25zaXZlUHJvZmlsZStFeHRlbmRlZFBy
-        b3BlcnR5VmFsdWUCAAAABVZhbHVlCFByb3ZpZGVyAgECAAAACAEBBggAAAAQZmxvd0xheW91dFBhbmVs
-        MQs=
+        NWY3ZjExZDUwYTNhBQEAAAAcV2lzZWouQmFzZS5SZXNwb25zaXZlUHJvZmlsZQUAAAAETmFtZQlGbG93
+        QnJlYWsDJEFkBFNpemUITG9jYXRpb24BBAQEBDJXaXNlai5CYXNlLlJlc3BvbnNpdmVQcm9maWxlK0V4
+        dGVuZGVkUHJvcGVydHlWYWx1ZQIAAAAYU3lzdGVtLkRyYXdpbmcuUmVjdGFuZ2xlAwAAABNTeXN0ZW0u
+        RHJhd2luZy5TaXplAwAAABRTeXN0ZW0uRHJhd2luZy5Qb2ludAMAAAACAAAABgQAAAAFUGhvbmUJBQAA
+        AAX6////GFN5c3RlbS5EcmF3aW5nLlJlY3RhbmdsZQQAAAABeAF5BXdpZHRoBmhlaWdodAAAAAAICAgI
+        AwAAAFUCAAB1AQAAAwAAAHAAAAAF+f///xNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWln
+        aHQAAAgIAwAAAFICAAAFAQAABfj///8UU3lzdGVtLkRyYXdpbmcuUG9pbnQCAAAAAXgBeQAACAgDAAAA
+        AwAAAEcBAAAFBQAAADJXaXNlai5CYXNlLlJlc3BvbnNpdmVQcm9maWxlK0V4dGVuZGVkUHJvcGVydHlW
+        YWx1ZQIAAAAFVmFsdWUIUHJvdmlkZXICAQIAAAAIAQEGCQAAABBmbG93TGF5b3V0UGFuZWwxCw==
 </value>
   </data>
   <data name="flowLayoutPanelMain.ResponsiveProfiles" mimetype="application/x-microsoft.net.object.binary.base64">
@@ -183,20 +148,19 @@
         bGxCYXJzAQAAAAd2YWx1ZV9fAAgCAAAABAAAAAH3////+f///wAAAAAUAAAACw==
 </value>
   </data>
-  <data name="barcode1.ResponsiveProfiles" mimetype="application/x-microsoft.net.object.binary.base64">
+  <data name="panel1.ResponsiveProfiles" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFJXaXNlai5GcmFtZXdvcmssIFZlcnNpb249My4wLjAuMCwgQ3Vs
         dHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj0xN2JlZjM1ZTExYjg0MTcxDAMAAABRU3lzdGVtLkRy
         YXdpbmcsIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iMDNm
-        NWY3ZjExZDUwYTNhBQEAAAAcV2lzZWouQmFzZS5SZXNwb25zaXZlUHJvZmlsZQUAAAAETmFtZQlGbG93
-        QnJlYWsDJEFkBFNpemUITG9jYXRpb24BBAQEBDJXaXNlai5CYXNlLlJlc3BvbnNpdmVQcm9maWxlK0V4
-        dGVuZGVkUHJvcGVydHlWYWx1ZQIAAAAYU3lzdGVtLkRyYXdpbmcuUmVjdGFuZ2xlAwAAABNTeXN0ZW0u
-        RHJhd2luZy5TaXplAwAAABRTeXN0ZW0uRHJhd2luZy5Qb2ludAMAAAACAAAABgQAAAAFUGhvbmUJBQAA
-        AAX6////GFN5c3RlbS5EcmF3aW5nLlJlY3RhbmdsZQQAAAABeAF5BXdpZHRoBmhlaWdodAAAAAAICAgI
-        AwAAAFUCAAB1AQAAAwAAAHAAAAAF+f///xNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWln
-        aHQAAAgIAwAAAFICAAAFAQAABfj///8UU3lzdGVtLkRyYXdpbmcuUG9pbnQCAAAAAXgBeQAACAgDAAAA
-        AwAAAEcBAAAFBQAAADJXaXNlai5CYXNlLlJlc3BvbnNpdmVQcm9maWxlK0V4dGVuZGVkUHJvcGVydHlW
-        YWx1ZQIAAAAFVmFsdWUIUHJvdmlkZXICAQIAAAAIAQEGCQAAABBmbG93TGF5b3V0UGFuZWwxCw==
+        NWY3ZjExZDUwYTNhBQEAAAAcV2lzZWouQmFzZS5SZXNwb25zaXZlUHJvZmlsZQQAAAAETmFtZQlGbG93
+        QnJlYWsEU2l6ZQpTY3JvbGxCYXJzAQQEBDJXaXNlai5CYXNlLlJlc3BvbnNpdmVQcm9maWxlK0V4dGVu
+        ZGVkUHJvcGVydHlWYWx1ZQIAAAATU3lzdGVtLkRyYXdpbmcuU2l6ZQMAAAAUV2lzZWouV2ViLlNjcm9s
+        bEJhcnMCAAAAAgAAAAYEAAAABVBob25lCQUAAAAF+v///xNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3
+        aWR0aAZoZWlnaHQAAAgIAwAAAFICAAA+AQAABfn///8UV2lzZWouV2ViLlNjcm9sbEJhcnMBAAAAB3Zh
+        bHVlX18ACAIAAAAEAAAABQUAAAAyV2lzZWouQmFzZS5SZXNwb25zaXZlUHJvZmlsZStFeHRlbmRlZFBy
+        b3BlcnR5VmFsdWUCAAAABVZhbHVlCFByb3ZpZGVyAgECAAAACAEBBggAAAAQZmxvd0xheW91dFBhbmVs
+        MQs=
 </value>
   </data>
   <metadata name="$this.RulerSnapLines" mimetype="application/x-microsoft.net.object.binary.base64">
