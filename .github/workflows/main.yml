@@ -11,7 +11,12 @@ jobs:
     steps:
     - name: Checkout GitHub repository
       uses: actions/checkout@v3
-
+      
+    - name: Configure Git
+      run: |
+        git config --global user.name "GitHub Action"
+        git config --global user.email "alaa.trigui@iceteagroup.com"
+        
     - name: Add Azure DevOps remote
       run: |
         git remote add azure https://alaa.trigui:${{ secrets.ADO_PAT }}@dev.azure.com/iceteagroup/Wisej.NET%20DemoBrowser/_git/wisej-demobrowser
