@@ -14,7 +14,7 @@ jobs:
 
     - name: Push to Azure DevOps
       run: |
-        git remote add azure https://${{ secrets.ADO_USERNAME }}:${{ secrets.ADO_PAT }}@dev.azure.com/iceteagroup/Wisej.NET%20DemoBrowser/_git/wisej-demobrowser
+        git remote add azure https://alaa.trigui:${{ secrets.ADO_PAT }}@dev.azure.com/iceteagroup/Wisej.NET%20DemoBrowser/_git/wisej-demobrowser
         git push azure main
 
     env:
