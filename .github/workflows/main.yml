@@ -12,11 +12,18 @@ jobs:
     - name: Checkout GitHub repository
       uses: actions/checkout@v3
 
-    - name: Push to Azure DevOps
+    - name: Add Azure DevOps remote
       run: |
         git remote add azure https://alaa.trigui:${{ secrets.ADO_PAT }}@dev.azure.com/iceteagroup/Wisej.NET%20DemoBrowser/_git/wisej-demobrowser
+
+    - name: Pull from Azure DevOps
+      run: |
+        git fetch azure
+        git merge azure/main --allow-unrelated-histories
+
+    - name: Push to Azure DevOps
+      run: |
         git push azure main
 
     env:
       AZURE_PAT: ${{ secrets.ADO_PAT }} # Store Azure DevOps Personal Access Token (PAT) in GitHub Secrets
-      AZURE_USERNAME: ${{ secrets.ADO_USERNAME }} # Store Azure DevOps Username in GitHub Secrets
