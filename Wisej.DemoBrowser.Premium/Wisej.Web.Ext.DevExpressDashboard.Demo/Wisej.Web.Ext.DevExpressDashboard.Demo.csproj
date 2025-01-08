@@ -69,7 +69,7 @@
 	<PackageReference Include="DevExpress.Web.Dashboard" Version="22.1.4" />
   </ItemGroup>
 
-  <ItemGroup Condition="'$(TargetFramework)'=='net7.0'">
+  <ItemGroup Condition="'$(TargetFramework)'=='net8.0'">
 	<PackageReference Include="DevExpress.AspNetCore.Dashboard" Version="22.1.4" />
 	<PackageReference Include="Microsoft.Data.SqlClient" Version="5.0.0" />
   </ItemGroup>
