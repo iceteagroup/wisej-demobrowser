@@ -33,6 +33,7 @@
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Features));
 			this.listViewIcons = new Wisej.Web.ListView();
 			this.imageListIcons = new Wisej.Web.ImageList(this.components);
+			this.textBox1 = new Wisej.Web.TextBox();
 			this.SuspendLayout();
 			// 
 			// listViewIcons
@@ -44,10 +45,11 @@
 			this.listViewIcons.CssClass = "shadow";
 			this.listViewIcons.LabelWrap = true;
 			this.listViewIcons.LargeImageList = this.imageListIcons;
-			this.listViewIcons.Location = new System.Drawing.Point(58, 26);
+			this.listViewIcons.Location = new System.Drawing.Point(46, 36);
 			this.listViewIcons.Name = "listViewIcons";
 			this.listViewIcons.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("listViewIcons.ResponsiveProfiles"))));
 			this.listViewIcons.SelectionMode = Wisej.Web.SelectionMode.None;
+			this.listViewIcons.ShowItemToolTips = true;
 			this.listViewIcons.Size = new System.Drawing.Size(1307, 423);
 			this.listViewIcons.TabIndex = 0;
 			this.listViewIcons.VirtualMode = true;
@@ -59,12 +61,23 @@
 			// 
 			this.imageListIcons.ImageSize = new System.Drawing.Size(30, 30);
 			// 
+			// textBox1
+			// 
+			this.textBox1.Dock = Wisej.Web.DockStyle.Top;
+			this.textBox1.Location = new System.Drawing.Point(0, 0);
+			this.textBox1.Name = "textBox1";
+			this.textBox1.Size = new System.Drawing.Size(1422, 30);
+			this.textBox1.TabIndex = 1;
+			this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+			// 
 			// Features
 			// 
+			this.Controls.Add(this.textBox1);
 			this.Controls.Add(this.listViewIcons);
 			this.Name = "Features";
 			this.Load += new System.EventHandler(this.Features_Load);
 			this.ResumeLayout(false);
+			this.PerformLayout();
 
 		}
 
@@ -72,5 +85,6 @@
 
 		private Web.ListView listViewIcons;
 		private Web.ImageList imageListIcons;
+		private Web.TextBox textBox1;
 	}
 }
