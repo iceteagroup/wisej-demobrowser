@@ -18,8 +18,8 @@ namespace Wisej.DemoBrowser.BootstrapIcons
 		private void Features_Load(object sender, EventArgs e)
 		{
 			this.fields = typeof(Ext.BootstrapIcons.Icons).GetFields();
-			var imageEntries = fields.Select(item => new ImageListEntry((string)item.GetValue(null))).ToArray();
-			this.imageListIcons.Images.AddRange(imageEntries);
+			var imageEntries = fields.Select(item => new ImageListEntry((string)item.GetValue(null), item.Name)).ToArray();
+			imageListIcons.Images.AddRange(imageEntries);
 			this.listViewIcons.VirtualListSize = imageEntries.Length;
 		}
 
@@ -41,11 +41,11 @@ namespace Wisej.DemoBrowser.BootstrapIcons
 
 		private void listViewIcons_RetrieveVirtualItem(object sender, RetrieveVirtualItemEventArgs e)
 		{
-			var text = Regex.Replace(this.fields[e.ItemIndex].Name, "([a-z]|[0-9])([A-Z]|[0-9])", "$1 $2");
+			var text = Regex.Replace(this.imageListIcons.Images[e.ItemIndex].Name, "([a-z])([A-Z]|[0-9])", "$1 $2");
 
 			e.Item = new ListViewItem(text, e.ItemIndex)
 			{
-				ToolTipText = this.fields[e.ItemIndex].Name
+				ToolTipText = imageListIcons.Images[e.ItemIndex].Name
 			};
 		}
 
@@ -54,15 +54,15 @@ namespace Wisej.DemoBrowser.BootstrapIcons
 			AlertBox.Show($"Selected {this.listViewIcons.SelectedItems[0]}");
 		}
 
-		private void textBox1_TextChanged(object sender, EventArgs e)
+		private void textBox1_KeyDown(object sender, KeyEventArgs e)
 		{
-			var filteredList = this.fields.Where(item => item.Name.Contains(this.textBox1.Text))
-								.Select(item => new ImageListEntry((string)item.GetValue(null)))
+			// Creates an array of ImageListEntries with their names
+			ImageListEntry[] filteredList = fields.Where(item => item.Name.IndexOf(textBox1.Text, StringComparison.OrdinalIgnoreCase) >= 0)
+								.Select(item => new ImageListEntry((string)item.GetValue(null), item.Name))
 								.ToArray();
-
-			this.listViewIcons.VirtualListSize = filteredList.Length;
-			this.imageListIcons.Images.AddRange(filteredList);
-			this.listViewIcons.VirtualListSize = filteredList.Length;
+			listViewIcons.VirtualListSize = filteredList.Length;
+			imageListIcons.Images.Clear();
+			imageListIcons.Images.AddRange(filteredList);
 		}
 	}
 }
