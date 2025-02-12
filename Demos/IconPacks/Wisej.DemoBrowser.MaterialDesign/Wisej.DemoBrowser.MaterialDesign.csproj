@@ -1,22 +1,23 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-	<PropertyGroup>
-		<TargetFrameworks>net48;net8.0</TargetFrameworks>
-		<PlatformTarget>AnyCPU</PlatformTarget>
-		<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
-		<CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
-		<EmbeddedResourceUseDependentUponConvention>true</EmbeddedResourceUseDependentUponConvention>
-		<NoWarn>CA1416</NoWarn>
-	</PropertyGroup>
+  <PropertyGroup>
+	<TargetFrameworks>net48;net8.0</TargetFrameworks>
+	<PlatformTarget>AnyCPU</PlatformTarget>
+	<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+	<CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+	<EmbeddedResourceUseDependentUponConvention>true</EmbeddedResourceUseDependentUponConvention>
+	<NoWarn>CA1416</NoWarn>
+  </PropertyGroup>
 
-	<ItemGroup Condition="'$(TargetFramework.TrimEnd(`0123456789`))'=='net'">
-		<Reference Include="System.Windows.Forms" />
-	</ItemGroup>
+  <ItemGroup Condition="'$(TargetFramework.TrimEnd(`0123456789`))'=='net'">
+	<Reference Include="System.Windows.Forms" />
+  </ItemGroup>
 
-	<ItemGroup>
-		<PackageReference Include="Wisej-3" Version="3.5.*-*" />
-		<PackageReference Include="Wisej-3-MaterialDesign" Version="3.5.*-*" />
-		<ProjectReference Include="..\..\..\Wisej.DemoBrowser.Common\Wisej.DemoBrowser.Common.csproj" />
-	</ItemGroup>
+  <ItemGroup>
+	<PackageReference Include="Wisej-3" Version="3.5.*-*" />
+	<PackageReference Include="Wisej-3-ClientClipboard" Version="3.5.*-*" />
+	<PackageReference Include="Wisej-3-MaterialDesign" Version="3.5.*-*" />
+	<ProjectReference Include="..\..\..\Wisej.DemoBrowser.Common\Wisej.DemoBrowser.Common.csproj" />
+  </ItemGroup>
 
 </Project>

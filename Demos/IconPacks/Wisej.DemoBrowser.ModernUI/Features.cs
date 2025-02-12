@@ -4,6 +4,7 @@ using System.Linq;
 using System.Reflection;
 using System.Text.RegularExpressions;
 using Wisej.DemoBrowser.Common;
+using Wisej.Ext.ClientClipboard;
 using Wisej.Web;
 using Wisej.Web.VisualBasic;
 
@@ -27,19 +28,19 @@ namespace Wisej.DemoBrowser.ModernUi
 
 		private void listViewIcons_Appear(object sender, EventArgs e)
 		{
-            if (Application.Browser.Device == "Mobile")
-            {
-                // ScreenSize is different on Android vs. iOS.
-                var screenSize = Application.Browser.ScreenSize;
-                var screenWidth = Math.Min(screenSize.Width, screenSize.Height);
+			if (Application.Browser.Device == "Mobile")
+			{
+				// ScreenSize is different on Android vs. iOS.
+				var screenSize = Application.Browser.ScreenSize;
+				var screenWidth = Math.Min(screenSize.Width, screenSize.Height);
 
-                this.listViewIcons.ItemSize = new System.Drawing.Size(screenWidth / 3 - 20, 115);
-            }
-            else
-            {
-                this.listViewIcons.ItemSize = new System.Drawing.Size((this.listViewIcons.Width / 10) - 2, 115);
-            }
-        }
+				this.listViewIcons.ItemSize = new System.Drawing.Size(screenWidth / 3 - 20, 115);
+			}
+			else
+			{
+				this.listViewIcons.ItemSize = new System.Drawing.Size((this.listViewIcons.Width / 10) - 2, 115);
+			}
+		}
 
 		private void listViewIcons_RetrieveVirtualItem(object sender, RetrieveVirtualItemEventArgs e)
 		{
@@ -47,13 +48,17 @@ namespace Wisej.DemoBrowser.ModernUi
 
 			e.Item = new ListViewItem(text, e.ItemIndex)
 			{
-				ToolTipText = imageListIcons.Images[e.ItemIndex].Name
+				ToolTipText = imageListIcons.Images[e.ItemIndex].Name,
+				Tag = fields.Where(item => item.Name == imageListIcons.Images[e.ItemIndex].Name).Select(item => item.GetValue(null)).FirstOrDefault()
 			};
 		}
 
 		private void listViewIcons_SelectedIndexChanged(object sender, EventArgs e)
 		{
 			AlertBox.Show($"Selected {this.listViewIcons.SelectedItems[0]}");
+
+			// copy the resource to the clipboard
+			ClientClipboard.WriteText(this.listViewIcons.SelectedItems[0].Tag.ToString());
 		}
 
 		private void textBox1_KeyDown(object sender, KeyEventArgs e)

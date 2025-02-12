@@ -28,10 +28,9 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.components = new System.ComponentModel.Container();
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Features));
 			this.listViewIcons = new Wisej.Web.ListView();
-			this.imageListIcons = new Wisej.Web.ImageList(this.components);
+			this.imageListIcons = new Wisej.Web.ImageList();
 			this.textBox1 = new Wisej.Web.TextBox();
 			this.SuspendLayout();
 			// 
@@ -49,7 +48,6 @@
 			this.listViewIcons.Location = new System.Drawing.Point(58, 26);
 			this.listViewIcons.Name = "listViewIcons";
 			this.listViewIcons.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("listViewIcons.ResponsiveProfiles"))));
-			this.listViewIcons.SelectionMode = Wisej.Web.SelectionMode.None;
 			this.listViewIcons.ShowItemToolTips = true;
 			this.listViewIcons.Size = new System.Drawing.Size(1307, 423);
 			this.listViewIcons.TabIndex = 0;
@@ -67,7 +65,7 @@
 			this.textBox1.Dock = Wisej.Web.DockStyle.Top;
 			this.textBox1.Location = new System.Drawing.Point(0, 0);
 			this.textBox1.Name = "textBox1";
-			this.textBox1.Size = new System.Drawing.Size(1422, 40);
+			this.textBox1.Size = new System.Drawing.Size(1422, 30);
 			this.textBox1.TabIndex = 1;
 			this.textBox1.Watermark = "Type to search";
 			this.textBox1.KeyDown += new Wisej.Web.KeyEventHandler(this.textBox1_KeyDown);

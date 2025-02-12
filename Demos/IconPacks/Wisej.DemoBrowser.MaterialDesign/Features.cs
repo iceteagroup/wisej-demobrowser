@@ -3,6 +3,7 @@ using System.Linq;
 using System.Reflection;
 using System.Text.RegularExpressions;
 using Wisej.DemoBrowser.Common;
+using Wisej.Ext.ClientClipboard;
 using Wisej.Web;
 
 namespace Wisej.DemoBrowser.MaterialDesign
@@ -45,13 +46,17 @@ namespace Wisej.DemoBrowser.MaterialDesign
 
 			e.Item = new ListViewItem(text, e.ItemIndex)
 			{
-				ToolTipText = imageListIcons.Images[e.ItemIndex].Name
+				ToolTipText = imageListIcons.Images[e.ItemIndex].Name,
+				Tag = fields.Where(item => item.Name == imageListIcons.Images[e.ItemIndex].Name).Select(item => item.GetValue(null)).FirstOrDefault()
 			};
 		}
 
 		private void listViewIcons_SelectedIndexChanged(object sender, EventArgs e)
 		{
 			AlertBox.Show($"Selected {this.listViewIcons.SelectedItems[0]}");
+
+			// copy the resource to the clipboard
+			ClientClipboard.WriteText(this.listViewIcons.SelectedItems[0].Tag.ToString());
 		}
 
 		private void textBox1_KeyDown(object sender, KeyEventArgs e)
