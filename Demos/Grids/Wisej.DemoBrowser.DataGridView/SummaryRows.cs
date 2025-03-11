@@ -31,6 +31,8 @@ namespace Wisej.DemoBrowser.DataGridView
 			FillData(4);
 			AddAggregations();
 
+
+			// Hides row meant to categorize data
 			this.dataGridView1.Columns[0].Visible = false;
 		}
 
@@ -73,7 +75,7 @@ namespace Wisej.DemoBrowser.DataGridView
 
 		private void AddAggregations()
 		{
-			// sum all expenses grouped by quarter (column 0)
+			// sum all expenses grouped by year (column 0)
 			DataGridViewRow[] totals = null;
 			var grid = this.dataGridView1;
 			for (var m = 0; m < 12; m++)
@@ -85,11 +87,12 @@ namespace Wisej.DemoBrowser.DataGridView
 				t[1].Value = "Office Supplies";
 				t[1].Style = TotalTitleStyle;
 
+				// Inserting rows for labels
 				grid.Rows.Insert(t.Index);
 				grid.Rows.Insert(t.Index);
 				grid.Rows.Insert(t.Index);
 
-				// Year label.
+				// Year label
 				var quarter = grid.Rows[t.Index - 3];
 				quarter[2].Value = t[0].Value;
 				quarter[2].Style = YearStyle;
