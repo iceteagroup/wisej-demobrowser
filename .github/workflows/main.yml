@@ -27,6 +27,7 @@ jobs:
       run: |
         git fetch azure
         git merge azure/main --allow-unrelated-histories
+        
 
     - name: Push to Azure DevOps
       run: |
