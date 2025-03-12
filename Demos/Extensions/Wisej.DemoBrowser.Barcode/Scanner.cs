@@ -2,6 +2,7 @@
 using Wisej.DemoBrowser.Common;
 using Wisej.Web;
 using Wisej.Web.Ext.Barcode;
+using Wisej.Web.Ext.Camera;
 
 namespace Wisej.DemoBrowser.Barcode
 {
@@ -12,10 +13,6 @@ namespace Wisej.DemoBrowser.Barcode
 		public Scanner()
 		{
 			InitializeComponent();
-
-			reader.Camera = camera1;
-			reader.ScanError += new ScanEventHandler(this.reader_ScanError);
-			reader.ScanSuccess += new ScanEventHandler(this.reader_ScanSuccess);
 		}
 
 		private void button1_Click(object sender, EventArgs e)
@@ -31,6 +28,20 @@ namespace Wisej.DemoBrowser.Barcode
 		private void reader_ScanSuccess(object sender, ScanEventArgs e)
 		{
 			AlertBox.Show("Scanned. Was scan sucessful ? "+e.Success+" Data: "+e.Data);
+		}
+
+		private void Scanner_Load(object sender, EventArgs e)
+		{
+			reader.Camera = camera1;
+			reader.ScanError += new ScanEventHandler(this.reader_ScanError);
+			reader.ScanSuccess += new ScanEventHandler(this.reader_ScanSuccess);
+
+			this.comboBox1.Items.AddRange(Enum.GetNames(typeof(Camera.VideoFacingMode)));
+		}
+
+		private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+		{
+			camera1.FacingMode = (Camera.VideoFacingMode)this.comboBox1.SelectedIndex;
 		}
 	}
 }
