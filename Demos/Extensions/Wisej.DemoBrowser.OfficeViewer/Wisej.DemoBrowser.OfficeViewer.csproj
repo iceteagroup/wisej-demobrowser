@@ -1,0 +1,46 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFrameworks>net48;net8.0</TargetFrameworks>
+		<PlatformTarget>AnyCPU</PlatformTarget>
+		<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+		<CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+		<EmbeddedResourceUseDependentUponConvention>true</EmbeddedResourceUseDependentUponConvention>
+		<NoWarn>CA1416</NoWarn>
+	</PropertyGroup>
+
+	<ItemGroup Condition="'$(TargetFramework.TrimEnd(`0123456789`))'=='net'">
+		<Reference Include="System.Windows.Forms" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Remove="Files\excel_sample.xls" />
+	  <None Remove="Files\powerpoint_sample.ppt" />
+	  <None Remove="Files\word_sample.doc" />
+	  <None Remove="Icons\excel.svg" />
+	  <None Remove="Icons\powerpoint.svg" />
+	  <None Remove="Icons\word.svg" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <EmbeddedResource Include="Files\excel_sample.xls">
+	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+	  </EmbeddedResource>
+	  <EmbeddedResource Include="Files\powerpoint_sample.ppt">
+	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+	  </EmbeddedResource>
+	  <EmbeddedResource Include="Files\word_sample.doc">
+	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+	  </EmbeddedResource>
+	  <EmbeddedResource Include="Icons\excel.svg" />
+	  <EmbeddedResource Include="Icons\powerpoint.svg" />
+	  <EmbeddedResource Include="Icons\word.svg" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Wisej-3" Version="3.5.*-*" />
+		<PackageReference Include="Wisej-3-OfficeViewer" Version="3.5.*-*" />
+		<ProjectReference Include="..\..\..\Wisej.DemoBrowser.Common\Wisej.DemoBrowser.Common.csproj" />
+	</ItemGroup>
+
+</Project>

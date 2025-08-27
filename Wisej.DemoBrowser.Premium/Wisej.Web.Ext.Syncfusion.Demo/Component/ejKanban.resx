@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ejKanban1.Options" xml:space="preserve">
+    <value>{"dataSource":[{"id":1,"status":"Open","summary":"Analyze the new requirements gathered from the customer.","type":"Story","priority":"Low","tags":"Analyze,Customer","estimate":3.5,"assignee":"Nancy Davloio","imgUrl":"Images/Kanban/1.png","rankId":1},{"id":2,"status":"InProgress","summary":"Improve application performance","type":"Improvement","priority":"Normal","tags":"Improvement","estimate":6,"assignee":"Andrew Fuller","imgUrl":"Images/Kanban/2.png","rankId":1},{"id":3,"status":"Open","summary":"Arrange a web meeting with the customer to get new requirements.","type":"Others","priority":"Critical","tags":"Meeting","estimate":5.5,"assignee":"Janet Leverling","imgUrl":"Images/Kanban/3.png","rankId":2},{"id":4,"status":"InProgress","summary":"Fix the issues reported in the IE browser.","type":"Bug","priority":"Release Breaker","tags":"IE","estimate":2.5,"assignee":"Janet Leverling","imgUrl":"Images/Kanban/3.png","rankId":2},{"id":5,"status":"Testing","summary":"Fix the issues reported by the customer.","type":"Bug","priority":"Low","tags":"Customer","estimate":"3.5","assignee":"Steven walker","imgUrl":"Images/Kanban/5.png","rankId":1},{"id":6,"status":"Close","summary":"Arrange a web meeting with the customer to get the login page requirements.","type":"Others","priority":"Low","tags":"Meeting","estimate":2,"assignee":"Michael Suyama","imgUrl":"Images/Kanban/6.png","rankId":1},{"id":7,"status":"Validate","summary":"Validate new requirements","type":"Improvement","priority":"Low","tags":"Validation","estimate":1.5,"assignee":"Robert King","imgUrl":"Images/Kanban/7.png","rankId":1},{"id":8,"status":"Close","summary":"Login page validation","type":"Story","priority":"Release Breaker","tags":"Validation,Fix","estimate":2.5,"assignee":"Laura Callahan","imgUrl":"Images/Kanban/8.png","rankId":2},{"id":9,"status":"Testing","summary":"Fix the issues reported in Safari browser.","type":"Bug","priority":"Release Breaker","tags":"Fix,Safari","estimate":1.5,"assignee":"Nancy Davloio","imgUrl":"Images/Kanban/1.png","rankId":2},{"id":10,"status":"Close","summary":"Test the application in the IE browser.","type":"Story","priority":"Low","tags":"Testing,IE","estimate":5.5,"assignee":"Margaret hamilt","imgUrl":"Images/Kanban/4.png","rankId":3},{"id":11,"status":"Validate","summary":"Validate the issues reported by the customer.","type":"Story","priority":"High","tags":"Validation,Fix","estimate":1,"assignee":"Steven walker","imgUrl":"Images/Kanban/5.png","rankId":1},{"id":12,"status":"Testing","summary":"Check Login page validation.","type":"Story","priority":"Release Breaker","tags":"Testing","estimate":0.5,"assignee":"Michael Suyama","imgUrl":"Images/Kanban/6.png","rankId":3},{"id":13,"status":"Open","summary":"API improvements.","type":"Improvement","priority":"High","tags":"Grid,API","estimate":3.5,"assignee":"Robert King","imgUrl":"Images/Kanban/7.png","rankId":3},{"id":14,"status":"InProgress","summary":"Add responsive support to application","type":"Epic","priority":"Critical","tags":"Responsive","estimate":6,"assignee":"Laura Callahan","imgUrl":"Images/Kanban/8.png","rankId":3},{"id":15,"status":"Open","summary":"Show the retrieved data from the server in grid control.","type":"Story","priority":"High","tags":"Database,SQL","estimate":5.5,"assignee":"Margaret hamilt","imgUrl":"Images/Kanban/4.png","rankId":4},{"id":16,"status":"InProgress","summary":"Fix cannot open user’s default database SQL error.","priority":"Critical","type":"Bug","tags":"Database,Sql2008","estimate":2.5,"assignee":"Janet Leverling","imgUrl":"Images/Kanban/3.png","rankId":4},{"id":17,"status":"Testing","summary":"Fix the issues reported in data binding.","type":"Story","priority":"Normal","tags":"Databinding","estimate":"3.5","assignee":"Janet Leverling","imgUrl":"Images/Kanban/3.png","rankId":4},{"id":18,"status":"Close","summary":"Analyze SQL server 2008 connection.","type":"Story","priority":"Release Breaker","tags":"Grid,Sql","estimate":2,"assignee":"Andrew Fuller","imgUrl":"Images/Kanban/2.png","rankId":4},{"id":19,"status":"Validate","summary":"Validate databinding issues.","type":"Story","priority":"Low","tags":"Validation","estimate":1.5,"assignee":"Margaret hamilt","imgUrl":"Images/Kanban/4.png","rankId":1},{"id":20,"status":"Close","summary":"Analyze grid control.","type":"Story","priority":"High","tags":"Analyze","estimate":2.5,"assignee":"Margaret hamilt","imgUrl":"Images/Kanban/4.png","rankId":5},{"id":21,"status":"Close","summary":"Stored procedure for initial data binding of the grid.","type":"Others","priority":"Release Breaker","tags":"Databinding","estimate":1.5,"assignee":"Steven walker","imgUrl":"Images/Kanban/5.png","rankId":6},{"id":22,"status":"Close","summary":"Analyze stored procedures.","type":"Story","priority":"Release Breaker","tags":"Procedures","estimate":5.5,"assignee":"Janet Leverling","imgUrl":"Images/Kanban/3.png","rankId":7},{"id":23,"status":"Validate","summary":"Validate editing issues.","type":"Story","priority":"Critical","tags":"Editing","estimate":1,"assignee":"Nancy Davloio","imgUrl":"Images/Kanban/1.png","rankId":1},{"id":24,"status":"Testing","summary":"Test editing functionality.","type":"Story","priority":"Normal","tags":"Editing,Test","estimate":0.5,"assignee":"Nancy Davloio","imgUrl":"Images/Kanban/1.png","rankId":5},{"id":25,"status":"Open","summary":"Enhance editing functionality.","type":"Improvement","priority":"Low","tags":"Editing","estimate":3.5,"assignee":"Andrew Fuller","imgUrl":"Images/Kanban/2.png","rankId":5},{"id":26,"status":"InProgress","summary":"Improve the performance of the editing functionality.","type":"Epic","priority":"High","tags":"Performance","estimate":6,"assignee":"Nancy Davloio","imgUrl":"Images/Kanban/1.png","rankId":5},{"id":27,"status":"Open","summary":"Arrange web meeting with the customer to show editing demo.","type":"Others","priority":"High","tags":"Meeting,Editing","estimate":5.5,"assignee":"Steven walker","imgUrl":"Images/Kanban/5.png","rankId":6}],"columns":[{"headerText":"Backlog","key":"Open","headerTemplate":"#column1"},{"headerText":"In Progress","key":"InProgress","headerTemplate":"#column2"},{"headerText":"Testing","key":"Testing","headerTemplate":"#column3"},{"headerText":"Done","key":"Close","headerTemplate":"#column4"}],"keyField":"status","allowTitle":true,"fields":{"primaryKey":"id","content":"summary","imageUrl":"imgUrl"},"allowSelection":false,"allowScrolling":true,"scrollSettings":{"height":"auto"}}</value>
+  </data>
+  <metadata name="$this.RulerSnapLines" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0
+        dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EHAQAAAAABAAAAAQAAAAQU
+        U3lzdGVtLkRyYXdpbmcuUG9pbnQCAAAABf3///8UU3lzdGVtLkRyYXdpbmcuUG9pbnQCAAAAAXgBeQAA
+        CAgCAAAAAAAAANMAAAAL
+</value>
+  </metadata>
+</root>

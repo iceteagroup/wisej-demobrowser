@@ -1,0 +1,42 @@
+{
+	"Title": "ListView",
+	"Description": "Represents a list view control, which displays a collection of items that can be displayed using one of four different views.",
+	"Documentation": [
+		{
+			"EmbeddedControls": [
+				{
+					"Title": "ListView",
+					"Link": "https://docs.wisej.com/docs/controls/lists/listview",
+					"Label": "Control",
+					"IconSource": "resource.wx/Wisej.Ext.VisualStudioIcons/ListView.svg"
+				},
+				{
+					"Title": "ComboBox",
+					"Link": "https://docs.wisej.com/docs/controls/lists/combobox",
+					"Label": "Control",
+					"IconSource": "resource.wx/Wisej.Ext.VisualStudioIcons/ComboBox.svg"
+				},
+				{
+					"Title": "Embedded Controls",
+					"Link": "",
+					"Label": "Concept",
+					"IconSource": "resource.wx/Wisej.Ext.VisualStudioIcons/ItemListView.svg"
+				}
+			],
+			"VirtualScrolling": [
+				{
+					"Title": "ListView",
+					"Link": "https://docs.wisej.com/docs/controls/lists/listview",
+					"Label": "Control",
+					"IconSource": "resource.wx/Wisej.Ext.VisualStudioIcons/ListView.svg"
+				},
+				{
+					"Title": "Virtual Scrolling",
+					"Link": "https://docs.wisej.com/docs/controls/lists/listview",
+					"Label": "Concept",
+					"IconSource": "resource.wx/Wisej.Ext.VisualStudioIcons/Virtual.svg"
+				}
+			]
+		}
+	]
+}

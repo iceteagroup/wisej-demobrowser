@@ -1,0 +1,37 @@
+name: Sync to Azure DevOps
+
+on:
+  push:
+    branches:
+      - main # or any branch you want to track
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout GitHub repository
+      uses: actions/checkout@v3
+      with:
+        fetch-depth: 0
+      
+    - name: Configure Git
+      run: |
+        git config --global user.name "GitHub Action"
+        git config --global user.email "alaa.trigui@iceteagroup.com"
+        
+    - name: Add Azure DevOps remote
+      run: |
+        git remote add azure https://alaa.trigui:${{ secrets.ADO_PAT }}@dev.azure.com/iceteagroup/Wisej.NET%20DemoBrowser/_git/wisej-demobrowser
+
+    - name: Pull from Azure DevOps
+      run: |
+        git fetch azure
+        git merge azure/main --allow-unrelated-histories
+        
+
+    - name: Push to Azure DevOps
+      run: |
+        git push azure main --force
+
+    env:
+      AZURE_PAT: ${{ secrets.ADO_PAT }} # Store Azure DevOps Personal Access Token (PAT) in GitHub Secrets

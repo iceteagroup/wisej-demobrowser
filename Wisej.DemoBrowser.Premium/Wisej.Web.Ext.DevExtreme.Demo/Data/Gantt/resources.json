@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "text": "Management"
+  },
+  {
+    "id": 2,
+    "text": "Project Manager"
+  },
+  {
+    "id": 3,
+    "text": "Analyst"
+  },
+  {
+    "id": 4,
+    "text": "Developer"
+  },
+  {
+    "id": 5,
+    "text": "Testers"
+  },
+  {
+    "id": 6,
+    "text": "Trainers"
+  },
+  {
+    "id": 7,
+    "text": "Technical Communicators"
+  },
+  {
+    "id": 8,
+    "text": "Deployment Team"
+  }
+]

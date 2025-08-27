@@ -1,0 +1,264 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Wisej.DemoBrowser.SalesDashboard</RootNamespace>
+    <AssemblyName>Wisej.DemoBrowser.SalesDashboard</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+    <ProjectGuid>{C3BA0A63-3804-4CDA-9B67-22A7CCCD02D2}</ProjectGuid>
+    <Use64BitIISExpress />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="Default.html" />
+    <Content Include="Default.json" />
+    <Content Include="favicon.ico" />
+    <EmbeddedResource Include="Configuration.json" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Icons\justgage2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Icons\chartJS.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Components\Charts\BarChartExample.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\Charts\BarChartExample.Designer.cs">
+      <DependentUpon>BarChartExample.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\Charts\BubbleChartExample.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\Charts\BubbleChartExample.Designer.cs">
+      <DependentUpon>BubbleChartExample.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\Charts\LineChartExample.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\Charts\LineChartExample.Designer.cs">
+      <DependentUpon>LineChartExample.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\Charts\PieChartExample.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\Charts\PieChartExample.Designer.cs">
+      <DependentUpon>PieChartExample.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\Items\BarChartItemView\BarChartItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\Items\BarChartItemView\BarChartItem.Designer.cs">
+      <DependentUpon>BarChartItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\Items\BarChartItemView\BarChartItemInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\Items\BarChartItemView\BarChartItemInfo.Designer.cs">
+      <DependentUpon>BarChartItemInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\Items\CAC_CLVView\CacClvView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\Items\CAC_CLVView\CacClvView.Designer.cs">
+      <DependentUpon>CacClvView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\Items\ChartsGroupView\ChartsGroupItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\Items\ChartsGroupView\ChartsGroupItem.Designer.cs">
+      <DependentUpon>ChartsGroupItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\Items\ComplexComponent\ComplexItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\Items\ComplexComponent\ComplexItem.Designer.cs">
+      <DependentUpon>ComplexItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\Items\LineChartItemView\LineChartItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\Items\LineChartItemView\LineChartItem.Designer.cs">
+      <DependentUpon>LineChartItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\Items\PieChartItemView\PieChartItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\Items\PieChartItemView\PieChartItem.Designer.cs">
+      <DependentUpon>PieChartItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\Charts\ChartsGroup.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\Charts\ChartsGroup.Designer.cs">
+      <DependentUpon>ChartsGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\Items\ProgressView\ProgressView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\Items\ProgressView\ProgressView.Designer.cs">
+      <DependentUpon>ProgressView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\DashboardMain.cs">
+      <SubType>UserControl</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Views\DashboardMain.Designer.cs">
+      <DependentUpon>DashboardMain.cs</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Wisej.DemoBrowser.Common\Wisej.DemoBrowser.Common.csproj">
+      <Project>{1f0b2e9e-6624-4db8-810f-48a7bc531a29}</Project>
+      <Name>Wisej.DemoBrowser.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Components\Charts\BarChartExample.resx">
+      <DependentUpon>BarChartExample.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\Charts\BubbleChartExample.resx">
+      <DependentUpon>BubbleChartExample.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\Charts\LineChartExample.resx">
+      <DependentUpon>LineChartExample.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\Charts\PieChartExample.resx">
+      <DependentUpon>PieChartExample.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\Items\BarChartItemView\BarChartItem.resx">
+      <DependentUpon>BarChartItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\Items\BarChartItemView\BarChartItemInfo.resx">
+      <DependentUpon>BarChartItemInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\Items\CAC_CLVView\CacClvView.resx">
+      <DependentUpon>CacClvView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\Items\ChartsGroupView\ChartsGroupItem.resx">
+      <DependentUpon>ChartsGroupItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\Items\ComplexComponent\ComplexItem.resx">
+      <DependentUpon>ComplexItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\Items\LineChartItemView\LineChartItem.resx">
+      <DependentUpon>LineChartItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\Items\PieChartItemView\PieChartItem.resx">
+      <DependentUpon>PieChartItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\Charts\ChartsGroup.resx">
+      <DependentUpon>ChartsGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\Items\ProgressView\ProgressView.resx">
+      <DependentUpon>ProgressView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\DashboardMain.resx">
+      <DependentUpon>DashboardMain.cs</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Wisej-2">
+      <Version>2.5.*-*</Version>
+    </PackageReference>
+    <PackageReference Include="Wisej-2-ChartJS3">
+      <Version>2.5.*-*</Version>
+    </PackageReference>
+    <PackageReference Include="Wisej-2-FontAwesome">
+      <Version>2.5.*-*</Version>
+    </PackageReference>
+    <PackageReference Include="Wisej-2-JustGage">
+      <Version>2.5.*-*</Version>
+    </PackageReference>
+    <PackageReference Include="Wisej-2-VisualStudioIcons">
+      <Version>2.5.*-*</Version>
+    </PackageReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:53767/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

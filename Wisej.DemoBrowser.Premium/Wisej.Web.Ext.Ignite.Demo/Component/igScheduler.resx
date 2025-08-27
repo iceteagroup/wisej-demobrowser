@@ -1,0 +1,329 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="igScheduler1.Options" xml:space="preserve">
+    <value>{"selectedDate":"2022-04-13T17:58:18.909","views":["monthView","agendaView"],"dataSource":[{"resourceId":1,"id":11,"start":"2022-04-02T06:45:00.000","end":"2022-04-03T06:45:00.000","subject":"Marketing conference"},{"resourceId":6,"id":5,"end":"2022-04-03T12:45:00.000","start":"2022-04-03T13:45:00.000","subject":"Dentist appointment"},{"resourceId":11,"id":10,"start":"2022-04-04T08:00:00.000","end":"2022-04-04T08:30:00.000","subject":"Distributions sync","description":"Sync with distributions team"},{"resourceId":2,"id":2,"start":"2022-04-08T11:00:00.000","end":"2022-04-08T12:00:00.000","subject":"Company meeting","location":"Zero hub hall","description":"A company meeting"},{"resourceId":8,"id":7,"start":"2022-04-09T11:45:00.000","end":"2022-04-09T14:45:00.000","subject":"UX training","location":"Training hall Dragon","description":"Monthly user expirience training"},{"resourceId":5,"id":4,"start":"2022-04-10T05:45:00.000","end":"2022-04-10T06:15:00.000","subject":"Certification exam","location":"Exam room 1"},{"resourceId":7,"id":6,"start":"2022-04-14T07:45:00.000","end":"2022-04-16T07:45:00.000","subject":"Web Talks Conference","location":"Conference hall Universe","description":"A conference about modern web technologies and trends"},{"resourceId":3,"id":32,"start":"2022-04-24T12:45:00.000","end":"2022-04-24T14:45:00.000","subject":"Team Building","location":"Hawaii plaza hotel","description":"Have a teambuilding with colleges"},{"resourceId":4,"id":3,"start":"2022-04-30T11:00:00.000","end":"2022-04-30T12:00:00.000","subject":"Buisness lunch","location":"The Lavender Road","description":"Discuss the new rental system with partner"},{"resourceId":10,"id":9,"start":"2022-04-19T09:45:00.000","end":"2022-04-19T09:55:00.000","subject":"Morning Yoga class","location":"Training room life"},{"resourceId":9,"id":8,"start":"2022-04-25T13:15:00.000","end":"2022-04-25T16:15:00.000","subject":"Release review","location":"Conference room Unity","description":"Release review sync"},{"id":11,"start":"2022-04-26T10:45:00.000","end":"2022-04-26T12:45:00.000","subject":"Interview","location":"Guest room 1","description":"Interview the candidate for Principal Program Agent"}],"resources":[{"id":1,"displayName":"Trina Friesen"},{"id":2,"displayName":"Mack Koch"},{"id":3,"displayName":"Burney O'Kon"},{"id":4,"displayName":"Dawson Rohan"},{"id":5,"displayName":"Cain Schmidt"},{"id":6,"displayName":"Jesenia Rogahn"},{"id":7,"displayName":"Tod Heller"},{"id":8,"displayName":"Rhonda Cormier"},{"id":9,"displayName":"Hayden Lockman"},{"id":10,"displayName":"Tierra Witting"},{"id":11,"displayName":"Roderic Considine"}]}</value>
+  </data>
+  <data name="widgetFunction1.Source" xml:space="preserve">
+    <value>var today = new Date(),
+    currentYear = today.getFullYear(),
+    currentMonth = today.getMonth(),
+    appointments = [{
+        "resourceId": 1,
+        "id": 11,
+        "start": new Date(currentYear, currentMonth, 2, 6, 45),
+        "end": new Date(currentYear, currentMonth, 3, 6, 45),
+        "subject": "Marketing conference"
+    },
+    {
+        "resourceId": 6,
+        "id": 5,
+        "end": new Date(currentYear, currentMonth, 3, 12, 45),
+        "start": new Date(currentYear, currentMonth, 3, 13, 45),
+        "subject": "Dentist appointment"
+    },
+    {
+        "resourceId": 11,
+        "id": 10,
+        "start": new Date(currentYear, currentMonth, 4, 8),
+        "end": new Date(currentYear, currentMonth, 4, 8, 30),
+        "subject": "Distributions sync",
+        "description": "Sync with distributions team"
+    },
+    {
+        "resourceId": 2,
+        "id": 2,
+        "start": new Date(currentYear, currentMonth, 8, 11),
+        "end": new Date(currentYear, currentMonth, 8, 12),
+        "subject": "Company meeting",
+        "location": "Zero hub hall",
+        "description": "A company meeting"
+    },
+    {
+        "resourceId": 8,
+        "id": 7,
+        "start": new Date(currentYear, currentMonth, 9, 11, 45),
+        "end": new Date(currentYear, currentMonth, 9, 14, 45),
+        "subject": "UX training",
+        "location": "Training hall Dragon",
+        "description": "Monthly user expirience training"
+    },
+    {
+        "resourceId": 5,
+        "id": 4,
+        "start": new Date(currentYear, currentMonth, 10, 5, 45),
+        "end": new Date(currentYear, currentMonth, 10, 6, 15),
+        "subject": "Certification exam",
+        "location": "Exam room 1"
+    },
+    {
+        "resourceId": 7,
+        "id": 6,
+        "start": new Date(currentYear, currentMonth, 14, 7, 45),
+        "end": new Date(currentYear, currentMonth, 16, 7, 45),
+        "subject": "Web Talks Conference",
+        "location": "Conference hall Universe",
+        "description": "A conference about modern web technologies and trends"
+    },
+    {
+        "resourceId": 3,
+        "id": 32,
+        "start": new Date(currentYear, currentMonth, 24, 12, 45),
+        "end": new Date(currentYear, currentMonth, 24, 14, 45),
+        "subject": "Team Building",
+        "location": "Hawaii plaza hotel",
+        "description": "Have a teambuilding with colleges"
+    }, {
+        "resourceId": 4,
+        "id": 3,
+        "start": new Date(currentYear, currentMonth, 30, 11),
+        "end": new Date(currentYear, currentMonth, 30, 12),
+        "subject": "Buisness lunch",
+        "location": "The Lavender Road",
+        "description": "Discuss the new rental system with partner"
+    },
+    {
+        "resourceId": 10,
+        "id": 9,
+        "start": new Date(currentYear, currentMonth, 19, 9, 45),
+        "end": new Date(currentYear, currentMonth, 19, 9, 55),
+        "subject": "Morning Yoga class",
+        "location": "Training room life"
+    },
+    {
+        "resourceId": 9,
+        "id": 8,
+        "start": new Date(currentYear, currentMonth, 25, 13, 15),
+        "end": new Date(currentYear, currentMonth, 25, 16, 15),
+        "subject": "Release review",
+        "location": "Conference room Unity",
+        "description": "Release review sync"
+    }, {
+        "id": 11,
+        "start": new Date(currentYear, currentMonth, 26, 10, 45),
+        "end": new Date(currentYear, currentMonth, 26, 12, 45),
+        "subject": "Interview",
+        "location": "Guest room 1",
+        "description": "Interview the candidate for Principal Program Agent"
+    }
+    ],
+    resources = [
+        {
+            id: 1,
+            displayName: "Trina Friesen"
+        },
+        {
+            id: 2,
+            displayName: "Mack Koch"
+        },
+        {
+            id: 3,
+            displayName: "Burney O'Kon"
+        },
+        {
+            id: 4,
+            displayName: "Dawson Rohan"
+        },
+        {
+            id: 5,
+            displayName: "Cain Schmidt"
+        },
+        {
+            id: 6,
+            displayName: "Jesenia Rogahn"
+        },
+        {
+            id: 7,
+            displayName: "Tod Heller"
+        },
+        {
+            id: 8,
+            displayName: "Rhonda Cormier"
+        },
+        {
+            id: 9,
+            displayName: "Hayden Lockman"
+        },
+        {
+            id: 10,
+            displayName: "Tierra Witting"
+        },
+        {
+            id: 11,
+            displayName: "Roderic Considine"
+        }
+    ],
+    recurrenceAppointments = [{
+        "resourceId": 1,
+        "id": 10,
+        "start": new Date(currentYear, currentMonth, 4, 8),
+        "end": new Date(currentYear, currentMonth, 4, 8, 30),
+        "subject": "Distributions sync",
+        "description": "Sync with distributions team"
+    },
+    {
+        "resourceId": 2,
+        "id": 2,
+        "start": new Date(currentYear, currentMonth, 8, 11),
+        "end": new Date(currentYear, currentMonth, 8, 12),
+        "subject": "Company meeting",
+        "location": "Zero hub hall",
+        "description": "A company meeting"
+    },
+    {
+        "resourceId": 3,
+        "id": 7,
+        "start": new Date(currentYear, currentMonth, 29, 11, 45),
+        "end": new Date(currentYear, currentMonth, 29, 14, 45),
+        "subject": "UX training",
+        "location": "Training hall Dragon",
+        "description": "Monthly user expirience training"
+    },
+    {
+        "id": 4,
+        "start": new Date(currentYear, currentMonth, 10, 10, 45),
+        "end": new Date(currentYear, currentMonth, 10, 12, 45),
+        "subject": "Mountain trip",
+        "location": "Pirin",
+        "description": "",
+        "resourceId": 8,
+        "recurrence": "FREQ=DAILY;INTERVAL=1;COUNT=2;WKST=MO"
+    },
+    {
+        "id": 5,
+        "start": new Date(currentYear, currentMonth, 19, 11),
+        "end": new Date(currentYear, currentMonth, 19, 11),
+        "subject": "Bachata Festival",
+        "location": "Plovdiv",
+        "description": "",
+        "resourceId": 7,
+    }];
+    
+    this.widget.option("dataSource", appointments);
+    this.widget.option("resources", resources);</value>
+  </data>
+  <metadata name="$this.RulerSnapLines" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0
+        dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EHAQAAAAABAAAAAQAAAAQU
+        U3lzdGVtLkRyYXdpbmcuUG9pbnQCAAAABf3///8UU3lzdGVtLkRyYXdpbmcuUG9pbnQCAAAAAXgBeQAA
+        CAgCAAAAAAAAANUAAAAL
+</value>
+  </metadata>
+</root>

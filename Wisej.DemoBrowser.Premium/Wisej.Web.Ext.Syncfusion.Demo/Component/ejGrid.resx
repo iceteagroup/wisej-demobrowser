@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ejGrid1.Options" xml:space="preserve">
+    <value>{"dataSource":[{"iD":1004641,"age":38,"employment":"Private","education":"College","marital":"Unmarried","occupation":"Service","income":81838,"sex":"Female","deductions":0,"hours":72,"accounts":"UnitedStates","adjustment":0,"adjusted":0},{"iD":1010229,"age":35,"employment":"Private","education":"Associate","marital":"Absent","occupation":"Transport","income":72099,"sex":"Male","deductions":0,"hours":30,"accounts":"Jamaica","adjustment":0,"adjusted":0},{"iD":1024587,"age":32,"employment":"Private","education":"HSgrad","marital":"Divorced","occupation":"Clerical","income":154676.74,"sex":"Male","deductions":0,"hours":40,"accounts":"UnitedStates","adjustment":0,"adjusted":0},{"iD":1038288,"age":45,"employment":"Private","education":"Bachelor","marital":"Married","occupation":"Repair","income":27743.82,"sex":"Male","deductions":0,"hours":55,"accounts":"UnitedStates","adjustment":7298,"adjusted":1},{"iD":1044221,"age":60,"employment":"Private","education":"College","marital":"Married","occupation":"Executive","income":7568.23,"sex":"Male","deductions":0,"hours":40,"accounts":"UnitedStates","adjustment":15024,"adjusted":1},{"iD":1047095,"age":74,"employment":"Private","education":"HSgrad","marital":"Married","occupation":"Service","income":33144.4,"sex":"Male","deductions":0,"hours":30,"accounts":"UnitedStates","adjustment":0,"adjusted":0},{"iD":1047698,"age":43,"employment":"Private","education":"Bachelor","marital":"Married","occupation":"Executive","income":43391.17,"sex":"Male","deductions":0,"hours":50,"accounts":"UnitedStates","adjustment":22418,"adjusted":1},{"iD":1053888,"age":35,"employment":"Private","education":"Yr12","marital":"Married","occupation":"Machinist","income":59906.65,"sex":"Male","deductions":0,"hours":40,"accounts":"UnitedStates","adjustment":0,"adjusted":0},{"iD":1061323,"age":25,"employment":"Private","education":"Associate","marital":"Divorced","occupation":"Clerical","income":126888.91,"sex":"Female","deductions":0,"hours":40,"accounts":"UnitedStates","adjustment":0,"adjusted":0},{"iD":1062363,"age":22,"employment":"Private","education":"HSgrad","marital":"Absent","occupation":"Sales","income":52466.49,"sex":"Female","deductions":0,"hours":37,"accounts":"UnitedStates","adjustment":0,"adjusted":0},{"iD":1068642,"age":48,"employment":"Private","education":"College","marital":"Divorced","occupation":"Service","income":291416.11,"sex":"Female","deductions":0,"hours":35,"accounts":"UnitedStates","adjustment":0,"adjusted":0},{"iD":1071615,"age":60,"employment":"Private","education":"Vocational","marital":"Widowed","occupation":"Clerical","income":24155.31,"sex":"Male","deductions":0,"hours":40,"accounts":"UnitedStates","adjustment":0,"adjusted":0},{"iD":1071878,"age":21,"employment":"Private","education":"College","marital":"Absent","occupation":"Service","income":143254.86,"sex":"Female","deductions":0,"hours":35,"accounts":"UnitedStates","adjustment":0,"adjusted":0},{"iD":1077831,"age":21,"employment":"Private","education":"College","marital":"Absent","occupation":"Machinist","income":120554.81,"sex":"Male","deductions":0,"hours":40,"accounts":"UnitedStates","adjustment":0,"adjusted":0}],"allowPaging":true,"isResponsive":true,"columns":[{"field":"iD","headerText":"ID","width":75,"textAlign":0},{"field":"age","headerText":"Age","width":40},{"field":"employment","headerText":"Employment","width":75,"textAlign":0,"priority":4},{"field":"education","headerText":"Education","width":75,"textAlign":0,"priority":3},{"field":"marital","headerText":"Marital","width":75,"textAlign":0,"priority":4}],"editSettings":{"allowEditing":true,"allowAdding":true,"allowDeleting":true,"editMode":"batch"},"toolbarSettings":{"showToolbar":true,"toolbarItems":["add","edit","delete","update","cancel"]}}</value>
+  </data>
+  <metadata name="$this.RulerSnapLines" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0
+        dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EHAQAAAAABAAAAAQAAAAQU
+        U3lzdGVtLkRyYXdpbmcuUG9pbnQCAAAABf3///8UU3lzdGVtLkRyYXdpbmcuUG9pbnQCAAAAAXgBeQAA
+        CAgCAAAAAAAAANQAAAAL
+</value>
+  </metadata>
+</root>

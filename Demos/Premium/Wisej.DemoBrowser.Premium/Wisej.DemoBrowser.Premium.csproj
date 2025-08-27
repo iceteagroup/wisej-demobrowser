@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFrameworks>net48;net8.0</TargetFrameworks>
+		<PlatformTarget>AnyCPU</PlatformTarget>
+		<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+		<CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+		<EmbeddedResourceUseDependentUponConvention>true</EmbeddedResourceUseDependentUponConvention>
+		<NoWarn>CA1416</NoWarn>
+	</PropertyGroup>
+
+	<ItemGroup Condition="'$(TargetFramework.TrimEnd(`0123456789`))'=='net'">
+		<Reference Include="System.Windows.Forms" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Remove="Images\devextreme.png" />
+	  <None Remove="Images\infragistics.png" />
+	  <None Remove="Images\kendoui.png" />
+	  <None Remove="Images\syncfusion.png" />
+	  <None Remove="Images\webix.png" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <EmbeddedResource Include="Images\devextreme.png" />
+	  <EmbeddedResource Include="Images\infragistics.png" />
+	  <EmbeddedResource Include="Images\kendoui.png" />
+	  <EmbeddedResource Include="Images\syncfusion.png" />
+	  <EmbeddedResource Include="Images\webix.png" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Wisej-3" Version="3.5.*-*" />
+		<ProjectReference Include="..\..\..\Wisej.DemoBrowser.Common\Wisej.DemoBrowser.Common.csproj" />
+	</ItemGroup>
+
+</Project>

@@ -1,0 +1,134 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>Wisej KendoUI Integration</title>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge;IE=11" />
+	<meta property="og:title" content="Wisej Telerik KendoUI Integration - Full Control Suite" />
+	<meta property="og:site_name" content="wisej-demobrowser.azurewebsites.net/Kendo" />
+	<meta property="og:type" content="website" />
+
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Expires" content="0" />
+
+	<link rel="icon" href="https://wisej.com/wp-content/uploads/2017/06/Wisej-Logo-64x64.png" sizes="32x32" />
+	<link rel="icon" href="https://wisej.com/wp-content/uploads/2017/06/Wisej-Logo-64x64.png" sizes="192x192" />
+
+	<script src="wisej.wx"></script>
+	<style>
+		#splash {
+			position: absolute;
+			background: url("Images/splash.png");
+			background-position: center top;
+			background-repeat: no-repeat;
+			background-size: 100%;
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
+			opacity: 0;
+			z-index: 5;
+			transition: opacity 2s;
+		}
+
+		#strike {
+			position: absolute;
+			background-position: right top;
+			background-size: 65% auto;
+			background-repeat: no-repeat;
+			background-color: #E6E6E6;
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
+			opacity: 1;
+			transition: opacity 2s;
+		}
+
+		#loading {
+			color: black;
+			font-family: 'Open Sans', Helvetica, sans-serif;
+			font-weight: 300;
+			font-size: 18px;
+			letter-spacing: 20px;
+			text-align: center;
+			width: 617px;
+			position: absolute;
+			bottom: calc(16% + 50px);
+			margin-left: 155px;
+			left: 0px;
+		}
+
+		#loading-bar {
+			background-color: #FFFFFF;
+			width: 617px;
+			height: 28px;
+			margin-left: 155px;
+			left: 0px;
+			border-radius: 13px;
+			position: absolute;
+			bottom: 16%;
+		}
+
+		#loading-progress {
+			background-color: #EE8100;
+			height: 100%;
+			border-radius: 13px;
+			width: 10px;
+			transition: width 3s, left 3s;
+			position: absolute;
+		}
+
+        .employee-photo {
+            display: inline-block;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background-size: 32px 35px;
+            background-position: center center;
+            vertical-align: middle;
+            line-height: 32px;
+            box-shadow: inset 0 0 1px #999, inset 0 0 10px rgba(0,0,0,.2);
+            margin-left: 5px;
+        }
+
+        .employee-name {
+            display: inline-block;
+            vertical-align: middle;
+            line-height: 32px;
+            padding-left: 3px;
+        }
+	</style>
+</head>
+<body style="padding: 0px; margin: 0px">
+	<div id="empty"></div>
+	<div id="splash">
+		<div id="loading">LOADING</div>
+		<div id="loading-bar">
+			<div id="loading-progress"></div>
+		</div>
+	</div>
+	<div id="strike"></div>
+	<script>
+		var splash = document.getElementById("splash");
+		var loadingProgress = document.getElementById("loading-progress");
+		splash.style.opacity = 1;
+		setTimeout(function () {
+			loadingProgress.style.width = "100%";
+			loadingProgress.style.left = "0%";
+			setTimeout(function () {
+				loadingProgress.style.width = "0%";
+				loadingProgress.style.left = "100%";
+			}, 3000);
+		}, 1);
+
+		Wisej.onLoad = function () {
+			document.getElementById("splash").remove();
+			document.getElementById("strike").remove();
+		}
+	</script>
+
+	<div id="template" style="display:none">
+		Hello, World
+	</div>
+</body>
+</html>

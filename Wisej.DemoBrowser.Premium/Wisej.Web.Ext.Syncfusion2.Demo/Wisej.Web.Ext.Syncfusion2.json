@@ -1,0 +1,55 @@
+﻿//
+// Premium extension configuration file.
+//
+// Use this file to select where to download the JavaScript and CSS
+// assets for the extension widgets. Select between "cdn", "local" or "embedded".
+//
+// Deploy this file with your application or change the Build Action to "Embedded Resource"
+// to embed it within the assembly.
+//
+
+{
+  //
+  // Specifies which set of packages to use from the "sources" map below.
+  //
+  "source": "cdn",
+
+  //
+  // Specifies the default theme. Used when the Theme property of the widget is not set.
+  //
+  "theme": "material",
+
+  //
+  // Enter your Syncfusion license key.
+  // https://ej2.syncfusion.com/documentation/licensing/overview/
+  //
+  "licenseKey": "",
+
+  //
+  // Widget packages.
+  //
+  "sources": {
+    "cdn": {
+      "root": "https://cdn.syncfusion.com/ej2/20.4.48",
+      "packages": {
+        "jquery.js": "https://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js",
+        "ej2.js": "%root%/dist/ej2.min.js",
+        "theme.css": "%root%/%theme%.css"
+      }
+    },
+    "local": {
+      "root": "Syncfusion2",
+      "packages": {
+        "ej2.js": "%root%/dist/ej2.min.js",
+        "theme.css": "%root%/%theme%.css"
+      }
+    },
+    "embedded": {
+      "root": "resource.wx",
+      "packages": {
+        "ej2.js": "%root%/dist/ej2.min.js",
+        "theme.css": "%root%/%theme%.css"
+      }
+    }
+  }
+}

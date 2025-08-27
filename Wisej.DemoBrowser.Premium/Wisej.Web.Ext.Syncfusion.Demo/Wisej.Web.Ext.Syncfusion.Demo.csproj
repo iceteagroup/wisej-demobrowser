@@ -1,0 +1,92 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+	<PropertyGroup>
+		<TargetFrameworks>net48</TargetFrameworks>
+		<PlatformTarget>AnyCPU</PlatformTarget>
+		<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+		<EmbeddedResourceUseDependentUponConvention>true</EmbeddedResourceUseDependentUponConvention>
+		<NoWarn>CA1416</NoWarn>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(TargetFramework.TrimEnd(`0123456789`))'=='net'">
+		<OutputPath>bin\</OutputPath>
+		<StartupObject></StartupObject>
+		<OutputType>Library</OutputType>
+		<RunCommand>$(ProgramFiles)\IIS Express\iisexpress.exe</RunCommand>
+		<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+		<RunArguments>/path:"$(MSBuildProjectDirectory)" /port:5000</RunArguments>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(TargetFramework.TrimEnd(`0123456789`))'!='net'">
+		<StartupObject>$(RootNamespace).Startup</StartupObject>
+	</PropertyGroup>
+
+	<ItemGroup Condition="'$(TargetFramework.TrimEnd(`0123456789`))'=='net'">
+		<Reference Include="System.Windows.Forms" />
+		<Compile Remove="Startup.cs" />
+		<Content Include="Startup.cs" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Remove="Themes\EJ1.mixin.theme" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Content Update="Default.json">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Content>
+		<Content Update="Web.config">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Content>
+	</ItemGroup>
+
+	<ItemGroup>
+		<Content Include="Default.html">
+			<CopyToPublishDirectory>Always</CopyToPublishDirectory>
+		</Content>
+		<Content Include="favicon.ico">
+			<CopyToPublishDirectory>Always</CopyToPublishDirectory>
+		</Content>
+	</ItemGroup>
+
+	<ItemGroup>
+		<EmbeddedResource Include="Themes\EJ1.mixin.theme" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Wisej-3" Version="3.2.*-*" />
+		<PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
+		<PackageReference Include="Wisej-3-Syncfusion" Version="3.2.*-*" />
+		<PackageReference Include="Wisej-3-MaterialDesign" Version="3.2.*-*" />
+	</ItemGroup>
+
+	<ItemGroup Condition="'$(TargetFramework)'=='net48'">
+	  <Reference Include="Syncfusion.Compression.Base">
+	    <HintPath>Libs\Syncfusion.Compression.Base.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Syncfusion.DocIO.Base">
+	    <HintPath>Libs\Syncfusion.DocIO.Base.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Syncfusion.EJ">
+	    <HintPath>Libs\Syncfusion.EJ.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Syncfusion.EJ.Export">
+	    <HintPath>Libs\Syncfusion.EJ.Export.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Syncfusion.Licensing">
+	    <HintPath>Libs\Syncfusion.Licensing.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Syncfusion.OfficeChart.Base">
+	    <HintPath>Libs\Syncfusion.OfficeChart.Base.dll</HintPath>
+	  </Reference>
+		<Reference Include="Syncfusion.EJ.PdfViewer">
+			<HintPath>Libs\Syncfusion.EJ.PdfViewer.dll</HintPath>
+		</Reference>
+		<Reference Include="Syncfusion.Pdf.Base">
+			<HintPath>Libs\Syncfusion.Pdf.Base.dll</HintPath>
+		</Reference>
+	  <Reference Include="Syncfusion.XlsIO.Base">
+	    <HintPath>Libs\Syncfusion.XlsIO.Base.dll</HintPath>
+	  </Reference>
+	</ItemGroup>
+</Project>

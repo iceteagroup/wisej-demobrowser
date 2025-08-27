@@ -1,0 +1,75 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFrameworks>net48;net8.0</TargetFrameworks>
+		<PlatformTarget>AnyCPU</PlatformTarget>
+		<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+		<EmbeddedResourceUseDependentUponConvention>true</EmbeddedResourceUseDependentUponConvention>
+		<NoWarn>CA1416</NoWarn>
+	</PropertyGroup>
+
+	<ItemGroup Condition="'$(TargetFramework.TrimEnd(`0123456789`))'=='net'">
+		<Reference Include="System.Windows.Forms" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Remove="Images\People\1.jpg" />
+	  <None Remove="Images\People\10.jpg" />
+	  <None Remove="Images\People\11.jpg" />
+	  <None Remove="Images\People\12.jpg" />
+	  <None Remove="Images\People\13.jpg" />
+	  <None Remove="Images\People\14.jpg" />
+	  <None Remove="Images\People\15.jpg" />
+	  <None Remove="Images\People\16.jpg" />
+	  <None Remove="Images\People\17.jpg" />
+	  <None Remove="Images\People\18.jpg" />
+	  <None Remove="Images\People\19.jpg" />
+	  <None Remove="Images\People\2.jpg" />
+	  <None Remove="Images\People\20.jpg" />
+	  <None Remove="Images\People\21.jpg" />
+	  <None Remove="Images\People\22.jpg" />
+	  <None Remove="Images\People\23.jpg" />
+	  <None Remove="Images\People\24.jpg" />
+	  <None Remove="Images\People\25.jpg" />
+	  <None Remove="Images\People\3.jpg" />
+	  <None Remove="Images\People\4.jpg" />
+	  <None Remove="Images\People\5.jpg" />
+	  <None Remove="Images\People\6.jpg" />
+	  <None Remove="Images\People\7.jpg" />
+	  <None Remove="Images\People\8.jpg" />
+	  <None Remove="Images\People\9.jpg" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <EmbeddedResource Include="Images\People\1.jpg" />
+	  <EmbeddedResource Include="Images\People\10.jpg" />
+	  <EmbeddedResource Include="Images\People\11.jpg" />
+	  <EmbeddedResource Include="Images\People\12.jpg" />
+	  <EmbeddedResource Include="Images\People\13.jpg" />
+	  <EmbeddedResource Include="Images\People\14.jpg" />
+	  <EmbeddedResource Include="Images\People\15.jpg" />
+	  <EmbeddedResource Include="Images\People\16.jpg" />
+	  <EmbeddedResource Include="Images\People\17.jpg" />
+	  <EmbeddedResource Include="Images\People\18.jpg" />
+	  <EmbeddedResource Include="Images\People\19.jpg" />
+	  <EmbeddedResource Include="Images\People\2.jpg" />
+	  <EmbeddedResource Include="Images\People\20.jpg" />
+	  <EmbeddedResource Include="Images\People\21.jpg" />
+	  <EmbeddedResource Include="Images\People\22.jpg" />
+	  <EmbeddedResource Include="Images\People\23.jpg" />
+	  <EmbeddedResource Include="Images\People\24.jpg" />
+	  <EmbeddedResource Include="Images\People\25.jpg" />
+	  <EmbeddedResource Include="Images\People\3.jpg" />
+	  <EmbeddedResource Include="Images\People\4.jpg" />
+	  <EmbeddedResource Include="Images\People\5.jpg" />
+	  <EmbeddedResource Include="Images\People\6.jpg" />
+	  <EmbeddedResource Include="Images\People\7.jpg" />
+	  <EmbeddedResource Include="Images\People\8.jpg" />
+	  <EmbeddedResource Include="Images\People\9.jpg" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Wisej-3" Version="3.5.*-*" />
+	</ItemGroup>
+
+</Project>
