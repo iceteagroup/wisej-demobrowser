@@ -389,7 +389,7 @@ namespace Wisej.DemoBrowser.ChatControl
 		}
 
 		// render a control based on the content type of the message.
-		private void chatBox1_MessageControlNeeded(RenderMessageControlEventArgs e)
+		private void chatBox1_MessageControlNeeded(object sender, RenderMessageControlEventArgs e)
 		{
 			var message = e.Message;
 			var content = message.Content;
@@ -438,7 +438,7 @@ namespace Wisej.DemoBrowser.ChatControl
 		}
 
 		// formats a message before it's posted.
-		private void chatBox1_FormatMessage(MessageEventArgs e)
+		private void chatBox1_FormatMessage(object sender, MessageEventArgs e)
 		{
 			var message = e.Message;
 			var content = message.Content;
