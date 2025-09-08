@@ -14,9 +14,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Wisej-3" Version="3.5.*-*" />
-		<PackageReference Include="Wisej-3-Barcode" Version="3.5.*-*" />
-		<PackageReference Include="Wisej-3-Camera" Version="3.5.5-preview.7" />
+		<PackageReference Include="Wisej-4" Version="4.0.*-*" />
+		<PackageReference Include="Wisej-4-Barcode" Version="4.0.*-*" />
+		<PackageReference Include="Wisej-4-Camera" Version="3.5.5-preview.7" />
 		<ProjectReference Include="..\..\..\Wisej.DemoBrowser.Common\Wisej.DemoBrowser.Common.csproj" />
 	</ItemGroup>
 

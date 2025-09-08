@@ -14,9 +14,9 @@
   </ItemGroup>
 
   <ItemGroup>
-	<PackageReference Include="Wisej-3" Version="3.5.*-*" />
-	<PackageReference Include="Wisej-3-ClientClipboard" Version="3.5.*-*" />
-	<PackageReference Include="Wisej-3-VaadinIcons" Version="3.5.*-*" />
+	<PackageReference Include="Wisej-4" Version="4.0.*-*" />
+	<PackageReference Include="Wisej-4-ClientClipboard" Version="4.0.*-*" />
+	<PackageReference Include="Wisej-4-VaadinIcons" Version="4.0.*-*" />
 	<ProjectReference Include="..\..\..\Wisej.DemoBrowser.Common\Wisej.DemoBrowser.Common.csproj" />
   </ItemGroup>
 

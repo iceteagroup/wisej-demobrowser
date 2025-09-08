@@ -14,8 +14,8 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Wisej-3" Version="3.5.*-*" />
-		<PackageReference Include="Wisej-3-Signature" Version="3.5.*-*" />
+		<PackageReference Include="Wisej-4" Version="4.0.*-*" />
+		<PackageReference Include="Wisej-4-Signature" Version="4.0.*-*" />
 		<ProjectReference Include="..\..\..\Wisej.DemoBrowser.Common\Wisej.DemoBrowser.Common.csproj" />
 	</ItemGroup>
 
