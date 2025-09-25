@@ -7,7 +7,7 @@ using Wisej.Web.Ext.DevExpressDashboard.Demo.Dashboards;
 
 namespace Wisej.Web.Ext.DevExpressDashboard.Demo
 {
-	public partial class MainView : Page
+	public partial class MainView : Page 
 	{
 		private DashboardConfigurator _configurator;
 		private DashboardHelper _dashboardHelper;
@@ -63,3 +63,4 @@ namespace Wisej.Web.Ext.DevExpressDashboard.Demo
 		}
 	}
 }
+
