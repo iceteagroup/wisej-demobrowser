@@ -36,5 +36,9 @@
 {
 	"url": "Default.html",
 	"showLoader":  false,
-	"startup": "Wisej.Web.Ext.Ignite.Demo.Program.Main, Wisej.Web.Ext.Ignite.Demo"
+	"startup": "Wisej.Web.Ext.Ignite.Demo.Program.Main, Wisej.Web.Ext.Ignite.Demo",
+	"options": {
+    "automation.mode": true
+  }
 }
+
