@@ -42,5 +42,9 @@
 	"showLoader": false,
 	"sessionTimeout": 60,
 	"theme": "Bootstrap-4",
-	"startup": "Wisej.DemoBrowser.Program.Main, Wisej.DemoBrowser"
+	"startup": "Wisej.DemoBrowser.Program.Main, Wisej.DemoBrowser",
+	"options": {
+    "automation.mode": true
+  }
 }
+
