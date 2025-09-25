@@ -36,5 +36,9 @@
 	"url": "Default.html",
 	"showLoader": false,
 	"theme": "Bootstrap-4",
-	"startup": "Wisej.Web.Ext.DevExtreme.Demo.Program.Main, Wisej.Web.Ext.DevExtreme.Demo"
+	"startup": "Wisej.Web.Ext.DevExtreme.Demo.Program.Main, Wisej.Web.Ext.DevExtreme.Demo",
+	"options": {
+    "automation.mode": true
+  }
 }
+
