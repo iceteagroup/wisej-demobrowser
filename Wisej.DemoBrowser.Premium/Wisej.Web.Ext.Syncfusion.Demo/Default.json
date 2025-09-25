@@ -35,5 +35,9 @@
 {
 	"url": "Default.html",
 	"showLoader": false,
-	"startup": "Wisej.Web.Ext.Syncfusion.Demo.Program.Main, Wisej.Web.Ext.Syncfusion.Demo"
+	"startup": "Wisej.Web.Ext.Syncfusion.Demo.Program.Main, Wisej.Web.Ext.Syncfusion.Demo",
+	"options": {
+    "automation.mode": true
+  }
 }
+
