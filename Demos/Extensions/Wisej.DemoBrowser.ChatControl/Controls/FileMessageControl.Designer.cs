@@ -49,7 +49,7 @@ namespace Wisej.DemoBrowser.ChatControl.Controls
 			this.Controls.Add(this.pictureBox1);
 			this.Controls.Add(this.labelFileName);
 			this.Cursor = Wisej.Web.Cursors.Hand;
-			this.MinimumSize = new System.Drawing.Size(150, 0);
+			this.MinimumSize = new System.Drawing.Size(150, 150);
 			this.Name = "FileMessageControl";
 			this.Size = new System.Drawing.Size(300, 200);
 			this.Click += new System.EventHandler(this.FileMessageControl_Click);
