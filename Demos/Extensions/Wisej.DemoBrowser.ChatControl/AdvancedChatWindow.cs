@@ -1,12 +1,13 @@
-﻿using System;
+﻿using Bogus;
+using System;
 using System.IO;
 using System.Linq;
 using System.Text;
-using Bogus;
 using Wisej.DemoBrowser.ChatControl.Controls;
 using Wisej.DemoBrowser.ChatControl.Windows;
 using Wisej.Web;
 using Wisej.Web.Ext.ChatControl;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace Wisej.DemoBrowser.ChatControl
 {
@@ -215,7 +216,11 @@ namespace Wisej.DemoBrowser.ChatControl
 			foreach (var key in e.Files.AllKeys)
 			{
 				var file = e.Files[key];
-				var tempPath = Application.MapPath($"TempFiles/{file.FileName}");
+				var tempFiles = Application.MapPath("TempFiles");
+				var tempPath = Path.Combine(tempFiles, file.FileName);
+				if (!Directory.Exists(tempFiles))
+					Directory.CreateDirectory(tempFiles);
+
 				using (var fs = new FileStream(Application.MapPath($"TempFiles/{file.FileName}"), FileMode.OpenOrCreate))
 				{
 					file.InputStream.CopyTo(fs);
