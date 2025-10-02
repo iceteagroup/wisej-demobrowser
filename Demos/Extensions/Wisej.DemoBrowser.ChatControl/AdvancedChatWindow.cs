@@ -7,7 +7,6 @@ using Wisej.DemoBrowser.ChatControl.Controls;
 using Wisej.DemoBrowser.ChatControl.Windows;
 using Wisej.Web;
 using Wisej.Web.Ext.ChatControl;
-using static System.Net.Mime.MediaTypeNames;
 
 namespace Wisej.DemoBrowser.ChatControl
 {
@@ -230,11 +229,11 @@ namespace Wisej.DemoBrowser.ChatControl
 			}
 		}
 
-        // posts a message from this session to the chat server to be received by other sessions.
-        private void chatBox1_SendMessage(object sender, MessageEventArgs e)
-        {
-            ChatServer.SendMessage(e.Message);
-        }
+		// posts a message from this session to the chat server to be received by other sessions.
+		private void chatBox1_SendMessage(object sender, MessageEventArgs e)
+		{
+			ChatServer.SendMessage(e.Message);
+		}
 
 		// disconnect from the chat server.
 		private void ChatWindow_Disposed(object sender, EventArgs e)
