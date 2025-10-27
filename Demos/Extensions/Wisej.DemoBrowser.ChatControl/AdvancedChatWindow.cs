@@ -1,8 +1,8 @@
-﻿using System;
+﻿using Bogus;
+using System;
 using System.IO;
 using System.Linq;
 using System.Text;
-using Bogus;
 using Wisej.DemoBrowser.ChatControl.Controls;
 using Wisej.DemoBrowser.ChatControl.Windows;
 using Wisej.Web;
@@ -215,7 +215,11 @@ namespace Wisej.DemoBrowser.ChatControl
 			foreach (var key in e.Files.AllKeys)
 			{
 				var file = e.Files[key];
-				var tempPath = Application.MapPath($"TempFiles/{file.FileName}");
+				var tempFiles = Application.MapPath("TempFiles");
+				var tempPath = Path.Combine(tempFiles, file.FileName);
+				if (!Directory.Exists(tempFiles))
+					Directory.CreateDirectory(tempFiles);
+
 				using (var fs = new FileStream(Application.MapPath($"TempFiles/{file.FileName}"), FileMode.OpenOrCreate))
 				{
 					file.InputStream.CopyTo(fs);
@@ -225,11 +229,11 @@ namespace Wisej.DemoBrowser.ChatControl
 			}
 		}
 
-        // posts a message from this session to the chat server to be received by other sessions.
-        private void chatBox1_SendMessage(object sender, MessageEventArgs e)
-        {
-            ChatServer.SendMessage(e.Message);
-        }
+		// posts a message from this session to the chat server to be received by other sessions.
+		private void chatBox1_SendMessage(object sender, MessageEventArgs e)
+		{
+			ChatServer.SendMessage(e.Message);
+		}
 
 		// disconnect from the chat server.
 		private void ChatWindow_Disposed(object sender, EventArgs e)

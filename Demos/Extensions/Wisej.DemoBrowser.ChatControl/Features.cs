@@ -366,7 +366,11 @@ namespace Wisej.DemoBrowser.ChatControl
 			foreach (var key in e.Files.AllKeys)
 			{
 				var file = e.Files[key];
-				var tempPath = Application.MapPath($"TempFiles/{file.FileName}");
+				var tempFiles = Application.MapPath("TempFiles");
+				var tempPath = Path.Combine(tempFiles, file.FileName);
+				if (!Directory.Exists(tempFiles))
+					Directory.CreateDirectory(tempFiles);
+
 				using (var fs = new FileStream(Application.MapPath($"TempFiles/{file.FileName}"), FileMode.OpenOrCreate))
 				{
 					file.InputStream.CopyTo(fs);
