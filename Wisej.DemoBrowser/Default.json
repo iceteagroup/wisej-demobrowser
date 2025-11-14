@@ -45,8 +45,9 @@
 	"startup": "Wisej.DemoBrowser.Program.Main, Wisej.DemoBrowser",
 	"options": {
     "automation.mode": true,
-	"automation.property": "test_id"
+	"automation.property": "data-testid"
   }
 }
+
 
 
