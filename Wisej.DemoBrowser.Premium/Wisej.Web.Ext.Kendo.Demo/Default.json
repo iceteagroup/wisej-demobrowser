@@ -40,8 +40,9 @@
 	"startup": "Wisej.Web.Ext.Kendo.Demo.Program.Main, Wisej.Web.Ext.Kendo.Demo",
 	"options": {
     "automation.mode": true,
-	"automation.property": "test_id"
+	"automation.property": "data-testid"
   }
 }
+
 
 
