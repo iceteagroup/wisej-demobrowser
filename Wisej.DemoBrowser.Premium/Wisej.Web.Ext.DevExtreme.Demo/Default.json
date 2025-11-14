@@ -38,7 +38,9 @@
 	"theme": "Bootstrap-4",
 	"startup": "Wisej.Web.Ext.DevExtreme.Demo.Program.Main, Wisej.Web.Ext.DevExtreme.Demo",
 	"options": {
-    "automation.mode": true
+    "automation.mode": true,
+	"automation.property": "test_id"
   }
 }
+
 
