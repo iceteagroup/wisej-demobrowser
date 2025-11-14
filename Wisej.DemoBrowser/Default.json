@@ -44,7 +44,9 @@
 	"theme": "Bootstrap-4",
 	"startup": "Wisej.DemoBrowser.Program.Main, Wisej.DemoBrowser",
 	"options": {
-    "automation.mode": true
+    "automation.mode": true,
+	"automation.property": "test_id"
   }
 }
+
 
