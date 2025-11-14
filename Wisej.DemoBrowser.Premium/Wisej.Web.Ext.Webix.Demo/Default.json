@@ -43,7 +43,9 @@
 	"url": "Default.html",
 	"startup": "Wisej.Web.Ext.Webix.Demo.Program.Main, Wisej.Web.Ext.Webix.Demo",
 	"options": {
-    "automation.mode": true
+    "automation.mode": true,
+	"automation.property": "test_id"
   }
 }
+
 
