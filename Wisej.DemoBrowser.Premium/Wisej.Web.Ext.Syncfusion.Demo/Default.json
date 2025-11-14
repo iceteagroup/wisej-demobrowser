@@ -37,7 +37,9 @@
 	"showLoader": false,
 	"startup": "Wisej.Web.Ext.Syncfusion.Demo.Program.Main, Wisej.Web.Ext.Syncfusion.Demo",
 	"options": {
-    "automation.mode": true
+    "automation.mode": true,
+	"automation.property": "test_id"
   }
 }
+
 
