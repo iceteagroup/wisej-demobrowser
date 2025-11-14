@@ -38,7 +38,9 @@
 	"showLoader":  false,
 	"startup": "Wisej.Web.Ext.Ignite.Demo.Program.Main, Wisej.Web.Ext.Ignite.Demo",
 	"options": {
-    "automation.mode": true
+    "automation.mode": true,
+	"automation.property": "test_id"
   }
 }
+
 
