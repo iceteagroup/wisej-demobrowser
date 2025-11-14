@@ -39,8 +39,9 @@
 	"startup": "Wisej.Web.Ext.DevExtreme.Demo.Program.Main, Wisej.Web.Ext.DevExtreme.Demo",
 	"options": {
     "automation.mode": true,
-	"automation.property": "test_id"
+	"automation.property": "data-testid"
   }
 }
+
 
 
