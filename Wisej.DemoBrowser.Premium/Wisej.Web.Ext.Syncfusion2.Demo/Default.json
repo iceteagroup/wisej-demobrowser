@@ -41,8 +41,9 @@
 	"startup": "Wisej.Web.Ext.Syncfusion2.Demo.Program.Main, Wisej.Web.Ext.Syncfusion2.Demo",
 	"options": {
     "automation.mode": true,
-	"automation.property": "test_id"
+	"automation.property": "data-testid"
   }
 }
+
 
 
