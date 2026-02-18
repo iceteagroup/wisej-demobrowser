@@ -106,7 +106,7 @@
             // 
             this.checkBox6.Anchor = Wisej.Web.AnchorStyles.None;
             this.checkBox6.AutoSize = false;
-            this.checkBox6.CheckAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.checkBox6.CheckAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.checkBox6.Location = new System.Drawing.Point(580, 324);
             this.checkBox6.Name = "checkBox6";
             this.checkBox6.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("checkBox6.ResponsiveProfiles"))));
