@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.0.31612.314
+# Visual Studio Version 18
+VisualStudioVersion = 18.2.11408.102 d18.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wisej.DemoBrowser", "Wisej.DemoBrowser\Wisej.DemoBrowser.csproj", "{9A83DA07-B98C-4805-A73D-1FA672E7AADD}"
 	ProjectSection(ProjectDependencies) = postProject
@@ -232,6 +232,10 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wisej.DemoBrowser.ChatControl", "Demos\Extensions\Wisej.DemoBrowser.ChatControl\Wisej.DemoBrowser.ChatControl.csproj", "{8658B3B7-BC23-4A89-903A-10D7D47A75F7}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wisej.Demobrowser.Tesseract", "Demos\Extensions\Wisej.Demobrowser.Tesseract\Wisej.Demobrowser.Tesseract.csproj", "{515853F4-61EA-4707-86C7-C11DCFD795AD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Preview", "Preview", "{D509EECE-D954-40FE-A968-9E3503F94EB7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wisej.DemoBrowser.Mermaid", "Wisej.DemoBrowser.Mermaid\Wisej.DemoBrowser.Mermaid.csproj", "{0D6CC856-0CE6-F7A3-2B2D-79E7BB026C35}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -631,6 +635,10 @@ Global
 		{515853F4-61EA-4707-86C7-C11DCFD795AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{515853F4-61EA-4707-86C7-C11DCFD795AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{515853F4-61EA-4707-86C7-C11DCFD795AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D6CC856-0CE6-F7A3-2B2D-79E7BB026C35}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D6CC856-0CE6-F7A3-2B2D-79E7BB026C35}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D6CC856-0CE6-F7A3-2B2D-79E7BB026C35}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D6CC856-0CE6-F7A3-2B2D-79E7BB026C35}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -744,6 +752,8 @@ Global
 		{77192649-282B-426D-BBE8-C96AD1B6B0D0} = {C51A27C9-479B-478F-8158-62189CA32E59}
 		{8658B3B7-BC23-4A89-903A-10D7D47A75F7} = {C51A27C9-479B-478F-8158-62189CA32E59}
 		{515853F4-61EA-4707-86C7-C11DCFD795AD} = {C51A27C9-479B-478F-8158-62189CA32E59}
+		{D509EECE-D954-40FE-A968-9E3503F94EB7} = {9F6D8234-C001-4350-8206-8396FBCA9D7E}
+		{0D6CC856-0CE6-F7A3-2B2D-79E7BB026C35} = {D509EECE-D954-40FE-A968-9E3503F94EB7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7FE19C61-811C-4966-BC10-2A1D53829B5A}
