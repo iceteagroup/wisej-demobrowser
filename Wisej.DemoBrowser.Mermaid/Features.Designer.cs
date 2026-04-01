@@ -28,24 +28,24 @@
 		private void InitializeComponent()
 		{
             this.flexLayoutPanel1 = new Wisej.Web.FlexLayoutPanel();
+            this.flexLayoutPanel2 = new Wisej.Web.FlexLayoutPanel();
+            this.btnValidate = new Wisej.Web.Button();
+            this.btnDownloadSvg = new Wisej.Web.Button();
+            this.btnExportImage = new Wisej.Web.Button();
+            this.btnDownloadPdf = new Wisej.Web.Button();
+            this.btnApplyConfig = new Wisej.Web.Button();
             this.mermaid1 = new Wisej.Web.Ext.Mermaid.Mermaid();
             this.groupBox1 = new Wisej.Web.GroupBox();
             this.flowLayoutPanel1 = new Wisej.Web.FlowLayoutPanel();
             this.txtDiagram = new Wisej.Web.TextBox();
             this.cmbLook = new Wisej.Web.ComboBox();
             this.cmbTheme = new Wisej.Web.ComboBox();
-            this.chkPanZoom = new Wisej.Web.CheckBox();
-            this.flexLayoutPanel2 = new Wisej.Web.FlexLayoutPanel();
-            this.btnValidate = new Wisej.Web.Button();
-            this.btnDownloadSvg = new Wisej.Web.Button();
-            this.btnExportImage = new Wisej.Web.Button();
-            this.btnDownloadPdf = new Wisej.Web.Button();
             this.numZoom = new Wisej.Web.NumericUpDown();
-            this.btnApplyConfig = new Wisej.Web.Button();
+            this.chkPanZoom = new Wisej.Web.CheckBox();
             this.flexLayoutPanel1.SuspendLayout();
+            this.flexLayoutPanel2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
-            this.flexLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numZoom)).BeginInit();
             this.SuspendLayout();
             // 
@@ -61,6 +61,61 @@
             this.flexLayoutPanel1.Size = new System.Drawing.Size(1390, 442);
             this.flexLayoutPanel1.TabIndex = 0;
             // 
+            // flexLayoutPanel2
+            // 
+            this.flexLayoutPanel2.Controls.Add(this.btnValidate);
+            this.flexLayoutPanel2.Controls.Add(this.btnDownloadSvg);
+            this.flexLayoutPanel2.Controls.Add(this.btnExportImage);
+            this.flexLayoutPanel2.Controls.Add(this.btnDownloadPdf);
+            this.flexLayoutPanel2.Controls.Add(this.btnApplyConfig);
+            this.flexLayoutPanel2.LayoutStyle = Wisej.Web.FlexLayoutStyle.Vertical;
+            this.flexLayoutPanel2.Location = new System.Drawing.Point(3, 3);
+            this.flexLayoutPanel2.Name = "flexLayoutPanel2";
+            this.flexLayoutPanel2.Size = new System.Drawing.Size(170, 436);
+            this.flexLayoutPanel2.TabIndex = 2;
+            // 
+            // btnValidate
+            // 
+            this.btnValidate.Location = new System.Drawing.Point(3, 3);
+            this.btnValidate.Name = "btnValidate";
+            this.btnValidate.Size = new System.Drawing.Size(164, 30);
+            this.btnValidate.TabIndex = 4;
+            this.btnValidate.Text = "Validate";
+            // 
+            // btnDownloadSvg
+            // 
+            this.btnDownloadSvg.Location = new System.Drawing.Point(3, 49);
+            this.btnDownloadSvg.Name = "btnDownloadSvg";
+            this.btnDownloadSvg.Size = new System.Drawing.Size(164, 30);
+            this.btnDownloadSvg.TabIndex = 5;
+            this.btnDownloadSvg.Text = "Download SVG";
+            // 
+            // btnExportImage
+            // 
+            this.btnExportImage.Location = new System.Drawing.Point(3, 95);
+            this.btnExportImage.Name = "btnExportImage";
+            this.btnExportImage.Size = new System.Drawing.Size(164, 30);
+            this.btnExportImage.TabIndex = 6;
+            this.btnExportImage.Text = "Export Image";
+            // 
+            // btnDownloadPdf
+            // 
+            this.btnDownloadPdf.Location = new System.Drawing.Point(3, 141);
+            this.btnDownloadPdf.Name = "btnDownloadPdf";
+            this.btnDownloadPdf.Size = new System.Drawing.Size(164, 30);
+            this.btnDownloadPdf.TabIndex = 7;
+            this.btnDownloadPdf.Text = "Download PDF";
+            // 
+            // btnApplyConfig
+            // 
+            this.btnApplyConfig.AppearanceKey = "button-ok";
+            this.btnApplyConfig.Dock = Wisej.Web.DockStyle.Left;
+            this.btnApplyConfig.Location = new System.Drawing.Point(3, 187);
+            this.btnApplyConfig.Name = "btnApplyConfig";
+            this.btnApplyConfig.Size = new System.Drawing.Size(164, 30);
+            this.btnApplyConfig.TabIndex = 14;
+            this.btnApplyConfig.Text = "Apply Config";
+            // 
             // mermaid1
             // 
             this.flexLayoutPanel1.SetFillWeight(this.mermaid1, 80);
@@ -72,6 +127,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.Color.FromName("@window");
             this.groupBox1.Controls.Add(this.flowLayoutPanel1);
             this.flexLayoutPanel1.SetFillWeight(this.groupBox1, 20);
             this.groupBox1.Location = new System.Drawing.Point(1151, 3);
@@ -129,61 +185,6 @@
             this.cmbTheme.Size = new System.Drawing.Size(224, 53);
             this.cmbTheme.TabIndex = 7;
             // 
-            // chkPanZoom
-            // 
-            this.flowLayoutPanel1.SetFillWeight(this.chkPanZoom, 10);
-            this.flowLayoutPanel1.SetFlowBreak(this.chkPanZoom, true);
-            this.chkPanZoom.Location = new System.Drawing.Point(3, 366);
-            this.chkPanZoom.Name = "chkPanZoom";
-            this.chkPanZoom.Size = new System.Drawing.Size(224, 23);
-            this.chkPanZoom.TabIndex = 8;
-            this.chkPanZoom.Text = "Enable Pan/Zoom";
-            // 
-            // flexLayoutPanel2
-            // 
-            this.flexLayoutPanel2.Controls.Add(this.btnValidate);
-            this.flexLayoutPanel2.Controls.Add(this.btnDownloadSvg);
-            this.flexLayoutPanel2.Controls.Add(this.btnExportImage);
-            this.flexLayoutPanel2.Controls.Add(this.btnDownloadPdf);
-            this.flexLayoutPanel2.Controls.Add(this.btnApplyConfig);
-            this.flexLayoutPanel2.LayoutStyle = Wisej.Web.FlexLayoutStyle.Vertical;
-            this.flexLayoutPanel2.Location = new System.Drawing.Point(3, 3);
-            this.flexLayoutPanel2.Name = "flexLayoutPanel2";
-            this.flexLayoutPanel2.Size = new System.Drawing.Size(170, 436);
-            this.flexLayoutPanel2.TabIndex = 2;
-            // 
-            // btnValidate
-            // 
-            this.btnValidate.Location = new System.Drawing.Point(3, 3);
-            this.btnValidate.Name = "btnValidate";
-            this.btnValidate.Size = new System.Drawing.Size(164, 30);
-            this.btnValidate.TabIndex = 4;
-            this.btnValidate.Text = "Validate";
-            // 
-            // btnDownloadSvg
-            // 
-            this.btnDownloadSvg.Location = new System.Drawing.Point(3, 49);
-            this.btnDownloadSvg.Name = "btnDownloadSvg";
-            this.btnDownloadSvg.Size = new System.Drawing.Size(164, 30);
-            this.btnDownloadSvg.TabIndex = 5;
-            this.btnDownloadSvg.Text = "Download SVG";
-            // 
-            // btnExportImage
-            // 
-            this.btnExportImage.Location = new System.Drawing.Point(3, 95);
-            this.btnExportImage.Name = "btnExportImage";
-            this.btnExportImage.Size = new System.Drawing.Size(164, 30);
-            this.btnExportImage.TabIndex = 6;
-            this.btnExportImage.Text = "Export Image";
-            // 
-            // btnDownloadPdf
-            // 
-            this.btnDownloadPdf.Location = new System.Drawing.Point(3, 141);
-            this.btnDownloadPdf.Name = "btnDownloadPdf";
-            this.btnDownloadPdf.Size = new System.Drawing.Size(164, 30);
-            this.btnDownloadPdf.TabIndex = 7;
-            this.btnDownloadPdf.Text = "Download PDF";
-            // 
             // numZoom
             // 
             this.numZoom.DecimalPlaces = 2;
@@ -207,15 +208,15 @@
             this.numZoom.TabIndex = 9;
             this.numZoom.Value = new decimal(1);
             // 
-            // btnApplyConfig
+            // chkPanZoom
             // 
-            this.btnApplyConfig.AppearanceKey = "button-ok";
-            this.btnApplyConfig.Dock = Wisej.Web.DockStyle.Left;
-            this.btnApplyConfig.Location = new System.Drawing.Point(3, 187);
-            this.btnApplyConfig.Name = "btnApplyConfig";
-            this.btnApplyConfig.Size = new System.Drawing.Size(164, 30);
-            this.btnApplyConfig.TabIndex = 14;
-            this.btnApplyConfig.Text = "Apply Config";
+            this.flowLayoutPanel1.SetFillWeight(this.chkPanZoom, 10);
+            this.flowLayoutPanel1.SetFlowBreak(this.chkPanZoom, true);
+            this.chkPanZoom.Location = new System.Drawing.Point(3, 366);
+            this.chkPanZoom.Name = "chkPanZoom";
+            this.chkPanZoom.Size = new System.Drawing.Size(224, 23);
+            this.chkPanZoom.TabIndex = 8;
+            this.chkPanZoom.Text = "Enable Pan/Zoom";
             // 
             // Features
             // 
@@ -224,10 +225,10 @@
             this.Padding = new Wisej.Web.Padding(16);
             this.Load += new System.EventHandler(this.Features_Load);
             this.flexLayoutPanel1.ResumeLayout(false);
+            this.flexLayoutPanel2.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
-            this.flexLayoutPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.numZoom)).EndInit();
             this.ResumeLayout(false);
 
