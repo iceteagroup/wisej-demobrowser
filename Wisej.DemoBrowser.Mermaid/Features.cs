@@ -57,9 +57,16 @@ section Activation
             btnDownloadPdf.Click += (s, e) => DownloadPdf();
 
             txtDiagram.TextChanged += (s, e) => mermaid1.Diagram = txtDiagram.Text;
+
             cmbTheme.SelectedIndexChanged += (s, e) =>
             {
                 mermaid1.Theme = cmbTheme.SelectedItem?.ToString() ?? "default";
+                mermaid1.Update();
+            };
+
+            cmbLook.SelectedIndexChanged += (s, e) =>
+            {
+                mermaid1.Look = cmbLook.SelectedItem?.ToString() ?? "classic";
                 mermaid1.Update();
             };
 
