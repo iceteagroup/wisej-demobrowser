@@ -102,7 +102,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Wisej-4" Version="4.0.*-*" />
+		<PackageReference Include="Wisej-4" Version="4.1.*-*" />
 		<PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
 	</ItemGroup>
 
@@ -196,6 +196,9 @@
 	  <ProjectReference Include="..\Demos\Notifications\Wisej.DemoBrowser.ProgressBar\Wisej.DemoBrowser.ProgressBar.csproj" />
 	  <ProjectReference Include="..\Demos\Notifications\Wisej.DemoBrowser.Toast\Wisej.DemoBrowser.Toast.csproj" />
 	  <ProjectReference Include="..\Demos\Premium\Wisej.DemoBrowser.Premium\Wisej.DemoBrowser.Premium.csproj" />
+	  <ProjectReference Include="..\Demos\Preview\Wisej.DemoBrowser.FluentUIFilledIcons\Wisej.DemoBrowser.FluentUIFilledIcons.csproj" />
+	  <ProjectReference Include="..\Demos\Preview\Wisej.DemoBrowser.FluentUIOutlinedIcons\Wisej.DemoBrowser.FluentUIOutlinedIcons.csproj" />
+	  <ProjectReference Include="..\Demos\Preview\Wisej.DemoBrowser.LucideIcons\Wisej.DemoBrowser.LucideIcons.csproj" />
 	  <ProjectReference Include="..\Demos\ToolsAndMenus\Wisej.DemoBrowser.ContextMenu\Wisej.DemoBrowser.ContextMenu.csproj" />
 	  <ProjectReference Include="..\Demos\ToolsAndMenus\Wisej.DemoBrowser.EmbeddedTools\Wisej.DemoBrowser.EmbeddedTools.csproj" />
 	  <ProjectReference Include="..\Demos\ToolsAndMenus\Wisej.DemoBrowser.MenuBar\Wisej.DemoBrowser.MenuBar.csproj" />
@@ -204,6 +207,7 @@
 	  <ProjectReference Include="..\Demos\ToolsAndMenus\Wisej.DemoBrowser.ToolBar\Wisej.DemoBrowser.ToolBar.csproj" />
 	  <ProjectReference Include="..\Demos\ToolsAndMenus\Wisej.DemoBrowser.TrackBar\Wisej.DemoBrowser.TrackBar.csproj" />
 	  <ProjectReference Include="..\Wisej.DemoBrowser.Common\Wisej.DemoBrowser.Common.csproj" />
+	  <ProjectReference Include="..\Wisej.DemoBrowser.FluentUIThemes\Wisej.DemoBrowser.FluentUIThemes.csproj" />
 	  <ProjectReference Include="..\Wisej.DemoBrowser.Mermaid\Wisej.DemoBrowser.Mermaid.csproj" />
 	</ItemGroup>
 

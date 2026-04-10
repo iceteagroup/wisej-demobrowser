@@ -1342,6 +1342,51 @@
           }
         ]
       }
+    },
+    "Lucide": {
+      "Features": {
+        "sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Extensions/Wisej.DemoBrowser.LucideIcons",
+        "assembly": "Features, Wisej.DemoBrowser.LucideIcons.dll",
+        "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/HtmlTagEnd.svg",
+        "docsUrl": "https://docs.wisej.com/extensions/extensions/mermaid",
+        "description-en": "Lucide is an open-source icon library that provides 1000+ vector (svg) files for displaying icons and symbols in digital and non-digital projects.",
+        "relevantLinks": [
+          {
+            "title": "Mermaid on NuGet",
+            "url": "https://www.nuget.org/packages/Wisej-4-Mermaid"
+          }
+        ]
+      }
+    },
+    "FluentUI Outlined": {
+      "Features": {
+        "sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Extensions/Wisej.DemoBrowser.FluentUIOutlinedIcons",
+        "assembly": "Features, Wisej.DemoBrowser.FluentUIOutlinedIcons.dll",
+        "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/HtmlTagEnd.svg",
+        "docsUrl": "https://docs.wisej.com/extensions/extensions/mermaid",
+        "description-en": "Lucide is an open-source icon library that provides 1000+ vector (svg) files for displaying icons and symbols in digital and non-digital projects.",
+        "relevantLinks": [
+          {
+            "title": "Mermaid on NuGet",
+            "url": "https://www.nuget.org/packages/Wisej-4-Mermaid"
+          }
+        ]
+      }
+    },
+    "FluentUI Outlined": {
+      "Features": {
+        "sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Extensions/Wisej.DemoBrowser.FluentUIFilledIcons",
+        "assembly": "Features, Wisej.DemoBrowser.FluentUIFilledIcons.dll",
+        "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/HtmlTagEnd.svg",
+        "docsUrl": "https://docs.wisej.com/extensions/extensions/mermaid",
+        "description-en": "Lucide is an open-source icon library that provides 1000+ vector (svg) files for displaying icons and symbols in digital and non-digital projects.",
+        "relevantLinks": [
+          {
+            "title": "Mermaid on NuGet",
+            "url": "https://www.nuget.org/packages/Wisej-4-Mermaid"
+          }
+        ]
+      }
     }
   },
   "Premium": {
