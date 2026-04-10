@@ -208,7 +208,6 @@
 	  <ProjectReference Include="..\Demos\ToolsAndMenus\Wisej.DemoBrowser.TrackBar\Wisej.DemoBrowser.TrackBar.csproj" />
 	  <ProjectReference Include="..\Wisej.DemoBrowser.Common\Wisej.DemoBrowser.Common.csproj" />
 	  <ProjectReference Include="..\Wisej.DemoBrowser.FluentUIThemes\Wisej.DemoBrowser.FluentUIThemes.csproj" />
-	  <ProjectReference Include="..\Wisej.DemoBrowser.Mermaid\Wisej.DemoBrowser.Mermaid.csproj" />
 	</ItemGroup>
 
 </Project>

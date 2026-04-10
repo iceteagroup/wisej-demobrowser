@@ -1328,21 +1328,21 @@
       "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/HtmlTagEnd.svg",
       "description-en": "Wisej.NET was designed to be extensible and open to all sorts of technologies from the start. Any existing JavaScript control can be wrapped to become a Wisej.NET C# or VB.NET control."
     },
-    "Mermaid": {
-      "Features": {
-        "sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Extensions/Wisej.DemoBrowser.Mermaid",
-        "assembly": "Features, Wisej.DemoBrowser.Mermaid.dll",
-        "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/Diagram.svg",
-        "docsUrl": "https://docs.wisej.com/extensions/extensions/mermaid",
-        "description-en": "The <b>Mermaid</b> control is a wrapper for the Mermaid.js library, which allows for the generation of diagrams and flowcharts from text.",
-        "relevantLinks": [
-          {
-            "title": "Mermaid on NuGet",
-            "url": "https://www.nuget.org/packages/Wisej-4-Mermaid"
-          }
-        ]
-      }
-    },
+    //"Mermaid": {
+    //  "Features": {
+    //    "sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Extensions/Wisej.DemoBrowser.Mermaid",
+    //    "assembly": "Features, Wisej.DemoBrowser.Mermaid.dll",
+    //    "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/Diagram.svg",
+    //    "docsUrl": "https://docs.wisej.com/extensions/extensions/mermaid",
+    //    "description-en": "The <b>Mermaid</b> control is a wrapper for the Mermaid.js library, which allows for the generation of diagrams and flowcharts from text.",
+    //    "relevantLinks": [
+    //      {
+    //        "title": "Mermaid on NuGet",
+    //        "url": "https://www.nuget.org/packages/Wisej-4-Mermaid"
+    //      }
+    //    ]
+    //  }
+    //},
     "Lucide": {
       "Features": {
         "sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Extensions/Wisej.DemoBrowser.LucideIcons",

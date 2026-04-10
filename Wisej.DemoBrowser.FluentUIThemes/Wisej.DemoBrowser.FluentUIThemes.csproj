@@ -17,7 +17,6 @@
 	<PackageReference Include="Wisej-4" Version="4.1.*-*" />
 	<PackageReference Include="Wisej-4-ClientClipboard" Version="4.1.*-*" />
 	<PackageReference Include="Wisej-4-FluentUIOutlinedIcons" Version="4.1.*-*" />
-	<ProjectReference Include="..\..\..\Wisej.DemoBrowser.Common\Wisej.DemoBrowser.Common.csproj" />
   </ItemGroup>
 
   <ItemGroup>
