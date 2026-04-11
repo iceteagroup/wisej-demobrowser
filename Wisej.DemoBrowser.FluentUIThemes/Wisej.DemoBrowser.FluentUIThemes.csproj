@@ -20,7 +20,14 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Wisej.DemoBrowser.Common\Wisej.DemoBrowser.Common.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
 	<Compile Update="Features.cs">
+	  <SubType>UserControl</SubType>
+	</Compile>
+	<Compile Update="AppointmentPlanner.cs">
 	  <SubType>UserControl</SubType>
 	</Compile>
   </ItemGroup>
