@@ -196,6 +196,7 @@
 	  <ProjectReference Include="..\Demos\Notifications\Wisej.DemoBrowser.ProgressBar\Wisej.DemoBrowser.ProgressBar.csproj" />
 	  <ProjectReference Include="..\Demos\Notifications\Wisej.DemoBrowser.Toast\Wisej.DemoBrowser.Toast.csproj" />
 	  <ProjectReference Include="..\Demos\Premium\Wisej.DemoBrowser.Premium\Wisej.DemoBrowser.Premium.csproj" />
+	  <ProjectReference Include="..\Demos\Preview\Wisej.DemoBrowser.ChartJS4\Wisej.DemoBrowser.ChartJS4.csproj" />
 	  <ProjectReference Include="..\Demos\Preview\Wisej.DemoBrowser.FluentUIFilledIcons\Wisej.DemoBrowser.FluentUIFilledIcons.csproj" />
 	  <ProjectReference Include="..\Demos\Preview\Wisej.DemoBrowser.FluentUIOutlinedIcons\Wisej.DemoBrowser.FluentUIOutlinedIcons.csproj" />
 	  <ProjectReference Include="..\Demos\Preview\Wisej.DemoBrowser.LucideIcons\Wisej.DemoBrowser.LucideIcons.csproj" />
@@ -208,6 +209,7 @@
 	  <ProjectReference Include="..\Demos\ToolsAndMenus\Wisej.DemoBrowser.TrackBar\Wisej.DemoBrowser.TrackBar.csproj" />
 	  <ProjectReference Include="..\Wisej.DemoBrowser.Common\Wisej.DemoBrowser.Common.csproj" />
 	  <ProjectReference Include="..\Wisej.DemoBrowser.FluentUIThemes\Wisej.DemoBrowser.FluentUIThemes.csproj" />
+	  <ProjectReference Include="..\Wisej.DemoBrowser.Mermaid\Wisej.DemoBrowser.Mermaid.csproj" />
 	</ItemGroup>
 
 </Project>

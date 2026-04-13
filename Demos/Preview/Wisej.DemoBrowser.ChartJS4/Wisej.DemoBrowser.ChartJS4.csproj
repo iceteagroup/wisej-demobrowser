@@ -14,10 +14,26 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="Resources\Chart.js_logo.svg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Chart.js_logo.svg" />
+  </ItemGroup>
+
+  <ItemGroup>
 	<PackageReference Include="Wisej-4" Version="4.1.*-*" />
-	<PackageReference Include="Wisej-4-Mermaid" Version="4.1.*-*" />
-	<PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
-	<ProjectReference Include="..\Wisej.DemoBrowser.Common\Wisej.DemoBrowser.Common.csproj" />
+	<PackageReference Include="Wisej-4-FluentUIFilledIcons" Version="4.1.*-*" />
+	<ProjectReference Include="..\..\..\Wisej.DemoBrowser.Common\Wisej.DemoBrowser.Common.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+	<Compile Update="Features.cs">
+	  <SubType>UserControl</SubType>
+	</Compile>
+	<Compile Update="Features.cs">
+	  <SubType>UserControl</SubType>
+	</Compile>
   </ItemGroup>
 
 </Project>

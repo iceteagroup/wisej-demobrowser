@@ -1328,21 +1328,36 @@
       "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/HtmlTagEnd.svg",
       "description-en": "Wisej.NET was designed to be extensible and open to all sorts of technologies from the start. Any existing JavaScript control can be wrapped to become a Wisej.NET C# or VB.NET control."
     },
-    //"Mermaid": {
-    //  "Features": {
-    //    "sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Extensions/Wisej.DemoBrowser.Mermaid",
-    //    "assembly": "Features, Wisej.DemoBrowser.Mermaid.dll",
-    //    "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/Diagram.svg",
-    //    "docsUrl": "https://docs.wisej.com/extensions/extensions/mermaid",
-    //    "description-en": "The <b>Mermaid</b> control is a wrapper for the Mermaid.js library, which allows for the generation of diagrams and flowcharts from text.",
-    //    "relevantLinks": [
-    //      {
-    //        "title": "Mermaid on NuGet",
-    //        "url": "https://www.nuget.org/packages/Wisej-4-Mermaid"
-    //      }
-    //    ]
-    //  }
-    //},
+    "Mermaid": {
+      "Features": {
+        "sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Extensions/Wisej.DemoBrowser.Mermaid",
+        "assembly": "Features, Wisej.DemoBrowser.Mermaid.dll",
+        "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/Diagram.svg",
+        "docsUrl": "https://docs.wisej.com/extensions/extensions/mermaid",
+        "description-en": "The <b>Mermaid</b> control is a wrapper for the Mermaid.js library, which allows for the generation of diagrams and flowcharts from text.",
+        "relevantLinks": [
+          {
+            "title": "Mermaid on NuGet",
+            "url": "https://www.nuget.org/packages/Wisej-4-Mermaid"
+          }
+        ]
+      }
+    },
+    "ChartJS4": {
+      "Features": {
+        "sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Extensions/Wisej.DemoBrowser.ChartJS4",
+        "assembly": "Features, Wisej.DemoBrowser.ChartJS4.dll",
+        "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/BubbleChart.svg",
+        "docsUrl": "https://docs.wisej.com/extensions/extensions/mermaid",
+        "description-en": "The <b>ChartJS4</b> extension component uses the excellent ChartJS4 widget to render amazing charts in real time.",
+        "relevantLinks": [
+          {
+            "title": "Mermaid on NuGet",
+            "url": "https://www.nuget.org/packages/Wisej-4-Mermaid"
+          }
+        ]
+      }
+    },
     "Lucide": {
       "Features": {
         "sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Extensions/Wisej.DemoBrowser.LucideIcons",
@@ -1350,6 +1365,21 @@
         "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/HtmlTagEnd.svg",
         "docsUrl": "https://docs.wisej.com/extensions/extensions/mermaid",
         "description-en": "Lucide is an open-source icon library that provides 1000+ vector (svg) files for displaying icons and symbols in digital and non-digital projects.",
+        "relevantLinks": [
+          {
+            "title": "Mermaid on NuGet",
+            "url": "https://www.nuget.org/packages/Wisej-4-Mermaid"
+          }
+        ]
+      }
+    },
+    "FluentUI Themes": {
+      "Features": {
+        "sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Extensions/Wisej.DemoBrowser.FluentUIThemes",
+        "assembly": "AppointmentPlanner, Wisej.DemoBrowser.FluentUIThemes.dll",
+        "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/HtmlTagEnd.svg",
+        "docsUrl": "https://docs.wisej.com/extensions/extensions/mermaid",
+        "description-en": "A Fluent UI theme is a centralized set of design tokens—such as colors, typography, and spacing—that ensures visual consistency and supports seamless switching between modes like light, dark, or high contrast.",
         "relevantLinks": [
           {
             "title": "Mermaid on NuGet",
@@ -1373,7 +1403,7 @@
         ]
       }
     },
-    "FluentUI Outlined": {
+    "FluentUI Filled": {
       "Features": {
         "sourceUrl": "https://github.com/iceteagroup/Wisej-DemoBrowser/tree/main/Demos/Extensions/Wisej.DemoBrowser.FluentUIFilledIcons",
         "assembly": "Features, Wisej.DemoBrowser.FluentUIFilledIcons.dll",

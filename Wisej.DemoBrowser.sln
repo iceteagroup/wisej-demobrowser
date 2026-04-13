@@ -245,6 +245,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wisej.DemoBrowser.FluentUIF
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wisej.DemoBrowser.FluentUIThemes", "Wisej.DemoBrowser.FluentUIThemes\Wisej.DemoBrowser.FluentUIThemes.csproj", "{57E3A62E-1CE6-4F42-99A2-8ACB89DCCAB3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wisej.DemoBrowser.ChartJS4", "Demos\Preview\Wisej.DemoBrowser.ChartJS4\Wisej.DemoBrowser.ChartJS4.csproj", "{FB653535-0426-43B0-994F-FF7E0EFE85A8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -663,6 +665,10 @@ Global
 		{57E3A62E-1CE6-4F42-99A2-8ACB89DCCAB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{57E3A62E-1CE6-4F42-99A2-8ACB89DCCAB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{57E3A62E-1CE6-4F42-99A2-8ACB89DCCAB3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB653535-0426-43B0-994F-FF7E0EFE85A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB653535-0426-43B0-994F-FF7E0EFE85A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB653535-0426-43B0-994F-FF7E0EFE85A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB653535-0426-43B0-994F-FF7E0EFE85A8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -782,6 +788,7 @@ Global
 		{225D7FA6-EED3-434B-8A3F-3E71473D35B0} = {D509EECE-D954-40FE-A968-9E3503F94EB7}
 		{11FCF547-A11F-4AA7-90AC-B25B4E624C02} = {D509EECE-D954-40FE-A968-9E3503F94EB7}
 		{57E3A62E-1CE6-4F42-99A2-8ACB89DCCAB3} = {D509EECE-D954-40FE-A968-9E3503F94EB7}
+		{FB653535-0426-43B0-994F-FF7E0EFE85A8} = {D509EECE-D954-40FE-A968-9E3503F94EB7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7FE19C61-811C-4966-BC10-2A1D53829B5A}

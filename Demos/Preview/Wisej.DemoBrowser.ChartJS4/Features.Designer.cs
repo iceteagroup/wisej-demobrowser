@@ -1,6 +1,6 @@
-﻿namespace Wisej.DemoBrowser.FluentUIThemes
+﻿namespace Wisej.DemoBrowser.ChartJS4
 {
-    partial class AppointmentPlanner
+    partial class Features
     {
         /// <summary> 
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Wisej.Resources.ComponentResourceManager resources = new Wisej.Resources.ComponentResourceManager(typeof(AppointmentPlanner));
+            Wisej.Resources.ComponentResourceManager resources = new Wisej.Resources.ComponentResourceManager(typeof(Features));
             this.htmlPanel1 = new Wisej.Web.HtmlPanel();
             this.SuspendLayout();
             // 
@@ -43,10 +43,10 @@
             this.htmlPanel1.TabIndex = 0;
             this.htmlPanel1.TabStop = false;
             // 
-            // AppointmentPlanner
+            // Features
             // 
             this.Controls.Add(this.htmlPanel1);
-            this.Name = "AppointmentPlanner";
+            this.Name = "Features";
             this.Load += new System.EventHandler(this.Ignite_Load);
             this.ResumeLayout(false);
 

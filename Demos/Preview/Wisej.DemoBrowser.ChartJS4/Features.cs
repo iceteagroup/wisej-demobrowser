@@ -2,18 +2,18 @@
 using Wisej.DemoBrowser.Common;
 using Wisej.Web;
 
-namespace Wisej.DemoBrowser.FluentUIThemes
+namespace Wisej.DemoBrowser.ChartJS4
 {
-    public partial class AppointmentPlanner : DemoView
+    public partial class Features : DemoView
     {
-        public AppointmentPlanner()
+        public Features()
         {
             InitializeComponent();
         }
 
         private void Ignite_Load(object sender, EventArgs e)
         {
-            //Application.Navigate($"/Ignite");
+            Application.Navigate($"/Ignite");
         }
     }
 }
