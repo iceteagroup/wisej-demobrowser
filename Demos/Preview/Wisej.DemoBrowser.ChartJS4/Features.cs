@@ -13,7 +13,7 @@ namespace Wisej.DemoBrowser.ChartJS4
 
         private void Ignite_Load(object sender, EventArgs e)
         {
-            Application.Navigate($"/Ignite");
+            //Application.Navigate($"/Ignite");
         }
     }
 }
