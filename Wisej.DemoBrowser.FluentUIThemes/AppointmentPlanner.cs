@@ -15,5 +15,10 @@ namespace Wisej.DemoBrowser.FluentUIThemes
         {
             //Application.Navigate($"/Ignite");
         }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Application.Navigate("https://wisej-appointmentplanner-48-a8dha3hzgweebef2.eastus-01.azurewebsites.net/", "_blank");
+        }
     }
 }

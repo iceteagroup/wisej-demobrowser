@@ -13,7 +13,12 @@ namespace Wisej.DemoBrowser.ChartJS4
 
         private void Ignite_Load(object sender, EventArgs e)
         {
-            //Application.Navigate($"/Ignite");
+            
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Application.Navigate("https://wisej-chartjs-b0a7drcccrekanan.eastus-01.azurewebsites.net", "_blank");
         }
     }
 }
