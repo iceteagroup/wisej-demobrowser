@@ -36,14 +36,12 @@ namespace Wisej.DemoBrowser.Mermaid
             chkPanZoom.Checked = true;
             numZoom.Value = 1m;
 
-            this.txtDiagram.Text = @"journey
-title Onboarding Experience
-section Registration
-  Visit site: 4: User
-  Create account: 3: User, System
-section Activation
-  Verify email: 3: User, System
-  First login: 5: User";
+            this.txtDiagram.Text = @"flowchart LR
+
+A[Hard] -->|Text| B(Round)
+B --> C{Decision}
+C -->|One| D[Result 1]
+C -->|Two| E[Result 2]";
 
             this.mermaid1.Diagram = this.txtDiagram.Text;
         }
