@@ -18,7 +18,7 @@ namespace Wisej.DemoBrowser.ChartJS4
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Application.Navigate("https://wisej-chartjs-b0a7drcccrekanan.eastus-01.azurewebsites.net", "_blank");
+            //Application.Navigate("/ChartJS4", "_blank");
         }
     }
 }
