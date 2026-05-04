@@ -68,6 +68,13 @@ C -->|Two| E[Result 2]";
                 mermaid1.Update();
             };
 
+            numZoom.ValueChanged += (s, e) =>
+            {
+                
+                    mermaid1.ZoomLevel = (float)numZoom.Value;
+                    mermaid1.Update();
+            };
+
             mermaid1.DiagramChanged += Mermaid1_DiagramChanged;
             mermaid1.ElementClick += Mermaid1_ElementClick;
             mermaid1.Error += Mermaid1_Error;

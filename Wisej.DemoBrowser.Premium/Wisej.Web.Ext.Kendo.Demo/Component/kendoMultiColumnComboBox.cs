@@ -23,7 +23,7 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 				{
 					field = "ContactName", title = "Contact Name",
 					template =
-						"<div class='customer-photo'style='background-image: url(https://demos.telerik.com/kendo-ui/content/web/Customers/#:data.CustomerID#.jpg);'></div><span class='customer-name'>#: ContactName #</span>",
+                        "<span class='customer-name'>#: ContactName #</span>",
 					width = 200
 				},
 				new {field = "ContactTitle", title = "Contact Title", width = 200},
@@ -41,8 +41,8 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 				type = "odata",
 				transport = new
 				{
-					read = "https://demos.telerik.com/kendo-ui/service/Northwind.svc/Customers"
-				}
+					read = "https://services.odata.org/V2/Northwind/Northwind.svc/Customers/",
+                }
 			};
 		}
 

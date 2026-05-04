@@ -127,14 +127,12 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.BackColor = System.Drawing.Color.FromName("@window");
             this.groupBox1.Controls.Add(this.flowLayoutPanel1);
             this.flexLayoutPanel1.SetFillWeight(this.groupBox1, 20);
             this.groupBox1.Location = new System.Drawing.Point(1151, 3);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(236, 436);
             this.groupBox1.TabIndex = 1;
-            this.groupBox1.Text = "Controls";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // flowLayoutPanel1
@@ -145,9 +143,9 @@
             this.flowLayoutPanel1.Controls.Add(this.numZoom);
             this.flowLayoutPanel1.Controls.Add(this.chkPanZoom);
             this.flowLayoutPanel1.Dock = Wisej.Web.DockStyle.Fill;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(3, 21);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(3, 18);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(230, 412);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(230, 415);
             this.flowLayoutPanel1.TabIndex = 0;
             // 
             // txtDiagram
@@ -158,7 +156,7 @@
             this.txtDiagram.Location = new System.Drawing.Point(3, 3);
             this.txtDiagram.Multiline = true;
             this.txtDiagram.Name = "txtDiagram";
-            this.txtDiagram.Size = new System.Drawing.Size(224, 180);
+            this.txtDiagram.Size = new System.Drawing.Size(224, 152);
             this.txtDiagram.TabIndex = 60;
             // 
             // cmbLook
@@ -168,7 +166,7 @@
             this.flowLayoutPanel1.SetFillWeight(this.cmbLook, 10);
             this.flowLayoutPanel1.SetFlowBreak(this.cmbLook, true);
             this.cmbLook.LabelText = "Look";
-            this.cmbLook.Location = new System.Drawing.Point(3, 189);
+            this.cmbLook.Location = new System.Drawing.Point(3, 161);
             this.cmbLook.Name = "cmbLook";
             this.cmbLook.Size = new System.Drawing.Size(224, 53);
             this.cmbLook.TabIndex = 6;
@@ -180,7 +178,7 @@
             this.flowLayoutPanel1.SetFillWeight(this.cmbTheme, 10);
             this.flowLayoutPanel1.SetFlowBreak(this.cmbTheme, true);
             this.cmbTheme.LabelText = "Theme";
-            this.cmbTheme.Location = new System.Drawing.Point(3, 248);
+            this.cmbTheme.Location = new System.Drawing.Point(3, 220);
             this.cmbTheme.Name = "cmbTheme";
             this.cmbTheme.Size = new System.Drawing.Size(224, 53);
             this.cmbTheme.TabIndex = 7;
@@ -196,7 +194,7 @@
             0,
             131072});
             this.numZoom.LabelText = "Zoom";
-            this.numZoom.Location = new System.Drawing.Point(3, 307);
+            this.numZoom.Location = new System.Drawing.Point(3, 279);
             this.numZoom.Maximum = new decimal(3);
             this.numZoom.Minimum = new decimal(new int[] {
             1,
@@ -212,7 +210,7 @@
             // 
             this.flowLayoutPanel1.SetFillWeight(this.chkPanZoom, 10);
             this.flowLayoutPanel1.SetFlowBreak(this.chkPanZoom, true);
-            this.chkPanZoom.Location = new System.Drawing.Point(3, 366);
+            this.chkPanZoom.Location = new System.Drawing.Point(3, 338);
             this.chkPanZoom.Name = "chkPanZoom";
             this.chkPanZoom.Size = new System.Drawing.Size(224, 23);
             this.chkPanZoom.TabIndex = 8;
