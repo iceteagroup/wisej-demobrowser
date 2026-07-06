@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Features));
+            Wisej.Resources.ComponentResourceManager resources = new Wisej.Resources.ComponentResourceManager(typeof(Features));
             this.flexLayoutPanel3 = new Wisej.Web.FlexLayoutPanel();
             this.txtEmail = new Wisej.Web.TextBox();
             this.flexLayoutPanel1 = new Wisej.Web.FlexLayoutPanel();
@@ -62,7 +62,9 @@
             this.flexLayoutPanel3.MinimumSize = new System.Drawing.Size(332, 443);
             this.flexLayoutPanel3.Name = "flexLayoutPanel3";
             this.flexLayoutPanel3.Padding = new Wisej.Web.Padding(20);
-            this.flexLayoutPanel3.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("flexLayoutPanel3.ResponsiveProfiles"))));
+            this.flexLayoutPanel3.ResizableEdges = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
+            | Wisej.Web.AnchorStyles.Left) 
+            | Wisej.Web.AnchorStyles.Right)));
             this.flexLayoutPanel3.ShowCloseButton = false;
             this.flexLayoutPanel3.ShowHeader = true;
             this.flexLayoutPanel3.Size = new System.Drawing.Size(756, 582);
@@ -74,10 +76,10 @@
             // txtEmail
             // 
             this.txtEmail.LabelText = "E-Mail";
-            this.txtEmail.Location = new System.Drawing.Point(23, 92);
+            this.txtEmail.Location = new System.Drawing.Point(23, 74);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("txtEmail.ResponsiveProfiles"))));
-            this.txtEmail.Size = new System.Drawing.Size(708, 42);
+            this.txtEmail.Size = new System.Drawing.Size(708, 57);
             this.txtEmail.TabIndex = 0;
             // 
             // flexLayoutPanel1
@@ -87,7 +89,7 @@
             this.flexLayoutPanel1.HeaderBackColor = System.Drawing.Color.FromName("@control");
             this.flexLayoutPanel1.HeaderForeColor = System.Drawing.Color.FromName("@controlText");
             this.flexLayoutPanel1.LayoutStyle = Wisej.Web.FlexLayoutStyle.Horizontal;
-            this.flexLayoutPanel1.Location = new System.Drawing.Point(23, 150);
+            this.flexLayoutPanel1.Location = new System.Drawing.Point(23, 147);
             this.flexLayoutPanel1.Name = "flexLayoutPanel1";
             this.flexLayoutPanel1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("flexLayoutPanel1.ResponsiveProfiles"))));
             this.flexLayoutPanel1.ShowCloseButton = false;
@@ -123,18 +125,18 @@
             "Female",
             "Other"});
             this.cmbGender.LabelText = "Gender";
-            this.cmbGender.Location = new System.Drawing.Point(23, 278);
+            this.cmbGender.Location = new System.Drawing.Point(23, 275);
             this.cmbGender.Name = "cmbGender";
             this.cmbGender.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("cmbGender.ResponsiveProfiles"))));
-            this.cmbGender.Size = new System.Drawing.Size(708, 42);
+            this.cmbGender.Size = new System.Drawing.Size(708, 57);
             this.cmbGender.TabIndex = 2;
             // 
             // chkSubscribe
             // 
-            this.chkSubscribe.Location = new System.Drawing.Point(23, 336);
+            this.chkSubscribe.Location = new System.Drawing.Point(23, 348);
             this.chkSubscribe.Name = "chkSubscribe";
             this.chkSubscribe.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("chkSubscribe.ResponsiveProfiles"))));
-            this.chkSubscribe.Size = new System.Drawing.Size(708, 22);
+            this.chkSubscribe.Size = new System.Drawing.Size(708, 27);
             this.chkSubscribe.TabIndex = 3;
             this.chkSubscribe.Text = "Subscribe To Newsletter";
             // 
@@ -142,7 +144,7 @@
             // 
             this.flexLayoutPanel3.SetAlignX(this.btnConfirm, Wisej.Web.HorizontalAlignment.Right);
             this.btnConfirm.AppearanceKey = "button-ok";
-            this.btnConfirm.Location = new System.Drawing.Point(431, 374);
+            this.btnConfirm.Location = new System.Drawing.Point(431, 391);
             this.btnConfirm.MaximumSize = new System.Drawing.Size(300, 0);
             this.btnConfirm.Name = "btnConfirm";
             this.btnConfirm.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("btnConfirm.ResponsiveProfiles"))));
@@ -152,12 +154,11 @@
             // 
             // Features
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 22F);
             this.AutoScaleMode = Wisej.Web.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.Controls.Add(this.flexLayoutPanel3);
             this.Name = "Features";
-            this.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("$this.ResponsiveProfiles"))));
             this.Size = new System.Drawing.Size(909, 678);
             this.flexLayoutPanel3.ResumeLayout(false);
             this.flexLayoutPanel3.PerformLayout();

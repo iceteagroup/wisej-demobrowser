@@ -68,7 +68,7 @@
             this.numericUpDownDefault.LabelText = "Default";
             this.numericUpDownDefault.Location = new System.Drawing.Point(263, 87);
             this.numericUpDownDefault.Name = "numericUpDownDefault";
-            this.numericUpDownDefault.Size = new System.Drawing.Size(200, 53);
+            this.numericUpDownDefault.Size = new System.Drawing.Size(200, 57);
             this.numericUpDownDefault.TabIndex = 0;
             this.numericUpDownDefault.ValueChanged += new System.EventHandler(this.numericUpDownDefault_ValueChanged);
             // 
@@ -78,8 +78,8 @@
             this.numericUpDown2.LabelText = "UpDown Aligned Center";
             this.numericUpDown2.Location = new System.Drawing.Point(263, 169);
             this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(200, 53);
-            this.numericUpDown2.TabIndex = 1;
+            this.numericUpDown2.Size = new System.Drawing.Size(200, 57);
+            this.numericUpDown2.TabIndex = 4;
             this.numericUpDown2.UpDownAlign = Wisej.Web.HorizontalAlignment.Center;
             // 
             // numericUpDown3
@@ -88,8 +88,8 @@
             this.numericUpDown3.LabelText = "UpDown Aligned Left";
             this.numericUpDown3.Location = new System.Drawing.Point(263, 253);
             this.numericUpDown3.Name = "numericUpDown3";
-            this.numericUpDown3.Size = new System.Drawing.Size(200, 53);
-            this.numericUpDown3.TabIndex = 2;
+            this.numericUpDown3.Size = new System.Drawing.Size(200, 57);
+            this.numericUpDown3.TabIndex = 8;
             this.numericUpDown3.UpDownAlign = Wisej.Web.HorizontalAlignment.Left;
             // 
             // numericUpDown4
@@ -97,20 +97,12 @@
             this.numericUpDown4.Anchor = Wisej.Web.AnchorStyles.None;
             this.numericUpDown4.LabelText = "Thousands Separator";
             this.numericUpDown4.Location = new System.Drawing.Point(263, 335);
-            this.numericUpDown4.Maximum = new decimal(new int[] {
-            200000,
-            0,
-            0,
-            0});
+            this.numericUpDown4.Maximum = new decimal(200000);
             this.numericUpDown4.Name = "numericUpDown4";
-            this.numericUpDown4.Size = new System.Drawing.Size(200, 53);
-            this.numericUpDown4.TabIndex = 3;
+            this.numericUpDown4.Size = new System.Drawing.Size(200, 57);
+            this.numericUpDown4.TabIndex = 12;
             this.numericUpDown4.ThousandsSeparator = true;
-            this.numericUpDown4.Value = new decimal(new int[] {
-            123456,
-            0,
-            0,
-            0});
+            this.numericUpDown4.Value = new decimal(123456);
             // 
             // numericUpDown5
             // 
@@ -119,8 +111,8 @@
             this.numericUpDown5.LabelText = "Hidden Arrows";
             this.numericUpDown5.Location = new System.Drawing.Point(495, 87);
             this.numericUpDown5.Name = "numericUpDown5";
-            this.numericUpDown5.Size = new System.Drawing.Size(200, 53);
-            this.numericUpDown5.TabIndex = 4;
+            this.numericUpDown5.Size = new System.Drawing.Size(200, 57);
+            this.numericUpDown5.TabIndex = 1;
             // 
             // numericUpDown6
             // 
@@ -129,7 +121,7 @@
             this.numericUpDown6.LabelText = "Decimals";
             this.numericUpDown6.Location = new System.Drawing.Point(495, 169);
             this.numericUpDown6.Name = "numericUpDown6";
-            this.numericUpDown6.Size = new System.Drawing.Size(200, 53);
+            this.numericUpDown6.Size = new System.Drawing.Size(200, 57);
             this.numericUpDown6.TabIndex = 5;
             this.numericUpDown6.Value = new decimal(new int[] {
             1234,
@@ -144,13 +136,9 @@
             this.numericUpDown7.LabelText = "Hexadecimal";
             this.numericUpDown7.Location = new System.Drawing.Point(495, 253);
             this.numericUpDown7.Name = "numericUpDown7";
-            this.numericUpDown7.Size = new System.Drawing.Size(200, 53);
-            this.numericUpDown7.TabIndex = 6;
-            this.numericUpDown7.Value = new decimal(new int[] {
-            55,
-            0,
-            0,
-            0});
+            this.numericUpDown7.Size = new System.Drawing.Size(200, 57);
+            this.numericUpDown7.TabIndex = 9;
+            this.numericUpDown7.Value = new decimal(55);
             // 
             // numericUpDown1
             // 
@@ -159,16 +147,12 @@
             this.numericUpDown1.Font = new System.Drawing.Font("default", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.numericUpDown1.LabelText = "Prefix / Postfix";
             this.numericUpDown1.Location = new System.Drawing.Point(495, 335);
-            this.numericUpDown1.Maximum = new decimal(new int[] {
-            10000000,
-            0,
-            0,
-            0});
+            this.numericUpDown1.Maximum = new decimal(10000000);
             this.numericUpDown1.Name = "numericUpDown1";
             this.numericUpDown1.Postfix = " Revenue";
             this.numericUpDown1.Prefix = "$";
-            this.numericUpDown1.Size = new System.Drawing.Size(200, 51);
-            this.numericUpDown1.TabIndex = 7;
+            this.numericUpDown1.Size = new System.Drawing.Size(200, 55);
+            this.numericUpDown1.TabIndex = 13;
             this.numericUpDown1.ThousandsSeparator = true;
             this.numericUpDown1.Value = new decimal(new int[] {
             568935255,
@@ -182,8 +166,8 @@
             this.numericUpDown8.LabelText = "Text Align Right";
             this.numericUpDown8.Location = new System.Drawing.Point(727, 87);
             this.numericUpDown8.Name = "numericUpDown8";
-            this.numericUpDown8.Size = new System.Drawing.Size(200, 53);
-            this.numericUpDown8.TabIndex = 8;
+            this.numericUpDown8.Size = new System.Drawing.Size(200, 57);
+            this.numericUpDown8.TabIndex = 2;
             this.numericUpDown8.TextAlign = Wisej.Web.HorizontalAlignment.Right;
             // 
             // numericUpDown9
@@ -192,8 +176,8 @@
             this.numericUpDown9.LabelText = "Text Align Center";
             this.numericUpDown9.Location = new System.Drawing.Point(727, 169);
             this.numericUpDown9.Name = "numericUpDown9";
-            this.numericUpDown9.Size = new System.Drawing.Size(200, 53);
-            this.numericUpDown9.TabIndex = 9;
+            this.numericUpDown9.Size = new System.Drawing.Size(200, 57);
+            this.numericUpDown9.TabIndex = 6;
             this.numericUpDown9.TextAlign = Wisej.Web.HorizontalAlignment.Center;
             // 
             // numericUpDown10
@@ -203,8 +187,8 @@
             this.numericUpDown10.LabelText = "Dotted";
             this.numericUpDown10.Location = new System.Drawing.Point(959, 87);
             this.numericUpDown10.Name = "numericUpDown10";
-            this.numericUpDown10.Size = new System.Drawing.Size(200, 53);
-            this.numericUpDown10.TabIndex = 10;
+            this.numericUpDown10.Size = new System.Drawing.Size(200, 57);
+            this.numericUpDown10.TabIndex = 3;
             // 
             // numericUpDown11
             // 
@@ -213,8 +197,8 @@
             this.numericUpDown11.LabelText = "Dashed";
             this.numericUpDown11.Location = new System.Drawing.Point(959, 169);
             this.numericUpDown11.Name = "numericUpDown11";
-            this.numericUpDown11.Size = new System.Drawing.Size(200, 53);
-            this.numericUpDown11.TabIndex = 11;
+            this.numericUpDown11.Size = new System.Drawing.Size(200, 57);
+            this.numericUpDown11.TabIndex = 7;
             // 
             // numericUpDown12
             // 
@@ -223,8 +207,8 @@
             this.numericUpDown12.LabelText = "Double";
             this.numericUpDown12.Location = new System.Drawing.Point(959, 253);
             this.numericUpDown12.Name = "numericUpDown12";
-            this.numericUpDown12.Size = new System.Drawing.Size(200, 53);
-            this.numericUpDown12.TabIndex = 12;
+            this.numericUpDown12.Size = new System.Drawing.Size(200, 57);
+            this.numericUpDown12.TabIndex = 11;
             // 
             // numericUpDown13
             // 
@@ -233,27 +217,19 @@
             this.numericUpDown13.LabelText = "None";
             this.numericUpDown13.Location = new System.Drawing.Point(959, 335);
             this.numericUpDown13.Name = "numericUpDown13";
-            this.numericUpDown13.Size = new System.Drawing.Size(200, 53);
-            this.numericUpDown13.TabIndex = 13;
+            this.numericUpDown13.Size = new System.Drawing.Size(200, 57);
+            this.numericUpDown13.TabIndex = 15;
             // 
             // numericUpDown14
             // 
             this.numericUpDown14.Anchor = Wisej.Web.AnchorStyles.None;
-            this.numericUpDown14.Increment = new decimal(new int[] {
-            51,
-            0,
-            0,
-            0});
+            this.numericUpDown14.Increment = new decimal(51);
             this.numericUpDown14.LabelText = "Large Increment";
             this.numericUpDown14.Location = new System.Drawing.Point(727, 253);
-            this.numericUpDown14.Maximum = new decimal(new int[] {
-            1000000,
-            0,
-            0,
-            0});
+            this.numericUpDown14.Maximum = new decimal(1000000);
             this.numericUpDown14.Name = "numericUpDown14";
-            this.numericUpDown14.Size = new System.Drawing.Size(200, 53);
-            this.numericUpDown14.TabIndex = 14;
+            this.numericUpDown14.Size = new System.Drawing.Size(200, 57);
+            this.numericUpDown14.TabIndex = 10;
             // 
             // numericUpDown15
             // 
@@ -262,8 +238,8 @@
             this.numericUpDown15.LabelText = "Disabled Arrow Intercept";
             this.numericUpDown15.Location = new System.Drawing.Point(727, 335);
             this.numericUpDown15.Name = "numericUpDown15";
-            this.numericUpDown15.Size = new System.Drawing.Size(200, 53);
-            this.numericUpDown15.TabIndex = 15;
+            this.numericUpDown15.Size = new System.Drawing.Size(200, 57);
+            this.numericUpDown15.TabIndex = 14;
             // 
             // Features
             // 

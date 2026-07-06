@@ -60,7 +60,7 @@
             this.numericUpDown1.LabelText = "Default";
             this.numericUpDown1.Location = new System.Drawing.Point(379, 78);
             this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(200, 53);
+            this.numericUpDown1.Size = new System.Drawing.Size(200, 57);
             this.numericUpDown1.TabIndex = 0;
             // 
             // numericUpDown2
@@ -71,7 +71,7 @@
             this.numericUpDown2.Location = new System.Drawing.Point(379, 182);
             this.numericUpDown2.Name = "numericUpDown2";
             this.numericUpDown2.Size = new System.Drawing.Size(200, 30);
-            this.numericUpDown2.TabIndex = 1;
+            this.numericUpDown2.TabIndex = 3;
             // 
             // numericUpDown3
             // 
@@ -81,8 +81,8 @@
             this.numericUpDown3.LabelText = "Buttom Left";
             this.numericUpDown3.Location = new System.Drawing.Point(612, 99);
             this.numericUpDown3.Name = "numericUpDown3";
-            this.numericUpDown3.Size = new System.Drawing.Size(200, 53);
-            this.numericUpDown3.TabIndex = 2;
+            this.numericUpDown3.Size = new System.Drawing.Size(200, 57);
+            this.numericUpDown3.TabIndex = 1;
             // 
             // numericUpDown4
             // 
@@ -91,8 +91,8 @@
             this.numericUpDown4.LabelText = "Center Align";
             this.numericUpDown4.Location = new System.Drawing.Point(379, 344);
             this.numericUpDown4.Name = "numericUpDown4";
-            this.numericUpDown4.Size = new System.Drawing.Size(200, 53);
-            this.numericUpDown4.TabIndex = 3;
+            this.numericUpDown4.Size = new System.Drawing.Size(200, 57);
+            this.numericUpDown4.TabIndex = 9;
             // 
             // numericUpDown5
             // 
@@ -102,7 +102,7 @@
             this.numericUpDown5.Location = new System.Drawing.Point(379, 263);
             this.numericUpDown5.Name = "numericUpDown5";
             this.numericUpDown5.Size = new System.Drawing.Size(200, 30);
-            this.numericUpDown5.TabIndex = 4;
+            this.numericUpDown5.TabIndex = 6;
             // 
             // numericUpDown6
             // 
@@ -112,8 +112,8 @@
             this.numericUpDown6.LabelText = "Bottom Center";
             this.numericUpDown6.Location = new System.Drawing.Point(612, 182);
             this.numericUpDown6.Name = "numericUpDown6";
-            this.numericUpDown6.Size = new System.Drawing.Size(200, 53);
-            this.numericUpDown6.TabIndex = 5;
+            this.numericUpDown6.Size = new System.Drawing.Size(200, 57);
+            this.numericUpDown6.TabIndex = 4;
             // 
             // numericUpDown7
             // 
@@ -122,8 +122,8 @@
             this.numericUpDown7.LabelText = "Right Align";
             this.numericUpDown7.Location = new System.Drawing.Point(612, 344);
             this.numericUpDown7.Name = "numericUpDown7";
-            this.numericUpDown7.Size = new System.Drawing.Size(200, 53);
-            this.numericUpDown7.TabIndex = 6;
+            this.numericUpDown7.Size = new System.Drawing.Size(200, 57);
+            this.numericUpDown7.TabIndex = 10;
             // 
             // numericUpDown8
             // 
@@ -132,7 +132,7 @@
             this.numericUpDown8.LabelText = "Inside";
             this.numericUpDown8.Location = new System.Drawing.Point(612, 263);
             this.numericUpDown8.Name = "numericUpDown8";
-            this.numericUpDown8.Size = new System.Drawing.Size(200, 48);
+            this.numericUpDown8.Size = new System.Drawing.Size(200, 52);
             this.numericUpDown8.TabIndex = 7;
             // 
             // numericUpDown9
@@ -143,8 +143,8 @@
             this.numericUpDown9.LabelText = "Bottom Right";
             this.numericUpDown9.Location = new System.Drawing.Point(843, 99);
             this.numericUpDown9.Name = "numericUpDown9";
-            this.numericUpDown9.Size = new System.Drawing.Size(200, 53);
-            this.numericUpDown9.TabIndex = 8;
+            this.numericUpDown9.Size = new System.Drawing.Size(200, 57);
+            this.numericUpDown9.TabIndex = 2;
             // 
             // numericUpDown10
             // 
@@ -153,8 +153,8 @@
             this.numericUpDown10.LabelText = "Custom Padding";
             this.numericUpDown10.Location = new System.Drawing.Point(843, 240);
             this.numericUpDown10.Name = "numericUpDown10";
-            this.numericUpDown10.Size = new System.Drawing.Size(200, 53);
-            this.numericUpDown10.TabIndex = 9;
+            this.numericUpDown10.Size = new System.Drawing.Size(200, 57);
+            this.numericUpDown10.TabIndex = 8;
             // 
             // numericUpDown11
             // 
@@ -163,8 +163,8 @@
             this.numericUpDown11.LabelText = "Custom Color";
             this.numericUpDown11.Location = new System.Drawing.Point(843, 159);
             this.numericUpDown11.Name = "numericUpDown11";
-            this.numericUpDown11.Size = new System.Drawing.Size(200, 53);
-            this.numericUpDown11.TabIndex = 10;
+            this.numericUpDown11.Size = new System.Drawing.Size(200, 57);
+            this.numericUpDown11.TabIndex = 5;
             // 
             // numericUpDown12
             // 
@@ -173,7 +173,7 @@
             this.numericUpDown12.LabelText = "<b>Label</b> with <i>HTML</i>";
             this.numericUpDown12.Location = new System.Drawing.Point(843, 344);
             this.numericUpDown12.Name = "numericUpDown12";
-            this.numericUpDown12.Size = new System.Drawing.Size(200, 53);
+            this.numericUpDown12.Size = new System.Drawing.Size(200, 79);
             this.numericUpDown12.TabIndex = 11;
             // 
             // Labels

@@ -117,181 +117,137 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="checkedListBoxDefaultCities.ResponsiveProfiles" mimetype="application/x-microsoft.net.object.binary.base64">
+  <assembly alias="Wisej.Framework" name="Wisej.Framework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=17bef35e11b84171" />
+  <data name="checkedListBoxDefaultCities.ResponsiveProfiles" type="Wisej.Base.ResponsiveProfile, Wisej.Framework" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        AAEAAAD/////AQAAAAAAAAAMAgAAAFJXaXNlai5GcmFtZXdvcmssIFZlcnNpb249My4wLjAuMCwgQ3Vs
-        dHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj0xN2JlZjM1ZTExYjg0MTcxDAMAAABRU3lzdGVtLkRy
-        YXdpbmcsIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iMDNm
-        NWY3ZjExZDUwYTNhBQEAAAAcV2lzZWouQmFzZS5SZXNwb25zaXZlUHJvZmlsZQUAAAAETmFtZQpGaWxs
-        V2VpZ2h0CUZsb3dCcmVhawhMb2NhdGlvbgRTaXplAQQEBAQyV2lzZWouQmFzZS5SZXNwb25zaXZlUHJv
-        ZmlsZStFeHRlbmRlZFByb3BlcnR5VmFsdWUCAAAAMldpc2VqLkJhc2UuUmVzcG9uc2l2ZVByb2ZpbGUr
-        RXh0ZW5kZWRQcm9wZXJ0eVZhbHVlAgAAABRTeXN0ZW0uRHJhd2luZy5Qb2ludAMAAAATU3lzdGVtLkRy
-        YXdpbmcuU2l6ZQMAAAACAAAABgQAAAAFUGhvbmUJBQAAAAkGAAAABfn///8UU3lzdGVtLkRyYXdpbmcu
-        UG9pbnQCAAAAAXgBeQAACAgDAAAAFAAAAMQEAAAF+P///xNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3
-        aWR0aAZoZWlnaHQAAAgIAwAAADACAADIAAAABQUAAAAyV2lzZWouQmFzZS5SZXNwb25zaXZlUHJvZmls
-        ZStFeHRlbmRlZFByb3BlcnR5VmFsdWUCAAAABVZhbHVlCFByb3ZpZGVyAgECAAAACAgBAAAABgkAAAAQ
-        Zmxvd0xheW91dFBhbmVsMQEGAAAABQAAAAgBAQkJAAAACw==
+        PFJlc3BvbnNpdmVQcm9maWxlIE5hbWU9IlBob25lIj4NCiAgPEZpbGxXZWlnaHQgVHlwZT0iV2lzZWou
+        QmFzZS5SZXNwb25zaXZlUHJvZmlsZStFeHRlbmRlZFByb3BlcnR5VmFsdWUsIFdpc2VqLkZyYW1ld29y
+        aywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPTE3YmVmMzVl
+        MTFiODQxNzEiPldpc2VqLkJhc2UuUmVzcG9uc2l2ZVByb2ZpbGUrRXh0ZW5kZWRQcm9wZXJ0eVZhbHVl
+        PC9GaWxsV2VpZ2h0Pg0KICA8Rmxvd0JyZWFrIFR5cGU9Ildpc2VqLkJhc2UuUmVzcG9uc2l2ZVByb2Zp
+        bGUrRXh0ZW5kZWRQcm9wZXJ0eVZhbHVlLCBXaXNlai5GcmFtZXdvcmssIFZlcnNpb249NC4wLjAuMCwg
+        Q3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj0xN2JlZjM1ZTExYjg0MTcxIj5XaXNlai5CYXNl
+        LlJlc3BvbnNpdmVQcm9maWxlK0V4dGVuZGVkUHJvcGVydHlWYWx1ZTwvRmxvd0JyZWFrPg0KICA8TG9j
+        YXRpb24gVHlwZT0iUG9pbnQiPjIwLCAxMjIwPC9Mb2NhdGlvbj4NCiAgPFNpemUgVHlwZT0iU2l6ZSI+
+        NTYwLCAyMDA8L1NpemU+DQo8L1Jlc3BvbnNpdmVQcm9maWxlPg==
 </value>
   </data>
-  <data name="checkedListBoxDefaultCities.ResponsiveProfiles1" mimetype="application/x-microsoft.net.object.binary.base64">
+  <data name="checkedListBoxDefaultCities.ResponsiveProfiles1" type="Wisej.Base.ResponsiveProfile, Wisej.Framework" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        AAEAAAD/////AQAAAAAAAAAMAgAAAFJXaXNlai5GcmFtZXdvcmssIFZlcnNpb249My4wLjAuMCwgQ3Vs
-        dHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj0xN2JlZjM1ZTExYjg0MTcxDAMAAABRU3lzdGVtLkRy
-        YXdpbmcsIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iMDNm
-        NWY3ZjExZDUwYTNhBQEAAAAcV2lzZWouQmFzZS5SZXNwb25zaXZlUHJvZmlsZQIAAAAETmFtZQhMb2Nh
-        dGlvbgEEFFN5c3RlbS5EcmF3aW5nLlBvaW50AwAAAAIAAAAGBAAAAAZUYWJsZXQF+////xRTeXN0ZW0u
-        RHJhd2luZy5Qb2ludAIAAAABeAF5AAAICAMAAAA0AQAA9AEAAAs=
+        PFJlc3BvbnNpdmVQcm9maWxlIE5hbWU9IlRhYmxldCI+DQogIDxMb2NhdGlvbiBUeXBlPSJQb2ludCI+
+        MzA4LCA1MDA8L0xvY2F0aW9uPg0KPC9SZXNwb25zaXZlUHJvZmlsZT4=
 </value>
   </data>
-  <data name="checkedListBox2.ResponsiveProfiles" mimetype="application/x-microsoft.net.object.binary.base64">
+  <data name="checkedListBox2.ResponsiveProfiles" type="Wisej.Base.ResponsiveProfile, Wisej.Framework" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        AAEAAAD/////AQAAAAAAAAAMAgAAAFJXaXNlai5GcmFtZXdvcmssIFZlcnNpb249My4wLjAuMCwgQ3Vs
-        dHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj0xN2JlZjM1ZTExYjg0MTcxDAMAAABRU3lzdGVtLkRy
-        YXdpbmcsIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iMDNm
-        NWY3ZjExZDUwYTNhBQEAAAAcV2lzZWouQmFzZS5SZXNwb25zaXZlUHJvZmlsZQUAAAAETmFtZQpGaWxs
-        V2VpZ2h0CUZsb3dCcmVhawhMb2NhdGlvbgRTaXplAQQEBAQyV2lzZWouQmFzZS5SZXNwb25zaXZlUHJv
-        ZmlsZStFeHRlbmRlZFByb3BlcnR5VmFsdWUCAAAAMldpc2VqLkJhc2UuUmVzcG9uc2l2ZVByb2ZpbGUr
-        RXh0ZW5kZWRQcm9wZXJ0eVZhbHVlAgAAABRTeXN0ZW0uRHJhd2luZy5Qb2ludAMAAAATU3lzdGVtLkRy
-        YXdpbmcuU2l6ZQMAAAACAAAABgQAAAAFUGhvbmUJBQAAAAkGAAAABfn///8UU3lzdGVtLkRyYXdpbmcu
-        UG9pbnQCAAAAAXgBeQAACAgDAAAAFAAAANQDAAAF+P///xNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3
-        aWR0aAZoZWlnaHQAAAgIAwAAADACAADIAAAABQUAAAAyV2lzZWouQmFzZS5SZXNwb25zaXZlUHJvZmls
-        ZStFeHRlbmRlZFByb3BlcnR5VmFsdWUCAAAABVZhbHVlCFByb3ZpZGVyAgECAAAACAgBAAAABgkAAAAQ
-        Zmxvd0xheW91dFBhbmVsMQEGAAAABQAAAAgBAQYKAAAAEGZsb3dMYXlvdXRQYW5lbDEL
+        PFJlc3BvbnNpdmVQcm9maWxlIE5hbWU9IlBob25lIj4NCiAgPEZpbGxXZWlnaHQgVHlwZT0iV2lzZWou
+        QmFzZS5SZXNwb25zaXZlUHJvZmlsZStFeHRlbmRlZFByb3BlcnR5VmFsdWUsIFdpc2VqLkZyYW1ld29y
+        aywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPTE3YmVmMzVl
+        MTFiODQxNzEiPldpc2VqLkJhc2UuUmVzcG9uc2l2ZVByb2ZpbGUrRXh0ZW5kZWRQcm9wZXJ0eVZhbHVl
+        PC9GaWxsV2VpZ2h0Pg0KICA8Rmxvd0JyZWFrIFR5cGU9Ildpc2VqLkJhc2UuUmVzcG9uc2l2ZVByb2Zp
+        bGUrRXh0ZW5kZWRQcm9wZXJ0eVZhbHVlLCBXaXNlai5GcmFtZXdvcmssIFZlcnNpb249NC4wLjAuMCwg
+        Q3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj0xN2JlZjM1ZTExYjg0MTcxIj5XaXNlai5CYXNl
+        LlJlc3BvbnNpdmVQcm9maWxlK0V4dGVuZGVkUHJvcGVydHlWYWx1ZTwvRmxvd0JyZWFrPg0KICA8TG9j
+        YXRpb24gVHlwZT0iUG9pbnQiPjIwLCA5ODA8L0xvY2F0aW9uPg0KICA8U2l6ZSBUeXBlPSJTaXplIj41
+        NjAsIDIwMDwvU2l6ZT4NCjwvUmVzcG9uc2l2ZVByb2ZpbGU+
 </value>
   </data>
-  <data name="checkedListBox2.ResponsiveProfiles1" mimetype="application/x-microsoft.net.object.binary.base64">
+  <data name="checkedListBox2.ResponsiveProfiles1" type="Wisej.Base.ResponsiveProfile, Wisej.Framework" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        AAEAAAD/////AQAAAAAAAAAMAgAAAFJXaXNlai5GcmFtZXdvcmssIFZlcnNpb249My4wLjAuMCwgQ3Vs
-        dHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj0xN2JlZjM1ZTExYjg0MTcxDAMAAABRU3lzdGVtLkRy
-        YXdpbmcsIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iMDNm
-        NWY3ZjExZDUwYTNhBQEAAAAcV2lzZWouQmFzZS5SZXNwb25zaXZlUHJvZmlsZQIAAAAETmFtZQhMb2Nh
-        dGlvbgEEFFN5c3RlbS5EcmF3aW5nLlBvaW50AwAAAAIAAAAGBAAAAAZUYWJsZXQF+////xRTeXN0ZW0u
-        RHJhd2luZy5Qb2ludAIAAAABeAF5AAAICAMAAAAUAAAA9AEAAAs=
+        PFJlc3BvbnNpdmVQcm9maWxlIE5hbWU9IlRhYmxldCI+DQogIDxMb2NhdGlvbiBUeXBlPSJQb2ludCI+
+        MjAsIDUwMDwvTG9jYXRpb24+DQo8L1Jlc3BvbnNpdmVQcm9maWxlPg==
 </value>
   </data>
-  <data name="checkedListBox3.ResponsiveProfiles" mimetype="application/x-microsoft.net.object.binary.base64">
+  <data name="checkedListBox3.ResponsiveProfiles" type="Wisej.Base.ResponsiveProfile, Wisej.Framework" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        AAEAAAD/////AQAAAAAAAAAMAgAAAFJXaXNlai5GcmFtZXdvcmssIFZlcnNpb249My4wLjAuMCwgQ3Vs
-        dHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj0xN2JlZjM1ZTExYjg0MTcxDAMAAABRU3lzdGVtLkRy
-        YXdpbmcsIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iMDNm
-        NWY3ZjExZDUwYTNhBQEAAAAcV2lzZWouQmFzZS5SZXNwb25zaXZlUHJvZmlsZQUAAAAETmFtZQpGaWxs
-        V2VpZ2h0CUZsb3dCcmVhawhMb2NhdGlvbgRTaXplAQQEBAQyV2lzZWouQmFzZS5SZXNwb25zaXZlUHJv
-        ZmlsZStFeHRlbmRlZFByb3BlcnR5VmFsdWUCAAAAMldpc2VqLkJhc2UuUmVzcG9uc2l2ZVByb2ZpbGUr
-        RXh0ZW5kZWRQcm9wZXJ0eVZhbHVlAgAAABRTeXN0ZW0uRHJhd2luZy5Qb2ludAMAAAATU3lzdGVtLkRy
-        YXdpbmcuU2l6ZQMAAAACAAAABgQAAAAFUGhvbmUJBQAAAAkGAAAABfn///8UU3lzdGVtLkRyYXdpbmcu
-        UG9pbnQCAAAAAXgBeQAACAgDAAAAFAAAAOQCAAAF+P///xNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3
-        aWR0aAZoZWlnaHQAAAgIAwAAADACAADIAAAABQUAAAAyV2lzZWouQmFzZS5SZXNwb25zaXZlUHJvZmls
-        ZStFeHRlbmRlZFByb3BlcnR5VmFsdWUCAAAABVZhbHVlCFByb3ZpZGVyAgECAAAACAgBAAAABgkAAAAQ
-        Zmxvd0xheW91dFBhbmVsMQEGAAAABQAAAAgBAQkJAAAACw==
+        PFJlc3BvbnNpdmVQcm9maWxlIE5hbWU9IlBob25lIj4NCiAgPEZpbGxXZWlnaHQgVHlwZT0iV2lzZWou
+        QmFzZS5SZXNwb25zaXZlUHJvZmlsZStFeHRlbmRlZFByb3BlcnR5VmFsdWUsIFdpc2VqLkZyYW1ld29y
+        aywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPTE3YmVmMzVl
+        MTFiODQxNzEiPldpc2VqLkJhc2UuUmVzcG9uc2l2ZVByb2ZpbGUrRXh0ZW5kZWRQcm9wZXJ0eVZhbHVl
+        PC9GaWxsV2VpZ2h0Pg0KICA8Rmxvd0JyZWFrIFR5cGU9Ildpc2VqLkJhc2UuUmVzcG9uc2l2ZVByb2Zp
+        bGUrRXh0ZW5kZWRQcm9wZXJ0eVZhbHVlLCBXaXNlai5GcmFtZXdvcmssIFZlcnNpb249NC4wLjAuMCwg
+        Q3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj0xN2JlZjM1ZTExYjg0MTcxIj5XaXNlai5CYXNl
+        LlJlc3BvbnNpdmVQcm9maWxlK0V4dGVuZGVkUHJvcGVydHlWYWx1ZTwvRmxvd0JyZWFrPg0KICA8TG9j
+        YXRpb24gVHlwZT0iUG9pbnQiPjIwLCA3NDA8L0xvY2F0aW9uPg0KICA8U2l6ZSBUeXBlPSJTaXplIj41
+        NjAsIDIwMDwvU2l6ZT4NCjwvUmVzcG9uc2l2ZVByb2ZpbGU+
 </value>
   </data>
-  <data name="checkedListBox3.ResponsiveProfiles1" mimetype="application/x-microsoft.net.object.binary.base64">
+  <data name="checkedListBox3.ResponsiveProfiles1" type="Wisej.Base.ResponsiveProfile, Wisej.Framework" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        AAEAAAD/////AQAAAAAAAAAMAgAAAFJXaXNlai5GcmFtZXdvcmssIFZlcnNpb249My4wLjAuMCwgQ3Vs
-        dHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj0xN2JlZjM1ZTExYjg0MTcxDAMAAABRU3lzdGVtLkRy
-        YXdpbmcsIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iMDNm
-        NWY3ZjExZDUwYTNhBQEAAAAcV2lzZWouQmFzZS5SZXNwb25zaXZlUHJvZmlsZQIAAAAETmFtZQhMb2Nh
-        dGlvbgEEFFN5c3RlbS5EcmF3aW5nLlBvaW50AwAAAAIAAAAGBAAAAAZUYWJsZXQF+////xRTeXN0ZW0u
-        RHJhd2luZy5Qb2ludAIAAAABeAF5AAAICAMAAAA0AQAABAEAAAs=
+        PFJlc3BvbnNpdmVQcm9maWxlIE5hbWU9IlRhYmxldCI+DQogIDxMb2NhdGlvbiBUeXBlPSJQb2ludCI+
+        MzA4LCAyNjA8L0xvY2F0aW9uPg0KPC9SZXNwb25zaXZlUHJvZmlsZT4=
 </value>
   </data>
-  <data name="checkedListBox4.ResponsiveProfiles" mimetype="application/x-microsoft.net.object.binary.base64">
+  <data name="checkedListBox4.ResponsiveProfiles" type="Wisej.Base.ResponsiveProfile, Wisej.Framework" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        AAEAAAD/////AQAAAAAAAAAMAgAAAFJXaXNlai5GcmFtZXdvcmssIFZlcnNpb249My4wLjAuMCwgQ3Vs
-        dHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj0xN2JlZjM1ZTExYjg0MTcxDAMAAABRU3lzdGVtLkRy
-        YXdpbmcsIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iMDNm
-        NWY3ZjExZDUwYTNhBQEAAAAcV2lzZWouQmFzZS5SZXNwb25zaXZlUHJvZmlsZQUAAAAETmFtZQpGaWxs
-        V2VpZ2h0CUZsb3dCcmVhawhMb2NhdGlvbgRTaXplAQQEBAQyV2lzZWouQmFzZS5SZXNwb25zaXZlUHJv
-        ZmlsZStFeHRlbmRlZFByb3BlcnR5VmFsdWUCAAAAMldpc2VqLkJhc2UuUmVzcG9uc2l2ZVByb2ZpbGUr
-        RXh0ZW5kZWRQcm9wZXJ0eVZhbHVlAgAAABRTeXN0ZW0uRHJhd2luZy5Qb2ludAMAAAATU3lzdGVtLkRy
-        YXdpbmcuU2l6ZQMAAAACAAAABgQAAAAFUGhvbmUJBQAAAAkGAAAABfn///8UU3lzdGVtLkRyYXdpbmcu
-        UG9pbnQCAAAAAXgBeQAACAgDAAAAFAAAAPQBAAAF+P///xNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3
-        aWR0aAZoZWlnaHQAAAgIAwAAADACAADIAAAABQUAAAAyV2lzZWouQmFzZS5SZXNwb25zaXZlUHJvZmls
-        ZStFeHRlbmRlZFByb3BlcnR5VmFsdWUCAAAABVZhbHVlCFByb3ZpZGVyAgECAAAACAgBAAAABgkAAAAQ
-        Zmxvd0xheW91dFBhbmVsMQEGAAAABQAAAAgBAQYKAAAAEGZsb3dMYXlvdXRQYW5lbDEL
+        PFJlc3BvbnNpdmVQcm9maWxlIE5hbWU9IlBob25lIj4NCiAgPEZpbGxXZWlnaHQgVHlwZT0iV2lzZWou
+        QmFzZS5SZXNwb25zaXZlUHJvZmlsZStFeHRlbmRlZFByb3BlcnR5VmFsdWUsIFdpc2VqLkZyYW1ld29y
+        aywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPTE3YmVmMzVl
+        MTFiODQxNzEiPldpc2VqLkJhc2UuUmVzcG9uc2l2ZVByb2ZpbGUrRXh0ZW5kZWRQcm9wZXJ0eVZhbHVl
+        PC9GaWxsV2VpZ2h0Pg0KICA8Rmxvd0JyZWFrIFR5cGU9Ildpc2VqLkJhc2UuUmVzcG9uc2l2ZVByb2Zp
+        bGUrRXh0ZW5kZWRQcm9wZXJ0eVZhbHVlLCBXaXNlai5GcmFtZXdvcmssIFZlcnNpb249NC4wLjAuMCwg
+        Q3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj0xN2JlZjM1ZTExYjg0MTcxIj5XaXNlai5CYXNl
+        LlJlc3BvbnNpdmVQcm9maWxlK0V4dGVuZGVkUHJvcGVydHlWYWx1ZTwvRmxvd0JyZWFrPg0KICA8TG9j
+        YXRpb24gVHlwZT0iUG9pbnQiPjIwLCA1MDA8L0xvY2F0aW9uPg0KICA8U2l6ZSBUeXBlPSJTaXplIj41
+        NjAsIDIwMDwvU2l6ZT4NCjwvUmVzcG9uc2l2ZVByb2ZpbGU+
 </value>
   </data>
-  <data name="checkedListBox4.ResponsiveProfiles1" mimetype="application/x-microsoft.net.object.binary.base64">
+  <data name="checkedListBox4.ResponsiveProfiles1" type="Wisej.Base.ResponsiveProfile, Wisej.Framework" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        AAEAAAD/////AQAAAAAAAAAMAgAAAFJXaXNlai5GcmFtZXdvcmssIFZlcnNpb249My4wLjAuMCwgQ3Vs
-        dHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj0xN2JlZjM1ZTExYjg0MTcxDAMAAABRU3lzdGVtLkRy
-        YXdpbmcsIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iMDNm
-        NWY3ZjExZDUwYTNhBQEAAAAcV2lzZWouQmFzZS5SZXNwb25zaXZlUHJvZmlsZQIAAAAETmFtZQhMb2Nh
-        dGlvbgEEFFN5c3RlbS5EcmF3aW5nLlBvaW50AwAAAAIAAAAGBAAAAAZUYWJsZXQF+////xRTeXN0ZW0u
-        RHJhd2luZy5Qb2ludAIAAAABeAF5AAAICAMAAAAUAAAABAEAAAs=
+        PFJlc3BvbnNpdmVQcm9maWxlIE5hbWU9IlRhYmxldCI+DQogIDxMb2NhdGlvbiBUeXBlPSJQb2ludCI+
+        MjAsIDI2MDwvTG9jYXRpb24+DQo8L1Jlc3BvbnNpdmVQcm9maWxlPg==
 </value>
   </data>
-  <data name="checkedListBox5.ResponsiveProfiles" mimetype="application/x-microsoft.net.object.binary.base64">
+  <data name="checkedListBox5.ResponsiveProfiles" type="Wisej.Base.ResponsiveProfile, Wisej.Framework" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        AAEAAAD/////AQAAAAAAAAAMAgAAAFJXaXNlai5GcmFtZXdvcmssIFZlcnNpb249My4wLjAuMCwgQ3Vs
-        dHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj0xN2JlZjM1ZTExYjg0MTcxDAMAAABRU3lzdGVtLkRy
-        YXdpbmcsIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iMDNm
-        NWY3ZjExZDUwYTNhBQEAAAAcV2lzZWouQmFzZS5SZXNwb25zaXZlUHJvZmlsZQUAAAAETmFtZQpGaWxs
-        V2VpZ2h0CUZsb3dCcmVhawhMb2NhdGlvbgRTaXplAQQEBAQyV2lzZWouQmFzZS5SZXNwb25zaXZlUHJv
-        ZmlsZStFeHRlbmRlZFByb3BlcnR5VmFsdWUCAAAAMldpc2VqLkJhc2UuUmVzcG9uc2l2ZVByb2ZpbGUr
-        RXh0ZW5kZWRQcm9wZXJ0eVZhbHVlAgAAABRTeXN0ZW0uRHJhd2luZy5Qb2ludAMAAAATU3lzdGVtLkRy
-        YXdpbmcuU2l6ZQMAAAACAAAABgQAAAAFUGhvbmUJBQAAAAkGAAAABfn///8UU3lzdGVtLkRyYXdpbmcu
-        UG9pbnQCAAAAAXgBeQAACAgDAAAAFAAAAAQBAAAF+P///xNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3
-        aWR0aAZoZWlnaHQAAAgIAwAAADACAADIAAAABQUAAAAyV2lzZWouQmFzZS5SZXNwb25zaXZlUHJvZmls
-        ZStFeHRlbmRlZFByb3BlcnR5VmFsdWUCAAAABVZhbHVlCFByb3ZpZGVyAgECAAAACAgBAAAABgkAAAAQ
-        Zmxvd0xheW91dFBhbmVsMQEGAAAABQAAAAgBAQkJAAAACw==
+        PFJlc3BvbnNpdmVQcm9maWxlIE5hbWU9IlBob25lIj4NCiAgPEZpbGxXZWlnaHQgVHlwZT0iV2lzZWou
+        QmFzZS5SZXNwb25zaXZlUHJvZmlsZStFeHRlbmRlZFByb3BlcnR5VmFsdWUsIFdpc2VqLkZyYW1ld29y
+        aywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPTE3YmVmMzVl
+        MTFiODQxNzEiPldpc2VqLkJhc2UuUmVzcG9uc2l2ZVByb2ZpbGUrRXh0ZW5kZWRQcm9wZXJ0eVZhbHVl
+        PC9GaWxsV2VpZ2h0Pg0KICA8Rmxvd0JyZWFrIFR5cGU9Ildpc2VqLkJhc2UuUmVzcG9uc2l2ZVByb2Zp
+        bGUrRXh0ZW5kZWRQcm9wZXJ0eVZhbHVlLCBXaXNlai5GcmFtZXdvcmssIFZlcnNpb249NC4wLjAuMCwg
+        Q3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj0xN2JlZjM1ZTExYjg0MTcxIj5XaXNlai5CYXNl
+        LlJlc3BvbnNpdmVQcm9maWxlK0V4dGVuZGVkUHJvcGVydHlWYWx1ZTwvRmxvd0JyZWFrPg0KICA8TG9j
+        YXRpb24gVHlwZT0iUG9pbnQiPjIwLCAyNjA8L0xvY2F0aW9uPg0KICA8U2l6ZSBUeXBlPSJTaXplIj41
+        NjAsIDIwMDwvU2l6ZT4NCjwvUmVzcG9uc2l2ZVByb2ZpbGU+
 </value>
   </data>
-  <data name="checkedListBox5.ResponsiveProfiles1" mimetype="application/x-microsoft.net.object.binary.base64">
+  <data name="checkedListBox5.ResponsiveProfiles1" type="Wisej.Base.ResponsiveProfile, Wisej.Framework" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        AAEAAAD/////AQAAAAAAAAAMAgAAAFJXaXNlai5GcmFtZXdvcmssIFZlcnNpb249My4wLjAuMCwgQ3Vs
-        dHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj0xN2JlZjM1ZTExYjg0MTcxDAMAAABRU3lzdGVtLkRy
-        YXdpbmcsIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iMDNm
-        NWY3ZjExZDUwYTNhBQEAAAAcV2lzZWouQmFzZS5SZXNwb25zaXZlUHJvZmlsZQIAAAAETmFtZQhMb2Nh
-        dGlvbgEEFFN5c3RlbS5EcmF3aW5nLlBvaW50AwAAAAIAAAAGBAAAAAZUYWJsZXQF+////xRTeXN0ZW0u
-        RHJhd2luZy5Qb2ludAIAAAABeAF5AAAICAMAAAA0AQAAFAAAAAs=
+        PFJlc3BvbnNpdmVQcm9maWxlIE5hbWU9IlRhYmxldCI+DQogIDxMb2NhdGlvbiBUeXBlPSJQb2ludCI+
+        MzA4LCAyMDwvTG9jYXRpb24+DQo8L1Jlc3BvbnNpdmVQcm9maWxlPg==
 </value>
   </data>
-  <data name="checkedListBox6.ResponsiveProfiles" mimetype="application/x-microsoft.net.object.binary.base64">
+  <data name="checkedListBox6.ResponsiveProfiles" type="Wisej.Base.ResponsiveProfile, Wisej.Framework" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        AAEAAAD/////AQAAAAAAAAAMAgAAAFJXaXNlai5GcmFtZXdvcmssIFZlcnNpb249My4wLjAuMCwgQ3Vs
-        dHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj0xN2JlZjM1ZTExYjg0MTcxDAMAAABRU3lzdGVtLkRy
-        YXdpbmcsIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iMDNm
-        NWY3ZjExZDUwYTNhBQEAAAAcV2lzZWouQmFzZS5SZXNwb25zaXZlUHJvZmlsZQUAAAAETmFtZQpGaWxs
-        V2VpZ2h0CUZsb3dCcmVhawhMb2NhdGlvbgRTaXplAQQEBAQyV2lzZWouQmFzZS5SZXNwb25zaXZlUHJv
-        ZmlsZStFeHRlbmRlZFByb3BlcnR5VmFsdWUCAAAAMldpc2VqLkJhc2UuUmVzcG9uc2l2ZVByb2ZpbGUr
-        RXh0ZW5kZWRQcm9wZXJ0eVZhbHVlAgAAABRTeXN0ZW0uRHJhd2luZy5Qb2ludAMAAAATU3lzdGVtLkRy
-        YXdpbmcuU2l6ZQMAAAACAAAABgQAAAAFUGhvbmUJBQAAAAkGAAAABfn///8UU3lzdGVtLkRyYXdpbmcu
-        UG9pbnQCAAAAAXgBeQAACAgDAAAAFAAAACgAAAAF+P///xNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3
-        aWR0aAZoZWlnaHQAAAgIAwAAADACAADIAAAABQUAAAAyV2lzZWouQmFzZS5SZXNwb25zaXZlUHJvZmls
-        ZStFeHRlbmRlZFByb3BlcnR5VmFsdWUCAAAABVZhbHVlCFByb3ZpZGVyAgECAAAACAgBAAAABgkAAAAQ
-        Zmxvd0xheW91dFBhbmVsMQEGAAAABQAAAAgBAQYKAAAAEGZsb3dMYXlvdXRQYW5lbDEL
+        PFJlc3BvbnNpdmVQcm9maWxlIE5hbWU9IlBob25lIj4NCiAgPEZpbGxXZWlnaHQgVHlwZT0iV2lzZWou
+        QmFzZS5SZXNwb25zaXZlUHJvZmlsZStFeHRlbmRlZFByb3BlcnR5VmFsdWUsIFdpc2VqLkZyYW1ld29y
+        aywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPTE3YmVmMzVl
+        MTFiODQxNzEiPldpc2VqLkJhc2UuUmVzcG9uc2l2ZVByb2ZpbGUrRXh0ZW5kZWRQcm9wZXJ0eVZhbHVl
+        PC9GaWxsV2VpZ2h0Pg0KICA8Rmxvd0JyZWFrIFR5cGU9Ildpc2VqLkJhc2UuUmVzcG9uc2l2ZVByb2Zp
+        bGUrRXh0ZW5kZWRQcm9wZXJ0eVZhbHVlLCBXaXNlai5GcmFtZXdvcmssIFZlcnNpb249NC4wLjAuMCwg
+        Q3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj0xN2JlZjM1ZTExYjg0MTcxIj5XaXNlai5CYXNl
+        LlJlc3BvbnNpdmVQcm9maWxlK0V4dGVuZGVkUHJvcGVydHlWYWx1ZTwvRmxvd0JyZWFrPg0KICA8TG9j
+        YXRpb24gVHlwZT0iUG9pbnQiPjIwLCA0MDwvTG9jYXRpb24+DQogIDxTaXplIFR5cGU9IlNpemUiPjU2
+        MCwgMjAwPC9TaXplPg0KPC9SZXNwb25zaXZlUHJvZmlsZT4=
 </value>
   </data>
-  <data name="flowLayoutPanel1.ResponsiveProfiles" mimetype="application/x-microsoft.net.object.binary.base64">
+  <data name="flowLayoutPanel1.ResponsiveProfiles" type="Wisej.Base.ResponsiveProfile, Wisej.Framework" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        AAEAAAD/////AQAAAAAAAAAMAgAAAFJXaXNlai5GcmFtZXdvcmssIFZlcnNpb249My4wLjAuMCwgQ3Vs
-        dHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj0xN2JlZjM1ZTExYjg0MTcxDAMAAABRU3lzdGVtLkRy
-        YXdpbmcsIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iMDNm
-        NWY3ZjExZDUwYTNhBQEAAAAcV2lzZWouQmFzZS5SZXNwb25zaXZlUHJvZmlsZQUAAAAETmFtZQRTaXpl
-        BERvY2sQQXV0b1Njcm9sbE1hcmdpbgpTY3JvbGxCYXJzAQQEBAQTU3lzdGVtLkRyYXdpbmcuU2l6ZQMA
-        AAATV2lzZWouV2ViLkRvY2tTdHlsZQIAAAATU3lzdGVtLkRyYXdpbmcuU2l6ZQMAAAAUV2lzZWouV2Vi
-        LlNjcm9sbEJhcnMCAAAAAgAAAAYEAAAABVBob25lBfv///8TU3lzdGVtLkRyYXdpbmcuU2l6ZQIAAAAF
-        d2lkdGgGaGVpZ2h0AAAICAMAAABYAgAAvAIAAAX6////E1dpc2VqLldlYi5Eb2NrU3R5bGUBAAAAB3Zh
-        bHVlX18ACAIAAAAFAAAAAfn////7////AAAAABQAAAAF+P///xRXaXNlai5XZWIuU2Nyb2xsQmFycwEA
-        AAAHdmFsdWVfXwAIAgAAAAQAAAAL
+        PFJlc3BvbnNpdmVQcm9maWxlIE5hbWU9IlBob25lIj4NCiAgPFNpemUgVHlwZT0iU2l6ZSI+NjAwLCA3
+        MDA8L1NpemU+DQogIDxEb2NrIFR5cGU9Ildpc2VqLldlYi5Eb2NrU3R5bGUsIFdpc2VqLkZyYW1ld29y
+        aywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPTE3YmVmMzVl
+        MTFiODQxNzEiPkZpbGw8L0RvY2s+DQogIDxBdXRvU2Nyb2xsTWFyZ2luIFR5cGU9IlNpemUiPjAsIDIw
+        PC9BdXRvU2Nyb2xsTWFyZ2luPg0KICA8U2Nyb2xsQmFycyBUeXBlPSJXaXNlai5XZWIuU2Nyb2xsQmFy
+        cywgV2lzZWouRnJhbWV3b3JrLCBWZXJzaW9uPTQuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGlj
+        S2V5VG9rZW49MTdiZWYzNWUxMWI4NDE3MSI+SGlkZGVuPC9TY3JvbGxCYXJzPg0KPC9SZXNwb25zaXZl
+        UHJvZmlsZT4=
 </value>
   </data>
-  <data name="flowLayoutPanel1.ResponsiveProfiles1" mimetype="application/x-microsoft.net.object.binary.base64">
+  <data name="flowLayoutPanel1.ResponsiveProfiles1" type="Wisej.Base.ResponsiveProfile, Wisej.Framework" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        AAEAAAD/////AQAAAAAAAAAMAgAAAFJXaXNlai5GcmFtZXdvcmssIFZlcnNpb249My4wLjAuMCwgQ3Vs
-        dHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj0xN2JlZjM1ZTExYjg0MTcxDAMAAABRU3lzdGVtLkRy
-        YXdpbmcsIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iMDNm
-        NWY3ZjExZDUwYTNhBQEAAAAcV2lzZWouQmFzZS5SZXNwb25zaXZlUHJvZmlsZQIAAAAETmFtZQRTaXpl
-        AQQTU3lzdGVtLkRyYXdpbmcuU2l6ZQMAAAACAAAABgQAAAAGVGFibGV0Bfv///8TU3lzdGVtLkRyYXdp
-        bmcuU2l6ZQIAAAAFd2lkdGgGaGVpZ2h0AAAICAMAAABYAgAA2AIAAAs=
+        PFJlc3BvbnNpdmVQcm9maWxlIE5hbWU9IlRhYmxldCI+DQogIDxTaXplIFR5cGU9IlNpemUiPjYwMCwg
+        NzI4PC9TaXplPg0KPC9SZXNwb25zaXZlUHJvZmlsZT4=
 </value>
   </data>
-  <metadata name="$this.RulerSnapLines" mimetype="application/x-microsoft.net.object.binary.base64">
-    <value>
-        AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0
-        dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EHAQAAAAABAAAAAAAAAAQU
-        U3lzdGVtLkRyYXdpbmcuUG9pbnQCAAAACw==
-</value>
-  </metadata>
 </root>

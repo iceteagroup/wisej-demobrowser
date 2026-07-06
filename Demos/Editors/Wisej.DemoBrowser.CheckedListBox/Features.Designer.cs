@@ -28,7 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Features));
+            Wisej.Resources.ComponentResourceManager resources = new Wisej.Resources.ComponentResourceManager(typeof(Features));
             this.checkedListBoxDefaultCities = new Wisej.Web.CheckedListBox();
             this.checkedListBox2 = new Wisej.Web.CheckedListBox();
             this.checkedListBox3 = new Wisej.Web.CheckedListBox();
@@ -86,7 +86,7 @@
             this.checkedListBoxDefaultCities.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("checkedListBoxDefaultCities.ResponsiveProfiles"))));
             this.checkedListBoxDefaultCities.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("checkedListBoxDefaultCities.ResponsiveProfiles1"))));
             this.checkedListBoxDefaultCities.Size = new System.Drawing.Size(248, 200);
-            this.checkedListBoxDefaultCities.TabIndex = 0;
+            this.checkedListBoxDefaultCities.TabIndex = 5;
             this.checkedListBoxDefaultCities.AfterItemCheck += new Wisej.Web.ItemCheckEventHandler(this.checkedListBoxDefaultCities_AfterItemCheck);
             this.checkedListBoxDefaultCities.SelectedIndexChanged += new System.EventHandler(this.checkedListBoxDefaultCities_SelectedIndexChanged);
             // 
@@ -138,7 +138,7 @@
             this.checkedListBox2.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("checkedListBox2.ResponsiveProfiles"))));
             this.checkedListBox2.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("checkedListBox2.ResponsiveProfiles1"))));
             this.checkedListBox2.Size = new System.Drawing.Size(248, 200);
-            this.checkedListBox2.TabIndex = 1;
+            this.checkedListBox2.TabIndex = 4;
             // 
             // checkedListBox3
             // 
@@ -188,7 +188,7 @@
             this.checkedListBox3.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("checkedListBox3.ResponsiveProfiles"))));
             this.checkedListBox3.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("checkedListBox3.ResponsiveProfiles1"))));
             this.checkedListBox3.Size = new System.Drawing.Size(248, 200);
-            this.checkedListBox3.TabIndex = 2;
+            this.checkedListBox3.TabIndex = 3;
             // 
             // checkedListBox4
             // 
@@ -238,7 +238,7 @@
             this.checkedListBox4.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("checkedListBox4.ResponsiveProfiles1"))));
             this.checkedListBox4.SelectionMode = Wisej.Web.SelectionMode.MultiSimple;
             this.checkedListBox4.Size = new System.Drawing.Size(248, 200);
-            this.checkedListBox4.TabIndex = 5;
+            this.checkedListBox4.TabIndex = 2;
             // 
             // checkedListBox5
             // 
@@ -288,7 +288,7 @@
             this.checkedListBox5.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("checkedListBox5.ResponsiveProfiles1"))));
             this.checkedListBox5.SelectionMode = Wisej.Web.SelectionMode.MultiExtended;
             this.checkedListBox5.Size = new System.Drawing.Size(248, 200);
-            this.checkedListBox5.TabIndex = 4;
+            this.checkedListBox5.TabIndex = 1;
             // 
             // checkedListBox6
             // 
@@ -337,7 +337,7 @@
             this.checkedListBox6.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("checkedListBox6.ResponsiveProfiles"))));
             this.checkedListBox6.SelectionMode = Wisej.Web.SelectionMode.None;
             this.checkedListBox6.Size = new System.Drawing.Size(248, 200);
-            this.checkedListBox6.TabIndex = 3;
+            this.checkedListBox6.TabIndex = 0;
             // 
             // flowLayoutPanel1
             // 
