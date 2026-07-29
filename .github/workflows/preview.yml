@@ -107,10 +107,15 @@ jobs:
           **[Open preview]($URL)**
 
           Nothing runs until you open that link. The first request shows a progress
-          screen while a container starts - about 10 seconds - then hands over to the
-          app. It shuts down after 20 minutes with no traffic, and opening the link
-          again brings it back. Everyone viewing this PR shares one instance, each
-          with their own session.
+          screen while a container starts - usually 10-45 seconds - then hands over
+          to the app.
+
+          It shuts down a few minutes after the last person closes the tab, and
+          opening the link again brings it back. Note that a tab left open keeps it
+          running: idle is measured by open connections, so a preview is never killed
+          while someone still has it on screen.
+
+          Everyone viewing this PR shares one instance, each with their own session.
 
           <sub>Built from \`${HEAD_SHA:0:7}\`</sub>
           EOF
