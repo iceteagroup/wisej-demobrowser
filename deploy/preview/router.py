@@ -25,10 +25,13 @@ import modal
 PR_NUMBER = os.environ.get("PR_NUMBER", "local")
 APP_NAME = f"wisej-demobrowser-pr-{PR_NUMBER}"
 
-# Built and published separately by build_image.py. Referenced by name only:
-# this module is re-imported inside its own container, where the repository
-# does not exist, so it must never touch a repo-relative path or build context.
-WISEJ_IMAGE_NAME = os.environ.get("WISEJ_IMAGE_NAME", APP_NAME)
+# One stable base image shared by every PR, plus that PR's payload read from a
+# Volume at container start. Nothing here is per-PR-built, so the router can
+# never boot a stale image ID, and this module never touches the repository -
+# it is re-imported inside its own container where the repo does not exist.
+BASE_IMAGE_NAME = "wisej-preview-base"
+VOLUME_NAME = "wisej-previews"
+PAYLOAD_DIR = f"/previews/pr-{PR_NUMBER}"
 
 # How long we're willing to wait for the app to serve before calling it failed.
 BOOT_BUDGET_SECONDS = int(os.environ.get("BOOT_BUDGET_SECONDS", 600))
@@ -43,9 +46,8 @@ APP_PORT = 8080
 
 app = modal.App(APP_NAME)
 
-# The heavy image is only ever run by Sandboxes, and is looked up rather than
-# defined, so the router stays a ~1s cold start with no build dependency.
-wisej_image = modal.Image.from_name(WISEJ_IMAGE_NAME)
+wisej_image = modal.Image.from_name(BASE_IMAGE_NAME)
+volume = modal.Volume.from_name(VOLUME_NAME, create_if_missing=True)
 
 router_image = modal.Image.debian_slim().pip_install("fastapi[standard]")
 
@@ -86,9 +88,10 @@ def ensure_sandbox(started: float):
     """
     sb_app = modal.App.lookup(f"{APP_NAME}-sandboxes", create_if_missing=True)
     sb = modal.Sandbox.create(
-        "bash", "-c", "cd /app && exec dotnet Wisej.DemoBrowser.dll",
+        "bash", "-c", f"cd {PAYLOAD_DIR} && exec dotnet Wisej.DemoBrowser.dll",
         image=wisej_image,
         app=sb_app,
+        volumes={"/previews": volume},
         cpu=CPU,
         memory=MEMORY_MB,
         encrypted_ports=[APP_PORT],

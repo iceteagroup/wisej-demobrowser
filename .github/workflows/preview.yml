@@ -15,6 +15,7 @@ permissions:
 env:
   # The Modal CLI's Rich console output crashes under non-UTF-8 encodings.
   PYTHONIOENCODING: utf-8
+  MODAL_VOLUME: wisej-previews
 
 jobs:
   deploy:
@@ -28,6 +29,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
+
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
@@ -35,17 +40,44 @@ jobs:
       - name: Install Modal
         run: pip install --disable-pip-version-check modal
 
-      # Two separate steps on purpose. The image build needs the repository;
-      # the router must never touch it, because Modal re-imports the router
-      # module inside a container where the repo doesn't exist. Publishing the
-      # image under a name is what keeps the router a ~2s cold start instead of
-      # resolving a multi-minute build on the request path.
-      - name: Build and publish preview image
+      # The app is published here, on the runner, and uploaded as a ~75MB
+      # directory. Nothing about a PR builds a container image, which is what
+      # keeps the image count flat at one and makes teardown a file delete.
+      #
+      #   --runtime linux-x64   prunes runtimes/ to one RID; a portable publish
+      #                         ships alpine/osx/win/wasm assets we can't use
+      #   SatelliteResourceLanguages   drops 14 localised resource folders
+      #   EnableUnsafeBinaryFormatterSerialization   lets the designer-serialized
+      #                         .resx resources in MainView deserialize on .NET 8
+      - name: Publish app payload
+        run: |
+          dotnet publish Wisej.DemoBrowser/Wisej.DemoBrowser.csproj \
+            --framework net8.0 \
+            --configuration Release \
+            --runtime linux-x64 \
+            --no-self-contained \
+            --output ./payload \
+            -p:SatelliteResourceLanguages=en \
+            -p:EnableUnsafeBinaryFormatterSerialization=true \
+            -p:UseAppHost=false
+          du -sh ./payload
+
+      # Cheap no-op when the image is unchanged, and self-healing if the base
+      # image was never published in this workspace.
+      - name: Ensure base image
         env:
           MODAL_TOKEN_ID: ${{ secrets.MODAL_TOKEN_ID }}
           MODAL_TOKEN_SECRET: ${{ secrets.MODAL_TOKEN_SECRET }}
-          PR_NUMBER: ${{ github.event.pull_request.number }}
-        run: modal run deploy/preview/build_image.py
+        run: modal run deploy/preview/base_image.py
+
+      - name: Upload payload to Volume
+        env:
+          MODAL_TOKEN_ID: ${{ secrets.MODAL_TOKEN_ID }}
+          MODAL_TOKEN_SECRET: ${{ secrets.MODAL_TOKEN_SECRET }}
+          PR: ${{ github.event.pull_request.number }}
+        run: |
+          modal volume create "$MODAL_VOLUME" 2>/dev/null || true
+          modal volume put --force "$MODAL_VOLUME" ./payload "/pr-${PR}"
 
       - name: Deploy preview router
         id: deploy
@@ -77,11 +109,11 @@ jobs:
 
           **[Open preview]($URL)**
 
-          Nothing is running until you open that link. The first request shows a
-          progress screen while a container starts - about 10 seconds - then hands
-          over to the app. It shuts down after 20 minutes with no traffic, and
-          opening the link again brings it back. Everyone viewing this PR shares one
-          instance, each with their own session.
+          Nothing runs until you open that link. The first request shows a progress
+          screen while a container starts - about 10 seconds - then hands over to the
+          app. It shuts down after 20 minutes with no traffic, and opening the link
+          again brings it back. Everyone viewing this PR shares one instance, each
+          with their own session.
 
           <sub>Built from \`${HEAD_SHA:0:7}\`</sub>
           EOF
@@ -94,11 +126,9 @@ jobs:
           if [ -n "$id" ]; then
             gh api -X PATCH "repos/$GITHUB_REPOSITORY/issues/comments/$id" \
               -f body="$body" > /dev/null
-            echo "Updated comment $id"
           else
             gh api -X POST "repos/$GITHUB_REPOSITORY/issues/$PR_NUMBER/comments" \
               -f body="$body" > /dev/null
-            echo "Created preview comment"
           fi
 
   destroy:
@@ -113,15 +143,17 @@ jobs:
       - name: Install Modal
         run: pip install --disable-pip-version-check modal
 
-      - name: Stop Modal apps
+      - name: Stop apps and delete payload
         env:
           MODAL_TOKEN_ID: ${{ secrets.MODAL_TOKEN_ID }}
           MODAL_TOKEN_SECRET: ${{ secrets.MODAL_TOKEN_SECRET }}
           PR: ${{ github.event.pull_request.number }}
         run: |
-          # -y because there is no TTY here. Both apps are best-effort: a PR that
-          # never deployed successfully has nothing to stop.
+          # -y because there is no TTY here. All best-effort: a PR that never
+          # deployed successfully has nothing to clean up.
           modal app stop -y "wisej-demobrowser-pr-${PR}" \
             || echo "no router app for PR #${PR}"
           modal app stop -y "wisej-demobrowser-pr-${PR}-sandboxes" \
             || echo "no sandbox app for PR #${PR}"
+          modal volume rm -r "$MODAL_VOLUME" "/pr-${PR}" \
+            || echo "no payload for PR #${PR}"
