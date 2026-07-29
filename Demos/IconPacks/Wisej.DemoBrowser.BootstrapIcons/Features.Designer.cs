@@ -45,7 +45,7 @@
             this.listViewIcons.LargeImageList = this.imageListIcons;
             this.listViewIcons.Location = new System.Drawing.Point(0, 30);
             this.listViewIcons.Name = "listViewIcons";
-            this.listViewIcons.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("listViewIcons.ResponsiveProfiles"))));
+            // this.listViewIcons.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("listViewIcons.ResponsiveProfiles"))));
             this.listViewIcons.ShowItemToolTips = true;
             this.listViewIcons.Size = new System.Drawing.Size(1422, 444);
             this.listViewIcons.TabIndex = 0;

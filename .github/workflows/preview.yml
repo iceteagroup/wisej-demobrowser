@@ -1,0 +1,156 @@
+name: PR Preview
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, closed]
+
+concurrency:
+  group: wisej-preview-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+  pull-requests: write
+
+env:
+  # The Modal CLI's Rich console output crashes under non-UTF-8 encodings.
+  PYTHONIOENCODING: utf-8
+  MODAL_VOLUME: wisej-previews
+
+jobs:
+  deploy:
+    name: Deploy preview
+    # Secrets aren't exposed to pull_request runs from forks, so a fork PR
+    # would fail at `modal deploy` with a confusing auth error. Skip instead.
+    if: >-
+      github.event.action != 'closed' &&
+      github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '10.0.x'
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install Modal
+        run: pip install --disable-pip-version-check modal
+
+      # The app is published here, on the runner, and uploaded as a ~75MB
+      # directory. Nothing about a PR builds a container image, which is what
+      # keeps the image count flat at one and makes teardown a file delete.
+      #
+      #   SatelliteResourceLanguages   drops 14 localised resource folders
+      #
+      # Deliberately a portable publish: --runtime linux-x64 was only ever a
+      # size optimisation, and keeping the output RID-agnostic means the exact
+      # same payload can be run on a dev box for debugging.
+      - name: Publish app payload
+        run: |
+          dotnet publish Wisej.DemoBrowser/Wisej.DemoBrowser.csproj \
+            --framework net10.0 \
+            --configuration Release \
+            --output ./payload \
+            -p:SatelliteResourceLanguages=en \
+            -p:UseAppHost=false
+          du -sh ./payload
+
+      # Cheap no-op when the image is unchanged, and self-healing if the base
+      # image was never published in this workspace.
+      - name: Ensure base image
+        env:
+          MODAL_TOKEN_ID: ${{ secrets.MODAL_TOKEN_ID }}
+          MODAL_TOKEN_SECRET: ${{ secrets.MODAL_TOKEN_SECRET }}
+        run: modal run deploy/preview/base_image.py
+
+      - name: Upload payload to Volume
+        env:
+          MODAL_TOKEN_ID: ${{ secrets.MODAL_TOKEN_ID }}
+          MODAL_TOKEN_SECRET: ${{ secrets.MODAL_TOKEN_SECRET }}
+          PR: ${{ github.event.pull_request.number }}
+        run: |
+          modal volume create "$MODAL_VOLUME" 2>/dev/null || true
+          modal volume put --force "$MODAL_VOLUME" ./payload "/pr-${PR}"
+
+      - name: Deploy preview router
+        id: deploy
+        env:
+          MODAL_TOKEN_ID: ${{ secrets.MODAL_TOKEN_ID }}
+          MODAL_TOKEN_SECRET: ${{ secrets.MODAL_TOKEN_SECRET }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+        run: |
+          set -o pipefail
+          modal deploy deploy/preview/router.py 2>&1 | tee deploy.log
+          url=$(grep -oE 'https://[A-Za-z0-9._-]+\.modal\.run' deploy.log | head -n1)
+          if [ -z "$url" ]; then
+            echo "::error::No *.modal.run URL found in the deploy output"
+            exit 1
+          fi
+          echo "url=$url" >> "$GITHUB_OUTPUT"
+
+      - name: Post preview link
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+          URL: ${{ steps.deploy.outputs.url }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+        run: |
+          marker='<!-- wisej-preview -->'
+          body=$(cat <<EOF
+          $marker
+          ### Wisej.NET Cloud preview
+
+          **[Open preview]($URL)**
+
+          Nothing runs until you open that link. The first request shows a progress
+          screen while a container starts - about 10 seconds - then hands over to the
+          app. It shuts down after 20 minutes with no traffic, and opening the link
+          again brings it back. Everyone viewing this PR shares one instance, each
+          with their own session.
+
+          <sub>Built from \`${HEAD_SHA:0:7}\`</sub>
+          EOF
+          )
+          body=$(printf '%s\n' "$body" | sed 's/^          //')
+
+          id=$(gh api "repos/$GITHUB_REPOSITORY/issues/$PR_NUMBER/comments" --paginate \
+                 --jq "[.[] | select(.body | startswith(\"$marker\"))][0].id // empty")
+
+          if [ -n "$id" ]; then
+            gh api -X PATCH "repos/$GITHUB_REPOSITORY/issues/comments/$id" \
+              -f body="$body" > /dev/null
+          else
+            gh api -X POST "repos/$GITHUB_REPOSITORY/issues/$PR_NUMBER/comments" \
+              -f body="$body" > /dev/null
+          fi
+
+  destroy:
+    name: Tear down preview
+    if: github.event.action == 'closed'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install Modal
+        run: pip install --disable-pip-version-check modal
+
+      - name: Stop apps and delete payload
+        env:
+          MODAL_TOKEN_ID: ${{ secrets.MODAL_TOKEN_ID }}
+          MODAL_TOKEN_SECRET: ${{ secrets.MODAL_TOKEN_SECRET }}
+          PR: ${{ github.event.pull_request.number }}
+        run: |
+          # -y because there is no TTY here. All best-effort: a PR that never
+          # deployed successfully has nothing to clean up.
+          modal app stop -y "wisej-demobrowser-pr-${PR}" \
+            || echo "no router app for PR #${PR}"
+          modal app stop -y "wisej-demobrowser-pr-${PR}-sandboxes" \
+            || echo "no sandbox app for PR #${PR}"
+          modal volume rm -r "$MODAL_VOLUME" "/pr-${PR}" \
+            || echo "no payload for PR #${PR}"

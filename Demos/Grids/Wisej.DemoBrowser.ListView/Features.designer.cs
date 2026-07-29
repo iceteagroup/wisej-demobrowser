@@ -53,8 +53,8 @@
             this.listViewDemo.Location = new System.Drawing.Point(299, 16);
             this.listViewDemo.MinimumSize = new System.Drawing.Size(300, 0);
             this.listViewDemo.Name = "listViewDemo";
-            this.listViewDemo.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("listViewDemo.ResponsiveProfiles"))));
-            this.listViewDemo.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("listViewDemo.ResponsiveProfiles1"))));
+            // this.listViewDemo.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("listViewDemo.ResponsiveProfiles"))));
+            // this.listViewDemo.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("listViewDemo.ResponsiveProfiles1"))));
             this.listViewDemo.Size = new System.Drawing.Size(1107, 442);
             this.listViewDemo.TabIndex = 2;
             this.listViewDemo.VirtualMode = true;
@@ -90,8 +90,8 @@
             this.comboBoxView.LabelText = "View";
             this.comboBoxView.Location = new System.Drawing.Point(41, 151);
             this.comboBoxView.Name = "comboBoxView";
-            this.comboBoxView.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("comboBoxView.ResponsiveProfiles"))));
-            this.comboBoxView.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("comboBoxView.ResponsiveProfiles1"))));
+            // this.comboBoxView.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("comboBoxView.ResponsiveProfiles"))));
+            // this.comboBoxView.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("comboBoxView.ResponsiveProfiles1"))));
             this.comboBoxView.Size = new System.Drawing.Size(200, 42);
             this.comboBoxView.TabIndex = 3;
             this.comboBoxView.Text = "LargeIcon";
@@ -109,8 +109,8 @@
             this.comboBoxSelectionMode.LabelText = "Selection Mode";
             this.comboBoxSelectionMode.Location = new System.Drawing.Point(41, 239);
             this.comboBoxSelectionMode.Name = "comboBoxSelectionMode";
-            this.comboBoxSelectionMode.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("comboBoxSelectionMode.ResponsiveProfiles"))));
-            this.comboBoxSelectionMode.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("comboBoxSelectionMode.ResponsiveProfiles1"))));
+            // this.comboBoxSelectionMode.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("comboBoxSelectionMode.ResponsiveProfiles"))));
+            // this.comboBoxSelectionMode.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("comboBoxSelectionMode.ResponsiveProfiles1"))));
             this.comboBoxSelectionMode.Size = new System.Drawing.Size(200, 42);
             this.comboBoxSelectionMode.TabIndex = 4;
             this.comboBoxSelectionMode.Text = "One";
@@ -123,8 +123,8 @@
             this.panel1.Dock = Wisej.Web.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(16, 16);
             this.panel1.Name = "panel1";
-            this.panel1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("panel1.ResponsiveProfiles"))));
-            this.panel1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("panel1.ResponsiveProfiles1"))));
+            // this.panel1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("panel1.ResponsiveProfiles"))));
+            // this.panel1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("panel1.ResponsiveProfiles1"))));
             this.panel1.Size = new System.Drawing.Size(283, 442);
             this.panel1.TabIndex = 5;
             // 
@@ -134,8 +134,8 @@
             this.Controls.Add(this.panel1);
             this.Name = "Features";
             this.Padding = new Wisej.Web.Padding(16);
-            this.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("$this.ResponsiveProfiles"))));
-            this.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("$this.ResponsiveProfiles1"))));
+            // this.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("$this.ResponsiveProfiles"))));
+            // this.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("$this.ResponsiveProfiles1"))));
             this.Load += new System.EventHandler(this.Features_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

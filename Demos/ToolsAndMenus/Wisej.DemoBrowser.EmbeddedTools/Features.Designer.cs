@@ -59,7 +59,7 @@
             this.textBox1.LabelText = "Tool Position Right";
             this.textBox1.Location = new System.Drawing.Point(25, 19);
             this.textBox1.Name = "textBox1";
-            this.textBox1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("textBox1.ResponsiveProfiles"))));
+            // this.textBox1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("textBox1.ResponsiveProfiles"))));
             this.textBox1.Size = new System.Drawing.Size(247, 53);
             this.textBox1.TabIndex = 9;
             componentTool9.ImageSource = "node-opened";
@@ -73,7 +73,7 @@
             this.textBox2.LabelText = "Tool Position Left";
             this.textBox2.Location = new System.Drawing.Point(25, 107);
             this.textBox2.Name = "textBox2";
-            this.textBox2.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("textBox2.ResponsiveProfiles"))));
+            // this.textBox2.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("textBox2.ResponsiveProfiles"))));
             this.textBox2.Size = new System.Drawing.Size(247, 53);
             this.textBox2.TabIndex = 10;
             componentTool10.ImageSource = "icon-settings";
@@ -88,7 +88,7 @@
             this.textBox3.LabelText = "Tool AutoHide";
             this.textBox3.Location = new System.Drawing.Point(25, 61);
             this.textBox3.Name = "textBox3";
-            this.textBox3.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("textBox3.ResponsiveProfiles"))));
+            // this.textBox3.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("textBox3.ResponsiveProfiles"))));
             this.textBox3.Size = new System.Drawing.Size(247, 53);
             this.textBox3.TabIndex = 11;
             componentTool11.AutoHide = true;
@@ -103,7 +103,7 @@
             this.textBox4.LabelText = "Multiple Tools";
             this.textBox4.Location = new System.Drawing.Point(25, 191);
             this.textBox4.Name = "textBox4";
-            this.textBox4.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("textBox4.ResponsiveProfiles"))));
+            // this.textBox4.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("textBox4.ResponsiveProfiles"))));
             this.textBox4.Size = new System.Drawing.Size(247, 53);
             this.textBox4.TabIndex = 12;
             componentTool12.Enabled = false;
@@ -126,7 +126,7 @@
             this.checkedListBox1.LabelText = "CheckedListBox with Tool";
             this.checkedListBox1.Location = new System.Drawing.Point(25, 19);
             this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("checkedListBox1.ResponsiveProfiles"))));
+            // this.checkedListBox1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("checkedListBox1.ResponsiveProfiles"))));
             this.checkedListBox1.Size = new System.Drawing.Size(247, 225);
             this.checkedListBox1.TabIndex = 13;
             componentTool15.ImageSource = "checkbox";
@@ -147,7 +147,7 @@
             this.comboBox1.LabelText = "ComboBox with Tool";
             this.comboBox1.Location = new System.Drawing.Point(25, 149);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("comboBox1.ResponsiveProfiles"))));
+            // this.comboBox1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("comboBox1.ResponsiveProfiles"))));
             this.comboBox1.Size = new System.Drawing.Size(247, 53);
             this.comboBox1.TabIndex = 14;
             componentTool16.ImageSource = "icon-info";
@@ -163,7 +163,7 @@
             this.flowLayoutPanel1.SetFillWeight(this.panel1, 1);
             this.panel1.Location = new System.Drawing.Point(3, 3);
             this.panel1.Name = "panel1";
-            this.panel1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("panel1.ResponsiveProfiles"))));
+            // this.panel1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("panel1.ResponsiveProfiles"))));
             this.panel1.Size = new System.Drawing.Size(296, 263);
             this.panel1.TabIndex = 15;
             // 
@@ -174,7 +174,7 @@
             this.flowLayoutPanel1.SetFillWeight(this.panel2, 1);
             this.panel2.Location = new System.Drawing.Point(607, 3);
             this.panel2.Name = "panel2";
-            this.panel2.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("panel2.ResponsiveProfiles"))));
+            // this.panel2.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("panel2.ResponsiveProfiles"))));
             this.panel2.Size = new System.Drawing.Size(296, 263);
             this.panel2.TabIndex = 16;
             // 
@@ -184,7 +184,7 @@
             this.flowLayoutPanel1.SetFillWeight(this.panel3, 1);
             this.panel3.Location = new System.Drawing.Point(305, 3);
             this.panel3.Name = "panel3";
-            this.panel3.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("panel3.ResponsiveProfiles"))));
+            // this.panel3.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("panel3.ResponsiveProfiles"))));
             this.panel3.Size = new System.Drawing.Size(296, 263);
             this.panel3.TabIndex = 17;
             // 
@@ -197,7 +197,7 @@
             this.flowLayoutPanel1.Controls.Add(this.panel2);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(258, 103);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("flowLayoutPanel1.ResponsiveProfiles"))));
+            // this.flowLayoutPanel1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("flowLayoutPanel1.ResponsiveProfiles"))));
             this.flowLayoutPanel1.Size = new System.Drawing.Size(906, 269);
             this.flowLayoutPanel1.TabIndex = 18;
             // 

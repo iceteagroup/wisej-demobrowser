@@ -57,7 +57,7 @@
             this.comboBox1.LabelText = "Default";
             this.comboBox1.Location = new System.Drawing.Point(22, 20);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("comboBox1.ResponsiveProfiles"))));
+            // this.comboBox1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("comboBox1.ResponsiveProfiles"))));
             this.comboBox1.Size = new System.Drawing.Size(200, 53);
             this.comboBox1.TabIndex = 0;
             // 
@@ -68,7 +68,7 @@
             this.comboBox2.LabelText = "Left";
             this.comboBox2.Location = new System.Drawing.Point(22, 107);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("comboBox2.ResponsiveProfiles"))));
+            // this.comboBox2.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("comboBox2.ResponsiveProfiles"))));
             this.comboBox2.Size = new System.Drawing.Size(200, 30);
             this.comboBox2.TabIndex = 1;
             // 
@@ -79,7 +79,7 @@
             this.comboBox3.LabelText = "Right";
             this.comboBox3.Location = new System.Drawing.Point(13, 31);
             this.comboBox3.Name = "comboBox3";
-            this.comboBox3.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("comboBox3.ResponsiveProfiles"))));
+            // this.comboBox3.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("comboBox3.ResponsiveProfiles"))));
             this.comboBox3.Size = new System.Drawing.Size(200, 30);
             this.comboBox3.TabIndex = 2;
             // 
@@ -90,7 +90,7 @@
             this.comboBox4.LabelText = "Center-Align";
             this.comboBox4.Location = new System.Drawing.Point(22, 258);
             this.comboBox4.Name = "comboBox4";
-            this.comboBox4.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("comboBox4.ResponsiveProfiles"))));
+            // this.comboBox4.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("comboBox4.ResponsiveProfiles"))));
             this.comboBox4.Size = new System.Drawing.Size(200, 53);
             this.comboBox4.TabIndex = 3;
             // 
@@ -101,7 +101,7 @@
             this.comboBox5.LabelText = "Right-Align";
             this.comboBox5.Location = new System.Drawing.Point(16, 19);
             this.comboBox5.Name = "comboBox5";
-            this.comboBox5.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("comboBox5.ResponsiveProfiles"))));
+            // this.comboBox5.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("comboBox5.ResponsiveProfiles"))));
             this.comboBox5.Size = new System.Drawing.Size(200, 53);
             this.comboBox5.TabIndex = 4;
             // 
@@ -112,7 +112,7 @@
             this.comboBox6.LabelText = "Bottom Left";
             this.comboBox6.Location = new System.Drawing.Point(22, 171);
             this.comboBox6.Name = "comboBox6";
-            this.comboBox6.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("comboBox6.ResponsiveProfiles"))));
+            // this.comboBox6.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("comboBox6.ResponsiveProfiles"))));
             this.comboBox6.Size = new System.Drawing.Size(200, 53);
             this.comboBox6.TabIndex = 5;
             // 
@@ -124,7 +124,7 @@
             this.comboBox7.LabelText = "Bottom Center";
             this.comboBox7.Location = new System.Drawing.Point(13, 89);
             this.comboBox7.Name = "comboBox7";
-            this.comboBox7.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("comboBox7.ResponsiveProfiles"))));
+            // this.comboBox7.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("comboBox7.ResponsiveProfiles"))));
             this.comboBox7.Size = new System.Drawing.Size(200, 53);
             this.comboBox7.TabIndex = 6;
             // 
@@ -136,7 +136,7 @@
             this.comboBox8.LabelText = "Bottom Right";
             this.comboBox8.Location = new System.Drawing.Point(13, 170);
             this.comboBox8.Name = "comboBox8";
-            this.comboBox8.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("comboBox8.ResponsiveProfiles"))));
+            // this.comboBox8.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("comboBox8.ResponsiveProfiles"))));
             this.comboBox8.Size = new System.Drawing.Size(200, 53);
             this.comboBox8.TabIndex = 7;
             // 
@@ -147,7 +147,7 @@
             this.comboBox9.LabelText = "Custom Padding";
             this.comboBox9.Location = new System.Drawing.Point(16, 98);
             this.comboBox9.Name = "comboBox9";
-            this.comboBox9.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("comboBox9.ResponsiveProfiles"))));
+            // this.comboBox9.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("comboBox9.ResponsiveProfiles"))));
             this.comboBox9.Size = new System.Drawing.Size(200, 53);
             this.comboBox9.TabIndex = 8;
             // 
@@ -158,7 +158,7 @@
             this.comboBox10.LabelText = "Custom Color";
             this.comboBox10.Location = new System.Drawing.Point(16, 177);
             this.comboBox10.Name = "comboBox10";
-            this.comboBox10.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("comboBox10.ResponsiveProfiles"))));
+            // this.comboBox10.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("comboBox10.ResponsiveProfiles"))));
             this.comboBox10.Size = new System.Drawing.Size(200, 53);
             this.comboBox10.TabIndex = 9;
             // 
@@ -170,7 +170,7 @@
             this.comboBox11.LabelText = "<b>Label</b> with <i>HTML</i>";
             this.comboBox11.Location = new System.Drawing.Point(16, 256);
             this.comboBox11.Name = "comboBox11";
-            this.comboBox11.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("comboBox11.ResponsiveProfiles"))));
+            // this.comboBox11.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("comboBox11.ResponsiveProfiles"))));
             this.comboBox11.Size = new System.Drawing.Size(200, 53);
             this.comboBox11.TabIndex = 10;
             // 
@@ -181,7 +181,7 @@
             this.comboBox12.LabelText = "Inside";
             this.comboBox12.Location = new System.Drawing.Point(13, 251);
             this.comboBox12.Name = "comboBox12";
-            this.comboBox12.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("comboBox12.ResponsiveProfiles"))));
+            // this.comboBox12.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("comboBox12.ResponsiveProfiles"))));
             this.comboBox12.Size = new System.Drawing.Size(200, 48);
             this.comboBox12.TabIndex = 11;
             // 
@@ -193,7 +193,7 @@
             this.panel1.Controls.Add(this.comboBox1);
             this.panel1.Location = new System.Drawing.Point(474, 3);
             this.panel1.Name = "panel1";
-            this.panel1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("panel1.ResponsiveProfiles"))));
+            // this.panel1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("panel1.ResponsiveProfiles"))));
             this.panel1.Size = new System.Drawing.Size(245, 330);
             this.panel1.TabIndex = 12;
             // 
@@ -205,7 +205,7 @@
             this.panel2.Controls.Add(this.comboBox3);
             this.panel2.Location = new System.Drawing.Point(241, 3);
             this.panel2.Name = "panel2";
-            this.panel2.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("panel2.ResponsiveProfiles"))));
+            // this.panel2.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("panel2.ResponsiveProfiles"))));
             this.panel2.Size = new System.Drawing.Size(227, 330);
             this.panel2.TabIndex = 13;
             // 
@@ -217,7 +217,7 @@
             this.panel3.Controls.Add(this.comboBox5);
             this.panel3.Location = new System.Drawing.Point(3, 3);
             this.panel3.Name = "panel3";
-            this.panel3.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("panel3.ResponsiveProfiles"))));
+            // this.panel3.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("panel3.ResponsiveProfiles"))));
             this.panel3.Size = new System.Drawing.Size(232, 329);
             this.panel3.TabIndex = 14;
             // 
@@ -233,7 +233,7 @@
             this.flowLayoutPanel1.Controls.Add(this.panel1);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(350, 69);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("flowLayoutPanel1.ResponsiveProfiles"))));
+            // this.flowLayoutPanel1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("flowLayoutPanel1.ResponsiveProfiles"))));
             this.flowLayoutPanel1.Size = new System.Drawing.Size(723, 337);
             this.flowLayoutPanel1.TabIndex = 15;
             // 

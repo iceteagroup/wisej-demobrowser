@@ -110,7 +110,7 @@
             this.menuItem4,
             this.menuItem5});
             this.menuBarDefault.Name = "menuBarDefault";
-            this.menuBarDefault.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("menuBarDefault.ResponsiveProfiles"))));
+            // this.menuBarDefault.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("menuBarDefault.ResponsiveProfiles"))));
             this.menuBarDefault.Size = new System.Drawing.Size(315, 40);
             this.menuBarDefault.TabIndex = 0;
             this.menuBarDefault.TabStop = false;
@@ -262,7 +262,7 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(34, 14);
             this.label2.Name = "label2";
-            this.label2.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("label2.ResponsiveProfiles"))));
+            // this.label2.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("label2.ResponsiveProfiles"))));
             this.label2.Size = new System.Drawing.Size(46, 18);
             this.label2.TabIndex = 3;
             this.label2.Text = "Default";
@@ -273,7 +273,7 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(34, 169);
             this.label3.Name = "label3";
-            this.label3.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("label3.ResponsiveProfiles"))));
+            // this.label3.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("label3.ResponsiveProfiles"))));
             this.label3.Size = new System.Drawing.Size(38, 18);
             this.label3.TabIndex = 5;
             this.label3.Text = "HTML";
@@ -289,7 +289,7 @@
             this.menuItem27,
             this.menuItem28});
             this.menuBar3.Name = "menuBar3";
-            this.menuBar3.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("menuBar3.ResponsiveProfiles"))));
+            // this.menuBar3.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("menuBar3.ResponsiveProfiles"))));
             this.menuBar3.Size = new System.Drawing.Size(315, 40);
             this.menuBar3.TabIndex = 4;
             this.menuBar3.TabStop = false;
@@ -337,7 +337,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(34, 91);
             this.label1.Name = "label1";
-            this.label1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("label1.ResponsiveProfiles"))));
+            // this.label1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("label1.ResponsiveProfiles"))));
             this.label1.Size = new System.Drawing.Size(84, 18);
             this.label1.TabIndex = 7;
             this.label1.Text = "Overflow Icon";
@@ -354,7 +354,7 @@
             this.menuItem22,
             this.menuItem23});
             this.menuBar2.Name = "menuBar2";
-            this.menuBar2.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("menuBar2.ResponsiveProfiles"))));
+            // this.menuBar2.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("menuBar2.ResponsiveProfiles"))));
             this.menuBar2.Size = new System.Drawing.Size(315, 40);
             this.menuBar2.TabIndex = 6;
             this.menuBar2.TabStop = false;
@@ -407,7 +407,7 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(34, 13);
             this.label4.Name = "label4";
-            this.label4.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("label4.ResponsiveProfiles"))));
+            // this.label4.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("label4.ResponsiveProfiles"))));
             this.label4.Size = new System.Drawing.Size(70, 18);
             this.label4.TabIndex = 9;
             this.label4.Text = "Size Modes";
@@ -421,7 +421,7 @@
             this.menuItem11,
             this.menuItem12});
             this.menuBar4.Name = "menuBar4";
-            this.menuBar4.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("menuBar4.ResponsiveProfiles"))));
+            // this.menuBar4.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("menuBar4.ResponsiveProfiles"))));
             this.menuBar4.Size = new System.Drawing.Size(315, 40);
             this.menuBar4.TabIndex = 8;
             this.menuBar4.TabStop = false;
@@ -454,7 +454,7 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(34, 90);
             this.label5.Name = "label5";
-            this.label5.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("label5.ResponsiveProfiles"))));
+            // this.label5.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("label5.ResponsiveProfiles"))));
             this.label5.Size = new System.Drawing.Size(34, 18);
             this.label5.TabIndex = 11;
             this.label5.Text = "Icons";
@@ -468,7 +468,7 @@
             this.menuItem8,
             this.menuItem9});
             this.menuBar5.Name = "menuBar5";
-            this.menuBar5.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("menuBar5.ResponsiveProfiles"))));
+            // this.menuBar5.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("menuBar5.ResponsiveProfiles"))));
             this.menuBar5.Size = new System.Drawing.Size(315, 40);
             this.menuBar5.TabIndex = 10;
             this.menuBar5.TabStop = false;
@@ -540,7 +540,7 @@
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(34, 168);
             this.label7.Name = "label7";
-            this.label7.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("label7.ResponsiveProfiles"))));
+            // this.label7.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("label7.ResponsiveProfiles"))));
             this.label7.Size = new System.Drawing.Size(74, 18);
             this.label7.TabIndex = 15;
             this.label7.Text = "Check Items";
@@ -553,7 +553,7 @@
             this.menuItemFavoriteColor,
             this.menuItemCheck});
             this.menuBarCheck.Name = "menuBarCheck";
-            this.menuBarCheck.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("menuBarCheck.ResponsiveProfiles"))));
+            // this.menuBarCheck.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("menuBarCheck.ResponsiveProfiles"))));
             this.menuBarCheck.Size = new System.Drawing.Size(315, 40);
             this.menuBarCheck.TabIndex = 14;
             this.menuBarCheck.TabStop = false;
@@ -595,7 +595,7 @@
             this.menuItem33,
             this.linkMenuItem1});
             this.menuBarTypes.Name = "menuBarTypes";
-            this.menuBarTypes.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("menuBarTypes.ResponsiveProfiles"))));
+            // this.menuBarTypes.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("menuBarTypes.ResponsiveProfiles"))));
             this.menuBarTypes.Size = new System.Drawing.Size(188, 40);
             this.menuBarTypes.TabIndex = 16;
             this.menuBarTypes.TabStop = false;
@@ -623,7 +623,7 @@
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(6, 14);
             this.label8.Name = "label8";
-            this.label8.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("label8.ResponsiveProfiles"))));
+            // this.label8.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("label8.ResponsiveProfiles"))));
             this.label8.Size = new System.Drawing.Size(104, 18);
             this.label8.TabIndex = 17;
             this.label8.Text = "Menu Item Types";
@@ -640,7 +640,7 @@
             this.panel1.Location = new System.Drawing.Point(3, 3);
             this.panel1.MinimumSize = new System.Drawing.Size(315, 0);
             this.panel1.Name = "panel1";
-            this.panel1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("panel1.ResponsiveProfiles"))));
+            // this.panel1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("panel1.ResponsiveProfiles"))));
             this.panel1.Size = new System.Drawing.Size(383, 246);
             this.panel1.TabIndex = 18;
             // 
@@ -656,7 +656,7 @@
             this.panel2.Location = new System.Drawing.Point(598, 3);
             this.panel2.MinimumSize = new System.Drawing.Size(315, 0);
             this.panel2.Name = "panel2";
-            this.panel2.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("panel2.ResponsiveProfiles"))));
+            // this.panel2.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("panel2.ResponsiveProfiles"))));
             this.panel2.Size = new System.Drawing.Size(383, 244);
             this.panel2.TabIndex = 19;
             // 
@@ -668,7 +668,7 @@
             this.panel3.Location = new System.Drawing.Point(392, 3);
             this.panel3.MinimumSize = new System.Drawing.Size(200, 0);
             this.panel3.Name = "panel3";
-            this.panel3.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("panel3.ResponsiveProfiles"))));
+            // this.panel3.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("panel3.ResponsiveProfiles"))));
             this.panel3.Size = new System.Drawing.Size(200, 92);
             this.panel3.TabIndex = 20;
             // 
@@ -681,7 +681,7 @@
             this.flowLayoutPanel1.Controls.Add(this.panel2);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(83, 112);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("flowLayoutPanel1.ResponsiveProfiles"))));
+            // this.flowLayoutPanel1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("flowLayoutPanel1.ResponsiveProfiles"))));
             this.flowLayoutPanel1.Size = new System.Drawing.Size(984, 251);
             this.flowLayoutPanel1.TabIndex = 21;
             // 

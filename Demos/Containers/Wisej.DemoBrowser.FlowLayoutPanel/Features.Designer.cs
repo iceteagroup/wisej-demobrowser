@@ -59,8 +59,8 @@
             this.comboBoxView.LabelText = "View";
             this.comboBoxView.Location = new System.Drawing.Point(9, 11);
             this.comboBoxView.Name = "comboBoxView";
-            this.comboBoxView.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("comboBoxView.ResponsiveProfiles"))));
-            this.comboBoxView.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("comboBoxView.ResponsiveProfiles1"))));
+            // this.comboBoxView.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("comboBoxView.ResponsiveProfiles"))));
+            // this.comboBoxView.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("comboBoxView.ResponsiveProfiles1"))));
             this.comboBoxView.Size = new System.Drawing.Size(213, 53);
             this.comboBoxView.TabIndex = 5;
             this.comboBoxView.Text = "LeftToRight";
@@ -82,8 +82,8 @@
             this.flowLayoutPanel1.Location = new System.Drawing.Point(9, 70);
             this.flowLayoutPanel1.Margin = new Wisej.Web.Padding(3, 3, 3, 8);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("flowLayoutPanel1.ResponsiveProfiles"))));
-            this.flowLayoutPanel1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("flowLayoutPanel1.ResponsiveProfiles1"))));
+            // this.flowLayoutPanel1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("flowLayoutPanel1.ResponsiveProfiles"))));
+            // this.flowLayoutPanel1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("flowLayoutPanel1.ResponsiveProfiles1"))));
             this.flowLayoutPanel1.ShowCloseButton = false;
             this.flowLayoutPanel1.Size = new System.Drawing.Size(432, 471);
             this.flowLayoutPanel1.TabIndex = 7;
@@ -98,8 +98,8 @@
             // 
             this.personCard10.Location = new System.Drawing.Point(3, 3);
             this.personCard10.Name = "personCard10";
-            this.personCard10.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("personCard10.ResponsiveProfiles"))));
-            this.personCard10.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("personCard10.ResponsiveProfiles1"))));
+            // this.personCard10.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("personCard10.ResponsiveProfiles"))));
+            // this.personCard10.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("personCard10.ResponsiveProfiles1"))));
             this.personCard10.Size = new System.Drawing.Size(150, 150);
             this.personCard10.TabIndex = 19;
             // 
@@ -107,8 +107,8 @@
             // 
             this.personCard11.Location = new System.Drawing.Point(159, 3);
             this.personCard11.Name = "personCard11";
-            this.personCard11.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("personCard11.ResponsiveProfiles"))));
-            this.personCard11.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("personCard11.ResponsiveProfiles1"))));
+            // this.personCard11.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("personCard11.ResponsiveProfiles"))));
+            // this.personCard11.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("personCard11.ResponsiveProfiles1"))));
             this.personCard11.Size = new System.Drawing.Size(150, 150);
             this.personCard11.TabIndex = 20;
             // 
@@ -116,8 +116,8 @@
             // 
             this.personCard16.Location = new System.Drawing.Point(3, 159);
             this.personCard16.Name = "personCard16";
-            this.personCard16.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("personCard16.ResponsiveProfiles"))));
-            this.personCard16.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("personCard16.ResponsiveProfiles1"))));
+            // this.personCard16.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("personCard16.ResponsiveProfiles"))));
+            // this.personCard16.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("personCard16.ResponsiveProfiles1"))));
             this.personCard16.Size = new System.Drawing.Size(150, 150);
             this.personCard16.TabIndex = 25;
             // 
@@ -125,8 +125,8 @@
             // 
             this.personCard17.Location = new System.Drawing.Point(159, 159);
             this.personCard17.Name = "personCard17";
-            this.personCard17.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("personCard17.ResponsiveProfiles"))));
-            this.personCard17.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("personCard17.ResponsiveProfiles1"))));
+            // this.personCard17.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("personCard17.ResponsiveProfiles"))));
+            // this.personCard17.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("personCard17.ResponsiveProfiles1"))));
             this.personCard17.Size = new System.Drawing.Size(150, 150);
             this.personCard17.TabIndex = 26;
             // 
@@ -134,8 +134,8 @@
             // 
             this.personCard18.Location = new System.Drawing.Point(3, 315);
             this.personCard18.Name = "personCard18";
-            this.personCard18.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("personCard18.ResponsiveProfiles"))));
-            this.personCard18.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("personCard18.ResponsiveProfiles1"))));
+            // this.personCard18.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("personCard18.ResponsiveProfiles"))));
+            // this.personCard18.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("personCard18.ResponsiveProfiles1"))));
             this.personCard18.Size = new System.Drawing.Size(150, 150);
             this.personCard18.TabIndex = 27;
             // 
@@ -145,8 +145,8 @@
             this.comboBoxView2.LabelText = "View";
             this.comboBoxView2.Location = new System.Drawing.Point(10, 10);
             this.comboBoxView2.Name = "comboBoxView2";
-            this.comboBoxView2.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("comboBoxView2.ResponsiveProfiles"))));
-            this.comboBoxView2.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("comboBoxView2.ResponsiveProfiles1"))));
+            // this.comboBoxView2.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("comboBoxView2.ResponsiveProfiles"))));
+            // this.comboBoxView2.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("comboBoxView2.ResponsiveProfiles1"))));
             this.comboBoxView2.Size = new System.Drawing.Size(213, 53);
             this.comboBoxView2.TabIndex = 9;
             this.comboBoxView2.Text = "LeftToRight";
@@ -166,8 +166,8 @@
             this.flowLayoutPanel.Controls.Add(this.personCard8);
             this.flowLayoutPanel.Location = new System.Drawing.Point(10, 69);
             this.flowLayoutPanel.Name = "flowLayoutPanel";
-            this.flowLayoutPanel.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("flowLayoutPanel.ResponsiveProfiles"))));
-            this.flowLayoutPanel.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("flowLayoutPanel.ResponsiveProfiles1"))));
+            // this.flowLayoutPanel.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("flowLayoutPanel.ResponsiveProfiles"))));
+            // this.flowLayoutPanel.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("flowLayoutPanel.ResponsiveProfiles1"))));
             this.flowLayoutPanel.Size = new System.Drawing.Size(431, 472);
             this.flowLayoutPanel.TabIndex = 8;
             this.flowLayoutPanel.TabStop = true;
@@ -180,7 +180,7 @@
             // 
             this.personCard3.Location = new System.Drawing.Point(3, 3);
             this.personCard3.Name = "personCard3";
-            this.personCard3.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("personCard3.ResponsiveProfiles"))));
+            // this.personCard3.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("personCard3.ResponsiveProfiles"))));
             this.personCard3.Size = new System.Drawing.Size(150, 150);
             this.personCard3.TabIndex = 19;
             // 
@@ -188,8 +188,8 @@
             // 
             this.personCard1.Location = new System.Drawing.Point(159, 3);
             this.personCard1.Name = "personCard1";
-            this.personCard1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("personCard1.ResponsiveProfiles"))));
-            this.personCard1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("personCard1.ResponsiveProfiles1"))));
+            // this.personCard1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("personCard1.ResponsiveProfiles"))));
+            // this.personCard1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("personCard1.ResponsiveProfiles1"))));
             this.personCard1.Size = new System.Drawing.Size(150, 150);
             this.personCard1.TabIndex = 20;
             // 
@@ -197,8 +197,8 @@
             // 
             this.personCard6.Location = new System.Drawing.Point(3, 159);
             this.personCard6.Name = "personCard6";
-            this.personCard6.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("personCard6.ResponsiveProfiles"))));
-            this.personCard6.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("personCard6.ResponsiveProfiles1"))));
+            // this.personCard6.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("personCard6.ResponsiveProfiles"))));
+            // this.personCard6.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("personCard6.ResponsiveProfiles1"))));
             this.personCard6.Size = new System.Drawing.Size(150, 150);
             this.personCard6.TabIndex = 24;
             // 
@@ -206,8 +206,8 @@
             // 
             this.personCard7.Location = new System.Drawing.Point(159, 159);
             this.personCard7.Name = "personCard7";
-            this.personCard7.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("personCard7.ResponsiveProfiles"))));
-            this.personCard7.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("personCard7.ResponsiveProfiles1"))));
+            // this.personCard7.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("personCard7.ResponsiveProfiles"))));
+            // this.personCard7.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("personCard7.ResponsiveProfiles1"))));
             this.personCard7.Size = new System.Drawing.Size(150, 150);
             this.personCard7.TabIndex = 25;
             // 
@@ -215,8 +215,8 @@
             // 
             this.personCard8.Location = new System.Drawing.Point(3, 315);
             this.personCard8.Name = "personCard8";
-            this.personCard8.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("personCard8.ResponsiveProfiles"))));
-            this.personCard8.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("personCard8.ResponsiveProfiles1"))));
+            // this.personCard8.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("personCard8.ResponsiveProfiles"))));
+            // this.personCard8.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("personCard8.ResponsiveProfiles1"))));
             this.personCard8.Size = new System.Drawing.Size(150, 150);
             this.personCard8.TabIndex = 26;
             // 
@@ -227,7 +227,7 @@
             this.panel1.Controls.Add(this.comboBoxView);
             this.panel1.Location = new System.Drawing.Point(67, 60);
             this.panel1.Name = "panel1";
-            this.panel1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("panel1.ResponsiveProfiles"))));
+            // this.panel1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("panel1.ResponsiveProfiles"))));
             this.panel1.Size = new System.Drawing.Size(450, 552);
             this.panel1.TabIndex = 10;
             // 
@@ -238,7 +238,7 @@
             this.panel2.Controls.Add(this.flowLayoutPanel);
             this.panel2.Location = new System.Drawing.Point(559, 60);
             this.panel2.Name = "panel2";
-            this.panel2.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("panel2.ResponsiveProfiles"))));
+            // this.panel2.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("panel2.ResponsiveProfiles"))));
             this.panel2.Size = new System.Drawing.Size(450, 552);
             this.panel2.TabIndex = 11;
             // 
@@ -247,7 +247,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "Features";
-            this.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("$this.ResponsiveProfiles"))));
+            // this.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("$this.ResponsiveProfiles"))));
             this.Size = new System.Drawing.Size(1076, 673);
             this.Load += new System.EventHandler(this.Features_Load);
             this.flowLayoutPanel1.ResumeLayout(false);
