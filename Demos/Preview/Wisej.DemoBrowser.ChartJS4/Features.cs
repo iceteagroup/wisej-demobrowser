@@ -18,7 +18,7 @@ namespace Wisej.DemoBrowser.ChartJS4
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            //Application.Navigate("/ChartJS4", "_blank");
+            Application.Navigate("/ChartJS4", "_blank");
         }
     }
 }

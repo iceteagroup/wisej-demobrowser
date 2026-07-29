@@ -34,8 +34,6 @@ namespace Wisej.DemoBrowser.RibbonBar
             if (e.Item.GetType() == typeof(RibbonBarItemCheckBox))
             {
                 string checkStatus = ((RibbonBarItemCheckBox) e.Item).Checked ? "Checked" : "Unchecked";
-                AlertBox.Show($"Checkbox: {e.Item.Text} {checkStatus} ", showProgressBar: true);
-
                 return;
             }
 

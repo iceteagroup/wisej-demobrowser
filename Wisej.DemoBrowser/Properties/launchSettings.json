@@ -12,6 +12,16 @@
       "commandName": "Project",
       "launchBrowser": true,
       "applicationUrl": "http://localhost:5000"
+    },
+    "WSL": {
+      "commandName": "WSL2",
+      "launchBrowser": true,
+      "launchUrl": "http://localhost:5000",
+      "environmentVariables": {
+        "ASPNETCORE_URLS": "http://localhost:5000",
+        "WEBSITE_PATH": "$(MSBuildProjectDirectory)"
+      },
+      "distributionName": "ubuntu"
     }
   }
 }
