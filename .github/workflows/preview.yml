@@ -26,6 +26,8 @@ jobs:
       github.event.action != 'closed' &&
       github.event.pull_request.head.repo.full_name == github.repository
     runs-on: ubuntu-latest
+    outputs:
+      url: ${{ steps.deploy.outputs.url }}
     steps:
       - uses: actions/checkout@v4
 
@@ -92,11 +94,49 @@ jobs:
           fi
           echo "url=$url" >> "$GITHUB_OUTPUT"
 
+  comment:
+    name: Post preview link
+    # Separate job on purpose. As a step inside `deploy` the comment posted
+    # while that job was still reported as in progress, so the link appeared
+    # next to "some checks haven't completed yet". A job that `needs: deploy`
+    # cannot start until deploy is green, and the wait below covers any other
+    # checks configured on the repo.
+    needs: deploy
+    if: needs.deploy.result == 'success'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Wait for other checks on this commit
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+        run: |
+          # Ignore this workflow's own runs - waiting on ourselves would
+          # deadlock, and `deploy` is already known-good via `needs`.
+          for i in $(seq 1 60); do
+            runs=$(gh api "repos/$GITHUB_REPOSITORY/commits/$HEAD_SHA/check-runs" \
+                     --jq '[.check_runs[] | select(.name != "Deploy preview" and .name != "Post preview link")]')
+            pending=$(echo "$runs" | jq '[.[] | select(.status != "completed")] | length')
+            failed=$(echo "$runs" | jq '[.[] | select(.conclusion // "" | . == "failure" or . == "timed_out" or . == "cancelled")] | length')
+
+            if [ "$failed" -gt 0 ]; then
+              echo "::error::$failed other check(s) failed on $HEAD_SHA - not posting a preview link"
+              exit 1
+            fi
+            if [ "$pending" -eq 0 ]; then
+              echo "all other checks complete"
+              exit 0
+            fi
+            echo "waiting on $pending check(s)... ($i/60)"
+            sleep 10
+          done
+          echo "::error::Timed out waiting for checks on $HEAD_SHA"
+          exit 1
+
       - name: Post preview link
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PR_NUMBER: ${{ github.event.pull_request.number }}
-          URL: ${{ steps.deploy.outputs.url }}
+          URL: ${{ needs.deploy.outputs.url }}
           HEAD_SHA: ${{ github.event.pull_request.head.sha }}
         run: |
           marker='<!-- wisej-preview -->'
