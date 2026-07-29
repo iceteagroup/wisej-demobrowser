@@ -37,7 +37,10 @@ STARTUP_TIMEOUT = 240
 
 app = modal.App(f"wisej-demobrowser-pr-{PR_NUMBER}")
 
-image = modal.Image.from_dockerfile("Dockerfile", context_dir=".")
+# add_python: Modal runs its own agent inside the container, so the image needs
+# a Python interpreter. The aspnet runtime image has none, and Modal refuses to
+# start the Function without one.
+image = modal.Image.from_dockerfile("Dockerfile", context_dir=".", add_python="3.12")
 
 
 @app.function(
