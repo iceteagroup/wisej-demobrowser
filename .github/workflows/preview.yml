@@ -1,0 +1,110 @@
+name: PR Preview
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, closed]
+
+concurrency:
+  group: wisej-preview-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+  pull-requests: write
+
+jobs:
+  deploy:
+    name: Deploy preview
+    # Secrets aren't exposed to pull_request runs from forks, so a fork PR
+    # would fail at `modal deploy` with a confusing auth error. Skip instead.
+    if: >-
+      github.event.action != 'closed' &&
+      github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install Modal
+        run: pip install --disable-pip-version-check modal
+
+      - name: Deploy to Modal
+        id: deploy
+        env:
+          MODAL_TOKEN_ID: ${{ secrets.MODAL_TOKEN_ID }}
+          MODAL_TOKEN_SECRET: ${{ secrets.MODAL_TOKEN_SECRET }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+          # The Modal CLI's Rich console output crashes under non-UTF-8
+          # encodings. GHA runners default to UTF-8, but pin it explicitly.
+          PYTHONIOENCODING: utf-8
+        run: |
+          set -o pipefail
+          modal deploy modal_app.py 2>&1 | tee deploy.log
+          url=$(grep -oE 'https://[A-Za-z0-9._-]+\.modal\.run' deploy.log | head -n1)
+          if [ -z "$url" ]; then
+            echo "::error::No *.modal.run URL found in the deploy output"
+            exit 1
+          fi
+          echo "url=$url" >> "$GITHUB_OUTPUT"
+
+      - name: Post preview link
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+          URL: ${{ steps.deploy.outputs.url }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+        run: |
+          marker='<!-- wisej-preview -->'
+          body=$(cat <<EOF
+          $marker
+          ### Wisej.NET Cloud preview
+
+          **[Open preview]($URL)**
+
+          The app starts when you open the link - the first request waits while the
+          container boots - and shuts down after 20 minutes with no traffic. Opening
+          the link again brings it back. Everyone viewing this PR shares one instance,
+          each with their own session.
+
+          <sub>Built from \`${HEAD_SHA:0:7}\`</sub>
+          EOF
+          )
+          body=$(printf '%s\n' "$body" | sed 's/^          //')
+
+          id=$(gh api "repos/$GITHUB_REPOSITORY/issues/$PR_NUMBER/comments" --paginate \
+                 --jq "[.[] | select(.body | startswith(\"$marker\"))][0].id // empty")
+
+          if [ -n "$id" ]; then
+            gh api -X PATCH "repos/$GITHUB_REPOSITORY/issues/comments/$id" \
+              -f body="$body" > /dev/null
+            echo "Updated comment $id"
+          else
+            gh api -X POST "repos/$GITHUB_REPOSITORY/issues/$PR_NUMBER/comments" \
+              -f body="$body" > /dev/null
+            echo "Created preview comment"
+          fi
+
+  destroy:
+    name: Tear down preview
+    if: github.event.action == 'closed'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install Modal
+        run: pip install --disable-pip-version-check modal
+
+      - name: Stop Modal app
+        env:
+          MODAL_TOKEN_ID: ${{ secrets.MODAL_TOKEN_ID }}
+          MODAL_TOKEN_SECRET: ${{ secrets.MODAL_TOKEN_SECRET }}
+          PYTHONIOENCODING: utf-8
+        run: |
+          # Nothing to stop if the PR never got a successful deploy.
+          modal app stop "wisej-demobrowser-pr-${{ github.event.pull_request.number }}" \
+            || echo "No running app for PR #${{ github.event.pull_request.number }}"
