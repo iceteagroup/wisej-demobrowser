@@ -37,7 +37,7 @@ namespace Wisej.DemoBrowser.Common
             this.AutoScrollMargin = new System.Drawing.Size(0, 20);
             this.BackColor = System.Drawing.Color.Transparent;
             this.Name = "DemoView";
-            this.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("$this.ResponsiveProfiles"))));
+            // this.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("$this.ResponsiveProfiles"))));
             this.Size = new System.Drawing.Size(1422, 474);
             this.ResumeLayout(false);
 

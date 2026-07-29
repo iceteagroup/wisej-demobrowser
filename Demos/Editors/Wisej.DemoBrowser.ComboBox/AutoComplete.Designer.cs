@@ -117,7 +117,7 @@
             this.comboBox1.LabelText = "Select City";
             this.comboBox1.Location = new System.Drawing.Point(347, 148);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("comboBox1.ResponsiveProfiles"))));
+            // this.comboBox1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("comboBox1.ResponsiveProfiles"))));
             this.comboBox1.Size = new System.Drawing.Size(229, 53);
             this.comboBox1.TabIndex = 0;
             // 
@@ -128,7 +128,7 @@
             this.comboBoxAutoCompleteMode.LabelText = "Auto Complete Mode";
             this.comboBoxAutoCompleteMode.Location = new System.Drawing.Point(24, 22);
             this.comboBoxAutoCompleteMode.Name = "comboBoxAutoCompleteMode";
-            this.comboBoxAutoCompleteMode.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("comboBoxAutoCompleteMode.ResponsiveProfiles"))));
+            // this.comboBoxAutoCompleteMode.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("comboBoxAutoCompleteMode.ResponsiveProfiles"))));
             this.comboBoxAutoCompleteMode.Size = new System.Drawing.Size(180, 53);
             this.comboBoxAutoCompleteMode.TabIndex = 1;
             this.comboBoxAutoCompleteMode.Text = "None";
@@ -144,7 +144,7 @@
             this.comboBoxDropDownStyle.LabelText = "Drop Down Style";
             this.comboBoxDropDownStyle.Location = new System.Drawing.Point(24, 111);
             this.comboBoxDropDownStyle.Name = "comboBoxDropDownStyle";
-            this.comboBoxDropDownStyle.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("comboBoxDropDownStyle.ResponsiveProfiles"))));
+            // this.comboBoxDropDownStyle.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("comboBoxDropDownStyle.ResponsiveProfiles"))));
             this.comboBoxDropDownStyle.Size = new System.Drawing.Size(180, 53);
             this.comboBoxDropDownStyle.TabIndex = 2;
             this.comboBoxDropDownStyle.Text = "DropDown";
@@ -158,7 +158,7 @@
             this.panel1.Controls.Add(this.comboBoxAutoCompleteMode);
             this.panel1.Location = new System.Drawing.Point(89, 90);
             this.panel1.Name = "panel1";
-            this.panel1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("panel1.ResponsiveProfiles"))));
+            // this.panel1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("panel1.ResponsiveProfiles"))));
             this.panel1.Size = new System.Drawing.Size(230, 189);
             this.panel1.TabIndex = 3;
             // 
@@ -168,7 +168,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(89, 69);
             this.label1.Name = "label1";
-            this.label1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("label1.ResponsiveProfiles"))));
+            // this.label1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("label1.ResponsiveProfiles"))));
             this.label1.Size = new System.Drawing.Size(83, 18);
             this.label1.TabIndex = 4;
             this.label1.Text = "Configuration";

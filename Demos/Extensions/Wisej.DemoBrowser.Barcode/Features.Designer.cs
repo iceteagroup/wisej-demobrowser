@@ -47,7 +47,7 @@
             this.barcode1.Location = new System.Drawing.Point(503, 3);
             this.barcode1.MinimumSize = new System.Drawing.Size(300, 0);
             this.barcode1.Name = "barcode1";
-            this.barcode1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("barcode1.ResponsiveProfiles"))));
+            // this.barcode1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("barcode1.ResponsiveProfiles"))));
             this.barcode1.Size = new System.Drawing.Size(494, 318);
             this.barcode1.TabIndex = 4;
             this.barcode1.Text = "1234567890";
@@ -60,7 +60,7 @@
             this.checkBoxLabel.Checked = true;
             this.checkBoxLabel.Location = new System.Drawing.Point(160, 49);
             this.checkBoxLabel.Name = "checkBoxLabel";
-            this.checkBoxLabel.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("checkBoxLabel.ResponsiveProfiles"))));
+            // this.checkBoxLabel.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("checkBoxLabel.ResponsiveProfiles"))));
             this.checkBoxLabel.Size = new System.Drawing.Size(175, 35);
             this.checkBoxLabel.TabIndex = 3;
             this.checkBoxLabel.Text = "Show Label";
@@ -88,7 +88,7 @@
             this.comboBoxBarcodeType.LabelText = "Barcode Type";
             this.comboBoxBarcodeType.Location = new System.Drawing.Point(160, 120);
             this.comboBoxBarcodeType.Name = "comboBoxBarcodeType";
-            this.comboBoxBarcodeType.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("comboBoxBarcodeType.ResponsiveProfiles"))));
+            // this.comboBoxBarcodeType.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("comboBoxBarcodeType.ResponsiveProfiles"))));
             this.comboBoxBarcodeType.Size = new System.Drawing.Size(175, 60);
             this.comboBoxBarcodeType.TabIndex = 5;
             this.comboBoxBarcodeType.Text = "Code_128";
@@ -100,7 +100,7 @@
             this.textBoxValue.LabelText = "Value";
             this.textBoxValue.Location = new System.Drawing.Point(160, 216);
             this.textBoxValue.Name = "textBoxValue";
-            this.textBoxValue.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("textBoxValue.ResponsiveProfiles"))));
+            // this.textBoxValue.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("textBoxValue.ResponsiveProfiles"))));
             this.textBoxValue.Size = new System.Drawing.Size(175, 53);
             this.textBoxValue.TabIndex = 6;
             this.textBoxValue.Text = "1234567890";
@@ -115,7 +115,7 @@
             this.panel1.Location = new System.Drawing.Point(3, 3);
             this.panel1.MinimumSize = new System.Drawing.Size(200, 0);
             this.panel1.Name = "panel1";
-            this.panel1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("panel1.ResponsiveProfiles"))));
+            // this.panel1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("panel1.ResponsiveProfiles"))));
             this.panel1.Size = new System.Drawing.Size(494, 318);
             this.panel1.TabIndex = 7;
             // 
@@ -128,7 +128,7 @@
             this.flowLayoutPanelMain.Controls.Add(this.barcode1);
             this.flowLayoutPanelMain.Location = new System.Drawing.Point(211, 75);
             this.flowLayoutPanelMain.Name = "flowLayoutPanelMain";
-            this.flowLayoutPanelMain.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("flowLayoutPanelMain.ResponsiveProfiles"))));
+            // this.flowLayoutPanelMain.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("flowLayoutPanelMain.ResponsiveProfiles"))));
             this.flowLayoutPanelMain.Size = new System.Drawing.Size(1000, 324);
             this.flowLayoutPanelMain.TabIndex = 8;
             // 

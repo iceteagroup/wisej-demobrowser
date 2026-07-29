@@ -77,8 +77,8 @@
             this.accordion1.Controls.Add(this.accordionPanel4);
             this.accordion1.Location = new System.Drawing.Point(186, 36);
             this.accordion1.Name = "accordion1";
-            this.accordion1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("accordion1.ResponsiveProfiles"))));
-            this.accordion1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("accordion1.ResponsiveProfiles1"))));
+            // this.accordion1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("accordion1.ResponsiveProfiles"))));
+            // this.accordion1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("accordion1.ResponsiveProfiles1"))));
             this.accordion1.SelectedIndex = 0;
             this.accordion1.Size = new System.Drawing.Size(500, 293);
             this.accordion1.TabIndex = 0;
@@ -189,8 +189,8 @@
             this.chkCollapsible.Anchor = Wisej.Web.AnchorStyles.None;
             this.chkCollapsible.Location = new System.Drawing.Point(84, 137);
             this.chkCollapsible.Name = "chkCollapsible";
-            this.chkCollapsible.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("chkCollapsible.ResponsiveProfiles"))));
-            this.chkCollapsible.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("chkCollapsible.ResponsiveProfiles1"))));
+            // this.chkCollapsible.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("chkCollapsible.ResponsiveProfiles"))));
+            // this.chkCollapsible.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("chkCollapsible.ResponsiveProfiles1"))));
             this.chkCollapsible.Size = new System.Drawing.Size(93, 23);
             this.chkCollapsible.TabIndex = 1;
             this.chkCollapsible.Text = "Collapsible";
@@ -201,8 +201,8 @@
             this.chkSelectedOnTop.Anchor = Wisej.Web.AnchorStyles.None;
             this.chkSelectedOnTop.Location = new System.Drawing.Point(84, 180);
             this.chkSelectedOnTop.Name = "chkSelectedOnTop";
-            this.chkSelectedOnTop.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("chkSelectedOnTop.ResponsiveProfiles"))));
-            this.chkSelectedOnTop.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("chkSelectedOnTop.ResponsiveProfiles1"))));
+            // this.chkSelectedOnTop.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("chkSelectedOnTop.ResponsiveProfiles"))));
+            // this.chkSelectedOnTop.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("chkSelectedOnTop.ResponsiveProfiles1"))));
             this.chkSelectedOnTop.Size = new System.Drawing.Size(123, 23);
             this.chkSelectedOnTop.TabIndex = 2;
             this.chkSelectedOnTop.Text = "Selected on Top";
@@ -215,8 +215,8 @@
             this.label1.Font = new System.Drawing.Font("@windowTitle", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.label1.Location = new System.Drawing.Point(186, 9);
             this.label1.Name = "label1";
-            this.label1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("label1.ResponsiveProfiles"))));
-            this.label1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("label1.ResponsiveProfiles1"))));
+            // this.label1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("label1.ResponsiveProfiles"))));
+            // this.label1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("label1.ResponsiveProfiles1"))));
             this.label1.Size = new System.Drawing.Size(262, 22);
             this.label1.TabIndex = 3;
             this.label1.Text = "Frequently Asked Questions (FAQ)";
@@ -229,8 +229,8 @@
             this.panel1.Location = new System.Drawing.Point(3, 3);
             this.panel1.MinimumSize = new System.Drawing.Size(150, 0);
             this.panel1.Name = "panel1";
-            this.panel1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("panel1.ResponsiveProfiles"))));
-            this.panel1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("panel1.ResponsiveProfiles1"))));
+            // this.panel1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("panel1.ResponsiveProfiles"))));
+            // this.panel1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("panel1.ResponsiveProfiles1"))));
             this.panel1.Size = new System.Drawing.Size(291, 341);
             this.panel1.TabIndex = 4;
             // 
@@ -242,8 +242,8 @@
             this.panel2.Location = new System.Drawing.Point(300, 3);
             this.panel2.MinimumSize = new System.Drawing.Size(500, 0);
             this.panel2.Name = "panel2";
-            this.panel2.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("panel2.ResponsiveProfiles"))));
-            this.panel2.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("panel2.ResponsiveProfiles1"))));
+            // this.panel2.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("panel2.ResponsiveProfiles"))));
+            // this.panel2.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("panel2.ResponsiveProfiles1"))));
             this.panel2.Size = new System.Drawing.Size(872, 341);
             this.panel2.TabIndex = 5;
             // 
@@ -255,8 +255,8 @@
             this.flowLayoutPanel1.Controls.Add(this.panel2);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(124, 62);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("flowLayoutPanel1.ResponsiveProfiles"))));
-            this.flowLayoutPanel1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("flowLayoutPanel1.ResponsiveProfiles1"))));
+            // this.flowLayoutPanel1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("flowLayoutPanel1.ResponsiveProfiles"))));
+            // this.flowLayoutPanel1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("flowLayoutPanel1.ResponsiveProfiles1"))));
             this.flowLayoutPanel1.Size = new System.Drawing.Size(1175, 351);
             this.flowLayoutPanel1.TabIndex = 6;
             // 
@@ -266,8 +266,8 @@
             this.Controls.Add(this.flowLayoutPanel1);
             this.MinimumSize = new System.Drawing.Size(903, 315);
             this.Name = "Features";
-            this.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("$this.ResponsiveProfiles"))));
-            this.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("$this.ResponsiveProfiles1"))));
+            // this.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("$this.ResponsiveProfiles"))));
+            // this.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("$this.ResponsiveProfiles1"))));
             this.Load += new System.EventHandler(this.Features_Load);
             ((System.ComponentModel.ISupportInitialize)(this.accordion1)).EndInit();
             this.accordion1.ResumeLayout(false);

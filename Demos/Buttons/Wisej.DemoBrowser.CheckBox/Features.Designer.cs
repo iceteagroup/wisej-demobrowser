@@ -46,7 +46,7 @@
             this.checkBoxDefault.AutoSize = false;
             this.checkBoxDefault.Location = new System.Drawing.Point(259, 105);
             this.checkBoxDefault.Name = "checkBoxDefault";
-            this.checkBoxDefault.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("checkBoxDefault.ResponsiveProfiles"))));
+            // this.checkBoxDefault.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("checkBoxDefault.ResponsiveProfiles"))));
             this.checkBoxDefault.Size = new System.Drawing.Size(200, 27);
             this.checkBoxDefault.TabIndex = 0;
             this.checkBoxDefault.Text = "Default";
@@ -59,7 +59,7 @@
             this.checkBox2.AutoSize = false;
             this.checkBox2.Location = new System.Drawing.Point(259, 333);
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("checkBox2.ResponsiveProfiles"))));
+            // this.checkBox2.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("checkBox2.ResponsiveProfiles"))));
             this.checkBox2.Size = new System.Drawing.Size(200, 27);
             this.checkBox2.TabIndex = 1;
             this.checkBox2.Text = "AutoCheck False";
@@ -71,7 +71,7 @@
             this.checkBox3.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.checkBox3.Location = new System.Drawing.Point(580, 105);
             this.checkBox3.Name = "checkBox3";
-            this.checkBox3.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("checkBox3.ResponsiveProfiles"))));
+            // this.checkBox3.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("checkBox3.ResponsiveProfiles"))));
             this.checkBox3.Size = new System.Drawing.Size(200, 27);
             this.checkBox3.TabIndex = 2;
             this.checkBox3.Text = "Aligned Right";
@@ -83,7 +83,7 @@
             this.checkBox4.AutoSize = false;
             this.checkBox4.Location = new System.Drawing.Point(580, 172);
             this.checkBox4.Name = "checkBox4";
-            this.checkBox4.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("checkBox4.ResponsiveProfiles"))));
+            // this.checkBox4.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("checkBox4.ResponsiveProfiles"))));
             this.checkBox4.Size = new System.Drawing.Size(200, 27);
             this.checkBox4.TabIndex = 3;
             this.checkBox4.Text = "Aligned Left";
@@ -96,7 +96,7 @@
             this.checkBox5.CheckAlign = System.Drawing.ContentAlignment.TopCenter;
             this.checkBox5.Location = new System.Drawing.Point(580, 239);
             this.checkBox5.Name = "checkBox5";
-            this.checkBox5.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("checkBox5.ResponsiveProfiles"))));
+            // this.checkBox5.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("checkBox5.ResponsiveProfiles"))));
             this.checkBox5.Size = new System.Drawing.Size(200, 45);
             this.checkBox5.TabIndex = 4;
             this.checkBox5.Text = "Aligned Top";
@@ -109,7 +109,7 @@
             this.checkBox6.CheckAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.checkBox6.Location = new System.Drawing.Point(580, 324);
             this.checkBox6.Name = "checkBox6";
-            this.checkBox6.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("checkBox6.ResponsiveProfiles"))));
+            // this.checkBox6.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("checkBox6.ResponsiveProfiles"))));
             this.checkBox6.Size = new System.Drawing.Size(200, 45);
             this.checkBox6.TabIndex = 5;
             this.checkBox6.Text = "Aligned Bottom";
@@ -123,7 +123,7 @@
             this.checkBox7.ImageSource = "icon-help";
             this.checkBox7.Location = new System.Drawing.Point(903, 105);
             this.checkBox7.Name = "checkBox7";
-            this.checkBox7.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("checkBox7.ResponsiveProfiles"))));
+            // this.checkBox7.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("checkBox7.ResponsiveProfiles"))));
             this.checkBox7.Size = new System.Drawing.Size(107, 27);
             this.checkBox7.TabIndex = 6;
             this.checkBox7.Text = "Image";
@@ -136,7 +136,7 @@
             this.checkBox8.CheckedForeColor = System.Drawing.Color.FromArgb(0, 110, 255);
             this.checkBox8.Location = new System.Drawing.Point(259, 257);
             this.checkBox8.Name = "checkBox8";
-            this.checkBox8.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("checkBox8.ResponsiveProfiles"))));
+            // this.checkBox8.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("checkBox8.ResponsiveProfiles"))));
             this.checkBox8.Size = new System.Drawing.Size(200, 27);
             this.checkBox8.TabIndex = 7;
             this.checkBox8.Text = "Checked Color";
@@ -148,7 +148,7 @@
             this.checkBox9.CheckState = Wisej.Web.CheckState.Checked;
             this.checkBox9.Location = new System.Drawing.Point(259, 181);
             this.checkBox9.Name = "checkBox9";
-            this.checkBox9.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("checkBox9.ResponsiveProfiles"))));
+            // this.checkBox9.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("checkBox9.ResponsiveProfiles"))));
             this.checkBox9.Size = new System.Drawing.Size(200, 27);
             this.checkBox9.TabIndex = 8;
             this.checkBox9.Text = "Three-State";

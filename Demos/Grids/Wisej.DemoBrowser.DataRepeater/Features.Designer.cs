@@ -63,7 +63,7 @@
             this.dataRepeater1.Location = new System.Drawing.Point(199, 54);
             this.dataRepeater1.Name = "dataRepeater1";
             this.dataRepeater1.PrefetchItems = 25;
-            this.dataRepeater1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("dataRepeater1.ResponsiveProfiles"))));
+            // this.dataRepeater1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("dataRepeater1.ResponsiveProfiles"))));
             this.dataRepeater1.ScrollBarVisible = false;
             this.dataRepeater1.Size = new System.Drawing.Size(1024, 420);
             this.dataRepeater1.TabIndex = 0;
@@ -86,7 +86,7 @@
             this.panel1.CssStyle = "transition: background-color 0.2s ease;\r\n";
             this.panel1.Location = new System.Drawing.Point(3, 3);
             this.panel1.Name = "panel1";
-            this.panel1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("panel1.ResponsiveProfiles"))));
+            // this.panel1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("panel1.ResponsiveProfiles"))));
             this.panel1.Size = new System.Drawing.Size(1016, 88);
             this.panel1.TabIndex = 7;
             this.panel1.MouseEnter += new System.EventHandler(this.panel1_MouseEnter);
@@ -122,7 +122,7 @@
             this.buttonSelect.ImageSource = "icon-right";
             this.buttonSelect.Location = new System.Drawing.Point(963, 0);
             this.buttonSelect.Name = "buttonSelect";
-            this.buttonSelect.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("buttonSelect.ResponsiveProfiles"))));
+            // this.buttonSelect.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("buttonSelect.ResponsiveProfiles"))));
             this.buttonSelect.Size = new System.Drawing.Size(53, 88);
             this.buttonSelect.TabIndex = 9;
             this.buttonSelect.Click += new System.EventHandler(this.buttonSelect_Click);
@@ -153,7 +153,7 @@
             this.checkBoxScrollbar.Location = new System.Drawing.Point(202, 12);
             this.checkBoxScrollbar.Name = "checkBoxScrollbar";
             this.checkBoxScrollbar.Padding = new Wisej.Web.Padding(0, 0, 0, 16);
-            this.checkBoxScrollbar.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("checkBoxScrollbar.ResponsiveProfiles"))));
+            // this.checkBoxScrollbar.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("checkBoxScrollbar.ResponsiveProfiles"))));
             this.checkBoxScrollbar.Size = new System.Drawing.Size(144, 36);
             this.checkBoxScrollbar.TabIndex = 1;
             this.checkBoxScrollbar.Text = "Scrollbar Visible";

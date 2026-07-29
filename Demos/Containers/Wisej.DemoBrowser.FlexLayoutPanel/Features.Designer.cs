@@ -78,7 +78,7 @@
             this.txtEmail.LabelText = "E-Mail";
             this.txtEmail.Location = new System.Drawing.Point(23, 74);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("txtEmail.ResponsiveProfiles"))));
+            // this.txtEmail.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("txtEmail.ResponsiveProfiles"))));
             this.txtEmail.Size = new System.Drawing.Size(708, 57);
             this.txtEmail.TabIndex = 0;
             // 
@@ -91,7 +91,7 @@
             this.flexLayoutPanel1.LayoutStyle = Wisej.Web.FlexLayoutStyle.Horizontal;
             this.flexLayoutPanel1.Location = new System.Drawing.Point(23, 147);
             this.flexLayoutPanel1.Name = "flexLayoutPanel1";
-            this.flexLayoutPanel1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("flexLayoutPanel1.ResponsiveProfiles"))));
+            // this.flexLayoutPanel1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("flexLayoutPanel1.ResponsiveProfiles"))));
             this.flexLayoutPanel1.ShowCloseButton = false;
             this.flexLayoutPanel1.ShowHeader = true;
             this.flexLayoutPanel1.Size = new System.Drawing.Size(708, 112);
@@ -104,7 +104,7 @@
             this.txtUsername.LabelText = "Username";
             this.txtUsername.Location = new System.Drawing.Point(3, 3);
             this.txtUsername.Name = "txtUsername";
-            this.txtUsername.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("txtUsername.ResponsiveProfiles"))));
+            // this.txtUsername.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("txtUsername.ResponsiveProfiles"))));
             this.txtUsername.Size = new System.Drawing.Size(343, 78);
             this.txtUsername.TabIndex = 0;
             // 
@@ -114,7 +114,7 @@
             this.txtPassword.LabelText = "Password";
             this.txtPassword.Location = new System.Drawing.Point(362, 3);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("txtPassword.ResponsiveProfiles"))));
+            // this.txtPassword.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("txtPassword.ResponsiveProfiles"))));
             this.txtPassword.Size = new System.Drawing.Size(343, 78);
             this.txtPassword.TabIndex = 1;
             // 
@@ -127,7 +127,7 @@
             this.cmbGender.LabelText = "Gender";
             this.cmbGender.Location = new System.Drawing.Point(23, 275);
             this.cmbGender.Name = "cmbGender";
-            this.cmbGender.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("cmbGender.ResponsiveProfiles"))));
+            // this.cmbGender.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("cmbGender.ResponsiveProfiles"))));
             this.cmbGender.Size = new System.Drawing.Size(708, 57);
             this.cmbGender.TabIndex = 2;
             // 
@@ -135,7 +135,7 @@
             // 
             this.chkSubscribe.Location = new System.Drawing.Point(23, 348);
             this.chkSubscribe.Name = "chkSubscribe";
-            this.chkSubscribe.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("chkSubscribe.ResponsiveProfiles"))));
+            // this.chkSubscribe.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("chkSubscribe.ResponsiveProfiles"))));
             this.chkSubscribe.Size = new System.Drawing.Size(708, 27);
             this.chkSubscribe.TabIndex = 3;
             this.chkSubscribe.Text = "Subscribe To Newsletter";
@@ -147,7 +147,7 @@
             this.btnConfirm.Location = new System.Drawing.Point(431, 391);
             this.btnConfirm.MaximumSize = new System.Drawing.Size(300, 0);
             this.btnConfirm.Name = "btnConfirm";
-            this.btnConfirm.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("btnConfirm.ResponsiveProfiles"))));
+            // this.btnConfirm.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("btnConfirm.ResponsiveProfiles"))));
             this.btnConfirm.Size = new System.Drawing.Size(300, 59);
             this.btnConfirm.TabIndex = 4;
             this.btnConfirm.Text = "Confirm";

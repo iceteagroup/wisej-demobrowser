@@ -70,8 +70,8 @@
             this.grpCollapsible.Location = new System.Drawing.Point(992, 3);
             this.grpCollapsible.MinimumSize = new System.Drawing.Size(175, 0);
             this.grpCollapsible.Name = "grpCollapsible";
-            this.grpCollapsible.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("grpCollapsible.ResponsiveProfiles"))));
-            this.grpCollapsible.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("grpCollapsible.ResponsiveProfiles1"))));
+            // this.grpCollapsible.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("grpCollapsible.ResponsiveProfiles"))));
+            // this.grpCollapsible.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("grpCollapsible.ResponsiveProfiles1"))));
             this.grpCollapsible.ShowCloseButton = true;
             this.grpCollapsible.Size = new System.Drawing.Size(194, 221);
             this.grpCollapsible.TabIndex = 0;
@@ -82,8 +82,8 @@
             this.buttonTask.Anchor = Wisej.Web.AnchorStyles.None;
             this.buttonTask.Location = new System.Drawing.Point(19, 142);
             this.buttonTask.Name = "buttonTask";
-            this.buttonTask.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("buttonTask.ResponsiveProfiles"))));
-            this.buttonTask.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("buttonTask.ResponsiveProfiles1"))));
+            // this.buttonTask.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("buttonTask.ResponsiveProfiles"))));
+            // this.buttonTask.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("buttonTask.ResponsiveProfiles1"))));
             this.buttonTask.Size = new System.Drawing.Size(157, 30);
             this.buttonTask.TabIndex = 2;
             this.buttonTask.Text = "Start Task";
@@ -95,8 +95,8 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(19, 92);
             this.label1.Name = "label1";
-            this.label1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("label1.ResponsiveProfiles"))));
-            this.label1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("label1.ResponsiveProfiles1"))));
+            // this.label1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("label1.ResponsiveProfiles"))));
+            // this.label1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("label1.ResponsiveProfiles1"))));
             this.label1.Size = new System.Drawing.Size(22, 18);
             this.label1.TabIndex = 1;
             this.label1.Text = "0%";
@@ -106,8 +106,8 @@
             this.progressBar1.Anchor = Wisej.Web.AnchorStyles.None;
             this.progressBar1.Location = new System.Drawing.Point(19, 48);
             this.progressBar1.Name = "progressBar1";
-            this.progressBar1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("progressBar1.ResponsiveProfiles"))));
-            this.progressBar1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("progressBar1.ResponsiveProfiles1"))));
+            // this.progressBar1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("progressBar1.ResponsiveProfiles"))));
+            // this.progressBar1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("progressBar1.ResponsiveProfiles1"))));
             this.progressBar1.Size = new System.Drawing.Size(157, 38);
             this.progressBar1.TabIndex = 0;
             // 
@@ -122,8 +122,8 @@
             this.grpRegular.Location = new System.Drawing.Point(3, 3);
             this.grpRegular.MinimumSize = new System.Drawing.Size(125, 0);
             this.grpRegular.Name = "grpRegular";
-            this.grpRegular.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("grpRegular.ResponsiveProfiles"))));
-            this.grpRegular.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("grpRegular.ResponsiveProfiles1"))));
+            // this.grpRegular.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("grpRegular.ResponsiveProfiles"))));
+            // this.grpRegular.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("grpRegular.ResponsiveProfiles1"))));
             this.grpRegular.Size = new System.Drawing.Size(195, 221);
             this.grpRegular.TabIndex = 1;
             this.grpRegular.Text = "Regular GroupBox";
@@ -133,8 +133,8 @@
             this.radioButton4.Anchor = Wisej.Web.AnchorStyles.None;
             this.radioButton4.Location = new System.Drawing.Point(33, 148);
             this.radioButton4.Name = "radioButton4";
-            this.radioButton4.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("radioButton4.ResponsiveProfiles"))));
-            this.radioButton4.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("radioButton4.ResponsiveProfiles1"))));
+            // this.radioButton4.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("radioButton4.ResponsiveProfiles"))));
+            // this.radioButton4.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("radioButton4.ResponsiveProfiles1"))));
             this.radioButton4.Size = new System.Drawing.Size(77, 23);
             this.radioButton4.TabIndex = 3;
             this.radioButton4.TabStop = true;
@@ -145,8 +145,8 @@
             this.radioButton3.Anchor = Wisej.Web.AnchorStyles.None;
             this.radioButton3.Location = new System.Drawing.Point(33, 115);
             this.radioButton3.Name = "radioButton3";
-            this.radioButton3.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("radioButton3.ResponsiveProfiles"))));
-            this.radioButton3.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("radioButton3.ResponsiveProfiles1"))));
+            // this.radioButton3.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("radioButton3.ResponsiveProfiles"))));
+            // this.radioButton3.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("radioButton3.ResponsiveProfiles1"))));
             this.radioButton3.Size = new System.Drawing.Size(87, 23);
             this.radioButton3.TabIndex = 2;
             this.radioButton3.TabStop = true;
@@ -157,8 +157,8 @@
             this.radioButton2.Anchor = Wisej.Web.AnchorStyles.None;
             this.radioButton2.Location = new System.Drawing.Point(33, 82);
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("radioButton2.ResponsiveProfiles"))));
-            this.radioButton2.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("radioButton2.ResponsiveProfiles1"))));
+            // this.radioButton2.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("radioButton2.ResponsiveProfiles"))));
+            // this.radioButton2.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("radioButton2.ResponsiveProfiles1"))));
             this.radioButton2.Size = new System.Drawing.Size(111, 23);
             this.radioButton2.TabIndex = 1;
             this.radioButton2.TabStop = true;
@@ -169,8 +169,8 @@
             this.radioButton1.Anchor = Wisej.Web.AnchorStyles.None;
             this.radioButton1.Location = new System.Drawing.Point(33, 49);
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("radioButton1.ResponsiveProfiles"))));
-            this.radioButton1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("radioButton1.ResponsiveProfiles1"))));
+            // this.radioButton1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("radioButton1.ResponsiveProfiles"))));
+            // this.radioButton1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("radioButton1.ResponsiveProfiles1"))));
             this.radioButton1.Size = new System.Drawing.Size(84, 23);
             this.radioButton1.TabIndex = 0;
             this.radioButton1.TabStop = true;
@@ -187,8 +187,8 @@
             this.grpCheckBox.Location = new System.Drawing.Point(598, 3);
             this.grpCheckBox.MinimumSize = new System.Drawing.Size(350, 0);
             this.grpCheckBox.Name = "grpCheckBox";
-            this.grpCheckBox.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("grpCheckBox.ResponsiveProfiles"))));
-            this.grpCheckBox.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("grpCheckBox.ResponsiveProfiles1"))));
+            // this.grpCheckBox.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("grpCheckBox.ResponsiveProfiles"))));
+            // this.grpCheckBox.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("grpCheckBox.ResponsiveProfiles1"))));
             this.grpCheckBox.ShowCheckBox = true;
             this.grpCheckBox.Size = new System.Drawing.Size(388, 221);
             this.grpCheckBox.TabIndex = 2;
@@ -205,8 +205,8 @@
             this.comboBox1.LabelText = "Favorite Technology";
             this.comboBox1.Location = new System.Drawing.Point(157, 84);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("comboBox1.ResponsiveProfiles"))));
-            this.comboBox1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("comboBox1.ResponsiveProfiles1"))));
+            // this.comboBox1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("comboBox1.ResponsiveProfiles"))));
+            // this.comboBox1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("comboBox1.ResponsiveProfiles1"))));
             this.comboBox1.Size = new System.Drawing.Size(169, 53);
             this.comboBox1.TabIndex = 3;
             this.comboBox1.Text = "Wisej.NET";
@@ -217,8 +217,8 @@
             this.checkBox3.Checked = true;
             this.checkBox3.Location = new System.Drawing.Point(14, 132);
             this.checkBox3.Name = "checkBox3";
-            this.checkBox3.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("checkBox3.ResponsiveProfiles"))));
-            this.checkBox3.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("checkBox3.ResponsiveProfiles1"))));
+            // this.checkBox3.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("checkBox3.ResponsiveProfiles"))));
+            // this.checkBox3.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("checkBox3.ResponsiveProfiles1"))));
             this.checkBox3.Size = new System.Drawing.Size(87, 23);
             this.checkBox3.TabIndex = 2;
             this.checkBox3.Text = "Wisej.NET";
@@ -228,8 +228,8 @@
             this.checkBox2.Anchor = Wisej.Web.AnchorStyles.None;
             this.checkBox2.Location = new System.Drawing.Point(14, 99);
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("checkBox2.ResponsiveProfiles"))));
-            this.checkBox2.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("checkBox2.ResponsiveProfiles1"))));
+            // this.checkBox2.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("checkBox2.ResponsiveProfiles"))));
+            // this.checkBox2.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("checkBox2.ResponsiveProfiles1"))));
             this.checkBox2.Size = new System.Drawing.Size(76, 23);
             this.checkBox2.TabIndex = 1;
             this.checkBox2.Text = "Angular";
@@ -239,8 +239,8 @@
             this.checkBox1.Anchor = Wisej.Web.AnchorStyles.None;
             this.checkBox1.Location = new System.Drawing.Point(14, 65);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("checkBox1.ResponsiveProfiles"))));
-            this.checkBox1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("checkBox1.ResponsiveProfiles1"))));
+            // this.checkBox1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("checkBox1.ResponsiveProfiles"))));
+            // this.checkBox1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("checkBox1.ResponsiveProfiles1"))));
             this.checkBox1.Size = new System.Drawing.Size(66, 23);
             this.checkBox1.TabIndex = 0;
             this.checkBox1.Text = "Blazor";
@@ -260,8 +260,8 @@
             this.groupBox1.Location = new System.Drawing.Point(204, 3);
             this.groupBox1.MinimumSize = new System.Drawing.Size(350, 0);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("groupBox1.ResponsiveProfiles"))));
-            this.groupBox1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("groupBox1.ResponsiveProfiles1"))));
+            // this.groupBox1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("groupBox1.ResponsiveProfiles"))));
+            // this.groupBox1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("groupBox1.ResponsiveProfiles1"))));
             this.groupBox1.Size = new System.Drawing.Size(388, 221);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.Text = "Disabled GroupBox";
@@ -271,8 +271,8 @@
             this.radioButton5.Anchor = Wisej.Web.AnchorStyles.None;
             this.radioButton5.Location = new System.Drawing.Point(236, 157);
             this.radioButton5.Name = "radioButton5";
-            this.radioButton5.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("radioButton5.ResponsiveProfiles"))));
-            this.radioButton5.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("radioButton5.ResponsiveProfiles1"))));
+            // this.radioButton5.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("radioButton5.ResponsiveProfiles"))));
+            // this.radioButton5.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("radioButton5.ResponsiveProfiles1"))));
             this.radioButton5.Size = new System.Drawing.Size(77, 23);
             this.radioButton5.TabIndex = 7;
             this.radioButton5.TabStop = true;
@@ -283,8 +283,8 @@
             this.radioButton6.Anchor = Wisej.Web.AnchorStyles.None;
             this.radioButton6.Location = new System.Drawing.Point(236, 124);
             this.radioButton6.Name = "radioButton6";
-            this.radioButton6.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("radioButton6.ResponsiveProfiles"))));
-            this.radioButton6.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("radioButton6.ResponsiveProfiles1"))));
+            // this.radioButton6.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("radioButton6.ResponsiveProfiles"))));
+            // this.radioButton6.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("radioButton6.ResponsiveProfiles1"))));
             this.radioButton6.Size = new System.Drawing.Size(87, 23);
             this.radioButton6.TabIndex = 6;
             this.radioButton6.TabStop = true;
@@ -295,8 +295,8 @@
             this.radioButton7.Anchor = Wisej.Web.AnchorStyles.None;
             this.radioButton7.Location = new System.Drawing.Point(236, 91);
             this.radioButton7.Name = "radioButton7";
-            this.radioButton7.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("radioButton7.ResponsiveProfiles"))));
-            this.radioButton7.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("radioButton7.ResponsiveProfiles1"))));
+            // this.radioButton7.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("radioButton7.ResponsiveProfiles"))));
+            // this.radioButton7.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("radioButton7.ResponsiveProfiles1"))));
             this.radioButton7.Size = new System.Drawing.Size(111, 23);
             this.radioButton7.TabIndex = 5;
             this.radioButton7.TabStop = true;
@@ -307,8 +307,8 @@
             this.radioButton8.Anchor = Wisej.Web.AnchorStyles.None;
             this.radioButton8.Location = new System.Drawing.Point(236, 58);
             this.radioButton8.Name = "radioButton8";
-            this.radioButton8.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("radioButton8.ResponsiveProfiles"))));
-            this.radioButton8.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("radioButton8.ResponsiveProfiles1"))));
+            // this.radioButton8.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("radioButton8.ResponsiveProfiles"))));
+            // this.radioButton8.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("radioButton8.ResponsiveProfiles1"))));
             this.radioButton8.Size = new System.Drawing.Size(84, 23);
             this.radioButton8.TabIndex = 4;
             this.radioButton8.TabStop = true;
@@ -319,8 +319,8 @@
             this.button2.Anchor = Wisej.Web.AnchorStyles.None;
             this.button2.Location = new System.Drawing.Point(20, 163);
             this.button2.Name = "button2";
-            this.button2.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("button2.ResponsiveProfiles"))));
-            this.button2.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("button2.ResponsiveProfiles1"))));
+            // this.button2.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("button2.ResponsiveProfiles"))));
+            // this.button2.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("button2.ResponsiveProfiles1"))));
             this.button2.Size = new System.Drawing.Size(183, 37);
             this.button2.TabIndex = 2;
             this.button2.Text = "Submit";
@@ -331,8 +331,8 @@
             this.numericUpDown1.LabelText = "Values";
             this.numericUpDown1.Location = new System.Drawing.Point(20, 92);
             this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("numericUpDown1.ResponsiveProfiles"))));
-            this.numericUpDown1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("numericUpDown1.ResponsiveProfiles1"))));
+            // this.numericUpDown1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("numericUpDown1.ResponsiveProfiles"))));
+            // this.numericUpDown1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("numericUpDown1.ResponsiveProfiles1"))));
             this.numericUpDown1.Size = new System.Drawing.Size(183, 53);
             this.numericUpDown1.TabIndex = 1;
             // 
@@ -342,8 +342,8 @@
             this.textBox1.LabelText = "Name";
             this.textBox1.Location = new System.Drawing.Point(20, 21);
             this.textBox1.Name = "textBox1";
-            this.textBox1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("textBox1.ResponsiveProfiles"))));
-            this.textBox1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("textBox1.ResponsiveProfiles1"))));
+            // this.textBox1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("textBox1.ResponsiveProfiles"))));
+            // this.textBox1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("textBox1.ResponsiveProfiles1"))));
             this.textBox1.Size = new System.Drawing.Size(183, 53);
             this.textBox1.TabIndex = 0;
             // 
@@ -358,8 +358,8 @@
             this.flowLayoutPanel1.Controls.Add(this.grpCollapsible);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(109, 49);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("flowLayoutPanel1.ResponsiveProfiles"))));
-            this.flowLayoutPanel1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("flowLayoutPanel1.ResponsiveProfiles1"))));
+            // this.flowLayoutPanel1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("flowLayoutPanel1.ResponsiveProfiles"))));
+            // this.flowLayoutPanel1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("flowLayoutPanel1.ResponsiveProfiles1"))));
             this.flowLayoutPanel1.Size = new System.Drawing.Size(1189, 230);
             this.flowLayoutPanel1.TabIndex = 4;
             // 

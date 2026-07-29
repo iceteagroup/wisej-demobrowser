@@ -68,7 +68,7 @@
             0,
             0});
             this.nudMaxVal.Name = "nudMaxVal";
-            this.nudMaxVal.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("nudMaxVal.ResponsiveProfiles"))));
+            // this.nudMaxVal.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("nudMaxVal.ResponsiveProfiles"))));
             this.nudMaxVal.Size = new System.Drawing.Size(126, 53);
             this.nudMaxVal.TabIndex = 14;
             this.nudMaxVal.ValueChanged += new System.EventHandler(this.nudMaxVal_ValueChanged);
@@ -84,7 +84,7 @@
             0,
             0});
             this.nudMinVal.Name = "nudMinVal";
-            this.nudMinVal.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("nudMinVal.ResponsiveProfiles"))));
+            // this.nudMinVal.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("nudMinVal.ResponsiveProfiles"))));
             this.nudMinVal.Size = new System.Drawing.Size(126, 53);
             this.nudMinVal.TabIndex = 13;
             this.nudMinVal.ValueChanged += new System.EventHandler(this.nudMinVal_ValueChanged);
@@ -96,7 +96,7 @@
             this.chkGradient.AutoSize = false;
             this.chkGradient.Location = new System.Drawing.Point(90, 84);
             this.chkGradient.Name = "chkGradient";
-            this.chkGradient.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("chkGradient.ResponsiveProfiles"))));
+            // this.chkGradient.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("chkGradient.ResponsiveProfiles"))));
             this.chkGradient.Size = new System.Drawing.Size(144, 24);
             this.chkGradient.TabIndex = 12;
             this.chkGradient.Text = "Gradient";
@@ -108,7 +108,7 @@
             this.txtLabel.LabelText = "Label ";
             this.txtLabel.Location = new System.Drawing.Point(173, 178);
             this.txtLabel.Name = "txtLabel";
-            this.txtLabel.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("txtLabel.ResponsiveProfiles"))));
+            // this.txtLabel.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("txtLabel.ResponsiveProfiles"))));
             this.txtLabel.Size = new System.Drawing.Size(130, 53);
             this.txtLabel.TabIndex = 5;
             this.txtLabel.TextChanged += new System.EventHandler(this.txtLabel_TextChanged);
@@ -120,7 +120,7 @@
             this.chkHumanFriendly.AutoSize = false;
             this.chkHumanFriendly.Location = new System.Drawing.Point(90, 280);
             this.chkHumanFriendly.Name = "chkHumanFriendly";
-            this.chkHumanFriendly.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("chkHumanFriendly.ResponsiveProfiles"))));
+            // this.chkHumanFriendly.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("chkHumanFriendly.ResponsiveProfiles"))));
             this.chkHumanFriendly.Size = new System.Drawing.Size(144, 24);
             this.chkHumanFriendly.TabIndex = 6;
             this.chkHumanFriendly.Text = "Human Friendly";
@@ -133,7 +133,7 @@
             this.chkShowPointer.AutoSize = false;
             this.chkShowPointer.Location = new System.Drawing.Point(90, 182);
             this.chkShowPointer.Name = "chkShowPointer";
-            this.chkShowPointer.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("chkShowPointer.ResponsiveProfiles"))));
+            // this.chkShowPointer.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("chkShowPointer.ResponsiveProfiles"))));
             this.chkShowPointer.Size = new System.Drawing.Size(144, 24);
             this.chkShowPointer.TabIndex = 11;
             this.chkShowPointer.Text = "Show Pointer";
@@ -145,7 +145,7 @@
             this.btnValueColor.ImageSource = "resource.wx/Wisej.DemoBrowser.JustGage/Images/ColorPicker.svg";
             this.btnValueColor.Location = new System.Drawing.Point(177, 344);
             this.btnValueColor.Name = "btnValueColor";
-            this.btnValueColor.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("btnValueColor.ResponsiveProfiles"))));
+            // this.btnValueColor.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("btnValueColor.ResponsiveProfiles"))));
             this.btnValueColor.Size = new System.Drawing.Size(126, 35);
             this.btnValueColor.TabIndex = 4;
             this.btnValueColor.Text = "Value Color";
@@ -159,7 +159,7 @@
             this.chkDonut.AutoSize = false;
             this.chkDonut.Location = new System.Drawing.Point(90, 35);
             this.chkDonut.Name = "chkDonut";
-            this.chkDonut.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("chkDonut.ResponsiveProfiles"))));
+            // this.chkDonut.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("chkDonut.ResponsiveProfiles"))));
             this.chkDonut.Size = new System.Drawing.Size(144, 24);
             this.chkDonut.TabIndex = 7;
             this.chkDonut.Text = "Donut";
@@ -171,7 +171,7 @@
             this.btnLabelColor.ImageSource = "resource.wx/Wisej.DemoBrowser.JustGage/Images/ColorPicker.svg";
             this.btnLabelColor.Location = new System.Drawing.Point(24, 344);
             this.btnLabelColor.Name = "btnLabelColor";
-            this.btnLabelColor.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("btnLabelColor.ResponsiveProfiles"))));
+            // this.btnLabelColor.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("btnLabelColor.ResponsiveProfiles"))));
             this.btnLabelColor.Size = new System.Drawing.Size(126, 35);
             this.btnLabelColor.TabIndex = 3;
             this.btnLabelColor.Text = "Label Color";
@@ -185,7 +185,7 @@
             this.chkShowValue.AutoSize = false;
             this.chkShowValue.Location = new System.Drawing.Point(90, 133);
             this.chkShowValue.Name = "chkShowValue";
-            this.chkShowValue.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("chkShowValue.ResponsiveProfiles"))));
+            // this.chkShowValue.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("chkShowValue.ResponsiveProfiles"))));
             this.chkShowValue.Size = new System.Drawing.Size(144, 24);
             this.chkShowValue.TabIndex = 10;
             this.chkShowValue.Text = "Show Value";
@@ -197,7 +197,7 @@
             this.txtTitle.LabelText = "Title";
             this.txtTitle.Location = new System.Drawing.Point(24, 95);
             this.txtTitle.Name = "txtTitle";
-            this.txtTitle.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("txtTitle.ResponsiveProfiles"))));
+            // this.txtTitle.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("txtTitle.ResponsiveProfiles"))));
             this.txtTitle.Size = new System.Drawing.Size(279, 53);
             this.txtTitle.TabIndex = 2;
             this.txtTitle.TextChanged += new System.EventHandler(this.txtTitle_TextChanged);
@@ -209,7 +209,7 @@
             this.chkFormatNumber.AutoSize = false;
             this.chkFormatNumber.Location = new System.Drawing.Point(90, 329);
             this.chkFormatNumber.Name = "chkFormatNumber";
-            this.chkFormatNumber.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("chkFormatNumber.ResponsiveProfiles"))));
+            // this.chkFormatNumber.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("chkFormatNumber.ResponsiveProfiles"))));
             this.chkFormatNumber.Size = new System.Drawing.Size(144, 24);
             this.chkFormatNumber.TabIndex = 8;
             this.chkFormatNumber.Text = "Format Number";
@@ -226,7 +226,7 @@
             0,
             0});
             this.nudDecimals.Name = "nudDecimals";
-            this.nudDecimals.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("nudDecimals.ResponsiveProfiles"))));
+            // this.nudDecimals.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("nudDecimals.ResponsiveProfiles"))));
             this.nudDecimals.Size = new System.Drawing.Size(126, 53);
             this.nudDecimals.TabIndex = 1;
             this.nudDecimals.ValueChanged += new System.EventHandler(this.nudDecimals_ValueChanged);
@@ -238,7 +238,7 @@
             this.chkShowMinMax.AutoSize = false;
             this.chkShowMinMax.Location = new System.Drawing.Point(90, 231);
             this.chkShowMinMax.Name = "chkShowMinMax";
-            this.chkShowMinMax.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("chkShowMinMax.ResponsiveProfiles"))));
+            // this.chkShowMinMax.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("chkShowMinMax.ResponsiveProfiles"))));
             this.chkShowMinMax.Size = new System.Drawing.Size(144, 24);
             this.chkShowMinMax.TabIndex = 9;
             this.chkShowMinMax.Text = "Show Min/Max";
@@ -256,7 +256,7 @@
             0,
             0});
             this.nudValue.Name = "nudValue";
-            this.nudValue.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("nudValue.ResponsiveProfiles"))));
+            // this.nudValue.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("nudValue.ResponsiveProfiles"))));
             this.nudValue.Size = new System.Drawing.Size(279, 53);
             this.nudValue.TabIndex = 0;
             this.nudValue.ValueChanged += new System.EventHandler(this.nudValue_ValueChanged);
@@ -271,7 +271,7 @@
             this.justGage.Location = new System.Drawing.Point(666, 3);
             this.justGage.MinimumSize = new System.Drawing.Size(200, 0);
             this.justGage.Name = "justGage";
-            this.justGage.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("justGage.ResponsiveProfiles"))));
+            // this.justGage.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("justGage.ResponsiveProfiles"))));
             this.justGage.Size = new System.Drawing.Size(651, 388);
             this.justGage.TabIndex = 1;
             this.justGage.Text = "JustGage";
@@ -291,7 +291,7 @@
             this.panel1.Location = new System.Drawing.Point(334, 3);
             this.panel1.MinimumSize = new System.Drawing.Size(300, 0);
             this.panel1.Name = "panel1";
-            this.panel1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("panel1.ResponsiveProfiles"))));
+            // this.panel1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("panel1.ResponsiveProfiles"))));
             this.panel1.Size = new System.Drawing.Size(326, 388);
             this.panel1.TabIndex = 15;
             // 
@@ -308,7 +308,7 @@
             this.panel2.Location = new System.Drawing.Point(3, 3);
             this.panel2.MinimumSize = new System.Drawing.Size(200, 0);
             this.panel2.Name = "panel2";
-            this.panel2.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("panel2.ResponsiveProfiles"))));
+            // this.panel2.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("panel2.ResponsiveProfiles"))));
             this.panel2.Size = new System.Drawing.Size(325, 388);
             this.panel2.TabIndex = 16;
             // 
@@ -322,7 +322,7 @@
             this.flowLayoutPanel1.Controls.Add(this.justGage);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(51, 40);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("flowLayoutPanel1.ResponsiveProfiles"))));
+            // this.flowLayoutPanel1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("flowLayoutPanel1.ResponsiveProfiles"))));
             this.flowLayoutPanel1.Size = new System.Drawing.Size(1320, 395);
             this.flowLayoutPanel1.TabIndex = 17;
             // 

@@ -47,8 +47,8 @@
             this.line1.Anchor = Wisej.Web.AnchorStyles.None;
             this.line1.Location = new System.Drawing.Point(225, 240);
             this.line1.Name = "line1";
-            this.line1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("line1.ResponsiveProfiles"))));
-            this.line1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("line1.ResponsiveProfiles1"))));
+            // this.line1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("line1.ResponsiveProfiles"))));
+            // this.line1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("line1.ResponsiveProfiles1"))));
             this.line1.Size = new System.Drawing.Size(200, 10);
             // 
             // line2
@@ -57,8 +57,8 @@
             this.line2.Location = new System.Drawing.Point(149, 175);
             this.line2.Name = "line2";
             this.line2.Orientation = Wisej.Web.Orientation.Vertical;
-            this.line2.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("line2.ResponsiveProfiles"))));
-            this.line2.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("line2.ResponsiveProfiles1"))));
+            // this.line2.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("line2.ResponsiveProfiles"))));
+            // this.line2.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("line2.ResponsiveProfiles1"))));
             this.line2.Size = new System.Drawing.Size(10, 142);
             // 
             // label1
@@ -67,8 +67,8 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(130, 139);
             this.label1.Name = "label1";
-            this.label1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("label1.ResponsiveProfiles"))));
-            this.label1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("label1.ResponsiveProfiles1"))));
+            // this.label1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("label1.ResponsiveProfiles"))));
+            // this.label1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("label1.ResponsiveProfiles1"))));
             this.label1.Size = new System.Drawing.Size(48, 15);
             this.label1.TabIndex = 3;
             this.label1.Text = "Vertical";
@@ -79,8 +79,8 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(225, 207);
             this.label2.Name = "label2";
-            this.label2.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("label2.ResponsiveProfiles"))));
-            this.label2.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("label2.ResponsiveProfiles1"))));
+            // this.label2.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("label2.ResponsiveProfiles"))));
+            // this.label2.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("label2.ResponsiveProfiles1"))));
             this.label2.Size = new System.Drawing.Size(63, 15);
             this.label2.TabIndex = 4;
             this.label2.Text = "Horizontal";
@@ -91,8 +91,8 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(491, 207);
             this.label3.Name = "label3";
-            this.label3.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("label3.ResponsiveProfiles"))));
-            this.label3.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("label3.ResponsiveProfiles1"))));
+            // this.label3.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("label3.ResponsiveProfiles"))));
+            // this.label3.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("label3.ResponsiveProfiles1"))));
             this.label3.Size = new System.Drawing.Size(64, 15);
             this.label3.TabIndex = 6;
             this.label3.Text = "Thick Line";
@@ -103,8 +103,8 @@
             this.line3.LineSize = 3;
             this.line3.Location = new System.Drawing.Point(491, 240);
             this.line3.Name = "line3";
-            this.line3.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("line3.ResponsiveProfiles"))));
-            this.line3.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("line3.ResponsiveProfiles1"))));
+            // this.line3.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("line3.ResponsiveProfiles"))));
+            // this.line3.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("line3.ResponsiveProfiles1"))));
             this.line3.Size = new System.Drawing.Size(200, 10);
             // 
             // label4
@@ -113,8 +113,8 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(757, 139);
             this.label4.Name = "label4";
-            this.label4.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("label4.ResponsiveProfiles"))));
-            this.label4.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("label4.ResponsiveProfiles1"))));
+            // this.label4.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("label4.ResponsiveProfiles"))));
+            // this.label4.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("label4.ResponsiveProfiles1"))));
             this.label4.Size = new System.Drawing.Size(68, 15);
             this.label4.TabIndex = 9;
             this.label4.Text = "Line Styles";
@@ -125,8 +125,8 @@
             this.line4.LineSize = 3;
             this.line4.Location = new System.Drawing.Point(757, 175);
             this.line4.Name = "line4";
-            this.line4.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("line4.ResponsiveProfiles"))));
-            this.line4.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("line4.ResponsiveProfiles1"))));
+            // this.line4.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("line4.ResponsiveProfiles"))));
+            // this.line4.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("line4.ResponsiveProfiles1"))));
             this.line4.Size = new System.Drawing.Size(200, 10);
             // 
             // line5
@@ -136,8 +136,8 @@
             this.line5.LineStyle = Wisej.Web.LineStyle.Dotted;
             this.line5.Location = new System.Drawing.Point(757, 217);
             this.line5.Name = "line5";
-            this.line5.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("line5.ResponsiveProfiles"))));
-            this.line5.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("line5.ResponsiveProfiles1"))));
+            // this.line5.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("line5.ResponsiveProfiles"))));
+            // this.line5.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("line5.ResponsiveProfiles1"))));
             this.line5.Size = new System.Drawing.Size(200, 10);
             // 
             // line6
@@ -147,8 +147,8 @@
             this.line6.LineStyle = Wisej.Web.LineStyle.Dashed;
             this.line6.Location = new System.Drawing.Point(757, 262);
             this.line6.Name = "line6";
-            this.line6.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("line6.ResponsiveProfiles"))));
-            this.line6.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("line6.ResponsiveProfiles1"))));
+            // this.line6.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("line6.ResponsiveProfiles"))));
+            // this.line6.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("line6.ResponsiveProfiles1"))));
             this.line6.Size = new System.Drawing.Size(200, 10);
             // 
             // line7
@@ -158,8 +158,8 @@
             this.line7.LineStyle = Wisej.Web.LineStyle.Double;
             this.line7.Location = new System.Drawing.Point(757, 307);
             this.line7.Name = "line7";
-            this.line7.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("line7.ResponsiveProfiles"))));
-            this.line7.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("line7.ResponsiveProfiles1"))));
+            // this.line7.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("line7.ResponsiveProfiles"))));
+            // this.line7.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("line7.ResponsiveProfiles1"))));
             this.line7.Size = new System.Drawing.Size(200, 10);
             // 
             // Features
@@ -178,7 +178,7 @@
             this.Controls.Add(this.line1);
             this.MinimumSize = new System.Drawing.Size(833, 194);
             this.Name = "Features";
-            this.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("$this.ResponsiveProfiles"))));
+            // this.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("$this.ResponsiveProfiles"))));
             this.Size = new System.Drawing.Size(1132, 474);
             this.ResumeLayout(false);
             this.PerformLayout();

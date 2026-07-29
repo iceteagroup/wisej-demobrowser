@@ -73,7 +73,7 @@
 			this.buttonKendo.ForeColor = System.Drawing.Color.FromName("@demoPanelText-demo");
 			this.buttonKendo.Location = new System.Drawing.Point(138, 26);
 			this.buttonKendo.Name = "buttonKendo";
-			this.buttonKendo.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("buttonKendo.ResponsiveProfiles"))));
+			// this.buttonKendo.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("buttonKendo.ResponsiveProfiles"))));
 			this.buttonKendo.Size = new System.Drawing.Size(255, 100);
 			this.buttonKendo.TabIndex = 0;
 			this.buttonKendo.Text = "Telerik KendoUI";
@@ -86,7 +86,7 @@
 			this.pictureBox1.ImageSource = "resource.wx/Wisej.DemoBrowser.Premium/Images/kendoui.png";
 			this.pictureBox1.Location = new System.Drawing.Point(24, 26);
 			this.pictureBox1.Name = "pictureBox1";
-			this.pictureBox1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("pictureBox1.ResponsiveProfiles"))));
+			// this.pictureBox1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("pictureBox1.ResponsiveProfiles"))));
 			this.pictureBox1.Size = new System.Drawing.Size(100, 100);
 			this.pictureBox1.SizeMode = Wisej.Web.PictureBoxSizeMode.Zoom;
 			// 
@@ -102,7 +102,7 @@
 			this.flowLayoutPanel1.Dock = Wisej.Web.DockStyle.Fill;
 			this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 16);
 			this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-			this.flowLayoutPanel1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("flowLayoutPanel1.ResponsiveProfiles"))));
+			// this.flowLayoutPanel1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("flowLayoutPanel1.ResponsiveProfiles"))));
 			this.flowLayoutPanel1.Size = new System.Drawing.Size(1390, 442);
 			this.flowLayoutPanel1.TabIndex = 2;
 			this.flowLayoutPanel1.TabStop = true;
@@ -118,7 +118,7 @@
 			this.panelKendo.Location = new System.Drawing.Point(8, 8);
 			this.panelKendo.Margin = new Wisej.Web.Padding(8);
 			this.panelKendo.Name = "panelKendo";
-			this.panelKendo.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("panelKendo.ResponsiveProfiles"))));
+			// this.panelKendo.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("panelKendo.ResponsiveProfiles"))));
 			this.panelKendo.Size = new System.Drawing.Size(400, 152);
 			this.panelKendo.TabIndex = 3;
 			this.panelKendo.TabStop = true;
@@ -135,7 +135,7 @@
 			this.panelDevExtreme.Location = new System.Drawing.Point(424, 8);
 			this.panelDevExtreme.Margin = new Wisej.Web.Padding(8);
 			this.panelDevExtreme.Name = "panelDevExtreme";
-			this.panelDevExtreme.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("panelDevExtreme.ResponsiveProfiles"))));
+			// this.panelDevExtreme.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("panelDevExtreme.ResponsiveProfiles"))));
 			this.panelDevExtreme.Size = new System.Drawing.Size(400, 152);
 			this.panelDevExtreme.TabIndex = 4;
 			this.panelDevExtreme.TabStop = true;
@@ -148,7 +148,7 @@
 			this.pictureBox2.ImageSource = "resource.wx/Wisej.DemoBrowser.Premium/Images/devextreme.png";
 			this.pictureBox2.Location = new System.Drawing.Point(24, 26);
 			this.pictureBox2.Name = "pictureBox2";
-			this.pictureBox2.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("pictureBox2.ResponsiveProfiles"))));
+			// this.pictureBox2.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("pictureBox2.ResponsiveProfiles"))));
 			this.pictureBox2.Size = new System.Drawing.Size(100, 100);
 			this.pictureBox2.SizeMode = Wisej.Web.PictureBoxSizeMode.Zoom;
 			// 
@@ -162,7 +162,7 @@
 			this.buttonDevExtreme.ForeColor = System.Drawing.Color.FromName("@demoPanelText-demo");
 			this.buttonDevExtreme.Location = new System.Drawing.Point(138, 26);
 			this.buttonDevExtreme.Name = "buttonDevExtreme";
-			this.buttonDevExtreme.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("buttonDevExtreme.ResponsiveProfiles"))));
+			// this.buttonDevExtreme.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("buttonDevExtreme.ResponsiveProfiles"))));
 			this.buttonDevExtreme.Size = new System.Drawing.Size(254, 100);
 			this.buttonDevExtreme.TabIndex = 2;
 			this.buttonDevExtreme.Text = "DevExtreme";
@@ -179,7 +179,7 @@
 			this.panelEJ1.Location = new System.Drawing.Point(840, 8);
 			this.panelEJ1.Margin = new Wisej.Web.Padding(8);
 			this.panelEJ1.Name = "panelEJ1";
-			this.panelEJ1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("panelEJ1.ResponsiveProfiles"))));
+			// this.panelEJ1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("panelEJ1.ResponsiveProfiles"))));
 			this.panelEJ1.Size = new System.Drawing.Size(400, 152);
 			this.panelEJ1.TabIndex = 5;
 			this.panelEJ1.TabStop = true;
@@ -192,7 +192,7 @@
 			this.pictureBox3.ImageSource = "resource.wx/Wisej.DemoBrowser.Premium/Images/syncfusion.png";
 			this.pictureBox3.Location = new System.Drawing.Point(24, 26);
 			this.pictureBox3.Name = "pictureBox3";
-			this.pictureBox3.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("pictureBox3.ResponsiveProfiles"))));
+			// this.pictureBox3.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("pictureBox3.ResponsiveProfiles"))));
 			this.pictureBox3.Size = new System.Drawing.Size(100, 100);
 			this.pictureBox3.SizeMode = Wisej.Web.PictureBoxSizeMode.Zoom;
 			// 
@@ -206,7 +206,7 @@
 			this.buttonEJ1.ForeColor = System.Drawing.Color.FromName("@demoPanelText-demo");
 			this.buttonEJ1.Location = new System.Drawing.Point(138, 26);
 			this.buttonEJ1.Name = "buttonEJ1";
-			this.buttonEJ1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("buttonEJ1.ResponsiveProfiles"))));
+			// this.buttonEJ1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("buttonEJ1.ResponsiveProfiles"))));
 			this.buttonEJ1.Size = new System.Drawing.Size(254, 100);
 			this.buttonEJ1.TabIndex = 2;
 			this.buttonEJ1.Text = "Syncfusion EJ1";
@@ -223,7 +223,7 @@
 			this.panelEJ2.Location = new System.Drawing.Point(8, 176);
 			this.panelEJ2.Margin = new Wisej.Web.Padding(8);
 			this.panelEJ2.Name = "panelEJ2";
-			this.panelEJ2.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("panelEJ2.ResponsiveProfiles"))));
+			// this.panelEJ2.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("panelEJ2.ResponsiveProfiles"))));
 			this.panelEJ2.Size = new System.Drawing.Size(400, 152);
 			this.panelEJ2.TabIndex = 6;
 			this.panelEJ2.TabStop = true;
@@ -236,7 +236,7 @@
 			this.pictureBox4.ImageSource = "resource.wx/Wisej.DemoBrowser.Premium/Images/syncfusion.png";
 			this.pictureBox4.Location = new System.Drawing.Point(24, 26);
 			this.pictureBox4.Name = "pictureBox4";
-			this.pictureBox4.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("pictureBox4.ResponsiveProfiles"))));
+			// this.pictureBox4.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("pictureBox4.ResponsiveProfiles"))));
 			this.pictureBox4.Size = new System.Drawing.Size(100, 100);
 			this.pictureBox4.SizeMode = Wisej.Web.PictureBoxSizeMode.Zoom;
 			// 
@@ -250,7 +250,7 @@
 			this.buttonEJ2.ForeColor = System.Drawing.Color.FromName("@demoPanelText-demo");
 			this.buttonEJ2.Location = new System.Drawing.Point(138, 26);
 			this.buttonEJ2.Name = "buttonEJ2";
-			this.buttonEJ2.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("buttonEJ2.ResponsiveProfiles"))));
+			// this.buttonEJ2.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("buttonEJ2.ResponsiveProfiles"))));
 			this.buttonEJ2.Size = new System.Drawing.Size(255, 100);
 			this.buttonEJ2.TabIndex = 2;
 			this.buttonEJ2.Text = "Syncfusion EJ2";
@@ -267,7 +267,7 @@
 			this.panelIgnite.Location = new System.Drawing.Point(424, 176);
 			this.panelIgnite.Margin = new Wisej.Web.Padding(8);
 			this.panelIgnite.Name = "panelIgnite";
-			this.panelIgnite.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("panelIgnite.ResponsiveProfiles"))));
+			// this.panelIgnite.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("panelIgnite.ResponsiveProfiles"))));
 			this.panelIgnite.Size = new System.Drawing.Size(400, 152);
 			this.panelIgnite.TabIndex = 7;
 			this.panelIgnite.TabStop = true;
@@ -280,7 +280,7 @@
 			this.pictureBox5.ImageSource = "resource.wx/Wisej.DemoBrowser.Premium/Images/infragistics.png";
 			this.pictureBox5.Location = new System.Drawing.Point(24, 26);
 			this.pictureBox5.Name = "pictureBox5";
-			this.pictureBox5.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("pictureBox5.ResponsiveProfiles"))));
+			// this.pictureBox5.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("pictureBox5.ResponsiveProfiles"))));
 			this.pictureBox5.Size = new System.Drawing.Size(100, 100);
 			this.pictureBox5.SizeMode = Wisej.Web.PictureBoxSizeMode.Zoom;
 			// 
@@ -294,7 +294,7 @@
 			this.buttonIgniteUI.ForeColor = System.Drawing.Color.FromName("@demoPanelText-demo");
 			this.buttonIgniteUI.Location = new System.Drawing.Point(138, 26);
 			this.buttonIgniteUI.Name = "buttonIgniteUI";
-			this.buttonIgniteUI.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("buttonIgniteUI.ResponsiveProfiles"))));
+			// this.buttonIgniteUI.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("buttonIgniteUI.ResponsiveProfiles"))));
 			this.buttonIgniteUI.Size = new System.Drawing.Size(254, 100);
 			this.buttonIgniteUI.TabIndex = 2;
 			this.buttonIgniteUI.Text = "Infragistics IgniteUI";
@@ -311,7 +311,7 @@
 			this.panelDashboard.Location = new System.Drawing.Point(840, 176);
 			this.panelDashboard.Margin = new Wisej.Web.Padding(8);
 			this.panelDashboard.Name = "panelDashboard";
-			this.panelDashboard.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("panelDashboard.ResponsiveProfiles"))));
+			// this.panelDashboard.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("panelDashboard.ResponsiveProfiles"))));
 			this.panelDashboard.Size = new System.Drawing.Size(400, 152);
 			this.panelDashboard.TabIndex = 8;
 			this.panelDashboard.TabStop = true;
@@ -324,7 +324,7 @@
 			this.pictureBox6.ImageSource = "resource.wx/Wisej.DemoBrowser.Premium/Images/devextreme.png";
 			this.pictureBox6.Location = new System.Drawing.Point(24, 26);
 			this.pictureBox6.Name = "pictureBox6";
-			this.pictureBox6.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("pictureBox6.ResponsiveProfiles"))));
+			// this.pictureBox6.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("pictureBox6.ResponsiveProfiles"))));
 			this.pictureBox6.Size = new System.Drawing.Size(100, 100);
 			this.pictureBox6.SizeMode = Wisej.Web.PictureBoxSizeMode.Zoom;
 			// 
@@ -338,7 +338,7 @@
 			this.button1.ForeColor = System.Drawing.Color.FromName("@demoPanelText-demo");
 			this.button1.Location = new System.Drawing.Point(138, 26);
 			this.button1.Name = "button1";
-			this.button1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("button1.ResponsiveProfiles"))));
+			// this.button1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("button1.ResponsiveProfiles"))));
 			this.button1.Size = new System.Drawing.Size(254, 100);
 			this.button1.TabIndex = 2;
 			this.button1.Text = "DevExpress Dashboard";

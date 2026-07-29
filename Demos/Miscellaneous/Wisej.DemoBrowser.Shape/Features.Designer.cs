@@ -89,7 +89,7 @@
             this.panel1.Margin = new Wisej.Web.Padding(16, 3, 3, 3);
             this.panel1.MinimumSize = new System.Drawing.Size(145, 0);
             this.panel1.Name = "panel1";
-            this.panel1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("panel1.ResponsiveProfiles"))));
+            // this.panel1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("panel1.ResponsiveProfiles"))));
             this.panel1.Size = new System.Drawing.Size(165, 336);
             this.panel1.TabIndex = 6;
             // 
@@ -99,7 +99,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(34, 301);
             this.label1.Name = "label1";
-            this.label1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("label1.ResponsiveProfiles"))));
+            // this.label1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("label1.ResponsiveProfiles"))));
             this.label1.Size = new System.Drawing.Size(96, 18);
             this.label1.TabIndex = 12;
             this.label1.Text = "BorderStyle Top";
@@ -109,7 +109,7 @@
             this.btnBorderTopColor.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Left | Wisej.Web.AnchorStyles.Right)));
             this.btnBorderTopColor.Location = new System.Drawing.Point(21, 18);
             this.btnBorderTopColor.Name = "btnBorderTopColor";
-            this.btnBorderTopColor.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("btnBorderTopColor.ResponsiveProfiles"))));
+            // this.btnBorderTopColor.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("btnBorderTopColor.ResponsiveProfiles"))));
             this.btnBorderTopColor.Size = new System.Drawing.Size(122, 43);
             this.btnBorderTopColor.TabIndex = 11;
             this.btnBorderTopColor.Text = "Top Color";
@@ -122,7 +122,7 @@
             this.cmbBorderTopStyle.LabelText = "Style";
             this.cmbBorderTopStyle.Location = new System.Drawing.Point(18, 82);
             this.cmbBorderTopStyle.Name = "cmbBorderTopStyle";
-            this.cmbBorderTopStyle.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("cmbBorderTopStyle.ResponsiveProfiles"))));
+            // this.cmbBorderTopStyle.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("cmbBorderTopStyle.ResponsiveProfiles"))));
             this.cmbBorderTopStyle.Size = new System.Drawing.Size(130, 53);
             this.cmbBorderTopStyle.TabIndex = 10;
             this.cmbBorderTopStyle.Text = "Solid";
@@ -139,7 +139,7 @@
             0,
             0});
             this.nudBorderTopSize.Name = "nudBorderTopSize";
-            this.nudBorderTopSize.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("nudBorderTopSize.ResponsiveProfiles"))));
+            // this.nudBorderTopSize.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("nudBorderTopSize.ResponsiveProfiles"))));
             this.nudBorderTopSize.Size = new System.Drawing.Size(130, 53);
             this.nudBorderTopSize.TabIndex = 9;
             this.nudBorderTopSize.ValueChanged += new System.EventHandler(this.Size_ValueChanged);
@@ -155,7 +155,7 @@
             0,
             0});
             this.nudBorderTopRadius.Name = "nudBorderTopRadius";
-            this.nudBorderTopRadius.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("nudBorderTopRadius.ResponsiveProfiles"))));
+            // this.nudBorderTopRadius.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("nudBorderTopRadius.ResponsiveProfiles"))));
             this.nudBorderTopRadius.Size = new System.Drawing.Size(130, 53);
             this.nudBorderTopRadius.TabIndex = 8;
             this.nudBorderTopRadius.ValueChanged += new System.EventHandler(this.Radius_ValueChanged);
@@ -174,7 +174,7 @@
             this.panel2.Margin = new Wisej.Web.Padding(16, 3, 3, 3);
             this.panel2.MinimumSize = new System.Drawing.Size(145, 0);
             this.panel2.Name = "panel2";
-            this.panel2.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("panel2.ResponsiveProfiles"))));
+            // this.panel2.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("panel2.ResponsiveProfiles"))));
             this.panel2.Size = new System.Drawing.Size(165, 336);
             this.panel2.TabIndex = 13;
             // 
@@ -183,7 +183,7 @@
             this.btnBorderRightColor.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Left | Wisej.Web.AnchorStyles.Right)));
             this.btnBorderRightColor.Location = new System.Drawing.Point(21, 18);
             this.btnBorderRightColor.Name = "btnBorderRightColor";
-            this.btnBorderRightColor.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("btnBorderRightColor.ResponsiveProfiles"))));
+            // this.btnBorderRightColor.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("btnBorderRightColor.ResponsiveProfiles"))));
             this.btnBorderRightColor.Size = new System.Drawing.Size(122, 43);
             this.btnBorderRightColor.TabIndex = 16;
             this.btnBorderRightColor.Text = "Right Color";
@@ -196,7 +196,7 @@
             this.cmbBorderRightStyle.LabelText = "Style";
             this.cmbBorderRightStyle.Location = new System.Drawing.Point(18, 82);
             this.cmbBorderRightStyle.Name = "cmbBorderRightStyle";
-            this.cmbBorderRightStyle.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("cmbBorderRightStyle.ResponsiveProfiles"))));
+            // this.cmbBorderRightStyle.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("cmbBorderRightStyle.ResponsiveProfiles"))));
             this.cmbBorderRightStyle.Size = new System.Drawing.Size(130, 53);
             this.cmbBorderRightStyle.TabIndex = 15;
             this.cmbBorderRightStyle.Text = "Solid";
@@ -213,7 +213,7 @@
             0,
             0});
             this.nudBorderRightSize.Name = "nudBorderRightSize";
-            this.nudBorderRightSize.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("nudBorderRightSize.ResponsiveProfiles"))));
+            // this.nudBorderRightSize.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("nudBorderRightSize.ResponsiveProfiles"))));
             this.nudBorderRightSize.Size = new System.Drawing.Size(130, 53);
             this.nudBorderRightSize.TabIndex = 14;
             this.nudBorderRightSize.ValueChanged += new System.EventHandler(this.Size_ValueChanged);
@@ -229,7 +229,7 @@
             0,
             0});
             this.nudBorderRightRadius.Name = "nudBorderRightRadius";
-            this.nudBorderRightRadius.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("nudBorderRightRadius.ResponsiveProfiles"))));
+            // this.nudBorderRightRadius.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("nudBorderRightRadius.ResponsiveProfiles"))));
             this.nudBorderRightRadius.Size = new System.Drawing.Size(130, 53);
             this.nudBorderRightRadius.TabIndex = 13;
             this.nudBorderRightRadius.ValueChanged += new System.EventHandler(this.Radius_ValueChanged);
@@ -240,7 +240,7 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(30, 301);
             this.label2.Name = "label2";
-            this.label2.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("label2.ResponsiveProfiles"))));
+            // this.label2.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("label2.ResponsiveProfiles"))));
             this.label2.Size = new System.Drawing.Size(105, 18);
             this.label2.TabIndex = 12;
             this.label2.Text = "BorderStyle Right";
@@ -259,7 +259,7 @@
             this.panel3.Margin = new Wisej.Web.Padding(16, 3, 3, 3);
             this.panel3.MinimumSize = new System.Drawing.Size(145, 0);
             this.panel3.Name = "panel3";
-            this.panel3.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("panel3.ResponsiveProfiles"))));
+            // this.panel3.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("panel3.ResponsiveProfiles"))));
             this.panel3.Size = new System.Drawing.Size(165, 336);
             this.panel3.TabIndex = 17;
             // 
@@ -268,7 +268,7 @@
             this.btnBorderBottomColor.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Left | Wisej.Web.AnchorStyles.Right)));
             this.btnBorderBottomColor.Location = new System.Drawing.Point(21, 18);
             this.btnBorderBottomColor.Name = "btnBorderBottomColor";
-            this.btnBorderBottomColor.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("btnBorderBottomColor.ResponsiveProfiles"))));
+            // this.btnBorderBottomColor.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("btnBorderBottomColor.ResponsiveProfiles"))));
             this.btnBorderBottomColor.Size = new System.Drawing.Size(122, 43);
             this.btnBorderBottomColor.TabIndex = 16;
             this.btnBorderBottomColor.Text = "Bottom Color";
@@ -281,7 +281,7 @@
             this.cmbBorderBottomStyle.LabelText = "Style";
             this.cmbBorderBottomStyle.Location = new System.Drawing.Point(18, 82);
             this.cmbBorderBottomStyle.Name = "cmbBorderBottomStyle";
-            this.cmbBorderBottomStyle.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("cmbBorderBottomStyle.ResponsiveProfiles"))));
+            // this.cmbBorderBottomStyle.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("cmbBorderBottomStyle.ResponsiveProfiles"))));
             this.cmbBorderBottomStyle.Size = new System.Drawing.Size(130, 53);
             this.cmbBorderBottomStyle.TabIndex = 15;
             this.cmbBorderBottomStyle.Text = "Solid";
@@ -298,7 +298,7 @@
             0,
             0});
             this.nudBorderBottomSize.Name = "nudBorderBottomSize";
-            this.nudBorderBottomSize.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("nudBorderBottomSize.ResponsiveProfiles"))));
+            // this.nudBorderBottomSize.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("nudBorderBottomSize.ResponsiveProfiles"))));
             this.nudBorderBottomSize.Size = new System.Drawing.Size(130, 53);
             this.nudBorderBottomSize.TabIndex = 14;
             this.nudBorderBottomSize.ValueChanged += new System.EventHandler(this.Size_ValueChanged);
@@ -314,7 +314,7 @@
             0,
             0});
             this.nudBorderBottomRadius.Name = "nudBorderBottomRadius";
-            this.nudBorderBottomRadius.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("nudBorderBottomRadius.ResponsiveProfiles"))));
+            // this.nudBorderBottomRadius.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("nudBorderBottomRadius.ResponsiveProfiles"))));
             this.nudBorderBottomRadius.Size = new System.Drawing.Size(130, 53);
             this.nudBorderBottomRadius.TabIndex = 13;
             this.nudBorderBottomRadius.ValueChanged += new System.EventHandler(this.Radius_ValueChanged);
@@ -325,7 +325,7 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(24, 301);
             this.label3.Name = "label3";
-            this.label3.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("label3.ResponsiveProfiles"))));
+            // this.label3.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("label3.ResponsiveProfiles"))));
             this.label3.Size = new System.Drawing.Size(117, 18);
             this.label3.TabIndex = 12;
             this.label3.Text = "BorderStyle Bottom";
@@ -344,7 +344,7 @@
             this.panel4.Margin = new Wisej.Web.Padding(16, 3, 3, 3);
             this.panel4.MinimumSize = new System.Drawing.Size(145, 0);
             this.panel4.Name = "panel4";
-            this.panel4.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("panel4.ResponsiveProfiles"))));
+            // this.panel4.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("panel4.ResponsiveProfiles"))));
             this.panel4.Size = new System.Drawing.Size(165, 336);
             this.panel4.TabIndex = 18;
             // 
@@ -353,7 +353,7 @@
             this.btnBorderLeftColor.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Left | Wisej.Web.AnchorStyles.Right)));
             this.btnBorderLeftColor.Location = new System.Drawing.Point(23, 18);
             this.btnBorderLeftColor.Name = "btnBorderLeftColor";
-            this.btnBorderLeftColor.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("btnBorderLeftColor.ResponsiveProfiles"))));
+            // this.btnBorderLeftColor.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("btnBorderLeftColor.ResponsiveProfiles"))));
             this.btnBorderLeftColor.Size = new System.Drawing.Size(120, 43);
             this.btnBorderLeftColor.TabIndex = 16;
             this.btnBorderLeftColor.Text = "Left Color";
@@ -366,7 +366,7 @@
             this.cmbBorderLeftStyle.LabelText = "Style";
             this.cmbBorderLeftStyle.Location = new System.Drawing.Point(19, 82);
             this.cmbBorderLeftStyle.Name = "cmbBorderLeftStyle";
-            this.cmbBorderLeftStyle.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("cmbBorderLeftStyle.ResponsiveProfiles"))));
+            // this.cmbBorderLeftStyle.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("cmbBorderLeftStyle.ResponsiveProfiles"))));
             this.cmbBorderLeftStyle.Size = new System.Drawing.Size(128, 53);
             this.cmbBorderLeftStyle.TabIndex = 15;
             this.cmbBorderLeftStyle.Text = "Solid";
@@ -383,7 +383,7 @@
             0,
             0});
             this.nudBorderLeftSize.Name = "nudBorderLeftSize";
-            this.nudBorderLeftSize.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("nudBorderLeftSize.ResponsiveProfiles"))));
+            // this.nudBorderLeftSize.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("nudBorderLeftSize.ResponsiveProfiles"))));
             this.nudBorderLeftSize.Size = new System.Drawing.Size(128, 53);
             this.nudBorderLeftSize.TabIndex = 14;
             this.nudBorderLeftSize.ValueChanged += new System.EventHandler(this.Size_ValueChanged);
@@ -399,7 +399,7 @@
             0,
             0});
             this.nudBorderLeftRadius.Name = "nudBorderLeftRadius";
-            this.nudBorderLeftRadius.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("nudBorderLeftRadius.ResponsiveProfiles"))));
+            // this.nudBorderLeftRadius.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("nudBorderLeftRadius.ResponsiveProfiles"))));
             this.nudBorderLeftRadius.Size = new System.Drawing.Size(128, 53);
             this.nudBorderLeftRadius.TabIndex = 13;
             this.nudBorderLeftRadius.ValueChanged += new System.EventHandler(this.Radius_ValueChanged);
@@ -410,7 +410,7 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(34, 301);
             this.label4.Name = "label4";
-            this.label4.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("label4.ResponsiveProfiles"))));
+            // this.label4.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("label4.ResponsiveProfiles"))));
             this.label4.Size = new System.Drawing.Size(96, 18);
             this.label4.TabIndex = 12;
             this.label4.Text = "BorderStyle Left";
@@ -430,7 +430,7 @@
             this.flowLayoutPanel1.Controls.Add(this.spacer3);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(46, 65);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("flowLayoutPanel1.ResponsiveProfiles"))));
+            // this.flowLayoutPanel1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("flowLayoutPanel1.ResponsiveProfiles"))));
             this.flowLayoutPanel1.ScrollBars = Wisej.Web.ScrollBars.Hidden;
             this.flowLayoutPanel1.Size = new System.Drawing.Size(1331, 344);
             this.flowLayoutPanel1.TabIndex = 20;
@@ -440,7 +440,7 @@
             this.flowLayoutPanel1.SetFillWeight(this.spacer2, 1);
             this.spacer2.Location = new System.Drawing.Point(3, 3);
             this.spacer2.Name = "spacer2";
-            this.spacer2.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("spacer2.ResponsiveProfiles"))));
+            // this.spacer2.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("spacer2.ResponsiveProfiles"))));
             this.spacer2.Size = new System.Drawing.Size(91, 336);
             // 
             // spacer1
@@ -448,7 +448,7 @@
             this.flowLayoutPanel1.SetFillWeight(this.spacer1, 1);
             this.spacer1.Location = new System.Drawing.Point(836, 3);
             this.spacer1.Name = "spacer1";
-            this.spacer1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("spacer1.ResponsiveProfiles"))));
+            // this.spacer1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("spacer1.ResponsiveProfiles"))));
             this.spacer1.Size = new System.Drawing.Size(90, 336);
             // 
             // panel5
@@ -457,7 +457,7 @@
             this.panel5.Location = new System.Drawing.Point(932, 3);
             this.panel5.MinimumSize = new System.Drawing.Size(300, 0);
             this.panel5.Name = "panel5";
-            this.panel5.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("panel5.ResponsiveProfiles"))));
+            // this.panel5.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("panel5.ResponsiveProfiles"))));
             this.panel5.Size = new System.Drawing.Size(300, 336);
             this.panel5.TabIndex = 30;
             // 
@@ -480,7 +480,7 @@
             this.shape1.Location = new System.Drawing.Point(10, 64);
             this.shape1.Margin = new Wisej.Web.Padding(10, 20, 20, 20);
             this.shape1.Name = "shape1";
-            this.shape1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("shape1.ResponsiveProfiles"))));
+            // this.shape1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("shape1.ResponsiveProfiles"))));
             this.shape1.Size = new System.Drawing.Size(280, 209);
             // 
             // spacer3
@@ -488,7 +488,7 @@
             this.flowLayoutPanel1.SetFillWeight(this.spacer3, 1);
             this.spacer3.Location = new System.Drawing.Point(1238, 3);
             this.spacer3.Name = "spacer3";
-            this.spacer3.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("spacer3.ResponsiveProfiles"))));
+            // this.spacer3.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("spacer3.ResponsiveProfiles"))));
             this.spacer3.Size = new System.Drawing.Size(90, 336);
             // 
             // Features

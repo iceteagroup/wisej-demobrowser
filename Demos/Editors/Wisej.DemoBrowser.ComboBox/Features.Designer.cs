@@ -1019,7 +1019,7 @@
             this.panel1.Controls.Add(this.comboBox1);
             this.panel1.Location = new System.Drawing.Point(3, 3);
             this.panel1.Name = "panel1";
-            this.panel1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("panel1.ResponsiveProfiles"))));
+            // this.panel1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("panel1.ResponsiveProfiles"))));
             this.panel1.Size = new System.Drawing.Size(291, 273);
             this.panel1.TabIndex = 0;
             // 
@@ -1031,7 +1031,7 @@
             this.flowLayoutPanel1.Controls.Add(this.comboBox9);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(422, 98);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("flowLayoutPanel1.ResponsiveProfiles"))));
+            // this.flowLayoutPanel1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("flowLayoutPanel1.ResponsiveProfiles"))));
             this.flowLayoutPanel1.ScrollBars = Wisej.Web.ScrollBars.None;
             this.flowLayoutPanel1.Size = new System.Drawing.Size(578, 279);
             this.flowLayoutPanel1.TabIndex = 12;

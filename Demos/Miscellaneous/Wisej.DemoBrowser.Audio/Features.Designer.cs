@@ -37,7 +37,7 @@
             this.audioDefault.Anchor = Wisej.Web.AnchorStyles.None;
             this.audioDefault.Location = new System.Drawing.Point(544, 210);
             this.audioDefault.Name = "audioDefault";
-            this.audioDefault.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("audioDefault.ResponsiveProfiles"))));
+            // this.audioDefault.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("audioDefault.ResponsiveProfiles"))));
             this.audioDefault.Size = new System.Drawing.Size(334, 55);
             this.audioDefault.SourceURL = "Media/sample.mp3";
             this.audioDefault.TabIndex = 0;

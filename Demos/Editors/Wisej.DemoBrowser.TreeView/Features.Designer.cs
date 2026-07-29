@@ -388,7 +388,7 @@
             this.panel1.Controls.Add(this.treeView1);
             this.panel1.Location = new System.Drawing.Point(19, 19);
             this.panel1.Name = "panel1";
-            this.panel1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("panel1.ResponsiveProfiles"))));
+            // this.panel1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("panel1.ResponsiveProfiles"))));
             this.panel1.Size = new System.Drawing.Size(287, 288);
             this.panel1.TabIndex = 0;
             // 
@@ -398,7 +398,7 @@
             this.panel2.Controls.Add(this.treeView2);
             this.panel2.Location = new System.Drawing.Point(898, 19);
             this.panel2.Name = "panel2";
-            this.panel2.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("panel2.ResponsiveProfiles"))));
+            // this.panel2.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("panel2.ResponsiveProfiles"))));
             this.panel2.Size = new System.Drawing.Size(287, 288);
             this.panel2.TabIndex = 3;
             // 
@@ -408,7 +408,7 @@
             this.panel3.Controls.Add(this.label4);
             this.panel3.Location = new System.Drawing.Point(605, 19);
             this.panel3.Name = "panel3";
-            this.panel3.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("panel3.ResponsiveProfiles"))));
+            // this.panel3.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("panel3.ResponsiveProfiles"))));
             this.panel3.Size = new System.Drawing.Size(287, 288);
             this.panel3.TabIndex = 2;
             // 
@@ -418,7 +418,7 @@
             this.panel4.Controls.Add(this.treeView3);
             this.panel4.Location = new System.Drawing.Point(312, 19);
             this.panel4.Name = "panel4";
-            this.panel4.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("panel4.ResponsiveProfiles"))));
+            // this.panel4.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("panel4.ResponsiveProfiles"))));
             this.panel4.Size = new System.Drawing.Size(287, 288);
             this.panel4.TabIndex = 1;
             // 
@@ -433,7 +433,7 @@
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Padding = new Wisej.Web.Padding(16);
-            this.flowLayoutPanel1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("flowLayoutPanel1.ResponsiveProfiles"))));
+            // this.flowLayoutPanel1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("flowLayoutPanel1.ResponsiveProfiles"))));
             this.flowLayoutPanel1.Size = new System.Drawing.Size(1422, 474);
             this.flowLayoutPanel1.TabIndex = 13;
             // 

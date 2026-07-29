@@ -47,7 +47,7 @@
             this.sequence.Location = new System.Drawing.Point(644, 3);
             this.sequence.MinimumSize = new System.Drawing.Size(320, 0);
             this.sequence.Name = "sequence";
-            this.sequence.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("sequence.ResponsiveProfiles"))));
+            // this.sequence.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("sequence.ResponsiveProfiles"))));
             this.sequence.Size = new System.Drawing.Size(636, 323);
             this.sequence.TabIndex = 3;
             this.sequence.Text = "sequence4";
@@ -65,7 +65,7 @@
             this.cmbThemes.LabelText = "Themes";
             this.cmbThemes.Location = new System.Drawing.Point(162, 8);
             this.cmbThemes.Name = "cmbThemes";
-            this.cmbThemes.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("cmbThemes.ResponsiveProfiles"))));
+            // this.cmbThemes.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("cmbThemes.ResponsiveProfiles"))));
             this.cmbThemes.Size = new System.Drawing.Size(310, 53);
             this.cmbThemes.TabIndex = 5;
             this.cmbThemes.SelectedIndexChanged += new System.EventHandler(this.cmbThemes_SelectedIndexChanged);
@@ -79,7 +79,7 @@
             this.txtUml.Location = new System.Drawing.Point(162, 67);
             this.txtUml.Multiline = true;
             this.txtUml.Name = "txtUml";
-            this.txtUml.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("txtUml.ResponsiveProfiles"))));
+            // this.txtUml.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("txtUml.ResponsiveProfiles"))));
             this.txtUml.Size = new System.Drawing.Size(310, 206);
             this.txtUml.TabIndex = 6;
             // 
@@ -88,7 +88,7 @@
             this.btnUpdate.Anchor = Wisej.Web.AnchorStyles.None;
             this.btnUpdate.Location = new System.Drawing.Point(162, 279);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("btnUpdate.ResponsiveProfiles"))));
+            // this.btnUpdate.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("btnUpdate.ResponsiveProfiles"))));
             this.btnUpdate.Size = new System.Drawing.Size(310, 35);
             this.btnUpdate.TabIndex = 7;
             this.btnUpdate.Text = "Update";
@@ -103,7 +103,7 @@
             this.panel1.Location = new System.Drawing.Point(3, 3);
             this.panel1.MinimumSize = new System.Drawing.Size(320, 0);
             this.panel1.Name = "panel1";
-            this.panel1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("panel1.ResponsiveProfiles"))));
+            // this.panel1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("panel1.ResponsiveProfiles"))));
             this.panel1.Size = new System.Drawing.Size(635, 323);
             this.panel1.TabIndex = 8;
             // 
@@ -116,7 +116,7 @@
             this.flowLayoutPanel1.Controls.Add(this.sequence);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(70, 72);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("flowLayoutPanel1.ResponsiveProfiles"))));
+            // this.flowLayoutPanel1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("flowLayoutPanel1.ResponsiveProfiles"))));
             this.flowLayoutPanel1.Size = new System.Drawing.Size(1283, 331);
             this.flowLayoutPanel1.TabIndex = 9;
             // 

@@ -223,7 +223,7 @@
             this.flowLayoutPanel1.Controls.Add(this.dateTimePicker11);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(253, 89);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("flowLayoutPanel1.ResponsiveProfiles"))));
+            // this.flowLayoutPanel1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("flowLayoutPanel1.ResponsiveProfiles"))));
             this.flowLayoutPanel1.ScrollBars = Wisej.Web.ScrollBars.None;
             this.flowLayoutPanel1.Size = new System.Drawing.Size(914, 292);
             this.flowLayoutPanel1.TabIndex = 12;
