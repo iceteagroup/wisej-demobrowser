@@ -36,9 +36,13 @@ PAYLOAD_DIR = f"/previews/pr-{PR_NUMBER}"
 # How long we're willing to wait for the app to serve before calling it failed.
 BOOT_BUDGET_SECONDS = int(os.environ.get("BOOT_BUDGET_SECONDS", 600))
 
-# Sandbox lifetime cap, and the inactivity window after which we tear it down.
+# Hard ceiling Modal enforces on the sandbox process itself.
 SANDBOX_MAX_LIFETIME = 6 * 60 * 60
-IDLE_SHUTDOWN_SECONDS = int(os.environ.get("IDLE_SHUTDOWN_SECONDS", 20 * 60))
+
+# Age at which reap() kills a sandbox regardless of whether anyone is using it.
+# This is a cost ceiling, NOT inactivity shutdown - see reap() for why the
+# router cannot currently observe user activity at all.
+MAX_SANDBOX_AGE_SECONDS = int(os.environ.get("MAX_SANDBOX_AGE_SECONDS", 30 * 60))
 
 CPU = 2.0
 MEMORY_MB = 4096
@@ -75,6 +79,41 @@ def _probe(url: str, timeout: float = 5.0):
         return e.code  # 3xx/4xx still means something is serving
     except Exception:
         return None
+
+
+@app.function(image=router_image, schedule=modal.Period(minutes=5), timeout=300)
+def reap():
+    """Cost ceiling. NOT the inactivity shutdown the product needs.
+
+    Because the router redirects to the sandbox's own tunnel URL, it never sees
+    the traffic between a user and the app - `last_seen` only advances while the
+    loading page is polling. So there is currently no signal for "nobody has
+    used this in X minutes", and this reaper can only enforce a maximum age.
+
+    Getting real inactivity shutdown needs one of:
+      * proxying the app through the router, so every request and WebSocket
+        frame is observable here, or
+      * a status endpoint in the Wisej app reporting activeSessions and
+        lastInteractionUtc, which this function would poll.
+
+    The second gives better data - actual user interaction rather than mere
+    connection liveness - but needs framework support.
+    """
+    rec = state.get("sandbox") or {}
+    if not rec.get("id"):
+        return
+
+    age = time.time() - rec.get("created_at", rec.get("started", time.time()))
+    if age < MAX_SANDBOX_AGE_SECONDS:
+        return
+
+    try:
+        modal.Sandbox.from_id(rec["id"]).terminate()
+        print(f"reaped {rec['id']} after {age / 60:.0f} min")
+    except Exception as exc:  # noqa: BLE001 - best effort
+        print(f"reap failed for {rec['id']}: {exc}")
+    state["sandbox"] = None
+    state["pending"] = None
 
 
 @app.function(image=router_image, timeout=SANDBOX_MAX_LIFETIME)
