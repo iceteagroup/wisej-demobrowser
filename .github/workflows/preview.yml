@@ -12,6 +12,10 @@ permissions:
   contents: read
   pull-requests: write
 
+env:
+  # The Modal CLI's Rich console output crashes under non-UTF-8 encodings.
+  PYTHONIOENCODING: utf-8
+
 jobs:
   deploy:
     name: Deploy preview
@@ -31,18 +35,27 @@ jobs:
       - name: Install Modal
         run: pip install --disable-pip-version-check modal
 
-      - name: Deploy to Modal
+      # Two separate steps on purpose. The image build needs the repository;
+      # the router must never touch it, because Modal re-imports the router
+      # module inside a container where the repo doesn't exist. Publishing the
+      # image under a name is what keeps the router a ~2s cold start instead of
+      # resolving a multi-minute build on the request path.
+      - name: Build and publish preview image
+        env:
+          MODAL_TOKEN_ID: ${{ secrets.MODAL_TOKEN_ID }}
+          MODAL_TOKEN_SECRET: ${{ secrets.MODAL_TOKEN_SECRET }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+        run: modal run deploy/preview/build_image.py
+
+      - name: Deploy preview router
         id: deploy
         env:
           MODAL_TOKEN_ID: ${{ secrets.MODAL_TOKEN_ID }}
           MODAL_TOKEN_SECRET: ${{ secrets.MODAL_TOKEN_SECRET }}
           PR_NUMBER: ${{ github.event.pull_request.number }}
-          # The Modal CLI's Rich console output crashes under non-UTF-8
-          # encodings. GHA runners default to UTF-8, but pin it explicitly.
-          PYTHONIOENCODING: utf-8
         run: |
           set -o pipefail
-          modal deploy modal_app.py 2>&1 | tee deploy.log
+          modal deploy deploy/preview/router.py 2>&1 | tee deploy.log
           url=$(grep -oE 'https://[A-Za-z0-9._-]+\.modal\.run' deploy.log | head -n1)
           if [ -z "$url" ]; then
             echo "::error::No *.modal.run URL found in the deploy output"
@@ -64,10 +77,11 @@ jobs:
 
           **[Open preview]($URL)**
 
-          The app starts when you open the link - the first request waits while the
-          container boots - and shuts down after 20 minutes with no traffic. Opening
-          the link again brings it back. Everyone viewing this PR shares one instance,
-          each with their own session.
+          Nothing is running until you open that link. The first request shows a
+          progress screen while a container starts - about 10 seconds - then hands
+          over to the app. It shuts down after 20 minutes with no traffic, and
+          opening the link again brings it back. Everyone viewing this PR shares one
+          instance, each with their own session.
 
           <sub>Built from \`${HEAD_SHA:0:7}\`</sub>
           EOF
@@ -99,12 +113,15 @@ jobs:
       - name: Install Modal
         run: pip install --disable-pip-version-check modal
 
-      - name: Stop Modal app
+      - name: Stop Modal apps
         env:
           MODAL_TOKEN_ID: ${{ secrets.MODAL_TOKEN_ID }}
           MODAL_TOKEN_SECRET: ${{ secrets.MODAL_TOKEN_SECRET }}
-          PYTHONIOENCODING: utf-8
+          PR: ${{ github.event.pull_request.number }}
         run: |
-          # Nothing to stop if the PR never got a successful deploy.
-          modal app stop "wisej-demobrowser-pr-${{ github.event.pull_request.number }}" \
-            || echo "No running app for PR #${{ github.event.pull_request.number }}"
+          # -y because there is no TTY here. Both apps are best-effort: a PR that
+          # never deployed successfully has nothing to stop.
+          modal app stop -y "wisej-demobrowser-pr-${PR}" \
+            || echo "no router app for PR #${PR}"
+          modal app stop -y "wisej-demobrowser-pr-${PR}-sandboxes" \
+            || echo "no sandbox app for PR #${PR}"
