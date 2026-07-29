@@ -41,6 +41,6 @@
 	"url": "Default.html",
 	"showLoader": false,
 	"sessionTimeout": 60,
-	"theme": "Bootstrap-4",
+	"theme": "Material-3",
 	"startup": "Wisej.DemoBrowser.Program.Main, Wisej.DemoBrowser"
 }
