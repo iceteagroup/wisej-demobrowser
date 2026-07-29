@@ -29,7 +29,7 @@
 		private void InitializeComponent()
 		{
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(dxSparkline));
+            Wisej.Resources.ComponentResourceManager resources = new Wisej.Resources.ComponentResourceManager(typeof(dxSparkline));
             this.tableLayoutPanel1 = new Wisej.Web.TableLayoutPanel();
             this.dxSparkline9 = new Wisej.Web.Ext.DevExtreme.dxSparkline();
             this.dxSparkline8 = new Wisej.Web.Ext.DevExtreme.dxSparkline();

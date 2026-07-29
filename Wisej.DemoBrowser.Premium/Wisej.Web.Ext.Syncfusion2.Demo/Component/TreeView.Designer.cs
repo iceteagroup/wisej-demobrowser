@@ -28,7 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TreeView));
+            Wisej.Resources.ComponentResourceManager resources = new Wisej.Resources.ComponentResourceManager(typeof(TreeView));
             this.treeView1 = new Wisej.Web.Ext.Syncfusion2.TreeView();
             this.comboBoxExpandOn = new Wisej.Web.ComboBox();
             this.checkBoxDragAndDrop = new Wisej.Web.CheckBox();

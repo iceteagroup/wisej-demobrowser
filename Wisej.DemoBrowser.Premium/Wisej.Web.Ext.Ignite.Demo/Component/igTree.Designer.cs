@@ -29,7 +29,7 @@
 		private void InitializeComponent()
 		{
             Wisej.Web.Ext.Ignite.igBase.WidgetFunction widgetFunction3 = new Wisej.Web.Ext.Ignite.igBase.WidgetFunction();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(igTree));
+            Wisej.Resources.ComponentResourceManager resources = new Wisej.Resources.ComponentResourceManager(typeof(igTree));
             Wisej.Web.Ext.Ignite.igBase.WidgetFunction widgetFunction4 = new Wisej.Web.Ext.Ignite.igBase.WidgetFunction();
             this.igTree2 = new Wisej.Web.Ext.Ignite.igTree();
             this.igTree1 = new Wisej.Web.Ext.Ignite.igTree();

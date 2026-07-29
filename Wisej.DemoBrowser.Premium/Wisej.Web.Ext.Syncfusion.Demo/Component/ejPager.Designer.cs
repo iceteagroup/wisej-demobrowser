@@ -28,7 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ejPager));
+            Wisej.Resources.ComponentResourceManager resources = new Wisej.Resources.ComponentResourceManager(typeof(ejPager));
             this.ejPager1 = new Wisej.Web.Ext.Syncfusion.ejPager();
             this.ejRotator1 = new Wisej.Web.Ext.Syncfusion.ejRotator();
             this.buttonGoToFirstPage = new Wisej.Web.Button();

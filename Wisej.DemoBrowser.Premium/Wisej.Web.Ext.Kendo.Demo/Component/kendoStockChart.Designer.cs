@@ -28,7 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(kendoStockChart));
+			Wisej.Resources.ComponentResourceManager resources = new Wisej.Resources.ComponentResourceManager(typeof(kendoStockChart));
 			this.kendoStockChart1 = new Wisej.Web.Ext.Kendo.kendoStockChart();
 			this.textBoxTitle = new Wisej.Web.TextBox();
 			this.buttonExportPDF = new Wisej.Web.Button();

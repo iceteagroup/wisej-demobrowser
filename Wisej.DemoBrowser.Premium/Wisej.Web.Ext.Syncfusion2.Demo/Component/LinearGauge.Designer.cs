@@ -28,7 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LinearGauge));
+			Wisej.Resources.ComponentResourceManager resources = new Wisej.Resources.ComponentResourceManager(typeof(LinearGauge));
 			this.linearGauge1 = new Wisej.Web.Ext.Syncfusion2.LinearGauge();
 			this.numericUpDown1 = new Wisej.Web.NumericUpDown();
 			this.numericUpDownMajorTick = new Wisej.Web.NumericUpDown();

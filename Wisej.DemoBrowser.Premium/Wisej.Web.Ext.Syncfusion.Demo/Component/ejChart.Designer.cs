@@ -28,7 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ejChart));
+			Wisej.Resources.ComponentResourceManager resources = new Wisej.Resources.ComponentResourceManager(typeof(ejChart));
 			this.ejChart1 = new Wisej.Web.Ext.Syncfusion.ejChart();
 			this.comboBoxLegendAlignment = new Wisej.Web.ComboBox();
 			this.textBoxTitle = new Wisej.Web.TextBox();

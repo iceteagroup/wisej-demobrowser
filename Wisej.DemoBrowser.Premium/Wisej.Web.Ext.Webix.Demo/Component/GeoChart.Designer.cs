@@ -28,7 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GeoChart));
+            Wisej.Resources.ComponentResourceManager resources = new Wisej.Resources.ComponentResourceManager(typeof(GeoChart));
             this.geoChart1 = new Wisej.Web.Ext.Webix.GeoChart();
             this.checkBoxRemoveMissed = new Wisej.Web.CheckBox();
             this.groupBox1.SuspendLayout();

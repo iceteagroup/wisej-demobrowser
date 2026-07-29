@@ -28,7 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ejSunburstChart));
+			Wisej.Resources.ComponentResourceManager resources = new Wisej.Resources.ComponentResourceManager(typeof(ejSunburstChart));
 			this.ejSunburstChart1 = new Wisej.Web.Ext.Syncfusion.ejSunburstChart();
 			this.numericUpDown1 = new Wisej.Web.NumericUpDown();
 			this.numericUpDown2 = new Wisej.Web.NumericUpDown();

@@ -28,7 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DataTable));
+            Wisej.Resources.ComponentResourceManager resources = new Wisej.Resources.ComponentResourceManager(typeof(DataTable));
             this.dataTable1 = new Wisej.Web.Ext.Webix.DataTable();
             this.checkBoxEnableDrag = new Wisej.Web.CheckBox();
             this.checkBoxEditable = new Wisej.Web.CheckBox();

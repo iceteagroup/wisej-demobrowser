@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Features));
+            Wisej.Resources.ComponentResourceManager resources = new Wisej.Resources.ComponentResourceManager(typeof(Features));
             this.sequence = new Wisej.Web.Ext.jSequence.Sequence();
             this.cmbThemes = new Wisej.Web.ComboBox();
             this.txtUml = new Wisej.Web.TextBox();

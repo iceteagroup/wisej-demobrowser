@@ -28,7 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ejToolbar));
+			Wisej.Resources.ComponentResourceManager resources = new Wisej.Resources.ComponentResourceManager(typeof(ejToolbar));
 			this.ejToolbar1 = new Wisej.Web.Ext.Syncfusion.ejToolbar();
 			this.checkBox1 = new Wisej.Web.CheckBox();
 			this.checkBox2 = new Wisej.Web.CheckBox();

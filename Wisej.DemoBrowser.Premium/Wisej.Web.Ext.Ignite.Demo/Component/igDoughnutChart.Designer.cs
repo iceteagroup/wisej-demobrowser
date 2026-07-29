@@ -28,7 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(igDoughnutChart));
+			Wisej.Resources.ComponentResourceManager resources = new Wisej.Resources.ComponentResourceManager(typeof(igDoughnutChart));
 			this.igDoughnutChart1 = new Wisej.Web.Ext.Ignite.igDoughnutChart();
 			this.textBox1 = new Wisej.Web.TextBox();
 			this.numericUpDown1 = new Wisej.Web.NumericUpDown();

@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Diagram));
+            Wisej.Resources.ComponentResourceManager resources = new Wisej.Resources.ComponentResourceManager(typeof(Diagram));
             this.diagram1 = new Wisej.Web.Ext.Webix.Diagram();
             this.checkBoxAllowScroll = new Wisej.Web.CheckBox();
             this.checkBoxAllowSelect = new Wisej.Web.CheckBox();

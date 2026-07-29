@@ -28,7 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ejGrid));
+			Wisej.Resources.ComponentResourceManager resources = new Wisej.Resources.ComponentResourceManager(typeof(ejGrid));
 			this.buttonLoad = new Wisej.Web.Upload();
 			this.buttonSave = new Wisej.Web.Button();
 			this.ejGrid1 = new Wisej.Web.Ext.Syncfusion.ejGrid();

@@ -28,7 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FileManager));
+            Wisej.Resources.ComponentResourceManager resources = new Wisej.Resources.ComponentResourceManager(typeof(FileManager));
             this.fileManager1 = new Wisej.Web.Ext.Syncfusion2.FileManager();
             this.checkBoxFileExtension = new Wisej.Web.CheckBox();
             this.checkBoxMultipleSelection = new Wisej.Web.CheckBox();

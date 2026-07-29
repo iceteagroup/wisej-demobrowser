@@ -28,7 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(kendoTimeline));
+			Wisej.Resources.ComponentResourceManager resources = new Wisej.Resources.ComponentResourceManager(typeof(kendoTimeline));
 			this.kendoTimeline1 = new Wisej.Web.Ext.Kendo.kendoTimeline();
 			this.comboBoxOrientation = new Wisej.Web.ComboBox();
 			this.checkBoxShowDateLabel = new Wisej.Web.CheckBox();

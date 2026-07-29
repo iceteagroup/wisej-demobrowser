@@ -28,7 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(kendoSparkline));
+			Wisej.Resources.ComponentResourceManager resources = new Wisej.Resources.ComponentResourceManager(typeof(kendoSparkline));
 			this.kendoSparkline1 = new Wisej.Web.Ext.Kendo.kendoSparkline();
 			this.buttonImage = new Wisej.Web.Button();
 			this.buttonPDF = new Wisej.Web.Button();

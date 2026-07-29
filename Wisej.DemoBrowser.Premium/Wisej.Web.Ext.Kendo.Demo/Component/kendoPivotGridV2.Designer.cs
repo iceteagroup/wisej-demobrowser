@@ -28,7 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(kendoPivotGridV2));
+			Wisej.Resources.ComponentResourceManager resources = new Wisej.Resources.ComponentResourceManager(typeof(kendoPivotGridV2));
 			this.kendoPivotGridV21 = new Wisej.Web.Ext.Kendo.kendoPivotGridV2();
 			this.numericUpDownColumnWidth = new Wisej.Web.NumericUpDown();
 			this.buttonPDF = new Wisej.Web.Button();

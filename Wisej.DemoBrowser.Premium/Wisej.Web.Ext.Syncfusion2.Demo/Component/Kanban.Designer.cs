@@ -28,7 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Kanban));
+			Wisej.Resources.ComponentResourceManager resources = new Wisej.Resources.ComponentResourceManager(typeof(Kanban));
 			this.kanban1 = new Wisej.Web.Ext.Syncfusion2.Kanban();
 			this.checkBoxDragAndDrop = new Wisej.Web.CheckBox();
 			this.checkBoxKeyboard = new Wisej.Web.CheckBox();

@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Features));
+            Wisej.Resources.ComponentResourceManager resources = new Wisej.Resources.ComponentResourceManager(typeof(Features));
             Wisej.Web.ComponentTool componentTool9 = new Wisej.Web.ComponentTool();
             Wisej.Web.ComponentTool componentTool10 = new Wisej.Web.ComponentTool();
             Wisej.Web.ComponentTool componentTool11 = new Wisej.Web.ComponentTool();

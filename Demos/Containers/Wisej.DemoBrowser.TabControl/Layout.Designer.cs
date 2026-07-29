@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Layout));
+            Wisej.Resources.ComponentResourceManager resources = new Wisej.Resources.ComponentResourceManager(typeof(Layout));
             this.tabControl = new Wisej.Web.TabControl();
             this.tabPage1 = new Wisej.Web.TabPage();
             this.labelPage1Text = new Wisej.Web.Label();

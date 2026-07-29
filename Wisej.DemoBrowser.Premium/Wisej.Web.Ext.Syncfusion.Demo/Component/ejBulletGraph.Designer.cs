@@ -28,7 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ejBulletGraph));
+            Wisej.Resources.ComponentResourceManager resources = new Wisej.Resources.ComponentResourceManager(typeof(ejBulletGraph));
             this.ejBulletGraph1 = new Wisej.Web.Ext.Syncfusion.ejBulletGraph();
             this.ejBulletGraph2 = new Wisej.Web.Ext.Syncfusion.ejBulletGraph();
             this.numericUpDownVal = new Wisej.Web.NumericUpDown();

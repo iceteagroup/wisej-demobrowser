@@ -29,7 +29,7 @@
 		private void InitializeComponent()
 		{
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Features));
+            Wisej.Resources.ComponentResourceManager resources = new Wisej.Resources.ComponentResourceManager(typeof(Features));
             this.rotation1 = new Wisej.Web.Rotation(this.components);
             this.htmlPanelDisplay = new Wisej.Web.HtmlPanel();
             this.numericUpDownXRotation = new Wisej.Web.NumericUpDown();

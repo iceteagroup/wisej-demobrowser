@@ -28,7 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TreeGrid));
+			Wisej.Resources.ComponentResourceManager resources = new Wisej.Resources.ComponentResourceManager(typeof(TreeGrid));
 			this.treeGrid1 = new Wisej.Web.Ext.Syncfusion2.TreeGrid();
 			this.checkBoxResizing = new Wisej.Web.CheckBox();
 			this.checkBoxReordering = new Wisej.Web.CheckBox();

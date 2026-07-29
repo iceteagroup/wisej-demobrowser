@@ -28,7 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(kendoMultiColumnComboBox));
+			Wisej.Resources.ComponentResourceManager resources = new Wisej.Resources.ComponentResourceManager(typeof(kendoMultiColumnComboBox));
 			this.kendoMultiColumnComboBox1 = new Wisej.Web.Ext.Kendo.kendoMultiColumnComboBox();
 			this.checkBox1 = new Wisej.Web.CheckBox();
 			this.checkBox2 = new Wisej.Web.CheckBox();

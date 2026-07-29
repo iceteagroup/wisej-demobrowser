@@ -28,7 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Features));
+            Wisej.Resources.ComponentResourceManager resources = new Wisej.Resources.ComponentResourceManager(typeof(Features));
             this.barcode1 = new Wisej.Web.Ext.Barcode.Barcode();
             this.checkBoxLabel = new Wisej.Web.CheckBox();
             this.comboBoxBarcodeType = new Wisej.Web.ComboBox();

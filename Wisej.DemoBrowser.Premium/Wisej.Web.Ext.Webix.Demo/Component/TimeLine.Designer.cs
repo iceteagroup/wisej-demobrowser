@@ -28,7 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TimeLine));
+            Wisej.Resources.ComponentResourceManager resources = new Wisej.Resources.ComponentResourceManager(typeof(TimeLine));
             this.timeLine1 = new Wisej.Web.Ext.Webix.TimeLine();
             this.comboBoxLayout = new Wisej.Web.ComboBox();
             this.groupBox1.SuspendLayout();

@@ -28,7 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ejListView));
+			Wisej.Resources.ComponentResourceManager resources = new Wisej.Resources.ComponentResourceManager(typeof(ejListView));
 			this.ejListView1 = new Wisej.Web.Ext.Syncfusion.ejListView();
 			this.textBoxAddNewItem = new Wisej.Web.TextBox();
 			this.buttonAddNewItem = new Wisej.Web.Button();

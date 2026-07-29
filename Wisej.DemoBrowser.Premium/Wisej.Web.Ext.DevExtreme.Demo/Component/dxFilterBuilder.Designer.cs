@@ -28,7 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(dxFilterBuilder));
+            Wisej.Resources.ComponentResourceManager resources = new Wisej.Resources.ComponentResourceManager(typeof(dxFilterBuilder));
             this.dxFilterBuilder1 = new Wisej.Web.Ext.DevExtreme.dxFilterBuilder();
             this.buttonGetFilterExpression = new Wisej.Web.Button();
             this.tagTextBoxGroupOperation = new Wisej.Web.TagTextBox();

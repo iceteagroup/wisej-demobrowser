@@ -28,7 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Features));
+            Wisej.Resources.ComponentResourceManager resources = new Wisej.Resources.ComponentResourceManager(typeof(Features));
             this.listBoxDefaultCities = new Wisej.Web.ListBox();
             this.listBoxHtml = new Wisej.Web.ListBox();
             this.listBoxSpacing = new Wisej.Web.ListBox();

@@ -29,7 +29,7 @@ namespace Wisej.DemoBrowser.Common
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DemoView));
+            Wisej.Resources.ComponentResourceManager resources = new Wisej.Resources.ComponentResourceManager(typeof(DemoView));
             this.SuspendLayout();
             // 
             // DemoView

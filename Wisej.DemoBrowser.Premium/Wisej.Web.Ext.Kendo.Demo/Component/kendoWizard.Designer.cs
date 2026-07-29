@@ -29,7 +29,7 @@ namespace Wisej.Web.Ext.Kendo.Demo.Component
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(kendoWizard));
+			Wisej.Resources.ComponentResourceManager resources = new Wisej.Resources.ComponentResourceManager(typeof(kendoWizard));
 			Wisej.Web.Ext.Kendo.kendoBase.WidgetFunction widgetFunction1 = new Wisej.Web.Ext.Kendo.kendoBase.WidgetFunction();
 			Wisej.Web.Ext.Kendo.kendoBase.WidgetFunction widgetFunction2 = new Wisej.Web.Ext.Kendo.kendoBase.WidgetFunction();
 			Wisej.Web.Ext.Kendo.kendoBase.WidgetFunction widgetFunction3 = new Wisej.Web.Ext.Kendo.kendoBase.WidgetFunction();

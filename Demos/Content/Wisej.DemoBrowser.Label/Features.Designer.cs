@@ -29,7 +29,7 @@
 		private void InitializeComponent()
 		{
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Features));
+            Wisej.Resources.ComponentResourceManager resources = new Wisej.Resources.ComponentResourceManager(typeof(Features));
             this.lblAutoElipses = new Wisej.Web.Label();
             this.tabOrderManager1 = new Wisej.Web.TabOrderManager(this.components);
             this.lblRegular = new Wisej.Web.Label();

@@ -28,7 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ListBox));
+			Wisej.Resources.ComponentResourceManager resources = new Wisej.Resources.ComponentResourceManager(typeof(ListBox));
 			this.listBox1 = new Wisej.Web.Ext.Syncfusion2.ListBox();
 			this.checkBoxDragAndDrop = new Wisej.Web.CheckBox();
 			this.checkBoxFiltering = new Wisej.Web.CheckBox();

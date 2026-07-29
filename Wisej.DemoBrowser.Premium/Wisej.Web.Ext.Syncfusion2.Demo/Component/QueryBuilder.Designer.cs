@@ -28,7 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(QueryBuilder));
+			Wisej.Resources.ComponentResourceManager resources = new Wisej.Resources.ComponentResourceManager(typeof(QueryBuilder));
 			this.queryBuilder1 = new Wisej.Web.Ext.Syncfusion2.QueryBuilder();
 			this.button1 = new Wisej.Web.Button();
 			this.groupBox1.SuspendLayout();

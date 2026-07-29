@@ -28,7 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Features));
+            Wisej.Resources.ComponentResourceManager resources = new Wisej.Resources.ComponentResourceManager(typeof(Features));
             this.listViewDemo = new Wisej.Web.ListView();
             this.columnHeader7 = new Wisej.Web.ColumnHeader();
             this.columnHeader8 = new Wisej.Web.ColumnHeader();

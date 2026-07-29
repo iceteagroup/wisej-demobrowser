@@ -28,7 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Features));
+            Wisej.Resources.ComponentResourceManager resources = new Wisej.Resources.ComponentResourceManager(typeof(Features));
             this.button1 = new Wisej.Web.Button();
             this.buttonAlignments = new Wisej.Web.Button();
             this.buttonAutoCloseDelay = new Wisej.Web.Button();

@@ -28,7 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu));
+			Wisej.Resources.ComponentResourceManager resources = new Wisej.Resources.ComponentResourceManager(typeof(Menu));
 			this.menu1 = new Wisej.Web.Ext.Syncfusion2.Menu();
 			this.comboBoxOrientation = new Wisej.Web.ComboBox();
 			this.groupBox1.SuspendLayout();

@@ -28,7 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(kendoLinearGauge));
+			Wisej.Resources.ComponentResourceManager resources = new Wisej.Resources.ComponentResourceManager(typeof(kendoLinearGauge));
 			this.kendoLinearGauge1 = new Wisej.Web.Ext.Kendo.kendoLinearGauge();
 			this.numericUpDown1 = new Wisej.Web.NumericUpDown();
 			this.button1 = new Wisej.Web.Button();

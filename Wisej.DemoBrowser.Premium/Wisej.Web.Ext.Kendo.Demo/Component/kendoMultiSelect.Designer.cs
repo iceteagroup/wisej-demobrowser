@@ -28,7 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(kendoMultiSelect));
+			Wisej.Resources.ComponentResourceManager resources = new Wisej.Resources.ComponentResourceManager(typeof(kendoMultiSelect));
 			this.kendoMultiSelect1 = new Wisej.Web.Ext.Kendo.kendoMultiSelect();
 			this.checkBoxAutoClose = new Wisej.Web.CheckBox();
 			this.tagTextBoxDataSource = new Wisej.Web.TagTextBox();

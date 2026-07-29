@@ -28,7 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Features));
+            Wisej.Resources.ComponentResourceManager resources = new Wisej.Resources.ComponentResourceManager(typeof(Features));
             this.knob1 = new Wisej.Web.Ext.jQueryKnob.Knob();
             this.numericUpDownValue = new Wisej.Web.NumericUpDown();
             this.comboBoxKnobType = new Wisej.Web.ComboBox();

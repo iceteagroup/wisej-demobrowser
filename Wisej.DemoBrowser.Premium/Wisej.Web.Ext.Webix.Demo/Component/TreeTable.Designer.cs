@@ -28,7 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TreeTable));
+            Wisej.Resources.ComponentResourceManager resources = new Wisej.Resources.ComponentResourceManager(typeof(TreeTable));
             this.treeTable1 = new Wisej.Web.Ext.Webix.TreeTable();
             this.checkBoxEditable = new Wisej.Web.CheckBox();
             this.comboBoxEditaction = new Wisej.Web.ComboBox();

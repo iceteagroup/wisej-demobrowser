@@ -29,7 +29,7 @@
 		private void InitializeComponent()
 		{
 			this.components = new System.ComponentModel.Container();
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HeatMap));
+			Wisej.Resources.ComponentResourceManager resources = new Wisej.Resources.ComponentResourceManager(typeof(HeatMap));
 			this.heatMap1 = new Wisej.Web.Ext.Syncfusion2.HeatMap();
 			this.checkBoxSelection = new Wisej.Web.CheckBox();
 			this.colorDialogFrom = new Wisej.Web.ColorDialog(this.components);

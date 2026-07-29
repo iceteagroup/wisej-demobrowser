@@ -28,7 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Features));
+            Wisej.Resources.ComponentResourceManager resources = new Wisej.Resources.ComponentResourceManager(typeof(Features));
             this.radioButton1 = new Wisej.Web.RadioButton();
             this.groupBox1 = new Wisej.Web.GroupBox();
             this.radioButton4 = new Wisej.Web.RadioButton();

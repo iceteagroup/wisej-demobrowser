@@ -28,7 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Features));
+            Wisej.Resources.ComponentResourceManager resources = new Wisej.Resources.ComponentResourceManager(typeof(Features));
             this.trackBarDefault = new Wisej.Web.TrackBar();
             this.label1 = new Wisej.Web.Label();
             this.label2 = new Wisej.Web.Label();

@@ -28,7 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DocumentEditor));
+            Wisej.Resources.ComponentResourceManager resources = new Wisej.Resources.ComponentResourceManager(typeof(DocumentEditor));
             this.documentEditor1 = new Wisej.Web.Ext.Syncfusion2.DocumentEditor();
             this.buttonSave = new Wisej.Web.Button();
             this.comboBoxDataSource = new Wisej.Web.ComboBox();

@@ -28,7 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(kendoFileManager));
+			Wisej.Resources.ComponentResourceManager resources = new Wisej.Resources.ComponentResourceManager(typeof(kendoFileManager));
 			this.kendoFileManager1 = new Wisej.Web.Ext.Kendo.kendoFileManager();
 			this.checkBoxContextMenu = new Wisej.Web.CheckBox();
 			this.checkBoxBreadcrumb = new Wisej.Web.CheckBox();

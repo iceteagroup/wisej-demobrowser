@@ -28,7 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(kendoStepper));
+			Wisej.Resources.ComponentResourceManager resources = new Wisej.Resources.ComponentResourceManager(typeof(kendoStepper));
 			this.kendoStepper1 = new Wisej.Web.Ext.Kendo.kendoStepper();
 			this.buttonAddStep = new Wisej.Web.Button();
 			this.textBoxStepName = new Wisej.Web.TextBox();

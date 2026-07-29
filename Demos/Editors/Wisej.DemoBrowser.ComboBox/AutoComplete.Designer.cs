@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AutoComplete));
+            Wisej.Resources.ComponentResourceManager resources = new Wisej.Resources.ComponentResourceManager(typeof(AutoComplete));
             this.comboBox1 = new Wisej.Web.ComboBox();
             this.comboBoxAutoCompleteMode = new Wisej.Web.ComboBox();
             this.comboBoxDropDownStyle = new Wisej.Web.ComboBox();

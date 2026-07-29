@@ -28,7 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ejTagCloud));
+			Wisej.Resources.ComponentResourceManager resources = new Wisej.Resources.ComponentResourceManager(typeof(ejTagCloud));
 			this.ejTagCloud1 = new Wisej.Web.Ext.Syncfusion.ejTagCloud();
 			this.numericUpDownMinimumFontSize = new Wisej.Web.NumericUpDown();
 			this.numericUpDownMaximumFontSize = new Wisej.Web.NumericUpDown();

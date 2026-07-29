@@ -28,7 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(kendoTreeList));
+			Wisej.Resources.ComponentResourceManager resources = new Wisej.Resources.ComponentResourceManager(typeof(kendoTreeList));
 			Wisej.Web.Ext.Kendo.kendoBase.WidgetFunction widgetFunction1 = new Wisej.Web.Ext.Kendo.kendoBase.WidgetFunction();
 			Wisej.Web.Ext.Kendo.kendoBase.WidgetTemplate widgetTemplate1 = new Wisej.Web.Ext.Kendo.kendoBase.WidgetTemplate();
 			this.kendoTreeList1 = new Wisej.Web.Ext.Kendo.kendoTreeList();

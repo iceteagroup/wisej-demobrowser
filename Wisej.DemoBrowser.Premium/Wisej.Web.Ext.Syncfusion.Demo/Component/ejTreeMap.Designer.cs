@@ -28,7 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ejTreeMap));
+			Wisej.Resources.ComponentResourceManager resources = new Wisej.Resources.ComponentResourceManager(typeof(ejTreeMap));
 			Wisej.Web.Ext.Syncfusion.ejBase.WidgetTemplate widgetTemplate1 = new Wisej.Web.Ext.Syncfusion.ejBase.WidgetTemplate();
 			Wisej.Web.Ext.Syncfusion.ejBase.WidgetTemplate widgetTemplate2 = new Wisej.Web.Ext.Syncfusion.ejBase.WidgetTemplate();
 			Wisej.Web.Ext.Syncfusion.ejBase.WidgetTemplate widgetTemplate3 = new Wisej.Web.Ext.Syncfusion.ejBase.WidgetTemplate();

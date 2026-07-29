@@ -28,7 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(igZoombar));
+			Wisej.Resources.ComponentResourceManager resources = new Wisej.Resources.ComponentResourceManager(typeof(igZoombar));
 			this.panel1 = new Wisej.Web.Panel();
 			this.numericUpDown1 = new Wisej.Web.NumericUpDown();
 			this.numericUpDown2 = new Wisej.Web.NumericUpDown();

@@ -28,7 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ejComboBox));
+			Wisej.Resources.ComponentResourceManager resources = new Wisej.Resources.ComponentResourceManager(typeof(ejComboBox));
 			this.ejComboBox1 = new Wisej.Web.Ext.Syncfusion.ejComboBox();
 			this.checkBoxAutofill = new Wisej.Web.CheckBox();
 			this.checkBoxShowClearButton = new Wisej.Web.CheckBox();

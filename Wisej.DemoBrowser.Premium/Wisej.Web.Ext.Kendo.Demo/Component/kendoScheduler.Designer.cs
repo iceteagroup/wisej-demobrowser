@@ -28,7 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(kendoScheduler));
+			Wisej.Resources.ComponentResourceManager resources = new Wisej.Resources.ComponentResourceManager(typeof(kendoScheduler));
 			this.checkBoxAllDay = new Wisej.Web.CheckBox();
 			this.checkBoxEditable = new Wisej.Web.CheckBox();
 			this.checkBoxShowWorkHours = new Wisej.Web.CheckBox();

@@ -29,7 +29,7 @@
 		private void InitializeComponent()
 		{
             Wisej.Web.Ext.Ignite.igBase.WidgetFunction widgetFunction1 = new Wisej.Web.Ext.Ignite.igBase.WidgetFunction();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(igFinancialChart));
+            Wisej.Resources.ComponentResourceManager resources = new Wisej.Resources.ComponentResourceManager(typeof(igFinancialChart));
             this.igFinancialChart1 = new Wisej.Web.Ext.Ignite.igFinancialChart();
             this.comboBox1 = new Wisej.Web.ComboBox();
             this.comboBox2 = new Wisej.Web.ComboBox();

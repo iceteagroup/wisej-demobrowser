@@ -28,7 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ejAutocomplete));
+			Wisej.Resources.ComponentResourceManager resources = new Wisej.Resources.ComponentResourceManager(typeof(ejAutocomplete));
 			this.ejAutocomplete1 = new Wisej.Web.Ext.Syncfusion.ejAutocomplete();
 			this.button1 = new Wisej.Web.Button();
 			this.checkBox1 = new Wisej.Web.CheckBox();

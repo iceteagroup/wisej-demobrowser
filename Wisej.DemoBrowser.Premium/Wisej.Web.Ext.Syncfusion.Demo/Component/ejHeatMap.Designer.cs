@@ -28,7 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ejHeatMap));
+			Wisej.Resources.ComponentResourceManager resources = new Wisej.Resources.ComponentResourceManager(typeof(ejHeatMap));
 			this.ejHeatMap1 = new Wisej.Web.Ext.Syncfusion.ejHeatMap();
 			this.ejHeatMapLegend1 = new Wisej.Web.Ext.Syncfusion.ejHeatMapLegend();
 			this.groupBox1.SuspendLayout();

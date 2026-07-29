@@ -28,7 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PivotView));
+			Wisej.Resources.ComponentResourceManager resources = new Wisej.Resources.ComponentResourceManager(typeof(PivotView));
 			this.pivotView1 = new Wisej.Web.Ext.Syncfusion2.PivotView();
 			this.checkBoxRemoveIcon = new Wisej.Web.CheckBox();
 			this.checkBoxValueTypeIcon = new Wisej.Web.CheckBox();

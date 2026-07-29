@@ -28,7 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Sparkline));
+			Wisej.Resources.ComponentResourceManager resources = new Wisej.Resources.ComponentResourceManager(typeof(Sparkline));
 			this.sparkline1 = new Wisej.Web.Ext.Syncfusion2.Sparkline();
 			this.comboBox1 = new Wisej.Web.ComboBox();
 			this.groupBox1.SuspendLayout();

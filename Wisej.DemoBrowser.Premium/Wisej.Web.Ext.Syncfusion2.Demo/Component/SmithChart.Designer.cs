@@ -28,7 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SmithChart));
+			Wisej.Resources.ComponentResourceManager resources = new Wisej.Resources.ComponentResourceManager(typeof(SmithChart));
 			this.smithChart1 = new Wisej.Web.Ext.Syncfusion2.SmithChart();
 			this.checkBoxMarkerVisible = new Wisej.Web.CheckBox();
 			this.comboBoxShapeType = new Wisej.Web.ComboBox();

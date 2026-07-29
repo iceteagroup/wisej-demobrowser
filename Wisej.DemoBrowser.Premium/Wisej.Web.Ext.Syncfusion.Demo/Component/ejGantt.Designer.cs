@@ -28,7 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ejGantt));
+			Wisej.Resources.ComponentResourceManager resources = new Wisej.Resources.ComponentResourceManager(typeof(ejGantt));
 			this.ejGantt1 = new Wisej.Web.Ext.Syncfusion.ejGantt();
 			this.textBox1 = new Wisej.Web.TextBox();
 			this.checkBox1 = new Wisej.Web.CheckBox();

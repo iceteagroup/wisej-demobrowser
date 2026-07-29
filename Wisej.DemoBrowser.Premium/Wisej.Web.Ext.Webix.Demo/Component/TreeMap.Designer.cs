@@ -28,7 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TreeMap));
+            Wisej.Resources.ComponentResourceManager resources = new Wisej.Resources.ComponentResourceManager(typeof(TreeMap));
             this.treeMap1 = new Wisej.Web.Ext.Webix.TreeMap();
             this.checkBoxEnableSelect = new Wisej.Web.CheckBox();
             this.checkBoxEnableMultiSelect = new Wisej.Web.CheckBox();

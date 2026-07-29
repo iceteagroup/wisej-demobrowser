@@ -28,7 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(igRating));
+			Wisej.Resources.ComponentResourceManager resources = new Wisej.Resources.ComponentResourceManager(typeof(igRating));
 			this.igRating1 = new Wisej.Web.Ext.Ignite.igRating();
 			this.numericUpDown1 = new Wisej.Web.NumericUpDown();
 			this.pictureBox1 = new Wisej.Web.PictureBox();

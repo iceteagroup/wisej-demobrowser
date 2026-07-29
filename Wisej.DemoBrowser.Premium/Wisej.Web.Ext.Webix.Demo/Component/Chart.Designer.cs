@@ -28,7 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Chart));
+            Wisej.Resources.ComponentResourceManager resources = new Wisej.Resources.ComponentResourceManager(typeof(Chart));
             this.chart1 = new Wisej.Web.Ext.Webix.Chart();
             this.comboBoxChartType = new Wisej.Web.ComboBox();
             this.groupBox1.SuspendLayout();

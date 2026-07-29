@@ -28,7 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Features));
+			Wisej.Resources.ComponentResourceManager resources = new Wisej.Resources.ComponentResourceManager(typeof(Features));
 			this.ckEditor1 = new Wisej.Web.Ext.CKEditor.CKEditor();
 			this.checkBoxToolbar = new Wisej.Web.CheckBox();
 			this.checkBoxFooter = new Wisej.Web.CheckBox();

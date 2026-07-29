@@ -28,7 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(kendoTreeMap));
+			Wisej.Resources.ComponentResourceManager resources = new Wisej.Resources.ComponentResourceManager(typeof(kendoTreeMap));
 			this.kendoTreeMap1 = new Wisej.Web.Ext.Kendo.kendoTreeMap();
 			this.comboBoxType = new Wisej.Web.ComboBox();
 			this.checkedListBoxColors = new Wisej.Web.CheckedListBox();

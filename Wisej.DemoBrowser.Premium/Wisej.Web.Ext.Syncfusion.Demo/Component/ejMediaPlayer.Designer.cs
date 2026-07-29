@@ -28,7 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ejMediaPlayer));
+            Wisej.Resources.ComponentResourceManager resources = new Wisej.Resources.ComponentResourceManager(typeof(ejMediaPlayer));
             this.ejMediaPlayer1 = new Wisej.Web.Ext.Syncfusion.ejMediaPlayer();
             this.flowLayoutPanel1 = new Wisej.Web.FlowLayoutPanel();
             this.buttonPlay = new Wisej.Web.Button();

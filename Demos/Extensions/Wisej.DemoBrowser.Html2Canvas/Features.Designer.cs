@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Features));
+            Wisej.Resources.ComponentResourceManager resources = new Wisej.Resources.ComponentResourceManager(typeof(Features));
             this.pnlDemo = new Wisej.Web.Panel();
             this.htmlPanel = new Wisej.Web.HtmlPanel();
             this.chartJS = new Wisej.Web.Ext.ChartJS.ChartJS();

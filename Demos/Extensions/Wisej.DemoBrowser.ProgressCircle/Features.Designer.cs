@@ -28,7 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Features));
+            Wisej.Resources.ComponentResourceManager resources = new Wisej.Resources.ComponentResourceManager(typeof(Features));
             this.progressCircle1 = new Wisej.Web.Ext.ProgressCircle.ProgressCircle();
             this.checkBoxShowValue = new Wisej.Web.CheckBox();
             this.checkBoxFill = new Wisej.Web.CheckBox();

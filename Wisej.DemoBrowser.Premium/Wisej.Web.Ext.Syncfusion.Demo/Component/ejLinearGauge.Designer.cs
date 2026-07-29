@@ -28,7 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ejLinearGauge));
+			Wisej.Resources.ComponentResourceManager resources = new Wisej.Resources.ComponentResourceManager(typeof(ejLinearGauge));
 			this.ejLinearGauge1 = new Wisej.Web.Ext.Syncfusion.ejLinearGauge();
 			this.numericUpDownVal = new Wisej.Web.NumericUpDown();
 			this.comboBoxOrientation = new Wisej.Web.ComboBox();

@@ -28,7 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ejTreeView));
+			Wisej.Resources.ComponentResourceManager resources = new Wisej.Resources.ComponentResourceManager(typeof(ejTreeView));
 			this.ejTreeView1 = new Wisej.Web.Ext.Syncfusion.ejTreeView();
 			this.checkBox1 = new Wisej.Web.CheckBox();
 			this.buttonGetCheckedNodes = new Wisej.Web.Button();

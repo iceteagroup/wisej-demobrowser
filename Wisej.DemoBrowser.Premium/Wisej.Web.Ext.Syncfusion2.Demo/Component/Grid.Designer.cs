@@ -28,7 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Grid));
+            Wisej.Resources.ComponentResourceManager resources = new Wisej.Resources.ComponentResourceManager(typeof(Grid));
             this.grid1 = new Wisej.Web.Ext.Syncfusion2.Grid();
             this.checkBoxGrouping = new Wisej.Web.CheckBox();
             this.checkBoxReordering = new Wisej.Web.CheckBox();

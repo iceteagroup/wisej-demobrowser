@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HotSpots));
+            Wisej.Resources.ComponentResourceManager resources = new Wisej.Resources.ComponentResourceManager(typeof(HotSpots));
             this.pannellum = new Wisej.Web.Ext.Pannellum.Pannellum();
             this.SuspendLayout();
             // 

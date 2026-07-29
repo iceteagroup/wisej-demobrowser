@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Features));
+            Wisej.Resources.ComponentResourceManager resources = new Wisej.Resources.ComponentResourceManager(typeof(Features));
             this.nudMaxVal = new Wisej.Web.NumericUpDown();
             this.nudMinVal = new Wisej.Web.NumericUpDown();
             this.chkGradient = new Wisej.Web.CheckBox();

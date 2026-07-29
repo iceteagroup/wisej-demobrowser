@@ -28,7 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ejTile));
+			Wisej.Resources.ComponentResourceManager resources = new Wisej.Resources.ComponentResourceManager(typeof(ejTile));
 			this.flowLayoutPanel1 = new Wisej.Web.FlowLayoutPanel();
 			this.ejTile2 = new Wisej.Web.Ext.Syncfusion.ejTile();
 			this.ejTile4 = new Wisej.Web.Ext.Syncfusion.ejTile();

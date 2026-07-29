@@ -28,7 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ejRating));
+            Wisej.Resources.ComponentResourceManager resources = new Wisej.Resources.ComponentResourceManager(typeof(ejRating));
             this.tabControl1 = new Wisej.Web.TabControl();
             this.tabPage1 = new Wisej.Web.TabPage();
             this.pictureBox1 = new Wisej.Web.PictureBox();

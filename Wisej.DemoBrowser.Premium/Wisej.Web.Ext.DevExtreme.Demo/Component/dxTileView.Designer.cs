@@ -29,7 +29,7 @@
 		private void InitializeComponent()
 		{
             Wisej.Web.Ext.DevExtreme.dxBase.WidgetEventHandler widgetEventHandler1 = new Wisej.Web.Ext.DevExtreme.dxBase.WidgetEventHandler();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(dxTileView));
+            Wisej.Resources.ComponentResourceManager resources = new Wisej.Resources.ComponentResourceManager(typeof(dxTileView));
             this.dxTileView1 = new Wisej.Web.Ext.DevExtreme.dxTileView();
             this.numericUpDownItemMargin = new Wisej.Web.NumericUpDown();
             this.numericUpDownBaseItemHeight = new Wisej.Web.NumericUpDown();

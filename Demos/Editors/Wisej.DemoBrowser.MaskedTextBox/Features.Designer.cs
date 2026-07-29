@@ -28,7 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Features));
+            Wisej.Resources.ComponentResourceManager resources = new Wisej.Resources.ComponentResourceManager(typeof(Features));
             this.maskedTextBox1 = new Wisej.Web.MaskedTextBox();
             this.maskedTextBox2 = new Wisej.Web.MaskedTextBox();
             this.maskedTextBox3 = new Wisej.Web.MaskedTextBox();

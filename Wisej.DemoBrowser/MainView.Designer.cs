@@ -30,7 +30,7 @@ namespace Wisej.DemoBrowser
         private void InitializeComponent()
         {
 			this.components = new System.ComponentModel.Container();
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainView));
+			Wisej.Resources.ComponentResourceManager resources = new Wisej.Resources.ComponentResourceManager(typeof(MainView));
 			Wisej.Web.ComponentTool componentTool1 = new Wisej.Web.ComponentTool();
 			Wisej.Web.ComponentTool componentTool2 = new Wisej.Web.ComponentTool();
 			Wisej.Web.ComponentTool componentTool3 = new Wisej.Web.ComponentTool();

@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Features));
+            Wisej.Resources.ComponentResourceManager resources = new Wisej.Resources.ComponentResourceManager(typeof(Features));
             this.panel1 = new Wisej.Web.Panel();
             this.personCard1 = new Wisej.DemoBrowser.PropertyGrid.PersonCard();
             this.propertyGrid1 = new Wisej.Web.PropertyGrid();

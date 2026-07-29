@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Spreadsheet));
+            Wisej.Resources.ComponentResourceManager resources = new Wisej.Resources.ComponentResourceManager(typeof(Spreadsheet));
             this.spreadsheet1 = new Wisej.Web.Ext.Webix.Spreadsheet();
             this.checkBoxEnableFull = new Wisej.Web.CheckBox();
             this.checkBoxClipboard = new Wisej.Web.CheckBox();

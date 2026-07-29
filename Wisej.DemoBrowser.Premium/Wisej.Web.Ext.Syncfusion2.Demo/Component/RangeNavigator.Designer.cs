@@ -28,7 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RangeNavigator));
+			Wisej.Resources.ComponentResourceManager resources = new Wisej.Resources.ComponentResourceManager(typeof(RangeNavigator));
 			this.rangeNavigator1 = new Wisej.Web.Ext.Syncfusion2.RangeNavigator();
 			this.groupBox1.SuspendLayout();
 			this.panel.SuspendLayout();

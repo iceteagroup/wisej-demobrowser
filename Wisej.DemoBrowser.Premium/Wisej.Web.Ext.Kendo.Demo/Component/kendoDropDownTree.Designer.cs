@@ -28,7 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(kendoDropDownTree));
+			Wisej.Resources.ComponentResourceManager resources = new Wisej.Resources.ComponentResourceManager(typeof(kendoDropDownTree));
 			this.checkBoxCheckBoxes = new Wisej.Web.CheckBox();
 			this.checkBoxCheckAll = new Wisej.Web.CheckBox();
 			this.comboBoxTagMode = new Wisej.Web.ComboBox();

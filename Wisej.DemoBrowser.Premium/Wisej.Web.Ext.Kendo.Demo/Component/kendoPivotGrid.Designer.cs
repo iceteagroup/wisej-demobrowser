@@ -28,7 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(kendoPivotGrid));
+			Wisej.Resources.ComponentResourceManager resources = new Wisej.Resources.ComponentResourceManager(typeof(kendoPivotGrid));
 			this.checkBoxReorderable = new Wisej.Web.CheckBox();
 			this.checkBoxFilterable = new Wisej.Web.CheckBox();
 			this.checkBoxSortable = new Wisej.Web.CheckBox();

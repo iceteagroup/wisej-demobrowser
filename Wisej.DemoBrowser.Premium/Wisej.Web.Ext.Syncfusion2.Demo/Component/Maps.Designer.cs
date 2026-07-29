@@ -29,7 +29,7 @@
 		private void InitializeComponent()
 		{
 			Wisej.Web.Ext.Syncfusion2.ej2Base.WidgetTemplate widgetTemplate1 = new Wisej.Web.Ext.Syncfusion2.ej2Base.WidgetTemplate();
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Maps));
+			Wisej.Resources.ComponentResourceManager resources = new Wisej.Resources.ComponentResourceManager(typeof(Maps));
 			this.maps1 = new Wisej.Web.Ext.Syncfusion2.Maps();
 			this.buttonAddMarker = new Wisej.Web.Button();
 			this.buttonPrint = new Wisej.Web.Button();

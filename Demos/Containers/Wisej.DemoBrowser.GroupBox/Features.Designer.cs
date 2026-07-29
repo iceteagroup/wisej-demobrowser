@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Features));
+            Wisej.Resources.ComponentResourceManager resources = new Wisej.Resources.ComponentResourceManager(typeof(Features));
             this.grpCollapsible = new Wisej.Web.GroupBox();
             this.buttonTask = new Wisej.Web.Button();
             this.label1 = new Wisej.Web.Label();

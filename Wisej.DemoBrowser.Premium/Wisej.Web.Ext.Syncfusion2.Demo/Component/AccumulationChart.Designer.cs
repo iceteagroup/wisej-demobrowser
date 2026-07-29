@@ -28,7 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AccumulationChart));
+            Wisej.Resources.ComponentResourceManager resources = new Wisej.Resources.ComponentResourceManager(typeof(AccumulationChart));
             this.accumulationChart1 = new Wisej.Web.Ext.Syncfusion2.AccumulationChart();
             this.textBoxTitle = new Wisej.Web.TextBox();
             this.textBoxSubTitle = new Wisej.Web.TextBox();

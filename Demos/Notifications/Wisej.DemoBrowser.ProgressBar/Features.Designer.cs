@@ -28,7 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Features));
+            Wisej.Resources.ComponentResourceManager resources = new Wisej.Resources.ComponentResourceManager(typeof(Features));
             this.progressBar1 = new Wisej.Web.ProgressBar();
             this.progressBar2 = new Wisej.Web.ProgressBar();
             this.progressBarSteps = new Wisej.Web.ProgressBar();

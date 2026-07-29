@@ -28,7 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GroupList));
+            Wisej.Resources.ComponentResourceManager resources = new Wisej.Resources.ComponentResourceManager(typeof(GroupList));
             this.groupList1 = new Wisej.Web.Ext.Webix.GroupList();
             this.checkBoxEnableSelect = new Wisej.Web.CheckBox();
             this.checkBoxEnableDragAndDrop = new Wisej.Web.CheckBox();

@@ -28,7 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(kendoTreeView));
+			Wisej.Resources.ComponentResourceManager resources = new Wisej.Resources.ComponentResourceManager(typeof(kendoTreeView));
 			this.kendoTreeView1 = new Wisej.Web.Ext.Kendo.kendoTreeView();
 			this.checkBoxAllowDragAndDrop = new Wisej.Web.CheckBox();
 			this.checkBoxShowcheckboxes = new Wisej.Web.CheckBox();

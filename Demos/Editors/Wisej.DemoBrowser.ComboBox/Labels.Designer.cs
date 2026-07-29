@@ -28,7 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Labels));
+            Wisej.Resources.ComponentResourceManager resources = new Wisej.Resources.ComponentResourceManager(typeof(Labels));
             this.comboBox1 = new Wisej.Web.ComboBox();
             this.comboBox2 = new Wisej.Web.ComboBox();
             this.comboBox3 = new Wisej.Web.ComboBox();

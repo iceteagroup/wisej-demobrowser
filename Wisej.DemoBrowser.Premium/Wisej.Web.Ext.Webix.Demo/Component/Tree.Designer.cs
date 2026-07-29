@@ -28,7 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Tree));
+            Wisej.Resources.ComponentResourceManager resources = new Wisej.Resources.ComponentResourceManager(typeof(Tree));
             this.tree1 = new Wisej.Web.Ext.Webix.Tree();
             this.checkBoxDragScroll = new Wisej.Web.CheckBox();
             this.checkBoxMultiSelect = new Wisej.Web.CheckBox();

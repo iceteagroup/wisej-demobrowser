@@ -28,7 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Features));
+			Wisej.Resources.ComponentResourceManager resources = new Wisej.Resources.ComponentResourceManager(typeof(Features));
 			this.buttonKendo = new Wisej.Web.Button();
 			this.pictureBox1 = new Wisej.Web.PictureBox();
 			this.flowLayoutPanel1 = new Wisej.Web.FlowLayoutPanel();

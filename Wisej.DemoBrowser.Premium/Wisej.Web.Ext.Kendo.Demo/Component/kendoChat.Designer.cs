@@ -30,7 +30,7 @@
 		{
             this.components = new System.ComponentModel.Container();
             Wisej.Web.Ext.Kendo.kendoBase.WidgetFunction widgetFunction1 = new Wisej.Web.Ext.Kendo.kendoBase.WidgetFunction();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(kendoChat));
+            Wisej.Resources.ComponentResourceManager resources = new Wisej.Resources.ComponentResourceManager(typeof(kendoChat));
             this.buttonGetUser = new Wisej.Web.Button();
             this.buttonApplyColor = new Wisej.Web.Button();
             this.colorDialog1 = new Wisej.Web.ColorDialog(this.components);

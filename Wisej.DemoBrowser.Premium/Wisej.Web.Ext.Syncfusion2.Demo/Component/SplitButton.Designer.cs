@@ -28,7 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SplitButton));
+			Wisej.Resources.ComponentResourceManager resources = new Wisej.Resources.ComponentResourceManager(typeof(SplitButton));
 			this.splitButton1 = new Wisej.Web.Ext.Syncfusion2.SplitButton();
 			this.checkBoxDisabled = new Wisej.Web.CheckBox();
 			this.groupBox1.SuspendLayout();

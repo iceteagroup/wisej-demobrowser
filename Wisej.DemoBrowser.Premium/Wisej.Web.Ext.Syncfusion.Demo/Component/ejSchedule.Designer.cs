@@ -28,7 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ejSchedule));
+			Wisej.Resources.ComponentResourceManager resources = new Wisej.Resources.ComponentResourceManager(typeof(ejSchedule));
 			this.ejSchedule1 = new Wisej.Web.Ext.Syncfusion.ejSchedule();
 			this.comboBox1 = new Wisej.Web.ComboBox();
 			this.comboBox2 = new Wisej.Web.ComboBox();

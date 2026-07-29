@@ -28,7 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DropDownList));
+            Wisej.Resources.ComponentResourceManager resources = new Wisej.Resources.ComponentResourceManager(typeof(DropDownList));
             this.tagTextBoxDataSource = new Wisej.Web.TagTextBox();
             this.checkBoxSearchable = new Wisej.Web.CheckBox();
             this.comboBoxSortOrder = new Wisej.Web.ComboBox();

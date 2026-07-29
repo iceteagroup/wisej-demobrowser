@@ -28,7 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(kendoDiagram));
+			Wisej.Resources.ComponentResourceManager resources = new Wisej.Resources.ComponentResourceManager(typeof(kendoDiagram));
 			this.kendoDiagram1 = new Wisej.Web.Ext.Kendo.kendoDiagram();
 			this.buttonExport = new Wisej.Web.Button();
 			this.comboBox1 = new Wisej.Web.ComboBox();

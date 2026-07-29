@@ -28,7 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard));
+            Wisej.Resources.ComponentResourceManager resources = new Wisej.Resources.ComponentResourceManager(typeof(Dashboard));
             this.dashboard1 = new Wisej.Web.Ext.Webix.Dashboard();
             this.groupBox1.SuspendLayout();
             this.panel.SuspendLayout();

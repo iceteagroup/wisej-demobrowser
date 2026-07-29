@@ -28,7 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Features));
+            Wisej.Resources.ComponentResourceManager resources = new Wisej.Resources.ComponentResourceManager(typeof(Features));
             this.contextMenuButton = new Wisej.Web.ContextMenu();
             this.menuItem1 = new Wisej.Web.MenuItem();
             this.menuItem2 = new Wisej.Web.MenuItem();

@@ -28,7 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ejCircularGauge));
+            Wisej.Resources.ComponentResourceManager resources = new Wisej.Resources.ComponentResourceManager(typeof(ejCircularGauge));
             this.ejCircularGauge1 = new Wisej.Web.Ext.Syncfusion.ejCircularGauge();
             this.numericUpDownVal = new Wisej.Web.NumericUpDown();
             this.trackBarDistanceFromScale = new Wisej.Web.TrackBar();

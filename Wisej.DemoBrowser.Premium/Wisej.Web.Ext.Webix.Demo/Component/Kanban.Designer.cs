@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Kanban));
+            Wisej.Resources.ComponentResourceManager resources = new Wisej.Resources.ComponentResourceManager(typeof(Kanban));
             this.kanban1 = new Wisej.Web.Ext.Webix.Kanban();
             this.comboBoxType = new Wisej.Web.ComboBox();
             this.groupBox1.SuspendLayout();

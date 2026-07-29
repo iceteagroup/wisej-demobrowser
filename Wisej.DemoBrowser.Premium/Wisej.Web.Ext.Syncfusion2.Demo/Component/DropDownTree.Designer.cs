@@ -28,7 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DropDownTree));
+            Wisej.Resources.ComponentResourceManager resources = new Wisej.Resources.ComponentResourceManager(typeof(DropDownTree));
             this.dropDownTree1 = new Wisej.Web.Ext.Syncfusion2.DropDownTree();
             this.checkBoxFiltering = new Wisej.Web.CheckBox();
             this.checkBoxMultiSelection = new Wisej.Web.CheckBox();
