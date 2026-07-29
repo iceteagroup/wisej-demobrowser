@@ -39,10 +39,14 @@ BOOT_BUDGET_SECONDS = int(os.environ.get("BOOT_BUDGET_SECONDS", 600))
 # Hard ceiling Modal enforces on the sandbox process itself.
 SANDBOX_MAX_LIFETIME = 6 * 60 * 60
 
-# Age at which reap() kills a sandbox regardless of whether anyone is using it.
-# This is a cost ceiling, NOT inactivity shutdown - see reap() for why the
-# router cannot currently observe user activity at all.
-MAX_SANDBOX_AGE_SECONDS = int(os.environ.get("MAX_SANDBOX_AGE_SECONDS", 30 * 60))
+# reap() runs every minute, so this is "shut down after N minutes with zero
+# Wisej sessions". More than one poll so a momentary blip can't kill a preview
+# somebody is using.
+EMPTY_POLLS_BEFORE_REAP = int(os.environ.get("EMPTY_POLLS_BEFORE_REAP", 5))
+
+# Backstop for a sandbox that never reports zero - an app that cancels its
+# session timeout, or one whose status endpoint is unreachable.
+MAX_SANDBOX_AGE_SECONDS = int(os.environ.get("MAX_SANDBOX_AGE_SECONDS", 6 * 60 * 60))
 
 CPU = 2.0
 MEMORY_MB = 4096
@@ -81,39 +85,79 @@ def _probe(url: str, timeout: float = 5.0):
         return None
 
 
-@app.function(image=router_image, schedule=modal.Period(minutes=5), timeout=300)
+def _open_connections(sandbox_id: str):
+    """Count established TCP connections to the app port, from inside the box.
+
+    Deliberately asks the kernel rather than the application. The platform has
+    to work for any customer app exactly as it is - requiring each one to expose
+    a status endpoint would only ever work for apps that had agreed in advance.
+
+    /proc/net/tcp is read directly because the runtime image has neither ss nor
+    netstat. Columns are: sl, local_address, rem_address, st, ... - local
+    address is HEX_IP:HEX_PORT and st 01 is ESTABLISHED.
+
+    Returns None if the sandbox can't be reached, which means "unknown", not
+    "idle".
+    """
+    port_hex = f"{APP_PORT:04X}"
+    script = (
+        "cat /proc/net/tcp /proc/net/tcp6 2>/dev/null "
+        f"| awk '$4==\"01\" && $2 ~ /:{port_hex}$/' | wc -l"
+    )
+    try:
+        proc = modal.Sandbox.from_id(sandbox_id).exec("bash", "-c", script)
+        return int(proc.stdout.read().strip())
+    except Exception:  # noqa: BLE001 - treated as "don't know"
+        return None
+
+
+@app.function(image=router_image, schedule=modal.Period(minutes=1), timeout=300)
 def reap():
-    """Cost ceiling. NOT the inactivity shutdown the product needs.
+    """Shut the sandbox down once nobody has the app open.
 
-    Because the router redirects to the sandbox's own tunnel URL, it never sees
-    the traffic between a user and the app - `last_seen` only advances while the
-    loading page is polling. So there is currently no signal for "nobody has
-    used this in X minutes", and this reaper can only enforce a maximum age.
+    Uses open TCP connections to the app port as the idle signal. That is
+    deliberately generic: it works for any customer app, unmodified, with no
+    cooperation required. Anything that depends on the app exposing a status
+    endpoint only works for apps that opted in, which is not a platform.
 
-    Getting real inactivity shutdown needs one of:
-      * proxying the app through the router, so every request and WebSocket
-        frame is observable here, or
-      * a status endpoint in the Wisej app reporting activeSessions and
-        lastInteractionUtc, which this function would poll.
+    The tradeoff is honest: this measures "connected", not "interacting". A
+    parked browser tab keeps a WebSocket open and so keeps the preview alive.
+    That is the same semantics Fly and Koyeb use, and it is the right default -
+    it never kills a preview somebody still has on screen.
 
-    The second gives better data - actual user interaction rather than mere
-    connection liveness - but needs framework support.
+    A Wisej app could report Application.SessionCount for a sharper signal
+    (real sessions rather than sockets). That belongs in the framework, so
+    every app gets it, and would be an optional refinement here - never a
+    requirement.
+
+    Requires EMPTY_POLLS_BEFORE_REAP consecutive zero readings so a blip
+    doesn't kill a live preview. Unreachable means 'unknown', not 'idle'.
     """
     rec = state.get("sandbox") or {}
     if not rec.get("id"):
         return
 
     age = time.time() - rec.get("created_at", rec.get("started", time.time()))
-    if age < MAX_SANDBOX_AGE_SECONDS:
+    conns = _open_connections(rec["id"])
+
+    empty = state.get("empty_polls") or 0
+    empty = empty + 1 if conns == 0 else 0
+    state["empty_polls"] = empty
+
+    idle = empty >= EMPTY_POLLS_BEFORE_REAP
+    too_old = age > MAX_SANDBOX_AGE_SECONDS
+    if not (idle or too_old):
         return
 
+    reason = f"{empty} idle polls" if idle else f"age {age / 60:.0f} min"
     try:
         modal.Sandbox.from_id(rec["id"]).terminate()
-        print(f"reaped {rec['id']} after {age / 60:.0f} min")
+        print(f"reaped {rec['id']} ({reason}, connections={conns})")
     except Exception as exc:  # noqa: BLE001 - best effort
         print(f"reap failed for {rec['id']}: {exc}")
     state["sandbox"] = None
     state["pending"] = None
+    state["empty_polls"] = 0
 
 
 @app.function(image=router_image, timeout=SANDBOX_MAX_LIFETIME)
