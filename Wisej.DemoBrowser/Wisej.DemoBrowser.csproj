@@ -95,6 +95,22 @@
 		</Content>
 	</ItemGroup>
 
+	<!--
+	  Default.html references Images/ by relative path (splash, strike, logo),
+	  and UseFileServer serves from the content root on disk. The images are
+	  declared as EmbeddedResource above, which compiles them into the assembly
+	  but copies nothing, so a published app 404s on all of them.
+
+	  net48 never hit this: under IIS the app runs in place from the project
+	  folder, so the files are simply there. A published .NET Core app only has
+	  what it is told to copy - hence this, scoped to the .NET Core target.
+	-->
+	<ItemGroup Condition="'$(TargetFramework.TrimEnd(`0123456789`))'!='net'">
+		<Content Include="Images\**">
+			<CopyToPublishDirectory>Always</CopyToPublishDirectory>
+		</Content>
+	</ItemGroup>
+
 	<ItemGroup>
 	  <EmbeddedResource Include="Files\Wisej.pdf" />
 	  <EmbeddedResource Include="Images\book.png" />
