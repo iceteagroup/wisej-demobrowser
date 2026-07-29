@@ -31,7 +31,7 @@ jobs:
 
       - uses: actions/setup-dotnet@v4
         with:
-          dotnet-version: '8.0.x'
+          dotnet-version: '10.0.x'
 
       - uses: actions/setup-python@v5
         with:
@@ -44,21 +44,18 @@ jobs:
       # directory. Nothing about a PR builds a container image, which is what
       # keeps the image count flat at one and makes teardown a file delete.
       #
-      #   --runtime linux-x64   prunes runtimes/ to one RID; a portable publish
-      #                         ships alpine/osx/win/wasm assets we can't use
       #   SatelliteResourceLanguages   drops 14 localised resource folders
-      #   EnableUnsafeBinaryFormatterSerialization   lets the designer-serialized
-      #                         .resx resources in MainView deserialize on .NET 8
+      #
+      # Deliberately a portable publish: --runtime linux-x64 was only ever a
+      # size optimisation, and keeping the output RID-agnostic means the exact
+      # same payload can be run on a dev box for debugging.
       - name: Publish app payload
         run: |
           dotnet publish Wisej.DemoBrowser/Wisej.DemoBrowser.csproj \
-            --framework net8.0 \
+            --framework net10.0 \
             --configuration Release \
-            --runtime linux-x64 \
-            --no-self-contained \
             --output ./payload \
             -p:SatelliteResourceLanguages=en \
-            -p:EnableUnsafeBinaryFormatterSerialization=true \
             -p:UseAppHost=false
           du -sh ./payload
 

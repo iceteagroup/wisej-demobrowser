@@ -25,7 +25,7 @@ app = modal.App("wisej-preview-base-builder")
 # Wisej measures text server-side to autosize controls, so fontconfig and a
 # font set must be present or controls render at the wrong size.
 base_image = (
-    modal.Image.from_registry("mcr.microsoft.com/dotnet/aspnet:8.0", add_python="3.12")
+    modal.Image.from_registry("mcr.microsoft.com/dotnet/aspnet:10.0", add_python="3.12")
     .apt_install("libfontconfig1", "fonts-liberation", "fonts-dejavu-core")
     .env({
         "ASPNETCORE_URLS": "http://0.0.0.0:8080",

@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
 	<PropertyGroup>
-		<TargetFrameworks>net48;net8.0</TargetFrameworks>
+		<TargetFrameworks>net48;net10.0</TargetFrameworks>
 		<PlatformTarget>AnyCPU</PlatformTarget>
 		<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
 		<EmbeddedResourceUseDependentUponConvention>true</EmbeddedResourceUseDependentUponConvention>
@@ -25,6 +25,20 @@
 		<Reference Include="System.Windows.Forms" />
 		<Compile Remove="Startup.cs" />
 		<Content Include="Startup.cs" />
+	</ItemGroup>
+
+	<!--
+	  .NET 9 removed BinaryFormatter, and .NET 8 ships it disabled. The designer
+	  serialized Responsive Profiles into the .resx files as binary payloads, so
+	  without a BinaryFormatter implementation MainView.InitializeComponent()
+	  throws "Invalid BinaryFormatter stream" and the app never renders.
+	  See docs.wisej.com "Known issues in Wisej.NET 4.0".
+
+	  net48 is unaffected - it has BinaryFormatter in the box - so this is scoped
+	  to the .NET Core target only.
+	-->
+	<ItemGroup Condition="'$(TargetFramework.TrimEnd(`0123456789`))'!='net'">
+		<PackageReference Include="System.Runtime.Serialization.Formatters" Version="9.0.*" />
 	</ItemGroup>
 
 	<ItemGroup>
