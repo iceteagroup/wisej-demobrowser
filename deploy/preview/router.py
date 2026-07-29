@@ -87,8 +87,15 @@ def ensure_sandbox(started: float):
     result through the shared Dict.
     """
     sb_app = modal.App.lookup(f"{APP_NAME}-sandboxes", create_if_missing=True)
+
+    # Copy the payload to local disk before running it. Volumes are network
+    # backed, and Wisej's resource init does many small reads across themes and
+    # resources - served straight off the Volume that init measured 36.8s, with
+    # every request after it in the tens of milliseconds. Copying ~75MB once
+    # costs a couple of seconds and makes every subsequent read local.
     sb = modal.Sandbox.create(
-        "bash", "-c", f"cd {PAYLOAD_DIR} && exec dotnet Wisej.DemoBrowser.dll",
+        "bash", "-c",
+        f"cp -r {PAYLOAD_DIR} /app && cd /app && exec dotnet Wisej.DemoBrowser.dll",
         image=wisej_image,
         app=sb_app,
         volumes={"/previews": volume},
