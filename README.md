@@ -1,5 +1,7 @@
 <div id="top"></div>
 
+<!-- Deploy preview smoke test for Wisej.NET Cloud. Safe to revert. -->
+
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
