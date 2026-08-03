@@ -36,6 +36,12 @@
         "docsUrl": "https://docs.wisej.com/docs/controls/editors/textbox",
         "description-en": "Input types can be used to specify the type of content that should be entered into the field. Some input types use native browser components to assist in editing.",
         "description-fr": "Les types d’entrée peuvent être utilisés pour spécifier le type de contenu à entrer dans le champ. Certains types d’entrée utilisent des composants de navigateur natifs pour faciliter l’édition."
+      },
+      "Green Watermark": {
+        "assembly": "GreenTextBox, Wisej.DemoBrowser.dll",
+        "imageSource": "resource.wx/Wisej.Ext.VisualStudioIcons/TextBox.svg",
+        "docsUrl": "https://docs.wisej.com/docs/controls/editors/textbox",
+        "description-en": "A <b>TextBox</b> with a custom <b>Watermark</b> (\"TEST!!!\") and a green <b>BackColor</b>."
       }
     },
     "MaskedTextBox": {
