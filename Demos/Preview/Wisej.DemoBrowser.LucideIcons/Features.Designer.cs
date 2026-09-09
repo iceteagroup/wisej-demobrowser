@@ -1,4 +1,4 @@
-﻿namespace Wisej.DemoBrowser.VaadinIcons
+﻿namespace Wisej.DemoBrowser.LucideIcons
 {
 	partial class Features
 	{

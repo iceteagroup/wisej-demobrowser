@@ -6,7 +6,7 @@ using Wisej.DemoBrowser.Common;
 using Wisej.Ext.ClientClipboard;
 using Wisej.Web;
 
-namespace Wisej.DemoBrowser.VaadinIcons
+namespace Wisej.DemoBrowser.LucideIcons
 {
 	public partial class Features : DemoView
 	{
@@ -18,7 +18,7 @@ namespace Wisej.DemoBrowser.VaadinIcons
 
 		private void Features_Load(object sender, EventArgs e)
 		{
-			this.fields = typeof(Ext.LucidIcons.Icons).GetFields();
+			this.fields = typeof(Ext.LucideIcons.Icons).GetFields();
 			var imageEntries = fields.Select(item => new ImageListEntry((string)item.GetValue(null), item.Name)).ToArray();
 			imageListIcons.Images.AddRange(imageEntries);
 			this.listViewIcons.VirtualListSize = imageEntries.Length;
