@@ -58,7 +58,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(200, 54);
             this.textBox1.TabIndex = 1;
-            this.textBox1.Watermark = "Enter some text...";
+            this.textBox1.Watermark = "Type here to try it out...";
             // 
             // textBox8
             // 
@@ -92,7 +92,7 @@
             this.textBox13.Name = "textBox13";
             this.textBox13.Size = new System.Drawing.Size(200, 54);
             this.textBox13.TabIndex = 0;
-            this.textBox13.Watermark = "Numbers only";
+            this.textBox13.Watermark = "Digits only, please";
             // 
             // textBox12
             // 
