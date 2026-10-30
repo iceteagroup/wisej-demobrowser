@@ -10,18 +10,25 @@ namespace Wisej.Web.Ext.DevExpressDashboard.Demo
 		/// </summary>
 		static void Main()
 		{
-			//create temp folder (will be deleted when user closes application)
-			System.IO.Directory.CreateDirectory("./Temp");
+			//create the session's temp folder (will be deleted when the session ends)
+			System.IO.Directory.CreateDirectory(TempPath);
 
 			Application.MainPage = new MainView();
 
-			//delete temp folder when user closes application
+			//delete the session's temp folder when the session ends
 			Application.ApplicationExit += new System.EventHandler(DeleteTempFolder);
 		}
 
+		/// <summary>
+		/// Temp folder of the current session, so sessions don't overwrite or delete each other's dashboards.
+		/// </summary>
+		internal static string TempPath => Application.MapPath("Temp/" + Application.SessionId);
+
 		static void DeleteTempFolder(object sender, System.EventArgs e)
 		{
-			System.IO.Directory.Delete("./Temp",true);
+			var path = TempPath;
+			if (System.IO.Directory.Exists(path))
+				System.IO.Directory.Delete(path, true);
 		}
 
 		//

@@ -36,15 +36,15 @@
 				"ext-language_tools.js": "https://cdnjs.cloudflare.com/ajax/libs/ace/1.15.3/ext-language_tools.min.js",
 				"theme-dreamweaver.js": "https://cdnjs.cloudflare.com/ajax/libs/ace/1.15.3/theme-dreamweaver.min.js",
 				"theme-ambiance.js": "https://cdnjs.cloudflare.com/ajax/libs/ace/1.15.3/theme-ambiance.min.js",
-				"dx.all.js": "https://cdn3.devexpress.com/jslib/22.2.4/js/dx.all.js",
-				"dx-analytics-core.js": "https://unpkg.com/@devexpress/analytics-core@22.2.4/dist/js/dx-analytics-core.min.js",
-				"dx-querybuilder.js": "https://unpkg.com/@devexpress/analytics-core@22.2.4/dist/js/dx-querybuilder.min.js",
-				"dx-dashboard.js": "https://unpkg.com/devexpress-dashboard@22.2.4/dist/js/dx-dashboard.min.js",
-				"dx.theme.css": "https://cdnjs.cloudflare.com/ajax/libs/devextreme/22.2.4/css/dx.%theme%.css",
-				"dx-analytics.common.css": "https://unpkg.com/@devexpress/analytics-core@22.2.4/dist/css/dx-analytics.common.css",
-				"dx-analytics.light.css": "https://unpkg.com/@devexpress/analytics-core@22.2.4/dist/css/dx-analytics.%theme%.css",
-				"dx-querybuilder.css": "https://unpkg.com/@devexpress/analytics-core@22.2.4/dist/css/dx-querybuilder.css",
-				"dx-dashboard.light.css": "https://unpkg.com/devexpress-dashboard@22.2.4/dist/css/dx-dashboard.%theme%.css"
+				"dx.all.js": "https://cdn.jsdelivr.net/npm/devextreme@22.1.4/dist/js/dx.all.js",
+				"dx-analytics-core.js": "https://cdn.jsdelivr.net/npm/@devexpress/analytics-core@22.1.4/dist/js/dx-analytics-core.min.js",
+				"dx-querybuilder.js": "https://cdn.jsdelivr.net/npm/@devexpress/analytics-core@22.1.4/dist/js/dx-querybuilder.min.js",
+				"dx-dashboard.js": "https://cdn.jsdelivr.net/npm/devexpress-dashboard@22.1.4/dist/js/dx-dashboard.min.js",
+				"dx.theme.css": "https://cdn.jsdelivr.net/npm/devextreme@22.1.4/dist/css/dx.%theme%.css",
+				"dx-analytics.common.css": "https://cdn.jsdelivr.net/npm/@devexpress/analytics-core@22.1.4/dist/css/dx-analytics.common.css",
+				"dx-analytics.light.css": "https://cdn.jsdelivr.net/npm/@devexpress/analytics-core@22.1.4/dist/css/dx-analytics.%theme%.css",
+				"dx-querybuilder.css": "https://cdn.jsdelivr.net/npm/@devexpress/analytics-core@22.1.4/dist/css/dx-querybuilder.css",
+				"dx-dashboard.light.css": "https://cdn.jsdelivr.net/npm/devexpress-dashboard@22.1.4/dist/css/dx-dashboard.%theme%.css"
 			}
 		},
 
